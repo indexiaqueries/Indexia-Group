@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* ─── Brand Tokens ─────────────────────────────────────────── */
+:root {
+  --teal:      #26ae90;
+  --deep-blue: #066a9c;
+  --mid-blue:  #286090;
+  --yellow:    #f2f231;
+  --gray:      #7b7b7b;
+}
+
+/* ─── Reset ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #26ae90 #044e74;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #044e74;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #26ae90;
+  border-radius: 9999px;
+  border: 2px solid #044e74;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #f2f231;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Container ────────────────────────────────────────────── */
+/*
+  Single reusable container used by every section.
+  max-width 1200px, horizontally centred, with
+  responsive horizontal padding so content never
+  touches the viewport edge.
+*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+/* ─── Helpers ──────────────────────────────────────────────── */
+a, button { transition: all 0.2s ease; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }

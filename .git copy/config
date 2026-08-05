@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[submodule]
+	active = .
+[branch "main"]
+	vscode-merge-base = origin/main
+	github-pr-base-branch = "tanishavyastv#Indexia-Group-Website#tanishavyas"
+[lfs]
+	repositoryformatversion = 0
+[branch "tanishavyas"]
+	github-pr-base-branch = "Prabha8859#Indexia-Group-Portal#main"
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/tanishavyas
+[remote "origin"]
+	url = https://github.com/tanishavyastv/Indexia-Group-Website.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
