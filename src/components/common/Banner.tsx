@@ -13,21 +13,21 @@ type BannerProps = {
 
 const slides = [
   {
-    tag: "Trusted Financial Partner",
-    heading: "Building a Stronger\nFinancial Future",
-    sub: "Empowering individuals and businesses across India with reliable, growth-driven financial solutions.",
+    tag: "Multi-Business Group",
+    heading: "One Group.\nMultiple Solutions.",
+    sub: "From finance and logistics to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
     image: heroImg1,
   },
   {
-    tag: "Smart Investment Solutions",
-    heading: "Grow Your Wealth\nWith Confidence",
-    sub: "Data-driven strategies and expert guidance to help your money work harder for you.",
+    tag: "Finance & Advisory",
+    heading: "Stronger Finances.\nSmarter Decisions.",
+    sub: "Indexia Finance, Finserve and Securities deliver end-to-end financial solutions — from planning and investments to risk protection and compliance.",
     image: heroImg2,
   },
   {
-    tag: "Client-First Approach",
-    heading: "Dedicated Support\nEvery Step of the Way",
-    sub: "Our experienced team walks alongside you from planning through execution - always in your corner.",
+    tag: "Trade, Agro & Impact",
+    heading: "Moving Goods,\nGrowing Futures.",
+    sub: "Through Overseas, Agro Bio Fertilizers, Warehouse and Foundation, we enable global trade, sustainable farming and meaningful community impact.",
     image: heroImg3,
   },
 ];
@@ -38,7 +38,7 @@ const TEXT_FADE_OUT = 600;      // old text fade-out duration
 const TEXT_FADE_IN = 420;       // new text fade-in duration
 const TEXT_ZOOM_DURATION = 6000; // continuous zoom runs for the length of the slide's display time
 
-const Banner = ({ buttonText = "Get Started", buttonLink = "/contact" }: BannerProps) => {
+const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: BannerProps) => {
   const [current, setCurrent] = useState(0);
   const [nextSlide, setNextSlide] = useState<number | null>(null);
   const [animating, setAnimating] = useState(false);
@@ -154,8 +154,9 @@ const Banner = ({ buttonText = "Get Started", buttonLink = "/contact" }: BannerP
             src={activeSlide.image}
             alt=""
             aria-hidden="true"
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-[transform] duration-700 ease-in-out will-change-transform ${animating ? "scale-[1.02] translate-x-[-8%]" : "scale-100"
-              }`}
+            className={`absolute inset-0 w-full h-full object-cover object-center transition-[transform] duration-700 ease-in-out will-change-transform ${
+              animating ? "scale-[1.02] translate-x-[-8%]" : "scale-100"
+            }`}
           />
 
           {/* Dark gradient so text stays legible over any photo */}
@@ -166,10 +167,11 @@ const Banner = ({ buttonText = "Get Started", buttonLink = "/contact" }: BannerP
 
           <div className="container relative z-3 w-full flex flex-col items-center text-center px-5 pt-30 pb-35">
             <div
-              className={`flex flex-col items-center max-w-190 transition-[opacity,transform] will-change-[opacity,transform] ${textVisible
-                ? "opacity-100 translate-y-0 duration-420 ease-out"
-                : "opacity-0 -translate-y-2.5 duration-400 ease-in"
-                }`}
+              className={`flex flex-col items-center max-w-190 transition-[opacity,transform] will-change-[opacity,transform] ${
+                textVisible
+                  ? "opacity-100 translate-y-0 duration-420 ease-out"
+                  : "opacity-0 -translate-y-2.5 duration-400 ease-in"
+              }`}
               style={
                 textZoomed
                   ? { animation: `bnr-text-zoom ${TEXT_ZOOM_DURATION}ms ease-out forwards` }
@@ -177,14 +179,14 @@ const Banner = ({ buttonText = "Get Started", buttonLink = "/contact" }: BannerP
               }
             >
               <div className="flex flex-row gap-3 flex-wrap justify-center">
-                <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#26ae90]/30">
+                <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
                   <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
                     Currently in Development
                   </span>
                 </div>
 
-                <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#26ae90]/30">
+                <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
                   <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
                     {activeSlide.tag}
@@ -218,7 +220,7 @@ const Banner = ({ buttonText = "Get Started", buttonLink = "/contact" }: BannerP
                 to="/about"
                 className="inline-flex items-center gap-2 border-2 border-white/45 hover:border-white/80 hover:bg-white/10 text-white font-bold text-sm px-7 py-3.25 rounded-lg transition-colors duration-200"
               >
-                Learn More
+                About Indexia
               </Link>
             </div>
           </div>
@@ -230,8 +232,9 @@ const Banner = ({ buttonText = "Get Started", buttonLink = "/contact" }: BannerP
                 key={i}
                 onClick={() => goTo(i)}
                 aria-label={`Slide ${i + 1}`}
-                className={`h-2 rounded-full transition-all duration-300 ${i === current ? "w-6 bg-[#f2f231]" : "w-2 bg-white/35"
-                  }`}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  i === current ? "w-6 bg-[#f2f231]" : "w-2 bg-white/35"
+                }`}
               />
             ))}
           </div>

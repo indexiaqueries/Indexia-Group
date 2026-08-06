@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import footerBg from "../../assets/footer-img.png";
-import LightLogo from "../../assets/IndexiaGroup_LightLogo.gif";
+import logo from "../../assets/IndexiaGroup_Logo.gif";
 import {
   FiMail,
   FiPhone,
@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <div className="text-2xl font-extrabold flex flex-col items-center">
-                <img src={LightLogo} alt="Indexia Group logo" className="h-23 object-contain"/>
+                <img src={logo} alt="Indexia Group logo" className="h-23 object-contain"/>
                 <div className="flex flex-row items-center gap-1">
                   <span className="text-[#f2f231]">Indexia</span>
                   <span className="text-white">Group</span>
