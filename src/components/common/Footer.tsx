@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import footerBg from "../../assets/footer-img.png";
+import LightLogo from "../../assets/IndexiaGroup_LightLogo.gif";
 import {
   FiMail,
   FiPhone,
@@ -54,13 +55,13 @@ const Footer = () => {
         <div className="rounded-3xl border border-white/12 bg-white/5 p-8 shadow-[0_12px_40px_rgba(2,16,26,0.18)] backdrop-blur-[14px] sm:p-10 lg:p-12">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <Link
-                to="/"
-                className="inline-flex items-baseline gap-1 text-2xl font-extrabold tracking-tight transition-opacity duration-200 hover:opacity-90"
-              >
-                <span className="text-[#f2f231]">Indexia</span>
-                <span className="text-white">Group</span>
-              </Link>
+              <div className="text-2xl font-extrabold flex flex-col items-center">
+                <img src={LightLogo} alt="Indexia Group logo" className="h-23 object-contain"/>
+                <div className="flex flex-row items-center gap-1">
+                  <span className="text-[#f2f231]">Indexia</span>
+                  <span className="text-white">Group</span>
+                </div>
+              </div>
 
               <p className="mt-4 max-w-sm text-sm leading-7 text-white/68">
                 Helping businesses and individuals build a stronger financial future with trusted, result-driven solutions.

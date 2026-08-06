@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logoGif from "../../assets/IndexiaGroup_logo.gif";
+import DarkLogo from "../../assets/IndexiaGroup_DarkLogo.gif";
+import LightLogo from "../../assets/IndexiaGroup_LightLogo.gif";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -25,20 +26,22 @@ const Header = () => {
     <div className="fixed top-0 left-0 right-0 z-999 flex justify-center px-5 pt-4.5 pointer-events-none">
       <div className="w-full max-w-295 pointer-events-auto">
         <div
-          className={`flex items-center justify-between gap-5 rounded-full border shadow-[0_8px_32px_rgba(2,16,26,0.18)] backdrop-blur-[14px] transition-all duration-300 ${
+          className={`flex items-center justify-between gap-6 rounded-full border shadow-[0_8px_32px_rgba(2,16,26,0.18)] backdrop-blur-[14px] transition-all duration-300 ${
             isWhite
-              ? "bg-white/60 border-black/5 shadow-[0_8px_28px_rgba(6,106,156,0.14)] py-1.5 px-5"
-              : "border-white/15 py-2 px-5"
+              ? "bg-white/60 border-black/5 shadow-[0_8px_28px_rgba(6,106,156,0.14)] py-1.5 px-6"
+              : "border-white/15 py-2 px-6"
           }`}
         >
+          {/* Logo */}
           <NavLink to="/" className="shrink-0 group">
             <img
-              src={logoGif}
+              src={isWhite ? DarkLogo : LightLogo}
               alt="Indexia Group logo"
-              className="h-15 w-auto object-contain block transition-transform duration-300 ease-out group-hover:scale-105 group-hover:opacity-90"
+              className="h-18 w-28 object-contain block transition-transform duration-300 ease-out group-hover:scale-105 group-hover:opacity-90"
             />
           </NavLink>
 
+          {/* Desktop Nav */}
           <nav className="hidden items-center gap-1 rounded-full p-1 min-[900px]:flex bg-white/7">
             {navItems.map((item) => (
               <NavLink
@@ -52,8 +55,8 @@ const Header = () => {
                         ? "bg-sky-500/10 text-sky-700"
                         : "bg-yellow-300/15 text-yellow-300"
                       : isWhite
-                        ? "text-slate-700 hover:bg-sky-500/5 hover:text-sky-700 hover:-translate-y-px"
-                        : "text-white/85 hover:bg-white/10 hover:text-yellow-300 hover:-translate-y-px"
+                      ? "text-slate-700 hover:bg-sky-500/5 hover:text-sky-700 hover:-translate-y-px"
+                      : "text-white/85 hover:bg-white/10 hover:text-yellow-300 hover:-translate-y-px"
                   }`
                 }
               >
@@ -62,6 +65,7 @@ const Header = () => {
             ))}
           </nav>
 
+          {/* Right side: CTA + Mobile toggle */}
           <div className="flex items-center gap-2.5 shrink-0">
             <NavLink
               to="/contact"
@@ -97,6 +101,7 @@ const Header = () => {
           </div>
         </div>
 
+        {/* Mobile menu */}
         {menuOpen && (
           <div
             className={`mx-auto mt-2 overflow-hidden rounded-[22px] shadow-[0_12px_32px_rgba(2,16,26,0.2)] backdrop-blur-lg ${
@@ -116,8 +121,8 @@ const Header = () => {
                         ? "bg-sky-500/6 text-sky-700 border-black/5"
                         : "bg-yellow-300/8 text-yellow-300 border-white/8"
                       : isWhite
-                        ? "text-slate-700 hover:bg-sky-500/5 hover:text-sky-700 border-black/5"
-                        : "text-white/88 hover:bg-white/5 hover:text-yellow-300 border-white/8"
+                      ? "text-slate-700 hover:bg-sky-500/5 hover:text-sky-700 border-black/5"
+                      : "text-white/88 hover:bg-white/5 hover:text-yellow-300 border-white/8"
                   }`
                 }
               >
