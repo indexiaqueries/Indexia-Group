@@ -1,3 +1,4 @@
+// Route config: every page renders inside MainLayout (Header + Footer).
 import { Route, Routes } from "react-router-dom";
 
 import MainLayout from "../layout/MainLayout";

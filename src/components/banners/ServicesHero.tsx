@@ -1,23 +1,22 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Award, Building2, Users } from "lucide-react";
+import { ArrowRight, BadgeCheck, Briefcase, LineChart, ShieldCheck } from "lucide-react";
 
 import AppButton from "../common/AppButton";
 import { displayFont, eyebrowClass, monoFont, palette } from "../../data/contact";
 
-const stats = [
-  { icon: Users, value: "500+", label: "Clients Served" },
-  { icon: Award, value: "10+", label: "Years Experience" },
-  { icon: Building2, value: "8", label: "Group Companies" },
+const highlights = [
+  { icon: Briefcase, title: "Financial Consulting", desc: "Personalised guidance for smarter decisions." },
+  { icon: LineChart, title: "Investment Planning", desc: "Data-driven strategies built around your goals." },
+  { icon: ShieldCheck, title: "Wealth Protection", desc: "Insurance and estate planning for your future." },
 ];
 
-const AboutHero = () => (
+const ServicesHero = () => (
   <section
     className="relative overflow-hidden min-h-screen flex items-center"
     style={{
       background: `linear-gradient(115deg, ${palette.navyDeep} 0%, ${palette.navy} 55%, ${palette.navyMid} 100%)`,
     }}
   >
-    {/* Subtle grid pattern */}
     <div
       className="pointer-events-none absolute inset-0 opacity-70"
       style={{
@@ -25,7 +24,6 @@ const AboutHero = () => (
           "repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 36px)",
       }}
     />
-    {/* Radial glow */}
     <div
       className="pointer-events-none absolute inset-0"
       style={{ background: `radial-gradient(circle at 85% 15%, ${palette.teal}35, transparent 45%)` }}
@@ -38,37 +36,38 @@ const AboutHero = () => (
         transition={{ duration: 0.7 }}
       >
         <p className={`${eyebrowClass} mb-4`} style={{ color: palette.goldLight }}>
-          About Indexia Group
+          What We Offer
         </p>
 
         <h1
           className="max-w-xl text-4xl leading-tight text-white sm:text-5xl lg:text-6xl"
           style={{ ...displayFont, fontWeight: 600 }}
         >
-          Creating Better Financial Opportunities
+          Financial Solutions That Support Growth
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-8 text-white/75">
-          A customer-focused financial services group committed to delivering reliable,
-          growth-oriented solutions for individuals and businesses across India.
+          From consulting to investment planning, our services are designed to meet you
+          wherever you are on your financial journey.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
           <AppButton to="/contact" variant="yellow">
-            Talk to Us
+            Book Free Consultation
             <ArrowRight size={17} />
           </AppButton>
-          <AppButton to="/services" variant="light">
-            Explore Services
+          <AppButton to="/about" variant="light">
+            About Indexia
           </AppButton>
         </div>
       </motion.div>
 
-      {/* Stats visual card */}
+      {/* Service highlights card */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7, delay: 0.1 }}
+        initial={{ opacity: 0, rotate: -8, y: 30 }}
+        animate={{ opacity: 1, rotate: -3, y: 0 }}
+        whileHover={{ rotate: 0 }}
+        transition={{ duration: 0.8, delay: 0.2, type: "spring", bounce: 0.25 }}
         className="relative mx-auto w-full max-w-sm"
       >
         <div
@@ -77,7 +76,7 @@ const AboutHero = () => (
         />
 
         <div
-          className="relative rounded-3xl p-7 shadow-2xl ring-1 ring-black/5"
+          className="relative rounded-[1.5rem] p-7 shadow-2xl ring-1 ring-black/5"
           style={{ backgroundColor: palette.paper }}
         >
           <div className="flex items-center justify-between border-b border-dashed border-slate-300 pb-4">
@@ -85,38 +84,36 @@ const AboutHero = () => (
               className="text-[11px] font-bold uppercase tracking-[0.2em]"
               style={{ color: palette.navyMid }}
             >
-              Indexia Group · At a Glance
+              Core Services
             </span>
-            <span
-              className="rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider"
-              style={{ backgroundColor: palette.navyDeep, color: palette.goldLight }}
-            >
-              Since 2014
+            <span className="flex items-center gap-1 rounded-full bg-[#26ae90]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#066a9c]">
+              <BadgeCheck size={12} />
+              Trusted
             </span>
           </div>
 
           <div className="mt-6 space-y-5">
-            {stats.map((item) => {
+            {highlights.map((item) => {
               const Icon = item.icon;
               return (
                 <div
-                  key={item.label}
+                  key={item.title}
                   className="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm"
                 >
                   <span
-                    className="flex h-12 w-12 items-center justify-center rounded-xl"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl"
                     style={{ backgroundColor: `${palette.teal}18`, color: palette.navyMid }}
                   >
                     <Icon size={22} />
                   </span>
                   <div>
                     <p
-                      className="text-2xl font-extrabold leading-none"
+                      className="text-[15px] font-bold leading-tight"
                       style={{ ...monoFont, color: palette.ink }}
                     >
-                      {item.value}
+                      {item.title}
                     </p>
-                    <p className="mt-1 text-sm text-slate-500">{item.label}</p>
+                    <p className="mt-1 text-[13px] leading-snug text-slate-500">{item.desc}</p>
                   </div>
                 </div>
               );
@@ -128,4 +125,4 @@ const AboutHero = () => (
   </section>
 );
 
-export default AboutHero;
+export default ServicesHero;

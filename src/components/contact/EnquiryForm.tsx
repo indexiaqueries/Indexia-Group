@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
-import type { ChangeEvent, FormEvent } from "react";
+import type { ChangeEvent, SubmitEvent } from "react";
 
 import {
   accent,
@@ -15,7 +15,7 @@ type EnquiryFormProps = {
   form: ContactFormData;
   submitted: boolean;
   onChange: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void;
+  onSubmit: (event: SubmitEvent<HTMLFormElement>) => void;
 };
 
 const halfFields = [
@@ -64,7 +64,7 @@ const EnquiryForm = ({ form, submitted, onChange, onSubmit }: EnquiryFormProps) 
   <motion.div
     id="enquiry-form"
     {...fadeUp(0.1)}
-    className="relative overflow-hidden rounded-[2rem] border border-white bg-white p-6 shadow-xl sm:p-10"
+    className="relative overflow-hidden rounded-4xl border border-white bg-white p-6 shadow-xl sm:p-10"
   >
     <div
       className="absolute right-0 top-0 h-40 w-40 rounded-full blur-3xl"

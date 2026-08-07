@@ -51,7 +51,7 @@ const PhoneTile = ({ label, number, href }: (typeof phoneNumbers)[number]) => (
       <span className="block text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: accent.gray }}>
         {label}
       </span>
-      <span className="mt-1 block text-base font-bold text-slate-800 group-hover:text-[var(--color-blue)]" style={monoFont}>
+      <span className="mt-1 block text-base font-bold text-slate-800 group-hover:text-(--color-blue)" style={monoFont}>
         {number}
       </span>
     </span>

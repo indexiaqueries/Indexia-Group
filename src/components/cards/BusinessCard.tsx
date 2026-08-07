@@ -32,7 +32,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
     <motion.article
       initial="rest"
       whileHover="hover"
-      className="group relative flex h-[260px] overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl"
+      className="group relative flex h-65 overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl"
     >
       <img
         src={business.image}
@@ -62,7 +62,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
       />
 
       <motion.div
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-44 bg-gradient-to-t from-black/75 via-black/30 to-transparent"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-44 bg-linear-to-t from-black/75 via-black/30 to-transparent"
         variants={overlayVariants}
         transition={{ duration: 0.35 }}
       />
@@ -90,7 +90,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         </motion.h3>
 
         <motion.div
-          className="pointer-events-none absolute inset-0 z-[60] flex items-center justify-center p-6 text-center"
+          className="pointer-events-none absolute inset-0 z-60 flex items-center justify-center p-6 text-center"
           variants={revealVariants}
           transition={{ duration: 0.45, ease: "easeOut" }}
         >

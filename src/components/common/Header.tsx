@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/IndexiaGroup_Logo.gif";
 
+// Main navigation items shown in the header.
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -10,16 +11,17 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);   // Mobile menu visibility
+  const [scrolled, setScrolled] = useState(false);   // True once the page is scrolled down
 
   useEffect(() => {
+    // Track scroll position to switch navbar style after 100px.
     const onScroll = () => setScrolled(window.scrollY > 100);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isWhite = scrolled; // true when scrolled → dark navbar
+  const isWhite = scrolled; // scrolled → dark navbar background
 
   return (
     <div className="fixed top-0 left-0 right-0 z-999 flex justify-center px-5 pt-4.5 pointer-events-none">
@@ -40,7 +42,7 @@ const Header = () => {
             />
           </NavLink>
 
-          {/* Desktop Nav */}
+          {/* Desktop nav links */}
           <nav className="hidden items-center gap-1 rounded-full p-1 min-[900px]:flex bg-white/7">
             {navItems.map((item) => (
               <NavLink

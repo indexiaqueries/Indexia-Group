@@ -1,24 +1,27 @@
+// Contact page: full-height hero + contact info, enquiry form, and branches.
 import { useState } from "react";
-import type { ChangeEvent, FormEvent } from "react";
+import type { ChangeEvent, SubmitEvent } from "react";
 
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
-import ContactHero from "../components/contact/ContactHero";
+import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { accent, branches, initialContactForm } from "../data/contact";
 import type { ContactFormData } from "../data/contact";
 
 const Contact = () => {
-  const [form, setForm] = useState<ContactFormData>(initialContactForm);
-  const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState<ContactFormData>(initialContactForm); // Enquiry form values
+  const [submitted, setSubmitted] = useState(false);                     // True after the email client opens
 
+  // Keep the form state in sync as the user types.
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setForm((previous) => ({ ...previous, [name]: value }));
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  // Build a prefilled email and open the mail client.
+  const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const emailSubject = form.subject.trim() || "New enquiry from Indexia Group website";

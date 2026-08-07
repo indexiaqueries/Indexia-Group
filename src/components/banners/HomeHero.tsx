@@ -1,3 +1,4 @@
+// Hero slideshow banner for the Home page: full-height auto-advancing slides with crossfade.
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import heroImg1 from "../../assets/hero-image1.png";
@@ -11,6 +12,7 @@ type BannerProps = {
   buttonLink?: string;
 };
 
+// Slide content for the rotating hero backgrounds.
 const slides = [
   {
     tag: "Multi-Business Group",

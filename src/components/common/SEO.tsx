@@ -27,18 +27,11 @@ const SEO = ({
     const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
     document.title = fullTitle;
 
-    const canonical = canonicalPath
-      ? `${BASE_URL}${canonicalPath}`
-      : `${BASE_URL}/`;
-
-    const ogUrl = canonicalPath
-      ? `${BASE_URL}${canonicalPath}`
-      : `${BASE_URL}/`;
+    const canonical = canonicalPath ? `${BASE_URL}${canonicalPath}` : `${BASE_URL}/`;
+    const ogUrl = canonicalPath ? `${BASE_URL}${canonicalPath}` : `${BASE_URL}/`;
 
     const setMeta = (attr: "name" | "property", key: string, content: string) => {
-      let el = document.head.querySelector<HTMLMetaElement>(
-        `meta[${attr}="${key}"]`
-      );
+      let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
       if (!el) {
         el = document.createElement("meta");
         el.setAttribute(attr, key);
@@ -47,15 +40,11 @@ const SEO = ({
       el.setAttribute("content", content);
     };
 
-    // Basic SEO
     setMeta("name", "description", description);
     if (keywords) setMeta("name", "keywords", keywords);
     setMeta("name", "robots", noindex ? "noindex, nofollow" : "index, follow");
 
-    // Canonical link
-    let link = document.head.querySelector<HTMLLinkElement>(
-      'link[rel="canonical"]'
-    );
+    let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!link) {
       link = document.createElement("link");
       link.setAttribute("rel", "canonical");
@@ -63,7 +52,6 @@ const SEO = ({
     }
     link.setAttribute("href", canonical);
 
-    // Open Graph
     setMeta("property", "og:site_name", SITE_NAME);
     setMeta("property", "og:type", ogType);
     setMeta("property", "og:title", fullTitle);
@@ -71,7 +59,6 @@ const SEO = ({
     setMeta("property", "og:url", ogUrl);
     setMeta("property", "og:image", `https://www.indexiagroup.com${ogImage}`);
 
-    // Twitter Card
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", fullTitle);
     setMeta("name", "twitter:description", description);

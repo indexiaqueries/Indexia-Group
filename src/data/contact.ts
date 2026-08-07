@@ -19,6 +19,7 @@ export type ContactFormData = {
 };
 
 export const displayFont = { fontFamily: "'Fraunces', Georgia, serif" };
+
 export const monoFont = { fontFamily: "'IBM Plex Mono', Menlo, monospace" };
 
 export const palette = {
@@ -41,8 +42,10 @@ export const accent = {
 };
 
 export const eyebrowClass = "text-xs font-bold uppercase tracking-[0.24em]";
+
 export const cardBaseClass =
   "rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md";
+
 export const inputClasses =
   "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all duration-200 placeholder:text-slate-400 focus:border-[var(--color-teal)] focus:ring-4 focus:ring-[var(--color-teal)]/15";
 
@@ -120,3 +123,4 @@ export const fadeUp = (delay = 0) => ({
   viewport: { once: true, amount: 0.2 },
   transition: { duration: 0.6, delay },
 });
+

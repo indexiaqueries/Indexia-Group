@@ -1,3 +1,4 @@
+// Footer: site-wide footer with logo, nav links, services, contact info, and newsletter.
 import { Link } from "react-router-dom";
 import footerBg from "../../assets/footer-img.png";
 import logo from "../../assets/IndexiaGroup_Logo.gif";
@@ -11,6 +12,7 @@ import {
   FiFacebook,
 } from "react-icons/fi";
 
+// Quick navigation links for the footer.
 const quickLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about" },
@@ -18,6 +20,7 @@ const quickLinks = [
   { label: "Contact Us", path: "/contact" },
 ];
 
+// Service list shown in the footer.
 const services = [
   "Financial Consulting",
   "Investment Planning",
@@ -26,12 +29,14 @@ const services = [
   "Wealth Protection",
 ];
 
+// Social media links (placeholder hrefs).
 const socials = [
   { icon: FiLinkedin, href: "#" },
   { icon: FiTwitter, href: "#" },
   { icon: FiFacebook, href: "#" },
 ];
 
+// Contact info items for the footer.
 const contactInfo = [
   { icon: FiMail, text: "info@indexiagroup.com" },
   { icon: FiPhone, text: "+91 00000 00000" },

@@ -1,14 +1,16 @@
-import AboutHero from "../components/about/AboutHero";
+import AboutHero from "../components/banners/AboutHero";
 import SEO from "../components/common/SEO";
 import customerImg from "../assets/customer-img.png";
 import productImg from "../assets/product-details.png";
 
+// Mission, vision, and values cards.
 const values = [
   { icon: "🎯", title: "Our Mission", desc: "To provide accessible, reliable, and impactful financial solutions that empower individuals and businesses across India.", color: "#26ae90" },
   { icon: "👁️", title: "Our Vision",  desc: "To become India's most trusted financial partner — known for integrity, expertise, and a client-first approach.",          color: "#066a9c" },
   { icon: "💡", title: "Our Values",  desc: "Transparency, dedication, and innovation drive everything we do. Client success sits at the heart of every decision.",     color: "#286090" },
 ];
 
+// Team member profiles.
 const team = [
   { name: "Ankit Verma",  role: "Founder & CEO",      initial: "A", color: "#26ae90" },
   { name: "Sneha Joshi",  role: "Head of Finance",     initial: "S", color: "#066a9c" },
@@ -16,6 +18,7 @@ const team = [
   { name: "Neha Singh",   role: "Client Relations",    initial: "N", color: "#26ae90" },
 ];
 
+// About page: full-height hero + story, values, platform, and team sections.
 const About = () => (
   <>
     <SEO

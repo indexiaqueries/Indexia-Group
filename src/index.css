@@ -1,27 +1,31 @@
+/* Global stylesheet: Tailwind import + brand color tokens + shared utility classes. */
 @import "tailwindcss";
 
+/* Brand color tokens referenced via var(--color-*) across the whole app. */
 :root {
-  --color-teal: #26ae90;
-  --color-blue: #066a9c;
-  --color-blue-2: #286090;
-  --color-yellow: #f2f231;
-  --color-gray: #7b7b7b;
-  --color-ink: #111827;
-  --color-muted: #6b7280;
-  --color-soft: #f8fafc;
-  --color-deep: #044e74;
+  --color-teal: #26ae90;   /* Primary teal / brand accent          */
+  --color-blue: #066a9c;   /* Primary blue / main action color      */
+  --color-blue-2: #286090; /* Secondary darker blue                 */
+  --color-yellow: #f2f231; /* Highlight / CTA yellow                */
+  --color-gray: #7b7b7b;   /* Neutral text gray                     */
+  --color-ink: #111827;    /* Near-black for headings/body text     */
+  --color-muted: #6b7280;  /* Muted secondary text                  */
+  --color-soft: #f8fafc;   /* Soft section background               */
+  --color-deep: #044e74;   /* Deep navy / footer & hero background  */
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* ── Base element styles ──────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
   scrollbar-color: var(--color-teal) var(--color-deep);
   scrollbar-width: thin;
 }
 
+/* Custom scrollbar (WebKit browsers) using the brand colors */
 html::-webkit-scrollbar {
   width: 8px;
 }
@@ -61,6 +65,8 @@ ul {
   list-style: none;
 }
 
+/* ── Layout helpers ───────────────────────────────────────────────── */
+/* Centered, max-width container used by most page sections */
 .container {
   margin-inline: auto;
   max-width: 1200px;
@@ -76,6 +82,7 @@ ul {
   background: var(--color-soft);
 }
 
+/* ── Typography helpers ───────────────────────────────────────────── */
 .section-title {
   color: var(--color-blue);
   font-size: clamp(1.875rem, 4vw, 2.25rem);
@@ -99,6 +106,8 @@ ul {
   text-transform: uppercase;
 }
 
+/* ── Shared card styles ───────────────────────────────────────────── */
+/* Base card surface used by values, services, locations, etc. */
 .shared-card {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -112,6 +121,7 @@ ul {
   transform: translateY(-4px);
 }
 
+/* Accent card variant: colored top bar on hover using --card-color (defaults to teal). */
 .accent-card {
   overflow: hidden;
   padding: 36px 32px;
@@ -133,6 +143,7 @@ ul {
   transform: scaleX(1);
 }
 
+/* ── Responsive tweaks ────────────────────────────────────────────── */
 @media (min-width: 768px) {
   .container {
     padding-inline: 40px;

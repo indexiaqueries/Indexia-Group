@@ -15,7 +15,7 @@ const PassbookCard = () => {
   return (
     <div className="relative mx-auto w-full max-w-sm">
       <div
-        className="absolute -inset-6 rounded-[2rem] blur-2xl"
+        className="absolute -inset-6 rounded-4xl blur-2xl"
         style={{ background: `linear-gradient(135deg, ${palette.teal}30, ${palette.gold}20)` }}
       />
 
@@ -24,7 +24,7 @@ const PassbookCard = () => {
         animate={{ opacity: 1, rotate: -3, y: 0 }}
         whileHover={{ rotate: 0 }}
         transition={{ duration: 0.8, delay: 0.2, type: "spring", bounce: 0.25 }}
-        className="relative rounded-[1.5rem] p-6 shadow-2xl ring-1 ring-black/5 sm:p-7"
+        className="relative rounded-3xl p-6 shadow-2xl ring-1 ring-black/5 sm:p-7"
         style={{ backgroundColor: palette.paper }}
       >
         <div className="absolute bottom-8 left-0 top-8 flex -translate-x-1/2 flex-col justify-between">

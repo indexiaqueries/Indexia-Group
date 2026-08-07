@@ -10,13 +10,14 @@ import {
 } from "lucide-react";
 
 import AppButton from "../components/common/AppButton";
-import Banner from "../components/common/Banner";
+import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
 import SectionHeader from "../components/common/SectionHeader";
 import BusinessCard from "../components/cards/BusinessCard";
 import PartnerCard from "../components/cards/PartnerCard";
 import financeImg from "../assets/customer-img.png";
 
+// Companies that make up the Indexia group.
 const businesses = [
   {
     name: "Indexia Finance",
@@ -123,6 +124,7 @@ const reasons = [
   },
 ];
 
+// Home page: full-height hero banner + business, partner, and CTA sections.
 const Home = () => (
   <main className="bg-white">
     <SEO

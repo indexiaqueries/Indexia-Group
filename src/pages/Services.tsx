@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/common/SEO";
-import ServicesHero from "../components/services/ServicesHero";
+import ServicesHero from "../components/banners/ServicesHero";
 import productImg from "../assets/product-details.png";
 
+// Service offerings with features shown in the grid.
 const services = [
   { icon: "💼", title: "Financial Consulting",   desc: "Professional, personalised guidance to help you make smarter financial decisions and achieve long-term stability.", features: ["Budget Planning", "Risk Assessment", "Tax Advisory"],           color: "#26ae90" },
   { icon: "📈", title: "Investment Planning",    desc: "Data-driven investment strategies crafted around your goals, timeline, and specific risk tolerance.",                features: ["Portfolio Management", "Equity & Debt", "Mutual Funds"],       color: "#066a9c" },
@@ -12,6 +13,7 @@ const services = [
   { icon: "🔒", title: "Wealth Protection",      desc: "Safeguard your assets and future with comprehensive insurance and estate planning solutions.",                        features: ["Insurance Planning", "Estate Planning", "Asset Protection"],     color: "#286090" },
 ];
 
+// Four-step engagement process.
 const process = [
   { step: "01", title: "Initial Consultation",  desc: "We start with a free consultation to understand your financial goals and current situation.",  color: "#26ae90" },
   { step: "02", title: "Personalised Strategy", desc: "Our experts craft a tailored financial strategy aligned precisely with your goals.",             color: "#066a9c" },
@@ -19,6 +21,7 @@ const process = [
   { step: "04", title: "Ongoing Support",       desc: "Continuous monitoring, reporting, and refinement to ensure you stay on track.",                 color: "#26ae90" },
 ];
 
+// Services page: full-height hero + services grid, process, platform, and CTA sections.
 const Services = () => (
   <>
     <SEO

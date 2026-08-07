@@ -9,7 +9,7 @@ import {
   palette,
   phoneNumbers,
 } from "../../data/contact";
-import PassbookCard from "./PassbookCard";
+import PassbookCard from "../contact/PassbookCard";
 
 const ContactHero = () => (
   <section
