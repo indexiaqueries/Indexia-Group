@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 
 import LocationCard from "../components/cards/LocationCard";
+import SEO from "../components/common/SEO";
 import ContactHero from "../components/contact/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
@@ -38,8 +39,15 @@ ${form.message}
     setSubmitted(true);
   };
 
-  return (
+return (
     <main className="bg-white">
+      <SEO
+        title="Contact Us"
+        description="Reach out to Indexia Group for financial advisory, loans, and more. Contact our Mumbai, Delhi, Surat, and international offices — we reply within 24 hours."
+        keywords="contact Indexia Group, Indexia Group email, financial advisory contact, loan enquiry India, Indexia offices Mumbai Delhi Surat"
+        canonicalPath="/contact"
+      />
+
       <ContactHero />
 
       <section className="bg-[#f8fafc] px-6 py-20 lg:px-8 lg:py-28">

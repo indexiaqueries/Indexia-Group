@@ -11,6 +11,7 @@ import {
 
 import AppButton from "../components/common/AppButton";
 import Banner from "../components/common/Banner";
+import SEO from "../components/common/SEO";
 import SectionHeader from "../components/common/SectionHeader";
 import BusinessCard from "../components/cards/BusinessCard";
 import PartnerCard from "../components/cards/PartnerCard";
@@ -124,6 +125,13 @@ const reasons = [
 
 const Home = () => (
   <main className="bg-white">
+    <SEO
+      title="Home"
+      description="Indexia Group is a diversified holding of companies spanning finance, trade, agriculture, logistics, securities, social impact, and advertising — building businesses that empower clients, partners, and communities."
+      keywords="Indexia Group, multi-business group, financial services India, trade and logistics, agro fertilizers, securities, advertising, wealth management"
+      canonicalPath="/"
+    />
+
     <Banner title="Indexia Group" description="Multi-business group" />
 
     <section className="section-pad bg-white">

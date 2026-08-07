@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import AboutHero from "../components/about/AboutHero";
+import SEO from "../components/common/SEO";
 import customerImg from "../assets/customer-img.png";
-import productImg  from "../assets/product-details.png";
+import productImg from "../assets/product-details.png";
 
 const values = [
   { icon: "🎯", title: "Our Mission", desc: "To provide accessible, reliable, and impactful financial solutions that empower individuals and businesses across India.", color: "#26ae90" },
@@ -17,28 +18,14 @@ const team = [
 
 const About = () => (
   <>
+    <SEO
+      title="About Us"
+      description="Discover Indexia Group — a customer-focused financial services group delivering reliable, growth-oriented financial solutions for individuals and businesses across India since 2014."
+      keywords="Indexia Group, about Indexia, financial services group India, financial advisory company, trusted financial partner"
+      canonicalPath="/about"
+    />
 
-    {/* ── Hero ── */}
-    <section style={{ background: "linear-gradient(110deg, #044e74 0%, #066a9c 55%, #286090 100%)", padding: "88px 0" }}>
-      <div className="container" style={{ textAlign: "center" }}>
-        <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#f2f231", marginBottom: "14px" }}>
-          About Indexia Group
-        </p>
-        <h1 style={{ fontSize: "clamp(30px,5vw,54px)", fontWeight: 800, color: "#fff", lineHeight: 1.15, marginBottom: "20px" }}>
-          Creating Better Financial Opportunities
-        </h1>
-        <p style={{ fontSize: "17px", lineHeight: 1.8, color: "rgba(255,255,255,0.82)", maxWidth: "580px", margin: "0 auto 32px" }}>
-          A customer-focused financial services company committed to delivering reliable, growth-oriented solutions for individuals and businesses.
-        </p>
-        <Link to="/contact" style={{
-          display: "inline-flex", alignItems: "center", gap: "8px",
-          background: "#26ae90", color: "#fff", fontWeight: 700, fontSize: "14px",
-          padding: "13px 28px", borderRadius: "8px", textDecoration: "none",
-        }}>
-          Talk to Us →
-        </Link>
-      </div>
-    </section>
+    <AboutHero />
 
     {/* ── Story ── */}
     <section style={{ background: "#fff", padding: "88px 0" }}>

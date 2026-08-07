@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import SEO from "../components/common/SEO";
+import ServicesHero from "../components/services/ServicesHero";
 import productImg from "../assets/product-details.png";
 
 const services = [
@@ -19,19 +21,14 @@ const process = [
 
 const Services = () => (
   <>
+    <SEO
+      title="Services"
+      description="Explore Indexia Group's financial services — financial consulting, investment planning, business solutions, loan & credit advisory, and wealth protection for individuals and businesses across India."
+      keywords="Indexia Group services, financial consulting India, investment planning, business solutions, loan advisory, wealth protection, financial services"
+      canonicalPath="/services"
+    />
 
-    {/* ── Hero ── */}
-    <section style={{ background: "linear-gradient(110deg, #044e74 0%, #066a9c 55%, #286090 100%)", padding: "88px 0" }}>
-      <div className="container" style={{ textAlign: "center" }}>
-        <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#f2f231", marginBottom: "14px" }}>What We Offer</p>
-        <h1 style={{ fontSize: "clamp(30px,5vw,54px)", fontWeight: 800, color: "#fff", lineHeight: 1.15, marginBottom: "20px" }}>
-          Financial Solutions That Support Growth
-        </h1>
-        <p style={{ fontSize: "17px", lineHeight: 1.8, color: "rgba(255,255,255,0.82)", maxWidth: "560px", margin: "0 auto" }}>
-          From consulting to investment planning, our services are designed to meet you wherever you are on your financial journey.
-        </p>
-      </div>
-    </section>
+    <ServicesHero />
 
     {/* ── Services Grid ── */}
     <section style={{ background: "#f0f9ff", padding: "88px 0" }}>
