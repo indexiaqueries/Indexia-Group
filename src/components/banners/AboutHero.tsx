@@ -62,7 +62,6 @@ const AboutHero = () => (
         </div>
       </motion.div>
 
-      
       <motion.div
         initial={{ opacity: 0, rotate: -8, y: 30 }}
         animate={{ opacity: 1, rotate: -3, y: 0 }}
@@ -128,3 +127,4 @@ const AboutHero = () => (
 );
 
 export default AboutHero;
+

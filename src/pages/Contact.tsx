@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import type { ChangeEvent, SubmitEvent } from "react";
 
@@ -12,19 +10,13 @@ import { accent, branches, initialContactForm } from "../data/contact";
 import type { ContactFormData } from "../data/contact";
 
 const Contact = () => {
-  const [form, setForm] = useState<ContactFormData>(initialContactForm); 
-
-  const [submitted, setSubmitted] = useState(false);                     
-
-
-  
+  const [form, setForm] = useState<ContactFormData>(initialContactForm);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setForm((previous) => ({ ...previous, [name]: value }));
   };
-
-  
 
   const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -47,7 +39,7 @@ ${form.message}
     setSubmitted(true);
   };
 
-return (
+  return (
     <main className="bg-white">
       <SEO
         title="Contact Us"

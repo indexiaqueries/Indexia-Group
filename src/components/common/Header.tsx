@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/IndexiaGroup_Logo.webp";
 
-
-
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -12,24 +10,19 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);   
-
-  const [scrolled, setScrolled] = useState(false);   
-
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    
-
     const onScroll = () => setScrolled(window.scrollY > 100);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isWhite = scrolled; 
-
+  const isWhite = scrolled;
 
   return (
-<div className="fixed top-0 left-0 right-0 z-999 flex justify-center px-3 pt-3 sm:px-5 sm:pt-4.5 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 z-999 flex justify-center px-3 pt-3 sm:px-5 sm:pt-4.5 pointer-events-none">
       <div className="w-full max-w-295 pointer-events-auto">
         <div
           className={`flex items-center justify-between gap-4 rounded-full border shadow-[0_8px_32px_rgba(2,16,26,0.18)] backdrop-blur-[14px] transition-all duration-300 sm:gap-6 ${
@@ -38,7 +31,6 @@ const Header = () => {
               : "border-black/5 py-2 px-4 sm:px-6"
           }`}
         >
-          
           <NavLink to="/" className="shrink-0 group">
             <img
               src={logo}
@@ -49,7 +41,6 @@ const Header = () => {
             />
           </NavLink>
 
-          
           <nav className="hidden items-center gap-1 rounded-full p-1 min-[900px]:flex bg-white/7">
             {navItems.map((item) => (
               <NavLink
@@ -72,7 +63,6 @@ const Header = () => {
             ))}
           </nav>
 
-          
           <div className="flex items-center gap-2.5 shrink-0">
             <NavLink
               to="/contact"
@@ -108,7 +98,6 @@ const Header = () => {
           </div>
         </div>
 
-        
         {menuOpen && (
           <div
             className={`mx-auto mt-2 overflow-hidden rounded-[22px] shadow-[0_12px_32px_rgba(2,16,26,0.2)] backdrop-blur-lg ${

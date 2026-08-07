@@ -1,30 +1,26 @@
-
 @import "tailwindcss";
 
-
 :root {
-  --color-teal: #26ae90;   
-  --color-blue: #066a9c;   
-  --color-blue-2: #286090; 
-  --color-yellow: #f2f231; 
-  --color-gray: #7b7b7b;   
-  --color-ink: #111827;    
-  --color-muted: #6b7280;  
-  --color-soft: #f8fafc;   
-  --color-deep: #044e74;   
+  --color-teal: #26ae90;
+  --color-blue: #066a9c;
+  --color-blue-2: #286090;
+  --color-yellow: #f2f231;
+  --color-gray: #7b7b7b;
+  --color-ink: #111827;
+  --color-muted: #6b7280;
+  --color-soft: #f8fafc;
+  --color-deep: #044e74;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
   scrollbar-color: var(--color-teal) var(--color-deep);
   scrollbar-width: thin;
 }
-
 
 html::-webkit-scrollbar {
   width: 8px;
@@ -65,8 +61,6 @@ ul {
   list-style: none;
 }
 
-
-
 .container {
   margin-inline: auto;
   max-width: 1200px;
@@ -81,7 +75,6 @@ ul {
 .section-soft {
   background: var(--color-soft);
 }
-
 
 .section-title {
   color: var(--color-blue);
@@ -106,8 +99,6 @@ ul {
   text-transform: uppercase;
 }
 
-
-
 .shared-card {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -120,7 +111,6 @@ ul {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
-
 
 .accent-card {
   overflow: hidden;
@@ -142,7 +132,6 @@ ul {
 .accent-card:hover::before {
   transform: scaleX(1);
 }
-
 
 @media (min-width: 768px) {
   .container {

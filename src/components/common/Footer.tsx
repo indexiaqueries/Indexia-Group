@@ -33,7 +33,6 @@ const socials = [
   { icon: FiFacebook, href: "https://www.facebook.com" },
 ];
 
-// Real contact details pulled from the shared source of truth.
 const contactInfo = [
   { icon: FiMail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
   { icon: FiPhone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
@@ -148,7 +147,7 @@ const Footer = () => {
                       <span className="mt-0.5 shrink-0 text-[#26ae90]">
                         <Icon className="h-4 w-4" />
                       </span>
-                      <span className="break-words">{item.text}</span>
+                      <span className="wrap-break-word">{item.text}</span>
                     </span>
                   );
                   return item.href ? (

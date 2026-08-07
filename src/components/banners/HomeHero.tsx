@@ -1,204 +1,187 @@
-
-
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
-import heroImg1 from "../../assets/hero-image1.webp";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import heroImg1 from "../../assets/hero-image1.png";
 import heroImg2 from "../../assets/hero-image2.webp";
 import heroImg3 from "../../assets/hero-image3.webp";
 
 type BannerProps = {
-  title: string;
-  description: string;
   buttonText?: string;
   buttonLink?: string;
 };
 
+type Panel = {
+  id: number;
+  tag: string;
+  heading: string;
+  sub: string;
+  image: string;
+};
 
-
-const slides = [
+// 8 panels, mapped to Indexia's actual business units rather than
+// arbitrary repeats — each image is shared by the units it belongs to.
+const panels: Panel[] = [
   {
-    tag: "Multi-Business Group",
+    id: 0,
+    tag: "Indexia Group",
     heading: "One Group.\nMultiple Solutions.",
     sub: "From finance and logistics to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
     image: heroImg1,
   },
   {
-    tag: "Finance & Advisory",
-    heading: "Stronger Finances.\nSmarter Decisions.",
-    sub: "Indexia Finance, Finserve and Securities deliver end-to-end financial solutions — from planning and investments to risk protection and compliance.",
+    id: 1,
+    tag: "Indexia Finance",
+    heading: "Plan With Confidence.\nInvest With Clarity.",
+    sub: "Comprehensive financial planning, wealth management and insurance solutions built around your goals.",
     image: heroImg2,
   },
   {
-    tag: "Trade, Agro & Impact",
-    heading: "Moving Goods,\nGrowing Futures.",
-    sub: "Through Overseas, Agro Bio Fertilizers, Warehouse and Foundation, we enable global trade, sustainable farming and meaningful community impact.",
+    id: 2,
+    tag: "Indexia Finserve",
+    heading: "Credit That\nMoves With You.",
+    sub: "Fast, flexible lending and credit facilitation for individuals and businesses ready to grow.",
+    image: heroImg2,
+  },
+  {
+    id: 3,
+    tag: "Indexia Securities",
+    heading: "Markets Made\nAccessible.",
+    sub: "Broking, research and portfolio advisory that turns market complexity into informed action.",
+    image: heroImg2,
+  },
+  {
+    id: 4,
+    tag: "Indexia Overseas",
+    heading: "Trade Without\nBorders.",
+    sub: "Import-export and global trade facilitation connecting local businesses to international markets.",
+    image: heroImg3,
+  },
+  {
+    id: 5,
+    tag: "Agro Bio Fertilizers",
+    heading: "Growing Soil.\nGrowing Yield.",
+    sub: "Sustainable, bio-based fertilizers that improve farm productivity while protecting the land.",
+    image: heroImg3,
+  },
+  {
+    id: 6,
+    tag: "Indexia Warehouse",
+    heading: "Storage Built\nFor Scale.",
+    sub: "Modern warehousing and logistics infrastructure that keeps goods moving efficiently.",
+    image: heroImg3,
+  },
+  {
+    id: 7,
+    tag: "Indexia Foundation",
+    heading: "Impact Beyond\nBusiness.",
+    sub: "Community programs in education, health and livelihood that give back where we operate.",
     image: heroImg3,
   },
 ];
 
-const INTERVAL = 5000;          
-
-const BG_DURATION = 700;        
-
-const TEXT_FADE_OUT = 600;      
-
-const TEXT_FADE_IN = 420;       
-
-const TEXT_ZOOM_DURATION = 6000; 
-
+const AUTOPLAY_INTERVAL = 6000;
+const MARQUEE_SECONDS = 38;
 
 const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: BannerProps) => {
-  const [current, setCurrent] = useState(0);
-  const [nextSlide, setNextSlide] = useState<number | null>(null);
-  const [animating, setAnimating] = useState(false);
-  const [textVisible, setTextVisible] = useState(true);
-  const [textZoomed, setTextZoomed] = useState(false);
+  const [currentId, setCurrentId] = useState(0);
+  const [filmstripPaused, setFilmstripPaused] = useState(false);
+  const prefersReducedMotion = useReducedMotion();
 
-  const bgTimeoutRef = useRef<number | null>(null);
-  const textOutTimeoutRef = useRef<number | null>(null);
-  const textInTimeoutRef = useRef<number | null>(null);
-  const textZoomTimeoutRef = useRef<number | null>(null);
+  const autoplayRef = useRef<number | null>(null);
 
-  const goTo = useCallback(
-    (idx: number) => {
-      if (animating || idx === current) return;
+  const currentIndex = panels.findIndex((p) => p.id === currentId);
+  const current = panels[currentIndex];
 
-      setNextSlide(idx);
-      setAnimating(true);
-
-      
-
-      setTextVisible(false);
-      setTextZoomed(false);
-
-      if (bgTimeoutRef.current) window.clearTimeout(bgTimeoutRef.current);
-      if (textOutTimeoutRef.current) window.clearTimeout(textOutTimeoutRef.current);
-      if (textInTimeoutRef.current) window.clearTimeout(textInTimeoutRef.current);
-      if (textZoomTimeoutRef.current) window.clearTimeout(textZoomTimeoutRef.current);
-
-      
-
-      textOutTimeoutRef.current = window.setTimeout(() => {
-        setCurrent(idx);
-      }, TEXT_FADE_OUT);
-
-      
-
-      textInTimeoutRef.current = window.setTimeout(() => {
-        setTextVisible(true);
-      }, TEXT_FADE_OUT + 30);
-
-      
-
-      textZoomTimeoutRef.current = window.setTimeout(() => {
-        setTextZoomed(true);
-      }, TEXT_FADE_OUT + 30 + TEXT_FADE_IN);
-
-      
-
-      bgTimeoutRef.current = window.setTimeout(() => {
-        setNextSlide(null);
-        setAnimating(false);
-      }, BG_DURATION);
-    },
-    [animating, current]
-  );
-
-  const prev = () => goTo((current - 1 + slides.length) % slides.length);
-  const next = useCallback(() => goTo((current + 1) % slides.length), [current, goTo]);
-
-  useEffect(() => {
-    const t = window.setInterval(next, INTERVAL);
-    return () => window.clearInterval(t);
-  }, [next]);
-
-  
-
-  useEffect(() => {
-    const t = window.setTimeout(() => setTextZoomed(true), TEXT_FADE_IN);
-    return () => window.clearTimeout(t);
-    
-
+  const restartAutoplay = useCallback(() => {
+    if (autoplayRef.current) window.clearInterval(autoplayRef.current);
+    autoplayRef.current = window.setInterval(() => {
+      setCurrentId((prev) => {
+        const idx = panels.findIndex((p) => p.id === prev);
+        return panels[(idx + 1) % panels.length].id;
+      });
+    }, AUTOPLAY_INTERVAL);
   }, []);
 
   useEffect(() => {
+    restartAutoplay();
     return () => {
-      if (bgTimeoutRef.current) window.clearTimeout(bgTimeoutRef.current);
-      if (textOutTimeoutRef.current) window.clearTimeout(textOutTimeoutRef.current);
-      if (textInTimeoutRef.current) window.clearTimeout(textInTimeoutRef.current);
-      if (textZoomTimeoutRef.current) window.clearTimeout(textZoomTimeoutRef.current);
+      if (autoplayRef.current) window.clearInterval(autoplayRef.current);
     };
-  }, []);
+  }, [restartAutoplay]);
 
-  const activeSlide = slides[current];
-  const incomingSlide = nextSlide !== null ? slides[nextSlide] : null;
+  const selectPanel = (id: number) => {
+    if (id === currentId) return;
+    setCurrentId(id);
+    restartAutoplay();
+  };
+
+  const prevPanel = () => selectPanel(panels[(currentIndex - 1 + panels.length) % panels.length].id);
+  const nextPanel = () => selectPanel(panels[(currentIndex + 1) % panels.length].id);
+
+  // Doubled list drives the seamless marquee loop. Only the first copy
+  // carries a layoutId — that's what the hero image morphs from/to.
+  // The second copy is purely decorative continuation of the strip.
+  const marqueeList = [...panels, ...panels];
 
   return (
-    <>
+    <section className="relative overflow-hidden bg-[#044e74]">
       <style>{`
         @keyframes bnr-pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50%      { opacity: .5; transform: scale(1.5); }
         }
-        @keyframes bnr-slide-in {
-          from {transform: scale(1) translateX(100%); }
-          to   {transform: scale(1) translateX(0); }
+        @keyframes bnr-marquee {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
         }
-        @keyframes bnr-text-zoom {
-          from { transform: translateY(0) scale(1); }
-          to   { transform: translateY(0) scale(1.25); }
+        .bnr-marquee-track {
+          animation: bnr-marquee ${MARQUEE_SECONDS}s linear infinite;
+        }
+        .bnr-marquee-track.paused,
+        .bnr-marquee-track.reduced {
+          animation-play-state: paused;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .bnr-marquee-track { animation: none; }
         }
       `}</style>
 
-      <section className="relative overflow-hidden bg-[#044e74]">
-        <div className="relative min-h-[92svh] sm:min-h-screen flex items-center justify-center">
-
-          
-          {incomingSlide && (
-            <img
-              key={`next-${nextSlide}`}
-              src={incomingSlide.image}
+      {/* ---------- HERO ---------- */}
+      <div className="relative min-h-[86svh] sm:min-h-[90vh] flex items-center justify-center">
+        <div className="absolute inset-0">
+          <AnimatePresence initial={false}>
+            <motion.img
+              key={current.id}
+              layoutId={`panel-image-${current.id}`}
+              src={current.image}
               alt=""
               aria-hidden="true"
               width={1408}
               height={768}
               decoding="async"
-              className="absolute inset-0 z-1 w-full h-full object-cover object-center animate-[bnr-slide-in_700ms_ease_forwards]"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+              transition={{
+                layout: prefersReducedMotion
+                  ? { duration: 0 }
+                  : { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
+              }}
             />
-          )}
+          </AnimatePresence>
+        </div>
 
-          
-          <img
-            key={`current-${current}`}
-            src={activeSlide.image}
-            alt=""
-            aria-hidden="true"
-            width={1408}
-            height={768}
-            decoding="async"
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-[transform] duration-700 ease-in-out will-change-transform ${
-              animating ? "scale-[1.02] translate-x-[-8%]" : "scale-100"
-            }`}
-          />
+        <div className="absolute inset-0 z-2 bg-[linear-gradient(180deg,rgba(2,16,26,0.72)_0%,rgba(2,16,26,0.45)_32%,rgba(2,16,26,0.62)_68%,rgba(2,16,26,0.88)_100%)]" />
 
-          
-          <div className="absolute inset-0 z-2 bg-[linear-gradient(180deg,rgba(2,16,26,0.72)_0%,rgba(2,16,26,0.45)_32%,rgba(2,16,26,0.62)_68%,rgba(2,16,26,0.88)_100%)]" />
+        <div className="absolute bottom-0 left-0 z-2 h-20 w-full bg-linear-to-t from-[#286090]/30 via-[#26ae90]/30 to-transparent pointer-events-none" />
 
-          
-          <div className="absolute bottom-0 left-0 z-2 h-20 w-full bg-linear-to-t from-[#286090]/30 via-[#26ae90]/30 to-transparent pointer-events-none" />
-
-          <div className="container relative z-3 w-full flex flex-col items-center text-center px-5 pt-24 pb-30 sm:pt-30 sm:pb-35">
-            <div
-              className={`flex flex-col items-center max-w-190 transition-[opacity,transform] will-change-[opacity,transform] ${
-                textVisible
-                  ? "opacity-100 translate-y-0 duration-420 ease-out"
-                  : "opacity-0 -translate-y-2.5 duration-400 ease-in"
-              }`}
-              style={
-                textZoomed
-                  ? { animation: `bnr-text-zoom ${TEXT_ZOOM_DURATION}ms ease-out forwards` }
-                  : undefined
-              }
+        <div className="container relative z-3 w-full flex flex-col items-center text-center px-5 pt-24 pb-44 sm:pt-30 sm:pb-52">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current.id}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.42, ease: "easeOut" }}
+              className="flex flex-col items-center max-w-190"
             >
               <div className="flex flex-row gap-3 flex-wrap justify-center">
                 <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
@@ -211,74 +194,104 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
                 <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
                   <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
-                    {activeSlide.tag}
+                    {current.tag}
                   </span>
                 </div>
               </div>
 
               <h1 className="text-[clamp(32px,5.5vw,60px)] font-extrabold text-white leading-[1.14] mb-5.5 whitespace-pre-line">
-                {activeSlide.heading}
+                {current.heading}
               </h1>
 
               <p className="text-[17px] leading-[1.8] text-white/85 max-w-140">
-                {activeSlide.sub}
+                {current.sub}
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </AnimatePresence>
 
-          
-          <div className="absolute bottom-25 left-0 w-full py-6 md:py-10 z-3">
-            <div className="flex flex-wrap gap-3 justify-center">
-              <Link
-                to={buttonLink}
-                className="inline-flex items-center gap-2 bg-[#26ae90] hover:bg-[#1e9478] text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
-              >
-                {buttonText}
-                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link
-                to="/about"
-                className="inline-flex items-center gap-2 border-2 border-white/45 hover:border-white/80 hover:bg-white/10 text-white font-bold text-sm px-7 py-3.25 rounded-lg transition-colors duration-200"
-              >
-                About Indexia
-              </Link>
-            </div>
+          <div className="flex flex-wrap gap-3 justify-center mt-9">
+            <Link
+              to={buttonLink}
+              className="inline-flex items-center gap-2 bg-[#26ae90] hover:bg-[#1e9478] text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
+            >
+              {buttonText}
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 border-2 border-white/45 hover:border-white/80 hover:bg-white/10 text-white font-bold text-sm px-7 py-3.25 rounded-lg transition-colors duration-200"
+            >
+              About Indexia
+            </Link>
           </div>
-
-          
-          <div className="absolute left-1/2 bottom-7 -translate-x-1/2 z-10 flex gap-2">
-            {slides.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => goTo(i)}
-                aria-label={`Slide ${i + 1}`}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === current ? "w-6 bg-[#f2f231]" : "w-2 bg-white/35"
-                }`}
-              />
-            ))}
-          </div>
-
-          
-          <button
-            onClick={prev}
-            aria-label="Previous slide"
-            className="absolute top-1/2 -translate-y-1/2 left-5 md:left-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
-          >
-            ‹
-          </button>
-          <button
-            onClick={next}
-            aria-label="Next slide"
-            className="absolute top-1/2 -translate-y-1/2 right-5 md:right-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
-          >
-            ›
-          </button>
         </div>
-      </section>
-    </>
+
+        <button
+          onClick={prevPanel}
+          aria-label="Previous panel"
+          className="absolute top-1/2 -translate-y-1/2 left-5 md:left-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+        >
+          ‹
+        </button>
+        <button
+          onClick={nextPanel}
+          aria-label="Next panel"
+          className="absolute top-1/2 -translate-y-1/2 right-5 md:right-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+        >
+          ›
+        </button>
+      </div>
+
+      {/* ---------- FILMSTRIP ---------- */}
+      <div
+        className="relative z-4 border-t border-white/10 bg-[#02101a]/70 backdrop-blur-sm py-4"
+        onMouseEnter={() => setFilmstripPaused(true)}
+        onMouseLeave={() => setFilmstripPaused(false)}
+      >
+        <div className="overflow-hidden">
+          <div
+            className={`flex gap-4 w-max bnr-marquee-track ${
+              filmstripPaused || prefersReducedMotion ? "paused" : ""
+            }`}
+          >
+            {marqueeList.map((p, i) => {
+              const isOriginal = i < panels.length;
+              const isActive = p.id === currentId;
+              return (
+                <button
+                  key={`${p.id}-${i}`}
+                  onClick={() => selectPanel(p.id)}
+                  aria-label={`Show ${p.tag}`}
+                  aria-current={isActive}
+                  tabIndex={isOriginal ? 0 : -1}
+                  className={`relative shrink-0 w-36 h-20 sm:w-44 sm:h-24 rounded-lg overflow-hidden border-2 transition-colors duration-200 ${
+                    isActive ? "border-[#f2f231]" : "border-white/15 hover:border-white/40"
+                  }`}
+                >
+                  {isOriginal ? (
+                    <motion.img
+                      layoutId={`panel-image-${p.id}`}
+                      src={p.image}
+                      alt={p.tag}
+                      className="w-full h-full object-cover"
+                      animate={{ opacity: isActive ? 0.35 : 1 }}
+                      transition={{ opacity: { duration: 0.3 } }}
+                    />
+                  ) : (
+                    <img src={p.image} alt="" aria-hidden="true" className="w-full h-full object-cover" />
+                  )}
+                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent text-[10px] font-semibold text-white px-2 py-1.5 text-left truncate">
+                    {p.tag}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

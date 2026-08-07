@@ -3,7 +3,6 @@ import SEO from "../components/common/SEO";
 import ServicesHero from "../components/banners/ServicesHero";
 import productImg from "../assets/product-details.webp";
 
-// Service offerings with features shown in the grid.
 const services = [
   { icon: "💼", title: "Financial Consulting",   desc: "Professional, personalised guidance to help you make smarter financial decisions and achieve long-term stability.", features: ["Budget Planning", "Risk Assessment", "Tax Advisory"],           color: "#26ae90" },
   { icon: "📈", title: "Investment Planning",    desc: "Data-driven investment strategies crafted around your goals, timeline, and specific risk tolerance.",                features: ["Portfolio Management", "Equity & Debt", "Mutual Funds"],       color: "#066a9c" },
@@ -13,7 +12,6 @@ const services = [
   { icon: "🔒", title: "Wealth Protection",      desc: "Safeguard your assets and future with comprehensive insurance and estate planning solutions.",                        features: ["Insurance Planning", "Estate Planning", "Asset Protection"],     color: "#286090" },
 ];
 
-// Four-step engagement process.
 const process = [
   { step: "01", title: "Initial Consultation",  desc: "We start with a free consultation to understand your financial goals and current situation.",  color: "#26ae90" },
   { step: "02", title: "Personalised Strategy", desc: "Our experts craft a tailored financial strategy aligned precisely with your goals.",             color: "#066a9c" },
@@ -21,10 +19,8 @@ const process = [
   { step: "04", title: "Ongoing Support",       desc: "Continuous monitoring, reporting, and refinement to ensure you stay on track.",                 color: "#26ae90" },
 ];
 
-// Responsive section wrapper style: fluid vertical padding.
 const sectionPad = { padding: "clamp(48px, 8vw, 88px) 0" };
 
-// Services page: full-height hero + services grid, process, platform, and CTA sections.
 const Services = () => (
   <>
     <SEO
@@ -36,7 +32,6 @@ const Services = () => (
 
     <ServicesHero />
 
-    {/* Services Grid */}
     <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
         <div className="mx-auto mb-12 max-w-[560px] text-center sm:mb-14">
@@ -80,7 +75,6 @@ const Services = () => (
       </div>
     </section>
 
-    {/* How it works */}
     <section style={{ background: "#fff", ...sectionPad }}>
       <div className="container">
         <div className="mx-auto mb-12 max-w-[520px] text-center sm:mb-14">
@@ -106,7 +100,6 @@ const Services = () => (
       </div>
     </section>
 
-    {/* Platform image strip */}
     <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
@@ -132,7 +125,6 @@ const Services = () => (
       </div>
     </section>
 
-    {/* CTA */}
     <section style={{ background: "linear-gradient(110deg, #066a9c 0%, #26ae90 100%)", ...sectionPad }}>
       <div className="container" style={{ textAlign: "center" }}>
         <h2 className="mb-4 text-[clamp(24px,4vw,40px)] font-extrabold text-white">

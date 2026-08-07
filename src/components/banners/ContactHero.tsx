@@ -30,7 +30,7 @@ const ContactHero = () => (
       style={{ background: `radial-gradient(circle at 85% 15%, ${palette.teal}35, transparent 45%)` }}
     />
 
-<div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
+    <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ const ContactHero = () => (
         >
           <span>{String(branches.length).padStart(2, "0")} offices</span>
           <span>{String(phoneNumbers.length).padStart(2, "0")} direct lines</span>
-          <span>&lt; 24 hr avg. reply</span>
+          <span>{"< 24 hr avg. reply"}</span>
         </div>
       </motion.div>
 
@@ -93,3 +93,4 @@ const ContactHero = () => (
 );
 
 export default ContactHero;
+

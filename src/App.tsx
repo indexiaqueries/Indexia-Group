@@ -1,5 +1,3 @@
-
-
 import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
@@ -7,3 +5,4 @@ const App = () => {
 };
 
 export default App;
+

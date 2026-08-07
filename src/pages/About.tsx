@@ -3,14 +3,12 @@ import SEO from "../components/common/SEO";
 import customerImg from "../assets/customer-img.webp";
 import productImg from "../assets/product-details.webp";
 
-// Mission, vision, and values cards.
 const values = [
   { icon: "🎯", title: "Our Mission", desc: "To provide accessible, reliable, and impactful financial solutions that empower individuals and businesses across India.", color: "#26ae90" },
   { icon: "👁️", title: "Our Vision",  desc: "To become India's most trusted financial partner — known for integrity, expertise, and a client-first approach.",          color: "#066a9c" },
   { icon: "💡", title: "Our Values",  desc: "Transparency, dedication, and innovation drive everything we do. Client success sits at the heart of every decision.",     color: "#286090" },
 ];
 
-// Team member profiles.
 const team = [
   { name: "Ankit Verma",  role: "Founder & CEO",      initial: "A", color: "#26ae90" },
   { name: "Sneha Joshi",  role: "Head of Finance",     initial: "S", color: "#066a9c" },
@@ -18,10 +16,8 @@ const team = [
   { name: "Neha Singh",   role: "Client Relations",    initial: "N", color: "#26ae90" },
 ];
 
-// Responsive section wrapper style: fluid vertical padding, adapts to any screen.
 const sectionPad = { padding: "clamp(48px, 8vw, 88px) 0" };
 
-// About page: full-height hero + story, values, platform, and team sections.
 const About = () => (
   <>
     <SEO
@@ -33,11 +29,9 @@ const About = () => (
 
     <AboutHero />
 
-    {/* Story */}
     <section style={{ background: "#fff", ...sectionPad }}>
       <div className="container">
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
-          {/* Image */}
           <div className="relative">
             <img
               src={customerImg}
@@ -55,7 +49,6 @@ const About = () => (
             </div>
           </div>
 
-          {/* Text */}
           <div>
             <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Our Story</p>
             <h2 className="mb-5 text-[clamp(24px,4vw,38px)] font-extrabold leading-tight text-[#111827]">
@@ -80,7 +73,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* Values */}
     <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
         <div className="mx-auto mb-12 max-w-[540px] text-center sm:mb-14">
@@ -107,7 +99,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* How we work (product image) */}
     <section style={{ background: "#fff", ...sectionPad }}>
       <div className="container">
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
@@ -135,7 +126,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* Team */}
     <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
         <div className="mx-auto mb-12 max-w-[480px] text-center sm:mb-14">

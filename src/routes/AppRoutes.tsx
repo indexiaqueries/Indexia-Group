@@ -3,13 +3,11 @@ import { Route, Routes } from "react-router-dom";
 
 import MainLayout from "../layout/MainLayout";
 
-// Route-level code splitting via React.lazy — each page loads only when needed.
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
 const Services = lazy(() => import("../pages/Services"));
 const Contact = lazy(() => import("../pages/Contact"));
 
-// Minimal loading state shown while a chunk is fetched.
 const PageFallback = () => (
   <div className="flex min-h-screen items-center justify-center bg-white">
     <div className="flex flex-col items-center gap-3">
@@ -33,3 +31,4 @@ const AppRoutes = () => (
 );
 
 export default AppRoutes;
+

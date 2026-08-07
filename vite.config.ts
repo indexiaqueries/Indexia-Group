@@ -5,8 +5,6 @@ import type { Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// vite-plugin-compression ships ESM + CJS. The ESM type defs trip up the
-// TypeScript checker in this setup, so load the CJS build with createRequire.
 const require = createRequire(import.meta.url)
 const viteCompression = require('vite-plugin-compression') as (
   options?: {
@@ -22,12 +20,10 @@ const viteCompression = require('vite-plugin-compression') as (
   },
 ) => Plugin
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    // Brotli + gzip compression for JS/CSS/HTML to reduce network payload.
     viteCompression({ algorithm: 'brotliCompress', ext: '.br', threshold: 1024 }),
     viteCompression({ algorithm: 'gzip', ext: '.gz', threshold: 1024 }),
   ],
@@ -37,7 +33,6 @@ export default defineConfig({
     },
   },
   build: {
-    // Reduce the number of chunks / code-split vendor libs for better caching.
     reportCompressedSize: true,
     chunkSizeWarningLimit: 700,
     rollupOptions: {
@@ -56,3 +51,4 @@ export default defineConfig({
     },
   },
 })
+

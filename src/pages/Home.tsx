@@ -17,8 +17,6 @@ import BusinessCard from "../components/cards/BusinessCard";
 import PartnerCard from "../components/cards/PartnerCard";
 import financeImg from "../assets/customer-img.webp";
 
-
-
 const businesses = [
   {
     name: "Indexia Finance",
@@ -125,8 +123,6 @@ const reasons = [
   },
 ];
 
-
-
 const Home = () => (
   <main className="bg-white">
     <SEO
@@ -199,3 +195,4 @@ const Home = () => (
 );
 
 export default Home;
+

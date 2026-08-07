@@ -62,7 +62,6 @@ const ServicesHero = () => (
         </div>
       </motion.div>
 
-      
       <motion.div
         initial={{ opacity: 0, rotate: -8, y: 30 }}
         animate={{ opacity: 1, rotate: -3, y: 0 }}
@@ -76,7 +75,7 @@ const ServicesHero = () => (
         />
 
         <div
-          className="relative rounded-[1.5rem] p-7 shadow-2xl ring-1 ring-black/5"
+          className="relative rounded-3xl p-7 shadow-2xl ring-1 ring-black/5"
           style={{ backgroundColor: palette.paper }}
         >
           <div className="flex items-center justify-between border-b border-dashed border-slate-300 pb-4">
@@ -126,3 +125,4 @@ const ServicesHero = () => (
 );
 
 export default ServicesHero;
+
