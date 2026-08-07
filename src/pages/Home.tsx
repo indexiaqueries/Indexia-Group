@@ -156,7 +156,7 @@ const Home = () => (
       </div>
     </section>
 
-    <section className="section-pad bg-[var(--color-deep)] text-white">
+    <section className="section-pad bg-(--color-deep) text-white">
       <div className="container">
         <SectionHeader
           light

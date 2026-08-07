@@ -64,7 +64,7 @@ const ContactHero = () => (
 
           <a
             href="tel:+911146291155"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-[var(--color-blue)]"
+            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-blue)"
           >
             <Phone size={17} />
             Call Us Now
