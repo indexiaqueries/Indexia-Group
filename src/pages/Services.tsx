@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/common/SEO";
 import ServicesHero from "../components/banners/ServicesHero";
-import productImg from "../assets/product-details.png";
+import productImg from "../assets/product-details.webp";
 
 // Service offerings with features shown in the grid.
 const services = [
@@ -21,6 +21,9 @@ const process = [
   { step: "04", title: "Ongoing Support",       desc: "Continuous monitoring, reporting, and refinement to ensure you stay on track.",                 color: "#26ae90" },
 ];
 
+// Responsive section wrapper style: fluid vertical padding.
+const sectionPad = { padding: "clamp(48px, 8vw, 88px) 0" };
+
 // Services page: full-height hero + services grid, process, platform, and CTA sections.
 const Services = () => (
   <>
@@ -33,85 +36,95 @@ const Services = () => (
 
     <ServicesHero />
 
-    {/* ── Services Grid ── */}
-    <section style={{ background: "#f0f9ff", padding: "88px 0" }}>
+    {/* Services Grid */}
+    <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
-        <div style={{ textAlign: "center", maxWidth: "560px", margin: "0 auto 56px" }}>
-          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>Our Services</p>
-          <h2 style={{ fontSize: "clamp(24px,4vw,38px)", fontWeight: 800, color: "#111827" }}>
-            Everything You Need, <span style={{ color: "#066a9c" }}>All in One Place</span>
+        <div className="mx-auto mb-12 max-w-[560px] text-center sm:mb-14">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Our Services</p>
+          <h2 className="text-[clamp(24px,4vw,38px)] font-extrabold text-[#111827]">
+            Everything You Need, <span className="text-[#066a9c]">All in One Place</span>
           </h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))", gap: "28px" }}>
-          {services.map(s => (
+        <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((s) => (
             <div
               key={s.title}
               className="shared-card accent-card"
               style={{ "--card-color": s.color } as React.CSSProperties}
             >
-              <div style={{ width: "58px", height: "58px", borderRadius: "14px", background: `${s.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "28px", marginBottom: "20px" }}>
+              <div
+                className="mb-5 flex h-[58px] w-[58px] items-center justify-center rounded-[14px] text-[28px]"
+                style={{ background: `${s.color}18` }}
+              >
                 {s.icon}
               </div>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#111827", marginBottom: "10px" }}>{s.title}</h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.8, color: "#6b7280", marginBottom: "20px" }}>{s.desc}</p>
-              <ul style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "22px" }}>
-                {s.features.map(f => (
-                  <li key={f} style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px", color: "#374151" }}>
-                    <span style={{ width: "20px", height: "20px", borderRadius: "50%", background: s.color, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "11px", fontWeight: 700, flexShrink: 0 }}>✓</span>
+              <h3 className="mb-2.5 text-lg font-bold text-[#111827]">{s.title}</h3>
+              <p className="mb-5 text-sm leading-[1.8] text-[#6b7280]">{s.desc}</p>
+              <ul className="mb-5 flex flex-col gap-2">
+                {s.features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-[13px] text-[#374151]">
+                    <span
+                      className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold text-white"
+                      style={{ background: s.color }}
+                    >
+                      ✓
+                    </span>
                     {f}
                   </li>
                 ))}
               </ul>
-              <div style={{ height: "3px", width: "40px", borderRadius: "2px", background: s.color }} />
+              <div className="h-[3px] w-10 rounded-sm" style={{ background: s.color }} />
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    {/* ── How it works ── */}
-    <section style={{ background: "#fff", padding: "88px 0" }}>
+    {/* How it works */}
+    <section style={{ background: "#fff", ...sectionPad }}>
       <div className="container">
-        <div style={{ textAlign: "center", maxWidth: "520px", margin: "0 auto 56px" }}>
-          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>Our Process</p>
-          <h2 style={{ fontSize: "clamp(24px,4vw,38px)", fontWeight: 800, color: "#111827" }}>
-            How We <span style={{ color: "#066a9c" }}>Work With You</span>
+        <div className="mx-auto mb-12 max-w-[520px] text-center sm:mb-14">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Our Process</p>
+          <h2 className="text-[clamp(24px,4vw,38px)] font-extrabold text-[#111827]">
+            How We <span className="text-[#066a9c]">Work With You</span>
           </h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: "28px" }}>
-          {process.map(p => (
-            <div key={p.step} style={{ textAlign: "center", padding: "36px 24px", border: "1px solid #e5e7eb", borderRadius: "16px", background: "#fff" }}>
-              <div style={{ width: "60px", height: "60px", borderRadius: "50%", background: `${p.color}18`, border: `2px solid ${p.color}`, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", fontSize: "18px", fontWeight: 800, color: p.color }}>
+        <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+          {process.map((p) => (
+            <div key={p.step} className="rounded-2xl border border-[#e5e7eb] bg-white p-8 text-center">
+              <div
+                className="mx-auto mb-5 flex h-[60px] w-[60px] items-center justify-center rounded-full text-lg font-extrabold"
+                style={{ background: `${p.color}18`, border: `2px solid ${p.color}`, color: p.color }}
+              >
                 {p.step}
               </div>
-              <h3 style={{ fontSize: "16px", fontWeight: 700, color: "#111827", marginBottom: "10px" }}>{p.title}</h3>
-              <p style={{ fontSize: "13px", lineHeight: 1.8, color: "#6b7280" }}>{p.desc}</p>
+              <h3 className="mb-2.5 text-base font-bold text-[#111827]">{p.title}</h3>
+              <p className="text-[13px] leading-[1.8] text-[#6b7280]">{p.desc}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    {/* ── Platform image strip ── */}
-    <section style={{ background: "#f0f9ff", padding: "88px 0" }}>
+    {/* Platform image strip */}
+    <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))", gap: "64px", alignItems: "center" }}>
+        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <img src={productImg} alt="Our platform" style={{ width: "100%", borderRadius: "20px", objectFit: "cover", boxShadow: "0 16px 48px rgba(0,0,0,0.12)" }} />
+            <img src={productImg} alt="Our platform" width={1374} height={577} loading="lazy" decoding="async" className="w-full rounded-[20px] object-cover shadow-[0_16px_48px_rgba(0,0,0,0.12)]" />
           </div>
           <div>
-            <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>Why It Works</p>
-            <h2 style={{ fontSize: "clamp(24px,4vw,36px)", fontWeight: 800, color: "#111827", marginBottom: "18px" }}>
-              Built for Results, <span style={{ color: "#066a9c" }}>Backed by Expertise</span>
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Why It Works</p>
+            <h2 className="mb-5 text-[clamp(24px,4vw,36px)] font-extrabold leading-tight text-[#111827]">
+              Built for Results, <span className="text-[#066a9c]">Backed by Expertise</span>
             </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.85, color: "#6b7280", marginBottom: "28px" }}>
+            <p className="mb-7 text-[15px] leading-[1.85] text-[#6b7280]">
               Every service we offer is designed around a single goal: your financial success. We combine cutting-edge tools with hands-on advisory to deliver real, measurable outcomes.
             </p>
-            <Link to="/contact" style={{
-              display: "inline-flex", alignItems: "center", gap: "8px",
-              background: "#066a9c", color: "#fff", fontWeight: 700, fontSize: "14px",
-              padding: "13px 28px", borderRadius: "8px", textDecoration: "none",
-            }}>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#066a9c] px-7 py-3.5 text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#055780]"
+            >
               Book Free Consultation →
             </Link>
           </div>
@@ -119,21 +132,19 @@ const Services = () => (
       </div>
     </section>
 
-    {/* ── CTA ── */}
-    <section style={{ background: "linear-gradient(110deg, #066a9c 0%, #26ae90 100%)", padding: "88px 0" }}>
+    {/* CTA */}
+    <section style={{ background: "linear-gradient(110deg, #066a9c 0%, #26ae90 100%)", ...sectionPad }}>
       <div className="container" style={{ textAlign: "center" }}>
-        <h2 style={{ fontSize: "clamp(24px,4vw,40px)", fontWeight: 800, color: "#fff", marginBottom: "16px" }}>
+        <h2 className="mb-4 text-[clamp(24px,4vw,40px)] font-extrabold text-white">
           Not Sure Which Service Is Right for You?
         </h2>
-        <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.82)", maxWidth: "460px", margin: "0 auto 36px", lineHeight: 1.8 }}>
+        <p className="mx-auto mb-9 max-w-[460px] text-base leading-[1.8] text-white/80">
           Our experts are ready to help you find the perfect fit. Book a free consultation today.
         </p>
-        <Link to="/contact" style={{
-          display: "inline-flex", alignItems: "center", gap: "8px",
-          background: "#f2f231", color: "#066a9c", fontWeight: 700, fontSize: "14px",
-          padding: "14px 32px", borderRadius: "8px", textDecoration: "none",
-          boxShadow: "0 4px 16px rgba(242,242,49,0.35)",
-        }}>
+        <Link
+          to="/contact"
+          className="inline-flex items-center gap-2 rounded-lg bg-[#f2f231] px-8 py-3.5 text-sm font-bold text-[#066a9c] shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f7f75f]"
+        >
           Book Free Consultation →
         </Link>
       </div>

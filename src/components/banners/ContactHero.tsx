@@ -13,7 +13,7 @@ import PassbookCard from "../contact/PassbookCard";
 
 const ContactHero = () => (
   <section
-    className="relative overflow-hidden min-h-screen flex items-center"
+    className="relative overflow-hidden min-h-[92svh] sm:min-h-screen flex items-center"
     style={{
       background: `linear-gradient(115deg, ${palette.navyDeep} 0%, ${palette.navy} 55%, ${palette.navyMid} 100%)`,
     }}
@@ -30,7 +30,7 @@ const ContactHero = () => (
       style={{ background: `radial-gradient(circle at 85% 15%, ${palette.teal}35, transparent 45%)` }}
     />
 
-    <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
+<div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}

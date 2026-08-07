@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/IndexiaGroup_Logo.gif";
+import logo from "../../assets/IndexiaGroup_Logo.webp";
 
-// Main navigation items shown in the header.
+
+
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -11,38 +12,44 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);   // Mobile menu visibility
-  const [scrolled, setScrolled] = useState(false);   // True once the page is scrolled down
+  const [menuOpen, setMenuOpen] = useState(false);   
+
+  const [scrolled, setScrolled] = useState(false);   
+
 
   useEffect(() => {
-    // Track scroll position to switch navbar style after 100px.
+    
+
     const onScroll = () => setScrolled(window.scrollY > 100);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isWhite = scrolled; // scrolled → dark navbar background
+  const isWhite = scrolled; 
+
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-999 flex justify-center px-5 pt-4.5 pointer-events-none">
+<div className="fixed top-0 left-0 right-0 z-999 flex justify-center px-3 pt-3 sm:px-5 sm:pt-4.5 pointer-events-none">
       <div className="w-full max-w-295 pointer-events-auto">
         <div
-          className={`flex items-center justify-between gap-6 rounded-full border shadow-[0_8px_32px_rgba(2,16,26,0.18)] backdrop-blur-[14px] transition-all duration-300 ${
+          className={`flex items-center justify-between gap-4 rounded-full border shadow-[0_8px_32px_rgba(2,16,26,0.18)] backdrop-blur-[14px] transition-all duration-300 sm:gap-6 ${
             isWhite
-              ? "bg-[#043249cc]/90 border-white/10 shadow-[0_8px_28px_rgba(6,106,156,0.14)] py-1.5 px-6"
-              : "border-black/5 py-2 px-6"
+              ? "bg-[#043249cc]/90 border-white/10 shadow-[0_8px_28px_rgba(6,106,156,0.14)] py-1.5 px-4 sm:px-6"
+              : "border-black/5 py-2 px-4 sm:px-6"
           }`}
         >
-          {/* Logo */}
+          
           <NavLink to="/" className="shrink-0 group">
             <img
               src={logo}
               alt="Indexia Group logo"
+              width={112}
+              height={72}
               className="h-18 w-28 object-contain block transition-transform duration-300 ease-out group-hover:scale-105"
             />
           </NavLink>
 
-          {/* Desktop nav links */}
+          
           <nav className="hidden items-center gap-1 rounded-full p-1 min-[900px]:flex bg-white/7">
             {navItems.map((item) => (
               <NavLink
@@ -65,7 +72,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side: CTA + Mobile toggle */}
+          
           <div className="flex items-center gap-2.5 shrink-0">
             <NavLink
               to="/contact"
@@ -101,7 +108,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        
         {menuOpen && (
           <div
             className={`mx-auto mt-2 overflow-hidden rounded-[22px] shadow-[0_12px_32px_rgba(2,16,26,0.2)] backdrop-blur-lg ${

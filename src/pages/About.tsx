@@ -1,7 +1,7 @@
 import AboutHero from "../components/banners/AboutHero";
 import SEO from "../components/common/SEO";
-import customerImg from "../assets/customer-img.png";
-import productImg from "../assets/product-details.png";
+import customerImg from "../assets/customer-img.webp";
+import productImg from "../assets/product-details.webp";
 
 // Mission, vision, and values cards.
 const values = [
@@ -18,6 +18,9 @@ const team = [
   { name: "Neha Singh",   role: "Client Relations",    initial: "N", color: "#26ae90" },
 ];
 
+// Responsive section wrapper style: fluid vertical padding, adapts to any screen.
+const sectionPad = { padding: "clamp(48px, 8vw, 88px) 0" };
+
 // About page: full-height hero + story, values, platform, and team sections.
 const About = () => (
   <>
@@ -30,44 +33,45 @@ const About = () => (
 
     <AboutHero />
 
-    {/* ── Story ── */}
-    <section style={{ background: "#fff", padding: "88px 0" }}>
+    {/* Story */}
+    <section style={{ background: "#fff", ...sectionPad }}>
       <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))", gap: "64px", alignItems: "center" }}>
+        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
           {/* Image */}
-          <div style={{ position: "relative" }}>
+          <div className="relative">
             <img
               src={customerImg}
               alt="Our clients"
-              style={{ width: "100%", borderRadius: "20px", objectFit: "cover", maxHeight: "460px", boxShadow: "0 16px 48px rgba(6,106,156,0.16)" }}
+              width={1536}
+              height={1024}
+              loading="lazy"
+              decoding="async"
+              className="w-full rounded-[20px] object-cover shadow-[0_16px_48px_rgba(6,106,156,0.16)]"
+              style={{ maxHeight: "460px" }}
             />
-            <div style={{
-              position: "absolute", bottom: "-18px", right: "-12px",
-              background: "#26ae90", borderRadius: "14px",
-              padding: "16px 22px", boxShadow: "0 8px 24px rgba(38,174,144,0.3)",
-            }}>
-              <p style={{ fontSize: "26px", fontWeight: 800, color: "#fff", lineHeight: 1 }}>500+</p>
-              <p style={{ fontSize: "12px", fontWeight: 600, color: "rgba(255,255,255,0.85)", marginTop: "2px" }}>Happy Clients</p>
+            <div className="absolute -bottom-4 right-3 rounded-[14px] bg-[#26ae90] px-4 py-3 shadow-[0_8px_24px_rgba(38,174,144,0.3)] sm:-bottom-5 sm:right-0 sm:px-6 sm:py-4">
+              <p className="text-2xl font-extrabold leading-none text-white sm:text-[26px]">500+</p>
+              <p className="mt-0.5 text-xs font-semibold text-white/85">Happy Clients</p>
             </div>
           </div>
 
           {/* Text */}
           <div>
-            <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>Our Story</p>
-            <h2 style={{ fontSize: "clamp(24px,4vw,38px)", fontWeight: 800, color: "#111827", marginBottom: "20px" }}>
-              A Decade of <span style={{ color: "#066a9c" }}>Trusted Service</span>
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Our Story</p>
+            <h2 className="mb-5 text-[clamp(24px,4vw,38px)] font-extrabold leading-tight text-[#111827]">
+              A Decade of <span className="text-[#066a9c]">Trusted Service</span>
             </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.85, color: "#6b7280", marginBottom: "14px" }}>
+            <p className="mb-3.5 text-[15px] leading-[1.85] text-[#6b7280]">
               Founded with a vision to bridge the gap between complex financial systems and everyday people, Indexia Group has spent over a decade building trust, delivering results, and supporting clients through every financial milestone.
             </p>
-            <p style={{ fontSize: "15px", lineHeight: 1.85, color: "#6b7280", marginBottom: "36px" }}>
-              From startups to established enterprises, we've helped hundreds navigate challenges, seize opportunities, and build lasting financial security.
+            <p className="mb-9 text-[15px] leading-[1.85] text-[#6b7280]">
+              From startups to established enterprises, we&apos;ve helped hundreds navigate challenges, seize opportunities, and build lasting financial security.
             </p>
-            <div style={{ display: "flex", gap: "36px", flexWrap: "wrap" }}>
+            <div className="flex flex-wrap gap-8 sm:gap-10">
               {[{ v: "500+", l: "Clients Served" }, { v: "10+", l: "Years Experience" }, { v: "₹100Cr+", l: "Assets Managed" }].map(s => (
                 <div key={s.l}>
-                  <p style={{ fontSize: "28px", fontWeight: 800, color: "#066a9c", lineHeight: 1 }}>{s.v}</p>
-                  <p style={{ fontSize: "12px", color: "#9ca3af", marginTop: "4px" }}>{s.l}</p>
+                  <p className="text-[28px] font-extrabold leading-none text-[#066a9c]">{s.v}</p>
+                  <p className="mt-1 text-xs text-[#9ca3af]">{s.l}</p>
                 </div>
               ))}
             </div>
@@ -76,78 +80,84 @@ const About = () => (
       </div>
     </section>
 
-    {/* ── Values ── */}
-    <section style={{ background: "#f0f9ff", padding: "88px 0" }}>
+    {/* Values */}
+    <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
-        <div style={{ textAlign: "center", maxWidth: "540px", margin: "0 auto 52px" }}>
-          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>What Drives Us</p>
-          <h2 style={{ fontSize: "clamp(24px,4vw,38px)", fontWeight: 800, color: "#111827" }}>
-            Mission, Vision & <span style={{ color: "#066a9c" }}>Values</span>
+        <div className="mx-auto mb-12 max-w-[540px] text-center sm:mb-14">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">What Drives Us</p>
+          <h2 className="text-[clamp(24px,4vw,38px)] font-extrabold text-[#111827]">
+            Mission, Vision & <span className="text-[#066a9c]">Values</span>
           </h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: "28px" }}>
-          {values.map(v => (
+        <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          {values.map((v) => (
             <div key={v.title} className="shared-card accent-card">
-              <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: `${v.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "26px", marginBottom: "20px" }}>
+              <div
+                className="mb-5 flex h-[54px] w-[54px] items-center justify-center rounded-[14px] text-[26px]"
+                style={{ background: `${v.color}18` }}
+              >
                 {v.icon}
               </div>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#111827", marginBottom: "10px" }}>{v.title}</h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.8, color: "#6b7280" }}>{v.desc}</p>
-              <div style={{ marginTop: "22px", width: "40px", height: "3px", borderRadius: "2px", background: v.color }} />
+              <h3 className="mb-2.5 text-lg font-bold text-[#111827]">{v.title}</h3>
+              <p className="text-sm leading-[1.8] text-[#6b7280]">{v.desc}</p>
+              <div className="mt-5 h-[3px] w-10 rounded-sm" style={{ background: v.color }} />
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    {/* ── How we work (product image) ── */}
-    <section style={{ background: "#fff", padding: "88px 0" }}>
+    {/* How we work (product image) */}
+    <section style={{ background: "#fff", ...sectionPad }}>
       <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))", gap: "64px", alignItems: "center" }}>
+        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>Our Platform</p>
-            <h2 style={{ fontSize: "clamp(24px,4vw,38px)", fontWeight: 800, color: "#111827", marginBottom: "18px" }}>
-              Technology-Driven <span style={{ color: "#066a9c" }}>Financial Tools</span>
+            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Our Platform</p>
+            <h2 className="mb-5 text-[clamp(24px,4vw,38px)] font-extrabold leading-tight text-[#111827]">
+              Technology-Driven <span className="text-[#066a9c]">Financial Tools</span>
             </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.85, color: "#6b7280", marginBottom: "28px" }}>
+            <p className="mb-7 text-[15px] leading-[1.85] text-[#6b7280]">
               We leverage modern technology to give our clients real-time visibility, transparent reporting, and direct access to expert advisors — all from a single, secure platform.
             </p>
-            <ul style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {["Secure client portal", "Real-time financial reporting", "Expert advisor access", "Personalised insights dashboard"].map(f => (
-                <li key={f} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "#374151" }}>
-                  <span style={{ width: "22px", height: "22px", borderRadius: "50%", background: "#26ae90", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: 700, flexShrink: 0 }}>✓</span>
+            <ul className="flex flex-col gap-3">
+              {["Secure client portal", "Real-time financial reporting", "Expert advisor access", "Personalised insights dashboard"].map((f) => (
+                <li key={f} className="flex items-center gap-2.5 text-sm text-[#374151]">
+                  <span className="flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded-full bg-[#26ae90] text-xs font-bold text-white">✓</span>
                   {f}
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <img src={productImg} alt="Platform" style={{ width: "100%", borderRadius: "20px", objectFit: "cover", boxShadow: "0 16px 48px rgba(0,0,0,0.12)" }} />
+            <img src={productImg} alt="Platform" width={1374} height={577} loading="lazy" decoding="async" className="w-full rounded-[20px] object-cover shadow-[0_16px_48px_rgba(0,0,0,0.12)]" />
           </div>
         </div>
       </div>
     </section>
 
-    {/* ── Team ── */}
-    <section style={{ background: "#f0f9ff", padding: "88px 0" }}>
+    {/* Team */}
+    <section style={{ background: "#f0f9ff", ...sectionPad }}>
       <div className="container">
-        <div style={{ textAlign: "center", maxWidth: "480px", margin: "0 auto 52px" }}>
-          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#26ae90", marginBottom: "12px" }}>The People Behind It</p>
-          <h2 style={{ fontSize: "clamp(24px,4vw,38px)", fontWeight: 800, color: "#111827" }}>
-            Meet Our <span style={{ color: "#066a9c" }}>Team</span>
+        <div className="mx-auto mb-12 max-w-[480px] text-center sm:mb-14">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">The People Behind It</p>
+          <h2 className="text-[clamp(24px,4vw,38px)] font-extrabold text-[#111827]">
+            Meet Our <span className="text-[#066a9c]">Team</span>
           </h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px,1fr))", gap: "24px" }}>
-          {team.map(m => (
-            <div key={m.name} style={{ background: "#fff", border: "1px solid #e5e7eb", borderRadius: "16px", padding: "36px 24px", textAlign: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.04)", transition: "box-shadow 0.25s, transform 0.25s" }}
-              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 8px 28px rgba(0,0,0,0.09)"; (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)"; (e.currentTarget as HTMLDivElement).style.transform = "none"; }}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {team.map((m) => (
+            <div
+              key={m.name}
+              className="rounded-2xl border border-[#e5e7eb] bg-white p-8 text-center shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition-[box-shadow,transform] duration-300 hover:-translate-y-1 hover:shadow-[0_8px_28px_rgba(0,0,0,0.09)]"
             >
-              <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: m.color, color: "#fff", fontWeight: 800, fontSize: "24px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px", boxShadow: `0 6px 20px ${m.color}40` }}>
+              <div
+                className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full text-2xl font-extrabold text-white"
+                style={{ background: m.color, boxShadow: `0 6px 20px ${m.color}40` }}
+              >
                 {m.initial}
               </div>
-              <p style={{ fontSize: "15px", fontWeight: 700, color: "#111827" }}>{m.name}</p>
-              <p style={{ fontSize: "13px", color: "#7b7b7b", marginTop: "4px" }}>{m.role}</p>
+              <p className="text-[15px] font-bold text-[#111827]">{m.name}</p>
+              <p className="mt-1 text-[13px] text-[#7b7b7b]">{m.role}</p>
             </div>
           ))}
         </div>

@@ -1,9 +1,10 @@
-// Hero slideshow banner for the Home page: full-height auto-advancing slides with crossfade.
+
+
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
-import heroImg1 from "../../assets/hero-image1.png";
-import heroImg2 from "../../assets/hero-image2.png";
-import heroImg3 from "../../assets/hero-image3.png";
+import heroImg1 from "../../assets/hero-image1.webp";
+import heroImg2 from "../../assets/hero-image2.webp";
+import heroImg3 from "../../assets/hero-image3.webp";
 
 type BannerProps = {
   title: string;
@@ -12,7 +13,8 @@ type BannerProps = {
   buttonLink?: string;
 };
 
-// Slide content for the rotating hero backgrounds.
+
+
 const slides = [
   {
     tag: "Multi-Business Group",
@@ -34,11 +36,16 @@ const slides = [
   },
 ];
 
-const INTERVAL = 5000;          // time each slide stays up before auto-advancing
-const BG_DURATION = 700;        // background crossfade duration
-const TEXT_FADE_OUT = 600;      // old text fade-out duration
-const TEXT_FADE_IN = 420;       // new text fade-in duration
-const TEXT_ZOOM_DURATION = 6000; // continuous zoom runs for the length of the slide's display time
+const INTERVAL = 5000;          
+
+const BG_DURATION = 700;        
+
+const TEXT_FADE_OUT = 600;      
+
+const TEXT_FADE_IN = 420;       
+
+const TEXT_ZOOM_DURATION = 6000; 
+
 
 const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: BannerProps) => {
   const [current, setCurrent] = useState(0);
@@ -59,7 +66,8 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
       setNextSlide(idx);
       setAnimating(true);
 
-      // 1) fade the current text out immediately, dropping any zoom in progress
+      
+
       setTextVisible(false);
       setTextZoomed(false);
 
@@ -68,22 +76,26 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
       if (textInTimeoutRef.current) window.clearTimeout(textInTimeoutRef.current);
       if (textZoomTimeoutRef.current) window.clearTimeout(textZoomTimeoutRef.current);
 
-      // 2) once the old text has fully faded out, swap the slide content
+      
+
       textOutTimeoutRef.current = window.setTimeout(() => {
         setCurrent(idx);
       }, TEXT_FADE_OUT);
 
-      // 3) right after the content swap, fade the new text in
+      
+
       textInTimeoutRef.current = window.setTimeout(() => {
         setTextVisible(true);
       }, TEXT_FADE_OUT + 30);
 
-      // 4) once the fade-in settles, start the continuous zoom-in
+      
+
       textZoomTimeoutRef.current = window.setTimeout(() => {
         setTextZoomed(true);
       }, TEXT_FADE_OUT + 30 + TEXT_FADE_IN);
 
-      // background crossfade runs on its own timeline, right-to-left, always
+      
+
       bgTimeoutRef.current = window.setTimeout(() => {
         setNextSlide(null);
         setAnimating(false);
@@ -100,11 +112,13 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
     return () => window.clearInterval(t);
   }, [next]);
 
-  // kick off the zoom on the very first slide too, once its initial fade-in settles
+  
+
   useEffect(() => {
     const t = window.setTimeout(() => setTextZoomed(true), TEXT_FADE_IN);
     return () => window.clearTimeout(t);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
+
   }, []);
 
   useEffect(() => {
@@ -137,37 +151,43 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
       `}</style>
 
       <section className="relative overflow-hidden bg-[#044e74]">
-        <div className="relative min-h-screen flex items-center justify-center">
+        <div className="relative min-h-[92svh] sm:min-h-screen flex items-center justify-center">
 
-          {/* Incoming background: always slides in right-to-left */}
+          
           {incomingSlide && (
             <img
               key={`next-${nextSlide}`}
               src={incomingSlide.image}
               alt=""
               aria-hidden="true"
+              width={1408}
+              height={768}
+              decoding="async"
               className="absolute inset-0 z-1 w-full h-full object-cover object-center animate-[bnr-slide-in_700ms_ease_forwards]"
             />
           )}
 
-          {/* Current background: exits left when a transition is running */}
+          
           <img
             key={`current-${current}`}
             src={activeSlide.image}
             alt=""
             aria-hidden="true"
+            width={1408}
+            height={768}
+            decoding="async"
             className={`absolute inset-0 w-full h-full object-cover object-center transition-[transform] duration-700 ease-in-out will-change-transform ${
               animating ? "scale-[1.02] translate-x-[-8%]" : "scale-100"
             }`}
           />
 
-          {/* Dark gradient so text stays legible over any photo */}
+          
           <div className="absolute inset-0 z-2 bg-[linear-gradient(180deg,rgba(2,16,26,0.72)_0%,rgba(2,16,26,0.45)_32%,rgba(2,16,26,0.62)_68%,rgba(2,16,26,0.88)_100%)]" />
 
-          {/* Bottom gradient */}
+          
           <div className="absolute bottom-0 left-0 z-2 h-20 w-full bg-linear-to-t from-[#286090]/30 via-[#26ae90]/30 to-transparent pointer-events-none" />
 
-          <div className="container relative z-3 w-full flex flex-col items-center text-center px-5 pt-30 pb-35">
+          <div className="container relative z-3 w-full flex flex-col items-center text-center px-5 pt-24 pb-30 sm:pt-30 sm:pb-35">
             <div
               className={`flex flex-col items-center max-w-190 transition-[opacity,transform] will-change-[opacity,transform] ${
                 textVisible
@@ -206,7 +226,7 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
             </div>
           </div>
 
-          {/* Button Container */}
+          
           <div className="absolute bottom-25 left-0 w-full py-6 md:py-10 z-3">
             <div className="flex flex-wrap gap-3 justify-center">
               <Link
@@ -227,7 +247,7 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
             </div>
           </div>
 
-          {/* Dots */}
+          
           <div className="absolute left-1/2 bottom-7 -translate-x-1/2 z-10 flex gap-2">
             {slides.map((_, i) => (
               <button
@@ -241,18 +261,18 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
             ))}
           </div>
 
-          {/* Arrows */}
+          
           <button
             onClick={prev}
             aria-label="Previous slide"
-            className="absolute top-1/2 -translate-y-1/2 left-5 md:left-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-200"
+            className="absolute top-1/2 -translate-y-1/2 left-5 md:left-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
           >
             ‹
           </button>
           <button
             onClick={next}
             aria-label="Next slide"
-            className="absolute top-1/2 -translate-y-1/2 right-5 md:right-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-200"
+            className="absolute top-1/2 -translate-y-1/2 right-5 md:right-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
           >
             ›
           </button>

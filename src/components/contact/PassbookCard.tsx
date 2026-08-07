@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { BadgeCheck, Landmark } from "lucide-react";
 
-import customerImg from "../../assets/customer-img.png";
+import customerImg from "../../assets/customer-img.webp";
 import { branches, monoFont, palette, phoneNumbers } from "../../data/contact";
 
 const PassbookCard = () => {
@@ -51,6 +51,10 @@ const PassbookCard = () => {
             src={customerImg}
             alt=""
             aria-hidden="true"
+            width={40}
+            height={48}
+            loading="lazy"
+            decoding="async"
             className="h-12 w-10 rounded-sm object-cover shadow ring-2 ring-white"
           />
         </div>

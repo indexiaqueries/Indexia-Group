@@ -1,6 +1,5 @@
-// Footer: site-wide footer with logo, nav links, services, contact info, and newsletter.
 import { Link } from "react-router-dom";
-import footerBg from "../../assets/footer-img.png";
+import footerBg from "../../assets/footer-img.webp";
 import logo from "../../assets/IndexiaGroup_Logo.gif";
 import {
   FiMail,
@@ -11,8 +10,8 @@ import {
   FiTwitter,
   FiFacebook,
 } from "react-icons/fi";
+import { phoneNumbers } from "../../data/contact";
 
-// Quick navigation links for the footer.
 const quickLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about" },
@@ -20,7 +19,6 @@ const quickLinks = [
   { label: "Contact Us", path: "/contact" },
 ];
 
-// Service list shown in the footer.
 const services = [
   "Financial Consulting",
   "Investment Planning",
@@ -29,19 +27,18 @@ const services = [
   "Wealth Protection",
 ];
 
-// Social media links (placeholder hrefs).
 const socials = [
-  { icon: FiLinkedin, href: "#" },
-  { icon: FiTwitter, href: "#" },
-  { icon: FiFacebook, href: "#" },
+  { icon: FiLinkedin, href: "https://www.linkedin.com" },
+  { icon: FiTwitter, href: "https://www.twitter.com" },
+  { icon: FiFacebook, href: "https://www.facebook.com" },
 ];
 
-// Contact info items for the footer.
+// Real contact details pulled from the shared source of truth.
 const contactInfo = [
-  { icon: FiMail, text: "info@indexiagroup.com" },
-  { icon: FiPhone, text: "+91 00000 00000" },
-  { icon: FiMapPin, text: "India" },
-  { icon: FiClock, text: "Mon–Sat: 9AM–6PM" },
+  { icon: FiMail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
+  { icon: FiPhone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
+  { icon: FiMapPin, text: "Mumbai · Delhi · Surat · Ecuador", href: "/contact" },
+  { icon: FiClock, text: "Mon–Sat: 9AM–6PM", href: undefined },
 ];
 
 const Footer = () => {
@@ -52,16 +49,20 @@ const Footer = () => {
           src={footerBg}
           alt=""
           aria-hidden="true"
+          width={1376}
+          height={678}
+          loading="lazy"
+          decoding="async"
           className="h-full w-full object-cover object-center opacity-[0.3] select-none pointer-events-none"
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="rounded-3xl border border-white/12 bg-white/5 p-8 shadow-[0_12px_40px_rgba(2,16,26,0.18)] backdrop-blur-[14px] sm:p-10 lg:p-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="rounded-3xl border border-white/12 bg-white/5 p-6 shadow-[0_12px_40px_rgba(2,16,26,0.18)] backdrop-blur-[14px] sm:p-10 lg:p-12">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <div className="text-2xl font-extrabold flex flex-col items-center">
-                <img src={logo} alt="Indexia Group logo" className="h-23 object-contain"/>
+                <img src={logo} alt="Indexia Group logo" width={72} height={72} className="h-18 object-contain sm:h-23"/>
                 <div className="flex flex-row items-center gap-1">
                   <span className="text-[#f2f231]">Indexia</span>
                   <span className="text-white">Group</span>
@@ -139,16 +140,27 @@ const Footer = () => {
               </h3>
               <div className="mt-3 h-1 w-10 rounded-full bg-[#26ae90]" />
 
-              <div className="mt-6 space-y-4">
+<div className="mt-6 space-y-4">
                 {contactInfo.map((item) => {
                   const Icon = item.icon;
-                  return (
-                    <div key={item.text} className="flex items-start gap-3 text-sm text-white/70">
-                      <span className="mt-0.5 text-[#26ae90]">
+                  const content = (
+                    <span className="flex items-start gap-3 text-sm text-white/70">
+                      <span className="mt-0.5 shrink-0 text-[#26ae90]">
                         <Icon className="h-4 w-4" />
                       </span>
-                      <span>{item.text}</span>
-                    </div>
+                      <span className="break-words">{item.text}</span>
+                    </span>
+                  );
+                  return item.href ? (
+                    <Link
+                      key={item.text}
+                      to={item.href}
+                      className="block transition-colors duration-200 hover:text-[#f2f231]"
+                    >
+                      {content}
+                    </Link>
+                  ) : (
+                    <div key={item.text}>{content}</div>
                   );
                 })}
               </div>
@@ -158,15 +170,19 @@ const Footer = () => {
                   Stay Updated
                 </p>
 
-                <form className="mt-3 flex overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-sm">
+                <form
+                  onSubmit={(e) => e.preventDefault()}
+                  className="mt-3 flex overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-sm"
+                >
                   <input
                     type="email"
                     placeholder="Your email address"
-                    className="min-w-0 flex-1 bg-transparent px-4 py-3 text-sm text-white outline-none placeholder:text-white/45"
+                    aria-label="Email address"
+                    className="min-w-0 flex-1 bg-transparent px-3 py-2.5 text-sm text-white outline-none placeholder:text-white/45 sm:px-4 sm:py-3"
                   />
                   <button
                     type="submit"
-                    className="rounded-full bg-[#f2f231] px-5 py-3 text-sm font-bold text-[#1f2000] transition-all duration-200 hover:bg-[#f7f75f] hover:shadow-lg"
+                    className="shrink-0 rounded-full bg-[#f2f231] px-4 py-2.5 text-sm font-bold text-[#1f2000] transition-all duration-200 hover:bg-[#f7f75f] hover:shadow-lg sm:px-5 sm:py-3"
                   >
                     Subscribe
                   </button>
@@ -178,10 +194,10 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 border-t border-white/10 bg-[#033c58]/50">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 py-5 text-center text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left lg:px-8">
           <p>© 2026 Indexia Group. All rights reserved.</p>
 
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap justify-center gap-5">
             <a href="#" className="transition-colors hover:text-[#f2f231]">
               Privacy Policy
             </a>

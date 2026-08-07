@@ -1,4 +1,5 @@
-// Entry point: mounts the app with BrowserRouter + global styles.
+
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";

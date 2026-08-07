@@ -1,4 +1,5 @@
-// Contact page: full-height hero + contact info, enquiry form, and branches.
+
+
 import { useState } from "react";
 import type { ChangeEvent, SubmitEvent } from "react";
 
@@ -11,16 +12,20 @@ import { accent, branches, initialContactForm } from "../data/contact";
 import type { ContactFormData } from "../data/contact";
 
 const Contact = () => {
-  const [form, setForm] = useState<ContactFormData>(initialContactForm); // Enquiry form values
-  const [submitted, setSubmitted] = useState(false);                     // True after the email client opens
+  const [form, setForm] = useState<ContactFormData>(initialContactForm); 
 
-  // Keep the form state in sync as the user types.
+  const [submitted, setSubmitted] = useState(false);                     
+
+
+  
+
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setForm((previous) => ({ ...previous, [name]: value }));
   };
 
-  // Build a prefilled email and open the mail client.
+  
+
   const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
 

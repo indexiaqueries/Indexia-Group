@@ -37,6 +37,10 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
       <img
         src={business.image}
         alt={`${business.name} visual`}
+        width={1536}
+        height={1024}
+        loading="lazy"
+        decoding="async"
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
