@@ -17,19 +17,6 @@ const team = [
 
 const About = () => (
   <>
-    <style>{`
-      .about-card {
-        background: #fff;
-        border-radius: 16px;
-        padding: 36px 32px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        transition: box-shadow 0.25s, transform 0.25s;
-      }
-      .about-card:hover {
-        box-shadow: 0 10px 36px rgba(0,0,0,0.10);
-        transform: translateY(-4px);
-      }
-    `}</style>
 
     {/* ── Hero ── */}
     <section style={{ background: "linear-gradient(110deg, #044e74 0%, #066a9c 55%, #286090 100%)", padding: "88px 0" }}>
@@ -110,7 +97,7 @@ const About = () => (
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: "28px" }}>
           {values.map(v => (
-            <div key={v.title} className="about-card">
+            <div key={v.title} className="shared-card accent-card">
               <div style={{ width: "54px", height: "54px", borderRadius: "14px", background: `${v.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "26px", marginBottom: "20px" }}>
                 {v.icon}
               </div>

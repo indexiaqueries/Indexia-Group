@@ -19,32 +19,6 @@ const process = [
 
 const Services = () => (
   <>
-    <style>{`
-      .svc-page-card {
-        background: #fff;
-        border-radius: 16px;
-        padding: 36px 32px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        transition: box-shadow 0.25s, transform 0.25s;
-        position: relative;
-        overflow: hidden;
-      }
-      .svc-page-card::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        height: 3px;
-        background: var(--card-color, #26ae90);
-        transform: scaleX(0);
-        transition: transform 0.3s;
-        transform-origin: left;
-      }
-      .svc-page-card:hover {
-        box-shadow: 0 10px 36px rgba(0,0,0,0.11);
-        transform: translateY(-5px);
-      }
-      .svc-page-card:hover::before { transform: scaleX(1); }
-    `}</style>
 
     {/* ── Hero ── */}
     <section style={{ background: "linear-gradient(110deg, #044e74 0%, #066a9c 55%, #286090 100%)", padding: "88px 0" }}>
@@ -72,7 +46,7 @@ const Services = () => (
           {services.map(s => (
             <div
               key={s.title}
-              className="svc-page-card"
+              className="shared-card accent-card"
               style={{ "--card-color": s.color } as React.CSSProperties}
             >
               <div style={{ width: "58px", height: "58px", borderRadius: "14px", background: `${s.color}18`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "28px", marginBottom: "20px" }}>

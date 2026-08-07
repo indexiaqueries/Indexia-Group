@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
-/* ─── Brand Tokens ─────────────────────────────────────────── */
 :root {
-  --teal:      #26ae90;
-  --deep-blue: #066a9c;
-  --mid-blue:  #286090;
-  --yellow:    #f2f231;
-  --gray:      #7b7b7b;
+  --color-teal: #26ae90;
+  --color-blue: #066a9c;
+  --color-blue-2: #286090;
+  --color-yellow: #f2f231;
+  --color-gray: #7b7b7b;
+  --color-ink: #111827;
+  --color-muted: #6b7280;
+  --color-soft: #f8fafc;
+  --color-deep: #044e74;
 }
 
-/* ─── Reset ────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--color-teal) var(--color-deep);
   scrollbar-width: thin;
-  scrollbar-color: #26ae90 #044e74;
 }
 
 html::-webkit-scrollbar {
@@ -25,58 +27,126 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: #044e74;
+  background: var(--color-deep);
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #26ae90;
+  background: var(--color-teal);
+  border: 2px solid var(--color-deep);
   border-radius: 9999px;
-  border: 2px solid #044e74;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: #f2f231;
+  background: var(--color-yellow);
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, Arial, sans-serif;
-  background-color: #ffffff;
-  color: #111827;
-  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: var(--color-ink);
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ─── Container ────────────────────────────────────────────── */
-/*
-  Single reusable container used by every section.
-  max-width 1200px, horizontally centred, with
-  responsive horizontal padding so content never
-  touches the viewport edge.
-*/
+a, button {
+  transition: all 0.2s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
-  width: 100%;
+  margin-inline: auto;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-inline: 24px;
+  width: 100%;
+}
+
+.section-pad {
+  padding-block: 64px;
+}
+
+.section-soft {
+  background: var(--color-soft);
+}
+
+.section-title {
+  color: var(--color-blue);
+  font-size: clamp(1.875rem, 4vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+.section-copy {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-top: 1rem;
+}
+
+.eyebrow {
+  color: var(--color-teal);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.shared-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.shared-card:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.accent-card {
+  overflow: hidden;
+  padding: 36px 32px;
+  position: relative;
+}
+
+.accent-card::before {
+  background: var(--card-color, var(--color-teal));
+  content: "";
+  height: 3px;
+  inset: 0 0 auto;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.accent-card:hover::before {
+  transform: scaleX(1);
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-inline: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding-block: 96px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-inline: 48px;
   }
 }
-
-/* ─── Helpers ──────────────────────────────────────────────── */
-a, button { transition: all 0.2s ease; }
-ul { list-style: none; }
-img { max-width: 100%; display: block; }
