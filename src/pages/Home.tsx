@@ -132,7 +132,7 @@ const Home = () => (
       canonicalPath="/"
     />
 
-    <Banner title="Indexia Group" description="Multi-business group" />
+    <Banner />
 
     <section className="section-pad bg-white">
       <div className="container">

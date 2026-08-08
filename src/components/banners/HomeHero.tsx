@@ -1,26 +1,22 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useReducedMotion,
+} from "framer-motion";
 import heroImg1 from "../../assets/hero-image1.png";
 import heroImg2 from "../../assets/hero-image2.webp";
 import heroImg3 from "../../assets/hero-image3.webp";
+import HomeHeroGallery from "./HomeHeroGallery";
+import type { HeroPanel } from "../cards/HeroGalleryThumb";
 
 type BannerProps = {
   buttonText?: string;
   buttonLink?: string;
 };
 
-type Panel = {
-  id: number;
-  tag: string;
-  heading: string;
-  sub: string;
-  image: string;
-};
-
-// 8 panels, mapped to Indexia's actual business units rather than
-// arbitrary repeats — each image is shared by the units it belongs to.
-const panels: Panel[] = [
+const panels: HeroPanel[] = [
   {
     id: 0,
     tag: "Indexia Group",
@@ -79,28 +75,28 @@ const panels: Panel[] = [
   },
 ];
 
+const TEXT_ZOOM_MS = 6000;
 const AUTOPLAY_INTERVAL = 6000;
-const MARQUEE_SECONDS = 38;
 
-const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: BannerProps) => {
+const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" }: BannerProps) => {
   const [currentId, setCurrentId] = useState(0);
-  const [filmstripPaused, setFilmstripPaused] = useState(false);
   const prefersReducedMotion = useReducedMotion();
-
   const autoplayRef = useRef<number | null>(null);
 
   const currentIndex = panels.findIndex((p) => p.id === currentId);
   const current = panels[currentIndex];
+  const isHome = current.id === 0;
 
   const restartAutoplay = useCallback(() => {
     if (autoplayRef.current) window.clearInterval(autoplayRef.current);
+    if (prefersReducedMotion) return;
     autoplayRef.current = window.setInterval(() => {
       setCurrentId((prev) => {
         const idx = panels.findIndex((p) => p.id === prev);
         return panels[(idx + 1) % panels.length].id;
       });
     }, AUTOPLAY_INTERVAL);
-  }, []);
+  }, [prefersReducedMotion]);
 
   useEffect(() => {
     restartAutoplay();
@@ -118,11 +114,6 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
   const prevPanel = () => selectPanel(panels[(currentIndex - 1 + panels.length) % panels.length].id);
   const nextPanel = () => selectPanel(panels[(currentIndex + 1) % panels.length].id);
 
-  // Doubled list drives the seamless marquee loop. Only the first copy
-  // carries a layoutId — that's what the hero image morphs from/to.
-  // The second copy is purely decorative continuation of the strip.
-  const marqueeList = [...panels, ...panels];
-
   return (
     <section className="relative overflow-hidden bg-[#044e74]">
       <style>{`
@@ -134,20 +125,26 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
           from { transform: translateX(0); }
           to   { transform: translateX(-50%); }
         }
-        .bnr-marquee-track {
-          animation: bnr-marquee ${MARQUEE_SECONDS}s linear infinite;
+        @keyframes bnr-text-zoom {
+          from { transform: scale(1); }
+          to   { transform: scale(1.12); }
         }
-        .bnr-marquee-track.paused,
-        .bnr-marquee-track.reduced {
+        .bnr-marquee-track {
+          animation: bnr-marquee ${38}s linear infinite;
+        }
+        .bnr-marquee-track.paused {
           animation-play-state: paused;
+        }
+        .bnr-text-zoom {
+          animation: bnr-text-zoom ${TEXT_ZOOM_MS}ms ease-out forwards;
         }
         @media (prefers-reduced-motion: reduce) {
           .bnr-marquee-track { animation: none; }
+          .bnr-text-zoom { animation: none; }
         }
       `}</style>
 
-      {/* ---------- HERO ---------- */}
-      <div className="relative min-h-[86svh] sm:min-h-[90vh] flex items-center justify-center">
+      <div className="relative h-svh sm:h-screen flex flex-col">
         <div className="absolute inset-0">
           <AnimatePresence initial={false}>
             <motion.img
@@ -169,11 +166,10 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
           </AnimatePresence>
         </div>
 
-        <div className="absolute inset-0 z-2 bg-[linear-gradient(180deg,rgba(2,16,26,0.72)_0%,rgba(2,16,26,0.45)_32%,rgba(2,16,26,0.62)_68%,rgba(2,16,26,0.88)_100%)]" />
+        <div className="absolute inset-0 z-2 bg-[linear-gradient(180deg,rgba(2,16,26,0.68)_0%,rgba(2,16,26,0.4)_28%,rgba(2,16,26,0.62)_62%,rgba(2,16,26,0.94)_100%)]" />
+        <div className="absolute bottom-0 left-0 z-2 h-60 w-full bg-linear-to-t from-[#02101a]/70 via-[#26ae90]/30 to-transparent pointer-events-none" />
 
-        <div className="absolute bottom-0 left-0 z-2 h-20 w-full bg-linear-to-t from-[#286090]/30 via-[#26ae90]/30 to-transparent pointer-events-none" />
-
-        <div className="container relative z-3 w-full flex flex-col items-center text-center px-5 pt-24 pb-44 sm:pt-30 sm:pb-52">
+        <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-36 sm:pt-32 sm:pb-44 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={current.id}
@@ -181,51 +177,74 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.42, ease: "easeOut" }}
-              className="flex flex-col items-center max-w-190"
+              className={`flex flex-col items-center ${isHome ? "max-w-200" : "max-w-190"}`}
             >
-              <div className="flex flex-row gap-3 flex-wrap justify-center">
-                <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
-                  <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
-                    Currently in Development
-                  </span>
-                </div>
+              <div className={`flex flex-col items-center ${prefersReducedMotion ? "" : "bnr-text-zoom"}`}>
+                {isHome ? (
+                  <div className="inline-flex items-center gap-2.5 rounded-full px-5 py-2 mb-6 border border-[#f2f231]/60 bg-[#f2f231]/10 backdrop-blur-md">
+                    <span className="w-2 h-2 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
+                    <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#f2f231]">
+                      Indexia Group
+                    </span>
+                  </div>
+                ) : (
+                  <div className="flex flex-row gap-3 flex-wrap justify-center">
+                    <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
+                      <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
+                        Currently in Development
+                      </span>
+                    </div>
 
-                <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
-                  <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
-                    {current.tag}
-                  </span>
-                </div>
+                    <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 backdrop-blur-sm border border-[#f2f231]/40 bg-[#7b7b7b]/70">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
+                      <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231]">
+                        {current.tag}
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                <h1
+                  className={`font-extrabold text-white leading-[1.1] mb-5.5 whitespace-pre-line ${
+                    isHome
+                      ? "text-[clamp(34px,5.5vw,64px)] drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]"
+                      : "text-[clamp(32px,5.5vw,60px)]"
+                  }`}
+                >
+                  {current.heading}
+                </h1>
+
+                <p
+                  className={`leading-[1.8] text-white/85 ${
+                    isHome
+                      ? "text-[19px] max-w-170 border-t border-white/20 pt-5 mt-1"
+                      : "text-[17px] max-w-140"
+                  }`}
+                >
+                  {current.sub}
+                </p>
               </div>
 
-              <h1 className="text-[clamp(32px,5.5vw,60px)] font-extrabold text-white leading-[1.14] mb-5.5 whitespace-pre-line">
-                {current.heading}
-              </h1>
-
-              <p className="text-[17px] leading-[1.8] text-white/85 max-w-140">
-                {current.sub}
-              </p>
+              <div className="flex flex-wrap gap-3 justify-center mt-9">
+                <Link
+                  to={buttonLink}
+                  className="inline-flex items-center gap-2 bg-[#26ae90] hover:bg-[#1e9478] text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
+                >
+                  {isHome ? buttonText : "Explore More"}
+                  <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  to="/about"
+                  className="inline-flex items-center gap-2 border-2 border-white/45 hover:border-white/80 hover:bg-white/10 text-white font-bold text-sm px-7 py-3.25 rounded-lg transition-colors duration-200"
+                >
+                  About Indexia
+                </Link>
+              </div>
             </motion.div>
           </AnimatePresence>
-
-          <div className="flex flex-wrap gap-3 justify-center mt-9">
-            <Link
-              to={buttonLink}
-              className="inline-flex items-center gap-2 bg-[#26ae90] hover:bg-[#1e9478] text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
-            >
-              {buttonText}
-              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-            <Link
-              to="/about"
-              className="inline-flex items-center gap-2 border-2 border-white/45 hover:border-white/80 hover:bg-white/10 text-white font-bold text-sm px-7 py-3.25 rounded-lg transition-colors duration-200"
-            >
-              About Indexia
-            </Link>
-          </div>
         </div>
 
         <button
@@ -242,57 +261,17 @@ const Banner = ({ buttonText = "Explore Our Group", buttonLink = "/services" }: 
         >
           ›
         </button>
-      </div>
 
-      {/* ---------- FILMSTRIP ---------- */}
-      <div
-        className="relative z-4 border-t border-white/10 bg-[#02101a]/70 backdrop-blur-sm py-4"
-        onMouseEnter={() => setFilmstripPaused(true)}
-        onMouseLeave={() => setFilmstripPaused(false)}
-      >
-        <div className="overflow-hidden">
-          <div
-            className={`flex gap-4 w-max bnr-marquee-track ${
-              filmstripPaused || prefersReducedMotion ? "paused" : ""
-            }`}
-          >
-            {marqueeList.map((p, i) => {
-              const isOriginal = i < panels.length;
-              const isActive = p.id === currentId;
-              return (
-                <button
-                  key={`${p.id}-${i}`}
-                  onClick={() => selectPanel(p.id)}
-                  aria-label={`Show ${p.tag}`}
-                  aria-current={isActive}
-                  tabIndex={isOriginal ? 0 : -1}
-                  className={`relative shrink-0 w-36 h-20 sm:w-44 sm:h-24 rounded-lg overflow-hidden border-2 transition-colors duration-200 ${
-                    isActive ? "border-[#f2f231]" : "border-white/15 hover:border-white/40"
-                  }`}
-                >
-                  {isOriginal ? (
-                    <motion.img
-                      layoutId={`panel-image-${p.id}`}
-                      src={p.image}
-                      alt={p.tag}
-                      className="w-full h-full object-cover"
-                      animate={{ opacity: isActive ? 0.35 : 1 }}
-                      transition={{ opacity: { duration: 0.3 } }}
-                    />
-                  ) : (
-                    <img src={p.image} alt="" aria-hidden="true" className="w-full h-full object-cover" />
-                  )}
-                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent text-[10px] font-semibold text-white px-2 py-1.5 text-left truncate">
-                    {p.tag}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
+        <HomeHeroGallery
+          panels={panels}
+          currentId={currentId}
+          reducedMotion={!!prefersReducedMotion}
+          onSelect={selectPanel}
+        />
       </div>
     </section>
   );
 };
 
 export default Banner;
+
