@@ -5,11 +5,9 @@ import {
   AnimatePresence,
   useReducedMotion,
 } from "framer-motion";
-import heroImg1 from "../../assets/hero-image1.png";
-import heroImg2 from "../../assets/hero-image2.webp";
-import heroImg3 from "../../assets/hero-image3.webp";
 import HomeHeroGallery from "./HomeHeroGallery";
 import type { HeroPanel } from "../cards/HeroGalleryThumb";
+import { getCompanyImage } from "../../data/companyImages";
 
 type BannerProps = {
   buttonText?: string;
@@ -22,56 +20,56 @@ const panels: HeroPanel[] = [
     tag: "Indexia Group",
     heading: "One Group.\nMultiple Solutions.",
     sub: "From finance and logistics to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
-    image: heroImg1,
+    image: getCompanyImage("Indexia Group"),
   },
   {
     id: 1,
     tag: "Indexia Finance",
     heading: "Plan With Confidence.\nInvest With Clarity.",
-    sub: "Comprehensive financial planning, wealth management and insurance solutions built around your goals.",
-    image: heroImg2,
+sub: "Comprehensive financial planning, wealth management and insurance solutions built around your goals.",
+    image: getCompanyImage("Indexia Finance"),
   },
   {
     id: 2,
     tag: "Indexia Finserve",
     heading: "Credit That\nMoves With You.",
-    sub: "Fast, flexible lending and credit facilitation for individuals and businesses ready to grow.",
-    image: heroImg2,
+sub: "Fast, flexible lending and credit facilitation for individuals and businesses ready to grow.",
+    image: getCompanyImage("Indexia Finserve"),
   },
   {
     id: 3,
     tag: "Indexia Securities",
     heading: "Markets Made\nAccessible.",
-    sub: "Broking, research and portfolio advisory that turns market complexity into informed action.",
-    image: heroImg2,
+sub: "Broking, research and portfolio advisory that turns market complexity into informed action.",
+    image: getCompanyImage("Indexia Securities"),
   },
   {
     id: 4,
     tag: "Indexia Overseas",
     heading: "Trade Without\nBorders.",
-    sub: "Import-export and global trade facilitation connecting local businesses to international markets.",
-    image: heroImg3,
+sub: "Import-export and global trade facilitation connecting local businesses to international markets.",
+    image: getCompanyImage("Indexia Overseas"),
   },
   {
     id: 5,
     tag: "Agro Bio Fertilizers",
     heading: "Growing Soil.\nGrowing Yield.",
-    sub: "Sustainable, bio-based fertilizers that improve farm productivity while protecting the land.",
-    image: heroImg3,
+sub: "Sustainable, bio-based fertilizers that improve farm productivity while protecting the land.",
+    image: getCompanyImage("Agro Bio Fertilizers"),
   },
   {
     id: 6,
     tag: "Indexia Warehouse",
     heading: "Storage Built\nFor Scale.",
-    sub: "Modern warehousing and logistics infrastructure that keeps goods moving efficiently.",
-    image: heroImg3,
+sub: "Modern warehousing and logistics infrastructure that keeps goods moving efficiently.",
+    image: getCompanyImage("Indexia Warehouse"),
   },
   {
     id: 7,
     tag: "Indexia Foundation",
     heading: "Impact Beyond\nBusiness.",
-    sub: "Community programs in education, health and livelihood that give back where we operate.",
-    image: heroImg3,
+sub: "Community programs in education, health and livelihood that give back where we operate.",
+    image: getCompanyImage("Indexia Foundation"),
   },
 ];
 

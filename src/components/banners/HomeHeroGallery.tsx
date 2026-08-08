@@ -15,7 +15,7 @@ const HomeHeroGallery = ({
   onSelect,
 }: HomeHeroGalleryProps) => {
   const [filmstripPaused, setFilmstripPaused] = useState(false);
-  const marqueeList = [...panels, ...panels];
+  const marqueeList = [...panels, ...panels, ...panels];
 
   return (
     <div

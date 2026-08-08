@@ -15,7 +15,7 @@ import SEO from "../components/common/SEO";
 import SectionHeader from "../components/common/SectionHeader";
 import BusinessCard from "../components/cards/BusinessCard";
 import PartnerCard from "../components/cards/PartnerCard";
-import financeImg from "../assets/customer-img.webp";
+import { getCompanyImage } from "../data/companyImages";
 
 const businesses = [
   {
@@ -25,7 +25,7 @@ const businesses = [
       "Single-director financial consultancy focused on strategic planning, funding, and high-level financial decision-making.",
     color1: "var(--color-teal)",
     color2: "var(--color-yellow)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Finance"),
     icon: BadgeDollarSign,
   },
   {
@@ -35,7 +35,7 @@ const businesses = [
       "Multi-director corporate finance arm offering investment planning, wealth management, and business solutions.",
     color1: "var(--color-yellow)",
     color2: "var(--color-gray)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Finserve"),
     icon: Building2,
   },
   {
@@ -45,7 +45,7 @@ const businesses = [
       "Cross-border trade and logistics solutions moving goods worldwide.",
     color1: "var(--color-gray)",
     color2: "var(--color-teal)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Overseas"),
     icon: Globe2,
   },
   {
@@ -55,7 +55,7 @@ const businesses = [
       "Bio-fertilizer production and agricultural solutions that support sustainable, high-yield farming.",
     color1: "var(--color-teal)",
     color2: "var(--color-yellow)",
-    image: financeImg,
+    image: getCompanyImage("Agro Bio Fertilizers"),
     icon: Sprout,
   },
   {
@@ -65,7 +65,7 @@ const businesses = [
       "Security and compliance services protecting assets, data, and operations across the group.",
     color1: "var(--color-yellow)",
     color2: "var(--color-gray)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Securities"),
     icon: ShieldCheck,
   },
   {
@@ -75,7 +75,7 @@ const businesses = [
       "Community-focused initiatives, education, and welfare programs driven by Indexia Foundation.",
     color1: "var(--color-gray)",
     color2: "var(--color-teal)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Foundation"),
     icon: HeartHandshake,
   },
   {
@@ -85,7 +85,7 @@ const businesses = [
       "Large-scale warehousing facilities near key ports for seamless supply-chain operations.",
     color1: "var(--color-teal)",
     color2: "var(--color-yellow)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Warehouse"),
     icon: Warehouse,
   },
   {
@@ -95,7 +95,7 @@ const businesses = [
       "Strategic advertising and brand visibility solutions across high-impact media channels.",
     color1: "var(--color-yellow)",
     color2: "var(--color-gray)",
-    image: financeImg,
+    image: getCompanyImage("Indexia Advertising"),
     icon: Megaphone,
   },
 ];
