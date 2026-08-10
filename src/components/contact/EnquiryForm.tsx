@@ -43,7 +43,7 @@ const Field = ({
   value: string;
   onChange: EnquiryFormProps["onChange"];
 }) => (
-  <div>
+<div>
     <label htmlFor={id} className="mb-2 block text-xs font-bold uppercase tracking-wider text-slate-600">
       {label}
     </label>
@@ -61,10 +61,10 @@ const Field = ({
 );
 
 const EnquiryForm = ({ form, submitted, onChange, onSubmit }: EnquiryFormProps) => (
-  <motion.div
+<motion.div
     id="enquiry-form"
     {...fadeUp(0.1)}
-    className="relative overflow-hidden rounded-4xl border border-white bg-white p-6 shadow-xl sm:p-10"
+className="relative overflow-hidden rounded-4xl border border-white bg-white px-6 pt-6 pb-2 shadow-xl sm:px-10 sm:pt-10 sm:pb-4"
   >
     <div
       className="absolute right-0 top-0 h-40 w-40 rounded-full blur-3xl"
@@ -110,7 +110,7 @@ const EnquiryForm = ({ form, submitted, onChange, onSubmit }: EnquiryFormProps) 
         ))}
 
         <div>
-          <label htmlFor="message" className="mb-2 block text-xs font-bold uppercase tracking-wider text-slate-600">
+<label htmlFor="message" className="mb-2 block text-xs font-bold uppercase tracking-wider text-slate-600">
             Message
           </label>
           <textarea
@@ -125,9 +125,9 @@ const EnquiryForm = ({ form, submitted, onChange, onSubmit }: EnquiryFormProps) 
           />
         </div>
 
-        <button
+<button
           type="submit"
-          className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1"
+className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1"
           style={{ backgroundColor: accent.blueDark, boxShadow: "0 8px 22px rgba(40,96,144,.25)" }}
         >
           <Send size={17} />

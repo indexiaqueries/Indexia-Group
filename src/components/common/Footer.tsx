@@ -21,10 +21,13 @@ const quickLinks = [
 
 const services = [
   "Financial Consulting",
-  "Investment Planning",
-  "Business Solutions",
-  "Loan & Credit Advisory",
-  "Wealth Protection",
+  "Corporate Finance & Advisory",
+  "Bodyguard & Event Security",
+  "Global Trade & Logistics",
+  "Agro Bio Fertilizers",
+  "Warehousing & Supply Chain",
+  "Athlete Support",
+  "Advertising & Brand Media",
 ];
 
 const socials = [

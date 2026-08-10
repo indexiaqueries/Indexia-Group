@@ -60,9 +60,9 @@ const businesses = [
   },
   {
     name: "Indexia Securities",
-    tag: "Risk & Compliance",
+    tag: "Bodyguard & Event Security",
     description:
-      "Security and compliance services protecting assets, data, and operations across the group.",
+      "Professional bodyguard, bouncer, and event security services protecting people, venues, and high-profile operations.",
     color1: "var(--color-yellow)",
     color2: "var(--color-gray)",
     image: getCompanyImage("Indexia Securities"),
@@ -70,9 +70,9 @@ const businesses = [
   },
   {
     name: "Indexia Foundation",
-    tag: "Social Impact",
+    tag: "Athlete Support",
     description:
-      "Community-focused initiatives, education, and welfare programs driven by Indexia Foundation.",
+      "Sports and training programs that mentor, coach, and fund athletes on their journey to peak performance.",
     color1: "var(--color-gray)",
     color2: "var(--color-teal)",
     image: getCompanyImage("Indexia Foundation"),
@@ -195,4 +195,3 @@ const Home = () => (
 );
 
 export default Home;
-

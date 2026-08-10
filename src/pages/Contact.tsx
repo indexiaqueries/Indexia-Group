@@ -5,6 +5,7 @@ import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
+import DirectorCard from "../components/contact/DirectorCard";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { accent, branches, initialContactForm } from "../data/contact";
 import type { ContactFormData } from "../data/contact";
@@ -51,14 +52,17 @@ ${form.message}
       <ContactHero />
 
       <section className="bg-[#f8fafc] px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+<div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <ContactInfo />
-          <EnquiryForm
-            form={form}
-            submitted={submitted}
-            onChange={handleChange}
-            onSubmit={handleSubmit}
-          />
+          <div className="flex flex-col">
+            <EnquiryForm
+              form={form}
+              submitted={submitted}
+              onChange={handleChange}
+              onSubmit={handleSubmit}
+            />
+            <DirectorCard />
+          </div>
         </div>
       </section>
 

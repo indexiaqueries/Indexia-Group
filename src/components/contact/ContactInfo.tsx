@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { BadgeCheck, Clock3, Mail, MapPin, Phone } from "lucide-react";
+import { Clock3, Mail, MapPin, Phone } from "lucide-react";
 import type { CSSProperties } from "react";
 
 import {
   accent,
   cardBaseClass,
-  displayFont,
   eyebrowClass,
   fadeUp,
   monoFont,
@@ -83,44 +82,6 @@ const LocationHoursTile = () => (
   </motion.div>
 );
 
-const DirectorCard = () => (
-  <motion.div {...fadeUp(0.15)} className="mt-6 rounded-2xl p-6 text-white shadow-xl" style={{ backgroundColor: accent.blueDark }}>
-    <div className="flex items-center gap-3">
-      <span
-        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
-        style={{ backgroundColor: accent.yellow, color: accent.blueDark }}
-      >
-        <BadgeCheck size={20} />
-      </span>
-      <div>
-        <p className={eyebrowClass} style={{ color: accent.yellow, letterSpacing: "0.18em" }}>
-          Director
-        </p>
-        <h3 className="text-lg font-extrabold text-white" style={displayFont}>
-          Bijendra Malik
-        </h3>
-      </div>
-    </div>
-
-    <div className="mt-5 space-y-3 border-t border-white/15 pt-4" style={monoFont}>
-      {[
-        ["tel:+918691886919", "0091 86918 86919", Phone],
-        ["mailto:loans@indexiafinance.com", "loans@indexiafinance.com", Mail],
-        ["mailto:contactus@indexiafinance.com", "contactus@indexiafinance.com", Mail],
-      ].map(([href, text, Icon]) => (
-        <a
-          key={String(text)}
-          href={String(href)}
-          className="flex items-center gap-3 break-all text-sm font-semibold text-white/90 hover:text-white"
-        >
-          <Icon size={16} className="shrink-0" style={{ color: accent.green }} />
-          {String(text)}
-        </a>
-      ))}
-    </div>
-  </motion.div>
-);
-
 const ContactInfo = () => (
   <motion.div {...fadeUp()}>
     <p className={eyebrowClass} style={{ color: accent.green }}>
@@ -139,7 +100,7 @@ const ContactInfo = () => (
       <LocationHoursTile />
     </div>
 
-    <div className="mt-8 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+<div className="mt-8 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
       <p className={eyebrowClass} style={{ color: accent.green, letterSpacing: "0.18em" }}>
         Phone Numbers
       </p>
@@ -149,8 +110,6 @@ const ContactInfo = () => (
         ))}
       </div>
     </div>
-
-    <DirectorCard />
   </motion.div>
 );
 

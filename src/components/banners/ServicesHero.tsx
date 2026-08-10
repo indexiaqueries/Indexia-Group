@@ -1,13 +1,19 @@
 import { motion } from "framer-motion";
-import { ArrowRight, BadgeCheck, Briefcase, LineChart, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Banknote,
+  ShieldCheck,
+  Sprout,
+} from "lucide-react";
 
 import AppButton from "../common/AppButton";
 import { displayFont, eyebrowClass, monoFont, palette } from "../../data/contact";
 
 const highlights = [
-  { icon: Briefcase, title: "Financial Consulting", desc: "Personalised guidance for smarter decisions." },
-  { icon: LineChart, title: "Investment Planning", desc: "Data-driven strategies built around your goals." },
-  { icon: ShieldCheck, title: "Wealth Protection", desc: "Insurance and estate planning for your future." },
+  { icon: Banknote, title: "Finance & Finserve", desc: "Consulting, lending, and wealth solutions." },
+  { icon: ShieldCheck, title: "Securities", desc: "Bodyguard and event security services." },
+  { icon: Sprout, title: "Agro Bio Fertilizers", desc: "Sustainable, bio-based farming solutions." },
 ];
 
 const ServicesHero = () => (
@@ -43,12 +49,12 @@ const ServicesHero = () => (
           className="max-w-xl text-4xl leading-tight text-white sm:text-5xl lg:text-6xl"
           style={{ ...displayFont, fontWeight: 600 }}
         >
-          Financial Solutions That Support Growth
+          Solutions Across Every Industry We Touch
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-8 text-white/75">
-          From consulting to investment planning, our services are designed to meet you
-          wherever you are on your financial journey.
+          From finance and logistics to agriculture, security, sports, and advertising — Indexia
+          Group delivers specialised, integrated solutions across eight focused businesses.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -83,7 +89,7 @@ const ServicesHero = () => (
               className="text-[11px] font-bold uppercase tracking-[0.2em]"
               style={{ color: palette.navyMid }}
             >
-              Core Services
+              Featured Businesses
             </span>
             <span className="flex items-center gap-1 rounded-full bg-[#26ae90]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#066a9c]">
               <BadgeCheck size={12} />
@@ -125,4 +131,3 @@ const ServicesHero = () => (
 );
 
 export default ServicesHero;
-

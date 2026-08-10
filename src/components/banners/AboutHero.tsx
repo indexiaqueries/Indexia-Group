@@ -6,8 +6,8 @@ import { displayFont, eyebrowClass, monoFont, palette } from "../../data/contact
 
 const stats = [
   { icon: Users, value: "500+", label: "Clients Served" },
-  { icon: Award, value: "10+", label: "Years Experience" },
   { icon: Building2, value: "8", label: "Group Companies" },
+  { icon: Award, value: "12+", label: "Years in Business" },
 ];
 
 const AboutHero = () => (
@@ -43,21 +43,26 @@ const AboutHero = () => (
           className="max-w-xl text-4xl leading-tight text-white sm:text-5xl lg:text-6xl"
           style={{ ...displayFont, fontWeight: 600 }}
         >
-          Creating Better Financial Opportunities
+          One Group.
+          <br />
+          Many Businesses.
+          <br />
+          One Shared Vision.
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-8 text-white/75">
-          A customer-focused financial services group committed to delivering reliable,
-          growth-oriented solutions for individuals and businesses across India.
+          Indexia Group is a diversified holding of companies spanning finance, trade,
+          agriculture, logistics, security, sports, and advertising — building businesses that
+          empower clients, partners, and communities to grow with confidence.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
-          <AppButton to="/contact" variant="yellow">
-            Talk to Us
+          <AppButton to="/services" variant="yellow">
+            Explore Our Businesses
             <ArrowRight size={17} />
           </AppButton>
-          <AppButton to="/services" variant="light">
-            Explore Services
+          <AppButton to="/contact" variant="light">
+            Talk to Us
           </AppButton>
         </div>
       </motion.div>
@@ -89,7 +94,7 @@ const AboutHero = () => (
               className="rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider"
               style={{ backgroundColor: palette.navyDeep, color: palette.goldLight }}
             >
-              Since 2014
+              Since 2012
             </span>
           </div>
 
@@ -127,4 +132,3 @@ const AboutHero = () => (
 );
 
 export default AboutHero;
-
