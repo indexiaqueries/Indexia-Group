@@ -40,7 +40,7 @@ const contactInfo = [
   { icon: FiMail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
   { icon: FiPhone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
   { icon: FiMapPin, text: "Mumbai · Delhi · Surat · Ecuador", href: "/contact" },
-  { icon: FiClock, text: "Mon–Sat: 9AM–6PM", href: undefined },
+  { icon: FiClock, text: "Mon - Sat: 9 AM - 6 PM", href: undefined },
 ];
 
 const Footer = () => {
