@@ -10,6 +10,7 @@ import {
   phoneNumbers,
 } from "../../data/contact";
 import PassbookCard from "../contact/PassbookCard";
+import contactHeroBg from "../../assets/ContactHero.webp";
 
 const ContactHero = () => (
   <section
@@ -18,6 +19,20 @@ const ContactHero = () => (
       background: `linear-gradient(115deg, ${palette.navyDeep} 0%, ${palette.navy} 55%, ${palette.navyMid} 100%)`,
     }}
   >
+    <img
+      aria-hidden="true"
+      src={contactHeroBg}
+      alt=""
+      width={1717}
+      height={916}
+      decoding="async"
+      fetchPriority="high"
+      className="absolute inset-0 h-full w-full object-cover object-center"
+    />
+    <div
+      className="pointer-events-none absolute inset-0"
+      style={{ background: `linear-gradient(115deg, ${palette.navyDeep}d9 0%, ${palette.navy}b3 55%, ${palette.navyMid}8c 100%)` }}
+    />
     <div
       className="pointer-events-none absolute inset-0 opacity-70"
       style={{
@@ -44,7 +59,7 @@ const ContactHero = () => (
           className="max-w-2xl text-4xl leading-tight text-white sm:text-5xl lg:text-6xl"
           style={{ ...displayFont, fontWeight: 600 }}
         >
-          A Direct Line to Our Loans Team
+          A Direct Line to Our Team
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-8 text-white/75">
@@ -63,11 +78,11 @@ const ContactHero = () => (
           </a>
 
           <a
-            href="tel:+911146291155"
+            href="tel:+918655168551"
             className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-blue)"
           >
             <Phone size={17} />
-            Call Us Now
+            Call Us Now · 86551 68551
           </a>
         </div>
 
@@ -93,4 +108,3 @@ const ContactHero = () => (
 );
 
 export default ContactHero;
-

@@ -1,52 +1,78 @@
-import { useState } from "react";
-import type { ChangeEvent, SubmitEvent } from "react";
-
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
-import DirectorCard from "../components/contact/DirectorCard";
 import EnquiryForm from "../components/contact/EnquiryForm";
-import { accent, branches, initialContactForm } from "../data/contact";
-import type { ContactFormData } from "../data/contact";
+import { accent, branches } from "../data/contact";
+
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      name: "Contact Indexia Group",
+      url: "https://www.indexiagroup.com/contact",
+      isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Contact Us",
+          item: "https://www.indexiagroup.com/contact",
+        },
+      ],
+    },
+    {
+      "@type": "Organization",
+      name: "Indexia Group",
+      url: "https://www.indexiagroup.com/",
+      telephone: "+91-11-4629-1155",
+      email: "contactus@indexiagroup.com",
+      address: [
+        {
+          "@type": "PostalAddress",
+          name: "Corporate Office",
+          streetAddress: "Office No. 3, 1st Floor, Rahimtoola House, Homji Street, Fort",
+          addressLocality: "Mumbai",
+          addressRegion: "Maharashtra",
+          postalCode: "400001",
+          addressCountry: "IN",
+        },
+        {
+          "@type": "PostalAddress",
+          name: "Delhi Office",
+          streetAddress: "213, Second Floor, Imperial Tower, C Block Commercial Complex, Naraina Vihar",
+          addressLocality: "New Delhi",
+          postalCode: "110028",
+          addressCountry: "IN",
+        },
+        {
+          "@type": "PostalAddress",
+          name: "Surat Office",
+          streetAddress: "S/47, Sakun Complex, Post-Baben, Taluka-Bardoli",
+          addressLocality: "Surat",
+          addressRegion: "Gujarat",
+          postalCode: "394602",
+          addressCountry: "IN",
+        },
+      ],
+    },
+  ],
+};
 
 const Contact = () => {
-  const [form, setForm] = useState<ContactFormData>(initialContactForm);
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = event.target;
-    setForm((previous) => ({ ...previous, [name]: value }));
-  };
-
-  const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const emailSubject = form.subject.trim() || "New enquiry from Indexia Group website";
-    const emailBody = `
-Name: ${form.name}
-Phone: ${form.phone}
-Email: ${form.email}
-Subject: ${form.subject}
-
-Message:
-${form.message}
-    `.trim();
-
-    window.location.href =
-      `mailto:contactus@indexiagroup.com` +
-      `?subject=${encodeURIComponent(emailSubject)}` +
-      `&body=${encodeURIComponent(emailBody)}`;
-    setSubmitted(true);
-  };
-
   return (
     <main className="bg-white">
       <SEO
-        title="Contact Us"
-        description="Reach out to Indexia Group for financial advisory, loans, and more. Contact our Mumbai, Delhi, Surat, and international offices — we reply within 24 hours."
-        keywords="contact Indexia Group, Indexia Group email, financial advisory contact, loan enquiry India, Indexia offices Mumbai Delhi Surat"
+        title="Contact Us — Mumbai, Delhi & Surat Offices"
+        description="Contact Indexia Group for financial services, loans, trade, agro and logistics enquiries. Offices in Mumbai, Delhi, Surat and Ecuador — replies within 24 hours."
+        keywords="contact Indexia Group, Indexia Group Mumbai office, financial services contact India, loan enquiry, business enquiry, Indexia Group email, Delhi NCR"
         canonicalPath="/contact"
+        jsonLd={contactJsonLd}
       />
 
       <ContactHero />
@@ -55,32 +81,20 @@ ${form.message}
 <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <ContactInfo />
           <div className="flex flex-col">
-            <EnquiryForm
-              form={form}
-              submitted={submitted}
-              onChange={handleChange}
-              onSubmit={handleSubmit}
-            />
-            <DirectorCard />
+            <EnquiryForm />
           </div>
         </div>
       </section>
 
-      <section id="branches" className="bg-white px-6 py-20 lg:px-8 lg:py-28">
+      <section id="branches" className="bg-white py-20 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="eyebrow" style={{ color: accent.green }}>
-              Our Locations
-            </p>
-            <h2 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-              Our <span style={{ color: accent.blueDark }}>Locations</span>
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Our <span style={{ color: accent.blue }}>Locations</span>
             </h2>
-            <p className="mt-4 text-sm leading-7 text-slate-500">
-              Visit or contact any of our offices for assistance with your requirements.
-            </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {branches.map((branch, index) => (
               <LocationCard key={branch.name} location={branch} delay={index * 0.08} />
             ))}

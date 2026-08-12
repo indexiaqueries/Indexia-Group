@@ -1,12 +1,16 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 import MainLayout from "../layout/MainLayout";
 
 const Home = lazy(() => import("../pages/Home"));
-const About = lazy(() => import("../pages/About"));
-const Services = lazy(() => import("../pages/Services"));
+const Businesses = lazy(() => import("../pages/Businesses"));
 const Contact = lazy(() => import("../pages/Contact"));
+
+const AboutRedirect = () => {
+  const location = useLocation();
+  return <Navigate to={`/businesses${location.search}`} replace />;
+};
 
 const PageFallback = () => (
   <div className="flex min-h-screen items-center justify-center bg-white">
@@ -22,8 +26,8 @@ const AppRoutes = () => (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/businesses" element={<Businesses />} />
+        <Route path="/about" element={<AboutRedirect />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
@@ -31,4 +35,3 @@ const AppRoutes = () => (
 );
 
 export default AppRoutes;
-

@@ -1,51 +1,33 @@
 import { Link } from "react-router-dom";
 import footerBg from "../../assets/footer-img.webp";
 import logo from "../../assets/IndexiaGroup_Logo.gif";
-import {
-  FiMail,
-  FiPhone,
-  FiMapPin,
-  FiClock,
-  FiLinkedin,
-  FiTwitter,
-  FiFacebook,
-} from "react-icons/fi";
+import { ArrowUp, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { phoneNumbers } from "../../data/contact";
 
 const quickLinks = [
   { label: "Home", path: "/" },
-  { label: "About Us", path: "/about" },
-  { label: "Services", path: "/services" },
+  { label: "Our Businesses", path: "/businesses" },
   { label: "Contact Us", path: "/contact" },
 ];
 
-const services = [
-  "Financial Consulting",
-  "Corporate Finance & Advisory",
-  "Bodyguard & Event Security",
-  "Global Trade & Logistics",
-  "Agro Bio Fertilizers",
-  "Warehousing & Supply Chain",
-  "Athlete Support",
-  "Advertising & Brand Media",
-];
-
-const socials = [
-  { icon: FiLinkedin, href: "https://www.linkedin.com" },
-  { icon: FiTwitter, href: "https://www.twitter.com" },
-  { icon: FiFacebook, href: "https://www.facebook.com" },
-];
-
 const contactInfo = [
-  { icon: FiMail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
-  { icon: FiPhone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
-  { icon: FiMapPin, text: "Mumbai · Delhi · Surat · Ecuador", href: "/contact" },
-  { icon: FiClock, text: "Mon - Sat: 9 AM - 6 PM", href: undefined },
+  { icon: Mail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
+  { icon: Phone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
+  { icon: MapPin, text: "Mumbai · Delhi · Ecuador", href: "/contact" },
+  { icon: Clock, text: "Mon - Sat: 9 AM - 6 PM", href: undefined },
 ];
 
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[#044e74] text-white">
+      <button
+        type="button"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Back to top"
+        className="absolute bottom-20 right-5 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-[#f2f231] text-[#044e74] shadow-[0_8px_24px_rgba(2,16,26,0.35)] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl sm:right-8"
+      >
+        <ArrowUp className="h-5 w-5" strokeWidth={2.5} />
+      </button>
       <div className="absolute inset-0">
         <img
           src={footerBg}
@@ -61,38 +43,22 @@ const Footer = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="rounded-3xl border border-white/12 bg-white/5 p-6 shadow-[0_12px_40px_rgba(2,16,26,0.18)] backdrop-blur-[14px] sm:p-10 lg:p-12">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <div className="text-2xl font-extrabold flex flex-col items-center">
-                <img src={logo} alt="Indexia Group logo" width={72} height={72} className="h-18 object-contain sm:h-23"/>
+          <div className="flex flex-col gap-y-10 sm:flex-row sm:flex-wrap sm:items-start sm:justify-evenly sm:gap-x-8">
+            <div className="sm:w-[calc(50%-1rem)] lg:w-auto">
+              <div className="text-2xl font-extrabold flex flex-col items-center sm:items-start">
+                <img src={logo} alt="Indexia Group logo" width={112} height={112} className="h-24 object-contain sm:h-28"/>
                 <div className="flex flex-row items-center gap-1">
                   <span className="text-[#f2f231]">Indexia</span>
                   <span className="text-white">Group</span>
                 </div>
               </div>
 
-              <p className="mt-4 max-w-sm text-sm leading-7 text-white/68">
+              <p className="mt-6 max-w-sm text-sm leading-7 text-white/68">
                 Helping businesses and individuals build a stronger financial future with trusted, result-driven solutions.
               </p>
-
-              <div className="mt-6 flex items-center gap-3">
-                {socials.map((s) => {
-                  const Icon = s.icon;
-                  return (
-                    <a
-                      key={s.href}
-                      href={s.href}
-                      aria-label="social link"
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#26ae90] hover:border-[#26ae90] hover:shadow-lg"
-                    >
-                      <Icon className="h-4 w-4" />
-                    </a>
-                  );
-                })}
-              </div>
             </div>
 
-            <div>
+            <div className="sm:w-[calc(50%-1rem)] lg:w-auto">
               <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/95">
                 Quick Links
               </h3>
@@ -115,34 +81,13 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/95">
-                Our Services
-              </h3>
-              <div className="mt-3 h-1 w-10 rounded-full bg-[#26ae90]" />
-
-              <ul className="mt-6 space-y-3">
-                {services.map((service) => (
-                  <li
-                    key={service}
-                    className="group inline-flex items-center gap-2 text-sm text-white/70 transition-colors duration-200 hover:text-[#f2f231]"
-                  >
-                    <span className="text-[#26ae90] transition-transform duration-200 group-hover:translate-x-1">
-                      ›
-                    </span>
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
+            <div className="sm:w-full lg:w-auto">
               <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/95">
                 Contact Us
               </h3>
               <div className="mt-3 h-1 w-10 rounded-full bg-[#26ae90]" />
 
-<div className="mt-6 space-y-4">
+              <div className="mt-6 space-y-4">
                 {contactInfo.map((item) => {
                   const Icon = item.icon;
                   const content = (
@@ -150,14 +95,14 @@ const Footer = () => {
                       <span className="mt-0.5 shrink-0 text-[#26ae90]">
                         <Icon className="h-4 w-4" />
                       </span>
-                      <span className="wrap-break-word">{item.text}</span>
+                      <span className={`break-words ${item.href ? "transition-all duration-200 hover:text-[#f2f231]" : ""}`}>{item.text}</span>
                     </span>
                   );
                   return item.href ? (
                     <Link
                       key={item.text}
                       to={item.href}
-                      className="block transition-colors duration-200 hover:text-[#f2f231]"
+                      className="block"
                     >
                       {content}
                     </Link>
@@ -167,29 +112,6 @@ const Footer = () => {
                 })}
               </div>
 
-              <div className="mt-8">
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/95">
-                  Stay Updated
-                </p>
-
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  className="mt-3 flex overflow-hidden rounded-full border border-white/15 bg-white/10 shadow-sm"
-                >
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    aria-label="Email address"
-                    className="min-w-0 flex-1 bg-transparent px-3 py-2.5 text-sm text-white outline-none placeholder:text-white/45 sm:px-4 sm:py-3"
-                  />
-                  <button
-                    type="submit"
-                    className="shrink-0 rounded-full bg-[#f2f231] px-4 py-2.5 text-sm font-bold text-[#1f2000] transition-all duration-200 hover:bg-[#f7f75f] hover:shadow-lg sm:px-5 sm:py-3"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              </div>
             </div>
           </div>
         </div>

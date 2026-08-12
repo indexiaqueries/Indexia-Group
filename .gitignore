@@ -1,19 +1,30 @@
 node_modules/
 dist/
+.vite/
+coverage/
+
+server/.env
+server/.env.*
 
 .env
 .env.*
 !.env.example
 
 *.local
+
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+nohup.out
+.eslintcache
 
+*.tsbuildinfo
+
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
-.vite/
-coverage/
+.freebuff/

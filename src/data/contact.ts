@@ -23,20 +23,20 @@ export const displayFont = { fontFamily: "'Fraunces', Georgia, serif" };
 export const monoFont = { fontFamily: "'IBM Plex Mono', Menlo, monospace" };
 
 export const palette = {
-  navyDeep: "#071c2c",
+  navyDeep: "#0a2233",
   navy: "#0c3652",
   navyMid: "#0f4a6e",
   teal: "#1f9c82",
-  gold: "#c8952f",
-  goldLight: "#e6b658",
-  paper: "#f8f6f0",
+  gold: "#f2f231",
+  goldLight: "#f2f231",
+  seal: "#f2f231",
+  paper: "#f6f2e9",
   ink: "#122029",
 };
 
 export const accent = {
   green: "var(--color-teal)",
   blue: "var(--color-blue)",
-  blueDark: "var(--color-blue-2)",
   yellow: "var(--color-yellow)",
   gray: "var(--color-gray)",
 };
@@ -45,9 +45,6 @@ export const eyebrowClass = "text-xs font-bold uppercase tracking-[0.24em]";
 
 export const cardBaseClass =
   "rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md";
-
-export const inputClasses =
-  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all duration-200 placeholder:text-slate-400 focus:border-[var(--color-teal)] focus:ring-4 focus:ring-[var(--color-teal)]/15";
 
 export const initialContactForm: ContactFormData = {
   name: "",
@@ -71,7 +68,7 @@ Rahimtoola House, Homji Street,
 Opposite RBI, Fort,
 Mumbai - 400001, Maharashtra`,
     phones: [
-      { label: "Tel", number: "+91 73026 47817", href: "tel:+917302647817" },
+      { label: "Mob", number: "+91 73026 47817", href: "tel:+917302647817" },
       { label: "Mob", number: "+91 86918 86919", href: "tel:+918691886919" },
     ],
   },
@@ -82,7 +79,7 @@ Near Lokhandwala Circle,
 Andheri West,
 Mumbai - 400053, Maharashtra`,
     phones: [
-      { label: "Tel", number: "+91 73026 47817", href: "tel:+917302647817" },
+      { label: "Mob", number: "+91 73026 47817", href: "tel:+917302647817" },
       { label: "Mob", number: "+91 86918 86919", href: "tel:+918691886919" },
     ],
   },
@@ -123,4 +120,3 @@ export const fadeUp = (delay = 0) => ({
   viewport: { once: true, amount: 0.2 },
   transition: { duration: 0.6, delay },
 });
-

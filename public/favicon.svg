@@ -16,7 +16,6 @@
 
   <circle cx="32" cy="32" r="29" fill="url(#ocean)" stroke="#0b4165" stroke-width="1.5" filter="url(#shadow)"/>
 
-  <!-- Simplified continents -->
   <path d="M10 20c4-5 10-7 15-6l3 4-3 4-5 1-2 5-5-1-4-4z"
         fill="url(#land)" opacity=".95"/>
   <path d="M21 29l6 2 2 5-2 4 2 7-4 8-4-7 1-6-3-5z"
@@ -26,7 +25,6 @@
   <path d="M42 29l7 2 5 5-2 7-5 5-5-4 1-5-3-4z"
         fill="url(#land)" opacity=".95"/>
 
-  <!-- Indexia I -->
   <text x="32" y="48" text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif"
         font-size="42" font-weight="700"

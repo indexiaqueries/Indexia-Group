@@ -1,0 +1,196 @@
+export type Company = {
+  name: string;
+  tag: string;
+
+  desc: string;
+
+  overview: string;
+
+  highlights: string[];
+  tagline?: string;
+
+  services: string[];
+  color: string;
+  link?: string;
+};
+
+export const companies: Company[] = [
+  {
+    name: "Indexia Finance",
+    tag: "Multinational Fintech",
+    desc: "A multinational fintech providing services globally across four verticals — investor services, FDI, NBFC, and banking funding.",
+    overview:
+      "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. Built around four core verticals — investor services, FDI advisory, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
+    tagline: "An Entire Loan Destination",
+    highlights: [
+      "Global fintech reach with India-first execution",
+      "Four integrated verticals under one roof",
+      "End-to-end funding and advisory support",
+    ],
+    services: [
+      "Investor Services",
+      "FDI Advisory & Facilitation",
+      "NBFC Operations",
+      "Banking & Institutional Funding",
+      "Cross-Border Capital Solutions",
+      "Wealth & Asset Advisory",
+    ],
+    color: "#26ae90",
+    link: "https://indexiafinance.com/",
+  },
+  {
+    name: "Indexia Finserve Pvt. Ltd.",
+    tag: "Loans & Finance",
+    desc: "We do all kinds of loans under finance — every type of loan, tailored to individuals and businesses.",
+    overview:
+      "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. From personal and home loans to business, MSME, and specialised funding, the company works as a complete loan destination — guiding clients through eligibility, documentation, and disbursal with a single, streamlined process.",
+    tagline: "The Next Gen Finance Method",
+    highlights: [
+      "Every loan type under one roof",
+      "Streamlined eligibility, documentation and disbursal",
+      "Dedicated advisory at every step",
+    ],
+    services: [
+      "Personal Loan",
+      "Business Loan",
+      "Home Loan",
+      "Loan Against Property",
+      "Balance Transfer",
+      "Car Loan",
+      "Credit Card",
+      "Education Loan",
+      "Project Loan",
+      "Commercial Purchase",
+      "Lease R Discounting",
+      "Working Capital",
+    ],
+    color: "#f2f231",
+  },
+  {
+    name: "Indexia Securities",
+    tag: "Armed Security & Commandos",
+    desc: "The best armed security and commando protection, safeguarding people, venues, and high-profile operations around the clock.",
+    overview:
+      "Indexia Securities provides the best armed security and commando protection available, safeguarding people, property, and high-profile operations around the clock. From trained commandos and armed guards to VIP escorts and event security, the company brings military-grade discipline to every assignment.",
+    highlights: [
+      "Best-in-class armed and commando protection",
+      "Trained commandos with rapid-response discipline",
+      "24×7 monitoring and on-ground response",
+    ],
+    services: [
+      "Armed Security Guards",
+      "Commando Protection Units",
+      "VIP & Dignitary Escorts",
+      "Event & Venue Security",
+      "Corporate & Site Security",
+      "24×7 Monitoring & Rapid Response",
+    ],
+    color: "#066a9c",
+  },
+  {
+    name: "Indexia Overseas Pvt. Ltd.",
+    tag: "Global Trade — Edibles",
+    desc: "Global trade in all edible items, including sugar, across 14 South American countries.",
+    overview:
+      "Indexia Overseas drives global trade in all edible items, with a special focus on sugar exports across 14 South American countries. The company manages sourcing, quality, logistics, and international compliance so that food-grade products move from origin to market reliably and at scale.",
+    highlights: [
+      "Trade in all edible items — sugar at the core",
+      "Established presence across 14 South American markets",
+      "End-to-end sourcing, quality and logistics",
+    ],
+    services: [
+      "Sugar Export & Trading",
+      "Edible Oils & Pulses",
+      "Food Grains & Spices",
+      "Sourcing & Quality Control",
+      "International Logistics",
+      "14 South American Markets",
+    ],
+    color: "#7b7b7b",
+  },
+  {
+    name: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    tag: "Organic Fertilizer Production",
+    desc: "Organic fertilizer production based in Shamli, Uttar Pradesh — part of the Delhi NCR region.",
+    overview:
+      "Indexia Agro Bio Fertilizers manufactures organic fertilizers at its production facility in Shamli, Uttar Pradesh — part of the Delhi NCR region. The company's bio-based products improve soil health, boost crop yield, and support sustainable farming for growers across North India.",
+    highlights: [
+      "Organic, bio-based production — no harsh chemicals",
+      "Shamli, UP facility in the Delhi NCR belt",
+      "Better soil health, higher crop yield",
+    ],
+    services: [
+      "Organic Fertilizer Production",
+      "Bio-Fertilizer Blends",
+      "Soil Health Solutions",
+      "Yield Improvement Programmes",
+      "Farmer Support & Training",
+      "Shamli, UP Facility (Delhi NCR)",
+    ],
+    color: "#f2f231",
+  },
+  {
+    name: "Indexia Warehouse",
+    tag: "Logistics Infrastructure",
+    desc: "Warehousing facilities on lease to multinational companies, located in the Delhi NCR region.",
+    overview:
+      "Indexia Warehouse operates modern warehousing facilities on lease to multinational companies, located in the Delhi NCR region. With secure, scalable storage and seamless logistics integration, the company helps global businesses manage inventory close to one of India's largest consumption markets.",
+    highlights: [
+      "Facilities on lease to multinational companies",
+      "Prime Delhi NCR locations near major corridors",
+      "Secure, scalable storage with logistics integration",
+    ],
+    services: [
+      "Warehousing on Lease (MNCs)",
+      "Secure & Scalable Storage",
+      "Inventory Management",
+      "Delhi NCR Locations",
+      "Logistics Integration",
+      "Cold & Dry Storage Options",
+    ],
+    color: "#26ae90",
+  },
+  {
+    name: "Indexia Advertising",
+    tag: "Highway Advertising",
+    desc: "Multiple advertising holdings across highways, giving brands high-visibility campaigns.",
+    overview:
+      "Indexia Advertising owns multiple advertising holdings across highways, giving brands high-visibility campaigns in high-traffic corridors. From strategic site selection to creative placement, the company ensures maximum exposure for advertisers along major road networks.",
+    highlights: [
+      "Multiple holdings across highway corridors",
+      "High-traffic placements with maximum visibility",
+      "Strategic site selection and campaign support",
+    ],
+    services: [
+      "Highway Hoardings & Billboards",
+      "Multiple Site Holdings",
+      "High-Traffic Corridor Placements",
+      "Creative & Campaign Support",
+      "Site Analytics & Reporting",
+    ],
+    color: "#7b7b7b",
+  },
+  {
+    name: "Indexia Foundation",
+    tag: "Athlete Support",
+    desc: "Supporting athletes with international-level training, dieting, and all necessary support — right up to the Olympic Games.",
+    overview:
+      "Indexia Foundation supports athletes by providing all possible backing — international-level training, structured dieting and nutrition, expert coaching, and every kind of assistance needed on the journey to the Olympic Games. The foundation stands with sportspersons from early promise to the world's biggest stage.",
+    highlights: [
+      "International-level training and expert coaching",
+      "Structured diet and nutrition programmes",
+      "Complete support all the way to the Olympics",
+    ],
+    services: [
+      "International-Level Training",
+      "Diet & Nutrition Programmes",
+      "Expert Coaching & Mentorship",
+      "Competition Funding & Gear",
+      "Sports Medicine & Recovery",
+      "Olympic-Grade Support",
+    ],
+    color: "#066a9c",
+  },
+];
+
+export const companyNames = companies.map((company) => company.name);

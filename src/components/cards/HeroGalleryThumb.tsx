@@ -99,4 +99,3 @@ const HeroGalleryThumb = ({
 };
 
 export default HeroGalleryThumb;
-

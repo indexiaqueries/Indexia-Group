@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Clock3, Mail, MapPin, Phone } from "lucide-react";
-import type { CSSProperties } from "react";
 
 import {
   accent,
@@ -29,8 +28,7 @@ const InfoTile = () => (
         Enquiries
       </span>
       <span
-        className="mt-1 block text-sm font-semibold text-slate-800 group-hover:text-[--tone]"
-        style={{ "--tone": accent.blueDark } as CSSProperties}
+        className="mt-1 block text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)"
       >
         contactus@indexiagroup.com
       </span>
@@ -39,10 +37,10 @@ const InfoTile = () => (
 );
 
 const PhoneTile = ({ label, number, href }: (typeof phoneNumbers)[number]) => (
-  <a href={href} className="group flex items-center gap-4 rounded-xl bg-slate-50 p-4 hover:bg-[#eaf6f2]">
+  <a href={href} className="group flex items-center gap-4 py-3.5 first:pt-1 last:pb-1">
     <span
       className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
-      style={{ backgroundColor: accent.blueDark, boxShadow: `0 6px 18px rgba(40,96,144,.22)` }}
+      style={{ backgroundColor: accent.blue, boxShadow: `0 6px 18px rgba(6,106,156,.22)` }}
     >
       <Phone size={20} />
     </span>
@@ -83,28 +81,25 @@ const LocationHoursTile = () => (
 );
 
 const ContactInfo = () => (
-  <motion.div {...fadeUp()}>
+  <motion.div {...fadeUp()} className="flex h-full flex-col">
     <p className={eyebrowClass} style={{ color: accent.green }}>
       Contact Information
     </p>
-    <h2 className="mt-3 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl">
-      We&apos;re Here to <span style={{ color: accent.blueDark }}>Help You</span>
-    </h2>
     <p className="mt-5 max-w-lg text-sm leading-7 text-slate-500">
       Whether you have a question about our services, need a business consultation, or want to explore a
       partnership, our team is ready to assist you.
     </p>
 
-    <div className="mt-10 space-y-5">
+    <div className="mt-10 flex flex-1 flex-col justify-center gap-5">
       <InfoTile />
       <LocationHoursTile />
     </div>
 
-<div className="mt-8 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+<div className="mt-8 rounded-2xl border border-[#ddd6c4] bg-(--color-paper) p-5 shadow-sm">
       <p className={eyebrowClass} style={{ color: accent.green, letterSpacing: "0.18em" }}>
         Phone Numbers
       </p>
-      <div className="mt-5 space-y-4">
+      <div className="mt-2 divide-y divide-[#e3dcc9]">
         {phoneNumbers.map((phone) => (
           <PhoneTile key={phone.number} {...phone} />
         ))}

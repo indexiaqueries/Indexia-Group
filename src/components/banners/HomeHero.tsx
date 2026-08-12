@@ -9,11 +9,6 @@ import HomeHeroGallery from "./HomeHeroGallery";
 import type { HeroPanel } from "../cards/HeroGalleryThumb";
 import { getCompanyImage } from "../../data/companyImages";
 
-type BannerProps = {
-  buttonText?: string;
-  buttonLink?: string;
-};
-
 const panels: HeroPanel[] = [
   {
     id: 0,
@@ -76,7 +71,7 @@ const panels: HeroPanel[] = [
 const TEXT_ZOOM_MS = 6000;
 const AUTOPLAY_INTERVAL = 6000;
 
-const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" }: BannerProps) => {
+const Banner = () => {
   const [currentId, setCurrentId] = useState(0);
   const prefersReducedMotion = useReducedMotion();
   const autoplayRef = useRef<number | null>(null);
@@ -119,53 +114,41 @@ const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" 
           0%, 100% { opacity: 1; transform: scale(1); }
           50%      { opacity: .5; transform: scale(1.5); }
         }
-        @keyframes bnr-marquee {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
         @keyframes bnr-text-zoom {
           from { transform: scale(1); }
           to   { transform: scale(1.12); }
-        }
-        .bnr-marquee-track {
-          animation: bnr-marquee ${38}s linear infinite;
-        }
-        .bnr-marquee-track.paused {
-          animation-play-state: paused;
         }
         .bnr-text-zoom {
           animation: bnr-text-zoom ${TEXT_ZOOM_MS}ms ease-out forwards;
         }
         @media (prefers-reduced-motion: reduce) {
-          .bnr-marquee-track { animation: none; }
           .bnr-text-zoom { animation: none; }
         }
       `}</style>
 
-      <div className="relative h-svh sm:h-screen flex flex-col">
+      <div className="relative flex min-h-svh flex-col sm:min-h-screen">
         <div className="absolute inset-0">
           <AnimatePresence initial={false}>
             <motion.img
               key={current.id}
-              layoutId={`panel-image-${current.id}`}
               src={current.image}
               alt=""
               aria-hidden="true"
               width={1408}
               height={768}
               decoding="async"
+              fetchPriority="high"
               className="absolute inset-0 w-full h-full object-cover object-center"
+              initial={prefersReducedMotion ? false : { opacity: 0, scale: 1.06 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={prefersReducedMotion ? undefined : { opacity: 0, scale: 1.06 }}
               transition={{
-                layout: prefersReducedMotion
-                  ? { duration: 0 }
-                  : { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
+                duration: prefersReducedMotion ? 0 : 0.8,
+                ease: [0.22, 1, 0.36, 1],
               }}
             />
           </AnimatePresence>
         </div>
-
-        <div className="absolute inset-0 z-2 bg-[linear-gradient(180deg,rgba(2,16,26,0.68)_0%,rgba(2,16,26,0.4)_28%,rgba(2,16,26,0.62)_62%,rgba(2,16,26,0.94)_100%)]" />
-        <div className="absolute bottom-0 left-0 z-2 h-60 w-full bg-linear-to-t from-[#02101a]/70 via-[#26ae90]/30 to-transparent pointer-events-none" />
 
         <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-36 sm:pt-32 sm:pb-44 overflow-hidden">
           <AnimatePresence mode="wait">
@@ -204,9 +187,9 @@ const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" 
                 )}
 
                 <h1
-                  className={`font-extrabold text-white leading-[1.1] mb-5.5 whitespace-pre-line ${
+                  className={`w-max px-4 sm:px-6 py-2 rounded-xl bg-[#02101a]/25 backdrop-blur-md font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line ${
                     isHome
-                      ? "text-[clamp(34px,5.5vw,64px)] drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]"
+                      ? "text-[clamp(34px,5.5vw,64px)]"
                       : "text-[clamp(32px,5.5vw,60px)]"
                   }`}
                 >
@@ -214,7 +197,7 @@ const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" 
                 </h1>
 
                 <p
-                  className={`leading-[1.8] text-white/85 ${
+                  className={`px-4 sm:px-6 py-2.5 rounded-xl bg-[#02101a]/25 backdrop-blur-md leading-[1.8] text-white/85 ${
                     isHome
                       ? "text-[19px] max-w-170 border-t border-white/20 pt-5 mt-1"
                       : "text-[17px] max-w-140"
@@ -226,19 +209,13 @@ const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" 
 
               <div className="flex flex-wrap gap-3 justify-center mt-9">
                 <Link
-                  to={buttonLink}
+                  to="/businesses"
                   className="inline-flex items-center gap-2 bg-[#26ae90] hover:bg-[#1e9478] text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
                 >
-                  {isHome ? buttonText : "Explore More"}
+                  {isHome ? "Explore Our Businesses" : "Explore More"}
                   <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </Link>
-                <Link
-                  to="/about"
-                  className="inline-flex items-center gap-2 border-2 border-white/45 hover:border-white/80 hover:bg-white/10 text-white font-bold text-sm px-7 py-3.25 rounded-lg transition-colors duration-200"
-                >
-                  About Indexia
                 </Link>
               </div>
             </motion.div>
@@ -272,4 +249,3 @@ const Banner = ({ buttonText = "Explore Our Services", buttonLink = "/services" 
 };
 
 export default Banner;
-

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { BadgeCheck, Landmark } from "lucide-react";
+import { Landmark } from "lucide-react";
 
-import customerImg from "../../assets/customer-img.webp";
+import SealStamp from "../common/SealStamp";
+import customerImg from "../../assets/PassbookCard.webp";
 import { branches, monoFont, palette, phoneNumbers } from "../../data/contact";
 
 const PassbookCard = () => {
@@ -70,21 +71,8 @@ const PassbookCard = () => {
           ))}
         </dl>
 
-        <div
-          className="absolute -bottom-5 -right-5 flex h-20 w-20 -rotate-12 items-center justify-center rounded-full border-2 bg-white text-center shadow-lg"
-          style={{ borderColor: palette.gold }}
-        >
-          <div>
-            <BadgeCheck className="mx-auto" size={18} style={{ color: palette.gold }} />
-            <span
-              className="mt-0.5 block text-[7px] font-bold uppercase leading-tight tracking-widest"
-              style={{ color: palette.gold }}
-            >
-              Verified
-              <br />
-              Partner
-            </span>
-          </div>
+        <div className="seal-stamp-in absolute -bottom-5 -right-5" aria-hidden="true">
+          <SealStamp size={88} color="#066a9c" />
         </div>
       </motion.div>
     </div>

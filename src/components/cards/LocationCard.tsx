@@ -21,7 +21,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => (
     className="shared-card flex h-full min-h-62.5 flex-col bg-[#f8fafc] p-6"
   >
     <div className="flex items-start gap-4">
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-blue-2) text-white shadow-lg">
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-blue) text-white shadow-lg">
         <MapPin size={21} />
       </span>
       <h3 className="pt-2 text-xl font-extrabold text-slate-900">{location.name}</h3>

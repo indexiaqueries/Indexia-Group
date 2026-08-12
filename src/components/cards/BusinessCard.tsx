@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export type BusinessCardItem = {
   name: string;
@@ -94,13 +96,20 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         </motion.h3>
 
         <motion.div
-          className="pointer-events-none absolute inset-0 z-60 flex items-center justify-center p-6 text-center"
+          className="pointer-events-none absolute inset-0 z-60 flex flex-col items-center justify-center gap-4 p-6 text-center"
           variants={revealVariants}
           transition={{ duration: 0.45, ease: "easeOut" }}
         >
           <p className="max-w-md text-sm font-medium leading-6 text-white drop-shadow-lg">
             {business.description}
           </p>
+          <Link
+            to={`/businesses?company=${encodeURIComponent(business.name)}`}
+            className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-[#122029] shadow-lg transition-colors duration-200 hover:bg-[#066a9c] hover:text-white"
+          >
+            Read more
+            <ArrowRight size={16} strokeWidth={2.5} aria-hidden="true" />
+          </Link>
         </motion.div>
       </div>
     </motion.article>

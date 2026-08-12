@@ -8,11 +8,12 @@ type SEOProps = {
   ogType?: string;
   ogImage?: string;
   noindex?: boolean;
+  jsonLd?: object;
 };
 
 const SITE_NAME = "Indexia Group";
 const BASE_URL = "https://www.indexiagroup.com";
-const DEFAULT_OG_IMAGE = "/favicon.svg";
+const DEFAULT_OG_IMAGE = "/og-image.png";
 
 const SEO = ({
   title,
@@ -22,6 +23,7 @@ const SEO = ({
   ogType = "website",
   ogImage = DEFAULT_OG_IMAGE,
   noindex = false,
+  jsonLd,
 }: SEOProps) => {
   useEffect(() => {
     const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
@@ -63,7 +65,20 @@ const SEO = ({
     setMeta("name", "twitter:title", fullTitle);
     setMeta("name", "twitter:description", description);
     setMeta("name", "twitter:image", `https://www.indexiagroup.com${ogImage}`);
-  }, [title, description, keywords, canonicalPath, ogType, ogImage, noindex]);
+
+    let script = document.head.querySelector<HTMLScriptElement>('script[data-seo-jsonld]');
+    if (jsonLd) {
+      if (!script) {
+        script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.dataset.seoJsonld = "true";
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(jsonLd);
+    } else if (script) {
+      script.remove();
+    }
+  }, [title, description, keywords, canonicalPath, ogType, ogImage, noindex, jsonLd]);
 
   return null;
 };

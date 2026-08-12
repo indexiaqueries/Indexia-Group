@@ -8,150 +8,69 @@ import {
   Warehouse,
   Megaphone,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 import AppButton from "../components/common/AppButton";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
 import SectionHeader from "../components/common/SectionHeader";
 import BusinessCard from "../components/cards/BusinessCard";
-import PartnerCard from "../components/cards/PartnerCard";
 import { getCompanyImage } from "../data/companyImages";
+import { companies } from "../data/companies";
 
-const businesses = [
-  {
-    name: "Indexia Finance",
-    tag: "Financial Advisory",
-    description:
-      "Single-director financial consultancy focused on strategic planning, funding, and high-level financial decision-making.",
-    color1: "var(--color-teal)",
-    color2: "var(--color-yellow)",
-    image: getCompanyImage("Indexia Finance"),
-    icon: BadgeDollarSign,
-  },
-  {
-    name: "Indexia Finserve Pvt. Ltd.",
-    tag: "Corporate Finance & Advisory",
-    description:
-      "Multi-director corporate finance arm offering investment planning, wealth management, and business solutions.",
-    color1: "var(--color-yellow)",
-    color2: "var(--color-gray)",
-    image: getCompanyImage("Indexia Finserve"),
-    icon: Building2,
-  },
-  {
-    name: "Indexia Overseas Pvt. Ltd.",
-    tag: "Global Trade & Logistics",
-    description:
-      "Cross-border trade and logistics solutions moving goods worldwide.",
-    color1: "var(--color-gray)",
-    color2: "var(--color-teal)",
-    image: getCompanyImage("Indexia Overseas"),
-    icon: Globe2,
-  },
-  {
-    name: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    tag: "Sustainable Agriculture",
-    description:
-      "Bio-fertilizer production and agricultural solutions that support sustainable, high-yield farming.",
-    color1: "var(--color-teal)",
-    color2: "var(--color-yellow)",
-    image: getCompanyImage("Agro Bio Fertilizers"),
-    icon: Sprout,
-  },
-  {
-    name: "Indexia Securities",
-    tag: "Bodyguard & Event Security",
-    description:
-      "Professional bodyguard, bouncer, and event security services protecting people, venues, and high-profile operations.",
-    color1: "var(--color-yellow)",
-    color2: "var(--color-gray)",
-    image: getCompanyImage("Indexia Securities"),
-    icon: ShieldCheck,
-  },
-  {
-    name: "Indexia Foundation",
-    tag: "Athlete Support",
-    description:
-      "Sports and training programs that mentor, coach, and fund athletes on their journey to peak performance.",
-    color1: "var(--color-gray)",
-    color2: "var(--color-teal)",
-    image: getCompanyImage("Indexia Foundation"),
-    icon: HeartHandshake,
-  },
-  {
-    name: "Indexia Warehouse",
-    tag: "Logistics Infrastructure",
-    description:
-      "Large-scale warehousing facilities near key ports for seamless supply-chain operations.",
-    color1: "var(--color-teal)",
-    color2: "var(--color-yellow)",
-    image: getCompanyImage("Indexia Warehouse"),
-    icon: Warehouse,
-  },
-  {
-    name: "Indexia Advertising",
-    tag: "Brand & Media",
-    description:
-      "Strategic advertising and brand visibility solutions across high-impact media channels.",
-    color1: "var(--color-yellow)",
-    color2: "var(--color-gray)",
-    image: getCompanyImage("Indexia Advertising"),
-    icon: Megaphone,
-  },
-];
+const icons: Record<string, LucideIcon> = {
+  "Indexia Finance": BadgeDollarSign,
+  "Indexia Finserve Pvt. Ltd.": Building2,
+  "Indexia Securities": ShieldCheck,
+  "Indexia Overseas Pvt. Ltd.": Globe2,
+  "Indexia Agro Bio Fertilizers Pvt. Ltd.": Sprout,
+  "Indexia Warehouse": Warehouse,
+  "Indexia Advertising": Megaphone,
+  "Indexia Foundation": HeartHandshake,
+};
 
-const reasons = [
-  {
-    title: "Diversified Expertise",
-    desc:
-      "From finance and logistics to agro and advertising, we bring deep domain knowledge across sectors.",
-  },
-  {
-    title: "Integrated Solutions",
-    desc:
-      "Our group structure allows businesses to collaborate for end-to-end solutions.",
-  },
-  {
-    title: "Trust & Governance",
-    desc:
-      "Strong leadership, compliance frameworks, and a focus on long-term value creation.",
-  },
-  {
-    title: "Growth-Oriented",
-    desc:
-      "Every business is built to scale with clients, partners, and communities.",
-  },
-];
+const colorVar = (hex: string): string => {
+  switch (hex) {
+    case "#26ae90":
+      return "var(--color-teal)";
+    case "#f2f231":
+      return "var(--color-yellow)";
+    case "#066a9c":
+      return "var(--color-blue)";
+    default:
+      return "var(--color-gray)";
+  }
+};
+
+const businesses = companies.map((company, index) => {
+  const next = companies[(index + 1) % companies.length];
+  return {
+    name: company.name,
+    tag: company.tag,
+    description: company.desc,
+    color1: colorVar(company.color),
+    color2: colorVar(next.color),
+    image: getCompanyImage(company.name),
+    icon: icons[company.name] ?? Building2,
+  };
+});
 
 const Home = () => (
   <main className="bg-white">
     <SEO
-      title="Home"
-      description="Indexia Group is a diversified holding of companies spanning finance, trade, agriculture, logistics, securities, social impact, and advertising — building businesses that empower clients, partners, and communities."
-      keywords="Indexia Group, multi-business group, financial services India, trade and logistics, agro fertilizers, securities, advertising, wealth management"
+      title="Financial Services, Loans, Trade & Logistics"
+      description="Diversified Indian business group: financial services, NBFC loans, global trade, agro fertilizers, warehousing & security. Offices in Mumbai, Delhi and Surat."
+      keywords="Indexia Group, financial services India, NBFC loans, personal and business loans Mumbai, global trade sugar export, organic fertilizer manufacturers Shamli, warehousing Delhi NCR, armed security services, highway advertising India, athlete support"
       canonicalPath="/"
     />
 
     <Banner />
 
-    <section className="section-pad bg-white">
-      <div className="container">
-        <SectionHeader
-          title="One Group. Multiple Solutions."
-          description="Indexia Group is a diversified holding of companies spanning finance, trade, agriculture, logistics, securities, social impact, and advertising. We build businesses that empower clients, partners, and communities to grow with confidence."
-        />
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <AppButton to="/services">Explore Our Businesses</AppButton>
-          <AppButton to="/about" variant="outline">About Indexia</AppButton>
-        </div>
-      </div>
-    </section>
-
     <section className="section-pad section-soft">
       <div className="container">
         <SectionHeader
           title="Our Businesses"
-          description="Each company under the Indexia umbrella solves specific challenges while contributing to a larger, integrated ecosystem."
+          description="Indexia Group is a diversified holding of companies spanning Finance, Trade, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
         />
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {businesses.map((business) => (
@@ -159,35 +78,9 @@ const Home = () => (
           ))}
         </div>
         <div className="mt-10 text-center">
-          <AppButton to="/services" variant="blue">View All Services</AppButton>
-        </div>
-      </div>
-    </section>
-
-    <section className="section-pad bg-(--color-deep) text-white">
-      <div className="container">
-        <SectionHeader
-          light
-          title="Why Partner With Indexia?"
-          description="Our group approach combines specialization with collaboration, delivering more value than any single business could on its own."
-        />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {reasons.map((reason, index) => (
-            <PartnerCard key={reason.title} item={reason} index={index} />
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section className="section-pad bg-white">
-      <div className="container">
-        <SectionHeader
-          title="Ready to Explore What Indexia Can Do for You?"
-          description="Whether you need financial advisory, logistics support, agricultural solutions, or brand-building services, our group has the right experts for the job."
-        />
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <AppButton to="/contact" variant="yellow">Contact Us</AppButton>
-          <AppButton to="/services" variant="outline">Our Services</AppButton>
+          <AppButton to="/businesses" variant="blue">
+            View All Businesses
+          </AppButton>
         </div>
       </div>
     </section>

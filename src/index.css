@@ -1,11 +1,67 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
+
+  --background: #ffffff;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #26ae90;
+  --primary-foreground: #ffffff;
+  --secondary: #eef4f7;
+  --secondary-foreground: #0c3652;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #e6f5f1;
+  --accent-foreground: #14765f;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #26ae90;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+
   --color-teal: #26ae90;
   --color-blue: #066a9c;
   --color-blue-2: #286090;
   --color-yellow: #f2f231;
   --color-gray: #7b7b7b;
+
+  --color-paper: #f6f2e9;
   --color-ink: #111827;
   --color-muted: #6b7280;
   --color-soft: #f8fafc;
@@ -43,7 +99,7 @@ html::-webkit-scrollbar-thumb:hover {
 body {
   background-color: #fff;
   color: var(--color-ink);
-  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  font-family: "Instrument Sans", "Segoe UI", system-ui, Arial, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -59,6 +115,90 @@ img {
 
 ul {
   list-style: none;
+}
+
+::selection {
+  background: var(--color-teal);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.font-display {
+  font-family: "Fraunces", Georgia, serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  letter-spacing: -0.01em;
+}
+
+.font-ledger {
+  font-family: "IBM Plex Mono", Menlo, monospace;
+}
+
+.ruled {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 35px,
+    rgba(255, 255, 255, 0.05) 35px,
+    rgba(255, 255, 255, 0.05) 36px
+  );
+}
+
+.passbook-tilt {
+  transform: rotate(-1.5deg);
+  transition: transform 0.5s ease-out;
+}
+.passbook-tilt:hover {
+  transform: rotate(0deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .passbook-tilt {
+    transform: none;
+    transition: none;
+  }
+}
+
+.header-gradient {
+  background-image: linear-gradient(
+    90deg,
+    rgb(4 78 116 / 0.45),
+    rgb(6 106 156 / 0.45),
+    rgb(38 174 144 / 0.45),
+    rgb(4 78 116 / 0.45)
+  );
+  background-size: 200% 100%;
+  animation: header-gradient-shift 14s ease-in-out infinite;
+}
+
+@keyframes header-gradient-shift {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.seal-stamp-in {
+  animation: seal-stamp 0.5s cubic-bezier(0.34, 1.45, 0.64, 1) 0.4s both;
+  transform: rotate(-10deg);
+}
+
+@keyframes seal-stamp {
+  0%   { transform: rotate(-26deg) scale(2.15); }
+  100% { transform: rotate(-10deg) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seal-stamp-in {
+    animation: none;
+  }
+  .header-gradient {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 .container {
@@ -78,10 +218,12 @@ ul {
 
 .section-title {
   color: var(--color-blue);
+  font-family: "Fraunces", Georgia, serif;
   font-size: clamp(1.875rem, 4vw, 2.25rem);
-  font-weight: 800;
-  letter-spacing: 0;
-  line-height: 1.15;
+  font-weight: 700;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
 }
 
 .section-copy {
