@@ -4,14 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dev:all": "node scripts/dev.mjs",
-    "build": "tsc -b && vite build",
+    "dev:frontend": "vite",
+    "dev:server": "node --watch --env-file-if-exists=server/.env server/index.js",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node --env-file-if-exists=server/.env server/index.js",
-    "dev:server": "node --watch --env-file-if-exists=server/.env server/index.js",
-    "optimize:images": "node scripts/optimize-images.mjs"
+    "dev": "concurrently -n \"VITE,SERVER\" -c \"yellow,red\" \"npm run dev:frontend\" \"npm run dev:server\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -36,6 +35,7 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.4",
     "eslint": "^10.6.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
