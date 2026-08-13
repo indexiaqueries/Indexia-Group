@@ -2,13 +2,40 @@ import { Link } from "react-router-dom";
 import footerBg from "../../assets/footer-img.webp";
 import logo from "../../assets/IndexiaGroup_Logo.gif";
 import { ArrowUp, Mail, Phone, MapPin, Clock } from "lucide-react";
-import { phoneNumbers } from "../../data/contact";
+import { phoneNumbers, branches } from "../../data/contact";
 
-const quickLinks = [
-  { label: "Home", path: "/" },
-  { label: "Our Businesses", path: "/businesses" },
-  { label: "Contact Us", path: "/contact" },
+const linkGroups = [
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Indexia Group", href: "/" },
+      { label: "Group Website", href: "https://www.indexiagroup.com/", external: true },
+      { label: "Advertise With Us", href: "/contact" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { label: "Careers", href: "/contact" },
+      { label: "Product & Services", href: "/businesses" },
+      { label: "Terms of Use", href: "#" },
+      { label: "Terms & Conditions", href: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "News & Knowledge Centre", href: "/contact" },
+      { label: "Global Research", href: "https://www.indexiafinance.com/", external: true },
+      { label: "Security Tips", href: "https://www.indexiafinance.com/", external: true },
+      { label: "Track Your Application", href: "https://www.indexiafinance.com/", external: true },
+      { label: "Blog", href: "https://www.indexiafinance.com/", external: true },
+    ],
+  },
 ];
+
+const headOffice = branches[0];
 
 const contactInfo = [
   { icon: Mail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
@@ -60,26 +87,67 @@ const Footer = () => {
 
             <div className="sm:w-[calc(50%-1rem)] lg:w-auto">
               <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/95">
-                Quick Links
+                Head Office
               </h3>
               <div className="mt-3 h-1 w-10 rounded-full bg-[#26ae90]" />
 
-              <ul className="mt-6 space-y-3">
-                {quickLinks.map((item) => (
-                  <li key={item.label}>
-                    <Link
-                      to={item.path}
-                      className="group inline-flex items-center gap-2 text-sm text-white/70 transition-all duration-200 hover:text-[#f2f231]"
-                    >
-                      <span className="text-[#26ae90] transition-transform duration-200 group-hover:translate-x-1">
-                        ›
-                      </span>
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-6 space-y-4">
+                <span className="flex items-start gap-3 text-sm leading-6 text-white/70">
+                  <span className="mt-0.5 shrink-0 text-[#26ae90]">
+                    <MapPin className="h-4 w-4" />
+                  </span>
+                  <span className="whitespace-pre-line">{headOffice.address}</span>
+                </span>
+                <Link
+                  to="/contact"
+                  className="group inline-flex items-center gap-2 text-sm text-white/70 transition-all duration-200 hover:text-[#f2f231]"
+                >
+                  <span className="text-[#26ae90] transition-transform duration-200 group-hover:translate-x-1">
+                    ›
+                  </span>
+                  View all offices
+                </Link>
+              </div>
             </div>
+
+            {linkGroups.map((group) => (
+              <div key={group.title} className="sm:w-[calc(50%-1rem)] lg:w-auto">
+                <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/95">
+                  {group.title}
+                </h3>
+                <div className="mt-3 h-1 w-10 rounded-full bg-[#26ae90]" />
+
+                <ul className="mt-6 space-y-3">
+                  {group.links.map((item) => (
+                    <li key={item.label}>
+                      {item.external ? (
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group inline-flex items-center gap-2 text-sm text-white/70 transition-all duration-200 hover:text-[#f2f231]"
+                        >
+                          <span className="text-[#26ae90] transition-transform duration-200 group-hover:translate-x-1">
+                            ›
+                          </span>
+                          {item.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={item.href}
+                          className="group inline-flex items-center gap-2 text-sm text-white/70 transition-all duration-200 hover:text-[#f2f231]"
+                        >
+                          <span className="text-[#26ae90] transition-transform duration-200 group-hover:translate-x-1">
+                            ›
+                          </span>
+                          {item.label}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
             <div className="sm:w-full lg:w-auto">
               <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white/95">

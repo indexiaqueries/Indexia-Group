@@ -5,6 +5,7 @@ import MainLayout from "../layout/MainLayout";
 
 const Home = lazy(() => import("../pages/Home"));
 const Businesses = lazy(() => import("../pages/Businesses"));
+const CompanyPage = lazy(() => import("../pages/CompanyPage"));
 const Contact = lazy(() => import("../pages/Contact"));
 
 const AboutRedirect = () => {
@@ -27,6 +28,7 @@ const AppRoutes = () => (
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/businesses" element={<Businesses />} />
+        <Route path="/businesses/:slug" element={<CompanyPage />} />
         <Route path="/about" element={<AboutRedirect />} />
         <Route path="/contact" element={<Contact />} />
       </Route>

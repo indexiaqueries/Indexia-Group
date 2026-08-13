@@ -14,6 +14,7 @@ import AppButton from "../components/common/AppButton";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
 import SectionHeader from "../components/common/SectionHeader";
+import Reveal from "../components/common/Reveal";
 import BusinessCard from "../components/cards/BusinessCard";
 import { getCompanyImage } from "../data/companyImages";
 import { companies } from "../data/companies";
@@ -58,7 +59,7 @@ const businesses = companies.map((company, index) => {
 const Home = () => (
   <main className="bg-white">
     <SEO
-      title="Financial Services, Loans, Trade & Logistics"
+      title="Financial Services, Loans, Export & Logistics"
       description="Diversified Indian business group: financial services, NBFC loans, global trade, agro fertilizers, warehousing & security. Offices in Mumbai, Delhi and Surat."
       keywords="Indexia Group, financial services India, NBFC loans, personal and business loans Mumbai, global trade sugar export, organic fertilizer manufacturers Shamli, warehousing Delhi NCR, armed security services, highway advertising India, athlete support"
       canonicalPath="/"
@@ -68,20 +69,26 @@ const Home = () => (
 
     <section className="section-pad section-soft">
       <div className="container">
-        <SectionHeader
-          title="Our Businesses"
-          description="Indexia Group is a diversified holding of companies spanning Finance, Trade, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
-        />
+        <Reveal>
+          <SectionHeader
+            title="Group Companies"
+            description="Indexia Group is a diversified holding of companies spanning Finance, Trade, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
+          />
+        </Reveal>
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {businesses.map((business) => (
-            <BusinessCard key={business.name} business={business} />
+          {businesses.map((business, i) => (
+            <Reveal key={business.name} delay={(i % 4) * 0.08} amount={0.15}>
+              <BusinessCard business={business} />
+            </Reveal>
           ))}
         </div>
-        <div className="mt-10 text-center">
-          <AppButton to="/businesses" variant="blue">
-            View All Businesses
-          </AppButton>
-        </div>
+        <Reveal delay={0.2}>
+          <div className="mt-10 text-center">
+            <AppButton to="/businesses" variant="blue">
+              View All Group Companies
+            </AppButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   </main>

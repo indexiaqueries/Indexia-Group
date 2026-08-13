@@ -81,7 +81,7 @@ const BusinessesHero = () => (
         One Group. Eight Businesses. <span className="text-[#f2f231]">One Shared Promise.</span>
       </h1>
       <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-white/80">
-        From finance and advisory to trade, agriculture, logistics, security, sports, and media — every
+        From finance and advisory to export, agriculture, logistics, security, sports, and media — every
         Indexia business is built on the same foundation: integrity, expertise, and a people-first approach.
         Whatever you need, the right team is already part of the family.
       </p>

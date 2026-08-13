@@ -1,5 +1,6 @@
 export type Company = {
   name: string;
+  slug: string;
   tag: string;
 
   desc: string;
@@ -17,10 +18,11 @@ export type Company = {
 export const companies: Company[] = [
   {
     name: "Indexia Finance",
+    slug: "finance",
     tag: "Multinational Fintech",
     desc: "A multinational fintech providing services globally across four verticals — investor services, FDI, NBFC, and banking funding.",
     overview:
-      "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. Built around four core verticals — investor services, FDI advisory, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
+      "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. You may apply to our portal for any kind loan at www.indexiafinance.com — we provide our services globally, and in India we are business partners with 43 banks and NBFCs. Built around four core verticals — investor services, FDI advisory, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
     tagline: "An Entire Loan Destination",
     highlights: [
       "Global fintech reach with India-first execution",
@@ -28,8 +30,8 @@ export const companies: Company[] = [
       "End-to-end funding and advisory support",
     ],
     services: [
-      "Investor Services",
       "FDI Advisory & Facilitation",
+      "Investor Services",
       "NBFC Operations",
       "Banking & Institutional Funding",
       "Cross-Border Capital Solutions",
@@ -40,10 +42,11 @@ export const companies: Company[] = [
   },
   {
     name: "Indexia Finserve Pvt. Ltd.",
+    slug: "finserve",
     tag: "Loans & Finance",
     desc: "We do all kinds of loans under finance — every type of loan, tailored to individuals and businesses.",
     overview:
-      "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. From personal and home loans to business, MSME, and specialised funding, the company works as a complete loan destination — guiding clients through eligibility, documentation, and disbursal with a single, streamlined process.",
+      "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. Now the right bank will come at your doorstep — the company works as a complete loan destination, guiding clients through eligibility, documentation, and disbursal for personal, home, business, MSME, and specialised funding with a single, streamlined process.",
     tagline: "The Next Gen Finance Method",
     highlights: [
       "Every loan type under one roof",
@@ -65,32 +68,13 @@ export const companies: Company[] = [
       "Working Capital",
     ],
     color: "#f2f231",
-  },
-  {
-    name: "Indexia Securities",
-    tag: "Armed Security & Commandos",
-    desc: "The best armed security and commando protection, safeguarding people, venues, and high-profile operations around the clock.",
-    overview:
-      "Indexia Securities provides the best armed security and commando protection available, safeguarding people, property, and high-profile operations around the clock. From trained commandos and armed guards to VIP escorts and event security, the company brings military-grade discipline to every assignment.",
-    highlights: [
-      "Best-in-class armed and commando protection",
-      "Trained commandos with rapid-response discipline",
-      "24×7 monitoring and on-ground response",
-    ],
-    services: [
-      "Armed Security Guards",
-      "Commando Protection Units",
-      "VIP & Dignitary Escorts",
-      "Event & Venue Security",
-      "Corporate & Site Security",
-      "24×7 Monitoring & Rapid Response",
-    ],
-    color: "#066a9c",
+    link: "https://indexiafinance.com/",
   },
   {
     name: "Indexia Overseas Pvt. Ltd.",
-    tag: "Global Trade — Edibles",
-    desc: "Global trade in all edible items, including sugar, across 14 South American countries.",
+    slug: "overseas",
+    tag: "Edible Exporter",
+    desc: "We deal and export refined sugar and all edible items.",
     overview:
       "Indexia Overseas drives global trade in all edible items, with a special focus on sugar exports across 14 South American countries. The company manages sourcing, quality, logistics, and international compliance so that food-grade products move from origin to market reliably and at scale.",
     highlights: [
@@ -110,8 +94,9 @@ export const companies: Company[] = [
   },
   {
     name: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    slug: "agro-bio",
     tag: "Organic Fertilizer Production",
-    desc: "Organic fertilizer production based in Shamli, Uttar Pradesh — part of the Delhi NCR region.",
+    desc: "We manufacture organic fertilizers in India and export them globally.",
     overview:
       "Indexia Agro Bio Fertilizers manufactures organic fertilizers at its production facility in Shamli, Uttar Pradesh — part of the Delhi NCR region. The company's bio-based products improve soil health, boost crop yield, and support sustainable farming for growers across North India.",
     highlights: [
@@ -130,7 +115,30 @@ export const companies: Company[] = [
     color: "#f2f231",
   },
   {
+    name: "Indexia Securities",
+    slug: "securities",
+    tag: "Armed Security & Commandos",
+    desc: "Armed commandos and armed security, safeguarding politicians and big business tycoons.",
+    overview:
+      "Indexia Securities provides the best armed security and commando protection available, safeguarding people, property, and high-profile operations around the clock. From trained commandos and armed guards to VIP escorts and event security, the company brings military-grade discipline to every assignment.",
+    highlights: [
+      "Best-in-class armed and commando protection",
+      "Trained commandos with rapid-response discipline",
+      "24×7 monitoring and on-ground response",
+    ],
+    services: [
+      "Armed Security Guards",
+      "Commando Protection Units",
+      "VIP & Dignitary Escorts",
+      "Event & Venue Security",
+      "Corporate & Site Security",
+      "24×7 Monitoring & Rapid Response",
+    ],
+    color: "#066a9c",
+  },
+  {
     name: "Indexia Warehouse",
+    slug: "warehouse",
     tag: "Logistics Infrastructure",
     desc: "Warehousing facilities on lease to multinational companies, located in the Delhi NCR region.",
     overview:
@@ -152,6 +160,7 @@ export const companies: Company[] = [
   },
   {
     name: "Indexia Advertising",
+    slug: "advertising",
     tag: "Highway Advertising",
     desc: "Multiple advertising holdings across highways, giving brands high-visibility campaigns.",
     overview:
@@ -172,6 +181,7 @@ export const companies: Company[] = [
   },
   {
     name: "Indexia Foundation",
+    slug: "foundation",
     tag: "Athlete Support",
     desc: "Supporting athletes with international-level training, dieting, and all necessary support — right up to the Olympic Games.",
     overview:
