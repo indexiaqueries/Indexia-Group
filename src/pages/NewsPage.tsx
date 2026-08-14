@@ -45,8 +45,22 @@ const newsJsonLd = {
 
 const NewsPage = () => {
   const { t } = useTranslation();
-  const featured = newsArticles.find((a) => a.featured) ?? newsArticles[0];
-  const latest = newsArticles.filter((a) => a !== featured);
+  // Resolve body copy through i18n so each language reads its own content,
+  // falling back to the English source in the data module when a key is missing.
+  const tr = (path: string, fallback: string) => t(`pageContent.news.${path}`, { defaultValue: fallback });
+  const articles = newsArticles.map((a) => ({
+    ...a,
+    title: tr(`articles.${a.slug}.title`, a.title),
+    category: tr(`articles.${a.slug}.category`, a.category),
+    excerpt: tr(`articles.${a.slug}.excerpt`, a.excerpt),
+  }));
+  const insights = knowledgeInsights.map((ins) => ({
+    ...ins,
+    title: tr(`insights.${ins.key}.title`, ins.title),
+    body: tr(`insights.${ins.key}.body`, ins.body),
+  }));
+  const featured = articles.find((a) => a.featured) ?? articles[0];
+  const latest = articles.filter((a) => a !== featured);
 
   return (
     <main className="bg-white">
@@ -179,8 +193,8 @@ const NewsPage = () => {
           </Reveal>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {knowledgeInsights.map((insight, i) => (
-              <Reveal key={insight.title} delay={(i % 4) * 0.08} amount={0.15}>
+            {insights.map((insight, i) => (
+              <Reveal key={insight.key} delay={(i % 4) * 0.08} amount={0.15}>
                 <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                   <span className="font-ledger text-sm font-bold" style={{ color: colors.teal }}>
                     {String(i + 1).padStart(2, "0")}
