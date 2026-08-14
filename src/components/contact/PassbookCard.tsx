@@ -3,7 +3,8 @@ import { Landmark } from "lucide-react";
 
 import SealStamp from "../common/SealStamp";
 import customerImg from "../../assets/PassbookCard.webp";
-import { branches, monoFont, palette, phoneNumbers } from "../../data/contact";
+import { branches, phoneNumbers } from "../../data/contact";
+import { colors, monoFont, palette } from "../../lib/theme";
 
 const PassbookCard = () => {
   const rows = [
@@ -28,7 +29,7 @@ const PassbookCard = () => {
         className="relative rounded-3xl p-6 shadow-2xl ring-1 ring-black/5 sm:p-7"
         style={{ backgroundColor: palette.paper }}
       >
-        <div className="absolute bottom-8 left-0 top-8 flex -translate-x-1/2 flex-col justify-between">
+        <div className="absolute bottom-8 start-0 top-8 flex -translate-x-1/2 flex-col justify-between rtl:translate-x-1/2">
           {Array.from({ length: 6 }).map((_, i) => (
             <span
               key={i}
@@ -60,19 +61,19 @@ const PassbookCard = () => {
           />
         </div>
 
-        <dl className="mt-5 space-y-4 pb-10 pr-14">
+        <dl className="mt-5 space-y-4 pb-10 pe-14">
           {rows.map((row) => (
             <div key={row.label} className="flex items-baseline justify-between text-sm">
               <dt className="text-slate-500">{row.label}</dt>
-              <dd className="whitespace-nowrap font-semibold" style={{ ...monoFont, color: palette.ink }}>
+              <dd className="whitespace-nowrap font-semibold" style={{ ...monoFont, color: palette.inkDeep }}>
                 {row.value}
               </dd>
             </div>
           ))}
         </dl>
 
-        <div className="seal-stamp-in absolute -bottom-5 -right-5" aria-hidden="true">
-          <SealStamp size={88} color="#066a9c" />
+        <div className="seal-stamp-in absolute -bottom-5 -end-5" aria-hidden="true">
+          <SealStamp size={88} color={colors.blue} />
         </div>
       </motion.div>
     </div>

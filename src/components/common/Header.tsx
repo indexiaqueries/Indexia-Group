@@ -2,59 +2,54 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ChevronDown, EllipsisVertical, ExternalLink, Globe, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logo from "../../assets/IndexiaGroup_Logo.gif";
 import { companies } from "../../data/companies";
+import { LANGUAGES } from "../../i18n/languages";
+import { preloadLocale } from "../../i18n";
 
 const navItems = [
-  { name: "Contact Us", path: "/contact" },
+  { key: "header.nav.contact", path: "/contact" },
 ];
-
-const languages = [
-  { code: "en", label: "English" },
-  { code: "es", label: "Español" },
-  { code: "fr", label: "Français" },
-  { code: "de", label: "Deutsch" },
-  { code: "it", label: "Italiano" },
-  { code: "pt", label: "Português" },
-  { code: "nl", label: "Nederlands" },
-  { code: "sv", label: "Svenska" },
-  { code: "pl", label: "Polski" },
-  { code: "ru", label: "Русский" },
-  { code: "el", label: "Ελληνικά" },
-  { code: "tr", label: "Türkçe" },
-  { code: "ar", label: "العربية" },
-  { code: "fa", label: "فارسی" },
-  { code: "hi", label: "हिन्दी" },
-  { code: "mr", label: "मराठी" },
-  { code: "gu", label: "ગુજરાતી" },
-  { code: "bn", label: "বাংলা" },
-  { code: "ta", label: "தமிழ்" },
-  { code: "te", label: "తెలుగు" },
-  { code: "kn", label: "ಕನ್ನಡ" },
-  { code: "ml", label: "മലയാളം" },
-  { code: "pa", label: "ਪੰਜਾਬੀ" },
-  { code: "ur", label: "اردو" },
-  { code: "or", label: "ଓଡ଼ିଆ" },
-  { code: "as", label: "অসমীয়া" },
-  { code: "zh", label: "中文" },
-  { code: "ja", label: "日本語" },
-  { code: "ko", label: "한국어" },
-  { code: "th", label: "ไทย" },
-  { code: "vi", label: "Tiếng Việt" },
-  { code: "id", label: "Bahasa Indonesia" },
-];
-
-const displayName = (name: string) => name.replace(" Pvt. Ltd.", "");
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [companiesOpen, setCompaniesOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const [lang, setLang] = useState("en");
+  const [scrolled, setScrolled] = useState(false);
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   const prefersReducedMotion = useReducedMotion();
   const barRef = useRef<HTMLElement>(null);
+  const heroThresholdRef = useRef(window.innerHeight);
   const location = useLocation();
   const onBusinesses = location.pathname.startsWith("/businesses");
+
+  // Measure the page's hero (always the first <section> inside <main>) so the
+  // bar appears only once the hero itself has scrolled past — not on any small
+  // scroll. Falls back to ~80% of the viewport if no hero is found.
+  const measureHero = () => {
+    const hero = document.querySelector("main section");
+    heroThresholdRef.current = hero ? hero.getBoundingClientRect().height : window.innerHeight * 0.8;
+  };
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > heroThresholdRef.current);
+    measureHero();
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", measureHero);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", measureHero);
+    };
+  }, []);
+
+  // Re-measure after navigating — each page has a differently sized hero.
+  // MainLayout scrolls to top on route change, whose scroll event resets `scrolled`.
+  useEffect(() => {
+    measureHero();
+  }, [location.pathname]);
 
   useEffect(() => {
     if (!menuOpen && !companiesOpen && !langOpen) return;
@@ -82,10 +77,15 @@ const Header = () => {
     };
   }, [menuOpen, companiesOpen, langOpen]);
 
-  const selectLang = (code: string) => {
-    setLang(code);
+  const selectLang = async (code: string) => {
+    // Ensure the locale chunk is loaded first so the swap is atomic — no flash
+    // of English/fallback text while the language's chunk fetches.
+    if (code !== i18n.language) {
+      await preloadLocale(code).catch(() => undefined);
+    }
+    i18n.changeLanguage(code);
     setLangOpen(false);
-    document.documentElement.lang = code;
+    setMenuOpen(false);
   };
 
   const renderCompanyLink = (company: (typeof companies)[number], onNavigate?: () => void) => {
@@ -101,24 +101,32 @@ const Header = () => {
           className={cls}
           onClick={onNavigate}
         >
-          {displayName(company.name)}
-          <ExternalLink size={12} className="shrink-0 text-[#26ae90]" />
+          {company.name}
+          <ExternalLink size={12} className="shrink-0 text-(--color-teal)" />
         </a>
       );
     }
     return (
       <Link key={company.slug} to={`/businesses/${company.slug}`} className={cls} onClick={onNavigate}>
-        {displayName(company.name)}
+        {company.name}
       </Link>
     );
   };
 
   return (
-    <header ref={barRef} className="fixed inset-x-0 top-0 z-999 pointer-events-none">
+    <header ref={barRef} className="fixed inset-x-0 top-0 z-999 h-[72px] pointer-events-none sm:h-[92px]">
+      {/* Navy gradient bar once scrolled into content — echoes the heroes and keeps the nav legible on light sections */}
+      <div
+        aria-hidden="true"
+        className={`header-scrim pointer-events-none absolute inset-0 border-b border-white/10 shadow-[0_6px_24px_rgba(2,16,26,0.32),0_2px_6px_rgba(2,16,26,0.18)] backdrop-blur-md transition-opacity duration-300 ${
+          scrolled ? "opacity-100" : "opacity-0"
+        }`}
+      />
+
       <NavLink
         to="/"
         aria-label="Indexia Group home"
-        className="group pointer-events-auto absolute left-3 top-2 z-10 block sm:left-5 sm:top-3"
+        className="group pointer-events-auto absolute start-3 top-1/2 z-10 block -translate-y-1/2 sm:start-5"
       >
         <img
           src={logo}
@@ -129,19 +137,19 @@ const Header = () => {
         />
       </NavLink>
 
-      <nav className="pointer-events-auto absolute left-1/2 top-2.5 z-20 hidden -translate-x-1/2 items-center gap-1 min-[900px]:flex">
+      <nav className="pointer-events-auto absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-1 min-[900px]:flex">
         <NavLink
           to="/"
           end
           className={({ isActive }) =>
             `rounded-full px-4.5 py-2 text-[13.5px] font-semibold whitespace-nowrap transition-all duration-200 ${
               isActive
-                ? "bg-[#f2f231]/20 text-[#f2f231] backdrop-blur-md"
+                ? "bg-(--color-yellow)/20 text-(--color-yellow) backdrop-blur-md"
                 : "bg-white/10 text-white/85 backdrop-blur-md hover:bg-white/20 hover:text-white"
             }`
           }
         >
-          Home
+          {t("header.menu.home")}
         </NavLink>
 
             <div
@@ -155,11 +163,11 @@ const Header = () => {
                 aria-expanded={companiesOpen}
                 className={`flex items-center gap-1.5 rounded-full px-4.5 py-2 text-[13.5px] font-semibold whitespace-nowrap transition-all duration-200 ${
                   onBusinesses
-                    ? "bg-[#f2f231]/20 text-[#f2f231] backdrop-blur-md"
+                    ? "bg-(--color-yellow)/20 text-(--color-yellow) backdrop-blur-md"
                     : "bg-white/10 text-white/85 backdrop-blur-md hover:bg-white/20 hover:text-white"
                 }`}
               >
-                Group Companies
+                {t("header.menu.groupCompanies")}
                 <ChevronDown
                   size={13}
                   strokeWidth={2.5}
@@ -171,14 +179,14 @@ const Header = () => {
                 {companiesOpen && (
                   <motion.div
                     key="companies"
-                    className="absolute left-0 top-full z-30 mt-2 w-80 origin-top-left rounded-2xl border border-white/15 bg-[#043249]/95 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_16px_40px_rgba(2,16,26,0.45)] backdrop-blur-2xl backdrop-saturate-150"
+                    className="absolute start-0 top-full z-30 mt-2 w-80 origin-top-start rounded-2xl border border-white/15 bg-(--color-navy-black)/95 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_6px_24px_rgba(2,16,26,0.32),0_2px_6px_rgba(2,16,26,0.18)] backdrop-blur-2xl backdrop-saturate-150"
                     initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.94, y: -6 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={prefersReducedMotion ? undefined : { opacity: 0, scale: 0.94, y: -6 }}
                     transition={{ duration: 0.16, ease: "easeOut" }}
                   >
                     <p className="px-2.5 pb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
-                      Group Companies
+                      {t("header.menu.groupCompanies")}
                     </p>
                     <div className="grid gap-0.5">
                       {companies.map((company) => renderCompanyLink(company, () => setCompaniesOpen(false)))}
@@ -187,9 +195,9 @@ const Header = () => {
                       <Link
                         to="/businesses"
                         onClick={() => setCompaniesOpen(false)}
-                        className="block rounded-lg px-2.5 py-1.5 text-[13px] font-bold text-[#f2f231] transition-colors hover:bg-white/10"
+                        className="block rounded-lg px-2.5 py-1.5 text-[13px] font-bold text-(--color-yellow) transition-colors hover:bg-white/10"
                       >
-                        View all companies →
+                        {t("header.menu.viewAllCompanies")}
                       </Link>
                     </div>
                   </motion.div>
@@ -199,23 +207,23 @@ const Header = () => {
 
             {navItems.map((item) => (
               <NavLink
-                key={item.name}
+                key={item.key}
                 to={item.path}
                 end={item.path === "/"}
                 className={({ isActive }) =>
                   `rounded-full px-4.5 py-2 text-[13.5px] font-semibold whitespace-nowrap transition-all duration-200 ${
                     isActive
-                      ? "bg-[#f2f231]/20 text-[#f2f231] backdrop-blur-md"
+                      ? "bg-(--color-yellow)/20 text-(--color-yellow) backdrop-blur-md"
                       : "bg-white/10 text-white/85 backdrop-blur-md hover:bg-white/20 hover:text-white"
                   }`
                 }
               >
-                {item.name}
+                {t(item.key)}
               </NavLink>
             ))}
       </nav>
 
-      <div className="pointer-events-auto absolute right-3 top-2.5 z-30 flex items-center gap-2 sm:right-5 sm:top-3">
+      <div className="pointer-events-auto absolute end-3 top-1/2 z-30 flex -translate-y-1/2 items-center gap-2 sm:end-5">
             <div
               className="relative"
               onMouseEnter={() => setLangOpen(true)}
@@ -225,10 +233,10 @@ const Header = () => {
                 type="button"
                 onClick={() => setLangOpen((o) => !o)}
                 aria-expanded={langOpen}
-                aria-label="Select language"
+                aria-label={t("header.aria.selectLanguage")}
                 className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-2 text-[12.5px] font-bold uppercase text-white/90 backdrop-blur-md transition-all duration-200 hover:bg-white/20 hover:scale-105"
               >
-                <Globe size={14} strokeWidth={2.2} className="text-[#f2f231]" />
+                <Globe size={14} strokeWidth={2.2} className="text-(--color-yellow)" />
                 {lang}
                 <ChevronDown
                   size={12}
@@ -241,21 +249,21 @@ const Header = () => {
                 {langOpen && (
                   <motion.div
                     key="lang"
-                    className="absolute right-0 top-full z-30 mt-2 w-56 origin-top-right rounded-2xl border border-white/15 bg-[#043249]/95 p-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_16px_40px_rgba(2,16,26,0.45)] backdrop-blur-2xl backdrop-saturate-150"
+                    className="absolute end-0 top-full z-30 mt-2 w-56 origin-top-end rounded-2xl border border-white/15 bg-(--color-navy-black)/95 p-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_6px_24px_rgba(2,16,26,0.32),0_2px_6px_rgba(2,16,26,0.18)] backdrop-blur-2xl backdrop-saturate-150"
                     initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.94, y: -6 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={prefersReducedMotion ? undefined : { opacity: 0, scale: 0.94, y: -6 }}
                     transition={{ duration: 0.16, ease: "easeOut" }}
                   >
                     <div className="max-h-[min(60vh,440px)] overflow-y-auto overscroll-contain pr-0.5 [scrollbar-width:thin] [scrollbar-color:rgba(255,255,255,0.25)_transparent]">
-                      {languages.map((l) => (
+                      {LANGUAGES.map((l) => (
                         <button
                           key={l.code}
                           type="button"
                           onClick={() => selectLang(l.code)}
-                          className={`block w-full rounded-lg px-3 py-1.5 text-left text-[13px] font-semibold transition-colors duration-150 ${
+                          className={`block w-full rounded-lg px-3 py-1.5 text-start text-[13px] font-semibold transition-colors duration-150 ${
                             lang === l.code
-                              ? "bg-[#f2f231]/15 text-[#f2f231]"
+                              ? "bg-(--color-yellow)/15 text-(--color-yellow)"
                               : "text-white/85 hover:bg-white/10 hover:text-white"
                           }`}
                         >
@@ -270,7 +278,7 @@ const Header = () => {
 
             <button
               onClick={() => setMenuOpen((o) => !o)}
-              aria-label={menuOpen ? "Close menu" : "Toggle menu"}
+              aria-label={menuOpen ? t("header.aria.closeMenu") : t("header.aria.toggleMenu")}
               aria-expanded={menuOpen}
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-white/20 min-[900px]:hidden"
             >
@@ -284,7 +292,7 @@ const Header = () => {
                     transition={{ duration: 0.2 }}
                     className="flex"
                   >
-                    <X size={20} strokeWidth={2.5} className="text-[#f2f231]" />
+                    <X size={20} strokeWidth={2.5} className="text-(--color-yellow)" />
                   </motion.span>
                 ) : (
                   <motion.span
@@ -295,7 +303,7 @@ const Header = () => {
                     transition={{ duration: 0.2 }}
                     className="flex"
                   >
-                    <EllipsisVertical size={20} strokeWidth={2.5} className="text-[#f2f231]" />
+                    <EllipsisVertical size={20} strokeWidth={2.5} className="text-(--color-yellow)" />
                   </motion.span>
                 )}
               </AnimatePresence>
@@ -305,7 +313,7 @@ const Header = () => {
               {menuOpen && (
               <motion.div
                 key="dropdown"
-                className="pointer-events-auto absolute right-0 top-full z-20 mt-2 w-72 origin-top-right rounded-2xl border border-white/15 bg-[#043249]/90 p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_16px_40px_rgba(2,16,26,0.45)] backdrop-blur-2xl backdrop-saturate-150 min-[900px]:hidden"
+                className="pointer-events-auto absolute end-0 top-full z-20 mt-2 w-72 origin-top-end rounded-2xl border border-white/15 bg-(--color-navy-black)/90 p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_6px_24px_rgba(2,16,26,0.32),0_2px_6px_rgba(2,16,26,0.18)] backdrop-blur-2xl backdrop-saturate-150 min-[900px]:hidden"
                 initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.92, y: -6 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={prefersReducedMotion ? undefined : { opacity: 0, scale: 0.92, y: -6 }}
@@ -317,11 +325,11 @@ const Header = () => {
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) =>
                     `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${
-                      isActive ? "bg-[#f2f231]/15 text-[#f2f231]" : "text-white/85 hover:bg-white/10 hover:text-white"
+                      isActive ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/85 hover:bg-white/10 hover:text-white"
                     }`
                   }
                 >
-                  Home
+                  {t("header.menu.home")}
                 </NavLink>
 
                 <NavLink
@@ -330,16 +338,16 @@ const Header = () => {
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) =>
                     `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${
-                      isActive ? "bg-[#f2f231]/15 text-[#f2f231]" : "text-white/85 hover:bg-white/10 hover:text-white"
+                      isActive ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/85 hover:bg-white/10 hover:text-white"
                     }`
                   }
                 >
-                  Group Companies
+                  {t("header.menu.groupCompanies")}
                 </NavLink>
 
                 <div className="mx-3 my-2 space-y-1 rounded-xl border border-white/10 bg-white/5 p-2">
                   <p className="px-2 pb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
-                    Companies
+                    {t("header.menu.companies")}
                   </p>
                   {companies.map((company) => renderCompanyLink(company, () => setMenuOpen(false)))}
                 </div>
@@ -349,25 +357,25 @@ const Header = () => {
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) =>
                     `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${
-                      isActive ? "bg-[#f2f231]/15 text-[#f2f231]" : "text-white/85 hover:bg-white/10 hover:text-white"
+                      isActive ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/85 hover:bg-white/10 hover:text-white"
                     }`
                   }
                 >
-                  Contact Us
+                  {t("header.menu.contact")}
                 </NavLink>
 
                 <div className="mt-2 border-t border-white/10 pt-2">
                   <p className="px-2 pb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
-                    Language
+                    {t("header.menu.language")}
                   </p>
                   <div className="max-h-44 overflow-y-auto overscroll-contain rounded-xl border border-white/10 bg-white/5 p-1 [scrollbar-width:thin] [scrollbar-color:rgba(255,255,255,0.25)_transparent]">
-                    {languages.map((l) => (
+                    {LANGUAGES.map((l) => (
                       <button
                         key={l.code}
                         type="button"
                         onClick={() => selectLang(l.code)}
-                        className={`block w-full rounded-lg px-3 py-1.5 text-left text-[12.5px] font-semibold transition-colors duration-150 ${
-                          lang === l.code ? "bg-[#f2f231]/15 text-[#f2f231]" : "text-white/80 hover:bg-white/10 hover:text-white"
+                        className={`block w-full rounded-lg px-3 py-1.5 text-start text-[12.5px] font-semibold transition-colors duration-150 ${
+                          lang === l.code ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/80 hover:bg-white/10 hover:text-white"
                         }`}
                       >
                         {l.label}

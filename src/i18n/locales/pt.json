@@ -1,0 +1,532 @@
+{
+  "header": {
+    "nav": {
+      "contact": "Contacto"
+    },
+    "menu": {
+      "home": "Início",
+      "groupCompanies": "Empresas do Grupo",
+      "companies": "Empresas",
+      "contact": "Contacto",
+      "language": "Idioma",
+      "viewAllCompanies": "Ver todas as empresas →"
+    },
+    "aria": {
+      "selectLanguage": "Selecionar idioma",
+      "toggleMenu": "Abrir menu",
+      "closeMenu": "Fechar menu"
+    }
+  },
+  "hero": {
+    "p0": {
+      "tag": "Indexia Group",
+      "heading": "Um Grupo.\nMúltiplas Soluções.",
+      "sub": "Das finanças e logística ao agro e publicidade, a Indexia Group impulsiona o crescimento em todos os setores com negócios confiáveis e preparados para o futuro."
+    },
+    "p1": {
+      "tag": "Indexia Finance",
+      "heading": "Um destino completo\npara os seus empréstimos.",
+      "sub": "Pode solicitar qualquer tipo de empréstimo através do nosso portal www.indexiafinance.com. Oferecemos os nossos serviços a nível global — na Índia, somos parceiros comerciais de 43 bancos e NBFC."
+    },
+    "p2": {
+      "tag": "Indexia Finserve Pvt. Ltd.",
+      "heading": "O método financeiro\nde nova geração.",
+      "sub": "Agora o banco certo virá até à sua porta."
+    },
+    "p3": {
+      "tag": "Indexia Overseas Pvt. Ltd.",
+      "heading": "Açúcar refinado e\ntodos os produtos alimentares.",
+      "sub": "Comercializamos e exportamos açúcar refinado e todos os produtos alimentares."
+    },
+    "p4": {
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+      "heading": "Fabricamos e\nexportamos fertilizantes orgânicos",
+      "sub": "Fabricamos fertilizantes orgânicos na Índia e exportamos para todo o mundo."
+    },
+    "p5": {
+      "tag": "Indexia Securities",
+      "heading": "Comandos armados e\nsegurança armada",
+      "sub": "Protegemos políticos e grandes magnatas dos negócios."
+    },
+    "p6": {
+      "tag": "Indexia Warehouse",
+      "heading": "Armazenamento construído\npara crescer.",
+      "sub": "Infraestrutura moderna de armazenagem e logística que mantém as mercadorias em movimento de forma eficiente."
+    },
+    "p7": {
+      "tag": "Indexia Advertising",
+      "heading": "A sua marca em\ncada autoestrada.",
+      "sub": "Múltiplos painéis publicitários ao longo das autoestradas, oferecendo às marcas campanhas de alta visibilidade."
+    },
+    "p8": {
+      "tag": "Indexia Foundation",
+      "heading": "Capacitar\nos atletas.",
+      "sub": "Programas desportivos que treinam, orientam e financiam atletas no seu caminho para o desempenho máximo."
+    }
+  },
+  "footer": {
+    "tagline": "Grupo Empresarial Indiano Diversificado",
+    "blurb": "Ajudamos empresas e particulares a construir um futuro financeiro mais forte com soluções fiáveis e orientadas para resultados.",
+    "contactUs": "Contacto",
+    "hours": "Seg - Sáb: 9h - 18h",
+    "company": "Empresa",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "links": {
+      "groupCompanies": "Empresas do Grupo",
+      "advertise": "Anuncie Connosco",
+      "careers": "Carreiras",
+      "news": "Notícias e Centro de Conhecimento",
+      "globalResearch": "Investigação Global",
+      "securityTips": "Dicas de Segurança",
+      "blog": "Blog",
+      "termsOfUse": "Termos de Utilização",
+      "termsConditions": "Termos e Condições",
+      "privacyPolicy": "Política de Privacidade"
+    },
+    "cta": "Tem alguma pergunta sobre as nossas empresas?",
+    "enquiry": "Envie-nos um pedido →",
+    "stats": "INDEXIA GROUP · 08 EMPRESAS · 04 LOCAIS",
+    "rights": "© 2026 Indexia Group. Todos os direitos reservados.",
+    "backToTop": "Voltar ao topo"
+  },
+  "home": {
+    "groupCompanies": {
+      "title": "Empresas do Grupo",
+      "description": "A Indexia Group é uma holding diversificada que abrange Finanças, Comércio, Agricultura, Armazenagem, Valores, Impacto Social e Publicidade. Construímos negócios que ajudam clientes, parceiros e comunidades a crescer com confiança."
+    }
+  },
+  "businesses": {
+    "eyebrow": "Empresas do Grupo",
+    "titleStart": "Oito empresas, ",
+    "titleAccent": "um só grupo",
+    "subtitle": "Escolha uma empresa para visitar a sua página — e envie o seu pedido à equipa certa."
+  },
+  "businessesHero": {
+    "eyebrow": "A Diferença Indexia",
+    "titleStart": "Um grupo. Oito empresas. ",
+    "titleAccent": "Uma única promessa.",
+    "paragraph": "Das finanças e consultoria à exportação, agricultura, logística, segurança, desporto e media — cada negócio Indexia assenta nos mesmos alicerces: integridade, experiência e uma abordagem centrada nas pessoas. Seja o que for que precise, a equipa certa já faz parte da família.",
+    "counterClients": "Clientes Atendidos",
+    "counterBusinesses": "Empresas",
+    "counterLocations": "Locais",
+    "counterYears": "Anos de Atividade",
+    "cta": "Marque uma Consulta Gratuita →"
+  },
+  "contactHero": {
+    "eyebrow": "Fale com a Indexia",
+    "title": "Uma linha direta com a nossa equipa",
+    "paragraph": "De questões de documentação a novos pedidos de empréstimo, cada mensagem é revista e respondida por um membro da nossa equipa — não por uma fila de espera.",
+    "sendEnquiry": "Envie o seu Pedido",
+    "callNow": "Ligue-nos Já · 86551 68551",
+    "offices": "{{count}} locais",
+    "directLines": "{{count}} linhas diretas",
+    "reply": "< 24 h tempo médio de resposta"
+  },
+  "contactInfo": {
+    "eyebrow": "Envie o seu Pedido",
+    "headlineStart": "Faça uma pergunta sobre a ",
+    "headlineAccent": "Indexia Company",
+    "paragraph": "Quer tenha uma pergunta sobre os nossos serviços, precise de uma consultoria empresarial ou queira explorar uma parceria, a nossa equipa está pronta para o ajudar — respondemos no prazo de 24 horas.",
+    "enquiries": "Pedidos",
+    "location": "Local",
+    "workingHours": "Horário de Funcionamento",
+    "phoneNumbers": "Números de Telefone"
+  },
+  "form": {
+    "eyebrow": "Envie o seu Pedido",
+    "intro": "Preencha o formulário abaixo e o seu pedido será tratado pela nossa equipa.",
+    "name": "Nome",
+    "namePlaceholder": "O seu nome completo",
+    "email": "Endereço de E-mail",
+    "emailPlaceholder": "voce@exemplo.com",
+    "phone": "Número de Telefone",
+    "phonePlaceholder": "Número de 10 dígitos",
+    "subject": "Assunto / Empresa",
+    "subjectPlaceholder": "Selecione uma empresa…",
+    "message": "Mensagem",
+    "messagePlaceholder": "Escreva aqui o seu pedido...",
+    "submit": "Enviar Pedido",
+    "sending": "A enviar…",
+    "success": "O seu pedido foi enviado! A nossa equipa entrará em contacto em breve.",
+    "errorName": "Introduza o seu nome.",
+    "errorNameLetters": "O nome deve conter letras.",
+    "errorPhone": "Introduza um número de telefone válido com 10 dígitos.",
+    "errorEmail": "Introduza um endereço de e-mail válido.",
+    "errorSubject": "Selecione um assunto ou uma empresa.",
+    "errorMessage": "Introduza a sua mensagem.",
+    "errorGeneric": "Algo correu mal. Tente novamente mais tarde.",
+    "generalEnquiry": "Pedido Geral"
+  },
+  "companyDetail": {
+    "backAll": "Todas as Empresas",
+    "register": "Registo Nº {{no}} / 08",
+    "keyEntries": "Pontos-Chave",
+    "servicesTitle": "Serviços desta entrada",
+    "registerOf": "Indexia Group · Registo de Empresas",
+    "entryOf": "Entrada {{no}} de 08",
+    "eyebrow": "Envie o seu Pedido",
+    "enquireTitle": "Faça uma pergunta sobre a {{name}}",
+    "enquireSub": "O seu pedido é enviado com a {{name}} em primeiro lugar, para que a equipa certa o atenda primeiro.",
+    "responseTime": "Tempo de resposta",
+    "responseValue": "No prazo de 24 horas, seg – sáb"
+  },
+  "contact": {
+    "locationsTitleStart": "Os nossos ",
+    "locationsTitleAccent": "Locais"
+  },
+  "businessCard": {
+    "tapToVisit": "Toque para visitar",
+    "readMore": "Ler mais"
+  },
+  "companyLinkCard": {
+    "visitPage": "Visitar página"
+  },
+  "newsPage": {
+    "eyebrow": "Notícias e Centro de Conhecimento",
+    "title": "Notícias e Centro de Conhecimento",
+    "titleStart": "Histórias e conhecimentos de ",
+    "titleAccent": "todo o Grupo.",
+    "subtitle": "Notícias, atualizações e conhecimento prático de cada empresa do Grupo Indexia — finanças, comércio, agricultura, segurança, logística, mídia e esporte.",
+    "featuredLabel": "História em destaque",
+    "readMore": "Ler mais",
+    "askUs": "Pergunte-nos",
+    "knowledgeEyebrow": "Centro de Conhecimento",
+    "knowledgeHeading": "Guias práticos das nossas empresas",
+    "knowledgeSubtitle": "Explicações simples escritas pelas equipas que vivem este trabalho todos os dias.",
+    "ctaTitle": "Tem alguma pergunta sobre as nossas empresas?",
+    "ctaBody": "Do aconselhamento FDI à agricultura orgânica e à segurança armada — a empresa Indexia certa está pronta a ajudar. Envie-nos a sua consulta e ligamo-lo.",
+    "ctaButton": "Enviar uma consulta",
+    "metaDescription": "Notícias e conhecimento do Grupo Indexia — atualizações da Indexia Finance, Finserve, Agro, Securities, Warehouse, Advertising e Foundation, além de guias práticos."
+  },
+  "careersPage": {
+    "eyebrow": "Carreiras",
+    "title": "Carreiras na Indexia Group",
+    "titleStart": "Construa a sua carreira em ",
+    "titleAccent": "oito empresas.",
+    "subtitle": "Finanças, comércio, agricultura, segurança, logística, mídia e esporte sob um único grupo. Junte-se a uma equipa onde o seu trabalho tem um impacto real.",
+    "ctaButton": "Ver vagas abertas",
+    "valuesEyebrow": "Porquê a Indexia Group",
+    "valuesHeading": "Trabalhe onde o seu trabalho conta",
+    "valuesSubtitle": "O que significa construir uma carreira dentro de um grupo diversificado que coloca as pessoas em primeiro lugar.",
+    "rolesEyebrow": "Posições abertas",
+    "rolesHeading": "Vagas atuais",
+    "rolesSubtitle": "Explore as vagas abertas do grupo — ou candidate-se a uma posição futura enviando-nos os seus dados.",
+    "apply": "Candidatar-se",
+    "processEyebrow": "Processo de contratação",
+    "processHeading": "Quatro passos para se juntar a nós",
+    "ctaTitle": "Não encontra o seu cargo?",
+    "ctaBody": "Estamos sempre à procura de boas pessoas. Envie uma consulta ou o seu CV para careers@indexiagroup.com e teremos em conta.",
+    "metaDescription": "Carreiras na Indexia Group — vagas em finanças, exportação, agricultura, segurança, armazéns, publicidade e apoio a atletas, e como funciona o nosso processo de contratação."
+  },
+  "legal": {
+    "eyebrow": "Jurídico",
+    "privacyTitle": "Política de Privacidade",
+    "privacySubtitle": "Como o Indexia Group coleta, usa e protege suas informações pessoais.",
+    "termsTitle": "Termos e Condições",
+    "termsSubtitle": "Os termos que regem o uso do site do Indexia Group e dos serviços de suas empresas.",
+    "termsOfUseTitle": "Termos de Utilização",
+    "termsOfUseSubtitle": "As regras para aceder e navegar no site do Indexia Group e nos sites das suas empresas.",
+    "lastUpdated": "Última atualização",
+    "backHome": "Voltar ao início",
+    "contactUs": "Fale conosco",
+    "contactHeading": "Perguntas sobre esta política?",
+    "contactBody": "Envie um e-mail para contactus@indexiagroup.com ou envie uma consulta e nossa equipe responderá.",
+    "sendEnquiry": "Enviar uma consulta",
+    "metaPrivacyDescription": "Leia a Política de Privacidade do Indexia Group — como coletamos, usamos, armazenamos e protegemos suas informações pessoais.",
+    "metaTermsDescription": "Leia os Termos e Condições que regem o uso do site do Indexia Group e dos serviços de suas empresas.",
+    "metaTermsOfUseDescription": "Leia os Termos de Utilização que regem o acesso e a navegação no site do Indexia Group e nos sites das suas empresas."
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "A presente Política de Privacidade explica como o Indexia Group e as suas empresas do grupo (em conjunto, «Indexia Group», «nós», «nos» ou «nosso») recolhemos, utilizamos, divulgamos e protegemos as suas informações pessoais quando visita os nossos sites, envia um pedido de informação ou utiliza os nossos serviços.",
+        "Ao utilizar os nossos sites ou ao fornecer-nos as suas informações, aceita as práticas descritas na presente política. Se não concordar, não forneça as suas informações pessoais nem utilize os nossos serviços."
+      ],
+      "sections": [
+        {
+          "title": "Informações que recolhemos",
+          "paragraphs": [
+            "Informações que fornece: recolhemos os dados que nos fornece diretamente, como o seu nome, endereço de email, número de telefone, nome da empresa e o conteúdo do seu pedido ou candidatura.",
+            "Informações recolhidas automaticamente: quando visita os nossos sites, podemos recolher informações sobre o dispositivo e a utilização, como o seu endereço IP, o tipo de navegador, as páginas visitadas e os URLs de referência, através de cookies e tecnologias semelhantes."
+          ]
+        },
+        {
+          "title": "Como utilizamos as suas informações",
+          "paragraphs": [
+            "Utilizamos as suas informações para responder a pedidos, avaliar e prestar os nossos serviços, verificar a identidade quando necessário, melhorar os nossos sites e serviços, cumprir obrigações legais e — quando tenha dado o seu consentimento — enviar-lhe novidades sobre as nossas empresas do grupo.",
+            "Baseamos o tratamento nas seguintes bases legais: o seu consentimento, a execução de um contrato, o cumprimento de uma obrigação legal e o nosso interesse legítimo em operar e melhorar o nosso negócio."
+          ]
+        },
+        {
+          "title": "Partilha e divulgação",
+          "paragraphs": [
+            "Podemos partilhar as suas informações dentro do Indexia Group para que a empresa certa possa responder ao seu pedido. Podemos também partilhar informações com prestadores de serviços que nos ajudam a operar (como fornecedores de alojamento e comunicação), com entidades reguladoras ou autoridades quando exigido por lei, e no âmbito de uma fusão, aquisição ou venda de ativos.",
+            "Não vendemos as suas informações pessoais a terceiros."
+          ]
+        },
+        {
+          "title": "Segurança dos dados",
+          "paragraphs": [
+            "Aplicamos medidas técnicas e organizacionais razoáveis — incluindo controlos de acesso, encriptação em trânsito e monitorização — para proteger as suas informações pessoais contra acessos não autorizados, perdas ou utilizações indevidas.",
+            "Nenhum método de transmissão ou armazenamento é totalmente seguro. Embora trabalhemos para proteger os seus dados, não podemos garantir a sua segurança absoluta."
+          ]
+        },
+        {
+          "title": "Cookies e tecnologias semelhantes",
+          "paragraphs": [
+            "Os nossos sites utilizam cookies essenciais para funcionar corretamente e podem utilizar cookies analíticos para compreender como os visitantes usam os nossos sites. Pode controlar ou desativar os cookies através das definições do navegador; no entanto, algumas partes dos nossos sites podem não funcionar como previsto sem eles."
+          ]
+        },
+        {
+          "title": "Conservação dos dados",
+          "paragraphs": [
+            "Conservamos as suas informações pessoais apenas pelo tempo necessário para cumprir as finalidades descritas na presente política, cumprir requisitos legais e regulamentares e resolver disputas."
+          ]
+        },
+        {
+          "title": "Os seus direitos e escolhas",
+          "paragraphs": [
+            "Dependendo da lei aplicável, pode ter o direito de aceder, corrigir, atualizar ou solicitar a eliminação das suas informações pessoais, bem como retirar o consentimento quando o tratamento se baseia nele.",
+            "Para exercer estes direitos, contacte-nos através dos dados indicados no final da presente política. Responderemos dentro dos prazos exigidos pela lei aplicável."
+          ]
+        },
+        {
+          "title": "Ligações de terceiros",
+          "paragraphs": [
+            "Os nossos sites e comunicações podem conter ligações para sites externos operados pelas nossas empresas do grupo ou por outros terceiros. A presente política não se aplica a esses sites, e recomendamos que consulte as respetivas políticas de privacidade."
+          ]
+        },
+        {
+          "title": "Privacidade de menores",
+          "paragraphs": [
+            "Os nossos serviços não se destinam a menores de 18 anos e não recolhemos conscientemente informações pessoais de menores. Se acredita que um menor nos forneceu informações pessoais, contacte-nos para que possamos removê-las."
+          ]
+        },
+        {
+          "title": "Alterações à presente política",
+          "paragraphs": [
+            "Podemos atualizar a presente Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com uma data de revisão atualizada. As alterações materiais serão destacadas sempre que possível."
+          ]
+        },
+        {
+          "title": "Contacte-nos",
+          "paragraphs": [
+            "Se tiver perguntas ou preocupações sobre a presente Política de Privacidade ou sobre a forma como tratamos as suas informações pessoais, contacte-nos em contactus@indexiagroup.com ou por telefone no +91 011 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "Os presentes Termos de Utilização («Termos de Utilização») estabelecem as regras para aceder e navegar nos sites operados pelo Indexia Group e pelas suas empresas do grupo (em conjunto, «Indexia Group», «nós», «nos» ou «nosso»).",
+        "Leia atentamente os presentes Termos de Utilização antes de utilizar os nossos sites. Ao aceder ou navegar nos nossos sites, aceita ficar vinculado aos mesmos. Se não concordar, não utilize os nossos sites."
+      ],
+      "sections": [
+        {
+          "title": "Aceitação dos presentes Termos de Utilização",
+          "paragraphs": [
+            "Ao aceder ou navegar nos nossos sites, confirma que leu, compreendeu e aceita os presentes Termos de Utilização. Deve ter pelo menos 18 anos para utilizar os nossos sites.",
+            "Os presentes Termos de Utilização são separados e complementam quaisquer termos e condições específicos que regem os serviços oferecidos pelas empresas individuais do Indexia Group."
+          ]
+        },
+        {
+          "title": "Acesso ao site",
+          "paragraphs": [
+            "Concedemos-lhe um direito limitado, revogável e não exclusivo de aceder e navegar nos nossos sites para fins pessoais e não comerciais. Podemos restringir, suspender ou terminar o acesso à totalidade ou a parte dos nossos sites em qualquer altura, com ou sem aviso prévio.",
+            "É responsável por garantir que o seu dispositivo e ligação cumprem os requisitos necessários para aceder aos nossos sites, bem como pelos custos em que incorrer para o efeito."
+          ]
+        },
+        {
+          "title": "Utilização aceitável",
+          "paragraphs": [
+            "Concorda em não fazer mau uso dos nossos sites. Isto inclui, sem limitação: tentar obter acesso não autorizado aos nossos sistemas, introduzir vírus ou outro código malicioso, interferir com o funcionamento dos nossos sites, fazer scraping ou recolha de conteúdos em grande escala e utilizar os nossos sites para cometer ou facilitar atividades ilegais.",
+            "Não deve fazer-se passar por qualquer pessoa ou entidade, nem deturpar a sua afiliação connosco ou com qualquer das nossas empresas do grupo."
+          ]
+        },
+        {
+          "title": "Envios de utilizadores",
+          "paragraphs": [
+            "Quando envia um pedido, feedback ou outro conteúdo através dos nossos sites, é responsável pela exatidão e licitude desse conteúdo. Concede-nos uma licença não exclusiva e gratuita para utilizar, armazenar e tratar o seu envio exclusivamente para o fim de lhe responder e operar os nossos sites.",
+            "Não envie informações confidenciais ou sensíveis que não esteja autorizado a partilhar."
+          ]
+        },
+        {
+          "title": "Propriedade intelectual",
+          "paragraphs": [
+            "Todo o conteúdo dos nossos sites — incluindo textos, gráficos, logótipos, imagens e software — é propriedade do Indexia Group ou dos seus licenciantes e está protegido pelas leis aplicáveis em matéria de propriedade intelectual.",
+            "Pode visualizar e imprimir conteúdo apenas para uso pessoal e não comercial. Qualquer outra utilização, incluindo reprodução ou distribuição, requer o nosso consentimento prévio por escrito."
+          ]
+        },
+        {
+          "title": "Ligações de terceiros",
+          "paragraphs": [
+            "Os nossos sites podem conter ligações para sites externos operados pelas nossas empresas do grupo ou por outros terceiros. Não somos responsáveis pelo conteúdo, disponibilidade ou práticas desses sites. Seguir essas ligações é por sua conta e risco e está sujeito aos termos e políticas do site ligado."
+          ]
+        },
+        {
+          "title": "Exclusão de garantias",
+          "paragraphs": [
+            "Os nossos sites e o seu conteúdo são fornecidos «tal como estão» e «conforme disponíveis», sem garantias de qualquer tipo, expressas ou implícitas, incluindo garantias implícitas de comercialização, adequação a um fim específico e não violação de direitos.",
+            "Não garantimos que os nossos sites sejam ininterruptos, seguros, livres de erros ou isentos de vírus ou outros componentes prejudiciais."
+          ]
+        },
+        {
+          "title": "Limitação de responsabilidade",
+          "paragraphs": [
+            "Na máxima extensão permitida por lei, o Indexia Group e as suas empresas do grupo não serão responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, nem por qualquer perda de lucros, dados ou clientela, decorrentes ou relacionados com a utilização, ou a impossibilidade de utilização, dos nossos sites.",
+            "Nada nos presentes Termos de Utilização limita ou exclui a responsabilidade que não pode ser limitada ou excluída nos termos da lei aplicável."
+          ]
+        },
+        {
+          "title": "Rescisão",
+          "paragraphs": [
+            "Podemos suspender ou terminar o seu acesso aos nossos sites se violar os presentes Termos de Utilização, ou por qualquer outro motivo, a nosso critério.",
+            "Em caso de rescisão, continuam a aplicar-se as disposições dos presentes Termos de Utilização que, pela sua natureza, devam sobreviver — incluindo exclusões de garantias, limitações de responsabilidade e lei aplicável."
+          ]
+        },
+        {
+          "title": "Lei aplicável e jurisdição",
+          "paragraphs": [
+            "Os presentes Termos de Utilização são regidos pelas leis da Índia. Qualquer disputa decorrente ou relacionada com os presentes Termos de Utilização estará sujeita à jurisdição exclusiva dos tribunais de Mumbai, na Índia."
+          ]
+        },
+        {
+          "title": "Alterações aos presentes Termos de Utilização",
+          "paragraphs": [
+            "Podemos rever os presentes Termos de Utilização em qualquer altura, atualizando esta página. A continuação da utilização dos nossos sites após a publicação de alterações constitui aceitação dos Termos de Utilização revistos."
+          ]
+        },
+        {
+          "title": "Contacte-nos",
+          "paragraphs": [
+            "Se tiver alguma dúvida sobre os presentes Termos de Utilização, contacte-nos em contactus@indexiagroup.com ou por telefone no +91 011 4629 1155."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "Os presentes Termos e Condições («Termos») regem o seu acesso e utilização dos sites operados pelo Indexia Group e pelas suas empresas do grupo (em conjunto, «Indexia Group», «nós», «nos» ou «nosso»), bem como dos serviços neles descritos.",
+        "Leia atentamente os presentes Termos antes de utilizar os nossos sites. Ao aceder ou utilizar os nossos sites, aceita ficar vinculado pelos presentes Termos. Se não concordar, não utilize os nossos sites."
+      ],
+      "sections": [
+        {
+          "title": "Aceitação dos presentes Termos",
+          "paragraphs": [
+            "Ao aceder aos nossos sites, enviar um pedido ou utilizar de outra forma os nossos serviços, confirma que leu, compreendeu e aceita os presentes Termos. Deve ter pelo menos 18 anos para utilizar os nossos sites."
+          ]
+        },
+        {
+          "title": "Utilização do site",
+          "paragraphs": [
+            "Concorda em utilizar os nossos sites apenas para fins lícitos e de forma a não infringir os direitos de terceiros, nem restringir ou inibir a utilização dos nossos sites por terceiros.",
+            "Não deve fazer mau uso dos nossos sites, introduzindo código malicioso, tentando acessos não autorizados, fazendo scraping de conteúdos em grande escala ou interferindo com o seu funcionamento normal."
+          ]
+        },
+        {
+          "title": "Propriedade intelectual",
+          "paragraphs": [
+            "Todo o conteúdo dos nossos sites — incluindo textos, gráficos, logótipos, imagens e software — é propriedade do Indexia Group ou dos seus licenciantes e está protegido pelas leis aplicáveis em matéria de propriedade intelectual.",
+            "Pode visualizar e imprimir conteúdo apenas para uso pessoal e não comercial. Qualquer outra utilização, incluindo reprodução ou distribuição, requer o nosso consentimento prévio por escrito."
+          ]
+        },
+        {
+          "title": "Serviços e informações",
+          "paragraphs": [
+            "As informações nos nossos sites são fornecidas a título meramente informativo e não constituem aconselhamento financeiro, jurídico ou de investimento. Os pedidos de empréstimos, crédito ou outros produtos financeiros estão sujeitos a verificações de elegibilidade e à aprovação da empresa do Indexia Group relevante.",
+            "Podemos alterar, suspender ou retirar qualquer serviço descrito nos nossos sites em qualquer altura e sem aviso prévio."
+          ]
+        },
+        {
+          "title": "Pedidos e comunicações",
+          "paragraphs": [
+            "Ao enviar um pedido, concorda em fornecer informações precisas e completas e em mantê-las atualizadas. Ao enviar um pedido, consente em ser contactado pela empresa do Indexia Group relevante por telefone, email ou outros meios no âmbito do seu pedido.",
+            "É responsável pela exatidão das informações que fornece e por quaisquer consequências decorrentes de informações falsas ou incompletas."
+          ]
+        },
+        {
+          "title": "Sites de terceiros",
+          "paragraphs": [
+            "Os nossos sites podem conter ligações para sites externos operados pelas nossas empresas do grupo ou por outros terceiros. Não somos responsáveis pelo conteúdo, disponibilidade ou práticas desses sites, e a sua utilização está sujeita aos respetivos termos e políticas."
+          ]
+        },
+        {
+          "title": "Exclusões de responsabilidade",
+          "paragraphs": [
+            "Os nossos sites e o seu conteúdo são fornecidos «tal como estão» e «conforme disponíveis», sem garantias de qualquer tipo, expressas ou implícitas, incluindo garantias implícitas de comercialização, adequação a um fim específico e não violação de direitos.",
+            "Não garantimos que os nossos sites sejam ininterruptos, seguros ou livres de erros."
+          ]
+        },
+        {
+          "title": "Limitação de responsabilidade",
+          "paragraphs": [
+            "Na máxima extensão permitida por lei, o Indexia Group não será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, nem por qualquer perda de lucros ou dados, decorrentes ou relacionados com a utilização dos nossos sites.",
+            "Nada nos presentes Termos limita ou exclui a responsabilidade que não pode ser limitada ou excluída nos termos da lei aplicável."
+          ]
+        },
+        {
+          "title": "Indemnização",
+          "paragraphs": [
+            "Concorda em indemnizar e isentar de responsabilidade o Indexia Group e as suas empresas do grupo, dirigentes e colaboradores por quaisquer reclamações, perdas, responsabilidades e despesas decorrentes da sua violação dos presentes Termos ou do mau uso dos nossos sites."
+          ]
+        },
+        {
+          "title": "Lei aplicável e jurisdição",
+          "paragraphs": [
+            "Os presentes Termos são regidos pelas leis da Índia. Qualquer disputa decorrente ou relacionada com os presentes Termos estará sujeita à jurisdição exclusiva dos tribunais de Mumbai, na Índia."
+          ]
+        },
+        {
+          "title": "Alterações aos presentes Termos",
+          "paragraphs": [
+            "Podemos rever os presentes Termos em qualquer altura, atualizando esta página. A continuação da utilização dos nossos sites após a publicação de alterações constitui aceitação dos Termos revistos."
+          ]
+        },
+        {
+          "title": "Contacte-nos",
+          "paragraphs": [
+            "Se tiver alguma dúvida sobre os presentes Termos, contacte-nos em contactus@indexiagroup.com ou por telefone no +91 011 4629 1155."
+          ]
+        }
+      ]
+    }
+  },
+  "globalResearchPage": {
+    "eyebrow": "Investigação Global",
+    "title": "Investigação Global na Indexia Group",
+    "titleStart": "Investigação que informa ",
+    "titleAccent": "decisões reais.",
+    "subtitle": "Inteligência de mercado sobre IDE, crédito, comércio e infraestruturas, construída a partir da visão operacional dos nossos negócios.",
+    "ctaButton": "Explorar áreas de investigação",
+    "areasEyebrow": "O que investigamos",
+    "areasHeading": "Quatro perspetivas sobre os mercados que servimos",
+    "areasSubtitle": "Investigação focada nos setores onde a Indexia Group opera.",
+    "reportsEyebrow": "Relatórios e publicações",
+    "reportsHeading": "Publicações recentes",
+    "reportsSubtitle": "Sínteses da nossa investigação mais recente — solicite o relatório completo e a nossa equipa partilhá-lo-á consigo.",
+    "requestReport": "Solicitar relatório",
+    "ctaTitle": "Precisa de uma análise mais profunda?",
+    "ctaBody": "Diga-nos o que está a investigar — as nossas equipas do grupo ligá-lo-ão à experiência certa.",
+    "metaDescription": "Investigação Global na Indexia Group — inteligência de mercado sobre IDE, crédito e financiamento NBFC, mercados de exportação e infraestruturas, com relatórios recentes que pode solicitar."
+  },
+  "securityTipsPage": {
+    "eyebrow": "Dicas de Segurança",
+    "title": "Dicas de Segurança da Indexia Group",
+    "titleStart": "Fique um passo à frente da ",
+    "titleAccent": "fraude.",
+    "subtitle": "Orientações práticas e diretas das equipas que gerem segurança, finanças e logística todos os dias, para detetar um golpe antes que ele lhe custe.",
+    "ctaButton": "Ver práticas fundamentais",
+    "categoriesEyebrow": "Conheça as ameaças",
+    "categoriesHeading": "Seis ameaças a vigiar",
+    "categoriesSubtitle": "As fraudes mais comuns e como funcionam, para as reconhecer num instante.",
+    "practicesEyebrow": "Práticas fundamentais",
+    "practicesHeading": "Seis hábitos que o mantêm seguro",
+    "practicesSubtitle": "Pequenos hábitos consistentes que neutralizam a maioria das tentativas de fraude.",
+    "warningTitle": "Lembre-se: nunca pedimos o seu OTP ou palavra-passe",
+    "warningBody": "Nenhuma empresa da Indexia Group pedirá jamais o seu OTP, PIN ou palavra-passe — por telefone, mensagem ou email. Se alguém o fizer, é um golpe. Pare, verifique através de um canal oficial e denuncie-o.",
+    "ctaTitle": "Viu algo suspeito?",
+    "ctaBody": "Denuncie através do nosso formulário ou contacte diretamente a empresa da Indexia Group relevante.",
+    "metaDescription": "Dicas de segurança da Indexia Group — como detetar phishing, golpes de empréstimos e fraude em pagamentos, além de seis práticas fundamentais para proteger o seu dinheiro e identidade."
+  }
+}

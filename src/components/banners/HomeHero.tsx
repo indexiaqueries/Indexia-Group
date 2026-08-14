@@ -1,82 +1,97 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import {
-  motion,
-  AnimatePresence,
-  useReducedMotion,
-} from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import HomeHeroGallery from "./HomeHeroGallery";
 import type { HeroPanel } from "../cards/HeroGalleryThumb";
 import { getCompanyImage } from "../../data/companyImages";
 
-const panels: HeroPanel[] = [
+const makePanels = (t: (key: string) => string): HeroPanel[] => [
   {
     id: 0,
-    tag: "Indexia Group",
-    heading: "One Group.\nMultiple Solutions.",
-    sub: "From finance and logistics to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
+    tag: t("hero.p0.tag"),
+    heading: t("hero.p0.heading"),
+    sub: t("hero.p0.sub"),
     image: getCompanyImage("Indexia Group"),
   },
   {
     id: 1,
-    tag: "Indexia Finance",
-    heading: "An Entire\nLoan Destination.",
-    sub: "You may apply to our portal for any kind loan at www.indexiafinance.com. We provide our services globally — in India, we are business partners with 43 banks and NBFCs.",
+    tag: t("hero.p1.tag"),
+    heading: t("hero.p1.heading"),
+    sub: t("hero.p1.sub"),
     image: getCompanyImage("Indexia Finance"),
   },
   {
     id: 2,
-    tag: "Indexia Finserve Pvt. Ltd.",
-    heading: "The Next Gen\nFinance Method.",
-    sub: "Now the right bank will come at your doorstep.",
+    tag: t("hero.p2.tag"),
+    heading: t("hero.p2.heading"),
+    sub: t("hero.p2.sub"),
     image: getCompanyImage("Indexia Finserve"),
   },
   {
     id: 3,
-    tag: "Indexia Overseas Pvt. Ltd.",
-    heading: "Refined Sugar &\nAll Edible Items.",
-    sub: "We deal and export refined sugar and all edible items.",
+    tag: t("hero.p3.tag"),
+    heading: t("hero.p3.heading"),
+    sub: t("hero.p3.sub"),
     image: getCompanyImage("Indexia Overseas"),
   },
   {
     id: 4,
-    tag: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    heading: "We Manufacture &\nExport Organic Fertilizers",
-    sub: "We manufacture organic fertilizers in India and export globally.",
+    tag: t("hero.p4.tag"),
+    heading: t("hero.p4.heading"),
+    sub: t("hero.p4.sub"),
     image: getCompanyImage("Agro Bio Fertilizers"),
   },
   {
     id: 5,
-    tag: "Indexia Securities",
-    heading: "Armed Commandos &\nArmed Security",
-    sub: "Safeguarding politicians and big business tycoons.",
+    tag: t("hero.p5.tag"),
+    heading: t("hero.p5.heading"),
+    sub: t("hero.p5.sub"),
     image: getCompanyImage("Indexia Securities"),
   },
   {
     id: 6,
-    tag: "Indexia Warehouse",
-    heading: "Storage Built\nFor Scale.",
-    sub: "Modern warehousing and logistics infrastructure that keeps goods moving efficiently.",
+    tag: t("hero.p6.tag"),
+    heading: t("hero.p6.heading"),
+    sub: t("hero.p6.sub"),
     image: getCompanyImage("Indexia Warehouse"),
   },
   {
     id: 7,
-    tag: "Indexia Advertising",
-    heading: "Your Brand on\nEvery Highway.",
-    sub: "Multiple advertising holdings across highways, giving brands high-visibility campaigns.",
+    tag: t("hero.p7.tag"),
+    heading: t("hero.p7.heading"),
+    sub: t("hero.p7.sub"),
     image: getCompanyImage("Indexia Advertising"),
   },
   {
     id: 8,
-    tag: "Indexia Foundation",
-    heading: "Empowering\nAthletes.",
-    sub: "Sports programs that train, mentor, and fund athletes on their journey to peak performance.",
+    tag: t("hero.p8.tag"),
+    heading: t("hero.p8.heading"),
+    sub: t("hero.p8.sub"),
     image: getCompanyImage("Indexia Foundation"),
   },
 ];
 
 const TEXT_ZOOM_MS = 6000;
 const AUTOPLAY_INTERVAL = 6000;
+
+/** Slow Ken Burns push-in on the settled background: 1 → 1.08 over the slide's
+ *  display time, mirroring back if a slide is held. Restarts per slide via the
+ *  image's key. */
+const KEN_BURNS_SCALE: [number, number] = [1, 1.08];
+const KEN_BURNS_MS = 6500;
+
+const SLIDE_EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
+/** Entrance animation for the badge → headline → subtext → CTA of a hero slide.
+ *  Each element gets a slightly larger delay so they cascade in sequence. */
+const slideChildAnim = (reduce: boolean, index: number) => ({
+  initial: { opacity: 0, y: 14 },
+  animate: { opacity: 1, y: 0 },
+  transition: reduce
+    ? { duration: 0 }
+    : { duration: 0.45, delay: 0.05 + index * 0.09, ease: SLIDE_EASE },
+});
 
 const PORTAL_URL = "https://www.indexiafinance.com/";
 const PORTAL_TEXT = "www.indexiafinance.com";
@@ -91,7 +106,7 @@ const renderSub = (text: string) => {
         href={PORTAL_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="font-semibold text-[#f2f231] underline decoration-[#f2f231]/60 underline-offset-2 hover:text-[#f7f75c]"
+        className="font-semibold text-(--color-yellow) underline decoration-(--color-yellow)/60 underline-offset-2 hover:text-(--color-yellow-bright)"
       >
         {PORTAL_TEXT}
       </a>
@@ -110,23 +125,34 @@ type MorphRect = {
 };
 
 const Banner = () => {
+  const { t } = useTranslation();
   const [currentId, setCurrentId] = useState(0);
   const [bgId, setBgId] = useState(0);
   const [morph, setMorph] = useState<MorphRect | null>(null);
   const prefersReducedMotion = useReducedMotion();
+  const reduce = !!prefersReducedMotion;
+  const childAnim = useCallback((index: number) => slideChildAnim(reduce, index), [reduce]);
+  const panels = useMemo(() => makePanels(t), [t]);
+
   const autoplayRef = useRef<number | null>(null);
   const heroSectionRef = useRef<HTMLElement>(null);
   const currentIdRef = useRef(currentId);
   const morphRef = useRef<MorphRect | null>(null);
-  currentIdRef.current = currentId;
-  morphRef.current = morph;
+
+  useEffect(() => {
+    currentIdRef.current = currentId;
+  }, [currentId]);
+
+  useEffect(() => {
+    morphRef.current = morph;
+  }, [morph]);
 
   const currentIndex = panels.findIndex((p) => p.id === currentId);
   const current = panels[currentIndex];
   const isHome = current.id === 0;
   const bgPanel = panels.find((p) => p.id === bgId) ?? panels[0];
 
-  const captureThumbRect = (id: number): MorphRect | null => {
+  const captureThumbRect = useCallback((id: number): MorphRect | null => {
     const section = heroSectionRef.current;
     const panel = panels.find((p) => p.id === id);
     if (!section || !panel) return null;
@@ -155,7 +181,7 @@ const Banner = () => {
       width: thumbRect.width,
       height: thumbRect.height,
     };
-  };
+  }, [panels]);
 
   const goTo = useCallback(
     (id: number, calm = false) => {
@@ -182,7 +208,7 @@ const Banner = () => {
       if (rect) setMorph(rect);
       else setBgId(id);
     },
-    [prefersReducedMotion]
+    [prefersReducedMotion, captureThumbRect]
   );
 
   const restartAutoplay = useCallback(() => {
@@ -192,7 +218,7 @@ const Banner = () => {
       const idx = panels.findIndex((p) => p.id === currentIdRef.current);
       goTo(panels[(idx + 1) % panels.length].id, true);
     }, AUTOPLAY_INTERVAL);
-  }, [prefersReducedMotion, goTo]);
+  }, [prefersReducedMotion, goTo, panels]);
 
   useEffect(() => {
     restartAutoplay();
@@ -212,7 +238,7 @@ const Banner = () => {
   return (
     <section
       ref={heroSectionRef}
-      className="relative overflow-hidden bg-[#02101a]"
+      className="relative overflow-hidden bg-(--color-night)"
     >
       <style>{`
         @keyframes bnr-pulse {
@@ -234,6 +260,7 @@ const Banner = () => {
       <div className="relative flex min-h-svh flex-col sm:min-h-screen">
         <div className="absolute inset-0 overflow-hidden">
           <motion.img
+            key={bgId}
             src={bgPanel.image}
             alt=""
             aria-hidden="true"
@@ -242,16 +269,31 @@ const Banner = () => {
             decoding="async"
             fetchPriority="high"
             className="absolute inset-0 w-full h-full object-cover object-center"
-            initial={false}
+            initial={{ scale: 1, y: "0%", opacity: 1 }}
             animate={
-              morph ? { y: morph.calm ? "25%" : "40%", opacity: 0 } : { y: "0%", opacity: 1 }
+              morph
+                ? { y: morph.calm ? "25%" : "40%", opacity: 0, scale: 1.1 }
+                : prefersReducedMotion
+                  ? { y: "0%", opacity: 1, scale: 1 }
+                  : { y: "0%", opacity: 1, scale: KEN_BURNS_SCALE }
             }
             transition={
               morph
                 ? morph.calm
                   ? { duration: prefersReducedMotion ? 0 : 1.3, ease: "easeInOut" }
                   : { duration: prefersReducedMotion ? 0 : 0.75, ease: [0.22, 1, 0.36, 1] }
-                : { duration: 0 }
+                : prefersReducedMotion
+                  ? { duration: 0 }
+                  : {
+                      y: { duration: 0 },
+                      opacity: { duration: 0 },
+                      scale: {
+                        duration: KEN_BURNS_MS / 1000,
+                        ease: "linear",
+                        repeat: Infinity,
+                        repeatType: "reverse",
+                      },
+                    }
             }
           />
 
@@ -299,25 +341,32 @@ const Banner = () => {
               transition={
                 morph.calm
                   ? { duration: prefersReducedMotion ? 0 : 1.3, ease: "easeInOut" }
-                  : { duration: prefersReducedMotion ? 0 : 0.75, ease: [0.22, 1, 0.36, 1] }
+                  : { duration: prefersReducedMotion ? 0 : 0.8, ease: [0.22, 1, 0.36, 1] }
               }
               onAnimationComplete={() => {
                 setBgId(morph.id);
                 setMorph(null);
               }}
             >
-              <img
+              <motion.img
                 src={panels.find((p) => p.id === morph.id)?.image ?? panels[0].image}
                 alt=""
                 aria-hidden="true"
                 className="w-full h-full object-cover object-center"
+                initial={false}
+                animate={{ scale: morph.calm ? 1 : [1.04, 1] }}
+                transition={
+                  morph.calm
+                    ? { duration: 0 }
+                    : { scale: { duration: 0.8, ease: "easeOut" } }
+                }
               />
             </motion.div>
           )}
 
           <motion.div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-0 z-[2] bg-[#02101a]"
+            className="pointer-events-none absolute inset-0 z-[2] bg-(--color-night)"
             initial={false}
             animate={{ opacity: morph?.calm ? 0.25 : 0 }}
             transition={
@@ -326,51 +375,91 @@ const Banner = () => {
                 : { duration: 0.6, ease: "easeOut" }
             }
           />
+
         </div>
 
         <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-36 sm:pt-32 sm:pb-44 overflow-hidden">
-          <AnimatePresence mode="wait">
+          {/* Keyed slide content with AnimatePresence: on a slide change the
+              outgoing badge/headline/sub/CTA sink back down toward the
+              thumbnail strip (the gallery sits at the hero's bottom) while the
+              new slide's content staggers in. popLayout pops the exiting
+              cluster out of flow so the incoming one doesn't jump. The default
+              initial (true) keeps the first-load stagger. */}
+          <AnimatePresence mode="popLayout">
             <motion.div
               key={current.id}
-              initial={{ opacity: 0, y: -10 }}
+              initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.42, ease: "easeOut" }}
+              exit={
+                prefersReducedMotion
+                  ? undefined
+                  : {
+                      opacity: 0,
+                      y: 72,
+                      scale: 0.94,
+                      // Exit sinks toward the thumbnails: quick ease-in fade-down
+                      transition: { duration: 0.34, ease: [0.55, 0.06, 0.68, 0.19] },
+                    }
+              }
+              transition={
+                prefersReducedMotion
+                  ? { duration: 0 }
+                  : {
+                      opacity: { duration: 0.4 },
+                      y: { duration: 0.55, ease: SLIDE_EASE },
+                    }
+              }
               className={`relative flex flex-col items-center ${isHome ? "max-w-200" : "max-w-190"}`}
             >
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_65%_at_50%_45%,rgba(2,16,26,0.7),transparent_72%)]"
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_68%_80%_at_50%_38%,rgba(2,16,26,0.82),rgba(2,16,26,0.55)_58%,transparent_78%)]"
+              />
+              {/* Brand radial glow behind the text and CTA — a teal aura around
+                  the headline and a soft yellow pool under the button. Sits on
+                  top of the dark legibility scrim so the brand colour shows
+                  through around the type without hurting contrast. */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_60%_at_50%_42%,rgba(38,174,144,0.30),rgba(38,174,144,0.08)_58%,transparent_75%),radial-gradient(ellipse_45%_30%_at_50%_90%,rgba(242,242,49,0.20),transparent_68%)]"
               />
               <div className={`flex flex-col items-center ${prefersReducedMotion ? "" : "bnr-text-zoom"}`}>
                 {isHome ? (
-                  <div className="inline-flex items-center gap-2.5 rounded-full px-5 py-2 mb-6 border border-[#f2f231]/60 bg-[#f2f231]/10">
-                    <span className="w-2 h-2 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
-                    <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#f2f231]">
+                  <motion.div
+                    {...childAnim(0)}
+                    className="inline-flex items-center gap-2.5 rounded-full px-5 py-2 mb-6 border border-(--color-yellow)/60 bg-(--color-yellow)/10"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
+                    <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-(--color-yellow)">
                       Indexia Group
                     </span>
-                  </div>
+                  </motion.div>
                 ) : (
-                  <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 border border-[#f2f231]/45 bg-[#02101a]/55">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#f2f231] animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
-                    <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#f2f231] whitespace-nowrap">
+                  <motion.div
+                    {...childAnim(0)}
+                    className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 border border-(--color-yellow)/45 bg-(--color-night)/55"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
+                    <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-(--color-yellow) whitespace-nowrap">
                       {current.tag}
                     </span>
-                  </div>
+                  </motion.div>
                 )}
 
-                <h1
+                <motion.h1
+                  {...childAnim(1)}
                   style={{ textShadow: "0 1px 2px rgba(2,16,26,0.5), 0 8px 36px rgba(2,16,26,0.95)" }}
-                  className={`w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line ${
+                  className={`w-max font-display font-bold bg-gradient-to-b from-white via-white to-(--color-gold-pale) bg-clip-text text-transparent leading-[1.12] mb-5.5 whitespace-pre-line ${
                     isHome
                       ? "text-[clamp(26px,4vw,44px)]"
                       : "text-[clamp(24px,3.8vw,40px)]"
                   }`}
                 >
                   {current.heading}
-                </h1>
+                </motion.h1>
 
-                <p
+                <motion.p
+                  {...childAnim(2)}
                   style={{ textShadow: "0 1px 2px rgba(2,16,26,0.5), 0 4px 24px rgba(2,16,26,0.9)" }}
                   className={`leading-[1.8] text-white/90 ${
                     isHome
@@ -379,20 +468,20 @@ const Banner = () => {
                   }`}
                 >
                   {renderSub(current.sub)}
-                </p>
+                </motion.p>
               </div>
 
-              <div className="flex flex-wrap gap-3 justify-center mt-9">
+              <motion.div {...childAnim(3)} className="flex flex-wrap gap-3 justify-center mt-9">
                 <Link
                   to="/businesses"
-                  className="inline-flex items-center gap-2 bg-[#26ae90] hover:bg-[#1e9478] text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
                 >
                   {isHome ? "Explore Group Companies" : "Explore More"}
                   <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>
-              </div>
+              </motion.div>
             </motion.div>
           </AnimatePresence>
         </div>
@@ -400,14 +489,14 @@ const Banner = () => {
         <button
           onClick={prevPanel}
           aria-label="Previous panel"
-          className="absolute top-1/2 -translate-y-1/2 left-5 md:left-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+          className="absolute top-1/2 -translate-y-1/2 start-5 md:start-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
         >
           ‹
         </button>
         <button
           onClick={nextPanel}
           aria-label="Next panel"
-          className="absolute top-1/2 -translate-y-1/2 right-5 md:right-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+          className="absolute top-1/2 -translate-y-1/2 end-5 md:end-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
         >
           ›
         </button>

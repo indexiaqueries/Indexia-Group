@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-import AppButton from "../components/common/AppButton";
+import { useTranslation } from "react-i18next";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
 import SectionHeader from "../components/common/SectionHeader";
@@ -18,6 +18,7 @@ import Reveal from "../components/common/Reveal";
 import BusinessCard from "../components/cards/BusinessCard";
 import { getCompanyImage } from "../data/companyImages";
 import { companies } from "../data/companies";
+import { colors } from "../lib/theme";
 
 const icons: Record<string, LucideIcon> = {
   "Indexia Finance": BadgeDollarSign,
@@ -32,11 +33,11 @@ const icons: Record<string, LucideIcon> = {
 
 const colorVar = (hex: string): string => {
   switch (hex) {
-    case "#26ae90":
+    case colors.teal:
       return "var(--color-teal)";
-    case "#f2f231":
+    case colors.yellow:
       return "var(--color-yellow)";
-    case "#066a9c":
+    case colors.blue:
       return "var(--color-blue)";
     default:
       return "var(--color-gray)";
@@ -54,10 +55,14 @@ const businesses = companies.map((company, index) => {
     color2: colorVar(next.color),
     image: getCompanyImage(company.name),
     icon: icons[company.name] ?? Building2,
+    link: company.link,
   };
 });
 
-const Home = () => (
+const Home = () => {
+  const { t } = useTranslation();
+
+  return (
   <main className="bg-white">
     <SEO
       title="Financial Services, Loans, Export & Logistics"
@@ -72,8 +77,8 @@ const Home = () => (
       <div className="container">
         <Reveal>
           <SectionHeader
-            title="Group Companies"
-            description="Indexia Group is a diversified holding of companies spanning Finance, Trade, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
+            title={t("home.groupCompanies.title")}
+            description={t("home.groupCompanies.description")}
           />
         </Reveal>
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -83,16 +88,10 @@ const Home = () => (
             </Reveal>
           ))}
         </div>
-        <Reveal delay={0.2}>
-          <div className="mt-10 text-center">
-            <AppButton to="/businesses" variant="blue">
-              View All Group Companies
-            </AppButton>
-          </div>
-        </Reveal>
       </div>
     </section>
   </main>
-);
+  );
+};
 
 export default Home;

@@ -18,34 +18,6 @@ export type ContactFormData = {
   message: string;
 };
 
-export const displayFont = { fontFamily: "'Fraunces', Georgia, serif" };
-
-export const monoFont = { fontFamily: "'IBM Plex Mono', Menlo, monospace" };
-
-export const palette = {
-  navyDeep: "#0a2233",
-  navy: "#0c3652",
-  navyMid: "#0f4a6e",
-  teal: "#1f9c82",
-  gold: "#f2f231",
-  goldLight: "#f2f231",
-  seal: "#f2f231",
-  paper: "#f6f2e9",
-  ink: "#122029",
-};
-
-export const accent = {
-  green: "var(--color-teal)",
-  blue: "var(--color-blue)",
-  yellow: "var(--color-yellow)",
-  gray: "var(--color-gray)",
-};
-
-export const eyebrowClass = "text-xs font-bold uppercase tracking-[0.24em]";
-
-export const cardBaseClass =
-  "rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md";
-
 export const initialContactForm: ContactFormData = {
   name: "",
   phone: "",
@@ -114,9 +86,4 @@ Ecuador, South America`,
   },
 ];
 
-export const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.2 },
-  transition: { duration: 0.6, delay },
-});
+

@@ -1,9 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
+import Eyebrow from "../common/Eyebrow";
 import SealStamp from "../common/SealStamp";
+import HeroBackdrop from "./HeroBackdrop";
 import businessesHeroBg from "../../assets/BusinessesHero.webp";
+import { colors } from "../../lib/theme";
 
 type CounterProps = {
   value: string;
@@ -12,7 +16,7 @@ type CounterProps = {
   labelClassName?: string;
 };
 
-const Counter = ({ value, label, color = "#066a9c", labelClassName = "mt-1 text-xs text-[#9ca3af]" }: CounterProps) => {
+const Counter = ({ value, label, color = colors.blue, labelClassName = "mt-1 text-xs text-(--color-gray-light)" }: CounterProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
 
@@ -46,68 +50,51 @@ const Counter = ({ value, label, color = "#066a9c", labelClassName = "mt-1 text-
   );
 };
 
-const BusinessesHero = () => (
-  <section
-    className="relative overflow-hidden min-h-[92svh] sm:min-h-screen flex items-center"
-    style={{ background: "linear-gradient(115deg, #0a2233 0%, #0c3652 55%, #0f4a6e 100%)" }}
-  >
-    <img
-      aria-hidden="true"
-      src={businessesHeroBg}
-      alt=""
-      width={1717}
-      height={916}
-      decoding="async"
-      fetchPriority="high"
-      className="absolute inset-0 h-full w-full object-cover object-center"
-    />
-    <div
-      className="pointer-events-none absolute inset-0"
-      style={{ background: "linear-gradient(115deg, rgba(10,34,51,0.88) 0%, rgba(12,54,82,0.72) 55%, rgba(15,74,110,0.55) 100%)" }}
-    />
-    <div className="pointer-events-none absolute inset-0 ruled opacity-80" />
-    <div
-      className="pointer-events-none absolute inset-0"
-      style={{ background: "radial-gradient(circle at 85% 15%, rgba(242,242,49,0.14), transparent 45%)" }}
-    />
+const BusinessesHero = () => {
+  const { t } = useTranslation();
 
-    <div className="relative mx-auto w-full max-w-7xl px-5 py-20 pt-28 text-center sm:px-6 lg:px-8 lg:py-24">
+  return (
+    <HeroBackdrop
+      image={businessesHeroBg}
+      overlay="linear-gradient(115deg, rgba(10,34,51,0.88) 0%, rgba(12,54,82,0.72) 55%, rgba(15,74,110,0.55) 100%)"
+      radial="radial-gradient(circle at 85% 15%, rgba(242,242,49,0.14), transparent 45%)"
+      extra={
+        <span
+          className="seal-stamp-in pointer-events-none absolute bottom-5 end-5 z-10 sm:bottom-10 sm:end-10"
+          aria-hidden="true"
+        >
+          <SealStamp size={96} className="h-16 w-16 sm:h-24 sm:w-24" />
+        </span>
+      }
+    >
       <div className="mb-4 flex items-center justify-center gap-3">
-        <span className="h-px w-8 bg-[#f2f231]/70" />
-        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#f2f231]">The Indexia Difference</p>
-        <span className="h-px w-8 bg-[#f2f231]/70" />
+        <span className="h-px w-8 bg-(--color-yellow)/70" />
+        <Eyebrow color="var(--color-yellow)">{t("businessesHero.eyebrow")}</Eyebrow>
+        <span className="h-px w-8 bg-(--color-yellow)/70" />
       </div>
       <h1 className="font-display mx-auto mb-6 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
-        One Group. Eight Businesses. <span className="text-[#f2f231]">One Shared Promise.</span>
+        {t("businessesHero.titleStart")}
+        <span className="text-(--color-yellow)">{t("businessesHero.titleAccent")}</span>
       </h1>
       <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-white/80">
-        From finance and advisory to export, agriculture, logistics, security, sports, and media — every
-        Indexia business is built on the same foundation: integrity, expertise, and a people-first approach.
-        Whatever you need, the right team is already part of the family.
+        {t("businessesHero.paragraph")}
       </p>
 
       <div className="mx-auto mb-12 grid max-w-2xl grid-cols-2 items-start justify-items-center gap-x-6 gap-y-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-7">
-        <Counter value="500+" label="Clients Served" color="#fff" labelClassName="mt-1 text-xs font-semibold text-white/70" />
-        <Counter value="8" label="Businesses" color="#f2f231" labelClassName="mt-1 text-xs font-semibold text-white/70" />
-        <Counter value="4+" label="Locations" color="#fff" labelClassName="mt-1 text-xs font-semibold text-white/70" />
-        <Counter value="12+" label="Years in Business" color="#f2f231" labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <Counter value="500+" label={t("businessesHero.counterClients")} color={colors.white} labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <Counter value="8" label={t("businessesHero.counterBusinesses")} color={colors.yellow} labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <Counter value="4+" label={t("businessesHero.counterLocations")} color={colors.white} labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <Counter value="12+" label={t("businessesHero.counterYears")} color={colors.yellow} labelClassName="mt-1 text-xs font-semibold text-white/70" />
       </div>
 
       <Link
         to="/contact"
-        className="inline-flex items-center gap-2 rounded-full bg-[#f2f231] px-8 py-3.5 text-sm font-bold text-[#241a03] shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f7f75c]"
+        className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-8 py-3.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
       >
-        Book Free Consultation →
+        {t("businessesHero.cta")}
       </Link>
-    </div>
-
-    <span
-      className="seal-stamp-in pointer-events-none absolute bottom-5 right-5 z-10 sm:bottom-10 sm:right-10"
-      aria-hidden="true"
-    >
-      <SealStamp size={96} className="h-16 w-16 sm:h-24 sm:w-24" />
-    </span>
-  </section>
-);
+    </HeroBackdrop>
+  );
+};
 
 export default BusinessesHero;

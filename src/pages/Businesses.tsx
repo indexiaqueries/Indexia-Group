@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
 import BusinessesHero from "../components/banners/BusinessesHero";
+import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
+import RuledSection from "../components/common/RuledSection";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
 
@@ -16,7 +19,7 @@ const businessesJsonLd = {
         position: index + 1,
         name: company.name,
         description: company.desc,
-        url: `https://www.indexiagroup.com/businesses/${company.slug}`,
+        url: company.link ?? `https://www.indexiagroup.com/businesses/${company.slug}`,
       })),
     },
     {
@@ -34,7 +37,10 @@ const businessesJsonLd = {
   ],
 };
 
-const About = () => (
+const About = () => {
+  const { t } = useTranslation();
+
+  return (
   <>
     <SEO
       title="Group Companies — Finance, Agro, Export & Logistics"
@@ -46,41 +52,28 @@ const About = () => (
 
     <BusinessesHero />
 
-    <section
-      className="relative overflow-hidden"
-      style={{ background: "var(--color-paper)", padding: "clamp(56px, 8vw, 96px) 0" }}
-    >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(to bottom, transparent 0px, transparent 47px, rgba(18,32,41,0.045) 47px, rgba(18,32,41,0.045) 48px)",
-        }}
-      />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#26ae90]/50 to-transparent" aria-hidden="true" />
-
-      <div className="container relative z-10">
+    <RuledSection>
         <Reveal className="mx-auto mb-10 max-w-[720px] text-center sm:mb-14">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Group Companies</p>
-          <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-[#111827]">
-            Eight Companies, <span className="text-[#066a9c]">One Group</span>
+          <Eyebrow className="mb-3">{t("businesses.eyebrow")}</Eyebrow>
+          <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+            {t("businesses.titleStart")}
+            <span className="text-(--color-blue)">{t("businesses.titleAccent")}</span>
           </h2>
-          <p className="mt-4 text-[15px] leading-7 text-[#6b7280]">
-            Choose a company to visit its own page — then send your enquiry to the right team.
+          <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
+            {t("businesses.subtitle")}
           </p>
         </Reveal>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {companies.map((company, i) => (
             <Reveal key={company.name} delay={(i % 4) * 0.08} amount={0.15}>
-              <CompanyLinkCard company={company} entryNo={i + 1} total={companies.length} />
+              <CompanyLinkCard company={company} />
             </Reveal>
           ))}
         </div>
-      </div>
-    </section>
+    </RuledSection>
   </>
-);
+  );
+};
 
 export default About;

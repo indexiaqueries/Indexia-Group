@@ -16,6 +16,8 @@ const HomeHeroGallery = ({
   onSelect,
 }: HomeHeroGalleryProps) => {
   const n = panels.length;
+  const middleStart = 2 * n;
+  const listIndexOf = (virtual: number) => ((virtual - middleStart) % n + n) % n + middleStart;
 
   const marqueeList = [...panels, ...panels, ...panels, ...panels, ...panels];
 
@@ -33,8 +35,7 @@ const HomeHeroGallery = ({
     setAnchor({ id: currentId, virtual: virtualIndex });
   }
 
-  const middleStart = 2 * n;
-  const listIndex = ((virtualIndex - middleStart) % n + n) % n + middleStart;
+  const listIndex = listIndexOf(virtualIndex);
 
   const prevCompRef = useRef(0);
 
@@ -79,7 +80,7 @@ const HomeHeroGallery = ({
   }, [centerActive]);
 
   return (
-    <div className="absolute bottom-0 left-0 w-full z-10 pt-8 pb-6 sm:pt-10 sm:pb-8">
+    <div className="absolute inset-x-0 bottom-0 w-full z-10 pt-8 pb-6 sm:pt-10 sm:pb-8">
       <div
         ref={wrapRef}
         className="overflow-x-hidden overflow-y-visible"

@@ -1,5 +1,7 @@
 import { useId } from "react";
 
+import { colors } from "../../lib/theme";
+
 type SealStampProps = {
   size?: number;
   color?: string;
@@ -10,7 +12,7 @@ type SealStampProps = {
 
 const SealStamp = ({
   size = 80,
-  color = "#f2f231",
+  color = colors.yellow,
   className = "",
   topLabel = "INDEXIA GROUP",
   bottomLabel = "MUMBAI · EST. 2012",

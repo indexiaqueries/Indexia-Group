@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { ChangeEvent, FocusEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,49 +10,35 @@ import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
-import { accent, eyebrowClass, fadeUp, initialContactForm } from "../../data/contact";
+import { initialContactForm } from "../../data/contact";
 import type { ContactFormData } from "../../data/contact";
 import { companyNames } from "../../data/companies";
+import { accent } from "../../lib/theme";
+import { fadeUp } from "../../lib/motion";
+import Eyebrow from "../common/Eyebrow";
 
 type FormFieldEvent = ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
 type FormBlurEvent = FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
 
 const halfFields = [
-  { id: "name", label: "Name", type: "text", autocomplete: "name", placeholder: "Your full name", required: true },
+  { id: "name", labelKey: "form.name", type: "text", autocomplete: "name", placeholderKey: "form.namePlaceholder", required: true },
 ] as const;
 
 const fullFields = [
-  { id: "email", label: "Email Address", type: "email", autocomplete: "email", placeholder: "you@example.com", required: true },
+  { id: "email", labelKey: "form.email", type: "email", autocomplete: "email", placeholderKey: "form.emailPlaceholder", required: true },
 ] as const;
 
-const subjectOptions = ["General Enquiry", ...companyNames];
+/** Values stay stable (English) so the backend receives meaningful subjects; labels are translated. */
+const subjectOptions: { value: string; labelKey?: string }[] = [
+  { value: "General Enquiry", labelKey: "form.generalEnquiry" },
+  ...companyNames.map((name) => ({ value: name })),
+];
 
 const ledgerLabel = "text-xs font-bold uppercase tracking-wider text-slate-600";
 const selectClass = "h-11 rounded-xl px-4 text-sm text-slate-900";
-const errorText = "text-xs font-medium text-[#b91c1c]";
+const errorText = "text-xs font-medium text-(--color-danger)";
 
 type FieldErrors = Partial<Record<keyof ContactFormData, string>>;
-
-const validateField = (id: keyof ContactFormData, value: string): string => {
-  switch (id) {
-    case "name": {
-      const trimmed = value.trim();
-      if (trimmed.length < 2) return "Please enter your name.";
-      if (!/[a-zA-Z\u00C0-\u024F]/.test(trimmed)) return "Name must contain letters.";
-      return "";
-    }
-    case "phone": {
-      const digits = value.replace(/\D/g, "");
-      return /^\d{10}$/.test(digits) ? "" : "Enter a valid 10-digit phone number.";
-    }
-    case "email":
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) ? "" : "Enter a valid email address.";
-    case "subject":
-      return value.trim() ? "" : "Please select a subject or company.";
-    case "message":
-      return value.trim() ? "" : "Please enter your message.";
-  }
-};
 
 const Field = ({
   id,
@@ -108,6 +95,29 @@ type EnquiryFormProps = {
 };
 
 const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps) => {
+  const { t } = useTranslation();
+
+  const validateField = (id: keyof ContactFormData, value: string): string => {
+    switch (id) {
+      case "name": {
+        const trimmed = value.trim();
+        if (trimmed.length < 2) return t("form.errorName");
+        if (!/[a-zA-Z\u00C0-\u024F]/.test(trimmed)) return t("form.errorNameLetters");
+        return "";
+      }
+      case "phone": {
+        const digits = value.replace(/\D/g, "");
+        return /^\d{10}$/.test(digits) ? "" : t("form.errorPhone");
+      }
+      case "email":
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) ? "" : t("form.errorEmail");
+      case "subject":
+        return value.trim() ? "" : t("form.errorSubject");
+      case "message":
+        return value.trim() ? "" : t("form.errorMessage");
+    }
+  };
+
   const [form, setForm] = useState<ContactFormData>(() => ({
     ...initialContactForm,
     subject: initialCompany ?? "",
@@ -169,11 +179,11 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
       });
       const data = (await response.json().catch(() => ({}))) as { ok?: boolean; error?: string };
       if (!response.ok || !data.ok) {
-        throw new Error(data.error || "Something went wrong. Please try again later.");
+        throw new Error(data.error || t("form.errorGeneric"));
       }
       setSubmitted(true);
     } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please try again later.");
+      setSubmitError(err instanceof Error ? err.message : t("form.errorGeneric"));
     } finally {
       setSending(false);
     }
@@ -195,12 +205,10 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
       />
 
       <div className="relative flex flex-1 flex-col">
-        <p className={eyebrowClass} style={{ color: accent.green }}>
-          Send Your Enquiry
-        </p>
-        <p className="mt-3 text-sm leading-6 text-slate-500">
-          Complete the form below and your enquiry will be addressed by our team.
-        </p>
+        <Eyebrow size="md" color={accent.green}>
+          {t("form.eyebrow")}
+        </Eyebrow>
+        <p className="mt-3 text-sm leading-6 text-slate-500">{t("form.intro")}</p>
 
         <form onSubmit={handleSubmit} noValidate className="mt-8 flex flex-1 flex-col gap-5">
           <div className="grid gap-5 sm:grid-cols-2">
@@ -209,6 +217,8 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
                 key={field.id}
                 {...field}
                 id={field.id}
+                label={t(field.labelKey)}
+                placeholder={t(field.placeholderKey)}
                 value={form[field.id]}
                 error={errors[field.id]}
                 onChange={handleChange}
@@ -218,7 +228,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
 
             <div className="space-y-2">
               <Label htmlFor="phone" className={ledgerLabel}>
-                Phone Number
+                {t("form.phone")}
               </Label>
               <Input
                 id="phone"
@@ -230,7 +240,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
                 value={form.phone}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                placeholder="10-digit number"
+                placeholder={t("form.phonePlaceholder")}
                 required
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? "phone-error" : undefined}
@@ -249,6 +259,8 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
               key={field.id}
               {...field}
               id={field.id}
+              label={t(field.labelKey)}
+              placeholder={t(field.placeholderKey)}
               value={form[field.id]}
               error={errors[field.id]}
               onChange={handleChange}
@@ -258,7 +270,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
 
           <div className="space-y-2">
             <Label htmlFor="subject" className={ledgerLabel}>
-              Subject / Company
+              {t("form.subject")}
             </Label>
             <Select
               id="subject"
@@ -277,11 +289,11 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
               ) : (
                 <>
                   <option value="" disabled>
-                    Select a company…
+                    {t("form.subjectPlaceholder")}
                   </option>
                   {subjectOptions.map((option) => (
-                    <option key={option} value={option}>
-                      {option}
+                    <option key={option.value} value={option.value}>
+                      {option.labelKey ? t(option.labelKey) : option.value}
                     </option>
                   ))}
                 </>
@@ -296,7 +308,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
 
           <div className="space-y-2">
             <Label htmlFor="message" className={ledgerLabel}>
-              Message
+              {t("form.message")}
             </Label>
             <Textarea
               id="message"
@@ -306,7 +318,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
               value={form.message}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="Write your enquiry here..."
+              placeholder={t("form.messagePlaceholder")}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? "message-error" : undefined}
               className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm"
@@ -324,18 +336,18 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
             className="mt-auto h-12 w-full rounded-xl px-6 text-sm font-bold shadow-[0_8px_22px_rgba(38,174,144,0.25)] hover:-translate-y-0.5 disabled:hover:translate-y-0"
           >
             <Send size={17} />
-            {sending ? "Sending…" : "Send Enquiry"}
+            {sending ? t("form.sending") : t("form.submit")}
           </Button>
 
           {submitError && (
-            <p className="rounded-xl px-4 py-3 text-center text-sm font-medium" style={{ backgroundColor: "rgba(220,38,38,.08)", color: "#b91c1c" }}>
+            <p className="rounded-xl px-4 py-3 text-center text-sm font-medium" style={{ backgroundColor: "rgba(220,38,38,.08)", color: "var(--color-danger)" }}>
               {submitError}
             </p>
           )}
 
           {submitted && (
-            <p className="rounded-xl px-4 py-3 text-center text-sm font-medium" style={{ backgroundColor: "rgba(38,174,144,.08)", color: "#14765f" }}>
-              Your enquiry has been sent! Our team will get back to you shortly.
+            <p className="rounded-xl px-4 py-3 text-center text-sm font-medium" style={{ backgroundColor: "rgba(38,174,144,.08)", color: "var(--color-success)" }}>
+              {t("form.success")}
             </p>
           )}
         </form>

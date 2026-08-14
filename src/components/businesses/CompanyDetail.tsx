@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   Apple,
   ArrowLeftRight,
+  ArrowRight,
   Banknote,
   BarChart3,
   Briefcase,
   Building2,
   Candy,
   Car,
+  Check,
   CreditCard,
   ClipboardList,
   Clock,
   Crown,
   Dumbbell,
-  ExternalLink,
   Factory,
   FlaskConical,
   Globe,
@@ -50,11 +52,13 @@ import {
   Warehouse,
   Wheat,
 } from "lucide-react";
-import SealStamp from "../common/SealStamp";
+import Eyebrow from "../common/Eyebrow";
+import Reveal from "../common/Reveal";
 import EnquiryForm from "../contact/EnquiryForm";
+import HeroBackdrop from "../banners/HeroBackdrop";
 import { getCompanyImage } from "../../data/companyImages";
 import { companies, type Company } from "../../data/companies";
-import { accentInk, contrastText, isLightColor } from "../../lib/color";
+import { accentInk, contrastText } from "../../lib/color";
 
 const serviceIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
   "Investor Services": Users,
@@ -125,191 +129,147 @@ type CompanyDetailProps = {
 };
 
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
+  const { t } = useTranslation();
   const index = companies.findIndex((c) => c.name === b.name);
   const entryNo = String(index + 1).padStart(2, "0");
 
   return (
     <>
-      <section
-        className="relative flex min-h-[100svh] items-center overflow-hidden"
-        style={{ background: "var(--color-paper)", padding: "clamp(48px, 8vw, 88px) 0" }}
+      {/* Hero — navy backdrop with the company's own photo, matching the site's page heroes */}
+      <HeroBackdrop
+        image={getCompanyImage(b.name)}
+        radial={`radial-gradient(circle at 85% 15%, ${b.color}40, transparent 45%)`}
+        containerClassName="relative mx-auto w-full max-w-7xl px-5 py-24 pt-32 sm:px-6 lg:px-8 lg:py-32"
       >
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(to bottom, transparent 0px, transparent 47px, rgba(18,32,41,0.045) 47px, rgba(18,32,41,0.045) 48px)",
-          }}
-        />
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#26ae90]/50 to-transparent" aria-hidden="true" />
-
-        <div className="container relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           {showBackLink && (
             <Link
               to="/businesses"
-              className="mb-8 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-[#066a9c] transition-colors hover:text-[#0a4a6e]"
+              className="mb-8 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-white/70 transition-colors hover:text-(--color-yellow)"
             >
-              <span aria-hidden="true">←</span> All Companies
+              <span aria-hidden="true">←</span> {t("companyDetail.backAll")}
             </Link>
           )}
 
-          <motion.div
-            key={b.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45 }}
-            className="relative mx-auto max-w-6xl"
-          >
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+            <Eyebrow color="var(--color-yellow)">{t("companyDetail.register", { no: entryNo })}</Eyebrow>
             <span
-              aria-hidden="true"
-              className="pointer-events-none absolute -bottom-8 right-0 z-0 select-none font-ledger font-bold leading-[0.75] text-[clamp(9rem,26vw,20rem)]"
-              style={{ color: b.color, opacity: isLightColor(b.color) ? 0.15 : 0.09 }}
+              className="rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] shadow-md"
+              style={{ background: b.color, color: contrastText(b.color) }}
             >
-              {entryNo}
+              {b.tag}
             </span>
+          </div>
 
-            <div className="group relative mb-10 rounded-xl border border-[#122029]/15 bg-white/40 p-2 shadow-[0_18px_50px_rgba(18,32,41,0.12)] backdrop-blur-[2px] sm:p-2.5">
-              <div className="relative overflow-hidden rounded-lg border border-[#122029]/10">
-                <img
-                  src={getCompanyImage(b.name)}
-                  alt={b.name}
-                  width={1536}
-                  height={1024}
-                  loading="lazy"
-                  decoding="async"
-                  className="block h-auto w-full"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#122029]/25 via-transparent to-transparent" />
-                <span
-                  className="absolute left-3 top-3 rounded-[4px] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] shadow-lg"
-                  style={{ background: b.color, color: contrastText(b.color) }}
-                >
-                  {b.tag}
-                </span>
-                <span className="pointer-events-none absolute bottom-4 right-4 z-10 scale-150 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
-                  <SealStamp size={56} color={b.color} />
-                </span>
-              </div>
-            </div>
+          <h1 className="font-display mt-4 max-w-3xl text-[clamp(30px,5vw,52px)] font-bold leading-[1.06] text-white">
+            {b.name}
+          </h1>
 
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-              <div>
-                <p className="font-ledger mb-3 text-[11px] font-bold uppercase tracking-[0.26em]" style={{ color: accentInk(b.color) }}>
-                  Register Nº {entryNo} / 08
-                </p>
+          {b.tagline && (
+            <p className="mt-4 text-[17px] font-semibold italic text-(--color-yellow)">“{b.tagline}”</p>
+          )}
 
-                {b.link ? (
-                  <a
-                    href={b.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-display mb-3 inline-flex items-center gap-2.5 text-[clamp(26px,3.4vw,42px)] font-bold leading-[1.05] tracking-tight text-[#122029] transition-colors duration-200 hover:text-[#066a9c]"
+          <p className="mt-5 max-w-2xl text-base leading-8 text-white/80">{b.overview}</p>
+
+          <div className="mt-9 flex flex-wrap gap-4">
+            <a
+              href="#enquiry-form"
+              className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-7 py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+            >
+              {t("companyDetail.eyebrow")}
+              <ArrowRight size={16} strokeWidth={2.5} />
+            </a>
+          </div>
+        </motion.div>
+      </HeroBackdrop>
+
+      {/* Highlights */}
+      <section className="bg-(--color-soft) py-20 lg:py-24">
+        <div className="container">
+          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+            <Eyebrow>{t("companyDetail.keyEntries")}</Eyebrow>
+          </Reveal>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {b.highlights.map((highlight, i) => (
+              <Reveal key={highlight} delay={(i % 3) * 0.08} amount={0.15}>
+                <div className="flex items-start gap-3.5 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-shadow duration-300 hover:shadow-md">
+                  <span
+                    className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full"
+                    style={{ background: `${b.color}1f`, color: accentInk(b.color) }}
                   >
-                    {b.name}
-                    <ExternalLink size={22} className="shrink-0" style={{ color: accentInk(b.color) }} />
-                  </a>
-                ) : (
-                  <h3 className="font-display mb-3 text-[clamp(26px,3.4vw,42px)] font-bold leading-[1.05] tracking-tight text-[#122029]">
-                    {b.name}
-                  </h3>
-                )}
-
-                {b.tagline && (
-                  <p className="-mt-1 mb-5 text-[15px] font-bold italic" style={{ color: accentInk(b.color) }}>
-                    “{b.tagline}”
-                  </p>
-                )}
-
-                <p className="mb-6 text-[15px] leading-[1.85] text-[#4b5563]">{b.overview}</p>
-
-                <div className="h-[4px] w-14 rounded-sm" style={{ background: b.color }} />
-              </div>
-
-              <div>
-                <p className="font-ledger mb-3 text-[11px] font-bold uppercase tracking-[0.26em] text-[#122029]/55">
-                  Key entries
-                </p>
-                <ul className="grid gap-2.5">
-                  {b.highlights.map((highlight) => (
-                    <li key={highlight} className="flex items-start gap-2.5 text-[14px] font-medium text-[#374151]">
-                      <span
-                        className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-[3px] border text-[11px] font-bold"
-                        style={{ color: accentInk(b.color), borderColor: accentInk(b.color) }}
-                      >
-                        ✓
-                      </span>
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-12 overflow-hidden rounded-2xl border border-[#122029]/10 bg-gradient-to-r from-[#edf4fa] via-white to-[#edf4fa] px-6 py-7 shadow-[0_10px_30px_rgba(18,32,41,0.06)] sm:px-8 sm:py-8">
-              <div className="flex items-end justify-between gap-4">
-                <p className="font-ledger text-[12px] font-bold uppercase tracking-[0.24em] text-[#122029]">
-                  Services under this entry
-                </p>
-                <span
-                  className="font-ledger text-[10px] font-bold uppercase tracking-[0.22em]"
-                  style={{ color: accentInk(b.color) }}
-                >
-                  Entry {entryNo} · {b.services.length} services
-                </span>
-              </div>
-              <div className="mt-3 h-[2px] w-full rounded-full bg-gradient-to-r from-[#122029] via-[#066a9c] to-[#d4a017]" />
-
-              <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
-                {b.services.map((service) => {
-                  const Icon = serviceIcons[service] ?? Sparkles;
-                  return (
-                    <div key={service} className="flex flex-col items-center gap-3 text-center">
-                      <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#d4a017] bg-white/80 shadow-[0_4px_14px_rgba(212,160,23,0.18)]">
-                        <Icon size={26} strokeWidth={1.8} className="text-[#122029]" />
-                      </span>
-                      <span className="min-h-[2.6em] text-[12px] font-semibold leading-snug text-[#122029]">
-                        {service}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div className="font-ledger mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-[#122029]/15 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#122029]/45">
-              <span>Indexia Group · Register of Companies</span>
-              <span>Entry {entryNo} of 08</span>
-            </div>
-          </motion.div>
+                    <Check size={14} strokeWidth={3} />
+                  </span>
+                  <p className="text-[14.5px] font-medium leading-6 text-(--color-ink-soft)">{highlight}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
+      {/* Services */}
+      <section className="bg-white py-20 lg:py-24">
+        <div className="container">
+          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+            <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
+          </Reveal>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {b.services.map((service, i) => {
+              const Icon = serviceIcons[service] ?? Sparkles;
+              return (
+                <Reveal key={service} delay={(i % 3) * 0.06} amount={0.1}>
+                  <div className="group flex items-center gap-4 rounded-2xl border border-slate-100 bg-(--color-soft) p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                    <span
+                      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl"
+                      style={{ background: `${b.color}14`, color: accentInk(b.color) }}
+                    >
+                      <Icon size={22} strokeWidth={1.8} />
+                    </span>
+                    <p className="text-[14px] font-semibold leading-snug text-(--color-ink-deep)">{service}</p>
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+
+          <div className="font-ledger mt-14 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
+            <span>{t("companyDetail.registerOf")}</span>
+            <span>{t("companyDetail.entryOf", { no: entryNo })}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Enquiry — same layout as the Contact page, fits the viewport */}
       <section
         id="enquiry"
         className="relative flex min-h-[100svh] scroll-mt-24 items-center overflow-hidden"
-        style={{ background: "#f8fafc", padding: "clamp(40px, 5vw, 64px) 0" }}
+        style={{ background: "var(--color-soft)", padding: "clamp(40px, 5vw, 64px) 0" }}
       >
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#066a9c]/40 to-transparent" aria-hidden="true" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
 
         <div className="container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Send Your Enquiry</p>
-            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-[#111827]">
-              Enquire About <span style={{ color: accentInk(b.color) }}>{b.name.replace(" Pvt. Ltd.", "")}</span>
+            <Eyebrow className="mb-3">{t("companyDetail.eyebrow")}</Eyebrow>
+            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
+              {t("companyDetail.enquireTitle", { name: b.name })}
             </h2>
-            <p className="mt-5 max-w-md text-[15px] leading-7 text-[#6b7280]">
-              Your enquiry is routed with {b.name.replace(" Pvt. Ltd.", "")} named at the top, so the right team
-              picks it up first.
+            <p className="mt-5 max-w-md text-[15px] leading-7 text-(--color-muted)">
+              {t("companyDetail.enquireSub", { name: b.name })}
             </p>
 
             <div className="mt-8 flex items-center gap-6">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[#066a9c] shadow-[0_4px_14px_rgba(6,106,156,0.18)]">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-(--color-blue) shadow-[0_4px_14px_rgba(6,106,156,0.18)]">
                 <Clock className="h-5 w-5" strokeWidth={2} />
               </div>
               <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#6b7280]">Response time</p>
-                <p className="mt-0.5 text-sm font-semibold text-[#111827]">Within 24 hours, Mon – Sat</p>
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">{t("companyDetail.responseTime")}</p>
+                <p className="mt-0.5 text-sm font-semibold text-(--color-ink)">{t("companyDetail.responseValue")}</p>
               </div>
             </div>
           </div>

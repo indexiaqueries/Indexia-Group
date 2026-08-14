@@ -16,7 +16,7 @@ const MainLayout = () => {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <AnimatePresence mode="wait" initial={false}>
+        <AnimatePresence mode="wait">
           <motion.div
             key={pathname}
             initial={prefersReducedMotion ? false : { opacity: 0 }}

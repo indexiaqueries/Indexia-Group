@@ -1,0 +1,532 @@
+{
+  "header": {
+    "nav": {
+      "contact": "Contact"
+    },
+    "menu": {
+      "home": "Accueil",
+      "groupCompanies": "Entreprises du Groupe",
+      "companies": "Entreprises",
+      "contact": "Contact",
+      "language": "Langue",
+      "viewAllCompanies": "Voir toutes les entreprises →"
+    },
+    "aria": {
+      "selectLanguage": "Choisir la langue",
+      "toggleMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu"
+    }
+  },
+  "hero": {
+    "p0": {
+      "tag": "Indexia Group",
+      "heading": "Un Groupe.\nDe Multiples Solutions.",
+      "sub": "De la finance et la logistique à l'agro et la publicité, Indexia Group accélère la croissance de tous les secteurs avec des entreprises fiables et tournées vers l'avenir."
+    },
+    "p1": {
+      "tag": "Indexia Finance",
+      "heading": "Une destination\ncomplète de prêt.",
+      "sub": "Vous pouvez demander tout type de prêt via notre portail www.indexiafinance.com. Nous proposons nos services dans le monde entier — en Inde, nous sommes partenaires commerciaux de 43 banques et NBFC."
+    },
+    "p2": {
+      "tag": "Indexia Finserve Pvt. Ltd.",
+      "heading": "La méthode financière\nde nouvelle génération.",
+      "sub": "Désormais, la bonne banque viendra jusqu'à votre porte."
+    },
+    "p3": {
+      "tag": "Indexia Overseas Pvt. Ltd.",
+      "heading": "Sucre raffiné et\ntous les produits comestibles.",
+      "sub": "Nous commercialisons et exportons du sucre raffiné et tous les produits comestibles."
+    },
+    "p4": {
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+      "heading": "Nous fabriquons et\nexportons des engrais organiques",
+      "sub": "Nous fabriquons des engrais organiques en Inde et les exportons dans le monde entier."
+    },
+    "p5": {
+      "tag": "Indexia Securities",
+      "heading": "Commandos armés et\nsécurité armée",
+      "sub": "Protection des hommes politiques et des grands magnats des affaires."
+    },
+    "p6": {
+      "tag": "Indexia Warehouse",
+      "heading": "Un stockage conçu\npour l'échelle.",
+      "sub": "Une infrastructure moderne d'entreposage et de logistique qui maintient les marchandises en mouvement de manière efficace."
+    },
+    "p7": {
+      "tag": "Indexia Advertising",
+      "heading": "Votre marque sur\nchaque autoroute.",
+      "sub": "De nombreux emplacements publicitaires le long des autoroutes, offrant aux marques des campagnes à forte visibilité."
+    },
+    "p8": {
+      "tag": "Indexia Foundation",
+      "heading": "Aider les\nathlètes.",
+      "sub": "Des programmes sportifs qui entraînent, accompagnent et financent les athlètes sur leur chemin vers la performance maximale."
+    }
+  },
+  "footer": {
+    "tagline": "Groupe commercial indien diversifié",
+    "blurb": "Nous aidons les entreprises et les particuliers à bâtir un avenir financier plus solide grâce à des solutions fiables et axées sur les résultats.",
+    "contactUs": "Contact",
+    "hours": "Lun - Sam : 9 h - 18 h",
+    "company": "Société",
+    "resources": "Ressources",
+    "legal": "Mentions légales",
+    "links": {
+      "groupCompanies": "Entreprises du Groupe",
+      "advertise": "Publicité",
+      "careers": "Carrières",
+      "news": "Actualités et Centre de Connaissances",
+      "globalResearch": "Recherche Mondiale",
+      "securityTips": "Conseils de Sécurité",
+      "blog": "Blog",
+      "termsOfUse": "Conditions d'Utilisation",
+      "termsConditions": "Termes et Conditions",
+      "privacyPolicy": "Politique de Confidentialité"
+    },
+    "cta": "Une question sur l'une de nos entreprises ?",
+    "enquiry": "Envoyez-nous une demande →",
+    "stats": "INDEXIA GROUP · 08 ENTREPRISES · 04 SITES",
+    "rights": "© 2026 Indexia Group. Tous droits réservés.",
+    "backToTop": "Revenir en haut"
+  },
+  "home": {
+    "groupCompanies": {
+      "title": "Entreprises du Groupe",
+      "description": "Indexia Group est une holding diversifiée couvrant la Finance, le Commerce, l'Agriculture, l'Entreposage, les Valeurs, l'Impact Social et la Publicité. Nous bâtissons des entreprises qui permettent aux clients, partenaires et communautés de grandir en toute confiance."
+    }
+  },
+  "businesses": {
+    "eyebrow": "Entreprises du Groupe",
+    "titleStart": "Huit entreprises, ",
+    "titleAccent": "un seul groupe",
+    "subtitle": "Choisissez une entreprise pour visiter sa page — puis envoyez votre demande à la bonne équipe."
+  },
+  "businessesHero": {
+    "eyebrow": "La Différence Indexia",
+    "titleStart": "Un groupe. Huit entreprises. ",
+    "titleAccent": "Une seule promesse.",
+    "paragraph": "De la finance et du conseil à l'exportation, l'agriculture, la logistique, la sécurité, le sport et les médias — chaque entreprise Indexia repose sur les mêmes fondations : intégrité, expertise et une approche centrée sur les personnes. Quoi que vous ayez besoin, la bonne équipe fait déjà partie de la famille.",
+    "counterClients": "Clients Servis",
+    "counterBusinesses": "Entreprises",
+    "counterLocations": "Sites",
+    "counterYears": "Années d'Expérience",
+    "cta": "Réserver une Consultation Gratuite →"
+  },
+  "contactHero": {
+    "eyebrow": "Parlez à Indexia",
+    "title": "Une ligne directe vers notre équipe",
+    "paragraph": "Des questions de documentation aux nouvelles demandes de prêt, chaque message est examiné et traité par un membre de notre équipe - pas par une file d'attente.",
+    "sendEnquiry": "Envoyer Votre Demande",
+    "callNow": "Appelez-nous · 86551 68551",
+    "offices": "{{count}} sites",
+    "directLines": "{{count}} lignes directes",
+    "reply": "< 24 h délai moyen de réponse"
+  },
+  "contactInfo": {
+    "eyebrow": "Envoyer Votre Demande",
+    "headlineStart": "Renseignez-vous sur ",
+    "headlineAccent": "Indexia Company",
+    "paragraph": "Que vous ayez une question sur nos services, besoin d'une consultation commerciale ou souhaitiez explorer un partenariat, notre équipe est prête à vous aider — nous répondons sous 24 heures.",
+    "enquiries": "Demandes",
+    "location": "Emplacement",
+    "workingHours": "Heures d'Ouverture",
+    "phoneNumbers": "Numéros de Téléphone"
+  },
+  "form": {
+    "eyebrow": "Envoyer Votre Demande",
+    "intro": "Remplissez le formulaire ci-dessous et votre demande sera traitée par notre équipe.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom complet",
+    "email": "Adresse E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "phone": "Numéro de Téléphone",
+    "phonePlaceholder": "Numéro à 10 chiffres",
+    "subject": "Sujet / Entreprise",
+    "subjectPlaceholder": "Sélectionnez une entreprise…",
+    "message": "Message",
+    "messagePlaceholder": "Écrivez votre demande ici...",
+    "submit": "Envoyer la Demande",
+    "sending": "Envoi…",
+    "success": "Votre demande a été envoyée ! Notre équipe vous répondra rapidement.",
+    "errorName": "Veuillez saisir votre nom.",
+    "errorNameLetters": "Le nom doit contenir des lettres.",
+    "errorPhone": "Saisissez un numéro de téléphone valide à 10 chiffres.",
+    "errorEmail": "Saisissez une adresse e-mail valide.",
+    "errorSubject": "Veuillez sélectionner un sujet ou une entreprise.",
+    "errorMessage": "Veuillez saisir votre message.",
+    "errorGeneric": "Une erreur est survenue. Veuillez réessayer plus tard.",
+    "generalEnquiry": "Demande Générale"
+  },
+  "companyDetail": {
+    "backAll": "Toutes les Entreprises",
+    "register": "Registre Nº {{no}} / 08",
+    "keyEntries": "Points Clés",
+    "servicesTitle": "Services de cette entrée",
+    "registerOf": "Indexia Group · Registre des Entreprises",
+    "entryOf": "Entrée {{no}} sur 08",
+    "eyebrow": "Envoyer Votre Demande",
+    "enquireTitle": "Renseignez-vous sur {{name}}",
+    "enquireSub": "Votre demande est adressée avec {{name}} en tête, afin que la bonne équipe s'en occupe en premier.",
+    "responseTime": "Délai de réponse",
+    "responseValue": "Sous 24 heures, du lundi au samedi"
+  },
+  "contact": {
+    "locationsTitleStart": "Nos ",
+    "locationsTitleAccent": "Sites"
+  },
+  "businessCard": {
+    "tapToVisit": "Touchez pour visiter",
+    "readMore": "Lire la suite"
+  },
+  "companyLinkCard": {
+    "visitPage": "Visiter la page"
+  },
+  "newsPage": {
+    "eyebrow": "Actualités et Centre de Connaissances",
+    "title": "Actualités et Centre de Connaissances",
+    "titleStart": "Histoires et perspectives de ",
+    "titleAccent": "tout le Groupe.",
+    "subtitle": "Actualités, mises à jour et savoir-faire pratique de chaque société du groupe Indexia — finance, commerce, agriculture, sécurité, logistique, médias et sport.",
+    "featuredLabel": "À la une",
+    "readMore": "Lire la suite",
+    "askUs": "Contactez-nous",
+    "knowledgeEyebrow": "Centre de Connaissances",
+    "knowledgeHeading": "Guides pratiques de nos sociétés",
+    "knowledgeSubtitle": "Des explications simples écrites par les équipes qui vivent ce travail chaque jour.",
+    "ctaTitle": "Une question sur nos sociétés ?",
+    "ctaBody": "De l'accompagnement FDI à l'agriculture biologique en passant par la sécurité armée — la bonne société Indexia est prête à vous aider. Envoyez-nous votre demande et nous vous mettrons en relation.",
+    "ctaButton": "Envoyer une demande",
+    "metaDescription": "Actualités et connaissances du groupe Indexia — actualités d'Indexia Finance, Finserve, Agro, Securities, Warehouse, Advertising et Foundation, et guides pratiques."
+  },
+  "careersPage": {
+    "eyebrow": "Carrières",
+    "title": "Carrières chez Indexia Group",
+    "titleStart": "Bâtissez votre carrière au sein de ",
+    "titleAccent": "huit sociétés.",
+    "subtitle": "Finance, commerce, agriculture, sécurité, logistique, médias et sport sous un même groupe. Rejoignez une équipe où votre travail a un réel impact.",
+    "ctaButton": "Voir les offres",
+    "valuesEyebrow": "Pourquoi Indexia Group",
+    "valuesHeading": "Travaillez là où votre travail compte",
+    "valuesSubtitle": "Ce que l'on ressent en construisant une carrière dans un groupe diversifié qui place les personnes en premier.",
+    "rolesEyebrow": "Postes ouverts",
+    "rolesHeading": "Offres actuelles",
+    "rolesSubtitle": "Parcourez les postes ouverts du groupe — ou postulez pour un futur poste en nous envoyant vos informations.",
+    "apply": "Postuler",
+    "processEyebrow": "Processus de recrutement",
+    "processHeading": "Quatre étapes pour nous rejoindre",
+    "ctaTitle": "Vous ne trouvez pas votre poste ?",
+    "ctaBody": "Nous recherchons toujours de bonnes personnes. Envoyez une demande ou votre CV à careers@indexiagroup.com et nous vous garderons à l'esprit.",
+    "metaDescription": "Carrières chez Indexia Group — postes ouverts en finance, export, agriculture, sécurité, entreposage, publicité et soutien aux athlètes, et fonctionnement de notre recrutement."
+  },
+  "legal": {
+    "eyebrow": "Juridique",
+    "privacyTitle": "Politique de confidentialité",
+    "privacySubtitle": "Comment Indexia Group collecte, utilise et protège vos informations personnelles.",
+    "termsTitle": "Conditions générales",
+    "termsSubtitle": "Les conditions qui régissent l'utilisation du site web d'Indexia Group et des services de ses sociétés.",
+    "termsOfUseTitle": "Conditions d'Utilisation",
+    "termsOfUseSubtitle": "Les règles d'accès et de navigation sur le site d'Indexia Group et sur les sites de ses sociétés.",
+    "lastUpdated": "Dernière mise à jour",
+    "backHome": "Retour à l'accueil",
+    "contactUs": "Contactez-nous",
+    "contactHeading": "Des questions sur cette politique ?",
+    "contactBody": "Écrivez-nous à contactus@indexiagroup.com ou envoyez une demande : notre équipe vous répondra.",
+    "sendEnquiry": "Envoyer une demande",
+    "metaPrivacyDescription": "Consultez la politique de confidentialité d'Indexia Group — comment nous collectons, utilisons, stockons et protégeons vos informations personnelles.",
+    "metaTermsDescription": "Consultez les conditions générales qui régissent l'utilisation du site web d'Indexia Group et des services de ses sociétés.",
+    "metaTermsOfUseDescription": "Consultez les Conditions d'Utilisation qui régissent votre accès et votre navigation sur le site d'Indexia Group et sur les sites de ses sociétés."
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
+        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+      ],
+      "sections": [
+        {
+          "title": "Informations que nous collectons",
+          "paragraphs": [
+            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
+            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
+          ]
+        },
+        {
+          "title": "Comment nous utilisons vos informations",
+          "paragraphs": [
+            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et — lorsque vous y avez consenti — vous envoyer des informations sur nos sociétés du groupe.",
+            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
+          ]
+        },
+        {
+          "title": "Partage et divulgation",
+          "paragraphs": [
+            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Nous ne vendons pas vos informations personnelles à des tiers."
+          ]
+        },
+        {
+          "title": "Sécurité des données",
+          "paragraphs": [
+            "Nous appliquons des mesures techniques et organisationnelles raisonnables — notamment des contrôles d'accès, le chiffrement en transit et la surveillance — pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
+          ]
+        },
+        {
+          "title": "Cookies et technologies similaires",
+          "paragraphs": [
+            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
+          ]
+        },
+        {
+          "title": "Conservation des données",
+          "paragraphs": [
+            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
+          ]
+        },
+        {
+          "title": "Vos droits et choix",
+          "paragraphs": [
+            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
+          ]
+        },
+        {
+          "title": "Liens vers des tiers",
+          "paragraphs": [
+            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
+          ]
+        },
+        {
+          "title": "Confidentialité des enfants",
+          "paragraphs": [
+            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
+          ]
+        },
+        {
+          "title": "Modifications de la présente politique",
+          "paragraphs": [
+            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "Les présentes Conditions d'Utilisation (« Conditions d'Utilisation ») définissent les règles d'accès et de navigation sur les sites web exploités par Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre »).",
+        "Veuillez lire attentivement les présentes Conditions d'Utilisation avant d'utiliser nos sites web. En accédant à nos sites web ou en les parcourant, vous acceptez d'être lié par elles. Si vous n'êtes pas d'accord, veuillez ne pas utiliser nos sites web."
+      ],
+      "sections": [
+        {
+          "title": "Acceptation des présentes Conditions d'Utilisation",
+          "paragraphs": [
+            "En accédant à nos sites web ou en les parcourant, vous confirmez avoir lu, compris et accepté les présentes Conditions d'Utilisation. Vous devez être âgé d'au moins 18 ans pour utiliser nos sites web.",
+            "Les présentes Conditions d'Utilisation sont distinctes des conditions générales spécifiques qui régissent les services proposés par les sociétés individuelles d'Indexia Group, et elles les complètent."
+          ]
+        },
+        {
+          "title": "Accès au site web",
+          "paragraphs": [
+            "Nous vous accordons un droit limité, révocable et non exclusif d'accéder à nos sites web et de les parcourir à des fins personnelles et non commerciales. Nous pouvons restreindre, suspendre ou supprimer l'accès à tout ou partie de nos sites web à tout moment, avec ou sans préavis.",
+            "Vous êtes responsable de la conformité de votre appareil et de votre connexion aux exigences nécessaires pour accéder à nos sites web, ainsi que des frais que vous engagez à cette fin."
+          ]
+        },
+        {
+          "title": "Utilisation acceptable",
+          "paragraphs": [
+            "Vous vous engagez à ne pas faire un usage abusif de nos sites web. Cela comprend, sans limitation : tenter d'obtenir un accès non autorisé à nos systèmes, introduire des virus ou d'autres codes malveillants, interférer avec le fonctionnement de nos sites web, extraire ou collecter du contenu à grande échelle, et utiliser nos sites web pour commettre ou faciliter des activités illicites.",
+            "Vous ne devez pas usurper l'identité d'une personne ou d'une entité, ni déformer votre affiliation avec nous ou avec l'une de nos sociétés du groupe."
+          ]
+        },
+        {
+          "title": "Contributions des utilisateurs",
+          "paragraphs": [
+            "Lorsque vous soumettez une demande, un avis ou tout autre contenu via nos sites web, vous êtes responsable de l'exactitude et de la licéité de ce contenu. Vous nous accordez une licence non exclusive et sans redevance pour utiliser, stocker et traiter votre contribution uniquement dans le but de vous répondre et de faire fonctionner nos sites web.",
+            "Ne soumettez pas d'informations confidentielles ou sensibles que vous n'êtes pas autorisé à partager."
+          ]
+        },
+        {
+          "title": "Propriété intellectuelle",
+          "paragraphs": [
+            "Tout le contenu de nos sites web — y compris les textes, graphiques, logos, images et logiciels — est la propriété d'Indexia Group ou de ses concédants et est protégé par les lois applicables en matière de propriété intellectuelle.",
+            "Vous pouvez consulter et imprimer du contenu à des fins personnelles et non commerciales uniquement. Tout autre usage, y compris la reproduction ou la distribution, requiert notre consentement écrit préalable."
+          ]
+        },
+        {
+          "title": "Liens vers des tiers",
+          "paragraphs": [
+            "Nos sites web peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. Nous ne sommes pas responsables du contenu, de la disponibilité ou des pratiques de ces sites web. Le suivi de ces liens se fait à vos propres risques et est soumis aux conditions et politiques du site web concerné."
+          ]
+        },
+        {
+          "title": "Exclusion de garanties",
+          "paragraphs": [
+            "Nos sites web et leur contenu sont fournis « en l'état » et « selon disponibilité », sans garanties d'aucune sorte, expresses ou implicites, y compris les garanties implicites de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon.",
+            "Nous ne garantissons pas que nos sites web seront ininterrompus, sécurisés, exempts d'erreurs ou de virus ou d'autres composants nuisibles."
+          ]
+        },
+        {
+          "title": "Limitation de responsabilité",
+          "paragraphs": [
+            "Dans toute la mesure permise par la loi, Indexia Group et ses sociétés du groupe ne seront pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de bénéfices, de données ou de réputation, découlant de ou liés à votre utilisation, ou à votre incapacité d'utilisation, de nos sites web.",
+            "Aucune disposition des présentes Conditions d'Utilisation ne limite ou n'exclut une responsabilité qui ne peut être limitée ou exclue en vertu de la législation applicable."
+          ]
+        },
+        {
+          "title": "Résiliation",
+          "paragraphs": [
+            "Nous pouvons suspendre ou supprimer votre accès à nos sites web si vous enfreignez les présentes Conditions d'Utilisation, ou pour tout autre motif à notre discrétion.",
+            "En cas de résiliation, les dispositions des présentes Conditions d'Utilisation qui, par leur nature, devraient survivre — y compris les exclusions de garanties, les limitations de responsabilité et le droit applicable — continueront de s'appliquer."
+          ]
+        },
+        {
+          "title": "Droit applicable et juridiction",
+          "paragraphs": [
+            "Les présentes Conditions d'Utilisation sont régies par le droit indien. Tout litige découlant de ou lié aux présentes Conditions d'Utilisation sera soumis à la juridiction exclusive des tribunaux de Mumbai, en Inde."
+          ]
+        },
+        {
+          "title": "Modifications des présentes Conditions d'Utilisation",
+          "paragraphs": [
+            "Nous pouvons réviser les présentes Conditions d'Utilisation à tout moment en mettant à jour cette page. Votre utilisation continue de nos sites web après la publication des modifications constitue une acceptation des Conditions d'Utilisation révisées."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "Si vous avez des questions concernant les présentes Conditions d'Utilisation, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "Les présentes Conditions Générales (« Conditions ») régissent votre accès à nos sites web exploités par Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre »), ainsi que votre utilisation de ces sites et des services qui y sont décrits.",
+        "Veuillez lire attentivement les présentes Conditions avant d'utiliser nos sites web. En accédant à nos sites web ou en les utilisant, vous acceptez d'être lié par les présentes Conditions. Si vous n'êtes pas d'accord, veuillez ne pas utiliser nos sites web."
+      ],
+      "sections": [
+        {
+          "title": "Acceptation des présentes Conditions",
+          "paragraphs": [
+            "En accédant à nos sites web, en soumettant une demande ou en utilisant nos services de toute autre manière, vous confirmez avoir lu, compris et accepté les présentes Conditions. Vous devez être âgé d'au moins 18 ans pour utiliser nos sites web."
+          ]
+        },
+        {
+          "title": "Utilisation du site web",
+          "paragraphs": [
+            "Vous vous engagez à utiliser nos sites web uniquement à des fins légitimes et d'une manière qui ne porte pas atteinte aux droits de tiers ni ne restreint ou n'empêche l'utilisation de nos sites web par des tiers.",
+            "Vous ne devez pas faire un usage abusif de nos sites web en introduisant des codes malveillants, en tentant un accès non autorisé, en extrayant du contenu à grande échelle ou en interférant avec leur fonctionnement normal."
+          ]
+        },
+        {
+          "title": "Propriété intellectuelle",
+          "paragraphs": [
+            "Tout le contenu de nos sites web — y compris les textes, graphiques, logos, images et logiciels — est la propriété d'Indexia Group ou de ses concédants et est protégé par les lois applicables en matière de propriété intellectuelle.",
+            "Vous pouvez consulter et imprimer du contenu à des fins personnelles et non commerciales uniquement. Tout autre usage, y compris la reproduction ou la distribution, requiert notre consentement écrit préalable."
+          ]
+        },
+        {
+          "title": "Services et informations",
+          "paragraphs": [
+            "Les informations figurant sur nos sites web sont fournies à titre général et ne constituent pas des conseils financiers, juridiques ou d'investissement. Les demandes de prêts, de crédits ou d'autres produits financiers sont soumises à des vérifications d'éligibilité et à l'approbation de la société concernée d'Indexia Group.",
+            "Nous pouvons modifier, suspendre ou retirer tout service décrit sur nos sites web à tout moment, sans préavis."
+          ]
+        },
+        {
+          "title": "Demandes et communications",
+          "paragraphs": [
+            "Lorsque vous soumettez une demande, vous vous engagez à fournir des informations exactes et complètes et à les tenir à jour. En soumettant une demande, vous consentez à être contacté par la société concernée d'Indexia Group par téléphone, e-mail ou tout autre moyen dans le cadre de votre demande.",
+            "Vous êtes responsable de l'exactitude des informations que vous fournissez et des conséquences découlant d'informations fausses ou incomplètes."
+          ]
+        },
+        {
+          "title": "Sites web de tiers",
+          "paragraphs": [
+            "Nos sites web peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. Nous ne sommes pas responsables du contenu, de la disponibilité ou des pratiques de ces sites web, et leur utilisation est soumise à leurs propres conditions et politiques."
+          ]
+        },
+        {
+          "title": "Exclusions de garanties",
+          "paragraphs": [
+            "Nos sites web et leur contenu sont fournis « en l'état » et « selon disponibilité », sans garanties d'aucune sorte, expresses ou implicites, y compris les garanties implicites de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon.",
+            "Nous ne garantissons pas que nos sites web seront ininterrompus, sécurisés ou exempts d'erreurs."
+          ]
+        },
+        {
+          "title": "Limitation de responsabilité",
+          "paragraphs": [
+            "Dans toute la mesure permise par la loi, Indexia Group ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de bénéfices ou de données, découlant de ou liés à votre utilisation de nos sites web.",
+            "Aucune disposition des présentes Conditions ne limite ou n'exclut une responsabilité qui ne peut être limitée ou exclue en vertu de la législation applicable."
+          ]
+        },
+        {
+          "title": "Indemnisation",
+          "paragraphs": [
+            "Vous acceptez d'indemniser et de dégager de toute responsabilité Indexia Group et ses sociétés du groupe, ses dirigeants et ses employés contre toute réclamation, perte, responsabilité et dépense découlant de votre violation des présentes Conditions ou de votre usage abusif de nos sites web."
+          ]
+        },
+        {
+          "title": "Droit applicable et juridiction",
+          "paragraphs": [
+            "Les présentes Conditions sont régies par le droit indien. Tout litige découlant de ou lié aux présentes Conditions sera soumis à la juridiction exclusive des tribunaux de Mumbai, en Inde."
+          ]
+        },
+        {
+          "title": "Modifications des présentes Conditions",
+          "paragraphs": [
+            "Nous pouvons réviser les présentes Conditions à tout moment en mettant à jour cette page. Votre utilisation continue de nos sites web après la publication des modifications constitue une acceptation des Conditions révisées."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "Si vous avez des questions concernant les présentes Conditions, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ]
+        }
+      ]
+    }
+  },
+  "globalResearchPage": {
+    "eyebrow": "Recherche mondiale",
+    "title": "Recherche mondiale chez Indexia Group",
+    "titleStart": "Une recherche qui éclaire ",
+    "titleAccent": "de vraies décisions.",
+    "subtitle": "Intelligence de marché sur les IDE, le crédit, le commerce et les infrastructures, bâtie à partir de la vision terrain de nos entreprises.",
+    "ctaButton": "Explorer les axes de recherche",
+    "areasEyebrow": "Ce que nous étudions",
+    "areasHeading": "Quatre axes sur les marchés que nous servons",
+    "areasSubtitle": "Une recherche ciblée sur les secteurs où opère Indexia Group.",
+    "reportsEyebrow": "Rapports et publications",
+    "reportsHeading": "Publications récentes",
+    "reportsSubtitle": "Des synthèses de nos dernières recherches — demandez le rapport complet et notre équipe vous le partagera.",
+    "requestReport": "Demander le rapport",
+    "ctaTitle": "Besoin d'une analyse plus poussée ?",
+    "ctaBody": "Dites-nous ce que vous étudiez — nos équipes du groupe vous mettront en relation avec les bons experts.",
+    "metaDescription": "Recherche mondiale chez Indexia Group — intelligence de marché sur les IDE, le crédit et le financement NBFC, les marchés d'exportation et les infrastructures, avec des rapports récents à demander."
+  },
+  "securityTipsPage": {
+    "eyebrow": "Conseils de sécurité",
+    "title": "Conseils de sécurité d'Indexia Group",
+    "titleStart": "Gardez une longueur d'avance sur ",
+    "titleAccent": "la fraude.",
+    "subtitle": "Des conseils pratiques et directs des équipes qui gèrent sécurité, finance et logistique au quotidien, pour repérer une arnaque avant qu'elle ne vous coûte.",
+    "ctaButton": "Voir les pratiques clés",
+    "categoriesEyebrow": "Connaître les menaces",
+    "categoriesHeading": "Six menaces à surveiller",
+    "categoriesSubtitle": "Les fraudes les plus courantes et leur fonctionnement, pour les reconnaître instantanément.",
+    "practicesEyebrow": "Pratiques clés",
+    "practicesHeading": "Six habitudes qui vous protègent",
+    "practicesSubtitle": "De petites habitudes constantes qui neutralisent la plupart des tentatives de fraude.",
+    "warningTitle": "Rappel : nous ne vous demandons jamais votre OTP ni votre mot de passe",
+    "warningBody": "Aucune entreprise d'Indexia Group ne vous demandera jamais votre OTP, votre code PIN ou votre mot de passe — par téléphone, message ou e-mail. Si quelqu'un le fait, c'est une arnaque. Arrêtez, vérifiez par un canal officiel et signalez-le.",
+    "ctaTitle": "Vous avez vu quelque chose de suspect ?",
+    "ctaBody": "Signalez-le via notre formulaire ou contactez directement l'entreprise d'Indexia Group concernée.",
+    "metaDescription": "Conseils de sécurité d'Indexia Group — comment repérer le hameçonnage, les arnaques aux prêts et la fraude aux paiements, ainsi que six pratiques clés pour protéger votre argent et votre identité."
+  }
+}

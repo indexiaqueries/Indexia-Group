@@ -1,3 +1,5 @@
+import { colors } from "../lib/theme";
+
 export type Company = {
   name: string;
   slug: string;
@@ -37,7 +39,7 @@ export const companies: Company[] = [
       "Cross-Border Capital Solutions",
       "Wealth & Asset Advisory",
     ],
-    color: "#26ae90",
+    color: colors.teal,
     link: "https://indexiafinance.com/",
   },
   {
@@ -67,7 +69,7 @@ export const companies: Company[] = [
       "Lease R Discounting",
       "Working Capital",
     ],
-    color: "#f2f231",
+    color: colors.yellow,
     link: "https://indexiafinance.com/",
   },
   {
@@ -90,7 +92,7 @@ export const companies: Company[] = [
       "International Logistics",
       "14 South American Markets",
     ],
-    color: "#7b7b7b",
+    color: colors.gray,
   },
   {
     name: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
@@ -112,7 +114,7 @@ export const companies: Company[] = [
       "Farmer Support & Training",
       "Shamli, UP Facility (Delhi NCR)",
     ],
-    color: "#f2f231",
+    color: colors.yellow,
   },
   {
     name: "Indexia Securities",
@@ -134,7 +136,7 @@ export const companies: Company[] = [
       "Corporate & Site Security",
       "24×7 Monitoring & Rapid Response",
     ],
-    color: "#066a9c",
+    color: colors.blue,
   },
   {
     name: "Indexia Warehouse",
@@ -156,7 +158,7 @@ export const companies: Company[] = [
       "Logistics Integration",
       "Cold & Dry Storage Options",
     ],
-    color: "#26ae90",
+    color: colors.teal,
   },
   {
     name: "Indexia Advertising",
@@ -177,7 +179,7 @@ export const companies: Company[] = [
       "Creative & Campaign Support",
       "Site Analytics & Reporting",
     ],
-    color: "#7b7b7b",
+    color: colors.gray,
   },
   {
     name: "Indexia Foundation",
@@ -199,7 +201,7 @@ export const companies: Company[] = [
       "Sports Medicine & Recovery",
       "Olympic-Grade Support",
     ],
-    color: "#066a9c",
+    color: colors.blue,
   },
 ];
 

@@ -18,7 +18,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.55, delay }}
-    className="shared-card flex h-full min-h-62.5 flex-col bg-[#f8fafc] p-6"
+    className="shared-card flex h-full min-h-62.5 flex-col bg-(--color-soft) p-6"
   >
     <div className="flex items-start gap-4">
       <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-blue) text-white shadow-lg">
@@ -39,7 +39,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => (
             >
               <Phone size={16} className="shrink-0 text-(--color-teal)" />
               <span>
-                <span className="mr-2 text-xs font-bold uppercase tracking-wider text-(--color-gray)">
+                <span className="me-2 text-xs font-bold uppercase tracking-wider text-(--color-gray)">
                   {phone.label}:
                 </span>
                 {phone.number}

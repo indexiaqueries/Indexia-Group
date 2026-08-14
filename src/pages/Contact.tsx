@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
-import { accent, branches } from "../data/contact";
+import { branches } from "../data/contact";
+import { accent } from "../lib/theme";
 
 const contactJsonLd = {
   "@context": "https://schema.org",
@@ -65,6 +67,8 @@ const contactJsonLd = {
 };
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <main className="bg-white">
       <SEO
@@ -77,7 +81,7 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#f8fafc] px-6 py-16 lg:px-8">
+      <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
         <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <ContactInfo />
           <div className="flex flex-col">
@@ -90,7 +94,8 @@ const Contact = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
-              Our <span style={{ color: accent.blue }}>Locations</span>
+              {t("contact.locationsTitleStart")}
+              <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
             </h2>
           </div>
 

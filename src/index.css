@@ -56,16 +56,35 @@
 :root {
 
   --color-teal: #26ae90;
+  --color-teal-deep: #1e9478;
   --color-blue: #066a9c;
+  --color-blue-deep: #055780;
   --color-blue-2: #286090;
   --color-yellow: #f2f231;
+  --color-yellow-bright: #f7f75c;
+  --color-yellow-ink: #241a03;
   --color-gray: #7b7b7b;
+  --color-gray-light: #9ca3af;
 
   --color-paper: #f6f2e9;
   --color-ink: #111827;
+  --color-ink-deep: #122029;
+  --color-ink-soft: #374151;
   --color-muted: #6b7280;
   --color-soft: #f8fafc;
+  --color-mist: #f6f9fb;
   --color-deep: #044e74;
+  --color-night: #02101a;
+  --color-navy: #0c3652;
+  --color-navy-deep: #0a2233;
+  --color-navy-mid: #0f4a6e;
+  --color-navy-black: #043249;
+  --color-sand: #e3dcc9;
+  --color-sand-deep: #ddd6c4;
+  --color-gold-pale: #f4efc4;
+  --color-success: #14765f;
+  --color-danger: #b91c1c;
+  --color-white: #ffffff;
 }
 
 *, *::before, *::after {
@@ -102,6 +121,27 @@ body {
   font-family: "Instrument Sans", "Segoe UI", system-ui, Arial, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+/* RTL (Arabic) typography — Arabic joins its letters, so letter-spacing must
+   stay at normal and the display face swaps to the naskh serif. */
+html[dir="rtl"] body {
+  font-family: "Noto Naskh Arabic", "Instrument Sans", "Segoe UI", system-ui, Arial, sans-serif;
+}
+
+html[dir="rtl"] .font-display {
+  font-family: "Noto Kufi Arabic", "Noto Naskh Arabic", "Fraunces", Georgia, serif;
+  font-variation-settings: normal;
+  letter-spacing: normal;
+}
+
+html[dir="rtl"] .font-ledger {
+  font-family: "Noto Naskh Arabic", "IBM Plex Mono", Menlo, monospace;
+  letter-spacing: normal;
+}
+
+html[dir="rtl"] * {
+  letter-spacing: normal;
 }
 
 a, button {
@@ -162,22 +202,82 @@ ul {
   }
 }
 
-.header-gradient {
-  background-image: linear-gradient(
-    90deg,
-    rgb(4 78 116 / 0.45),
-    rgb(6 106 156 / 0.45),
-    rgb(38 174 144 / 0.45),
-    rgb(4 78 116 / 0.45)
-  );
-  background-size: 200% 100%;
-  animation: header-gradient-shift 14s ease-in-out infinite;
+/*
+ * Touch devices have no hover state, so the home Group Companies cards keep
+ * their description hidden forever. On primary touch pointers, render the
+ * description in-flow at the card bottom (name + tag stay visible above it)
+ * instead of as a hover-only centered overlay. Unlayered rules beat the
+ * Tailwind utilities they override.
+ */
+@media (hover: none) {
+  .business-card {
+    /* Fill the stretched grid cell (the Reveal wrapper stretches to the row's
+       tallest card) so both cards in a 2-up row are exactly equal height and
+       the description bottoms align. The min-height stays as the floor for
+       rows where every card is short. */
+    height: 100%;
+    min-height: 17rem;
+  }
+
+  /* The inner link's h-full can't resolve a percentage height against this
+     auto-height card, so the link stays content-sized and leaves a dead strip
+     of image below the content. Inherit the card's min-height instead so the
+     link always fills the card, whatever the cascade does with h-full. */
+  .business-card > a {
+    min-height: inherit;
+  }
+
+  .business-card-name {
+    margin-top: 0.375rem;
+  }
+
+  .business-card-desc {
+    position: static;
+    inset: auto;
+    z-index: auto;
+    scale: 1;
+    transform: none;
+    opacity: 1;
+    margin-top: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 0;
+  }
+
+  /* Home cards — hint that the whole card is tappable. The link already
+     covers the full card; this small pill + pulsing pointer make that
+     obvious where there is no hover state to discover it. */
+  .business-card-tap {
+    display: inline-flex;
+  }
+
+  /* Group Companies directory cards — same touch treatment: let the card
+     grow so long names never clip, keep the corner chip visible since there
+     is no hover state to reveal it, and fill the stretched grid cell so the
+     2-up rows read evenly (the mt-auto content pins to the card bottom). */
+  .company-link-card {
+    height: 100%;
+    min-height: 16rem;
+  }
+
+  .company-link-chip {
+    opacity: 1;
+  }
 }
 
-@keyframes header-gradient-shift {
-  0%   { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+
+/* Scrolled header bar — mirrors the heroes' navy gradient so the fixed nav
+   sits on the same brand surface as the page heroes (see HeroBackdrop). */
+.header-scrim {
+  background-image: linear-gradient(
+    115deg,
+    var(--color-navy-deep) 0%,
+    var(--color-navy) 55%,
+    var(--color-navy-mid) 100%
+  );
 }
+
 
 .seal-stamp-in {
   animation: seal-stamp 0.5s cubic-bezier(0.34, 1.45, 0.64, 1) 0.4s both;
@@ -189,11 +289,45 @@ ul {
   100% { transform: rotate(-10deg) scale(1); }
 }
 
+/* Gentle recurring pulse for the Back to Top buttons — a soft ring breathes
+   outward from behind the button. Animated on the pseudo-element so it never
+   fights the button's own hover transform or static box-shadow. */
+.back-to-top-pulse::before {
+  animation: back-to-top-pulse 2.8s ease-out infinite;
+  background: var(--color-yellow);
+  border-radius: 9999px;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes back-to-top-pulse {
+  0%   { transform: scale(1);    opacity: 0.45; }
+  70%  { transform: scale(1.5);  opacity: 0; }
+  100% { transform: scale(1.5);  opacity: 0; }
+}
+
+/* Soft pulse for the touch-only "tap to visit" pointer on the home cards —
+   a gentle opacity breathe so the hint catches the eye without shouting. */
+.tap-hint-pulse {
+  animation: tap-hint-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes tap-hint-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .seal-stamp-in {
     animation: none;
   }
-  .header-gradient {
+  .back-to-top-pulse::before {
+    animation: none;
+  }
+  .tap-hint-pulse {
     animation: none;
   }
   html {

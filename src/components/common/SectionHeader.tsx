@@ -1,3 +1,5 @@
+import { colors } from "../../lib/theme";
+
 type SectionHeaderProps = {
   eyebrow?: string;
   title: string;
@@ -12,7 +14,7 @@ const SectionHeader = ({ eyebrow, title, description, light = false }: SectionHe
         {eyebrow}
       </p>
     )}
-    <h2 className="section-title" style={light ? { color: "#fff" } : undefined}>{title}</h2>
+    <h2 className="section-title" style={light ? { color: colors.white } : undefined}>{title}</h2>
     {description && (
       <p className={light ? "mt-4 text-base leading-7 text-white/80" : "section-copy"}>
         {description}

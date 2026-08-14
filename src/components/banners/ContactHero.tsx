@@ -1,79 +1,56 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-import {
-  branches,
-  displayFont,
-  eyebrowClass,
-  monoFont,
-  palette,
-  phoneNumbers,
-} from "../../data/contact";
+import { branches, phoneNumbers } from "../../data/contact";
+import { displayFont, monoFont, palette } from "../../lib/theme";
+import Eyebrow from "../common/Eyebrow";
 import PassbookCard from "../contact/PassbookCard";
+import HeroBackdrop from "./HeroBackdrop";
 import contactHeroBg from "../../assets/ContactHero.webp";
 
-const ContactHero = () => (
-  <section
-    className="relative overflow-hidden min-h-[92svh] sm:min-h-screen flex items-center"
-    style={{
-      background: `linear-gradient(115deg, ${palette.navyDeep} 0%, ${palette.navy} 55%, ${palette.navyMid} 100%)`,
-    }}
-  >
-    <img
-      aria-hidden="true"
-      src={contactHeroBg}
-      alt=""
-      width={1717}
-      height={916}
-      decoding="async"
-      fetchPriority="high"
-      className="absolute inset-0 h-full w-full object-cover object-center"
-    />
-    <div
-      className="pointer-events-none absolute inset-0"
-      style={{ background: `linear-gradient(115deg, ${palette.navyDeep}d9 0%, ${palette.navy}b3 55%, ${palette.navyMid}8c 100%)` }}
-    />
-    <div
-      className="pointer-events-none absolute inset-0 opacity-70"
-      style={{
+const ContactHero = () => {
+  const { t } = useTranslation();
+
+  return (
+    <HeroBackdrop
+      image={contactHeroBg}
+      overlay={`linear-gradient(115deg, ${palette.navyDeep}d9 0%, ${palette.navy}b3 55%, ${palette.navyMid}8c 100%)`}
+      radial={`radial-gradient(circle at 85% 15%, ${palette.teal}35, transparent 45%)`}
+      ruledClassName="pointer-events-none absolute inset-0 opacity-70"
+      ruledStyle={{
         backgroundImage:
           "repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 36px)",
       }}
-    />
-    <div
-      className="pointer-events-none absolute inset-0"
-      style={{ background: `radial-gradient(circle at 85% 15%, ${palette.teal}35, transparent 45%)` }}
-    />
-
-    <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28">
+      containerClassName="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28"
+    >
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <p className={`${eyebrowClass} mb-4`} style={{ color: palette.goldLight }}>
-          Talk to Indexia
-        </p>
+        <Eyebrow size="md" color={palette.goldLight} className="mb-4">
+          {t("contactHero.eyebrow")}
+        </Eyebrow>
 
         <h1
           className="max-w-2xl text-4xl leading-tight text-white sm:text-5xl lg:text-6xl"
           style={{ ...displayFont, fontWeight: 600 }}
         >
-          A Direct Line to Our Team
+          {t("contactHero.title")}
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-8 text-white/75">
-          From documentation questions to new loan enquiries, every message is reviewed and answered by a
-          member of our team - not a queue.
+          {t("contactHero.paragraph")}
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
           <a
             href="#enquiry-form"
-            className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-[#241a03] transition-all duration-300 hover:-translate-y-1"
+            className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
             style={{ backgroundColor: palette.goldLight }}
           >
-            Send Your Enquiry
+            {t("contactHero.sendEnquiry")}
             <ArrowRight size={17} />
           </a>
 
@@ -82,7 +59,7 @@ const ContactHero = () => (
             className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-blue)"
           >
             <Phone size={17} />
-            Call Us Now · 86551 68551
+            {t("contactHero.callNow")}
           </a>
         </div>
 
@@ -90,9 +67,9 @@ const ContactHero = () => (
           className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/10 pt-6 text-sm text-white/70"
           style={monoFont}
         >
-          <span>{String(branches.length).padStart(2, "0")} offices</span>
-          <span>{String(phoneNumbers.length).padStart(2, "0")} direct lines</span>
-          <span>{"< 24 hr avg. reply"}</span>
+          <span>{t("contactHero.offices", { count: String(branches.length).padStart(2, "0") })}</span>
+          <span>{t("contactHero.directLines", { count: String(phoneNumbers.length).padStart(2, "0") })}</span>
+          <span>{t("contactHero.reply")}</span>
         </div>
       </motion.div>
 
@@ -103,8 +80,8 @@ const ContactHero = () => (
       >
         <PassbookCard />
       </motion.div>
-    </div>
-  </section>
-);
+    </HeroBackdrop>
+  );
+};
 
 export default ContactHero;

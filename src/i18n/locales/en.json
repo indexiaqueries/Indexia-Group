@@ -1,0 +1,275 @@
+{
+  "header": {
+    "nav": { "contact": "Contact Us" },
+    "menu": {
+      "home": "Home",
+      "groupCompanies": "Group Companies",
+      "companies": "Companies",
+      "contact": "Contact Us",
+      "language": "Language",
+      "viewAllCompanies": "View all companies →"
+    },
+    "aria": {
+      "selectLanguage": "Select language",
+      "toggleMenu": "Toggle menu",
+      "closeMenu": "Close menu"
+    }
+  },
+  "hero": {
+    "p0": {
+      "tag": "Indexia Group",
+      "heading": "One Group.\nMultiple Solutions.",
+      "sub": "From finance and logistics to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses."
+    },
+    "p1": {
+      "tag": "Indexia Finance",
+      "heading": "An Entire\nLoan Destination.",
+      "sub": "You may apply to our portal for any kind loan at www.indexiafinance.com. We provide our services globally — in India, we are business partners with 43 banks and NBFCs."
+    },
+    "p2": {
+      "tag": "Indexia Finserve Pvt. Ltd.",
+      "heading": "The Next Gen\nFinance Method.",
+      "sub": "Now the right bank will come at your doorstep."
+    },
+    "p3": {
+      "tag": "Indexia Overseas Pvt. Ltd.",
+      "heading": "Refined Sugar &\nAll Edible Items.",
+      "sub": "We deal and export refined sugar and all edible items."
+    },
+    "p4": {
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+      "heading": "We Manufacture &\nExport Organic Fertilizers",
+      "sub": "We manufacture organic fertilizers in India and export globally."
+    },
+    "p5": {
+      "tag": "Indexia Securities",
+      "heading": "Armed Commandos &\nArmed Security",
+      "sub": "Safeguarding politicians and big business tycoons."
+    },
+    "p6": {
+      "tag": "Indexia Warehouse",
+      "heading": "Storage Built\nFor Scale.",
+      "sub": "Modern warehousing and logistics infrastructure that keeps goods moving efficiently."
+    },
+    "p7": {
+      "tag": "Indexia Advertising",
+      "heading": "Your Brand on\nEvery Highway.",
+      "sub": "Multiple advertising holdings across highways, giving brands high-visibility campaigns."
+    },
+    "p8": {
+      "tag": "Indexia Foundation",
+      "heading": "Empowering\nAthletes.",
+      "sub": "Sports programs that train, mentor, and fund athletes on their journey to peak performance."
+    }
+  },
+  "footer": {
+    "tagline": "Diversified Indian Business Group",
+    "blurb": "Helping businesses and individuals build a stronger financial future with trusted, result-driven solutions.",
+    "contactUs": "Contact Us",
+    "hours": "Mon - Sat: 9 AM - 6 PM",
+    "company": "Company",
+    "resources": "Resources",
+    "legal": "Legal",
+    "links": {
+      "groupCompanies": "Group Companies",
+      "advertise": "Advertise With Us",
+      "careers": "Careers",
+      "news": "News & Knowledge Centre",
+      "globalResearch": "Global Research",
+      "securityTips": "Security Tips",
+      "blog": "Blog",
+      "termsOfUse": "Terms of Use",
+      "termsConditions": "Terms & Conditions",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "cta": "Have a question about any of our companies?",
+    "enquiry": "Send us an enquiry →",
+    "stats": "Indexia Group · 08 Companies · 04 Locations",
+    "rights": "© 2026 Indexia Group. All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "home": {
+    "groupCompanies": {
+      "title": "Group Companies",
+      "description": "Indexia Group is a diversified holding of companies spanning Finance, Trade, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
+    }
+  },
+  "businesses": {
+    "eyebrow": "Group Companies",
+    "titleStart": "Eight Companies, ",
+    "titleAccent": "One Group",
+    "subtitle": "Choose a company to visit its own page — then send your enquiry to the right team."
+  },
+  "businessesHero": {
+    "eyebrow": "The Indexia Difference",
+    "titleStart": "One Group. Eight Businesses. ",
+    "titleAccent": "One Shared Promise.",
+    "paragraph": "From finance and advisory to export, agriculture, logistics, security, sports, and media — every Indexia business is built on the same foundation: integrity, expertise, and a people-first approach. Whatever you need, the right team is already part of the family.",
+    "counterClients": "Clients Served",
+    "counterBusinesses": "Businesses",
+    "counterLocations": "Locations",
+    "counterYears": "Years in Business",
+    "cta": "Book Free Consultation →"
+  },
+  "contactHero": {
+    "eyebrow": "Talk to Indexia",
+    "title": "A Direct Line to Our Team",
+    "paragraph": "From documentation questions to new loan enquiries, every message is reviewed and answered by a member of our team - not a queue.",
+    "sendEnquiry": "Send Your Enquiry",
+    "callNow": "Call Us Now · 86551 68551",
+    "offices": "{{count}} offices",
+    "directLines": "{{count}} direct lines",
+    "reply": "< 24 hr avg. reply"
+  },
+  "contactInfo": {
+    "eyebrow": "Send Your Enquiry",
+    "headlineStart": "Enquire About ",
+    "headlineAccent": "Indexia Company",
+    "paragraph": "Whether you have a question about our services, need a business consultation, or want to explore a partnership, our team is ready to assist you — we reply within 24 hours.",
+    "enquiries": "Enquiries",
+    "location": "Location",
+    "workingHours": "Working Hours",
+    "phoneNumbers": "Phone Numbers"
+  },
+  "form": {
+    "eyebrow": "Send Your Enquiry",
+    "intro": "Complete the form below and your enquiry will be addressed by our team.",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "you@example.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "10-digit number",
+    "subject": "Subject / Company",
+    "subjectPlaceholder": "Select a company…",
+    "message": "Message",
+    "messagePlaceholder": "Write your enquiry here...",
+    "submit": "Send Enquiry",
+    "sending": "Sending…",
+    "success": "Your enquiry has been sent! Our team will get back to you shortly.",
+    "errorName": "Please enter your name.",
+    "errorNameLetters": "Name must contain letters.",
+    "errorPhone": "Enter a valid 10-digit phone number.",
+    "errorEmail": "Enter a valid email address.",
+    "errorSubject": "Please select a subject or company.",
+    "errorMessage": "Please enter your message.",
+    "errorGeneric": "Something went wrong. Please try again later.",
+    "generalEnquiry": "General Enquiry"
+  },
+  "companyDetail": {
+    "backAll": "All Companies",
+    "register": "Register Nº {{no}} / 08",
+    "keyEntries": "Key entries",
+    "servicesTitle": "Services under this entry",
+    "registerOf": "Indexia Group · Register of Companies",
+    "entryOf": "Entry {{no}} of 08",
+    "eyebrow": "Send Your Enquiry",
+    "enquireTitle": "Enquire About {{name}}",
+    "enquireSub": "Your enquiry is routed with {{name}} named at the top, so the right team picks it up first.",
+    "responseTime": "Response time",
+    "responseValue": "Within 24 hours, Mon – Sat"
+  },
+  "contact": {
+    "locationsTitleStart": "Our ",
+    "locationsTitleAccent": "Locations"
+  },
+  "businessCard": {
+    "tapToVisit": "Tap to visit",
+    "readMore": "Read more"
+  },
+  "companyLinkCard": {
+    "visitPage": "Visit page"
+  },
+  "newsPage": {
+    "eyebrow": "News & Knowledge Centre",
+    "title": "News & Knowledge Centre",
+    "titleStart": "Stories & Insights from ",
+    "titleAccent": "Across the Group.",
+    "subtitle": "News, updates, and practical knowledge from every Indexia Group company — finance, trade, agriculture, security, logistics, media, and sport.",
+    "featuredLabel": "Featured Story",
+    "readMore": "Read More",
+    "askUs": "Ask Us",
+    "knowledgeEyebrow": "Knowledge Centre",
+    "knowledgeHeading": "Practical Guides from Our Businesses",
+    "knowledgeSubtitle": "Straightforward explainers written by the teams who live this work every day.",
+    "ctaTitle": "Have a question about our businesses?",
+    "ctaBody": "From FDI advisory to organic farming to armed security — the right Indexia company is ready to help. Send us an enquiry and we will connect you.",
+    "ctaButton": "Send an Enquiry",
+    "metaDescription": "News and knowledge from Indexia Group — updates from Indexia Finance, Finserve, Agro, Securities, Warehouse, Advertising and Foundation, plus practical guides."
+  },
+  "careersPage": {
+    "eyebrow": "Careers",
+    "title": "Careers at Indexia Group",
+    "titleStart": "Build a Career Across ",
+    "titleAccent": "Eight Businesses.",
+    "subtitle": "Finance, trade, agriculture, security, logistics, media, and sport under one group. Join a team where your work has real impact.",
+    "ctaButton": "View Open Roles",
+    "valuesEyebrow": "Why Indexia Group",
+    "valuesHeading": "Work Where Your Work Counts",
+    "valuesSubtitle": "What it feels like to build a career inside a diversified group that keeps people first.",
+    "rolesEyebrow": "Open Positions",
+    "rolesHeading": "Current Openings",
+    "rolesSubtitle": "Browse open roles across the group — or apply for a future position by sending us your details.",
+    "apply": "Apply",
+    "processEyebrow": "Hiring Process",
+    "processHeading": "Four Steps to Joining Us",
+    "ctaTitle": "Don't see your role?",
+    "ctaBody": "We are always looking for great people. Send an enquiry or email your CV to careers@indexiagroup.com and we will keep you in mind.",
+    "metaDescription": "Careers at Indexia Group — open roles across finance, export, agriculture, security, warehousing, advertising and athlete support, plus how our hiring process works."
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "privacyTitle": "Privacy Policy",
+    "privacySubtitle": "How Indexia Group collects, uses, and protects your personal information.",
+    "termsTitle": "Terms & Conditions",
+    "termsSubtitle": "The terms that govern your use of the Indexia Group website and the services of its companies.",
+    "termsOfUseTitle": "Terms of Use",
+    "termsOfUseSubtitle": "The rules for accessing and browsing the Indexia Group website and the websites of its companies.",
+    "lastUpdated": "Last updated",
+    "backHome": "Back to Home",
+    "contactUs": "Contact Us",
+    "contactHeading": "Questions about this policy?",
+    "contactBody": "Write to us at contactus@indexiagroup.com or send an enquiry and our team will get back to you.",
+    "sendEnquiry": "Send an Enquiry",
+    "metaPrivacyDescription": "Read Indexia Group's Privacy Policy — how we collect, use, store, and protect your personal information.",
+    "metaTermsDescription": "Read the Terms & Conditions that govern your use of the Indexia Group website and its companies' services.",
+    "metaTermsOfUseDescription": "Read the Terms of Use that govern how you may access and browse the Indexia Group website and its companies' websites."
+  },
+  "globalResearchPage": {
+    "eyebrow": "Global Research",
+    "title": "Global Research at Indexia Group",
+    "titleStart": "Research That Informs ",
+    "titleAccent": "Real Decisions.",
+    "subtitle": "Market intelligence across FDI, credit, trade, and infrastructure — built from the ground-level view our businesses operate in.",
+    "ctaButton": "Explore Research Areas",
+    "areasEyebrow": "What We Research",
+    "areasHeading": "Four Lenses on the Markets We Serve",
+    "areasSubtitle": "Focused research across the industries where Indexia Group operates.",
+    "reportsEyebrow": "Reports & Publications",
+    "reportsHeading": "Recent Publications",
+    "reportsSubtitle": "Summaries of our latest research — request the full report and our team will share it.",
+    "requestReport": "Request Report",
+    "ctaTitle": "Need deeper insight?",
+    "ctaBody": "Tell us what you are researching — our teams across the group will connect you with the right expertise.",
+    "metaDescription": "Global Research at Indexia Group — market intelligence on FDI, credit and NBFC funding, export markets, and infrastructure, with recent reports you can request."
+  },
+  "securityTipsPage": {
+    "eyebrow": "Security Tips",
+    "title": "Security Tips from Indexia Group",
+    "titleStart": "Stay Ahead of ",
+    "titleAccent": "Fraud.",
+    "subtitle": "Practical, no-nonsense guidance from the teams who run security, finance, and logistics every day — so you can spot a scam before it costs you.",
+    "ctaButton": "View Security Practices",
+    "categoriesEyebrow": "Know the Threats",
+    "categoriesHeading": "Six Threats to Watch",
+    "categoriesSubtitle": "The most common frauds and how they work — so you recognize them instantly.",
+    "practicesEyebrow": "Key Practices",
+    "practicesHeading": "Six Habits That Keep You Safe",
+    "practicesSubtitle": "Small, consistent practices that shut down most fraud attempts.",
+    "warningTitle": "Remember: we never ask for your OTP or password",
+    "warningBody": "No Indexia Group company will ever ask for your OTP, PIN, or password — by phone, message, or email. If someone does, it is a scam. Stop, verify through an official channel, and report it.",
+    "ctaTitle": "See something suspicious?",
+    "ctaBody": "Report it through our enquiry form or contact the relevant Indexia Group company directly.",
+    "metaDescription": "Security tips from Indexia Group — how to spot phishing, loan scams, and payment fraud, plus six key practices to keep your money and identity safe."
+  }
+}
