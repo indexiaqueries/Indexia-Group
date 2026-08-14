@@ -47,6 +47,7 @@ const businesses = companies.map((company, index) => {
   const next = companies[(index + 1) % companies.length];
   return {
     name: company.name,
+    slug: company.slug,
     tag: company.tag,
     description: company.desc,
     color1: colorVar(company.color),

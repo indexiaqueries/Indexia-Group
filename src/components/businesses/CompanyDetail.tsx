@@ -288,23 +288,33 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       <section
         id="enquiry"
         className="relative flex min-h-[100svh] scroll-mt-24 items-center overflow-hidden"
-        style={{ background: "#f8fafc", padding: "clamp(48px, 8vw, 88px) 0" }}
+        style={{ background: "#f8fafc", padding: "clamp(40px, 5vw, 64px) 0" }}
       >
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#066a9c]/40 to-transparent" aria-hidden="true" />
 
-        <div className="container">
-          <div className="mx-auto mb-8 max-w-[720px] text-center sm:mb-10">
+        <div className="container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="mx-auto w-full max-w-xl lg:mx-0">
             <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#26ae90]">Send Your Enquiry</p>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-[#111827]">
+            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-[#111827]">
               Enquire About <span style={{ color: accentInk(b.color) }}>{b.name.replace(" Pvt. Ltd.", "")}</span>
             </h2>
-            <p className="mt-4 text-[15px] leading-7 text-[#6b7280]">
+            <p className="mt-5 max-w-md text-[15px] leading-7 text-[#6b7280]">
               Your enquiry is routed with {b.name.replace(" Pvt. Ltd.", "")} named at the top, so the right team
               picks it up first.
             </p>
+
+            <div className="mt-8 flex items-center gap-6">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[#066a9c] shadow-[0_4px_14px_rgba(6,106,156,0.18)]">
+                <Clock className="h-5 w-5" strokeWidth={2} />
+              </div>
+              <div>
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#6b7280]">Response time</p>
+                <p className="mt-0.5 text-sm font-semibold text-[#111827]">Within 24 hours, Mon – Sat</p>
+              </div>
+            </div>
           </div>
 
-          <div className="mx-auto max-w-3xl">
+          <div className="w-full">
             <EnquiryForm key={b.name} initialCompany={b.name} companyLocked />
           </div>
         </div>

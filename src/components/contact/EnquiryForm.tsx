@@ -183,7 +183,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
     <motion.div
       id="enquiry-form"
       {...fadeUp(0.1)}
-      className="relative flex flex-1 flex-col overflow-hidden rounded-4xl border border-white bg-white px-6 pt-6 pb-2 shadow-xl sm:px-10 sm:pt-10 sm:pb-4"
+      className="relative flex flex-1 flex-col overflow-hidden rounded-4xl border border-white bg-white px-6 pt-6 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4"
     >
       <div
         className="absolute right-0 top-0 h-40 w-40 rounded-full blur-3xl"
@@ -302,14 +302,14 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
               id="message"
               name="message"
               autoComplete="off"
-              rows={6}
+              rows={4}
               value={form.message}
               onChange={handleChange}
               onBlur={handleBlur}
               placeholder="Write your enquiry here..."
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? "message-error" : undefined}
-              className="min-h-36 resize-none rounded-xl px-4 py-3 text-sm"
+              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm"
             />
             {errors.message && (
               <p id="message-error" role="alert" className={errorText}>

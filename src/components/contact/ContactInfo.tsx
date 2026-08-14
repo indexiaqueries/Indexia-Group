@@ -83,11 +83,14 @@ const LocationHoursTile = () => (
 const ContactInfo = () => (
   <motion.div {...fadeUp()} className="flex h-full flex-col">
     <p className={eyebrowClass} style={{ color: accent.green }}>
-      Contact Information
+      Send Your Enquiry
     </p>
+    <h2 className="font-display mt-3 text-[clamp(26px,3.4vw,40px)] font-bold leading-[1.08] text-slate-900">
+      Enquire About <span style={{ color: accent.blue }}>Indexia Company</span>
+    </h2>
     <p className="mt-5 max-w-lg text-sm leading-7 text-slate-500">
       Whether you have a question about our services, need a business consultation, or want to explore a
-      partnership, our team is ready to assist you.
+      partnership, our team is ready to assist you — we reply within 24 hours.
     </p>
 
     <div className="mt-10 flex flex-1 flex-col justify-center gap-5">

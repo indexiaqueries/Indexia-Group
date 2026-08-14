@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export type BusinessCardItem = {
   name: string;
+  slug: string;
   tag: string;
   description: string;
   color1: string;
@@ -29,6 +30,7 @@ const revealVariants = {
 
 const BusinessCard = ({ business }: BusinessCardProps) => {
   const Icon = business.icon;
+  const href = `/businesses/${business.slug}`;
 
   return (
     <motion.article
@@ -73,7 +75,11 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         transition={{ duration: 0.35 }}
       />
 
-      <div className="relative z-50 flex h-full w-full flex-col justify-between p-5">
+      <Link
+        to={href}
+        aria-label={`${business.name} — ${business.tag}. Visit company page`}
+        className="relative z-50 flex h-full w-full flex-col justify-between p-5"
+      >
         <motion.div
           className="flex items-start justify-between gap-3"
           variants={{ rest: { opacity: 1, y: 0 }, hover: { opacity: 0, y: -15 } }}
@@ -103,15 +109,12 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
           <p className="max-w-md text-sm font-medium leading-6 text-white drop-shadow-lg">
             {business.description}
           </p>
-          <Link
-            to={`/businesses?company=${encodeURIComponent(business.name)}`}
-            className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-[#122029] shadow-lg transition-colors duration-200 hover:bg-[#066a9c] hover:text-white"
-          >
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-[#122029] shadow-lg transition-colors duration-200 group-hover:bg-[#066a9c] group-hover:text-white">
             Read more
             <ArrowRight size={16} strokeWidth={2.5} aria-hidden="true" />
-          </Link>
+          </span>
         </motion.div>
-      </div>
+      </Link>
     </motion.article>
   );
 };

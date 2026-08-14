@@ -77,8 +77,8 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="bg-[#f8fafc] px-6 py-20 lg:px-8 lg:py-28">
-<div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+      <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#f8fafc] px-6 py-16 lg:px-8">
+        <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <ContactInfo />
           <div className="flex flex-col">
             <EnquiryForm />
