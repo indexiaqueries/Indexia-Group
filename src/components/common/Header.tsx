@@ -25,9 +25,6 @@ const Header = () => {
   const location = useLocation();
   const onBusinesses = location.pathname.startsWith("/businesses");
 
-  // Measure the page's hero (always the first <section> inside <main>) so the
-  // bar appears only once the hero itself has scrolled past — not on any small
-  // scroll. Falls back to ~80% of the viewport if no hero is found.
   const measureHero = () => {
     const hero = document.querySelector("main section");
     heroThresholdRef.current = hero ? hero.getBoundingClientRect().height : window.innerHeight * 0.8;
@@ -45,8 +42,6 @@ const Header = () => {
     };
   }, []);
 
-  // Re-measure after navigating — each page has a differently sized hero.
-  // MainLayout scrolls to top on route change, whose scroll event resets `scrolled`.
   useEffect(() => {
     measureHero();
   }, [location.pathname]);
@@ -78,8 +73,6 @@ const Header = () => {
   }, [menuOpen, companiesOpen, langOpen]);
 
   const selectLang = async (code: string) => {
-    // Ensure the locale chunk is loaded first so the swap is atomic — no flash
-    // of English/fallback text while the language's chunk fetches.
     if (code !== i18n.language) {
       await preloadLocale(code).catch(() => undefined);
     }
@@ -115,7 +108,7 @@ const Header = () => {
 
   return (
     <header ref={barRef} className="fixed inset-x-0 top-0 z-999 h-[72px] pointer-events-none sm:h-[92px]">
-      {/* Navy gradient bar once scrolled into content — echoes the heroes and keeps the nav legible on light sections */}
+
       <div
         aria-hidden="true"
         className={`header-scrim pointer-events-none absolute inset-0 border-b border-white/10 shadow-[0_6px_24px_rgba(2,16,26,0.32),0_2px_6px_rgba(2,16,26,0.18)] backdrop-blur-md transition-opacity duration-300 ${

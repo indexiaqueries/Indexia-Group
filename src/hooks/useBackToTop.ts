@@ -1,13 +1,5 @@
 import { useEffect, useState } from "react";
 
-/**
- * Visibility gating for the floating Back to Top button: it appears only once
- * the user has scrolled past ~75% of the first screen, and disappears while
- * any of `hideOver`'s selectors occupies the viewport — so it never covers the
- * footer or an enquiry band. On pages without a footer (or enquiry section)
- * the selectors simply don't match and the button behaves normally, which is
- * what makes this reusable beyond the footer.
- */
 export const useBackToTop = (hideOver: string[] = ["#footer", "#enquiry, #enquiry-form"]) => {
   const [visible, setVisible] = useState(false);
 

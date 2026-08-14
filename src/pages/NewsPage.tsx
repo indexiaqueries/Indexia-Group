@@ -45,8 +45,6 @@ const newsJsonLd = {
 
 const NewsPage = () => {
   const { t } = useTranslation();
-  // Resolve body copy through i18n so each language reads its own content,
-  // falling back to the English source in the data module when a key is missing.
   const tr = (path: string, fallback: string) => t(`pageContent.news.${path}`, { defaultValue: fallback });
   const articles = newsArticles.map((a) => ({
     ...a,
@@ -99,7 +97,6 @@ const NewsPage = () => {
             </div>
           </Reveal>
 
-          {/* Featured article */}
           <Reveal>
             <article className="group relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg">
               <div
@@ -145,7 +142,6 @@ const NewsPage = () => {
             </article>
           </Reveal>
 
-          {/* Latest grid */}
           <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {latest.map((article, i) => {
               const color = companyColor(article.company);
@@ -181,7 +177,6 @@ const NewsPage = () => {
         </div>
       </section>
 
-      {/* Knowledge insights */}
       <section className="relative bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -215,7 +210,6 @@ const NewsPage = () => {
         </div>
       </section>
 
-      {/* CTA band */}
       <section className="bg-white px-5 py-16 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-4xl">
           <div className="rounded-3xl border border-slate-100 bg-(--color-mist) px-8 py-10 text-center sm:px-12">

@@ -1,8 +1,4 @@
-/**
- * Global Research page content — research focus areas and recent reports.
- * Structured English data (like `companies.ts` and `careers.ts`);
- * page chrome is translated via i18n.
- */
+
 
 export type ResearchArea = {
   key: string;

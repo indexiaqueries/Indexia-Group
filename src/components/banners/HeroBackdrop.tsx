@@ -4,27 +4,15 @@ import { colors } from "../../lib/theme";
 type HeroBackdropProps = {
   image: string;
   children: ReactNode;
-  /** Base gradient behind the image — defaults to the navy brand gradient. */
   background?: string;
-  /** Dark gradient over the image for legibility. */
   overlay?: string;
-  /** Optional accent radial tint. */
   radial?: string;
-  /** Classes for the ruled-line layer (defaults to `.ruled` at 80% opacity). */
   ruledClassName?: string;
-  /** Optional inline style for the ruled layer (e.g. a custom line pattern). */
   ruledStyle?: CSSProperties;
-  /** Classes for the inner max-w-7xl content wrapper. */
   containerClassName?: string;
-  /** Extra elements rendered at the section level (e.g. a stamp badge). */
   extra?: ReactNode;
 };
 
-/**
- * Full-screen hero shell shared by the page heroes: navy gradient background,
- * full-bleed photo, dark legibility overlay, ruled lines and an optional
- * radial accent. Content goes in the centered max-w-7xl wrapper.
- */
 const HeroBackdrop = ({
   image,
   children,

@@ -1,8 +1,4 @@
-/**
- * Security Tips page content — tip categories and key practices.
- * Structured English data (like `companies.ts` and `careers.ts`);
- * page chrome is translated via i18n.
- */
+
 
 export type SecurityCategory = {
   key: string;

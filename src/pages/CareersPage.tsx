@@ -35,7 +35,7 @@ const careersJsonLd = {
 
 const CareersPage = () => {
   const { t } = useTranslation();
-  // Resolve body copy through i18n (English data as fallback source).
+
   const tr = (path: string, fallback: string) => t(`pageContent.careers.${path}`, { defaultValue: fallback });
   const roles = jobRoles.map((r) => ({
     ...r,
@@ -86,7 +86,6 @@ const CareersPage = () => {
         </Link>
       </HeroBackdrop>
 
-      {/* Why work with us */}
       <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -116,7 +115,6 @@ const CareersPage = () => {
         </div>
       </section>
 
-      {/* Open roles */}
       <section id="open-roles" className="scroll-mt-24 bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -161,7 +159,6 @@ const CareersPage = () => {
         </div>
       </section>
 
-      {/* Hiring process */}
       <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -187,7 +184,6 @@ const CareersPage = () => {
         </div>
       </section>
 
-      {/* CTA band */}
       <section className="bg-white px-5 pb-16 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-4xl">
           <div className="rounded-3xl bg-(--color-navy) px-8 py-10 text-center text-white sm:px-12">

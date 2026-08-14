@@ -6,10 +6,6 @@ type RuledSectionProps = {
   style?: CSSProperties;
 };
 
-/**
- * Register-style section: cream paper background with faint ledger lines and a
- * teal hairline across the top. Used by the directory and company pages.
- */
 const RuledSection = ({ children, className = "", style }: RuledSectionProps) => (
   <section
     className={`relative overflow-hidden ${className}`}

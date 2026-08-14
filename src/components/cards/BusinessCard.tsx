@@ -12,7 +12,6 @@ export type BusinessCardItem = {
   color2: string;
   image: string;
   icon: LucideIcon;
-  /** Company's own website — when set, the card opens it directly instead of an internal page. */
   link?: string;
 };
 
@@ -36,8 +35,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
           <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/85">
             {tag}
           </p>
-          {/* Touch-only "whole card is tappable" hint — shown via CSS in the
-              (hover: none) block, hidden on hover-capable devices. */}
+
           <span className="business-card-tap hidden items-center gap-1 rounded-full bg-(--color-yellow)/20 px-2 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-(--color-yellow)">
             <MousePointerClick size={12} strokeWidth={2.5} aria-hidden="true" className="tap-hint-pulse" />
             {t("businessCard.tapToVisit")}
@@ -83,10 +81,8 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
-      {/* Dark overlay lifts on hover so the photo and colour wash show through */}
       <div className="pointer-events-none absolute inset-0 z-10 bg-black/35 transition-opacity duration-500 group-hover:opacity-0" />
 
-      {/* Colour wash fades in on hover */}
       <div
         className="pointer-events-none absolute inset-0 z-20 opacity-0 mix-blend-screen transition-opacity duration-300 group-hover:opacity-100"
         style={{
@@ -96,10 +92,8 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         }}
       />
 
-      {/* Teal radial tint fades in on hover */}
       <div className="pointer-events-none absolute inset-0 z-30 bg-[radial-gradient(circle_at_center,var(--color-teal)_0%,rgba(6,106,156,0.8)_48%,rgba(4,78,116,0.95)_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-35" />
 
-      {/* Bottom legibility gradient lifts on hover */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-44 bg-linear-to-t from-black/75 via-black/30 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
 
       {external ? (

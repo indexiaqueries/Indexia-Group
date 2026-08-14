@@ -1,9 +1,4 @@
-/**
- * Legal document content for the Privacy Policy, Terms of Use, and
- * Terms & Conditions pages.
- * Kept as structured English data (like `companies.ts`) so the legal text is
- * authoritative and maintainable; page chrome is translated via i18n.
- */
+
 
 export type LegalDocumentId = "privacy" | "terms" | "termsOfUse";
 

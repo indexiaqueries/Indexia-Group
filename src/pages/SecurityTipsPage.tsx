@@ -36,7 +36,7 @@ const securityJsonLd = {
 
 const SecurityTipsPage = () => {
   const { t } = useTranslation();
-  // Resolve body copy through i18n (English data as fallback source).
+
   const tr = (path: string, fallback: string) => t(`pageContent.security.${path}`, { defaultValue: fallback });
   const categories = securityCategories.map((c) => ({
     ...c,
@@ -81,7 +81,6 @@ const SecurityTipsPage = () => {
         </Link>
       </HeroBackdrop>
 
-      {/* Threat categories */}
       <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -108,7 +107,6 @@ const SecurityTipsPage = () => {
         </div>
       </section>
 
-      {/* Key practices */}
       <section id="practices" className="scroll-mt-24 bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -138,7 +136,6 @@ const SecurityTipsPage = () => {
         </div>
       </section>
 
-      {/* Warning band */}
       <section className="bg-white px-5 py-16 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-4xl">
           <div className="rounded-3xl border border-(--color-yellow)/40 bg-(--color-yellow)/10 px-8 py-10 text-center sm:px-12">
@@ -150,7 +147,6 @@ const SecurityTipsPage = () => {
         </Reveal>
       </section>
 
-      {/* CTA band */}
       <section className="bg-white px-5 pb-16 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-4xl">
           <div className="rounded-3xl bg-(--color-navy) px-8 py-10 text-center text-white sm:px-12">

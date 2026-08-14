@@ -3,8 +3,6 @@ import { useTranslation } from "react-i18next";
 import { ArrowUp } from "lucide-react";
 import { useBackToTop } from "../../hooks/useBackToTop";
 
-/** Floating Back to Top button — fades in after scrolling partway, mirroring
- *  the navbar's fade. Mount anywhere (footer, layout, standalone page). */
 const BackToTop = ({ hideOver }: { hideOver?: string[] }) => {
   const { t } = useTranslation();
   const visible = useBackToTop(hideOver);

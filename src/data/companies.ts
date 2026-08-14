@@ -4,14 +4,10 @@ export type Company = {
   name: string;
   slug: string;
   tag: string;
-
   desc: string;
-
   overview: string;
-
   highlights: string[];
   tagline?: string;
-
   services: string[];
   color: string;
   link?: string;

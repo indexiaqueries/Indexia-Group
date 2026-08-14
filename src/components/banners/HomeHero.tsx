@@ -75,36 +75,24 @@ const makePanels = (t: (key: string) => string): HeroPanel[] => [
 const TEXT_ZOOM_MS = 6000;
 const AUTOPLAY_INTERVAL = 6000;
 
-/** Slow Ken Burns push-in on the settled background: 1 → 1.08 over the slide's
- *  display time, mirroring back if a slide is held. Restarts per slide via the
- *  image's key. */
 const KEN_BURNS_SCALE: [number, number] = [1, 1.08];
 const KEN_BURNS_MS = 6500;
 
 const SLIDE_EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
-/** Text-shadow strength per slide id (1 = default). Slides whose photo is bright
- *  behind the text band (measured luminance ≥ ~0.34 — white-text contrast under
- *  3:1 even before the teal glow adds light) get a stronger shadow so the type
- *  stays readable now that the dark legibility scrim is gone. */
 const SHADOW_LEVEL: Record<number, number> = {
-  2: 1.55, // Finserve — bright office scene
-  3: 1.65, // Overseas — bright harbour
-  4: 1.55, // Agro Bio — bright plant floor
-  7: 1.45, // Advertising — bright highway
+  2: 1.55, 
+  3: 1.65, 
+  4: 1.55, 
+  7: 1.45, 
 };
 
-/** Layered drop shadow for the hero type, scaled by the slide's shadow level.
- *  The tight 1px edge keeps letterforms crisp; the soft big blur does the
- *  contrast work, both deepened on bright photos. */
 const textShadow = (level: number, blur: number, alpha: number) =>
   [
     `0 1px 2px rgba(2,16,26,${Math.min(0.7, 0.5 * level).toFixed(2)})`,
     `0 8px ${Math.round(blur * level)}px rgba(2,16,26,${Math.min(1, alpha * level).toFixed(2)})`,
   ].join(", ");
 
-/** Entrance animation for the badge → headline → subtext → CTA of a hero slide.
- *  Each element gets a slightly larger delay so they cascade in sequence. */
 const slideChildAnim = (reduce: boolean, index: number) => ({
   initial: { opacity: 0, y: 14 },
   animate: { opacity: 1, y: 0 },
@@ -219,7 +207,6 @@ const Banner = () => {
           ? {
               id,
               calm: true,
-              // Start just below the hero so the photo rises up into view
               top: section.clientHeight,
               left: 0,
               width: section.clientWidth,
@@ -400,12 +387,7 @@ const Banner = () => {
         </div>
 
         <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-36 sm:pt-32 sm:pb-44 overflow-hidden">
-          {/* Keyed slide content with AnimatePresence: on a slide change the
-              outgoing badge/headline/sub/CTA sink back down toward the
-              thumbnail strip (the gallery sits at the hero's bottom) while the
-              new slide's content staggers in. popLayout pops the exiting
-              cluster out of flow so the incoming one doesn't jump. The default
-              initial (true) keeps the first-load stagger. */}
+
           <AnimatePresence mode="popLayout">
             <motion.div
               key={current.id}
@@ -418,7 +400,6 @@ const Banner = () => {
                       opacity: 0,
                       y: 72,
                       scale: 0.94,
-                      // Exit sinks toward the thumbnails: quick ease-in fade-down
                       transition: { duration: 0.34, ease: [0.55, 0.06, 0.68, 0.19] },
                     }
               }
@@ -432,10 +413,7 @@ const Banner = () => {
               }
               className={`relative flex flex-col items-center ${isHome ? "max-w-200" : "max-w-190"}`}
             >
-              {/* Brand radial glow behind the text and CTA — a teal aura centred
-                  on the headline band (30% sits just above the H1 centre) and a
-                  soft yellow pool under the button. The dark legibility scrim
-                  was removed, so the photos show through fully. */}
+
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_50%_30%,rgba(38,174,144,0.36),rgba(38,174,144,0.10)_55%,transparent_72%),radial-gradient(ellipse_45%_30%_at_50%_92%,rgba(242,242,49,0.22),transparent_65%)]"

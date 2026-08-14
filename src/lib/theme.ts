@@ -1,8 +1,4 @@
-/**
- * Brand design tokens — single source of truth for colors, fonts and shared
- * typography/card presets. Keep the hex values in sync with the CSS variables
- * declared in `src/index.css` (e.g. `--color-teal`).
- */
+
 
 export const colors = {
   teal: "#26ae90",
@@ -36,7 +32,6 @@ export const colors = {
   white: "#ffffff",
 } as const;
 
-/** Legacy palette alias kept for callers that use `palette.*` inline. */
 export const palette = {
   navyDeep: colors.navyDeep,
   navy: colors.navy,
@@ -50,7 +45,6 @@ export const palette = {
   inkDeep: colors.inkDeep,
 } as const;
 
-/** Semantic accent colors as CSS variables (themed). */
 export const accent = {
   green: "var(--color-teal)",
   blue: "var(--color-blue)",

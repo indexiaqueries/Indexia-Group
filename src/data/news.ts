@@ -1,7 +1,4 @@
-/**
- * News & Knowledge Centre content — structured English data (like `companies.ts`).
- * Page chrome is translated via i18n; article copy stays authoritative in English.
- */
+
 
 export type NewsArticle = {
   slug: string;

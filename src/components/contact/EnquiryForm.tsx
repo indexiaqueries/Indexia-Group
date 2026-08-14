@@ -28,7 +28,6 @@ const fullFields = [
   { id: "email", labelKey: "form.email", type: "email", autocomplete: "email", placeholderKey: "form.emailPlaceholder", required: true },
 ] as const;
 
-/** Values stay stable (English) so the backend receives meaningful subjects; labels are translated. */
 const subjectOptions: { value: string; labelKey?: string }[] = [
   { value: "General Enquiry", labelKey: "form.generalEnquiry" },
   ...companyNames.map((name) => ({ value: name })),

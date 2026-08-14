@@ -9,20 +9,28 @@ export type { SupportedLang } from "./languages";
 
 const STORAGE_KEY = "indexia-lang";
 
-/** Language actually available on first paint — no flash of the wrong language. */
-const initialLang = (() => {
+const safeGet = (key: string) => {
   try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved && (SUPPORTED_LANGS as readonly string[]).includes(saved)) return saved;
+    return localStorage.getItem(key);
   } catch {
-    /* storage unavailable — fall through */
+    return null;
   }
+};
+
+const safeSet = (key: string, value: string) => {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    return;
+  }
+};
+
+const initialLang = (() => {
+  const saved = safeGet(STORAGE_KEY);
+  if (saved && (SUPPORTED_LANGS as readonly string[]).includes(saved)) return saved;
   return "en";
 })();
 
-/** Lazy per-language loaders — each locale is its own code-split chunk, so the
- *  initial bundle only ever carries the default (English) translation. Adding a
- *  new language is one case here plus one entry in `SUPPORTED_LANGS`. */
 const loadLocale = (lng: string) => {
   switch (lng) {
     case "es":
@@ -40,11 +48,8 @@ const loadLocale = (lng: string) => {
   }
 };
 
-/** Load (and cache) a locale's chunk ahead of a language switch so the swap is
- *  atomic — no flash of fallback text. Dynamic-import modules cache themselves. */
 export const preloadLocale = (lng: string) => loadLocale(lng).then((m) => m.default);
 
-/** i18next backend that fetches a language's chunk on demand via dynamic import. */
 const localeBackend: BackendModule = {
   type: "backend",
   init() {},
@@ -58,15 +63,11 @@ const localeBackend: BackendModule = {
 
 i18n.use(initReactI18next).use(localeBackend);
 
-/** Resolves when the initial language's resources are loaded. `main.tsx` awaits
- *  this before mounting so the first paint is already in the right language. */
 export const i18nReady = i18n.init({
   resources: {
     en: { translation: en },
   },
-  // English is the only bundled locale; everything else is fetched from the
-  // backend on demand. Without this flag i18next would treat the `resources`
-  // option as the complete bundle and never consult the backend.
+
   partialBundledLanguages: true,
   lng: initialLang,
   fallbackLng: "en",
@@ -85,11 +86,7 @@ const applyDirection = (lng: string) => {
 i18n.on("languageChanged", (lng) => {
   document.documentElement.lang = lng;
   applyDirection(lng);
-  try {
-    localStorage.setItem(STORAGE_KEY, lng);
-  } catch {
-    /* storage unavailable — in-memory language still works */
-  }
+  safeSet(STORAGE_KEY, lng);
 });
 
 applyDirection(i18n.language);

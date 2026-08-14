@@ -123,8 +123,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* RTL (Arabic) typography — Arabic joins its letters, so letter-spacing must
-   stay at normal and the display face swaps to the naskh serif. */
 html[dir="rtl"] body {
   font-family: "Noto Naskh Arabic", "Instrument Sans", "Segoe UI", system-ui, Arial, sans-serif;
 }
@@ -202,27 +200,12 @@ ul {
   }
 }
 
-/*
- * Touch devices have no hover state, so the home Group Companies cards keep
- * their description hidden forever. On primary touch pointers, render the
- * description in-flow at the card bottom (name + tag stay visible above it)
- * instead of as a hover-only centered overlay. Unlayered rules beat the
- * Tailwind utilities they override.
- */
 @media (hover: none) {
   .business-card {
-    /* Fill the stretched grid cell (the Reveal wrapper stretches to the row's
-       tallest card) so both cards in a 2-up row are exactly equal height and
-       the description bottoms align. The min-height stays as the floor for
-       rows where every card is short. */
     height: 100%;
     min-height: 17rem;
   }
 
-  /* The inner link's h-full can't resolve a percentage height against this
-     auto-height card, so the link stays content-sized and leaves a dead strip
-     of image below the content. Inherit the card's min-height instead so the
-     link always fills the card, whatever the cascade does with h-full. */
   .business-card > a {
     min-height: inherit;
   }
@@ -245,17 +228,10 @@ ul {
     padding: 0;
   }
 
-  /* Home cards — hint that the whole card is tappable. The link already
-     covers the full card; this small pill + pulsing pointer make that
-     obvious where there is no hover state to discover it. */
   .business-card-tap {
     display: inline-flex;
   }
 
-  /* Group Companies directory cards — same touch treatment: let the card
-     grow so long names never clip, keep the corner chip visible since there
-     is no hover state to reveal it, and fill the stretched grid cell so the
-     2-up rows read evenly (the mt-auto content pins to the card bottom). */
   .company-link-card {
     height: 100%;
     min-height: 16rem;
@@ -266,9 +242,6 @@ ul {
   }
 }
 
-
-/* Scrolled header bar — mirrors the heroes' navy gradient so the fixed nav
-   sits on the same brand surface as the page heroes (see HeroBackdrop). */
 .header-scrim {
   background-image: linear-gradient(
     115deg,
@@ -277,7 +250,6 @@ ul {
     var(--color-navy-mid) 100%
   );
 }
-
 
 .seal-stamp-in {
   animation: seal-stamp 0.5s cubic-bezier(0.34, 1.45, 0.64, 1) 0.4s both;
@@ -289,9 +261,6 @@ ul {
   100% { transform: rotate(-10deg) scale(1); }
 }
 
-/* Gentle recurring pulse for the Back to Top buttons — a soft ring breathes
-   outward from behind the button. Animated on the pseudo-element so it never
-   fights the button's own hover transform or static box-shadow. */
 .back-to-top-pulse::before {
   animation: back-to-top-pulse 2.8s ease-out infinite;
   background: var(--color-yellow);
@@ -309,8 +278,6 @@ ul {
   100% { transform: scale(1.5);  opacity: 0; }
 }
 
-/* Soft pulse for the touch-only "tap to visit" pointer on the home cards —
-   a gentle opacity breathe so the hint catches the eye without shouting. */
 .tap-hint-pulse {
   animation: tap-hint-pulse 2.2s ease-in-out infinite;
 }

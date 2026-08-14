@@ -24,19 +24,10 @@ type LegalDocumentPageProps = {
   docId: LegalDocumentId;
 };
 
-/**
- * Shared page for the Privacy Policy and Terms & Conditions documents.
- * The hero uses the same HeroBackdrop shell as the other page heroes; the
- * body renders the structured document from `data/legal.ts` with section
- * numbering and reveal animations.
- */
 const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
   const { t, i18n } = useTranslation();
   const doc = legalDocuments[docId];
 
-  // Translated document body (es/fr/de ship their own full translations in the
-  // locale chunks). English stays in `data/legal.ts`; any other language falls
-  // back to English until a translation is written.
   const lang = i18n.language.split("-")[0];
   const translated =
     lang !== "en" && i18n.exists(`legalContent.${docId}`)

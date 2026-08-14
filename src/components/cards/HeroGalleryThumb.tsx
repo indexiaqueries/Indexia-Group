@@ -12,7 +12,6 @@ export type HeroPanel = {
 type HeroGalleryThumbProps = {
   panel: HeroPanel;
   isActive: boolean;
-  /** The thumb representing the current slide — the only one keyboard-focusable. */
   isOriginal: boolean;
   reducedMotion: boolean;
   onSelect: (id: number) => void;

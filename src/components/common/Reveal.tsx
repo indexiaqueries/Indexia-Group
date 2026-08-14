@@ -3,9 +3,7 @@ import type { ReactNode } from "react";
 
 type RevealProps = {
   children: ReactNode;
-  /** Stagger delay in seconds */
   delay?: number;
-  /** Vertical travel distance in px */
   y?: number;
   className?: string;
   amount?: number;

@@ -1,7 +1,4 @@
-/**
- * Careers content — open roles, why-work-with-us values, and the hiring process.
- * Structured English data (like `companies.ts`); page chrome is translated.
- */
+
 
 export type JobRole = {
   key: string;

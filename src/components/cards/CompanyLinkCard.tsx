@@ -8,11 +8,6 @@ type CompanyLinkCardProps = {
   company: Company;
 };
 
-/**
- * A link-only company card for the Group Companies directory.
- * Deliberately shows no description — it exists purely to link
- * a visitor through to the company's own page.
- */
 const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
   const { t } = useTranslation();
   const tag = t(`pageContent.companies.${company.slug}.tag`, { defaultValue: company.tag });
@@ -59,7 +54,6 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
     </>
   );
 
-  // Companies with their own website open it directly instead of an internal page.
   if (company.link) {
     return (
       <a

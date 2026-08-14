@@ -18,7 +18,6 @@ const CompanyPage = () => {
     return <Navigate to="/businesses" replace />;
   }
 
-  // Companies with their own website have no internal page — bounce to it.
   if (company.link) {
     return null;
   }

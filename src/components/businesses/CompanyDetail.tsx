@@ -130,7 +130,7 @@ type CompanyDetailProps = {
 
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
-  // Resolve body copy through i18n (English data as fallback source).
+
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
   const tagline = b.tagline ? tr("tagline", b.tagline) : undefined;
@@ -140,7 +140,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
   return (
     <>
-      {/* Hero — navy backdrop with the company's own photo, matching the site's page heroes */}
+
       <HeroBackdrop
         image={getCompanyImage(b.name)}
         radial={`radial-gradient(circle at 85% 15%, ${b.color}40, transparent 45%)`}
@@ -192,7 +192,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </motion.div>
       </HeroBackdrop>
 
-      {/* Highlights */}
       <section className="bg-(--color-soft) py-20 lg:py-24">
         <div className="container">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -217,7 +216,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
-      {/* Services */}
       <section className="bg-white py-20 lg:py-24">
         <div className="container">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -250,7 +248,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
-      {/* Enquiry — same layout as the Contact page, fits the viewport */}
       <section
         id="enquiry"
         className="relative flex min-h-[100svh] scroll-mt-24 items-center overflow-hidden"

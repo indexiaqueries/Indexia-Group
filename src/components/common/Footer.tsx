@@ -91,13 +91,9 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
-        {/* Balanced 5-column grid — Brand · Contact · Company · Resources · Legal.
-            Proportions measured from content: brand blurb ~380px, contact ~200px,
-            longest link (Resources) ~185px. Verified at 1216px content width:
-            6fr_4fr_3.5fr_3.5fr_3.5fr + 24px gaps → 328/219/191/191/191, no overflow. */}
+
         <div className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-[6fr_4fr_3.5fr_3.5fr_3.5fr] lg:divide-x lg:divide-white/10">
-          {/* Brand — spans both tablet columns, one on desktop. Centered in the
-              single-column mobile stack, left-aligned from md up. */}
+
           <div className="flex flex-col items-center gap-5 text-center md:col-span-2 md:items-start md:text-start lg:col-span-1">
             <div className="flex flex-row items-center gap-3">
               <img src={logo} alt="Indexia Group logo" width={72} height={72} className="h-16 w-16 object-contain sm:h-20 sm:w-20" />
@@ -117,7 +113,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact Us */}
           <div className="text-center md:text-start">
             <ColumnHeader title={t("footer.contactUs")} />
             <div className="mx-auto mt-3 h-1 w-10 rounded-full bg-(--color-teal) md:mx-0" />
@@ -146,7 +141,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company / Resources / Legal */}
           {linkGroups.map((group) => (
             <div key={group.titleKey} className="text-center md:text-start">
               <ColumnHeader title={t(group.titleKey)} />
@@ -189,7 +183,6 @@ const Footer = () => {
         </button>
       </div>
 
-      {/* Floating Back to Top — extracted to BackToTop so pages without a footer can mount it too */}
       <BackToTop />
     </footer>
   );
