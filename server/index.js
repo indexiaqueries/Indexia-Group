@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import { existsSync, statSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import nodemailer from "nodemailer";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -227,7 +227,16 @@ app.use("/api", (_req, res) => {
   res.status(404).json({ ok: false, error: "Not found." });
 });
 
-app.listen(PORT, () => {
-  console.log(`Indexia backend listening on http://localhost:${PORT}`);
-  console.log(smtpConfigured ? `Email delivery via SMTP → ${mailTo}` : "SMTP not configured — emails will be logged to the console (dev mode). Set SMTP_* env vars to enable delivery.");
-});
+// When imported by Vercel (api/index.js), only the app is exported and the
+// platform handles listening. When run directly (npm run server), listen here.
+const isDirectRun =
+  Boolean(process.argv[1]) && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (isDirectRun) {
+  app.listen(PORT, () => {
+    console.log(`Indexia backend listening on http://localhost:${PORT}`);
+    console.log(smtpConfigured ? `Email delivery via SMTP → ${mailTo}` : "SMTP not configured — emails will be logged to the console (dev mode). Set SMTP_* env vars to enable delivery.");
+  });
+}
+
+export default app;
