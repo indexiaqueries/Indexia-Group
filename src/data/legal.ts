@@ -7,7 +7,7 @@ export type LegalSection = {
   paragraphs: string[];
 };
 
-export type LegalDocument = {
+type LegalDocument = {
   id: LegalDocumentId;
   lastUpdated: string;
   intro: string[];

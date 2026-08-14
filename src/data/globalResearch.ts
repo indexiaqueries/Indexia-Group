@@ -1,6 +1,6 @@
 
 
-export type ResearchArea = {
+type ResearchArea = {
   key: string;
   title: string;
   body: string;
@@ -29,7 +29,7 @@ export const researchAreas: ResearchArea[] = [
   },
 ];
 
-export type ResearchReport = {
+type ResearchReport = {
   key: string;
   title: string;
   date: string;

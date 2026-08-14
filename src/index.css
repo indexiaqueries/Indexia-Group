@@ -186,20 +186,6 @@ ul {
   );
 }
 
-.passbook-tilt {
-  transform: rotate(-1.5deg);
-  transition: transform 0.5s ease-out;
-}
-.passbook-tilt:hover {
-  transform: rotate(0deg);
-}
-@media (prefers-reduced-motion: reduce) {
-  .passbook-tilt {
-    transform: none;
-    transition: none;
-  }
-}
-
 @media (hover: none) {
   .business-card {
     height: 100%;
@@ -243,12 +229,20 @@ ul {
 }
 
 .header-scrim {
-  background-image: linear-gradient(
+  background: linear-gradient(
     115deg,
-    var(--color-navy-deep) 0%,
-    var(--color-navy) 55%,
-    var(--color-navy-mid) 100%
+    color-mix(in oklch, var(--color-navy-deep) 62%, transparent) 0%,
+    color-mix(in oklch, var(--color-navy) 52%, transparent) 55%,
+    color-mix(in oklch, var(--color-navy-mid) 56%, transparent) 100%
   );
+  backdrop-filter: blur(18px) saturate(170%);
+  -webkit-backdrop-filter: blur(18px) saturate(170%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 6px 24px rgba(2, 16, 26, 0.32),
+    0 2px 6px rgba(2, 16, 26, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .seal-stamp-in {
@@ -353,27 +347,6 @@ ul {
 .shared-card:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
-}
-
-.accent-card {
-  overflow: hidden;
-  padding: 36px 32px;
-  position: relative;
-}
-
-.accent-card::before {
-  background: var(--card-color, var(--color-teal));
-  content: "";
-  height: 3px;
-  inset: 0 0 auto;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s;
-}
-
-.accent-card:hover::before {
-  transform: scaleX(1);
 }
 
 @media (min-width: 768px) {

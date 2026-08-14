@@ -10,6 +10,4 @@ export const LANGUAGES: { code: string; label: string }[] = [
 
 export const SUPPORTED_LANGS = ["en", "es", "fr", "de", "it", "pt"] as const;
 
-export type SupportedLang = (typeof SUPPORTED_LANGS)[number];
-
 export const RTL_LANGS = new Set<string>(["fa", "ur", "he", "ps", "sd", "ckb"]);

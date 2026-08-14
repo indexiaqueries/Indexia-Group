@@ -1,10 +1,10 @@
-export type PhoneLink = {
+type PhoneLink = {
   label: string;
   number: string;
   href: string;
 };
 
-export type Branch = {
+type Branch = {
   name: string;
   address: string;
   phones: PhoneLink[];

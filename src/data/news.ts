@@ -1,6 +1,6 @@
 
 
-export type NewsArticle = {
+type NewsArticle = {
   slug: string;
   title: string;
   category: string;
@@ -68,7 +68,7 @@ export const newsArticles: NewsArticle[] = [
   },
 ];
 
-export type KnowledgeInsight = {
+type KnowledgeInsight = {
   key: string;
   title: string;
   body: string;

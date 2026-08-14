@@ -1,0 +1,53 @@
+import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { companies } from "../../../data/companies";
+import DropdownPanel from "./DropdownPanel";
+import CompanyLink from "./CompanyLink";
+
+const menuLinkClass = ({ isActive }: { isActive: boolean }) =>
+  `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${
+    isActive ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/85 hover:bg-white/10 hover:text-white"
+  }`;
+
+type MobileMenuProps = {
+  open: boolean;
+  reducedMotion: boolean;
+  onClose: () => void;
+};
+
+const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
+  const { t } = useTranslation();
+
+  return (
+    <DropdownPanel
+      open={open}
+      reducedMotion={reducedMotion}
+      className="pointer-events-auto inset-e-0 w-72 origin-top-end p-2 min-[900px]:hidden"
+      scale={0.92}
+      duration={0.18}
+    >
+      <NavLink to="/" end onClick={onClose} className={menuLinkClass}>
+        {t("header.menu.home")}
+      </NavLink>
+
+      <NavLink to="/businesses" end onClick={onClose} className={menuLinkClass}>
+        {t("header.menu.groupCompanies")}
+      </NavLink>
+
+      <div className="mx-3 my-2 space-y-1 rounded-xl border border-white/10 bg-white/5 p-2">
+        <p className="px-2 pb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
+          {t("header.menu.companies")}
+        </p>
+        {companies.map((company) => (
+          <CompanyLink key={company.slug} company={company} onNavigate={onClose} />
+        ))}
+      </div>
+
+      <NavLink to="/contact" onClick={onClose} className={menuLinkClass}>
+        {t("header.menu.contact")}
+      </NavLink>
+    </DropdownPanel>
+  );
+};
+
+export default MobileMenu;

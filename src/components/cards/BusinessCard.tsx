@@ -3,7 +3,7 @@ import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export type BusinessCardItem = {
+type BusinessCardItem = {
   name: string;
   slug: string;
   tag: string;

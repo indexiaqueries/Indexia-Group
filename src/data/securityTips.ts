@@ -1,6 +1,6 @@
 
 
-export type SecurityCategory = {
+type SecurityCategory = {
   key: string;
   title: string;
   body: string;
@@ -39,7 +39,7 @@ export const securityCategories: SecurityCategory[] = [
   },
 ];
 
-export type SecurityPractice = {
+type SecurityPractice = {
   key: string;
   title: string;
   body: string;

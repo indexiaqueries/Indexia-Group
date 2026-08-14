@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { ChangeEvent, FocusEvent, FormEvent } from "react";
+import type { FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -12,81 +12,22 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { initialContactForm } from "../../data/contact";
 import type { ContactFormData } from "../../data/contact";
-import { companyNames } from "../../data/companies";
 import { accent } from "../../lib/theme";
 import { fadeUp } from "../../lib/motion";
 import Eyebrow from "../common/Eyebrow";
-
-type FormFieldEvent = ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
-type FormBlurEvent = FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
-
-const halfFields = [
-  { id: "name", labelKey: "form.name", type: "text", autocomplete: "name", placeholderKey: "form.namePlaceholder", required: true },
-] as const;
-
-const fullFields = [
-  { id: "email", labelKey: "form.email", type: "email", autocomplete: "email", placeholderKey: "form.emailPlaceholder", required: true },
-] as const;
-
-const subjectOptions: { value: string; labelKey?: string }[] = [
-  { value: "General Enquiry", labelKey: "form.generalEnquiry" },
-  ...companyNames.map((name) => ({ value: name })),
-];
-
-const ledgerLabel = "text-xs font-bold uppercase tracking-wider text-slate-600";
-const selectClass = "h-11 rounded-xl px-4 text-sm text-slate-900";
-const errorText = "text-xs font-medium text-(--color-danger)";
-
-type FieldErrors = Partial<Record<keyof ContactFormData, string>>;
-
-const Field = ({
-  id,
-  label,
-  type,
-  autocomplete,
-  placeholder,
-  required,
-  value,
-  error,
-  onChange,
-  onBlur,
-}: {
-  id: keyof ContactFormData;
-  label: string;
-  type: string;
-  autocomplete: string;
-  placeholder: string;
-  required: boolean;
-  value: string;
-  error?: string;
-  onChange: (event: FormFieldEvent) => void;
-  onBlur: (event: FormBlurEvent) => void;
-}) => (
-  <div className="space-y-2">
-    <Label htmlFor={id} className={ledgerLabel}>
-      {label}
-    </Label>
-    <Input
-      id={id}
-      name={id}
-      type={type}
-      autoComplete={autocomplete}
-      value={value}
-      onChange={onChange}
-      onBlur={onBlur}
-      placeholder={placeholder}
-      required={required}
-      aria-invalid={!!error}
-      aria-describedby={error ? `${id}-error` : undefined}
-      className="h-11 rounded-xl px-4 text-sm placeholder:text-slate-400"
-    />
-    {error && (
-      <p id={`${id}-error`} role="alert" className={errorText}>
-        {error}
-      </p>
-    )}
-  </div>
-);
+import Field from "./enquiry/Field";
+import {
+  errorText,
+  fullFields,
+  halfFields,
+  ledgerLabel,
+  selectClass,
+  subjectOptions,
+  type FieldErrors,
+  type FormBlurEvent,
+  type FormFieldEvent,
+} from "./enquiry/fields";
+import { validateField } from "./enquiry/validation";
 
 type EnquiryFormProps = {
   initialCompany?: string;
@@ -95,27 +36,6 @@ type EnquiryFormProps = {
 
 const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps) => {
   const { t } = useTranslation();
-
-  const validateField = (id: keyof ContactFormData, value: string): string => {
-    switch (id) {
-      case "name": {
-        const trimmed = value.trim();
-        if (trimmed.length < 2) return t("form.errorName");
-        if (!/[a-zA-Z\u00C0-\u024F]/.test(trimmed)) return t("form.errorNameLetters");
-        return "";
-      }
-      case "phone": {
-        const digits = value.replace(/\D/g, "");
-        return /^\d{10}$/.test(digits) ? "" : t("form.errorPhone");
-      }
-      case "email":
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) ? "" : t("form.errorEmail");
-      case "subject":
-        return value.trim() ? "" : t("form.errorSubject");
-      case "message":
-        return value.trim() ? "" : t("form.errorMessage");
-    }
-  };
 
   const [form, setForm] = useState<ContactFormData>(() => ({
     ...initialContactForm,
@@ -145,13 +65,13 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
 
   const handleBlur = (event: FormBlurEvent) => {
     const { name, value } = event.target;
-    setFieldError(name as keyof ContactFormData, validateField(name as keyof ContactFormData, value) || undefined);
+    setFieldError(name as keyof ContactFormData, validateField(name as keyof ContactFormData, value, t) || undefined);
   };
 
   const validateAll = (): FieldErrors => {
     const next: FieldErrors = {};
     (Object.keys(form) as (keyof ContactFormData)[]).forEach((id) => {
-      const message = validateField(id, form[id]);
+      const message = validateField(id, form[id], t);
       if (message) next[id] = message;
     });
     return next;

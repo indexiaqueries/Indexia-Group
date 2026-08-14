@@ -1,7 +1,7 @@
 import { MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
-export type LocationCardItem = {
+type LocationCardItem = {
   name: string;
   address: string;
   phones?: { label: string; number: string; href: string }[];

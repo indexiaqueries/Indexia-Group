@@ -1,57 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import {
-  Apple,
-  ArrowLeftRight,
-  ArrowRight,
-  Banknote,
-  BarChart3,
-  Briefcase,
-  Building2,
-  Candy,
-  Car,
-  Check,
-  CreditCard,
-  ClipboardList,
-  Clock,
-  Crown,
-  Dumbbell,
-  Factory,
-  FlaskConical,
-  Globe,
-  GraduationCap,
-  HandCoins,
-  HeartPulse,
-  Home,
-  Image,
-  KeyRound,
-  Landmark,
-  Layers,
-  Leaf,
-  Lock,
-  MapPin,
-  MapPinned,
-  Medal,
-  PenTool,
-  Route,
-  SearchCheck,
-  ShieldCheck,
-  Ship,
-  Snowflake,
-  Sparkles,
-  Sprout,
-  Store,
-  Swords,
-  Ticket,
-  TrendingUp,
-  Trophy,
-  Truck,
-  Users,
-  Wallet,
-  Warehouse,
-  Wheat,
-} from "lucide-react";
+import { ArrowRight, Check, Clock, Sparkles } from "lucide-react";
+import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
 import Reveal from "../common/Reveal";
 import EnquiryForm from "../contact/EnquiryForm";
@@ -60,68 +11,6 @@ import { getCompanyImage } from "../../data/companyImages";
 import { companies, type Company } from "../../data/companies";
 import { accentInk, contrastText } from "../../lib/color";
 
-const serviceIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
-  "Investor Services": Users,
-  "FDI Advisory & Facilitation": MapPinned,
-  "NBFC Operations": Landmark,
-  "Banking & Institutional Funding": HandCoins,
-  "Cross-Border Capital Solutions": Globe,
-  "Wealth & Asset Advisory": TrendingUp,
-
-  "Personal Loan": Wallet,
-  "Business Loan": Building2,
-  "Home Loan": Home,
-  "Loan Against Property": KeyRound,
-  "Balance Transfer": ArrowLeftRight,
-  "Car Loan": Car,
-  "Credit Card": CreditCard,
-  "Education Loan": GraduationCap,
-  "Project Loan": Briefcase,
-  "Commercial Purchase": Store,
-  "Lease R Discounting": HandCoins,
-  "Working Capital": Banknote,
-
-  "Armed Security Guards": ShieldCheck,
-  "Commando Protection Units": Swords,
-  "VIP & Dignitary Escorts": Crown,
-  "Event & Venue Security": Ticket,
-  "Corporate & Site Security": Factory,
-  "24×7 Monitoring & Rapid Response": Clock,
-
-  "Sugar Export & Trading": Candy,
-  "Edible Oils & Pulses": Leaf,
-  "Food Grains & Spices": Wheat,
-  "Sourcing & Quality Control": SearchCheck,
-  "International Logistics": Ship,
-  "14 South American Markets": Globe,
-
-  "Organic Fertilizer Production": Sprout,
-  "Bio-Fertilizer Blends": Leaf,
-  "Soil Health Solutions": FlaskConical,
-  "Yield Improvement Programmes": TrendingUp,
-  "Farmer Support & Training": Users,
-  "Shamli, UP Facility (Delhi NCR)": MapPin,
-
-  "Warehousing on Lease (MNCs)": Warehouse,
-  "Secure & Scalable Storage": Lock,
-  "Inventory Management": ClipboardList,
-  "Delhi NCR Locations": MapPin,
-  "Logistics Integration": Truck,
-  "Cold & Dry Storage Options": Snowflake,
-
-  "Highway Hoardings & Billboards": Image,
-  "Multiple Site Holdings": Layers,
-  "High-Traffic Corridor Placements": Route,
-  "Creative & Campaign Support": PenTool,
-  "Site Analytics & Reporting": BarChart3,
-
-  "International-Level Training": Dumbbell,
-  "Diet & Nutrition Programmes": Apple,
-  "Expert Coaching & Mentorship": Users,
-  "Competition Funding & Gear": Medal,
-  "Sports Medicine & Recovery": HeartPulse,
-  "Olympic-Grade Support": Trophy,
-};
 
 type CompanyDetailProps = {
   company: Company;
@@ -250,10 +139,10 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       <section
         id="enquiry"
-        className="relative flex min-h-[100svh] scroll-mt-24 items-center overflow-hidden"
+        className="relative flex min-h-svh scroll-mt-24 items-center overflow-hidden"
         style={{ background: "var(--color-soft)", padding: "clamp(40px, 5vw, 64px) 0" }}
       >
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
+        <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
 
         <div className="container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="mx-auto w-full max-w-xl lg:mx-0">

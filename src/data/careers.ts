@@ -1,6 +1,6 @@
 
 
-export type JobRole = {
+type JobRole = {
   key: string;
   title: string;
   department: string;
@@ -85,7 +85,7 @@ export const jobRoles: JobRole[] = [
   },
 ];
 
-export type CareerValue = {
+type CareerValue = {
   key: string;
   title: string;
   body: string;
@@ -114,7 +114,7 @@ export const careerValues: CareerValue[] = [
   },
 ];
 
-export type ProcessStep = {
+type ProcessStep = {
   key: string;
   title: string;
   body: string;

@@ -5,7 +5,6 @@ import en from "./locales/en.json";
 import { RTL_LANGS, SUPPORTED_LANGS } from "./languages";
 
 export { SUPPORTED_LANGS } from "./languages";
-export type { SupportedLang } from "./languages";
 
 const STORAGE_KEY = "indexia-lang";
 

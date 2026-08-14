@@ -125,7 +125,7 @@ const Footer = () => {
                     <span className="mt-0.5 shrink-0 text-(--color-teal)">
                       <Icon className="h-4 w-4" />
                     </span>
-                    <span className={`break-words ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
+                    <span className={`wrap-break-word ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
                       {item.textKey ? t(item.textKey) : item.text}
                     </span>
                   </span>
@@ -177,7 +177,7 @@ const Footer = () => {
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label={t("footer.backToTop")}
-          className="back-to-top-pulse absolute end-4 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-(--color-yellow) text-(--color-deep) shadow-[0_0_0_4px_rgba(242,242,49,0.25),0_10px_28px_rgba(2,16,26,0.45)] transition-all duration-200 hover:-translate-y-[calc(50%+4px)] hover:scale-105 hover:shadow-[0_0_0_4px_rgba(242,242,49,0.4),0_14px_34px_rgba(2,16,26,0.55)] sm:end-8 sm:h-11 sm:w-11"
+          className="back-to-top-pulse absolute inset-e-4 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-(--color-yellow) text-(--color-deep) shadow-[0_0_0_4px_rgba(242,242,49,0.25),0_10px_28px_rgba(2,16,26,0.45)] transition-all duration-200 hover:-translate-y-[calc(50%+4px)] hover:scale-105 hover:shadow-[0_0_0_4px_rgba(242,242,49,0.4),0_14px_34px_rgba(2,16,26,0.55)] sm:inset-e-8 sm:h-11 sm:w-11"
         >
           <ArrowUp className="h-5 w-5" strokeWidth={2.75} />
         </button>
