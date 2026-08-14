@@ -1,12 +1,13 @@
 {
   "header": {
-    "nav": { "contact": "Contact Us" },
+    "nav": {
+      "contact": "Contact Us"
+    },
     "menu": {
       "home": "Home",
       "groupCompanies": "Group Companies",
       "companies": "Companies",
       "contact": "Contact Us",
-      "language": "Language",
       "viewAllCompanies": "View all companies →"
     },
     "aria": {
@@ -77,7 +78,6 @@
       "news": "News & Knowledge Centre",
       "globalResearch": "Global Research",
       "securityTips": "Security Tips",
-      "blog": "Blog",
       "termsOfUse": "Terms of Use",
       "termsConditions": "Terms & Conditions",
       "privacyPolicy": "Privacy Policy"

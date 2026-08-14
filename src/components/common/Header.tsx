@@ -363,26 +363,6 @@ const Header = () => {
                 >
                   {t("header.menu.contact")}
                 </NavLink>
-
-                <div className="mt-2 border-t border-white/10 pt-2">
-                  <p className="px-2 pb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
-                    {t("header.menu.language")}
-                  </p>
-                  <div className="max-h-44 overflow-y-auto overscroll-contain rounded-xl border border-white/10 bg-white/5 p-1 [scrollbar-width:thin] [scrollbar-color:rgba(255,255,255,0.25)_transparent]">
-                    {LANGUAGES.map((l) => (
-                      <button
-                        key={l.code}
-                        type="button"
-                        onClick={() => selectLang(l.code)}
-                        className={`block w-full rounded-lg px-3 py-1.5 text-start text-[12.5px] font-semibold transition-colors duration-150 ${
-                          lang === l.code ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/80 hover:bg-white/10 hover:text-white"
-                        }`}
-                      >
-                        {l.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
               </motion.div>
             )}
         </AnimatePresence>

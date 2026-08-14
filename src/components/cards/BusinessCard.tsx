@@ -25,14 +25,16 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
   const Icon = business.icon;
   const external = Boolean(business.link);
   const href = external ? business.link! : `/businesses/${business.slug}`;
-  const label = `${business.name} — ${business.tag}. ${external ? "Visit website" : "Visit company page"}`;
+  const tag = t(`pageContent.companies.${business.slug}.tag`, { defaultValue: business.tag });
+  const description = t(`pageContent.companies.${business.slug}.desc`, { defaultValue: business.description });
+  const label = `${business.name} — ${tag}. ${external ? "Visit website" : "Visit company page"}`;
 
   const inner = (
     <>
       <div className="flex items-start justify-between gap-3 transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0">
         <div className="flex items-center gap-2">
           <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/85">
-            {business.tag}
+            {tag}
           </p>
           {/* Touch-only "whole card is tappable" hint — shown via CSS in the
               (hover: none) block, hidden on hover-capable devices. */}
@@ -55,7 +57,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
       <div className="business-card-desc pointer-events-none absolute inset-0 z-60 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100">
         <p className="max-w-md text-sm font-medium leading-6 text-white drop-shadow-lg">
-          {business.description}
+          {description}
         </p>
         <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-(--color-ink-deep) shadow-lg transition-colors duration-200 group-hover:bg-(--color-blue) group-hover:text-white">
           {t("businessCard.readMore")}

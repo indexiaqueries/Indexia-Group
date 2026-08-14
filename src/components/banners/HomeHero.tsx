@@ -83,6 +83,26 @@ const KEN_BURNS_MS = 6500;
 
 const SLIDE_EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
+/** Text-shadow strength per slide id (1 = default). Slides whose photo is bright
+ *  behind the text band (measured luminance ≥ ~0.34 — white-text contrast under
+ *  3:1 even before the teal glow adds light) get a stronger shadow so the type
+ *  stays readable now that the dark legibility scrim is gone. */
+const SHADOW_LEVEL: Record<number, number> = {
+  2: 1.55, // Finserve — bright office scene
+  3: 1.65, // Overseas — bright harbour
+  4: 1.55, // Agro Bio — bright plant floor
+  7: 1.45, // Advertising — bright highway
+};
+
+/** Layered drop shadow for the hero type, scaled by the slide's shadow level.
+ *  The tight 1px edge keeps letterforms crisp; the soft big blur does the
+ *  contrast work, both deepened on bright photos. */
+const textShadow = (level: number, blur: number, alpha: number) =>
+  [
+    `0 1px 2px rgba(2,16,26,${Math.min(0.7, 0.5 * level).toFixed(2)})`,
+    `0 8px ${Math.round(blur * level)}px rgba(2,16,26,${Math.min(1, alpha * level).toFixed(2)})`,
+  ].join(", ");
+
 /** Entrance animation for the badge → headline → subtext → CTA of a hero slide.
  *  Each element gets a slightly larger delay so they cascade in sequence. */
 const slideChildAnim = (reduce: boolean, index: number) => ({
@@ -150,6 +170,7 @@ const Banner = () => {
   const currentIndex = panels.findIndex((p) => p.id === currentId);
   const current = panels[currentIndex];
   const isHome = current.id === 0;
+  const shadowLevel = SHADOW_LEVEL[currentId] ?? 1;
   const bgPanel = panels.find((p) => p.id === bgId) ?? panels[0];
 
   const captureThumbRect = useCallback((id: number): MorphRect | null => {
@@ -411,17 +432,13 @@ const Banner = () => {
               }
               className={`relative flex flex-col items-center ${isHome ? "max-w-200" : "max-w-190"}`}
             >
+              {/* Brand radial glow behind the text and CTA — a teal aura centred
+                  on the headline band (30% sits just above the H1 centre) and a
+                  soft yellow pool under the button. The dark legibility scrim
+                  was removed, so the photos show through fully. */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_68%_80%_at_50%_38%,rgba(2,16,26,0.82),rgba(2,16,26,0.55)_58%,transparent_78%)]"
-              />
-              {/* Brand radial glow behind the text and CTA — a teal aura around
-                  the headline and a soft yellow pool under the button. Sits on
-                  top of the dark legibility scrim so the brand colour shows
-                  through around the type without hurting contrast. */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_60%_at_50%_42%,rgba(38,174,144,0.30),rgba(38,174,144,0.08)_58%,transparent_75%),radial-gradient(ellipse_45%_30%_at_50%_90%,rgba(242,242,49,0.20),transparent_68%)]"
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_50%_30%,rgba(38,174,144,0.36),rgba(38,174,144,0.10)_55%,transparent_72%),radial-gradient(ellipse_45%_30%_at_50%_92%,rgba(242,242,49,0.22),transparent_65%)]"
               />
               <div className={`flex flex-col items-center ${prefersReducedMotion ? "" : "bnr-text-zoom"}`}>
                 {isHome ? (
@@ -448,8 +465,8 @@ const Banner = () => {
 
                 <motion.h1
                   {...childAnim(1)}
-                  style={{ textShadow: "0 1px 2px rgba(2,16,26,0.5), 0 8px 36px rgba(2,16,26,0.95)" }}
-                  className={`w-max font-display font-bold bg-gradient-to-b from-white via-white to-(--color-gold-pale) bg-clip-text text-transparent leading-[1.12] mb-5.5 whitespace-pre-line ${
+                  style={{ textShadow: textShadow(shadowLevel, 36, 0.95) }}
+                  className={`w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line ${
                     isHome
                       ? "text-[clamp(26px,4vw,44px)]"
                       : "text-[clamp(24px,3.8vw,40px)]"
@@ -460,7 +477,7 @@ const Banner = () => {
 
                 <motion.p
                   {...childAnim(2)}
-                  style={{ textShadow: "0 1px 2px rgba(2,16,26,0.5), 0 4px 24px rgba(2,16,26,0.9)" }}
+                  style={{ textShadow: textShadow(shadowLevel, 24, 0.9) }}
                   className={`leading-[1.8] text-white/90 ${
                     isHome
                       ? "text-[16px] max-w-170 border-t border-white/20 pt-5 mt-1"

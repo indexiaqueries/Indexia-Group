@@ -36,6 +36,18 @@ const securityJsonLd = {
 
 const SecurityTipsPage = () => {
   const { t } = useTranslation();
+  // Resolve body copy through i18n (English data as fallback source).
+  const tr = (path: string, fallback: string) => t(`pageContent.security.${path}`, { defaultValue: fallback });
+  const categories = securityCategories.map((c) => ({
+    ...c,
+    title: tr(`categories.${c.key}.title`, c.title),
+    body: tr(`categories.${c.key}.body`, c.body),
+  }));
+  const practices = securityPractices.map((p) => ({
+    ...p,
+    title: tr(`practices.${p.key}.title`, p.title),
+    body: tr(`practices.${p.key}.body`, p.body),
+  }));
 
   return (
     <main className="bg-white">
@@ -81,8 +93,8 @@ const SecurityTipsPage = () => {
           </Reveal>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {securityCategories.map((category, i) => (
-              <Reveal key={category.title} delay={(i % 3) * 0.08} amount={0.15}>
+            {categories.map((category, i) => (
+              <Reveal key={category.key} delay={(i % 3) * 0.08} amount={0.15}>
                 <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                   <span className="font-ledger text-sm font-bold" style={{ color: i % 2 === 0 ? colors.teal : colors.blue }}>
                     {String(i + 1).padStart(2, "0")}
@@ -108,8 +120,8 @@ const SecurityTipsPage = () => {
           </Reveal>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {securityPractices.map((practice, i) => (
-              <Reveal key={practice.title} delay={(i % 3) * 0.08} amount={0.15}>
+            {practices.map((practice, i) => (
+              <Reveal key={practice.key} delay={(i % 3) * 0.08} amount={0.15}>
                 <div className="relative flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 pt-8 shadow-sm">
                   <span
                     className="absolute -top-4 start-6 flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold text-white shadow-md"

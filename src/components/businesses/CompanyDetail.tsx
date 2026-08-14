@@ -130,6 +130,11 @@ type CompanyDetailProps = {
 
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
+  // Resolve body copy through i18n (English data as fallback source).
+  const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
+  const tag = tr("tag", b.tag);
+  const tagline = b.tagline ? tr("tagline", b.tagline) : undefined;
+  const overview = tr("overview", b.overview);
   const index = companies.findIndex((c) => c.name === b.name);
   const entryNo = String(index + 1).padStart(2, "0");
 
@@ -161,7 +166,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               className="rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] shadow-md"
               style={{ background: b.color, color: contrastText(b.color) }}
             >
-              {b.tag}
+              {tag}
             </span>
           </div>
 
@@ -169,11 +174,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             {b.name}
           </h1>
 
-          {b.tagline && (
-            <p className="mt-4 text-[17px] font-semibold italic text-(--color-yellow)">“{b.tagline}”</p>
+          {tagline && (
+            <p className="mt-4 text-[17px] font-semibold italic text-(--color-yellow)">“{tagline}”</p>
           )}
 
-          <p className="mt-5 max-w-2xl text-base leading-8 text-white/80">{b.overview}</p>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-white/80">{overview}</p>
 
           <div className="mt-9 flex flex-wrap gap-4">
             <a
@@ -204,7 +209,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   >
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <p className="text-[14.5px] font-medium leading-6 text-(--color-ink-soft)">{highlight}</p>
+                  <p className="text-[14.5px] font-medium leading-6 text-(--color-ink-soft)">{tr(`highlights.${i}`, highlight)}</p>
                 </div>
               </Reveal>
             ))}
@@ -231,7 +236,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                     >
                       <Icon size={22} strokeWidth={1.8} />
                     </span>
-                    <p className="text-[14px] font-semibold leading-snug text-(--color-ink-deep)">{service}</p>
+                    <p className="text-[14px] font-semibold leading-snug text-(--color-ink-deep)">{tr(`services.${i}`, service)}</p>
                   </div>
                 </Reveal>
               );

@@ -6,7 +6,10 @@ import { ArrowUp, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { phoneNumbers } from "../../data/contact";
 import BackToTop from "./BackToTop";
 
-const linkGroups = [
+const linkGroups: {
+  titleKey: string;
+  links: { labelKey: string; href: string }[];
+}[] = [
   {
     titleKey: "footer.company",
     links: [
@@ -21,7 +24,6 @@ const linkGroups = [
       { labelKey: "footer.links.news", href: "/news" },
       { labelKey: "footer.links.globalResearch", href: "/global-research" },
       { labelKey: "footer.links.securityTips", href: "/security-tips" },
-      { labelKey: "footer.links.blog", href: "https://www.indexiafinance.com/", external: true },
     ],
   },
   {
@@ -53,34 +55,20 @@ const ColumnHeader = ({ title }: { title: string }) => (
 const FooterLink = ({
   href,
   labelKey,
-  external = false,
   t,
 }: {
   href: string;
   labelKey: string;
-  external?: boolean;
   t: (key: string) => string;
 }) => (
   <li>
-    {external ? (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex items-center gap-2 text-sm text-white/85 transition-all duration-200 hover:text-(--color-yellow)"
-      >
-        <span className="text-(--color-teal) transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">›</span>
-        {t(labelKey)}
-      </a>
-    ) : (
-      <Link
-        to={href}
-        className="group inline-flex items-center gap-2 text-sm text-white/85 transition-all duration-200 hover:text-(--color-yellow)"
-      >
-        <span className="text-(--color-teal) transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">›</span>
-        {t(labelKey)}
-      </Link>
-    )}
+    <Link
+      to={href}
+      className="group inline-flex items-center gap-2 text-sm text-white/85 transition-all duration-200 hover:text-(--color-yellow)"
+    >
+      <span className="text-(--color-teal) transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">›</span>
+      {t(labelKey)}
+    </Link>
   </li>
 );
 
@@ -165,7 +153,7 @@ const Footer = () => {
               <div className="mx-auto mt-3 h-1 w-10 rounded-full bg-(--color-teal) md:mx-0" />
               <ul className="mt-6 space-y-3">
                 {group.links.map((item) => (
-                  <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} external={item.external} t={t} />
+                  <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} t={t} />
                 ))}
               </ul>
             </div>

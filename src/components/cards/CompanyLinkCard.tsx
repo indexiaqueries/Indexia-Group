@@ -15,6 +15,7 @@ type CompanyLinkCardProps = {
  */
 const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
   const { t } = useTranslation();
+  const tag = t(`pageContent.companies.${company.slug}.tag`, { defaultValue: company.tag });
 
   const cardContent = (
     <>
@@ -47,7 +48,7 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
 
       <div className="relative z-10 mt-auto p-5">
         <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-(--color-yellow)">
-          {company.tag}
+          {tag}
         </p>
         <h3 className="mt-2 text-lg font-extrabold leading-snug text-white">{company.name}</h3>
         <p className="mt-3 inline-flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-[0.1em] text-white/80 transition-colors duration-300 group-hover:text-(--color-yellow)">

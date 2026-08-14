@@ -8,7 +8,6 @@
       "groupCompanies": "Entreprises du Groupe",
       "companies": "Entreprises",
       "contact": "Contact",
-      "language": "Langue",
       "viewAllCompanies": "Voir toutes les entreprises →"
     },
     "aria": {
@@ -79,7 +78,6 @@
       "news": "Actualités et Centre de Connaissances",
       "globalResearch": "Recherche Mondiale",
       "securityTips": "Conseils de Sécurité",
-      "blog": "Blog",
       "termsOfUse": "Conditions d'Utilisation",
       "termsConditions": "Termes et Conditions",
       "privacyPolicy": "Politique de Confidentialité"
@@ -528,5 +526,384 @@
     "ctaTitle": "Vous avez vu quelque chose de suspect ?",
     "ctaBody": "Signalez-le via notre formulaire ou contactez directement l'entreprise d'Indexia Group concernée.",
     "metaDescription": "Conseils de sécurité d'Indexia Group — comment repérer le hameçonnage, les arnaques aux prêts et la fraude aux paiements, ainsi que six pratiques clés pour protéger votre argent et votre identité."
+  },
+  "pageContent": {
+    "companies": {
+      "finance": {
+        "tag": "Fintech Multinationale",
+        "desc": "Une fintech multinationale proposant des services à l'échelle mondiale sur quatre pôles — services aux investisseurs, IDE, NBFC et financement bancaire.",
+        "overview": "Indexia Finance est une plateforme fintech multinationale qui fournit des services financiers à des clients du monde entier. Vous pouvez demander tout type de prêt sur notre portail à www.indexiafinance.com — nous offrons nos services à l'échelle mondiale et, en Inde, nous sommes partenaires commerciaux de 43 banques et NBFC. Articulée autour de quatre pôles — services aux investisseurs, conseil en IDE, opérations NBFC et financement bancaire — la société relie le capital à l'opportunité et aide investisseurs, entreprises et institutions à prendre des décisions financières confiantes au-delà des frontières.",
+        "tagline": "Une destination complète pour les prêts",
+        "highlights": [
+          "Envergure fintech mondiale avec une exécution centrée sur l'Inde",
+          "Quatre pôles intégrés sous un même toit",
+          "Accompagnement complet en financement et conseil"
+        ],
+        "services": [
+          "Conseil et Facilitation IDE",
+          "Services aux Investisseurs",
+          "Opérations NBFC",
+          "Financement Bancaire et Institutionnel",
+          "Solutions de Capital Transfrontalier",
+          "Conseil en Patrimoine et Actifs"
+        ]
+      },
+      "finserve": {
+        "tag": "Prêts et Finance",
+        "desc": "Nous couvrons tous les types de prêts du secteur financier — chaque forme de crédit, adaptée aux particuliers comme aux entreprises.",
+        "overview": "Indexia Finserve est la branche crédit du groupe Indexia, proposant tous les types de prêts du secteur financier. Désormais, la bonne banque vient à votre porte : la société agit comme une destination complète de crédit, guidant les clients sur l'éligibilité, la documentation et le décaissement des prêts personnels, immobiliers, commerciaux, MSME et spécialisés, grâce à un processus unique et fluide.",
+        "tagline": "La méthode financière nouvelle génération",
+        "highlights": [
+          "Tous les types de prêts sous un même toit",
+          "Éligibilité, documentation et décaissement simplifiés",
+          "Conseil dédié à chaque étape"
+        ],
+        "services": [
+          "Prêt Personnel",
+          "Prêt Commercial",
+          "Prêt Immobilier",
+          "Prêt sur Gage Immobilier",
+          "Transfert de Solde",
+          "Prêt Automobile",
+          "Carte de Crédit",
+          "Prêt Études",
+          "Prêt de Projet",
+          "Achat Commercial",
+          "Escompte de Leasing",
+          "Fonds de Roulement"
+        ]
+      },
+      "overseas": {
+        "tag": "Exportateur de Produits Alimentaires",
+        "desc": "Nous négocions et exportons du sucre raffiné et tous les produits alimentaires.",
+        "overview": "Indexia Overseas pilote le commerce mondial de tous les produits alimentaires, avec un accent particulier sur les exportations de sucre vers 14 pays d'Amérique du Sud. La société gère l'approvisionnement, la qualité, la logistique et la conformité internationale pour que les produits de qualité alimentaire passent de l'origine au marché de manière fiable et à grande échelle.",
+        "highlights": [
+          "Négoce de tous produits alimentaires — le sucre au cœur",
+          "Présence établie sur 14 marchés sud-américains",
+          "Approvisionnement, qualité et logistique de bout en bout"
+        ],
+        "services": [
+          "Exportation et Négociation de Sucre",
+          "Huiles et Légumineuses Alimentaires",
+          "Céréales et Épices",
+          "Approvisionnement et Contrôle Qualité",
+          "Logistique Internationale",
+          "14 Marchés Sud-Américains"
+        ]
+      },
+      "agro-bio": {
+        "tag": "Production d'Engrais Organiques",
+        "desc": "Nous fabriquons des engrais organiques en Inde et les exportons dans le monde entier.",
+        "overview": "Indexia Agro Bio Fertilizers fabrique des engrais organiques dans son usine de Shamli, dans l'Uttar Pradesh — qui fait partie de la région de Delhi NCR. Ses produits bios améliorent la santé des sols, augmentent les rendements et soutiennent une agriculture durable pour les producteurs du nord de l'Inde.",
+        "highlights": [
+          "Production biologique, sans produits chimiques agressifs",
+          "Usine de Shamli (UP) dans la ceinture de Delhi NCR",
+          "Meilleure santé des sols, rendements plus élevés"
+        ],
+        "services": [
+          "Production d'Engrais Organiques",
+          "Mélanges de Biofertilisants",
+          "Solutions pour la Santé des Sols",
+          "Programmes d'Amélioration des Rendements",
+          "Accompagnement et Formation des Agriculteurs",
+          "Usine de Shamli, UP (Delhi NCR)"
+        ]
+      },
+      "securities": {
+        "tag": "Sécurité Armée et Commandos",
+        "desc": "Commandos armés et sécurité armée, protégeant hommes politiques et grands magnats des affaires.",
+        "overview": "Indexia Securities fournit la meilleure protection armée et par commandos disponible, protégeant les personnes, les biens et les opérations à haut risque 24 heures sur 24. Des commandos entraînés et gardes armés aux escortes VIP et à la sécurité d'événements, la société applique une discipline de niveau militaire à chaque mission.",
+        "highlights": [
+          "Protection armée et par commandos de premier ordre",
+          "Commandos entraînés avec discipline d'intervention rapide",
+          "Surveillance 24×7 et réponse sur le terrain"
+        ],
+        "services": [
+          "Gardes de Sécurité Armés",
+          "Unités de Protection par Commandos",
+          "Escortes VIP et de Dignitaires",
+          "Sécurité d'Événements et de Sites",
+          "Sécurité Corporate et de Site",
+          "Surveillance 24×7 et Intervention Rapide"
+        ]
+      },
+      "warehouse": {
+        "tag": "Infrastructure Logistique",
+        "desc": "Installations d'entreposage louées à des multinationales, situées dans la région de Delhi NCR.",
+        "overview": "Indexia Warehouse exploite des installations d'entreposage modernes louées à des multinationales, situées dans la région de Delhi NCR. Avec un stockage sécurisé et évolutif et une intégration logistique sans faille, la société aide les entreprises mondiales à gérer leurs stocks près de l'un des plus grands marchés de consommation d'Inde.",
+        "highlights": [
+          "Installations louées à des multinationales",
+          "Emplacements de premier choix à Delhi NCR près des grands corridors",
+          "Stockage sécurisé et évolutif avec intégration logistique"
+        ],
+        "services": [
+          "Entreposage en Location (Multinationales)",
+          "Stockage Sécurisé et Évolutif",
+          "Gestion des Stocks",
+          "Emplacements Delhi NCR",
+          "Intégration Logistique",
+          "Options de Stockage Froid et Sec"
+        ]
+      },
+      "advertising": {
+        "tag": "Publicité sur Autoroutes",
+        "desc": "De nombreux supports publicitaires le long des autoroutes, offrant aux marques des campagnes très visibles.",
+        "overview": "Indexia Advertising possède de nombreux supports publicitaires le long des autoroutes, offrant aux marques des campagnes très visibles dans les corridors à fort trafic. De la sélection stratégique des emplacements au placement créatif, la société garantit une exposition maximale aux annonceurs sur les grands réseaux routiers.",
+        "highlights": [
+          "De nombreux supports le long des corridors autoroutiers",
+          "Emplacements à fort trafic avec visibilité maximale",
+          "Sélection stratégique des emplacements et accompagnement de campagne"
+        ],
+        "services": [
+          "Panneaux et Affichages Autoroutiers",
+          "Multiples Supports d'Emplacements",
+          "Emplacements dans les Corridors à Fort Trafic",
+          "Accompagnement Créatif et de Campagne",
+          "Analytique des Emplacements et Rapports"
+        ]
+      },
+      "foundation": {
+        "tag": "Soutien aux Athlètes",
+        "desc": "Nous soutenons les athlètes avec un entraînement de niveau international, une nutrition adaptée et tout l'appui nécessaire — jusqu'aux Jeux Olympiques.",
+        "overview": "Indexia Foundation accompagne les athlètes en leur apportant tout le soutien possible — entraînement de niveau international, alimentation et nutrition structurées, encadrement expert et toute forme d'assistance nécessaire sur le chemin des Jeux Olympiques. La fondation suit les sportifs de leurs premiers espoirs jusqu'à la plus grande scène mondiale.",
+        "highlights": [
+          "Entraînement de niveau international et encadrement expert",
+          "Programmes structurés d'alimentation et de nutrition",
+          "Soutien complet jusqu'aux Jeux Olympiques"
+        ],
+        "services": [
+          "Entraînement de Niveau International",
+          "Programmes de Nutrition et d'Alimentation",
+          "Encadrement Expert et Mentorat",
+          "Financement et Équipement de Compétition",
+          "Médecine du Sport et Récupération",
+          "Soutien de Niveau Olympique"
+        ]
+      }
+    },
+    "news": {
+      "articles": {
+        "fdi-advisory-desk": {
+          "title": "Indexia Finance ouvre un pôle dédié de conseil en IDE pour les investisseurs d'Asie du Sud",
+          "category": "Finance",
+          "excerpt": "Un nouveau pôle au sein d'Indexia Finance guidera les investisseurs étrangers sur la stratégie d'entrée, les dépôts réglementaires et le choix de partenaires — transformant le capital transfrontalier en entreprises locales à travers l'Inde."
+        },
+        "finserve-doorstep-loans": {
+          "title": "Indexia Finserve amène la banque au pas de la porte dans tout Delhi NCR",
+          "category": "Finance",
+          "excerpt": "La méthode financière nouvelle génération devient physique : documentation à domicile, vérifications d'éligibilité et accompagnement au décaissement pour les prêts personnels, immobiliers et commerciaux dans toute la Région de la Capitale Nationale."
+        },
+        "agro-first-export": {
+          "title": "Agro Bio Fertilizers expédie sa première cargaison d'engrais organique à des acheteurs internationaux",
+          "category": "Agriculture",
+          "excerpt": "La production de l'usine de Shamli atteint désormais les marchés d'exportation, étendant la mission d'agriculture biologique du groupe au-delà des frontières indiennes grâce à des formulations biologiques et sans produits chimiques."
+        },
+        "warehouse-ncr-expansion": {
+          "title": "Indexia Warehouse étend sa présence à Delhi NCR avec une deuxième installation",
+          "category": "Logistique",
+          "excerpt": "Les locataires multinationalx gagnent un stockage sécurisé et évolutif près des plus grands corridors de consommation d'Inde, avec des options d'entreposage frigorifique désormais disponibles."
+        },
+        "foundation-olympic-camp": {
+          "title": "Les athlètes d'Indexia Foundation débutent leur camp de qualification olympique",
+          "category": "Sports",
+          "excerpt": "Les athlètes entraînés sont entrés dans une phase intensive de qualification combinant entraînement de niveau international, nutrition structurée et médecine du sport — le modèle de soutien complet de la fondation en action."
+        },
+        "advertising-highway-network": {
+          "title": "Indexia Advertising déploie un nouveau corridor médiatique autoroutier",
+          "category": "Médias",
+          "excerpt": "Les marques gagnent des emplacements très visibles le long d'un tronçon d'autoroute récemment acquis, appuyés par l'analytique des sites et les rapports de campagne des actifs médias du groupe."
+        }
+      },
+      "insights": {
+        "understanding-fdi": {
+          "title": "Comprendre l'IDE en Inde",
+          "body": "Un guide pratique des voies d'entrée, des plafonds sectoriels et des démarches nécessaires pour apporter du capital étranger dans une entreprise indienne — et où l'aide d'un conseil compte le plus."
+        },
+        "choosing-loan": {
+          "title": "Choisir le bon prêt",
+          "body": "Personnels, immobiliers, commerciaux ou de projet : comment assortir votre besoin au bon produit et ce qu'un prêteur évalue réellement avant d'approuver."
+        },
+        "organic-farming": {
+          "title": "L'agriculture biologique, expliquée",
+          "body": "Ce que les biofertilisants font à la santé des sols et aux rendements, pourquoi la production sans produits chimiques compte et comment les agriculteurs font la transition en pratique."
+        },
+        "securing-operations": {
+          "title": "Sécuriser les opérations à haute valeur",
+          "body": "Des gardes armés aux unités de commandos : comment une évaluation professionnelle de sécurité transforme le risque en un programme géré et mesurable."
+        }
+      }
+    },
+    "careers": {
+      "roles": {
+        "relationship-manager": {
+          "title": "Chargé de Relation Client — Prêts",
+          "department": "Finance",
+          "type": "Temps plein"
+        },
+        "export-operations": {
+          "title": "Chargé des Opérations d'Exportation",
+          "department": "Commerce",
+          "type": "Temps plein"
+        },
+        "production-supervisor": {
+          "title": "Superviseur de Production",
+          "department": "Agriculture",
+          "type": "Temps plein"
+        },
+        "armed-security": {
+          "title": "Agent de Sécurité Armée",
+          "department": "Sécurité",
+          "type": "Temps plein"
+        },
+        "warehouse-ops": {
+          "title": "Responsable des Opérations d'Entrepôt",
+          "department": "Logistique",
+          "type": "Temps plein"
+        },
+        "media-sales": {
+          "title": "Chargé de Vente Médias",
+          "department": "Publicité",
+          "type": "Temps plein"
+        },
+        "finance-analyst": {
+          "title": "Analyste Financier",
+          "department": "Finance",
+          "type": "Temps plein"
+        },
+        "sports-nutritionist": {
+          "title": "Nutritionniste du Sport",
+          "department": "Sports",
+          "type": "Temps plein"
+        }
+      },
+      "values": {
+        "grow": {
+          "title": "Grandir entre les secteurs",
+          "body": "Huit entreprises sous un même groupe — finance, commerce, agriculture, sécurité, logistique, médias et sport — offrent un réel espace pour évoluer et apprendre."
+        },
+        "trust": {
+          "title": "La confiance par défaut",
+          "body": "Nous bâtissons sur l'intégrité et des relations durables : avec les clients, les partenaires et les personnes qui travaillent avec nous."
+        },
+        "own": {
+          "title": "S'approprier son travail",
+          "body": "Petites équipes, responsabilités claires et décisions qui comptent vraiment. Votre travail a un impact visible."
+        },
+        "support": {
+          "title": "Un soutien pour performer",
+          "body": "Rémunération équitable, évolution structurée et les outils nécessaires pour bien faire le travail."
+        }
+      },
+      "steps": {
+        "apply": {
+          "title": "Envoyez votre candidature",
+          "body": "Postulez via le formulaire de contact en indiquant le poste qui vous intéresse, ou envoyez votre CV à careers@indexiagroup.com."
+        },
+        "contact": {
+          "title": "Nous vous contactons",
+          "body": "L'entreprise du groupe concernée examine votre profil et vous recontacte sous quelques jours ouvrés."
+        },
+        "interview": {
+          "title": "Entretien avec l'équipe",
+          "body": "Une conversation ciblée — parfois deux — avec les personnes avec lesquelles vous travailleriez réellement."
+        },
+        "offer": {
+          "title": "Offre et intégration",
+          "body": "Une offre claire, une transition en douceur et une première semaine qui vous permet de contribuer rapidement."
+        }
+      }
+    },
+    "research": {
+      "areas": {
+        "fdi": {
+          "title": "IDE et Investissement Transfrontalier",
+          "body": "Suivre l'entrée du capital étranger en Inde — flux sectoriels, évolutions politiques et les corridors qui relient les investisseurs mondiaux à l'opportunité indienne."
+        },
+        "credit": {
+          "title": "Crédit, NBFC et Financement Bancaire",
+          "body": "Comment le crédit atteint les particuliers et les entreprises — des lignes de financement NBFC aux partenariats bancaires — et ce qui façonne l'accès au capital."
+        },
+        "trade": {
+          "title": "Commerce, Exportations et Marchés Agroalimentaires",
+          "body": "Flux de matières premières, corridors d'exportation et chaînes d'approvisionnement derrière les exportations alimentaires et agricoles de l'Inde."
+        },
+        "security": {
+          "title": "Sécurité, Logistique et Infrastructure",
+          "body": "La colonne vertébrale opérationnelle des entreprises — réseaux d'entreposage, corridors logistiques et les écosystèmes de sécurité qui les protègent."
+        }
+      },
+      "reports": {
+        "fdi-2026": {
+          "title": "Le paysage de l'IDE en Inde : Perspectives 2026",
+          "summary": "Tendances sectorielles de l'IDE, évolutions politiques et corridors d'investissement qui façonnent les capitaux entrants."
+        },
+        "nbfc": {
+          "title": "L'environnement de financement NBFC",
+          "summary": "Comment la liquidité, la réglementation et les partenariats bancaires remodèlent le crédit non bancaire."
+        },
+        "edible-exports": {
+          "title": "Exportations alimentaires : de la ferme au port",
+          "summary": "Chaînes d'approvisionnement, normes de qualité et corridors de marché pour les exportations alimentaires de l'Inde."
+        },
+        "warehousing": {
+          "title": "La demande d'entreposage dans la ceinture NCR",
+          "summary": "Dynamique locative et tendances d'infrastructure dans les corridors industriels de Delhi NCR."
+        }
+      }
+    },
+    "security": {
+      "categories": {
+        "phishing": {
+          "title": "Hameçonnage et Faux Messages",
+          "body": "Les banques et prêteurs ne demandent jamais d'OTP ni de mot de passe par message. Traitez les liens inattendus et les demandes « urgentes » avec méfiance."
+        },
+        "loan-scams": {
+          "title": "Arnaques aux Prêts et Frais Préalables",
+          "body": "Un prêteur légitime ne demande jamais de frais à l'avance pour débloquer un prêt. Vérifiez la société et ses références avant de payer quoi que ce soit."
+        },
+        "card": {
+          "title": "Sécurité des Cartes et des Paiements",
+          "body": "Partagez vos coordonnées de carte uniquement sur des pages de paiement sécurisées. Méfiez-vous des dispositifs de clonage aux distributeurs et couvrez toujours votre code PIN."
+        },
+        "identity": {
+          "title": "Protection de l'Identité",
+          "body": "Protégez votre PAN, votre Aadhaar et vos documents bancaires. Signalez immédiatement les documents perdus et ne les téléversez jamais sur des sites non officiels."
+        },
+        "social-engineering": {
+          "title": "Ingénierie Sociale",
+          "body": "Les fraudeurs se font passer pour des dirigeants, agents ou fonctionnaires afin d'extorquer de l'argent ou des données. Vérifiez l'identité par un canal connu et officiel."
+        },
+        "physical": {
+          "title": "Sécurité Physique et des Sites",
+          "body": "Protégez locaux, stocks et personnes grâce à un accès contrôlé, à la vidéosurveillance et à un personnel formé — la norme suivie par nos propres entreprises."
+        }
+      },
+      "practices": {
+        "otp": {
+          "title": "Ne partagez jamais votre OTP",
+          "body": "Les mots de passe à usage unique existent pour vous protéger — aucune banque, aucun prêteur ni employé ne vous le demandera jamais."
+        },
+        "verify": {
+          "title": "Vérifiez avant de payer",
+          "body": "Confirmez la société, sa licence et le compte destinataire avant tout paiement ou acompte."
+        },
+        "passwords": {
+          "title": "Utilisez des mots de passe forts et uniques",
+          "body": "Un mot de passe différent pour chaque compte, plus une authentification à deux facteurs dès qu'elle est proposée."
+        },
+        "links": {
+          "title": "Vérifiez les liens et les expéditeurs",
+          "body": "Survolez avant de cliquer. Les communications officielles proviennent de domaines officiels — jamais d'imitations."
+        },
+        "updates": {
+          "title": "Gardez vos appareils à jour",
+          "body": "Installez les mises à jour de sécurité et utilisez un antivirus fiable sur chaque appareil qui touche à votre argent ou vos données."
+        },
+        "report": {
+          "title": "Signalez toute activité suspecte",
+          "body": "Si quelque chose semble anormal, arrêtez-vous et contactez la ligne officielle — jamais le numéro du message suspect."
+        }
+      }
+    }
   }
 }
