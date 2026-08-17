@@ -53,7 +53,7 @@ const businesses = companies.map((company, index) => {
     description: company.desc,
     color1: colorVar(company.color),
     color2: colorVar(next.color),
-    image: getCompanyImage(company.name),
+    image: getCompanyImage(company.slug),
     icon: icons[company.name] ?? Building2,
     link: company.link,
   };

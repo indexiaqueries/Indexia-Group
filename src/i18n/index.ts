@@ -7,7 +7,7 @@ import fr from "./locales/fr.json";
 import de from "./locales/de.json";
 import it from "./locales/it.json";
 import pt from "./locales/pt.json";
-import { RTL_LANGS, SUPPORTED_LANGS } from "./languages";
+import { SUPPORTED_LANGS } from "./languages";
 
 export { SUPPORTED_LANGS } from "./languages";
 
@@ -56,17 +56,11 @@ export const i18nReady = i18n.use(initReactI18next).init({
   returnNull: false,
 });
 
-const applyDirection = (lng: string) => {
-  document.documentElement.dir = RTL_LANGS.has(lng) ? "rtl" : "ltr";
-};
-
 i18n.on("languageChanged", (lng) => {
   document.documentElement.lang = lng;
-  applyDirection(lng);
   safeSet(STORAGE_KEY, lng);
 });
 
-applyDirection(i18n.language);
 document.documentElement.lang = i18n.language;
 
 export default i18n;

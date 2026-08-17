@@ -19,7 +19,7 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
   const cardContent = (
     <>
       <img
-        src={getCompanyImage(company.name)}
+        src={getCompanyImage(company.slug)}
         alt={t("companyLinkCard.visualAlt", { name })}
         width={1536}
         height={1024}

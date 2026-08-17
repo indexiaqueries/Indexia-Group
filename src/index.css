@@ -1,65 +1,10 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
-
-:root {
-
-  --background: #ffffff;
-  --foreground: #111827;
-  --card: #ffffff;
-  --card-foreground: #111827;
-  --popover: #ffffff;
-  --popover-foreground: #111827;
-  --primary: #26ae90;
-  --primary-foreground: #ffffff;
-  --secondary: #eef4f7;
-  --secondary-foreground: #0c3652;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --accent: #e6f5f1;
-  --accent-foreground: #14765f;
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #26ae90;
-  --radius: 0.75rem;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-}
 
 :root {
 
   --color-teal: #26ae90;
   --color-teal-deep: #1e9478;
   --color-blue: #066a9c;
-  --color-blue-deep: #055780;
-  --color-blue-2: #286090;
   --color-yellow: #f2f231;
   --color-yellow-bright: #f7f75c;
   --color-yellow-ink: #241a03;
@@ -81,10 +26,8 @@
   --color-navy-black: #043249;
   --color-sand: #e3dcc9;
   --color-sand-deep: #ddd6c4;
-  --color-gold-pale: #f4efc4;
   --color-success: #14765f;
   --color-danger: #b91c1c;
-  --color-white: #ffffff;
 
   /* Business-card description scrim (over card imagery) */
   --card-desc-gradient: linear-gradient(
@@ -107,29 +50,6 @@
   --card-glow-blue: color-mix(in srgb, var(--color-blue) 80%, transparent);
   --card-glow-deep: color-mix(in srgb, var(--color-deep) 95%, transparent);
   --card-icon-shadow: color-mix(in srgb, var(--color-night) 60%, transparent);
-}
-
-.dark {
-  /* Deeper navy scrim for the dark theme so descriptions stay legible */
-  --card-desc-gradient: linear-gradient(
-    160deg,
-    rgba(1, 5, 14, 0.92) 0%,
-    rgba(12, 54, 82, 0.8) 55%,
-    rgba(2, 16, 26, 0.6) 100%
-  );
-
-  --hero-sub-gradient: linear-gradient(
-    120deg,
-    rgba(1, 5, 14, 0.88) 0%,
-    rgba(12, 54, 82, 0.72) 55%,
-    rgba(2, 16, 26, 0.55) 100%
-  );
-
-  /* Stronger, deeper overlays for the dark theme */
-  --card-tint: color-mix(in srgb, var(--color-night) 50%, transparent);
-  --card-glow-blue: color-mix(in srgb, var(--color-blue) 85%, transparent);
-  --card-glow-deep: color-mix(in srgb, var(--color-deep) 100%, transparent);
-  --card-icon-shadow: color-mix(in srgb, var(--color-night) 70%, transparent);
 }
 
 *, *::before, *::after {
@@ -166,25 +86,6 @@ body {
   font-family: "Instrument Sans", "Segoe UI", system-ui, Arial, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-}
-
-html[dir="rtl"] body {
-  font-family: "Noto Naskh Arabic", "Instrument Sans", "Segoe UI", system-ui, Arial, sans-serif;
-}
-
-html[dir="rtl"] .font-display {
-  font-family: "Noto Kufi Arabic", "Noto Naskh Arabic", "Fraunces", Georgia, serif;
-  font-variation-settings: normal;
-  letter-spacing: normal;
-}
-
-html[dir="rtl"] .font-ledger {
-  font-family: "Noto Naskh Arabic", "IBM Plex Mono", Menlo, monospace;
-  letter-spacing: normal;
-}
-
-html[dir="rtl"] * {
-  letter-spacing: normal;
 }
 
 a, button {

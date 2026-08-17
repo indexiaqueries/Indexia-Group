@@ -201,4 +201,3 @@ export const companies: Company[] = [
   },
 ];
 
-export const companyNames = companies.map((company) => company.name);

@@ -31,7 +31,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
     <>
 
       <HeroBackdrop
-        image={getCompanyImage(b.name)}
+        image={getCompanyImage(b.slug)}
         radial={`radial-gradient(circle at 85% 15%, ${b.color}40, transparent 45%)`}
         containerClassName="relative mx-auto w-full max-w-7xl px-5 py-24 pt-32 sm:px-6 lg:px-8 lg:py-32"
       >

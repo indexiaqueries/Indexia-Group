@@ -1,9 +1,6 @@
 export const TEXT_ZOOM_MS = 6000;
 export const AUTOPLAY_INTERVAL = 6000;
 
-export const KEN_BURNS_SCALE: [number, number] = [1, 1.08];
-export const KEN_BURNS_MS = 6500;
-
 export const SHADOW_LEVEL: Record<number, number> = {
   2: 1.55,
   3: 1.65,

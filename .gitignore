@@ -1,30 +1,44 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
 .vite/
 coverage/
+stats.html
+*.timestamp-*.mjs
 
+# Environment & secrets
 server/.env
 server/.env.*
-
 .env
 .env.*
 !.env.example
-
 *.local
 
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 nohup.out
-.eslintcache
 
+# Tooling caches
+.eslintcache
 *.tsbuildinfo
 
+# Temp / scratch scripts
+.tmp-*
+*.tmp
+
+# Editors & OS
 .vscode/
 .idea/
+.history/
+*.swp
 .DS_Store
 Thumbs.db
 
+# Freebuff workspace
 .freebuff/
