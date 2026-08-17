@@ -220,7 +220,7 @@ ul {
   );
 }
 
-@media (hover: none) {
+@media (hover: none) and (max-width: 767.98px) {
   .business-card {
     height: 100%;
     min-height: 17rem;
