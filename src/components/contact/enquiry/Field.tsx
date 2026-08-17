@@ -1,5 +1,4 @@
 import { Input } from "../../ui/input";
-import { Label } from "../../ui/label";
 import type { ContactFormData } from "../../../data/contact";
 import { errorText, ledgerLabel, type FormBlurEvent, type FormFieldEvent } from "./fields";
 
@@ -29,9 +28,9 @@ const Field = ({
   onBlur,
 }: FieldProps) => (
   <div className="space-y-2">
-    <Label htmlFor={id} className={ledgerLabel}>
+    <label htmlFor={id} className={ledgerLabel}>
       {label}
-    </Label>
+    </label>
     <Input
       id={id}
       name={id}

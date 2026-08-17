@@ -63,7 +63,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         )}
       </h3>
 
-      <div className="business-card-desc pointer-events-none absolute inset-0 z-60 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100">
+      <div className="card-reveal pointer-events-none absolute inset-0 z-60 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100">
         <p className="max-w-md rounded-xl border border-white/20 bg-(image:--card-desc-gradient) px-4 py-3 text-sm font-medium leading-6 text-white shadow-lg backdrop-blur-[2px]">
           {description}
         </p>

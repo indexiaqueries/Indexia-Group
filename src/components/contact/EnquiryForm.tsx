@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -146,9 +145,9 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
             ))}
 
             <div className="space-y-2">
-              <Label htmlFor="phone" className={ledgerLabel}>
+              <label htmlFor="phone" className={ledgerLabel}>
                 {t("form.phone")}
-              </Label>
+              </label>
               <Input
                 id="phone"
                 name="phone"
@@ -188,9 +187,9 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
           ))}
 
           <div className="space-y-2">
-            <Label htmlFor="subject" className={ledgerLabel}>
+            <label htmlFor="subject" className={ledgerLabel}>
               {t("form.subject")}
-            </Label>
+            </label>
             <Select
               id="subject"
               name="subject"
@@ -226,9 +225,9 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="message" className={ledgerLabel}>
+            <label htmlFor="message" className={ledgerLabel}>
               {t("form.message")}
-            </Label>
+            </label>
             <Textarea
               id="message"
               name="message"

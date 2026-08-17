@@ -62,7 +62,7 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
         </p>
       </div>
 
-      <div className="company-link-card-reveal pointer-events-none absolute inset-0 z-20 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out">
+      <div className="card-reveal pointer-events-none absolute inset-0 z-20 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out">
         <p className="rounded-xl border border-white/20 bg-(image:--card-desc-gradient) px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-white/90 shadow-lg backdrop-blur-[2px]">
           {tag}
         </p>
