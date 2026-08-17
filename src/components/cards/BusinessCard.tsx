@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { ArrowRight, ExternalLink, MousePointerClick } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { prefersTouch } from "../../lib/media";
 
 type BusinessCardItem = {
   name: string;
@@ -21,12 +23,20 @@ type BusinessCardProps = {
 
 const BusinessCard = ({ business }: BusinessCardProps) => {
   const { t } = useTranslation();
+  const [revealed, setRevealed] = useState(false);
   const Icon = business.icon;
   const external = Boolean(business.link);
   const href = external ? business.link! : `/businesses/${business.slug}`;
   const tag = t(`pageContent.companies.${business.slug}.tag`, { defaultValue: business.tag });
   const description = t(`pageContent.companies.${business.slug}.desc`, { defaultValue: business.description });
   const label = `${business.name} — ${tag}. ${external ? "Visit website" : "Visit company page"}`;
+
+  // On touch devices the card reveals its description on first tap and dismisses on a second tap.
+  const handleCardClick = (e: React.MouseEvent) => {
+    if (!prefersTouch) return;
+    e.preventDefault();
+    setRevealed((r) => !r);
+  };
 
   const inner = (
     <>
@@ -49,15 +59,18 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
       <h3 className="business-card-name mt-auto flex max-w-[90%] items-center gap-1.5 text-xl font-extrabold leading-tight text-white transition-all duration-500 group-hover:translate-y-2 group-hover:opacity-0">
         {business.name}
         {external && (
-          <ExternalLink size={15} strokeWidth={2.5} aria-hidden="true" className="shrink-0 text-(--color-yellow) drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]" />
+          <ExternalLink size={15} strokeWidth={2.5} aria-hidden="true" className="shrink-0 text-(--color-yellow) drop-shadow-[0_1px_2px_var(--card-icon-shadow)]" />
         )}
       </h3>
 
       <div className="business-card-desc pointer-events-none absolute inset-0 z-60 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100">
-        <p className="max-w-md text-sm font-medium leading-6 text-white drop-shadow-lg">
+        <p className="max-w-md rounded-xl border border-white/20 bg-(image:--card-desc-gradient) px-4 py-3 text-sm font-medium leading-6 text-white shadow-lg backdrop-blur-[2px]">
           {description}
         </p>
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-(--color-ink-deep) shadow-lg transition-colors duration-200 group-hover:bg-(--color-blue) group-hover:text-white">
+        <span
+          className="inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-(--color-ink-deep) shadow-lg transition-colors duration-200 group-hover:bg-(--color-blue) group-hover:text-white"
+          onClick={(e) => e.stopPropagation()}
+        >
           {t("businessCard.readMore")}
           {external ? (
             <ExternalLink size={16} strokeWidth={2.5} aria-hidden="true" />
@@ -70,7 +83,9 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
   );
 
   return (
-    <article className="business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl">
+    <article
+      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl${revealed ? " is-revealed" : ""}`}
+    >
       <img
         src={business.image}
         alt={`${business.name} visual`}
@@ -81,7 +96,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
-      <div className="pointer-events-none absolute inset-0 z-10 bg-black/35 transition-opacity duration-500 group-hover:opacity-0" />
+      <div className="pointer-events-none absolute inset-0 z-10 bg-(--card-tint) transition-opacity duration-500 group-hover:opacity-0" />
 
       <div
         className="pointer-events-none absolute inset-0 z-20 opacity-0 mix-blend-screen transition-opacity duration-300 group-hover:opacity-100"
@@ -92,9 +107,9 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         }}
       />
 
-      <div className="pointer-events-none absolute inset-0 z-30 bg-[radial-gradient(circle_at_center,var(--color-teal)_0%,rgba(6,106,156,0.8)_48%,rgba(4,78,116,0.95)_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-35" />
+      <div className="pointer-events-none absolute inset-0 z-30 bg-[radial-gradient(circle_at_center,var(--color-teal)_0%,var(--card-glow-blue)_48%,var(--card-glow-deep)_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-35" />
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-44 bg-linear-to-t from-black/75 via-black/30 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-44 bg-[linear-gradient(135deg,var(--card-shadow-edge)_0%,var(--card-shadow-mid)_50%,transparent_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-0" />
 
       {external ? (
         <a
@@ -102,12 +117,18 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
+          onClick={handleCardClick}
           className="relative z-50 flex h-full w-full flex-col justify-between p-5"
         >
           {inner}
         </a>
       ) : (
-        <Link to={href} aria-label={label} className="relative z-50 flex h-full w-full flex-col justify-between p-5">
+        <Link
+          to={href}
+          aria-label={label}
+          onClick={handleCardClick}
+          className="relative z-50 flex h-full w-full flex-col justify-between p-5"
+        >
           {inner}
         </Link>
       )}

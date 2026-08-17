@@ -85,6 +85,40 @@
   --color-success: #14765f;
   --color-danger: #b91c1c;
   --color-white: #ffffff;
+
+  /* Business-card description scrim (over card imagery) */
+  --card-desc-gradient: linear-gradient(
+    160deg,
+    rgba(2, 8, 23, 0.88) 0%,
+    rgba(4, 32, 58, 0.7) 55%,
+    rgba(2, 8, 23, 0.55) 100%
+  );
+
+  /* Business-card photo overlays */
+  --card-tint: color-mix(in srgb, var(--color-night) 35%, transparent);
+  --card-glow-blue: color-mix(in srgb, var(--color-blue) 80%, transparent);
+  --card-glow-deep: color-mix(in srgb, var(--color-deep) 95%, transparent);
+  --card-shadow-edge: color-mix(in srgb, var(--color-night) 75%, transparent);
+  --card-shadow-mid: color-mix(in srgb, var(--color-night) 30%, transparent);
+  --card-icon-shadow: color-mix(in srgb, var(--color-night) 60%, transparent);
+}
+
+.dark {
+  /* Deeper navy scrim for the dark theme so descriptions stay legible */
+  --card-desc-gradient: linear-gradient(
+    160deg,
+    rgba(1, 5, 14, 0.92) 0%,
+    rgba(12, 54, 82, 0.8) 55%,
+    rgba(2, 16, 26, 0.6) 100%
+  );
+
+  /* Stronger, deeper overlays for the dark theme */
+  --card-tint: color-mix(in srgb, var(--color-night) 50%, transparent);
+  --card-glow-blue: color-mix(in srgb, var(--color-blue) 85%, transparent);
+  --card-glow-deep: color-mix(in srgb, var(--color-deep) 100%, transparent);
+  --card-shadow-edge: color-mix(in srgb, var(--color-night) 85%, transparent);
+  --card-shadow-mid: color-mix(in srgb, var(--color-night) 40%, transparent);
+  --card-icon-shadow: color-mix(in srgb, var(--color-night) 70%, transparent);
 }
 
 *, *::before, *::after {
@@ -206,12 +240,22 @@ ul {
     z-index: auto;
     scale: 1;
     transform: none;
-    opacity: 1;
     margin-top: auto;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: start;
     padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.35s ease, max-height 0.35s ease;
+  }
+
+  .business-card.is-revealed .business-card-desc {
+    opacity: 1;
+    max-height: 30rem;
+    pointer-events: auto;
   }
 
   .business-card-tap {
@@ -225,6 +269,34 @@ ul {
 
   .company-link-chip {
     opacity: 1;
+  }
+
+  .company-link-card-reveal {
+    position: static;
+    inset: auto;
+    z-index: auto;
+    scale: 1;
+    transform: none;
+    margin-top: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.35s ease, max-height 0.35s ease;
+  }
+
+  .company-link-card.is-revealed .company-link-card-reveal {
+    opacity: 1;
+    max-height: 30rem;
+    pointer-events: auto;
+  }
+
+  .company-link-card.is-revealed .company-link-card-content {
+    opacity: 0;
   }
 }
 
