@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { EllipsisVertical, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logo from "../../assets/IndexiaGroup_Logo.gif";
+import logo from "../../assets/IndexiaGroup_Logo.webp";
 import CompaniesMenu from "./header/CompaniesMenu";
 import LanguageMenu from "./header/LanguageMenu";
 import MobileMenu from "./header/MobileMenu";

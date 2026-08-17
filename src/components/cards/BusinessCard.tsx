@@ -109,8 +109,6 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
       <div className="pointer-events-none absolute inset-0 z-30 bg-[radial-gradient(circle_at_center,var(--color-teal)_0%,var(--card-glow-blue)_48%,var(--card-glow-deep)_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-35" />
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-44 bg-[linear-gradient(135deg,var(--card-shadow-edge)_0%,var(--card-shadow-mid)_50%,transparent_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-0" />
-
       {external ? (
         <a
           href={href}

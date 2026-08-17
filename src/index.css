@@ -98,8 +98,6 @@
   --card-tint: color-mix(in srgb, var(--color-night) 35%, transparent);
   --card-glow-blue: color-mix(in srgb, var(--color-blue) 80%, transparent);
   --card-glow-deep: color-mix(in srgb, var(--color-deep) 95%, transparent);
-  --card-shadow-edge: color-mix(in srgb, var(--color-night) 75%, transparent);
-  --card-shadow-mid: color-mix(in srgb, var(--color-night) 30%, transparent);
   --card-icon-shadow: color-mix(in srgb, var(--color-night) 60%, transparent);
 }
 
@@ -116,8 +114,6 @@
   --card-tint: color-mix(in srgb, var(--color-night) 50%, transparent);
   --card-glow-blue: color-mix(in srgb, var(--color-blue) 85%, transparent);
   --card-glow-deep: color-mix(in srgb, var(--color-deep) 100%, transparent);
-  --card-shadow-edge: color-mix(in srgb, var(--color-night) 85%, transparent);
-  --card-shadow-mid: color-mix(in srgb, var(--color-night) 40%, transparent);
   --card-icon-shadow: color-mix(in srgb, var(--color-night) 70%, transparent);
 }
 
