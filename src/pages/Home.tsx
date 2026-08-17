@@ -65,8 +65,8 @@ const Home = () => {
   return (
   <main className="bg-white">
     <SEO
-      title="Financial Services, Loans, Export & Logistics"
-      description="Diversified Indian business group: financial services, NBFC loans, global trade, agro fertilizers, warehousing & security. Offices in Mumbai, Delhi and Surat."
+      title={t("seo.homeTitle")}
+      description={t("seo.homeDescription")}
       keywords="Indexia Group, financial services India, NBFC loans, personal and business loans Mumbai, global trade sugar export, organic fertilizer manufacturers Shamli, warehousing Delhi NCR, armed security services, highway advertising India, athlete support"
       canonicalPath="/"
     />

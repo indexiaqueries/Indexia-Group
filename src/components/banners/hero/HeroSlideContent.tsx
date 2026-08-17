@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import type { HeroPanel } from "../../cards/HeroGalleryThumb";
 import { SLIDE_EASE, TEXT_ZOOM_MS, textShadow } from "./heroMotion";
 
@@ -33,7 +34,9 @@ type HeroSlideContentProps = {
   childAnim: (index: number) => Record<string, unknown>;
 };
 
-const HeroSlideContent = ({ panel: current, isHome, shadowLevel, reduce, childAnim }: HeroSlideContentProps) => (
+const HeroSlideContent = ({ panel: current, isHome, shadowLevel, reduce, childAnim }: HeroSlideContentProps) => {
+  const { t } = useTranslation();
+  return (
   <>
     <style>{`
       @keyframes bnr-pulse {
@@ -134,7 +137,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel, reduce, childAn
             to="/businesses"
             className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
           >
-            {isHome ? "Explore Group Companies" : "Explore More"}
+            {isHome ? t("hero.ctaExploreGroup") : t("hero.ctaExploreMore")}
             <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -143,6 +146,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel, reduce, childAn
       </motion.div>
     </AnimatePresence>
   </>
-);
+  );
+};
 
 export default HeroSlideContent;

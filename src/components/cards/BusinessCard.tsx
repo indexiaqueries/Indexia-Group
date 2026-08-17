@@ -48,7 +48,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
           <span className="business-card-tap hidden items-center gap-1 rounded-full bg-(--color-yellow)/20 px-2 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-(--color-yellow)">
             <MousePointerClick size={12} strokeWidth={2.5} aria-hidden="true" className="tap-hint-pulse" />
-            {t("businessCard.tapToVisit")}
+            {t("businessCard.tapToView")}
           </span>
         </div>
         <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm">

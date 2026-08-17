@@ -66,12 +66,12 @@ const Header = () => {
 
       <NavLink
         to="/"
-        aria-label="Indexia Group home"
+        aria-label={t("common.homeAria")}
         className="group pointer-events-auto absolute inset-s-3 top-1/2 z-10 block -translate-y-1/2 sm:inset-s-5"
       >
         <img
           src={logo}
-          alt="Indexia Group logo"
+          alt={t("common.logoAlt")}
           width={112}
           height={112}
           className="block h-16 object-contain transition-transform duration-300 ease-out group-hover:scale-105 sm:h-20"

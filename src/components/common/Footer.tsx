@@ -96,7 +96,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-center gap-5 text-center md:col-span-2 md:items-start md:text-start lg:col-span-1">
             <div className="flex flex-row items-center gap-3">
-              <img src={logo} alt="Indexia Group logo" width={72} height={72} className="h-16 w-16 object-contain sm:h-20 sm:w-20" />
+              <img src={logo} alt={t("common.logoAlt")} width={72} height={72} className="h-16 w-16 object-contain sm:h-20 sm:w-20" />
               <div>
                 <div className="flex flex-row items-center gap-1 text-2xl font-extrabold">
                   <span className="text-(--color-yellow)">Indexia</span>

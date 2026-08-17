@@ -61,7 +61,11 @@
       "tag": "Indexia Foundation",
       "heading": "Empowering\nAthletes.",
       "sub": "Sports programs that train, mentor, and fund athletes on their journey to peak performance."
-    }
+    },
+    "ctaExploreGroup": "Explore Group Companies",
+    "ctaExploreMore": "Explore More",
+    "prevPanel": "Previous panel",
+    "nextPanel": "Next panel"
   },
   "footer": {
     "tagline": "Diversified Indian Business Group",
@@ -129,7 +133,8 @@
     "enquiries": "Enquiries",
     "location": "Location",
     "workingHours": "Working Hours",
-    "phoneNumbers": "Phone Numbers"
+    "phoneNumbers": "Phone Numbers",
+    "country": "India"
   },
   "form": {
     "eyebrow": "Send Your Enquiry",
@@ -174,11 +179,14 @@
     "locationsTitleAccent": "Locations"
   },
   "businessCard": {
-    "tapToVisit": "Tap to visit",
+    "tapToView": "Tap to view",
     "readMore": "Read more"
   },
   "companyLinkCard": {
-    "visitPage": "Visit page"
+    "visitPage": "Visit page",
+    "visitWebsiteAria": "Visit {{name}} website",
+    "visitPageAria": "Visit {{name}} page",
+    "visualAlt": "{{name}} visual"
   },
   "newsPage": {
     "eyebrow": "News & Knowledge Centre",
@@ -271,5 +279,30 @@
     "ctaTitle": "See something suspicious?",
     "ctaBody": "Report it through our enquiry form or contact the relevant Indexia Group company directly.",
     "metaDescription": "Security tips from Indexia Group — how to spot phishing, loan scams, and payment fraud, plus six key practices to keep your money and identity safe."
+  },
+  "common": {
+    "logoAlt": "Indexia Group logo",
+    "homeAria": "Indexia Group home"
+  },
+  "seo": {
+    "homeTitle": "Financial Services, Loans, Export & Logistics",
+    "homeDescription": "Diversified Indian business group: financial services, NBFC loans, global trade, agro fertilizers, warehousing & security. Offices in Mumbai, Delhi and Surat.",
+    "businessesTitle": "Group Companies — Finance, Agro, Export & Logistics",
+    "businessesDescription": "The eight businesses of Indexia Group: finance, loans, security, sugar trade, organic fertilizers, warehousing, advertising and athlete support.",
+    "contactTitle": "Contact Us — Mumbai, Delhi & Surat Offices",
+    "contactDescription": "Contact Indexia Group for financial services, loans, trade, agro and logistics enquiries. Offices in Mumbai, Delhi, Surat and Ecuador — replies within 24 hours."
+  },
+  "branches": {
+    "corporateOffice": "Corporate Office",
+    "mumbaiOffice": "Mumbai Office",
+    "delhiOffice": "Delhi Office",
+    "suratOffice": "Surat Office",
+    "internationalOffice": "International Office"
+  },
+  "phoneLabel": {
+    "landline": "Landline",
+    "mobile": "Mobile",
+    "mob": "Mob",
+    "tel": "Tel"
   }
 }

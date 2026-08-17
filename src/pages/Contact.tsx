@@ -72,8 +72,8 @@ const Contact = () => {
   return (
     <main className="bg-white">
       <SEO
-        title="Contact Us — Mumbai, Delhi & Surat Offices"
-        description="Contact Indexia Group for financial services, loans, trade, agro and logistics enquiries. Offices in Mumbai, Delhi, Surat and Ecuador — replies within 24 hours."
+        title={t("seo.contactTitle")}
+        description={t("seo.contactDescription")}
         keywords="contact Indexia Group, Indexia Group Mumbai office, financial services contact India, loan enquiry, business enquiry, Indexia Group email, Delhi NCR"
         canonicalPath="/contact"
         jsonLd={contactJsonLd}

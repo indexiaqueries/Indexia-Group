@@ -61,7 +61,11 @@
       "tag": "Indexia Foundation",
       "heading": "Sostenere\ngli atleti.",
       "sub": "Programmi sportivi che allenano, guidano e finanziano gli atleti nel loro percorso verso le massime prestazioni."
-    }
+    },
+    "ctaExploreGroup": "Scopri le aziende del gruppo",
+    "ctaExploreMore": "Scopri di più",
+    "prevPanel": "Pannello precedente",
+    "nextPanel": "Pannello successivo"
   },
   "footer": {
     "tagline": "Gruppo imprenditoriale indiano diversificato",
@@ -129,7 +133,8 @@
     "enquiries": "Richieste",
     "location": "Sede",
     "workingHours": "Orario di Lavoro",
-    "phoneNumbers": "Numeri di Telefono"
+    "phoneNumbers": "Numeri di Telefono",
+    "country": "India"
   },
   "form": {
     "eyebrow": "Invia la Tua Richiesta",
@@ -174,11 +179,14 @@
     "locationsTitleAccent": "Sedi"
   },
   "businessCard": {
-    "tapToVisit": "Tocca per visitare",
+    "tapToView": "Tocca per vedere",
     "readMore": "Leggi di più"
   },
   "companyLinkCard": {
-    "visitPage": "Visita la pagina"
+    "visitPage": "Visita la pagina",
+    "visitWebsiteAria": "Visita il sito di {{name}}",
+    "visitPageAria": "Visita la pagina di {{name}}",
+    "visualAlt": "Immagine di {{name}}"
   },
   "newsPage": {
     "eyebrow": "Notizie e Centro di Conoscenza",
@@ -905,5 +913,30 @@
         }
       }
     }
+  },
+  "common": {
+    "logoAlt": "Logo Indexia Group",
+    "homeAria": "Indexia Group — pagina iniziale"
+  },
+  "seo": {
+    "homeTitle": "Servizi finanziari, prestiti, export e logistica",
+    "homeDescription": "Gruppo indiano diversificato: servizi finanziari, prestiti NBFC, commercio globale, fertilizzanti agro, magazzinaggio e sicurezza. Uffici a Mumbai, Delhi e Surat.",
+    "businessesTitle": "Aziende del gruppo — Finanza, agro, export e logistica",
+    "businessesDescription": "Le otto aziende di Indexia Group: finanza, prestiti, sicurezza, commercio di zucchero, fertilizzanti organici, magazzinaggio, pubblicità e supporto agli atleti.",
+    "contactTitle": "Contatti — Uffici di Mumbai, Delhi e Surat",
+    "contactDescription": "Contatta Indexia Group per richieste su servizi finanziari, prestiti, commercio, agro e logistica. Uffici a Mumbai, Delhi, Surat ed Ecuador — risposta entro 24 ore."
+  },
+  "branches": {
+    "corporateOffice": "Sede Centrale",
+    "mumbaiOffice": "Ufficio di Mumbai",
+    "delhiOffice": "Ufficio di Delhi",
+    "suratOffice": "Ufficio di Surat",
+    "internationalOffice": "Ufficio Internazionale"
+  },
+  "phoneLabel": {
+    "landline": "Fisso",
+    "mobile": "Cellulare",
+    "mob": "Cell.",
+    "tel": "Tel."
   }
 }

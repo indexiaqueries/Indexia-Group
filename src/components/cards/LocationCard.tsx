@@ -1,10 +1,12 @@
 import { MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type LocationCardItem = {
+  key: string;
   name: string;
   address: string;
-  phones?: { label: string; number: string; href: string }[];
+  phones?: { label: string; labelKey?: string; number: string; href: string }[];
 };
 
 type LocationCardProps = {
@@ -12,7 +14,10 @@ type LocationCardProps = {
   delay?: number;
 };
 
-const LocationCard = ({ location, delay = 0 }: LocationCardProps) => (
+const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
+  const { t } = useTranslation();
+
+  return (
   <motion.article
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -24,23 +29,25 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => (
       <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-blue) text-white shadow-lg">
         <MapPin size={21} />
       </span>
-      <h3 className="pt-2 text-xl font-extrabold text-slate-900">{location.name}</h3>
+      <h3 className="pt-2 text-xl font-extrabold text-(--color-ink)">
+        {t(`branches.${location.key}`, { defaultValue: location.name })}
+      </h3>
     </div>
 
     <div className="mt-6 flex-1">
-      <p className="whitespace-pre-line text-sm leading-7 text-slate-600">{location.address}</p>
+      <p className="whitespace-pre-line text-sm leading-7 text-(--color-muted)">{location.address}</p>
       {!!location.phones?.length && (
         <div className="mt-5 space-y-2">
           {location.phones.map((phone) => (
             <a
               key={`${location.name}-${phone.label}-${phone.number}`}
               href={phone.href}
-              className="flex items-center gap-3 text-sm font-semibold text-slate-700 hover:text-(--color-blue)"
+              className="flex items-center gap-3 text-sm font-semibold text-(--color-ink-soft) hover:text-(--color-blue)"
             >
               <Phone size={16} className="shrink-0 text-(--color-teal)" />
               <span>
                 <span className="me-2 text-xs font-bold uppercase tracking-wider text-(--color-gray)">
-                  {phone.label}:
+                  {phone.labelKey ? t(`phoneLabel.${phone.labelKey}`, { defaultValue: phone.label }) : phone.label}:
                 </span>
                 {phone.number}
               </span>
@@ -50,6 +57,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => (
       )}
     </div>
   </motion.article>
-);
+  );
+};
 
 export default LocationCard;

@@ -39,7 +39,9 @@ const InfoTile = () => {
   );
 };
 
-const PhoneTile = ({ label, number, href }: (typeof phoneNumbers)[number]) => (
+const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[number]) => {
+  const { t } = useTranslation();
+  return (
   <a href={href} className="group flex items-center gap-4 py-3.5 first:pt-1 last:pb-1">
     <span
       className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
@@ -49,14 +51,15 @@ const PhoneTile = ({ label, number, href }: (typeof phoneNumbers)[number]) => (
     </span>
     <span>
       <span className={tileLabelClass} style={{ color: accent.gray }}>
-        {label}
+        {labelKey ? t(`phoneLabel.${labelKey}`, { defaultValue: label }) : label}
       </span>
       <span className="mt-1 block text-base font-bold text-slate-800 group-hover:text-(--color-blue)" style={monoFont}>
         {number}
       </span>
     </span>
   </a>
-);
+  );
+};
 
 const LocationHoursTile = () => {
   const { t } = useTranslation();
@@ -73,7 +76,7 @@ const LocationHoursTile = () => {
       <span className={tileLabelClass} style={{ color: accent.gray }}>
         {t("contactInfo.location")}
       </span>
-      <span className="mt-1 block text-sm font-semibold text-slate-800">India</span>
+      <span className="mt-1 block text-sm font-semibold text-slate-800">{t("contactInfo.country")}</span>
 
       <div className="mt-4 flex items-center gap-2 border-t border-slate-100 pt-4">
         <Clock3 size={16} style={{ color: accent.green }} />

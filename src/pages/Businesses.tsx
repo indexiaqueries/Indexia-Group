@@ -43,8 +43,8 @@ const About = () => {
   return (
   <>
     <SEO
-      title="Group Companies — Finance, Agro, Export & Logistics"
-      description="The eight businesses of Indexia Group: finance, loans, security, sugar trade, organic fertilizers, warehousing, advertising and athlete support."
+      title={t("seo.businessesTitle")}
+      description={t("seo.businessesDescription")}
       keywords="Indexia Group businesses, Indexia Finance, Indexia Finserve loans, Indexia Securities, sugar export South America, organic fertilizer Shamli UP, warehousing Delhi NCR, highway advertising, Olympic athlete support"
       canonicalPath="/businesses"
       jsonLd={businessesJsonLd}
