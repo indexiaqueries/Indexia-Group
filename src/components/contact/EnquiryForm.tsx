@@ -1,6 +1,5 @@
 import { useState } from "react";
-import type { FormEvent } from "react";
-import { motion } from "framer-motion";
+import type { CSSProperties, FormEvent } from "react";
 import { Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -12,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { initialContactForm } from "../../data/contact";
 import type { ContactFormData } from "../../data/contact";
 import { accent } from "../../lib/theme";
-import { fadeUp } from "../../lib/motion";
+import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 import Field from "./enquiry/Field";
 import {
@@ -30,10 +29,11 @@ import { validateField } from "./enquiry/validation";
 
 type EnquiryFormProps = {
   initialCompany?: string;
+  initialCompanyLabel?: string;
   companyLocked?: boolean;
 };
 
-const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps) => {
+const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = false }: EnquiryFormProps) => {
   const { t } = useTranslation();
 
   const [form, setForm] = useState<ContactFormData>(() => ({
@@ -107,11 +107,14 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
     }
   };
 
+  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
+
   return (
-    <motion.div
+    <div
+      ref={ref}
       id="enquiry-form"
-      {...fadeUp(0.1)}
-      className="relative flex flex-1 flex-col overflow-hidden rounded-4xl border border-white bg-white px-6 pt-6 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4"
+      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-4xl border border-white bg-white px-6 pt-6 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
+      style={{ "--reveal-delay": "0.1s" } as CSSProperties}
     >
       <div
         className="absolute right-0 top-0 h-40 w-40 rounded-full blur-3xl"
@@ -203,7 +206,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
               className={`${selectClass} w-full disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-600`}
             >
               {companyLocked ? (
-                <option value={initialCompany}>{initialCompany}</option>
+                <option value={initialCompany}>{initialCompanyLabel ?? initialCompany}</option>
               ) : (
                 <>
                   <option value="" disabled>
@@ -211,7 +214,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
                   </option>
                   {subjectOptions.map((option) => (
                     <option key={option.value} value={option.value}>
-                      {option.labelKey ? t(option.labelKey) : option.value}
+                      {option.labelKey ? t(option.labelKey, { defaultValue: option.value }) : option.value}
                     </option>
                   ))}
                 </>
@@ -270,7 +273,7 @@ const EnquiryForm = ({ initialCompany, companyLocked = false }: EnquiryFormProps
           )}
         </form>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

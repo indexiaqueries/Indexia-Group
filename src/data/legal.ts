@@ -99,89 +99,54 @@ export const legalDocuments: Record<LegalDocumentId, LegalDocument> = {
   termsOfUse: {
     id: "termsOfUse",
     lastUpdated: "August 14, 2026",
-    intro: [
-      "These Terms of Use (\"Terms of Use\") set out the rules for accessing and browsing the websites operated by Indexia Group and its group companies (together, \"Indexia Group\", \"we\", \"us\" or \"our\").",
-      "Please read these Terms of Use carefully before using our websites. By accessing or browsing our websites, you agree to be bound by them. If you do not agree, please do not use our websites.",
-    ],
+    intro: [],
     sections: [
       {
-        title: "Acceptance of These Terms of Use",
+        title: "Cancellation & Refund Policy",
         paragraphs: [
-          "By accessing or browsing our websites, you confirm that you have read, understood, and agree to these Terms of Use. You must be at least 18 years of age to use our websites.",
-          "These Terms of Use are separate from, and supplement, any specific terms & conditions that govern the services offered by individual Indexia Group companies.",
+          "Merchant businesses' return and cancellation policy must be made available to customers on the website, and they have to agree to its terms during the payment process. Customers have to click on an \"Accept\" or \"Agree\" for return and cancellation button before submitting their payment information. Once the payment has been made, the policy can be sent to customers with the payment confirmation email.",
         ],
       },
       {
-        title: "Access to the Website",
+        title: "Cancellation Policy",
         paragraphs: [
-          "We grant you a limited, revocable, non-exclusive right to access and browse our websites for personal, non-commercial purposes. We may restrict, suspend, or terminate access to all or part of our websites at any time, with or without notice.",
-          "You are responsible for ensuring that your device and connection meet the requirements needed to access our websites, and for any costs you incur in doing so.",
+          "Indexia Group believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy:",
+          "Cancellations will be considered only if the request is made within 72 hours of the payment. However, the cancellation request will not be entertained if the payment details have been communicated to the vendors/merchants and they have initiated the process of payment.",
+          "There is no cancellation of payment made under the Same Day service category.",
+          "No cancellations are entertained for payments that Indexia Group has obtained on special occasions like Pongal, Diwali, and Valentine's Day, etc. These are limited occasion offers and therefore cancellations are not possible.",
+          "Indexia Group does not accept cancellation requests for perishable services. Even a refund cannot be made if the customer establishes that the quality of service is not good.",
+          "In case the services and related information are not related to you, please report the same to our support team. The request will, however, be entertained once the merchant has checked and determined the same at his own end. This should be reported within 21 days of receipt of the services.",
+          "In case you feel that the service offered is not as shown on the site or as per your expectations, you must bring it to the notice of our support service within 24 hours of receiving the service. The Support Service Team, after looking into your complaint, will take an appropriate decision.",
+          "In case of complaints regarding services that come with a specified time frame, please refer to us at contactus@indexiagroup.com.",
         ],
       },
       {
-        title: "Acceptable Use",
+        title: "Refund Policy",
         paragraphs: [
-          "You agree not to misuse our websites. This includes, without limitation: attempting to gain unauthorised access to our systems, introducing viruses or other malicious code, interfering with the operation of our websites, scraping or harvesting content at scale, and using our websites to commit or facilitate unlawful activity.",
-          "You must not impersonate any person or entity, or misrepresent your affiliation with us or any of our group companies.",
+          "When you enjoy our services, your payment is not covered by a money-back guarantee. If you are, for any reason, not entirely happy with our service, we will take this issue very seriously and will try to resolve it as soon as possible. To request a refund, simply contact us with your payment details within ninety (90) days of your payment. Please include your payment details and order number (sent to you via email after payment) and optionally tell us why you're requesting a refund — we take customer feedback very seriously and use it to constantly improve our products and quality of service. Refunds are not provided for services delivered in full, such as installation services and knowledge base hosting services. Refunds are processed within a 21-day period.",
         ],
       },
       {
-        title: "User Submissions",
+        title: "BO Clause",
         paragraphs: [
-          "When you submit an enquiry, feedback, or other content through our websites, you are responsible for the accuracy and lawfulness of that content. You grant us a non-exclusive, royalty-free licence to use, store, and process your submission solely for the purpose of responding to you and operating our websites.",
-          "Do not submit confidential or sensitive information that you are not authorised to share.",
+          "We, as a service provider, shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorisation for any transaction, on account of the cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time.",
         ],
       },
       {
-        title: "Intellectual Property",
+        title: "Disclaimer Policy",
         paragraphs: [
-          "All content on our websites — including text, graphics, logos, images, and software — is the property of Indexia Group or its licensors and is protected by applicable intellectual property laws.",
-          "You may view and print content for personal, non-commercial use only. Any other use, including reproduction or distribution, requires our prior written consent.",
+          "A disclaimer may specify mutually-agreed and privately-arranged terms and conditions as part of a contract; or may specify warnings or expectations to the general public (or some other class of persons) in order to fulfil a duty of care owed to prevent unreasonable risk of harm or injury. Some disclaimers are intended to limit exposure to damages after harm or injury has already been suffered. Additionally, some kinds of disclaimers may represent a voluntary waiver of a right or obligation that may be owed to the disclaiming party.",
+          "Disclaimers vary in terms of their uniformity. Some may vary depending on the specific context and parties involved, while other types of disclaimers may strictly adhere to a uniform and established set of formalities that are rarely or never modified, except under official authority.",
+          "The website disclaimer covers the following: no warranties, limitations of liability, exceptions, reasonableness, other parties, and unenforceable provisions.",
         ],
       },
       {
-        title: "Third-Party Links",
+        title: "This Website Disclaimer",
         paragraphs: [
-          "Our websites may link to external websites operated by our group companies or other third parties. We are not responsible for the content, availability, or practices of those websites. Following such links is at your own risk and is subject to the terms and policies of the linked website.",
-        ],
-      },
-      {
-        title: "Disclaimer of Warranties",
-        paragraphs: [
-          "Our websites and their content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.",
-          "We do not warrant that our websites will be uninterrupted, secure, error-free, or free of viruses or other harmful components.",
-        ],
-      },
-      {
-        title: "Limitation of Liability",
-        paragraphs: [
-          "To the maximum extent permitted by law, Indexia Group and its group companies shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill, arising out of or in connection with your use of, or inability to use, our websites.",
-          "Nothing in these Terms of Use limits or excludes liability that cannot be limited or excluded under applicable law.",
-        ],
-      },
-      {
-        title: "Termination",
-        paragraphs: [
-          "We may suspend or terminate your access to our websites if you breach these Terms of Use, or for any other reason at our discretion.",
-          "On termination, the provisions of these Terms of Use that by their nature should survive — including disclaimers, limitations of liability, and governing law — will continue to apply.",
-        ],
-      },
-      {
-        title: "Governing Law and Jurisdiction",
-        paragraphs: [
-          "These Terms of Use are governed by the laws of India. Any dispute arising out of or in connection with these Terms of Use shall be subject to the exclusive jurisdiction of the courts of Mumbai, India.",
-        ],
-      },
-      {
-        title: "Changes to These Terms of Use",
-        paragraphs: [
-          "We may revise these Terms of Use at any time by updating this page. Your continued use of our websites after changes are posted constitutes acceptance of the revised Terms of Use.",
-        ],
-      },
-      {
-        title: "Contact Us",
-        paragraphs: [
-          "If you have any questions about these Terms of Use, please contact us at contactus@indexiagroup.com or by phone at +91 011 4629 1155.",
+          "The information contained in this website is for general information purposes only. The information is provided by Indexia Group and, while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.",
+          "In no event will we be liable for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.",
+          "Through this website you are able to link to other websites which are not under the control of Indexia Group. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.",
+          "Every effort is made to keep the website up and running smoothly. However, Indexia Group takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.",
         ],
       },
     ],
@@ -190,86 +155,69 @@ export const legalDocuments: Record<LegalDocumentId, LegalDocument> = {
     id: "terms",
     lastUpdated: "August 14, 2026",
     intro: [
-      "These Terms & Conditions (\"Terms\") govern your access to and use of the websites operated by Indexia Group and its group companies (together, \"Indexia Group\", \"we\", \"us\" or \"our\"), and the services described on them.",
-      "Please read these Terms carefully before using our websites. By accessing or using our websites, you agree to be bound by these Terms. If you do not agree, please do not use our websites.",
+      "The Website Owner, including subsidiaries and affiliates — Indexia Group (or \"we\", \"us\" or \"our\") — provides the information contained on this website, or on any of the pages comprising this website, to visitors and applicants (cumulatively referred to as \"you\" or \"your\") subject to the terms and conditions set out in these website terms and conditions, the privacy policy, and any other relevant terms and conditions, policies and notices which may be applicable to a specific section or module of the website.",
+      "Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Indexia Group's relationship with you in relation to this website.",
+      "The term \"Indexia Group\" or \"we\" or \"us\" refers to the owner of the website, whose registered office is at 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. The term \"you\" refers to the user or viewer of our website.",
     ],
     sections: [
       {
-        title: "Acceptance of These Terms",
+        title: "Content and Changes",
         paragraphs: [
-          "By accessing our websites, submitting an enquiry, or otherwise using our services, you confirm that you have read, understood, and agree to these Terms. You must be at least 18 years of age to use our websites.",
+          "The content of the pages of this website is for your general information and use only. It is subject to change without notice.",
         ],
       },
       {
-        title: "Use of the Website",
+        title: "No Warranty",
         paragraphs: [
-          "You agree to use our websites only for lawful purposes and in a way that does not infringe the rights of, or restrict or inhibit the use of our websites by, any third party.",
-          "You must not misuse our websites by introducing malicious code, attempting unauthorised access, scraping content at scale, or interfering with their normal operation.",
+          "Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors, and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.",
+        ],
+      },
+      {
+        title: "Use at Your Own Risk",
+        paragraphs: [
+          "Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.",
         ],
       },
       {
         title: "Intellectual Property",
         paragraphs: [
-          "All content on our websites — including text, graphics, logos, images, and software — is the property of Indexia Group or its licensors and is protected by applicable intellectual property laws.",
-          "You may view and print content for personal, non-commercial use only. Any other use, including reproduction or distribution, requires our prior written consent.",
+          "This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.",
         ],
       },
       {
-        title: "Services and Information",
+        title: "Trade Marks",
         paragraphs: [
-          "Information on our websites is provided for general information and does not constitute financial, legal, or investment advice. Applications for loans, credit, or other financial products are subject to eligibility checks and approval by the relevant Indexia Group company.",
-          "We may change, suspend, or withdraw any service described on our websites at any time without notice.",
+          "All trade marks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.",
         ],
       },
       {
-        title: "Enquiries and Communications",
+        title: "Unauthorised Use",
         paragraphs: [
-          "When you submit an enquiry, you agree to provide accurate and complete information and to keep it up to date. By submitting an enquiry, you consent to being contacted by the relevant Indexia Group company by phone, email, or other means in connection with your enquiry.",
-          "You are responsible for the accuracy of the information you provide, and for any consequences arising from information that is false or incomplete.",
+          "Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence.",
         ],
       },
       {
-        title: "Third-Party Websites",
+        title: "Third-Party Links",
         paragraphs: [
-          "Our websites may link to external websites operated by our group companies or other third parties. We are not responsible for the content, availability, or practices of those websites, and your use of them is subject to their own terms and policies.",
+          "From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).",
         ],
       },
       {
-        title: "Disclaimers",
+        title: "Linking to This Website",
         paragraphs: [
-          "Our websites and their content are provided on an \"as is\" and \"as available\" basis, without warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.",
-          "We do not warrant that our websites will be uninterrupted, secure, or error-free.",
+          "You may not create a link to this website from another website or document without Indexia Group's prior written consent.",
         ],
       },
       {
-        title: "Limitation of Liability",
+        title: "Governing Law",
         paragraphs: [
-          "To the maximum extent permitted by law, Indexia Group shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or data, arising out of or in connection with your use of our websites.",
-          "Nothing in these Terms limits or excludes liability that cannot be limited or excluded under applicable law.",
+          "Your use of this website and any dispute arising out of such use of the website is subject to the laws of India or other regulatory authority.",
         ],
       },
       {
-        title: "Indemnification",
+        title: "Card Transaction Liability",
         paragraphs: [
-          "You agree to indemnify and hold harmless Indexia Group and its group companies, officers, and employees from and against any claims, losses, liabilities, and expenses arising out of your breach of these Terms or your misuse of our websites.",
-        ],
-      },
-      {
-        title: "Governing Law and Jurisdiction",
-        paragraphs: [
-          "These Terms are governed by the laws of India. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Mumbai, India.",
-        ],
-      },
-      {
-        title: "Changes to These Terms",
-        paragraphs: [
-          "We may revise these Terms at any time by updating this page. Your continued use of our websites after changes are posted constitutes acceptance of the revised Terms.",
-        ],
-      },
-      {
-        title: "Contact Us",
-        paragraphs: [
-          "If you have any questions about these Terms, please contact us at contactus@indexiagroup.com or by phone at +91 011 4629 1155.",
+          "\"We, as a service provider, shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any transaction, on account of the cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time\".",
         ],
       },
     ],

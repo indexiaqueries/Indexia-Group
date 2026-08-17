@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import type { CSSProperties } from "react";
 import { NavLink } from "react-router-dom";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { EllipsisVertical, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useReducedMotion } from "../../hooks/useReducedMotion";
 import logo from "../../assets/IndexiaGroup_Logo.webp";
 import CompaniesMenu from "./header/CompaniesMenu";
 import LanguageMenu from "./header/LanguageMenu";
@@ -120,31 +121,15 @@ const Header = () => {
           aria-expanded={menuOpen}
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-200 hover:scale-105 hover:bg-white/20 min-[900px]:hidden"
         >
-          <AnimatePresence mode="wait" initial={false}>
-            {menuOpen ? (
-              <motion.span
-                key="close"
-                initial={prefersReducedMotion ? false : { rotate: -90, opacity: 0 }}
-                animate={{ rotate: 0, opacity: 1 }}
-                exit={prefersReducedMotion ? undefined : { rotate: 90, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="flex"
-              >
-                <X size={20} strokeWidth={2.5} className="text-(--color-yellow)" />
-              </motion.span>
-            ) : (
-              <motion.span
-                key="menu"
-                initial={prefersReducedMotion ? false : { rotate: 90, opacity: 0 }}
-                animate={{ rotate: 0, opacity: 1 }}
-                exit={prefersReducedMotion ? undefined : { rotate: -90, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="flex"
-              >
-                <EllipsisVertical size={20} strokeWidth={2.5} className="text-(--color-yellow)" />
-              </motion.span>
-            )}
-          </AnimatePresence>
+          {menuOpen ? (
+            <span key="close" className="icon-in flex" style={{ "--icon-from": "-90deg" } as CSSProperties}>
+              <X size={20} strokeWidth={2.5} className="text-(--color-yellow)" />
+            </span>
+          ) : (
+            <span key="menu" className="icon-in flex" style={{ "--icon-from": "90deg" } as CSSProperties}>
+              <EllipsisVertical size={20} strokeWidth={2.5} className="text-(--color-yellow)" />
+            </span>
+          )}
         </button>
 
         <MobileMenu

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Landmark } from "lucide-react";
 
 import SealStamp from "../common/SealStamp";
@@ -21,12 +20,8 @@ const PassbookCard = () => {
         style={{ background: `linear-gradient(135deg, ${palette.teal}30, ${palette.gold}20)` }}
       />
 
-      <motion.div
-        initial={{ opacity: 0, rotate: -8, y: 30 }}
-        animate={{ opacity: 1, rotate: -3, y: 0 }}
-        whileHover={{ rotate: 0 }}
-        transition={{ duration: 0.8, delay: 0.2, type: "spring", bounce: 0.25 }}
-        className="relative rounded-3xl p-6 shadow-2xl ring-1 ring-black/5 sm:p-7"
+      <div
+        className="passbook-in relative rotate-[-3deg] rounded-3xl p-6 shadow-2xl ring-1 ring-black/5 transition-transform duration-300 ease-out hover:rotate-0 sm:p-7"
         style={{ backgroundColor: palette.paper }}
       >
         <div className="absolute bottom-8 start-0 top-8 flex -translate-x-1/2 flex-col justify-between rtl:translate-x-1/2">
@@ -75,7 +70,7 @@ const PassbookCard = () => {
         <div className="seal-stamp-in absolute -bottom-5 -end-5" aria-hidden="true">
           <SealStamp size={88} color={colors.blue} />
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

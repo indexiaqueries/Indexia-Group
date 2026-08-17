@@ -3,6 +3,7 @@ import SEO from "../components/common/SEO";
 import Reveal from "../components/common/Reveal";
 import { colors } from "../lib/theme";
 import NewsHero from "./news/NewsHero";
+import NewsVideo from "./news/NewsVideo";
 import FeaturedArticle from "./news/FeaturedArticle";
 import NewsGrid from "./news/NewsGrid";
 import InsightsSection from "./news/InsightsSection";
@@ -18,12 +19,13 @@ const NewsPage = () => {
       <SEO
         title={t("newsPage.title")}
         description={t("newsPage.metaDescription")}
-        keywords="Indexia Group news, Indexia Finance news, Indexia Finserve loans, Indexia Agro Bio Fertilizers, Indexia Warehouse, Indexia Foundation, highway advertising, FDI India"
+        keywords="banking news India, digital payments, IMPS, SME lending, UIDAI Aadhaar, SEBI, Yes Bank, SBI, Indexia Group news and knowledge"
         canonicalPath="/news"
         jsonLd={newsJsonLd}
       />
 
       <NewsHero />
+      <NewsVideo />
 
       <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">

@@ -1,7 +1,12 @@
-import i18n, { type BackendModule } from "i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
+import es from "./locales/es.json";
+import fr from "./locales/fr.json";
+import de from "./locales/de.json";
+import it from "./locales/it.json";
+import pt from "./locales/pt.json";
 import { RTL_LANGS, SUPPORTED_LANGS } from "./languages";
 
 export { SUPPORTED_LANGS } from "./languages";
@@ -30,44 +35,17 @@ const initialLang = (() => {
   return "en";
 })();
 
-const loadLocale = (lng: string) => {
-  switch (lng) {
-    case "es":
-      return import("./locales/es.json");
-    case "fr":
-      return import("./locales/fr.json");
-    case "de":
-      return import("./locales/de.json");
-    case "it":
-      return import("./locales/it.json");
-    case "pt":
-      return import("./locales/pt.json");
-    default:
-      return Promise.resolve({ default: en });
-  }
+const resources = {
+  en: { translation: en },
+  es: { translation: es },
+  fr: { translation: fr },
+  de: { translation: de },
+  it: { translation: it },
+  pt: { translation: pt },
 };
 
-export const preloadLocale = (lng: string) => loadLocale(lng).then((m) => m.default);
-
-const localeBackend: BackendModule = {
-  type: "backend",
-  init() {},
-  read(language, _namespace, callback) {
-    loadLocale(language)
-      .then((module) => callback(null, module.default))
-      .catch((err: unknown) => callback(err as Error, null));
-  },
-  create() {},
-};
-
-i18n.use(initReactI18next).use(localeBackend);
-
-export const i18nReady = i18n.init({
-  resources: {
-    en: { translation: en },
-  },
-
-  partialBundledLanguages: true,
+export const i18nReady = i18n.use(initReactI18next).init({
+  resources,
   lng: initialLang,
   fallbackLng: "en",
   supportedLngs: [...SUPPORTED_LANGS],

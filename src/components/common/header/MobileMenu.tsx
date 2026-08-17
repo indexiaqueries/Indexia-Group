@@ -34,8 +34,8 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
         {t("header.menu.groupCompanies")}
       </NavLink>
 
-      <div className="mx-3 my-2 space-y-1 rounded-xl border border-white/10 bg-white/5 p-2">
-        <p className="px-2 pb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
+      <div className="mx-3 my-2 space-y-0.5 rounded-xl border border-white/10 bg-white/5 p-2">
+        <p className="px-2 pb-0.5 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
           {t("header.menu.companies")}
         </p>
         {companies.map((company) => (

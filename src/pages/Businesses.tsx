@@ -13,7 +13,7 @@ const businessesJsonLd = {
     {
       "@type": "ItemList",
       name: "Indexia Group Businesses",
-      description: "Eight businesses under the Indexia Group across finance, loans, security, trade, agriculture, logistics, advertising and athlete support.",
+      description: "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, logistics, advertising and athlete support.",
       itemListElement: companies.map((company, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -37,7 +37,7 @@ const businessesJsonLd = {
   ],
 };
 
-const About = () => {
+const Businesses = () => {
   const { t } = useTranslation();
 
   return (
@@ -53,7 +53,7 @@ const About = () => {
     <BusinessesHero />
 
     <RuledSection>
-        <Reveal className="mx-auto mb-10 max-w-[720px] text-center sm:mb-14">
+        <Reveal className="mx-auto mb-10 max-w-180 text-center sm:mb-14">
           <Eyebrow className="mb-3">{t("businesses.eyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("businesses.titleStart")}
@@ -76,4 +76,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Businesses;

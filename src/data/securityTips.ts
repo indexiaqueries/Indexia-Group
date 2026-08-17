@@ -1,79 +1,52 @@
-
-
-type SecurityCategory = {
+type SecurityTip = {
   key: string;
   title: string;
   body: string;
 };
 
-export const securityCategories: SecurityCategory[] = [
+// What Indexia does to keep customers safe online.
+export const securityFeatures: SecurityTip[] = [
   {
-    key: "phishing",
-    title: "Phishing & Fake Messages",
-    body: "Banks and lenders never ask for OTPs or passwords by message. Treat unexpected links and 'urgent' requests with suspicion.",
+    key: "tech",
+    title: "Strong Technologies",
+    body: "Our banking systems are managed by skilled experts and protected by the best security technology available. Manage your money online with confidence and security.",
   },
   {
-    key: "loan-scams",
-    title: "Loan & Advance-Fee Scams",
-    body: "A legitimate lender never asks for an upfront fee to release a loan. Verify the company and its credentials before paying anything.",
-  },
-  {
-    key: "card",
-    title: "Card & Payment Safety",
-    body: "Share card details only on secure checkout pages. Watch for skimming devices at ATMs and always cover your PIN.",
-  },
-  {
-    key: "identity",
-    title: "Identity Protection",
-    body: "Guard your PAN, Aadhaar, and bank documents. Report lost IDs immediately and never upload them to unofficial sites.",
-  },
-  {
-    key: "social-engineering",
-    title: "Social Engineering",
-    body: "Fraudsters pose as executives, agents, or officials to extract money or data. Verify identity through a known, official channel.",
-  },
-  {
-    key: "physical",
-    title: "Physical & Site Security",
-    body: "Protect premises, inventory, and people with controlled access, CCTV, and trained security personnel — the standard our own businesses follow.",
+    key: "monitor",
+    title: "Secure Systems",
+    body: "Indexia Finance constantly monitors all threats and online activities round the clock to detect fraud early and take preventive measures to ensure your accounts are safe.",
   },
 ];
 
-type SecurityPractice = {
-  key: string;
-  title: string;
-  body: string;
-};
+// Simple things you can do on your everyday devices.
+export const securityPractices: SecurityTip[] = [
+  {
+    key: "devices",
+    title: "Protect Your Devices",
+    body: "Ensure all your computers, mobile phones, portable devices, operating systems and Internet browsers — especially those used for online banking — are regularly updated with the latest software.",
+  },
+  {
+    key: "connections",
+    title: "Secure Your Connections",
+    body: "A well-designed and managed network keeps traffic and transactions free from intrusion.",
+  },
+  {
+    key: "data",
+    title: "Secure Your Data",
+    body: "Operating systems and web browsers do a good job of keeping your information secure and private, but you may want to consider adding additional layers of security to your computer.",
+  },
+];
 
-export const securityPractices: SecurityPractice[] = [
+// What to do if something goes wrong.
+export const securityContacts: SecurityTip[] = [
   {
-    key: "otp",
-    title: "Never share your OTP",
-    body: "One-time passwords exist to protect you — no bank, lender, or employee will ever ask for yours.",
-  },
-  {
-    key: "verify",
-    title: "Verify before you pay",
-    body: "Confirm the company, its licence, and the receiving account before making any payment or advance.",
-  },
-  {
-    key: "passwords",
-    title: "Use strong, unique passwords",
-    body: "A different password for every account, plus two-factor authentication wherever it is offered.",
-  },
-  {
-    key: "links",
-    title: "Check links and senders",
-    body: "Hover before you click. Official communications come from official domains — never lookalikes.",
-  },
-  {
-    key: "updates",
-    title: "Keep devices updated",
-    body: "Install security updates and use reputable antivirus on every device that touches your money or data.",
+    key: "control",
+    title: "Control Your Online Security",
+    body: "We will never request your account information or password over the phone, via email or SMS. Contact us if you have accidentally disclosed your account details or been subject to fraud.",
   },
   {
     key: "report",
-    title: "Report suspicious activity",
-    body: "If something feels wrong, stop and contact the official helpline — never the number in the suspicious message.",
+    title: "Contact Us",
+    body: "If you suspect any unauthorized access or transactions, call our Customer Service Hotline to immediately terminate your online banking access and any other access channels to your accounts, such as ATM cards.",
   },
 ];

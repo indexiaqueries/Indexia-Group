@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
 import HeroBackdrop from "../../components/banners/HeroBackdrop";
@@ -22,12 +21,13 @@ const CareersHero = () => {
         <span className="text-(--color-yellow)">{t("careersPage.titleAccent")}</span>
       </h1>
       <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">{t("careersPage.subtitle")}</p>
-      <Link
-        to="#open-roles"
+      <button
+        type="button"
+        onClick={() => document.getElementById("open-roles")?.scrollIntoView({ behavior: "smooth" })}
         className="mt-8 inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-8 py-3.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
       >
         {t("careersPage.ctaButton")} ↓
-      </Link>
+      </button>
     </HeroBackdrop>
   );
 };

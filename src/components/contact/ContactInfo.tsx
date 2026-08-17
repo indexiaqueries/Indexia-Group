@@ -1,23 +1,23 @@
-import { motion } from "framer-motion";
+import type { CSSProperties } from "react";
 import { Clock3, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { phoneNumbers } from "../../data/contact";
 import { accent, cardBaseClass, monoFont } from "../../lib/theme";
-import { fadeUp } from "../../lib/motion";
+import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 
 const tileLabelClass = "block text-[10px] font-bold uppercase tracking-[0.15em]";
 
 const InfoTile = () => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView<HTMLAnchorElement>({ once: true, amount: 0.2 });
 
   return (
-  <motion.a
+  <a
+    ref={ref}
     href="mailto:contactus@indexiagroup.com"
-    {...fadeUp(0)}
-    whileHover={{ x: 6 }}
-    className={`group flex items-center gap-4 ${cardBaseClass} p-4`}
+    className={`group reveal flex items-center gap-4 ${cardBaseClass} p-4 transition-transform duration-300 hover:translate-x-1.5${inView ? " is-in-view" : ""}`}
   >
     <span
       className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
@@ -35,7 +35,7 @@ const InfoTile = () => {
         contactus@indexiagroup.com
       </span>
     </span>
-  </motion.a>
+  </a>
   );
 };
 
@@ -63,9 +63,14 @@ const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[numb
 
 const LocationHoursTile = () => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
 
   return (
-  <motion.div {...fadeUp(0.1)} className={`flex items-start gap-4 ${cardBaseClass} p-5`}>
+  <div
+    ref={ref}
+    className={`reveal flex items-start gap-4 ${cardBaseClass} p-5${inView ? " is-in-view" : ""}`}
+    style={{ "--reveal-delay": "0.1s" } as CSSProperties}
+  >
     <span
       className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
       style={{ backgroundColor: accent.blue, boxShadow: `0 6px 18px rgba(6,106,156,.22)` }}
@@ -86,15 +91,16 @@ const LocationHoursTile = () => {
       </div>
       <span className="mt-1 block text-sm font-semibold text-slate-800">{t("footer.hours")}</span>
     </div>
-  </motion.div>
+  </div>
   );
 };
 
 const ContactInfo = () => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
 
   return (
-  <motion.div {...fadeUp()} className="flex h-full flex-col">
+  <div ref={ref} className={`reveal flex h-full flex-col${inView ? " is-in-view" : ""}`}>
     <Eyebrow size="md" color={accent.green}>
       {t("contactInfo.eyebrow")}
     </Eyebrow>
@@ -121,7 +127,7 @@ const ContactInfo = () => {
         ))}
       </div>
     </div>
-  </motion.div>
+  </div>
   );
 };
 

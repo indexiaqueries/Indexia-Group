@@ -33,7 +33,8 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
               {featured.category}
             </span>
             <p className="font-ledger mt-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white/55">
-              {featured.date} · {featured.company}
+              {featured.date && <>{featured.date} · </>}
+              {featured.company}
             </p>
           </div>
           <h2 className="font-display relative mt-6 text-2xl font-bold leading-snug text-white sm:text-3xl">
@@ -41,12 +42,14 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
           </h2>
           <p className="relative mt-4 max-w-xl text-sm leading-7 text-white/80">{featured.excerpt}</p>
           <div className="relative mt-6 flex flex-wrap items-center gap-4">
-            <Link
-              to={`/businesses/${companies.find((c) => c.name === featured.company)?.slug ?? ""}`}
-              className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-2.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
-            >
-              {t("newsPage.readMore")}
-            </Link>
+            {companies.find((c) => c.name === featured.company) && (
+              <Link
+                to={`/businesses/${companies.find((c) => c.name === featured.company)?.slug ?? ""}`}
+                className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-2.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+              >
+                {t("newsPage.readMore")}
+              </Link>
+            )}
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-2.5 text-sm font-bold text-white backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/20"

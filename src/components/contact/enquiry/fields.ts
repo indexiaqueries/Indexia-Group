@@ -1,6 +1,6 @@
 import type { ChangeEvent, FocusEvent } from "react";
 import type { ContactFormData } from "../../../data/contact";
-import { companyNames } from "../../../data/companies";
+import { companies } from "../../../data/companies";
 
 export type FormFieldEvent = ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
 export type FormBlurEvent = FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>;
@@ -16,7 +16,7 @@ export const fullFields = [
 
 export const subjectOptions: { value: string; labelKey?: string }[] = [
   { value: "General Enquiry", labelKey: "form.generalEnquiry" },
-  ...companyNames.map((name) => ({ value: name })),
+  ...companies.map((company) => ({ value: company.name, labelKey: `pageContent.companies.${company.slug}.name` })),
 ];
 
 export const ledgerLabel = "text-xs font-bold uppercase tracking-wider text-slate-600";

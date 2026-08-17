@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { ArrowRight, ExternalLink, MousePointerClick } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { prefersTouch } from "../../lib/media";
+import { useTapReveal } from "../../hooks/useTapReveal";
+import RevealActionButton from "./RevealActionButton";
 
 type BusinessCardItem = {
   name: string;
@@ -23,20 +23,14 @@ type BusinessCardProps = {
 
 const BusinessCard = ({ business }: BusinessCardProps) => {
   const { t } = useTranslation();
-  const [revealed, setRevealed] = useState(false);
+  const { handleCardClick, revealedClass } = useTapReveal();
   const Icon = business.icon;
   const external = Boolean(business.link);
   const href = external ? business.link! : `/businesses/${business.slug}`;
   const tag = t(`pageContent.companies.${business.slug}.tag`, { defaultValue: business.tag });
   const description = t(`pageContent.companies.${business.slug}.desc`, { defaultValue: business.description });
-  const label = `${business.name} — ${tag}. ${external ? "Visit website" : "Visit company page"}`;
-
-  // On touch devices the card reveals its description on first tap and dismisses on a second tap.
-  const handleCardClick = (e: React.MouseEvent) => {
-    if (!prefersTouch) return;
-    e.preventDefault();
-    setRevealed((r) => !r);
-  };
+  const name = t(`pageContent.companies.${business.slug}.name`, { defaultValue: business.name });
+  const label = `${name} — ${tag}. ${external ? "Visit website" : "Visit company page"}`;
 
   const inner = (
     <>
@@ -57,7 +51,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
       </div>
 
       <h3 className="business-card-name mt-auto flex max-w-[90%] items-center gap-1.5 text-xl font-extrabold leading-tight text-white transition-all duration-500 group-hover:translate-y-2 group-hover:opacity-0">
-        {business.name}
+        {name}
         {external && (
           <ExternalLink size={15} strokeWidth={2.5} aria-hidden="true" className="shrink-0 text-(--color-yellow) drop-shadow-[0_1px_2px_var(--card-icon-shadow)]" />
         )}
@@ -67,28 +61,22 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         <p className="max-w-md rounded-xl border border-white/20 bg-(image:--card-desc-gradient) px-4 py-3 text-sm font-medium leading-6 text-white shadow-lg backdrop-blur-[2px]">
           {description}
         </p>
-        <span
-          className="inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.08em] text-(--color-ink-deep) shadow-lg transition-colors duration-200 group-hover:bg-(--color-blue) group-hover:text-white"
-          onClick={(e) => e.stopPropagation()}
-        >
-          {t("businessCard.readMore")}
-          {external ? (
-            <ExternalLink size={16} strokeWidth={2.5} aria-hidden="true" />
-          ) : (
-            <ArrowRight size={16} strokeWidth={2.5} aria-hidden="true" />
-          )}
-        </span>
+        <RevealActionButton
+          label={t("businessCard.readMore")}
+          icon={external ? ExternalLink : ArrowRight}
+          className="group-hover:bg-(--color-blue) group-hover:text-white"
+        />
       </div>
     </>
   );
 
   return (
     <article
-      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl${revealed ? " is-revealed" : ""}`}
+      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl${revealedClass}`}
     >
       <img
         src={business.image}
-        alt={`${business.name} visual`}
+        alt={`${name} visual`}
         width={1536}
         height={1024}
         loading="lazy"

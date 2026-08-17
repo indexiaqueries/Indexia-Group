@@ -36,7 +36,7 @@ const OpenRoles = ({ roles }: OpenRolesProps) => {
                       {role.department}
                     </span>
                     <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-                      {role.type} · {role.experience}
+                      {role.type}
                     </span>
                   </div>
                   <h3 className="font-display mt-3 text-lg font-bold text-slate-900">{role.title}</h3>
@@ -54,6 +54,18 @@ const OpenRoles = ({ roles }: OpenRolesProps) => {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1}>
+          <p className="mt-10 text-center text-sm font-semibold text-slate-600">
+            {t("careersPage.mailResume")}{" "}
+            <a
+              href="mailto:hr@indexiafinance.com"
+              className="font-bold text-(--color-teal) transition-colors hover:text-(--color-blue) hover:underline"
+            >
+              hr@indexiafinance.com
+            </a>
+          </p>
+        </Reveal>
       </div>
     </section>
   );

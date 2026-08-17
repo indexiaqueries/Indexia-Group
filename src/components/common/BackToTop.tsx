@@ -1,4 +1,4 @@
-import { useReducedMotion } from "framer-motion";
+import { useReducedMotion } from "../../hooks/useReducedMotion";
 import { useTranslation } from "react-i18next";
 import { ArrowUp } from "lucide-react";
 import { useBackToTop } from "../../hooks/useBackToTop";

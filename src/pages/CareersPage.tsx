@@ -1,15 +1,14 @@
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
 import CareersHero from "./careers/CareersHero";
-import ValuesSection from "./careers/ValuesSection";
+import CultureSection from "./careers/CultureSection";
 import OpenRoles from "./careers/OpenRoles";
-import ProcessSection from "./careers/ProcessSection";
 import CareersCta from "./careers/CareersCta";
 import { careersJsonLd, useCareersContent } from "./careers/careersData";
 
 const CareersPage = () => {
   const { t } = useTranslation();
-  const { roles, values, steps } = useCareersContent();
+  const { roles, culture } = useCareersContent();
 
   return (
     <main className="bg-white">
@@ -22,9 +21,8 @@ const CareersPage = () => {
       />
 
       <CareersHero />
-      <ValuesSection values={values} />
+      <CultureSection culture={culture} />
       <OpenRoles roles={roles} />
-      <ProcessSection steps={steps} />
       <CareersCta />
     </main>
   );

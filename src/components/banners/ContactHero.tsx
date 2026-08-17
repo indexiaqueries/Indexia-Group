@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -24,11 +23,7 @@ const ContactHero = () => {
       }}
       containerClassName="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28"
     >
-      <motion.div
-        initial={{ opacity: 0, x: -30 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.7 }}
-      >
+      <div className="slide-in-left">
         <Eyebrow size="md" color={palette.goldLight} className="mb-4">
           {t("contactHero.eyebrow")}
         </Eyebrow>
@@ -71,15 +66,11 @@ const ContactHero = () => {
           <span>{t("contactHero.directLines", { count: String(phoneNumbers.length).padStart(2, "0") })}</span>
           <span>{t("contactHero.reply")}</span>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7, delay: 0.1 }}
-      >
+      <div className="scale-in" style={{ animationDelay: "0.1s" }}>
         <PassbookCard />
-      </motion.div>
+      </div>
     </HeroBackdrop>
   );
 };

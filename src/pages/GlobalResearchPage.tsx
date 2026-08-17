@@ -17,7 +17,7 @@ const researchJsonLd = {
       name: "Global Research — Indexia Group",
       url: "https://www.indexiagroup.com/global-research",
       description:
-        "Research on FDI, credit, trade, and infrastructure from across the Indexia Group businesses.",
+        "Insightful, relevant analyses and incisive views across macroeconomic, fixed income, currency, and commodity disciplines — with on-the-ground insight across Asia, Africa, and the Middle East.",
     },
     {
       "@type": "BreadcrumbList",
@@ -54,7 +54,7 @@ const GlobalResearchPage = () => {
       <SEO
         title={t("globalResearchPage.title")}
         description={t("globalResearchPage.metaDescription")}
-        keywords="Indexia Group research, FDI India, NBFC funding, export markets, warehouse demand, India investment research"
+        keywords="Indexia Group research, economic research, global macro strategy, FX, rates, credit, commodities, India investment research"
         canonicalPath="/global-research"
         jsonLd={researchJsonLd}
       />
@@ -73,12 +73,13 @@ const GlobalResearchPage = () => {
           <span className="text-(--color-yellow)">{t("globalResearchPage.titleAccent")}</span>
         </h1>
         <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">{t("globalResearchPage.subtitle")}</p>
-        <Link
-          to="#research-areas"
+        <button
+          type="button"
+          onClick={() => document.getElementById("research-areas")?.scrollIntoView({ behavior: "smooth" })}
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-8 py-3.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
         >
           {t("globalResearchPage.ctaButton")} ↓
-        </Link>
+        </button>
       </HeroBackdrop>
 
       <section id="research-areas" className="scroll-mt-24 bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -120,25 +121,17 @@ const GlobalResearchPage = () => {
           <div className="space-y-4">
             {reports.map((report, i) => (
               <Reveal key={report.key} delay={(i % 3) * 0.06} amount={0.1}>
-                <div className="flex flex-col gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md sm:flex-row sm:items-center sm:justify-between">
-                  <div className="min-w-0">
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span
-                        className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em]"
-                        style={{ backgroundColor: `${colors.teal}1a`, color: colors.teal }}
-                      >
-                        {report.date}
-                      </span>
-                    </div>
-                    <h3 className="font-display mt-3 text-lg font-bold text-slate-900">{report.title}</h3>
-                    <p className="mt-1 text-sm leading-7 text-slate-600">{report.summary}</p>
+                <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span
+                      className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em]"
+                      style={{ backgroundColor: `${colors.teal}1a`, color: colors.teal }}
+                    >
+                      {t("globalResearchPage.reportFormat")}
+                    </span>
                   </div>
-                  <Link
-                    to="/contact"
-                    className="inline-flex shrink-0 items-center gap-2 self-start rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-(--color-teal) hover:text-(--color-teal) sm:self-auto"
-                  >
-                    {t("globalResearchPage.requestReport")} →
-                  </Link>
+                  <h3 className="font-display mt-3 text-lg font-bold text-slate-900">{report.title}</h3>
+                  <p className="mt-1 text-sm leading-7 text-slate-600">{report.summary}</p>
                 </div>
               </Reveal>
             ))}

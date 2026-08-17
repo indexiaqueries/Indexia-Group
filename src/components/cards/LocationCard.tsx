@@ -1,6 +1,7 @@
+import type { CSSProperties } from "react";
 import { MapPin, Phone } from "lucide-react";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useInView } from "../../hooks/useInView";
 
 type LocationCardItem = {
   key: string;
@@ -16,14 +17,13 @@ type LocationCardProps = {
 
 const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
   const { t } = useTranslation();
+  const [ref, inView] = useInView<HTMLElement>({ once: true, amount: 0.2 });
 
   return (
-  <motion.article
-    initial={{ opacity: 0, y: 24 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.55, delay }}
-    className="shared-card flex h-full min-h-62.5 flex-col bg-(--color-soft) p-6"
+  <article
+    ref={ref}
+    className={`shared-card reveal flex h-full min-h-62.5 flex-col bg-(--color-soft) p-6${inView ? " is-in-view" : ""}`}
+    style={{ "--reveal-delay": `${delay}s` } as CSSProperties}
   >
     <div className="flex items-start gap-4">
       <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-blue) text-white shadow-lg">
@@ -56,7 +56,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
         </div>
       )}
     </div>
-  </motion.article>
+  </article>
   );
 };
 

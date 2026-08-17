@@ -42,7 +42,7 @@ export const companies: Company[] = [
     name: "Indexia Finserve Pvt. Ltd.",
     slug: "finserve",
     tag: "Loans & Finance",
-    desc: "We do all kinds of loans under finance — every type of loan, tailored to individuals and businesses.",
+    desc: "We do every type of loan under finance, tailored to individuals and businesses.",
     overview:
       "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. Now the right bank will come at your doorstep — the company works as a complete loan destination, guiding clients through eligibility, documentation, and disbursal for personal, home, business, MSME, and specialised funding with a single, streamlined process.",
     tagline: "The Next Gen Finance Method",
@@ -74,9 +74,9 @@ export const companies: Company[] = [
     tag: "Edible Exporter",
     desc: "We deal and export refined sugar and all edible items.",
     overview:
-      "Indexia Overseas drives global trade in all edible items, with a special focus on sugar exports across 14 South American countries. The company manages sourcing, quality, logistics, and international compliance so that food-grade products move from origin to market reliably and at scale.",
+      "Indexia Overseas drives the global export of all edible items, with a special focus on sugar exports across 14 South American countries. The company manages sourcing, quality, logistics, and international compliance so that food-grade products move from origin to market reliably and at scale.",
     highlights: [
-      "Trade in all edible items — sugar at the core",
+      "Export of all edible items — sugar at the core",
       "Established presence across 14 South American markets",
       "End-to-end sourcing, quality and logistics",
     ],

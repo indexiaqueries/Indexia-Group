@@ -1,7 +1,6 @@
 import { ChevronDown, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LANGUAGES } from "../../../i18n/languages";
-import { preloadLocale } from "../../../i18n";
 import DropdownPanel from "./DropdownPanel";
 
 type LanguageMenuProps = {
@@ -15,10 +14,7 @@ const LanguageMenu = ({ open, reducedMotion, onToggle, onClose }: LanguageMenuPr
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
 
-  const selectLang = async (code: string) => {
-    if (code !== i18n.language) {
-      await preloadLocale(code).catch(() => undefined);
-    }
+  const selectLang = (code: string) => {
     i18n.changeLanguage(code);
     onClose();
   };
@@ -52,7 +48,7 @@ const LanguageMenu = ({ open, reducedMotion, onToggle, onClose }: LanguageMenuPr
               key={l.code}
               type="button"
               onClick={() => selectLang(l.code)}
-              className={`block w-full rounded-lg px-3 py-1.5 text-start text-[13px] font-semibold transition-colors duration-150 ${
+              className={`block w-full rounded-lg px-3 py-1 text-start text-[13px] font-semibold transition-colors duration-150 ${
                 lang === l.code
                   ? "bg-(--color-yellow)/15 text-(--color-yellow)"
                   : "text-white/85 hover:bg-white/10 hover:text-white"

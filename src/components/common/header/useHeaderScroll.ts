@@ -8,7 +8,7 @@ export const useHeaderScroll = () => {
 
   const measureHero = () => {
     const hero = document.querySelector("main section");
-    heroThresholdRef.current = hero ? hero.getBoundingClientRect().height : window.innerHeight * 0.8;
+    heroThresholdRef.current = hero ? hero.getBoundingClientRect().height-80 : window.innerHeight * 0.8;
   };
 
   useEffect(() => {

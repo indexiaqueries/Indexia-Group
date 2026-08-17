@@ -1,5 +1,5 @@
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import { useInView } from "../../hooks/useInView";
 
 type RevealProps = {
   children: ReactNode;
@@ -16,18 +16,16 @@ const Reveal = ({
   className,
   amount = 0.2,
 }: RevealProps) => {
-  const prefersReducedMotion = useReducedMotion();
+  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount });
 
   return (
-    <motion.div
-      className={className}
-      initial={prefersReducedMotion ? false : { opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount }}
-      transition={{ duration: 0.6, delay, ease: "easeOut" }}
+    <div
+      ref={ref}
+      className={`reveal${inView ? " is-in-view" : ""}${className ? ` ${className}` : ""}`}
+      style={{ "--reveal-y": `${y}px`, "--reveal-delay": `${delay}s` } as CSSProperties}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 

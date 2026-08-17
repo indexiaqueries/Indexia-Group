@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { useReducedMotion } from "framer-motion";
+import { useReducedMotion } from "../../hooks/useReducedMotion";
 import HomeHeroGallery from "./HomeHeroGallery";
 import HeroBackground, { type MorphRect } from "./hero/HeroBackground";
 import HeroSlideContent from "./hero/HeroSlideContent";
 import { makePanels } from "./hero/heroData";
-import { AUTOPLAY_INTERVAL, SHADOW_LEVEL, slideChildAnim } from "./hero/heroMotion";
+import { AUTOPLAY_INTERVAL, SHADOW_LEVEL } from "./hero/heroMotion";
 
 const Banner = () => {
   const { t } = useTranslation();
@@ -13,8 +13,6 @@ const Banner = () => {
   const [bgId, setBgId] = useState(0);
   const [morph, setMorph] = useState<MorphRect | null>(null);
   const prefersReducedMotion = useReducedMotion();
-  const reduce = !!prefersReducedMotion;
-  const childAnim = useCallback((index: number) => slideChildAnim(reduce, index), [reduce]);
   const panels = useMemo(() => makePanels(t), [t]);
 
   const autoplayRef = useRef<number | null>(null);
@@ -138,13 +136,7 @@ const Banner = () => {
         />
 
         <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-36 sm:pt-32 sm:pb-44 overflow-hidden">
-          <HeroSlideContent
-            panel={current}
-            isHome={isHome}
-            shadowLevel={shadowLevel}
-            reduce={reduce}
-            childAnim={childAnim}
-          />
+          <HeroSlideContent panel={current} isHome={isHome} shadowLevel={shadowLevel} />
         </div>
 
         <button

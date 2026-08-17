@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { motion, useMotionValue, animate } from "framer-motion";
 import HeroGalleryThumb, { type HeroPanel } from "../cards/HeroGalleryThumb";
+
+const TRACK_EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 
 type HomeHeroGalleryProps = {
   panels: HeroPanel[];
@@ -23,7 +24,7 @@ const HomeHeroGallery = ({
 
   const wrapRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const x = useMotionValue(0);
+  const xRef = useRef(0);
 
   const [anchor, setAnchor] = useState({ id: currentId, virtual: currentId + 2 * n });
   let virtualIndex = anchor.virtual;
@@ -37,6 +38,13 @@ const HomeHeroGallery = ({
 
   const listIndex = listIndexOf(virtualIndex);
 
+  const applyX = useCallback((value: number, animated: boolean) => {
+    const track = trackRef.current;
+    if (!track) return;
+    track.style.transition = animated ? `transform 0.8s ${TRACK_EASE}` : "none";
+    track.style.transform = `translate3d(${value}px, 0, 0)`;
+  }, []);
+
   const prevCompRef = useRef(0);
 
   const centerActive = useCallback(() => {
@@ -48,26 +56,26 @@ const HomeHeroGallery = ({
     const active = track.children[listIndex] as HTMLElement | undefined;
     if (!first || !second || !active) return;
 
-    const pitch =
-      second.getBoundingClientRect().left - first.getBoundingClientRect().left;
+    const pitch = second.getBoundingClientRect().left - first.getBoundingClientRect().left;
 
+    // Keep the marquee aligned while the active index moves.
     const comp = (virtualIndex - listIndex) * pitch;
     const shift = comp - prevCompRef.current;
     prevCompRef.current = comp;
-    if (shift !== 0) x.set(x.get() + shift);
+    if (shift !== 0) {
+      xRef.current += shift;
+      applyX(xRef.current, false);
+    }
 
     const wrapRect = wrap.getBoundingClientRect();
     const activeRect = active.getBoundingClientRect();
     const target =
-      x.get() +
+      xRef.current +
       (wrapRect.left + wrapRect.width / 2 - (activeRect.left + activeRect.width / 2));
 
-    if (reducedMotion) {
-      x.set(target);
-    } else {
-      animate(x, target, { duration: 0.8, ease: [0.22, 1, 0.36, 1] });
-    }
-  }, [listIndex, reducedMotion, virtualIndex, x]);
+    xRef.current = target;
+    applyX(target, !reducedMotion);
+  }, [listIndex, reducedMotion, virtualIndex, applyX]);
 
   useEffect(() => {
     centerActive();
@@ -86,7 +94,7 @@ const HomeHeroGallery = ({
         className="overflow-x-hidden overflow-y-visible"
         style={{ perspective: 1000 }}
       >
-        <motion.div ref={trackRef} style={{ x }} className="flex gap-4 w-max py-3">
+        <div ref={trackRef} className="flex gap-4 w-max py-3">
           {marqueeList.map((p, i) => (
             <HeroGalleryThumb
               key={`${p.id}-${i}`}
@@ -97,7 +105,7 @@ const HomeHeroGallery = ({
               onSelect={onSelect}
             />
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

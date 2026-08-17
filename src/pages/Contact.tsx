@@ -81,7 +81,7 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
+      <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
         <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <ContactInfo />
           <div className="flex flex-col">

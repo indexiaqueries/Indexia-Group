@@ -69,7 +69,7 @@
   },
   "footer": {
     "tagline": "Diversified Indian Business Group",
-    "blurb": "Helping businesses and individuals build a stronger financial future with trusted, result-driven solutions.",
+    "blurb": "Eight trusted businesses under one diversified Indian group — finance, export, agriculture, logistics, security, advertising, and athlete support — built on integrity and results.",
     "contactUs": "Contact Us",
     "hours": "Mon - Sat: 9 AM - 6 PM",
     "company": "Company",
@@ -95,7 +95,7 @@
   "home": {
     "groupCompanies": {
       "title": "Group Companies",
-      "description": "Indexia Group is a diversified holding of companies spanning Finance, Trade, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
+      "description": "Indexia Group is a diversified holding of companies spanning Finance, Export, Agriculture, Warehouse, Securities, Social Impact, and Advertising. We build businesses that empower Clients, Partners, and Communities to grow with confidence."
     }
   },
   "businesses": {
@@ -193,7 +193,10 @@
     "title": "News & Knowledge Centre",
     "titleStart": "Stories & Insights from ",
     "titleAccent": "Across the Group.",
-    "subtitle": "News, updates, and practical knowledge from every Indexia Group company — finance, trade, agriculture, security, logistics, media, and sport.",
+    "subtitle": "Latest banking news — funding updates, digital payments, policy shifts, and market developments — alongside practical guides from our businesses.",
+    "tvEyebrow": "Watch Us on TV",
+    "tvHeading": "For All Your Loan Requirements",
+    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
     "featuredLabel": "Featured Story",
     "readMore": "Read More",
     "askUs": "Ask Us",
@@ -203,27 +206,25 @@
     "ctaTitle": "Have a question about our businesses?",
     "ctaBody": "From FDI advisory to organic farming to armed security — the right Indexia company is ready to help. Send us an enquiry and we will connect you.",
     "ctaButton": "Send an Enquiry",
-    "metaDescription": "News and knowledge from Indexia Group — updates from Indexia Finance, Finserve, Agro, Securities, Warehouse, Advertising and Foundation, plus practical guides."
+    "metaDescription": "News & Knowledge Centre — latest banking news on funding, digital payments, and policy, plus practical knowledge guides from Indexia Group."
   },
   "careersPage": {
     "eyebrow": "Careers",
     "title": "Careers at Indexia Group",
-    "titleStart": "Build a Career Across ",
-    "titleAccent": "Eight Businesses.",
-    "subtitle": "Finance, trade, agriculture, security, logistics, media, and sport under one group. Join a team where your work has real impact.",
+    "titleStart": "Build Your Career With ",
+    "titleAccent": "Us.",
+    "subtitle": "Indexia Group is a learning organization — and its corporate culture is its team.",
     "ctaButton": "View Open Roles",
-    "valuesEyebrow": "Why Indexia Group",
-    "valuesHeading": "Work Where Your Work Counts",
-    "valuesSubtitle": "What it feels like to build a career inside a diversified group that keeps people first.",
+    "cultureEyebrow": "Our Culture",
+    "cultureHeading": "A Learning Organization",
     "rolesEyebrow": "Open Positions",
-    "rolesHeading": "Current Openings",
-    "rolesSubtitle": "Browse open roles across the group — or apply for a future position by sending us your details.",
+    "rolesHeading": "Our Current Job Openings",
+    "rolesSubtitle": "Our current job openings are:",
     "apply": "Apply",
-    "processEyebrow": "Hiring Process",
-    "processHeading": "Four Steps to Joining Us",
-    "ctaTitle": "Don't see your role?",
-    "ctaBody": "We are always looking for great people. Send an enquiry or email your CV to careers@indexiagroup.com and we will keep you in mind.",
-    "metaDescription": "Careers at Indexia Group — open roles across finance, export, agriculture, security, warehousing, advertising and athlete support, plus how our hiring process works."
+    "ctaTitle": "Mail Us Your Resume",
+    "ctaBody": "We are always looking for great people. Send your CV to hr@indexiafinance.com and we will be in touch.",
+    "metaDescription": "Careers at Indexia Group — a learning organization with openings at Indexia Finserve in Mumbai. Mail your resume to start your career with us.",
+    "mailResume": "Mail us your Resume –"
   },
   "legal": {
     "eyebrow": "Legal",
@@ -246,39 +247,40 @@
   "globalResearchPage": {
     "eyebrow": "Global Research",
     "title": "Global Research at Indexia Group",
-    "titleStart": "Research That Informs ",
-    "titleAccent": "Real Decisions.",
-    "subtitle": "Market intelligence across FDI, credit, trade, and infrastructure — built from the ground-level view our businesses operate in.",
-    "ctaButton": "Explore Research Areas",
-    "areasEyebrow": "What We Research",
-    "areasHeading": "Four Lenses on the Markets We Serve",
-    "areasSubtitle": "Focused research across the industries where Indexia Group operates.",
-    "reportsEyebrow": "Reports & Publications",
-    "reportsHeading": "Recent Publications",
-    "reportsSubtitle": "Summaries of our latest research — request the full report and our team will share it.",
-    "requestReport": "Request Report",
-    "ctaTitle": "Need deeper insight?",
-    "ctaBody": "Tell us what you are researching — our teams across the group will connect you with the right expertise.",
-    "metaDescription": "Global Research at Indexia Group — market intelligence on FDI, credit and NBFC funding, export markets, and infrastructure, with recent reports you can request."
+    "titleStart": "Global Financial Research ",
+    "titleAccent": "& Resources.",
+    "subtitle": "Insightful, relevant analyses and incisive views across macroeconomic, fixed income, currency, and commodity disciplines — built on strong on-the-ground insight across Asia, Africa, and the Middle East.",
+    "ctaButton": "Explore Research Coverage",
+    "areasEyebrow": "Research Coverage",
+    "areasHeading": "Global Research Across Disciplines",
+    "areasSubtitle": "Insightful, relevant analyses and incisive views across our full coverage footprint.",
+    "reportsEyebrow": "Publications",
+    "reportsHeading": "How We Share Research",
+    "reportsSubtitle": "Frequent presentations and high-quality publications — OTG, our on-the-ground analysis; ACT, our actionable market ideas; and Special Reports on globally significant themes.",
+    "ctaTitle": "Access Our Research",
+    "ctaBody": "To find out more and receive our research, visit our Global Research portal. To get access, please contact your Relationship Manager.",
+    "metaDescription": "Indexia Group Global Research — insightful, relevant analyses and incisive views across macroeconomic, fixed income, currency, and commodity disciplines, with on-the-ground insight across Asia, Africa, and the Middle East.",
+    "reportFormat": "Publication"
   },
   "securityTipsPage": {
     "eyebrow": "Security Tips",
     "title": "Security Tips from Indexia Group",
     "titleStart": "Stay Ahead of ",
     "titleAccent": "Fraud.",
-    "subtitle": "Practical, no-nonsense guidance from the teams who run security, finance, and logistics every day — so you can spot a scam before it costs you.",
-    "ctaButton": "View Security Practices",
-    "categoriesEyebrow": "Know the Threats",
-    "categoriesHeading": "Six Threats to Watch",
-    "categoriesSubtitle": "The most common frauds and how they work — so you recognize them instantly.",
-    "practicesEyebrow": "Key Practices",
-    "practicesHeading": "Six Habits That Keep You Safe",
-    "practicesSubtitle": "Small, consistent practices that shut down most fraud attempts.",
-    "warningTitle": "Remember: we never ask for your OTP or password",
-    "warningBody": "No Indexia Group company will ever ask for your OTP, PIN, or password — by phone, message, or email. If someone does, it is a scam. Stop, verify through an official channel, and report it.",
+    "subtitle": "No matter where you go, you can manage your money online with confidence.",
+    "ctaButton": "Protect Your Details",
+    "featuresEyebrow": "What We Do",
+    "featuresHeading": "Keep You Safe Online",
+    "featuresSubtitle": "Read on to find out what we are doing to protect your accounts when you bank online.",
+    "practicesEyebrow": "What You Can Do",
+    "practicesHeading": "Protect Your Details",
+    "practicesSubtitle": "We work every day to keep your accounts protected when banking online. There are also a few simple things you can do on your everyday devices to stay safe online.",
+    "contactsEyebrow": "Need Help?",
+    "contactsHeading": "Need to Speak to Us?",
+    "contactsSubtitle": "If you think you may have disclosed your account details to a suspicious party, or been subject to fraud, contact us immediately by calling the Customer Service Hotline.",
     "ctaTitle": "See something suspicious?",
     "ctaBody": "Report it through our enquiry form or contact the relevant Indexia Group company directly.",
-    "metaDescription": "Security tips from Indexia Group — how to spot phishing, loan scams, and payment fraud, plus six key practices to keep your money and identity safe."
+    "metaDescription": "Security tips from Indexia Group — how we protect your accounts online, what you can do on your devices, and who to contact if something goes wrong."
   },
   "common": {
     "logoAlt": "Indexia Group logo",
@@ -286,11 +288,11 @@
   },
   "seo": {
     "homeTitle": "Financial Services, Loans, Export & Logistics",
-    "homeDescription": "Diversified Indian business group: financial services, NBFC loans, global trade, agro fertilizers, warehousing & security. Offices in Mumbai, Delhi and Surat.",
+    "homeDescription": "Diversified Indian business group: financial services, NBFC loans, global export, agro fertilizers, warehousing & security. Offices in Mumbai, Delhi and Surat.",
     "businessesTitle": "Group Companies — Finance, Agro, Export & Logistics",
-    "businessesDescription": "The eight businesses of Indexia Group: finance, loans, security, sugar trade, organic fertilizers, warehousing, advertising and athlete support.",
+    "businessesDescription": "The eight businesses of Indexia Group: finance, loans, security, sugar export, organic fertilizers, warehousing, advertising and athlete support.",
     "contactTitle": "Contact Us — Mumbai, Delhi & Surat Offices",
-    "contactDescription": "Contact Indexia Group for financial services, loans, trade, agro and logistics enquiries. Offices in Mumbai, Delhi, Surat and Ecuador — replies within 24 hours."
+    "contactDescription": "Contact Indexia Group for financial services, loans, export, agro and logistics enquiries. Offices in Mumbai, Delhi, Surat and Ecuador — replies within 24 hours."
   },
   "branches": {
     "corporateOffice": "Corporate Office",
@@ -304,5 +306,168 @@
     "mobile": "Mobile",
     "mob": "Mob",
     "tel": "Tel"
+  },
+  "pageContent": {
+    "companies": {
+      "finance": {
+        "tag": "Multinational Fintech",
+        "desc": "A multinational fintech providing services globally across four verticals — investor services, FDI, NBFC, and banking funding.",
+        "overview": "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. You may apply to our portal for any kind loan at www.indexiafinance.com — we provide our services globally, and in India we are business partners with 43 banks and NBFCs. Built around four core verticals — investor services, FDI advisory, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
+        "tagline": "An Entire Loan Destination",
+        "highlights": [
+          "Global fintech reach with India-first execution",
+          "Four integrated verticals under one roof",
+          "End-to-end funding and advisory support"
+        ],
+        "services": [
+          "FDI Advisory & Facilitation",
+          "Investor Services",
+          "NBFC Operations",
+          "Banking & Institutional Funding",
+          "Cross-Border Capital Solutions",
+          "Wealth & Asset Advisory"
+        ],
+        "name": "Indexia Finance"
+      },
+      "finserve": {
+        "tag": "Loans & Finance",
+        "desc": "We do every type of loan under finance, tailored to individuals and businesses.",
+        "overview": "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. Now the right bank will come at your doorstep — the company works as a complete loan destination, guiding clients through eligibility, documentation, and disbursal for personal, home, business, MSME, and specialised funding with a single, streamlined process.",
+        "tagline": "The Next Gen Finance Method",
+        "highlights": [
+          "Every loan type under one roof",
+          "Streamlined eligibility, documentation and disbursal",
+          "Dedicated advisory at every step"
+        ],
+        "services": [
+          "Personal Loan",
+          "Business Loan",
+          "Home Loan",
+          "Loan Against Property",
+          "Balance Transfer",
+          "Car Loan",
+          "Credit Card",
+          "Education Loan",
+          "Project Loan",
+          "Commercial Purchase",
+          "Lease R Discounting",
+          "Working Capital"
+        ],
+        "name": "Indexia Finserve Pvt. Ltd."
+      },
+      "overseas": {
+        "tag": "Edible Exporter",
+        "desc": "We deal and export refined sugar and all edible items.",
+        "overview": "Indexia Overseas drives the global export of all edible items, with a special focus on sugar exports across 14 South American countries. The company manages sourcing, quality, logistics, and international compliance so that food-grade products move from origin to market reliably and at scale.",
+        "highlights": [
+          "Export of all edible items — sugar at the core",
+          "Established presence across 14 South American markets",
+          "End-to-end sourcing, quality and logistics"
+        ],
+        "services": [
+          "Sugar Export & Trading",
+          "Edible Oils & Pulses",
+          "Food Grains & Spices",
+          "Sourcing & Quality Control",
+          "International Logistics",
+          "14 South American Markets"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd."
+      },
+      "agro-bio": {
+        "tag": "Organic Fertilizer Production",
+        "desc": "We manufacture organic fertilizers in India and export them globally.",
+        "overview": "Indexia Agro Bio Fertilizers manufactures organic fertilizers at its production facility in Shamli, Uttar Pradesh — part of the Delhi NCR region. The company's bio-based products improve soil health, boost crop yield, and support sustainable farming for growers across North India.",
+        "highlights": [
+          "Organic, bio-based production — no harsh chemicals",
+          "Shamli, UP facility in the Delhi NCR belt",
+          "Better soil health, higher crop yield"
+        ],
+        "services": [
+          "Organic Fertilizer Production",
+          "Bio-Fertilizer Blends",
+          "Soil Health Solutions",
+          "Yield Improvement Programmes",
+          "Farmer Support & Training",
+          "Shamli, UP Facility (Delhi NCR)"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+      },
+      "securities": {
+        "tag": "Armed Security & Commandos",
+        "desc": "Armed commandos and armed security, safeguarding politicians and big business tycoons.",
+        "overview": "Indexia Securities provides the best armed security and commando protection available, safeguarding people, property, and high-profile operations around the clock. From trained commandos and armed guards to VIP escorts and event security, the company brings military-grade discipline to every assignment.",
+        "highlights": [
+          "Best-in-class armed and commando protection",
+          "Trained commandos with rapid-response discipline",
+          "24×7 monitoring and on-ground response"
+        ],
+        "services": [
+          "Armed Security Guards",
+          "Commando Protection Units",
+          "VIP & Dignitary Escorts",
+          "Event & Venue Security",
+          "Corporate & Site Security",
+          "24×7 Monitoring & Rapid Response"
+        ],
+        "name": "Indexia Securities"
+      },
+      "warehouse": {
+        "tag": "Logistics Infrastructure",
+        "desc": "Warehousing facilities on lease to multinational companies, located in the Delhi NCR region.",
+        "overview": "Indexia Warehouse operates modern warehousing facilities on lease to multinational companies, located in the Delhi NCR region. With secure, scalable storage and seamless logistics integration, the company helps global businesses manage inventory close to one of India's largest consumption markets.",
+        "highlights": [
+          "Facilities on lease to multinational companies",
+          "Prime Delhi NCR locations near major corridors",
+          "Secure, scalable storage with logistics integration"
+        ],
+        "services": [
+          "Warehousing on Lease (MNCs)",
+          "Secure & Scalable Storage",
+          "Inventory Management",
+          "Delhi NCR Locations",
+          "Logistics Integration",
+          "Cold & Dry Storage Options"
+        ],
+        "name": "Indexia Warehouse"
+      },
+      "advertising": {
+        "tag": "Highway Advertising",
+        "desc": "Multiple advertising holdings across highways, giving brands high-visibility campaigns.",
+        "overview": "Indexia Advertising owns multiple advertising holdings across highways, giving brands high-visibility campaigns in high-traffic corridors. From strategic site selection to creative placement, the company ensures maximum exposure for advertisers along major road networks.",
+        "highlights": [
+          "Multiple holdings across highway corridors",
+          "High-traffic placements with maximum visibility",
+          "Strategic site selection and campaign support"
+        ],
+        "services": [
+          "Highway Hoardings & Billboards",
+          "Multiple Site Holdings",
+          "High-Traffic Corridor Placements",
+          "Creative & Campaign Support",
+          "Site Analytics & Reporting"
+        ],
+        "name": "Indexia Advertising"
+      },
+      "foundation": {
+        "tag": "Athlete Support",
+        "desc": "Supporting athletes with international-level training, dieting, and all necessary support — right up to the Olympic Games.",
+        "overview": "Indexia Foundation supports athletes by providing all possible backing — international-level training, structured dieting and nutrition, expert coaching, and every kind of assistance needed on the journey to the Olympic Games. The foundation stands with sportspersons from early promise to the world's biggest stage.",
+        "highlights": [
+          "International-level training and expert coaching",
+          "Structured diet and nutrition programmes",
+          "Complete support all the way to the Olympics"
+        ],
+        "services": [
+          "International-Level Training",
+          "Diet & Nutrition Programmes",
+          "Expert Coaching & Mentorship",
+          "Competition Funding & Gear",
+          "Sports Medicine & Recovery",
+          "Olympic-Grade Support"
+        ],
+        "name": "Indexia Foundation"
+      }
+    }
   }
 }

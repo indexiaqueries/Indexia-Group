@@ -20,9 +20,11 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                 >
                   {article.category}
                 </span>
-                <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-                  {article.date}
-                </span>
+                {article.date && (
+                  <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+                    {article.date}
+                  </span>
+                )}
               </div>
               <h3 className="font-display mt-4 text-lg font-bold leading-snug text-slate-900">
                 {article.title}

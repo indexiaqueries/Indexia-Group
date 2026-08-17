@@ -39,19 +39,19 @@ const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenu
       </button>
 
       <DropdownPanel open={open} reducedMotion={reducedMotion} className="inset-s-0 w-80 p-3">
-        <p className="px-2.5 pb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
+        <p className="px-2.5 pb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">
           {t("header.menu.groupCompanies")}
         </p>
-        <div className="grid gap-0.5">
+        <div className="grid gap-0">
           {companies.map((company) => (
             <CompanyLink key={company.slug} company={company} onNavigate={onClose} />
           ))}
         </div>
-        <div className="mt-2 border-t border-white/10 pt-2">
+        <div className="mt-1.5 border-t border-white/10 pt-1.5">
           <Link
             to="/businesses"
             onClick={onClose}
-            className="block rounded-lg px-2.5 py-1.5 text-[13px] font-bold text-(--color-yellow) transition-colors hover:bg-white/10"
+            className="block rounded-lg px-2.5 py-1 text-[13px] font-bold text-(--color-yellow) transition-colors hover:bg-white/10"
           >
             {t("header.menu.viewAllCompanies")}
           </Link>

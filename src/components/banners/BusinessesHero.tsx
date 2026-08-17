@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useInView } from "../../hooks/useInView";
 
 import Eyebrow from "../common/Eyebrow";
 import SealStamp from "../common/SealStamp";
@@ -17,8 +17,7 @@ type CounterProps = {
 };
 
 const Counter = ({ value, label, color = colors.blue, labelClassName = "mt-1 text-xs text-(--color-gray-light)" }: CounterProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.5 });
+  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.5 });
 
   const suffix = value.replace(/[\d.,]/g, "");
   const parsedTarget = parseFloat(value.replace(/[^\d.,]/g, "").replace(/,/g, ""));

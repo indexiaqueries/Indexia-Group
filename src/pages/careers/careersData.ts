@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { jobRoles, careerValues, processSteps } from "../../data/careers";
+import { jobRoles, careerCulture } from "../../data/careers";
 
 export type RoleItem = (typeof jobRoles)[number];
-export type ValueItem = (typeof careerValues)[number];
-export type StepItem = (typeof processSteps)[number];
 
 export const careersJsonLd = {
   "@context": "https://schema.org",
@@ -39,16 +37,7 @@ export const useCareersContent = () => {
     department: tr(`roles.${r.key}.department`, r.department),
     type: tr(`roles.${r.key}.type`, r.type),
   }));
-  const values = careerValues.map((v) => ({
-    ...v,
-    title: tr(`values.${v.key}.title`, v.title),
-    body: tr(`values.${v.key}.body`, v.body),
-  }));
-  const steps = processSteps.map((s) => ({
-    ...s,
-    title: tr(`steps.${s.key}.title`, s.title),
-    body: tr(`steps.${s.key}.body`, s.body),
-  }));
+  const culture = careerCulture.map((p, i) => tr(`culture.${i}`, p));
 
-  return { roles, values, steps };
+  return { roles, culture };
 };

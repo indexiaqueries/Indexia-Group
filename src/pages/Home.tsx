@@ -67,7 +67,7 @@ const Home = () => {
     <SEO
       title={t("seo.homeTitle")}
       description={t("seo.homeDescription")}
-      keywords="Indexia Group, financial services India, NBFC loans, personal and business loans Mumbai, global trade sugar export, organic fertilizer manufacturers Shamli, warehousing Delhi NCR, armed security services, highway advertising India, athlete support"
+      keywords="Indexia Group, financial services India, NBFC loans, personal and business loans Mumbai, global sugar export, organic fertilizer manufacturers Shamli, warehousing Delhi NCR, armed security services, highway advertising India, athlete support"
       canonicalPath="/"
     />
 

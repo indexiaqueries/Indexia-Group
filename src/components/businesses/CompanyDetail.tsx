@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, Check, Clock, Sparkles } from "lucide-react";
 import { serviceIcons } from "./serviceIcons";
@@ -22,6 +21,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
+  const name = tr("name", b.name);
   const tagline = b.tagline ? tr("tagline", b.tagline) : undefined;
   const overview = tr("overview", b.overview);
   const index = companies.findIndex((c) => c.name === b.name);
@@ -35,11 +35,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         radial={`radial-gradient(circle at 85% 15%, ${b.color}40, transparent 45%)`}
         containerClassName="relative mx-auto w-full max-w-7xl px-5 py-24 pt-32 sm:px-6 lg:px-8 lg:py-32"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="fade-up">
           {showBackLink && (
             <Link
               to="/businesses"
@@ -60,7 +56,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </div>
 
           <h1 className="font-display mt-4 max-w-3xl text-[clamp(30px,5vw,52px)] font-bold leading-[1.06] text-white">
-            {b.name}
+            {name}
           </h1>
 
           {tagline && (
@@ -78,7 +74,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               <ArrowRight size={16} strokeWidth={2.5} />
             </a>
           </div>
-        </motion.div>
+        </div>
       </HeroBackdrop>
 
       <section className="bg-(--color-soft) py-20 lg:py-24">
@@ -148,10 +144,10 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <Eyebrow className="mb-3">{t("companyDetail.eyebrow")}</Eyebrow>
             <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
-              {t("companyDetail.enquireTitle", { name: b.name })}
+              {t("companyDetail.enquireTitle", { name })}
             </h2>
             <p className="mt-5 max-w-md text-[15px] leading-7 text-(--color-muted)">
-              {t("companyDetail.enquireSub", { name: b.name })}
+              {t("companyDetail.enquireSub", { name })}
             </p>
 
             <div className="mt-8 flex items-center gap-6">
@@ -166,7 +162,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </div>
 
           <div className="w-full">
-            <EnquiryForm key={b.name} initialCompany={b.name} companyLocked />
+            <EnquiryForm key={b.name} initialCompany={b.name} initialCompanyLabel={name} companyLocked />
           </div>
         </div>
       </section>
