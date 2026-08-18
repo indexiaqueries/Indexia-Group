@@ -3,4 +3,3 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://www.indexiagroup.com/sitemap.xml
-LLMs: https://www.indexiagroup.com/llms.txt

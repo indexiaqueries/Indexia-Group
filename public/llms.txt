@@ -4,30 +4,30 @@
 
 ## Site
 
-- Website: https://www.indexiagroup.com/
-- Sitemap: https://www.indexiagroup.com/sitemap.xml
-- Robots: https://www.indexiagroup.com/robots.txt
-- Contact: https://www.indexiagroup.com/contact
+- [Website](https://www.indexiagroup.com/)
+- [Sitemap](https://www.indexiagroup.com/sitemap.xml)
+- [Robots](https://www.indexiagroup.com/robots.txt)
+- [Contact](https://www.indexiagroup.com/contact)
 
 ## Key Pages
 
-- Home: https://www.indexiagroup.com/
-- Businesses: https://www.indexiagroup.com/businesses
-- News and Knowledge: https://www.indexiagroup.com/news
-- Careers: https://www.indexiagroup.com/careers
-- Global Research: https://www.indexiagroup.com/global-research
-- Security Tips: https://www.indexiagroup.com/security-tips
+- [Home](https://www.indexiagroup.com/)
+- [Businesses](https://www.indexiagroup.com/businesses)
+- [News and Knowledge](https://www.indexiagroup.com/news)
+- [Careers](https://www.indexiagroup.com/careers)
+- [Global Research](https://www.indexiagroup.com/global-research)
+- [Security Tips](https://www.indexiagroup.com/security-tips)
 
 ## Company Pages
 
-- Indexia Finance: https://www.indexiagroup.com/businesses/finance
-- Indexia Finserve: https://www.indexiagroup.com/businesses/finserve
-- Indexia Overseas: https://www.indexiagroup.com/businesses/overseas
-- Indexia Agro Bio Fertilizers: https://www.indexiagroup.com/businesses/agro-bio
-- Indexia Securities: https://www.indexiagroup.com/businesses/securities
-- Indexia Warehouse: https://www.indexiagroup.com/businesses/warehouse
-- Indexia Advertising: https://www.indexiagroup.com/businesses/advertising
-- Indexia Foundation: https://www.indexiagroup.com/businesses/foundation
+- [Indexia Finance](https://www.indexiagroup.com/businesses/finance)
+- [Indexia Finserve](https://www.indexiagroup.com/businesses/finserve)
+- [Indexia Overseas](https://www.indexiagroup.com/businesses/overseas)
+- [Indexia Agro Bio Fertilizers](https://www.indexiagroup.com/businesses/agro-bio)
+- [Indexia Securities](https://www.indexiagroup.com/businesses/securities)
+- [Indexia Warehouse](https://www.indexiagroup.com/businesses/warehouse)
+- [Indexia Advertising](https://www.indexiagroup.com/businesses/advertising)
+- [Indexia Foundation](https://www.indexiagroup.com/businesses/foundation)
 
 ## Notes For Agents
 
