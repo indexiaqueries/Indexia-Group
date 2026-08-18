@@ -1,48 +1,15 @@
-
-
 export const colors = {
   teal: "#26ae90",
   tealDeep: "#1e9478",
   blue: "#066a9c",
-  blueDeep: "#055780",
-  blue2: "#286090",
   yellow: "#f2f231",
-  yellowBright: "#f7f75c",
-  yellowInk: "#241a03",
   gray: "#7b7b7b",
-  grayLight: "#9ca3af",
-  paper: "#f6f2e9",
-  ink: "#111827",
-  inkDeep: "#122029",
-  inkSoft: "#374151",
-  muted: "#6b7280",
-  soft: "#f8fafc",
-  mist: "#f6f9fb",
-  deep: "#044e74",
-  night: "#02101a",
   navyDeep: "#0a2233",
   navy: "#0c3652",
   navyMid: "#0f4a6e",
-  navyBlack: "#043249",
-  sand: "#e3dcc9",
-  sandDeep: "#ddd6c4",
-  goldPale: "#f4efc4",
-  success: "#14765f",
-  danger: "#b91c1c",
+  paper: "#f6f2e9",
+  inkDeep: "#122029",
   white: "#ffffff",
-} as const;
-
-export const palette = {
-  navyDeep: colors.navyDeep,
-  navy: colors.navy,
-  navyMid: colors.navyMid,
-  teal: colors.teal,
-  gold: colors.yellow,
-  goldLight: colors.yellow,
-  seal: colors.yellow,
-  paper: colors.paper,
-  ink: colors.ink,
-  inkDeep: colors.inkDeep,
 } as const;
 
 export const accent = {

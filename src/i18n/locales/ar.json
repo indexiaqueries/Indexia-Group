@@ -308,7 +308,12 @@
       "tr": "Türkçe",
       "vi": "Tiếng Việt",
       "nl": "Nederlands",
-      "pl": "Polski"
+      "pl": "Polski",
+      "th": "ไทย",
+      "sv": "Svenska",
+      "uk": "Українська",
+      "el": "Ελληνικά",
+      "he": "עברית"
     }
   },
   "seo": {

@@ -18,6 +18,11 @@ import tr from "./locales/tr.json";
 import vi from "./locales/vi.json";
 import nl from "./locales/nl.json";
 import pl from "./locales/pl.json";
+import th from "./locales/th.json";
+import sv from "./locales/sv.json";
+import uk from "./locales/uk.json";
+import el from "./locales/el.json";
+import he from "./locales/he.json";
 import { SUPPORTED_LANGS } from "./languages";
 
 export { SUPPORTED_LANGS } from "./languages";
@@ -64,6 +69,11 @@ const resources = {
   vi: { translation: vi },
   nl: { translation: nl },
   pl: { translation: pl },
+  th: { translation: th },
+  sv: { translation: sv },
+  uk: { translation: uk },
+  el: { translation: el },
+  he: { translation: he },
 };
 
 export const i18nReady = i18n.use(initReactI18next).init({
@@ -78,13 +88,15 @@ export const i18nReady = i18n.use(initReactI18next).init({
   returnNull: false,
 });
 
+const RTL_LANGS = ["ar", "he"];
+
 i18n.on("languageChanged", (lng) => {
   document.documentElement.lang = lng;
-  document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
+  document.documentElement.dir = RTL_LANGS.includes(lng) ? "rtl" : "ltr";
   safeSet(STORAGE_KEY, lng);
 });
 
 document.documentElement.lang = i18n.language;
-document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
+document.documentElement.dir = RTL_LANGS.includes(i18n.language) ? "rtl" : "ltr";
 
 export default i18n;

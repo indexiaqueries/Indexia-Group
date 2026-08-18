@@ -16,6 +16,11 @@ export const LANGUAGES: { code: string; key: string }[] = [
   { code: "vi", key: "common.languages.vi" },
   { code: "nl", key: "common.languages.nl" },
   { code: "pl", key: "common.languages.pl" },
+  { code: "th", key: "common.languages.th" },
+  { code: "sv", key: "common.languages.sv" },
+  { code: "uk", key: "common.languages.uk" },
+  { code: "el", key: "common.languages.el" },
+  { code: "he", key: "common.languages.he" },
 ];
 
 export const SUPPORTED_LANGS = [
@@ -36,4 +41,9 @@ export const SUPPORTED_LANGS = [
   "vi",
   "nl",
   "pl",
+  "th",
+  "sv",
+  "uk",
+  "el",
+  "he",
 ] as const;

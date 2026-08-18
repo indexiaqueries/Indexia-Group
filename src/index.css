@@ -122,16 +122,6 @@ ul {
   font-family: "IBM Plex Mono", Menlo, monospace;
 }
 
-.ruled {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 35px,
-    rgba(255, 255, 255, 0.05) 35px,
-    rgba(255, 255, 255, 0.05) 36px
-  );
-}
-
 @media (max-width: 767.98px) {
   .business-card {
     height: 100%;
@@ -305,9 +295,11 @@ ul {
   to   { transform: scale(1); }
 }
 
+/* Rotation lives on the card itself (rotate-[-3deg] utility); animating
+   transform here would double-stack with it and snap when the animation ends. */
 @keyframes passbook-in {
-  from { opacity: 0; transform: translateY(30px) rotate(-8deg); }
-  to   { opacity: 1; transform: translateY(0) rotate(-3deg); }
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes bg-morph-out {
@@ -356,6 +348,42 @@ ul {
   --tilt-scale: 0.96;
 }
 
+/* Company page — scrolling services ribbon */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll var(--marquee-duration, 28s) linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Company page — cursor-following spotlight on service tiles */
+.spotlight-tile {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    240px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    var(--spot-color, rgba(6, 106, 156, 0.14)),
+    transparent 70%
+  );
+}
+.spotlight-tile:hover::before {
+  opacity: 1;
+}
+
 /* Hero background morph — grows from a thumbnail rect to full-screen */
 .morph-layer {
   transition-property: top, left, width, height, border-radius, opacity;
@@ -390,78 +418,28 @@ ul {
     --tilt-scale: 1;
     transition: none;
   }
+  .marquee-track {
+    animation: none;
+  }
+  .spotlight-tile::before {
+    opacity: 0 !important;
+  }
   html {
     scroll-behavior: auto;
   }
 }
 
-.container {
+@utility container {
   margin-inline: auto;
   max-width: 1200px;
   padding-inline: 24px;
   width: 100%;
-}
 
-.section-pad {
-  padding-block: 64px;
-}
-
-.section-soft {
-  background: var(--color-soft);
-}
-
-.section-title {
-  color: var(--color-blue);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(1.875rem, 4vw, 2.25rem);
-  font-weight: 700;
-  font-variation-settings: "SOFT" 0, "WONK" 1;
-  letter-spacing: -0.01em;
-  line-height: 1.12;
-}
-
-.section-copy {
-  color: var(--color-gray);
-  font-size: 1rem;
-  line-height: 1.75;
-  margin-top: 1rem;
-}
-
-.eyebrow {
-  color: var(--color-teal);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
-.shared-card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.25s, transform 0.25s;
-}
-
-.shared-card:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-}
-
-@media (min-width: 768px) {
-  .container {
+  @media (min-width: 768px) {
     padding-inline: 40px;
   }
-}
 
-@media (min-width: 1024px) {
-  .section-pad {
-    padding-block: 96px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
+  @media (min-width: 1280px) {
     padding-inline: 48px;
   }
 }

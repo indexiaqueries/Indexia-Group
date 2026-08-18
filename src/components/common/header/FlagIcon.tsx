@@ -163,6 +163,53 @@ const FLAGS: Record<string, ReactNode> = {
       <rect y="7" width="20" height="7" fill="#DC143C" />
     </>
   ),
+  // Thailand
+  th: (
+    <>
+      <rect width="20" height="14" fill="#A51931" />
+      <rect y="2.33" width="20" height="2.33" fill="#F4F5F8" />
+      <rect y="4.67" width="20" height="4.67" fill="#2D2A4A" />
+      <rect y="9.33" width="20" height="2.33" fill="#F4F5F8" />
+    </>
+  ),
+  // Sweden
+  sv: (
+    <>
+      <rect width="20" height="14" fill="#006AA7" />
+      <rect x="5.5" width="2" height="14" fill="#FECC00" />
+      <rect y="6" width="20" height="2" fill="#FECC00" />
+    </>
+  ),
+  // Ukraine
+  uk: (
+    <>
+      <rect width="20" height="14" fill="#005BBB" />
+      <rect y="7" width="20" height="7" fill="#FFD500" />
+    </>
+  ),
+  // Greece
+  el: (
+    <>
+      <rect width="20" height="14" fill="#0D5EAF" />
+      <rect y="1.56" width="20" height="1.56" fill="#fff" />
+      <rect y="4.67" width="20" height="1.56" fill="#fff" />
+      <rect y="7.78" width="20" height="1.56" fill="#fff" />
+      <rect y="10.89" width="20" height="1.56" fill="#fff" />
+      <rect width="7.78" height="7.78" fill="#0D5EAF" />
+      <rect x="3.11" width="1.56" height="7.78" fill="#fff" />
+      <rect y="3.11" width="7.78" height="1.56" fill="#fff" />
+    </>
+  ),
+  // Israel
+  he: (
+    <>
+      <rect width="20" height="14" fill="#fff" />
+      <rect width="20" height="1.6" fill="#0038B8" />
+      <rect y="12.4" width="20" height="1.6" fill="#0038B8" />
+      <polygon points="10,4.3 6.6,9.7 13.4,9.7" fill="none" stroke="#0038B8" strokeWidth="1" />
+      <polygon points="10,9.7 6.6,4.3 13.4,4.3" fill="none" stroke="#0038B8" strokeWidth="1" />
+    </>
+  ),
 };
 
 const FlagIcon = ({ code, size = 18, className = "" }: FlagIconProps) => {

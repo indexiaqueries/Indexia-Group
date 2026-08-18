@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
+import ImageSlot from "../../components/common/ImageSlot";
 import Reveal from "../../components/common/Reveal";
+import { siteImages } from "../../data/siteImages";
 import { colors } from "../../lib/theme";
 import type { RoleItem } from "./careersData";
 
@@ -21,6 +23,10 @@ const OpenRoles = ({ roles }: OpenRolesProps) => {
             {t("careersPage.rolesHeading")}
           </h2>
           <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{t("careersPage.rolesSubtitle")}</p>
+        </Reveal>
+
+        <Reveal delay={0.05} amount={0.15}>
+          <ImageSlot {...siteImages.careersOpenRoles} className="mb-10" />
         </Reveal>
 
         <div className="space-y-4">

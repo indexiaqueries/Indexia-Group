@@ -26,7 +26,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
   return (
   <article
     ref={ref}
-    className={`shared-card reveal flex h-full min-h-62.5 flex-col bg-(--color-soft) p-6${inView ? " is-in-view" : ""}`}
+    className={`reveal flex h-full min-h-62.5 flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_36px_rgba(0,0,0,0.1)]${inView ? " is-in-view" : ""}`}
     style={{ "--reveal-delay": `${delay}s` } as CSSProperties}
   >
     {slot && (

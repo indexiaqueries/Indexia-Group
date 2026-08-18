@@ -2,7 +2,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { branches, phoneNumbers } from "../../data/contact";
-import { displayFont, monoFont, palette } from "../../lib/theme";
+import { colors, displayFont, monoFont } from "../../lib/theme";
 import Eyebrow from "../common/Eyebrow";
 import PassbookCard from "../contact/PassbookCard";
 import HeroBackdrop from "./HeroBackdrop";
@@ -14,8 +14,8 @@ const ContactHero = () => {
   return (
     <HeroBackdrop
       image={contactHeroBg}
-      overlay={`linear-gradient(115deg, ${palette.navyDeep}d9 0%, ${palette.navy}b3 55%, ${palette.navyMid}8c 100%)`}
-      radial={`radial-gradient(circle at 85% 15%, ${palette.teal}35, transparent 45%)`}
+      overlay={`linear-gradient(115deg, ${colors.navyDeep}d9 0%, ${colors.navy}b3 55%, ${colors.navyMid}8c 100%)`}
+      radial={`radial-gradient(circle at 85% 15%, ${colors.teal}35, transparent 45%)`}
       ruledClassName="pointer-events-none absolute inset-0 opacity-70"
       ruledStyle={{
         backgroundImage:
@@ -24,7 +24,7 @@ const ContactHero = () => {
       containerClassName="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28"
     >
       <div className="slide-in-left">
-        <Eyebrow size="md" color={palette.goldLight} className="mb-4">
+        <Eyebrow size="md" color={colors.yellow} className="mb-4">
           {t("contactHero.eyebrow")}
         </Eyebrow>
 
@@ -43,7 +43,7 @@ const ContactHero = () => {
           <a
             href="#enquiry-form"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
-            style={{ backgroundColor: palette.goldLight }}
+            style={{ backgroundColor: colors.yellow }}
           >
             {t("contactHero.sendEnquiry")}
             <ArrowRight size={17} />

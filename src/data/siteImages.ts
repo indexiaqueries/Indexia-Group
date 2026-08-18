@@ -13,28 +13,44 @@ import type { ImageSlotData } from "../components/common/ImageSlot";
 export const siteImages: Record<string, ImageSlotData> = {
   /* ---------- Contact page — office photos ---------- */
   contactCorporate: {
-    src: "",
+    src: "images/contact/corporateoffice.webp",
     label: "Corporate office (Fort, Mumbai)",
     prompt:
       "Photograph of the Indexia Group corporate office entrance in Mumbai's Fort district — a classic heritage-era Indian office building facade with warm evening light, deep-blue and teal color grade, landscape 16:9, no readable text.",
   },
   contactMumbai: {
-    src: "",
+    src: "images/contact/mumbaioffice.webp",
     label: "Mumbai office (Andheri West)",
     prompt:
       "Modern Indian office interior in Andheri West, Mumbai — branded reception area with employees collaborating at desks, natural daylight, deep blue + teal + yellow accents, landscape 16:9, no readable text.",
   },
   contactDelhi: {
-    src: "",
+    src: "images/contact/delhioffice.webp",
     label: "Delhi office (Naraina Vihar)",
     prompt:
       "Corporate office in Naraina Vihar, New Delhi — glass conference room overlooking the city with a professional team in discussion, cool blue tones, landscape 16:9, no readable text.",
   },
   contactInternational: {
-    src: "",
+    src: "images/contact/internationaloffice.webp",
     label: "International office (Ecuador)",
     prompt:
       "Quito, Ecuador cityscape with Andean mountains at golden hour — a modern office building in the foreground, warm golden light, landscape 16:9, no readable text.",
+  },
+
+  /* ---------- Company pages — impact band (full-bleed bg) ---------- */
+  companyImpact: {
+    src: "",
+    label: "Company impact photo",
+    prompt:
+      "Cinematic wide photograph of this company's core operation — e.g. export docks and a sugar refinery for Overseas, a busy trading floor for Securities, the warehouse yard for Warehouse, a live unipole on the highway for Advertising — dramatic dusk light, deep navy and teal grade, space for a headline, wide 21:9, no readable text.",
+  },
+
+  /* ---------- Company pages — story split (second image) ---------- */
+  companyStory: {
+    src: "",
+    label: "Company story photo",
+    prompt:
+      "Second, distinct photograph of the company's work in action — operations, team or product at close range, natural light, brand-tinted grade (deep blue, teal, yellow accents), landscape 4:3, no readable text.",
   },
 
   /* ---------- Careers page — culture ---------- */
@@ -43,6 +59,20 @@ export const siteImages: Record<string, ImageSlotData> = {
     label: "Office culture photo",
     prompt:
       "Candid photograph of a diverse Indian office team collaborating in a bright modern workspace — laughter around a whiteboard, laptops and notebooks, natural light, warm and energetic, wide 16:9, no readable text.",
+  },
+  careersOpenRoles: {
+    src: "",
+    label: "Team collaboration photo",
+    prompt:
+      "Candid photograph of a team meeting around a table with laptops and coffee — colleagues in discussion with notebooks and phones, natural window light, warm and collaborative mood, landscape 16:9, no readable text.",
+  },
+
+  /* ---------- Contact page — enquiry side image ---------- */
+  contactEnquiry: {
+    src: "images/contact/customercare.webp",
+    label: "Customer-care representative photo",
+    prompt:
+      "Landscape 16:9 photograph of a friendly Indian customer-care representative at a desk, smiling while taking a call with a headset — warm office light, teal and navy accents, shallow depth of field, no readable text.",
   },
 
   /* ---------- News page — featured story ---------- */

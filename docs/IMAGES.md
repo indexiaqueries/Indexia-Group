@@ -15,6 +15,27 @@ prompt on the page — drop an image in and it appears automatically.
 3. **Reload** — the placeholder is replaced by your image. If the file path is
    wrong, the placeholder comes back automatically (no broken-image icon).
 
+### One-command optimization (recommended)
+
+`scripts/optimize-images.cjs` converts any photo to WebP at the right size
+(slot-specific target width, quality 80, ≤ ~300 KB), saves it into
+`public/images/<group>/` **and registers it in `siteImages.ts`** in one step:
+
+```bash
+node scripts/optimize-images.cjs contactEnquiry ~/Desktop/team-photo.jpg
+node scripts/optimize-images.cjs careersCulture photos/a.jpg photos/b.jpg
+```
+
+Or drop every photo into `public/images/_incoming/` (named after the slot, e.g.
+`ContactMumbai.jpg` → `contactMumbai`) and process them all at once:
+
+```bash
+node scripts/optimize-images.cjs --all
+```
+
+EXIF rotation is respected (phone photos stay upright). Delete processed files
+from `_incoming` afterwards.
+
 If a slot is not wired yet, copy the pattern from any existing slot and add the
 `<ImageSlot />` where you want it.
 
@@ -24,16 +45,20 @@ If a slot is not wired yet, copy the pattern from any existing slot and add the
 
 | Slot key | Page / section | Suggested file | Prompt |
 |---|---|---|---|
-| `contactCorporate` | Contact → Corporate Office card | `public/images/contact/corporate.jpg` | Photograph of the Indexia Group corporate office entrance in Mumbai's Fort district — a classic heritage-era Indian office building facade with warm evening light, deep-blue and teal color grade, landscape 16:9, no readable text. |
-| `contactMumbai` | Contact → Mumbai Office card | `public/images/contact/mumbai.jpg` | Modern Indian office interior in Andheri West, Mumbai — branded reception area with employees collaborating at desks, natural daylight, deep blue + teal + yellow accents, landscape 16:9, no readable text. |
-| `contactDelhi` | Contact → Delhi Office card | `public/images/contact/delhi.jpg` | Corporate office in Naraina Vihar, New Delhi — glass conference room overlooking the city with a professional team in discussion, cool blue tones, landscape 16:9, no readable text. |
-| `contactInternational` | Contact → International (Ecuador) card | `public/images/contact/ecuador.jpg` | Quito, Ecuador cityscape with Andean mountains at golden hour — a modern office building in the foreground, warm golden light, landscape 16:9, no readable text. |
+| `contactCorporate` | Contact → Corporate Office card | ✅ `public/images/contact/corporateoffice.webp` | Photograph of the Indexia Group corporate office entrance in Mumbai's Fort district — a classic heritage-era Indian office building facade with warm evening light, deep-blue and teal color grade, landscape 16:9, no readable text. |
+| `contactMumbai` | Contact → Mumbai Office card | ✅ `public/images/contact/mumbaioffice.webp` | Modern Indian office interior in Andheri West, Mumbai — branded reception area with employees collaborating at desks, natural daylight, deep blue + teal + yellow accents, landscape 16:9, no readable text. |
+| `contactDelhi` | Contact → Delhi Office card | ✅ `public/images/contact/delhioffice.webp` | Corporate office in Naraina Vihar, New Delhi — glass conference room overlooking the city with a professional team in discussion, cool blue tones, landscape 16:9, no readable text. |
+| `contactInternational` | Contact → International (Ecuador) card | ✅ `public/images/contact/internationaloffice.webp` | Quito, Ecuador cityscape with Andean mountains at golden hour — a modern office building in the foreground, warm golden light, landscape 16:9, no readable text. |
 | `careersCulture` | Careers → Our Culture (banner) | `public/images/careers/culture.jpg` | Candid photograph of a diverse Indian office team collaborating in a bright modern workspace — laughter around a whiteboard, laptops and notebooks, natural light, warm and energetic, wide 16:9, no readable text. |
 | `newsFeatured` | News → Featured Story (top) | `public/images/news/featured.jpg` | Editorial banking-and-finance hero photo — an Indian banker's hands signing a loan document next to a smartphone showing a banking app, shallow depth of field, deep navy and teal grade, landscape 16:9, no readable text. |
 | `researchOTG` | Global Research → OTG report card | `public/images/research/otg.jpg` | Street-level documentary photograph of an Indian market or mandi — traders, produce and cash counters in motion, teal-and-blue grade, landscape 16:9, no readable text. |
 | `researchACT` | Global Research → ACT report card | `public/images/research/act.jpg` | Abstract financial-markets image — a rising chart on a monitor with a blurred trading-floor bokeh behind it, deep blue tones, landscape 16:9, no readable text. |
 | `researchSpecial` | Global Research → Special Reports card | `public/images/research/special.jpg` | Global skyline montage at dusk — Mumbai, Singapore and New York silhouettes blended into one horizon, deep navy and teal, landscape 16:9, no readable text. |
 | `securityFeatures` | Security Tips → What We Do (banner) | `public/images/security/features.jpg` | Clean, modern photo-illustration of online banking security — a person using a laptop with a glowing padlock-and-shield motif, deep blue tones with teal light, landscape 16:9, no readable text. |
+| `contactEnquiry` | Contact → Enquiry section (side image) | ✅ `public/images/contact/customercare.webp` | Landscape 16:9 photograph of a friendly Indian customer-care representative at a desk, smiling while taking a call with a headset — warm office light, teal and navy accents, shallow depth of field, no readable text. |
+| `careersOpenRoles` | Careers → Open Roles (above the list) | `public/images/careers/open-roles.jpg` | Candid photograph of a team meeting around a table with laptops and coffee — colleagues in discussion with notebooks and phones, natural window light, warm and collaborative mood, landscape 16:9, no readable text. |
+| `companyImpact` | Company pages → impact band (full-bleed section background) | `public/images/company/<slug>-impact.jpg` | Cinematic wide photograph of this company's core operation — e.g. export docks and a sugar refinery for Overseas, a busy trading floor for Securities, the warehouse yard for Warehouse, a live unipole on the highway for Advertising — dramatic dusk light, deep navy and teal grade, space for a headline, wide 21:9, no readable text. |
+| `companyStory` | Company pages → story split (second image) | `public/images/company/<slug>-story.jpg` | Second, distinct photograph of the company's work in action — operations, team or product at close range, natural light, brand-tinted grade (deep blue, teal, yellow accents), landscape 4:3, no readable text. |
 
 ---
 
@@ -55,22 +80,24 @@ If a slot is not wired yet, copy the pattern from any existing slot and add the
 ### 3. Company pages (`/businesses/:slug`)
 | Area | Has image? | Recommendation / prompt |
 |---|---|---|
-| Hero + overview split | ✅ Yes | Good as-is. Optional: add a second distinct photo per company (operations, team, product) so hero and overview differ. |
+| Hero + overview split | ✅ Yes | Good as-is. |
+| Impact band (full-bleed section bg) | 🔲 **Wired slot** | Use the `companyImpact` prompt above — one dramatic 21:9 shot per company, e.g. export docks for Overseas, trading floor for Securities, warehouse yard for Warehouse, highway unipole for Advertising. |
+| Story split (second photo) | 🔲 **Wired slot** | Use the `companyStory` prompt above — a distinct close-range operations/team/product shot per company. |
 | Warehouse / Advertising pricing + contact | ❌ Mostly text | Optional: "site photograph of the Shamli land parcel / a live unipole hoarding on NH-709B at golden hour, landscape 16:9". |
 
 ### 4. Contact (`/contact`)
 | Area | Has image? | Recommendation / prompt |
 |---|---|---|
 | Hero | ✅ Yes | Good as-is. |
-| Office location cards | 🔲 **Wired slots** | Use the office prompts above. Real photos of the actual offices are best. |
-| Enquiry section | ❌ No | Optional side image: "customer-care representative at a desk smiling while taking a call, warm office light, teal accents, portrait 4:5". |
+| Office location cards | ✅ **Images added** (5 photos mapped) | Corporate, Mumbai, Delhi, International + the enquiry side image all live. |
+| Enquiry section | ✅ **Image added** | `customercare.webp` — the enquiry side image. |
 
 ### 5. Careers (`/careers`)
 | Area | Has image? | Recommendation / prompt |
 |---|---|---|
 | Hero | ✅ Yes | Good as-is. |
 | Our Culture | 🔲 **Wired slot** | Use the culture prompt above. |
-| Open roles | ❌ No | Optional: "team meeting around a table with laptops and coffee, candid, natural window light". |
+| Open roles | 🔲 **Wired slot** | Use the `careersOpenRoles` prompt above (landscape banner above the list). |
 
 ### 6. News (`/news`)
 | Area | Has image? | Recommendation / prompt |

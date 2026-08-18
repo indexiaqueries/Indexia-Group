@@ -76,7 +76,7 @@ const PricingTable = ({
           <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
             {headers && (
               <div
-                className={`grid ${gridClass} gap-4 border-b border-slate-100 px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500`}
+                className={`grid ${gridClass} gap-2.5 border-b border-slate-100 px-4 py-3.5 text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 sm:gap-4 sm:px-6`}
               >
                 <span>{headers.label}</span>
                 <span>{headers.value}</span>
@@ -87,7 +87,7 @@ const PricingTable = ({
             {rows.map((row, i) => (
               <div
                 key={row.label}
-                className={`grid ${gridClass} items-center gap-4 px-6 py-5 ${
+                className={`grid ${gridClass} items-center gap-2.5 px-4 py-5 sm:gap-4 sm:px-6 ${
                   i < rows.length - 1 ? "border-b border-slate-100" : ""
                 }`}
               >

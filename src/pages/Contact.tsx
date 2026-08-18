@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
+import ImageSlot from "../components/common/ImageSlot";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { branches } from "../data/contact";
+import { siteImages } from "../data/siteImages";
 import { accent } from "../lib/theme";
 
 const contactJsonLd = {
@@ -73,8 +75,15 @@ const Contact = () => {
       <ContactHero />
 
       <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
-        <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-          <ContactInfo />
+        <div className="mx-auto grid w-full max-w-7xl items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div className="flex flex-col gap-10">
+            <ImageSlot
+              {...siteImages.contactEnquiry}
+              aspect="aspect-[16/9]"
+              className="mx-auto w-full max-w-sm lg:max-w-none"
+            />
+            <ContactInfo />
+          </div>
           <div className="flex flex-col">
             <EnquiryForm />
           </div>

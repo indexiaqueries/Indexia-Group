@@ -1,45 +1,10 @@
 import { useTranslation } from "react-i18next";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
-import SectionHeader from "../components/common/SectionHeader";
+import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
-import BusinessCard from "../components/cards/BusinessCard";
-import { getCompanyImage } from "../data/companyImages";
-import { getCompanyIcon } from "../data/companyIcons";
+import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
-import { colors } from "../lib/theme";
-
-const colorVar = (hex: string): string => {
-  switch (hex) {
-    case colors.teal:
-      return "var(--color-teal)";
-    case colors.tealDeep:
-      return "var(--color-teal-deep)";
-    case colors.yellow:
-      return "var(--color-yellow)";
-    case colors.blue:
-      return "var(--color-blue)";
-    case colors.navy:
-      return "var(--color-navy)";
-    default:
-      return "var(--color-gray)";
-  }
-};
-
-const businesses = companies.map((company, index) => {
-  const next = companies[(index + 1) % companies.length];
-  return {
-    name: company.name,
-    slug: company.slug,
-    tag: company.tag,
-    description: company.desc,
-    color1: colorVar(company.color),
-    color2: colorVar(next.color),
-    image: getCompanyImage(company.slug),
-    icon: getCompanyIcon(company.name),
-    link: company.link,
-  };
-});
 
 const Home = () => {
   const { t } = useTranslation();
@@ -55,18 +20,25 @@ const Home = () => {
 
     <Banner />
 
-    <section className="section-pad section-soft">
+    <section className="bg-(--color-soft) py-16 lg:py-24">
       <div className="container">
         <Reveal>
-          <SectionHeader
-            title={t("home.groupCompanies.title")}
-            description={t("home.groupCompanies.description")}
-          />
+          <div className="mx-auto max-w-180 text-center">
+            <Eyebrow className="mb-3">{t("businesses.eyebrow")}</Eyebrow>
+            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+              {t("businesses.titleStart")}
+              <span className="text-(--color-blue)">{t("businesses.titleAccent")}</span>
+            </h2>
+            <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
+              {t("businesses.subtitle")}
+            </p>
+          </div>
         </Reveal>
+
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {businesses.map((business, i) => (
-            <Reveal key={business.name} delay={(i % 4) * 0.08} amount={0.15}>
-              <BusinessCard business={business} />
+          {companies.map((company, i) => (
+            <Reveal key={company.name} delay={(i % 4) * 0.08} amount={0.15}>
+              <CompanyLinkCard company={company} index={i} />
             </Reveal>
           ))}
         </div>
