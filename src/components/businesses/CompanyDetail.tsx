@@ -213,7 +213,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           className="pointer-events-none absolute inset-y-0 end-0 w-24 bg-linear-to-l from-(--color-ink-deep) to-transparent sm:w-40"
         />
         <div
-          className="marquee-track py-4"
+          className="infinite-marquee-track py-4"
           style={{ "--marquee-duration": `${Math.max(20, marqueeItems.length * 2.6)}s` } as React.CSSProperties}
         >
           {[0, 1].map((copy) => (
@@ -564,6 +564,13 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <p className="mt-5 max-w-md text-[15px] leading-7 text-(--color-muted)">
               {t("companyDetail.enquireSub", { name })}
             </p>
+
+            <ImageSlot
+              {...siteImages.companyEnquiry}
+              alt={`${name} enquiry support`}
+              prompt={`Landscape 16:9 photograph for the "Enquire About ${name}" section: an Indexia Group advisor at a neat desk reviewing documents and speaking with a client, with subtle visual cues for ${tag}, warm professional office light, deep navy, teal and yellow accents, shallow depth of field, no readable text.`}
+              className="mt-8 rounded-2xl shadow-sm ring-1 ring-slate-200"
+            />
 
             <div className="mt-8 flex items-center gap-6">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-(--color-blue) shadow-[0_4px_14px_rgba(6,106,156,0.18)]">

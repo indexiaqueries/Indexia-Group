@@ -6,7 +6,7 @@ import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 import SealStamp from "../common/SealStamp";
 import HeroBackdrop from "./HeroBackdrop";
-import businessesHeroBg from "../../assets/BusinessesHero.webp";
+import businessesHeroBg from "../../assets/hero-img/BusinessesHero.webp";
 import { colors } from "../../lib/theme";
 
 type CounterProps = {

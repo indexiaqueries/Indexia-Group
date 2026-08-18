@@ -30,11 +30,13 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
     style={{ "--reveal-delay": `${delay}s` } as CSSProperties}
   >
     {slot && (
-      <ImageSlot
-        {...slot}
-        alt={t(`branches.${location.key}`, { defaultValue: location.name })}
-        className="mb-5 shrink-0"
-      />
+      <div className="image-zoom-frame mb-5 shrink-0 rounded-2xl">
+        <ImageSlot
+          {...slot}
+          alt={t(`branches.${location.key}`, { defaultValue: location.name })}
+          className="image-zoom-media rounded-2xl"
+        />
+      </div>
     )}
 
     <div className="flex items-start gap-4">

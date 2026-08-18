@@ -25,14 +25,49 @@ const CompanyPage = () => {
   }
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${slug}.${path}`, { defaultValue: fallback });
+  const name = tr("name", company.name);
+  const tag = tr("tag", company.tag);
+  const desc = tr("desc", company.desc);
+  const canonicalPath = `/businesses/${company.slug}`;
+  const companyJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: `${name} - ${tag}`,
+        url: `https://www.indexiagroup.com${canonicalPath}`,
+        description: desc,
+        isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
+        about: {
+          "@type": "Organization",
+          name,
+          description: desc,
+          parentOrganization: {
+            "@type": "Organization",
+            name: "Indexia Group",
+            url: "https://www.indexiagroup.com/",
+          },
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/businesses" },
+          { "@type": "ListItem", position: 3, name, item: `https://www.indexiagroup.com${canonicalPath}` },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="bg-white">
       <SEO
-        title={`${tr("name", company.name)} — ${tr("tag", company.tag)}`}
-        description={tr("desc", company.desc)}
-        keywords={`${tr("name", company.name)}, Indexia Group ${tr("tag", company.tag)}, ${tr("name", company.name)} services, Indexia Group companies`}
-        canonicalPath={`/businesses/${company.slug}`}
+        title={`${name} - ${tag}`}
+        description={desc}
+        keywords={`${name}, Indexia Group ${tag}, ${name} services, Indexia Group companies`}
+        canonicalPath={canonicalPath}
+        jsonLd={companyJsonLd}
       />
       <CompanyDetail company={company} showBackLink />
     </main>

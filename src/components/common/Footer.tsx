@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import footerBg from "../../assets/footer-img.webp";
-import logo from "../../assets/IndexiaGroup_Logo.webp";
+import footerBg from "../../assets/footer-img/footer-img.webp";
+import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
 import { ArrowUp, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { phoneNumbers } from "../../data/contact";
 import BackToTop from "./BackToTop";

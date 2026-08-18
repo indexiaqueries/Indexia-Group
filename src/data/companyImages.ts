@@ -1,12 +1,12 @@
-import groupImg from "../assets/company-images/IndexiaGroup.webp";
-import financeImg from "../assets/company-images/IndexiaFinance.webp";
-import finserveImg from "../assets/company-images/IndexiaFinserve.webp";
-import securitiesImg from "../assets/company-images/IndexiaSecurities.webp";
-import overseasImg from "../assets/company-images/IndexiaOverseas.webp";
-import agroImg from "../assets/company-images/IndexiaAgroBioFertilizers.webp";
-import warehouseImg from "../assets/company-images/IndexiaWarehouse.webp";
-import foundationImg from "../assets/company-images/IndexiaFoundation.webp";
-import advertisingImg from "../assets/company-images/IndexiaAdvertising.webp";
+import groupImg from "../assets/company-img/IndexiaGroup.webp";
+import financeImg from "../assets/company-img/IndexiaFinance.webp";
+import finserveImg from "../assets/company-img/IndexiaFinserve.webp";
+import securitiesImg from "../assets/company-img/IndexiaSecurities.webp";
+import overseasImg from "../assets/company-img/IndexiaOverseas.webp";
+import agroImg from "../assets/company-img/IndexiaAgroBioFertilizers.webp";
+import warehouseImg from "../assets/company-img/IndexiaWarehouse.webp";
+import foundationImg from "../assets/company-img/IndexiaFoundation.webp";
+import advertisingImg from "../assets/company-img/IndexiaAdvertising.webp";
 
 export const companyImages: Record<string, string> = {
   group: groupImg,

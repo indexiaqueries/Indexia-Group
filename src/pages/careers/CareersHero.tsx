@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
 import HeroBackdrop from "../../components/banners/HeroBackdrop";
-import careersBg from "../../assets/BusinessesHero.webp";
+import careersBg from "../../assets/hero-img/BusinessesHero.webp";
 
 const CareersHero = () => {
   const { t } = useTranslation();

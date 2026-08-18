@@ -1,7 +1,7 @@
 import { Landmark } from "lucide-react";
 
 import SealStamp from "../common/SealStamp";
-import customerImg from "../../assets/PassbookCard.webp";
+import customerImg from "../../assets/hero-img/PassbookCard.webp";
 import { branches, phoneNumbers } from "../../data/contact";
 import { colors, monoFont } from "../../lib/theme";
 

@@ -6,7 +6,7 @@ import { colors, displayFont, monoFont } from "../../lib/theme";
 import Eyebrow from "../common/Eyebrow";
 import PassbookCard from "../contact/PassbookCard";
 import HeroBackdrop from "./HeroBackdrop";
-import contactHeroBg from "../../assets/ContactHero.webp";
+import contactHeroBg from "../../assets/hero-img/ContactHero.webp";
 
 const ContactHero = () => {
   const { t } = useTranslation();

@@ -1,4 +1,7 @@
 import type { ImageSlotData } from "../components/common/ImageSlot";
+import companyEnquiry from "../assets/pages-img/company-enquiry-support.png";
+import companyImpact from "../assets/pages-img/company-impact.png";
+import companyStory from "../assets/pages-img/company-story.png";
 
 /**
  * Central registry of every image slot on the site.
@@ -39,7 +42,7 @@ export const siteImages: Record<string, ImageSlotData> = {
 
   /* ---------- Company pages — impact band (full-bleed bg) ---------- */
   companyImpact: {
-    src: "",
+    src: companyImpact,
     label: "Company impact photo",
     prompt:
       "Cinematic wide photograph of this company's core operation — e.g. export docks and a sugar refinery for Overseas, a busy trading floor for Securities, the warehouse yard for Warehouse, a live unipole on the highway for Advertising — dramatic dusk light, deep navy and teal grade, space for a headline, wide 21:9, no readable text.",
@@ -47,13 +50,20 @@ export const siteImages: Record<string, ImageSlotData> = {
 
   /* ---------- Company pages — story split (second image) ---------- */
   companyStory: {
-    src: "",
+    src: companyStory,
     label: "Company story photo",
     prompt:
       "Second, distinct photograph of the company's work in action — operations, team or product at close range, natural light, brand-tinted grade (deep blue, teal, yellow accents), landscape 4:3, no readable text.",
   },
 
   /* ---------- Careers page — culture ---------- */
+  companyEnquiry: {
+    src: companyEnquiry,
+    label: "Company enquiry support photo",
+    prompt:
+      "Landscape 16:9 photograph for the 'Enquire About ~company name~' section: an Indexia Group advisor at a neat desk reviewing documents and speaking with a client, with subtle visual cues for the selected company sector, warm professional office light, deep navy, teal and yellow accents, shallow depth of field, no readable text.",
+  },
+
   careersCulture: {
     src: "",
     label: "Office culture photo",

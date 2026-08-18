@@ -14,6 +14,7 @@ type SEOProps = {
 const SITE_NAME = "Indexia Group";
 const BASE_URL = "https://www.indexiagroup.com";
 const DEFAULT_OG_IMAGE = "/og-image.png";
+const DEFAULT_LOCALE = "en_IN";
 
 const SEO = ({
   title,
@@ -29,8 +30,9 @@ const SEO = ({
     const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
     document.title = fullTitle;
 
-    const canonical = canonicalPath ? `${BASE_URL}${canonicalPath}` : `${BASE_URL}/`;
-    const ogUrl = canonicalPath ? `${BASE_URL}${canonicalPath}` : `${BASE_URL}/`;
+    const path = canonicalPath ?? "/";
+    const canonical = `${BASE_URL}${path}`;
+    const absoluteImage = ogImage.startsWith("http") ? ogImage : `${BASE_URL}${ogImage}`;
 
     const setMeta = (attr: "name" | "property", key: string, content: string) => {
       let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
@@ -44,7 +46,10 @@ const SEO = ({
 
     setMeta("name", "description", description);
     if (keywords) setMeta("name", "keywords", keywords);
-    setMeta("name", "robots", noindex ? "noindex, nofollow" : "index, follow");
+    setMeta("name", "author", SITE_NAME);
+    setMeta("name", "publisher", SITE_NAME);
+    setMeta("name", "robots", noindex ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large");
+    setMeta("name", "googlebot", noindex ? "noindex, nofollow, noarchive" : "index, follow, max-image-preview:large");
 
     let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!link) {
@@ -56,15 +61,20 @@ const SEO = ({
 
     setMeta("property", "og:site_name", SITE_NAME);
     setMeta("property", "og:type", ogType);
+    setMeta("property", "og:locale", DEFAULT_LOCALE);
     setMeta("property", "og:title", fullTitle);
     setMeta("property", "og:description", description);
-    setMeta("property", "og:url", ogUrl);
-    setMeta("property", "og:image", `https://www.indexiagroup.com${ogImage}`);
+    setMeta("property", "og:url", canonical);
+    setMeta("property", "og:image", absoluteImage);
+    setMeta("property", "og:image:width", "1200");
+    setMeta("property", "og:image:height", "630");
+    setMeta("property", "og:image:alt", `${fullTitle} preview`);
 
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", fullTitle);
     setMeta("name", "twitter:description", description);
-    setMeta("name", "twitter:image", `https://www.indexiagroup.com${ogImage}`);
+    setMeta("name", "twitter:image", absoluteImage);
+    setMeta("name", "twitter:image:alt", `${fullTitle} preview`);
 
     let script = document.head.querySelector<HTMLScriptElement>('script[data-seo-jsonld]');
     if (jsonLd) {

@@ -348,18 +348,34 @@ ul {
   --tilt-scale: 0.96;
 }
 
-/* Company page — scrolling services ribbon */
+/* Shared infinite marquee track */
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-.marquee-track {
+.infinite-marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee-scroll var(--marquee-duration, 28s) linear infinite;
+  animation: var(--marquee-animation, marquee-scroll var(--marquee-duration, 28s) linear infinite);
 }
-.marquee-track:hover {
+.infinite-marquee-track:hover {
   animation-play-state: paused;
+}
+
+/* Shared image hover for contact cards and enquiry image */
+.image-zoom-frame {
+  overflow: hidden;
+}
+
+.image-zoom-media {
+  transform: scale(1);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), filter 0.55s ease;
+}
+
+.image-zoom-frame:hover .image-zoom-media,
+.image-zoom-frame:focus-within .image-zoom-media {
+  filter: saturate(1.06) contrast(1.02);
+  transform: scale(1.045);
 }
 
 /* Company page — cursor-following spotlight on service tiles */
@@ -418,8 +434,15 @@ ul {
     --tilt-scale: 1;
     transition: none;
   }
-  .marquee-track {
+  .infinite-marquee-track {
     animation: none;
+  }
+  .image-zoom-media,
+  .image-zoom-frame:hover .image-zoom-media,
+  .image-zoom-frame:focus-within .image-zoom-media {
+    filter: none;
+    transform: none;
+    transition: none;
   }
   .spotlight-tile::before {
     opacity: 0 !important;

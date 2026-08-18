@@ -77,11 +77,13 @@ const Contact = () => {
       <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
         <div className="mx-auto grid w-full max-w-7xl items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div className="flex flex-col gap-10">
-            <ImageSlot
-              {...siteImages.contactEnquiry}
-              aspect="aspect-[16/9]"
-              className="mx-auto w-full max-w-sm lg:max-w-none"
-            />
+            <div className="image-zoom-frame mx-auto w-full max-w-sm rounded-2xl lg:max-w-none">
+              <ImageSlot
+                {...siteImages.contactEnquiry}
+                aspect="aspect-[16/9]"
+                className="image-zoom-media rounded-2xl"
+              />
+            </div>
             <ContactInfo />
           </div>
           <div className="flex flex-col">

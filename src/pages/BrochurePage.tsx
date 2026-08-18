@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Download, Mail, MapPin, Phone, Printer } from "lucide-react";
-import logo from "../assets/IndexiaGroup_Logo.webp";
+import SEO from "../components/common/SEO";
+import logo from "../assets/logo/IndexiaGroup_Logo.webp";
 import { companies } from "../data/companies";
 import { accentInk } from "../lib/color";
 
@@ -20,8 +21,11 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${slug}.${path}`, { defaultValue: fallback });
   const name = tr("name", b.name);
   const tag = tr("tag", b.tag);
+  const desc = tr("desc", b.desc);
   const overview = tr("overview", b.overview);
   const contactBlock = slug === "warehouse" ? "warehouseContact" : "advertisingContact";
+  const canonicalPath = slug === "warehouse" ? "/warehouse-brochure" : "/advertising-brochure";
+  const title = `${name} Brochure - ${tag}`;
 
   const price = t(`${slug === "warehouse" ? "warehousePricing" : "unipolePricing"}.standardRate`);
 
@@ -57,6 +61,12 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
 
   return (
     <main className="min-h-screen bg-(--color-soft) py-10">
+      <SEO
+        title={title}
+        description={`${desc} Download the ${name} brochure from Indexia Group.`}
+        keywords={`${name} brochure, ${tag}, Indexia Group brochure, ${slug === "warehouse" ? "warehouse land Shamli" : "unipole advertising Shamli"}`}
+        canonicalPath={canonicalPath}
+      />
       <div className="brochure-wrap mx-auto max-w-4xl px-4 sm:px-6">
         {/* Action bar — hidden when printing */}
         <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
@@ -112,7 +122,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
             <h2 className="font-display max-w-xl text-[clamp(22px,3.2vw,30px)] font-bold leading-[1.15] text-(--color-ink)">
               {slug === "advertising" ? t("brochure.advertisingHeadline") : t("brochure.headline")}
             </h2>
-            <p className="mt-3 max-w-2xl text-[14px] leading-7 text-(--color-muted)">{tr("desc", b.desc)}</p>
+            <p className="mt-3 max-w-2xl text-[14px] leading-7 text-(--color-muted)">{desc}</p>
           </section>
 
           {/* Overview */}

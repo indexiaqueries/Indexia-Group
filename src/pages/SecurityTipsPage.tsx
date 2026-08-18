@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import SEO from "../components/common/SEO";
@@ -6,8 +5,9 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImageSlot from "../components/common/ImageSlot";
+import ImpactBand from "../components/common/ImpactBand";
 import { colors } from "../lib/theme";
-import securityBg from "../assets/BusinessesHero.webp";
+import securityBg from "../assets/hero-img/BusinessesHero.webp";
 import { siteImages } from "../data/siteImages";
 import type { ImageSlotData } from "../components/common/ImageSlot";
 import {
@@ -21,7 +21,7 @@ const securityJsonLd = {
   "@graph": [
     {
       "@type": "WebPage",
-      name: "Security Tips — Indexia Group",
+      name: "Security Tips - Indexia Group",
       url: "https://www.indexiagroup.com/security-tips",
       description:
         "How Indexia Group protects your accounts online, what you can do on your devices, and who to contact if something goes wrong.",
@@ -179,20 +179,14 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section className="bg-white px-5 pb-16 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto max-w-4xl">
-          <div className="rounded-3xl bg-(--color-navy) px-8 py-10 text-center text-white sm:px-12">
-            <h2 className="font-display text-2xl font-bold sm:text-3xl">{t("securityTipsPage.ctaTitle")}</h2>
-            <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-white/75">{t("securityTipsPage.ctaBody")}</p>
-            <Link
-              to="/contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-7 py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
-            >
-              {t("securityTipsPage.ctaButton")} →
-            </Link>
-          </div>
-        </Reveal>
-      </section>
+      <ImpactBand
+        image={securityBg}
+        eyebrow={t("securityTipsPage.contactsEyebrow")}
+        title={t("securityTipsPage.ctaTitle")}
+        body={t("securityTipsPage.ctaBody")}
+        actionLabel={`${t("securityTipsPage.ctaButton")} ->`}
+        to="/contact"
+      />
     </main>
   );
 };

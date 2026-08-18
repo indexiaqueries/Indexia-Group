@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 import HeroGalleryThumb, { type HeroPanel } from "../cards/HeroGalleryThumb";
 
 const TRACK_EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
@@ -196,7 +196,11 @@ const HomeHeroGallery = ({
         className="overflow-x-hidden overflow-y-visible cursor-grab active:cursor-grabbing touch-pan-y"
         style={{ perspective: 1000 }}
       >
-        <div ref={trackRef} className="flex gap-4 w-max py-3 select-none">
+        <div
+          ref={trackRef}
+          className="infinite-marquee-track hero-marquee-track gap-4 py-3 select-none"
+          style={{ "--marquee-animation": "none" } as CSSProperties}
+        >
           {marqueeList.map((p, i) => (
             <HeroGalleryThumb
               key={`${p.id}-${i}`}
