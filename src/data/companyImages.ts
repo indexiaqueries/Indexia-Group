@@ -7,6 +7,15 @@ import agroImg from "../assets/company-img/IndexiaAgroBioFertilizers.webp";
 import warehouseImg from "../assets/company-img/IndexiaWarehouse.webp";
 import foundationImg from "../assets/company-img/IndexiaFoundation.webp";
 import advertisingImg from "../assets/company-img/IndexiaAdvertising.webp";
+import groupMobile from "../assets/company-img/mobile/IndexiaGroup-mobile.webp";
+import financeMobile from "../assets/company-img/mobile/IndexiaFinance-mobile.webp";
+import finserveMobile from "../assets/company-img/mobile/IndexiaFinserve-mobile.webp";
+import securitiesMobile from "../assets/company-img/mobile/IndexiaSecurities-mobile.webp";
+import overseasMobile from "../assets/company-img/mobile/IndexiaOverseas-mobile.webp";
+import agroMobile from "../assets/company-img/mobile/IndexiaAgroBioFertilizers-mobile.webp";
+import warehouseMobile from "../assets/company-img/mobile/IndexiaWarehouse-mobile.webp";
+import foundationMobile from "../assets/company-img/mobile/IndexiaFoundation-mobile.webp";
+import advertisingMobile from "../assets/company-img/mobile/IndexiaAdvertising-mobile.webp";
 import groupCard from "../assets/company-img/cards/IndexiaGroup-card.webp";
 import financeCard from "../assets/company-img/cards/IndexiaFinance-card.webp";
 import finserveCard from "../assets/company-img/cards/IndexiaFinserve-card.webp";
@@ -38,6 +47,18 @@ export const companyImages: Record<string, string> = {
   advertising: advertisingImg,
 };
 
+export const companyMobileImages: Record<string, string> = {
+  group: groupMobile,
+  finance: financeMobile,
+  finserve: finserveMobile,
+  securities: securitiesMobile,
+  overseas: overseasMobile,
+  "agro-bio": agroMobile,
+  warehouse: warehouseMobile,
+  foundation: foundationMobile,
+  advertising: advertisingMobile,
+};
+
 export const companyCardImages: Record<string, string> = {
   group: groupCard,
   finance: financeCard,
@@ -63,5 +84,6 @@ export const companyThumbImages: Record<string, string> = {
 };
 
 export const getCompanyImage = (slug: string): string => companyImages[slug] ?? companyImages.group;
+export const getCompanyMobileImage = (slug: string): string => companyMobileImages[slug] ?? companyMobileImages.group;
 export const getCompanyCardImage = (slug: string): string => companyCardImages[slug] ?? companyCardImages.group;
 export const getCompanyThumbImage = (slug: string): string => companyThumbImages[slug] ?? companyThumbImages.group;

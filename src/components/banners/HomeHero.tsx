@@ -129,6 +129,7 @@ const Banner = () => {
       <div className="relative flex min-h-svh flex-col sm:min-h-screen">
         <HeroBackground
           bgImage={bgPanel.image}
+          bgMobileImage={bgPanel.mobileImage}
           morph={morph}
           panels={panels}
           prefersReducedMotion={prefersReducedMotion}

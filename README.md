@@ -1,0 +1,115 @@
+# Indexia Group Website
+
+Indexia Group Website is a React, TypeScript, Vite, and Tailwind CSS site for a diversified business group spanning finance, finserve, securities, overseas export, agro bio fertilizers, warehousing, advertising, foundation work, careers, news, research, security guidance, and contact enquiries.
+
+## What Was Completed
+
+### Website Design And UX
+
+- Improved the overall frontend design with a more polished, modular structure.
+- Reused shared components for imagery, reveal animations, media frames, cards, hero bands, and impact sections.
+- Added subtle image zoom interactions for contact office cards and enquiry images.
+- Reused the full-bleed impact band treatment across supporting pages such as news, careers, global research, and security tips.
+- Shared the infinite marquee styling utility between the home hero marquee and the company services ribbon.
+- Reduced repeated UI logic by centralizing image handling and media framing.
+
+### Image Mapping And Asset Cleanup
+
+- Mapped all reusable images through `src/data/siteImages.ts`.
+- Moved contact images into `src/assets/contact-img`.
+- Added `customercare.webp` above the contact enquiry form.
+- Removed image prompt fields and prompt display logic from the codebase.
+- Updated `docs/IMAGES.md` to document current image slots and sources.
+- Converted heavy PNG section images to WebP.
+- Added card-sized company images in `src/assets/company-img/cards`.
+- Added lightweight hero gallery thumbnails in `src/assets/company-img/thumbs`.
+- Recompressed selected assets based on Lighthouse image delivery findings.
+
+### SEO, Indexing, And Agent Accessibility
+
+- Updated SEO descriptions for Home and Businesses to match the updated headings.
+- Updated `public/sitemap.xml` and included all company routes.
+- Kept `public/robots.txt` valid and crawl-friendly while disallowing `/api/`.
+- Added `public/llms.txt` with Markdown links for AI-agent readability.
+- Fixed the invalid robots directive that Lighthouse reported.
+
+### Contact Page Work
+
+- Re-cropped and normalized office card images around a consistent landscape grid.
+- Restored `customercare.webp` to its original size after testing a smaller version.
+- Added `MediaFrame` for consistent reusable image framing.
+- Placed the customer-care image at the top of the contact form area.
+
+### Code Cleanup
+
+- Removed unused prompt data and placeholder prompt documentation.
+- Removed or ignored generated files such as `dist`, reports, screenshots, and temporary files.
+- Updated `.gitignore` for build output, audit reports, screenshots, temp files, and Vercel metadata.
+- Kept generated brochure PDF diffs out of the working changes after builds.
+
+## Performance Optimization
+
+Performance work was guided by Lighthouse audit results.
+
+- Lazy-loaded non-English i18n locale files so visitors do not download every translation up front.
+- Reduced the main app chunk from roughly 1 MB to about 63 KB before compression.
+- Converted large PNGs to WebP, reducing several files from around 1.8-2.4 MB to about 70-185 KB.
+- Replaced card usages of full hero images with smaller card-specific WebP assets.
+- Reduced hero gallery thumbnails from roughly 12-23 KB to about 4-7 KB.
+- Added explicit image dimensions and loading hints for hero gallery images.
+- Replaced the YouTube iframe with a click-to-load facade so third-party scripts load only when needed.
+- Removed Google Fonts from the critical render path and switched to local/system font stacks.
+- Reduced forced reflow risk by removing mouse-tracked layout reads from interactive image/card effects.
+- Kept Brotli and gzip compression enabled through Vite build configuration.
+
+Note: Some Lighthouse JavaScript warnings came from browser extensions, not the website bundle. Run Lighthouse in Incognito with extensions disabled for clean results.
+
+### Mobile Lighthouse Audit
+
+The mobile audit was extracted from `MOBILE.docx` and treated as reference material. The report was captured on an emulated Moto G Power using Slow 4G throttling.
+
+Actionable mobile issues addressed:
+
+- Created mobile hero image variants in `src/assets/company-img/mobile`.
+- Added responsive `srcSet` and `sizes` support to the home hero background so mobile devices can load the smaller 900px hero image instead of the desktop source.
+- Reduced card image dimensions and compression further for mobile/card display.
+- Reduced the Indexia Group logo asset from the original 160px source to a smaller optimized WebP.
+- Kept hero gallery thumbnail assets lightweight for mobile scrolling.
+- Made hero gallery thumbnail images decorative because the surrounding buttons already provide accessible labels, avoiding repeated screen-reader text.
+
+Mobile audit findings noted but not repo-caused:
+
+- Chrome extension scripts contributed to unused JavaScript, minification, long-task, forced-reflow, and third-party warnings.
+- The render-blocking CSS request is the main production stylesheet generated by Vite; it is already compressed and small.
+- Server/protocol recommendations such as modern HTTP, cache lifetime, and document latency depend on hosting/CDN configuration.
+
+## Main Files
+
+- `src/data/siteImages.ts` - shared page image registry.
+- `src/data/companyImages.ts` - company hero, card, and thumbnail image registry.
+- `src/components/common/ImageSlot.tsx` - reusable mapped image slot with fallback.
+- `src/components/common/MediaFrame.tsx` - shared zoom/framing wrapper.
+- `docs/IMAGES.md` - image folder and slot documentation.
+- `public/sitemap.xml` - crawlable route list.
+- `public/robots.txt` - crawler rules.
+- `public/llms.txt` - AI-agent readable site summary and links.
+
+## Commands
+
+```bash
+npm install
+npm run dev
+npm run lint
+npm run build
+npm run preview
+```
+
+## Build Notes
+
+The production build runs TypeScript, Vite, and brochure PDF generation:
+
+```bash
+npm run build
+```
+
+The build may regenerate brochure PDFs in `public/brochures`. Restore those files if no brochure content changes are intended.

@@ -4,6 +4,7 @@ export type HeroPanel = {
   heading: string;
   sub: string;
   image: string;
+  mobileImage: string;
   thumbImage: string;
   color: string;
 };
@@ -33,8 +34,8 @@ const HeroGalleryThumb = ({
     >
       <img
         src={panel.thumbImage}
-        alt={isOriginal ? panel.tag : ""}
-        aria-hidden={isOriginal ? undefined : "true"}
+        alt=""
+        aria-hidden="true"
         width={220}
         height={124}
         loading={isOriginal && isActive ? "eager" : "lazy"}

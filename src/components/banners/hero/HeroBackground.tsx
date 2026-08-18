@@ -13,6 +13,7 @@ export type MorphRect = {
 
 type HeroBackgroundProps = {
   bgImage: string;
+  bgMobileImage: string;
   morph: MorphRect | null;
   panels: HeroPanel[];
   prefersReducedMotion: boolean | null;
@@ -24,11 +25,13 @@ const MORPH_MS = { calm: 1300, thumb: 800 };
 const MorphLayer = ({
   morph,
   image,
+  mobileImage,
   reducedMotion,
   onComplete,
 }: {
   morph: MorphRect;
   image: string;
+  mobileImage: string;
   reducedMotion: boolean;
   onComplete: (id: number) => void;
 }) => {
@@ -78,15 +81,19 @@ const MorphLayer = ({
     >
       <img
         src={image}
+        srcSet={`${mobileImage} 900w, ${image} 1900w`}
+        sizes="100vw"
         alt=""
         aria-hidden="true"
+        width={1408}
+        height={768}
         className={`w-full h-full object-cover object-center${morph.calm ? "" : " morph-zoom"}`}
       />
     </div>
   );
 };
 
-const HeroBackground = ({ bgImage, morph, panels, prefersReducedMotion, onMorphComplete }: HeroBackgroundProps) => {
+const HeroBackground = ({ bgImage, bgMobileImage, morph, panels, prefersReducedMotion, onMorphComplete }: HeroBackgroundProps) => {
   const reducedMotion = !!prefersReducedMotion;
 
   return (
@@ -94,6 +101,8 @@ const HeroBackground = ({ bgImage, morph, panels, prefersReducedMotion, onMorphC
       <img
         key={bgImage}
         src={bgImage}
+        srcSet={`${bgMobileImage} 900w, ${bgImage} 1900w`}
+        sizes="100vw"
         alt=""
         aria-hidden="true"
         width={1408}
@@ -118,6 +127,7 @@ const HeroBackground = ({ bgImage, morph, panels, prefersReducedMotion, onMorphC
           key={morph.id}
           morph={morph}
           image={panels.find((p) => p.id === morph.id)?.image ?? panels[0].image}
+          mobileImage={panels.find((p) => p.id === morph.id)?.mobileImage ?? panels[0].mobileImage}
           reducedMotion={reducedMotion}
           onComplete={onMorphComplete}
         />
