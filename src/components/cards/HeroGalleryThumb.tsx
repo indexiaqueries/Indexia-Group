@@ -35,6 +35,11 @@ const HeroGalleryThumb = ({
         src={panel.thumbImage}
         alt={isOriginal ? panel.tag : ""}
         aria-hidden={isOriginal ? undefined : "true"}
+        width={220}
+        height={124}
+        loading={isOriginal && isActive ? "eager" : "lazy"}
+        decoding="async"
+        fetchPriority={isOriginal && isActive ? "high" : "auto"}
         draggable={false}
         className={`w-full h-full object-cover transition-opacity duration-300 ${isActive ? "opacity-35" : "opacity-100"}`}
       />

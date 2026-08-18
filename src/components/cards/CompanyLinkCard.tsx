@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { getCompanyImage } from "../../data/companyImages";
+import { getCompanyCardImage } from "../../data/companyImages";
 import type { Company } from "../../data/companies";
 
 type CompanyLinkCardProps = {
@@ -18,10 +18,10 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
   const cardContent = (
     <>
       <img
-        src={getCompanyImage(company.slug)}
+        src={getCompanyCardImage(company.slug)}
         alt={t("companyLinkCard.visualAlt", { name })}
-        width={1536}
-        height={1024}
+        width={760}
+        height={426}
         loading="lazy"
         decoding="async"
         className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"

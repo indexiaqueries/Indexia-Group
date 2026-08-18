@@ -5,7 +5,7 @@ import SectionHeader from "../components/common/SectionHeader";
 import Reveal from "../components/common/Reveal";
 import RuledSection from "../components/common/RuledSection";
 import BusinessCard from "../components/cards/BusinessCard";
-import { getCompanyImage } from "../data/companyImages";
+import { getCompanyCardImage } from "../data/companyImages";
 import { getCompanyIcon } from "../data/companyIcons";
 import { companies } from "../data/companies";
 import { colors } from "../lib/theme";
@@ -66,7 +66,7 @@ const businesses = companies.map((company, index) => {
     description: company.desc,
     color1: colorVar(company.color),
     color2: colorVar(next.color),
-    image: getCompanyImage(company.slug),
+    image: getCompanyCardImage(company.slug),
     icon: getCompanyIcon(company.name),
     link: company.link,
   };

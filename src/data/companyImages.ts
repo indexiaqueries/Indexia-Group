@@ -7,6 +7,15 @@ import agroImg from "../assets/company-img/IndexiaAgroBioFertilizers.webp";
 import warehouseImg from "../assets/company-img/IndexiaWarehouse.webp";
 import foundationImg from "../assets/company-img/IndexiaFoundation.webp";
 import advertisingImg from "../assets/company-img/IndexiaAdvertising.webp";
+import groupCard from "../assets/company-img/cards/IndexiaGroup-card.webp";
+import financeCard from "../assets/company-img/cards/IndexiaFinance-card.webp";
+import finserveCard from "../assets/company-img/cards/IndexiaFinserve-card.webp";
+import securitiesCard from "../assets/company-img/cards/IndexiaSecurities-card.webp";
+import overseasCard from "../assets/company-img/cards/IndexiaOverseas-card.webp";
+import agroCard from "../assets/company-img/cards/IndexiaAgroBioFertilizers-card.webp";
+import warehouseCard from "../assets/company-img/cards/IndexiaWarehouse-card.webp";
+import foundationCard from "../assets/company-img/cards/IndexiaFoundation-card.webp";
+import advertisingCard from "../assets/company-img/cards/IndexiaAdvertising-card.webp";
 import groupThumb from "../assets/company-img/thumbs/IndexiaGroup-thumb.webp";
 import financeThumb from "../assets/company-img/thumbs/IndexiaFinance-thumb.webp";
 import finserveThumb from "../assets/company-img/thumbs/IndexiaFinserve-thumb.webp";
@@ -29,6 +38,18 @@ export const companyImages: Record<string, string> = {
   advertising: advertisingImg,
 };
 
+export const companyCardImages: Record<string, string> = {
+  group: groupCard,
+  finance: financeCard,
+  finserve: finserveCard,
+  securities: securitiesCard,
+  overseas: overseasCard,
+  "agro-bio": agroCard,
+  warehouse: warehouseCard,
+  foundation: foundationCard,
+  advertising: advertisingCard,
+};
+
 export const companyThumbImages: Record<string, string> = {
   group: groupThumb,
   finance: financeThumb,
@@ -42,4 +63,5 @@ export const companyThumbImages: Record<string, string> = {
 };
 
 export const getCompanyImage = (slug: string): string => companyImages[slug] ?? companyImages.group;
+export const getCompanyCardImage = (slug: string): string => companyCardImages[slug] ?? companyCardImages.group;
 export const getCompanyThumbImage = (slug: string): string => companyThumbImages[slug] ?? companyThumbImages.group;
