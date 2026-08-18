@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowRight, Check, Clock, Layers, MapPin, Sparkles } from "lucide-react";
 import { useInView } from "../../hooks/useInView";
-import { useReducedMotion } from "../../hooks/useReducedMotion";
 import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
 import ImageSlot from "../common/ImageSlot";
@@ -76,35 +75,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const index = companies.findIndex((c) => c.name === b.name);
   const entryNo = String(index + 1).padStart(2, "0");
   const Icon = companyIcons[b.name] ?? Sparkles;
-  const reducedMotion = useReducedMotion();
   const marqueeItems = [tr("tag", b.tag), ...b.services.map((s, i) => tr(`services.${i}`, s))];
   // Home-hero slide copy for this company — already translated in every locale,
   // unused on this page, and reused for the new impact band + story split.
   const slideHeading = t(`hero.p${index + 1}.heading`, b.tagline ?? b.name);
   const slideSub = t(`hero.p${index + 1}.sub`, b.desc);
-
-  const handleSpotMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const el = e.currentTarget;
-    const rect = el.getBoundingClientRect();
-    el.style.setProperty("--spot-x", `${e.clientX - rect.left}px`);
-    el.style.setProperty("--spot-y", `${e.clientY - rect.top}px`);
-  };
-
-  const handleTiltMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (reducedMotion) return;
-    const el = e.currentTarget;
-    const rect = el.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    el.style.setProperty("--tilt-x", `${(-py * 10).toFixed(2)}deg`);
-    el.style.setProperty("--tilt-y", `${(px * 10).toFixed(2)}deg`);
-  };
-
-  const resetTilt = (e: React.MouseEvent<HTMLDivElement>) => {
-    const el = e.currentTarget;
-    el.style.setProperty("--tilt-x", "0deg");
-    el.style.setProperty("--tilt-y", "0deg");
-  };
 
   const handleBook = (row: PricingRow) => {
     // Scroll the enquiry form into view first — a remount in the same tick cancels it.
@@ -254,8 +229,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               />
               <div
                 className="thumb-tilt relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10"
-                onMouseMove={handleTiltMove}
-                onMouseLeave={resetTilt}
               >
                 <img
                   src={getCompanyImage(b.slug)}
@@ -490,7 +463,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               return (
                 <Reveal key={service} delay={(i % 3) * 0.06} amount={0.1}>
                   <div
-                    onMouseMove={handleSpotMove}
                     className="spotlight-tile group relative flex items-center gap-4 overflow-hidden rounded-2xl border border-slate-100 bg-linear-to-br from-white to-(--color-soft) p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(2,16,26,0.1)]"
                     style={{ "--spot-color": `${b.color}24` } as React.CSSProperties}
                   >

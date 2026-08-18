@@ -26,6 +26,7 @@ const HomeHeroGallery = ({
   const wrapRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const xRef = useRef(0);
+  const pitchRef = useRef(0);
   // xRef / content index at the moment the active panel was last centered —
   // the drag math is relative to this baseline, so mid-drag autoplay advances
   // (which skip recentering) can't corrupt the snap calculation.
@@ -66,7 +67,9 @@ const HomeHeroGallery = ({
     if (!track || track.children.length < 2) return 0;
     const first = track.children[0] as HTMLElement;
     const second = track.children[1] as HTMLElement;
-    return second.getBoundingClientRect().left - first.getBoundingClientRect().left;
+    const pitch = second.getBoundingClientRect().left - first.getBoundingClientRect().left;
+    pitchRef.current = pitch;
+    return pitch;
   }, []);
 
   const prevCompRef = useRef(0);
@@ -81,6 +84,7 @@ const HomeHeroGallery = ({
     if (!first || !second || !active) return;
 
     const pitch = second.getBoundingClientRect().left - first.getBoundingClientRect().left;
+    pitchRef.current = pitch;
 
     // Keep the marquee aligned while the active index moves.
     const comp = (virtualIndex - listIndex) * pitch;
@@ -136,7 +140,7 @@ const HomeHeroGallery = ({
       const dx = ev.clientX - d.startX;
       if (!d.moved && Math.abs(dx) > DRAG_THRESHOLD) d.moved = true;
       if (!d.moved) return;
-      const pitch = measurePitch() || 1;
+      const pitch = pitchRef.current || measurePitch() || 1;
       const maxDx = n * pitch;
       const clamped = Math.max(-maxDx, Math.min(maxDx, dx));
       xRef.current = d.startXRaw + clamped;
@@ -162,7 +166,7 @@ const HomeHeroGallery = ({
     if (cancelHandlerRef.current) window.removeEventListener("pointercancel", cancelHandlerRef.current);
     moveHandlerRef.current = endHandlerRef.current = cancelHandlerRef.current = null;
     if (!d.moved) return;
-    const pitch = measurePitch();
+    const pitch = pitchRef.current || measurePitch();
     if (!pitch) return;
 
     // Snap to the nearest panel slot relative to the last centered baseline,
@@ -207,7 +211,6 @@ const HomeHeroGallery = ({
               panel={p}
               isActive={p.id === currentId}
               isOriginal={i === listIndex}
-              reducedMotion={reducedMotion}
               onSelect={handleSelect}
             />
           ))}

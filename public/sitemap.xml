@@ -13,6 +13,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.indexiagroup.com/businesses/finance</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.indexiagroup.com/businesses/finserve</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.indexiagroup.com/businesses/overseas</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>

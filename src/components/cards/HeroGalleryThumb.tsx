@@ -1,11 +1,10 @@
-import { useRef } from "react";
-
 export type HeroPanel = {
   id: number;
   tag: string;
   heading: string;
   sub: string;
   image: string;
+  thumbImage: string;
   color: string;
 };
 
@@ -13,7 +12,6 @@ type HeroGalleryThumbProps = {
   panel: HeroPanel;
   isActive: boolean;
   isOriginal: boolean;
-  reducedMotion: boolean;
   onSelect: (id: number) => void;
 };
 
@@ -21,32 +19,11 @@ const HeroGalleryThumb = ({
   panel,
   isActive,
   isOriginal,
-  reducedMotion,
   onSelect,
 }: HeroGalleryThumbProps) => {
-  const ref = useRef<HTMLButtonElement>(null);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
-    if (reducedMotion || !ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    ref.current.style.setProperty("--tilt-x", `${-py * 16}deg`);
-    ref.current.style.setProperty("--tilt-y", `${px * 16}deg`);
-  };
-
-  const resetTilt = () => {
-    if (!ref.current) return;
-    ref.current.style.setProperty("--tilt-x", "0deg");
-    ref.current.style.setProperty("--tilt-y", "0deg");
-  };
-
   return (
     <button
-      ref={ref}
       onClick={() => onSelect(panel.id)}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={resetTilt}
       aria-label={`Show ${panel.tag}`}
       aria-current={isActive}
       tabIndex={isOriginal ? 0 : -1}
@@ -55,7 +32,7 @@ const HeroGalleryThumb = ({
       }`}
     >
       <img
-        src={panel.image}
+        src={panel.thumbImage}
         alt={isOriginal ? panel.tag : ""}
         aria-hidden={isOriginal ? undefined : "true"}
         draggable={false}
