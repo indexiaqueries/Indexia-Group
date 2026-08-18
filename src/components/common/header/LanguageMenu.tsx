@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { changeLanguage } from "../../../i18n";
 import { LANGUAGES } from "../../../i18n/languages";
 import DropdownPanel from "./DropdownPanel";
 import FlagIcon from "./FlagIcon";
@@ -16,8 +17,8 @@ const LanguageMenu = ({ open, reducedMotion, onToggle, onClose }: LanguageMenuPr
   const lang = i18n.language;
   const current = LANGUAGES.find((l) => l.code === lang) ?? LANGUAGES[0];
 
-  const selectLang = (code: string) => {
-    i18n.changeLanguage(code);
+  const handleSelectLang = (code: string) => {
+    void changeLanguage(code);
     onClose();
   };
 
@@ -49,7 +50,7 @@ const LanguageMenu = ({ open, reducedMotion, onToggle, onClose }: LanguageMenuPr
             <button
               key={l.code}
               type="button"
-              onClick={() => selectLang(l.code)}
+              onClick={() => handleSelectLang(l.code)}
               className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-1.5 text-start text-[13px] font-semibold transition-colors duration-150 ${
                 lang === l.code
                   ? "bg-(--color-yellow)/15 text-(--color-yellow)"

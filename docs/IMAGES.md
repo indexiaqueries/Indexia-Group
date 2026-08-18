@@ -25,16 +25,16 @@ Reusable imagery lives in `src/assets` and is registered in `src/data/siteImages
 | `contactDelhi` | Contact office card | `src/assets/contact-img/delhioffice.webp` |
 | `contactInternational` | Contact office card | `src/assets/contact-img/internationaloffice.webp` |
 | `contactEnquiry` | Contact form top image | `src/assets/contact-img/customercare.webp` |
-| `companyImpact` | Company pages impact band | `src/assets/pages-img/company-impact.png` |
-| `companyStory` | Company pages story split | `src/assets/pages-img/company-story.png` |
-| `companyEnquiry` | Company pages enquiry section | `src/assets/pages-img/company-enquiry-support.png` |
-| `careersCulture` | Careers culture section | `src/assets/careers-img/office-culture.png` |
-| `careersOpenRoles` | Careers open roles section | `src/assets/careers-img/team-collaboration.png` |
-| `newsFeatured` | News featured story | `src/assets/news&knowledge-img/featured-story.png` |
+| `companyImpact` | Company pages impact band | `src/assets/pages-img/company-impact.webp` |
+| `companyStory` | Company pages story split | `src/assets/pages-img/company-story.webp` |
+| `companyEnquiry` | Company pages enquiry section | `src/assets/pages-img/company-enquiry-support.webp` |
+| `careersCulture` | Careers culture section | `src/assets/careers-img/office-culture.webp` |
+| `careersOpenRoles` | Careers open roles section | `src/assets/careers-img/team-collaboration.webp` |
+| `newsFeatured` | News featured story | `src/assets/news&knowledge-img/featured-story.webp` |
 | `researchOTG` | Global Research OTG report | Placeholder |
 | `researchACT` | Global Research ACT report | Placeholder |
 | `researchSpecial` | Global Research special reports | Placeholder |
-| `securityFeatures` | Security tips feature image | `src/assets/security-img/online-security.png` |
+| `securityFeatures` | Security tips feature image | `src/assets/security-img/online-security.webp` |
 
 ## Adding Images
 

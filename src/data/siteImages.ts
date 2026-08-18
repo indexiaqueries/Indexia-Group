@@ -4,13 +4,13 @@ import contactCare from "../assets/contact-img/customercare.webp";
 import contactDelhi from "../assets/contact-img/delhioffice.webp";
 import contactInternational from "../assets/contact-img/internationaloffice.webp";
 import contactMumbai from "../assets/contact-img/mumbaioffice.webp";
-import careersCulture from "../assets/careers-img/office-culture.png";
-import careersOpenRoles from "../assets/careers-img/team-collaboration.png";
-import companyEnquiry from "../assets/pages-img/company-enquiry-support.png";
-import companyImpact from "../assets/pages-img/company-impact.png";
-import companyStory from "../assets/pages-img/company-story.png";
-import newsFeatured from "../assets/news&knowledge-img/featured-story.png";
-import securityFeatures from "../assets/security-img/online-security.png";
+import careersCulture from "../assets/careers-img/office-culture.webp";
+import careersOpenRoles from "../assets/careers-img/team-collaboration.webp";
+import companyEnquiry from "../assets/pages-img/company-enquiry-support.webp";
+import companyImpact from "../assets/pages-img/company-impact.webp";
+import companyStory from "../assets/pages-img/company-story.webp";
+import newsFeatured from "../assets/news&knowledge-img/featured-story.webp";
+import securityFeatures from "../assets/security-img/online-security.webp";
 
 export const siteImages: Record<string, ImageSlotData> = {
   contactCorporate: {
