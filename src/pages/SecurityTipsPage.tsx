@@ -5,8 +5,11 @@ import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
+import ImageSlot from "../components/common/ImageSlot";
 import { colors } from "../lib/theme";
 import securityBg from "../assets/BusinessesHero.webp";
+import { siteImages } from "../data/siteImages";
+import type { ImageSlotData } from "../components/common/ImageSlot";
 import {
   securityFeatures,
   securityPractices,
@@ -46,9 +49,10 @@ type SectionProps = {
   subtitle: string;
   tips: Tip[];
   contact?: boolean;
+  image?: ImageSlotData;
 };
 
-const SecuritySection = ({ eyebrow, heading, subtitle, tips, contact }: SectionProps) => (
+const SecuritySection = ({ eyebrow, heading, subtitle, tips, contact, image }: SectionProps) => (
   <div className="mx-auto max-w-6xl">
     <Reveal className="mx-auto mb-12 max-w-2xl text-center">
       <Eyebrow className="mb-3">{eyebrow}</Eyebrow>
@@ -57,6 +61,12 @@ const SecuritySection = ({ eyebrow, heading, subtitle, tips, contact }: SectionP
       </h2>
       <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{subtitle}</p>
     </Reveal>
+
+    {image && (
+      <Reveal delay={0.05} amount={0.15}>
+        <ImageSlot {...image} className="mb-10" />
+      </Reveal>
+    )}
 
     <div
       className={`grid grid-cols-1 gap-5 ${
@@ -146,6 +156,7 @@ const SecurityTipsPage = () => {
           heading={t("securityTipsPage.featuresHeading")}
           subtitle={t("securityTipsPage.featuresSubtitle")}
           tips={features}
+          image={siteImages.securityFeatures}
         />
       </section>
 

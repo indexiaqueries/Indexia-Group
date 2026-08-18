@@ -31,15 +31,29 @@ type EnquiryFormProps = {
   initialCompany?: string;
   initialCompanyLabel?: string;
   companyLocked?: boolean;
+  /** Pre-filled message (e.g. selected pricing package) — updates overwrite the message field. */
+  initialMessage?: string;
 };
 
-const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = false }: EnquiryFormProps) => {
+const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = false, initialMessage }: EnquiryFormProps) => {
   const { t } = useTranslation();
 
   const [form, setForm] = useState<ContactFormData>(() => ({
     ...initialContactForm,
     subject: initialCompany ?? "",
+    message: initialMessage ?? "",
   }));
+
+  // When a booking message arrives (e.g. a land-area or unipole package was
+  // selected), overwrite only the message field — name/phone/email typed so far
+  // are preserved instead of the form being reset.
+  const [prevInitialMessage, setPrevInitialMessage] = useState(initialMessage);
+  if (prevInitialMessage !== initialMessage) {
+    setPrevInitialMessage(initialMessage);
+    setForm((previous) => ({ ...previous, message: initialMessage ?? "" }));
+  }
+
+
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);

@@ -5,6 +5,7 @@ import Footer from "../components/common/Footer";
 
 const MainLayout = () => {
   const { pathname } = useLocation();
+  const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,7 +13,7 @@ const MainLayout = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      {!hideHeader && <Header />}
       <main className="flex-1">
         <div key={pathname} className="fade-in">
           <Outlet />

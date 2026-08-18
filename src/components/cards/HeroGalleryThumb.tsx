@@ -6,6 +6,7 @@ export type HeroPanel = {
   heading: string;
   sub: string;
   image: string;
+  color: string;
 };
 
 type HeroGalleryThumbProps = {
@@ -57,6 +58,7 @@ const HeroGalleryThumb = ({
         src={panel.image}
         alt={isOriginal ? panel.tag : ""}
         aria-hidden={isOriginal ? undefined : "true"}
+        draggable={false}
         className={`w-full h-full object-cover transition-opacity duration-300 ${isActive ? "opacity-35" : "opacity-100"}`}
       />
 

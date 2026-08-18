@@ -44,7 +44,7 @@ const contactInfo: {
 }[] = [
   { icon: Mail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
   { icon: Phone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
-  { icon: MapPin, text: "Mumbai · Delhi · Surat · Ecuador", href: "/contact" },
+  { icon: MapPin, text: "Mumbai · Delhi · Ecuador", href: "/contact" },
   { icon: Clock, textKey: "footer.hours" },
 ];
 
@@ -92,9 +92,10 @@ const Footer = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
 
-        <div className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-[6fr_4fr_3.5fr_3.5fr_3.5fr] lg:divide-x lg:divide-white/10">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:divide-x lg:divide-white/10">
 
-          <div className="flex flex-col items-center gap-5 text-center md:col-span-2 md:items-start md:text-start lg:col-span-1">
+          {/* Section 1 — brand (full 2-column width on small, first column on large) */}
+          <div className="col-span-2 flex flex-col items-start gap-5 text-start lg:col-span-1 lg:pe-10">
             <div className="flex flex-row items-center gap-3">
               <img src={logo} alt={t("common.logoAlt")} width={72} height={72} className="h-16 w-16 object-contain sm:h-20 sm:w-20" />
               <div>
@@ -113,45 +114,46 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="text-center md:text-start">
+          {/* Contact */}
+          <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />
-            <div className="mx-auto mt-3 h-1 w-10 rounded-full bg-(--color-teal) md:mx-0" />
+            <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
 
-            <div className="mt-6 space-y-4">
-              {contactInfo.map((item) => {
-                const Icon = item.icon;
-                const content = (
-                  <span className="flex items-start justify-center gap-3 text-sm text-white/85 md:justify-start">
-                    <span className="mt-0.5 shrink-0 text-(--color-teal)">
-                      <Icon className="h-4 w-4" />
+              <div className="mt-6 space-y-4">
+                {contactInfo.map((item) => {
+                  const Icon = item.icon;
+                  const content = (
+                    <span className="flex items-start justify-start gap-3 text-sm text-white/85">
+                      <span className="mt-0.5 shrink-0 text-(--color-teal)">
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <span className={`wrap-break-word min-w-0 ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
+                        {item.textKey ? t(item.textKey) : item.text}
+                      </span>
                     </span>
-                    <span className={`wrap-break-word ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
-                      {item.textKey ? t(item.textKey) : item.text}
-                    </span>
-                  </span>
-                );
-                return item.href ? (
-                  <Link key={item.text ?? item.textKey} to={item.href} className="block">
-                    {content}
-                  </Link>
-                ) : (
-                  <div key={item.text ?? item.textKey}>{content}</div>
-                );
-              })}
+                  );
+                  return item.href ? (
+                    <Link key={item.text ?? item.textKey} to={item.href} className="block">
+                      {content}
+                    </Link>
+                  ) : (
+                    <div key={item.text ?? item.textKey}>{content}</div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
 
-          {linkGroups.map((group) => (
-            <div key={group.titleKey} className="text-center md:text-start">
-              <ColumnHeader title={t(group.titleKey)} />
-              <div className="mx-auto mt-3 h-1 w-10 rounded-full bg-(--color-teal) md:mx-0" />
-              <ul className="mt-6 space-y-3">
-                {group.links.map((item) => (
-                  <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} t={t} />
-                ))}
-              </ul>
-            </div>
-          ))}
+            {linkGroups.map((group) => (
+              <div key={group.titleKey} className="text-start">
+                <ColumnHeader title={t(group.titleKey)} />
+                <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
+                <ul className="mt-6 space-y-3">
+                  {group.links.map((item) => (
+                    <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} t={t} />
+                  ))}
+                </ul>
+              </div>
+            ))}
         </div>
 
         <div className="mt-12 rounded-2xl border border-white/12 bg-white/5 px-6 py-6 backdrop-blur-sm sm:px-8">

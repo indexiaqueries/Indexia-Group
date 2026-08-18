@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/common/Reveal";
+import ImageSlot from "../../components/common/ImageSlot";
 import { companies } from "../../data/companies";
+import { siteImages } from "../../data/siteImages";
 import { colors } from "../../lib/theme";
 import { companyColor, type ArticleItem } from "./newsData";
 
@@ -15,6 +17,7 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
   return (
     <Reveal>
       <article className="group relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg">
+        <ImageSlot {...siteImages.newsFeatured} alt={featured.title} className="rounded-none border-0 border-b" />
         <div
           className="relative flex min-h-56 flex-col justify-between overflow-hidden p-8 text-white sm:p-10"
           style={{ background: `linear-gradient(135deg, ${colors.navyDeep}, ${colors.navyMid})` }}

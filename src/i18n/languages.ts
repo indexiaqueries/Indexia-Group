@@ -1,11 +1,39 @@
-
-export const LANGUAGES: { code: string; label: string }[] = [
-  { code: "en", label: "English" },
-  { code: "es", label: "Español" },
-  { code: "fr", label: "Français" },
-  { code: "de", label: "Deutsch" },
-  { code: "it", label: "Italiano" },
-  { code: "pt", label: "Português" },
+export const LANGUAGES: { code: string; key: string }[] = [
+  { code: "en", key: "common.languages.en" },
+  { code: "es", key: "common.languages.es" },
+  { code: "fr", key: "common.languages.fr" },
+  { code: "de", key: "common.languages.de" },
+  { code: "it", key: "common.languages.it" },
+  { code: "pt", key: "common.languages.pt" },
+  { code: "hi", key: "common.languages.hi" },
+  { code: "ar", key: "common.languages.ar" },
+  { code: "zh", key: "common.languages.zh" },
+  { code: "ja", key: "common.languages.ja" },
+  { code: "ru", key: "common.languages.ru" },
+  { code: "ko", key: "common.languages.ko" },
+  { code: "id", key: "common.languages.id" },
+  { code: "tr", key: "common.languages.tr" },
+  { code: "vi", key: "common.languages.vi" },
+  { code: "nl", key: "common.languages.nl" },
+  { code: "pl", key: "common.languages.pl" },
 ];
 
-export const SUPPORTED_LANGS = ["en", "es", "fr", "de", "it", "pt"] as const;
+export const SUPPORTED_LANGS = [
+  "en",
+  "es",
+  "fr",
+  "de",
+  "it",
+  "pt",
+  "hi",
+  "ar",
+  "zh",
+  "ja",
+  "ru",
+  "ko",
+  "id",
+  "tr",
+  "vi",
+  "nl",
+  "pl",
+] as const;

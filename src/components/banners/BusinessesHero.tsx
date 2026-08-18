@@ -56,14 +56,21 @@ const BusinessesHero = () => {
     <HeroBackdrop
       image={businessesHeroBg}
       overlay="linear-gradient(115deg, rgba(10,34,51,0.88) 0%, rgba(12,54,82,0.72) 55%, rgba(15,74,110,0.55) 100%)"
-      radial="radial-gradient(circle at 85% 15%, rgba(242,242,49,0.14), transparent 45%)"
+      radial="radial-gradient(circle at 85% 15%, rgba(242,242,49,0.16), transparent 42%), radial-gradient(circle at 12% 85%, rgba(38,174,144,0.2), transparent 45%), radial-gradient(circle at 55% 50%, rgba(6,106,156,0.2), transparent 55%)"
       extra={
-        <span
-          className="seal-stamp-in pointer-events-none absolute bottom-5 end-5 z-10 sm:bottom-10 sm:end-10"
-          aria-hidden="true"
-        >
-          <SealStamp size={96} className="h-16 w-16 sm:h-24 sm:w-24" />
-        </span>
+        <>
+          {/* Fade into the paper-toned listing section below */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-36 bg-linear-to-t from-(--color-paper)/95 to-transparent"
+          />
+          <span
+            className="seal-stamp-in pointer-events-none absolute bottom-5 end-5 z-10 sm:bottom-10 sm:end-10"
+            aria-hidden="true"
+          >
+            <SealStamp size={96} className="h-16 w-16 sm:h-24 sm:w-24" />
+          </span>
+        </>
       }
     >
       <div className="mb-4 flex items-center justify-center gap-3">

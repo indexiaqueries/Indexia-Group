@@ -1,0 +1,576 @@
+{
+  "header": {
+    "nav": {
+      "contact": "문의하기"
+    },
+    "menu": {
+      "home": "홈",
+      "groupCompanies": "그룹 회사",
+      "companies": "회사",
+      "contact": "문의하기",
+      "viewAllCompanies": "전체 회사 보기 →"
+    },
+    "aria": {
+      "selectLanguage": "언어 선택",
+      "toggleMenu": "메뉴 열기/닫기",
+      "closeMenu": "메뉴 닫기"
+    }
+  },
+  "hero": {
+    "p0": {
+      "tag": "Indexia Group",
+      "heading": "하나의 그룹.\n다양한 솔루션.",
+      "sub": "금융과 물류에서 농업과 광고까지, Indexia Group은 신뢰받는 미래 지향적 비즈니스로 다양한 산업의 성장을 이끕니다."
+    },
+    "p1": {
+      "tag": "Indexia Finance",
+      "heading": "모든 대출의\n완전한 목적지.",
+      "sub": "모든 종류의 대출은 www.indexiafinance.com 포털에서 신청하실 수 있습니다. 우리는 전 세계에서 서비스를 제공하며, 인도에서는 43개 은행 및 NBFC와 비즈니스 파트너 관계를 맺고 있습니다."
+    },
+    "p2": {
+      "tag": "Indexia Finserve Pvt. Ltd.",
+      "heading": "차세대\n금융 방식.",
+      "sub": "이제 올바른 은행이 당신의 문 앞에 찾아옵니다."
+    },
+    "p3": {
+      "tag": "Indexia Overseas Pvt. Ltd.",
+      "heading": "정제 설탕과\n모든 식품.",
+      "sub": "우리는 정제 설탕과 모든 식품을 거래하고 수출합니다."
+    },
+    "p4": {
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+      "heading": "유기농 비료\n생산 및 수출",
+      "sub": "우리는 인도에서 유기농 비료를 생산하여 전 세계로 수출합니다."
+    },
+    "p5": {
+      "tag": "Indexia Securities",
+      "heading": "무장 코만도 &\n무장 보안",
+      "sub": "정치인과 대기업 경영진의 안전을 지킵니다."
+    },
+    "p6": {
+      "tag": "Indexia Warehouse",
+      "heading": "규모에 맞춰\n지어진 물류창고.",
+      "sub": "상품이 효율적으로 이동하도록 돕는 현대적인 물류창고 및 물류 인프라."
+    },
+    "p7": {
+      "tag": "Indexia Advertising",
+      "heading": "모든 고속도로에\n당신의 브랜드를.",
+      "sub": "고속도로 주변의 다양한 광고 매체로 브랜드에 높은 가시성 캠페인을 제공합니다."
+    },
+    "p8": {
+      "tag": "Indexia Foundation",
+      "heading": "선수들의\n힘을 키우다.",
+      "sub": "선수들을 훈련, 멘토링, 지원하여 최고의 기량에 도달하도록 돕는 스포츠 프로그램."
+    },
+    "ctaExploreGroup": "그룹 회사 살펴보기",
+    "ctaExploreMore": "더 알아보기",
+    "prevPanel": "이전 패널",
+    "nextPanel": "다음 패널"
+  },
+  "footer": {
+    "tagline": "다각화된 인도 비즈니스 그룹",
+    "blurb": "하나의 다각화된 인도 그룹 아래 여덟 개의 신뢰받는 비즈니스 — 금융, 수출, 농업, 물류, 보안, 광고, 선수 지원 — 정직함과 성과를 바탕으로 성장해 왔습니다.",
+    "contactUs": "문의하기",
+    "hours": "월 - 토: 오전 9시 - 오후 6시",
+    "company": "회사",
+    "resources": "자료실",
+    "legal": "법적 고지",
+    "links": {
+      "groupCompanies": "그룹 회사",
+      "advertise": "광고 문의",
+      "careers": "채용",
+      "news": "뉴스 & 지식 센터",
+      "globalResearch": "글로벌 리서치",
+      "securityTips": "보안 팁",
+      "termsOfUse": "이용 약관",
+      "termsConditions": "서비스 약관",
+      "privacyPolicy": "개인정보 처리방침"
+    },
+    "cta": "그룹 회사에 대해 궁금한 점이 있으신가요?",
+    "enquiry": "문의를 보내주세요.",
+    "stats": "Indexia Group · 08개 회사 · 03개 도시",
+    "rights": "© 2026 Indexia Group. 모든 권리 보유.",
+    "backToTop": "맨 위로"
+  },
+  "home": {
+    "groupCompanies": {
+      "title": "그룹 회사",
+      "description": "Indexia Group은 금융, 수출, 농업, 물류창고, 보안, 사회공헌, 광고에 걸친 다각화된 지주회사입니다. 우리는 고객, 파트너, 지역사회가 자신 있게 성장할 수 있도록 돕는 비즈니스를 구축합니다."
+    }
+  },
+  "businesses": {
+    "eyebrow": "그룹 회사",
+    "titleStart": "여덟 개 회사, ",
+    "titleAccent": "하나의 그룹",
+    "subtitle": "회사를 선택하여 해당 페이지를 방문한 뒤, 올바른 팀에 문의를 보내세요."
+  },
+  "businessesHero": {
+    "eyebrow": "Indexia의 차별점",
+    "titleStart": "하나의 그룹. 여덟 개의 사업. ",
+    "titleAccent": "하나의 약속.",
+    "paragraph": "금융과 자문에서 수출, 농업, 물류, 보안, 스포츠, 미디어까지 — 모든 Indexia 비즈니스는 같은 기반 위에 세워졌습니다: 정직함, 전문성, 사람 중심의 접근. 필요한 것이 무엇이든, 올바른 팀은 이미 가족의 일부입니다.",
+    "counterClients": "서비스 고객",
+    "counterBusinesses": "사업체",
+    "counterLocations": "도시",
+    "counterYears": "업력",
+    "cta": "무료 상담 예약 →"
+  },
+  "contactHero": {
+    "eyebrow": "Indexia에 문의",
+    "title": "우리 팀과의 직접 연결",
+    "paragraph": "서류 문의부터 신규 대출 문의까지, 모든 메시지는 대기열이 아닌 우리 팀 구성원이 직접 검토하고 답변합니다.",
+    "sendEnquiry": "문의 보내기",
+    "callNow": "지금 전화 · 86551 68551",
+    "offices": "사무실 {{count}}곳",
+    "directLines": "직통 {{count}}개",
+    "reply": "평균 답변 < 24시간"
+  },
+  "contactInfo": {
+    "eyebrow": "문의 보내기",
+    "headlineStart": "",
+    "headlineAccent": "Indexia 회사에 대해 문의",
+    "paragraph": "서비스에 대한 질문, 비즈니스 상담, 파트너십 모색 등 무엇이든 우리 팀이 도와드릴 준비가 되어 있습니다 — 24시간 이내에 답변해 드립니다.",
+    "enquiries": "문의",
+    "location": "위치",
+    "workingHours": "근무 시간",
+    "phoneNumbers": "전화번호",
+    "country": "인도"
+  },
+  "form": {
+    "eyebrow": "문의 보내기",
+    "intro": "아래 양식을 작성하시면 문의 사항이 우리 팀에 전달됩니다.",
+    "name": "이름",
+    "namePlaceholder": "성함을 입력하세요",
+    "email": "이메일 주소",
+    "emailPlaceholder": "you@example.com",
+    "phone": "전화번호",
+    "phonePlaceholder": "10자리 숫자",
+    "subject": "주제 / 회사",
+    "subjectPlaceholder": "회사를 선택하세요…",
+    "message": "메시지",
+    "messagePlaceholder": "문의 내용을 입력하세요...",
+    "submit": "문의 보내기",
+    "sending": "보내는 중…",
+    "success": "문의가 전송되었습니다! 곧 팀이 연락드리겠습니다.",
+    "errorName": "이름을 입력해 주세요.",
+    "errorNameLetters": "이름에는 문자가 포함되어야 합니다.",
+    "errorPhone": "올바른 10자리 전화번호를 입력하세요.",
+    "errorEmail": "올바른 이메일 주소를 입력하세요.",
+    "errorSubject": "주제 또는 회사를 선택해 주세요.",
+    "errorMessage": "메시지를 입력해 주세요.",
+    "errorGeneric": "문제가 발생했습니다. 나중에 다시 시도해 주세요.",
+    "generalEnquiry": "일반 문의"
+  },
+  "companyDetail": {
+    "backAll": "전체 회사",
+    "register": "등록 번호 {{no}} / 08",
+    "keyEntries": "주요 항목",
+    "servicesTitle": "이 항목의 서비스",
+    "registerOf": "Indexia Group · 회사 등록부",
+    "entryOf": "항목 {{no}} / 08",
+    "eyebrow": "문의 보내기",
+    "enquireTitle": "{{name}} 문의",
+    "enquireSub": "문의 상단에 {{name}} 이름이 명시되어 올바른 팀이 먼저 확인합니다.",
+    "responseTime": "응답 시간",
+    "responseValue": "24시간 이내, 월 – 토",
+    "overviewEyebrow": "개요",
+    "overviewTitle": "{{name}} 소개",
+    "exploreServices": "서비스 살펴보기",
+    "statServices": "서비스",
+    "statHighlights": "주요 특징",
+    "statRegister": "등록 항목"
+  },
+  "contact": {
+    "locationsTitleStart": "우리의 ",
+    "locationsTitleAccent": "위치"
+  },
+  "businessCard": {
+    "tapToView": "탭하여 보기",
+    "readMore": "더 보기"
+  },
+  "companyLinkCard": {
+    "visitPage": "페이지 방문",
+    "visitWebsiteAria": "{{name}} 웹사이트 방문",
+    "visitPageAria": "{{name}} 페이지 방문",
+    "visualAlt": "{{name}} 이미지"
+  },
+  "newsPage": {
+    "eyebrow": "뉴스 & 지식 센터",
+    "title": "뉴스 & 지식 센터",
+    "titleStart": "그룹 전반의 ",
+    "titleAccent": "이야기와 인사이트.",
+    "subtitle": "최신 은행 뉴스 — 자금 조달 업데이트, 디지털 결제, 정책 변화, 시장 동향 — 그리고 우리 비즈니스의 실용적인 가이드.",
+    "tvEyebrow": "TV에서 만나보세요",
+    "tvHeading": "모든 대출 요구를 위해",
+    "tvCaption": "대출이 필요하다면… Indexia Finance",
+    "featuredLabel": "주요 기사",
+    "readMore": "더 보기",
+    "askUs": "문의하기",
+    "knowledgeEyebrow": "지식 센터",
+    "knowledgeHeading": "우리 비즈니스의 실용 가이드",
+    "knowledgeSubtitle": "매일 이 일을 하는 팀이 직접 쓴 이해하기 쉬운 설명서.",
+    "ctaTitle": "우리 비즈니스에 대해 궁금한 점이 있으신가요?",
+    "ctaBody": "FDI 자문에서 유기농 농업, 무장 보안까지 — 적합한 Indexia 회사가 도와드릴 준비가 되어 있습니다. 문의를 보내주시면 연결해 드리겠습니다.",
+    "ctaButton": "문의 보내기",
+    "metaDescription": "뉴스 & 지식 센터 — 자금 조달, 디지털 결제, 정책에 관한 최신 은행 뉴스와 Indexia Group의 실용 지식 가이드."
+  },
+  "careersPage": {
+    "eyebrow": "채용",
+    "title": "Indexia Group에서의 커리어",
+    "titleStart": "우리와 함께 ",
+    "titleAccent": "커리어를 쌓으세요.",
+    "subtitle": "Indexia Group은 학습하는 조직입니다 — 그리고 그 기업 문화가 곧 팀입니다.",
+    "ctaButton": "채용 공고 보기",
+    "cultureEyebrow": "우리의 문화",
+    "cultureHeading": "학습하는 조직",
+    "rolesEyebrow": "채용 중",
+    "rolesHeading": "현재 채용 공고",
+    "rolesSubtitle": "현재 채용 중인 직무는 다음과 같습니다:",
+    "apply": "지원하기",
+    "ctaTitle": "이력서를 보내주세요",
+    "ctaBody": "우리는 항상 훌륭한 인재를 찾고 있습니다. 이력서를 hr@indexiafinance.com으로 보내주시면 연락드리겠습니다.",
+    "metaDescription": "Indexia Group 채용 — 뭄바이의 Indexia Finserve에 채용 공고가 있는 학습 조직. 이력서를 보내 커리어를 시작하세요.",
+    "mailResume": "이력서를 보내주세요 –"
+  },
+  "legal": {
+    "eyebrow": "법적 고지",
+    "privacyTitle": "개인정보 처리방침",
+    "privacySubtitle": "Indexia Group이 개인정보를 수집, 사용, 보호하는 방법.",
+    "termsTitle": "서비스 약관",
+    "termsSubtitle": "Indexia Group 웹사이트와 회사 서비스 이용에 적용되는 약관.",
+    "termsOfUseTitle": "이용 약관",
+    "termsOfUseSubtitle": "Indexia Group 웹사이트와 회사 웹사이트 접속 및 이용 규칙.",
+    "lastUpdated": "최종 업데이트",
+    "backHome": "홈으로 돌아가기",
+    "contactUs": "문의하기",
+    "contactHeading": "이 정책에 대해 궁금한 점이 있으신가요?",
+    "contactBody": "contactus@indexiagroup.com으로 연락하거나 문의를 보내주시면 팀이 답변드리겠습니다.",
+    "sendEnquiry": "문의 보내기",
+    "metaPrivacyDescription": "Indexia Group의 개인정보 처리방침 — 개인정보 수집, 사용, 보관, 보호 방법을 확인하세요.",
+    "metaTermsDescription": "Indexia Group 웹사이트와 회사 서비스 이용에 적용되는 약관을 확인하세요.",
+    "metaTermsOfUseDescription": "Indexia Group 웹사이트와 회사 웹사이트 접속 및 이용 규칙을 확인하세요."
+  },
+  "globalResearchPage": {
+    "eyebrow": "글로벌 리서치",
+    "title": "Indexia Group 글로벌 리서치",
+    "titleStart": "글로벌 금융 리서치 ",
+    "titleAccent": "& 자료.",
+    "subtitle": "거시경제, 채권, 외환, 원자재 분야의 통찰력 있는 분석과 날카로운 시각 — 아시아, 아프리카, 중동 전역의 현장 기반 인사이트 위에 구축되었습니다.",
+    "ctaButton": "리서치 범위 살펴보기",
+    "areasEyebrow": "리서치 범위",
+    "areasHeading": "다양한 분야의 글로벌 리서치",
+    "areasSubtitle": "전체 커버리지에 걸친 통찰력 있는 관련 분석.",
+    "reportsEyebrow": "발간물",
+    "reportsHeading": "리서치 공유 방식",
+    "reportsSubtitle": "정기 프레젠테이션과 고품질 발간물 — 현장 분석 OTG, 실행 가능한 시장 아이디어 ACT, 그리고 세계적으로 중요한 주제의 특별 보고서.",
+    "ctaTitle": "리서치 이용하기",
+    "ctaBody": "자세한 내용과 리서치 수령을 원하시면 글로벌 리서치 포털을 방문하세요. 이용을 원하시면 담당 매니저에게 문의해 주세요.",
+    "metaDescription": "Indexia Group 글로벌 리서치 — 거시경제, 채권, 외환, 원자재 분야의 통찰력 있는 분석, 아시아, 아프리카, 중동의 현장 인사이트를 바탕으로.",
+    "reportFormat": "발간물"
+  },
+  "securityTipsPage": {
+    "eyebrow": "보안 팁",
+    "title": "Indexia Group의 보안 팁",
+    "titleStart": "사기보다 ",
+    "titleAccent": "한발 앞서.",
+    "subtitle": "어디에서든 온라인으로 안심하고 자금을 관리할 수 있습니다.",
+    "ctaButton": "내 정보 보호하기",
+    "featuresEyebrow": "우리가 하는 일",
+    "featuresHeading": "온라인 안전 지키기",
+    "featuresSubtitle": "온라인 뱅킹 시 계정을 보호하기 위해 우리가 하는 일을 알아보세요.",
+    "practicesEyebrow": "당신이 할 수 있는 일",
+    "practicesHeading": "내 정보 보호하기",
+    "practicesSubtitle": "우리는 온라인 뱅킹 시 계정을 보호하기 위해 매일 노력합니다. 일상 기기에서 안전을 지키기 위한 몇 가지 간단한 방법도 있습니다.",
+    "contactsEyebrow": "도움이 필요하신가요?",
+    "contactsHeading": "우리와 상담이 필요하신가요?",
+    "contactsSubtitle": "의심스러운 상대에게 계정 정보를 유출했거나 사기를 당했을 가능성이 있다면, 즉시 고객 서비스 핫라인으로 연락하세요.",
+    "ctaTitle": "수상한 점을 발견하셨나요?",
+    "ctaBody": "문의 양식으로 신고하거나 관련 Indexia Group 회사에 직접 연락하세요.",
+    "metaDescription": "Indexia Group 보안 팁 — 온라인 계정 보호 방법, 기기에서 할 수 있는 일, 문제 발생 시 연락처."
+  },
+  "common": {
+    "logoAlt": "Indexia Group 로고",
+    "homeAria": "Indexia Group 홈",
+    "languages": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "pt": "Português",
+      "hi": "हिन्दी",
+      "ar": "العربية",
+      "zh": "中文",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "id": "Bahasa Indonesia",
+      "tr": "Türkçe",
+      "vi": "Tiếng Việt",
+      "nl": "Nederlands",
+      "pl": "Polski"
+    }
+  },
+  "seo": {
+    "homeTitle": "금융 서비스, 대출, 수출 & 물류",
+    "homeDescription": "다각화된 인도 비즈니스 그룹: 금융 서비스, NBFC 대출, 글로벌 수출, 농업 비료, 물류창고, 보안. 뭄바이, 델리, 에콰도르 사무소.",
+    "businessesTitle": "그룹 회사 — 금융, 농업, 수출 & 물류",
+    "businessesDescription": "Indexia Group의 여덟 가지 사업: 금융, 대출, 보안, 설탕 수출, 유기농 비료, 물류창고, 광고, 선수 지원.",
+    "contactTitle": "문의하기 — 뭄바이 & 델리 사무소",
+    "contactDescription": "금융 서비스, 대출, 수출, 농업, 물류 문의를 위해 Indexia Group에 연락하세요. 뭄바이, 델리, 에콰도르 사무소 — 24시간 이내 답변."
+  },
+  "branches": {
+    "corporateOffice": "본사",
+    "mumbaiOffice": "뭄바이 사무소",
+    "delhiOffice": "델리 사무소",
+    "internationalOffice": "국제 사무소"
+  },
+  "phoneLabel": {
+    "landline": "유선",
+    "mobile": "휴대폰",
+    "mob": "휴대",
+    "tel": "유선"
+  },
+  "unipolePricing": {
+    "eyebrow": "유니폴 패키지",
+    "title": "이용 가능한 크기 및 요금",
+    "subtitle": "샴리, 델리–데라둔 고속도로의 프리미엄 유니폴 패키지",
+    "sizeCol": "크기",
+    "areaCol": "제곱피트",
+    "rateCol": "월 요금",
+    "sizeSmall": "10 × 20피트",
+    "areaSmall": "200제곱피트",
+    "rateSmall": "₹25,000",
+    "sizeLarge": "12 × 24피트",
+    "areaLarge": "288제곱피트",
+    "rateLarge": "₹36,000",
+    "standardRate": "기준 요금: 1개월 1면 ₹125/제곱피트",
+    "note": "* 요금은 공급 상황에 따라 달라질 수 있습니다. 장기 패키지는 문의하세요.",
+    "bookNow": "지금 예약",
+    "bookSize": "이 크기 예약",
+    "bookMessage": "{{size}} 유니폴({{area}})을 월 {{rate}}로 예약하고 싶습니다."
+  },
+  "pageContent": {
+    "companies": {
+      "finance": {
+        "tag": "글로벌 핀테크",
+        "desc": "투자자 서비스, FDI, NBFC, 은행 자금 조달에 걸친 글로벌 핀테크.",
+        "overview": "Indexia Finance는 전 세계 고객에게 금융 서비스를 제공하는 글로벌 핀테크 플랫폼입니다. 모든 종류의 대출은 www.indexiafinance.com 포털에서 신청할 수 있으며, 인도에서는 43개 은행 및 NBFC와 파트너십을 맺고 있습니다. 투자자 서비스, FDI 자문, NBFC 운영, 은행 자금 조달의 네 가지 핵심 분야를 중심으로 자본과 기회를 연결하여 투자자, 기업, 기관이 국경을 넘어 자신 있는 금융 결정을 내릴 수 있도록 돕습니다.",
+        "tagline": "모든 대출의 목적지",
+        "highlights": [
+          "인도 우선 실행의 글로벌 핀테크 범위",
+          "한 지붕 아래 통합된 네 가지 분야",
+          "종합적인 자금 조달 및 자문 지원"
+        ],
+        "services": [
+          "FDI 자문 및 지원",
+          "투자자 서비스",
+          "NBFC 운영",
+          "은행 및 기관 자금 조달",
+          "국경 간 자본 솔루션",
+          "자산 및 자산관리 자문"
+        ],
+        "name": "Indexia Finance"
+      },
+      "finserve": {
+        "tag": "대출 & 금융",
+        "desc": "개인과 기업을 위한 모든 유형의 대출.",
+        "overview": "Indexia Finserve는 Indexia Group의 대출 부문으로, 금융 전반의 모든 대출을 제공합니다. 이제 올바른 은행이 당신의 문 앞에 찾아옵니다 — 개인, 주택, 기업, MSME 및 전문 자금 조달을 위한 자격, 서류, 지급 절차를 하나의 간소화된 프로세스로 안내하는 완전한 대출 목적지입니다.",
+        "tagline": "차세대 금융 방식",
+        "highlights": [
+          "한 지붕 아래 모든 대출 유형",
+          "간소화된 자격, 서류, 지급 절차",
+          "각 단계에서의 전담 자문"
+        ],
+        "services": [
+          "개인 대출",
+          "기업 대출",
+          "주택 대출",
+          "부동산 담보 대출",
+          "잔액 이체",
+          "자동차 대출",
+          "신용카드",
+          "학자금 대출",
+          "프로젝트 대출",
+          "상업 매입",
+          "리스 할인",
+          "운전자본"
+        ],
+        "name": "Indexia Finserve Pvt. Ltd."
+      },
+      "overseas": {
+        "tag": "식품 수출업체",
+        "desc": "정제 설탕과 모든 식품을 세계로 수출합니다.",
+        "overview": "Indexia Overseas는 모든 식품의 글로벌 수출을 이끌며, 특히 14개 남미 국가로의 설탕 수출에 주력합니다. 회사는 조달, 품질, 물류, 국제 규정 준수를 관리하여 식품 등급 제품이 원산지에서 시장까지 안정적으로 대규모로 이동하도록 합니다.",
+        "highlights": [
+          "모든 식품 수출 — 설탕이 핵심",
+          "14개 남미 시장에서의 확고한 입지",
+          "종합적인 조달, 품질, 물류"
+        ],
+        "services": [
+          "설탕 수출 및 거래",
+          "조달 및 품질 관리",
+          "국제 물류",
+          "14개 남미 시장"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd."
+      },
+      "agro-bio": {
+        "tag": "유기농 비료 생산",
+        "desc": "인도에서 생산되어 전 세계로 수출되는 유기농 비료.",
+        "overview": "Indexia Agro Bio Fertilizers는 델리 NCR 지역의 일부인 우타르프라데시주 샴리 생산 시설에서 유기농 비료를 생산합니다. 회사의 바이오 기반 제품은 토양 건강을 개선하고 작물 수확량을 높이며 북부 인도 농민들의 지속 가능한 농업을 지원합니다.",
+        "highlights": [
+          "유기농 바이오 기반 생산 — 유해 화학물질 없음",
+          "델리 NCR 지역의 샴리, UP 생산 시설",
+          "더 나은 토양 건강, 더 높은 작물 수확량"
+        ],
+        "services": [
+          "유기농 비료 생산",
+          "바이오 비료 혼합",
+          "토양 건강 솔루션",
+          "수확량 개선 프로그램",
+          "농민 지원 및 교육",
+          "샴리, UP 생산 시설 (델리 NCR)"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+      },
+      "securities": {
+        "tag": "무장 보안 & 코만도",
+        "desc": "지도자와 기업을 보호하는 무장 코만도와 경비.",
+        "overview": "Indexia Securities는 최고 수준의 무장 보안과 코만도 보호를 제공하여 사람, 재산, 고위급 작전을 24시간 안전하게 지킵니다. 훈련된 코만도와 무장 경비에서 VIP 호위와 행사 보안까지, 군사 수준의 규율을 모든 임무에 적용합니다.",
+        "highlights": [
+          "최고 수준의 무장 및 코만도 보호",
+          "신속 대응 규율을 갖춘 훈련된 코만도",
+          "24×7 모니터링 및 현장 대응"
+        ],
+        "services": [
+          "무장 보안 경비",
+          "코만도 보호 부대",
+          "VIP 및 요인 호위",
+          "행사 및 장소 보안",
+          "기업 및 시설 보안",
+          "24×7 모니터링 및 신속 대응"
+        ],
+        "name": "Indexia Securities"
+      },
+      "warehouse": {
+        "tag": "전략적 토지 투자",
+        "desc": "8개 국도와 연결된 샴리의 21에이커 전략적 토지.",
+        "overview": "Indexia Warehouse는 델리 트로니카 시티, 로니에서 약 65km 떨어진 우타르프라데시주 샴리의 전략적 토지 투자 기회를 제공합니다. 이곳은 연결의 중심지입니다: 8개 주를 연결하는 8개 국도와 2개 주요 고속도로, 부탄·네팔 직접 접근, 5천만 명 시장 도달. 4개 주요 항구(구자라트, 마하라슈트라, 첸나이, 콜카타)가 고속도로로 직접 연결되며, 델리 IGI 공항과 노이다 국제공항(제와르)이 모두 1시간 이내입니다. 토지 포트폴리오는 5개 위치 총 21에이커로, 1, 2, 2.5, 5, 8에이커의 유연한 필지와 로딩 도크가 있는 2에이커 규모의 현대식 물류창고 건설 계획이 포함됩니다. 예상 가격은 제곱피트당 ₹30이며 협상 가능합니다.",
+        "highlights": [
+          "프라임 위치 — 델리에서 약 65km 떨어진 샴리, UP",
+          "8개 국도 + 8개 주를 연결하는 2개 주요 고속도로",
+          "5개 위치에 21에이커 — 1, 2, 2.5, 5, 8에이커 필지",
+          "제곱피트당 ₹30, 협상 가능"
+        ],
+        "services": [
+          "토지 필지 — 1, 2, 2.5, 5, 8에이커",
+          "5개 위치에 21에이커",
+          "2에이커 필지 물류창고 건설",
+          "고속도로 연결성",
+          "항구 접근 — 구자라트, 마하라슈트라, 첸나이, 콜카타",
+          "공항 접근 — 델리 & 제와르 1시간 이내"
+        ],
+        "name": "Indexia Warehouse",
+        "location": "샴리, 우타르프라데시"
+      },
+      "advertising": {
+        "tag": "프리미엄 유니폴 옥외광고",
+        "desc": "북인도에서 가장 분주한 교차로의 프리미엄 고속도로 옥외광고.",
+        "overview": "Indexia Advertising은 북인도의 중심인 샴리 델리–데라둔 고속도로(NH-709B)에서 프리미엄 단일 기둥 유니폴 옥외광고를 운영합니다. 8개 국도와 2개 주요 고속도로가 만나는 지점에 위치한 유니폴은 10개 주, 5천만 명 인구에 도달하며 일일 1천만 이상의 노출을 창출합니다. 프리미엄 높이와 방해받지 않는 360° 시야를 갖춘 단일 기둥 유니폴은 시각적 혼잡 없이 브랜드에 최대 가시성을 제공하며, 시그니처 Bisleri Green 브랜딩이 적용됩니다. 인쇄와 설치에서 유지보수까지 모든 것을 원스톱으로 처리합니다. 10×20피트 유니폴 월 ₹25,000 또는 12×24피트 유니폴 월 ₹36,000에 예약하세요 — 기준 요금은 면당 월 ₹125/제곱피트이며 장기 패키지는 협상 가능합니다. 예약 문의: 86918 86919 또는 011 4629 1155, 이메일 indexia.queries@gmail.com.",
+        "highlights": [
+          "NH-709B 델리–데라둔 고속도로 전략적 위치",
+          "10개 연결 주 — 5천만 명 도달, 일일 1천만 이상 노출",
+          "360° 가시성과 프리미엄 높이의 단일 기둥 유니폴",
+          "종합 서비스 — 인쇄, 설치, 유지보수"
+        ],
+        "services": [
+          "유니폴 10×20피트 — 월 ₹25,000",
+          "유니폴 12×24피트 — 월 ₹36,000",
+          "기준 요금 — 면당 월 ₹125/제곱피트",
+          "델리–데라둔 고속도로 & 샴리 링로드 배치",
+          "인쇄, 설치 & 유지보수",
+          "장기 및 대량 패키지"
+        ],
+        "name": "Indexia Advertising",
+        "location": "델리–데라둔 고속도로, 샴리"
+      },
+      "foundation": {
+        "tag": "선수 지원",
+        "desc": "국제 수준의 훈련과 지원, 올림픽까지.",
+        "overview": "Indexia Foundation은 국제 수준의 훈련, 체계적인 식단과 영양, 전문 코칭, 올림픽을 향한 여정에 필요한 모든 지원을 제공하여 선수들을 뒷받침합니다. 재단은 선수들과 초기 가능성부터 세계 최대 무대까지 함께합니다.",
+        "highlights": [
+          "국제 수준의 훈련과 전문 코칭",
+          "체계적인 식단 및 영양 프로그램",
+          "올림픽까지의 완전한 지원"
+        ],
+        "services": [
+          "국제 수준 훈련",
+          "식단 및 영양 프로그램",
+          "전문 코칭 & 멘토링",
+          "대회 자금 및 장비",
+          "스포츠 의학 및 회복",
+          "올림픽 수준 지원"
+        ],
+        "name": "Indexia Foundation"
+      }
+    }
+  },
+  "warehousePricing": {
+    "eyebrow": "토지 포트폴리오",
+    "title": "토지 포트폴리오 및 요금",
+    "subtitle": "5개 위치 | 총 21에이커 — 샴리, 우타르프라데시",
+    "portfolioCol": "포트폴리오",
+    "valueCol": "가치",
+    "locations": "위치",
+    "locationsValue": "5개 위치",
+    "total": "총 토지",
+    "totalValue": "21에이커",
+    "plotCol": "이용 가능한 필지 크기",
+    "plot1": "1에이커",
+    "plot2": "2에이커",
+    "plot2_5": "2.5에이커",
+    "plot5": "5에이커",
+    "plot8": "8에이커",
+    "standardRate": "예상 가격: 제곱피트당 ₹30 — 협상 가능",
+    "note": "로딩 도크가 있는 2에이커 규모의 현대식 물류창고가 건설될 예정입니다. 가격은 협상 가능 — 자세한 내용은 문의하세요.",
+    "enquire": "문의하기",
+    "plotArea1": "토지 면적: 1에이커",
+    "plotArea2": "토지 면적: 2에이커",
+    "plotArea2_5": "토지 면적: 2.5에이커",
+    "plotArea5": "토지 면적: 5에이커",
+    "plotArea8": "토지 면적: 8에이커",
+    "bookMessage": "제곱피트당 ₹30인 {{size}} 토지 필지({{area}})에 대해 문의하고 싶습니다.",
+    "bookNow": "지금 예약"
+  },
+  "warehouseContact": {
+    "eyebrow": "연락처",
+    "title": "물류창고 팀에 연락하기",
+    "phones": "전화",
+    "emails": "이메일",
+    "address": "사무실 주소",
+    "brochure": "브로셔 다운로드"
+  },
+  "brochure": {
+    "download": "PDF 다운로드",
+    "headline": "북인도 중심부의 전략적 토지 투자",
+    "about": "프로젝트 소개",
+    "contact": "문의하기",
+    "footer": "Indexia Group · 문의는 전화, 이메일, 또는 사무실 방문. 가격은 참고용이며 협상 가능합니다.",
+    "print": "인쇄",
+    "advertisingHeadline": "샴리 델리–데라둔 고속도로의 프리미엄 유니폴 옥외광고",
+    "advertisingFooter": "Indexia Group | 요금은 공급 상황에 따라 달라질 수 있습니다. 예약 문의는 전화, 이메일 또는 사무실 방문.",
+    "backWarehouse": "물류창고로 돌아가기",
+    "backAdvertising": "광고로 돌아가기",
+    "locationWarehouse": "샴리, 우타르프라데시",
+    "locationAdvertising": "델리–데라둔 고속도로, 샴리"
+  },
+  "advertisingContact": {
+    "eyebrow": "연락처",
+    "title": "지금 슬롯 예약하기",
+    "phones": "전화",
+    "emails": "이메일",
+    "address": "사무실 주소",
+    "brochure": "브로셔 다운로드"
+  }
+}

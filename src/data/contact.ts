@@ -44,7 +44,7 @@ Opposite RBI, Fort,
 Mumbai - 400001, Maharashtra`,
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 73026 47817", href: "tel:+917302647817" },
-      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+918691886919" },
+      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+9186918 86919" },
     ],
   },
   {
@@ -56,7 +56,7 @@ Andheri West,
 Mumbai - 400053, Maharashtra`,
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 73026 47817", href: "tel:+917302647817" },
-      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+918691886919" },
+      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+9186918 86919" },
     ],
   },
   {
@@ -68,18 +68,6 @@ C Block Commercial Complex,
 Naraina Vihar, New Delhi - 110028`,
     phones: [
       { label: "Tel", labelKey: "tel", number: "011-46291155", href: "tel:+911146291155" },
-      { label: "Mob", labelKey: "mob", number: "+91 8928 786 594", href: "tel:+918928786594" },
-    ],
-  },
-  {
-    key: "suratOffice",
-    name: "Surat Office",
-    address: `S/47, Sakun Complex,
-Post-Baben,
-Taluka-Bardoli,
-Surat - 394602, Gujarat`,
-    phones: [
-      { label: "Mob", labelKey: "mob", number: "+91 86551 68551", href: "tel:+918655168551" },
       { label: "Mob", labelKey: "mob", number: "+91 8928 786 594", href: "tel:+918928786594" },
     ],
   },

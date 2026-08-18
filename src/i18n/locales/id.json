@@ -1,0 +1,576 @@
+{
+  "header": {
+    "nav": {
+      "contact": "Hubungi Kami"
+    },
+    "menu": {
+      "home": "Beranda",
+      "groupCompanies": "Perusahaan Grup",
+      "companies": "Perusahaan",
+      "contact": "Hubungi Kami",
+      "viewAllCompanies": "Lihat semua perusahaan →"
+    },
+    "aria": {
+      "selectLanguage": "Pilih bahasa",
+      "toggleMenu": "Buka/tutup menu",
+      "closeMenu": "Tutup menu"
+    }
+  },
+  "hero": {
+    "p0": {
+      "tag": "Indexia Group",
+      "heading": "Satu Grup.\nBanyak Solusi.",
+      "sub": "Dari keuangan dan logistik hingga agro dan periklanan, Indexia Group mendorong pertumbuhan lintas industri dengan bisnis yang tepercaya dan siap masa depan."
+    },
+    "p1": {
+      "tag": "Indexia Finance",
+      "heading": "Satu Tempat\nuntuk Semua Pinjaman.",
+      "sub": "Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com. Kami melayani secara global — di India, kami bermitra dengan 43 bank dan NBFC."
+    },
+    "p2": {
+      "tag": "Indexia Finserve Pvt. Ltd.",
+      "heading": "Metode Keuangan\nGenerasi Baru.",
+      "sub": "Kini bank yang tepat akan datang ke depan pintu Anda."
+    },
+    "p3": {
+      "tag": "Indexia Overseas Pvt. Ltd.",
+      "heading": "Gula Rafinasi &\nSemua Bahan Pangan.",
+      "sub": "Kami memperdagangkan dan mengekspor gula rafinasi serta semua bahan pangan."
+    },
+    "p4": {
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+      "heading": "Kami Memproduksi &\nMengekspor Pupuk Organik",
+      "sub": "Kami memproduksi pupuk organik di India dan mengekspornya ke seluruh dunia."
+    },
+    "p5": {
+      "tag": "Indexia Securities",
+      "heading": "Komando Bersenjata &\nKeamanan Bersenjata",
+      "sub": "Melindungi para politisi dan taipan bisnis besar."
+    },
+    "p6": {
+      "tag": "Indexia Warehouse",
+      "heading": "Penyimpanan\nUntuk Skala Besar.",
+      "sub": "Infrastruktur pergudangan dan logistik modern yang menjaga pergerakan barang tetap efisien."
+    },
+    "p7": {
+      "tag": "Indexia Advertising",
+      "heading": "Brand Anda di\nSetiap Jalan Tol.",
+      "sub": "Banyak aset periklanan di sepanjang jalan tol, memberikan kampanye ber-visibilitas tinggi bagi brand."
+    },
+    "p8": {
+      "tag": "Indexia Foundation",
+      "heading": "Memberdayakan\nPara Atlet.",
+      "sub": "Program olahraga yang melatih, membimbing, dan mendanai atlet dalam perjalanan menuju performa puncak."
+    },
+    "ctaExploreGroup": "Jelajahi Perusahaan Grup",
+    "ctaExploreMore": "Jelajahi Lebih Lanjut",
+    "prevPanel": "Panel sebelumnya",
+    "nextPanel": "Panel berikutnya"
+  },
+  "footer": {
+    "tagline": "Grup Bisnis India yang Terdiversifikasi",
+    "blurb": "Delapan bisnis tepercaya dalam satu grup India yang terdiversifikasi — keuangan, ekspor, pertanian, logistik, keamanan, periklanan, dan dukungan atlet — dibangun di atas integritas dan hasil.",
+    "contactUs": "Hubungi Kami",
+    "hours": "Sen - Sab: 09.00 - 18.00",
+    "company": "Perusahaan",
+    "resources": "Sumber Daya",
+    "legal": "Legal",
+    "links": {
+      "groupCompanies": "Perusahaan Grup",
+      "advertise": "Beriklan Bersama Kami",
+      "careers": "Karier",
+      "news": "Berita & Pusat Pengetahuan",
+      "globalResearch": "Riset Global",
+      "securityTips": "Tips Keamanan",
+      "termsOfUse": "Ketentuan Penggunaan",
+      "termsConditions": "Syarat & Ketentuan",
+      "privacyPolicy": "Kebijakan Privasi"
+    },
+    "cta": "Punya pertanyaan tentang salah satu perusahaan grup kami?",
+    "enquiry": "Kirim pertanyaan Anda.",
+    "stats": "Indexia Group · 08 Perusahaan · 03 Kota",
+    "rights": "© 2026 Indexia Group. Seluruh hak cipta dilindungi.",
+    "backToTop": "Kembali ke atas"
+  },
+  "home": {
+    "groupCompanies": {
+      "title": "Perusahaan Grup",
+      "description": "Indexia Group adalah holding terdiversifikasi yang mencakup Keuangan, Ekspor, Pertanian, Pergudangan, Keamanan, Dampak Sosial, dan Periklanan. Kami membangun bisnis yang memberdayakan Klien, Mitra, dan Komunitas untuk tumbuh dengan percaya diri."
+    }
+  },
+  "businesses": {
+    "eyebrow": "Perusahaan Grup",
+    "titleStart": "Delapan Perusahaan, ",
+    "titleAccent": "Satu Grup",
+    "subtitle": "Pilih perusahaan untuk mengunjungi halamannya — lalu kirim pertanyaan Anda ke tim yang tepat."
+  },
+  "businessesHero": {
+    "eyebrow": "Perbedaan Indexia",
+    "titleStart": "Satu Grup. Delapan Bisnis. ",
+    "titleAccent": "Satu Janji Bersama.",
+    "paragraph": "Dari keuangan dan konsultasi hingga ekspor, pertanian, logistik, keamanan, olahraga, dan media — setiap bisnis Indexia dibangun di atas fondasi yang sama: integritas, keahlian, dan pendekatan yang mengutamakan manusia. Apa pun yang Anda butuhkan, tim yang tepat sudah menjadi bagian dari keluarga.",
+    "counterClients": "Klien Dilayani",
+    "counterBusinesses": "Bisnis",
+    "counterLocations": "Kota",
+    "counterYears": "Tahun Beroperasi",
+    "cta": "Pesan Konsultasi Gratis →"
+  },
+  "contactHero": {
+    "eyebrow": "Bicara dengan Indexia",
+    "title": "Jalur Langsung ke Tim Kami",
+    "paragraph": "Dari pertanyaan dokumen hingga pengajuan pinjaman baru, setiap pesan ditinjau dan dijawab oleh anggota tim kami — bukan antrean.",
+    "sendEnquiry": "Kirim Pertanyaan Anda",
+    "callNow": "Hubungi Sekarang · 86551 68551",
+    "offices": "{{count}} kantor",
+    "directLines": "{{count}} jalur langsung",
+    "reply": "< 24 jam rata-rata balasan"
+  },
+  "contactInfo": {
+    "eyebrow": "Kirim Pertanyaan Anda",
+    "headlineStart": "Tanya Tentang ",
+    "headlineAccent": "Perusahaan Indexia",
+    "paragraph": "Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan konsultasi bisnis, atau ingin menjajaki kemitraan, tim kami siap membantu — kami membalas dalam 24 jam.",
+    "enquiries": "Pertanyaan",
+    "location": "Lokasi",
+    "workingHours": "Jam Kerja",
+    "phoneNumbers": "Nomor Telepon",
+    "country": "India"
+  },
+  "form": {
+    "eyebrow": "Kirim Pertanyaan Anda",
+    "intro": "Lengkapi formulir di bawah ini dan pertanyaan Anda akan ditangani oleh tim kami.",
+    "name": "Nama",
+    "namePlaceholder": "Nama lengkap Anda",
+    "email": "Alamat Email",
+    "emailPlaceholder": "you@example.com",
+    "phone": "Nomor Telepon",
+    "phonePlaceholder": "Nomor 10 digit",
+    "subject": "Subjek / Perusahaan",
+    "subjectPlaceholder": "Pilih perusahaan…",
+    "message": "Pesan",
+    "messagePlaceholder": "Tulis pertanyaan Anda di sini...",
+    "submit": "Kirim Pertanyaan",
+    "sending": "Mengirim…",
+    "success": "Pertanyaan Anda telah terkirim! Tim kami akan segera menghubungi Anda.",
+    "errorName": "Silakan masukkan nama Anda.",
+    "errorNameLetters": "Nama harus mengandung huruf.",
+    "errorPhone": "Masukkan nomor telepon 10 digit yang valid.",
+    "errorEmail": "Masukkan alamat email yang valid.",
+    "errorSubject": "Silakan pilih subjek atau perusahaan.",
+    "errorMessage": "Silakan masukkan pesan Anda.",
+    "errorGeneric": "Terjadi kesalahan. Silakan coba lagi nanti.",
+    "generalEnquiry": "Pertanyaan Umum"
+  },
+  "companyDetail": {
+    "backAll": "Semua Perusahaan",
+    "register": "No. Registrasi {{no}} / 08",
+    "keyEntries": "Entri utama",
+    "servicesTitle": "Layanan pada entri ini",
+    "registerOf": "Indexia Group · Daftar Perusahaan",
+    "entryOf": "Entri {{no}} dari 08",
+    "eyebrow": "Kirim Pertanyaan Anda",
+    "enquireTitle": "Tanya Tentang {{name}}",
+    "enquireSub": "Pertanyaan Anda diberi nama {{name}} di bagian atas, sehingga tim yang tepat menanganinya lebih dulu.",
+    "responseTime": "Waktu respons",
+    "responseValue": "Dalam 24 jam, Sen – Sab",
+    "overviewEyebrow": "Gambaran Umum",
+    "overviewTitle": "Tentang {{name}}",
+    "exploreServices": "Jelajahi Layanan",
+    "statServices": "Layanan",
+    "statHighlights": "Sorotan Utama",
+    "statRegister": "Entri Registrasi"
+  },
+  "contact": {
+    "locationsTitleStart": "Kantor ",
+    "locationsTitleAccent": "Kami"
+  },
+  "businessCard": {
+    "tapToView": "Ketuk untuk melihat",
+    "readMore": "Baca selengkapnya"
+  },
+  "companyLinkCard": {
+    "visitPage": "Kunjungi halaman",
+    "visitWebsiteAria": "Kunjungi situs web {{name}}",
+    "visitPageAria": "Kunjungi halaman {{name}}",
+    "visualAlt": "Visual {{name}}"
+  },
+  "newsPage": {
+    "eyebrow": "Berita & Pusat Pengetahuan",
+    "title": "Berita & Pusat Pengetahuan",
+    "titleStart": "Cerita & Wawasan dari ",
+    "titleAccent": "Seluruh Grup.",
+    "subtitle": "Berita perbankan terbaru — pembaruan pendanaan, pembayaran digital, perubahan kebijakan, dan perkembangan pasar — beserta panduan praktis dari bisnis kami.",
+    "tvEyebrow": "Tonton Kami di TV",
+    "tvHeading": "Untuk Semua Kebutuhan Pinjaman Anda",
+    "tvCaption": "Butuh Pinjaman Berarti… Indexia Finance",
+    "featuredLabel": "Cerita Unggulan",
+    "readMore": "Baca Selengkapnya",
+    "askUs": "Tanya Kami",
+    "knowledgeEyebrow": "Pusat Pengetahuan",
+    "knowledgeHeading": "Panduan Praktis dari Bisnis Kami",
+    "knowledgeSubtitle": "Penjelasan sederhana yang ditulis oleh tim yang menjalani pekerjaan ini setiap hari.",
+    "ctaTitle": "Punya pertanyaan tentang bisnis kami?",
+    "ctaBody": "Dari konsultasi FDI hingga pertanian organik hingga keamanan bersenjata — perusahaan Indexia yang tepat siap membantu. Kirim pertanyaan dan kami akan menghubungkan Anda.",
+    "ctaButton": "Kirim Pertanyaan",
+    "metaDescription": "Berita & Pusat Pengetahuan — berita perbankan terbaru tentang pendanaan, pembayaran digital, dan kebijakan, plus panduan pengetahuan praktis dari Indexia Group."
+  },
+  "careersPage": {
+    "eyebrow": "Karier",
+    "title": "Karier di Indexia Group",
+    "titleStart": "Bangun Karier Anda Bersama ",
+    "titleAccent": "Kami.",
+    "subtitle": "Indexia Group adalah organisasi pembelajar — dan budaya perusahaannya adalah timnya.",
+    "ctaButton": "Lihat Lowongan",
+    "cultureEyebrow": "Budaya Kami",
+    "cultureHeading": "Organisasi Pembelajar",
+    "rolesEyebrow": "Posisi Terbuka",
+    "rolesHeading": "Lowongan Pekerjaan Kami Saat Ini",
+    "rolesSubtitle": "Lowongan pekerjaan kami saat ini adalah:",
+    "apply": "Lamar",
+    "ctaTitle": "Kirim Resume Anda",
+    "ctaBody": "Kami selalu mencari orang hebat. Kirim CV Anda ke hr@indexiafinance.com dan kami akan menghubungi Anda.",
+    "metaDescription": "Karier di Indexia Group — organisasi pembelajar dengan lowongan di Indexia Finserve Mumbai. Kirim resume untuk memulai karier bersama kami.",
+    "mailResume": "Kirim Resume Anda –"
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "privacyTitle": "Kebijakan Privasi",
+    "privacySubtitle": "Bagaimana Indexia Group mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda.",
+    "termsTitle": "Syarat & Ketentuan",
+    "termsSubtitle": "Ketentuan yang mengatur penggunaan situs web Indexia Group dan layanan perusahaannya.",
+    "termsOfUseTitle": "Ketentuan Penggunaan",
+    "termsOfUseSubtitle": "Aturan untuk mengakses dan menjelajahi situs web Indexia Group dan situs web perusahaannya.",
+    "lastUpdated": "Terakhir diperbarui",
+    "backHome": "Kembali ke Beranda",
+    "contactUs": "Hubungi Kami",
+    "contactHeading": "Punya pertanyaan tentang kebijakan ini?",
+    "contactBody": "Tulis ke kami di contactus@indexiagroup.com atau kirim pertanyaan dan tim kami akan menghubungi Anda.",
+    "sendEnquiry": "Kirim Pertanyaan",
+    "metaPrivacyDescription": "Baca Kebijakan Privasi Indexia Group — cara kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda.",
+    "metaTermsDescription": "Baca Syarat & Ketentuan yang mengatur penggunaan situs web Indexia Group dan layanan perusahaannya.",
+    "metaTermsOfUseDescription": "Baca Ketentuan Penggunaan yang mengatur cara Anda mengakses dan menjelajahi situs web Indexia Group dan situs web perusahaannya."
+  },
+  "globalResearchPage": {
+    "eyebrow": "Riset Global",
+    "title": "Riset Global di Indexia Group",
+    "titleStart": "Riset Keuangan Global ",
+    "titleAccent": "& Sumber Daya.",
+    "subtitle": "Analisis yang mendalam, relevan, dan pandangan tajam di seluruh disiplin makroekonomi, pendapatan tetap, mata uang, dan komoditas — dibangun di atas wawasan langsung yang kuat di Asia, Afrika, dan Timur Tengah.",
+    "ctaButton": "Jelajahi Cakupan Riset",
+    "areasEyebrow": "Cakupan Riset",
+    "areasHeading": "Riset Global di Seluruh Disiplin",
+    "areasSubtitle": "Analisis yang mendalam dan relevan di seluruh cakupan kami.",
+    "reportsEyebrow": "Publikasi",
+    "reportsHeading": "Cara Kami Berbagi Riset",
+    "reportsSubtitle": "Presentasi rutin dan publikasi berkualitas tinggi — OTG, analisis langsung kami; ACT, ide pasar yang dapat ditindaklanjuti; dan Laporan Khusus tentang tema-tema penting global.",
+    "ctaTitle": "Akses Riset Kami",
+    "ctaBody": "Untuk mengetahui lebih lanjut dan menerima riset kami, kunjungi portal Riset Global kami. Untuk mendapatkan akses, silakan hubungi Relationship Manager Anda.",
+    "metaDescription": "Riset Global Indexia Group — analisis mendalam dan relevan di seluruh disiplin makroekonomi, pendapatan tetap, mata uang, dan komoditas, dengan wawasan langsung di Asia, Afrika, dan Timur Tengah.",
+    "reportFormat": "Publikasi"
+  },
+  "securityTipsPage": {
+    "eyebrow": "Tips Keamanan",
+    "title": "Tips Keamanan dari Indexia Group",
+    "titleStart": "Selangkah Lebih Maju dari ",
+    "titleAccent": "Penipuan.",
+    "subtitle": "Di mana pun Anda berada, Anda dapat mengelola uang secara online dengan percaya diri.",
+    "ctaButton": "Lindungi Detail Anda",
+    "featuresEyebrow": "Apa yang Kami Lakukan",
+    "featuresHeading": "Menjaga Anda Aman Online",
+    "featuresSubtitle": "Baca untuk mengetahui apa yang kami lakukan untuk melindungi akun Anda saat Anda bertransaksi perbankan online.",
+    "practicesEyebrow": "Apa yang Bisa Anda Lakukan",
+    "practicesHeading": "Lindungi Detail Anda",
+    "practicesSubtitle": "Kami bekerja setiap hari untuk menjaga akun Anda tetap aman saat perbankan online. Ada juga beberapa hal sederhana yang dapat Anda lakukan pada perangkat sehari-hari untuk tetap aman online.",
+    "contactsEyebrow": "Butuh Bantuan?",
+    "contactsHeading": "Perlu Bicara dengan Kami?",
+    "contactsSubtitle": "Jika Anda merasa telah membocorkan detail akun Anda kepada pihak yang mencurigakan, atau menjadi korban penipuan, segera hubungi kami melalui Saluran Layanan Pelanggan.",
+    "ctaTitle": "Melihat sesuatu yang mencurigakan?",
+    "ctaBody": "Laporkan melalui formulir pertanyaan kami atau hubungi perusahaan Indexia Group terkait secara langsung.",
+    "metaDescription": "Tips keamanan dari Indexia Group — cara kami melindungi akun Anda secara online, apa yang dapat Anda lakukan di perangkat Anda, dan siapa yang harus dihubungi jika terjadi masalah."
+  },
+  "common": {
+    "logoAlt": "Logo Indexia Group",
+    "homeAria": "Beranda Indexia Group",
+    "languages": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "pt": "Português",
+      "hi": "हिन्दी",
+      "ar": "العربية",
+      "zh": "中文",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "id": "Bahasa Indonesia",
+      "tr": "Türkçe",
+      "vi": "Tiếng Việt",
+      "nl": "Nederlands",
+      "pl": "Polski"
+    }
+  },
+  "seo": {
+    "homeTitle": "Layanan Keuangan, Pinjaman, Ekspor & Logistik",
+    "homeDescription": "Grup bisnis India yang terdiversifikasi: layanan keuangan, pinjaman NBFC, ekspor global, pupuk agro, pergudangan & keamanan. Kantor di Mumbai, Delhi, dan Ekuador.",
+    "businessesTitle": "Perusahaan Grup — Keuangan, Agro, Ekspor & Logistik",
+    "businessesDescription": "Delapan bisnis Indexia Group: keuangan, pinjaman, keamanan, ekspor gula, pupuk organik, pergudangan, periklanan, dan dukungan atlet.",
+    "contactTitle": "Hubungi Kami — Kantor Mumbai & Delhi",
+    "contactDescription": "Hubungi Indexia Group untuk pertanyaan layanan keuangan, pinjaman, ekspor, agro, dan logistik. Kantor di Mumbai, Delhi, dan Ekuador — balasan dalam 24 jam."
+  },
+  "branches": {
+    "corporateOffice": "Kantor Pusat",
+    "mumbaiOffice": "Kantor Mumbai",
+    "delhiOffice": "Kantor Delhi",
+    "internationalOffice": "Kantor Internasional"
+  },
+  "phoneLabel": {
+    "landline": "Telepon rumah",
+    "mobile": "Ponsel",
+    "mob": "Ponsel",
+    "tel": "Tel"
+  },
+  "unipolePricing": {
+    "eyebrow": "Paket Unipole",
+    "title": "Ukuran & Harga Tersedia",
+    "subtitle": "Paket unipole premium di Jalan Tol Delhi–Dehradun, Shamli",
+    "sizeCol": "Ukuran",
+    "areaCol": "Kaki Persegi",
+    "rateCol": "Tarif Bulanan",
+    "sizeSmall": "10 × 20 kaki",
+    "areaSmall": "200 kaki persegi",
+    "rateSmall": "₹25.000",
+    "sizeLarge": "12 × 24 kaki",
+    "areaLarge": "288 kaki persegi",
+    "rateLarge": "₹36.000",
+    "standardRate": "Tarif Standar: ₹125/kaki persegi per sisi per bulan",
+    "note": "* Tarif tergantung ketersediaan. Hubungi kami untuk paket jangka panjang.",
+    "bookNow": "Pesan sekarang",
+    "bookSize": "Pesan ukuran ini",
+    "bookMessage": "Saya ingin memesan unipole {{size}} ({{area}}) dengan tarif {{rate}} per bulan."
+  },
+  "pageContent": {
+    "companies": {
+      "finance": {
+        "tag": "Fintech Multinasional",
+        "desc": "Fintech global di bidang layanan investor, FDI, NBFC, dan pendanaan perbankan.",
+        "overview": "Indexia Finance adalah platform fintech multinasional yang memberikan layanan keuangan kepada klien di seluruh dunia. Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com — kami melayani secara global, dan di India kami bermitra dengan 43 bank dan NBFC. Dibangun di sekitar empat bidang inti — layanan investor, konsultasi FDI, operasi NBFC, dan pendanaan perbankan — perusahaan menghubungkan modal dengan peluang, membantu investor, bisnis, dan institusi membuat keputusan keuangan yang percaya diri lintas batas.",
+        "tagline": "Satu Tempat untuk Semua Pinjaman",
+        "highlights": [
+          "Jangkauan fintech global dengan eksekusi India-first",
+          "Empat bidang terintegrasi dalam satu atap",
+          "Dukungan pendanaan dan konsultasi menyeluruh"
+        ],
+        "services": [
+          "Konsultasi & Fasilitasi FDI",
+          "Layanan Investor",
+          "Operasi NBFC",
+          "Pendanaan Perbankan & Institusional",
+          "Solusi Modal Lintas Batas",
+          "Konsultasi Kekayaan & Aset"
+        ],
+        "name": "Indexia Finance"
+      },
+      "finserve": {
+        "tag": "Pinjaman & Keuangan",
+        "desc": "Semua jenis pinjaman, disesuaikan untuk individu dan bisnis.",
+        "overview": "Indexia Finserve adalah lengan peminjaman Indexia Group, menawarkan segala jenis pinjaman di bidang keuangan. Kini bank yang tepat akan datang ke depan pintu Anda — perusahaan berfungsi sebagai tempat tujuan pinjaman lengkap, membimbing klien melalui kelayakan, dokumentasi, dan pencairan untuk pinjaman pribadi, rumah, bisnis, MSME, dan pendanaan khusus dengan satu proses yang sederhana.",
+        "tagline": "Metode Keuangan Generasi Baru",
+        "highlights": [
+          "Semua jenis pinjaman dalam satu atap",
+          "Kelayakan, dokumentasi, dan pencairan yang sederhana",
+          "Konsultasi khusus di setiap langkah"
+        ],
+        "services": [
+          "Pinjaman Pribadi",
+          "Pinjaman Bisnis",
+          "Pinjaman Rumah",
+          "Pinjaman dengan Jaminan Properti",
+          "Transfer Saldo",
+          "Pinjaman Mobil",
+          "Kartu Kredit",
+          "Pinjaman Pendidikan",
+          "Pinjaman Proyek",
+          "Pembelian Komersial",
+          "Diskonto Sewa",
+          "Modal Kerja"
+        ],
+        "name": "Indexia Finserve Pvt. Ltd."
+      },
+      "overseas": {
+        "tag": "Eksportir Bahan Pangan",
+        "desc": "Mengekspor gula rafinasi dan semua bahan pangan ke seluruh dunia.",
+        "overview": "Indexia Overseas mendorong ekspor global semua bahan pangan, dengan fokus khusus pada ekspor gula ke 14 negara Amerika Selatan. Perusahaan mengelola pengadaan, kualitas, logistik, dan kepatuhan internasional sehingga produk kelas pangan berpindah dari sumber ke pasar secara andal dan berskala.",
+        "highlights": [
+          "Ekspor semua bahan pangan — gula sebagai inti",
+          "Kehadiran mapan di 14 pasar Amerika Selatan",
+          "Pengadaan, kualitas, dan logistik menyeluruh"
+        ],
+        "services": [
+          "Ekspor & Perdagangan Gula",
+          "Pengadaan & Pengendalian Mutu",
+          "Logistik Internasional",
+          "14 Pasar Amerika Selatan"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd."
+      },
+      "agro-bio": {
+        "tag": "Produksi Pupuk Organik",
+        "desc": "Pupuk organik, dibuat di India dan diekspor secara global.",
+        "overview": "Indexia Agro Bio Fertilizers memproduksi pupuk organik di fasilitas produksinya di Shamli, Uttar Pradesh — bagian dari kawasan Delhi NCR. Produk berbasis hayati perusahaan meningkatkan kesehatan tanah, meningkatkan hasil panen, dan mendukung pertanian berkelanjutan bagi petani di seluruh India Utara.",
+        "highlights": [
+          "Produksi organik berbasis hayati — tanpa bahan kimia keras",
+          "Fasilitas Shamli, UP di kawasan Delhi NCR",
+          "Kesehatan tanah lebih baik, hasil panen lebih tinggi"
+        ],
+        "services": [
+          "Produksi Pupuk Organik",
+          "Campuran Pupuk Hayati",
+          "Solusi Kesehatan Tanah",
+          "Program Peningkatan Hasil",
+          "Dukungan & Pelatihan Petani",
+          "Fasilitas Shamli, UP (Delhi NCR)"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+      },
+      "securities": {
+        "tag": "Keamanan Bersenjata & Komando",
+        "desc": "Komando dan pengawal bersenjata yang melindungi pemimpin dan bisnis.",
+        "overview": "Indexia Securities menyediakan keamanan bersenjata dan perlindungan komando terbaik yang tersedia, menjaga orang, properti, dan operasi berprofil tinggi sepanjang waktu. Dari komando terlatih dan pengawal bersenjata hingga pengawalan VIP dan keamanan acara, perusahaan membawa disiplin kelas militer ke setiap penugasan.",
+        "highlights": [
+          "Perlindungan bersenjata dan komando terbaik",
+          "Komando terlatih dengan disiplin respons cepat",
+          "Pemantauan 24×7 dan respons lapangan"
+        ],
+        "services": [
+          "Pengawal Keamanan Bersenjata",
+          "Unit Perlindungan Komando",
+          "Pengawalan VIP & Pejabat",
+          "Keamanan Acara & Tempat",
+          "Keamanan Korporat & Situs",
+          "Pemantauan 24×7 & Respons Cepat"
+        ],
+        "name": "Indexia Securities"
+      },
+      "warehouse": {
+        "tag": "Investasi Lahan Strategis",
+        "desc": "21 hektar lahan strategis di Shamli, terhubung ke 8 jalan tol nasional.",
+        "overview": "Indexia Warehouse menawarkan peluang investasi lahan strategis di Shamli, Uttar Pradesh — hanya ~65 km dari Tronica City, Loni, Delhi. Lokasinya adalah pusat konektivitas: 8 jalan tol nasional dan 2 jalan raya utama menghubungkan 8 negara bagian, dengan akses langsung ke Bhutan dan Nepal serta jangkauan pasar 50 crore orang. Empat pelabuhan utama (Gujarat, Maharashtra, Chennai, Kolkata) dapat dijangkau langsung melalui jalan tol, dan baik Bandara IGI Delhi maupun Bandara Internasional Noida, Jewar berada dalam satu jam. Portofolio lahan mencakup 5 lokasi dan total 21 hektar, dengan bidang fleksibel 1, 2, 2,5, 5, dan 8 hektar, serta gudang modern yang akan dibangun di atas 2 hektar dengan dermaga pemuatan. Harga perkiraan ₹30 per kaki persegi, dapat dinegosiasikan.",
+        "highlights": [
+          "Lokasi utama — Shamli, UP, ~65 km dari Delhi",
+          "8 jalan tol nasional + 2 jalan raya utama menghubungkan 8 negara bagian",
+          "21 hektar di 5 lokasi — bidang 1, 2, 2,5, 5 & 8 hektar",
+          "₹30 per kaki persegi, dapat dinegosiasikan"
+        ],
+        "services": [
+          "Bidang Lahan — 1, 2, 2,5, 5 & 8 Hektar",
+          "21 Hektar di 5 Lokasi",
+          "Konstruksi Gudang di Bidang 2 Hektar",
+          "Konektivitas Jalan Tol & Jalan Raya",
+          "Akses Pelabuhan — Gujarat, Maharashtra, Chennai, Kolkata",
+          "Akses Bandara — Delhi & Jewar dalam 1 Jam"
+        ],
+        "name": "Indexia Warehouse",
+        "location": "Shamli, Uttar Pradesh"
+      },
+      "advertising": {
+        "tag": "Papan Iklan Unipole Premium",
+        "desc": "Papan iklan jalan tol premium di persimpangan tersibuk India Utara.",
+        "overview": "Indexia Advertising mengoperasikan papan iklan unipole tiang tunggal premium di Jalan Tol Delhi–Dehradun (NH-709B) di Shamli — pusat India Utara. Berada di persimpangan 8 jalan tol nasional dan 2 jalan raya utama, unipole kami menghubungkan 10 negara bagian dengan jangkauan 50 crore penduduk dan menarik paparan harian 1+ crore. Unipole tiang tunggal dengan tinggi premium dan sudut pandang 360° tanpa hambatan memberi brand Anda visibilitas maksimal tanpa kekacauan visual, didukung branding khas Bisleri Green. Dari pencetakan dan pemasangan hingga perawatan, kami menangani semuanya secara menyeluruh. Pesan unipole 10×20 kaki seharga ₹25.000/bulan atau unipole 12×24 kaki seharga ₹36.000/bulan — tarif standar ₹125/kaki persegi per sisi per bulan, dapat dinegosiasikan untuk paket jangka panjang. Untuk pemesanan hubungi 86918 86919 atau 011 4629 1155, atau email indexia.queries@gmail.com.",
+        "highlights": [
+          "Penempatan strategis di NH-709B, jalan tol Delhi–Dehradun",
+          "10 negara bagian terhubung — jangkauan 50 crore penduduk, paparan harian 1+ crore",
+          "Unipole tiang tunggal dengan visibilitas 360° dan tinggi premium",
+          "Layanan menyeluruh — pencetakan, pemasangan, dan perawatan"
+        ],
+        "services": [
+          "Unipole 10×20 kaki — ₹25.000/bulan",
+          "Unipole 12×24 kaki — ₹36.000/bulan",
+          "Tarif Standar — ₹125/kaki persegi per sisi per bulan",
+          "Penempatan Jalan Tol Delhi–Dehradun & Jalan Lingkar Shamli",
+          "Pencetakan, Pemasangan & Perawatan",
+          "Paket Jangka Panjang & Borongan"
+        ],
+        "name": "Indexia Advertising",
+        "location": "Jalan Tol Delhi–Dehradun, Shamli"
+      },
+      "foundation": {
+        "tag": "Dukungan Atlet",
+        "desc": "Pelatihan dan dukungan tingkat internasional, hingga Olimpiade.",
+        "overview": "Indexia Foundation mendukung atlet dengan memberikan segala dukungan yang mungkin — pelatihan tingkat internasional, pola makan dan nutrisi terstruktur, pelatih ahli, dan segala jenis bantuan yang dibutuhkan dalam perjalanan menuju Olimpiade. Yayasan berdiri bersama olahragawan dari awal menjanjikan hingga panggung terbesar dunia.",
+        "highlights": [
+          "Pelatihan tingkat internasional dan pelatih ahli",
+          "Program pola makan dan nutrisi terstruktur",
+          "Dukungan lengkap hingga Olimpiade"
+        ],
+        "services": [
+          "Pelatihan Tingkat Internasional",
+          "Program Pola Makan & Nutrisi",
+          "Pelatihan Ahli & Pendampingan",
+          "Pendanaan & Perlengkapan Kompetisi",
+          "Kedokteran Olahraga & Pemulihan",
+          "Dukungan Kelas Olimpiade"
+        ],
+        "name": "Indexia Foundation"
+      }
+    }
+  },
+  "warehousePricing": {
+    "eyebrow": "Portofolio Lahan",
+    "title": "Portofolio & Harga Lahan",
+    "subtitle": "5 lokasi | total 21 hektar — Shamli, Uttar Pradesh",
+    "portfolioCol": "Portofolio",
+    "valueCol": "Nilai",
+    "locations": "Lokasi",
+    "locationsValue": "5 Lokasi",
+    "total": "Total Lahan",
+    "totalValue": "21 Hektar",
+    "plotCol": "Ukuran Bidang Tersedia",
+    "plot1": "1 Hektar",
+    "plot2": "2 Hektar",
+    "plot2_5": "2,5 Hektar",
+    "plot5": "5 Hektar",
+    "plot8": "8 Hektar",
+    "standardRate": "Harga Perkiraan: ₹30 per kaki persegi — Dapat dinegosiasikan",
+    "note": "Gudang modern akan dibangun di atas 2 hektar dengan dermaga pemuatan. Harga dapat dinegosiasikan — hubungi untuk detail.",
+    "enquire": "Tanya",
+    "plotArea1": "Luas lahan: 1 hektar",
+    "plotArea2": "Luas lahan: 2 hektar",
+    "plotArea2_5": "Luas lahan: 2,5 hektar",
+    "plotArea5": "Luas lahan: 5 hektar",
+    "plotArea8": "Luas lahan: 8 hektar",
+    "bookMessage": "Saya ingin menanyakan bidang lahan {{size}} ({{area}}) seharga ₹30 per kaki persegi.",
+    "bookNow": "Pesan sekarang"
+  },
+  "warehouseContact": {
+    "eyebrow": "Kontak",
+    "title": "Hubungi Tim Gudang",
+    "phones": "Telepon",
+    "emails": "Email",
+    "address": "Alamat Kantor",
+    "brochure": "Unduh brosur"
+  },
+  "brochure": {
+    "download": "Unduh PDF",
+    "headline": "Investasi Lahan Strategis di Jantung India Utara",
+    "about": "Tentang Proyek",
+    "contact": "Hubungi Kami",
+    "footer": "Indexia Group · Untuk pertanyaan, hubungi, email, atau kunjungi kantor kami. Harga bersifat indikatif dan dapat dinegosiasikan.",
+    "print": "Cetak",
+    "advertisingHeadline": "Papan Iklan Unipole Premium di Jalan Tol Delhi–Dehradun, Shamli",
+    "advertisingFooter": "Indexia Group | Tarif tergantung ketersediaan. Untuk pemesanan, hubungi, email, atau kunjungi kantor kami.",
+    "backWarehouse": "Kembali ke Gudang",
+    "backAdvertising": "Kembali ke Periklanan",
+    "locationWarehouse": "Shamli, Uttar Pradesh",
+    "locationAdvertising": "Jalan Tol Delhi–Dehradun, Shamli"
+  },
+  "advertisingContact": {
+    "eyebrow": "Kontak",
+    "title": "Pesan Slot Anda Hari Ini",
+    "phones": "Telepon",
+    "emails": "Email",
+    "address": "Alamat Kantor",
+    "brochure": "Unduh brosur"
+  }
+}

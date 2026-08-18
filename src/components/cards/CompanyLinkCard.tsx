@@ -3,18 +3,17 @@ import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { getCompanyImage } from "../../data/companyImages";
 import type { Company } from "../../data/companies";
-import { useTapReveal } from "../../hooks/useTapReveal";
-import RevealActionButton from "./RevealActionButton";
 
 type CompanyLinkCardProps = {
   company: Company;
+  index?: number;
 };
 
-const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
+const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
   const { t } = useTranslation();
-  const { handleCardClick, revealedClass } = useTapReveal();
   const tag = t(`pageContent.companies.${company.slug}.tag`, { defaultValue: company.tag });
   const name = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
+  const cardNo = String(index + 1).padStart(2, "0");
 
   const cardContent = (
     <>
@@ -32,9 +31,28 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
         className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--color-night) via-(--color-night)/45 to-transparent transition-opacity duration-300 group-hover:opacity-90"
       />
 
+      {/* Brand glow on hover */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-[1] opacity-0 mix-blend-screen transition-opacity duration-300 group-hover:opacity-100"
+        style={{
+          background: `radial-gradient(circle at 25% 20%, ${company.color} 0%, transparent 45%),
+            radial-gradient(circle at 80% 75%, ${company.color} 0%, transparent 45%),
+            linear-gradient(135deg, ${company.color}, var(--color-blue), ${company.color})`,
+        }}
+      />
+
+      {/* Ghost number */}
       <span
         aria-hidden="true"
-        className={`company-link-chip pointer-events-none absolute inset-e-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-all duration-300 group-hover:bg-(--color-yellow) group-hover:text-(--color-ink-deep) ${
+        className="font-display pointer-events-none absolute start-4 top-2 z-[2] text-[54px] font-bold leading-none text-white/15 transition-colors duration-300 group-hover:text-white/25"
+      >
+        {cardNo}
+      </span>
+
+      <span
+        aria-hidden="true"
+        className={`company-link-chip pointer-events-none absolute inset-e-5 top-5 z-[3] flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-all duration-300 group-hover:bg-(--color-yellow) group-hover:text-(--color-ink-deep) ${
           company.link ? "opacity-100" : "opacity-0 group-hover:opacity-100"
         }`}
       >
@@ -56,12 +74,6 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
         </p>
       </div>
 
-      <div className="card-reveal pointer-events-none absolute inset-0 z-20 flex scale-95 flex-col items-center justify-center gap-4 p-6 text-center opacity-0 transition-all duration-500 ease-out">
-        <p className="rounded-xl border border-white/20 bg-(image:--card-desc-gradient) px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-white/90 shadow-lg backdrop-blur-[2px]">
-          {tag}
-        </p>
-        <RevealActionButton label={t("companyLinkCard.visitPage")} icon={ArrowUpRight} />
-      </div>
     </>
   );
 
@@ -72,8 +84,7 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("companyLinkCard.visitWebsiteAria", { name })}
-        onClick={handleCardClick}
-        className={`company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/60 bg-(--color-ink-deep) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl${revealedClass}`}
+        className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/60 bg-(--color-ink-deep) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
       >
         {cardContent}
       </a>
@@ -84,8 +95,7 @@ const CompanyLinkCard = ({ company }: CompanyLinkCardProps) => {
     <Link
       to={`/businesses/${company.slug}`}
       aria-label={t("companyLinkCard.visitPageAria", { name })}
-      onClick={handleCardClick}
-      className={`company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/60 bg-(--color-ink-deep) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl${revealedClass}`}
+      className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/60 bg-(--color-ink-deep) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
       {cardContent}
     </Link>

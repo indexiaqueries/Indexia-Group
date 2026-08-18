@@ -63,12 +63,15 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_50%_30%,rgba(38,174,144,0.36),rgba(38,174,144,0.10)_55%,transparent_72%),radial-gradient(ellipse_45%_30%_at_50%_92%,rgba(242,242,49,0.22),transparent_65%)]"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: `radial-gradient(ellipse 60% 52% at 50% 34%, rgba(2,16,26,0.42), transparent 72%), radial-gradient(ellipse 60% 55% at 50% 30%, ${current.color}59, ${current.color}1a 55%, transparent 72%), radial-gradient(ellipse 45% 30% at 50% 92%, rgba(242,242,49,0.22), transparent 65%), radial-gradient(ellipse 50% 40% at 85% 15%, rgba(6,106,156,0.22), transparent 60%)`,
+        }}
       />
       <div className={`flex flex-col items-center ${isHome ? "bnr-text-zoom" : ""}`}>
         {isHome ? (
           <div
-            className="hero-slide-child inline-flex items-center gap-2.5 rounded-full px-5 py-2 mb-6 border border-(--color-yellow)/60 bg-(--color-yellow)/10"
+            className="hero-slide-child mb-6 inline-flex items-center gap-2.5 rounded-full border border-(--color-yellow)/60 bg-(--color-yellow)/10 px-5 py-2"
             style={{ animationDelay: CHILD_DELAYS[0] }}
           >
             <span className="w-2 h-2 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
@@ -78,7 +81,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
           </div>
         ) : (
           <div
-            className="hero-slide-child inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-5 border border-(--color-yellow)/45 bg-(--color-night)/55"
+            className="hero-slide-child mb-5 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/45 bg-(--color-night)/55 px-3.5 py-1.5"
             style={{ animationDelay: CHILD_DELAYS[0] }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />

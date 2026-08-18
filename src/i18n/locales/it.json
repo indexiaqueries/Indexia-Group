@@ -86,9 +86,9 @@
       "termsConditions": "Termini e Condizioni",
       "privacyPolicy": "Informativa sulla Privacy"
     },
-    "cta": "Hai una domanda su una delle nostre aziende?",
-    "enquiry": "Inviaci una richiesta →",
-    "stats": "INDEXIA GROUP · 08 AZIENDE · 04 SEDI",
+    "cta": "Hai una richiesta su una delle nostre società del gruppo?",
+    "enquiry": "Inviaci la tua richiesta.",
+    "stats": "INDEXIA GROUP · 08 AZIENDE · 03 SEDI",
     "rights": "© 2026 Indexia Group. Tutti i diritti riservati.",
     "backToTop": "Torna in alto"
   },
@@ -172,7 +172,13 @@
     "enquireTitle": "Richiedi informazioni su {{name}}",
     "enquireSub": "La tua richiesta viene inoltrata con {{name}} in evidenza, così il team giusto la prende in carico per primo.",
     "responseTime": "Tempo di risposta",
-    "responseValue": "Entro 24 ore, lun – sab"
+    "responseValue": "Entro 24 ore, lun – sab",
+    "overviewEyebrow": "Panoramica",
+    "overviewTitle": "Informazioni su {{name}}",
+    "exploreServices": "Esplora i servizi",
+    "statServices": "Servizi",
+    "statHighlights": "Punti salienti",
+    "statRegister": "Voce di registro"
   },
   "contact": {
     "locationsTitleStart": "Le nostre ",
@@ -485,11 +491,30 @@
     "contactsHeading": "Devi Parlare con Noi?",
     "contactsSubtitle": "Se pensi di aver rivelato i dati del tuo conto a una parte sospetta o di essere stato vittima di frode, contattaci subito chiamando la linea di assistenza clienti."
   },
+  "unipolePricing": {
+    "eyebrow": "Pacchetti unipoli",
+    "title": "Dimensioni e prezzi disponibili",
+    "subtitle": "Pacchetti unipoli premium sulla Delhi–Dehradun Highway, Shamli",
+    "sizeCol": "Dimensione",
+    "areaCol": "Piedi quadrati",
+    "rateCol": "Tariffa mensile",
+    "sizeSmall": "10 × 20 piedi",
+    "areaSmall": "200 piedi²",
+    "rateSmall": "₹25.000",
+    "sizeLarge": "12 × 24 piedi",
+    "areaLarge": "288 piedi²",
+    "rateLarge": "₹36.000",
+    "standardRate": "Tariffa standard: ₹125/piedi² per un lato per 1 mese",
+    "note": "* Tariffe soggette a disponibilità. Contattaci per pacchetti a lungo termine.",
+    "bookNow": "Prenota ora",
+    "bookSize": "Prenota questa misura",
+    "bookMessage": "Vorrei prenotare l'unipolo {{size}} ({{area}}) a {{rate}} al mese."
+  },
   "pageContent": {
     "companies": {
       "finance": {
         "tag": "Fintech Multinazionale",
-        "desc": "Una fintech multinazionale che offre servizi a livello globale in quattro aree — servizi agli investitori, IDE, NBFC e finanziamento bancario.",
+        "desc": "Fintech globale tra servizi agli investitori, IDE, NBFC e finanziamento bancario.",
         "overview": "Indexia Finance è una piattaforma fintech multinazionale che eroga servizi finanziari a clienti in tutto il mondo. Puoi richiedere qualsiasi tipo di prestito sul nostro portale all'indirizzo www.indexiafinance.com — offriamo i nostri servizi a livello globale e, in India, siamo partner commerciali di 43 banche e NBFC. Strutturata attorno a quattro aree principali — servizi agli investitori, consulenza IDE, operazioni NBFC e finanziamento bancario — l'azienda collega il capitale alle opportunità, aiutando investitori, imprese e istituzioni a prendere decisioni finanziarie sicure oltre i confini.",
         "tagline": "Una destinazione completa per i prestiti",
         "highlights": [
@@ -509,7 +534,7 @@
       },
       "finserve": {
         "tag": "Prestiti e Finanza",
-        "desc": "Offriamo tutti i tipi di prestito in ambito finanziario — ogni forma di credito, su misura per privati e imprese.",
+        "desc": "Ogni tipo di prestito, su misura per privati e imprese.",
         "overview": "Indexia Finserve è il braccio creditizio del Gruppo Indexia e offre ogni tipo di prestito in ambito finanziario. Ora la banca giusta arriva direttamente alla tua porta: l'azienda opera come una destinazione completa per il credito, guidando i clienti attraverso eleggibilità, documentazione ed erogazione per prestiti personali, casa, business, MSME e finanziamenti specializzati, con un unico processo snello.",
         "tagline": "Il metodo finanziario di nuova generazione",
         "highlights": [
@@ -535,7 +560,7 @@
       },
       "overseas": {
         "tag": "Esportatore di Prodotti Alimentari",
-        "desc": "Trattiamo ed esportiamo zucchero raffinato e tutti i prodotti alimentari.",
+        "desc": "Esportiamo zucchero raffinato e tutti i prodotti alimentari nel mondo.",
         "overview": "Indexia Overseas promuove l'esportazione globale di tutti i prodotti alimentari, con particolare attenzione alle esportazioni di zucchero verso 14 paesi sudamericani. L'azienda gestisce approvvigionamento, qualità, logistica e conformità internazionale affinché i prodotti di grado alimentare arrivino dall'origine al mercato in modo affidabile e su larga scala.",
         "highlights": [
           "Esportazione di tutti i prodotti alimentari — lo zucchero al centro",
@@ -554,7 +579,7 @@
       },
       "agro-bio": {
         "tag": "Produzione di Fertilizzanti Organici",
-        "desc": "Produciamo fertilizzanti organici in India e li esportiamo in tutto il mondo.",
+        "desc": "Fertilizzanti organici, prodotti in India ed esportati nel mondo.",
         "overview": "Indexia Agro Bio Fertilizers produce fertilizzanti organici nel suo stabilimento di Shamli, Uttar Pradesh — parte della regione di Delhi NCR. I prodotti biobased dell'azienda migliorano la salute del suolo, aumentano le rese dei raccolti e supportano l'agricoltura sostenibile per gli agricoltori del Nord India.",
         "highlights": [
           "Produzione organica biobased, senza sostanze chimiche aggressive",
@@ -573,7 +598,7 @@
       },
       "securities": {
         "tag": "Sicurezza Armata e Commando",
-        "desc": "Commando armati e sicurezza armata, a tutela di politici e grandi magnati del business.",
+        "desc": "Commando armati e guardie a protezione di leader e aziende.",
         "overview": "Indexia Securities offre la migliore sicurezza armata e protezione commando disponibile, salvaguardando persone, proprietà e operazioni ad alto profilo 24 ore su 24. Dai commando addestrati e guardie armate alle scorte VIP e alla sicurezza per eventi, l'azienda porta disciplina di livello militare in ogni incarico.",
         "highlights": [
           "Protezione armata e commando di prim'ordine",
@@ -591,45 +616,50 @@
         "name": "Indexia Sicurezza"
       },
       "warehouse": {
-        "tag": "Infrastruttura Logistica",
-        "desc": "Strutture di stoccaggio in affitto a multinazionali, situate nella regione di Delhi NCR.",
-        "overview": "Indexia Warehouse gestisce moderne strutture di stoccaggio in affitto a multinazionali, situate nella regione di Delhi NCR. Con stoccaggio sicuro e scalabile e un'integrazione logistica senza soluzione di continuità, l'azienda aiuta le imprese globali a gestire le scorte vicino a uno dei più grandi mercati di consumo dell'India.",
+        "tag": "Investimento Fondiario Strategico",
+        "desc": "21 acri di terreno strategico a Shamli, collegati a 8 autostrade nazionali.",
+        "overview": "Indexia Warehouse offre un'opportunità di investimento fondiario strategico a Shamli, Uttar Pradesh — a soli ~65 km da Tronica City, Loni, Delhi. La località è un hub di connettività: 8 autostrade nazionali e 2 strade principali collegano 8 stati, con accesso diretto a Bhutan e Nepal e una copertura di mercato di 50 crore di persone. Quattro grandi porti (Gujarat, Maharashtra, Chennai, Kolkata) sono direttamente raggiungibili via autostrada, e sia l'aeroporto IGI di Delhi sia l'Aeroporto Internazionale di Noida, Jewar, sono a meno di un'ora. Il portafoglio fondiario comprende 5 località e 21 acri in totale, con appezzamenti flessibili da 1, 2, 2,5, 5 e 8 acri, e un magazzino moderno da costruire su 2 acri con banchine di carico. Il prezzo previsto è di ₹30 per piede quadrato, negoziabile.",
         "highlights": [
-          "Strutture in affitto a multinazionali",
-          "Posizioni privilegiate a Delhi NCR vicino ai principali corridoi",
-          "Stoccaggio sicuro e scalabile con integrazione logistica"
+          "Posizione privilegiata — Shamli, UP, ~65 km da Delhi",
+          "8 autostrade nazionali + 2 strade principali che collegano 8 stati",
+          "21 acri in 5 località — appezzamenti da 1, 2, 2,5, 5 e 8 acri",
+          "₹30 per piede quadrato, negoziabile"
         ],
         "services": [
-          "Stoccaggio in Affitto (Multinazionali)",
-          "Stoccaggio Sicuro e Scalabile",
-          "Gestione delle Scorte",
-          "Posizioni Delhi NCR",
-          "Integrazione Logistica",
-          "Opzioni di Stoccaggio Freddo e Asciutto"
+          "Appezzamenti di Terreno — 1, 2, 2,5, 5 e 8 Acri",
+          "21 Acri in 5 Località",
+          "Costruzione Magazzino su Appezzamento di 2 Acri",
+          "Collegamenti Autostradali e Stradali",
+          "Accesso ai Porti — Gujarat, Maharashtra, Chennai, Kolkata",
+          "Accesso agli Aeroporti — Delhi e Jewar entro 1 ora"
         ],
-        "name": "Indexia Magazzini"
+        "name": "Indexia Magazzini",
+        "location": "Shamli, Uttar Pradesh"
       },
       "advertising": {
-        "tag": "Pubblicità su Autostrade",
-        "desc": "Numerose concessioni pubblicitarie lungo le autostrade, che offrono ai marchi campagne ad alta visibilità.",
-        "overview": "Indexia Advertising possiede numerose concessioni pubblicitarie lungo le autostrade, offrendo ai marchi campagne ad alta visibilità in corridoi ad alto traffico. Dalla selezione strategica dei siti al posizionamento creativo, l'azienda garantisce la massima esposizione per gli inserzionisti lungo le principali reti stradali.",
+        "tag": "Unipoli pubblicitari premium",
+        "desc": "Unipoli pubblicitari al crocevia più trafficato del Nord India.",
+        "overview": "Indexia Advertising gestisce unipoli pubblicitari premium a palo singolo sulla Delhi–Dehradun Highway (NH-709B) a Shamli — il hub del Nord India. Posizionati all'incrocio di 8 autostrade nazionali e 2 superstrade principali, i nostri unipoli collegano 10 stati con una copertura di 50 crore di persone e attirano oltre 1 crore di esposizioni giornaliere. Gli unipoli a palo singolo, con altezza premium e angolo di visuale a 360° senza ostacoli, offrono al vostro brand la massima visibilità senza confusione visiva, supportata dal marchio verde Bisleri. Dalla stampa e installazione alla manutenzione, gestiamo tutto end-to-end. Prenotate un unipolo 10×20 ft a ₹25.000/mese o un unipolo 12×24 ft a ₹36.000/mese — tariffa standard ₹125/piedi² per lato al mese, negoziabile per pacchetti a lungo termine. Per prenotazioni chiamate 86918 86919 o 011 4629 1155, oppure scrivete a indexia.queries@gmail.com.",
         "highlights": [
-          "Numerose concessioni lungo i corridoi autostradali",
-          "Posizionamenti ad alto traffico con visibilità massima",
-          "Selezione strategica dei siti e supporto alle campagne"
+          "Posizionamenti strategici sulla NH-709B, la Delhi–Dehradun Highway",
+          "10 stati collegati — copertura di 50 crore, oltre 1 crore di esposizioni giornaliere",
+          "Unipoli a palo singolo con visibilità a 360° e altezza premium",
+          "Servizio completo — stampa, installazione e manutenzione"
         ],
         "services": [
-          "Cartelloni e Insegne Autostradali",
-          "Numerose Concessioni di Siti",
-          "Posizionamenti in Corridoi ad Alto Traffico",
-          "Supporto Creativo e alle Campagne",
-          "Analisi dei Siti e Reportistica"
+          "Unipolo 10×20 ft — ₹25.000/mese",
+          "Unipolo 12×24 ft — ₹36.000/mese",
+          "Tariffa standard — ₹125/piedi² per lato al mese",
+          "Posizionamenti su Delhi–Dehradun Highway e Shamli Ring Road",
+          "Stampa, installazione e manutenzione",
+          "Pacchetti a lungo termine e volumi"
         ],
-        "name": "Indexia Pubblicità"
+        "name": "Indexia Pubblicità",
+        "location": "Autostrada Delhi–Dehradun, Shamli"
       },
       "foundation": {
         "tag": "Supporto agli Atleti",
-        "desc": "Supportiamo gli atleti con allenamento di livello internazionale, alimentazione e tutto il sostegno necessario — fino ai Giochi Olimpici.",
+        "desc": "Allenamento e supporto di livello internazionale, fino alle Olimpiadi.",
         "overview": "Indexia Foundation supporta gli atleti fornendo ogni possibile sostegno — allenamento di livello internazionale, dieta e nutrizione strutturate, coaching di esperti e ogni tipo di assistenza necessaria nel percorso verso i Giochi Olimpici. La fondazione accompagna gli sportivi dai primi risultati promettenti fino al palcoscenico più grande del mondo.",
         "highlights": [
           "Allenamento di livello internazionale e coaching di esperti",
@@ -832,21 +862,39 @@
   },
   "common": {
     "logoAlt": "Logo Indexia Group",
-    "homeAria": "Indexia Group — pagina iniziale"
+    "homeAria": "Indexia Group — pagina iniziale",
+    "languages": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "pt": "Português",
+      "hi": "हिन्दी",
+      "ar": "العربية",
+      "zh": "中文",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "id": "Bahasa Indonesia",
+      "tr": "Türkçe",
+      "vi": "Tiếng Việt",
+      "nl": "Nederlands",
+      "pl": "Polski"
+    }
   },
   "seo": {
     "homeTitle": "Servizi finanziari, prestiti, export e logistica",
-    "homeDescription": "Gruppo indiano diversificato: servizi finanziari, prestiti NBFC, commercio globale, fertilizzanti agro, magazzinaggio e sicurezza. Uffici a Mumbai, Delhi e Surat.",
+    "homeDescription": "Gruppo indiano diversificato: servizi finanziari, prestiti NBFC, commercio globale, fertilizzanti agro, magazzinaggio e sicurezza. Uffici a Mumbai e Delhi.",
     "businessesTitle": "Aziende del gruppo — Finanza, agro, export e logistica",
     "businessesDescription": "Le otto aziende di Indexia Group: finanza, prestiti, sicurezza, commercio di zucchero, fertilizzanti organici, magazzinaggio, pubblicità e supporto agli atleti.",
-    "contactTitle": "Contatti — Uffici di Mumbai, Delhi e Surat",
-    "contactDescription": "Contatta Indexia Group per richieste su servizi finanziari, prestiti, commercio, agro e logistica. Uffici a Mumbai, Delhi, Surat ed Ecuador — risposta entro 24 ore."
+    "contactTitle": "Contatti — Uffici di Mumbai e Delhi",
+    "contactDescription": "Contatta Indexia Group per richieste su servizi finanziari, prestiti, commercio, agro e logistica. Uffici a Mumbai, Delhi ed Ecuador — risposta entro 24 ore."
   },
   "branches": {
     "corporateOffice": "Sede Centrale",
     "mumbaiOffice": "Ufficio di Mumbai",
     "delhiOffice": "Ufficio di Delhi",
-    "suratOffice": "Ufficio di Surat",
     "internationalOffice": "Ufficio Internazionale"
   },
   "phoneLabel": {
@@ -854,5 +902,62 @@
     "mobile": "Cellulare",
     "mob": "Cell.",
     "tel": "Tel."
+  },
+  "warehousePricing": {
+    "eyebrow": "Portafoglio Fondiario",
+    "title": "Portafoglio Fondiario e Prezzi",
+    "subtitle": "5 località | 21 acri in totale — Shamli, Uttar Pradesh",
+    "portfolioCol": "Portafoglio",
+    "valueCol": "Valore",
+    "locations": "Località",
+    "locationsValue": "5 località",
+    "total": "Terreno totale",
+    "totalValue": "21 acri",
+    "plotCol": "Dimensioni appezzamenti disponibili",
+    "plot1": "1 acro",
+    "plot2": "2 acri",
+    "plot2_5": "2,5 acri",
+    "plot5": "5 acri",
+    "plot8": "8 acri",
+    "standardRate": "Prezzo previsto: ₹30 per piede quadrato — negoziabile",
+    "note": "Magazzino moderno da costruire su 2 acri con banchine di carico. Prezzi negoziabili — contattateci per i dettagli.",
+    "enquire": "Richiedi",
+    "plotArea1": "Superficie: 1 acro",
+    "plotArea2": "Superficie: 2 acri",
+    "plotArea2_5": "Superficie: 2,5 acri",
+    "plotArea5": "Superficie: 5 acri",
+    "plotArea8": "Superficie: 8 acri",
+    "bookMessage": "Vorrei informarmi sul terreno di {{size}} ({{area}}) a ₹30 per piede quadrato.",
+    "bookNow": "Prenota ora"
+  },
+  "warehouseContact": {
+    "eyebrow": "Contatti",
+    "title": "Contatta il team magazzino",
+    "phones": "Telefono",
+    "emails": "E-mail",
+    "address": "Indirizzo ufficio",
+    "brochure": "Scarica la brochure"
+  },
+  "brochure": {
+    "download": "Scarica PDF",
+    "headline": "Investimento fondiario strategico nel cuore del Nord India",
+    "about": "Informazioni sul progetto",
+    "contact": "Contattaci",
+    "footer": "Indexia Group · Per richieste, chiamate, scrivete o visitate il nostro ufficio. I prezzi sono indicativi e negoziabili.",
+    "print": "Stampa",
+    "advertisingHeadline": "Unipoli pubblicitari premium sulla Delhi–Dehradun Highway, Shamli",
+    "advertisingFooter": "Indexia Group | Tariffe soggette a disponibilità. Per prenotare, chiamate, scrivete o visitate il nostro ufficio.",
+    "backWarehouse": "Torna a Magazzini",
+    "backAdvertising": "Torna a Pubblicità",
+    "locationWarehouse": "Shamli, Uttar Pradesh",
+    "locationAdvertising": "Autostrada Delhi–Dehradun, Shamli"
+  },
+  "advertisingContact": {
+    "eyebrow": "Contatti",
+    "title": "Prenota il tuo spazio oggi",
+    "phones": "Telefono",
+    "emails": "E-mail",
+    "address": "Indirizzo ufficio",
+    "brochure": "Scarica la brochure"
   }
 }

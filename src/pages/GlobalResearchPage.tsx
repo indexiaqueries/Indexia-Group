@@ -5,9 +5,12 @@ import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
+import ImageSlot from "../components/common/ImageSlot";
 import { colors } from "../lib/theme";
 import researchBg from "../assets/footer-img.webp";
+import { siteImages } from "../data/siteImages";
 import { researchAreas, researchReports } from "../data/globalResearch";
+import type { ImageSlotData } from "../components/common/ImageSlot";
 
 const researchJsonLd = {
   "@context": "https://schema.org",
@@ -48,6 +51,11 @@ const GlobalResearchPage = () => {
     title: tr(`reports.${r.key}.title`, r.title),
     summary: tr(`reports.${r.key}.summary`, r.summary),
   }));
+  const reportSlots: Record<string, ImageSlotData> = {
+    otg: siteImages.researchOTG,
+    act: siteImages.researchACT,
+    "special-reports": siteImages.researchSpecial,
+  };
 
   return (
     <main className="bg-white">
@@ -122,6 +130,7 @@ const GlobalResearchPage = () => {
             {reports.map((report, i) => (
               <Reveal key={report.key} delay={(i % 3) * 0.06} amount={0.1}>
                 <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                  <ImageSlot {...reportSlots[report.key]} className="mb-5" />
                   <div className="flex flex-wrap items-center gap-3">
                     <span
                       className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em]"

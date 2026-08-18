@@ -1,0 +1,576 @@
+{
+  "header": {
+    "nav": {
+      "contact": "Contact"
+    },
+    "menu": {
+      "home": "Home",
+      "groupCompanies": "Groepsbedrijven",
+      "companies": "Bedrijven",
+      "contact": "Contact",
+      "viewAllCompanies": "Alle bedrijven bekijken →"
+    },
+    "aria": {
+      "selectLanguage": "Taal selecteren",
+      "toggleMenu": "Menu openen/sluiten",
+      "closeMenu": "Menu sluiten"
+    }
+  },
+  "hero": {
+    "p0": {
+      "tag": "Indexia Group",
+      "heading": "Eén Groep.\nVeel Oplossingen.",
+      "sub": "Van financiën en logistiek tot agro en reclame: Indexia Group stimuleert groei in diverse sectoren met betrouwbare, toekomstbestendige bedrijven."
+    },
+    "p1": {
+      "tag": "Indexia Finance",
+      "heading": "Eén Bestemming\nVoor Alle Leningen.",
+      "sub": "U kunt via ons portaal www.indexiafinance.com voor elke vorm van lening aanvragen. We werken wereldwijd — in India zijn we zakenpartner van 43 banken en NBFC's."
+    },
+    "p2": {
+      "tag": "Indexia Finserve Pvt. Ltd.",
+      "heading": "De Next-Gen\nFinancieringsmethode.",
+      "sub": "Nu komt de juiste bank naar uw voordeur."
+    },
+    "p3": {
+      "tag": "Indexia Overseas Pvt. Ltd.",
+      "heading": "Geraffineerde Suiker &\nAlle Eetwaren.",
+      "sub": "We handelen in en exporteren geraffineerde suiker en alle eetwaren."
+    },
+    "p4": {
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+      "heading": "We Produceren &\nExporteren Organische Meststoffen",
+      "sub": "We produceren organische meststoffen in India en exporteren wereldwijd."
+    },
+    "p5": {
+      "tag": "Indexia Securities",
+      "heading": "Gewapende Commando's &\nGewapende Beveiliging",
+      "sub": "Bescherming van politici en grote zakenlieden."
+    },
+    "p6": {
+      "tag": "Indexia Warehouse",
+      "heading": "Opslag Gebouwd\nVoor Schaal.",
+      "sub": "Moderne opslag- en logistieke infrastructuur die goederen efficiënt in beweging houdt."
+    },
+    "p7": {
+      "tag": "Indexia Advertising",
+      "heading": "Uw Merk op\nElke Snelweg.",
+      "sub": "Meerdere reclameposities langs snelwegen voor campagnes met hoge zichtbaarheid."
+    },
+    "p8": {
+      "tag": "Indexia Foundation",
+      "heading": "Atleten\nSterker Maken.",
+      "sub": "Sportprogramma's die atleten trainen, begeleiden en financieren op weg naar topprestaties."
+    },
+    "ctaExploreGroup": "Ontdek Groepsbedrijven",
+    "ctaExploreMore": "Meer Ontdekken",
+    "prevPanel": "Vorig paneel",
+    "nextPanel": "Volgend paneel"
+  },
+  "footer": {
+    "tagline": "Gediversifieerde Indiase Bedrijvengroep",
+    "blurb": "Acht betrouwbare bedrijven onder één gediversifieerde Indiase groep — financiën, export, landbouw, logistiek, beveiliging, reclame en atletenondersteuning — gebouwd op integriteit en resultaten.",
+    "contactUs": "Contact",
+    "hours": "Ma - Za: 09.00 - 18.00",
+    "company": "Bedrijf",
+    "resources": "Bronnen",
+    "legal": "Juridisch",
+    "links": {
+      "groupCompanies": "Groepsbedrijven",
+      "advertise": "Adverteer Bij Ons",
+      "careers": "Carrière",
+      "news": "Nieuws & Kenniscentrum",
+      "globalResearch": "Global Research",
+      "securityTips": "Veiligheidstips",
+      "termsOfUse": "Gebruiksvoorwaarden",
+      "termsConditions": "Algemene Voorwaarden",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "cta": "Heeft u een vraag over een van onze groepsbedrijven?",
+    "enquiry": "Stuur ons uw vraag.",
+    "stats": "Indexia Group · 08 Bedrijven · 03 Steden",
+    "rights": "© 2026 Indexia Group. Alle rechten voorbehouden.",
+    "backToTop": "Naar boven"
+  },
+  "home": {
+    "groupCompanies": {
+      "title": "Groepsbedrijven",
+      "description": "Indexia Group is een gediversifieerde holding van bedrijven op het gebied van Financiën, Export, Landbouw, Opslag, Beveiliging, Sociale Impact en Reclame. We bouwen bedrijven die klanten, partners en gemeenschappen in staat stellen met vertrouwen te groeien."
+    }
+  },
+  "businesses": {
+    "eyebrow": "Groepsbedrijven",
+    "titleStart": "Acht Bedrijven, ",
+    "titleAccent": "Eén Groep",
+    "subtitle": "Kies een bedrijf om de eigen pagina te bezoeken — stuur daarna uw vraag naar het juiste team."
+  },
+  "businessesHero": {
+    "eyebrow": "Het Indexia Verschil",
+    "titleStart": "Eén Groep. Acht Bedrijven. ",
+    "titleAccent": "Eén Gezamenlijke Belofte.",
+    "paragraph": "Van financiën en advies tot export, landbouw, logistiek, beveiliging, sport en media — elk Indexia-bedrijf is gebouwd op dezelfde basis: integriteit, expertise en een mensgerichte aanpak. Wat u ook nodig heeft, het juiste team maakt al deel uit van de familie.",
+    "counterClients": "Bedienende Klanten",
+    "counterBusinesses": "Bedrijven",
+    "counterLocations": "Steden",
+    "counterYears": "Jaren Actief",
+    "cta": "Gratis Consult Boeken →"
+  },
+  "contactHero": {
+    "eyebrow": "Praat met Indexia",
+    "title": "Een Directe Lijn Naar Ons Team",
+    "paragraph": "Van documentatievragen tot nieuwe leningaanvragen: elk bericht wordt beoordeeld en beantwoord door een lid van ons team — niet door een wachtrij.",
+    "sendEnquiry": "Stuur Uw Vraag",
+    "callNow": "Bel Nu · 86551 68551",
+    "offices": "{{count}} kantoren",
+    "directLines": "{{count}} directe lijnen",
+    "reply": "< 24 uur gemiddelde reactietijd"
+  },
+  "contactInfo": {
+    "eyebrow": "Stuur Uw Vraag",
+    "headlineStart": "Vraag Naar ",
+    "headlineAccent": "Indexia Bedrijf",
+    "paragraph": "Of u nu een vraag heeft over onze diensten, een zakelijk advies nodig heeft of een samenwerking wilt verkennen, ons team staat klaar om u te helpen — we reageren binnen 24 uur.",
+    "enquiries": "Vragen",
+    "location": "Locatie",
+    "workingHours": "Werktijden",
+    "phoneNumbers": "Telefoonnummers",
+    "country": "India"
+  },
+  "form": {
+    "eyebrow": "Stuur Uw Vraag",
+    "intro": "Vul onderstaand formulier in en uw vraag wordt behandeld door ons team.",
+    "name": "Naam",
+    "namePlaceholder": "Uw volledige naam",
+    "email": "E-mailadres",
+    "emailPlaceholder": "you@example.com",
+    "phone": "Telefoonnummer",
+    "phonePlaceholder": "10-cijferig nummer",
+    "subject": "Onderwerp / Bedrijf",
+    "subjectPlaceholder": "Kies een bedrijf…",
+    "message": "Bericht",
+    "messagePlaceholder": "Schrijf hier uw vraag...",
+    "submit": "Vraag Verzenden",
+    "sending": "Verzenden…",
+    "success": "Uw vraag is verzonden! Ons team neemt spoedig contact met u op.",
+    "errorName": "Voer uw naam in.",
+    "errorNameLetters": "De naam moet letters bevatten.",
+    "errorPhone": "Voer een geldig 10-cijferig telefoonnummer in.",
+    "errorEmail": "Voer een geldig e-mailadres in.",
+    "errorSubject": "Kies een onderwerp of bedrijf.",
+    "errorMessage": "Voer uw bericht in.",
+    "errorGeneric": "Er is iets misgegaan. Probeer het later opnieuw.",
+    "generalEnquiry": "Algemene Vraag"
+  },
+  "companyDetail": {
+    "backAll": "Alle Bedrijven",
+    "register": "Register Nr. {{no}} / 08",
+    "keyEntries": "Belangrijkste vermeldingen",
+    "servicesTitle": "Diensten onder deze vermelding",
+    "registerOf": "Indexia Group · Handelsregister",
+    "entryOf": "Vermelding {{no}} van 08",
+    "eyebrow": "Stuur Uw Vraag",
+    "enquireTitle": "Vraag Naar {{name}}",
+    "enquireSub": "Uw vraag heeft {{name}} bovenaan vermeld, zodat het juiste team deze als eerste oppakt.",
+    "responseTime": "Reactietijd",
+    "responseValue": "Binnen 24 uur, ma – za",
+    "overviewEyebrow": "Overzicht",
+    "overviewTitle": "Over {{name}}",
+    "exploreServices": "Ontdek Diensten",
+    "statServices": "Diensten",
+    "statHighlights": "Hoogtepunten",
+    "statRegister": "Registervermelding"
+  },
+  "contact": {
+    "locationsTitleStart": "Onze ",
+    "locationsTitleAccent": "Locaties"
+  },
+  "businessCard": {
+    "tapToView": "Tik om te bekijken",
+    "readMore": "Lees meer"
+  },
+  "companyLinkCard": {
+    "visitPage": "Pagina bezoeken",
+    "visitWebsiteAria": "Bezoek de website van {{name}}",
+    "visitPageAria": "Bezoek de pagina van {{name}}",
+    "visualAlt": "{{name}} visual"
+  },
+  "newsPage": {
+    "eyebrow": "Nieuws & Kenniscentrum",
+    "title": "Nieuws & Kenniscentrum",
+    "titleStart": "Verhalen & Inzichten uit ",
+    "titleAccent": "Heel de Groep.",
+    "subtitle": "Het laatste banknieuws — financieringsupdates, digitale betalingen, beleidswijzigingen en marktontwikkelingen — plus praktische gidsen van onze bedrijven.",
+    "tvEyebrow": "Bekijk Ons Op TV",
+    "tvHeading": "Voor Al Uw Leningbehoeften",
+    "tvCaption": "Lening Nodig Betekent… Indexia Finance",
+    "featuredLabel": "Uitgelicht Verhaal",
+    "readMore": "Lees Meer",
+    "askUs": "Vraag Het Ons",
+    "knowledgeEyebrow": "Kenniscentrum",
+    "knowledgeHeading": "Praktische Gidsen van Onze Bedrijven",
+    "knowledgeSubtitle": "Eenvoudige uitleg geschreven door de teams die dit werk elke dag doen.",
+    "ctaTitle": "Heeft u een vraag over onze bedrijven?",
+    "ctaBody": "Van FDI-advies tot biologische landbouw tot gewapende beveiliging — het juiste Indexia-bedrijf staat klaar om te helpen. Stuur ons een vraag en wij verbinden u door.",
+    "ctaButton": "Stuur Een Vraag",
+    "metaDescription": "Nieuws & Kenniscentrum — het laatste banknieuws over financiering, digitale betalingen en beleid, plus praktische kennisgidsen van Indexia Group."
+  },
+  "careersPage": {
+    "eyebrow": "Carrière",
+    "title": "Carrière bij Indexia Group",
+    "titleStart": "Bouw Uw Carrière Met ",
+    "titleAccent": "Ons.",
+    "subtitle": "Indexia Group is een lerende organisatie — en de bedrijfscultuur is haar team.",
+    "ctaButton": "Bekijk Openstaande Vacatures",
+    "cultureEyebrow": "Onze Cultuur",
+    "cultureHeading": "Een Lerende Organisatie",
+    "rolesEyebrow": "Openstaande Posities",
+    "rolesHeading": "Onze Huidige Vacatures",
+    "rolesSubtitle": "Onze huidige openstaande posities zijn:",
+    "apply": "Solliciteer",
+    "ctaTitle": "Stuur Ons Uw CV",
+    "ctaBody": "We zijn altijd op zoek naar goede mensen. Stuur uw CV naar hr@indexiafinance.com en we nemen contact op.",
+    "metaDescription": "Carrière bij Indexia Group — een lerende organisatie met vacatures bij Indexia Finserve in Mumbai. Stuur uw CV om uw carrière bij ons te starten.",
+    "mailResume": "Stuur ons uw CV –"
+  },
+  "legal": {
+    "eyebrow": "Juridisch",
+    "privacyTitle": "Privacybeleid",
+    "privacySubtitle": "Hoe Indexia Group uw persoonlijke gegevens verzamelt, gebruikt en beschermt.",
+    "termsTitle": "Algemene Voorwaarden",
+    "termsSubtitle": "De voorwaarden die gelden voor uw gebruik van de Indexia Group-website en de diensten van haar bedrijven.",
+    "termsOfUseTitle": "Gebruiksvoorwaarden",
+    "termsOfUseSubtitle": "De regels voor toegang tot en browsen op de Indexia Group-website en de websites van haar bedrijven.",
+    "lastUpdated": "Laatst bijgewerkt",
+    "backHome": "Terug Naar Home",
+    "contactUs": "Contact",
+    "contactHeading": "Vragen over dit beleid?",
+    "contactBody": "Schrijf ons op contactus@indexiagroup.com of stuur een vraag en ons team neemt contact met u op.",
+    "sendEnquiry": "Stuur Een Vraag",
+    "metaPrivacyDescription": "Lees het Privacybeleid van Indexia Group — hoe we uw persoonlijke gegevens verzamelen, gebruiken, opslaan en beschermen.",
+    "metaTermsDescription": "Lees de Algemene Voorwaarden die gelden voor uw gebruik van de Indexia Group-website en de diensten van haar bedrijven.",
+    "metaTermsOfUseDescription": "Lees de Gebruiksvoorwaarden die bepalen hoe u toegang krijgt tot en browst op de Indexia Group-website en de websites van haar bedrijven."
+  },
+  "globalResearchPage": {
+    "eyebrow": "Global Research",
+    "title": "Global Research bij Indexia Group",
+    "titleStart": "Wereldwijd Financieel Onderzoek ",
+    "titleAccent": "& Hulpmiddelen.",
+    "subtitle": "Inzichtelijke, relevante analyses en scherpe visies op het gebied van macro-economie, vastrentende waarden, valuta en grondstoffen — gebouwd op sterke ter plekke opgedane inzichten in Azië, Afrika en het Midden-Oosten.",
+    "ctaButton": "Ontdek Onderzoeksdekking",
+    "areasEyebrow": "Onderzoeksdekking",
+    "areasHeading": "Wereldwijd Onderzoek Over Disciplines",
+    "areasSubtitle": "Inzichtelijke, relevante analyses over ons volledige dekkingsgebied.",
+    "reportsEyebrow": "Publicaties",
+    "reportsHeading": "Hoe We Onderzoek Delen",
+    "reportsSubtitle": "Frequente presentaties en hoogwaardige publicaties — OTG, onze ter plekke analyse; ACT, onze toepasbare marktideeën; en Special Reports over wereldwijd belangrijke thema's.",
+    "ctaTitle": "Toegang Tot Ons Onderzoek",
+    "ctaBody": "Voor meer informatie en om ons onderzoek te ontvangen, bezoek ons Global Research-portaal. Neem voor toegang contact op met uw Relationship Manager.",
+    "metaDescription": "Indexia Group Global Research — inzichtelijke, relevante analyses en scherpe visies op het gebied van macro-economie, vastrentende waarden, valuta en grondstoffen, met ter plekke opgedane inzichten in Azië, Afrika en het Midden-Oosten.",
+    "reportFormat": "Publicatie"
+  },
+  "securityTipsPage": {
+    "eyebrow": "Veiligheidstips",
+    "title": "Veiligheidstips van Indexia Group",
+    "titleStart": "Blijf FRAUDE ",
+    "titleAccent": "Voor.",
+    "subtitle": "Waar u ook gaat, u kunt uw geld online met vertrouwen beheren.",
+    "ctaButton": "Bescherm Uw Gegevens",
+    "featuresEyebrow": "Wat We Doen",
+    "featuresHeading": "Houdt U Online Veilig",
+    "featuresSubtitle": "Lees verder om te ontdekken wat we doen om uw rekeningen te beschermen wanneer u online bankiert.",
+    "practicesEyebrow": "Wat U Kunt Doen",
+    "practicesHeading": "Bescherm Uw Gegevens",
+    "practicesSubtitle": "We werken elke dag om uw rekeningen te beschermen bij online bankieren. Er zijn ook een paar eenvoudige dingen die u op uw dagelijkse apparaten kunt doen om online veilig te blijven.",
+    "contactsEyebrow": "Hulp Nodig?",
+    "contactsHeading": "Moet U Met Ons Praten?",
+    "contactsSubtitle": "Als u denkt dat u uw rekeninggegevens aan een verdachte partij heeft verstrekt, of het slachtoffer bent geworden van fraude, neem dan onmiddellijk contact met ons op via de Klantenservice-hotline.",
+    "ctaTitle": "Ziet u iets verdachts?",
+    "ctaBody": "Meld het via ons vraagformulier of neem rechtstreeks contact op met het betreffende Indexia Group-bedrijf.",
+    "metaDescription": "Veiligheidstips van Indexia Group — hoe we uw rekeningen online beschermen, wat u op uw apparaten kunt doen en wie u moet contacteren als er iets misgaat."
+  },
+  "common": {
+    "logoAlt": "Indexia Group logo",
+    "homeAria": "Indexia Group home",
+    "languages": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "pt": "Português",
+      "hi": "हिन्दी",
+      "ar": "العربية",
+      "zh": "中文",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "id": "Bahasa Indonesia",
+      "tr": "Türkçe",
+      "vi": "Tiếng Việt",
+      "nl": "Nederlands",
+      "pl": "Polski"
+    }
+  },
+  "seo": {
+    "homeTitle": "Financiële Diensten, Leningen, Export & Logistiek",
+    "homeDescription": "Gediversifieerde Indiase bedrijvengroep: financiële diensten, NBFC-leningen, wereldwijde export, agro-meststoffen, opslag & beveiliging. Kantoren in Mumbai, Delhi en Ecuador.",
+    "businessesTitle": "Groepsbedrijven — Financiën, Agro, Export & Logistiek",
+    "businessesDescription": "De acht bedrijven van Indexia Group: financiën, leningen, beveiliging, suikerexport, organische meststoffen, opslag, reclame en atletenondersteuning.",
+    "contactTitle": "Contact — Kantoren Mumbai & Delhi",
+    "contactDescription": "Neem contact op met Indexia Group voor vragen over financiële diensten, leningen, export, agro en logistiek. Kantoren in Mumbai, Delhi en Ecuador — reactie binnen 24 uur."
+  },
+  "branches": {
+    "corporateOffice": "Hoofdkantoor",
+    "mumbaiOffice": "Kantoor Mumbai",
+    "delhiOffice": "Kantoor Delhi",
+    "internationalOffice": "Internationaal Kantoor"
+  },
+  "phoneLabel": {
+    "landline": "Vast",
+    "mobile": "Mobiel",
+    "mob": "Mob",
+    "tel": "Tel"
+  },
+  "unipolePricing": {
+    "eyebrow": "Unipole-pakketten",
+    "title": "Beschikbare Afmetingen & Prijzen",
+    "subtitle": "Premium unipole-pakketten op de Delhi–Dehradun-snelweg, Shamli",
+    "sizeCol": "Afmeting",
+    "areaCol": "m²",
+    "rateCol": "Maandelijks Tarief",
+    "sizeSmall": "10 × 20 ft",
+    "areaSmall": "200 ft²",
+    "rateSmall": "₹25.000",
+    "sizeLarge": "12 × 24 ft",
+    "areaLarge": "288 ft²",
+    "rateLarge": "₹36.000",
+    "standardRate": "Standaardtarief: ₹125/ft² per zijde per maand",
+    "note": "* Tarieven afhankelijk van beschikbaarheid. Neem contact op voor langetermijnpakketten.",
+    "bookNow": "Nu boeken",
+    "bookSize": "Deze afmeting boeken",
+    "bookMessage": "Ik wil graag de {{size}} unipole ({{area}}) boeken tegen {{rate}} per maand."
+  },
+  "pageContent": {
+    "companies": {
+      "finance": {
+        "tag": "Multinational Fintech",
+        "desc": "Wereldwijde fintech voor investeerdersdiensten, FDI, NBFC en bankfinanciering.",
+        "overview": "Indexia Finance is een multinationaal fintech-platform dat financiële diensten levert aan klanten over de hele wereld. U kunt via ons portaal www.indexiafinance.com voor elke vorm van lening aanvragen — we leveren wereldwijd diensten, en in India zijn we zakenpartner van 43 banken en NBFC's. Het bedrijf is gebouwd rond vier kerndisciplines — investeerdersdiensten, FDI-advies, NBFC-activiteiten en bankfinanciering — en verbindt kapitaal met kansen, zodat investeerders, bedrijven en instellingen met vertrouwen grensoverschrijdende financiële beslissingen kunnen nemen.",
+        "tagline": "Eén Bestemming Voor Alle Leningen",
+        "highlights": [
+          "Wereldwijd fintech-bereik met India-first uitvoering",
+          "Vier geïntegreerde disciplines onder één dak",
+          "End-to-end financiering en adviesondersteuning"
+        ],
+        "services": [
+          "FDI-advies & -facilitering",
+          "Investeerdersdiensten",
+          "NBFC-activiteiten",
+          "Bank- & institutionele financiering",
+          "Grensoverschrijdende kapitaaloplossingen",
+          "Vermogens- & activa-advies"
+        ],
+        "name": "Indexia Finance"
+      },
+      "finserve": {
+        "tag": "Leningen & Financiën",
+        "desc": "Elke vorm van lening, afgestemd op particulieren en bedrijven.",
+        "overview": "Indexia Finserve is de kredietverstrekkende tak van Indexia Group en biedt elke vorm van lening binnen de financiële sector. Nu komt de juiste bank naar uw voordeur — het bedrijf werkt als een complete leningbestemming en begeleidt klanten door geschiktheid, documentatie en uitbetaling voor persoonlijke, woning-, zakelijke, MKB- en gespecialiseerde financiering via één gestroomlijnd proces.",
+        "tagline": "De Next-Gen Financieringsmethode",
+        "highlights": [
+          "Elke vorm van lening onder één dak",
+          "Gestroomlijnde geschiktheid, documentatie en uitbetaling",
+          "Toegewijd advies bij elke stap"
+        ],
+        "services": [
+          "Persoonlijke Lening",
+          "Zakelijke Lening",
+          "Hypotheek",
+          "Lening op Onroerend Goed",
+          "Saldo-overdracht",
+          "Autolening",
+          "Creditcard",
+          "Studielening",
+          "Projectlening",
+          "Commerciële Aankoop",
+          "Lease-R-Discontering",
+          "Werkkapitaal"
+        ],
+        "name": "Indexia Finserve Pvt. Ltd."
+      },
+      "overseas": {
+        "tag": "Exporteur van Eetwaren",
+        "desc": "Exporteren van geraffineerde suiker en alle eetwaren wereldwijd.",
+        "overview": "Indexia Overseas drijft de wereldwijde export van alle eetwaren, met speciale focus op suikerexport naar 14 Zuid-Amerikaanse landen. Het bedrijf beheert inkoop, kwaliteit, logistiek en internationale naleving zodat levensmiddelen betrouwbaar en op schaal van oorsprong naar markt gaan.",
+        "highlights": [
+          "Export van alle eetwaren — suiker als kern",
+          "Gevestigde aanwezigheid in 14 Zuid-Amerikaanse markten",
+          "End-to-end inkoop, kwaliteit en logistiek"
+        ],
+        "services": [
+          "Suikerexport & -handel",
+          "Inkoop & kwaliteitscontrole",
+          "Internationale logistiek",
+          "14 Zuid-Amerikaanse markten"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd."
+      },
+      "agro-bio": {
+        "tag": "Productie Organische Meststoffen",
+        "desc": "Organische meststoffen, gemaakt in India en wereldwijd geëxporteerd.",
+        "overview": "Indexia Agro Bio Fertilizers produceert organische meststoffen in haar productiefaciliteit in Shamli, Uttar Pradesh — onderdeel van de regio Delhi NCR. De biogebaseerde producten van het bedrijf verbeteren de bodemgezondheid, verhogen de oogstopbrengst en ondersteunen duurzame landbouw voor telers in heel Noord-India.",
+        "highlights": [
+          "Organische, biogebaseerde productie — geen agressieve chemicaliën",
+          "Shamli, UP-faciliteit in de Delhi NCR-regio",
+          "Betere bodemgezondheid, hogere oogstopbrengst"
+        ],
+        "services": [
+          "Productie Organische Meststoffen",
+          "Bio-meststofmengsels",
+          "Oplossingen voor bodemgezondheid",
+          "Programma's voor opbrengstverbetering",
+          "Boerenondersteuning & -training",
+          "Shamli, UP-faciliteit (Delhi NCR)"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+      },
+      "securities": {
+        "tag": "Gewapende Beveiliging & Commando's",
+        "desc": "Gewapende commando's en beveiligers die leiders en bedrijven beschermen.",
+        "overview": "Indexia Securities biedt de beste gewapende beveiliging en commandobescherming die beschikbaar is en beschermt mensen, eigendommen en hooggeprofileerde operaties dag en nacht. Van getrainde commando's en gewapende beveiligers tot VIP-escortes en evenementbeveiliging: het bedrijf brengt militaire discipline in elke opdracht.",
+        "highlights": [
+          "Beste gewapende en commandobescherming in haar klasse",
+          "Getrainde commando's met snelle-responsdiscipline",
+          "24×7 monitoring en respons ter plaatse"
+        ],
+        "services": [
+          "Gewapende Beveiligingsbeambten",
+          "Commandobeschermingseenheden",
+          "VIP- & dignitaris-escortes",
+          "Evenement- & locatiebeveiliging",
+          "Zakelijke & locatiebeveiliging",
+          "24×7 Monitoring & Snelle Respons"
+        ],
+        "name": "Indexia Securities"
+      },
+      "warehouse": {
+        "tag": "Strategische Grondinvestering",
+        "desc": "21 acres strategische grond in Shamli, verbonden met 8 nationale snelwegen.",
+        "overview": "Indexia Warehouse biedt een strategische grondinvesteringsmogelijkheid in Shamli, Uttar Pradesh — slechts ~65 km van Tronica City, Loni, Delhi. De locatie is een connectiviteitsknooppunt: 8 nationale snelwegen en 2 grote hoofdwegen verbinden 8 staten, met directe toegang tot Bhutan en Nepal en een marktbereik van 50 crore mensen. Vier grote havens (Gujarat, Maharashtra, Chennai, Kolkata) zijn rechtstreeks bereikbaar via snelwegen, en zowel IGI Airport Delhi als Noida International Airport, Jewar liggen binnen een uur. De grondportefeuille omvat 5 locaties en in totaal 21 acres, met flexibele kavels van 1, 2, 2,5, 5 en 8 acres, en een modern magazijn dat op 2 acres wordt gebouwd met laaddocks. Verwachte prijs is ₹30 per ft², onderhandelbaar.",
+        "highlights": [
+          "Toplocatie — Shamli, UP, ~65 km van Delhi",
+          "8 nationale snelwegen + 2 grote hoofdwegen verbinden 8 staten",
+          "21 acres op 5 locaties — kavels van 1, 2, 2,5, 5 & 8 acres",
+          "₹30 per ft², onderhandelbaar"
+        ],
+        "services": [
+          "Grondkavels — 1, 2, 2,5, 5 & 8 Acres",
+          "21 Acres Over 5 Locaties",
+          "Magazijnbouw Op Kavels Van 2 Acres",
+          "Snelweg- & hoofdwegverbindingen",
+          "Haventoegang — Gujarat, Maharashtra, Chennai, Kolkata",
+          "Luchthaventoegang — Delhi & Jewar Binnen 1 Uur"
+        ],
+        "name": "Indexia Warehouse",
+        "location": "Shamli, Uttar Pradesh"
+      },
+      "advertising": {
+        "tag": "Premium Unipole-reclameborden",
+        "desc": "Premium snelwegreclameborden op het drukste knooppunt van Noord-India.",
+        "overview": "Indexia Advertising exploiteert premium single-pole unipole-reclameborden op de Delhi–Dehradun-snelweg (NH-709B) in Shamli — het centrum van Noord-India. Onze unipoles liggen op het knooppunt van 8 nationale snelwegen en 2 grote hoofdwegen, verbinden 10 staten met een bereik van 50 crore mensen en genereren dagelijks 1+ crore exposure. Single-pole unipoles met premium hoogte en onbelemmerde 360°-zichthoeken geven uw merk maximale zichtbaarheid zonder visuele rommel, ondersteund door de kenmerkende Bisleri Green-branding. Van drukwerk en installatie tot onderhoud: wij regelen alles end-to-end. Boek een 10×20 ft unipole voor ₹25.000/maand of een 12×24 ft unipole voor ₹36.000/maand — standaardtarief ₹125/ft² per zijde per maand, onderhandelbaar voor langetermijnpakketten. Voor boekingen belt u 86918 86919 of 011 4629 1155, of mailt u indexia.queries@gmail.com.",
+        "highlights": [
+          "Strategische plaatsingen op NH-709B, de Delhi–Dehradun-snelweg",
+          "10 verbonden staten — 50 crore mensen bereikt, 1+ crore dagelijkse exposure",
+          "Single-pole unipoles met 360°-zichtbaarheid en premium hoogte",
+          "End-to-end service — drukwerk, installatie en onderhoud"
+        ],
+        "services": [
+          "Unipole 10×20 ft — ₹25.000/maand",
+          "Unipole 12×24 ft — ₹36.000/maand",
+          "Standaardtarief — ₹125/ft² per zijde per maand",
+          "Plaatsingen Delhi–Dehradun-snelweg & Shamli-ringweg",
+          "Drukwerk, Installatie & Onderhoud",
+          "Langetermijn- & bulkpakketten"
+        ],
+        "name": "Indexia Advertising",
+        "location": "Delhi–Dehradun-snelweg, Shamli"
+      },
+      "foundation": {
+        "tag": "Atletenondersteuning",
+        "desc": "Internationale training en ondersteuning, tot aan de Olympische Spelen.",
+        "overview": "Indexia Foundation ondersteunt atleten door alle mogelijke steun te bieden — internationale training, gestructureerde voeding en voedingsleer, deskundige coaching en elke vorm van hulp die nodig is op weg naar de Olympische Spelen. De stichting staat sporters bij van hun eerste belofte tot het grootste podium ter wereld.",
+        "highlights": [
+          "Internationale training en deskundige coaching",
+          "Gestructureerde voeding- en voedingsprogramma's",
+          "Volledige ondersteuning tot aan de Olympische Spelen"
+        ],
+        "services": [
+          "Training Op Internationaal Niveau",
+          "Voeding- & voedingsprogramma's",
+          "Deskundige Coaching & Mentorschap",
+          "Wedstrijdfinanciering & -uitrusting",
+          "Sportgeneeskunde & Herstel",
+          "Ondersteuning Op Olympisch Niveau"
+        ],
+        "name": "Indexia Foundation"
+      }
+    }
+  },
+  "warehousePricing": {
+    "eyebrow": "Grondportefeuille",
+    "title": "Grondportefeuille & Prijzen",
+    "subtitle": "5 locaties | 21 acres totaal — Shamli, Uttar Pradesh",
+    "portfolioCol": "Portefeuille",
+    "valueCol": "Waarde",
+    "locations": "Locaties",
+    "locationsValue": "5 Locaties",
+    "total": "Totale Grond",
+    "totalValue": "21 Acres",
+    "plotCol": "Beschikbare Kavels",
+    "plot1": "1 Acre",
+    "plot2": "2 Acres",
+    "plot2_5": "2,5 Acres",
+    "plot5": "5 Acres",
+    "plot8": "8 Acres",
+    "standardRate": "Verwachte Prijs: ₹30 per ft² — Onderhandelbaar",
+    "note": "Modern magazijn wordt gebouwd op 2 acres met laaddocks. Prijzen onderhandelbaar — neem contact op voor details.",
+    "enquire": "Informeren",
+    "plotArea1": "Grondoppervlak: 1 acre",
+    "plotArea2": "Grondoppervlak: 2 acres",
+    "plotArea2_5": "Grondoppervlak: 2,5 acres",
+    "plotArea5": "Grondoppervlak: 5 acres",
+    "plotArea8": "Grondoppervlak: 8 acres",
+    "bookMessage": "Ik wil graag informeren naar de {{size}} grondkavel ({{area}}) tegen ₹30 per ft².",
+    "bookNow": "Nu boeken"
+  },
+  "warehouseContact": {
+    "eyebrow": "Contact",
+    "title": "Neem Contact Op Met Het Magazijnteam",
+    "phones": "Telefoon",
+    "emails": "E-mail",
+    "address": "Kantooradres",
+    "brochure": "Brochure downloaden"
+  },
+  "brochure": {
+    "download": "PDF Downloaden",
+    "headline": "Strategische Grondinvestering in Het Hart van Noord-India",
+    "about": "Over Het Project",
+    "contact": "Contact",
+    "footer": "Indexia Group · Voor vragen kunt u bellen, mailen of ons kantoor bezoeken. Prijzen zijn indicatief en onderhandelbaar.",
+    "print": "Afdrukken",
+    "advertisingHeadline": "Premium Unipole-reclameborden op de Delhi–Dehradun-snelweg, Shamli",
+    "advertisingFooter": "Indexia Group | Tarieven afhankelijk van beschikbaarheid. Voor boekingen kunt u bellen, mailen of ons kantoor bezoeken.",
+    "backWarehouse": "Terug Naar Magazijn",
+    "backAdvertising": "Terug Naar Reclame",
+    "locationWarehouse": "Shamli, Uttar Pradesh",
+    "locationAdvertising": "Delhi–Dehradun-snelweg, Shamli"
+  },
+  "advertisingContact": {
+    "eyebrow": "Contact",
+    "title": "Boek Vandaag Nog Uw Plek",
+    "phones": "Telefoon",
+    "emails": "E-mail",
+    "address": "Kantooradres",
+    "brochure": "Brochure downloaden"
+  }
+}

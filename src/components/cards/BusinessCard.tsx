@@ -34,7 +34,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
   const inner = (
     <>
-      <div className="flex items-start justify-between gap-3 transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0">
+      <div className="business-card-top flex items-start justify-between gap-3 transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0">
         <div className="flex items-center gap-2">
           <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/85">
             {tag}

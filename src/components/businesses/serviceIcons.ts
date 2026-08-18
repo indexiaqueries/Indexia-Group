@@ -1,7 +1,7 @@
 import {
   Apple,ArrowLeftRight,Banknote,BarChart3,Briefcase,Building2,Candy,Car,ClipboardList,Clock,CreditCard,Crown,Dumbbell,Factory,FlaskConical,
   Globe,GraduationCap,HandCoins,HeartPulse,Home,Image,KeyRound,Landmark,Layers,Leaf,Lock,MapPin,MapPinned,Medal,PenTool,Route,SearchCheck,
-  ShieldCheck,Ship,Snowflake,Sprout,Store,Swords,Ticket,TrendingUp,Trophy,Truck,Users,Wallet,Warehouse,Wheat,
+  ShieldCheck,Ship,Snowflake,Sprout,Store,Swords,Ticket,TrendingUp,Trophy,Truck,Users,Wallet,Warehouse,
 } from "lucide-react";
 
 export const serviceIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
@@ -33,8 +33,6 @@ export const serviceIcons: Record<string, React.ComponentType<{ size?: number; s
   "24×7 Monitoring & Rapid Response": Clock,
 
   "Sugar Export & Trading": Candy,
-  "Edible Oils & Pulses": Leaf,
-  "Food Grains & Spices": Wheat,
   "Sourcing & Quality Control": SearchCheck,
   "International Logistics": Ship,
   "14 South American Markets": Globe,

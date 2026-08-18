@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
 import Reveal from "../../components/common/Reveal";
+import ImageSlot from "../../components/common/ImageSlot";
+import { siteImages } from "../../data/siteImages";
 
 type CultureSectionProps = {
   culture: string[];
@@ -17,6 +19,10 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
           <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("careersPage.cultureHeading")}
           </h2>
+        </Reveal>
+
+        <Reveal delay={0.05} amount={0.15}>
+          <ImageSlot {...siteImages.careersCulture} className="mb-8" />
         </Reveal>
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">

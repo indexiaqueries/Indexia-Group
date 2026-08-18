@@ -12,6 +12,8 @@ const NewsPage = lazy(() => import("../pages/NewsPage"));
 const CareersPage = lazy(() => import("../pages/CareersPage"));
 const GlobalResearchPage = lazy(() => import("../pages/GlobalResearchPage"));
 const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
+const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
+const AdvertisingBrochure = lazy(() => import("../pages/AdvertisingBrochure"));
 
 const PageFallback = () => (
   <div className="flex min-h-screen items-center justify-center bg-white">
@@ -34,6 +36,8 @@ const AppRoutes = () => (
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/global-research" element={<GlobalResearchPage />} />
         <Route path="/security-tips" element={<SecurityTipsPage />} />
+        <Route path="/warehouse-brochure" element={<WarehouseBrochure />} />
+        <Route path="/advertising-brochure" element={<AdvertisingBrochure />} />
         <Route path="/privacy-policy" element={<LegalDocumentPage docId="privacy" />} />
         <Route path="/terms-of-use" element={<LegalDocumentPage docId="termsOfUse" />} />
         <Route path="/terms" element={<LegalDocumentPage docId="terms" />} />

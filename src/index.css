@@ -132,7 +132,7 @@ ul {
   );
 }
 
-@media (hover: none) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .business-card {
     height: 100%;
     min-height: 17rem;
@@ -150,6 +150,14 @@ ul {
     display: inline-flex;
   }
 
+  /* Home cards reveal the overview + redirect button on tap, so the hover
+     title-fade from the desktop overlay must not apply below md. */
+  .business-card-top,
+  .business-card-name {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
   .company-link-card {
     height: 100%;
     min-height: 16rem;
@@ -159,7 +167,9 @@ ul {
     opacity: 1;
   }
 
-  .card-reveal {
+  /* Home card overview + redirect button — hidden until tapped, then shown
+     below the name. */
+  .business-card .card-reveal {
     position: static;
     inset: auto;
     z-index: auto;
@@ -177,15 +187,21 @@ ul {
     transition: opacity 0.35s ease, max-height 0.35s ease;
   }
 
-  .business-card.is-revealed .card-reveal,
-  .company-link-card.is-revealed .card-reveal {
+  .business-card.is-revealed .card-reveal {
     opacity: 1;
     max-height: 30rem;
     pointer-events: auto;
   }
 
-  .company-link-card.is-revealed .company-link-card-content {
-    opacity: 0;
+  /* Hover-capable small screens (narrow desktop windows, touch laptops):
+     reveal the description on hover too, so the title fade-out never
+     leaves the card blank. */
+  @media (hover: hover) {
+    .business-card:hover .card-reveal {
+      opacity: 1;
+      max-height: 30rem;
+      pointer-events: auto;
+    }
   }
 }
 
@@ -447,5 +463,56 @@ ul {
 @media (min-width: 1280px) {
   .container {
     padding-inline: 48px;
+  }
+}
+
+/* Print / PDF export — used by the downloadable brochure pages */
+/* Match the build-generated PDFs: A4, edge-to-edge, no dialog margins. */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  /* Keep band colors, logo and imagery in the exported PDF */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print,
+  #footer {
+    display: none !important;
+  }
+  main {
+    background: #fff !important;
+    padding: 0 !important;
+  }
+  .container,
+  .brochure-wrap {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  article {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    /* Don't let the screen rounding clip content across page breaks */
+    overflow: visible !important;
+  }
+  article section,
+  article header {
+    break-inside: avoid;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  /* No entry animation may leave content invisible mid-capture */
+  .fade-in,
+  .fade-up,
+  .reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }

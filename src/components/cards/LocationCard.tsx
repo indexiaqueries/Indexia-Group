@@ -2,6 +2,8 @@ import type { CSSProperties } from "react";
 import { MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useInView } from "../../hooks/useInView";
+import ImageSlot from "../common/ImageSlot";
+import { siteImages } from "../../data/siteImages";
 
 type LocationCardItem = {
   key: string;
@@ -18,6 +20,8 @@ type LocationCardProps = {
 const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
   const { t } = useTranslation();
   const [ref, inView] = useInView<HTMLElement>({ once: true, amount: 0.2 });
+  const slotKey = `contact${location.key.replace(/Office$/, "").replace(/^./, (c) => c.toUpperCase())}`;
+  const slot = siteImages[slotKey];
 
   return (
   <article
@@ -25,6 +29,14 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
     className={`shared-card reveal flex h-full min-h-62.5 flex-col bg-(--color-soft) p-6${inView ? " is-in-view" : ""}`}
     style={{ "--reveal-delay": `${delay}s` } as CSSProperties}
   >
+    {slot && (
+      <ImageSlot
+        {...slot}
+        alt={t(`branches.${location.key}`, { defaultValue: location.name })}
+        className="mb-5 shrink-0"
+      />
+    )}
+
     <div className="flex items-start gap-4">
       <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-blue) text-white shadow-lg">
         <MapPin size={21} />

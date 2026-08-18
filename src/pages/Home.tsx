@@ -1,15 +1,3 @@
-import {
-  BadgeDollarSign,
-  Building2,
-  Globe2,
-  Sprout,
-  ShieldCheck,
-  HeartHandshake,
-  Warehouse,
-  Megaphone,
-} from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-
 import { useTranslation } from "react-i18next";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
@@ -17,28 +5,22 @@ import SectionHeader from "../components/common/SectionHeader";
 import Reveal from "../components/common/Reveal";
 import BusinessCard from "../components/cards/BusinessCard";
 import { getCompanyImage } from "../data/companyImages";
+import { getCompanyIcon } from "../data/companyIcons";
 import { companies } from "../data/companies";
 import { colors } from "../lib/theme";
-
-const icons: Record<string, LucideIcon> = {
-  "Indexia Finance": BadgeDollarSign,
-  "Indexia Finserve Pvt. Ltd.": Building2,
-  "Indexia Securities": ShieldCheck,
-  "Indexia Overseas Pvt. Ltd.": Globe2,
-  "Indexia Agro Bio Fertilizers Pvt. Ltd.": Sprout,
-  "Indexia Warehouse": Warehouse,
-  "Indexia Advertising": Megaphone,
-  "Indexia Foundation": HeartHandshake,
-};
 
 const colorVar = (hex: string): string => {
   switch (hex) {
     case colors.teal:
       return "var(--color-teal)";
+    case colors.tealDeep:
+      return "var(--color-teal-deep)";
     case colors.yellow:
       return "var(--color-yellow)";
     case colors.blue:
       return "var(--color-blue)";
+    case colors.navy:
+      return "var(--color-navy)";
     default:
       return "var(--color-gray)";
   }
@@ -54,7 +36,7 @@ const businesses = companies.map((company, index) => {
     color1: colorVar(company.color),
     color2: colorVar(next.color),
     image: getCompanyImage(company.slug),
-    icon: icons[company.name] ?? Building2,
+    icon: getCompanyIcon(company.name),
     link: company.link,
   };
 });
