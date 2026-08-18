@@ -3,6 +3,7 @@ import { MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useInView } from "../../hooks/useInView";
 import ImageSlot from "../common/ImageSlot";
+import MediaFrame from "../common/MediaFrame";
 import { siteImages } from "../../data/siteImages";
 
 type LocationCardItem = {
@@ -30,13 +31,13 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
     style={{ "--reveal-delay": `${delay}s` } as CSSProperties}
   >
     {slot && (
-      <div className="image-zoom-frame mb-5 shrink-0 rounded-2xl">
+      <MediaFrame className="mb-5 shrink-0">
         <ImageSlot
           {...slot}
           alt={t(`branches.${location.key}`, { defaultValue: location.name })}
           className="image-zoom-media rounded-2xl"
         />
-      </div>
+      </MediaFrame>
     )}
 
     <div className="flex items-start gap-4">

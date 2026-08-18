@@ -568,7 +568,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <ImageSlot
               {...siteImages.companyEnquiry}
               alt={`${name} enquiry support`}
-              prompt={`Landscape 16:9 photograph for the "Enquire About ${name}" section: an Indexia Group advisor at a neat desk reviewing documents and speaking with a client, with subtle visual cues for ${tag}, warm professional office light, deep navy, teal and yellow accents, shallow depth of field, no readable text.`}
               className="mt-8 rounded-2xl shadow-sm ring-1 ring-slate-200"
             />
 

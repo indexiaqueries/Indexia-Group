@@ -6,6 +6,11 @@ dist/
 .vite/
 coverage/
 stats.html
+lighthouse-report.*
+playwright-report/
+test-results/
+*-check.png
+*-screenshot.png
 *.timestamp-*.mjs
 
 # Environment & secrets
@@ -27,10 +32,12 @@ nohup.out
 # Tooling caches
 .eslintcache
 *.tsbuildinfo
+.vercel/
 
 # Temp / scratch scripts
 .tmp-*
 *.tmp
+*.temp
 
 # Editors & OS
 .vscode/

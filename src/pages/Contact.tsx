@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import ImageSlot from "../components/common/ImageSlot";
+import MediaFrame from "../components/common/MediaFrame";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
@@ -75,18 +76,22 @@ const Contact = () => {
       <ContactHero />
 
       <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
-        <div className="mx-auto grid w-full max-w-7xl items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div className="flex flex-col gap-10">
-            <div className="image-zoom-frame mx-auto w-full max-w-sm rounded-2xl lg:max-w-none">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"
+        />
+        <div className="mx-auto grid w-full max-w-7xl items-start gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16">
+          <div className="flex flex-col gap-8 lg:sticky lg:top-28">
+            <ContactInfo />
+          </div>
+          <div className="flex flex-col gap-5">
+            <MediaFrame className="shadow-sm ring-1 ring-slate-200">
               <ImageSlot
                 {...siteImages.contactEnquiry}
                 aspect="aspect-[16/9]"
                 className="image-zoom-media rounded-2xl"
               />
-            </div>
-            <ContactInfo />
-          </div>
-          <div className="flex flex-col">
+            </MediaFrame>
             <EnquiryForm />
           </div>
         </div>

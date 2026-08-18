@@ -4,12 +4,13 @@ import type { RefObject } from "react";
 type UseInViewOptions = {
   once?: boolean;
   amount?: number;
+  rootMargin?: string;
 };
 
 export const useInView = <T extends Element>(
   options: UseInViewOptions = {}
 ): [RefObject<T | null>, boolean] => {
-  const { once = true, amount = 0.2 } = options;
+  const { once = true, amount = 0.2, rootMargin = "0px 0px -8% 0px" } = options;
   const ref = useRef<T>(null);
   const [inView, setInView] = useState(false);
 
@@ -17,17 +18,25 @@ export const useInView = <T extends Element>(
     const el = ref.current;
     if (!el) return;
 
-    const isVisible = () => {
-      if (!ref.current) return false;
-      const rect = ref.current.getBoundingClientRect();
+    if (typeof IntersectionObserver !== "undefined") {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) return;
+          setInView(true);
+          if (once) observer.unobserve(entry.target);
+        },
+        { threshold: amount, rootMargin }
+      );
+      observer.observe(el);
+      return () => observer.disconnect();
+    }
+
+    const check = () => {
+      const rect = el.getBoundingClientRect();
       const viewport = window.innerHeight || document.documentElement.clientHeight;
       const height = rect.height || 1;
       const visible = Math.min(rect.bottom, viewport) - Math.max(rect.top, 0);
-      return visible / height >= amount;
-    };
-
-    const check = () => {
-      if (isVisible()) {
+      if (visible / height >= amount) {
         setInView(true);
         if (once) {
           window.removeEventListener("scroll", check);
@@ -45,7 +54,7 @@ export const useInView = <T extends Element>(
       window.removeEventListener("scroll", check);
       window.removeEventListener("resize", check);
     };
-  }, [once, amount]);
+  }, [once, amount, rootMargin]);
 
   return [ref, inView];
 };

@@ -7,6 +7,7 @@ type RevealProps = {
   y?: number;
   className?: string;
   amount?: number;
+  variant?: "up" | "scale" | "fade";
 };
 
 const Reveal = ({
@@ -15,13 +16,14 @@ const Reveal = ({
   y = 24,
   className,
   amount = 0.2,
+  variant = "up",
 }: RevealProps) => {
   const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount });
 
   return (
     <div
       ref={ref}
-      className={`reveal${inView ? " is-in-view" : ""}${className ? ` ${className}` : ""}`}
+      className={`reveal reveal-${variant}${inView ? " is-in-view" : ""}${className ? ` ${className}` : ""}`}
       style={{ "--reveal-y": `${y}px`, "--reveal-delay": `${delay}s` } as CSSProperties}
     >
       {children}

@@ -4,7 +4,6 @@ import { ImagePlus } from "lucide-react";
 export type ImageSlotData = {
   src?: string;
   label: string;
-  prompt?: string;
 };
 
 type ImageSlotProps = ImageSlotData & {
@@ -14,15 +13,13 @@ type ImageSlotProps = ImageSlotData & {
 };
 
 /**
- * Renders the image at `src` once one exists; until then (or if the file is
- * missing) shows a dashed placeholder that describes exactly what to put there.
- * Drop files into `public/images/…` and set `src` in src/data/siteImages.ts.
+ * Renders a mapped asset, or a simple placeholder when the slot is empty.
+ * Assets should live in `src/assets/...` and be registered in `siteImages.ts`.
  */
 const ImageSlot = ({
   src,
   alt,
   label,
-  prompt,
   aspect = "aspect-[16/9]",
   className = "rounded-2xl",
 }: ImageSlotProps) => {
@@ -49,7 +46,6 @@ const ImageSlot = ({
         <ImagePlus size={20} strokeWidth={2} aria-hidden="true" />
       </span>
       <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-(--color-teal)">{label}</p>
-      {prompt && <p className="max-w-sm text-[11px] leading-5 text-(--color-muted)">{prompt}</p>}
     </div>
   );
 };
