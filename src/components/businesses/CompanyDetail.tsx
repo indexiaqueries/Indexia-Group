@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ArrowDown, ArrowRight, Check, Clock, Layers, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowRight, Clock, Layers, MapPin, Sparkles } from "lucide-react";
 import { useInView } from "../../hooks/useInView";
 import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
@@ -17,8 +17,8 @@ import { accentInk, contrastText } from "../../lib/color";
 import { colors } from "../../lib/theme";
 import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
-import WarehouseContact from "./WarehouseContact";
-import AdvertisingContact from "./AdvertisingContact";
+import CompanyHighlights from "./CompanyHighlights";
+import CompanySpotlight from "./CompanySpotlight";
 import type { PricingRow } from "./PricingTable";
 
 type CompanyDetailProps = {
@@ -145,7 +145,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           {(b.slug === "warehouse" || b.slug === "advertising") && (
             <p className="mt-3 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.16em] text-white/75">
               <MapPin size={15} strokeWidth={2.2} aria-hidden="true" />
-              {tr("location", b.slug === "warehouse" ? "Shamli, Uttar Pradesh" : "Delhi–Dehradun Highway, Shamli")}
+              {tr("location", b.slug === "warehouse" ? "Shamli, Uttar Pradesh — Part of Delhi NCR" : "Delhi–Dehradun Highway, Shamli")}
             </p>
           )}
 
@@ -157,7 +157,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
           <div className="mt-9 flex flex-wrap gap-4">
             <a
-              href="#enquiry-form"
+              href="#enquiry"
               className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-7 py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
             >
               {t("companyDetail.eyebrow")}
@@ -298,87 +298,20 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display mt-4 whitespace-pre-line text-[clamp(30px,4.5vw,54px)] font-bold leading-[1.05] text-white">
               {slideHeading}
             </h2>
-            <a
-              href="#enquiry-form"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-7 py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
-            >
-              {t("companyDetail.eyebrow")}
-              <ArrowRight size={16} strokeWidth={2.5} />
-            </a>
           </Reveal>
         </div>
       </section>
 
-      {/* Highlights */}
-      <section className="bg-(--color-soft) py-20 lg:py-24">
-        <div className="container">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-            <Eyebrow>{t("companyDetail.keyEntries")}</Eyebrow>
-            <div className="mt-4 flex items-center justify-center gap-3">
-              <span className="h-px w-8" style={{ background: b.color }} aria-hidden="true" />
-              <span
-                className="font-ledger text-[10px] font-bold tracking-[0.22em]"
-                style={{ color: accentInk(b.color) }}
-              >
-                {String(b.highlights.length).padStart(2, "0")}
-              </span>
-              <span className="h-px w-8" style={{ background: b.color }} aria-hidden="true" />
-            </div>
-          </Reveal>
+      {/* Company-specific spotlight section */}
+      <CompanySpotlight company={b} />
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {b.highlights.map((highlight, i) => (
-              <Reveal key={highlight} delay={(i % 3) * 0.08} amount={0.15}>
-                <div className="group relative h-full overflow-hidden rounded-2xl border border-slate-100 bg-white p-6 ps-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_44px_rgba(2,16,26,0.12)]">
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-y-4 start-0 w-1 rounded-e-full opacity-60 transition-all duration-300 group-hover:inset-y-3 group-hover:opacity-100"
-                    style={{ background: b.color }}
-                  />
-                  <span
-                    aria-hidden="true"
-                    className="font-display pointer-events-none absolute -end-1 -top-5 text-[64px] font-bold leading-none opacity-[0.07] transition-opacity duration-300 group-hover:opacity-[0.15]"
-                    style={{ color: b.color }}
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-
-                  <div className="relative flex items-center justify-between">
-                    <span
-                      className="font-ledger text-[12px] font-bold tracking-[0.16em]"
-                      style={{ color: accentInk(b.color) }}
-                    >
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span
-                      className="flex h-9 w-9 items-center justify-center rounded-full transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
-                      style={{
-                        background: `${b.color}14`,
-                        color: accentInk(b.color),
-                        boxShadow: `inset 0 0 0 1px ${b.color}33`,
-                      }}
-                    >
-                      <Check size={16} strokeWidth={3} aria-hidden="true" />
-                    </span>
-                  </div>
-
-                  <span aria-hidden="true" className="relative mt-4 block border-t border-dashed border-slate-200" />
-
-                  <p className="relative mt-4 text-[14.5px] font-semibold leading-6 text-(--color-ink-soft)">
-                    {tr(`highlights.${i}`, highlight)}
-                  </p>
-
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-x-6 bottom-0 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
-                    style={{ background: b.color }}
-                  />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Key entries */}
+      <CompanyHighlights
+        color={b.color}
+        slug={b.slug}
+        highlights={b.highlights}
+        services={b.services}
+      />
 
       {/* Story split — second image + pull-quote */}
       <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
@@ -427,17 +360,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </section>
 
       {b.slug === "advertising" && (
-        <>
-          <UnipolePricing color={b.color} onBook={handleBook} />
-          <AdvertisingContact color={b.color} />
-        </>
+        <UnipolePricing color={b.color} onBook={handleBook} />
       )}
 
       {b.slug === "warehouse" && (
-        <>
-          <WarehousePricing color={b.color} onBook={handleBook} />
-          <WarehouseContact color={b.color} />
-        </>
+        <WarehousePricing color={b.color} onBook={handleBook} />
       )}
 
       {/* Services */}

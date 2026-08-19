@@ -122,47 +122,54 @@ const Banner = () => {
   };
 
   return (
-    <section
-      ref={heroSectionRef}
-      className="relative overflow-hidden bg-(--color-night)"
-    >
-      <div className="relative flex min-h-svh flex-col sm:min-h-screen">
-        <HeroBackground
-          bgImage={bgPanel.image}
-          bgMobileImage={bgPanel.mobileImage}
-          morph={morph}
-          panels={panels}
-          prefersReducedMotion={prefersReducedMotion}
-          onMorphComplete={handleMorphComplete}
-        />
+    <>
+      <section
+        ref={heroSectionRef}
+        className="relative overflow-hidden bg-(--color-night)"
+      >
+        <div className="relative flex min-h-svh flex-col sm:min-h-screen">
+          <HeroBackground
+            bgImage={bgPanel.image}
+            bgMobileImage={bgPanel.mobileImage}
+            morph={morph}
+            panels={panels}
+            prefersReducedMotion={prefersReducedMotion}
+            onMorphComplete={handleMorphComplete}
+          />
 
-        <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-36 sm:pt-32 sm:pb-44 overflow-hidden">
-          <HeroSlideContent panel={current} isHome={isHome} shadowLevel={shadowLevel} />
+          <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-20 sm:pt-32 sm:pb-28 overflow-hidden">
+            <HeroSlideContent panel={current} isHome={isHome} shadowLevel={shadowLevel} />
+          </div>
+
+          <button
+            onClick={prevPanel}
+            aria-label={t("hero.prevPanel")}
+            className="absolute top-1/2 -translate-y-1/2 inset-s-5 md:inset-s-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+          >
+            ‹
+          </button>
+          <button
+            onClick={nextPanel}
+            aria-label={t("hero.nextPanel")}
+            className="absolute top-1/2 -translate-y-1/2 inset-e-5 md:inset-e-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+          >
+            ›
+          </button>
         </div>
 
-        <button
-          onClick={prevPanel}
-          aria-label={t("hero.prevPanel")}
-          className="absolute top-1/2 -translate-y-1/2 inset-s-5 md:inset-s-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
-        >
-          ‹
-        </button>
-        <button
-          onClick={nextPanel}
-          aria-label={t("hero.nextPanel")}
-          className="absolute top-1/2 -translate-y-1/2 inset-e-5 md:inset-e-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
-        >
-          ›
-        </button>
+        {/* Gallery thumbnails — overlaid at bottom of hero */}
+        <div className="absolute inset-x-0 bottom-0 z-3">
+          <HomeHeroGallery
+            panels={panels}
+            currentId={currentId}
+            reducedMotion={!!prefersReducedMotion}
+            onSelect={selectPanel}
+          />
+        </div>
+      </section>
 
-        <HomeHeroGallery
-          panels={panels}
-          currentId={currentId}
-          reducedMotion={!!prefersReducedMotion}
-          onSelect={selectPanel}
-        />
-      </div>
-    </section>
+
+    </>
   );
 };
 

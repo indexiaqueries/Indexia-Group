@@ -193,16 +193,16 @@ const HomeHeroGallery = ({
   };
 
   return (
-    <div className="absolute inset-x-0 bottom-0 w-full z-10 pt-8 pb-6 sm:pt-10 sm:pb-8">
+    <div className="w-full px-5 sm:px-8 -mt-2">
       <div
         ref={wrapRef}
         onPointerDown={handlePointerDown}
         className="overflow-x-hidden overflow-y-visible cursor-grab active:cursor-grabbing touch-pan-y"
-        style={{ perspective: 1000 }}
+        style={{ perspective: 1000, maskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)" }}
       >
         <div
           ref={trackRef}
-          className="infinite-marquee-track hero-marquee-track gap-4 py-3 select-none"
+          className="infinite-marquee-track hero-marquee-track gap-4 py-2 select-none"
           style={{ "--marquee-animation": "none" } as CSSProperties}
         >
           {marqueeList.map((p, i) => (

@@ -9,33 +9,45 @@ import Eyebrow from "../common/Eyebrow";
 
 const tileLabelClass = "block text-[10px] font-bold uppercase tracking-[0.15em]";
 
-const InfoTile = () => {
+const emailAddresses = [
+  { label: "General Enquiries", email: "contactus@indexiagroup.com", color: accent.green },
+  { label: "Queries", email: "indexia.queries@gmail.com", color: accent.green },
+  { label: "Vini Malik", email: "Vini.Malik5@gmail.com", color: accent.blue },
+];
+
+const EmailsSection = () => {
   const { t } = useTranslation();
-  const [ref, inView] = useInView<HTMLAnchorElement>({ once: true, amount: 0.2 });
+  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
 
   return (
-  <a
+  <div
     ref={ref}
-    href="mailto:contactus@indexiagroup.com"
-    className={`group reveal flex items-center gap-4 ${cardBaseClass} p-4 transition-transform duration-300 hover:translate-x-1.5${inView ? " is-in-view" : ""}`}
+    className={`reveal rounded-2xl border border-(--color-sand-deep) bg-(--color-paper) p-5 shadow-sm${inView ? " is-in-view" : ""}`}
   >
-    <span
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
-      style={{ backgroundColor: accent.green, boxShadow: `0 6px 18px rgba(38,174,144,.22)` }}
-    >
-      <Mail size={20} />
-    </span>
-    <span>
-      <span className={tileLabelClass} style={{ color: accent.gray }}>
-        {t("contactInfo.enquiries")}
-      </span>
-      <span
-        className="mt-1 block text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)"
-      >
-        contactus@indexiagroup.com
-      </span>
-    </span>
-  </a>
+    <Eyebrow size="md" color={accent.green} style={{ letterSpacing: "0.18em" }}>
+      {t("contactInfo.enquiries")}
+    </Eyebrow>
+    <div className="mt-4 space-y-3">
+      {emailAddresses.map(({ label, email, color }) => (
+        <a key={email} href={`mailto:${email}`} className="group flex items-center gap-4">
+          <span
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white shadow-md"
+            style={{ backgroundColor: color, boxShadow: `0 4px 14px ${color}33` }}
+          >
+            <Mail size={18} />
+          </span>
+          <span className="min-w-0">
+            <span className="block text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: accent.gray }}>
+              {label}
+            </span>
+            <span className="mt-0.5 block text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)">
+              {email}
+            </span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
   );
 };
 
@@ -113,7 +125,7 @@ const ContactInfo = () => {
     </p>
 
     <div className="mt-10 flex flex-1 flex-col justify-center gap-5">
-      <InfoTile />
+      <EmailsSection />
       <LocationHoursTile />
     </div>
 

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Download, Mail, MapPin, Phone, Printer } from "lucide-react";
+import { ArrowLeft, Download, Printer } from "lucide-react";
 import SEO from "../components/common/SEO";
 import logo from "../assets/logo/IndexiaGroup_Logo.webp";
 import { companies } from "../data/companies";
@@ -23,41 +23,11 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
   const tag = tr("tag", b.tag);
   const desc = tr("desc", b.desc);
   const overview = tr("overview", b.overview);
-  const contactBlock = slug === "warehouse" ? "warehouseContact" : "advertisingContact";
+
   const canonicalPath = slug === "warehouse" ? "/warehouse-brochure" : "/advertising-brochure";
   const title = `${name} Brochure - ${tag}`;
 
   const price = t(`${slug === "warehouse" ? "warehousePricing" : "unipolePricing"}.standardRate`);
-
-  const contactRows = [
-    {
-      icon: Phone,
-      label: t(`${contactBlock}.phones`),
-      lines: [
-        { text: "86918 86919", href: "tel:+918691886919" },
-        { text: "011 4629 1155", href: "tel:+911146291155" },
-      ],
-    },
-    {
-      icon: Mail,
-      label: t(`${contactBlock}.emails`),
-      lines: [
-        { text: "indexia.queries@gmail.com", href: "mailto:indexia.queries@gmail.com" },
-        { text: "bijendra.malik@indexiafinance.com", href: "mailto:bijendra.malik@indexiafinance.com" },
-        { text: "Vini.Malik5@gmail.com", href: "mailto:Vini.Malik5@gmail.com" },
-      ],
-    },
-    {
-      icon: MapPin,
-      label: t(`${contactBlock}.address`),
-      lines: [
-        {
-          text: "213, Second Floor, Imperial Tower, C Block, Commercial Complex, Naraina Vihar, New Delhi, 110028",
-          href: "https://maps.google.com/?q=Imperial+Tower,+C+Block+Commercial+Complex,+Naraina+Vihar,+New+Delhi+110028",
-        },
-      ],
-    },
-  ];
 
   return (
     <main className="min-h-screen bg-(--color-soft) py-10">
@@ -106,7 +76,8 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
                 alt={t("common.logoAlt")}
                 width={44}
                 height={44}
-                className="h-11 w-11 rounded-full bg-white object-contain p-1"
+                className="h-11 w-11 rounded-full object-contain"
+                style={{ filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.3))" }}
               />
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/80">Indexia Group</p>
             </div>
@@ -237,37 +208,9 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
             </ul>
           </section>
 
-          {/* Contact */}
-          <section className="border-t border-slate-100 px-8 py-8 sm:px-12">
-            <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("brochure.contact")}</h2>
-            <div className="mt-5 grid gap-5 sm:grid-cols-3">
-              {contactRows.map(({ icon: Icon, label, lines }) => (
-                <div key={label}>
-                  <div className="flex items-center gap-2">
-                    <span
-                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
-                      style={{ background: `${b.color}1a`, color: accentInk(b.color) }}
-                    >
-                      <Icon size={15} strokeWidth={2} />
-                    </span>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">{label}</p>
-                  </div>
-                  <div className="mt-2.5 space-y-1">
-                    {lines.map((line) => (
-                      <p key={line.text}>
-                        <a
-                          href={line.href}
-                          className="text-[12.5px] font-semibold leading-6 text-(--color-ink-deep) underline decoration-slate-300 underline-offset-2 transition-colors hover:text-(--color-teal)"
-                        >
-                          {line.text}
-                        </a>
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="mt-6 text-[11px] text-slate-400">
+          {/* Footer note */}
+          <section className="border-t border-slate-100 px-8 py-6 sm:px-12">
+            <p className="text-[11px] text-slate-400">
               {slug === "advertising" ? t("brochure.advertisingFooter") : t("brochure.footer")}
             </p>
           </section>

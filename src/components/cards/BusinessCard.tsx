@@ -72,30 +72,31 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
   return (
     <article
-      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/60 bg-white shadow-sm transition-shadow duration-500 hover:shadow-xl${revealedClass}`}
+      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/10 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl${revealedClass}`}
     >
-      <img
-        src={business.image}
-        alt={`${name} visual`}
-        width={760}
-        height={426}
-        loading="lazy"
-        decoding="async"
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={business.image}
+          alt={`${name} visual`}
+          width={760}
+          height={426}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+        />
+      </div>
 
       <div className="pointer-events-none absolute inset-0 z-10 bg-(--card-tint) transition-opacity duration-500 group-hover:opacity-0" />
 
+      {/* Color overlay on hover */}
       <div
-        className="pointer-events-none absolute inset-0 z-20 opacity-0 mix-blend-screen transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background: `radial-gradient(circle at 30% 25%, ${business.color1} 0%, transparent 42%),
-            radial-gradient(circle at 75% 70%, ${business.color2} 0%, transparent 44%),
-            linear-gradient(135deg, ${business.color1}, var(--color-blue), ${business.color2})`,
-        }}
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-[2] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        style={{ background: `linear-gradient(135deg, ${business.color1}cc, ${business.color2}66)` }}
       />
 
-      <div className="pointer-events-none absolute inset-0 z-30 bg-[radial-gradient(circle_at_center,var(--color-teal)_0%,var(--card-glow-blue)_48%,var(--card-glow-deep)_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-35" />
+      {/* Diagonal shine lines */}
+      <span aria-hidden="true" className="card-shine-lines" />
 
       {external ? (
         <a

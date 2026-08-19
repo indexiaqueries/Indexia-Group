@@ -10,6 +10,7 @@ const Contact = lazy(() => import("../pages/Contact"));
 const LegalDocumentPage = lazy(() => import("../pages/LegalDocumentPage"));
 const NewsPage = lazy(() => import("../pages/NewsPage"));
 const CareersPage = lazy(() => import("../pages/CareersPage"));
+const ApplyPage = lazy(() => import("../pages/ApplyPage"));
 const GlobalResearchPage = lazy(() => import("../pages/GlobalResearchPage"));
 const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
 const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
@@ -34,6 +35,7 @@ const AppRoutes = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/careers/apply" element={<ApplyPage />} />
         <Route path="/global-research" element={<GlobalResearchPage />} />
         <Route path="/security-tips" element={<SecurityTipsPage />} />
         <Route path="/warehouse-brochure" element={<WarehouseBrochure />} />

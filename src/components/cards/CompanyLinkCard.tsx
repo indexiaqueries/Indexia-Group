@@ -17,30 +17,31 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
 
   const cardContent = (
     <>
-      <img
-        src={getCompanyCardImage(company.slug)}
-        alt={t("companyLinkCard.visualAlt", { name })}
-        width={760}
-        height={426}
-        loading="lazy"
-        decoding="async"
-        className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={getCompanyCardImage(company.slug)}
+          alt={t("companyLinkCard.visualAlt", { name })}
+          width={760}
+          height={426}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+        />
+      </div>
+      {/* Gradient overlay */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--color-night) via-(--color-night)/45 to-transparent transition-opacity duration-300 group-hover:opacity-90"
+        className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--color-night) via-(--color-night)/50 to-transparent transition-opacity duration-500"
+      />
+      {/* Color overlay on hover */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        style={{ background: `linear-gradient(135deg, ${company.color}cc, ${company.color}66)` }}
       />
 
-      {/* Brand glow on hover */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-[1] opacity-0 mix-blend-screen transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background: `radial-gradient(circle at 25% 20%, ${company.color} 0%, transparent 45%),
-            radial-gradient(circle at 80% 75%, ${company.color} 0%, transparent 45%),
-            linear-gradient(135deg, ${company.color}, var(--color-blue), ${company.color})`,
-        }}
-      />
+      {/* Diagonal shine lines */}
+      <span aria-hidden="true" className="card-shine-lines" />
 
       {/* Ghost number */}
       <span
@@ -84,7 +85,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("companyLinkCard.visitWebsiteAria", { name })}
-        className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/60 bg-(--color-ink-deep) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+        className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl"
       >
         {cardContent}
       </a>

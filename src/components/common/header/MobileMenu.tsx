@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { companies } from "../../../data/companies";
 import DropdownPanel from "./DropdownPanel";
@@ -17,6 +17,8 @@ type MobileMenuProps = {
 
 const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
   const { t } = useTranslation();
+  const location = useLocation();
+  const onBusinesses = location.pathname.startsWith("/businesses");
 
   return (
     <DropdownPanel
@@ -30,7 +32,15 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
         {t("header.menu.home")}
       </NavLink>
 
-      <NavLink to="/businesses" end onClick={onClose} className={menuLinkClass}>
+      <NavLink
+        to="/businesses"
+        onClick={onClose}
+        className={() =>
+          `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${
+            onBusinesses ? "bg-(--color-yellow)/15 text-(--color-yellow)" : "text-white/85 hover:bg-white/10 hover:text-white"
+          }`
+        }
+      >
         {t("header.menu.groupCompanies")}
       </NavLink>
 

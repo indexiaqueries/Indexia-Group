@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer-img/footer-img.webp";
 import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
-import { ArrowUp, Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { phoneNumbers } from "../../data/contact";
 import BackToTop from "./BackToTop";
 
@@ -14,7 +14,7 @@ const linkGroups: {
     titleKey: "footer.company",
     links: [
       { labelKey: "footer.links.groupCompanies", href: "/businesses" },
-      { labelKey: "footer.links.advertise", href: "/contact" },
+      { labelKey: "footer.links.advertise", href: "/businesses/advertising" },
       { labelKey: "footer.links.careers", href: "/careers" },
     ],
   },
@@ -92,68 +92,64 @@ const Footer = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:divide-x lg:divide-white/10">
-
-          {/* Section 1 — brand (full 2-column width on small, first column on large) */}
-          <div className="col-span-2 flex flex-col items-start gap-5 text-start lg:col-span-1 lg:pe-10">
-            <div className="flex flex-row items-center gap-3">
-              <img src={logo} alt={t("common.logoAlt")} width={72} height={72} className="h-16 w-16 object-contain sm:h-20 sm:w-20" />
-              <div>
-                <div className="flex flex-row items-center gap-1 text-2xl font-extrabold">
-                  <span className="text-(--color-yellow)">Indexia</span>
-                  <span className="text-white">Group</span>
-                </div>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.22em] text-white/75">
-                  {t("footer.tagline")}
-                </p>
-              </div>
+        {/* Brand section — full width, centered */}
+        <div className="flex flex-col items-center gap-4 text-center">
+          <img src={logo} alt={t("common.logoAlt")} width={96} height={96} className="h-24 w-24 object-contain sm:h-28 sm:w-28" />
+          <div>
+            <div className="flex flex-row items-center justify-center gap-1 text-2xl font-extrabold">
+              <span className="text-(--color-yellow)">Indexia</span>
+              <span className="text-white">Group</span>
             </div>
-
-            <p className="max-w-sm text-sm leading-7 text-white/90">
-              {t("footer.blurb")}
+            <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.22em] text-white/75">
+              {t("footer.tagline")}
             </p>
           </div>
+          <p className="w-full max-w-3xl text-sm leading-7 text-white/90">
+            {t("footer.blurb")}
+          </p>
+        </div>
 
+        {/* Sections below — Contact, Company, Resources, Legal */}
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:grid-cols-4 lg:divide-x lg:divide-white/10">
           {/* Contact */}
           <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />
             <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
-
-              <div className="mt-6 space-y-4">
-                {contactInfo.map((item) => {
-                  const Icon = item.icon;
-                  const content = (
-                    <span className="flex items-start justify-start gap-3 text-sm text-white/85">
-                      <span className="mt-0.5 shrink-0 text-(--color-teal)">
-                        <Icon className="h-4 w-4" />
-                      </span>
-                      <span className={`wrap-break-word min-w-0 ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
-                        {item.textKey ? t(item.textKey) : item.text}
-                      </span>
+            <div className="mt-6 space-y-4">
+              {contactInfo.map((item) => {
+                const Icon = item.icon;
+                const content = (
+                  <span className="flex items-start justify-start gap-3 text-sm text-white/85">
+                    <span className="mt-0.5 shrink-0 text-(--color-teal)">
+                      <Icon className="h-4 w-4" />
                     </span>
-                  );
-                  return item.href ? (
-                    <Link key={item.text ?? item.textKey} to={item.href} className="block">
-                      {content}
-                    </Link>
-                  ) : (
-                    <div key={item.text ?? item.textKey}>{content}</div>
-                  );
-                })}
-              </div>
+                    <span className={`wrap-break-word min-w-0 ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
+                      {item.textKey ? t(item.textKey) : item.text}
+                    </span>
+                  </span>
+                );
+                return item.href ? (
+                  <Link key={item.text ?? item.textKey} to={item.href} className="block">
+                    {content}
+                  </Link>
+                ) : (
+                  <div key={item.text ?? item.textKey}>{content}</div>
+                );
+              })}
             </div>
+          </div>
 
-            {linkGroups.map((group) => (
-              <div key={group.titleKey} className="text-start">
-                <ColumnHeader title={t(group.titleKey)} />
-                <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
-                <ul className="mt-6 space-y-3">
-                  {group.links.map((item) => (
-                    <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} t={t} />
-                  ))}
-                </ul>
-              </div>
-            ))}
+          {linkGroups.map((group) => (
+            <div key={group.titleKey} className="text-start">
+              <ColumnHeader title={t(group.titleKey)} />
+              <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
+              <ul className="mt-6 space-y-3">
+                {group.links.map((item) => (
+                  <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} t={t} />
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         <div className="mt-12 rounded-2xl border border-white/12 bg-white/5 px-6 py-6 backdrop-blur-sm sm:px-8">
@@ -175,14 +171,7 @@ const Footer = () => {
         <div className="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-white/60 sm:px-6 lg:px-8">
           <p className="pe-16 text-white/80 sm:pe-0">{t("footer.rights")}</p>
         </div>
-        <button
-          type="button"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          aria-label={t("footer.backToTop")}
-          className="back-to-top-pulse absolute inset-e-4 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-(--color-yellow) text-(--color-deep) shadow-[0_0_0_4px_rgba(242,242,49,0.25),0_10px_28px_rgba(2,16,26,0.45)] transition-all duration-200 hover:-translate-y-[calc(50%+4px)] hover:scale-105 hover:shadow-[0_0_0_4px_rgba(242,242,49,0.4),0_14px_34px_rgba(2,16,26,0.55)] sm:inset-e-8 sm:h-11 sm:w-11"
-        >
-          <ArrowUp className="h-5 w-5" strokeWidth={2.75} />
-        </button>
+
       </div>
 
       <BackToTop />

@@ -11,8 +11,8 @@ const CareersCta = () => {
       eyebrow={t("careersPage.eyebrow")}
       title={t("careersPage.ctaTitle")}
       body={t("careersPage.ctaBody")}
-      actionLabel="hr@indexiafinance.com"
-      href="mailto:hr@indexiafinance.com"
+      actionLabel="hr.indexia@gmail.com"
+      href="mailto:hr.indexia@gmail.com"
     />
   );
 };
