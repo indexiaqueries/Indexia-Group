@@ -178,7 +178,14 @@
     "exploreServices": "Khám Phá Dịch Vụ",
     "statServices": "Dịch Vụ",
     "statHighlights": "Điểm Nổi Bật",
-    "statRegister": "Mục Đăng Ký"
+    "statRegister": "Mục Đăng Ký",
+    "mainPoint": "Điểm chính",
+    "whyChoose": "Tại sao chọn chúng tôi",
+    "whyChooseDesc": "Điều khiến công ty này khác biệt.",
+    "keyNumbers": "Con số then chốt",
+    "keyNumbersDesc": "Những con số định hình tác động của chúng tôi.",
+    "globalReach": "Phạm vi toàn cầu",
+    "globalReachDesc": "Sự hiện diện xuyên biên giới và thị trường."
   },
   "contact": {
     "locationsTitleStart": "Văn Phòng ",

@@ -178,7 +178,14 @@
     "exploreServices": "สำรวจบริการ",
     "statServices": "บริการ",
     "statHighlights": "จุดเด่นสำคัญ",
-    "statRegister": "รายการทะเบียน"
+    "statRegister": "รายการทะเบียน",
+    "mainPoint": "ประเด็นหลัก",
+    "whyChoose": "ทำไมต้องเลือกเรา",
+    "whyChooseDesc": "สิ่งที่ทำให้บริษัทนี้แตกต่างจากที่อื่น",
+    "keyNumbers": "ตัวเลขสำคัญ",
+    "keyNumbersDesc": "ตัวเลขที่กำหนดผลกระทบของเรา",
+    "globalReach": "การเข้าถึงทั่วโลก",
+    "globalReachDesc": "การปรากฏตัวของเราข้ามพรมแดนและตลาด"
   },
   "contact": {
     "locationsTitleStart": "สาขา",

@@ -11,8 +11,6 @@ type BusinessCardItem = {
   slug: string;
   tag: string;
   description: string;
-  color1: string;
-  color2: string;
   image: string;
   icon: LucideIcon;
   link?: string;

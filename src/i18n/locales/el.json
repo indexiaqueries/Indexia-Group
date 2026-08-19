@@ -178,7 +178,14 @@
     "exploreServices": "Εξερευνήστε τις Υπηρεσίες",
     "statServices": "Υπηρεσίες",
     "statHighlights": "Βασικά Σημεία",
-    "statRegister": "Εγγραφή Μητρώου"
+    "statRegister": "Εγγραφή Μητρώου",
+    "mainPoint": "Κύριο σημείο",
+    "whyChoose": "Γιατί να μας επιλέξετε",
+    "whyChooseDesc": "Τι ξεχωρίζει αυτή την εταιρεία.",
+    "keyNumbers": "Βασικοί αριθμοί",
+    "keyNumbersDesc": "Οι αριθμοί που ορίζουν τον αντίκτυπό μας.",
+    "globalReach": "Παγκόσμια παρουσία",
+    "globalReachDesc": "Η παρουσία μας σε σύνορα και αγορές."
   },
   "contact": {
     "locationsTitleStart": "Οι ",

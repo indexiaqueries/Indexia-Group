@@ -178,7 +178,14 @@
     "exploreServices": "Utforska tjänster",
     "statServices": "Tjänster",
     "statHighlights": "Nyckelhöjdpunkter",
-    "statRegister": "Registreringspost"
+    "statRegister": "Registreringspost",
+    "mainPoint": "Huvudpoäng",
+    "whyChoose": "Varför välja oss",
+    "whyChooseDesc": "Vad som gör detta företag unikt.",
+    "keyNumbers": "Nyckeltal",
+    "keyNumbersDesc": "Siffrorna som definierar vår påverkan.",
+    "globalReach": "Global räckvidd",
+    "globalReachDesc": "Vår närvaro över gränser och marknader."
   },
   "contact": {
     "locationsTitleStart": "Våra ",

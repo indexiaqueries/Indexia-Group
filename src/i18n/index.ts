@@ -8,7 +8,7 @@ export { SUPPORTED_LANGS } from "./languages";
 
 const STORAGE_KEY = "indexia-lang";
 type SupportedLang = (typeof SUPPORTED_LANGS)[number];
-type LocaleModule = { default: typeof en };
+type LocaleModule = { default: Record<string, unknown> };
 
 const localeLoaders: Record<Exclude<SupportedLang, "en">, () => Promise<LocaleModule>> = {
   ar: () => import("./locales/ar.json"),

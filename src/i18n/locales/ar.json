@@ -178,7 +178,14 @@
     "exploreServices": "استكشف الخدمات",
     "statServices": "الخدمات",
     "statHighlights": "أبرز النقاط",
-    "statRegister": "قيد السجل"
+    "statRegister": "قيد السجل",
+    "mainPoint": "النقطة الرئيسية",
+    "whyChoose": "لماذا تختار",
+    "whyChooseDesc": "ما يميز هذه الشركة عن غيرها.",
+    "keyNumbers": "الأرقام الرئيسية",
+    "keyNumbersDesc": "الأرقام التي تحدد تأثيرنا.",
+    "globalReach": "الانتشار العالمي",
+    "globalReachDesc": "حضورنا عبر الحدود والأسواق."
   },
   "contact": {
     "locationsTitleStart": "مواقع",

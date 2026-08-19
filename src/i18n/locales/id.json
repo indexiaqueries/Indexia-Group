@@ -178,7 +178,14 @@
     "exploreServices": "Jelajahi Layanan",
     "statServices": "Layanan",
     "statHighlights": "Sorotan Utama",
-    "statRegister": "Entri Registrasi"
+    "statRegister": "Entri Registrasi",
+    "mainPoint": "Poin utama",
+    "whyChoose": "Mengapa memilih kami",
+    "whyChooseDesc": "Apa yang membedakan perusahaan ini dari yang lain.",
+    "keyNumbers": "Angka kunci",
+    "keyNumbersDesc": "Angka-angka yang mendefinisikan dampak kami.",
+    "globalReach": "Jangkauan global",
+    "globalReachDesc": "Kehadiran kami melintasi batas dan pasar."
   },
   "contact": {
     "locationsTitleStart": "Kantor ",

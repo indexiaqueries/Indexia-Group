@@ -178,7 +178,14 @@
     "exploreServices": "Esplora i servizi",
     "statServices": "Servizi",
     "statHighlights": "Punti salienti",
-    "statRegister": "Voce di registro"
+    "statRegister": "Voce di registro",
+    "mainPoint": "Punto principale",
+    "whyChoose": "Perché scegliere noi",
+    "whyChooseDesc": "Cosa rende questa azienda unica.",
+    "keyNumbers": "Cifre chiave",
+    "keyNumbersDesc": "Le cifre che definiscono il nostro impatto.",
+    "globalReach": "Portata globale",
+    "globalReachDesc": "La nostra presenza oltre i confini e i mercati."
   },
   "contact": {
     "locationsTitleStart": "Le nostre ",

@@ -178,7 +178,14 @@
     "exploreServices": "Ontdek Diensten",
     "statServices": "Diensten",
     "statHighlights": "Hoogtepunten",
-    "statRegister": "Registervermelding"
+    "statRegister": "Registervermelding",
+    "mainPoint": "Hoofdpunt",
+    "whyChoose": "Waarom voor ons kiezen",
+    "whyChooseDesc": "Wat dit bedrijf onderscheidt van de rest.",
+    "keyNumbers": "Kerngetallen",
+    "keyNumbersDesc": "De cijfers die onze impact definiëren.",
+    "globalReach": "Wereldwijde reikwijdte",
+    "globalReachDesc": "Onze aanwezigheid over grenzen en markten heen."
   },
   "contact": {
     "locationsTitleStart": "Onze ",

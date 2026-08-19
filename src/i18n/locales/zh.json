@@ -178,7 +178,14 @@
     "exploreServices": "探索服务",
     "statServices": "服务",
     "statHighlights": "主要亮点",
-    "statRegister": "登记条目"
+    "statRegister": "登记条目",
+    "mainPoint": "核心要点",
+    "whyChoose": "为什么选择我们",
+    "whyChooseDesc": "是什么让这家公司与众不同。",
+    "keyNumbers": "关键数据",
+    "keyNumbersDesc": "定义我们影响力的数据。",
+    "globalReach": "全球覆盖",
+    "globalReachDesc": "我们跨越边境和市场的存在。"
   },
   "contact": {
     "locationsTitleStart": "我们的",

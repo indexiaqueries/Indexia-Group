@@ -178,7 +178,14 @@
     "exploreServices": "Hizmetleri Keşfedin",
     "statServices": "Hizmet",
     "statHighlights": "Öne Çıkanlar",
-    "statRegister": "Sicil Kaydı"
+    "statRegister": "Sicil Kaydı",
+    "mainPoint": "Ana nokta",
+    "whyChoose": "Neden bizi seçin",
+    "whyChooseDesc": "Bu şirketi diğerlerinden ayıran özellik.",
+    "keyNumbers": "Temel rakamlar",
+    "keyNumbersDesc": "Etkimizi tanımlayan rakamlar.",
+    "globalReach": "Küresel erişim",
+    "globalReachDesc": "Sınır ötesi ve pazarlardaki varlığımız."
   },
   "contact": {
     "locationsTitleStart": "Ofislerimiz",

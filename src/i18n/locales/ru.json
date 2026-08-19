@@ -178,7 +178,14 @@
     "exploreServices": "Изучить услуги",
     "statServices": "Услуги",
     "statHighlights": "Ключевые моменты",
-    "statRegister": "Запись реестра"
+    "statRegister": "Запись реестра",
+    "mainPoint": "Главный момент",
+    "whyChoose": "Почему выбирают нас",
+    "whyChooseDesc": "Что выделяет эту компанию среди других.",
+    "keyNumbers": "Ключевые цифры",
+    "keyNumbersDesc": "Цифры, определяющие наше влияние.",
+    "globalReach": "Глобальный охват",
+    "globalReachDesc": "Наше присутствие за рубежом и на рынках."
   },
   "contact": {
     "locationsTitleStart": "Наши ",

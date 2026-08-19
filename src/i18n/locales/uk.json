@@ -178,7 +178,14 @@
     "exploreServices": "Дослідити послуги",
     "statServices": "Послуги",
     "statHighlights": "Ключові переваги",
-    "statRegister": "Запис у реєстрі"
+    "statRegister": "Запис у реєстрі",
+    "mainPoint": "Головна теза",
+    "whyChoose": "Чому обирають нас",
+    "whyChooseDesc": "Що виділяє цю компанію серед інших.",
+    "keyNumbers": "Ключові цифри",
+    "keyNumbersDesc": "Цифри, що визначають наш вплив.",
+    "globalReach": "Глобальний охоплення",
+    "globalReachDesc": "Наша присутність за кордоном та на ринках."
   },
   "contact": {
     "locationsTitleStart": "Наші ",

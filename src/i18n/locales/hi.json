@@ -178,7 +178,14 @@
     "exploreServices": "सेवाएँ देखें",
     "statServices": "सेवाएँ",
     "statHighlights": "मुख्य विशेषताएँ",
-    "statRegister": "रजिस्टर प्रविष्टि"
+    "statRegister": "रजिस्टर प्रविष्टि",
+    "mainPoint": "मुख्य बिंदु",
+    "whyChoose": "हमें क्यों चुनें",
+    "whyChooseDesc": "इस कंपनी को बाकियों से अलग क्या बनाता है।",
+    "keyNumbers": "प्रमुख आंकड़े",
+    "keyNumbersDesc": "वे आंकड़े जो हमारे प्रभाव को परिभाषित करते हैं।",
+    "globalReach": "वैश्विक पहुंच",
+    "globalReachDesc": "सीमाओं और बाजारों में हमारी उपस्थिति।"
   },
   "contact": {
     "locationsTitleStart": "हमारे ",

@@ -1,20 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
+import { useBackToTop } from "../../hooks/useBackToTop";
 
 const FoundationQR = () => {
-  const [visible, setVisible] = useState(false);
+  const visible = useBackToTop();
   const [expanded, setExpanded] = useState(false);
   const prefersReducedMotion = useReducedMotion();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Show after scrolling past ~60vh (hero section height)
-      const threshold = window.innerHeight * 0.6;
-      setVisible(window.scrollY > threshold);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const qrPlaceholder = (
     <div className="flex h-48 w-48 flex-col items-center justify-center rounded-2xl border-2 border-dashed border-(--color-teal)/40 bg-white p-4 shadow-xl">

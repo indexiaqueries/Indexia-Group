@@ -178,7 +178,14 @@
     "exploreServices": "サービスを見る",
     "statServices": "サービス",
     "statHighlights": "主なハイライト",
-    "statRegister": "登録エントリー"
+    "statRegister": "登録エントリー",
+    "mainPoint": "主要ポイント",
+    "whyChoose": "選ばれる理由",
+    "whyChooseDesc": "この会社を他と差別化するもの。",
+    "keyNumbers": "主要数値",
+    "keyNumbersDesc": "私たちの影響力を定義する数字。",
+    "globalReach": "グローバル展開",
+    "globalReachDesc": "国境や市場を超えた私たちの存在。"
   },
   "contact": {
     "locationsTitleStart": "当社の",

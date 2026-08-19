@@ -178,7 +178,14 @@
     "exploreServices": "חקור שירותים",
     "statServices": "שירותים",
     "statHighlights": "נקודות עיקריות",
-    "statRegister": "רשומת רישום"
+    "statRegister": "רשומת רישום",
+    "mainPoint": "נקודה מרכזית",
+    "whyChoose": "למה לבחור בנו",
+    "whyChooseDesc": "מה מייחד חברה זו מהשאר.",
+    "keyNumbers": "מספרים מרכזיים",
+    "keyNumbersDesc": "המספרים שמגדירים את ההשפעה שלנו.",
+    "globalReach": "טווח גלובלי",
+    "globalReachDesc": "הנוכחות שלנו מעבר לגבולות ולשווקים."
   },
   "contact": {
     "locationsTitleStart": "המיקומים ",

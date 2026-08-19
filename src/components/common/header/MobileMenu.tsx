@@ -55,7 +55,7 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
             key={company.slug}
             company={company}
             onNavigate={onClose}
-            isActive={isCompanyPage && currentSlug === company.slug}
+            isActive={!!isCompanyPage && currentSlug === company.slug}
           />
         ))}
       </div>

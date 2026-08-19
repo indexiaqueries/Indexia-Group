@@ -8,7 +8,6 @@ import BusinessCard from "../components/cards/BusinessCard";
 import { getCompanyCardImage } from "../data/companyImages";
 import { getCompanyIcon } from "../data/companyIcons";
 import { companies } from "../data/companies";
-import { colors } from "../lib/theme";
 
 const businessesJsonLd = {
   "@context": "https://schema.org",
@@ -40,37 +39,15 @@ const businessesJsonLd = {
   ],
 };
 
-const colorVar = (hex: string): string => {
-  switch (hex) {
-    case colors.teal:
-      return "var(--color-teal)";
-    case colors.tealDeep:
-      return "var(--color-teal-deep)";
-    case colors.yellow:
-      return "var(--color-yellow)";
-    case colors.blue:
-      return "var(--color-blue)";
-    case colors.navy:
-      return "var(--color-navy)";
-    default:
-      return "var(--color-gray)";
-  }
-};
-
-const businesses = companies.map((company, index) => {
-  const next = companies[(index + 1) % companies.length];
-  return {
-    name: company.name,
-    slug: company.slug,
-    tag: company.tag,
-    description: company.desc,
-    color1: colorVar(company.color),
-    color2: colorVar(next.color),
-    image: getCompanyCardImage(company.slug),
-    icon: getCompanyIcon(company.name),
-    link: company.link,
-  };
-});
+const businesses = companies.map((company) => ({
+  name: company.name,
+  slug: company.slug,
+  tag: company.tag,
+  description: company.desc,
+  image: getCompanyCardImage(company.slug),
+  icon: getCompanyIcon(company.name),
+  link: company.link,
+}));
 
 const Businesses = () => {
   const { t } = useTranslation();

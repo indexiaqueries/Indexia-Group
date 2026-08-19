@@ -178,7 +178,14 @@
     "exploreServices": "서비스 살펴보기",
     "statServices": "서비스",
     "statHighlights": "주요 특징",
-    "statRegister": "등록 항목"
+    "statRegister": "등록 항목",
+    "mainPoint": "핵심 포인트",
+    "whyChoose": "선택하는 이유",
+    "whyChooseDesc": "이 회사를 다른 회사와 구별하는 점.",
+    "keyNumbers": "핵심 수치",
+    "keyNumbersDesc": "우리의 영향력을 정의하는 수치.",
+    "globalReach": "글로벌 도달",
+    "globalReachDesc": "국경과 시장을 넘나드는 우리의 존재."
   },
   "contact": {
     "locationsTitleStart": "우리의 ",
