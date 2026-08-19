@@ -469,7 +469,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               <ImageSlot
                 {...siteImages.companyEnquiry}
                 alt={`${name} enquiry support`}
-                className="relative z-[1] transition-transform duration-700 ease-out group-hover:scale-105"
+                className="relative z-1 transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <span aria-hidden="true" className="card-shine-lines" />
             </div>
