@@ -3,15 +3,20 @@ import { ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import type { Company } from "../../../data/companies";
 
-const linkClass =
-  "flex items-center justify-between gap-2 rounded-lg px-2.5 py-1 text-[13px] font-semibold text-white/85 transition-colors duration-150 hover:bg-white/10 hover:text-white";
+const getLinkClass = (isActive: boolean) =>
+  `flex items-center justify-between gap-2 rounded-lg px-2.5 py-1 text-[13px] font-semibold transition-colors duration-150 ${
+    isActive
+      ? "bg-(--color-yellow)/15 text-(--color-yellow)"
+      : "text-white/85 hover:bg-white/10 hover:text-white"
+  }`;
 
 type CompanyLinkProps = {
   company: Company;
   onNavigate?: () => void;
+  isActive?: boolean;
 };
 
-const CompanyLink = ({ company, onNavigate }: CompanyLinkProps) => {
+const CompanyLink = ({ company, onNavigate, isActive = false }: CompanyLinkProps) => {
   const { t } = useTranslation();
   const name = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
 
@@ -22,7 +27,7 @@ const CompanyLink = ({ company, onNavigate }: CompanyLinkProps) => {
         href={company.link}
         target="_blank"
         rel="noopener noreferrer"
-        className={linkClass}
+        className={getLinkClass(isActive)}
         onClick={onNavigate}
       >
         {name}
@@ -31,7 +36,7 @@ const CompanyLink = ({ company, onNavigate }: CompanyLinkProps) => {
     );
   }
   return (
-    <Link key={company.slug} to={`/businesses/${company.slug}`} className={linkClass} onClick={onNavigate}>
+    <Link key={company.slug} to={`/businesses/${company.slug}`} className={getLinkClass(isActive)} onClick={onNavigate}>
       {name}
     </Link>
   );

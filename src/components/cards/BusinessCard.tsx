@@ -72,7 +72,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
   return (
     <article
-      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/10 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl${revealedClass}`}
+      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl${revealedClass}`}
     >
       <div className="absolute inset-0 overflow-hidden">
         <img
@@ -88,14 +88,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
       <div className="pointer-events-none absolute inset-0 z-10 bg-(--card-tint) transition-opacity duration-500 group-hover:opacity-0" />
 
-      {/* Color overlay on hover */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-[2] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-        style={{ background: `linear-gradient(135deg, ${business.color1}cc, ${business.color2}66)` }}
-      />
-
-      {/* Diagonal shine lines */}
+      {/* Shiny glass overlay */}
       <span aria-hidden="true" className="card-shine-lines" />
 
       {external ? (

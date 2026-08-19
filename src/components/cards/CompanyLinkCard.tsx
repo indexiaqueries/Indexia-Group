@@ -33,14 +33,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--color-night) via-(--color-night)/50 to-transparent transition-opacity duration-500"
       />
-      {/* Color overlay on hover */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-        style={{ background: `linear-gradient(135deg, ${company.color}cc, ${company.color}66)` }}
-      />
-
-      {/* Diagonal shine lines */}
+      {/* Shiny glass overlay */}
       <span aria-hidden="true" className="card-shine-lines" />
 
       {/* Ghost number */}
@@ -95,8 +88,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
   return (
     <Link
       to={`/businesses/${company.slug}`}
-      aria-label={t("companyLinkCard.visitPageAria", { name })}
-      className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/60 bg-(--color-ink-deep) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      aria-label={t("companyLinkCard.visitPageAria", { name })}        className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl"
     >
       {cardContent}
     </Link>

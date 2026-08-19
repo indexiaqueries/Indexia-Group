@@ -131,6 +131,8 @@ function buildAutoReplyEmail({ name, email, subject }) {
   };
 }
 
+const HR_EMAILS = "hr@indexiafinance.com,hr.indexia@gmail.com";
+
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: "100kb" }));
@@ -163,6 +165,122 @@ app.post("/api/contact", async (req, res) => {
   } catch (err) {
     console.error("Failed to send contact email:", err);
     res.status(500).json({ ok: false, error: "Could not send your message. Please try again later." });
+  }
+});
+
+function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, department }) {
+  const cleanRole = (roleTitle || "Open Position").trim();
+  const cleanDept = (department || "General").trim();
+
+  const text = [
+    `New job application for ${cleanRole}`,
+    "",
+    `Position: ${cleanRole}`,
+    `Department: ${cleanDept}`,
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Phone: ${phone}`,
+    `Experience: ${experience || "Not specified"}`,
+    "",
+    "About the applicant:",
+    intro,
+    "",
+  ].join("\n");
+
+  const row = (label, value) =>
+    `<tr><td style="padding:6px 0;color:#6b7280;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em">${escapeHtml(label)}</td></tr>` +
+    `<tr><td style="padding:0 0 14px;color:#111827;font-size:15px">${escapeHtml(value)}</td></tr>`;
+
+  const html = `
+    <div style="font-family:Arial,Helvetica,sans-serif;background:#f8fafc;padding:24px">
+      <div style="max-width:560px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden">
+        <div style="background:#26ae90;color:#ffffff;padding:20px 24px;font-size:18px;font-weight:700">
+          Job Application — ${escapeHtml(cleanRole)}
+        </div>
+        <table style="width:100%;border-collapse:collapse;padding:0 24px">
+          <tr><td style="padding:20px 24px 0">
+            <table style="width:100%;border-collapse:collapse">
+              ${row("Position", cleanRole)}
+              ${row("Department", cleanDept)}
+              ${row("Name", name)}
+              ${row("Email", email)}
+              ${row("Phone", phone)}
+              ${row("Experience", experience || "Not specified")}
+              ${row("About the applicant", intro)}
+            </table>
+          </td></tr>
+        </table>
+        <div style="padding:4px 24px 24px;color:#9ca3af;font-size:12px">
+          Sent from the Indexia Group Careers page.
+        </div>
+      </div>
+    </div>`;
+
+  return { subject: `New job application for ${cleanRole} — ${name}`, text, html };
+}
+
+function buildApplyAutoReply({ name, roleTitle }) {
+  const cleanRole = (roleTitle || "the position").trim();
+  return {
+    subject: "Application Received — Indexia Group",
+    text: [
+      `Hi ${name},`,
+      "",
+      `Thank you for applying for the position of ${cleanRole} at Indexia Group.`,
+      "We have received your application and a member of our HR team will review it shortly.",
+      "",
+      "If your profile matches our requirements, we will get back to you within 5-7 business days.",
+      "",
+      "Warm regards,",
+      "The Indexia Group HR Team",
+      "",
+    ].join("\n"),
+    html: `
+      <div style="font-family:Arial,Helvetica,sans-serif;background:#f8fafc;padding:24px">
+        <div style="max-width:560px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden">
+          <div style="background:#26ae90;color:#ffffff;padding:20px 24px;font-size:18px;font-weight:700">
+            Application Received, ${escapeHtml(name)}
+          </div>
+          <div style="padding:20px 24px;color:#111827;font-size:15px;line-height:1.7">
+            <p style="margin:0 0 12px">Thank you for applying for the position of <strong>${escapeHtml(cleanRole)}</strong> at <strong>Indexia Group</strong>.</p>
+            <p style="margin:0 0 12px">We have received your application and a member of our HR team will review it shortly. If your profile matches our requirements, we will get back to you within 5-7 business days.</p>
+            <p style="margin:0">Warm regards,<br />The Indexia Group HR Team</p>
+          </div>
+          <div style="padding:4px 24px 24px;color:#9ca3af;font-size:12px">
+            This is an automated acknowledgement — please do not reply to this email.
+          </div>
+        </div>
+      </div>`,
+  };
+}
+
+app.post("/api/apply", async (req, res) => {
+  const { name, email, phone, experience, intro, roleTitle, department } = req.body ?? {};
+  const introText = String(intro ?? "").trim();
+
+  if (!name || !email || !phone || !introText) {
+    return res.status(400).json({ ok: false, error: "Name, email, phone and intro are required." });
+  }
+  if (!EMAIL_RE.test(email)) {
+    return res.status(400).json({ ok: false, error: "Please enter a valid email address." });
+  }
+
+  try {
+    const result = await sendMail({
+      to: HR_EMAILS,
+      ...buildApplyEmail({ name, email, phone, experience, intro: introText, roleTitle, department }),
+    });
+
+    try {
+      await sendMail({ ...buildApplyAutoReply({ name, roleTitle }), to: email });
+    } catch (replyErr) {
+      console.error("Failed to send application auto-reply:", replyErr);
+    }
+
+    res.json({ ok: true, dev: result.dev });
+  } catch (err) {
+    console.error("Failed to send application email:", err);
+    res.status(500).json({ ok: false, error: "Could not submit your application. Please try again later." });
   }
 });
 

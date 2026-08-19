@@ -17,6 +17,8 @@ const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenu
   const { t } = useTranslation();
   const location = useLocation();
   const onBusinesses = location.pathname.startsWith("/businesses");
+  const currentSlug = location.pathname.replace("/businesses/", "");
+  const isCompanyPage = onBusinesses && currentSlug && currentSlug !== "/businesses";
 
   return (
     <div
@@ -44,7 +46,12 @@ const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenu
         </p>
         <div className="grid gap-0">
           {companies.map((company) => (
-            <CompanyLink key={company.slug} company={company} onNavigate={onClose} />
+            <CompanyLink
+              key={company.slug}
+              company={company}
+              onNavigate={onClose}
+              isActive={isCompanyPage && currentSlug === company.slug}
+            />
           ))}
         </div>
         <div className="mt-1.5 border-t border-white/10 pt-1.5">

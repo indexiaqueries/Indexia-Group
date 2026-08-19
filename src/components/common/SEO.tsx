@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 type SEOProps = {
   title: string;
-  description: string;
+  description?: string;
   keywords?: string;
   canonicalPath?: string;
   ogType?: string;
@@ -18,7 +18,7 @@ const DEFAULT_LOCALE = "en_IN";
 
 const SEO = ({
   title,
-  description,
+  description = "",
   keywords,
   canonicalPath,
   ogType = "website",

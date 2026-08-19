@@ -68,28 +68,32 @@ const ApplyPage = () => {
 
     setIsSubmitting(true);
 
-    // Build mailto with all details
-    const subject = encodeURIComponent(`Application for ${roleTitle} - ${department}`);
-    const body = encodeURIComponent(
-      `Dear HR Team,\n\nI am writing to apply for the position of ${roleTitle}${department ? ` in the ${department} department` : ""}.\n\n` +
-      `--- APPLICANT DETAILS ---\n\n` +
-      `Full Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n` +
-      `Total Experience: ${formData.experience || "Not specified"}\n` +
-      `Resume: ${formData.resumeFileName || "Not attached"}\n\n` +
-      `--- ABOUT ME ---\n\n${formData.intro}\n\n` +
-      `---\nThis application was submitted via the Indexia Group Careers page.\nPlease find the resume attached separately.`
-    );
-
-    // Open mailto with both HR emails
-    window.location.href = `mailto:hr@indexiafinance.com,hr.indexia@gmail.com?subject=${subject}&body=${body}`;
-
-    // Show success after brief delay
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/apply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          experience: formData.experience,
+          intro: formData.intro,
+          roleTitle,
+          department,
+        }),
+      });
+      const data = (await response.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+      if (!response.ok || !data.ok) {
+        throw new Error(data.error || "Could not submit your application. Please try again later.");
+      }
       setIsSubmitted(true);
-    }, 500);
+    } catch (err) {
+      setErrors({
+        submit: err instanceof Error ? err.message : "Could not submit your application. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -102,12 +106,12 @@ const ApplyPage = () => {
               <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-(--color-teal)/10">
                 <CheckCircle size={40} className="text-(--color-teal)" />
               </div>
-              <h1 className="font-display text-2xl font-bold text-(--color-ink)">Application Ready!</h1>
+              <h1 className="font-display text-2xl font-bold text-(--color-ink)">Application Submitted!</h1>
               <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
-                Your email client has been opened with your application details. Please attach your resume and send the email to complete your application.
+                Thank you for applying for the <strong>{roleTitle}</strong> position. Our HR team has received your application and will review it shortly.
               </p>
               <div className="mt-6 rounded-xl border border-slate-200 bg-(--color-soft) p-4 text-sm text-slate-600">
-                <p className="font-semibold text-(--color-ink)">Sending to:</p>
+                <p className="font-semibold text-(--color-ink)">Application sent to:</p>
                 <p className="mt-1 text-(--color-teal)">hr@indexiafinance.com</p>
                 <p className="text-(--color-teal)">hr.indexia@gmail.com</p>
               </div>
@@ -297,7 +301,7 @@ const ApplyPage = () => {
                 {isSubmitting ? (
                   <>
                     <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                    Opening email client...
+                    Submitting...
                   </>
                 ) : (
                   <>
@@ -307,8 +311,13 @@ const ApplyPage = () => {
                 )}
               </button>
 
+              {errors.submit && (
+                <p className="rounded-xl px-4 py-3 text-center text-sm font-medium bg-red-50 text-red-600">
+                  {errors.submit}
+                </p>
+              )}
               <p className="text-center text-xs text-(--color-muted)">
-                Your email client will open with all details pre-filled. Attach your resume and send to complete the application.
+                Your application will be sent directly to our HR team at hr@indexiafinance.com and hr.indexia@gmail.com.
               </p>
             </form>
           </Reveal>

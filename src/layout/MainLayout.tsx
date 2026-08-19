@@ -6,7 +6,7 @@ import FoundationQR from "../components/common/FoundationQR";
 
 const MainLayout = () => {
   const { pathname } = useLocation();
-  const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure";
+  const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure" || pathname === "/careers/apply";
   const showQR = pathname === "/businesses/foundation";
 
   useEffect(() => {

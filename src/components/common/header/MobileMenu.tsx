@@ -19,6 +19,8 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
   const { t } = useTranslation();
   const location = useLocation();
   const onBusinesses = location.pathname.startsWith("/businesses");
+  const currentSlug = location.pathname.replace("/businesses/", "");
+  const isCompanyPage = onBusinesses && currentSlug && currentSlug !== "/businesses";
 
   return (
     <DropdownPanel
@@ -49,7 +51,12 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
           {t("header.menu.companies")}
         </p>
         {companies.map((company) => (
-          <CompanyLink key={company.slug} company={company} onNavigate={onClose} />
+          <CompanyLink
+            key={company.slug}
+            company={company}
+            onNavigate={onClose}
+            isActive={isCompanyPage && currentSlug === company.slug}
+          />
         ))}
       </div>
 
