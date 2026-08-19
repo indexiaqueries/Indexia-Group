@@ -3,6 +3,7 @@ import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { getCompanyCardImage } from "../../data/companyImages";
 import type { Company } from "../../data/companies";
+import CompanyCardBase from "./CompanyCardBase";
 
 type CompanyLinkCardProps = {
   company: Company;
@@ -15,38 +16,12 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
   const name = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
   const cardNo = String(index + 1).padStart(2, "0");
 
-  const cardContent = (
+  const content = (
     <>
-      <div className="absolute inset-0 overflow-hidden">
-        <img
-          src={getCompanyCardImage(company.slug)}
-          alt={t("companyLinkCard.visualAlt", { name })}
-          width={760}
-          height={426}
-          loading="lazy"
-          decoding="async"
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-        />
-      </div>
-      {/* Gradient overlay */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-linear-to-t from-(--color-night) via-(--color-night)/50 to-transparent transition-opacity duration-500"
-      />
-      {/* Shiny glass overlay */}
-      <span aria-hidden="true" className="card-shine-lines" />
-
-      {/* Ghost number */}
+      {/* Icon chip */}
       <span
         aria-hidden="true"
-        className="font-display pointer-events-none absolute start-4 top-2 z-[2] text-[54px] font-bold leading-none text-white/15 transition-colors duration-300 group-hover:text-white/25"
-      >
-        {cardNo}
-      </span>
-
-      <span
-        aria-hidden="true"
-        className={`company-link-chip pointer-events-none absolute inset-e-5 top-5 z-[3] flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-all duration-300 group-hover:bg-(--color-yellow) group-hover:text-(--color-ink-deep) ${
+        className={`company-link-chip pointer-events-none absolute inset-e-5 top-5 z-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-all duration-300 group-hover:bg-(--color-yellow) group-hover:text-(--color-ink-deep) ${
           company.link ? "opacity-100" : "opacity-0 group-hover:opacity-100"
         }`}
       >
@@ -57,6 +32,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
         )}
       </span>
 
+      {/* Text content */}
       <div className="company-link-card-content relative z-10 mt-auto p-5">
         <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-(--color-yellow)">
           {tag}
@@ -67,8 +43,17 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
           <ArrowUpRight size={15} strokeWidth={2.5} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </p>
       </div>
-
     </>
+  );
+
+  const card = (
+    <CompanyCardBase
+      image={getCompanyCardImage(company.slug)}
+      imageAlt={t("companyLinkCard.visualAlt", { name })}
+      cardNo={cardNo}
+    >
+      {content}
+    </CompanyCardBase>
   );
 
   if (company.link) {
@@ -78,9 +63,8 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t("companyLinkCard.visitWebsiteAria", { name })}
-        className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl"
       >
-        {cardContent}
+        {card}
       </a>
     );
   }
@@ -88,9 +72,9 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
   return (
     <Link
       to={`/businesses/${company.slug}`}
-      aria-label={t("companyLinkCard.visitPageAria", { name })}        className="company-link-card group relative flex h-64 flex-col overflow-hidden rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl"
+      aria-label={t("companyLinkCard.visitPageAria", { name })}
     >
-      {cardContent}
+      {card}
     </Link>
   );
 };

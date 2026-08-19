@@ -99,7 +99,13 @@ const ApplyPage = () => {
   if (isSubmitted) {
     return (
       <main className="bg-white">
-        <SEO title={`Application for ${roleTitle} - Indexia Group`} canonicalPath="/careers/apply" />
+        <SEO
+          title={`Application for ${roleTitle} - Indexia Group`}
+          description={`Your application for the ${roleTitle} position at Indexia Group has been submitted successfully.`}
+          keywords={`Indexia Group jobs, ${roleTitle}, career application`}
+          canonicalPath="/careers/apply"
+          noindex
+        />
         <div className="flex min-h-screen items-center justify-center px-5">
           <Reveal>
             <div className="mx-auto max-w-md text-center">
@@ -133,7 +139,8 @@ const ApplyPage = () => {
     <main className="bg-white">
       <SEO
         title={`Apply for ${roleTitle} - Indexia Group`}
-        description={`Apply for the ${roleTitle} position at Indexia Group. Submit your application today.`}
+        description={`Apply for the ${roleTitle} position at Indexia Group. Submit your application with resume and cover letter.`}
+        keywords={`Indexia Group careers, ${roleTitle} job, apply ${roleTitle}, Indexia Finance jobs Mumbai`}
         canonicalPath="/careers/apply"
       />
 

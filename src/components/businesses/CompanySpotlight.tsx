@@ -11,7 +11,7 @@ type CompanySpotlightProps = {
 };
 
 const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
-  const { t } = useTranslation();
+  useTranslation();
   const data = SPOTLIGHT_DATA[company.slug];
   if (!data) return null;
 
@@ -22,12 +22,12 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
       {/* Ambient glows */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -start-32 top-10 h-96 w-96 rounded-full opacity-15 blur-[100px]"
+        className="pointer-events-none absolute -inset-s-32 top-10 h-96 w-96 rounded-full opacity-15 blur-[100px] float-subtle"
         style={{ background: company.color }}
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -end-24 bottom-10 h-72 w-72 rounded-full opacity-10 blur-[80px]"
+        className="pointer-events-none absolute -inset-e-24 bottom-10 h-72 w-72 rounded-full opacity-10 blur-[80px]"
         style={{ background: company.color }}
       />
 
@@ -91,15 +91,18 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
               className="absolute -inset-3 rounded-[30px]"
               style={{ background: `linear-gradient(135deg, ${company.color}44, transparent 55%, ${company.color}22)` }}
             />
-            <img
-              src={getCompanyPageImage(company.slug)}
-              alt={`${company.name} — ${company.tag}`}
-              width={1536}
-              height={1024}
-              loading="lazy"
-              decoding="async"
-              className="aspect-[4/3] w-full rounded-3xl object-cover shadow-2xl ring-1 ring-black/10"
-            />
+            <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">
+              <img
+                src={getCompanyPageImage(company.slug)}
+                alt={`${company.name} — ${company.tag}`}
+                width={1536}
+                height={1024}
+                loading="lazy"
+                decoding="async"
+                className="aspect-4/3 w-full object-cover transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110 group-hover:-rotate-2 img-reveal"
+              />
+              <span aria-hidden="true" className="card-shine-lines" />
+            </div>
           </div>
         </Reveal>
       </div>

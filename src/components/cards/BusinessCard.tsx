@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useTapReveal } from "../../hooks/useTapReveal";
 import RevealActionButton from "./RevealActionButton";
+import CompanyCardBase from "./CompanyCardBase";
 
 type BusinessCardItem = {
   name: string;
@@ -72,46 +73,37 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
   return (
     <article
-      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl${revealedClass}`}
+      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl${revealedClass}`}
     >
-      <div className="absolute inset-0 overflow-hidden">
-        <img
-          src={business.image}
-          alt={`${name} visual`}
-          width={760}
-          height={426}
-          loading="lazy"
-          decoding="async"
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-        />
-      </div>
-
-      <div className="pointer-events-none absolute inset-0 z-10 bg-(--card-tint) transition-opacity duration-500 group-hover:opacity-0" />
-
-      {/* Shiny glass overlay */}
-      <span aria-hidden="true" className="card-shine-lines" />
-
-      {external ? (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={label}
-          onClick={handleCardClick}
-          className="relative z-50 flex h-full w-full flex-col justify-between p-5"
-        >
-          {inner}
-        </a>
-      ) : (
-        <Link
-          to={href}
-          aria-label={label}
-          onClick={handleCardClick}
-          className="relative z-50 flex h-full w-full flex-col justify-between p-5"
-        >
-          {inner}
-        </Link>
-      )}
+      <CompanyCardBase
+        image={business.image}
+        imageAlt={`${name} visual`}
+        tint="var(--card-tint)"
+        className="h-full border-0 rounded-none hover:translate-y-0 hover:border-0 hover:shadow-none"
+      >
+        {/* Content layer */}
+        {external ? (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            onClick={handleCardClick}
+            className="relative z-50 flex h-full w-full flex-col justify-between p-5"
+          >
+            {inner}
+          </a>
+        ) : (
+          <Link
+            to={href}
+            aria-label={label}
+            onClick={handleCardClick}
+            className="relative z-50 flex h-full w-full flex-col justify-between p-5"
+          >
+            {inner}
+          </Link>
+        )}
+      </CompanyCardBase>
     </article>
   );
 };

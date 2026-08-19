@@ -107,7 +107,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         <div className="fade-up relative">
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute -top-12 -end-2 select-none font-display text-[clamp(110px,20vw,220px)] font-bold leading-none text-white/5 sm:-end-8"
+            className="pointer-events-none absolute -top-12 -inset-e-2 select-none font-display text-[clamp(110px,20vw,220px)] font-bold leading-none text-white/5 sm:-inset-e-8"
           >
             {entryNo}
           </span>
@@ -181,11 +181,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       >
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 start-0 w-24 bg-linear-to-r from-(--color-ink-deep) to-transparent sm:w-40"
+          className="pointer-events-none absolute inset-y-0 inset-s-0 w-24 bg-linear-to-r from-(--color-ink-deep) to-transparent sm:w-40"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 end-0 w-24 bg-linear-to-l from-(--color-ink-deep) to-transparent sm:w-40"
+          className="pointer-events-none absolute inset-y-0 inset-e-0 w-24 bg-linear-to-l from-(--color-ink-deep) to-transparent sm:w-40"
         />
         <div
           className="infinite-marquee-track py-4"
@@ -210,12 +210,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       <section className="relative overflow-hidden bg-white py-20 lg:py-28">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -end-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
+          className="pointer-events-none absolute -inset-e-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -start-24 bottom-0 h-72 w-72 rounded-full opacity-10 blur-3xl"
+          className="pointer-events-none absolute -inset-s-24 bottom-0 h-72 w-72 rounded-full opacity-10 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
 
@@ -228,7 +228,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 style={{ background: `linear-gradient(135deg, ${b.color}66, transparent 55%, ${b.color}33)` }}
               />
               <div
-                className="thumb-tilt relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10"
+                className="group thumb-tilt relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10"
               >
                 <img
                   src={getCompanyImage(b.slug)}
@@ -237,13 +237,14 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   height={1024}
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 img-reveal"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
+                <span aria-hidden="true" className="card-shine-lines" />
               </div>
 
               <div
-                className="absolute -bottom-5 start-6 flex items-center gap-2.5 rounded-2xl px-4 py-2.5 shadow-xl ring-1 ring-black/10"
+                className="absolute -bottom-5 inset-s-6 flex items-center gap-2.5 rounded-2xl px-4 py-2.5 shadow-xl ring-1 ring-black/10"
                 style={{ background: b.color, color: contrastText(b.color) }}
               >
                 <Layers size={16} strokeWidth={2.5} aria-hidden="true" />
@@ -256,7 +257,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
           <div>
             <Eyebrow className="mb-3">{t("companyDetail.overviewEyebrow")}</Eyebrow>
-            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
+            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink) text-shimmer">
               {t("companyDetail.overviewTitle", { name })}
             </h2>
             <p className="mt-5 max-w-xl text-[15px] leading-8 text-(--color-muted)">{overview}</p>
@@ -289,7 +290,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -end-20 top-0 h-80 w-80 rounded-full opacity-25 blur-3xl"
+          className="pointer-events-none absolute -inset-e-20 top-0 h-80 w-80 rounded-full opacity-25 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
         <div className="container relative py-24 lg:py-32">
@@ -317,7 +318,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -start-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
+          className="pointer-events-none absolute -inset-s-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
         <div className="container grid items-center gap-12 py-20 lg:grid-cols-2 lg:gap-16 lg:py-28">
@@ -395,7 +396,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   >
                     <span
                       aria-hidden="true"
-                      className="pointer-events-none absolute -end-8 -top-8 h-20 w-20 rounded-full opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-70"
+                      className="pointer-events-none absolute -inset-e-8 -top-8 h-20 w-20 rounded-full opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-70"
                       style={{ background: b.color }}
                     />
 
@@ -412,7 +413,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
                     <span
                       aria-hidden="true"
-                      className="font-ledger pointer-events-none absolute end-4 top-3 text-[10px] font-bold tracking-[0.14em] text-slate-300 transition-colors duration-300 group-hover:text-slate-400"
+                      className="font-ledger pointer-events-none absolute inset-e-4 top-3 text-[10px] font-bold tracking-[0.14em] text-slate-300 transition-colors duration-300 group-hover:text-slate-400"
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
@@ -425,7 +426,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                       size={15}
                       strokeWidth={2.6}
                       aria-hidden="true"
-                      className="pointer-events-none absolute bottom-3 end-4 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                      className="pointer-events-none absolute bottom-3 inset-e-4 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                       style={{ color: accentInk(b.color) }}
                     />
 
@@ -464,11 +465,14 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               {t("companyDetail.enquireSub", { name })}
             </p>
 
-            <ImageSlot
-              {...siteImages.companyEnquiry}
-              alt={`${name} enquiry support`}
-              className="mt-8 rounded-2xl shadow-sm ring-1 ring-slate-200"
-            />
+            <div className="group relative mt-8 overflow-hidden rounded-2xl shadow-sm ring-1 ring-slate-200">
+              <ImageSlot
+                {...siteImages.companyEnquiry}
+                alt={`${name} enquiry support`}
+                className="relative z-[1] transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <span aria-hidden="true" className="card-shine-lines" />
+            </div>
 
             <div className="mt-8 flex items-center gap-6">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-(--color-blue) shadow-[0_4px_14px_rgba(6,106,156,0.18)]">

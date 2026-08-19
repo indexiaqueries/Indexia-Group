@@ -22,12 +22,12 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
       {/* Ambient glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -end-40 top-0 h-[500px] w-[500px] rounded-full opacity-20 blur-[100px]"
+        className="pointer-events-none absolute -inset-e-40 top-0 h-125 w-125 rounded-full opacity-20 blur-[100px]"
         style={{ background: color }}
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -start-32 bottom-20 h-80 w-80 rounded-full opacity-10 blur-[80px]"
+        className="pointer-events-none absolute -inset-s-32 bottom-20 h-80 w-80 rounded-full opacity-10 blur-[80px]"
         style={{ background: color }}
       />
 
@@ -62,14 +62,14 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
               {/* Ghost number */}
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute -end-4 -top-6 font-display text-[clamp(80px,14vw,180px)] font-bold leading-none opacity-10"
+                className="pointer-events-none absolute -inset-e-4 -top-6 font-display text-[clamp(80px,14vw,180px)] font-bold leading-none opacity-10"
                 style={{ color: contrastText(color) }}
               >
                 01
               </span>
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute -start-6 -bottom-10 font-display text-[clamp(60px,10vw,140px)] font-bold leading-none opacity-[0.06]"
+                className="pointer-events-none absolute -inset-s-6 -bottom-10 font-display text-[clamp(60px,10vw,140px)] font-bold leading-none opacity-[0.06]"
                 style={{ color: contrastText(color) }}
               >
                 ✦
@@ -109,14 +109,14 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                     {/* Subtle background glow on hover */}
                     <div
                       aria-hidden="true"
-                      className="absolute -end-10 -top-10 h-32 w-32 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-30"
+                      className="absolute -inset-e-10 -top-10 h-32 w-32 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-30"
                       style={{ background: color }}
                     />
 
                     {/* Large ghost number behind content */}
                     <span
                       aria-hidden="true"
-                      className="pointer-events-none absolute -end-1 top-0 font-display text-[64px] font-bold leading-none opacity-[0.04] transition-all duration-400 group-hover:opacity-[0.1] group-hover:-end-2 group-hover:-top-1"
+                      className="pointer-events-none absolute -inset-e-1 top-0 font-display text-[64px] font-bold leading-none opacity-[0.04] transition-all duration-400 group-hover:opacity-[0.1] group-hover:-inset-e-2 group-hover:-top-1"
                       style={{ color }}
                     >
                       {String(i + 1).padStart(2, "0")}
@@ -150,7 +150,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                     {/* Bottom accent bar */}
                     <span
                       aria-hidden="true"
-                      className="absolute inset-x-0 bottom-0 h-[2px] origin-left scale-x-0 transition-transform duration-400 group-hover:scale-x-100"
+                      className="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 transition-transform duration-400 group-hover:scale-x-100"
                       style={{ background: `linear-gradient(90deg, ${color}, ${color}55)` }}
                     />
                   </div>

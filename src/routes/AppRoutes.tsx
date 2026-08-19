@@ -16,11 +16,21 @@ const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
 const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
 const AdvertisingBrochure = lazy(() => import("../pages/AdvertisingBrochure"));
 
+import logo from "../assets/logo/IndexiaGroup_Logo.webp";
+
 const PageFallback = () => (
-  <div className="flex min-h-screen items-center justify-center bg-white">
-    <div className="flex flex-col items-center gap-3">
-      <div className="h-8 w-8 animate-spin rounded-full border-4 border-(--color-teal) border-t-transparent" />
-      <p className="text-sm font-medium text-(--color-gray)">Loading…</p>
+  <div className="flex min-h-screen items-center justify-center" style={{ background: "var(--color-ink-deep)" }}>
+    <div className="flex flex-col items-center gap-5">
+      <img
+        src={logo}
+        alt="Indexia Group"
+        width={80}
+        height={80}
+        className="h-20 w-20 animate-pulse rounded-full object-contain shadow-[0_0_30px_rgba(38,174,144,0.25)]"
+      />
+      <div className="h-1 w-24 overflow-hidden rounded-full bg-white/10">
+        <div className="h-full w-1/3 animate-[loading-bar_1.2s_ease-in-out_infinite] rounded-full bg-(--color-teal)" />
+      </div>
     </div>
   </div>
 );

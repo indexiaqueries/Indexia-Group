@@ -64,7 +64,7 @@ const FooterLink = ({
   <li>
     <Link
       to={href}
-      className="group inline-flex items-center gap-2 text-sm text-white/85 transition-all duration-200 hover:text-(--color-yellow)"
+      className="group inline-flex items-center gap-2 text-sm text-white/85 transition-all duration-200 hover:text-(--color-yellow) link-underline"
     >
       <span className="text-(--color-teal) transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">›</span>
       {t(labelKey)}

@@ -29,6 +29,27 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
 
   const price = t(`${slug === "warehouse" ? "warehousePricing" : "unipolePricing"}.standardRate`);
 
+  const brochureJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: title,
+        description: `${desc} Download the ${name} brochure from Indexia Group.`,
+        url: `https://www.indexiagroup.com${canonicalPath}`,
+        isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/businesses" },
+          { "@type": "ListItem", position: 3, name: `${name} Brochure`, item: `https://www.indexiagroup.com${canonicalPath}` },
+        ],
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-(--color-soft) py-10">
       <SEO
@@ -36,6 +57,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
         description={`${desc} Download the ${name} brochure from Indexia Group.`}
         keywords={`${name} brochure, ${tag}, Indexia Group brochure, ${slug === "warehouse" ? "warehouse land Shamli" : "unipole advertising Shamli"}`}
         canonicalPath={canonicalPath}
+        jsonLd={brochureJsonLd}
       />
       <div className="brochure-wrap mx-auto max-w-4xl px-4 sm:px-6">
         {/* Action bar — hidden when printing */}

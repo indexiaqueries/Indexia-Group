@@ -92,7 +92,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
         )}
 
         <h1
-          className={`hero-slide-child w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line ${
+          className={`hero-slide-child w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line text-shimmer ${
             isHome
               ? "text-[clamp(26px,4vw,44px)]"
               : "text-[clamp(24px,3.8vw,40px)]"
@@ -117,7 +117,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
       <div className="hero-slide-child flex flex-wrap gap-3 justify-center mt-9" style={{ animationDelay: CHILD_DELAYS[3] }}>
         <Link
           to="/businesses"
-          className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-colors duration-200 hover:-translate-y-0.5"
+          className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(38,174,144,0.5)]"
         >
           {isHome ? t("hero.ctaExploreGroup") : t("hero.ctaExploreMore")}
           <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
