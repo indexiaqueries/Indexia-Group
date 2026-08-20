@@ -6,11 +6,11 @@ import {
 
 export const serviceIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
   "Investor Services": Users,
-  "FDI Advisory & Facilitation": MapPinned,
+  "FDI Facilitation": MapPinned,
   "NBFC Operations": Landmark,
   "Banking & Institutional Funding": HandCoins,
   "Cross-Border Capital Solutions": Globe,
-  "Wealth & Asset Advisory": TrendingUp,
+  "Wealth & Asset Management": TrendingUp,
 
   "Personal Loan": Wallet,
   "Business Loan": Building2,

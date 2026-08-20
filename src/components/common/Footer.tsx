@@ -13,6 +13,7 @@ const linkGroups: {
   {
     titleKey: "footer.company",
     links: [
+      { labelKey: "footer.links.aboutUs", href: "/about" },
       { labelKey: "footer.links.groupCompanies", href: "/businesses" },
       { labelKey: "footer.links.advertise", href: "/businesses/advertising" },
       { labelKey: "footer.links.careers", href: "/careers" },
@@ -110,7 +111,8 @@ const Footer = () => {
         </div>
 
         {/* Sections below — Contact, Company, Resources, Legal */}
-        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:grid-cols-4 lg:divide-x lg:divide-white/10">
+        <h2 className="sr-only">{t("footer.siteFooter") || "Site footer navigation"}</h2>
+        <nav aria-label="Footer navigation" className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:grid-cols-4 lg:divide-x lg:divide-white/10">
           {/* Contact */}
           <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />
@@ -150,7 +152,7 @@ const Footer = () => {
               </ul>
             </div>
           ))}
-        </div>
+        </nav>
 
         <div className="mt-12 rounded-2xl border border-white/12 bg-white/5 px-6 py-6 backdrop-blur-sm sm:px-8">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between">

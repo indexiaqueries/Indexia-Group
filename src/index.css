@@ -272,6 +272,11 @@ ul {
 /* ---- Image & text effects ---- */
 
 /* Gradient shimmer sweep across text on hover */
+@keyframes shimmer-sweep {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
 .text-shimmer {
   position: relative;
   display: inline-block;
@@ -287,11 +292,7 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-position: 200% center;
-  transition: background-position 0.6s ease;
-}
-.text-shimmer:hover {
-  background-position: -200% center;
+  animation: shimmer-sweep 3s ease-in-out infinite;
 }
 
 /* Smooth animated underline for links and CTAs */
@@ -621,7 +622,7 @@ ul {
     opacity: 0 !important;
   }
   .animate-foundation-pulse, .animate-foundation-pop-in { animation: none; }
-  .text-shimmer { background: none; -webkit-text-fill-color: currentColor; transition: none; }
+  .text-shimmer { background: none; -webkit-text-fill-color: currentColor; animation: none; }
   .link-underline::after { display: none; }
   .img-reveal { clip-path: none; animation: none; }
   .img-blur-in { filter: none; opacity: 1; transition: none; }

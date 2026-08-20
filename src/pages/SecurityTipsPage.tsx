@@ -7,7 +7,7 @@ import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImageSlot from "../components/common/ImageSlot";
 import ImpactBand from "../components/common/ImpactBand";
 import { colors } from "../lib/theme";
-import securityBg from "../assets/hero-img/BusinessesHero.webp";
+import securityBg from "../../public/images/heroes/security-hero.webp";
 import { siteImages } from "../data/siteImages";
 import type { ImageSlotData } from "../components/common/ImageSlot";
 import {
@@ -166,6 +166,7 @@ const SecurityTipsPage = () => {
           heading={t("securityTipsPage.practicesHeading")}
           subtitle={t("securityTipsPage.practicesSubtitle")}
           tips={practices}
+          image={siteImages.securityPractices}
         />
       </section>
 

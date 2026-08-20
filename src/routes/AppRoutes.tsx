@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 
 const Home = lazy(() => import("../pages/Home"));
+const AboutPage = lazy(() => import("../pages/AboutPage"));
 const Businesses = lazy(() => import("../pages/Businesses"));
 const CompanyPage = lazy(() => import("../pages/CompanyPage"));
 const Contact = lazy(() => import("../pages/Contact"));
@@ -15,6 +16,7 @@ const GlobalResearchPage = lazy(() => import("../pages/GlobalResearchPage"));
 const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
 const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
 const AdvertisingBrochure = lazy(() => import("../pages/AdvertisingBrochure"));
+const AdminDashboard = lazy(() => import("../pages/AdminDashboard"));
 
 import logo from "../assets/logo/IndexiaGroup_Logo.webp";
 
@@ -40,6 +42,7 @@ const AppRoutes = () => (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/businesses" element={<Businesses />} />
         <Route path="/businesses/:slug" element={<CompanyPage />} />
         <Route path="/contact" element={<Contact />} />
@@ -50,6 +53,7 @@ const AppRoutes = () => (
         <Route path="/security-tips" element={<SecurityTipsPage />} />
         <Route path="/warehouse-brochure" element={<WarehouseBrochure />} />
         <Route path="/advertising-brochure" element={<AdvertisingBrochure />} />
+        <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/privacy-policy" element={<LegalDocumentPage docId="privacy" />} />
         <Route path="/terms-of-use" element={<LegalDocumentPage docId="termsOfUse" />} />
         <Route path="/terms" element={<LegalDocumentPage docId="terms" />} />

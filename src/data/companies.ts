@@ -20,20 +20,20 @@ export const companies: Company[] = [
     tag: "Multinational Fintech",
     desc: "Global fintech across investor services, FDI, NBFC, and banking funding.",
     overview:
-      "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. You may apply to our portal for any kind loan at www.indexiafinance.com — we provide our services globally, and in India we are business partners with 43 banks and NBFCs. Built around four core verticals — investor services, FDI advisory, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
+      "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. You may apply to our portal for any kind loan at www.indexiafinance.com — we provide our services globally, and in India we are business partners with 43 banks and NBFCs. Built around four core verticals — investor services, FDI facilitation, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
     tagline: "An Entire Loan Destination",
     highlights: [
       "Global fintech reach with India-first execution",
       "Four integrated verticals under one roof",
-      "End-to-end funding and advisory support",
+      "End-to-end funding and support",
     ],
     services: [
-      "FDI Advisory & Facilitation",
+      "FDI Facilitation",
       "Investor Services",
       "NBFC Operations",
       "Banking & Institutional Funding",
       "Cross-Border Capital Solutions",
-      "Wealth & Asset Advisory",
+      "Wealth & Asset Management",
     ],
     color: colors.teal,
     link: "https://indexiafinance.com/",
@@ -49,7 +49,7 @@ export const companies: Company[] = [
     highlights: [
       "Every loan type under one roof",
       "Streamlined eligibility, documentation and disbursal",
-      "Dedicated advisory at every step",
+      "Dedicated support at every step",
     ],
     services: [
       "Personal Loan",

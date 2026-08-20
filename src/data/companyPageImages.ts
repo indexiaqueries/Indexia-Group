@@ -5,6 +5,8 @@ import securityTeam from "../assets/company-pages-img/page-specific/security-tea
 import shamliLand from "../assets/company-pages-img/page-specific/shamli-land.png";
 import shippingPort from "../assets/company-pages-img/page-specific/shipping-port.png";
 import unipoleHoarding from "../assets/company-pages-img/page-specific/unipole-hoarding.png";
+import financeSpotlight from "../../public/images/companies/finance-spotlight.webp";
+import finserveSpotlight from "../../public/images/companies/finserve-spotlight.webp";
 
 // Common images used across all company pages
 import enquirySupport from "../assets/company-pages-img/common/enquiry-support.webp";
@@ -12,8 +14,8 @@ import impactBanner from "../assets/company-pages-img/common/impact-banner.webp"
 import overviewBanner from "../assets/company-pages-img/common/overview-banner.webp";
 
 export const companyPageImages: Record<string, string> = {
-  finance: overviewBanner,
-  finserve: overviewBanner,
+  finance: financeSpotlight,
+  finserve: finserveSpotlight,
   overseas: shippingPort,
   "agro-bio": organicFertilizer,
   securities: securityTeam,

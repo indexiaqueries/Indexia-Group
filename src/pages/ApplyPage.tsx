@@ -1,4 +1,4 @@
-import { useState, useRef, type FormEvent } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useSearchParams, Link } from "react-router-dom";
 import { ArrowLeft, Upload, Send, CheckCircle, User, Mail, Phone, Briefcase, FileText } from "lucide-react";
@@ -32,6 +32,8 @@ const ApplyPage = () => {
       newErrors.email = "Please enter a valid email address.";
     if (!formData.phone.trim() || !/^\d{10}$/.test(formData.phone.replace(/\D/g, "")))
       newErrors.phone = "Please enter a valid 10-digit phone number.";
+    if (!formData.experience) newErrors.experience = "Please select your experience level.";
+    if (!formData.resumeFileName) newErrors.resume = "Please upload your resume.";
     if (!formData.intro.trim()) newErrors.intro = "Please tell us about yourself.";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -62,25 +64,28 @@ const ApplyPage = () => {
     }
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
 
     try {
+      const body = new FormData();
+      body.append("name", formData.name);
+      body.append("email", formData.email);
+      body.append("phone", formData.phone);
+      body.append("experience", formData.experience);
+      body.append("intro", formData.intro);
+      body.append("roleTitle", roleTitle);
+      body.append("department", department);
+
+      const file = fileInputRef.current?.files?.[0];
+      if (file) body.append("resume", file);
+
       const response = await fetch("/api/apply", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          experience: formData.experience,
-          intro: formData.intro,
-          roleTitle,
-          department,
-        }),
+        body,
       });
       const data = (await response.json().catch(() => ({}))) as { ok?: boolean; error?: string };
       if (!response.ok || !data.ok) {
@@ -185,62 +190,78 @@ const ApplyPage = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
+                <label htmlFor="apply-name" className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
                   <User size={16} className="text-(--color-teal)" />
                   Full Name *
                 </label>
                 <input
+                  id="apply-name"
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
                   placeholder="Your full name"
+                  aria-required="true"
+                  aria-invalid={!!errors.name}
+                  aria-describedby={errors.name ? "apply-name-error" : undefined}
                   className={`w-full rounded-xl border ${errors.name ? "border-red-400" : "border-slate-200"} bg-white px-4 py-3 text-[15px] text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20`}
                 />
-                {errors.name && <p className="mt-1.5 text-xs text-red-500">{errors.name}</p>}
+                {errors.name && <p id="apply-name-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.name}</p>}
               </div>
 
               {/* Email */}
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
+                <label htmlFor="apply-email" className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
                   <Mail size={16} className="text-(--color-teal)" />
                   Email Address *
                 </label>
                 <input
+                  id="apply-email"
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
                   placeholder="you@example.com"
+                  aria-required="true"
+                  aria-invalid={!!errors.email}
+                  aria-describedby={errors.email ? "apply-email-error" : undefined}
                   className={`w-full rounded-xl border ${errors.email ? "border-red-400" : "border-slate-200"} bg-white px-4 py-3 text-[15px] text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20`}
                 />
-                {errors.email && <p className="mt-1.5 text-xs text-red-500">{errors.email}</p>}
+                {errors.email && <p id="apply-email-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.email}</p>}
               </div>
 
               {/* Phone */}
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
+                <label htmlFor="apply-phone" className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
                   <Phone size={16} className="text-(--color-teal)" />
                   Phone Number *
                 </label>
                 <input
+                  id="apply-phone"
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
                   placeholder="10-digit number"
+                  aria-required="true"
+                  aria-invalid={!!errors.phone}
+                  aria-describedby={errors.phone ? "apply-phone-error" : undefined}
                   className={`w-full rounded-xl border ${errors.phone ? "border-red-400" : "border-slate-200"} bg-white px-4 py-3 text-[15px] text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20`}
                 />
-                {errors.phone && <p className="mt-1.5 text-xs text-red-500">{errors.phone}</p>}
+                {errors.phone && <p id="apply-phone-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.phone}</p>}
               </div>
 
               {/* Experience */}
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
+                <label htmlFor="apply-experience" className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
                   <Briefcase size={16} className="text-(--color-teal)" />
-                  Total Experience
+                  Total Experience *
                 </label>
                 <select
+                  id="apply-experience"
                   value={formData.experience}
                   onChange={(e) => setFormData((prev) => ({ ...prev, experience: e.target.value }))}
-                  className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-[15px] text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20"
+                  aria-required="true"
+                  aria-invalid={!!errors.experience}
+                  aria-describedby={errors.experience ? "apply-experience-error" : undefined}
+                  className={`w-full rounded-xl border ${errors.experience ? "border-red-400" : "border-slate-200"} bg-white px-4 py-3 text-[15px] text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20`}
                 >
                   <option value="">Select experience</option>
                   <option value="Fresher">Fresher</option>
@@ -249,19 +270,24 @@ const ApplyPage = () => {
                   <option value="2-5 years">2-5 years</option>
                   <option value="5+ years">5+ years</option>
                 </select>
+                {errors.experience && <p id="apply-experience-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.experience}</p>}
               </div>
 
               {/* Resume */}
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
+                <label htmlFor="apply-resume" className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
                   <FileText size={16} className="text-(--color-teal)" />
-                  Resume
+                  Resume *
                 </label>
                 <div
+                  role="button"
+                  tabIndex={0}
                   onClick={() => fileInputRef.current?.click()}
-                  className={`flex cursor-pointer items-center gap-3 rounded-xl border-2 border-dashed ${errors.resume ? "border-red-400" : "border-slate-200"} bg-(--color-soft) px-4 py-5 transition-colors hover:border-(--color-teal)/50 hover:bg-white`}
+                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fileInputRef.current?.click(); } }}
+                  aria-describedby={errors.resume ? "apply-resume-error" : undefined}
+                  className={`flex cursor-pointer items-center gap-3 rounded-xl border-2 border-dashed ${errors.resume ? "border-red-400" : "border-slate-200"} bg-(--color-soft) px-4 py-5 transition-colors hover:border-(--color-teal)/50 hover:bg-white focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20 focus:outline-none`}
                 >
-                  <Upload size={20} className="text-(--color-teal)" />
+                  <Upload size={20} className="text-(--color-teal)" aria-hidden="true" />
                   <div className="min-w-0 flex-1">
                     {formData.resumeFileName ? (
                       <p className="truncate text-sm font-semibold text-(--color-ink)">{formData.resumeFileName}</p>
@@ -275,28 +301,34 @@ const ApplyPage = () => {
                 </div>
                 <input
                   ref={fileInputRef}
+                  id="apply-resume"
                   type="file"
                   accept=".pdf,.doc,.docx"
                   onChange={handleFileChange}
-                  className="hidden"
+                  className="sr-only"
+                  aria-required="true"
                 />
-                {errors.resume && <p className="mt-1.5 text-xs text-red-500">{errors.resume}</p>}
+                {errors.resume && <p id="apply-resume-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.resume}</p>}
               </div>
 
               {/* Intro */}
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
+                <label htmlFor="apply-intro" className="mb-2 flex items-center gap-2 text-sm font-bold text-(--color-ink)">
                   <FileText size={16} className="text-(--color-teal)" />
                   Tell us about yourself *
                 </label>
                 <textarea
+                  id="apply-intro"
                   value={formData.intro}
                   onChange={(e) => setFormData((prev) => ({ ...prev, intro: e.target.value }))}
                   placeholder="Share your background, skills, and why you're interested in this role..."
                   rows={5}
+                  aria-required="true"
+                  aria-invalid={!!errors.intro}
+                  aria-describedby={errors.intro ? "apply-intro-error" : undefined}
                   className={`w-full rounded-xl border ${errors.intro ? "border-red-400" : "border-slate-200"} bg-white px-4 py-3 text-[15px] leading-6 text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20 resize-none`}
                 />
-                {errors.intro && <p className="mt-1.5 text-xs text-red-500">{errors.intro}</p>}
+                {errors.intro && <p id="apply-intro-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.intro}</p>}
               </div>
 
               {/* Submit */}

@@ -23,7 +23,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
       { value: "∞", label: "Global Reach" },
     ],
     bullets: [
-      "FDI advisory across emerging and developed markets",
+      "FDI facilitation across emerging and developed markets",
       "NBFC operations with regulated lending frameworks",
       "Banking & institutional funding for large-scale projects",
       "Cross-border capital solutions for multinational clients",
@@ -43,7 +43,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
       "Personal, home, and business loans with competitive rates",
       "MSME and project funding with flexible terms",
       "Balance transfer and loan against property options",
-      "Dedicated advisor assigned from enquiry to disbursal",
+      "Dedicated relationship manager assigned from enquiry to disbursal",
     ],
   },
   overseas: {

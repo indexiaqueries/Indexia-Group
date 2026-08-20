@@ -7,7 +7,7 @@ import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImageSlot from "../components/common/ImageSlot";
 import ImpactBand from "../components/common/ImpactBand";
 import { colors } from "../lib/theme";
-import researchBg from "../assets/footer-img/footer-img.webp";
+import researchBg from "../../public/images/heroes/research-hero.webp";
 import { siteImages } from "../data/siteImages";
 import { researchAreas, researchReports } from "../data/globalResearch";
 import type { ImageSlotData } from "../components/common/ImageSlot";

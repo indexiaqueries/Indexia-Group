@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
 import HeroBackdrop from "../../components/banners/HeroBackdrop";
-import newsBg from "../../assets/footer-img/footer-img.webp";
+import newsBg from "../../../public/images/heroes/news-hero.webp";
 
 const NewsHero = () => {
   const { t } = useTranslation();

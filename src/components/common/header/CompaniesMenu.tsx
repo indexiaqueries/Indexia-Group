@@ -30,6 +30,7 @@ const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenu
         type="button"
         onClick={() => onToggle(!open)}
         aria-expanded={open}
+        aria-haspopup="true"
         className={`flex items-center gap-1.5 ${navPillClass(onBusinesses)}`}
       >
         {t("header.menu.groupCompanies")}

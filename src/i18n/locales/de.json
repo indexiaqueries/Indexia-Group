@@ -1,7 +1,8 @@
 {
   "header": {
     "nav": {
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "about": "Über Uns"
     },
     "menu": {
       "home": "Startseite",
@@ -84,7 +85,8 @@
       "securityTips": "Sicherheitstipps",
       "termsOfUse": "Nutzungsbedingungen",
       "termsConditions": "Allgemeine Geschäftsbedingungen",
-      "privacyPolicy": "Datenschutzrichtlinie"
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "aboutUs": "Über Uns"
     },
     "cta": "Haben Sie eine Anfrage zu einem unserer Gruppenunternehmen?",
     "enquiry": "Senden Sie uns Ihre Anfrage.",
@@ -108,12 +110,12 @@
     "eyebrow": "Der Indexia-Unterschied",
     "titleStart": "Eine Gruppe. Acht Unternehmen. ",
     "titleAccent": "Ein gemeinsames Versprechen.",
-    "paragraph": "Von Finanzen und Beratung bis zu Export, Landwirtschaft, Logistik, Sicherheit, Sport und Medien — jedes Indexia-Unternehmen steht auf demselben Fundament: Integrität, Fachwissen und ein menschenzentrierter Ansatz. Was auch immer Sie brauchen, das richtige Team gehört bereits zur Familie.",
+    "paragraph": "Von Finanzen und Geschäft bis zu Export, Landwirtschaft, Logistik, Sicherheit, Sport und Medien — jedes Indexia-Unternehmen steht auf demselben Fundament: Integrität, Fachwissen und ein menschenzentrierter Ansatz. Was auch immer Sie brauchen, das richtige Team gehört bereits zur Familie.",
     "counterClients": "Betreute Kunden",
     "counterBusinesses": "Unternehmen",
     "counterLocations": "Standorte",
     "counterYears": "Jahre im Geschäft",
-    "cta": "Kostenlose Beratung buchen →"
+    "cta": "Kontaktieren Sie uns →"
   },
   "contactHero": {
     "eyebrow": "Sprechen Sie mit Indexia",
@@ -129,7 +131,7 @@
     "eyebrow": "Anfrage senden",
     "headlineStart": "Anfrage zu ",
     "headlineAccent": "Indexia Company",
-    "paragraph": "Ob Sie eine Frage zu unseren Dienstleistungen haben, eine Geschäftsberatung benötigen oder eine Partnerschaft erkunden möchten — unser Team ist bereit, Ihnen zu helfen: Wir antworten innerhalb von 24 Stunden.",
+    "paragraph": "Ob Sie eine Frage zu unseren Dienstleistungen haben, Geschäftsunterstützung benötigen oder eine Partnerschaft erkunden möchten — unser Team ist bereit, Ihnen zu helfen: Wir antworten innerhalb von 24 Stunden.",
     "enquiries": "Anfragen",
     "location": "Standort",
     "workingHours": "Öffnungszeiten",
@@ -214,7 +216,7 @@
     "knowledgeHeading": "Praktische Leitfäden aus unseren Unternehmen",
     "knowledgeSubtitle": "Verständliche Erklärungen von den Teams, die diese Arbeit täglich leben.",
     "ctaTitle": "Fragen zu unseren Unternehmen?",
-    "ctaBody": "Von FDI-Beratung über Bio-Landwirtschaft bis zu bewaffneter Sicherheit — das richtige Indexia-Unternehmen hilft Ihnen gern. Senden Sie uns Ihre Anfrage und wir verbinden Sie.",
+    "ctaBody": "Von FDI-Facilitation über Bio-Landwirtschaft bis zu bewaffneter Sicherheit — das richtige Indexia-Unternehmen hilft Ihnen gern. Senden Sie uns Ihre Anfrage und wir verbinden Sie.",
     "ctaButton": "Anfrage senden",
     "metaDescription": "News & Knowledge Centre — aktuelle Bankennachrichten zu Finanzierung, digitalen Zahlungen und Politik sowie praktische Wissensratgeber von Indexia Group.",
     "tvEyebrow": "Sehen Sie Uns Im Fernsehen",
@@ -522,20 +524,20 @@
       "finance": {
         "tag": "Multinationales Fintech-Unternehmen",
         "desc": "Globales Fintech für Anlegerservices, FDI, NBFC und Bankfinanzierung.",
-        "overview": "Indexia Finance ist eine multinationale Fintech-Plattform, die Kunden auf der ganzen Welt Finanzdienstleistungen bietet. Sie können über unser Portal unter www.indexiafinance.com jede Art von Kredit beantragen — wir bieten unsere Dienstleistungen weltweit an und sind in Indien Geschäftspartner von 43 Banken und NBFCs. Aufgebaut um vier Kernbereiche — Anlegerservices, FDI-Beratung, NBFC-Geschäft und Bankfinanzierung — verbindet das Unternehmen Kapital mit Chancen und hilft Anlegern, Unternehmen und Institutionen, über Grenzen hinweg souveräne Finanzentscheidungen zu treffen.",
+        "overview": "Indexia Finance ist eine multinationale Fintech-Plattform, die Kunden auf der ganzen Welt Finanzdienstleistungen bietet. Sie können über unser Portal unter www.indexiafinance.com jede Art von Kredit beantragen — wir bieten unsere Dienstleistungen weltweit an und sind in Indien Geschäftspartner von 43 Banken und NBFCs. Aufgebaut um vier Kernbereiche — Anlegerservices, FDI-Facilitation, NBFC-Geschäft und Bankfinanzierung — verbindet das Unternehmen Kapital mit Chancen und hilft Anlegern, Unternehmen und Institutionen, über Grenzen hinweg souveräne Finanzentscheidungen zu treffen.",
         "tagline": "Ein komplettes Kreditziel",
         "highlights": [
           "Globale Fintech-Reichweite mit Indien-zentrierter Umsetzung",
           "Vier integrierte Bereiche unter einem Dach",
-          "Durchgängige Finanzierungs- und Beratungsunterstützung"
+          "Durchgängige Finanzierungsunterstützung"
         ],
         "services": [
-          "FDI-Beratung und -Unterstützung",
+          "FDI-Facilitation",
           "Anlegerservices",
           "NBFC-Geschäft",
           "Bank- und institutionelle Finanzierung",
           "Grenzüberschreitende Kapitalösungen",
-          "Vermögens- und Anlageberatung"
+          "Vermögens- und Anlageverwaltung"
         ],
         "name": "Indexia Finanz"
       },
@@ -547,7 +549,7 @@
         "highlights": [
           "Alle Kreditarten unter einem Dach",
           "Schlanke Eignungsprüfung, Dokumentation und Auszahlung",
-          "Dedizierte Beratung bei jedem Schritt"
+          "Dedizierte Unterstützung bei jedem Schritt"
         ],
         "services": [
           "Privatkredit",
@@ -720,7 +722,7 @@
       "insights": {
         "understanding-fdi": {
           "title": "FDI in Indien verstehen",
-          "body": "Ein praxisnaher Leitfaden zu Eintrittswegen, Branchenobergrenzen und den Einreichungen, die für ausländisches Kapital in einem indischen Unternehmen nötig sind — und wo Beratung am wichtigsten ist."
+          "body": "Ein praxisnaher Leitfaden zu Eintrittswegen, Branchenobergrenzen und den Einreichungen, die für ausländisches Kapital in einem indischen Unternehmen nötig sind — und wo ein Fachexperte am wichtigsten ist."
         },
         "choosing-loan": {
           "title": "Den richtigen Kredit wählen",
@@ -971,5 +973,93 @@
     "emails": "E-Mail",
     "address": "Büroanschrift",
     "brochure": "Broschüre herunterladen"
+  },
+  "aboutPage": {
+    "eyebrow": "Über Uns",
+    "title": "Über Indexia Group",
+    "titleStart": "Vertrauen Aufbauen ",
+    "titleAccent": "Über Branchen Hinweg.",
+    "subtitle": "Eine diversifizierte indische Unternehmensgruppe.",
+    "storyEyebrow": "Unsere Geschichte",
+    "storyTitle": "Von Einer Gemeinsamen Vision Zu Einer Nationalen Gruppe",
+    "storyBody1": "Indexia Group wurde mit einem einfachen Glauben gegründet.",
+    "storyBody2": "Heute betreibt Indexia Group Standorte in Mumbai, Delhi und Ecuador.",
+    "valuesEyebrow": "Unsere Werte",
+    "valuesTitle": "Wofür Wir Stehen",
+    "value1Title": "Integrität",
+    "value1Body": "Wir halten, was wir sagen.",
+    "value2Title": "Expertise",
+    "value2Body": "Wir investieren in tiefes Fachwissen.",
+    "value3Title": "Menschen Zuerst",
+    "value3Body": "Geschäft handelt von Menschen.",
+    "value4Title": "Innovation",
+    "value4Body": "Wir umarmen Veränderung.",
+    "statsEyebrow": "Indexia Group Auf Einen Blick",
+    "statsTitle": "Die Zahlen Hinter Unserem Wachstum",
+    "stat1Label": "Unternehmen",
+    "stat2Label": "Standorte",
+    "stat3Label": "Jahre Erfahrung",
+    "stat4Label": "Länder Bedient",
+    "timelineEyebrow": "Unser Weg",
+    "timelineTitle": "Wichtige Meilensteine",
+    "milestone1Title": "Gegründet in Mumbai",
+    "milestone1Body": "Indexia Group gründete ihr erstes Unternehmen in Mumbai.",
+    "milestone2Title": "Nationale Expansion",
+    "milestone2Body": "Erweiterte den Betrieb nach Delhi NCR.",
+    "milestone3Title": "Globaler Reach",
+    "milestone3Body": "Betritt internationale Märkte.",
+    "milestone4Title": "Diversifikation",
+    "milestone4Body": "Startete Agro Bio, Sicherung, Lagerhaltung und Werbung.",
+    "milestone5Title": "Soziale Wirkung",
+    "milestone5Body": "Gründete Indexia Foundation.",
+    "ctaTitle": "Lassen Sie Uns Etwas Gemeinsam Aufbauen",
+    "ctaBody": "Wir sind für Sie da.",
+    "ctaButton": "Kontaktieren Sie Uns",
+    "metaDescription": "Über Indexia Group.",
+    "aboutUs": "Über Uns",
+    "leaderEyebrow": "Führung",
+    "leaderTitle": "Die Menschen Hinter Indexia Group",
+    "founderName": "Founder & Managing Director",
+    "founderRole": "Gründer und Geschäftsführer",
+    "founderBio1": "Der Gründer von Indexia Group baute das Unternehmen auf einer einfachen aber kraftvollen Idee auf. Ausgehend von einem einzigen Finanzdienstleistungsunternehmen in Mumbai.",
+    "founderBio2": "Der Geschäftsführer leitet die operative Exzellenz und das strategische Wachstum. Unter dieser Führung hat sich Indexia Group auf drei Standorte erweitert.",
+    "founderQuote": "Geschäft basiert auf Vertrauen.",
+    "companiesEyebrow": "Unsere Unternehmen",
+    "companiesTitle": "Acht Unternehmen, Eine Vision",
+    "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
+    "c1Tag": "Multinational Fintech",
+    "c1Name": "Indexia Finance",
+    "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
+    "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
+    "c2Tag": "Lending Arm",
+    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
+    "c2Highlights": "12 Loan Products,Personal & Business Loans,Home Loan & LAP,Balance Transfer & Working Capital",
+    "c3Tag": "Global Export",
+    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
+    "c3Highlights": "14 South American Countries,Premium Refined Sugar Export,Food-Grade Quality Certified,Full-Cycle Export Management",
+    "c4Tag": "Organic Agriculture",
+    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
+    "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
+    "c5Tag": "Armed Protection",
+    "c5Name": "Indexia Securities",
+    "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
+    "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
+    "c6Tag": "Strategic Land",
+    "c6Name": "Indexia Warehouse",
+    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
+    "c7Tag": "Highway Advertising",
+    "c7Name": "Indexia Advertising",
+    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
+    "c7Highlights": "NH-709B Delhi-Dehradun Highway,10 States Connected,360° Visibility Unipoles,1+ Crore Daily Exposure",
+    "c8Tag": "Social Impact",
+    "c8Name": "Indexia Foundation",
+    "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
+    "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
+    "visitWebsite": "Webseite Besuchen",
+    "learnMore": "Mehr Erfahren"
   }
 }

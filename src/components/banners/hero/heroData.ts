@@ -16,6 +16,7 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     mobileImage: getCompanyMobileImage(company.slug),
     thumbImage: getCompanyThumbImage(company.slug),
     color: company.color,
+    slug: company.slug,
   }));
 
   const groupPanel: HeroPanel = {
@@ -27,6 +28,7 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     mobileImage: getCompanyMobileImage("group"),
     thumbImage: getCompanyThumbImage("group"),
     color: colors.teal,
+    slug: "",
   };
 
   return [groupPanel, ...companyPanels];

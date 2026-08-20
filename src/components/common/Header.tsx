@@ -11,10 +11,6 @@ import MobileMenu from "./header/MobileMenu";
 import { navPillClass } from "./header/navPill";
 import { useHeaderScroll } from "./header/useHeaderScroll";
 
-const navItems = [
-  { key: "header.nav.contact", path: "/contact" },
-];
-
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [companiesOpen, setCompaniesOpen] = useState(false);
@@ -88,6 +84,13 @@ const Header = () => {
           {t("header.menu.home")}
         </NavLink>
 
+        <NavLink
+          to="/about"
+          className={({ isActive }) => navPillClass(isActive)}
+        >
+          {t("header.nav.about")}
+        </NavLink>
+
         <CompaniesMenu
           open={companiesOpen}
           reducedMotion={!!prefersReducedMotion}
@@ -95,16 +98,12 @@ const Header = () => {
           onClose={closeAll}
         />
 
-        {navItems.map((item) => (
-          <NavLink
-            key={item.key}
-            to={item.path}
-            end={item.path === "/"}
-            className={({ isActive }) => navPillClass(isActive)}
-          >
-            {t(item.key)}
-          </NavLink>
-        ))}
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => navPillClass(isActive)}
+        >
+          {t("header.menu.contact")}
+        </NavLink>
       </nav>
 
       <div className="pointer-events-auto absolute inset-e-3 top-1/2 z-30 flex -translate-y-1/2 items-center gap-2 sm:inset-e-5">

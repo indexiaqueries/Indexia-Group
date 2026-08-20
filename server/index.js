@@ -1,14 +1,20 @@
 import cors from "cors";
 import express from "express";
-import { existsSync, statSync } from "node:fs";
+import multer from "multer";
+import { existsSync, mkdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import nodemailer from "nodemailer";
+import { connectDB } from "./db.js";
+import Application from "./models/Application.js";
+import adminRoutes from "./routes/admin.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const PORT = Number(process.env.PORT);
 const DIST_DIR = path.resolve(__dirname, "../dist");
+const RESUME_DIR = path.resolve(__dirname, "uploads/resumes");
+mkdirSync(RESUME_DIR, { recursive: true });
 
 const mailTo = process.env.MAIL_TO;
 const mailFrom = process.env.MAIL_FROM;
@@ -137,9 +143,33 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: "100kb" }));
 
+// File upload config
+const storage = multer.diskStorage({
+  destination: (_req, _file, cb) => cb(null, RESUME_DIR),
+  filename: (_req, file, cb) => {
+    const unique = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+    const ext = path.extname(file.originalname);
+    cb(null, `${unique}${ext}`);
+  },
+});
+const upload = multer({
+  storage,
+  limits: { fileSize: 5 * 1024 * 1024 },
+  fileFilter: (_req, file, cb) => {
+    const allowed = ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
+    cb(null, allowed.includes(file.mimetype));
+  },
+});
+
+// Connect to MongoDB (non-blocking)
+connectDB();
+
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, smtpConfigured, mailTo });
 });
+
+// Mount admin routes
+app.use("/api/admin", adminRoutes);
 
 app.post("/api/contact", async (req, res) => {
   const { name, phone, email, subject, message } = req.body ?? {};
@@ -168,7 +198,7 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, department }) {
+function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, department, resumeUrl }) {
   const cleanRole = (roleTitle || "Open Position").trim();
   const cleanDept = (department || "General").trim();
 
@@ -184,6 +214,8 @@ function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, dep
     "",
     "About the applicant:",
     intro,
+    "",
+    resumeUrl ? `Resume: ${resumeUrl}` : "",
     "",
   ].join("\n");
 
@@ -207,6 +239,7 @@ function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, dep
               ${row("Phone", phone)}
               ${row("Experience", experience || "Not specified")}
               ${row("About the applicant", intro)}
+              ${resumeUrl ? `<tr><td style="padding:6px 0;color:#6b7280;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em">Resume</td></tr><tr><td style="padding:0 0 14px"><a href="${escapeHtml(resumeUrl)}" style="color:#26ae90;font-size:15px;font-weight:600;text-decoration:underline">View Resume</a></td></tr>` : ""}
             </table>
           </td></tr>
         </table>
@@ -254,9 +287,10 @@ function buildApplyAutoReply({ name, roleTitle }) {
   };
 }
 
-app.post("/api/apply", async (req, res) => {
+app.post("/api/apply", upload.single("resume"), async (req, res) => {
   const { name, email, phone, experience, intro, roleTitle, department } = req.body ?? {};
   const introText = String(intro ?? "").trim();
+  const resumeFile = req.file;
 
   if (!name || !email || !phone || !introText) {
     return res.status(400).json({ ok: false, error: "Name, email, phone and intro are required." });
@@ -264,22 +298,45 @@ app.post("/api/apply", async (req, res) => {
   if (!EMAIL_RE.test(email)) {
     return res.status(400).json({ ok: false, error: "Please enter a valid email address." });
   }
+  if (!resumeFile) {
+    return res.status(400).json({ ok: false, error: "Please upload your resume (PDF, DOC, or DOCX)." });
+  }
 
   try {
-    const result = await sendMail({
-      to: HR_EMAILS,
-      ...buildApplyEmail({ name, email, phone, experience, intro: introText, roleTitle, department }),
+    // Save to MongoDB
+    const application = await Application.create({
+      name,
+      email,
+      phone,
+      experience: experience || "",
+      intro: introText,
+      roleTitle: roleTitle || "Open Position",
+      department: department || "",
+      resumeFileName: resumeFile.originalname,
+      resumePath: resumeFile.filename,
     });
 
+    // Send email notification to HR (with resume URL)
+    const resumeUrl = `${req.protocol}://${req.get("host")}/api/admin/applications/${application._id}/resume?token=${process.env.ADMIN_TOKEN || ""}`;
+    try {
+      await sendMail({
+        to: HR_EMAILS,
+        ...buildApplyEmail({ name, email, phone, experience, intro: introText, roleTitle, department, resumeUrl }),
+      });
+    } catch (mailErr) {
+      console.error("Failed to send application email:", mailErr);
+    }
+
+    // Send auto-reply
     try {
       await sendMail({ ...buildApplyAutoReply({ name, roleTitle }), to: email });
     } catch (replyErr) {
       console.error("Failed to send application auto-reply:", replyErr);
     }
 
-    res.json({ ok: true, dev: result.dev });
+    res.json({ ok: true, applicationId: application._id });
   } catch (err) {
-    console.error("Failed to send application email:", err);
+    console.error("Failed to submit application:", err);
     res.status(500).json({ ok: false, error: "Could not submit your application. Please try again later." });
   }
 });

@@ -7,6 +7,7 @@ export type HeroPanel = {
   mobileImage: string;
   thumbImage: string;
   color: string;
+  slug?: string;
 };
 
 type HeroGalleryThumbProps = {

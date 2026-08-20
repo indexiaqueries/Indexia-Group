@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { CSSProperties, FormEvent } from "react";
+import type { CSSProperties } from "react";
 import { Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -90,7 +90,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     return next;
   };
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitError("");
 

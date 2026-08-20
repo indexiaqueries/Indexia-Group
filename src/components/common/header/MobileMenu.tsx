@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { companies } from "../../../data/companies";
@@ -22,6 +23,39 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
   const currentSlug = location.pathname.replace("/businesses/", "");
   const isCompanyPage = onBusinesses && currentSlug && currentSlug !== "/businesses";
 
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Focus trap: keep focus inside mobile menu when open
+  useEffect(() => {
+    if (!open) return;
+    const menu = menuRef.current;
+    if (!menu) return;
+
+    const focusable = menu.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    if (focusable.length === 0) return;
+
+    // Focus first item
+    focusable[0].focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    menu.addEventListener("keydown", onKeyDown);
+    return () => menu.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
   return (
     <DropdownPanel
       open={open}
@@ -30,8 +64,13 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
       scale={0.92}
       duration={0.18}
     >
+      <div ref={menuRef} role="menu">
       <NavLink to="/" end onClick={onClose} className={menuLinkClass}>
         {t("header.menu.home")}
+      </NavLink>
+
+      <NavLink to="/about" onClick={onClose} className={menuLinkClass}>
+        {t("header.nav.about")}
       </NavLink>
 
       <NavLink
@@ -63,6 +102,7 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
       <NavLink to="/contact" onClick={onClose} className={menuLinkClass}>
         {t("header.menu.contact")}
       </NavLink>
+      </div>
     </DropdownPanel>
   );
 };

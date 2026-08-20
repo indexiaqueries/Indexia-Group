@@ -65,7 +65,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
-          background: `radial-gradient(ellipse 60% 52% at 50% 34%, rgba(2,16,26,0.42), transparent 72%), radial-gradient(ellipse 60% 55% at 50% 30%, ${current.color}59, ${current.color}1a 55%, transparent 72%), radial-gradient(ellipse 45% 30% at 50% 92%, rgba(242,242,49,0.22), transparent 65%), radial-gradient(ellipse 50% 40% at 85% 15%, rgba(6,106,156,0.22), transparent 60%)`,
+          background: `radial-gradient(ellipse 80% 70% at 50% 34%, rgba(2,16,26,0.42) 0%, rgba(2,16,26,0.2) 50%, transparent 100%), radial-gradient(ellipse 80% 75% at 50% 30%, ${current.color}40 0%, ${current.color}15 45%, transparent 100%), radial-gradient(ellipse 65% 45% at 50% 92%, rgba(242,242,49,0.18) 0%, rgba(242,242,49,0.05) 50%, transparent 100%), radial-gradient(ellipse 70% 55% at 85% 15%, rgba(6,106,156,0.18) 0%, rgba(6,106,156,0.05) 50%, transparent 100%)`,
         }}
       />
       <div className={`flex flex-col items-center ${isHome ? "bnr-text-zoom" : ""}`}>
@@ -92,12 +92,16 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
         )}
 
         <h1
-          className={`hero-slide-child w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line text-shimmer ${
+          className={`hero-slide-child w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line rounded-2xl px-8 py-4 ${
             isHome
               ? "text-[clamp(26px,4vw,44px)]"
               : "text-[clamp(24px,3.8vw,40px)]"
           }`}
-          style={{ textShadow: textShadow(shadowLevel, 36, 0.95), animationDelay: CHILD_DELAYS[1] }}
+          style={{
+            textShadow: textShadow(shadowLevel, 36, 0.95),
+            animationDelay: CHILD_DELAYS[1],
+            background: `radial-gradient(ellipse 100% 100% at 50% 50%, rgba(2,16,26,0.55) 0%, rgba(2,16,26,0.35) 40%, rgba(2,16,26,0.12) 70%, transparent 100%)`,
+          }}
         >
           {current.heading}
         </h1>
@@ -116,7 +120,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
 
       <div className="hero-slide-child flex flex-wrap gap-3 justify-center mt-9" style={{ animationDelay: CHILD_DELAYS[3] }}>
         <Link
-          to="/businesses"
+          to={isHome || !current.slug ? "/businesses" : `/businesses/${current.slug}`}
           className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(38,174,144,0.5)]"
         >
           {isHome ? t("hero.ctaExploreGroup") : t("hero.ctaExploreMore")}

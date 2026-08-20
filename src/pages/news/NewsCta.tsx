@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ImpactBand from "../../components/common/ImpactBand";
-import newsBg from "../../assets/footer-img/footer-img.webp";
+import newsBg from "../../../public/images/heroes/news-hero.webp";
 
 const NewsCta = () => {
   const { t } = useTranslation();
