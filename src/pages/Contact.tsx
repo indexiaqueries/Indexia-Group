@@ -10,58 +10,53 @@ import { branches } from "../data/contact";
 import { siteImages } from "../data/siteImages";
 import { accent } from "../lib/theme";
 
-const contactJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ContactPage",
-      name: "Contact Indexia Group",
-      url: "https://www.indexiagroup.com/contact",
-      isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Contact Us",
-          item: "https://www.indexiagroup.com/contact",
-        },
-      ],
-    },
-    {
-      "@type": "Organization",
-      name: "Indexia Group",
-      url: "https://www.indexiagroup.com/",
-      telephone: "+91-11-4629-1155",
-      email: "contactus@indexiagroup.com",
-      address: [
-        {
-          "@type": "PostalAddress",
-          name: "Corporate Office",
-          streetAddress: "Office No. 3, 1st Floor, Rahimtoola House, Homji Street, Fort",
-          addressLocality: "Mumbai",
-          addressRegion: "Maharashtra",
-          postalCode: "400001",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          name: "Delhi Office",
-          streetAddress: "213, Second Floor, Imperial Tower, C Block Commercial Complex, Naraina Vihar",
-          addressLocality: "New Delhi",
-          postalCode: "110028",
-          addressCountry: "IN",
-        },
-      ],
-    },
-  ],
-};
-
 const Contact = () => {
   const { t } = useTranslation();
+
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        name: t("jsonLd.contactName", "Contact Indexia Group"),
+        url: "https://www.indexiagroup.com/contact",
+        isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbContact", "Contact Us"), item: "https://www.indexiagroup.com/contact" },
+        ],
+      },
+      {
+        "@type": "Organization",
+        name: t("jsonLd.orgName", "Indexia Group"),
+        url: "https://www.indexiagroup.com/",
+        telephone: "+91-11-4629-1155",
+        email: "contactus@indexiagroup.com",
+        address: [
+          {
+            "@type": "PostalAddress",
+            name: t("jsonLd.corporateOffice", "Corporate Office"),
+            streetAddress: "Office No. 3, 1st Floor, Rahimtoola House, Homji Street, Fort",
+            addressLocality: "Mumbai",
+            addressRegion: "Maharashtra",
+            postalCode: "400001",
+            addressCountry: "IN",
+          },
+          {
+            "@type": "PostalAddress",
+            name: t("jsonLd.delhiOffice", "Delhi Office"),
+            streetAddress: "213, Second Floor, Imperial Tower, C Block Commercial Complex, Naraina Vihar",
+            addressLocality: "New Delhi",
+            postalCode: "110028",
+            addressCountry: "IN",
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="bg-white">

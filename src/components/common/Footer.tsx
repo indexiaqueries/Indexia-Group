@@ -104,6 +104,9 @@ const Footer = () => {
             <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.22em] text-white/75">
               {t("footer.tagline")}
             </p>
+            <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.22em] text-(--color-yellow)">
+              {t("footer.taglineSecondary")}
+            </p>
           </div>
           <p className="w-full max-w-3xl text-sm leading-7 text-white/90">
             {t("footer.blurb")}

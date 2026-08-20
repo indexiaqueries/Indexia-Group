@@ -2,7 +2,7 @@
   "header": {
     "nav": {
       "contact": "Hubungi Kami",
-      "about": "About"
+      "about": "About Us"
     },
     "menu": {
       "home": "Beranda",
@@ -634,7 +634,7 @@
     "leaderTitle": "The Visionary Behind Indexia Group",
     "founderName": "Founder & Managing Director",
     "founderRole": "Founder & Managing Director",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
     "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
     "founderQuote": "Business is about trust. When you build on integrity, everything else follows.",
     "companiesEyebrow": "Our Companies",
@@ -662,7 +662,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -673,6 +673,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "Visit Website",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "registrationEyebrow": "Registration & Compliance",
+    "registrationTitle": "Registered Entities",
+    "registrationSubtitle": "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.",
+    "viewOnMCA": "View on MCA",
+    "registrationNote": "All company registrations are verifiable on the",
+    "mcaPortal": "MCA Portal",
+    "taglineSecondary": "Diverse Ventures. Unified Vision."
+  },
+  "homeReach": {
+    "eyebrow": "Our Reach",
+    "title": "Trusted Across Borders",
+    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
+    "stat1Label": "Businesses",
+    "stat2Label": "Countries",
+    "stat3Label": "Years Strong",
+    "stat4Label": "Clients Served",
+    "cta": "Learn More About Us"
   }
 }

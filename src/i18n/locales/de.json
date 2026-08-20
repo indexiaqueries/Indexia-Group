@@ -1049,7 +1049,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -1060,6 +1060,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "Webseite Besuchen",
-    "learnMore": "Mehr Erfahren"
+    "learnMore": "Mehr Erfahren",
+    "registrationEyebrow": "Registrierung & Compliance",
+    "registrationTitle": "Eingetragene Unternehmen",
+    "registrationSubtitle": "Alle Unternehmen der Indexia Group sind gemäß dem Companies Act 2013 beim Ministerium für Corporate Affairs der Regierung Indiens eingetragen.",
+    "viewOnMCA": "Auf MCA ansehen",
+    "registrationNote": "Alle Unternehmensregistrierungen sind auf dem verifizierbar:",
+    "mcaPortal": "MCA-Portal",
+    "taglineSecondary": "Vielfältige Ventures. Einheitliche Vision."
+  },
+  "homeReach": {
+    "eyebrow": "Unsere Reichweite",
+    "title": "Verlässlich über Grenzen hinweg",
+    "subtitle": "Von Mumbai bis Ecuador betreuen unsere Unternehmen Kunden auf drei Kontinenten mit dem gleichen Engagement für Integrität und Ergebnisse.",
+    "stat1Label": "Unternehmen",
+    "stat2Label": "Länder",
+    "stat3Label": "Jahre Stark",
+    "stat4Label": "Kunden Bedient",
+    "cta": "Mehr Erfahren"
   }
 }

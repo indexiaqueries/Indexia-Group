@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../common/Eyebrow";
+import AnimatedCounter from "../common/AnimatedCounter";
 import Reveal from "../common/Reveal";
 import { accentInk } from "../../lib/color";
 import { getCompanyPageImage } from "../../data/companyPageImages";
@@ -59,12 +60,13 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                 key={stat.label}
                 className="rounded-2xl border border-slate-100 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
               >
-                <p className="font-display text-2xl font-bold" style={{ color: accentInk(company.color) }}>
-                  {stat.value}
-                </p>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)">
-                  {stat.label}
-                </p>
+                <AnimatedCounter
+                  value={stat.value}
+                  label={stat.label}
+                  color={accentInk(company.color)}
+                  numberClassName="font-display text-2xl font-bold"
+                  labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
+                />
               </div>
             ))}
           </div>

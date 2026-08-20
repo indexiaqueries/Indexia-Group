@@ -9,34 +9,32 @@ export type InsightItem = (typeof knowledgeInsights)[number];
 export const companyColor = (name: string) =>
   companies.find((c) => c.name === name)?.color ?? colors.blue;
 
-export const newsJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Blog",
-      name: "Indexia Group — News & Knowledge Centre",
-      url: "https://www.indexiagroup.com/news",
-      blogPost: newsArticles.map((article) => ({
-        "@type": "BlogPosting",
-        headline: article.title,
-        datePublished: article.date,
-        description: article.excerpt,
-        url: `https://www.indexiagroup.com/news#${article.slug}`,
-      })),
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "News & Knowledge Centre",
-          item: "https://www.indexiagroup.com/news",
-        },
-      ],
-    },
-  ],
+export const useNewsJsonLd = () => {
+  const { t } = useTranslation();
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        name: t("jsonLd.newsName", "Indexia Group — News & Knowledge Centre"),
+        url: "https://www.indexiagroup.com/news",
+        blogPost: newsArticles.map((article) => ({
+          "@type": "BlogPosting",
+          headline: article.title,
+          datePublished: article.date,
+          description: article.excerpt,
+          url: `https://www.indexiagroup.com/news#${article.slug}`,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbNews", "News & Knowledge Centre"), item: "https://www.indexiagroup.com/news" },
+        ],
+      },
+    ],
+  };
 };
 
 export const useNewsContent = () => {

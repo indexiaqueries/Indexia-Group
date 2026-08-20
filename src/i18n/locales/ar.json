@@ -1047,7 +1047,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -1058,6 +1058,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "زيارة الموقع",
-    "learnMore": "اعرف المزيد"
+    "learnMore": "اعرف المزيد",
+    "registrationEyebrow": "التسجيل والامتثال",
+    "registrationTitle": "الكيانات المسجلة",
+    "registrationSubtitle": "جميع شركات مجموعة Indexia مسجلة بموجب قانون الشركات لعام 2013 لدى وزارة الشؤون المؤسسية، حكومة الهند.",
+    "viewOnMCA": "عرض على MCA",
+    "registrationNote": " جميع تسجيلات الشركات يمكن التحقق منها على",
+    "mcaPortal": "بوابة MCA",
+    "taglineSecondary": "مشاريع متنوعة. رؤية موحدة."
+  },
+  "homeReach": {
+    "eyebrow": "نطاقنا",
+    "title": "موثوق عبر الحدود",
+    "subtitle": "من مومباي إلى الإكوادور، تخدم شركاتنا العملاء عبر ثلاث قارات بنفس الالتزام بالنزاهة والنتائج.",
+    "stat1Label": "شركات",
+    "stat2Label": "بلدان",
+    "stat3Label": "سنوات من القوة",
+    "stat4Label": "عملاء تم خدمتهم",
+    "cta": "اعرف المزيد"
   }
 }

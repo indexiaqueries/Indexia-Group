@@ -1,0 +1,7 @@
+/* ================================================================
+   Float — Gentle floating for decorative elements
+   ================================================================ */
+
+.float-subtle {
+  animation: float-subtle 4s ease-in-out infinite alternate;
+}

@@ -8,11 +8,12 @@ import FeaturedArticle from "./news/FeaturedArticle";
 import NewsGrid from "./news/NewsGrid";
 import InsightsSection from "./news/InsightsSection";
 import NewsCta from "./news/NewsCta";
-import { newsJsonLd, useNewsContent } from "./news/newsData";
+import { useNewsJsonLd, useNewsContent } from "./news/newsData";
 
 const NewsPage = () => {
   const { t } = useTranslation();
   const { featured, latest, insights } = useNewsContent();
+  const newsJsonLd = useNewsJsonLd();
 
   return (
     <main className="bg-white">

@@ -238,7 +238,7 @@ const AdminDashboard = () => {
 
         <div className="flex flex-col gap-6 lg:flex-row">
           {/* Application list */}
-          <div className="flex-1 space-y-3">
+          <div className="flex-1 space-y-3" role="list" aria-label="Job applications">
             {filtered.length === 0 ? (
               <div className="rounded-2xl border border-slate-200 bg-white p-12 text-center text-sm text-(--color-muted)">
                 No applications found.
@@ -249,8 +249,11 @@ const AdminDashboard = () => {
                 return (
                   <div
                     key={app._id}
+                    role="listitem"
+                    tabIndex={0}
                     onClick={() => setSelectedApp(app)}
-                    className={`cursor-pointer rounded-2xl border bg-white p-5 transition-all hover:shadow-md ${
+                    onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSelectedApp(app); } }}
+                    className={`cursor-pointer rounded-2xl border bg-white p-5 transition-all hover:shadow-md focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20 focus:outline-none ${
                       selectedApp?._id === app._id ? "border-(--color-teal) shadow-md" : "border-slate-100"
                     }`}
                   >
@@ -280,7 +283,7 @@ const AdminDashboard = () => {
 
           {/* Detail panel */}
           {selectedApp && (
-            <div className="w-full shrink-0 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm lg:w-96">
+            <div className="w-full shrink-0 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm lg:w-96" role="complementary" aria-label="Application details">
               <div className="mb-4 flex items-center justify-between">
                 <h2 className="font-display text-lg font-bold text-(--color-ink)">{selectedApp.name}</h2>
                 <button onClick={() => setSelectedApp(null)} className="text-slate-400 hover:text-slate-600">
@@ -304,6 +307,7 @@ const AdminDashboard = () => {
                     <span className="truncate text-xs font-semibold text-slate-600">{selectedApp.resumeFileName}</span>
                     <button
                       onClick={() => openResume(selectedApp._id)}
+                      aria-label={`Open resume for ${selectedApp.name}`}
                       className="flex shrink-0 items-center gap-1 rounded-full bg-(--color-teal) px-3 py-1 text-[11px] font-bold text-white transition-colors hover:bg-(--color-teal-deep)"
                     >
                       <Download size={12} /> Open Resume
@@ -319,7 +323,7 @@ const AdminDashboard = () => {
               </div>
 
               {/* Status actions */}
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap gap-2" role="group" aria-label="Update application status">
                 {(["pending", "reviewed", "shortlisted", "rejected"] as const).map((s) => (
                   <button
                     key={s}
@@ -340,6 +344,7 @@ const AdminDashboard = () => {
 
               <button
                 onClick={() => deleteApp(selectedApp._id)}
+                aria-label={`Delete application from ${selectedApp.name}`}
                 className="mt-3 flex items-center gap-1.5 text-xs font-bold text-red-400 transition-colors hover:text-red-600"
               >
                 <Trash2 size={12} /> Delete Application

@@ -1,0 +1,12 @@
+/* ================================================================
+   Marquee — Infinite horizontal scroll track
+   ================================================================ */
+
+.infinite-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: var(--marquee-animation, marquee-scroll var(--marquee-duration, 28s) linear infinite);
+}
+.infinite-marquee-track:hover {
+  animation-play-state: paused;
+}

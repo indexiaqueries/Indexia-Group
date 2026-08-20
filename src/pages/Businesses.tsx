@@ -9,36 +9,6 @@ import { getCompanyCardImage } from "../data/companyImages";
 import { getCompanyIcon } from "../data/companyIcons";
 import { companies } from "../data/companies";
 
-const businessesJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ItemList",
-      name: "Indexia Group Businesses",
-      description: "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, logistics, advertising and athlete support.",
-      itemListElement: companies.map((company, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: company.name,
-        description: company.desc,
-        url: company.link ?? `https://www.indexiagroup.com/businesses/${company.slug}`,
-      })),
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Group Companies",
-          item: "https://www.indexiagroup.com/businesses",
-        },
-      ],
-    },
-  ],
-};
-
 const businesses = companies.map((company) => ({
   name: company.name,
   slug: company.slug,
@@ -51,6 +21,31 @@ const businesses = companies.map((company) => ({
 
 const Businesses = () => {
   const { t } = useTranslation();
+
+  const businessesJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList",
+        name: t("jsonLd.businessesName", "Indexia Group Businesses"),
+        description: t("jsonLd.businessesDescription", "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, logistics, advertising and athlete support."),
+        itemListElement: companies.map((company, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: company.name,
+          description: company.desc,
+          url: company.link ?? `https://www.indexiagroup.com/businesses/${company.slug}`,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbCompanies", "Group Companies"), item: "https://www.indexiagroup.com/businesses" },
+        ],
+      },
+    ],
+  };
 
   return (
   <>

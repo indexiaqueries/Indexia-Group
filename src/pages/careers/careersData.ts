@@ -3,28 +3,26 @@ import { jobRoles, careerCulture } from "../../data/careers";
 
 export type RoleItem = (typeof jobRoles)[number];
 
-export const careersJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "JobPosting",
-      name: "Open roles at Indexia Group",
-      url: "https://www.indexiagroup.com/careers",
-      hiringOrganization: { "@type": "Organization", name: "Indexia Group" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Careers",
-          item: "https://www.indexiagroup.com/careers",
-        },
-      ],
-    },
-  ],
+export const useCareersJsonLd = () => {
+  const { t } = useTranslation();
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "JobPosting",
+        name: t("jsonLd.careersName", "Open roles at Indexia Group"),
+        url: "https://www.indexiagroup.com/careers",
+        hiringOrganization: { "@type": "Organization", name: t("jsonLd.orgName", "Indexia Group") },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbCareers", "Careers"), item: "https://www.indexiagroup.com/careers" },
+        ],
+      },
+    ],
+  };
 };
 
 export const useCareersContent = () => {

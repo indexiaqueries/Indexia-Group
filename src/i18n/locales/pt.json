@@ -2,7 +2,7 @@
   "header": {
     "nav": {
       "contact": "Contacto",
-      "about": "About"
+      "about": "About Us"
     },
     "menu": {
       "home": "Início",
@@ -1049,7 +1049,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -1060,6 +1060,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "Visit Website",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "registrationEyebrow": "Registration & Compliance",
+    "registrationTitle": "Registered Entities",
+    "registrationSubtitle": "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.",
+    "viewOnMCA": "View on MCA",
+    "registrationNote": "All company registrations are verifiable on the",
+    "mcaPortal": "MCA Portal",
+    "taglineSecondary": "Diverse Ventures. Unified Vision."
+  },
+  "homeReach": {
+    "eyebrow": "Our Reach",
+    "title": "Trusted Across Borders",
+    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
+    "stat1Label": "Businesses",
+    "stat2Label": "Countries",
+    "stat3Label": "Years Strong",
+    "stat4Label": "Clients Served",
+    "cta": "Learn More About Us"
   }
 }

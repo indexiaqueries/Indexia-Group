@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowRight, Clock, Layers, MapPin, Sparkles } from "lucide-react";
-import { useInView } from "../../hooks/useInView";
+import AnimatedCounter from "../common/AnimatedCounter";
 import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
 import ImageSlot from "../common/ImageSlot";
@@ -26,41 +26,7 @@ type CompanyDetailProps = {
   showBackLink?: boolean;
 };
 
-/** Count from 0 to `target` once `run` becomes true (eased, ~1.1s). */
-const useCountUp = (target: number, run: boolean, duration = 1100) => {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    if (!run) return;
-    let raf = 0;
-    const t0 = performance.now();
-    const tick = (now: number) => {
-      const p = Math.min(1, (now - t0) / duration);
-      const eased = 1 - Math.pow(1 - p, 3);
-      setValue(Math.round(target * eased));
-      if (p < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [run, target, duration]);
-  return value;
-};
 
-const StatBox = ({ value, suffix = "", label, color }: { value: number; suffix?: string; label: string; color: string }) => {
-  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.5 });
-  const n = useCountUp(value, inView);
-  return (
-    <div
-      ref={ref}
-      className="rounded-2xl border border-slate-100 bg-white/70 p-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md sm:p-4"
-    >
-      <p className="font-display text-2xl font-bold tabular-nums" style={{ color }}>
-        {n}
-        {suffix}
-      </p>
-      <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)">{label}</p>
-    </div>
-  );
-};
 
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
@@ -263,14 +229,9 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <p className="mt-5 max-w-xl text-[15px] leading-8 text-(--color-muted)">{overview}</p>
 
             <div className="mt-9 grid max-w-md grid-cols-3 gap-4">
-              <StatBox value={b.services.length} label={t("companyDetail.statServices")} color={accentInk(b.color)} />
-              <StatBox value={b.highlights.length} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} />
-              <StatBox
-                value={index + 1}
-                suffix="/08"
-                label={t("companyDetail.statRegister")}
-                color={accentInk(b.color)}
-              />
+              <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
+              <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
+              <AnimatedCounter value={`${index + 1}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
             </div>
           </div>
         </div>

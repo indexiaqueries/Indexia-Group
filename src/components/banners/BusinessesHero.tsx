@@ -1,53 +1,12 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useInView } from "../../hooks/useInView";
 
 import Eyebrow from "../common/Eyebrow";
+import AnimatedCounter from "../common/AnimatedCounter";
 import SealStamp from "../common/SealStamp";
 import HeroBackdrop from "./HeroBackdrop";
 import businessesHeroBg from "../../assets/hero-img/BusinessesHero.webp";
 import { colors } from "../../lib/theme";
-
-type CounterProps = {
-  value: string;
-  label: string;
-  color?: string;
-  labelClassName?: string;
-};
-
-const Counter = ({ value, label, color = colors.blue, labelClassName = "mt-1 text-xs text-(--color-gray-light)" }: CounterProps) => {
-  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.5 });
-
-  const suffix = value.replace(/[\d.,]/g, "");
-  const parsedTarget = parseFloat(value.replace(/[^\d.,]/g, "").replace(/,/g, ""));
-  const animatable = !Number.isNaN(parsedTarget);
-
-  const [display, setDisplay] = useState(animatable ? "0" : value);
-
-  useEffect(() => {
-    if (!inView || !animatable) return;
-    const duration = 1400;
-    const start = performance.now();
-    let raf = 0;
-    const tick = (now: number) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      const current = Math.round(parsedTarget * eased);
-      setDisplay(`${current.toLocaleString()}${suffix}`);
-      if (progress < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [inView, animatable, parsedTarget, suffix]);
-
-  return (
-    <div ref={ref}>
-      <p className="font-ledger text-[28px] font-bold leading-none" style={{ color }}>{display}</p>
-      <p className={labelClassName}>{label}</p>
-    </div>
-  );
-};
 
 const BusinessesHero = () => {
   const { t } = useTranslation();
@@ -87,10 +46,10 @@ const BusinessesHero = () => {
       </p>
 
       <div className="mx-auto mb-12 grid max-w-2xl grid-cols-2 items-start justify-items-center gap-x-6 gap-y-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-7">
-        <Counter value="500+" label={t("businessesHero.counterClients")} color={colors.white} labelClassName="mt-1 text-xs font-semibold text-white/70" />
-        <Counter value="8" label={t("businessesHero.counterBusinesses")} color={colors.yellow} labelClassName="mt-1 text-xs font-semibold text-white/70" />
-        <Counter value="4+" label={t("businessesHero.counterLocations")} color={colors.white} labelClassName="mt-1 text-xs font-semibold text-white/70" />
-        <Counter value="12+" label={t("businessesHero.counterYears")} color={colors.yellow} labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <AnimatedCounter value="500+" label={t("businessesHero.counterClients")} color={colors.white} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <AnimatedCounter value="8" label={t("businessesHero.counterBusinesses")} color={colors.yellow} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <AnimatedCounter value="4+" label={t("businessesHero.counterLocations")} color={colors.white} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
+        <AnimatedCounter value="12+" label={t("businessesHero.counterYears")} color={colors.yellow} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
       </div>
 
       <Link

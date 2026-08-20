@@ -1,0 +1,11 @@
+/* ================================================================
+   Hover Lift — Smooth lift on hover for any card/tile
+   ================================================================ */
+
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(2, 16, 26, 0.12);
+}

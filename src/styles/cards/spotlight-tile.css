@@ -1,0 +1,24 @@
+/* ================================================================
+   Spotlight Tile — Cursor-following spotlight on service tiles
+   ================================================================ */
+
+.spotlight-tile {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    240px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    var(--spot-color, rgba(6, 106, 156, 0.14)),
+    transparent 70%
+  );
+}
+.spotlight-tile:hover::before {
+  opacity: 1;
+}

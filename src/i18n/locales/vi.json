@@ -2,7 +2,7 @@
   "header": {
     "nav": {
       "contact": "Liên hệ",
-      "about": "About"
+      "about": "About Us"
     },
     "menu": {
       "home": "Trang chủ",
@@ -21,7 +21,7 @@
     "p0": {
       "tag": "Indexia Group",
       "heading": "Một Tập đoàn.\nNhiều Giải pháp.",
-      "sub": "Từ tài chính và logistics đến nông nghiệp và quảng cáo, Indexia Group thúc đẩy tăng trưởng trên nhiều ngành với các doanh nghiệp đáng tin cậy, sẵn sàng cho tương lai."
+      "sub": "Từ tài chính và warehousing đến nông nghiệp và quảng cáo, Indexia Group thúc đẩy tăng trưởng trên nhiều ngành với các doanh nghiệp đáng tin cậy, sẵn sàng cho tương lai."
     },
     "p1": {
       "tag": "Indexia Finance",
@@ -51,7 +51,7 @@
     "p6": {
       "tag": "Indexia Warehouse",
       "heading": "Kho Bãi Xây Dựng\nCho Quy Mô Lớn.",
-      "sub": "Cơ sở hạ tầng kho bãi và logistics hiện đại giúp hàng hóa di chuyển hiệu quả."
+      "sub": "Cơ sở hạ tầng kho bãi và warehousing hiện đại giúp hàng hóa di chuyển hiệu quả."
     },
     "p7": {
       "tag": "Indexia Advertising",
@@ -70,7 +70,7 @@
   },
   "footer": {
     "tagline": "Tập đoàn Kinh doanh Đa ngành Ấn Độ",
-    "blurb": "Tám doanh nghiệp đáng tin cậy dưới một tập đoàn Ấn Độ đa ngành — tài chính, xuất khẩu, nông nghiệp, logistics, an ninh, quảng cáo và hỗ trợ vận động viên — xây dựng trên nền tảng liêm chính và kết quả.",
+    "blurb": "Tám doanh nghiệp đáng tin cậy dưới một tập đoàn Ấn Độ đa ngành — tài chính, xuất khẩu, nông nghiệp, warehousing, an ninh, quảng cáo và hỗ trợ vận động viên — xây dựng trên nền tảng liêm chính và kết quả.",
     "contactUs": "Liên hệ",
     "hours": "Thứ Hai - Thứ Bảy: 9:00 - 18:00",
     "company": "Công ty",
@@ -110,7 +110,7 @@
     "eyebrow": "Sự Khác Biệt Indexia",
     "titleStart": "Một Tập đoàn. Tám Doanh nghiệp. ",
     "titleAccent": "Một Cam Kết Chung.",
-    "paragraph": "Từ tài chính và tư vấn đến xuất khẩu, nông nghiệp, logistics, an ninh, thể thao và truyền thông — mỗi doanh nghiệp Indexia đều được xây dựng trên cùng một nền tảng: liêm chính, chuyên môn và cách tiếp cận lấy con người làm trung tâm. Dù bạn cần gì, đội ngũ phù hợp đã là một phần của gia đình.",
+    "paragraph": "Từ tài chính và tư vấn đến xuất khẩu, nông nghiệp, warehousing, an ninh, thể thao và truyền thông — mỗi doanh nghiệp Indexia đều được xây dựng trên cùng một nền tảng: liêm chính, chuyên môn và cách tiếp cận lấy con người làm trung tâm. Dù bạn cần gì, đội ngũ phù hợp đã là một phần của gia đình.",
     "counterClients": "Khách Hàng Đã Phục Vụ",
     "counterBusinesses": "Doanh Nghiệp",
     "counterLocations": "Thành Phố",
@@ -326,12 +326,12 @@
     }
   },
   "seo": {
-    "homeTitle": "Dịch Vụ Tài Chính, Khoản Vay, Xuất Khẩu & Logistics",
+    "homeTitle": "Dịch Vụ Tài Chính, Khoản Vay, Xuất Khẩu & Warehousing",
     "homeDescription": "Tập đoàn kinh doanh đa ngành Ấn Độ: dịch vụ tài chính, cho vay NBFC, xuất khẩu toàn cầu, phân bón nông nghiệp, kho bãi & an ninh. Văn phòng tại Mumbai, Delhi và Ecuador.",
-    "businessesTitle": "Các Công ty Tập đoàn — Tài chính, Nông nghiệp, Xuất khẩu & Logistics",
+    "businessesTitle": "Các Công ty Tập đoàn — Tài chính, Nông nghiệp, Xuất khẩu & Warehousing",
     "businessesDescription": "Tám doanh nghiệp của Indexia Group: tài chính, cho vay, an ninh, xuất khẩu đường, phân bón hữu cơ, kho bãi, quảng cáo và hỗ trợ vận động viên.",
     "contactTitle": "Liên Hệ — Văn Phòng Mumbai & Delhi",
-    "contactDescription": "Liên hệ Indexia Group để được giải đáp về dịch vụ tài chính, cho vay, xuất khẩu, nông nghiệp và logistics. Văn phòng tại Mumbai, Delhi và Ecuador — phản hồi trong 24 giờ."
+    "contactDescription": "Liên hệ Indexia Group để được giải đáp về dịch vụ tài chính, cho vay, xuất khẩu, nông nghiệp và warehousing. Văn phòng tại Mumbai, Delhi và Ecuador — phản hồi trong 24 giờ."
   },
   "branches": {
     "corporateOffice": "Văn Phòng Tập Đoàn",
@@ -415,16 +415,16 @@
       "overseas": {
         "tag": "Nhà Xuất Khẩu Thực Phẩm",
         "desc": "Xuất khẩu đường tinh luyện và mọi thực phẩm ra toàn thế giới.",
-        "overview": "Indexia Overseas thúc đẩy xuất khẩu toàn cầu mọi thực phẩm, đặc biệt tập trung vào xuất khẩu đường sang 14 quốc gia Nam Mỹ. Công ty quản lý nguồn cung, chất lượng, logistics và tuân thủ quốc tế để các sản phẩm cấp thực phẩm di chuyển từ nguồn đến thị trường một cách đáng tin cậy và quy mô lớn.",
+        "overview": "Indexia Overseas thúc đẩy xuất khẩu toàn cầu mọi thực phẩm, đặc biệt tập trung vào xuất khẩu đường sang 14 quốc gia Nam Mỹ. Công ty quản lý nguồn cung, chất lượng, warehousing và tuân thủ quốc tế để các sản phẩm cấp thực phẩm di chuyển từ nguồn đến thị trường một cách đáng tin cậy và quy mô lớn.",
         "highlights": [
           "Xuất khẩu mọi thực phẩm — đường là cốt lõi",
           "Hiện diện vững chắc tại 14 thị trường Nam Mỹ",
-          "Nguồn cung, chất lượng và logistics trọn gói"
+          "Nguồn cung, chất lượng và warehousing trọn gói"
         ],
         "services": [
           "Xuất Khẩu & Kinh Doanh Đường",
           "Nguồn Cung & Kiểm Soát Chất Lượng",
-          "Logistics Quốc Tế",
+          "Warehousing Quốc Tế",
           "14 Thị Trường Nam Mỹ"
         ],
         "name": "Indexia Overseas Pvt. Ltd."
@@ -634,7 +634,7 @@
     "leaderTitle": "The Visionary Behind Indexia Group",
     "founderName": "Founder & Managing Director",
     "founderRole": "Founder & Managing Director",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
     "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
     "founderQuote": "Business is about trust. When you build on integrity, everything else follows.",
     "companiesEyebrow": "Our Companies",
@@ -662,7 +662,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -673,6 +673,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "Visit Website",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "registrationEyebrow": "Registration & Compliance",
+    "registrationTitle": "Registered Entities",
+    "registrationSubtitle": "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.",
+    "viewOnMCA": "View on MCA",
+    "registrationNote": "All company registrations are verifiable on the",
+    "mcaPortal": "MCA Portal",
+    "taglineSecondary": "Diverse Ventures. Unified Vision."
+  },
+  "homeReach": {
+    "eyebrow": "Our Reach",
+    "title": "Trusted Across Borders",
+    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
+    "stat1Label": "Businesses",
+    "stat2Label": "Countries",
+    "stat3Label": "Years Strong",
+    "stat4Label": "Clients Served",
+    "cta": "Learn More About Us"
   }
 }

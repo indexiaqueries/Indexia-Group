@@ -1,0 +1,108 @@
+/* ================================================================
+   Reduced Motion — Disable all animations for accessibility
+   ================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Stamp & pulse */
+  .seal-stamp-in {
+    animation: none;
+  }
+  .back-to-top-pulse::before {
+    animation: none;
+  }
+  .tap-hint-pulse {
+    animation: none;
+  }
+
+  /* Entry animations */
+  .fade-up, .fade-in, .slide-in-left, .scale-in, .dropdown-in, .icon-in,
+  .hero-slide-child, .kenburns, .morph-zoom, .passbook-in, .bg-morph-out,
+  .page-enter {
+    animation: none;
+  }
+
+  /* Card shine */
+  .group:hover .card-shine-lines::after,
+  .group:hover .pointers-main-shine::before,
+  .group:hover .pointers-main-shine::after {
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: none;
+  }
+
+  /* Scroll reveal & hover lift */
+  .reveal, .hover-lift {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hover-lift:hover {
+    box-shadow: none;
+  }
+
+  /* Morph layer */
+  .morph-layer {
+    transition: none;
+  }
+
+  /* Thumbnail tilt */
+  .thumb-tilt, .thumb-tilt:hover, .thumb-tilt:active {
+    --tilt-rise: 0px;
+    --tilt-scale: 1;
+    transition: none;
+  }
+
+  /* Marquee */
+  .infinite-marquee-track {
+    animation: none;
+  }
+
+  /* Image zoom */
+  .image-zoom-media,
+  .image-zoom-frame:hover .image-zoom-media,
+  .image-zoom-frame:focus-within .image-zoom-media {
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+
+  /* Spotlight tile */
+  .spotlight-tile::before {
+    opacity: 0 !important;
+  }
+
+  /* Foundation badge */
+  .animate-foundation-pulse, .animate-foundation-pop-in {
+    animation: none;
+  }
+
+  /* Visual effects */
+  .text-shimmer {
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    animation: none;
+  }
+  .link-underline::after {
+    display: none;
+  }
+  .img-reveal {
+    clip-path: none;
+    animation: none;
+  }
+  .img-blur-in {
+    filter: none;
+    opacity: 1;
+    transition: none;
+  }
+  .float-subtle {
+    animation: none;
+  }
+
+  /* Loading bar */
+  @keyframes loading-bar { 0%, 100% { transform: none; } }
+
+  /* Smooth scroll off */
+  html {
+    scroll-behavior: auto;
+  }
+}

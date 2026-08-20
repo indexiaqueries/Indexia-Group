@@ -1,0 +1,9 @@
+/* ================================================================
+   Morph Layer — Hero background grows from thumbnail to full-screen
+   ================================================================ */
+
+.morph-layer {
+  transition-property: top, left, width, height, border-radius, opacity;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: top, left, width, height;
+}

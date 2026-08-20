@@ -1,7 +1,7 @@
 {
   "header": {
     "nav": {
-      "about": "About",
+      "about": "About Us",
       "contact": "Contact Us"
     },
     "menu": {
@@ -21,7 +21,7 @@
     "p0": {
       "tag": "Indexia Group",
       "heading": "One Group.\nMultiple Solutions.",
-      "sub": "From finance and logistics to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses."
+      "sub": "From finance and warehousing to agro and advertising, Indexia Group powers growth across industries with trusted, future-ready businesses."
     },
     "p1": {
       "tag": "Indexia Finance",
@@ -51,7 +51,7 @@
     "p6": {
       "tag": "Indexia Warehouse",
       "heading": "Storage Built\nFor Scale.",
-      "sub": "Modern warehousing and logistics infrastructure that keeps goods moving efficiently."
+      "sub": "Modern logistics and warehousing infrastructure that keeps goods moving efficiently."
     },
     "p7": {
       "tag": "Indexia Advertising",
@@ -69,8 +69,9 @@
     "nextPanel": "Next panel"
   },
   "footer": {
-    "tagline": "Diversified Indian Business Group",
-    "blurb": "Eight trusted businesses under one diversified Indian group — finance, export, agriculture, logistics, security, advertising, and athlete support — built on integrity and results.",
+    "tagline": "Some steps to serve the nation",
+    "taglineSecondary": "Diverse Ventures. Unified Vision.",
+    "blurb": "Eight trusted businesses under one diversified Indian group — Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support — built on integrity and results.",
     "contactUs": "Connect With Us",
     "hours": "Mon - Sat: 9 AM - 6 PM",
     "company": "Company",
@@ -110,7 +111,7 @@
     "eyebrow": "The Indexia Difference",
     "titleStart": "One Group. Eight Businesses. ",
     "titleAccent": "One Shared Promise.",
-    "paragraph": "From finance and export to agriculture, logistics, security, advertising, and sports — every Indexia business is built on the same foundation: integrity, expertise, and a people-first approach. Whatever you need, the right team is already part of the family.",
+    "paragraph": "From finance and export to agriculture, warehousing, security, advertising, and sports — every Indexia business is built on the same foundation: integrity, expertise, and a people-first approach. Whatever you need, the right team is already part of the family.",
     "counterClients": "Clients Served",
     "counterBusinesses": "Businesses",
     "counterLocations": "Locations",
@@ -330,7 +331,7 @@
     "title": "About Indexia Group",
     "titleStart": "Building Trust ",
     "titleAccent": "Across Industries.",
-    "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach — spanning finance, export, agriculture, logistics, security, advertising, and athlete support.",
+    "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach — spanning finance, export, agriculture, warehousing, security, advertising, and athlete support.",
     "companiesEyebrow": "Our Companies",
     "companiesTitle": "Eight Businesses, One Vision",
     "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses — each built on the same foundation of integrity, expertise, and results.",
@@ -344,7 +345,7 @@
     "c2Highlights": "12 Loan Products,Personal & Business Loans,Home Loan & LAP,Balance Transfer & Working Capital",
     "c3Tag": "Global Export",
     "c3Name": "Indexia Overseas Pvt. Ltd.",
-    "c3Body": "Indexia Overseas is the global export arm of the Indexia Group, specializing in the international trade of refined sugar and premium edible commodities. With a strong and growing presence across 14 South American countries, the company has built a reputation for reliability, quality, and efficiency in cross-border food supply chains. From sourcing and quality assurance to international logistics and regulatory compliance, Indexia Overseas manages every stage of the export process.",
+    "c3Body": "Indexia Overseas is the global export arm of the Indexia Group, specializing in the international trade of refined sugar and premium edible commodities. With a strong and growing presence across 14 South American countries, the company has built a reputation for reliability, quality, and efficiency in cross-border food supply chains. From sourcing and quality assurance to international warehousing and regulatory compliance, Indexia Overseas manages every stage of the export process.",
     "c3Highlights": "14 South American Countries,Premium Refined Sugar Export,Food-Grade Quality Certified,Full-Cycle Export Management",
     "c4Tag": "Organic Agriculture",
     "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
@@ -356,7 +357,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "Indexia Warehouse offers a strategic land investment opportunity in Shamli, Uttar Pradesh — just ~65 km from Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. The land portfolio spans 5 locations and 21 acres total, with flexible plots and a modern warehouse to be built on 2 acres.",
+    "c6Body": "Indexia Warehouse offers a strategic land leasing opportunity in Shamli, Uttar Pradesh — just ~65 km from Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. The land portfolio spans 5 locations and 21 acres total, with flexible plots and a modern warehouse to be built on 2 acres.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -372,12 +373,12 @@
     "leaderTitle": "The Visionary Behind Indexia Group",
     "founderName": "Founder & Managing Director",
     "founderRole": "Founder & Managing Director",
-    "founderBio1": "Built Indexia Group on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the group has grown into eight diverse businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
-    "founderBio2": "Leading operational excellence and strategic growth across all companies in the group, ensuring every business delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
+    "founderBio1": "Built Indexia Group on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the group has grown into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
+    "founderBio2": "Leading operational excellence and strategic growth across all companies in the group, ensuring every business delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose, serving clients and partners worldwide.",
     "founderQuote": "Business is about trust. When you build on integrity, everything else follows.",
     "storyEyebrow": "Our Story",
     "storyTitle": "From a Shared Vision to a National Group",
-    "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve. What started as a single financial services company has grown into a diversified group of eight businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
+    "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve. What started as a single financial services company has grown into a diversified group of eight businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
     "storyBody2": "Today, Indexia Group operates across three locations — Mumbai, Delhi, and Ecuador — with a team that shares a common purpose: to deliver results that matter. Every company in the group carries the same DNA — transparency, reliability, and a relentless focus on creating value for clients, partners, and communities.",
     "valuesEyebrow": "Our Values",
     "valuesTitle": "What We Stand For",
@@ -419,15 +420,22 @@
     "ctaTitle": "Let's Build Something Together",
     "ctaBody": "Whether you're looking for financial services, exploring a partnership, or simply want to learn more about our group — we're here to help.",
     "ctaButton": "Get in Touch",
-    "metaDescription": "About Indexia Group — a diversified Indian business group spanning finance, export, agriculture, logistics, security, advertising, and athlete support. Founded in 2012, operating across Mumbai, Delhi, and Ecuador."
+    "registrationEyebrow": "Registration & Compliance",
+    "registrationTitle": "Registered Entities",
+    "registrationSubtitle": "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.",
+    "viewOnMCA": "View on MCA",
+    "registrationNote": "All company registrations are verifiable on the",
+    "mcaPortal": "MCA Portal",
+    "metaDescription": "About Indexia Group — a diversified Indian business group spanning finance, export, agriculture, warehousing, security, advertising, and athlete support. Founded in 2012, operating across Mumbai, Delhi, and Ecuador.",
+    "taglineSecondary": "Diverse Ventures. Unified Vision."
   },
   "seo": {
-    "homeTitle": "Financial Services, Loans, Export & Logistics",
-    "homeDescription": "Indexia Group brings financial services, loans, export, logistics, agro, security, advertising, and athlete support together under one diversified Indian business group.",
-    "businessesTitle": "Group Companies — Finance, Agro, Export & Logistics",
+    "homeTitle": "Financial Services, Loans, Export & Warehousing",
+    "homeDescription": "Indexia Group brings financial services, loans, export, warehousing, agro, security, advertising, and athlete support together under one diversified Indian business group.",
+    "businessesTitle": "Group Companies — Finance, Agro, Export & Warehousing",
     "businessesDescription": "Explore the Indexia Group companies across finance, agro, export, logistics, warehousing, securities, advertising, and social impact.",
     "contactTitle": "Contact Us — Mumbai & Delhi Offices",
-    "contactDescription": "Contact Indexia Group for financial services, loans, export, agro and logistics enquiries. Offices in Mumbai, Delhi and Ecuador — replies within 24 hours."
+    "contactDescription": "Contact Indexia Group for financial services, loans, export, agro and warehousing enquiries. Offices in Mumbai, Delhi and Ecuador — replies within 24 hours."
   },
   "branches": {
     "corporateOffice": "Corporate Office",
@@ -511,18 +519,18 @@
       "overseas": {
         "tag": "Global Edible Export",
         "desc": "Premium refined sugar and edible commodities exported to 14 South American countries.",
-        "overview": "Indexia Overseas is the global export arm of the Indexia Group, specializing in the international trade of refined sugar and premium edible commodities. With a strong and growing presence across 14 South American countries, the company has built a reputation for reliability, quality, and efficiency in cross-border food supply chains. From sourcing and quality assurance to international logistics and regulatory compliance, Indexia Overseas manages every stage of the export process — ensuring food-grade products reach global markets on time and at scale.",
+        "overview": "Indexia Overseas is the global export arm of the Indexia Group, specializing in the international trade of refined sugar and premium edible commodities. With a strong and growing presence across 14 South American countries, the company has built a reputation for reliability, quality, and efficiency in cross-border food supply chains. From sourcing and quality assurance to international warehousing and regulatory compliance, Indexia Overseas manages every stage of the export process — ensuring food-grade products reach global markets on time and at scale.",
         "highlights": [
           "Premium refined sugar and edible commodity exports",
           "Established trade network across 14 South American countries",
-          "Full-cycle export management — sourcing, quality, logistics, compliance",
+          "Full-cycle export management — sourcing, quality, warehousing, compliance",
           "Trusted partner for bulk buyers and institutional consumers"
         ],
         "services": [
           "Refined Sugar Export & Trading",
           "Edible Commodity Sourcing",
           "Quality Assurance & Certification",
-          "International Freight & Logistics",
+          "International Freight & Warehousing",
           "Regulatory & Compliance Management",
           "South American Market Distribution"
         ],
@@ -569,9 +577,9 @@
         "name": "Indexia Securities"
       },
       "warehouse": {
-        "tag": "Strategic Land Investment",
-        "desc": "21 acres of strategic land in Shamli, linked to 8 national expressways.",
-        "overview": "Indexia Warehouse offers a strategic land investment opportunity in Shamli, Uttar Pradesh — just ~65 km from Tronica City, Loni, Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. Four major ports (Gujarat, Maharashtra, Chennai, Kolkata) are directly reachable via expressways, and both IGI Airport Delhi and Noida Int'l Airport, Jewar are within one hour. The land portfolio spans 5 locations and 21 acres total, with flexible plots of 1, 2, 2.5, 5 and 8 acres, and a modern warehouse to be built on 2 acres with loading docks. Expected price is ₹30 per sq ft, negotiable.",
+        "tag": "strategic land leasing",
+        "desc": "21 acres of strategic leased land in Shamli, linked to 8 national expressways.",
+        "overview": "Indexia Warehouse offers a strategic land leasing opportunity in Shamli, Uttar Pradesh — just ~65 km from Tronica City, Loni, Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. Four major ports (Gujarat, Maharashtra, Chennai, Kolkata) are directly reachable via expressways, and both IGI Airport Delhi and Noida Int'l Airport, Jewar are within one hour. The land portfolio spans 5 locations and 21 acres total, with flexible plots of 1, 2, 2.5, 5 and 8 acres, and a modern warehouse to be built on 2 acres with loading docks. Expected price is ₹30 per sq ft, negotiable.",
         "highlights": [
           "Prime location — Shamli, UP, ~65 km from Delhi",
           "8 national expressways + 2 major highways connecting 8 states",
@@ -669,7 +677,7 @@
   },
   "brochure": {
     "download": "Download PDF",
-    "headline": "Strategic Land Investment in the Heart of North India",
+    "headline": "strategic land leasing in the Heart of North India",
     "about": "About the Project",
     "contact": "Contact Us",
     "footer": "Indexia Group · For enquiries, call, email, or visit our office. Prices are indicative and negotiable.",
@@ -688,5 +696,35 @@
     "emails": "Email",
     "address": "Office Address",
     "brochure": "Download brochure"
+  },
+  "jsonLd": {
+    "orgName": "Indexia Group",
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About Us",
+    "breadcrumbCompanies": "Group Companies",
+    "breadcrumbContact": "Contact Us",
+    "breadcrumbNews": "News & Knowledge Centre",
+    "breadcrumbCareers": "Careers",
+    "aboutName": "About Indexia Group",
+    "aboutDescription": "Indexia Group is a diversified Indian business group spanning finance, export, agriculture, warehousing, security, advertising, and athlete support.",
+    "contactName": "Contact Indexia Group",
+    "corporateOffice": "Corporate Office",
+    "delhiOffice": "Delhi Office",
+    "businessesName": "Indexia Group Businesses",
+    "businessesDescription": "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, warehousing, advertising and athlete support.",
+    "newsName": "Indexia Group — News & Knowledge Centre",
+    "careersName": "Open roles at Indexia Group",
+    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
+  },
+  "homeReach": {
+    "eyebrow": "Our Reach",
+    "title": "Trusted Across Borders",
+    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
+    "stat1Label": "Businesses",
+    "stat2Label": "Countries",
+    "stat3Label": "Years Strong",
+    "stat4Label": "Clients Served",
+    "cta": "Learn More About Us"
   }
 }

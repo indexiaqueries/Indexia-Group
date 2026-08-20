@@ -4,11 +4,12 @@ import CareersHero from "./careers/CareersHero";
 import CultureSection from "./careers/CultureSection";
 import OpenRoles from "./careers/OpenRoles";
 import CareersCta from "./careers/CareersCta";
-import { careersJsonLd, useCareersContent } from "./careers/careersData";
+import { useCareersJsonLd, useCareersContent } from "./careers/careersData";
 
 const CareersPage = () => {
   const { t } = useTranslation();
   const { roles, culture } = useCareersContent();
+  const careersJsonLd = useCareersJsonLd();
 
   return (
     <main className="bg-white">

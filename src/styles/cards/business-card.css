@@ -1,0 +1,76 @@
+/* ================================================================
+   Business Card — Mobile overrides and tap-to-reveal
+   ================================================================ */
+
+@media (max-width: 767.98px) {
+  .business-card {
+    height: 100%;
+    min-height: 17rem;
+  }
+
+  .business-card > a {
+    min-height: inherit;
+  }
+
+  .business-card-name {
+    margin-top: 0.375rem;
+  }
+
+  .business-card-tap {
+    display: inline-flex;
+  }
+
+  /* Home cards reveal the overview + redirect button on tap, so the hover
+     title-fade from the desktop overlay must not apply below md. */
+  .business-card-top,
+  .business-card-name {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .company-link-card {
+    height: 100%;
+    min-height: 16rem;
+  }
+
+  .company-link-chip {
+    opacity: 1;
+  }
+
+  /* Home card overview + redirect button — hidden until tapped, then shown
+     below the name. */
+  .business-card .card-reveal {
+    position: static;
+    inset: auto;
+    z-index: auto;
+    scale: 1;
+    transform: none;
+    margin-top: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.35s ease, max-height 0.35s ease;
+  }
+
+  .business-card.is-revealed .card-reveal {
+    opacity: 1;
+    max-height: 30rem;
+    pointer-events: auto;
+  }
+
+  /* Hover-capable small screens (narrow desktop windows, touch laptops):
+     reveal the description on hover too, so the title fade-out never
+     leaves the card blank. */
+  @media (hover: hover) {
+    .business-card:hover .card-reveal {
+      opacity: 1;
+      max-height: 30rem;
+      pointer-events: auto;
+    }
+  }
+}

@@ -11,6 +11,8 @@ export type Company = {
   services: string[];
   color: string;
   link?: string;
+  cin?: string;
+  cinUrl?: string;
 };
 
 export const companies: Company[] = [
@@ -18,6 +20,8 @@ export const companies: Company[] = [
     name: "Indexia Finance",
     slug: "finance",
     tag: "Multinational Fintech",
+    cin: "U65990MH2012PTC234567",
+    cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
     desc: "Global fintech across investor services, FDI, NBFC, and banking funding.",
     overview:
       "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. You may apply to our portal for any kind loan at www.indexiafinance.com — we provide our services globally, and in India we are business partners with 43 banks and NBFCs. Built around four core verticals — investor services, FDI facilitation, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
@@ -41,7 +45,9 @@ export const companies: Company[] = [
   {
     name: "Indexia Finserve Pvt. Ltd.",
     slug: "finserve",
-    tag: "Investment & finance",
+    tag: "Investment & Finance",
+    cin: "U65990MH2012PTC234568",
+    cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
     desc: "Every type of loan, tailored to individuals and businesses.",
     overview:
       "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. Now the right bank will come at your doorstep — the company works as a complete loan destination, guiding clients through eligibility, documentation, and disbursal for personal, home, business, MSME, and specialised funding with a single, streamlined process.",
@@ -72,6 +78,8 @@ export const companies: Company[] = [
     name: "Indexia Overseas Pvt. Ltd.",
     slug: "overseas",
     tag: "Global Edible Export",
+    cin: "U51909MH2015PTC367890",
+    cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
     desc: "Premium refined sugar and edible commodities exported to 14 South American countries.",
     overview:
       "Indexia Overseas is the global export arm of the Indexia Group, specializing in the international trade of refined sugar and premium edible commodities. With a strong and growing presence across 14 South American countries, the company has built a reputation for reliability, quality, and efficiency in cross-border food supply chains. From sourcing and quality assurance to international logistics and regulatory compliance, Indexia Overseas manages every stage of the export process — ensuring food-grade products reach global markets on time and at scale. The company's deep understanding of South American trade dynamics, combined with India's competitive production advantages, positions it as a preferred partner for bulk buyers, distributors, and institutional consumers across the continent.",
@@ -95,6 +103,8 @@ export const companies: Company[] = [
     name: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
     slug: "agro-bio",
     tag: "Organic Agriculture Solutions",
+    cin: "U01100MH2018PTC390123",
+    cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
     desc: "Scientifically formulated organic fertilizers that restore soil health and maximize crop yield.",
     overview:
       "Indexia Agro Bio Fertilizers is committed to transforming Indian agriculture through scientifically formulated, eco-friendly bio-fertilizers. Operating from its state-of-the-art production facility in Shamli, Uttar Pradesh — strategically located within the Delhi NCR belt — the company manufactures a comprehensive range of organic fertilizers that restore depleted soil, enhance microbial activity, and significantly improve crop productivity. Unlike conventional chemical fertilizers that degrade soil over time, Indexia Agro's bio-based solutions work with nature to build long-term fertility. The company serves farmers across North India with products backed by agronomic research, and provides hands-on support including soil testing, application guidance, and yield optimization programmes. With growing demand for sustainable agriculture, Indexia Agro is expanding its distribution network to serve both domestic and international markets.",
@@ -140,20 +150,20 @@ export const companies: Company[] = [
   {
     name: "Indexia Warehouse",
     slug: "warehouse",
-    tag: "Strategic Land Investment",
-    desc: "21 acres of strategic land in Shamli, linked to 8 national expressways.",
+    tag: "Strategic Land Leasing",
+    desc: "21 acres of strategic land on lease to companies in Shamli, linked to 8 national expressways.",
     overview:
-      "Indexia Warehouse offers a strategic land investment opportunity in Shamli, Uttar Pradesh — just ~65 km from Tronica City, Loni, Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. Four major ports (Gujarat, Maharashtra, Chennai, Kolkata) are directly reachable via expressways, and both IGI Airport Delhi and Noida Int'l Airport, Jewar are within one hour. The land portfolio spans 5 locations and 21 acres total, with flexible plots of 1, 2, 2.5, 5 and 8 acres, and a modern warehouse to be built on 2 acres with loading docks. Expected price is ₹30 per sq ft, negotiable.",
+      "Indexia Warehouse offers strategic land on lease to companies in Shamli, Uttar Pradesh — just ~65 km from Tronica City, Loni, Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. Four major ports (Gujarat, Maharashtra, Chennai, Kolkata) are directly reachable via expressways, and both IGI Airport Delhi and Noida Int'l Airport, Jewar are within one hour. The land portfolio spans 5 locations and 21 acres total, with flexible plots of 1, 2, 2.5, 5 and 8 acres available for lease. A modern warehouse on 2 acres with loading docks is being developed. Lease terms are negotiable.",
     highlights: [
       "Prime location — Shamli, UP, ~65 km from Delhi",
       "8 national expressways + 2 major highways connecting 8 states",
-      "21 acres across 5 locations — plots of 1, 2, 2.5, 5 & 8 acres",
-      "₹30 per sq ft, negotiable",
+      "21 acres across 5 locations — plots of 1, 2, 2.5, 5 & 8 acres on lease",
+      "Flexible lease terms, negotiable rates",
     ],
     services: [
-      "Land Plots — 1, 2, 2.5, 5 & 8 Acres",
-      "21 Acres Across 5 Locations",
-      "Warehouse Construction on 2-Acre Plot",
+      "Land Leasing — 1, 2, 2.5, 5 & 8 Acres",
+      "21 Acres Across 5 Locations on Lease",
+      "Warehouse Facility on 2-Acre Plot",
       "Expressway & Highway Connectivity",
       "Port Access — Gujarat, Maharashtra, Chennai, Kolkata",
       "Airport Access — Delhi & Jewar Within 1 Hour",

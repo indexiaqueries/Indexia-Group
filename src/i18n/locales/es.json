@@ -1049,7 +1049,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -1060,6 +1060,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "Visitar Sitio Web",
-    "learnMore": "Saber Más"
+    "learnMore": "Saber Más",
+    "registrationEyebrow": "Registro y Cumplimiento",
+    "registrationTitle": "Entidades Registradas",
+    "registrationSubtitle": "Todas las empresas del Grupo Indexia están registradas bajo la Ley de Sociedades de 2013 ante el Ministerio de Asuntos Corporativos, Gobierno de la India.",
+    "viewOnMCA": "Ver en MCA",
+    "registrationNote": "Todas las inscripciones empresariales son verificables en el",
+    "mcaPortal": "Portal MCA",
+    "taglineSecondary": "Ventajas Diversas. Visión Unificada."
+  },
+  "homeReach": {
+    "eyebrow": "Nuestro Alcance",
+    "title": "Confiable en Fronteras",
+    "subtitle": "De Mumbai a Ecuador, nuestros negocios atienden clientes en tres continentes con el mismo compromiso de integridad y resultados.",
+    "stat1Label": "Negocios",
+    "stat2Label": "Países",
+    "stat3Label": "Años de Fortaleza",
+    "stat4Label": "Clientes Atendidos",
+    "cta": "Conozca Más"
   }
 }

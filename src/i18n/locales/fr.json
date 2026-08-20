@@ -1049,7 +1049,7 @@
     "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
     "c6Tag": "Strategic Land",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
     "c7Tag": "Highway Advertising",
     "c7Name": "Indexia Advertising",
@@ -1060,6 +1060,23 @@
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
     "visitWebsite": "Visiter le Site",
-    "learnMore": "En Savoir Plus"
+    "learnMore": "En Savoir Plus",
+    "registrationEyebrow": "Enregistrement & Conformité",
+    "registrationTitle": "Entités Enregistrées",
+    "registrationSubtitle": "Toutes les entreprises du Groupe Indexia sont enregistrées en vertu de la Loi sur les sociétés de 2013 auprès du Ministère des Affaires Corporatives, Gouvernement de l'Inde.",
+    "viewOnMCA": "Voir sur MCA",
+    "registrationNote": "Tous les enregistrements d'entreprises sont vérifiables sur le",
+    "mcaPortal": "Portail MCA",
+    "taglineSecondary": "Aventures Diversifiées. Vision Unifiée."
+  },
+  "homeReach": {
+    "eyebrow": "Notre Portée",
+    "title": "Fiable à Travers les Frontières",
+    "subtitle": "De Mumbai à Équateur, nos activités servent des clients sur trois continents avec le même engagement d'intégrité et de résultats.",
+    "stat1Label": "Entreprises",
+    "stat2Label": "Pays",
+    "stat3Label": "Années de Force",
+    "stat4Label": "Clients Servis",
+    "cta": "En Savoir Plus"
   }
 }

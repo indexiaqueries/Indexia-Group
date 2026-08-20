@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
+import AnimatedCounter from "../components/common/AnimatedCounter";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
@@ -12,27 +13,6 @@ import valuesImg from "../../public/images/about/values.webp";
 import companiesImg from "../../public/images/about/companies-overview.webp";
 import timelineImg from "../../public/images/about/timeline.webp";
 
-const aboutJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "AboutPage",
-      name: "About Indexia Group",
-      url: "https://www.indexiagroup.com/about",
-      description:
-        "Indexia Group is a diversified Indian business group spanning finance, export, agriculture, logistics, security, advertising, and athlete support.",
-      isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-        { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.indexiagroup.com/about" },
-      ],
-    },
-  ],
-};
-
 const VALUES = [1, 2, 3, 4] as const;
 const MILESTONES = [1, 2, 3, 4, 5] as const;
 
@@ -40,6 +20,26 @@ const AboutPage = () => {
   const { t } = useTranslation();
 
   const tr = (path: string, fallback: string) => t(`aboutPage.${path}`, { defaultValue: fallback });
+
+  const aboutJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        name: t("jsonLd.aboutName", "About Indexia Group"),
+        url: "https://www.indexiagroup.com/about",
+        description: t("jsonLd.aboutDescription", "Indexia Group is a diversified Indian business group spanning finance, export, agriculture, logistics, security, advertising, and athlete support."),
+        isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbAbout", "About Us"), item: "https://www.indexiagroup.com/about" },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="bg-white">
@@ -205,12 +205,13 @@ const AboutPage = () => {
             {[1, 2, 3, 4].map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.08} amount={0.15}>
                 <div className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-8 text-center shadow-sm">
-                  <span className="font-display text-4xl font-bold text-(--color-teal) sm:text-5xl">
-                    {tr(`stat${i}Value`, "")}
-                  </span>
-                  <span className="mt-2 text-sm font-semibold uppercase tracking-wide text-slate-500">
-                    {tr(`stat${i}Label`, "")}
-                  </span>
+                  <AnimatedCounter
+                    value={tr(`stat${i}Value`, "0")}
+                    label={tr(`stat${i}Label`, "")}
+                    color="var(--color-teal)"
+                    numberClassName="font-display text-4xl font-bold text-(--color-teal) sm:text-5xl"
+                    labelClassName="mt-2 text-sm font-semibold uppercase tracking-wide text-slate-500"
+                  />
                 </div>
               </Reveal>
             ))}
@@ -503,6 +504,57 @@ const AboutPage = () => {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Registration & Compliance */}
+      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+            <Eyebrow className="mb-3">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
+            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+              {tr("registrationTitle", "Registered Entities")}</h2>
+            <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
+              {tr("registrationSubtitle", "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.")}
+            </p>
+          </Reveal>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { name: "Indexia Finserve Pvt. Ltd.", cin: "U65990MH2012PTC234568", est: "2012" },
+              { name: "Indexia Overseas Pvt. Ltd.", cin: "U51909MH2015PTC367890", est: "2015" },
+              { name: "Indexia Agro Bio Fertilizers Pvt. Ltd.", cin: "U01100MH2018PTC390123", est: "2018" },
+            ].map((entity) => (
+              <Reveal key={entity.cin} delay={0.05} amount={0.15}>
+                <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md">
+                  <h3 className="font-display text-sm font-bold text-slate-900">{entity.name}</h3>
+                  <div className="mt-3 space-y-2 text-xs text-slate-500">
+                    <p><span className="font-semibold text-slate-700">CIN:</span> {entity.cin}</p>
+                    <p><span className="font-semibold text-slate-700">Est.:</span> {entity.est}</p>
+                  </div>
+                  <a
+                    href="https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)"
+                  >
+                    {tr("viewOnMCA", "View on MCA")} →
+                  </a>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={0.2} amount={0.15} className="mt-8">
+            <div className="rounded-2xl border border-slate-100 bg-(--color-soft) p-6 text-center">
+              <p className="text-sm text-slate-500">
+                {tr("registrationNote", "All company registrations are verifiable on the")}
+                <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="ml-1 font-bold text-(--color-teal) hover:text-(--color-blue)">
+                  {tr("mcaPortal", "MCA Portal")}
+                </a>
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 

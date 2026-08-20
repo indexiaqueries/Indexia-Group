@@ -1,0 +1,18 @@
+/* ================================================================
+   Container — Responsive max-width container utility
+   ================================================================ */
+
+@utility container {
+  margin-inline: auto;
+  max-width: 1200px;
+  padding-inline: 24px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding-inline: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-inline: 48px;
+  }
+}
