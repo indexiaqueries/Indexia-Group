@@ -15,7 +15,6 @@ const linkGroups: {
     links: [
       { labelKey: "footer.links.aboutUs", href: "/about" },
       { labelKey: "footer.links.groupCompanies", href: "/businesses" },
-      { labelKey: "footer.links.advertise", href: "/businesses/advertising" },
       { labelKey: "footer.links.careers", href: "/careers" },
     ],
   },
@@ -104,11 +103,8 @@ const Footer = () => {
             <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.22em] text-white/75">
               {t("footer.tagline")}
             </p>
-            <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.22em] text-(--color-yellow)">
-              {t("footer.taglineSecondary")}
-            </p>
           </div>
-          <p className="w-full max-w-3xl text-sm leading-7 text-white/90">
+          <p className="w-full max-w-3xl text-sm leading-7 text-(--color-yellow)">
             {t("footer.blurb")}
           </p>
         </div>

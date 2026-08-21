@@ -106,6 +106,24 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
           {current.heading}
         </h1>
 
+        {current.tagline && (
+          <p
+            className="hero-slide-child mb-3 font-display text-[13px] sm:text-[14px] font-semibold tracking-[0.12em] uppercase text-white/70"
+            style={{ textShadow: textShadow(shadowLevel, 18, 0.85), animationDelay: CHILD_DELAYS[1] }}
+          >
+            {current.tagline}
+          </p>
+        )}
+
+        {current.motto && (
+          <p
+            className="hero-slide-child mb-3 italic text-[12px] sm:text-[13px] text-(--color-yellow)/70 border-b border-(--color-yellow)/30 pb-1"
+            style={{ textShadow: textShadow(shadowLevel, 14, 0.8), animationDelay: CHILD_DELAYS[1] }}
+          >
+            {current.motto}
+          </p>
+        )}
+
         <p
           className={`hero-slide-child leading-[1.8] text-white/95 rounded-xl border border-white/20 bg-(image:--hero-sub-gradient) shadow-[0_8px_24px_rgba(2,16,26,0.35)] backdrop-blur-[2px] ${
             isHome

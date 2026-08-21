@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import SEO from "../components/common/SEO";
 import AnimatedCounter from "../components/common/AnimatedCounter";
 import Eyebrow from "../components/common/Eyebrow";
@@ -6,12 +7,13 @@ import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImpactBand from "../components/common/ImpactBand";
 import { colors } from "../lib/theme";
-import aboutBg from "../../public/images/heroes/about-hero.webp";
-import founderImg from "../../public/images/about/founder.webp";
-import ourStoryImg from "../../public/images/about/our-story.webp";
-import valuesImg from "../../public/images/about/values.webp";
-import companiesImg from "../../public/images/about/companies-overview.webp";
-import timelineImg from "../../public/images/about/timeline.webp";
+import aboutBg from "../assets/hero-img/AboutHero.png";
+import founderImg from "../assets/about-img/founder_MD.jpeg";
+import ourStoryImg from "../assets/about-img/OurStory.png";
+import valuesImg from "../assets/about-img/OurValues.png";
+import companiesImg from "../assets/about-img/OurCompanies.png";
+import timelineImg from "../assets/about-img/OurJourney.png";
+import aboutIndexiaImg from "../assets/about-img/AboutIndexiaGroup.png";
 
 const VALUES = [1, 2, 3, 4] as const;
 const MILESTONES = [1, 2, 3, 4, 5] as const;
@@ -28,7 +30,7 @@ const AboutPage = () => {
         "@type": "AboutPage",
         name: t("jsonLd.aboutName", "About Indexia Group"),
         url: "https://www.indexiagroup.com/about",
-        description: t("jsonLd.aboutDescription", "Indexia Group is a diversified Indian business group spanning finance, export, agriculture, logistics, security, advertising, and athlete support."),
+        description: t("jsonLd.aboutDescription", "Indexia Group is a diversified Indian business group spanning Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support."),
         isPartOf: { "@id": "https://www.indexiagroup.com/#website" },
       },
       {
@@ -93,6 +95,16 @@ const AboutPage = () => {
                   className="h-80 w-full object-cover sm:h-[26rem]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
+                {/* Floating name badge */}
+                <div className="absolute inset-x-0 bottom-0 flex justify-center px-6 pb-5">
+                  <div className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/10 px-5 py-3 shadow-xl backdrop-blur-md">
+                    <div className="h-px w-6 bg-(--color-yellow)/60" />
+                    <span className="font-display text-sm font-bold text-white sm:text-base">
+                      Mr. Bijendra Malik
+                    </span>
+                    <div className="h-px w-6 bg-(--color-yellow)/60" />
+                  </div>
+                </div>
               </div>
               <div className="flex flex-col">
                 <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
@@ -294,6 +306,9 @@ const AboutPage = () => {
                         </span>
                       ))}
                     </div>
+                    <Link to="/businesses/finserve" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
+                      Learn More →
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -320,6 +335,9 @@ const AboutPage = () => {
                       ))}
                     </div>
                   </div>
+                    <Link to="/businesses/overseas" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
+                      Learn More →
+                    </Link>
                 </div>
               </div>
             </Reveal>
@@ -345,6 +363,9 @@ const AboutPage = () => {
                       ))}
                     </div>
                   </div>
+                    <Link to="/businesses/agro-bio" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
+                      Learn More →
+                    </Link>
                 </div>
               </div>
             </Reveal>
@@ -370,6 +391,9 @@ const AboutPage = () => {
                       ))}
                     </div>
                   </div>
+                    <Link to="/businesses/securities" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
+                      Learn More →
+                    </Link>
                 </div>
               </div>
             </Reveal>
@@ -395,6 +419,9 @@ const AboutPage = () => {
                       ))}
                     </div>
                   </div>
+                    <Link to="/businesses/warehouse" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
+                      Learn More →
+                    </Link>
                 </div>
               </div>
             </Reveal>
@@ -420,6 +447,9 @@ const AboutPage = () => {
                       ))}
                     </div>
                   </div>
+                    <Link to="/businesses/advertising" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
+                      Learn More →
+                    </Link>
                 </div>
               </div>
             </Reveal>
@@ -560,7 +590,7 @@ const AboutPage = () => {
 
       {/* CTA */}
       <ImpactBand
-        image={aboutBg}
+        image={aboutIndexiaImg}
         eyebrow={tr("eyebrow", "About Us")}
         title={tr("ctaTitle", "Let's Build Something Together")}
         body={tr("ctaBody", "")}

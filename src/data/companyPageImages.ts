@@ -2,9 +2,9 @@
 import athleticsTraining from "../assets/company-pages-img/page-specific/athletics-training.png";
 import organicFertilizer from "../assets/company-pages-img/page-specific/organic-fertilizer.png";
 import securityTeam from "../assets/company-pages-img/page-specific/security-team.png";
-import shamliLand from "../../public/images/companies/warehouse-lease.webp";
+import shamliLand from "../assets/company-pages-img/page-specific/shamli-land.png";
 import shippingPort from "../assets/company-pages-img/page-specific/shipping-port.png";
-import unipoleHoarding from "../../public/images/companies/advertising-hoarding.webp";
+import unipoleHoarding from "../assets/company-pages-img/page-specific/unipole-hoarding.png";
 import financeSpotlight from "../../public/images/companies/finance-spotlight.webp";
 import finserveSpotlight from "../../public/images/companies/finserve-spotlight.webp";
 

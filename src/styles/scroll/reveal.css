@@ -14,3 +14,12 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Scale variant — also scales from 0.9 → 1 */
+.reveal-scale {
+  transform: translateY(var(--reveal-y, 24px)) scale(0.92);
+}
+
+.reveal-scale.is-in-view {
+  transform: translateY(0) scale(1);
+}

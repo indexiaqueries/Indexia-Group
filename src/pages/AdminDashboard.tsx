@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import {
@@ -47,29 +47,34 @@ const AdminDashboard = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
 
-  const fetchApplications = useCallback(async () => {
-    setLoading(true);
-    setError("");
-    try {
-      const res = await fetch("/api/admin/applications", {
-        headers: { "x-admin-token": token },
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error || "Failed to fetch applications.");
-      setApplications(data.applications);
-      setIsAuthed(true);
-      localStorage.setItem("admin_token", token);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to fetch applications.");
-      setIsAuthed(false);
-    } finally {
-      setLoading(false);
-    }
-  }, [token]);
-
   useEffect(() => {
-    if (token) fetchApplications();
-  }, []);
+    if (!token) return;
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      setError("");
+      try {
+        const res = await fetch("/api/admin/applications", {
+          headers: { "x-admin-token": token },
+        });
+        const data = await res.json();
+        if (!res.ok || !data.ok) throw new Error(data.error || "Failed to fetch applications.");
+        if (!cancelled) {
+          setApplications(data.applications);
+          setIsAuthed(true);
+          localStorage.setItem("admin_token", token);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setError(err instanceof Error ? err.message : "Failed to fetch applications.");
+          setIsAuthed(false);
+        }
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [token]);
 
   const updateStatus = async (id: string, status: string) => {
     try {

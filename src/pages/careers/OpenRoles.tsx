@@ -2,9 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
-import ImageSlot from "../../components/common/ImageSlot";
 import Reveal from "../../components/common/Reveal";
-import { siteImages } from "../../data/siteImages";
+import openPositionsImg from "../../assets/careers-img/OpenPositions.png";
 import { colors } from "../../lib/theme";
 import type { RoleItem } from "./careersData";
 
@@ -43,7 +42,18 @@ const OpenRoles = ({ roles }: OpenRolesProps) => {
 
         {/* Banner Image */}
         <Reveal delay={0.05} amount={0.15}>
-          <ImageSlot {...siteImages.careersOpenRoles} className="mb-10 rounded-2xl" aspect="aspect-[21/8]" />
+          <div className="relative mb-10 overflow-hidden rounded-2xl">
+            <img
+              src={openPositionsImg}
+              alt="Open positions at Indexia Group"
+              width={1200}
+              height={400}
+              loading="lazy"
+              decoding="async"
+              className="w-full object-cover"
+            />
+            <span aria-hidden="true" className="card-shine-lines" />
+          </div>
         </Reveal>
 
         {/* Toggle with counts */}

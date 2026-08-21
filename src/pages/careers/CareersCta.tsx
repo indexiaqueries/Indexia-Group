@@ -1,14 +1,13 @@
 import { useTranslation } from "react-i18next";
 import ImpactBand from "../../components/common/ImpactBand";
-import { siteImages } from "../../data/siteImages";
+import mailUsImg from "../../assets/careers-img/MailUs.png";
 
 const CareersCta = () => {
   const { t } = useTranslation();
-  const heroSrc = siteImages.careersHero?.src;
 
   return (
     <ImpactBand
-      image={heroSrc || ""}
+      image={mailUsImg}
       eyebrow={t("careersPage.eyebrow")}
       title={t("careersPage.ctaTitle")}
       body={t("careersPage.ctaBody")}

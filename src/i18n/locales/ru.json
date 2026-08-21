@@ -21,7 +21,9 @@
     "p0": {
       "tag": "Группа Indexia",
       "heading": "Одна группа.\nМножество решений.",
-      "sub": "От финансов и логистики до агробизнеса и рекламы — группа Indexia ускоряет рост в разных отраслях с помощью надёжных компаний, готовых к будущему."
+      "tagline": "Diverse Ventures. Unified Vision.",
+      "sub": "От финансов и логистики до агробизнеса и рекламы — группа Indexia ускоряет рост в разных отраслях с помощью надёжных компаний, готовых к будущему.",
+      "motto": "Несколько шагов на службе нации"
     },
     "p1": {
       "tag": "Indexia Finance",
@@ -92,7 +94,8 @@
     "enquiry": "Отправьте нам свой запрос.",
     "stats": "Группа Indexia · 08 компаний · 03 локации",
     "rights": "© 2026 Группа Indexia. Все права защищены.",
-    "backToTop": "Наверх"
+    "backToTop": "Наверх",
+    "taglineSecondary": "Разнообразные предприятия. Единая видение."
   },
   "home": {
     "groupCompanies": {
@@ -526,7 +529,7 @@
           "Спортивная медицина и реабилитация",
           "Поддержка олимпийского уровня"
         ],
-        "name": "Фонд Indexia"
+        "name": "Indexia Foundation"
       }
     },
     "news": {
@@ -1017,7 +1020,7 @@
     "aboutUs": "About Us",
     "leaderEyebrow": "Leadership",
     "leaderTitle": "The Visionary Behind Indexia Group",
-    "founderName": "Founder & Managing Director",
+    "founderName": "Основатель и генеральный директор",
     "founderRole": "Founder & Managing Director",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
     "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
@@ -1025,38 +1028,38 @@
     "companiesEyebrow": "Our Companies",
     "companiesTitle": "Eight Businesses, One Vision",
     "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
-    "c1Tag": "Multinational Fintech",
+    "c1Tag": "Международный финтех",
     "c1Name": "Indexia Finance",
     "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
     "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
-    "c2Tag": "Lending Arm",
+    "c2Tag": "Кредитное подразделение",
     "c2Name": "Indexia Finserve Pvt. Ltd.",
     "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
-    "c2Highlights": "12 Loan Products,Personal & Business Loans,Home Loan & LAP,Balance Transfer & Working Capital",
-    "c3Tag": "Global Export",
+    "c2Highlights": "12 кредитных продуктов,Личные и бизнес-кредиты,Ипотека и кредит под залог,Перевод остатка и оборотный капитал",
+    "c3Tag": "Глобальный экспорт",
     "c3Name": "Indexia Overseas Pvt. Ltd.",
     "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
-    "c3Highlights": "14 South American Countries,Premium Refined Sugar Export,Food-Grade Quality Certified,Full-Cycle Export Management",
-    "c4Tag": "Organic Agriculture",
+    "c3Highlights": "14 стран Южной Америки,Экспорт рафинированного сахара премиум-класса,Сертификация пищевого качества,Полный цикл управления экспортом",
+    "c4Tag": "Органическое сельское хозяйство",
     "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
     "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
     "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
-    "c5Tag": "Armed Protection",
+    "c5Tag": "Охрана с оружием",
     "c5Name": "Indexia Securities",
     "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
-    "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
-    "c6Tag": "Strategic Land",
+    "c5Highlights": "Бывшие военные коммандос,Операционный центр 24/7,Защита VIP и корпораций,Безопасность критической инфраструктуры",
+    "c6Tag": "Стратегические земли",
     "c6Name": "Indexia Warehouse",
     "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
-    "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
-    "c7Tag": "Highway Advertising",
+    "c6Highlights": "21 акр в Shamli UP,8 национальных шоссе,5 локаций,65 км от Дели",
+    "c7Tag": "Реклама на шоссе",
     "c7Name": "Indexia Advertising",
     "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
-    "c7Highlights": "NH-709B Delhi-Dehradun Highway,10 States Connected,360° Visibility Unipoles,1+ Crore Daily Exposure",
-    "c8Tag": "Social Impact",
+    "c7Highlights": "Шоссе NH-709B Дели-Деградун,10 штатов,Видимость 360°,1+ крор дневная экспозиция",
+    "c8Tag": "Социальное воздействие",
     "c8Name": "Indexia Foundation",
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
-    "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
+    "c8Highlights": "От местного уровня до Олимпиады,Тренировки и питание,Коучинг и менторство,Финансирование соревнований",
     "visitWebsite": "Visit Website",
     "learnMore": "Learn More",
     "registrationEyebrow": "Registration & Compliance",
@@ -1065,16 +1068,36 @@
     "viewOnMCA": "View on MCA",
     "registrationNote": "All company registrations are verifiable on the",
     "mcaPortal": "MCA Portal",
-    "taglineSecondary": "Diverse Ventures. Unified Vision."
+    "taglineSecondary": "Разнообразные предприятия. Единая видение."
   },
   "homeReach": {
-    "eyebrow": "Our Reach",
-    "title": "Trusted Across Borders",
-    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
-    "stat1Label": "Businesses",
-    "stat2Label": "Countries",
-    "stat3Label": "Years Strong",
-    "stat4Label": "Clients Served",
-    "cta": "Learn More About Us"
+    "eyebrow": "Наш охват",
+    "title": "Надёжность за границами",
+    "subtitle": "От Мумбаи до Эквадора наши компании обслуживают клиентов на трёх континентах.",
+    "stat1Label": "Компании",
+    "stat2Label": "Страны",
+    "stat3Label": "Годы силы",
+    "stat4Label": "Обслуженные клиенты",
+    "cta": "Узнать больше"
+  },
+  "jsonLd": {
+    "orgName": "Indexia Group",
+    "breadcrumbHome": "Главная",
+    "breadcrumbAbout": "О нас",
+    "breadcrumbCompanies": "Компании группы",
+    "breadcrumbContact": "Контакты",
+    "breadcrumbNews": "Новости и центр знаний",
+    "breadcrumbCareers": "Карьера",
+    "aboutName": "О Indexia Group",
+    "aboutDescription": "Indexia Group — диверсифицированная индийская бизнес-группа.",
+    "contactName": "Контакты Indexia Group",
+    "corporateOffice": "Головной офис",
+    "delhiOffice": "Офис в Дели",
+    "businessesName": "Бизнесы Indexia Group",
+    "businessesDescription": "Восемь бизнесов Indexia Group.",
+    "newsName": "Indexia Group — Новости и центр знаний",
+    "careersName": "Вакансии в Indexia Group",
+    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageDescription": "Узнайте о {{name}}, компании Indexia Group. {{description}}"
   }
 }

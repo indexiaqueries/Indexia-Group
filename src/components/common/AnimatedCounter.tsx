@@ -2,7 +2,7 @@ import { useInView } from "../../hooks/useInView";
 import { useCountUp } from "../../hooks/useCountUp";
 
 type AnimatedCounterProps = {
-  /** Numeric string, e.g. "500+", "8", "43+", "21" */
+  /** Numeric string, e.g. "500+", "8", "43+", "21", "₹30", "24/7" */
   value: string;
   /** Label shown below the number */
   label: string;
@@ -17,8 +17,15 @@ type AnimatedCounterProps = {
 };
 
 /**
- * Fully animated counter: parses a string like "500+" into target + suffix,
- * counts from 0 → target on scroll into view, then appends the suffix.
+ * Animated counter: parses a value string into prefix + number + suffix,
+ * counts from 0 → target on scroll into view, then prepends prefix and appends suffix.
+ *
+ * Handles:
+ *   "500+"   → prefix "", number 500, suffix "+"
+ *   "₹30"    → prefix "₹", number 30, suffix ""
+ *   "24/7"   → non-animatable, displayed as-is
+ *   "VIP"    → non-animatable, displayed as-is
+ *   "∞"      → non-animatable, displayed as-is
  */
 const AnimatedCounter = ({
   value,
@@ -30,16 +37,30 @@ const AnimatedCounter = ({
 }: AnimatedCounterProps) => {
   const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.4 });
 
-  // Separate suffix (+, etc.) from numeric part
-  const suffix = value.replace(/[\d.,]/g, "");
-  const numericStr = value.replace(/[^\d.,]/g, "").replace(/,/g, "");
-  const parsedTarget = parseFloat(numericStr);
-  const animatable = !Number.isNaN(parsedTarget);
+  // Try to extract prefix (non-digit chars at start), numeric part, and suffix (non-digit chars at end)
+  // e.g. "₹30"  → prefix="₹", number="30", suffix=""
+  // e.g. "500+" → prefix="", number="500", suffix="+"
+  // e.g. "24/7" → not animatable (digits on both sides of non-digit)
+  const match = value.match(/^([^\d]*?)([\d]+(?:[.,]\d+)?)([^\d]*?)$/);
+  const hasMultipleNumberGroups = /\d[^\d]+\d/.test(value);
+
+  let prefix = "";
+  let suffix = "";
+  let animatable = false;
+  let parsedTarget = 0;
+
+  if (match && !hasMultipleNumberGroups) {
+    prefix = match[1];
+    const numericStr = match[2].replace(/,/g, "");
+    parsedTarget = parseFloat(numericStr);
+    suffix = match[3];
+    animatable = !Number.isNaN(parsedTarget) && parsedTarget > 0;
+  }
 
   const current = useCountUp(animatable ? parsedTarget : 0, inView && animatable);
 
   const display = animatable
-    ? `${current.toLocaleString()}${suffix}`
+    ? `${prefix}${current.toLocaleString()}${suffix}`
     : value;
 
   return (

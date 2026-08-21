@@ -21,7 +21,9 @@
     "p0": {
       "tag": "インデキシアグループ",
       "heading": "一つのグループ。\n多様なソリューション。",
-      "sub": "金融やロジスティクスから農業や広告まで、インデキシアグループは信頼され、未来を見据えた企業を通じて、あらゆる業界の成長を促進します。"
+      "tagline": "Diverse Ventures. Unified Vision.",
+      "sub": "金融やロジスティクスから農業や広告まで、インデキシアグループは信頼され、未来を見据えた企業を通じて、あらゆる業界の成長を促進します。",
+      "motto": "国に仕えるためのいくつかのステップ"
     },
     "p1": {
       "tag": "インデキシアファイナンス",
@@ -92,7 +94,8 @@
     "enquiry": "お問い合わせをお送りください。",
     "stats": "インデキシアグループ · 08社 · 03拠点",
     "rights": "© 2026 インデキシアグループ。全著作権所有。",
-    "backToTop": "トップへ戻る"
+    "backToTop": "トップへ戻る",
+    "taglineSecondary": "多様な事業。統一されたビジョン。"
   },
   "home": {
     "groupCompanies": {
@@ -384,7 +387,7 @@
           "クロスボーダー資本ソリューション",
           "ウェルス＆アセットアドバイザリー"
         ],
-        "name": "インデキシアファイナンス"
+        "name": "Indexia Finance"
       },
       "finserve": {
         "tag": "ローン＆ファイナンス",
@@ -410,7 +413,7 @@
           "リース割引",
           "運転資金"
         ],
-        "name": "インデキシアフィンサーブ株式会社"
+        "name": "Indexia Finserve Pvt. Ltd."
       },
       "overseas": {
         "tag": "食用品輸出業者",
@@ -427,7 +430,7 @@
           "国際物流",
           "南米14市場"
         ],
-        "name": "インデキシアオーバーシーズ株式会社"
+        "name": "Indexia Overseas Pvt. Ltd."
       },
       "agro-bio": {
         "tag": "有機肥料生産",
@@ -446,7 +449,7 @@
           "農家支援＆トレーニング",
           "シャムリー施設（デリー首都圏）"
         ],
-        "name": "インデキシアアグロバイオ肥料株式会社"
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
       },
       "securities": {
         "tag": "武装警備＆コマンド部隊",
@@ -465,7 +468,7 @@
           "企業＆サイト警備",
           "24時間体制の監視＆迅速対応"
         ],
-        "name": "インデキシアセキュリティーズ"
+        "name": "Indexia Securities"
       },
       "warehouse": {
         "tag": "戦略的用地投資",
@@ -485,7 +488,7 @@
           "港湾アクセス — グジャラート、マハラシュトラ、チェンナイ、コルカタ",
           "空港アクセス — デリーとジェワールまで1時間以内"
         ],
-        "name": "インデキシアウェアハウス",
+        "name": "Indexia Warehouse",
         "location": "シャムリ、ウッタル・プラデーシュ州"
       },
       "advertising": {
@@ -506,7 +509,7 @@
           "印刷、設置、メンテナンス",
           "長期・大量パッケージ"
         ],
-        "name": "インデキシアアドバタイジング",
+        "name": "Indexia Advertising",
         "location": "シャムリのデリー-デラドゥン高速道路"
       },
       "foundation": {
@@ -526,7 +529,7 @@
           "スポーツ医学＆リハビリテーション",
           "オリンピック級サポート"
         ],
-        "name": "インデキシア財団"
+        "name": "Indexia Foundation"
       }
     },
     "news": {
@@ -1017,7 +1020,7 @@
     "aboutUs": "About Us",
     "leaderEyebrow": "Leadership",
     "leaderTitle": "The Visionary Behind Indexia Group",
-    "founderName": "Founder & Managing Director",
+    "founderName": "創業者兼最高経営責任者",
     "founderRole": "Founder & Managing Director",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
     "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
@@ -1025,38 +1028,38 @@
     "companiesEyebrow": "Our Companies",
     "companiesTitle": "Eight Businesses, One Vision",
     "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
-    "c1Tag": "Multinational Fintech",
+    "c1Tag": "多国籍フィンテック",
     "c1Name": "Indexia Finance",
     "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
     "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
-    "c2Tag": "Lending Arm",
+    "c2Tag": "融資部門",
     "c2Name": "Indexia Finserve Pvt. Ltd.",
     "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
-    "c2Highlights": "12 Loan Products,Personal & Business Loans,Home Loan & LAP,Balance Transfer & Working Capital",
-    "c3Tag": "Global Export",
+    "c2Highlights": "12種のローン商品,個人・法人ローン,住宅ローン・担保ローン,残高移転・運転資金",
+    "c3Tag": "グローバル輸出",
     "c3Name": "Indexia Overseas Pvt. Ltd.",
     "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
-    "c3Highlights": "14 South American Countries,Premium Refined Sugar Export,Food-Grade Quality Certified,Full-Cycle Export Management",
-    "c4Tag": "Organic Agriculture",
+    "c3Highlights": "14カ国南米,高級精製糖輸出,食品安全認証,フルサイクル輸出管理",
+    "c4Tag": "有機農業",
     "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
     "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
     "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
-    "c5Tag": "Armed Protection",
+    "c5Tag": "武装警備",
     "c5Name": "Indexia Securities",
     "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
-    "c5Highlights": "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security",
-    "c6Tag": "Strategic Land",
+    "c5Highlights": "元軍隊コマンド,24/7運用センター,VIP・企業警護,重要インフラセキュリティ",
+    "c6Tag": "戦略的用地",
     "c6Name": "Indexia Warehouse",
     "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
-    "c6Highlights": "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi",
-    "c7Tag": "Highway Advertising",
+    "c6Highlights": "Shamli UPに21エーカー,8本の国道,5拠点,デリーから65km",
+    "c7Tag": "高速道路広告",
     "c7Name": "Indexia Advertising",
     "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
-    "c7Highlights": "NH-709B Delhi-Dehradun Highway,10 States Connected,360° Visibility Unipoles,1+ Crore Daily Exposure",
-    "c8Tag": "Social Impact",
+    "c7Highlights": "NH-709Bデリー・デーラードゥーン高速道路,10州接続,360°可視性,1+クロール日間曝光",
+    "c8Tag": "社会貢献",
     "c8Name": "Indexia Foundation",
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
-    "c8Highlights": "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding",
+    "c8Highlights": "地域から五輪へ,トレーニングと栄養,コーチングとメンタリング,大会資金支援",
     "visitWebsite": "Visit Website",
     "learnMore": "Learn More",
     "registrationEyebrow": "Registration & Compliance",
@@ -1065,16 +1068,36 @@
     "viewOnMCA": "View on MCA",
     "registrationNote": "All company registrations are verifiable on the",
     "mcaPortal": "MCA Portal",
-    "taglineSecondary": "Diverse Ventures. Unified Vision."
+    "taglineSecondary": "多様な事業。統一されたビジョン。"
   },
   "homeReach": {
-    "eyebrow": "Our Reach",
-    "title": "Trusted Across Borders",
-    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
-    "stat1Label": "Businesses",
-    "stat2Label": "Countries",
-    "stat3Label": "Years Strong",
-    "stat4Label": "Clients Served",
-    "cta": "Learn More About Us"
+    "eyebrow": "私たちの展開",
+    "title": "国境を越えた信頼",
+    "subtitle": "ムンバイからエクアドルまで、3大陸の顧客にサービスを提供しています。",
+    "stat1Label": "企業",
+    "stat2Label": "国",
+    "stat3Label": "強さの年数",
+    "stat4Label": "サービス顧客",
+    "cta": "詳しく見る"
+  },
+  "jsonLd": {
+    "orgName": "Indexia Group",
+    "breadcrumbHome": "ホーム",
+    "breadcrumbAbout": "会社概要",
+    "breadcrumbCompanies": "グループ企業",
+    "breadcrumbContact": "お問い合わせ",
+    "breadcrumbNews": "ニュース＆ナレッジセンター",
+    "breadcrumbCareers": "採用情報",
+    "aboutName": "Indexia Groupについて",
+    "aboutDescription": "Indexia Groupは多角的なインドの企業グループです。",
+    "contactName": "Indexia Group お問い合わせ",
+    "corporateOffice": "本社",
+    "delhiOffice": "デリー事務所",
+    "businessesName": "Indexia Group事業",
+    "businessesDescription": "Indexia Group傘下の8つの事業。",
+    "newsName": "Indexia Group — ニュース＆ナレッジセンター",
+    "careersName": "Indexia Groupの求人",
+    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageDescription": "{{name}}について見る。Indexia Groupの企業。{{description}}"
   }
 }

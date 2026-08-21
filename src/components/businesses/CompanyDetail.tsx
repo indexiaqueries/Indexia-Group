@@ -231,7 +231,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <div className="mt-9 grid max-w-md grid-cols-3 gap-4">
               <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
               <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
-              <AnimatedCounter value={`${index + 1}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
+              <AnimatedCounter value={`${String(index + 1).padStart(2, "0")}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
             </div>
           </div>
         </div>

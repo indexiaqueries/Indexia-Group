@@ -43,7 +43,10 @@ const Home = () => {
 
     <Banner />
 
-    <section className="bg-(--color-soft) py-16 lg:py-24">
+    {/* Gradient fade from hero dark to light section */}
+    <div aria-hidden="true" className="relative -mt-1 h-8 sm:h-16 bg-linear-to-b from-[#02101a] to-[var(--color-soft)]" />
+
+    <section className="relative bg-(--color-soft) py-16 lg:py-24">
       <div className="container">
         <Reveal>
           <div className="mx-auto max-w-180 text-center">
@@ -68,11 +71,18 @@ const Home = () => {
       </div>
     </section>
 
+    {/* Gradient fade from light to dark section */}
+    <div aria-hidden="true" className="relative h-8 sm:h-16 bg-linear-to-b from-[var(--color-soft)] to-[#122029]" />
+
     {/* Global Reach & Impact */}
-    <section className="relative overflow-hidden bg-(--color-ink-deep) px-5 py-20 sm:px-6 sm:py-24 lg:px-8">
+    <section className="relative overflow-hidden bg-reach-gradient px-5 py-20 sm:px-6 sm:py-24 lg:px-8">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -end-32 top-0 h-96 w-96 rounded-full bg-(--color-teal)/10 blur-[100px]"
+        className="pointer-events-none absolute -end-32 top-0 h-96 w-96 rounded-full bg-(--color-teal)/25 blur-[120px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -start-40 bottom-0 h-80 w-80 rounded-full bg-(--color-yellow)/15 blur-[100px]"
       />
       <div className="container relative">
         <Reveal className="mx-auto mb-12 max-w-2xl text-center">
@@ -86,17 +96,17 @@ const Home = () => {
         </Reveal>
 
         <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8 lg:grid-cols-4">
-          <Reveal delay={0} amount={0.15} className="text-center">
-            <AnimatedCounter value="8" label={t("homeReach.stat1Label", "Businesses")} color={colors.yellow} numberClassName="font-display text-4xl font-bold text-(--color-yellow)" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+          <Reveal delay={0} y={40} variant="scale" amount={0.15} className="text-center">
+            <AnimatedCounter value="8" label={t("homeReach.stat1Label", "Businesses")} color={colors.yellow} numberClassName="font-display text-4xl font-bold text-(--color-yellow) transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
           </Reveal>
-          <Reveal delay={0.08} amount={0.15} className="text-center">
-            <AnimatedCounter value="3" label={t("homeReach.stat2Label", "Countries")} color={colors.white} numberClassName="font-display text-4xl font-bold text-white" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+          <Reveal delay={0.12} y={40} variant="scale" amount={0.15} className="text-center">
+            <AnimatedCounter value="3" label={t("homeReach.stat2Label", "Countries")} color={colors.white} numberClassName="font-display text-4xl font-bold text-white transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
           </Reveal>
-          <Reveal delay={0.16} amount={0.15} className="text-center">
-            <AnimatedCounter value="12+" label={t("homeReach.stat3Label", "Years Strong")} color={colors.yellow} numberClassName="font-display text-4xl font-bold text-(--color-yellow)" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+          <Reveal delay={0.24} y={40} variant="scale" amount={0.15} className="text-center">
+            <AnimatedCounter value="12+" label={t("homeReach.stat3Label", "Years Strong")} color={colors.yellow} numberClassName="font-display text-4xl font-bold text-(--color-yellow) transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
           </Reveal>
-          <Reveal delay={0.24} amount={0.15} className="text-center">
-            <AnimatedCounter value="500+" label={t("homeReach.stat4Label", "Clients Served")} color={colors.white} numberClassName="font-display text-4xl font-bold text-white" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+          <Reveal delay={0.36} y={40} variant="scale" amount={0.15} className="text-center">
+            <AnimatedCounter value="500+" label={t("homeReach.stat4Label", "Clients Served")} color={colors.white} numberClassName="font-display text-4xl font-bold text-white transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
           </Reveal>
         </div>
 

@@ -1,24 +1,21 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
-import { siteImages } from "../../data/siteImages";
+import careerHeroImg from "../../assets/hero-img/CareerHero.png";
 
 const CareersHero = () => {
   const { t } = useTranslation();
-  const heroSrc = siteImages.careersHero?.src;
 
   return (
     <section className="relative overflow-hidden bg-(--color-ink-deep) min-h-[92svh] sm:min-h-screen flex items-center">
-      {heroSrc && (
-        <img
-          src={heroSrc}
-          alt=""
-          width={1920}
-          height={900}
-          decoding="async"
-          fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover object-center"
-        />
-      )}
+      <img
+        src={careerHeroImg}
+        alt=""
+        width={1920}
+        height={900}
+        decoding="async"
+        fetchPriority="high"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-(--color-ink-deep)/70 via-(--color-ink-deep)/50 to-(--color-ink-deep)/80" />
       <div
         aria-hidden="true"
@@ -37,8 +34,8 @@ const CareersHero = () => {
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 py-20 pt-28 text-center sm:px-6 lg:px-8 lg:py-24">
-        <div className="mb-5 flex items-center justify-center gap-3">
+      <div className="relative mx-auto w-full max-w-7xl px-5 py-20 pt-28 sm:px-6 lg:px-8 lg:py-24">
+        <div className="mb-5 flex items-center gap-3">
           <span className="h-px w-10 bg-(--color-yellow)/60" />
           <Eyebrow color="var(--color-yellow)" size="md">
             {t("careersPage.eyebrow")}
@@ -46,18 +43,18 @@ const CareersHero = () => {
           <span className="h-px w-10 bg-(--color-yellow)/60" />
         </div>
 
-        <h1 className="font-display mx-auto max-w-4xl text-[clamp(34px,6vw,64px)] font-bold leading-[1.08] text-white">
+        <h1 className="font-display max-w-4xl text-[clamp(34px,6vw,64px)] font-bold leading-[1.08] text-white">
           {t("careersPage.titleStart")}
           <span className="text-shimmer text-(--color-yellow)">
             {t("careersPage.titleAccent")}
           </span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-[17px] leading-8 text-white/80">
+        <p className="mt-6 max-w-2xl text-[17px] leading-8 text-white/80">
           {t("careersPage.subtitle")}
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center gap-4">
           <button
             type="button"
             onClick={() => document.getElementById("open-roles")?.scrollIntoView({ behavior: "smooth" })}
@@ -70,7 +67,7 @@ const CareersHero = () => {
           </button>
         </div>
 
-        <div className="mt-14 flex flex-wrap items-center justify-center gap-8 text-sm text-white/60">
+        <div className="mt-14 flex flex-wrap items-center gap-8 text-sm text-white/60">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-(--color-teal)" />
             {t("careersPage.rolesSubtitle")}

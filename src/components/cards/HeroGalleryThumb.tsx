@@ -3,6 +3,8 @@ export type HeroPanel = {
   tag: string;
   heading: string;
   sub: string;
+  tagline?: string;
+  motto?: string;
   image: string;
   mobileImage: string;
   thumbImage: string;
