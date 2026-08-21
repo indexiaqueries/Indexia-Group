@@ -7,6 +7,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import nodemailer from "nodemailer";
 import { connectDB } from "./db.js";
 import Application from "./models/Application.js";
+import JobOpening from "./models/JobOpening.js";
 import adminRoutes from "./routes/admin.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -162,14 +163,128 @@ const upload = multer({
 });
 
 // Connect to MongoDB (non-blocking)
-connectDB();
+connectDB().then(seedOpenings);
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, smtpConfigured, mailTo });
 });
 
+// Make sendMail available to admin routes
+app.locals.sendMail = sendMail;
+
 // Mount admin routes
 app.use("/api/admin", adminRoutes);
+
+// ── Job Openings CRUD ─────────────────────────────────────────────
+
+// Public: list active openings
+app.get("/api/openings", async (_req, res) => {
+  try {
+    const openings = await JobOpening.find({ isActive: true }).sort({ createdAt: -1 });
+    res.json({ ok: true, openings });
+  } catch (err) {
+    console.error("Failed to fetch openings:", err);
+    res.status(500).json({ ok: false, error: "Could not fetch openings." });
+  }
+});
+
+// Admin: list all openings (including inactive)
+app.get("/api/admin/openings", async (req, res) => {
+  const token = req.headers["x-admin-token"];
+  if (token !== process.env.ADMIN_TOKEN) {
+    return res.status(401).json({ ok: false, error: "Unauthorized." });
+  }
+  try {
+    const openings = await JobOpening.find().sort({ createdAt: -1 });
+    res.json({ ok: true, openings });
+  } catch (err) {
+    console.error("Failed to fetch openings:", err);
+    res.status(500).json({ ok: false, error: "Could not fetch openings." });
+  }
+});
+
+// Admin: create opening
+app.post("/api/admin/openings", async (req, res) => {
+  const token = req.headers["x-admin-token"];
+  if (token !== process.env.ADMIN_TOKEN) {
+    return res.status(401).json({ ok: false, error: "Unauthorized." });
+  }
+  const { title, department, company, location, type, description, requirements } = req.body ?? {};
+  if (!title || !department || !type) {
+    return res.status(400).json({ ok: false, error: "Title, department, and type are required." });
+  }
+  try {
+    const opening = await JobOpening.create({
+      title,
+      department,
+      company: company || "Indexia Group",
+      location: location || "Mumbai",
+      type,
+      description: description || "",
+      requirements: requirements || [],
+    });
+    res.json({ ok: true, opening });
+  } catch (err) {
+    console.error("Failed to create opening:", err);
+    res.status(500).json({ ok: false, error: "Could not create opening." });
+  }
+});
+
+// Admin: update opening
+app.patch("/api/admin/openings/:id", async (req, res) => {
+  const token = req.headers["x-admin-token"];
+  if (token !== process.env.ADMIN_TOKEN) {
+    return res.status(401).json({ ok: false, error: "Unauthorized." });
+  }
+  try {
+    const opening = await JobOpening.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!opening) return res.status(404).json({ ok: false, error: "Opening not found." });
+    res.json({ ok: true, opening });
+  } catch (err) {
+    console.error("Failed to update opening:", err);
+    res.status(500).json({ ok: false, error: "Could not update opening." });
+  }
+});
+
+// Admin: delete opening
+app.delete("/api/admin/openings/:id", async (req, res) => {
+  const token = req.headers["x-admin-token"];
+  if (token !== process.env.ADMIN_TOKEN) {
+    return res.status(401).json({ ok: false, error: "Unauthorized." });
+  }
+  try {
+    const opening = await JobOpening.findByIdAndDelete(req.params.id);
+    if (!opening) return res.status(404).json({ ok: false, error: "Opening not found." });
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Failed to delete opening:", err);
+    res.status(500).json({ ok: false, error: "Could not delete opening." });
+  }
+});
+
+// Seed openings from hardcoded data if DB is empty
+async function seedOpenings() {
+  try {
+    const count = await JobOpening.countDocuments();
+    if (count > 0) return;
+    console.log("[seed] No openings found — seeding from defaults...");
+    const defaults = [
+      { title: "Finance Intern", department: "Finance", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Gain hands-on experience in financial operations, loan processing, and banking procedures.", requirements: ["Currently pursuing or recently completed degree in Finance/Commerce", "Interest in financial services and banking", "Proficiency in MS Excel and basic financial tools"] },
+      { title: "HR Intern", department: "Human Resources", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Learn end-to-end HR processes including recruitment, onboarding, and employee management.", requirements: ["Currently pursuing or recently completed degree in HR/Management", "Strong communication and interpersonal skills", "Basic knowledge of HR practices"] },
+      { title: "Digital Marketing Intern", department: "Digital Marketing", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Assist in digital marketing campaigns, SEO optimization, and social media management.", requirements: ["Currently pursuing or recently completed degree in Marketing/Communications", "Knowledge of SEO, SEM, and social media platforms", "Creative thinking and analytical skills"] },
+      { title: "IT Intern", department: "Information Technology", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Support IT infrastructure, software development, and technical operations.", requirements: ["Currently pursuing or recently completed degree in Computer Science/IT", "Basic programming knowledge", "Interest in software development and IT systems"] },
+      { title: "Digital Marketing Executive", department: "Digital Marketing", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Lead digital marketing strategies including SEO, SEM, social media marketing, and content creation to drive online presence and lead generation.", requirements: ["Minimum 1 year experience in digital marketing", "Strong knowledge of SEO, SEM, and SMO", "Experience with Google Analytics, Ads, and social media tools", "Excellent communication and analytical skills"] },
+      { title: "IT Developer", department: "Information Technology", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Develop and maintain software applications, manage databases, and support IT infrastructure across the organization.", requirements: ["Minimum 1 year experience as a full-stack developer", "Proficiency in frontend and backend technologies", "Experience with databases and API development", "Strong problem-solving and debugging skills"] },
+      { title: "HR Executive", department: "Human Resources", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Manage end-to-end HR processes including profile hiring, shortlisting candidates, conducting interviews, managing joining formalities, induction, training, salary management, and exit formalities.", requirements: ["Minimum 1 year experience in HR", "End-to-end recruitment experience from hiring to exit", "Knowledge of HR policies, salary management, and employee relations", "Strong interpersonal and organizational skills"] },
+      { title: "Customer Support Associate (CSA)", department: "Customer Support", company: "Indexia Finserve Pvt. Ltd.", location: "Mumbai", type: "Full-time", description: "Handle customer inquiries across all loan products, provide end-to-end support from application to disbursal, and ensure a seamless customer experience at Indexia Finserve.", requirements: ["Handle inbound/outbound calls for loan enquiries (Personal, Business, Home, LAP, etc.)", "Guide customers through eligibility, documentation, and application process", "Maintain customer records and follow up on pending applications", "Coordinate with banks and NBFCs for loan processing updates", "Resolve customer complaints and escalate issues when necessary", "Achieve monthly targets for customer engagement and satisfaction", "Strong communication skills in English and Hindi", "Basic knowledge of financial products and banking processes"] },
+      { title: "Executive Assistant to Director", department: "Administration", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Support the Director in managing multiple profiles, coordinating schedules, handling correspondence, and acting as a supporting hand for day-to-day operations.", requirements: ["Minimum 1 year experience as EA or similar administrative role", "Ability to handle multiple profiles and priorities", "Excellent organizational and time management skills", "Proficiency in MS Office and communication tools", "Discretion and professionalism in handling confidential matters"] },
+    ];
+    await JobOpening.insertMany(defaults);
+    console.log("[seed] Seeded " + defaults.length + " openings.");
+  } catch (err) {
+    console.error("[seed] Failed:", err.message);
+  }
+}
 
 app.post("/api/contact", async (req, res) => {
   const { name, phone, email, subject, message } = req.body ?? {};

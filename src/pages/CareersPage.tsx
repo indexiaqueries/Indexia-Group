@@ -8,7 +8,7 @@ import { useCareersJsonLd, useCareersContent } from "./careers/careersData";
 
 const CareersPage = () => {
   const { t } = useTranslation();
-  const { roles, culture } = useCareersContent();
+  const { roles, culture, loading } = useCareersContent();
   const careersJsonLd = useCareersJsonLd();
 
   return (
@@ -23,7 +23,7 @@ const CareersPage = () => {
 
       <CareersHero />
       <CultureSection culture={culture} />
-      <OpenRoles roles={roles} />
+      <OpenRoles roles={roles} loading={loading} />
       <CareersCta />
     </main>
   );

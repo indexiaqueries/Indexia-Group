@@ -25,18 +25,64 @@ const ApplyPage = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  const validateField = (field: string, value: string): string => {
+    switch (field) {
+      case "name":
+        if (!value.trim()) return "Please enter your name.";
+        if (value.trim().length < 2) return "Name must be at least 2 characters.";
+        if (!/[a-zA-Z]/.test(value)) return "Name must contain letters.";
+        return "";
+      case "email":
+        if (!value.trim()) return "Please enter your email address.";
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return "Please enter a valid email address.";
+        return "";
+      case "phone":
+        if (!value.trim()) return "Please enter your phone number.";
+        if (!/^\d{10}$/.test(value.replace(/\D/g, ""))) return "Please enter a valid 10-digit phone number.";
+        return "";
+      case "experience":
+        if (!value) return "Please select your experience level.";
+        return "";
+      case "resume":
+        if (!formData.resumeFileName) return "Please upload your resume.";
+        return "";
+      case "intro":
+        if (!value.trim()) return "Please tell us about yourself.";
+        if (value.trim().length < 20) return "Please write at least 20 characters.";
+        return "";
+      default:
+        return "";
+    }
+  };
+
   const validate = () => {
     const newErrors: Record<string, string> = {};
-    if (!formData.name.trim()) newErrors.name = "Please enter your name.";
-    if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
-      newErrors.email = "Please enter a valid email address.";
-    if (!formData.phone.trim() || !/^\d{10}$/.test(formData.phone.replace(/\D/g, "")))
-      newErrors.phone = "Please enter a valid 10-digit phone number.";
-    if (!formData.experience) newErrors.experience = "Please select your experience level.";
-    if (!formData.resumeFileName) newErrors.resume = "Please upload your resume.";
-    if (!formData.intro.trim()) newErrors.intro = "Please tell us about yourself.";
+    for (const field of ["name", "email", "phone", "experience", "resume", "intro"]) {
+      const err = validateField(field, field === "resume" ? "" : (formData as Record<string, string>)[field]);
+      if (err) newErrors[field] = err;
+    }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
+  };
+
+  const handleBlur = (field: string) => {
+    const err = validateField(field, (formData as Record<string, string>)[field]);
+    setErrors((prev) => {
+      if (err) return { ...prev, [field]: err };
+      const next = { ...prev };
+      delete next[field];
+      return next;
+    });
+  };
+
+  const clearError = (field: string) => {
+    if (errors[field]) {
+      setErrors((prev) => {
+        const next = { ...prev };
+        delete next[field];
+        return next;
+      });
+    }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -198,7 +244,8 @@ const ApplyPage = () => {
                   id="apply-name"
                   type="text"
                   value={formData.name}
-                  onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, name: e.target.value })); clearError("name"); }}
+                  onBlur={() => handleBlur("name")}
                   placeholder="Your full name"
                   aria-required="true"
                   aria-invalid={!!errors.name}
@@ -218,7 +265,8 @@ const ApplyPage = () => {
                   id="apply-email"
                   type="email"
                   value={formData.email}
-                  onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, email: e.target.value })); clearError("email"); }}
+                  onBlur={() => handleBlur("email")}
                   placeholder="you@example.com"
                   aria-required="true"
                   aria-invalid={!!errors.email}
@@ -238,7 +286,8 @@ const ApplyPage = () => {
                   id="apply-phone"
                   type="tel"
                   value={formData.phone}
-                  onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, phone: e.target.value })); clearError("phone"); }}
+                  onBlur={() => handleBlur("phone")}
                   placeholder="10-digit number"
                   aria-required="true"
                   aria-invalid={!!errors.phone}
@@ -257,7 +306,8 @@ const ApplyPage = () => {
                 <select
                   id="apply-experience"
                   value={formData.experience}
-                  onChange={(e) => setFormData((prev) => ({ ...prev, experience: e.target.value }))}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, experience: e.target.value })); clearError("experience"); }}
+                  onBlur={() => handleBlur("experience")}
                   aria-required="true"
                   aria-invalid={!!errors.experience}
                   aria-describedby={errors.experience ? "apply-experience-error" : undefined}
@@ -320,15 +370,26 @@ const ApplyPage = () => {
                 <textarea
                   id="apply-intro"
                   value={formData.intro}
-                  onChange={(e) => setFormData((prev) => ({ ...prev, intro: e.target.value }))}
+                  onChange={(e) => { setFormData((prev) => ({ ...prev, intro: e.target.value })); clearError("intro"); }}
+                  onBlur={() => handleBlur("intro")}
                   placeholder="Share your background, skills, and why you're interested in this role..."
                   rows={5}
+                  maxLength={1000}
                   aria-required="true"
                   aria-invalid={!!errors.intro}
                   aria-describedby={errors.intro ? "apply-intro-error" : undefined}
                   className={`w-full rounded-xl border ${errors.intro ? "border-red-400" : "border-slate-200"} bg-white px-4 py-3 text-[15px] leading-6 text-(--color-ink) outline-none transition-colors focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20 resize-none`}
                 />
-                {errors.intro && <p id="apply-intro-error" role="alert" className="mt-1.5 text-xs text-red-500">{errors.intro}</p>}
+                <div className="mt-1.5 flex items-center justify-between">
+                  {errors.intro ? (
+                    <p id="apply-intro-error" role="alert" className="text-xs text-red-500">{errors.intro}</p>
+                  ) : (
+                    <span />
+                  )}
+                  <span className={`text-xs ${formData.intro.length > 900 ? "text-amber-500" : "text-(--color-muted)"}`}>
+                    {formData.intro.length}/1000
+                  </span>
+                </div>
               </div>
 
               {/* Submit */}

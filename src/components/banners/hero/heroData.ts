@@ -24,7 +24,6 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     tag: t("hero.p0.tag"),
     heading: t("hero.p0.heading"),
     sub: t("hero.p0.sub"),
-    tagline: t("hero.p0.tagline"),
     motto: t("hero.p0.motto"),
     image: getCompanyImage("group"),
     mobileImage: getCompanyMobileImage("group"),

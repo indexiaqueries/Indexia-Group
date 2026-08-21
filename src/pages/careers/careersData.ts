@@ -1,7 +1,17 @@
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { jobRoles, careerCulture } from "../../data/careers";
+import { careerCulture } from "../../data/careers";
 
-export type RoleItem = (typeof jobRoles)[number];
+export type RoleItem = {
+  _id?: string;
+  title: string;
+  department: string;
+  company: string;
+  location: string;
+  type: string;
+  description?: string;
+  requirements?: string[];
+};
 
 export const useCareersJsonLd = () => {
   const { t } = useTranslation();
@@ -27,15 +37,22 @@ export const useCareersJsonLd = () => {
 
 export const useCareersContent = () => {
   const { t } = useTranslation();
-  const tr = (path: string, fallback: string) => t(`pageContent.careers.${path}`, { defaultValue: fallback });
+  const [roles, setRoles] = useState<RoleItem[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const roles = jobRoles.map((r) => ({
-    ...r,
-    title: tr(`roles.${r.key}.title`, r.title),
-    department: tr(`roles.${r.key}.department`, r.department),
-    type: tr(`roles.${r.key}.type`, r.type),
-  }));
-  const culture = careerCulture.map((p, i) => tr(`culture.${i}`, p));
+  useEffect(() => {
+    fetch("/api/openings")
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.ok && data.openings) {
+          setRoles(data.openings);
+        }
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
 
-  return { roles, culture };
+  const culture = careerCulture;
+
+  return { roles, culture, loading };
 };

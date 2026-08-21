@@ -9,6 +9,7 @@ import type { RoleItem } from "./careersData";
 
 type OpenRolesProps = {
   roles: RoleItem[];
+  loading?: boolean;
 };
 
 const departmentColors: Record<string, string> = {
@@ -20,7 +21,7 @@ const departmentColors: Record<string, string> = {
   Administration: "#6366f1",
 };
 
-const OpenRoles = ({ roles }: OpenRolesProps) => {
+const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
   const { t } = useTranslation();
   const [activeType, setActiveType] = useState<"Full-time" | "Intern">("Full-time");
   const filteredRoles = roles.filter((role) => role.type === activeType);
@@ -96,7 +97,18 @@ const OpenRoles = ({ roles }: OpenRolesProps) => {
           </div>
         </Reveal>
 
+        {/* Loading State */}
+        {loading && (
+          <Reveal>
+            <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-12 text-center">
+              <div className="mx-auto mb-3 h-6 w-6 animate-spin rounded-full border-2 border-(--color-teal) border-t-transparent" />
+              <p className="text-sm text-slate-500">Loading openings...</p>
+            </div>
+          </Reveal>
+        )}
+
         {/* Role Cards */}
+        {!loading && (<>
         <div className="space-y-4">
           {filteredRoles.map((role, i) => {
             const deptColor = departmentColors[role.department] || colors.teal;
@@ -172,6 +184,7 @@ const OpenRoles = ({ roles }: OpenRolesProps) => {
             </div>
           </Reveal>
         )}
+        </>)}
 
       </div>
     </section>

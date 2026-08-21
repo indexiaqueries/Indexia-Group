@@ -53,11 +53,11 @@ const AppRoutes = () => (
         <Route path="/security-tips" element={<SecurityTipsPage />} />
         <Route path="/warehouse-brochure" element={<WarehouseBrochure />} />
         <Route path="/advertising-brochure" element={<AdvertisingBrochure />} />
-        <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/privacy-policy" element={<LegalDocumentPage docId="privacy" />} />
         <Route path="/terms-of-use" element={<LegalDocumentPage docId="termsOfUse" />} />
         <Route path="/terms" element={<LegalDocumentPage docId="terms" />} />
       </Route>
+      <Route path="/admin" element={<AdminDashboard />} />
     </Routes>
   </Suspense>
 );
