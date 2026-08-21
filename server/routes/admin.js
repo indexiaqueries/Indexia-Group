@@ -176,17 +176,18 @@ router.get("/applications/:id/resume", requireAuth, async (req, res) => {
       const mime = app.resumeMime || "application/pdf";
       const ext = app.resumeFileName?.split(".").pop() || "pdf";
       res.setHeader("Content-Type", mime);
-      res.setHeader("Content-Disposition", `inline; filename=\"${app.resumeFileName || `resume.${ext}`}\"`);
+      res.setHeader("Content-Disposition", `inline; filename="${app.resumeFileName || `resume.${ext}`}"`);
       return res.send(buffer);
     }
 
     // Disk storage (local development)
     if (!app.resumePath) {
-      return res.status(404).json({ ok: false, error: "Resume not found." });
+      return res.status(404).json({ ok: false, error: "Resume not found. This application was submitted without a stored resume file." });
     }
+    const { existsSync } = await import("node:fs");
     const filePath = path.resolve(RESUME_DIR, app.resumePath);
-    if (!filePath.startsWith(RESUME_DIR)) {
-      return res.status(403).json({ ok: false, error: "Access denied." });
+    if (!filePath.startsWith(RESUME_DIR) || !existsSync(filePath)) {
+      return res.status(404).json({ ok: false, error: "Resume file not found on this server. It was stored locally and is not available in the deployed environment." });
     }
     res.sendFile(filePath, { root: "/" });
   } catch (err) {
