@@ -71,31 +71,31 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
       <div className={`flex flex-col items-center ${isHome ? "bnr-text-zoom" : ""}`}>
         {isHome ? (
           <div
-            className="hero-slide-child mb-6 inline-flex items-center gap-2.5 rounded-full border border-(--color-yellow)/60 bg-(--color-yellow)/10 px-5 py-2"
+            className="hero-slide-child mb-6 inline-flex items-center gap-2 sm:gap-2.5 rounded-full border border-(--color-yellow)/50 bg-(--color-yellow)/8 px-3.5 py-2 sm:px-5 sm:py-2.5 backdrop-blur-sm"
             style={{ animationDelay: CHILD_DELAYS[0] }}
           >
             <span className="w-2 h-2 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
-            <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-(--color-yellow)">
+            <span className="font-ledger text-[10px] font-bold tracking-[0.24em] uppercase text-(--color-yellow)">
               Indexia Group
             </span>
           </div>
         ) : (
           <div
-            className="hero-slide-child mb-5 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/45 bg-(--color-night)/55 px-3.5 py-1.5"
+            className="hero-slide-child mb-5 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/40 bg-(--color-night)/50 px-3 py-1 sm:px-3.5 sm:py-1.5 backdrop-blur-sm"
             style={{ animationDelay: CHILD_DELAYS[0] }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
-            <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-(--color-yellow) whitespace-nowrap">
+            <span className="font-ledger text-[10px] font-bold tracking-[0.18em] uppercase text-(--color-yellow) whitespace-nowrap">
               {current.tag}
             </span>
           </div>
         )}
 
         <h1
-          className={`hero-slide-child w-max font-display font-bold text-white leading-[1.12] mb-5.5 whitespace-pre-line rounded-2xl px-8 py-4 ${
+          className={`hero-slide-child font-display font-bold text-white whitespace-pre-line rounded-2xl px-5 py-3 sm:px-8 sm:py-4 max-w-full ${
             isHome
-              ? "text-[clamp(26px,4vw,44px)]"
-              : "text-[clamp(24px,3.8vw,40px)]"
+              ? "text-[clamp(24px,4vw,44px)] leading-[1.08] mb-5"
+              : "text-[clamp(22px,3.8vw,40px)] leading-[1.1] mb-5.5"
           }`}
           style={{
             textShadow: textShadow(shadowLevel, 36, 0.95),
@@ -107,19 +107,19 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
         </h1>
 
         {current.motto && (
-          <p
-            className="hero-slide-child mb-3 -mt-2 italic text-[15px] sm:text-[17px] font-medium text-(--color-yellow)/70 border-b border-(--color-yellow)/30 pb-1"
-            style={{ textShadow: textShadow(shadowLevel, 14, 0.8), animationDelay: CHILD_DELAYS[1] }}
-          >
+        <p
+          className="hero-slide-child mb-3 -mt-2 italic text-[15px] sm:text-[17px] font-medium text-(--color-yellow)/80"
+          style={{ textShadow: textShadow(shadowLevel, 14, 0.8), animationDelay: CHILD_DELAYS[1] }}
+        >
             {current.motto}
           </p>
         )}
 
         <p
-          className={`hero-slide-child leading-[1.8] text-white/95 rounded-xl border border-white/20 bg-(image:--hero-sub-gradient) shadow-[0_8px_24px_rgba(2,16,26,0.35)] backdrop-blur-[2px] ${
+          className={`hero-slide-child text-white/90 rounded-xl bg-(image:--hero-sub-gradient) backdrop-blur-[2px] ${
             isHome
-              ? "text-[16px] max-w-170 px-5 py-4 mt-1"
-              : "text-[15px] max-w-140 px-4 py-3"
+              ? "text-[14px] sm:text-[15px] leading-[1.7] max-w-full sm:max-w-170 px-4 py-3 sm:px-5 sm:py-3.5 mt-1"
+              : "text-[13px] sm:text-[14px] leading-[1.7] max-w-full sm:max-w-140 px-3.5 py-2.5 sm:px-4 sm:py-3"
           }`}
           style={{ textShadow: textShadow(shadowLevel, 24, 0.9), animationDelay: CHILD_DELAYS[2] }}
         >
@@ -130,7 +130,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
       <div className="hero-slide-child flex flex-wrap gap-3 justify-center mt-9" style={{ animationDelay: CHILD_DELAYS[3] }}>
         <Link
           to={isHome || !current.slug ? "/businesses" : `/businesses/${current.slug}`}
-          className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-sm px-7 py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(38,174,144,0.5)]"
+          className="inline-flex items-center gap-2 bg-(--color-teal) hover:bg-(--color-teal-deep) text-white font-bold text-[13px] tracking-wide px-5 py-2.5 sm:px-7 sm:py-3.25 rounded-lg shadow-[0_4px_16px_rgba(38,174,144,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(38,174,144,0.5)]"
         >
           {isHome ? t("hero.ctaExploreGroup") : t("hero.ctaExploreMore")}
           <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">

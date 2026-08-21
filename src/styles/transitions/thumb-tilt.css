@@ -24,3 +24,14 @@
   --tilt-x: 3deg;
   --tilt-y: -6deg;
 }
+
+/* Snap pulse — subtle scale bounce when thumbnail becomes active */
+@keyframes thumb-snap-pulse {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.thumb-snap-active {
+  animation: thumb-snap-pulse 0.35s cubic-bezier(0.34, 1.3, 0.64, 1);
+}

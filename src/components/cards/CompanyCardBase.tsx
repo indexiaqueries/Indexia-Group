@@ -55,7 +55,7 @@ const CompanyCardBase = ({
     {cardNo && (
       <span
         aria-hidden="true"
-        className="font-display pointer-events-none absolute inset-s-4 top-2 z-2 text-[54px] font-bold leading-none text-white/15 transition-colors duration-300 group-hover:text-white/25"
+        className="font-ledger pointer-events-none absolute inset-s-4 top-2 z-2 text-[48px] font-bold leading-none text-white/12 transition-colors duration-300 group-hover:text-white/20"
       >
         {cardNo}
       </span>

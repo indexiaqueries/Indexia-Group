@@ -97,16 +97,16 @@ const Home = () => {
 
         <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8 lg:grid-cols-4">
           <Reveal delay={0} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="8" label={t("homeReach.stat1Label", "Businesses")} color={colors.yellow} numberClassName="font-display text-4xl font-bold text-(--color-yellow) transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+            <AnimatedCounter value="8" label={t("homeReach.stat1Label", "Businesses")} color={colors.yellow} numberClassName="font-display text-[40px] font-bold text-(--color-yellow) leading-none" labelClassName="mt-2.5 font-ledger text-[10px] font-bold uppercase tracking-[0.2em] text-white/50" />
           </Reveal>
           <Reveal delay={0.12} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="3" label={t("homeReach.stat2Label", "Countries")} color={colors.white} numberClassName="font-display text-4xl font-bold text-white transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+            <AnimatedCounter value="3" label={t("homeReach.stat2Label", "Countries")} color={colors.white} numberClassName="font-display text-[40px] font-bold text-white leading-none" labelClassName="mt-2.5 font-ledger text-[10px] font-bold uppercase tracking-[0.2em] text-white/50" />
           </Reveal>
           <Reveal delay={0.24} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="12+" label={t("homeReach.stat3Label", "Years Strong")} color={colors.yellow} numberClassName="font-display text-4xl font-bold text-(--color-yellow) transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+            <AnimatedCounter value="12+" label={t("homeReach.stat3Label", "Years Strong")} color={colors.yellow} numberClassName="font-display text-[40px] font-bold text-(--color-yellow) leading-none" labelClassName="mt-2.5 font-ledger text-[10px] font-bold uppercase tracking-[0.2em] text-white/50" />
           </Reveal>
           <Reveal delay={0.36} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="500+" label={t("homeReach.stat4Label", "Clients Served")} color={colors.white} numberClassName="font-display text-4xl font-bold text-white transition-transform duration-500" labelClassName="mt-2 text-xs font-semibold uppercase tracking-wide text-white/60" />
+            <AnimatedCounter value="500+" label={t("homeReach.stat4Label", "Clients Served")} color={colors.white} numberClassName="font-display text-[40px] font-bold text-white leading-none" labelClassName="mt-2.5 font-ledger text-[10px] font-bold uppercase tracking-[0.2em] text-white/50" />
           </Reveal>
         </div>
 

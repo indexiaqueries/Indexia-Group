@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 export type HeroPanel = {
   id: number;
   tag: string;
@@ -25,6 +27,17 @@ const HeroGalleryThumb = ({
   isOriginal,
   onSelect,
 }: HeroGalleryThumbProps) => {
+  const [pulse, setPulse] = useState(false);
+  const prevActive = useRef(isActive);
+  useEffect(() => {
+    if (isActive && !prevActive.current) {
+      setPulse(true);
+      const t = setTimeout(() => setPulse(false), 350);
+      return () => clearTimeout(t);
+    }
+    prevActive.current = isActive;
+  }, [isActive]);
+
   return (
     <button
       onClick={() => onSelect(panel.id)}
@@ -33,7 +46,7 @@ const HeroGalleryThumb = ({
       tabIndex={isOriginal ? 0 : -1}
       className={`thumb-tilt group relative shrink-0 w-28 h-16 sm:w-36 sm:h-20 rounded-xl overflow-hidden border-2 shadow-[0_6px_24px_rgba(0,0,0,0.4)] ${
         isActive ? "border-(--color-yellow)" : "border-white/25 hover:border-white/60"
-      }`}
+      } ${pulse ? "thumb-snap-active" : ""}`}
     >
       <img
         src={panel.thumbImage}
@@ -56,7 +69,7 @@ const HeroGalleryThumb = ({
         </svg>
       </span>
 
-      <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/90 to-transparent text-[10px] font-semibold text-white px-2 py-1.5 text-start truncate">
+      <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/90 to-transparent font-ledger text-[9px] font-semibold text-white px-2 py-1.5 text-start truncate">
         {panel.tag}
       </span>
     </button>

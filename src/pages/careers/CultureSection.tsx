@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
 import Reveal from "../../components/common/Reveal";
+import ResponsiveImage from "../../components/common/ResponsiveImage";
 import ourCultureImg from "../../assets/careers-img/OurCulture.png";
 import { colors } from "../../lib/theme";
 
@@ -33,13 +34,11 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
         <Reveal amount={0.15}>
           <div className="relative overflow-hidden rounded-3xl">
             {/* Full-width image */}
-            <img
+            <ResponsiveImage
               src={ourCultureImg}
               alt="Indexia Group culture and team"
               width={1200}
               height={800}
-              loading="lazy"
-              decoding="async"
               className="aspect-[16/9] w-full object-cover sm:aspect-[21/9]"
             />
             {/* Gradient overlays for card readability */}

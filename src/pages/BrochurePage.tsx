@@ -91,7 +91,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
         {/* Brochure sheet */}
         <article className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
           {/* Header band — title / subtitle / location, matching the PDF */}
-          <header className="px-8 py-10 text-white sm:px-12" style={{ background: band }}>
+          <header className="px-5 py-8 text-white sm:px-8 sm:py-10" style={{ background: band }}>
             <div className="flex items-center gap-3">
               <img
                 src={logo}
@@ -111,7 +111,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           </header>
 
           {/* Headline + desc below the band, matching the PDF */}
-          <section className="px-8 pt-8 sm:px-12">
+          <section className="px-5 pt-6 sm:px-8 sm:pt-8">
             <h2 className="font-display max-w-xl text-[clamp(22px,3.2vw,30px)] font-bold leading-[1.15] text-(--color-ink)">
               {slug === "advertising" ? t("brochure.advertisingHeadline") : t("brochure.headline")}
             </h2>
@@ -119,33 +119,33 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           </section>
 
           {/* Overview */}
-          <section className="px-8 py-8 sm:px-12">
+          <section className="px-5 py-6 sm:px-8 sm:py-8">
             <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("brochure.about")}</h2>
             <p className="mt-3 text-[14px] leading-7 text-(--color-muted)">{overview}</p>
           </section>
 
           {/* Pricing section — company-specific */}
           {slug === "warehouse" ? (
-            <section className="px-8 pb-8 sm:px-12">
+            <section className="px-5 pb-6 sm:px-8 sm:pb-8">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("warehousePricing.title")}</h2>
               <p className="mt-1 text-[13px] text-(--color-muted)">{t("warehousePricing.subtitle")}</p>
 
               <div className="mt-5 overflow-hidden rounded-xl border border-slate-100">
-                <div className="grid grid-cols-2 gap-4 bg-(--color-soft) px-6 py-3 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
+                <div className="grid grid-cols-2 gap-2 sm:gap-4 bg-(--color-soft) px-4 py-2.5 sm:px-6 sm:py-3 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
                   <span>{t("warehousePricing.portfolioCol")}</span>
                   <span className="text-end">{t("warehousePricing.valueCol")}</span>
                 </div>
-                <div className="grid grid-cols-2 items-center gap-4 border-b border-slate-100 px-6 py-4">
-                  <span className="text-[14px] font-semibold text-(--color-ink-deep)">
+                <div className="grid grid-cols-2 items-center gap-2 sm:gap-4 border-b border-slate-100 px-4 py-3 sm:px-6 sm:py-4">
+                  <span className="text-[13px] sm:text-[14px] font-semibold text-(--color-ink-deep)">
                     {t("warehousePricing.locations")}
                   </span>
-                  <span className="text-end text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
+                  <span className="text-end text-[14px] sm:text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
                     {t("warehousePricing.locationsValue")}
                   </span>
                 </div>
-                <div className="grid grid-cols-2 items-center gap-4 px-6 py-4">
-                  <span className="text-[14px] font-semibold text-(--color-ink-deep)">{t("warehousePricing.total")}</span>
-                  <span className="text-end text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
+                <div className="grid grid-cols-2 items-center gap-2 sm:gap-4 px-4 py-3 sm:px-6 sm:py-4">
+                  <span className="text-[13px] sm:text-[14px] font-semibold text-(--color-ink-deep)">{t("warehousePricing.total")}</span>
+                  <span className="text-end text-[14px] sm:text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
                     {t("warehousePricing.totalValue")}
                   </span>
                 </div>
@@ -175,7 +175,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
               </div>
             </section>
           ) : (
-            <section className="px-8 pb-8 sm:px-12">
+            <section className="px-5 pb-6 sm:px-8 sm:pb-8">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("unipolePricing.title")}</h2>
               <p className="mt-1 text-[13px] text-(--color-muted)">{t("unipolePricing.subtitle")}</p>
 
@@ -213,7 +213,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           )}
 
           {/* Highlights */}
-          <section className="px-8 pb-8 sm:px-12">
+          <section className="px-5 pb-6 sm:px-8 sm:pb-8">
             <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("companyDetail.keyEntries")}</h2>
             <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
               {b.highlights.map((h, i) => (
@@ -231,7 +231,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           </section>
 
           {/* Footer note */}
-          <section className="border-t border-slate-100 px-8 py-6 sm:px-12">
+          <section className="border-t border-slate-100 px-5 py-5 sm:px-8 sm:py-6">
             <p className="text-[11px] text-slate-400">
               {slug === "advertising" ? t("brochure.advertisingFooter") : t("brochure.footer")}
             </p>

@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 import { colors } from "../../lib/theme";
+import { getResponsiveVariants, WIDTHS } from "../../lib/responsiveVariants";
 
 type HeroBackdropProps = {
   image: string;
@@ -11,6 +12,42 @@ type HeroBackdropProps = {
   ruledStyle?: CSSProperties;
   containerClassName?: string;
   extra?: ReactNode;
+};
+
+const HeroBgImage = ({ src }: { src: string }) => {
+  const variants = getResponsiveVariants(src);
+  if (!variants) {
+    return (
+      <img
+        aria-hidden="true"
+        src={src}
+        alt=""
+        width={1717}
+        height={916}
+        decoding="async"
+        fetchPriority="high"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+    );
+  }
+  const webpSrcSet = WIDTHS.filter((w) => variants[w])
+    .map((w) => `${variants[w]} ${w}w`)
+    .join(", ");
+  return (
+    <picture>
+      <source type="image/webp" srcSet={webpSrcSet} sizes="100vw" />
+      <img
+        aria-hidden="true"
+        src={src}
+        alt=""
+        width={1717}
+        height={916}
+        decoding="async"
+        fetchPriority="high"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+    </picture>
+  );
 };
 
 const HeroBackdrop = ({
@@ -32,16 +69,7 @@ const HeroBackdrop = ({
     className="relative overflow-hidden min-h-[92svh] sm:min-h-screen flex items-center"
     style={{ background }}
   >
-    <img
-      aria-hidden="true"
-      src={image}
-      alt=""
-      width={1717}
-      height={916}
-      decoding="async"
-      fetchPriority="high"
-      className="absolute inset-0 h-full w-full object-cover object-center"
-    />
+    <HeroBgImage src={image} />
     <div className="pointer-events-none absolute inset-0" style={{ background: overlay }} />
     <div className={ruledClassName} style={ruledStyle} />
     {radial && <div className="pointer-events-none absolute inset-0" style={{ background: radial }} />}

@@ -6,9 +6,10 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImpactBand from "../components/common/ImpactBand";
+import ResponsiveImage from "../components/common/ResponsiveImage";
 import { colors } from "../lib/theme";
 import aboutBg from "../assets/hero-img/AboutHero.png";
-import founderImg from "../assets/about-img/founder_MD.jpeg";
+import founderImg from "../assets/about-img/founder_MD.png";
 import ourStoryImg from "../assets/about-img/OurStory.png";
 import valuesImg from "../assets/about-img/OurValues.png";
 import companiesImg from "../assets/about-img/OurCompanies.png";
@@ -92,7 +93,8 @@ const AboutPage = () => {
                   height={750}
                   loading="lazy"
                   decoding="async"
-                  className="h-80 w-full object-cover sm:h-[26rem]"
+                  className="h-80 w-full object-cover sm:h-[34rem]"
+                  style={{ objectPosition: "center 0%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
                 {/* Floating name badge */}
@@ -100,7 +102,7 @@ const AboutPage = () => {
                   <div className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/10 px-5 py-3 shadow-xl backdrop-blur-md">
                     <div className="h-px w-6 bg-(--color-yellow)/60" />
                     <span className="font-display text-sm font-bold text-white sm:text-base">
-                      Mr. Bijendra Malik
+                      Bijendra Malik
                     </span>
                     <div className="h-px w-6 bg-(--color-yellow)/60" />
                   </div>
@@ -145,13 +147,11 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal delay={0.15} amount={0.15}>
-            <img
+            <ResponsiveImage
               src={ourStoryImg}
               alt="Indexia Group founding story"
               width={1200}
               height={500}
-              loading="lazy"
-              decoding="async"
               className="mx-auto mt-12 w-full max-w-3xl rounded-2xl object-cover shadow-lg"
             />
           </Reveal>
@@ -169,13 +169,11 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal amount={0.15}>
-            <img
+            <ResponsiveImage
               src={valuesImg}
               alt="Indexia Group values and culture"
               width={1200}
               height={500}
-              loading="lazy"
-              decoding="async"
               className="mx-auto mb-12 w-full max-w-3xl rounded-2xl object-cover shadow-sm"
             />
           </Reveal>
@@ -245,13 +243,11 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal amount={0.15}>
-            <img
+            <ResponsiveImage
               src={companiesImg}
               alt="Indexia Group companies overview"
               width={1200}
               height={500}
-              loading="lazy"
-              decoding="async"
               className="mx-auto mb-12 w-full max-w-3xl rounded-2xl object-cover shadow-sm"
             />
           </Reveal>
@@ -334,10 +330,10 @@ const AboutPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
                     <Link to="/businesses/overseas" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
                       Learn More →
                     </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -362,10 +358,10 @@ const AboutPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
                     <Link to="/businesses/agro-bio" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
                       Learn More →
                     </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -390,10 +386,10 @@ const AboutPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
                     <Link to="/businesses/securities" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
                       Learn More →
                     </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -418,10 +414,10 @@ const AboutPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
                     <Link to="/businesses/warehouse" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
                       Learn More →
                     </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -446,10 +442,10 @@ const AboutPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
                     <Link to="/businesses/advertising" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)">
                       Learn More →
                     </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -496,13 +492,11 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal amount={0.15}>
-            <img
+            <ResponsiveImage
               src={timelineImg}
               alt="Indexia Group journey and milestones"
               width={1200}
               height={500}
-              loading="lazy"
-              decoding="async"
               className="mx-auto mb-12 w-full max-w-3xl rounded-2xl object-cover shadow-sm"
             />
           </Reveal>

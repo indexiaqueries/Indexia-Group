@@ -49,7 +49,7 @@ const contactInfo: {
 ];
 
 const ColumnHeader = ({ title }: { title: string }) => (
-  <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-white">{title}</h3>
+  <h3 className="font-ledger text-[10px] font-bold uppercase tracking-[0.22em] text-white">{title}</h3>
 );
 
 const FooterLink = ({
@@ -100,7 +100,7 @@ const Footer = () => {
               <span className="text-(--color-yellow)">Indexia</span>
               <span className="text-white">Group</span>
             </div>
-            <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.22em] text-white/75">
+            <p className="mt-1 font-ledger text-[10px] font-bold uppercase tracking-[0.24em] text-white/75">
               {t("footer.tagline")}
             </p>
           </div>
@@ -161,7 +161,7 @@ const Footer = () => {
                 {t("footer.enquiry")}
               </Link>
             </p>
-            <p className="font-ledger text-[11px] font-bold uppercase tracking-[0.22em] text-white/65">
+            <p className="font-ledger text-[10px] font-bold uppercase tracking-[0.24em] text-white/55">
               {t("footer.stats")}
             </p>
           </div>

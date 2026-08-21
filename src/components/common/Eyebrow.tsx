@@ -10,7 +10,7 @@ type EyebrowProps = {
 
 const Eyebrow = ({ children, color = "var(--color-teal)", size = "sm", className = "", style }: EyebrowProps) => (
   <p
-    className={`font-bold uppercase ${size === "sm" ? "text-[11px] tracking-[0.22em]" : "text-xs tracking-[0.24em]"} ${className}`}
+    className={`font-ledger font-bold uppercase ${size === "sm" ? "text-[10px] tracking-[0.24em]" : "text-[11px] tracking-[0.26em]"} ${className}`}
     style={{ color, ...style }}
   >
     {children}

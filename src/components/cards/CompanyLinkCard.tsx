@@ -34,11 +34,11 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
 
       {/* Text content */}
       <div className="company-link-card-content relative z-10 mt-auto p-5">
-        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-(--color-yellow)">
+        <p className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-yellow)">
           {tag}
         </p>
         <h3 className="mt-2 text-lg font-extrabold leading-snug text-white">{name}</h3>
-        <p className="mt-3 inline-flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-widest text-white/80 transition-colors duration-300 group-hover:text-(--color-yellow)">
+        <p className="mt-3 inline-flex items-center gap-1.5 font-ledger text-[11px] font-bold uppercase tracking-[0.14em] text-white/80 transition-colors duration-300 group-hover:text-(--color-yellow)">
           {t("companyLinkCard.visitPage")}
           <ArrowUpRight size={15} strokeWidth={2.5} aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </p>

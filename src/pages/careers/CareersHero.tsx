@@ -1,21 +1,30 @@
 import { useTranslation } from "react-i18next";
 import Eyebrow from "../../components/common/Eyebrow";
+import { getResponsiveVariants, WIDTHS } from "../../lib/responsiveVariants";
 import careerHeroImg from "../../assets/hero-img/CareerHero.png";
+
+const CareerHeroBg = () => {
+  const variants = getResponsiveVariants(careerHeroImg);
+  if (!variants) {
+    return (
+      <img src={careerHeroImg} alt="" width={1920} height={900} decoding="async" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-center" />
+    );
+  }
+  const srcSet = WIDTHS.filter((w) => variants[w]).map((w) => `${variants[w]} ${w}w`).join(", ");
+  return (
+    <picture>
+      <source type="image/webp" srcSet={srcSet} sizes="100vw" />
+      <img src={careerHeroImg} alt="" width={1920} height={900} decoding="async" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-center" />
+    </picture>
+  );
+};
 
 const CareersHero = () => {
   const { t } = useTranslation();
 
   return (
     <section className="relative overflow-hidden bg-(--color-ink-deep) min-h-[92svh] sm:min-h-screen flex items-center">
-      <img
-        src={careerHeroImg}
-        alt=""
-        width={1920}
-        height={900}
-        decoding="async"
-        fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover object-center"
-      />
+      <CareerHeroBg />
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-(--color-ink-deep)/70 via-(--color-ink-deep)/50 to-(--color-ink-deep)/80" />
       <div
         aria-hidden="true"

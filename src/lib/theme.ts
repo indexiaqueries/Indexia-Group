@@ -19,9 +19,9 @@ export const accent = {
   gray: "var(--color-gray)",
 } as const;
 
-export const displayFont = { fontFamily: "'Fraunces', Georgia, serif" } as const;
+export const displayFont = { fontFamily: "'Fraunces', Georgia, serif", fontOpticalSizing: "auto" } as const;
 
-export const monoFont = { fontFamily: "'IBM Plex Mono', Menlo, monospace" } as const;
+export const monoFont = { fontFamily: "'IBM Plex Mono', 'Cascadia Mono', Menlo, monospace" } as const;
 
 export const cardBaseClass =
   "rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md";

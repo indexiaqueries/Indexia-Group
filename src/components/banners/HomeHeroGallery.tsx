@@ -34,6 +34,8 @@ const HomeHeroGallery = ({
   const centeredContentRef = useRef(0);
   const listIndexRef = useRef(0);
   const dragRef = useRef({ active: false, pointerId: -1, startX: 0, startXRaw: 0, moved: false });
+  // Velocity tracking for momentum-based snapping
+  const velocityTracker = useRef<{ times: number[]; x: number[] }>({ times: [], x: [] });
   const suppressClickRef = useRef(false);
   const moveHandlerRef = useRef<((e: PointerEvent) => void) | null>(null);
   const endHandlerRef = useRef<((e: PointerEvent) => void) | null>(null);
@@ -130,6 +132,7 @@ const HomeHeroGallery = ({
       moved: false,
     };
     suppressClickRef.current = false;
+    velocityTracker.current = { times: [performance.now()], x: [e.clientX] };
 
     // Listen on window so fast swipes that leave the strip still track;
     // no pointer capture, otherwise the browser retargets the click event
@@ -145,6 +148,12 @@ const HomeHeroGallery = ({
       const clamped = Math.max(-maxDx, Math.min(maxDx, dx));
       xRef.current = d.startXRaw + clamped;
       applyX(xRef.current, false);
+      // Track velocity (keep last 5 samples for smoothing)
+      const vt = velocityTracker.current;
+      const now = performance.now();
+      vt.times.push(now);
+      vt.x.push(ev.clientX);
+      if (vt.times.length > 5) { vt.times.shift(); vt.x.shift(); }
     };
     const onEnd = (ev: PointerEvent) => endDrag(ev, true);
     const onCancel = (ev: PointerEvent) => endDrag(ev, false);
@@ -169,12 +178,50 @@ const HomeHeroGallery = ({
     const pitch = pitchRef.current || measurePitch();
     if (!pitch) return;
 
-    // Snap to the nearest panel slot relative to the last centered baseline,
-    // then select that panel (if it differs from the current one).
-    const step = Math.round((centeredXRefRef.current - xRef.current) / pitch);
-    const snapped = centeredXRefRef.current - step * pitch;
+    // Calculate velocity from recent pointer samples (px/ms)
+    const vt = velocityTracker.current;
+    let velocity = 0;
+    if (vt.times.length >= 2) {
+      const last = vt.times.length - 1;
+      const dt = vt.times[last] - vt.times[0];
+      if (dt > 0 && dt < 300) {
+        velocity = (vt.x[last] - vt.x[0]) / dt; // px/ms, positive = drag right
+      }
+    }
+
+    // Apply momentum: project where the drag would land if frictionless
+    const MOMENTUM_FACTOR = 0.15; // converts velocity to additional pixel offset
+    const momentumOffset = velocity * MOMENTUM_FACTOR * pitch;
+    const projected = xRef.current + momentumOffset;
+
+    // Find nearest snap point from the projected position
+    const step = Math.round((centeredXRefRef.current - projected) / pitch);
+    let snapped = centeredXRefRef.current - step * pitch;
+
+    // Rubber-band resistance at the edges
+    const wrap = wrapRef.current;
+    if (wrap) {
+      const wrapWidth = wrap.clientWidth;
+      const trackWidth = pitch * n;
+      const minSnap = centeredXRefRef.current - (n - 1) * pitch;
+      const maxSnap = centeredXRefRef.current;
+      if (snapped < minSnap) {
+        snapped = minSnap + (snapped - minSnap) * 0.3; // rubber-band drag past edge
+      } else if (snapped > maxSnap) {
+        snapped = maxSnap + (snapped - maxSnap) * 0.3;
+      }
+      void wrapWidth; void trackWidth; // suppress unused warnings
+    }
+
+    // Spring animation instead of fixed ease
+    const distance = Math.abs(snapped - xRef.current);
+    const duration = reducedMotion ? 0 : Math.min(600, Math.max(300, distance * 0.5));
     xRef.current = snapped;
-    applyX(snapped, !reducedMotion);
+    const track = trackRef.current;
+    if (track) {
+      track.style.transition = reducedMotion ? "none" : `transform ${duration}ms cubic-bezier(0.25, 1, 0.5, 1)`;
+      track.style.transform = `translate3d(${snapped}px, 0, 0)`;
+    }
 
     if (select) {
       const newContent = ((centeredContentRef.current + step) % n + n) % n;
@@ -198,7 +245,7 @@ const HomeHeroGallery = ({
         ref={wrapRef}
         onPointerDown={handlePointerDown}
         className="overflow-x-hidden overflow-y-visible cursor-grab active:cursor-grabbing touch-pan-y"
-        style={{ perspective: 1000, maskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)" }}
+        style={{ touchAction: "pan-y", perspective: 1000, maskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)" } as CSSProperties}
       >
         <div
           ref={trackRef}

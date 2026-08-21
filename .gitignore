@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 .vite/
+src/assets-responsive/
 coverage/
 stats.html
 lighthouse-report.*
