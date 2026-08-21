@@ -113,7 +113,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
           {filteredRoles.map((role, i) => {
             const deptColor = departmentColors[role.department] || colors.teal;
             return (
-              <Reveal key={role.key} delay={(i % 3) * 0.06} amount={0.1}>
+              <Reveal key={role._id || role.title} delay={(i % 3) * 0.06} amount={0.1}>
                 <div className="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div className="min-w-0 flex-1">

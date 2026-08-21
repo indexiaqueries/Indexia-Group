@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import {
@@ -71,6 +71,7 @@ const AdminDashboard = () => {
   const [token, setToken] = useState(() => localStorage.getItem("admin_token") || "");
   const [isAuthed, setIsAuthed] = useState(false);
   const [activeTab, setActiveTab] = useState<Tab>("applications");
+  const [refreshKey, setRefreshKey] = useState(0);
 
   // Applications state
   const [applications, setApplications] = useState<Application[]>([]);
@@ -93,55 +94,34 @@ const AdminDashboard = () => {
 
   /* ── Fetch applications ─────────────────────────────────────── */
 
-  const fetchApplications = useCallback(async () => {
-    if (!token) return;
-    setLoading(true);
-    setError("");
-    try {
-      const res = await fetch("/api/admin/applications", {
-        headers: { "x-admin-token": token },
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error || "Failed to fetch applications.");
-      setApplications(data.applications);
-      setIsAuthed(true);
-      localStorage.setItem("admin_token", token);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to fetch applications.");
-      setIsAuthed(false);
-    } finally {
-      setLoading(false);
-    }
-  }, [token]);
-
-  /* ── Fetch openings ─────────────────────────────────────────── */
-
-  const fetchOpenings = useCallback(async () => {
-    if (!token) return;
-    setLoading(true);
-    setError("");
-    try {
-      const res = await fetch("/api/admin/openings", {
-        headers: { "x-admin-token": token },
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error || "Failed to fetch openings.");
-      setOpenings(data.openings);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to fetch openings.");
-    } finally {
-      setLoading(false);
-    }
-  }, [token]);
-
-  /* ── Initial fetch on auth ──────────────────────────────────── */
+  /* ── Fetch data on auth ────────────────────────────────────── */
 
   useEffect(() => {
-    if (isAuthed) {
-      fetchApplications();
-      fetchOpenings();
-    }
-  }, [isAuthed, fetchApplications, fetchOpenings]);
+    if (!isAuthed || !token) return;
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      setError("");
+      try {
+        const [appRes, openRes] = await Promise.all([
+          fetch("/api/admin/applications", { headers: { "x-admin-token": token } }),
+          fetch("/api/admin/openings", { headers: { "x-admin-token": token } }),
+        ]);
+        const appData = await appRes.json();
+        const openData = await openRes.json();
+        if (!cancelled) {
+          if (appRes.ok && appData.ok) setApplications(appData.applications);
+          if (openRes.ok && openData.ok) setOpenings(openData.openings);
+          localStorage.setItem("admin_token", token);
+        }
+      } catch (err) {
+        if (!cancelled) setError(err instanceof Error ? err.message : "Failed to load data.");
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [isAuthed, token, refreshKey]);
 
   /* ── Application actions ────────────────────────────────────── */
 
@@ -280,7 +260,7 @@ const AdminDashboard = () => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                fetchApplications();
+                setIsAuthed(true);
               }}
               className="space-y-4"
             >
@@ -374,7 +354,7 @@ const AdminDashboard = () => {
               </button>
             </div>
             <button
-              onClick={activeTab === "applications" ? fetchApplications : fetchOpenings}
+              onClick={() => setRefreshKey((k) => k + 1)}
               disabled={loading}
               className="flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-(--color-muted) transition-colors hover:border-(--color-teal) hover:text-(--color-teal)"
             >

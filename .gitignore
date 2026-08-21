@@ -50,3 +50,6 @@ Thumbs.db
 # Freebuff workspace
 .freebuff/
 server/uploads/
+
+.vercel
+.env*

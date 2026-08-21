@@ -164,15 +164,27 @@ router.patch("/applications/:id", requireAuth, async (req, res) => {
   }
 });
 
-// Serve resume file
+// Serve resume file (supports both disk and base64 storage)
 router.get("/applications/:id/resume", requireAuth, async (req, res) => {
   try {
-    const app = await Application.findById(req.params.id).select("resumePath resumeFileName").lean();
-    if (!app || !app.resumePath) {
+    const app = await Application.findById(req.params.id).select("resumePath resumeFileName resumeData resumeMime").lean();
+    if (!app) return res.status(404).json({ ok: false, error: "Application not found." });
+
+    // Base64 storage (Vercel serverless)
+    if (app.resumeData) {
+      const buffer = Buffer.from(app.resumeData, "base64");
+      const mime = app.resumeMime || "application/pdf";
+      const ext = app.resumeFileName?.split(".").pop() || "pdf";
+      res.setHeader("Content-Type", mime);
+      res.setHeader("Content-Disposition", `inline; filename=\"${app.resumeFileName || `resume.${ext}`}\"`);
+      return res.send(buffer);
+    }
+
+    // Disk storage (local development)
+    if (!app.resumePath) {
       return res.status(404).json({ ok: false, error: "Resume not found." });
     }
     const filePath = path.resolve(RESUME_DIR, app.resumePath);
-    // Prevent path traversal
     if (!filePath.startsWith(RESUME_DIR)) {
       return res.status(403).json({ ok: false, error: "Access denied." });
     }

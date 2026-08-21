@@ -1,4 +1,7 @@
+// Vercel serverless entry point
+// Imports the Express app from server/index.js and re-exports it.
+// Vercel handles listening; the app just needs to export the handler.
+
 import app from "../server/index.js";
 
-// Vercel serverless function entry — the same Express app used by `npm run server`.
 export default app;

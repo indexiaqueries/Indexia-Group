@@ -36,7 +36,6 @@ export const useCareersJsonLd = () => {
 };
 
 export const useCareersContent = () => {
-  const { t } = useTranslation();
   const [roles, setRoles] = useState<RoleItem[]>([]);
   const [loading, setLoading] = useState(true);
 
