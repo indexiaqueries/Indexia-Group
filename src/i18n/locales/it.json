@@ -1070,7 +1070,16 @@
     "viewOnMCA": "View on MCA",
     "registrationNote": "All company registrations are verifiable on the",
     "mcaPortal": "MCA Portal",
-    "taglineSecondary": "Imprese Diversificate. Visione Unificata."
+    "taglineSecondary": "Imprese Diversificate. Visione Unificata.",
+    "stat1Value": "08",
+    "stat2Value": "03",
+    "stat3Value": "12+",
+    "stat4Value": "14",
+    "milestone1Year": "2012",
+    "milestone2Year": "2013",
+    "milestone3Year": "2014",
+    "milestone4Year": "2021",
+    "milestone5Year": "2024"
   },
   "homeReach": {
     "eyebrow": "La Nostra Portata",

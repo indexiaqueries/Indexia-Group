@@ -7,7 +7,7 @@ import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImageSlot from "../components/common/ImageSlot";
 import ImpactBand from "../components/common/ImpactBand";
 import { colors } from "../lib/theme";
-import securityBg from "../../public/images/heroes/security-hero.webp";
+import securityBg from "../assets/public-images/heroes/security-hero.webp";
 import { siteImages } from "../data/siteImages";
 import type { ImageSlotData } from "../components/common/ImageSlot";
 import {

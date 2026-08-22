@@ -1068,7 +1068,16 @@
     "viewOnMCA": "عرض على MCA",
     "registrationNote": " جميع تسجيلات الشركات يمكن التحقق منها على",
     "mcaPortal": "بوابة MCA",
-    "taglineSecondary": "مشاريع متنوعة. رؤية موحدة."
+    "taglineSecondary": "مشاريع متنوعة. رؤية موحدة.",
+    "stat1Value": "08",
+    "stat2Value": "03",
+    "stat3Value": "12+",
+    "stat4Value": "14",
+    "milestone1Year": "2012",
+    "milestone2Year": "2013",
+    "milestone3Year": "2014",
+    "milestone4Year": "2021",
+    "milestone5Year": "2024"
   },
   "homeReach": {
     "eyebrow": "انتشارنا",
@@ -1079,5 +1088,25 @@
     "stat3Label": "سنوات من القوة",
     "stat4Label": "العملاء المخدومون",
     "cta": "اعرف المزيد عنا"
+  },
+  "jsonLd": {
+    "orgName": "Indexia Group",
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About Us",
+    "breadcrumbCompanies": "Group Companies",
+    "breadcrumbContact": "Contact Us",
+    "breadcrumbNews": "News & Knowledge Centre",
+    "breadcrumbCareers": "Careers",
+    "aboutName": "About Indexia Group",
+    "aboutDescription": "Indexia Group is a diversified Indian business group spanning Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support.",
+    "contactName": "Contact Indexia Group",
+    "corporateOffice": "Corporate Office",
+    "delhiOffice": "Delhi Office",
+    "businessesName": "Indexia Group Businesses",
+    "businessesDescription": "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, warehousing, advertising and Athlete Support.",
+    "newsName": "Indexia Group — News & Knowledge Centre",
+    "careersName": "Open roles at Indexia Group",
+    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
   }
 }

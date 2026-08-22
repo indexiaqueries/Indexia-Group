@@ -12,11 +12,11 @@ import companyImpact from "../assets/company-pages-img/common/impact-banner.webp
 import companyStory from "../assets/company-pages-img/common/overview-banner.webp";
 import newsFeatured from "../assets/news&knowledge-img/featured-story.webp";
 import securityFeatures from "../assets/security-img/online-security.webp";
-import researchOTGImg from "../../public/images/research/otg-report.webp";
-import researchACTImg from "../../public/images/research/act-report.webp";
-import researchSpecialImg from "../../public/images/research/special-reports.webp";
-import newsFeaturedNew from "../../public/images/news/featured-story.webp";
-import securityPracticesImg from "../../public/images/security/online-security.webp";
+import researchOTGImg from "../assets/public-images/research/otg-report.webp";
+import researchACTImg from "../assets/public-images/research/act-report.webp";
+import researchSpecialImg from "../assets/public-images/research/special-reports.webp";
+import newsFeaturedNew from "../assets/public-images/news/featured-story.webp";
+import securityPracticesImg from "../assets/public-images/security/online-security.webp";
 
 export const siteImages: Record<string, ImageSlotData> = {
   contactCorporate: {

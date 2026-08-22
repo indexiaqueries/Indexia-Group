@@ -19,6 +19,7 @@ import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
+import TrainingGallery from "./TrainingGallery";
 import foundationVid1 from "../../assets/company-pages-img/foundation-gallery/horizontal.mp4";
 import foundationVid2 from "../../assets/company-pages-img/foundation-gallery/vertical1.mp4";
 import foundationVid3 from "../../assets/company-pages-img/foundation-gallery/vertical2.mp4";
@@ -334,68 +335,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         <WarehousePricing color={b.color} onBook={handleBook} />
       )}
 
-      {/* Foundation Training Gallery */}
-      {b.slug === "foundation" && (
-        <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
-          <div aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
-          <div className="container relative py-20 lg:py-28">
-            {/* Header */}
-            <Reveal className="mx-auto mb-16 max-w-3xl text-center">
-              <Eyebrow color="var(--color-yellow)">{t("pageContent.companies.foundation.galleryEyebrow", "Training & Media")}</Eyebrow>
-              <h2 className="font-display mt-4 text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-white">
-                {t("pageContent.companies.foundation.galleryTitle", "Our Athletes in Action")}
-              </h2>
-              <p className="mt-4 text-[15px] leading-7 text-white/50 max-w-xl mx-auto">
-                Behind every medal is a story of discipline, sacrifice, and relentless training.
-              </p>
-            </Reveal>
-
-            {/* Bento grid — horizontal on top, vertical grid below */}
-            <div className="mx-auto max-w-5xl space-y-5">
-              {/* Featured horizontal video — full span */}
-              <Reveal amount={0.15}>
-                <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-white/10">
-                  <video src={foundationVid1} controls muted preload="metadata" className="aspect-video w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
-                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 sm:p-7">
-                    <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-sm ring-1 ring-white/20">
-                      <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
-                      Featured Training Session
-                    </span>
-                    <span className="hidden sm:inline-flex font-ledger text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase">Horizontal · 16:9</span>
-                  </div>
-                </div>
-              </Reveal>
-
-              {/* Vertical videos — bento layout */}
-              <div className="grid grid-cols-2 gap-5">
-                {[
-                  { vid: foundationVid2, label: "Track Training", num: "01" },
-                  { vid: foundationVid3, label: "Field Practice", num: "02" },
-                  { vid: foundationVid4, label: "Sprint Drills", num: "03" },
-                  { vid: foundationVid5, label: "Team Session", num: "04" },
-                ].map(({ vid, label, num }, i) => (
-                  <Reveal key={i} delay={(i + 1) * 0.08} amount={0.15}>
-                    <div className="group relative overflow-hidden rounded-2xl bg-black/30 shadow-lg ring-1 ring-white/8 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:ring-white/15">
-                      <video src={vid} controls muted preload="metadata" className="aspect-[9/16] w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
-                      {/* Number badge */}
-                      <span className="absolute top-3 left-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/10 font-ledger text-[10px] font-bold text-white backdrop-blur-sm ring-1 ring-white/15">
-                        {num}
-                      </span>
-                      {/* Label */}
-                      <div className="absolute inset-x-0 bottom-0 p-4">
-                        <p className="text-[13px] font-bold text-white drop-shadow-md">{label}</p>
-                      </div>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Services */}
       <section id="company-services" className="scroll-mt-24 bg-white py-20 lg:py-24">
         <div className="container">
@@ -475,6 +414,30 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </div>
         </div>
       </section>
+
+      {/* Foundation Training Gallery */}
+      {b.slug === "foundation" && (
+        <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
+          <div aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
+          <div className="container relative py-16 lg:py-20">
+            <Reveal className="mx-auto mb-10 max-w-3xl text-center">
+              <Eyebrow color="var(--color-yellow)">{t("pageContent.companies.foundation.galleryEyebrow", "Training & Media")}</Eyebrow>
+              <h2 className="font-display mt-3 text-[clamp(24px,3.2vw,38px)] font-bold leading-[1.1] text-white">
+                {t("pageContent.companies.foundation.galleryTitle", "Our Athletes in Action")}
+              </h2>
+            </Reveal>
+            <TrainingGallery
+              videos={[
+                { src: foundationVid1, label: "Training Session" },
+                { src: foundationVid2, label: "Track Training" },
+                { src: foundationVid3, label: "Field Practice" },
+                { src: foundationVid4, label: "Sprint Drills" },
+                { src: foundationVid5, label: "Team Session" },
+              ]}
+            />
+          </div>
+        </section>
+      )}
 
       <section
         id="enquiry"
