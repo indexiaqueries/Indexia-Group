@@ -48,9 +48,9 @@ export const companies: Company[] = [
     tag: "Investment & Finance",
     cin: "U65990MH2012PTC234568",
     cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
-    desc: "Every type of loan, tailored to individuals and businesses.",
+    desc: "Every type of loan — the right bank at your doorstep.",
     overview:
-      "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan under finance. Now the right bank will come at your doorstep — the company works as a complete loan destination, guiding clients through eligibility, documentation, and disbursal for personal, home, business, MSME, and specialised funding with a single, streamlined process.",
+      "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan. The company works as a complete loan destination — the right bank at your doorstep. From eligibility to disbursal, Indexia Finserve handles personal, home, business, MSME, and specialised funding with a single, streamlined process.",
     tagline: "The Next Gen Finance Method",
     highlights: [
       "Every loan type under one roof",
@@ -153,7 +153,7 @@ export const companies: Company[] = [
     tag: "Strategic Land Leasing",
     desc: "21 acres of strategic land on lease to companies in Shamli, linked to 8 national expressways.",
     overview:
-      "Indexia Warehouse offers strategic land on lease to companies in Shamli, Uttar Pradesh — just ~65 km from Tronica City, Loni, Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. Four major ports (Gujarat, Maharashtra, Chennai, Kolkata) are directly reachable via expressways, and both IGI Airport Delhi and Noida Int'l Airport, Jewar are within one hour. The land portfolio spans 5 locations and 21 acres total, with flexible plots of 1, 2, 2.5, 5 and 8 acres available for lease. A modern warehouse on 2 acres with loading docks is being developed. Lease terms are negotiable.",
+      "Indexia Warehouse offers a strategic land leasing opportunity built on 21 acres in Shamli, Uttar Pradesh — just ~65 km from Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. The land portfolio spans 5 locations with flexible plots of 1, 2, 2.5, 5 and 8 acres available for lease. A modern warehouse is being developed. Lease terms are negotiable.",
     highlights: [
       "Prime location — Shamli, UP, ~65 km from Delhi",
       "8 national expressways + 2 major highways connecting 8 states",
@@ -165,7 +165,6 @@ export const companies: Company[] = [
       "21 Acres Across 5 Locations on Lease",
       "Warehouse Facility on 2-Acre Plot",
       "Expressway & Highway Connectivity",
-      "Port Access — Gujarat, Maharashtra, Chennai, Kolkata",
       "Airport Access — Delhi & Jewar Within 1 Hour",
     ],
     color: colors.teal,
@@ -174,9 +173,9 @@ export const companies: Company[] = [
     name: "Indexia Advertising",
     slug: "advertising",
     tag: "Premium Unipole Hoardings",
-    desc: "Premium highway hoardings at North India's busiest junction.",
+    desc: "Premium hoardings on Indian highways, majorly the Delhi–Dehradun highway.",
     overview:
-      "Indexia Advertising operates premium single-pole unipole hoardings on the Delhi–Dehradun Highway (NH-709B) in Shamli — the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our unipoles connect 10 states with a 50 crore population reach and attract 1+ crore daily exposure. Single-pole unipoles with premium height and unobstructed 360° viewing angles give your brand maximum visibility with zero visual clutter, backed by a signature Bisleri Green branding. From printing and installation to maintenance, we handle everything end-to-end. Book a 10×20 ft unipole at ₹25,000/month or a 12×24 ft unipole at ₹36,000/month — standard rate ₹125/sq ft per side per month, negotiable for long-term packages. For bookings call 86918 86919 or 011 4629 1155, or email indexia.queries@gmail.com.",
+      "Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli — the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily exposure. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end. For bookings call 86918 86919 or 011 4629 1155, or email indexia.queries@gmail.com.",
     highlights: [
       "Strategic placements on NH-709B, the Delhi–Dehradun highway",
       "10 connected states — 50 crore population reach, 1+ crore daily exposure",

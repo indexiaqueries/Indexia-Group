@@ -56,10 +56,10 @@ const HeroBackdrop = ({
   background = `linear-gradient(115deg, ${colors.navyDeep} 0%, ${colors.navy} 55%, ${colors.navyMid} 100%)`,
   overlay = `linear-gradient(115deg, ${colors.navyDeep}d9 0%, ${colors.navy}b3 55%, ${colors.navyMid}8c 100%)`,
   radial,
-  ruledClassName = "pointer-events-none absolute inset-0 opacity-80",
+  ruledClassName = "pointer-events-none absolute inset-0 opacity-0",
   ruledStyle = {
     backgroundImage:
-      "repeating-linear-gradient(to bottom, transparent 0px, transparent 35px, rgba(255,255,255,0.05) 35px, rgba(255,255,255,0.05) 36px)",
+      "none",
   },
   containerClassName =
     "relative mx-auto w-full max-w-7xl px-5 py-20 pt-28 text-center sm:px-6 lg:px-8 lg:py-24",

@@ -8,6 +8,7 @@ import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImpactBand from "../components/common/ImpactBand";
 import ResponsiveImage from "../components/common/ResponsiveImage";
 import { colors } from "../lib/theme";
+import { groupStats } from "../data/groupStats";
 import aboutBg from "../assets/hero-img/AboutHero.png";
 import founderImg from "../assets/about-img/founder_MD.png";
 import ourStoryImg from "../assets/about-img/OurStory.png";
@@ -64,10 +65,13 @@ const AboutPage = () => {
           <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
         </div>
-        <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
-          {tr("titleStart", "Building Trust ")}
-          <span className="text-(--color-yellow)">{tr("titleAccent", "Across Industries.")}</span>
+        <h1 className="font-display mx-auto mb-3 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
+          {tr("titleStart", "Some steps to ")}<br />
+          <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
         </h1>
+        <p className="mx-auto mb-2 max-w-2xl font-ledger text-sm uppercase tracking-[0.2em] text-(--color-yellow)/80">
+          {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
+        </p>
         <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">
           {tr("subtitle", "")}
         </p>
@@ -84,8 +88,8 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal delay={0.1} amount={0.15}>
-            <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 sm:flex-row sm:items-start sm:text-left">
-              <div className="relative w-full shrink-0 overflow-hidden rounded-2xl border border-white/10 sm:w-80 lg:w-96">
+            <div className="mx-auto grid max-w-5xl items-center gap-10 sm:grid-cols-2">
+              <div className="relative w-full overflow-hidden rounded-2xl">
                 <img
                   src={founderImg}
                   alt={tr("founderName", "Founder & Managing Director")}
@@ -93,18 +97,15 @@ const AboutPage = () => {
                   height={750}
                   loading="lazy"
                   decoding="async"
-                  className="h-80 w-full object-cover sm:h-[34rem]"
-                  style={{ objectPosition: "center 0%" }}
+                  className="w-full object-contain"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
                 {/* Floating name badge */}
                 <div className="absolute inset-x-0 bottom-0 flex justify-center px-6 pb-5">
-                  <div className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/10 px-5 py-3 shadow-xl backdrop-blur-md">
-                    <div className="h-px w-6 bg-(--color-yellow)/60" />
+                  <div className="rounded-xl bg-white/10 px-5 py-3 shadow-xl backdrop-blur-md">
                     <span className="font-display text-sm font-bold text-white sm:text-base">
                       Bijendra Malik
                     </span>
-                    <div className="h-px w-6 bg-(--color-yellow)/60" />
                   </div>
                 </div>
               </div>
@@ -212,12 +213,12 @@ const AboutPage = () => {
           </Reveal>
 
           <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
-            {[1, 2, 3, 4].map((i) => (
-              <Reveal key={i} delay={(i - 1) * 0.08} amount={0.15}>
+            {groupStats.map((stat, i) => (
+              <Reveal key={stat.label} delay={i * 0.08} amount={0.15}>
                 <div className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-8 text-center shadow-sm">
                   <AnimatedCounter
-                    value={tr(`stat${i}Value`, "0")}
-                    label={tr(`stat${i}Label`, "")}
+                    value={stat.value}
+                    label={stat.label}
                     color="var(--color-teal)"
                     numberClassName="font-display text-4xl font-bold text-(--color-teal) sm:text-5xl"
                     labelClassName="mt-2 text-sm font-semibold uppercase tracking-wide text-slate-500"

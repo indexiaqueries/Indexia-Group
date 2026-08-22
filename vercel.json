@@ -4,8 +4,7 @@
   "installCommand": "npm install",
   "framework": null,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/((?!api/|assets/|images/|brochures/).*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
@@ -17,8 +16,7 @@
   ],
   "functions": {
     "api/index.js": {
-      "maxDuration": 30,
-      "memory": 1024
+      "maxDuration": 30
     }
   }
 }
