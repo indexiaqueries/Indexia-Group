@@ -2,6 +2,21 @@
 
 import React, { useRef, useState, useCallback } from "react";
 
+/** Convert hex color to rgb components: "#26ae90" → [38, 174, 144] */
+function hexToRgb(hex: string): [number, number, number] {
+  const h = hex.replace("#", "");
+  return [
+    parseInt(h.substring(0, 2), 16),
+    parseInt(h.substring(2, 4), 16),
+    parseInt(h.substring(4, 6), 16),
+  ];
+}
+
+function rgba(hex: string, alpha: number): string {
+  const [r, g, b] = hexToRgb(hex);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
 /* ------------------------------------------------------------------ */
 /*  GlowingCard                                                       */
 /* ------------------------------------------------------------------ */
@@ -42,52 +57,12 @@ export const GlowingCard: React.FC<GlowingCardProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Ambient pulsing glow */}
-      <div
-        className="pointer-events-none absolute -inset-1 rounded-2xl opacity-30"
-        style={{
-          background: `radial-gradient(600px circle at 50% 50%, ${glowColor}40, transparent 70%)`,
-          animation: "glow-pulse 4s ease-in-out infinite",
-        }}
-      />
-      {/* Pulsing border glow */}
-      <div
-        className="pointer-events-none absolute inset-0 rounded-2xl opacity-40"
-        style={{
-          boxShadow: `inset 0 0 0 1px ${glowColor}60`,
-          animation: "glow-pulse 4s ease-in-out infinite 0.5s",
-        }}
-      />
       {/* Mouse-tracking spotlight */}
       <div
         className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500"
         style={{
           opacity: isHovered ? 1 : 0,
-          background: `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, ${glowColor}30, transparent 50%)`,
-        }}
-      />
-      {/* Border glow on hover */}
-      <div
-        className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-all duration-500"
-        style={{
-          opacity: isHovered ? 1 : 0,
-          boxShadow: `inset 0 0 0 1.5px ${glowColor}80, 0 0 40px ${glowColor}30, 0 0 80px ${glowColor}15`,
-        }}
-      />
-      {/* Top edge highlight */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px opacity-0 transition-opacity duration-500"
-        style={{
-          opacity: isHovered ? 1 : 0,
-          background: `linear-gradient(90deg, transparent, ${glowColor}80, transparent)`,
-        }}
-      />
-      {/* Bottom glow line */}
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-px opacity-0 transition-opacity duration-500"
-        style={{
-          opacity: isHovered ? 1 : 0,
-          background: `linear-gradient(90deg, transparent, ${glowColor}90, transparent)`,
+          background: `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, ${rgba(glowColor, 0.4)}, transparent 50%)`,
         }}
       />
       {/* Content */}

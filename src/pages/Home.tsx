@@ -111,7 +111,7 @@ const Home = () => {
               mapBrightness={14}
               enableZoom={false}
               autoRotate={true}
-              autoRotateSpeed={0.002}
+              autoRotateSpeed={0.001}
             />
           </div>
         </div>

@@ -10,6 +10,7 @@ import { branches } from "../data/contact";
 import { GlowingCards, GlowingCard } from "../components/lightswind/glowing-cards";
 import { siteImages } from "../data/siteImages";
 import { accent } from "../lib/theme";
+import Reveal from "../components/common/Reveal";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -81,13 +82,15 @@ const Contact = () => {
             <ContactInfo />
           </div>
           <div className="flex flex-col gap-5">
-            <MediaFrame className="image-zoom-frame shadow-sm ring-1 ring-slate-200 rounded-2xl">
-              <ImageSlot
-                {...siteImages.contactEnquiry}
-                aspect="aspect-[16/9]"
-                className="image-zoom-media rounded-2xl"
-              />
-            </MediaFrame>
+            <Reveal variant="scale" y={20} amount={0.15}>
+              <MediaFrame className="image-zoom-frame shadow-sm ring-1 ring-slate-200 rounded-2xl">
+                <ImageSlot
+                  {...siteImages.contactEnquiry}
+                  aspect="aspect-[16/9]"
+                  className="image-zoom-media rounded-2xl"
+                />
+              </MediaFrame>
+            </Reveal>
             <EnquiryForm />
           </div>
         </div>
@@ -104,7 +107,7 @@ const Contact = () => {
 
           <GlowingCards gap="1.5rem">
             {branches.map((branch, index) => (
-              <GlowingCard key={branch.name} glowColor={['var(--color-teal)', 'var(--color-yellow)', 'var(--color-blue)', '#94a3b8'][index % 4]} className="p-0">
+              <GlowingCard key={branch.name} glowColor={['#26ae90', '#f2f231', '#066a9c', '#94a3b8'][index % 4]} className="p-0">
                 <LocationCard location={branch} delay={index * 0.08} />
               </GlowingCard>
             ))}

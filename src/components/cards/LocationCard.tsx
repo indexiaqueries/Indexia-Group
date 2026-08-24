@@ -2,6 +2,7 @@ import { MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ImageSlot from "../common/ImageSlot";
 import MediaFrame from "../common/MediaFrame";
+import Reveal from "../common/Reveal";
 import { siteImages } from "../../data/siteImages";
 
 type LocationCardItem = {
@@ -16,7 +17,7 @@ type LocationCardProps = {
   delay?: number;
 };
 
-const LocationCard = ({ location }: LocationCardProps) => {
+const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
   const { t } = useTranslation();
   const slotKey = `contact${location.key.replace(/Office$/, "").replace(/^./, (c) => c.toUpperCase())}`;
   const slot = siteImages[slotKey];
@@ -24,14 +25,16 @@ const LocationCard = ({ location }: LocationCardProps) => {
   return (
     <article className="flex h-full flex-col">
       {slot && (
-        <MediaFrame className="image-zoom-frame mb-4 shrink-0 overflow-hidden rounded-xl">
-          <ImageSlot
-            {...slot}
-            aspect="aspect-[16/10]"
-            alt={t(`branches.${location.key}`, { defaultValue: location.name })}
-            className="image-zoom-media rounded-xl"
-          />
-        </MediaFrame>
+        <Reveal variant="scale" y={16} amount={0.15} delay={delay} className="mb-4 shrink-0">
+          <MediaFrame className="rounded-xl">
+            <ImageSlot
+              {...slot}
+              aspect="aspect-[16/10]"
+              alt={t(`branches.${location.key}`, { defaultValue: location.name })}
+              className="image-zoom-media rounded-xl"
+            />
+          </MediaFrame>
+        </Reveal>
       )}
 
       <div className="flex items-start gap-4">

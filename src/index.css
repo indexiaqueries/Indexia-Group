@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@plugin 'lightswind/plugin';
 /* ── Design Tokens ── */
 @import "./styles/variables.css";
 

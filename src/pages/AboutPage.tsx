@@ -99,7 +99,7 @@ const AboutPage = () => {
                   decoding="async"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
                 {/* Floating name badge */}
                 <div className="absolute inset-x-0 bottom-0 flex justify-center px-6 pb-5">
                   <div className="rounded-xl bg-white/10 px-5 py-3 shadow-xl backdrop-blur-md">
@@ -505,7 +505,7 @@ const AboutPage = () => {
           <div className="relative space-y-8">
             <div
               aria-hidden="true"
-              className="absolute left-[18px] top-0 bottom-0 w-px bg-slate-200 sm:left-1/2 sm:-translate-x-px"
+              className="absolute left-4.5 top-0 bottom-0 w-px bg-slate-200 sm:left-1/2 sm:-translate-x-px"
             />
             {MILESTONES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.1}>
