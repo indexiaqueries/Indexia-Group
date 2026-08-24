@@ -25,8 +25,10 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     heading: t("hero.p0.heading"),
     sub: t("hero.p0.sub"),
     motto: t("hero.p0.motto"),
-    image: getCompanyImage("group"),
-    mobileImage: getCompanyMobileImage("group"),
+    // Use public/ paths for the initial group panel so the preloaded
+    // <link rel="preload"> in index.html matches exactly (no Vite hashes).
+    image: "/IndexiaGroup.webp",
+    mobileImage: "/IndexiaGroup-mobile.webp",
     thumbImage: getCompanyThumbImage("group"),
     color: colors.teal,
     slug: "",
