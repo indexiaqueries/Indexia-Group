@@ -2,6 +2,8 @@ import type { HeroPanel } from "../../cards/HeroGalleryThumb";
 import { getCompanyImage, getCompanyMobileImage, getCompanyThumbImage } from "../../../data/companyImages";
 import { companies } from "../../../data/companies";
 import { colors } from "../../../lib/theme";
+import groupImg from "../../../assets/company-img/IndexiaGroup.webp";
+import groupMobile from "../../../assets/company-img/mobile/IndexiaGroup-mobile.webp";
 
 // Group slide is a special entry not in the companies array
 const GROUP_PANEL_ID = 0;
@@ -25,10 +27,8 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     heading: t("hero.p0.heading"),
     sub: t("hero.p0.sub"),
     motto: t("hero.p0.motto"),
-    // Use public/ paths for the initial group panel so the preloaded
-    // <link rel="preload"> in index.html matches exactly (no Vite hashes).
-    image: "/IndexiaGroup.webp",
-    mobileImage: "/IndexiaGroup-mobile.webp",
+    image: groupImg,
+    mobileImage: groupMobile,
     thumbImage: getCompanyThumbImage("group"),
     color: colors.teal,
     slug: "",
