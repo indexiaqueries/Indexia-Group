@@ -6,7 +6,7 @@
   "scripts": {
     "dev:frontend": "vite",
     "dev:server": "node --watch --env-file-if-exists=server/.env server/index.js",
-    "build": "node scripts/generate-responsive-images.mjs && tsc -b && vite build && node scripts/generate-brochure-pdfs.mjs",
+    "build": "node scripts/generate-responsive-images.mjs && node scripts/generate-hero-quality-variants.mjs && tsc -b && vite build && node scripts/generate-brochure-pdfs.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node --env-file-if-exists=server/.env server/index.js",

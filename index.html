@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0c3652" />
 
-    <!-- LCP image preload -->
-    <link rel="preload" as="image" href="/IndexiaGroup.webp" fetchpriority="high" media="(min-width: 900px)" />
-    <link rel="preload" as="image" href="/IndexiaGroup-mobile.webp" fetchpriority="high" media="(max-width: 899px)" />
+    <!-- LCP image preload — srcset-based responsive preloading (q80 for fast LCP on slow connections) -->
+    <link rel="preload" as="image" href="/IndexiaGroup-mobile-q80.webp" fetchpriority="high" imagesrcset="/IndexiaGroup-mobile-q80.webp 900w, /IndexiaGroup-q80.webp 1900w" imagesizes="100vw" />
 
     <!-- Self-hosted Fraunces — inlined to eliminate render-blocking chain -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/fraunces-700.woff2" crossorigin />
@@ -99,8 +98,8 @@
     <!-- Static hero — stays permanently, React renders on top via z-index. No MutationObserver = zero CLS. -->
     <div id="lcp-hero" style="position:fixed;inset:0;z-index:0;overflow:hidden;background:#0c3652">
       <img
-        src="/IndexiaGroup-mobile.webp"
-        srcset="/IndexiaGroup-mobile.webp 900w, /IndexiaGroup.webp 1900w"
+        src="/IndexiaGroup-mobile-q80.webp"
+        srcset="/IndexiaGroup-mobile-q80.webp 900w, /IndexiaGroup-q80.webp 1900w"
         sizes="100vw"
         alt=""
         aria-hidden="true"

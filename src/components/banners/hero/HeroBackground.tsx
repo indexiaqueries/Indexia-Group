@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import type { HeroPanel } from "../../cards/HeroGalleryThumb";
 
@@ -14,6 +14,8 @@ export type MorphRect = {
 type HeroBackgroundProps = {
   bgImage: string;
   bgMobileImage: string;
+  bgPlaceholderImage?: string;
+  bgPlaceholderMobileImage?: string;
   morph: MorphRect | null;
   panels: HeroPanel[];
   prefersReducedMotion: boolean | null;
@@ -93,11 +95,30 @@ const MorphLayer = ({
   );
 };
 
-const HeroBackground = ({ bgImage, bgMobileImage, morph, panels, prefersReducedMotion, onMorphComplete }: HeroBackgroundProps) => {
+const HeroBackground = ({ bgImage, bgMobileImage, bgPlaceholderImage, bgPlaceholderMobileImage, morph, panels, prefersReducedMotion, onMorphComplete }: HeroBackgroundProps) => {
   const reducedMotion = !!prefersReducedMotion;
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  // Determine the correct placeholder source based on viewport
+  const placeholderSrc = typeof window !== "undefined" && window.innerWidth >= 900
+    ? (bgPlaceholderImage ?? bgImage)
+    : (bgPlaceholderMobileImage ?? bgMobileImage);
 
   return (
     <div className="absolute inset-0 overflow-hidden">
+      {/* Blur-up placeholder — blurred q80 image shown while original loads */}
+      {bgPlaceholderImage && !imgLoaded && (
+        <img
+          src={placeholderSrc}
+          alt=""
+          aria-hidden="true"
+          width={1408}
+          height={768}
+          className="absolute inset-0 w-full h-full object-cover object-center scale-105 blur-xl"
+          style={{ filter: "blur(40px) saturate(1.2)" }}
+        />
+      )}
+
       <img
         key={bgImage}
         src={bgImage}
@@ -109,7 +130,10 @@ const HeroBackground = ({ bgImage, bgMobileImage, morph, panels, prefersReducedM
         height={768}
         decoding="async"
         fetchPriority="high"
-        className={`absolute inset-0 w-full h-full object-cover object-center ${
+        onLoad={() => setImgLoaded(true)}
+        className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700 ${
+          imgLoaded ? "opacity-100" : "opacity-0"
+        } ${
           morph && !reducedMotion ? "bg-morph-out" : "kenburns"
         }`}
         style={
