@@ -99,7 +99,7 @@ const Home = () => {
 
         {/* Globe — lazy-loaded to keep initial JS execution light */}
         <div className="mx-auto">
-          <div className="mx-auto h-72 sm:h-87.5 w-full max-w-3xl sm:h-105 lg:h-120">
+          <div className="mx-auto h-72 sm:h-87.5 w-full max-w-3xl lg:h-120">
             <Suspense fallback={<div className="h-full w-full" /> }>
               <Globe
                 theta={0.3}
