@@ -101,8 +101,8 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
 
         {current.motto && (
         <p
-          className="hero-slide-child mb-3 -mt-2 italic text-[15px] sm:text-[17px] font-medium text-(--color-yellow)/80"
-          style={{ textShadow: textShadow(shadowLevel, 14, 0.8), animationDelay: CHILD_DELAYS[1] }}
+          className="hero-slide-child mb-3 -mt-2 italic text-[15px] sm:text-[17px] font-medium text-(--color-yellow)/90 rounded-xl px-4 py-1.5 sm:px-5 sm:py-2"
+          style={{ textShadow: textShadow(shadowLevel, 14, 0.8), animationDelay: CHILD_DELAYS[1], background: `linear-gradient(120deg, rgba(2,8,23,0.70) 0%, rgba(4,32,58,0.50) 55%, rgba(2,8,23,0.35) 100%)` }}
         >
             {current.motto}
           </p>
