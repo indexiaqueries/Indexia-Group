@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowRight, Clock, Layers, MapPin, Sparkles } from "lucide-react";
@@ -19,7 +19,7 @@ import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
-import TrainingGallery from "./TrainingGallery";
+import VideoHoverGallery from "./VideoHoverGallery";
 import foundationVid1 from "../../assets/company-pages-img/foundation-gallery/horizontal.mp4";
 import foundationVid2 from "../../assets/company-pages-img/foundation-gallery/vertical1.mp4";
 import foundationVid3 from "../../assets/company-pages-img/foundation-gallery/vertical2.mp4";
@@ -37,6 +37,30 @@ type CompanyDetailProps = {
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
   const [bookingMessage, setBookingMessage] = useState<string | undefined>(undefined);
+  const gallerySectionRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (b.slug !== "foundation") return;
+    const section = gallerySectionRef.current;
+    const glow = glowRef.current;
+    if (!section || !glow) return;
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const rect = section.getBoundingClientRect();
+        const progress = -rect.top / (rect.height + window.innerHeight);
+        const offset = Math.max(-60, Math.min(60, progress * 120));
+        glow.style.transform = `translateY(${offset}px)`;
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [b.slug]);
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
@@ -417,8 +441,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (
-        <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
-          <div aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
+        <section ref={gallerySectionRef} className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
+          <div ref={glowRef} aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl transition-transform duration-150 ease-out" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
           <div className="container relative py-16 lg:py-20">
             <Reveal className="mx-auto mb-10 max-w-3xl text-center">
               <Eyebrow color="var(--color-yellow)">{t("pageContent.companies.foundation.galleryEyebrow", "Training & Media")}</Eyebrow>
@@ -426,14 +450,18 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 {t("pageContent.companies.foundation.galleryTitle", "Our Athletes in Action")}
               </h2>
             </Reveal>
-            <TrainingGallery
+            <VideoHoverGallery
               videos={[
-                { src: foundationVid1, label: "Training Session" },
-                { src: foundationVid2, label: "Track Training" },
-                { src: foundationVid3, label: "Field Practice" },
-                { src: foundationVid4, label: "Sprint Drills" },
-                { src: foundationVid5, label: "Team Session" },
+                { src: foundationVid2, label: "Track Training", sublabel: "Sprint practice on track" },
+                { src: foundationVid3, label: "Field Practice", sublabel: "Athletic drills" },
+                { src: foundationVid1, label: "Training Session", sublabel: "Field training with coaches" },
+                { src: foundationVid4, label: "Sprint Drills", sublabel: "Speed training" },
+                { src: foundationVid5, label: "Team Session", sublabel: "Group training" },
               ]}
+              activeWidth={35}
+              gap={0.5}
+              perspective={35}
+              transitionDuration={0.6}
             />
           </div>
         </section>

@@ -8,6 +8,7 @@ import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
 import { colors } from "../lib/theme";
+import ReachGlobe from "../components/common/ReachGlobe";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -94,6 +95,13 @@ const Home = () => {
             {t("homeReach.subtitle", "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.")}
           </p>
         </Reveal>
+
+        {/* Globe */}
+        <div className="mx-auto mb-8">
+          <div className="mx-auto h-[350px] w-full max-w-3xl sm:h-[420px] lg:h-[480px]">
+            <ReachGlobe />
+          </div>
+        </div>
 
         <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8 lg:grid-cols-4">
           <Reveal delay={0} y={40} variant="scale" amount={0.15} className="text-center">
