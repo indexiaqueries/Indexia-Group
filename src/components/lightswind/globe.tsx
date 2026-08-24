@@ -60,7 +60,7 @@ const Globe: React.FC<GlobeProps> = ({
     let mounted = true;
     let globe: GlobeInstance | null = null;
     let phi = 0;
-    let rafId: number;
+    let rafId = 0;
 
     const init = () => {
       if (globe) {
@@ -100,39 +100,48 @@ const Globe: React.FC<GlobeProps> = ({
       const animate = () => {
         if (!mounted || !globe) return;
         if (autoRotate) phi += autoRotateSpeed;
-        globe.update({
-          phi,
-          theta,
-          scale,
-        });
+        globe.update({ phi, theta, scale });
         rafId = requestAnimationFrame(animate);
       };
       rafId = requestAnimationFrame(animate);
     };
 
-    // Use ResizeObserver to init when parent gets real dimensions
-    const parent = canvas.parentElement;
-    const ro = parent
-      ? new ResizeObserver(() => {
-          if (mounted) init();
-        })
-      : null;
-    if (ro && parent) ro.observe(parent);
+    // Defer initialization until the globe is near the viewport
+    // so the heavy WebGL work doesn't block the hero LCP.
+    let io: IntersectionObserver | null = null;
+    let idleId = 0;
+    const scheduleInit = () => {
+      if (typeof requestIdleCallback === "function") {
+        idleId = requestIdleCallback(() => { if (mounted) init(); }, { timeout: 2000 });
+      } else {
+        idleId = requestAnimationFrame(() => { if (mounted) init(); }) as unknown as number;
+      }
+    };
 
-    // Also retry after delays for Reveal animation
-    const timer = setTimeout(() => {
-      if (mounted) init();
-    }, 150);
-    const timer2 = setTimeout(() => {
-      if (mounted) init();
-    }, 500);
+    const parent = canvas.parentElement;
+    if (parent && typeof IntersectionObserver !== "undefined") {
+      io = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && mounted) {
+            io?.disconnect();
+            scheduleInit();
+          }
+        },
+        { rootMargin: "400px" },
+      );
+      io.observe(parent);
+    } else {
+      scheduleInit();
+    }
 
     return () => {
       mounted = false;
-      clearTimeout(timer);
-      clearTimeout(timer2);
       cancelAnimationFrame(rafId);
-      ro?.disconnect();
+      if (idleId) {
+        if (typeof cancelIdleCallback === "function") cancelIdleCallback(idleId);
+        else cancelAnimationFrame(idleId);
+      }
+      io?.disconnect();
       if (globe) {
         globe.destroy();
         globe = null;

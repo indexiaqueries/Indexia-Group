@@ -36,10 +36,43 @@ function readServerPort(): number {
 
 const SERVER_PORT = readServerPort()
 
+// Makes CSS links non-render-blocking so they load in parallel with JS.
+// Adds <noscript> fallback for users without JavaScript.
+function nonBlockingCss(): Plugin {
+  return {
+    name: 'non-blocking-css',
+    enforce: 'post',
+    transformIndexHtml(html) {
+      // Replace top-level <link rel="stylesheet"> with preload + onload pattern.
+      // Skip anything inside <noscript> blocks.
+      const noscriptParts: string[] = [];
+      let processed = html.replace(/<noscript>([\s\S]*?)<\/noscript>/gi, (_, content) => {
+        noscriptParts.push(content);
+        return `<NOSCRIPT_PLACEHOLDER_${noscriptParts.length - 1}>`;
+      });
+      processed = processed.replace(
+        /<link\s+rel="stylesheet"\s+([^>]*href="[^"]+"[^>]*)>/g,
+        (_, attrs) => {
+          const hrefMatch = attrs.match(/href="([^"]+)"/);
+          if (!hrefMatch) return `<link rel="stylesheet" ${attrs}>`;
+          const href = hrefMatch[1];
+          const extra = attrs.replace(/href="[^"]+"/, '').trim();
+          const crossorigin = extra ? ` ${extra}` : '';
+          return `<link rel="preload" href="${href}" as="style"${crossorigin} onload="this.onload=null;this.rel='stylesheet'">\n    <noscript><link rel="stylesheet" href="${href}"${crossorigin} /></noscript>`;
+        },
+      );
+      // Restore noscript blocks
+      processed = processed.replace(/<NOSCRIPT_PLACEHOLDER_(\d+)>/g, (_, i) => `<noscript>${noscriptParts[Number(i)]}</noscript>`);
+      return processed;
+    },
+  };
+}
+
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    nonBlockingCss(),
     viteCompression({ algorithm: 'brotliCompress', ext: '.br', threshold: 1024 }),
     viteCompression({ algorithm: 'gzip', ext: '.gz', threshold: 1024 }),
   ],
