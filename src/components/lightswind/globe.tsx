@@ -35,6 +35,8 @@ export interface GlobeProps {
   autoRotateSpeed?: number;
 }
 
+const EMPTY_MARKERS: GlobeMarker[] = [];
+
 const Globe: React.FC<GlobeProps> = ({
   className,
   theta = 0.25,
@@ -46,12 +48,14 @@ const Globe: React.FC<GlobeProps> = ({
   baseColor = "#ffffff",
   markerColor = "#ff3b30",
   glowColor = "#ffffff",
-  markers = [],
+  markers,
   enableZoom = false,
   autoRotate = true,
   autoRotateSpeed = 0.003,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const propsRef = useRef({ theta, dark, scale, diffuse, mapSamples, mapBrightness, baseColor, markerColor, glowColor, markers: markers ?? EMPTY_MARKERS, autoRotate, autoRotateSpeed });
+  propsRef.current = { theta, dark, scale, diffuse, mapSamples, mapBrightness, baseColor, markerColor, glowColor, markers: markers ?? EMPTY_MARKERS, autoRotate, autoRotateSpeed };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -75,6 +79,7 @@ const Globe: React.FC<GlobeProps> = ({
       const h = parent.clientHeight;
       if (w === 0 || h === 0) return;
 
+      const p = propsRef.current;
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
       globe = createGlobe(canvas, {
@@ -82,25 +87,26 @@ const Globe: React.FC<GlobeProps> = ({
         width: w * dpr,
         height: h * dpr,
         phi: 0,
-        theta,
-        dark,
-        scale,
-        diffuse,
-        mapSamples,
-        mapBrightness,
-        baseColor: resolveColor(baseColor),
-        markerColor: resolveColor(markerColor),
-        glowColor: resolveColor(glowColor),
+        theta: p.theta,
+        dark: p.dark,
+        scale: p.scale,
+        diffuse: p.diffuse,
+        mapSamples: p.mapSamples,
+        mapBrightness: p.mapBrightness,
+        baseColor: resolveColor(p.baseColor),
+        markerColor: resolveColor(p.markerColor),
+        glowColor: resolveColor(p.glowColor),
         opacity: 1,
         offset: [0, 0],
-        markers,
+        markers: p.markers,
       });
 
       // cobe v2 requires calling update() in a rAF loop
       const animate = () => {
         if (!mounted || !globe) return;
-        if (autoRotate) phi += autoRotateSpeed;
-        globe.update({ phi, theta, scale });
+        const cur = propsRef.current;
+        if (cur.autoRotate) phi += cur.autoRotateSpeed;
+        globe.update({ phi, theta: cur.theta, scale: cur.scale });
         rafId = requestAnimationFrame(animate);
       };
       rafId = requestAnimationFrame(animate);
@@ -110,12 +116,17 @@ const Globe: React.FC<GlobeProps> = ({
     // so the heavy WebGL work doesn't block the hero LCP.
     let io: IntersectionObserver | null = null;
     let idleId = 0;
+    let fallbackTimeout: ReturnType<typeof setTimeout> | null = null;
+
     const scheduleInit = () => {
       if (typeof requestIdleCallback === "function") {
         idleId = requestIdleCallback(() => { if (mounted) init(); }, { timeout: 2000 });
       } else {
+        // Safari does not support requestIdleCallback — schedule on the next frame
         idleId = requestAnimationFrame(() => { if (mounted) init(); }) as unknown as number;
       }
+      // Safety net: if rIC / rAF never fires (rare on Safari), init after 500ms
+      fallbackTimeout = setTimeout(() => { if (mounted && !globe) init(); }, 500);
     };
 
     const parent = canvas.parentElement;
@@ -141,17 +152,17 @@ const Globe: React.FC<GlobeProps> = ({
         if (typeof cancelIdleCallback === "function") cancelIdleCallback(idleId);
         else cancelAnimationFrame(idleId);
       }
+      if (fallbackTimeout) clearTimeout(fallbackTimeout);
       io?.disconnect();
       if (globe) {
         globe.destroy();
         globe = null;
       }
     };
-  }, [
-    theta, dark, scale, diffuse, mapSamples, mapBrightness,
-    baseColor, markerColor, glowColor, autoRotate, autoRotateSpeed,
-    markers, enableZoom,
-  ]);
+  // Only run once on mount — prop changes are read from propsRef.current
+  // to avoid destroying/recreating the globe on every render.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div
