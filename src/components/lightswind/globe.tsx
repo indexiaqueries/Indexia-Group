@@ -49,7 +49,6 @@ const Globe: React.FC<GlobeProps> = ({
   markerColor = "#ff3b30",
   glowColor = "#ffffff",
   markers,
-  enableZoom = false,
   autoRotate = true,
   autoRotateSpeed = 0.003,
 }) => {
