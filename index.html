@@ -17,6 +17,7 @@
 
     <!-- Inter (body) + IBM Plex Mono (ledger) from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" /></noscript>
 
@@ -96,7 +97,32 @@
     </script>
   </head>
   <body>
+    <!-- Static hero image — renders instantly before React hydrates, eliminating 600+ms render delay -->
+    <div id="lcp-hero" style="position:fixed;inset:0;z-index:0;overflow:hidden;background:#0c3652">
+      <img
+        src="/IndexiaGroup-mobile.webp"
+        srcset="/IndexiaGroup-mobile.webp 900w, /IndexiaGroup.webp 1900w"
+        sizes="100vw"
+        alt=""
+        aria-hidden="true"
+        width="1408"
+        height="768"
+        fetchpriority="high"
+        decoding="async"
+        style="width:100%;height:100%;object-fit:cover;object-position:center"
+      />
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      /* Remove the static hero once React has rendered */
+      new MutationObserver(function(_, obs) {
+        if (document.querySelector('.absolute.inset-0.z-2.overflow-hidden img')) {
+          var el = document.getElementById('lcp-hero');
+          if (el) el.remove();
+          obs.disconnect();
+        }
+      }).observe(document.getElementById('root'), { childList: true, subtree: true });
+    </script>
   </body>
 </html>
