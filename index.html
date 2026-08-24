@@ -17,7 +17,6 @@
 
     <!-- Inter (body) + IBM Plex Mono (ledger) from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" /></noscript>
 
@@ -97,7 +96,7 @@
     </script>
   </head>
   <body>
-    <!-- Static hero image — renders instantly before React hydrates, eliminating 600+ms render delay -->
+    <!-- Static hero — stays permanently, React renders on top via z-index. No MutationObserver = zero CLS. -->
     <div id="lcp-hero" style="position:fixed;inset:0;z-index:0;overflow:hidden;background:#0c3652">
       <img
         src="/IndexiaGroup-mobile.webp"
@@ -114,15 +113,5 @@
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      /* Remove the static hero once React has rendered */
-      new MutationObserver(function(_, obs) {
-        if (document.querySelector('.absolute.inset-0.z-2.overflow-hidden img')) {
-          var el = document.getElementById('lcp-hero');
-          if (el) el.remove();
-          obs.disconnect();
-        }
-      }).observe(document.getElementById('root'), { childList: true, subtree: true });
-    </script>
   </body>
 </html>

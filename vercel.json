@@ -16,7 +16,7 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Link", "value": "</IndexiaGroup.webp>; rel=preload; as=image; fetchpriority=high, </IndexiaGroup-mobile.webp>; rel=preload; as=image; fetchpriority=high, </fonts/fraunces-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin" }
+        { "key": "Link", "value": "</IndexiaGroup.webp>; rel=preload; as=image; fetchpriority=high, </IndexiaGroup-mobile.webp>; rel=preload; as=image; fetchpriority=high, </fonts/fraunces-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-600.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin" }
       ]
     }
   ],
