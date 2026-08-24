@@ -29,7 +29,7 @@ const ImpactBand = ({
     accent === "teal"
       ? "bg-(--color-teal) text-white shadow-[0_4px_16px_rgba(38,174,144,0.35)] hover:bg-(--color-teal-deep)"
       : "bg-(--color-yellow) text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] hover:bg-(--color-yellow-bright)";
-  const action = `mt-8 inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 ${actionClass}`;
+  const action = `mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 ${actionClass}`;
 
   return (
     <section className={`relative overflow-hidden px-5 py-20 sm:px-6 sm:py-24 lg:px-8 ${className}`}>
@@ -54,7 +54,7 @@ const ImpactBand = ({
           <h2 className="font-display mt-4 text-[clamp(28px,4.3vw,50px)] font-bold leading-[1.08] text-white">
             {title}
           </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-8 text-white/78">{body}</p>
+          <p className="mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-white/78">{body}</p>
           {to ? (
             <Link to={to} className={action}>
               {actionLabel}

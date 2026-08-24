@@ -69,10 +69,10 @@ const AboutPage = () => {
           {tr("titleStart", "Some steps to ")}<br />
           <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
         </h1>
-        <p className="mx-auto mb-2 max-w-2xl font-ledger text-sm uppercase tracking-[0.2em] text-(--color-yellow)/80">
+        <p className="mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm uppercase tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80">
           {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
         </p>
-        <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">
+        <p className="mx-auto max-w-2xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/80">
           {tr("subtitle", "")}
         </p>
       </HeroBackdrop>
@@ -112,11 +112,10 @@ const AboutPage = () => {
               <div className="flex flex-col">
                 <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
                   {tr("founderRole", "Founder & Managing Director")}
-                </span>
-                <p className="mt-5 max-w-lg text-[15px] leading-8 text-white/70">
+                </span>                  <p className="mt-5 max-w-lg text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-white/70">
                   {tr("founderBio1", "")}
                 </p>
-                <p className="mt-4 max-w-lg text-[15px] leading-8 text-white/70">
+                <p className="mt-4 max-w-lg text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-white/70">
                   {tr("founderBio2", "")}
                 </p>
                 <blockquote className="mt-6 max-w-lg border-l-2 border-(--color-yellow)/50 pl-5 text-sm italic text-(--color-yellow)/80">
@@ -141,7 +140,7 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="mx-auto mt-10 max-w-3xl space-y-6 text-[15px] leading-8 text-slate-600">
+            <div className="mx-auto mt-10 max-w-3xl space-y-6 text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-slate-600">
               <p>{tr("storyBody1", "")}</p>
               <p>{tr("storyBody2", "")}</p>
             </div>
@@ -192,7 +191,7 @@ const AboutPage = () => {
                   <h3 className="font-display mt-3 text-lg font-bold text-slate-900">
                     {tr(`value${i}Title`, "")}
                   </h3>
-                  <p className="mt-2 flex-1 text-sm leading-7 text-slate-600">
+                  <p className="mt-2 flex-1 text-[13px] sm:text-sm leading-6 sm:leading-7 text-slate-600">
                     {tr(`value${i}Body`, "")}
                   </p>
                 </div>
@@ -215,7 +214,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
             {groupStats.map((stat, i) => (
               <Reveal key={stat.label} delay={i * 0.08} amount={0.15}>
-                <div className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-8 text-center shadow-sm">
+                <div className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-5 sm:p-8 text-center shadow-sm">
                   <AnimatedCounter
                     value={stat.value}
                     label={stat.label}
@@ -256,8 +255,7 @@ const AboutPage = () => {
           <div className="space-y-6">
             {/* Indexia Finance */}
             <Reveal delay={0.05} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.teal}15`, color: colors.teal }}>
                       {tr("c1Tag", "Multinational Fintech")}
@@ -266,7 +264,7 @@ const AboutPage = () => {
                     <p className="mt-1 text-xs text-slate-400">Est. 2012</p>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c1Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c1Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c1Highlights", "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence: India, US, Ecuador, Europe").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -285,8 +283,7 @@ const AboutPage = () => {
 
             {/* Indexia Finserve */}
             <Reveal delay={0.1} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.yellow}15`, color: "#b8860b" }}>
                       {tr("c2Tag", "Lending Arm")}
@@ -294,7 +291,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c2Name", "Indexia Finserve Pvt. Ltd.")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c2Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c2Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c2Highlights", "12 Loan Products,Personal & Business Loans,Home Loan & LAP,Balance Transfer & Working Capital").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -313,8 +310,7 @@ const AboutPage = () => {
 
             {/* Indexia Overseas */}
             <Reveal delay={0.15} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-600">
                       {tr("c3Tag", "Global Export")}
@@ -322,7 +318,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c3Name", "Indexia Overseas Pvt. Ltd.")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c3Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c3Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c3Highlights", "14 South American Countries,Premium Refined Sugar Export,Food-Grade Quality Certified,Full-Cycle Export Management").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -341,8 +337,7 @@ const AboutPage = () => {
 
             {/* Indexia Agro Bio */}
             <Reveal delay={0.2} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.yellow}15`, color: "#b8860b" }}>
                       {tr("c4Tag", "Organic Agriculture")}
@@ -350,7 +345,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c4Name", "Indexia Agro Bio Fertilizers Pvt. Ltd.")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c4Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c4Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c4Highlights", "100% Organic Bio-Fertilizers,Production in Shamli UP (Delhi NCR),Soil Testing & Farmer Support,Domestic & Export Distribution").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -369,8 +364,7 @@ const AboutPage = () => {
 
             {/* Indexia Securities */}
             <Reveal delay={0.25} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.navy}15`, color: colors.navy }}>
                       {tr("c5Tag", "Armed Protection")}
@@ -378,7 +372,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c5Name", "Indexia Securities")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c5Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c5Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c5Highlights", "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -397,8 +391,7 @@ const AboutPage = () => {
 
             {/* Indexia Warehouse */}
             <Reveal delay={0.3} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.teal}15`, color: colors.teal }}>
                       {tr("c6Tag", "Strategic Land")}
@@ -406,7 +399,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c6Name", "Indexia Warehouse")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c6Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c6Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c6Highlights", "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -425,8 +418,7 @@ const AboutPage = () => {
 
             {/* Indexia Advertising */}
             <Reveal delay={0.35} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-600">
                       {tr("c7Tag", "Highway Advertising")}
@@ -434,7 +426,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c7Name", "Indexia Advertising")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c7Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c7Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c7Highlights", "NH-709B Delhi-Dehradun Highway,10 States Connected,360° Visibility Unipoles,1+ Crore Daily Exposure").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -453,8 +445,7 @@ const AboutPage = () => {
 
             {/* Indexia Foundation */}
             <Reveal delay={0.4} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">
-                <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.tealDeep}15`, color: colors.tealDeep }}>
                       {tr("c8Tag", "Social Impact")}
@@ -462,7 +453,7 @@ const AboutPage = () => {
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c8Name", "Indexia Foundation")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[15px] leading-7 text-slate-600">{tr("c8Body", "")}</p>
+                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c8Body", "")}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {(tr("c8Highlights", "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
@@ -510,7 +501,7 @@ const AboutPage = () => {
             {MILESTONES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.1}>
                 <div className={`relative flex gap-6 sm:gap-0 ${i % 2 === 0 ? "sm:flex-row-reverse" : ""}`}>
-                  <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-(--color-teal) bg-white text-[11px] font-bold text-(--color-teal) sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+                  <div className="relative z-10 flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full border-2 border-(--color-teal) bg-white text-[10px] sm:text-[11px] font-bold text-(--color-teal) sm:absolute sm:left-1/2 sm:-translate-x-1/2">
                     {tr(`milestone${i}Year`, "")}
                   </div>
                   <div
