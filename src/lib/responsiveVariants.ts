@@ -13,9 +13,9 @@ const variantModules = import.meta.glob<{
 }>("../assets-responsive/**/*.webp", { eager: true });
 
 // Build a map:  "hero-img/AboutHero" → { 400: url, 800: url, 1200: url }
-const WIDTHS = [400, 800, 1200] as const;
+const WIDTHS = [400, 800, 1200, 1600] as const;
 
-type ResponsiveSet = Record<(typeof WIDTHS)[number], string>;
+type ResponsiveSet = Partial<Record<(typeof WIDTHS)[number], string>>;
 
 const variantMap = new Map<string, ResponsiveSet>();
 

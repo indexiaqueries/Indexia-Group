@@ -11,6 +11,7 @@ import { GlowingCards, GlowingCard } from "../components/lightswind/glowing-card
 import { siteImages } from "../data/siteImages";
 import { accent } from "../lib/theme";
 import Reveal from "../components/common/Reveal";
+import { getResponsiveVariants } from "../lib/responsiveVariants";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -88,6 +89,7 @@ const Contact = () => {
                   {...siteImages.contactEnquiry}
                   aspect="aspect-[16/9]"
                   className="image-zoom-media rounded-2xl"
+                  srcSet={siteImages.contactEnquiry?.src ? getResponsiveVariants(siteImages.contactEnquiry.src) ?? undefined : undefined}
                 />
               </MediaFrame>
             </Reveal>

@@ -4,6 +4,7 @@ import ImageSlot from "../common/ImageSlot";
 import MediaFrame from "../common/MediaFrame";
 import Reveal from "../common/Reveal";
 import { siteImages } from "../../data/siteImages";
+import { getResponsiveVariants } from "../../lib/responsiveVariants";
 
 type LocationCardItem = {
   key: string;
@@ -32,6 +33,7 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
               aspect="aspect-[16/10]"
               alt={t(`branches.${location.key}`, { defaultValue: location.name })}
               className="image-zoom-media rounded-xl"
+              srcSet={slot.src ? getResponsiveVariants(slot.src) ?? undefined : undefined}
             />
           </MediaFrame>
         </Reveal>

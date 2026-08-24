@@ -20,7 +20,7 @@ import { join, basename, dirname, extname, relative } from "node:path";
 
 const SRC_DIR = join(import.meta.dirname, "..", "src", "assets");
 const OUT_DIR = join(import.meta.dirname, "..", "src", "assets-responsive");
-const WIDTHS = [400, 800, 1200];
+const WIDTHS = [400, 800, 1200, 1600];
 const MIN_SIZE = 150 * 1024; // 150 KB — skip small images
 const IMAGE_RE = /\.(png|jpe?g)$/i; // skip already-webp (they're usually small thumbnails)
 
@@ -82,7 +82,7 @@ for (const imgPath of images) {
 
       await sharp(imgPath)
         .resize(w, null, { withoutEnlargement: true })
-        .webp({ quality: 80, effort: 4 })
+        .webp({ quality: 85, effort: 4 })
         .toFile(outPath);
 
       generated++;

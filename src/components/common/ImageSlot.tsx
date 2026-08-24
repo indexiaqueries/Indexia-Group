@@ -10,6 +10,8 @@ type ImageSlotProps = ImageSlotData & {
   alt?: string;
   aspect?: string;
   className?: string;
+  /** Responsive WebP variant URLs keyed by width (e.g. { 400: url, 800: url }) */
+  srcSet?: Partial<Record<number, string>>;
 };
 
 /**
@@ -22,13 +24,24 @@ const ImageSlot = ({
   label,
   aspect = "aspect-[16/9]",
   className = "rounded-2xl",
+  srcSet,
 }: ImageSlotProps) => {
   const [failed, setFailed] = useState(false);
 
   if (src && !failed) {
+    // Build srcset string from responsive variants
+    const srcSetStr = srcSet
+      ? Object.entries(srcSet)
+          .filter((entry): entry is [string, string] => !!entry[1])
+          .map(([width, url]) => `${url} ${width}w`)
+          .join(", ")
+      : undefined;
+
     return (
       <img
         src={src}
+        srcSet={srcSetStr}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         alt={alt ?? label}
         loading="lazy"
         decoding="async"
