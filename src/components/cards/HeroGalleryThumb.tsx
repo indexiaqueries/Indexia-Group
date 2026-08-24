@@ -63,7 +63,7 @@ const HeroGalleryThumb = ({
 
       <span className="pointer-events-none absolute inset-0 bg-linear-to-tr from-white/0 via-white/0 to-white/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-      <span className="pointer-events-none absolute top-1.5 end-1.5 w-5 h-5 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      <span className="pointer-events-none absolute top-1.5 inset-e-1.5 w-5 h-5 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--color-yellow)" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H8M17 7V16" />
         </svg>
