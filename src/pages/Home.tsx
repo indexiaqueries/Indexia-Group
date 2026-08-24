@@ -45,7 +45,7 @@ const Home = () => {
     <Banner />
 
     {/* Gradient fade from hero dark to light section */}
-    <div aria-hidden="true" className="relative -mt-1 h-8 sm:h-16 bg-linear-to-b from-[#02101a] to-[var(--color-soft)]" />
+    <div aria-hidden="true" className="relative -mt-1 h-8 sm:h-16 bg-linear-to-b from-[#02101a] to-(--color-soft)" />
 
     <section className="relative bg-(--color-soft) py-16 lg:py-24">
       <div className="container">
@@ -73,20 +73,20 @@ const Home = () => {
     </section>
 
     {/* Gradient fade from light to dark section */}
-    <div aria-hidden="true" className="relative h-8 sm:h-16 bg-linear-to-b from-[var(--color-soft)] to-[#122029]" />
+    <div aria-hidden="true" className="relative h-8 sm:h-16 bg-linear-to-b from-(--color-soft) to-[#122029]" />
 
     {/* Global Reach & Impact */}
     <section className="relative overflow-hidden bg-reach-gradient px-5 py-20 sm:px-6 sm:py-24 lg:px-8">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -end-32 top-0 h-96 w-96 rounded-full bg-(--color-teal)/25 blur-[120px]"
+        className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full bg-(--color-teal)/25 blur-[120px]"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -start-40 bottom-0 h-80 w-80 rounded-full bg-(--color-yellow)/15 blur-[100px]"
+        className="pointer-events-none absolute -inset-s-40 bottom-0 h-80 w-80 rounded-full bg-(--color-yellow)/15 blur-[100px]"
       />
       <div className="container relative">
-        <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <Eyebrow color="var(--color-yellow)">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
           <h2 className="font-display mt-3 text-[clamp(26px,4vw,42px)] font-bold text-white">
             {t("homeReach.title", "Trusted Across Borders")}
@@ -97,27 +97,21 @@ const Home = () => {
         </Reveal>
 
         {/* Globe */}
-        <div className="mx-auto mb-8">
-          <div className="mx-auto h-[350px] w-full max-w-3xl sm:h-[420px] lg:h-[480px]">
+        <div className="mx-auto">
+          <div className="mx-auto h-87.5 w-full max-w-3xl sm:h-105 lg:h-120">
             <Globe
               theta={0.3}
               dark={0}
-              scale={1.2}
+              scale={1}
               diffuse={1.2}
-              baseColor="#ffffff"
-              markerColor="#f2f231"
-              glowColor="#26ae90"
+              baseColor="#066a9c"
+              markerColor="#26ae90"
+              glowColor="#ffffff"
               mapSamples={50000}
-              mapBrightness={6}
+              mapBrightness={14}
               enableZoom={false}
               autoRotate={true}
-              autoRotateSpeed={0.003}
-              markers={[
-                { location: [19.076, 72.8777], size: 0.1 },
-                { location: [28.6139, 77.209], size: 0.08 },
-                { location: [-0.1807, -78.4678], size: 0.07 },
-                { location: [28.6692, 77.2381], size: 0.06 },
-              ]}
+              autoRotateSpeed={0.002}
             />
           </div>
         </div>

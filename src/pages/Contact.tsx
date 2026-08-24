@@ -81,7 +81,7 @@ const Contact = () => {
             <ContactInfo />
           </div>
           <div className="flex flex-col gap-5">
-            <MediaFrame className="shadow-sm ring-1 ring-slate-200">
+            <MediaFrame className="image-zoom-frame shadow-sm ring-1 ring-slate-200 rounded-2xl">
               <ImageSlot
                 {...siteImages.contactEnquiry}
                 aspect="aspect-[16/9]"
@@ -104,7 +104,7 @@ const Contact = () => {
 
           <GlowingCards gap="1.5rem">
             {branches.map((branch, index) => (
-              <GlowingCard key={branch.name} glowColor="var(--color-teal)" className="p-0">
+              <GlowingCard key={branch.name} glowColor={['var(--color-teal)', 'var(--color-yellow)', 'var(--color-blue)', '#94a3b8'][index % 4]} className="p-0">
                 <LocationCard location={branch} delay={index * 0.08} />
               </GlowingCard>
             ))}

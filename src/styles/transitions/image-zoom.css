@@ -2,17 +2,23 @@
    Image Zoom — Hover zoom for contact cards and enquiry image
    ================================================================ */
 
-.image-zoom-frame {
-  overflow: hidden;
+@layer components {
+  .image-zoom-frame {
+    overflow: hidden;
+  }
+
+  .image-zoom-media {
+    transform: scale(1);
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.7s ease;
+    animation: kenburns 8s ease-in-out infinite alternate;
+  }
+
+  .image-zoom-frame:hover .image-zoom-media,
+  .image-zoom-frame:focus-within .image-zoom-media {
+    filter: saturate(1.08) brightness(1.05) contrast(1.02);
+    transform: scale(1.1);
+    animation: none;
+  }
 }
 
-.image-zoom-media {
-  transform: scale(1);
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), filter 0.55s ease;
-}
 
-.image-zoom-frame:hover .image-zoom-media,
-.image-zoom-frame:focus-within .image-zoom-media {
-  filter: saturate(1.06) contrast(1.02);
-  transform: scale(1.045);
-}

@@ -24,11 +24,12 @@ const LocationCard = ({ location }: LocationCardProps) => {
   return (
     <article className="flex h-full flex-col">
       {slot && (
-        <MediaFrame className="mb-4 shrink-0 overflow-hidden rounded-xl">
+        <MediaFrame className="image-zoom-frame mb-4 shrink-0 overflow-hidden rounded-xl">
           <ImageSlot
             {...slot}
+            aspect="aspect-[16/10]"
             alt={t(`branches.${location.key}`, { defaultValue: location.name })}
-            className="image-zoom-media rounded-xl transition-transform duration-500 group-hover:scale-105"
+            className="image-zoom-media rounded-xl"
           />
         </MediaFrame>
       )}

@@ -1,3 +1,13 @@
+/*
+ * lightswind.com
+ * lightswind.css
+ *
+ * This file contains a standalone CSS library with custom themes, animations,
+ * and utility classes. It does NOT require Tailwind CSS for compilation.
+ * Users can directly import this file into their projects.
+   Also works without overriding your tailwind CSS
+ */
+
 /* ==========================================================================
    1. CSS Variables for Theming
    ========================================================================== */

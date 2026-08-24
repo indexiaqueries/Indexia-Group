@@ -15,8 +15,6 @@ test-results/
 *.timestamp-*.mjs
 
 # Environment & secrets
-server/.env
-server/.env.*
 .env
 .env.*
 !.env.example
@@ -50,7 +48,6 @@ Thumbs.db
 
 # Freebuff workspace
 .freebuff/
-server/uploads/
 
-.vercel
-.env*
+# Responsive images (generated)
+src/assets/public-images/
