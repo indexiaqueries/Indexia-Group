@@ -51,7 +51,7 @@ export const GlowingCard: React.FC<GlowingCardProps> = ({
   return (
     <div
       ref={cardRef}
-      className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0d1b24] p-6 transition-all duration-500 hover:-translate-y-2 hover:border-white/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)] ${className}`}
+      className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0d1b24] p-4 sm:p-6 transition-all duration-500 hover:-translate-y-2 hover:border-white/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.5)] ${className}`}
       style={style}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}

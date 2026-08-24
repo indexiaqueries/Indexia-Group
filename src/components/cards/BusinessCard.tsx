@@ -35,7 +35,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
     <>
       <div className="business-card-top flex items-start justify-between gap-3 transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0">
         <div className="flex items-center gap-2">
-          <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/85">
+          <p className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.16em] text-white/85">
             {tag}
           </p>
 
@@ -49,7 +49,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
         </div>
       </div>
 
-      <h3 className="business-card-name mt-auto flex max-w-[90%] items-center gap-1.5 text-xl font-extrabold leading-tight text-white transition-all duration-500 group-hover:translate-y-2 group-hover:opacity-0">
+      <h3        className="business-card-name mt-auto flex max-w-[90%] items-center gap-1.5 text-lg sm:text-xl font-extrabold leading-tight text-white transition-all duration-500 group-hover:translate-y-2 group-hover:opacity-0">
         {name}
         {external && (
           <ExternalLink size={15} strokeWidth={2.5} aria-hidden="true" className="shrink-0 text-(--color-yellow) drop-shadow-[0_1px_2px_var(--card-icon-shadow)]" />
@@ -71,7 +71,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
 
   return (
     <article
-      className={`business-card group relative flex h-65 overflow-hidden rounded-2xl${revealedClass}`}
+      className={`business-card group relative flex h-56 sm:h-65 overflow-hidden rounded-xl sm:rounded-2xl${revealedClass}`}
     >
       <CompanyCardBase
         image={business.image}
@@ -87,7 +87,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
             rel="noopener noreferrer"
             aria-label={label}
             onClick={handleCardClick}
-            className="relative z-50 flex h-full w-full flex-col justify-between p-5"
+            className="relative z-50 flex h-full w-full flex-col justify-between p-4 sm:p-5"
           >
             {inner}
           </a>
@@ -96,7 +96,7 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
             to={href}
             aria-label={label}
             onClick={handleCardClick}
-            className="relative z-50 flex h-full w-full flex-col justify-between p-5"
+            className="relative z-50 flex h-full w-full flex-col justify-between p-4 sm:p-5"
           >
             {inner}
           </Link>

@@ -146,22 +146,20 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           )}
 
           {tagline && (
-            <p className="mt-4 text-[17px] font-semibold italic text-(--color-yellow)">“{tagline}”</p>
+            <p className="mt-3 sm:mt-4 text-[14px] sm:text-[17px] font-semibold italic text-(--color-yellow)">“{tagline}”</p>
           )}
 
-          <p className="mt-5 max-w-2xl text-base leading-8 text-white/80">{desc}</p>
-
-          <div className="mt-9 flex flex-wrap gap-4">
+          <p className="mt-4 sm:mt-5 max-w-2xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/80">{desc}</p>              <div className="mt-7 sm:mt-9 flex flex-wrap gap-3 sm:gap-4">
             <a
               href="#enquiry"
-              className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-7 py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+              className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
             >
               {t("companyDetail.eyebrow")}
               <ArrowRight size={16} strokeWidth={2.5} />
             </a>
             <a
               href="#company-services"
-              className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
+              className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
             >
               {t("companyDetail.exploreServices")}
               <ArrowDown size={16} strokeWidth={2.5} />
@@ -203,7 +201,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </div>
 
       {/* Overview + image split */}
-      <section className="relative overflow-hidden bg-white py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-white py-14 sm:py-20 lg:py-28">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-e-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
@@ -215,7 +213,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
 
-        <div className="container grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div className="container grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal amount={0.2} className="relative">
             <div className="relative">
               <div
@@ -256,9 +254,9 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink) text-shimmer">
               {t("companyDetail.overviewTitle", { name })}
             </h2>
-            <p className="mt-5 max-w-xl text-[15px] leading-8 text-(--color-muted)">{overview}</p>
+            <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">{overview}</p>
 
-            <div className="mt-9 grid max-w-md grid-cols-3 gap-4">
+            <div className="mt-7 sm:mt-9 grid max-w-md grid-cols-3 gap-3 sm:gap-4">
               <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
               <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
               <AnimatedCounter value={`${String(index + 1).padStart(2, "0")}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
@@ -312,7 +310,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           className="pointer-events-none absolute -inset-s-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
-        <div className="container grid items-center gap-12 py-20 lg:grid-cols-2 lg:gap-16 lg:py-28">
+        <div className="container grid items-center gap-10 sm:gap-12 py-14 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:py-28">
           <Reveal amount={0.2} className="relative">
             <div
               aria-hidden="true"
@@ -334,10 +332,10 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             >
               {tag}
             </span>
-            <h2 className="font-display mt-5 text-[clamp(24px,3.2vw,38px)] font-bold leading-[1.15] text-white">
+            <h2 className="font-display mt-4 sm:mt-5 text-[clamp(22px,3.2vw,38px)] font-bold leading-[1.15] text-white">
               “{slideSub}”
             </h2>
-            <p className="font-ledger mt-6 text-[11px] font-bold uppercase tracking-[0.22em] text-white/50">
+            <p className="font-ledger mt-4 sm:mt-6 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-white/50">
               {t("companyDetail.registerOf")} · {t("companyDetail.entryOf", { no: entryNo })}
             </p>
             <a
@@ -360,7 +358,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       )}
 
       {/* Services */}
-      <section id="company-services" className="scroll-mt-24 bg-white py-20 lg:py-24">
+      <section id="company-services" className="scroll-mt-24 bg-white py-14 sm:py-20 lg:py-24">
         <div className="container">
           <Reveal className="mx-auto mb-12 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
@@ -432,7 +430,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             })}
           </div>
 
-          <div className="font-ledger mt-14 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
+          <div className="font-ledger mt-10 sm:mt-14 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
             <span>{t("companyDetail.registerOf")}</span>
             <span>{t("companyDetail.entryOf", { no: entryNo })}</span>
           </div>
@@ -474,13 +472,13 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       >
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
 
-        <div className="container grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="container grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <Eyebrow className="mb-3">{t("companyDetail.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
+            <h2 className="font-display text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
               {t("companyDetail.enquireTitle", { name })}
             </h2>
-            <p className="mt-5 max-w-md text-[15px] leading-7 text-(--color-muted)">
+            <p className="mt-4 sm:mt-5 max-w-md text-[14px] sm:text-[15px] leading-7 text-(--color-muted)">
               {t("companyDetail.enquireSub", { name })}
             </p>
 

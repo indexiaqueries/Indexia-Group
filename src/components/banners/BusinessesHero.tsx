@@ -41,11 +41,11 @@ const BusinessesHero = () => {
         {t("businessesHero.titleStart")}
         <span className="text-(--color-yellow)">{t("businessesHero.titleAccent")}</span>
       </h1>
-      <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-white/80">
+      <p className="mx-auto mb-8 sm:mb-10 max-w-2xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/80">
         {t("businessesHero.paragraph")}
       </p>
 
-      <div className="mx-auto mb-12 grid max-w-2xl grid-cols-2 items-start justify-items-center gap-x-6 gap-y-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-7">
+      <div className="mx-auto mb-8 sm:mb-12 grid max-w-2xl grid-cols-2 items-start justify-items-center gap-x-4 gap-y-6 sm:gap-x-6 sm:gap-y-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-7">
         <AnimatedCounter value="500+" label={t("businessesHero.counterClients")} color={colors.white} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
         <AnimatedCounter value="8" label={t("businessesHero.counterBusinesses")} color={colors.yellow} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
         <AnimatedCounter value="4+" label={t("businessesHero.counterLocations")} color={colors.white} numberClassName="font-ledger text-[28px] font-bold leading-none" labelClassName="mt-1 text-xs font-semibold text-white/70" />
@@ -54,7 +54,7 @@ const BusinessesHero = () => {
 
       <Link
         to="/contact"
-        className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-8 py-3.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+        className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-3 sm:px-8 sm:py-3.5 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
       >
         {t("businessesHero.cta")}
       </Link>

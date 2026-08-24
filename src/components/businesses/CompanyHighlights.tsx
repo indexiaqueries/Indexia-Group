@@ -18,7 +18,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
   const [featured, ...rest] = highlights;
 
   return (
-    <section className="relative overflow-hidden bg-(--color-soft) py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-(--color-soft) py-14 sm:py-20 lg:py-28">
       {/* Ambient glow */}
       <div
         aria-hidden="true"
@@ -32,8 +32,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
       />
 
       <div className="container">
-        {/* Header */}
-        <Reveal className="mx-auto mb-14 max-w-2xl text-center">
+        {/* Header */}          <Reveal className="mx-auto mb-10 sm:mb-14 max-w-2xl text-center">
           <Eyebrow>{t("companyDetail.keyEntries")}</Eyebrow>
           <div className="mt-4 flex items-center justify-center gap-3">
             <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
@@ -51,7 +50,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
         {featured && (
           <Reveal amount={0.15}>
             <div
-              className="group relative mb-6 overflow-hidden rounded-3xl p-8 sm:p-10 lg:p-12 transition-all duration-500"
+              className="group relative mb-5 sm:mb-6 overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 transition-all duration-500"
               style={{
                 background: `linear-gradient(135deg, ${color}, ${color}aa, ${color}77)`,
                 color: contrastText(color),
@@ -86,7 +85,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                   <p className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] opacity-70">
                     {t("companyDetail.keyEntries")} — 01
                   </p>
-                  <p className="mt-2 text-[17px] font-semibold leading-8 sm:text-lg lg:text-xl">
+                  <p className="mt-2 text-[15px] sm:text-[17px] font-semibold leading-7 sm:leading-8 lg:text-xl">
                     {tr("highlights.0", featured)}
                   </p>
                   <p className="mt-2 font-ledger text-[10px] font-bold uppercase tracking-[0.18em] opacity-50">
@@ -142,7 +141,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                         </span>
                       </div>
 
-                      <p className="mt-4 text-[14.5px] font-semibold leading-7 text-(--color-ink-soft)">
+                      <p className="mt-3 sm:mt-4 text-[13.5px] sm:text-[14.5px] font-semibold leading-6 sm:leading-7 text-(--color-ink-soft)">
                         {tr(`highlights.${i}`, highlight)}
                       </p>
                     </div>

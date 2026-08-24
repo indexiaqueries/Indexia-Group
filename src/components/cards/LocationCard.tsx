@@ -43,20 +43,19 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-teal) text-white shadow-lg">
           <MapPin size={21} />
         </span>
-        <h3 className="pt-2 text-xl font-extrabold text-white">
+        <h3 className="pt-2 text-lg sm:text-xl font-extrabold text-white">
           {t(`branches.${location.key}`, { defaultValue: location.name })}
         </h3>
       </div>
 
       <div className="mt-4 flex-1">
-        <p className="whitespace-pre-line text-sm leading-7 text-white/70">{location.address}</p>
-        {!!location.phones?.length && (
-          <div className="mt-4 space-y-2">
+        <p className="whitespace-pre-line text-[13px] sm:text-sm leading-6 sm:leading-7 text-white/70">{location.address}</p>
+        {!!location.phones?.length && (              <div className="mt-3 sm:mt-4 space-y-2">
             {location.phones.map((phone) => (
               <a
                 key={`${location.name}-${phone.label}-${phone.number}`}
                 href={phone.href}
-                className="flex items-center gap-3 text-sm font-semibold text-white/80 hover:text-(--color-yellow)"
+                className="flex items-center gap-2.5 sm:gap-3 text-[13px] sm:text-sm font-semibold text-white/80 hover:text-(--color-yellow)"
               >
                 <Phone size={16} className="shrink-0 text-(--color-yellow)" />
                 <span>

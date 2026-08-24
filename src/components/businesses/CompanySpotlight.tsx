@@ -19,7 +19,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
   const headingLines = data.heading.split("\n");
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-white py-14 sm:py-20 lg:py-28">
       {/* Ambient glows */}
       <div
         aria-hidden="true"
@@ -49,17 +49,13 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
               </span>
             ))}
           </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-8 text-(--color-muted)">
+          <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
             {data.description}
           </p>
 
           {/* Stats grid */}
-          <div className="mt-8 grid grid-cols-3 gap-3">
-            {data.stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-2xl border border-slate-100 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
-              >
+          <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-3">
+            {data.stats.map((stat) => (              <div key={stat.label} className="rounded-2xl border border-slate-100 bg-white p-3 sm:p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                 <AnimatedCounter
                   value={stat.value}
                   label={stat.label}
@@ -72,9 +68,9 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
           </div>
 
           {/* Bullet points */}
-          <ul className="mt-8 space-y-3">
+          <ul className="mt-6 sm:mt-8 space-y-2 sm:space-y-3">
             {data.bullets.map((bullet) => (
-              <li key={bullet} className="flex items-start gap-3 text-[14px] leading-7 text-(--color-ink-soft)">
+              <li key={bullet} className="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-(--color-ink-soft)">
                 <span
                   className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
                   style={{ background: company.color }}

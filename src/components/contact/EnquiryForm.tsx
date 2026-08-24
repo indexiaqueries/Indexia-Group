@@ -127,7 +127,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     <div
       ref={ref}
       id="enquiry-form"
-      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-4xl border border-white bg-white px-6 pt-6 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
+      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-white bg-white px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
       style={{ "--reveal-delay": "0.1s" } as CSSProperties}
     >
       <div
@@ -145,8 +145,8 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
         </Eyebrow>
         <p className="mt-3 text-sm leading-6 text-slate-500">{t("form.intro")}</p>
 
-        <form onSubmit={handleSubmit} noValidate className="mt-8 flex flex-1 flex-col gap-5">
-          <div className="grid gap-5 sm:grid-cols-2">
+        <form onSubmit={handleSubmit} noValidate className="mt-6 sm:mt-8 flex flex-1 flex-col gap-4 sm:gap-5">
+          <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
             {halfFields.map((field) => (
               <Field
                 key={field.id}

@@ -62,7 +62,7 @@ const PricingTable = ({
   const gridClass = cols === 3 ? "grid-cols-3" : cols === 4 ? "grid-cols-4" : "grid-cols-2";
 
   return (
-    <section className="bg-(--color-soft) py-20 lg:py-24">
+    <section className="bg-(--color-soft) py-14 sm:py-20 lg:py-24">
       <div className="container">
         <Reveal className="mx-auto mb-12 max-w-2xl text-center">
           <Eyebrow>{eyebrow}</Eyebrow>
@@ -76,7 +76,7 @@ const PricingTable = ({
           <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
             {headers && (
               <div
-                className={`grid ${gridClass} gap-2.5 border-b border-slate-100 px-4 py-3.5 text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 sm:gap-4 sm:px-6`}
+                className={`grid ${gridClass} gap-2 border-b border-slate-100 px-3 py-3 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.16em] text-slate-500 sm:gap-4 sm:px-6`}
               >
                 <span>{headers.label}</span>
                 <span>{headers.value}</span>
@@ -87,7 +87,7 @@ const PricingTable = ({
             {rows.map((row, i) => (
               <div
                 key={row.label}
-                className={`grid ${gridClass} items-center gap-2.5 px-4 py-5 sm:gap-4 sm:px-6 ${
+                className={`grid ${gridClass} items-center gap-2 px-3 py-4 sm:gap-4 sm:px-6 sm:py-5 ${
                   i < rows.length - 1 ? "border-b border-slate-100" : ""
                 }`}
               >
@@ -114,7 +114,7 @@ const PricingTable = ({
                       e.preventDefault();
                       onBook?.(row);
                     }}
-                    className="inline-flex items-center justify-center rounded-full border px-4 py-2 text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center rounded-full border px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
                     style={{
                       borderColor: `${color}4d`,
                       color: accentInk(color),
@@ -149,18 +149,16 @@ const PricingTable = ({
               <p className="mb-4 text-center text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">
                 {grid.title}
               </p>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
                 {grid.items.map((item) => {
                   // The largest plot spans two columns on sm+ — keeps the
                   // "size follows area" cue while staying in a tidy 3-up grid.
                   const wide = (item.size ?? 1) >= 8;
-                  return (
-                    <div
+                  return (                    <div
                       key={item.label}
-                      className={`flex flex-col items-center rounded-2xl border border-slate-100 bg-white px-5 py-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
+                      className={`flex flex-col items-center rounded-2xl border border-slate-100 bg-white px-4 py-5 sm:px-5 sm:py-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
                         wide ? "sm:col-span-2" : ""
-                      }`}
-                    >
+                      }`}>
                       <span
                         className="flex h-7 w-7 items-center justify-center rounded-full text-white shadow-sm"
                         style={{ background: color }}
@@ -229,7 +227,7 @@ const PricingTable = ({
                     document.getElementById("enquiry")?.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-8 py-3.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+                className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-3 sm:px-8 sm:py-3.5 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
               >
                 {cta.label}
               </button>

@@ -21,7 +21,7 @@ const PassbookCard = () => {
       />
 
       <div
-        className="passbook-in relative rotate-[-3deg] rounded-3xl p-6 shadow-2xl ring-1 ring-black/5 transition-transform duration-300 ease-out hover:rotate-0 sm:p-7"
+        className="passbook-in relative rotate-[-3deg] rounded-3xl p-5 shadow-2xl ring-1 ring-black/5 transition-transform duration-300 ease-out hover:rotate-0 sm:p-7"
         style={{ backgroundColor: colors.paper }}
       >
         <div className="absolute bottom-8 start-0 top-8 flex -translate-x-1/2 flex-col justify-between rtl:translate-x-1/2">
@@ -56,7 +56,7 @@ const PassbookCard = () => {
           />
         </div>
 
-        <dl className="mt-5 space-y-4 pb-10 pe-14">
+        <dl className="mt-4 sm:mt-5 space-y-3 sm:space-y-4 pb-10 pe-10 sm:pe-14">
           {rows.map((row) => (
             <div key={row.label} className="flex items-baseline justify-between text-sm">
               <dt className="text-slate-500">{row.label}</dt>

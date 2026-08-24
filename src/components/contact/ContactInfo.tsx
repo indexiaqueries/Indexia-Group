@@ -116,20 +116,20 @@ const ContactInfo = () => {
     <Eyebrow size="md" color={accent.green}>
       {t("contactInfo.eyebrow")}
     </Eyebrow>
-    <h2 className="font-display mt-3 text-[clamp(26px,3.4vw,40px)] font-bold leading-[1.08] text-slate-900">
+    <h2 className="font-display mt-3 text-[clamp(24px,3.4vw,40px)] font-bold leading-[1.08] text-slate-900">
       {t("contactInfo.headlineStart")}
       <span style={{ color: accent.blue }}>{t("contactInfo.headlineAccent")}</span>
     </h2>
-    <p className="mt-5 max-w-lg text-sm leading-7 text-slate-500">
+    <p className="mt-4 sm:mt-5 max-w-lg text-[13px] sm:text-sm leading-6 sm:leading-7 text-slate-500">
       {t("contactInfo.paragraph")}
     </p>
 
-    <div className="mt-10 flex flex-1 flex-col justify-center gap-5">
+    <div className="mt-8 sm:mt-10 flex flex-1 flex-col justify-center gap-4 sm:gap-5">
       <EmailsSection />
       <LocationHoursTile />
     </div>
 
-<div className="mt-8 rounded-2xl border border-(--color-sand-deep) bg-(--color-paper) p-5 shadow-sm">
+<div className="mt-6 sm:mt-8 rounded-2xl border border-(--color-sand-deep) bg-(--color-paper) p-4 sm:p-5 shadow-sm">
       <Eyebrow size="md" color={accent.green} style={{ letterSpacing: "0.18em" }}>
         {t("contactInfo.phoneNumbers")}
       </Eyebrow>

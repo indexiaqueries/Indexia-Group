@@ -73,16 +73,16 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-6 py-16 lg:px-8">
+      <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"
         />
-        <div className="mx-auto grid w-full max-w-7xl items-start gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16">
-          <div className="flex flex-col gap-8 lg:sticky lg:top-28">
+        <div className="mx-auto grid w-full max-w-7xl items-start gap-8 sm:gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16">
+          <div className="flex flex-col gap-6 sm:gap-8 lg:sticky lg:top-28">
             <ContactInfo />
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4 sm:gap-5">
             <Reveal variant="scale" y={20} amount={0.15}>
               <MediaFrame className="image-zoom-frame shadow-sm ring-1 ring-slate-200 rounded-2xl">
                 <ImageSlot
@@ -98,10 +98,10 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="branches" className="bg-white py-20 lg:py-20">
+      <section id="branches" className="bg-white py-14 sm:py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto mb-12 max-w-2xl text-center">
-            <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+          <div className="mx-auto mb-8 sm:mb-12 max-w-2xl text-center">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 sm:text-4xl">
               {t("contact.locationsTitleStart")}
               <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
             </h2>

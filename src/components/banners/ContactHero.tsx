@@ -35,14 +35,14 @@ const ContactHero = () => {
           {t("contactHero.title")}
         </h1>
 
-        <p className="mt-6 max-w-xl text-base leading-8 text-white/75">
+        <p className="mt-5 sm:mt-6 max-w-xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/75">
           {t("contactHero.paragraph")}
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <div className="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#enquiry-form"
-            className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
             style={{ backgroundColor: colors.yellow }}
           >
             {t("contactHero.sendEnquiry")}
@@ -51,7 +51,7 @@ const ContactHero = () => {
 
           <a
             href="tel:+918655168551"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-blue)"
+            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-blue)"
           >
             <Phone size={17} />
             {t("contactHero.callNow")}
@@ -59,7 +59,7 @@ const ContactHero = () => {
         </div>
 
         <div
-          className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/10 pt-6 text-sm text-white/70"
+          className="mt-8 sm:mt-10 flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2 sm:gap-y-3 border-t border-white/10 pt-5 sm:pt-6 text-[13px] sm:text-sm text-white/70"
           style={monoFont}
         >
           <span>{t("contactHero.offices", { count: String(branches.length).padStart(2, "0") })}</span>
