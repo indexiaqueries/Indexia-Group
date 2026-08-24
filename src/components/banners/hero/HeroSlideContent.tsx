@@ -93,7 +93,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
           style={{
             textShadow: textShadow(shadowLevel, 36, 0.95),
             animationDelay: CHILD_DELAYS[1],
-            background: `linear-gradient(120deg, rgba(2,8,23,0.72) 0%, rgba(4,32,58,0.55) 55%, rgba(2,8,23,0.40) 100%)`,
+            background: `linear-gradient(120deg, rgba(2,8,23,0.88) 0%, rgba(4,32,58,0.72) 55%, rgba(2,8,23,0.60) 100%)`,
           }}
         >
           {current.heading}

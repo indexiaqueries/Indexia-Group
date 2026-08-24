@@ -522,6 +522,20 @@ if (existsSync(path.join(DIST_DIR, "index.html"))) {
 }
 } // end if (!IS_VERCEL)
 
+// SPA fallback — serve index.html for all non-API GET requests.
+// On Vercel the Express app is invoked as a serverless function and the
+// rewrites in vercel.json may not reach the static file, so we handle it
+// here as well.  On the standalone server the express.static middleware
+// above already serves the file, but this catch-all is a safety net.
+if (existsSync(path.join(DIST_DIR, "index.html"))) {
+  app.use((req, res, next) => {
+    if (req.method === "GET" && !req.path.startsWith("/api")) {
+      return res.sendFile(path.join(DIST_DIR, "index.html"));
+    }
+    next();
+  });
+}
+
 app.use("/api", (_req, res) => {
   res.status(404).json({ ok: false, error: "Not found." });
 });

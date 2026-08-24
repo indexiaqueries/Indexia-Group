@@ -81,10 +81,12 @@ const Globe: React.FC<GlobeProps> = ({
       const p = propsRef.current;
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
+      // cobe internally multiplies width/height by devicePixelRatio,
+      // so we pass the CSS-pixel dimensions (not pre-multiplied).
       globe = createGlobe(canvas, {
         devicePixelRatio: dpr,
-        width: w * dpr,
-        height: h * dpr,
+        width: w,
+        height: h,
         phi: 0,
         theta: p.theta,
         dark: p.dark,
@@ -100,7 +102,7 @@ const Globe: React.FC<GlobeProps> = ({
         markers: p.markers,
       });
 
-      // cobe v2 requires calling update() in a rAF loop
+      // Manual rAF loop — cobe v2 renders one frame per update() call.
       const animate = () => {
         if (!mounted || !globe) return;
         const cur = propsRef.current;
