@@ -8,7 +8,8 @@ import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
 import { colors } from "../lib/theme";
-import Globe from "../components/lightswind/globe";
+import { lazy, Suspense } from "react";
+const Globe = lazy(() => import("../components/lightswind/globe"));
 
 const Home = () => {
   const { t } = useTranslation();
@@ -96,23 +97,25 @@ const Home = () => {
           </p>
         </Reveal>
 
-        {/* Globe */}
+        {/* Globe — lazy-loaded to keep initial JS execution light */}
         <div className="mx-auto">
           <div className="mx-auto h-87.5 w-full max-w-3xl sm:h-105 lg:h-120">
-            <Globe
-              theta={0.3}
-              dark={0}
-              scale={1}
-              diffuse={1.2}
-              baseColor="#066a9c"
-              markerColor="#26ae90"
-              glowColor="#ffffff"
-              mapSamples={50000}
-              mapBrightness={14}
-              enableZoom={false}
-              autoRotate={true}
-              autoRotateSpeed={0.001}
-            />
+            <Suspense fallback={<div className="h-full w-full" /> }>
+              <Globe
+                theta={0.3}
+                dark={0}
+                scale={1}
+                diffuse={1.2}
+                baseColor="#066a9c"
+                markerColor="#26ae90"
+                glowColor="#ffffff"
+                mapSamples={50000}
+                mapBrightness={14}
+                enableZoom={false}
+                autoRotate={true}
+                autoRotateSpeed={0.001}
+              />
+            </Suspense>
           </div>
         </div>
 
