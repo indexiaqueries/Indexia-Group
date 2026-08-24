@@ -33,7 +33,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
       </span>
 
       {/* Text content */}
-      <div className="company-link-card-content relative z-10 mt-auto p-5">
+      <div className="company-link-card-content relative z-10 mt-auto p-4 sm:p-5">
         <p className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-yellow)">
           {tag}
         </p>

@@ -64,7 +64,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
       <div className={`flex flex-col items-center ${isHome ? "bnr-text-zoom" : ""}`}>
         {isHome ? (
           <div
-            className="hero-slide-child mb-6 inline-flex items-center gap-2 sm:gap-2.5 rounded-full border border-(--color-yellow)/50 bg-(--color-yellow)/8 px-3.5 py-2 sm:px-5 sm:py-2.5 backdrop-blur-sm"
+            className="hero-slide-child mb-6 inline-flex items-center gap-2 sm:gap-2.5 rounded-full border border-(--color-yellow)/40 bg-(--color-night)/50 px-3.5 py-2 sm:px-5 sm:py-2.5 backdrop-blur-sm"
             style={{ animationDelay: CHILD_DELAYS[0] }}
           >
             <span className="w-2 h-2 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
