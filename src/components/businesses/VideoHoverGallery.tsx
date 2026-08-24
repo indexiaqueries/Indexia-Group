@@ -157,7 +157,7 @@ const VideoHoverGallery = ({
   return (
     <div
       ref={containerRef}
-      className="relative w-full py-4"
+      className="relative w-full py-4 px-4 sm:px-8"
       style={{
         perspective: `${perspective}rem`,
         maxHeight: "calc(100svh - 6rem)",
@@ -190,7 +190,7 @@ const VideoHoverGallery = ({
           return (
             <div
               key={i}
-              className="relative shrink-0 rounded-2xl cursor-pointer vgh3d"
+              className="relative shrink-0 overflow-hidden rounded-2xl cursor-pointer vgh3d"
               style={{
                 ...cardStyle,
                 minHeight: "200px",

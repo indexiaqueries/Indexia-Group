@@ -8,7 +8,7 @@ import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
 import { colors } from "../lib/theme";
-import ReachGlobe from "../components/common/ReachGlobe";
+import Globe from "../components/lightswind/globe";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ const Home = () => {
     <SEO
       title={t("seo.homeTitle")}
       description={t("seo.homeDescription")}
-      keywords="Indexia Group, financial services India, NBFC loans, personal and business loans Mumbai, global sugar export, organic fertilizer manufacturers Shamli, warehousing Delhi NCR, armed security services, highway advertising India, athlete support"
+      keywords="Indexia Group, financial services India, NBFC loans, personal and business loans, global sugar export, organic fertilizer, warehousing, armed security services, highway advertising, athlete support"
       canonicalPath="/"
       jsonLd={homeJsonLd}
     />
@@ -92,14 +92,33 @@ const Home = () => {
             {t("homeReach.title", "Trusted Across Borders")}
           </h2>
           <p className="mt-4 text-[15px] leading-7 text-white/70">
-            {t("homeReach.subtitle", "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.")}
+            {t("homeReach.subtitle", "Our businesses serve clients worldwide with the same commitment to integrity and results.")}
           </p>
         </Reveal>
 
         {/* Globe */}
         <div className="mx-auto mb-8">
           <div className="mx-auto h-[350px] w-full max-w-3xl sm:h-[420px] lg:h-[480px]">
-            <ReachGlobe />
+            <Globe
+              theta={0.3}
+              dark={0}
+              scale={1.2}
+              diffuse={1.2}
+              baseColor="#ffffff"
+              markerColor="#f2f231"
+              glowColor="#26ae90"
+              mapSamples={50000}
+              mapBrightness={6}
+              enableZoom={false}
+              autoRotate={true}
+              autoRotateSpeed={0.003}
+              markers={[
+                { location: [19.076, 72.8777], size: 0.1 },
+                { location: [28.6139, 77.209], size: 0.08 },
+                { location: [-0.1807, -78.4678], size: 0.07 },
+                { location: [28.6692, 77.2381], size: 0.06 },
+              ]}
+            />
           </div>
         </div>
 

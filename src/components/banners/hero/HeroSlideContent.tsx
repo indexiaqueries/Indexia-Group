@@ -61,13 +61,6 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
       className="fade-up relative flex flex-col items-center"
       style={{ "--fade-up-y": "22px" } as CSSProperties}
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background: `radial-gradient(ellipse 80% 70% at 50% 34%, rgba(2,16,26,0.42) 0%, rgba(2,16,26,0.2) 50%, transparent 100%), radial-gradient(ellipse 80% 75% at 50% 30%, ${current.color}40 0%, ${current.color}15 45%, transparent 100%), radial-gradient(ellipse 65% 45% at 50% 92%, rgba(242,242,49,0.18) 0%, rgba(242,242,49,0.05) 50%, transparent 100%), radial-gradient(ellipse 70% 55% at 85% 15%, rgba(6,106,156,0.18) 0%, rgba(6,106,156,0.05) 50%, transparent 100%)`,
-        }}
-      />
       <div className={`flex flex-col items-center ${isHome ? "bnr-text-zoom" : ""}`}>
         {isHome ? (
           <div

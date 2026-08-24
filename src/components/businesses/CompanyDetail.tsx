@@ -441,7 +441,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (
-        <section ref={gallerySectionRef} className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
+        <section ref={gallerySectionRef} className="relative" style={{ background: "var(--color-ink-deep)" }}>
           <div ref={glowRef} aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl transition-transform duration-150 ease-out" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
           <div className="container relative py-16 lg:py-20">
             <Reveal className="mx-auto mb-10 max-w-3xl text-center">

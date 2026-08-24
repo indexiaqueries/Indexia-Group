@@ -73,7 +73,7 @@ const TrainingGallery = ({ videos }: TrainingGalleryProps) => {
           onClick={prev}
           className="group relative hidden w-36 shrink-0 overflow-hidden rounded-xl opacity-40 ring-1 ring-white/5 transition-all duration-500 hover:opacity-60 sm:block lg:w-44"
         >
-          <video src={videos[getIdx(-1)].src} muted preload="metadata" className="w-full object-cover aspect-[3/4]" />
+          <video src={videos[getIdx(-1)].src} muted preload="metadata" className="w-full object-cover aspect-3/4" />
           <div className="absolute inset-0 bg-black/40" />
         </button>
 
@@ -93,7 +93,7 @@ const TrainingGallery = ({ videos }: TrainingGalleryProps) => {
               />
             </div>
           </div>
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 sm:p-5 pointer-events-none">
+          <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/60 via-black/20 to-transparent p-4 sm:p-5 pointer-events-none">
             <div className="flex items-center justify-between">
               <p className="text-sm font-bold text-white drop-shadow-md">{videos[center].label}</p>
               <p className="font-ledger text-[11px] font-bold text-white/50">{center + 1} / {videos.length}</p>
@@ -109,7 +109,7 @@ const TrainingGallery = ({ videos }: TrainingGalleryProps) => {
           onClick={nextFn}
           className="group relative hidden w-36 shrink-0 overflow-hidden rounded-xl opacity-40 ring-1 ring-white/5 transition-all duration-500 hover:opacity-60 sm:block lg:w-44"
         >
-          <video src={videos[getIdx(1)].src} muted preload="metadata" className="w-full object-cover aspect-[3/4]" />
+          <video src={videos[getIdx(1)].src} muted preload="metadata" className="w-full object-cover aspect-3/4" />
           <div className="absolute inset-0 bg-black/40" />
         </button>
 

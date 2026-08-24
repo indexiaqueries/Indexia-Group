@@ -191,7 +191,7 @@ const ApplyPage = () => {
       <SEO
         title={`Apply for ${roleTitle} - Indexia Group`}
         description={`Apply for the ${roleTitle} position at Indexia Group. Submit your application with resume and cover letter.`}
-        keywords={`Indexia Group careers, ${roleTitle} job, apply ${roleTitle}, Indexia Finance jobs Mumbai`}
+        keywords={`Indexia Group careers, ${roleTitle} job, apply ${roleTitle}, Indexia Finance jobs`}
         canonicalPath="/careers/apply"
       />
 

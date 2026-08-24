@@ -16,7 +16,7 @@ const CareersPage = () => {
       <SEO
         title={t("careersPage.title")}
         description={t("careersPage.metaDescription")}
-        keywords="Indexia Group careers, jobs at Indexia Finance, finance jobs Mumbai, export jobs, security jobs Delhi NCR, warehouse jobs, advertising sales jobs"
+        keywords="Indexia Group careers, jobs at Indexia Finance, finance jobs, export jobs, security jobs, warehouse jobs, advertising sales jobs"
         canonicalPath="/careers"
         jsonLd={careersJsonLd}
       />

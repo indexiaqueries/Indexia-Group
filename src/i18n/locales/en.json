@@ -241,7 +241,7 @@
     "apply": "Apply",
     "ctaTitle": "Mail Us Your Resume",
     "ctaBody": "We are always looking for great people. Send your CV to hr.indexia@gmail.com and we will be in touch.",
-    "metaDescription": "Careers at Indexia Group — a learning organization with openings at Indexia Finserve in Mumbai. Mail your resume to start your career with us.",
+    "metaDescription": "Careers at Indexia Group — a learning organization with opportunities across our diverse businesses. Mail your resume to start your career with us.",
     "mailResume": "Mail us your Resume –"
   },
   "legal": {
@@ -405,8 +405,8 @@
     "timelineEyebrow": "Our Journey",
     "timelineTitle": "Key Milestones",
     "milestone1Year": "2012",
-    "milestone1Title": "Founded in Mumbai",
-    "milestone1Body": "Indexia Group established its first company in Mumbai, starting with financial services and lending.",
+    "milestone1Title": "Founded",
+    "milestone1Body": "Indexia Group established its first company, starting with financial services and lending.",
     "milestone2Year": "2013",
     "milestone2Title": "National Expansion",
     "milestone2Body": "Expanded operations across India, launching Finserve and building a pan-India lending network.",
@@ -721,7 +721,7 @@
   "homeReach": {
     "eyebrow": "Our Reach",
     "title": "Trusted Across Borders",
-    "subtitle": "From Mumbai to Ecuador, our businesses serve clients across three continents with the same commitment to integrity and results.",
+    "subtitle": "Our businesses serve clients worldwide with the same commitment to integrity and results.",
     "stat1Label": "Businesses",
     "stat2Label": "Countries",
     "stat3Label": "Years Strong",

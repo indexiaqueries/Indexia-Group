@@ -7,6 +7,7 @@ import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { branches } from "../data/contact";
+import { GlowingCards, GlowingCard } from "../components/lightswind/glowing-cards";
 import { siteImages } from "../data/siteImages";
 import { accent } from "../lib/theme";
 
@@ -101,11 +102,13 @@ const Contact = () => {
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <GlowingCards gap="1.5rem">
             {branches.map((branch, index) => (
-              <LocationCard key={branch.name} location={branch} delay={index * 0.08} />
+              <GlowingCard key={branch.name} glowColor="var(--color-teal)" className="p-0">
+                <LocationCard location={branch} delay={index * 0.08} />
+              </GlowingCard>
             ))}
-          </div>
+          </GlowingCards>
         </div>
       </section>
     </main>

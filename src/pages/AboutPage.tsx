@@ -50,7 +50,7 @@ const AboutPage = () => {
       <SEO
         title={tr("title", "About Indexia Group")}
         description={tr("metaDescription", "")}
-        keywords="About Indexia Group, Indian business group, diversified company, finance export agriculture security, Mumbai Delhi Ecuador"
+        keywords="About Indexia Group, Indian business group, diversified company, finance export agriculture security"
         canonicalPath="/about"
         jsonLd={aboutJsonLd}
       />
@@ -263,7 +263,7 @@ const AboutPage = () => {
                       {tr("c1Tag", "Multinational Fintech")}
                     </span>
                     <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c1Name", "Indexia Finance")}</h3>
-                    <p className="mt-1 text-xs text-slate-400">Est. 2012 · Mumbai</p>
+                    <p className="mt-1 text-xs text-slate-400">Est. 2012</p>
                   </div>
                   <div className="flex-1">
                     <p className="text-[15px] leading-7 text-slate-600">{tr("c1Body", "")}</p>
