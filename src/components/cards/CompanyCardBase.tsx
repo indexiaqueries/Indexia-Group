@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 type CompanyCardBaseProps = {
   image: string;
+  imageSm?: string;
   imageAlt: string;
   /** Ghost number shown in top-left — omit to hide */
   cardNo?: string;
@@ -15,6 +16,7 @@ type CompanyCardBaseProps = {
 
 const CompanyCardBase = ({
   image,
+  imageSm,
   imageAlt,
   cardNo,
   tint,
@@ -28,6 +30,8 @@ const CompanyCardBase = ({
     <div className="absolute inset-0 overflow-hidden">
       <img
         src={image}
+        srcSet={imageSm ? `${imageSm} 400w, ${image} 800w` : undefined}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         alt={imageAlt}
         width={760}
         height={426}

@@ -17,16 +17,25 @@ import warehouseMobile from "../assets/company-img/mobile/IndexiaWarehouse-mobil
 import foundationMobile from "../assets/company-img/mobile/IndexiaFoundation-mobile.webp";
 import advertisingMobile from "../assets/company-img/mobile/IndexiaAdvertising-mobile.webp";
 import warehouseCardImg from "../assets/company-img/cards/IndexiaWarehouse-card.webp";
+import warehouseCardSm from "../assets/company-img/cards/IndexiaWarehouse-card-sm.webp";
 import advertisingCardImg from "../assets/company-img/cards/IndexiaAdvertising-card.webp";
+import advertisingCardSm from "../assets/company-img/cards/IndexiaAdvertising-card-sm.webp";
 import warehouseThumbImg from "../assets/company-img/thumbs/IndexiaWarehouse-thumb.webp";
 import advertisingThumbImg from "../assets/company-img/thumbs/IndexiaAdvertising-thumb.webp";
 import groupCard from "../assets/company-img/cards/IndexiaGroup-card.webp";
+import groupCardSm from "../assets/company-img/cards/IndexiaGroup-card-sm.webp";
 import financeCard from "../assets/company-img/cards/IndexiaFinance-card.webp";
+import financeCardSm from "../assets/company-img/cards/IndexiaFinance-card-sm.webp";
 import finserveCard from "../assets/company-img/cards/IndexiaFinserve-card.webp";
+import finserveCardSm from "../assets/company-img/cards/IndexiaFinserve-card-sm.webp";
 import securitiesCard from "../assets/company-img/cards/IndexiaSecurities-card.webp";
+import securitiesCardSm from "../assets/company-img/cards/IndexiaSecurities-card-sm.webp";
 import overseasCard from "../assets/company-img/cards/IndexiaOverseas-card.webp";
+import overseasCardSm from "../assets/company-img/cards/IndexiaOverseas-card-sm.webp";
 import agroCard from "../assets/company-img/cards/IndexiaAgroBioFertilizers-card.webp";
+import agroCardSm from "../assets/company-img/cards/IndexiaAgroBioFertilizers-card-sm.webp";
 import foundationCard from "../assets/company-img/cards/IndexiaFoundation-card.webp";
+import foundationCardSm from "../assets/company-img/cards/IndexiaFoundation-card-sm.webp";
 import groupThumb from "../assets/company-img/thumbs/IndexiaGroup-thumb.webp";
 import financeThumb from "../assets/company-img/thumbs/IndexiaFinance-thumb.webp";
 import finserveThumb from "../assets/company-img/thumbs/IndexiaFinserve-thumb.webp";
@@ -71,6 +80,18 @@ export const companyCardImages: Record<string, string> = {
   advertising: advertisingCardImg,
 };
 
+export const companyCardSmImages: Record<string, string> = {
+  group: groupCardSm,
+  finance: financeCardSm,
+  finserve: finserveCardSm,
+  securities: securitiesCardSm,
+  overseas: overseasCardSm,
+  "agro-bio": agroCardSm,
+  warehouse: warehouseCardSm,
+  foundation: foundationCardSm,
+  advertising: advertisingCardSm,
+};
+
 export const companyThumbImages: Record<string, string> = {
   group: groupThumb,
   finance: financeThumb,
@@ -86,4 +107,5 @@ export const companyThumbImages: Record<string, string> = {
 export const getCompanyImage = (slug: string): string => companyImages[slug] ?? companyImages.group;
 export const getCompanyMobileImage = (slug: string): string => companyMobileImages[slug] ?? companyMobileImages.group;
 export const getCompanyCardImage = (slug: string): string => companyCardImages[slug] ?? companyCardImages.group;
+export const getCompanyCardSmImage = (slug: string): string => companyCardSmImages[slug] ?? companyCardSmImages.group;
 export const getCompanyThumbImage = (slug: string): string => companyThumbImages[slug] ?? companyThumbImages.group;
