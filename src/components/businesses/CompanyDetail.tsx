@@ -98,7 +98,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       <HeroBackdrop
         image={getCompanyImage(b.slug)}
         radial={`radial-gradient(circle at 84% 16%, ${b.color}59, transparent 42%), radial-gradient(circle at 10% 90%, ${b.color}33, transparent 40%)`}
-        containerClassName="relative mx-auto w-full max-w-7xl px-5 py-24 pt-32 sm:px-6 lg:px-8 lg:py-32"
+        containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
       >
         <div className="fade-up relative">
           <span
@@ -201,7 +201,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </div>
 
       {/* Overview + image split */}
-      <section className="relative overflow-hidden bg-white py-14 sm:py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-12">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-e-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
@@ -282,7 +282,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           className="pointer-events-none absolute -inset-e-20 top-0 h-80 w-80 rounded-full opacity-25 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
-        <div className="container relative py-24 lg:py-32">
+        <div className="container relative py-14 lg:py-20">
           <Reveal className="max-w-2xl">
             <Eyebrow color="var(--color-yellow)">{t("companyDetail.entryOf", { no: entryNo })}</Eyebrow>
             <h2 className="font-display mt-4 whitespace-pre-line text-[clamp(30px,4.5vw,54px)] font-bold leading-[1.05] text-white">
@@ -310,7 +310,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           className="pointer-events-none absolute -inset-s-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
-        <div className="container grid items-center gap-10 sm:gap-12 py-14 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:py-28">
+        <div className="container grid items-center gap-6 sm:gap-8 py-6 sm:py-8 lg:grid-cols-2 lg:gap-12">
           <Reveal amount={0.2} className="relative">
             <div
               aria-hidden="true"
@@ -358,9 +358,9 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       )}
 
       {/* Services */}
-      <section id="company-services" className="scroll-mt-24 bg-white py-14 sm:py-20 lg:py-24">
+      <section id="company-services" className="scroll-mt-24 bg-white py-8 sm:py-12 lg:py-16">
         <div className="container">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
             <div className="mt-4 flex items-center justify-center gap-3">
               <span className="h-px w-8" style={{ background: b.color }} aria-hidden="true" />
@@ -430,7 +430,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             })}
           </div>
 
-          <div className="font-ledger mt-10 sm:mt-14 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
+          <div className="font-ledger mt-6 sm:mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
             <span>{t("companyDetail.registerOf")}</span>
             <span>{t("companyDetail.entryOf", { no: entryNo })}</span>
           </div>
@@ -441,8 +441,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       {b.slug === "foundation" && (
         <section ref={gallerySectionRef} className="relative" style={{ background: "var(--color-ink-deep)" }}>
           <div ref={glowRef} aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl transition-transform duration-150 ease-out" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
-          <div className="container relative py-16 lg:py-20">
-            <Reveal className="mx-auto mb-10 max-w-3xl text-center">
+          <div className="container relative py-10 lg:py-14">
+            <Reveal className="mx-auto mb-6 max-w-3xl text-center">
               <Eyebrow color="var(--color-yellow)">{t("pageContent.companies.foundation.galleryEyebrow", "Training & Media")}</Eyebrow>
               <h2 className="font-display mt-3 text-[clamp(24px,3.2vw,38px)] font-bold leading-[1.1] text-white">
                 {t("pageContent.companies.foundation.galleryTitle", "Our Athletes in Action")}

@@ -8,8 +8,7 @@
       "home": "Home",
       "groupCompanies": "Groepsbedrijven",
       "companies": "Bedrijven",
-      "contact": "Contact",
-      "viewAllCompanies": "Alle bedrijven bekijken →"
+      "contact": "Contact"
     },
     "aria": {
       "selectLanguage": "Taal selecteren",
@@ -610,8 +609,6 @@
     "value3Body": "Zaken gaan uiteindelijk over mensen.",
     "value4Title": "Innovatie",
     "value4Body": "Omarmen verandering en verbeteren continu.",
-    "statsEyebrow": "Indexia Group in een Oogopslag",
-    "statsTitle": "De Cijfers Achter Onze Groei",
     "stat1Label": "Bedrijven",
     "stat2Label": "Locaties",
     "stat3Label": "Jaren in Bedrijf",

@@ -9,7 +9,7 @@ const NewsVideo = () => {
   const [playVideo, setPlayVideo] = useState(false);
 
   return (
-    <section className="bg-(--color-navy) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section className="bg-(--color-navy) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
       <div className="mx-auto max-w-4xl text-center">
         <Reveal>
           <Eyebrow className="mb-3" color="var(--color-yellow)">

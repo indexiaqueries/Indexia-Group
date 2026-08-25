@@ -60,7 +60,7 @@ const Businesses = () => {
     <BusinessesHero />
 
     <RuledSection>
-        <Reveal className="mx-auto mb-10 max-w-180 text-center sm:mb-14">
+        <Reveal className="mx-auto mb-6 max-w-180 text-center sm:mb-8">
           <SectionHeader
             title={t("home.groupCompanies.title")}
             description={t("home.groupCompanies.description")}

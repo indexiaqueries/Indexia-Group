@@ -168,6 +168,7 @@ const Banner = () => {
             onSelect={selectPanel}
           />
         </div>
+
       </section>
 
 

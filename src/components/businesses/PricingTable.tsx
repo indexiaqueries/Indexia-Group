@@ -62,9 +62,8 @@ const PricingTable = ({
   const gridClass = cols === 3 ? "grid-cols-3" : cols === 4 ? "grid-cols-4" : "grid-cols-2";
 
   return (
-    <section className="bg-(--color-soft) py-14 sm:py-20 lg:py-24">
-      <div className="container">
-        <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+    <section className="bg-(--color-soft) py-6 sm:py-8 lg:py-12">
+      <div className="container">          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow>{eyebrow}</Eyebrow>
           <h2 className="font-display mt-3 text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
             {title}

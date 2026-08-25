@@ -8,8 +8,7 @@
       "home": "الرئيسية",
       "groupCompanies": "شركات المجموعة",
       "companies": "الشركات",
-      "contact": "اتصل بنا",
-      "viewAllCompanies": "عرض جميع الشركات ←"
+      "contact": "اتصل بنا"
     },
     "aria": {
       "selectLanguage": "اختر اللغة",
@@ -995,8 +994,6 @@
     "value3Body": "الأعمال عن الناس.",
     "value4Title": "الابتكار",
     "value4Body": "نتبنى التغيير.",
-    "statsEyebrow": "نظرة عامة",
-    "statsTitle": "الأرقام وراء نمونا",
     "stat1Label": "شركات",
     "stat2Label": "مواقع",
     "stat3Label": "سنوات العمل",

@@ -8,8 +8,7 @@
       "home": "Beranda",
       "groupCompanies": "Perusahaan Grup",
       "companies": "Perusahaan",
-      "contact": "Hubungi Kami",
-      "viewAllCompanies": "Lihat semua perusahaan →"
+      "contact": "Hubungi Kami"
     },
     "aria": {
       "selectLanguage": "Pilih bahasa",
@@ -610,8 +609,6 @@
     "value3Body": "Bisnis pada akhirnya tentang manusia.",
     "value4Title": "Inovasi",
     "value4Body": "Kami merangkul perubahan dan terus meningkat.",
-    "statsEyebrow": "Indexia Group Sekilas",
-    "statsTitle": "Angka Di Balik Pertumbuhan Kami",
     "stat1Label": "Perusahaan",
     "stat2Label": "Lokasi",
     "stat3Label": "Tahun Berbisnis",

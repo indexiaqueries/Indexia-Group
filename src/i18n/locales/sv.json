@@ -8,8 +8,7 @@
       "home": "Hem",
       "groupCompanies": "Koncernbolag",
       "companies": "Bolag",
-      "contact": "Kontakta oss",
-      "viewAllCompanies": "Visa alla bolag →"
+      "contact": "Kontakta oss"
     },
     "aria": {
       "selectLanguage": "Välj språk",
@@ -610,8 +609,6 @@
     "value3Body": "Affärer handlar till sist om människor.",
     "value4Title": "Innovation",
     "value4Body": "Vi omfamnar förändring och förbättrar kontinuerligt.",
-    "statsEyebrow": "Indexia Group i Korthet",
-    "statsTitle": "Siffrorna Bakom Vår Tillväxt",
     "stat1Label": "Företag",
     "stat2Label": "Platser",
     "stat3Label": "År i Branschen",

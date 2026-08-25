@@ -62,7 +62,7 @@ const HeroBackdrop = ({
       "none",
   },
   containerClassName =
-    "relative mx-auto w-full max-w-7xl px-5 py-20 pt-28 text-center sm:px-6 lg:px-8 lg:py-24",
+    "relative mx-auto w-full max-w-7xl px-2 py-14 pt-22 text-center sm:px-3 lg:px-5 lg:py-18",
   extra,
 }: HeroBackdropProps) => (
   <section

@@ -13,9 +13,9 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
       <div className="mx-auto max-w-6xl">
-        <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+        <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("newsPage.knowledgeEyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("newsPage.knowledgeHeading")}

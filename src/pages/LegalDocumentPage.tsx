@@ -80,10 +80,10 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         </p>
       </HeroBackdrop>
 
-      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-3xl">
+      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+        <div className="mx-auto max-w-4xl">
           <Reveal>
-            <div className="mb-12 flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-slate-200 pb-6">
+            <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-slate-200 pb-6">
               <Link
                 to="/"
                 className="text-sm font-semibold text-(--color-blue) transition-colors hover:text-(--color-teal)"
@@ -101,7 +101,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
           </Reveal>
 
           <Reveal>
-            <div className="mb-10 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-5 py-3">
+            <div className="mb-5 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-5 py-3">
               <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
                 {t("legal.lastUpdated")}
               </span>
@@ -140,7 +140,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
           ))}
 
           <Reveal>
-            <div className="mt-16 rounded-2xl border border-slate-200 bg-(--color-soft) p-7 sm:p-8">
+            <div className="mt-10 rounded-2xl border border-slate-200 bg-(--color-soft) p-7 sm:p-8">
               <h3 className="font-display text-xl font-bold text-slate-900">{t("legal.contactHeading")}</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">{t("legal.contactBody")}</p>
               <Link

@@ -24,7 +24,7 @@ const CompanyCardBase = ({
   className = "",
 }: CompanyCardBaseProps) => (
   <div
-    className={`group relative flex h-56 sm:h-64 flex-col overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl ${className}`}
+    className={`group relative flex h-48 sm:h-56 flex-col overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl ${className}`}
   >
     {/* Background image */}
     <div className="absolute inset-0 overflow-hidden">
@@ -59,7 +59,7 @@ const CompanyCardBase = ({
     {cardNo && (
       <span
         aria-hidden="true"
-        className="font-ledger pointer-events-none absolute inset-s-3 sm:inset-s-4 top-2 z-2 text-[36px] sm:text-[48px] font-bold leading-none text-white/12 transition-colors duration-300 group-hover:text-white/20"
+        className="font-ledger pointer-events-none absolute inset-s-3 sm:inset-s-4 top-2 z-2 text-[28px] sm:text-[36px] font-bold leading-none text-white/12 transition-colors duration-300 group-hover:text-white/20"
       >
         {cardNo}
       </span>

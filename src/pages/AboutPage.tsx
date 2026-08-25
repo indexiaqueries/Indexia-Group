@@ -1,21 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import SEO from "../components/common/SEO";
-import AnimatedCounter from "../components/common/AnimatedCounter";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
-import ImpactBand from "../components/common/ImpactBand";
 import ResponsiveImage from "../components/common/ResponsiveImage";
 import { colors } from "../lib/theme";
-import { groupStats } from "../data/groupStats";
 import aboutBg from "../assets/hero-img/AboutHero.png";
 import founderImg from "../assets/about-img/founder_MD.png";
 import ourStoryImg from "../assets/about-img/OurStory.png";
 import valuesImg from "../assets/about-img/OurValues.png";
 import companiesImg from "../assets/about-img/OurCompanies.png";
 import timelineImg from "../assets/about-img/OurJourney.png";
-import aboutIndexiaImg from "../assets/about-img/AboutIndexiaGroup.png";
 
 const VALUES = [1, 2, 3, 4] as const;
 const MILESTONES = [1, 2, 3, 4, 5] as const;
@@ -78,32 +74,32 @@ const AboutPage = () => {
       </HeroBackdrop>
 
       {/* Leadership */}
-      <section className="relative bg-(--color-ink-deep) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="relative bg-(--color-ink-deep) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-14 max-w-2xl text-center">
-            <Eyebrow color="var(--color-yellow)" className="mb-3">{tr("leaderEyebrow", "Leadership")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-white">
+          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
+            <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("leaderEyebrow", "Leadership")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
               {tr("leaderTitle", "The People Behind Indexia Group")}
             </h2>
           </Reveal>
 
           <Reveal delay={0.1} amount={0.15}>
-            <div className="mx-auto grid max-w-5xl items-center gap-10 sm:grid-cols-2">
+            <div className="mx-auto grid max-w-6xl items-center gap-6 sm:grid-cols-2">
               <div className="relative w-full overflow-hidden rounded-2xl">
                 <img
                   src={founderImg}
                   alt={tr("founderName", "Founder & Managing Director")}
-                  width={600}
-                  height={750}
+                  width={500}
+                  height={700}
                   loading="lazy"
                   decoding="async"
-                  className="w-full object-contain"
+                  className="object-contain"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
                 {/* Floating name badge */}
-                <div className="absolute inset-x-0 bottom-0 flex justify-center px-6 pb-5">
-                  <div className="rounded-xl bg-white/10 px-5 py-3 shadow-xl backdrop-blur-md">
-                    <span className="font-display text-sm font-bold text-white sm:text-base">
+                <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4">
+                  <div className="rounded-lg bg-black/60 px-3 py-2 shadow-xl backdrop-blur-md border-b-2 border-(--color-yellow)">
+                    <span className="font-display text-[11px] font-bold text-white sm:text-xs">
                       Bijendra Malik
                     </span>
                   </div>
@@ -112,13 +108,13 @@ const AboutPage = () => {
               <div className="flex flex-col">
                 <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
                   {tr("founderRole", "Founder & Managing Director")}
-                </span>                  <p className="mt-5 max-w-lg text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-white/70">
+                </span>                  <p className="mt-4 max-w-lg text-[14px] sm:text-[15px] leading-7 text-white/70">
                   {tr("founderBio1", "")}
                 </p>
-                <p className="mt-4 max-w-lg text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-white/70">
+                <p className="mt-3 max-w-lg text-[14px] sm:text-[15px] leading-7 text-white/70">
                   {tr("founderBio2", "")}
                 </p>
-                <blockquote className="mt-6 max-w-lg border-l-2 border-(--color-yellow)/50 pl-5 text-sm italic text-(--color-yellow)/80">
+                <blockquote className="mt-4 max-w-lg border-l-2 border-(--color-yellow)/50 pl-4 text-sm italic text-(--color-yellow)/80">
                   "{tr("founderQuote", "")}"
                 </blockquote>
               </div>
@@ -128,23 +124,23 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story */}
-      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <Reveal>
-            <div className="mx-auto max-w-2xl text-center">
-              <Eyebrow className="mb-3">{tr("storyEyebrow", "Our Story")}</Eyebrow>
-              <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2 lg:gap-10">
+          <div>
+            <Reveal>
+              <Eyebrow className="mb-2">{tr("storyEyebrow", "Our Story")}</Eyebrow>
+              <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
                 {tr("storyTitle", "From a Shared Vision to a National Group")}
               </h2>
-            </div>
-          </Reveal>
+            </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="mx-auto mt-10 max-w-3xl space-y-6 text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-slate-600">
-              <p>{tr("storyBody1", "")}</p>
-              <p>{tr("storyBody2", "")}</p>
-            </div>
-          </Reveal>
+            <Reveal delay={0.1}>
+              <div className="mt-4 space-y-3 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-slate-600">
+                <p>{tr("storyBody1", "")}</p>
+                <p>{tr("storyBody2", "")}</p>
+              </div>
+            </Reveal>
+          </div>
 
           <Reveal delay={0.15} amount={0.15}>
             <ResponsiveImage
@@ -152,76 +148,50 @@ const AboutPage = () => {
               alt="Indexia Group founding story"
               width={1200}
               height={500}
-              className="mx-auto mt-12 w-full max-w-3xl rounded-2xl object-cover shadow-lg"
+              className="w-full rounded-2xl object-cover shadow-lg"
             />
           </Reveal>
         </div>
       </section>
 
       {/* Values */}
-      <section className="relative bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-            <Eyebrow className="mb-3">{tr("valuesEyebrow", "Our Values")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+      <section className="relative overflow-hidden px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+        {/* Clear background image */}
+        <div className="absolute inset-0">
+          <ResponsiveImage
+            src={valuesImg}
+            alt=""
+            width={1200}
+            height={500}
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl">
+          <Reveal className="mx-auto mb-5 max-w-2xl text-center">
+            <Eyebrow className="mb-2">{tr("valuesEyebrow", "Our Values")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white drop-shadow-lg">
               {tr("valuesTitle", "What We Stand For")}
             </h2>
           </Reveal>
 
-          <Reveal amount={0.15}>
-            <ResponsiveImage
-              src={valuesImg}
-              alt="Indexia Group values and culture"
-              width={1200}
-              height={500}
-              className="mx-auto mb-12 w-full max-w-3xl rounded-2xl object-cover shadow-sm"
-            />
-          </Reveal>
-
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {/* 2x2 grid with offset layout */}
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
             {VALUES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.08} amount={0.15}>
-                <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-                  <span
-                    className="font-ledger text-sm font-bold"
-                    style={{ color: i % 2 !== 0 ? colors.teal : colors.blue }}
-                  >
+                <div className={`group flex items-start gap-4 rounded-2xl border border-white/20 bg-gradient-to-br from-black/50 via-black/40 to-black/30 backdrop-blur-sm p-5 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-1 hover:from-black/60 hover:via-black/50 hover:to-black/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] hover:border-white/30 ${i % 2 === 0 ? "sm:col-span-2 sm:flex-row sm:items-center" : ""}`}>
+                  <span className={`shrink-0 font-ledger text-3xl font-bold text-(--color-yellow) opacity-80 transition-opacity duration-300 group-hover:opacity-100 ${i % 2 === 0 ? "sm:text-4xl" : "text-2xl"}`}>
                     {String(i).padStart(2, "0")}
                   </span>
-                  <h3 className="font-display mt-3 text-lg font-bold text-slate-900">
-                    {tr(`value${i}Title`, "")}
-                  </h3>
-                  <p className="mt-2 flex-1 text-[13px] sm:text-sm leading-6 sm:leading-7 text-slate-600">
-                    {tr(`value${i}Body`, "")}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-            <Eyebrow className="mb-3">{tr("statsEyebrow", "Indexia Group at a Glance")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
-              {tr("statsTitle", "The Numbers Behind Our Growth")}
-            </h2>
-          </Reveal>
-
-          <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
-            {groupStats.map((stat, i) => (
-              <Reveal key={stat.label} delay={i * 0.08} amount={0.15}>
-                <div className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white p-5 sm:p-8 text-center shadow-sm">
-                  <AnimatedCounter
-                    value={stat.value}
-                    label={stat.label}
-                    color="var(--color-teal)"
-                    numberClassName="font-display text-4xl font-bold text-(--color-teal) sm:text-5xl"
-                    labelClassName="mt-2 text-sm font-semibold uppercase tracking-wide text-slate-500"
-                  />
+                  <div className="flex-1">
+                    <h3 className="font-display text-[17px] sm:text-lg font-bold text-white transition-colors duration-300">
+                      {tr(`value${i}Title`, "")}
+                    </h3>
+                    <p className="mt-1.5 text-[13px] sm:text-sm leading-6 text-white/70 transition-colors duration-300 group-hover:text-white/85">
+                      {tr(`value${i}Body`, "")}
+                    </p>
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -230,14 +200,14 @@ const AboutPage = () => {
       </section>
 
       {/* Our Companies */}
-      <section className="relative bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-            <Eyebrow className="mb-3">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
+            <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("companiesTitle", "Eight Businesses, One Vision")}
             </h2>
-            <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
+            <p className="mt-3 text-[14px] leading-6 text-(--color-muted)">
               {tr("companiesSubtitle", "")}
             </p>
           </Reveal>
@@ -252,20 +222,20 @@ const AboutPage = () => {
             />
           </Reveal>
 
-          <div className="space-y-6">
+          <div className="space-y-3">
             {/* Indexia Finance */}
             <Reveal delay={0.05} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.teal}15`, color: colors.teal }}>
                       {tr("c1Tag", "Multinational Fintech")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c1Name", "Indexia Finance")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c1Name", "Indexia Finance")}</h3>
                     <p className="mt-1 text-xs text-slate-400">Est. 2012</p>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c1Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c1Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c1Highlights", "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence: India, US, Ecuador, Europe").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-(--color-teal)" />
@@ -283,16 +253,16 @@ const AboutPage = () => {
 
             {/* Indexia Finserve */}
             <Reveal delay={0.1} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.yellow}15`, color: "#b8860b" }}>
                       {tr("c2Tag", "Lending Arm")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c2Name", "Indexia Finserve Pvt. Ltd.")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c2Name", "Indexia Finserve Pvt. Ltd.")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c2Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c2Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c2Highlights", "12 Loan Products,Personal & Business Loans,Home Loan & LAP,Balance Transfer & Working Capital").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-(--color-yellow)" />
@@ -310,16 +280,16 @@ const AboutPage = () => {
 
             {/* Indexia Overseas */}
             <Reveal delay={0.15} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-600">
                       {tr("c3Tag", "Global Export")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c3Name", "Indexia Overseas Pvt. Ltd.")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c3Name", "Indexia Overseas Pvt. Ltd.")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c3Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c3Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c3Highlights", "14 South American Countries,Premium Refined Sugar Export,Food-Grade Quality Certified,Full-Cycle Export Management").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-slate-400" />
@@ -337,16 +307,16 @@ const AboutPage = () => {
 
             {/* Indexia Agro Bio */}
             <Reveal delay={0.2} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.yellow}15`, color: "#b8860b" }}>
                       {tr("c4Tag", "Organic Agriculture")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c4Name", "Indexia Agro Bio Fertilizers Pvt. Ltd.")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c4Name", "Indexia Agro Bio Fertilizers Pvt. Ltd.")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c4Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c4Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c4Highlights", "100% Organic Bio-Fertilizers,Production in Shamli UP (Delhi NCR),Soil Testing & Farmer Support,Domestic & Export Distribution").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-(--color-yellow)" />
@@ -364,16 +334,16 @@ const AboutPage = () => {
 
             {/* Indexia Securities */}
             <Reveal delay={0.25} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.navy}15`, color: colors.navy }}>
                       {tr("c5Tag", "Armed Protection")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c5Name", "Indexia Securities")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c5Name", "Indexia Securities")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c5Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c5Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c5Highlights", "Ex-Military Commandos,24/7 Operations Centre,VIP & Corporate Protection,Critical Infrastructure Security").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-(--color-navy)" />
@@ -391,16 +361,16 @@ const AboutPage = () => {
 
             {/* Indexia Warehouse */}
             <Reveal delay={0.3} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.teal}15`, color: colors.teal }}>
                       {tr("c6Tag", "Strategic Land")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c6Name", "Indexia Warehouse")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c6Name", "Indexia Warehouse")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c6Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c6Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c6Highlights", "21 Acres in Shamli UP,8 National Expressways,5 Locations,65 km from Delhi").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-(--color-teal)" />
@@ -418,16 +388,16 @@ const AboutPage = () => {
 
             {/* Indexia Advertising */}
             <Reveal delay={0.35} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-600">
                       {tr("c7Tag", "Highway Advertising")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c7Name", "Indexia Advertising")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c7Name", "Indexia Advertising")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c7Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c7Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c7Highlights", "NH-709B Delhi-Dehradun Highway,10 States Connected,360° Visibility Unipoles,1+ Crore Daily Exposure").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-slate-400" />
@@ -445,16 +415,16 @@ const AboutPage = () => {
 
             {/* Indexia Foundation */}
             <Reveal delay={0.4} amount={0.1}>
-              <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md sm:p-8">                  <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-8">
+              <div className="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">                  <div className="flex flex-col gap-3 sm:gap-4 lg:flex-row lg:items-start lg:gap-6">
                   <div className="shrink-0 lg:w-48">
                     <span className="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]" style={{ backgroundColor: `${colors.tealDeep}15`, color: colors.tealDeep }}>
                       {tr("c8Tag", "Social Impact")}
                     </span>
-                    <h3 className="font-display mt-3 text-xl font-bold text-slate-900">{tr("c8Name", "Indexia Foundation")}</h3>
+                    <h3 className="font-display mt-2 text-lg font-bold text-slate-900">{tr("c8Name", "Indexia Foundation")}</h3>
                   </div>
                   <div className="flex-1">
-                    <p className="text-[14px] sm:text-[15px] leading-7 text-slate-600">{tr("c8Body", "")}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <p className="text-[13px] sm:text-[14px] leading-6 text-slate-600">{tr("c8Body", "")}</p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
                       {(tr("c8Highlights", "Grassroots to Olympics,Training & Nutrition,Coaching & Mentorship,Competition Funding").split(",")).map((h, i) => (
                         <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-(--color-soft) px-3 py-1 text-xs text-slate-600">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-(--color-teal-deep)" />
@@ -474,11 +444,11 @@ const AboutPage = () => {
       </section>
 
       {/* Timeline */}
-      <section className="relative bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-4xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-            <Eyebrow className="mb-3">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
+            <Eyebrow className="mb-2">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("timelineTitle", "Key Milestones")}
             </h2>
           </Reveal>
@@ -489,11 +459,11 @@ const AboutPage = () => {
               alt="Indexia Group journey and milestones"
               width={1200}
               height={500}
-              className="mx-auto mb-12 w-full max-w-3xl rounded-2xl object-cover shadow-sm"
+              className="mx-auto mb-8 w-full max-w-3xl rounded-2xl object-cover shadow-sm"
             />
           </Reveal>
 
-          <div className="relative space-y-8">
+          <div className="relative space-y-5">
             <div
               aria-hidden="true"
               className="absolute left-4.5 top-0 bottom-0 w-px bg-slate-200 sm:left-1/2 sm:-translate-x-px"
@@ -501,18 +471,18 @@ const AboutPage = () => {
             {MILESTONES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.1}>
                 <div className={`relative flex gap-6 sm:gap-0 ${i % 2 === 0 ? "sm:flex-row-reverse" : ""}`}>
-                  <div className="relative z-10 flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full border-2 border-(--color-teal) bg-white text-[10px] sm:text-[11px] font-bold text-(--color-teal) sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+                  <div className="relative z-10 flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-full border-2 border-(--color-teal) bg-white text-[9px] sm:text-[10px] font-bold text-(--color-teal) sm:absolute sm:left-1/2 sm:-translate-x-1/2">
                     {tr(`milestone${i}Year`, "")}
                   </div>
                   <div
-                    className={`flex-1 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:w-[calc(50%-2rem)] ${
+                    className={`flex-1 rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm sm:w-[calc(50%-2rem)] ${
                       i % 2 === 0 ? "sm:mr-auto sm:pr-8 sm:text-right" : "sm:ml-auto sm:pl-8"
                     }`}
                   >
-                    <h3 className="font-display text-lg font-bold text-slate-900">
+                    <h3 className="font-display text-[15px] sm:text-lg font-bold text-slate-900">
                       {tr(`milestone${i}Title`, "")}
                     </h3>
-                    <p className="mt-2 text-sm leading-7 text-slate-600">
+                    <p className="mt-1.5 text-[13px] sm:text-sm leading-6 text-slate-600">
                       {tr(`milestone${i}Body`, "")}
                     </p>
                   </div>
@@ -524,13 +494,13 @@ const AboutPage = () => {
       </section>
 
       {/* Registration & Compliance */}
-      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-            <Eyebrow className="mb-3">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
+            <Eyebrow className="mb-2">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("registrationTitle", "Registered Entities")}</h2>
-            <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
+            <p className="mt-3 text-[14px] leading-6 text-(--color-muted)">
               {tr("registrationSubtitle", "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.")}
             </p>
           </Reveal>
@@ -561,7 +531,7 @@ const AboutPage = () => {
             ))}
           </div>
 
-          <Reveal delay={0.2} amount={0.15} className="mt-8">
+          <Reveal delay={0.2} amount={0.15} className="mt-5">
             <div className="rounded-2xl border border-slate-100 bg-(--color-soft) p-6 text-center">
               <p className="text-sm text-slate-500">
                 {tr("registrationNote", "All company registrations are verifiable on the")}
@@ -573,16 +543,6 @@ const AboutPage = () => {
           </Reveal>
         </div>
       </section>
-
-      {/* CTA */}
-      <ImpactBand
-        image={aboutIndexiaImg}
-        eyebrow={tr("eyebrow", "About Us")}
-        title={tr("ctaTitle", "Let's Build Something Together")}
-        body={tr("ctaBody", "")}
-        actionLabel={tr("ctaButton", "Get in Touch")}
-        to="/contact"
-      />
     </main>
   );
 };

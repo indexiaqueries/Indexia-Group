@@ -8,8 +8,7 @@
       "home": "หน้าแรก",
       "groupCompanies": "บริษัทในเครือ",
       "companies": "บริษัท",
-      "contact": "ติดต่อเรา",
-      "viewAllCompanies": "ดูบริษัททั้งหมด →"
+      "contact": "ติดต่อเรา"
     },
     "aria": {
       "selectLanguage": "เลือกภาษา",
@@ -610,8 +609,6 @@
     "value3Body": "ธุรกิจในที่สุดคือเกี่ยวกับผู้คน",
     "value4Title": "นวัตกรรม",
     "value4Body": "เรายอมรับการเปลี่ยนแปลงและพัฒนาอย่างต่อเนื่อง",
-    "statsEyebrow": "Indexia Group โดยย่อ",
-    "statsTitle": "ตัวเลขเบื้องหลังการเติบโตของเรา",
     "stat1Label": "บริษัท",
     "stat2Label": "สาขา",
     "stat3Label": "ปีในธุรกิจ",

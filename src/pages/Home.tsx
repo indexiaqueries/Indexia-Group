@@ -2,12 +2,10 @@ import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
-import AnimatedCounter from "../components/common/AnimatedCounter";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
-import { colors } from "../lib/theme";
 const Globe = lazy(() => import("../components/lightswind/globe"));
 
 const Home = () => {
@@ -44,25 +42,22 @@ const Home = () => {
 
     <Banner />
 
-    {/* Gradient fade from hero dark to light section */}
-    <div aria-hidden="true" className="relative -mt-1 h-10 sm:h-16 bg-linear-to-b from-[#02101a] to-(--color-soft)" />
-
-    <section className="relative bg-(--color-soft) py-12 sm:py-16 lg:py-24">
+    <section className="relative bg-(--color-soft) mx-3 mt-4 mb-2 sm:mx-5 sm:mt-5 sm:mb-3">
       <div className="container">
         <Reveal>
           <div className="mx-auto max-w-180 text-center">
-            <Eyebrow className="mb-3">{t("businesses.eyebrow")}</Eyebrow>
+            <Eyebrow>{t("businesses.eyebrow")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,4vw,38px)] font-bold text-(--color-ink)">
               {t("businesses.titleStart")}
               <span className="text-(--color-blue)">{t("businesses.titleAccent")}</span>
             </h2>
-            <p className="mt-4 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-(--color-muted)">
+            <p className="mt-1 text-[10px] sm:text-[11px] leading-5 sm:leading-6 text-(--color-muted)">
               {t("businesses.subtitle")}
             </p>
           </div>
         </Reveal>
 
-        <div className="mt-10 sm:mt-12 grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 py-3">
           {companies.map((company, i) => (
             <Reveal key={company.name} delay={(i % 4) * 0.08} amount={0.15}>
               <CompanyLinkCard company={company} index={i} />
@@ -72,27 +67,24 @@ const Home = () => {
       </div>
     </section>
 
-    {/* Gradient fade from light to dark section */}
-    <div aria-hidden="true" className="relative h-10 sm:h-16 bg-linear-to-b from-(--color-soft) to-[#122029]" />
-
     {/* Our Reach */}
-    <section className="relative overflow-hidden bg-reach-gradient px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="relative overflow-hidden bg-reach-gradient px-3 sm:px-4 lg:px-6 pt-5">
       <div aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-72 sm:h-96 w-72 sm:w-96 rounded-full bg-(--color-teal)/25 blur-[100px] sm:blur-[120px]" />
       <div aria-hidden="true" className="pointer-events-none absolute -inset-s-40 bottom-0 h-64 sm:h-80 w-64 sm:w-80 rounded-full bg-(--color-yellow)/15 blur-[80px] sm:blur-[100px]" />
       <div className="container relative">
         <Reveal className="mx-auto max-w-2xl text-center">
           <Eyebrow color="var(--color-yellow)">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
-          <h2 className="font-display mt-3 text-[clamp(22px,4vw,42px)] font-bold text-white">
+          <h2 className="font-display text-[clamp(22px,4vw,42px)] font-bold text-white">
             {t("homeReach.title", "Trusted Across Borders")}
           </h2>
-          <p className="mt-4 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-white/70">
+          <p className="text-[10px] sm:text-[12px] leading-6 sm:leading-7 text-white/70">
             {t("homeReach.subtitle", "Our businesses serve clients worldwide with the same commitment to integrity and results.")}
           </p>
         </Reveal>
 
         {/* Globe */}
-        <div className="mx-auto">
-          <div className="relative mx-auto h-72 sm:h-87.5 w-full max-w-3xl lg:h-120">
+        <div className="mx-auto -my-2">
+          <div className="relative mx-auto h-48 sm:h-60 w-full max-w-lg lg:h-80">
             <Suspense fallback={<div className="h-full w-full" />}>
               <Globe
                 theta={0.3}
@@ -112,30 +104,17 @@ const Home = () => {
             {/* Indexia "I" overlay */}
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 flex items-center justify-center select-none">
               <div
-                className="absolute h-[clamp(70px,14vw,130px)] w-[clamp(70px,14vw,130px)] rounded-full"
+                className="absolute h-[clamp(50px,10vw,90px)] w-[clamp(50px,10vw,90px)] rounded-full"
                 style={{ background: "radial-gradient(circle, rgba(242,242,49,0.25) 0%, rgba(242,242,49,0.08) 50%, transparent 70%)", filter: "blur(8px)" }}
               />
-              <span className="relative font-display text-[clamp(90px,15vw,150px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_16px_rgba(242,242,49,0.5)]">
+              <span className="relative font-display text-[clamp(50px,10vw,80px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_16px_rgba(242,242,49,0.5)]">
                 I
               </span>
             </div>
           </div>
         </div>
 
-        <div className="mx-auto grid max-w-3xl grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
-          <Reveal delay={0} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="8" label={t("homeReach.stat1Label", "Businesses")} color={colors.yellow} numberClassName="font-display text-[32px] sm:text-[40px] font-bold text-(--color-yellow) leading-none" labelClassName="mt-2 sm:mt-2.5 font-ledger text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-white/50" />
-          </Reveal>
-          <Reveal delay={0.12} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="3" label={t("homeReach.stat2Label", "Countries")} color={colors.white} numberClassName="font-display text-[32px] sm:text-[40px] font-bold text-white leading-none" labelClassName="mt-2 sm:mt-2.5 font-ledger text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-white/50" />
-          </Reveal>
-          <Reveal delay={0.24} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="12+" label={t("homeReach.stat3Label", "Years Strong")} color={colors.yellow} numberClassName="font-display text-[32px] sm:text-[40px] font-bold text-(--color-yellow) leading-none" labelClassName="mt-2 sm:mt-2.5 font-ledger text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-white/50" />
-          </Reveal>
-          <Reveal delay={0.36} y={40} variant="scale" amount={0.15} className="text-center">
-            <AnimatedCounter value="500+" label={t("homeReach.stat4Label", "Clients Served")} color={colors.white} numberClassName="font-display text-[32px] sm:text-[40px] font-bold text-white leading-none" labelClassName="mt-2 sm:mt-2.5 font-ledger text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-white/50" />
-          </Reveal>
-        </div>
+
       </div>
     </section>
 

@@ -31,10 +31,9 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
   const internCount = roles.filter((r) => r.type === "Intern").length;
 
   return (
-    <section id="open-roles" className="scroll-mt-24 bg-(--color-mist) px-4 py-12 sm:px-5 sm:py-16 lg:px-8 lg:py-20">
-      <div className="mx-auto max-w-5xl">
-        {/* Header */}
-        <Reveal className="mx-auto mb-8 sm:mb-12 max-w-2xl text-center">
+    <section id="open-roles" className="scroll-mt-24 bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <div className="mx-auto max-w-6xl">
+        {/* Header */}          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("careersPage.rolesEyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(26px,4vw,40px)] font-bold text-(--color-ink)">
             {t("careersPage.rolesHeading")}

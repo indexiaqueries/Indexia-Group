@@ -90,9 +90,9 @@ const GlobalResearchPage = () => {
         </button>
       </HeroBackdrop>
 
-      <section id="research-areas" className="scroll-mt-24 bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section id="research-areas" className="scroll-mt-24 bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-3">{t("globalResearchPage.areasEyebrow")}</Eyebrow>
             <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
               {t("globalResearchPage.areasHeading")}
@@ -116,9 +116,9 @@ const GlobalResearchPage = () => {
         </div>
       </section>
 
-      <section className="relative bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+      <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+        <div className="mx-auto max-w-6xl">
+          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-3">{t("globalResearchPage.reportsEyebrow")}</Eyebrow>
             <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
               {t("globalResearchPage.reportsHeading")}

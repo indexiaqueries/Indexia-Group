@@ -43,7 +43,7 @@ const CareersHero = () => {
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-7xl px-4 py-14 pt-24 sm:px-5 sm:py-20 sm:pt-28 lg:px-8 lg:py-24">
+      <div className="relative mx-auto w-full max-w-7xl px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14">
         <div className="mb-5 flex items-center gap-3">
           <span className="h-px w-10 bg-(--color-yellow)/60" />
           <Eyebrow color="var(--color-yellow)" size="md">
@@ -63,7 +63,7 @@ const CareersHero = () => {
           {t("careersPage.subtitle")}
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-6 flex flex-wrap items-center gap-4">
           <button
             type="button"
             onClick={() => document.getElementById("open-roles")?.scrollIntoView({ behavior: "smooth" })}
@@ -76,7 +76,7 @@ const CareersHero = () => {
           </button>
         </div>
 
-        <div className="mt-10 sm:mt-14 flex flex-wrap items-center gap-5 sm:gap-8 text-[13px] sm:text-sm text-white/60">
+        <div className="mt-6 sm:mt-10 flex flex-wrap items-center gap-5 sm:gap-8 text-[13px] sm:text-sm text-white/60">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-(--color-teal)" />
             {t("careersPage.rolesSubtitle")}

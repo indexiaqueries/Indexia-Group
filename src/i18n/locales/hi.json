@@ -8,8 +8,7 @@
       "home": "होम",
       "groupCompanies": "समूह कंपनियाँ",
       "companies": "कंपनियाँ",
-      "contact": "संपर्क करें",
-      "viewAllCompanies": "सभी कंपनियाँ देखें →"
+      "contact": "संपर्क करें"
     },
     "aria": {
       "selectLanguage": "भाषा चुनें",
@@ -995,8 +994,6 @@
     "value3Body": "व्यवसाय अंततः लोगों के बारे में है।",
     "value4Title": "नवाचार",
     "value4Body": "हम बदलाव को अपनाते हैं।",
-    "statsEyebrow": "एक नज़र में",
-    "statsTitle": "हमारी वृद्धि के पीछे के आंकड़े",
     "stat1Label": "कंपनियां",
     "stat2Label": "स्थान",
     "stat3Label": "वर्षों का अनुभव",

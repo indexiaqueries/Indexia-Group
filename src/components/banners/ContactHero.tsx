@@ -21,7 +21,7 @@ const ContactHero = () => {
         backgroundImage:
           "repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 36px)",
       }}
-      containerClassName="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 pt-28 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-28"
+      containerClassName="relative mx-auto grid max-w-7xl items-center gap-6 px-2 py-10 pt-20 sm:px-3 lg:grid-cols-2 lg:px-5 lg:py-14 lg:gap-10"
     >
       <div className="slide-in-left">
         <Eyebrow size="md" color={colors.yellow} className="mb-4">
@@ -35,11 +35,11 @@ const ContactHero = () => {
           {t("contactHero.title")}
         </h1>
 
-        <p className="mt-5 sm:mt-6 max-w-xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/75">
+        <p className="mt-4 sm:mt-5 max-w-xl text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-white/75">
           {t("contactHero.paragraph")}
         </p>
 
-        <div className="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4">
+        <div className="mt-5 sm:mt-6 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#enquiry-form"
             className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
@@ -59,7 +59,7 @@ const ContactHero = () => {
         </div>
 
         <div
-          className="mt-8 sm:mt-10 flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2 sm:gap-y-3 border-t border-white/10 pt-5 sm:pt-6 text-[13px] sm:text-sm text-white/70"
+          className="mt-6 sm:mt-8 flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2 sm:gap-y-3 border-t border-white/10 pt-4 sm:pt-5 text-[12px] sm:text-[13px] text-white/70"
           style={monoFont}
         >
           <span>{t("contactHero.offices", { count: String(branches.length).padStart(2, "0") })}</span>

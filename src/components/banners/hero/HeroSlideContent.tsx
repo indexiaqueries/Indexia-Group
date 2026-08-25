@@ -61,9 +61,9 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
       className="fade-up relative w-full"
       style={{ "--fade-up-y": "22px" } as CSSProperties}
     >
-      <div className={`mx-auto max-w-3xl ${isHome ? "bnr-text-zoom" : ""}`}>
+      <div className={`mx-auto max-w-xl sm:max-w-2xl lg:max-w-3xl ${isHome ? "bnr-text-zoom" : ""}`}>
         {/* Unified frosted glass card */}
-        <div className="relative rounded-3xl border border-white/15 bg-black/50 backdrop-blur-lg px-6 py-6 sm:px-10 sm:py-8">
+        <div className="relative rounded-3xl border border-white/15 bg-gradient-to-br from-black/70 via-[#0a1520]/65 to-black/60 backdrop-blur-xl px-6 py-6 sm:px-10 sm:py-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
           {/* Accent line */}
           <div className="absolute top-0 left-6 sm:left-10 h-full w-px bg-gradient-to-b from-transparent via-(--color-yellow)/40 to-transparent" />
 
@@ -95,8 +95,8 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
             <h1
               className={`hero-slide-child font-display font-bold text-white ${
                 isHome
-                  ? "text-[clamp(22px,3.5vw,40px)] leading-[1.1] mb-3"
-                  : "text-[clamp(20px,3.2vw,38px)] leading-[1.1] mb-3"
+                  ? "text-[clamp(24px,4vw,44px)] leading-[1.08] mb-3"
+                  : "text-[clamp(22px,3.8vw,42px)] leading-[1.1] mb-3"
               }`}
               style={{
                 textShadow: textShadow(shadowLevel, 36, 0.95),

@@ -8,8 +8,7 @@
       "home": "Home",
       "groupCompanies": "Group Companies",
       "companies": "Companies",
-      "contact": "Contact Us",
-      "viewAllCompanies": "View all companies →"
+      "contact": "Contact Us"
     },
     "aria": {
       "selectLanguage": "Select language",
@@ -392,8 +391,6 @@
     "value3Body": "Business is ultimately about people. We design solutions that empower our clients, support our communities, and create meaningful opportunities for our team.",
     "value4Title": "Innovation",
     "value4Body": "We embrace change and continuously improve. From fintech platforms to Organic Agriculture, we invest in ideas that move industries forward.",
-    "statsEyebrow": "Indexia Group at a Glance",
-    "statsTitle": "The Numbers Behind Our Growth",
     "stat1Value": "08",
     "stat1Label": "Companies",
     "stat2Value": "03",

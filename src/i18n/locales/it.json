@@ -8,8 +8,7 @@
       "home": "Home",
       "groupCompanies": "Aziende del Gruppo",
       "companies": "Aziende",
-      "contact": "Contatti",
-      "viewAllCompanies": "Vedi tutte le aziende →"
+      "contact": "Contatti"
     },
     "aria": {
       "selectLanguage": "Seleziona lingua",
@@ -997,8 +996,6 @@
     "value3Body": "Business is ultimately about people. We design solutions that empower our clients.",
     "value4Title": "Innovation",
     "value4Body": "We embrace change and continuously improve.",
-    "statsEyebrow": "Indexia Group at a Glance",
-    "statsTitle": "The Numbers Behind Our Growth",
     "stat1Label": "Companies",
     "stat2Label": "Locations",
     "stat3Label": "Years in Business",

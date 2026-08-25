@@ -18,7 +18,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
   const [featured, ...rest] = highlights;
 
   return (
-    <section className="relative overflow-hidden bg-(--color-soft) py-14 sm:py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-(--color-soft) py-6 sm:py-8 lg:py-12">
       {/* Ambient glow */}
       <div
         aria-hidden="true"
@@ -32,7 +32,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
       />
 
       <div className="container">
-        {/* Header */}          <Reveal className="mx-auto mb-10 sm:mb-14 max-w-2xl text-center">
+        {/* Header */}          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow>{t("companyDetail.keyEntries")}</Eyebrow>
           <div className="mt-4 flex items-center justify-center gap-3">
             <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />

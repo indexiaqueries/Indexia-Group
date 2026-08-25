@@ -8,8 +8,7 @@
       "home": "首页",
       "groupCompanies": "集团企业",
       "companies": "企业",
-      "contact": "联系我们",
-      "viewAllCompanies": "查看所有企业 →"
+      "contact": "联系我们"
     },
     "aria": {
       "selectLanguage": "选择语言",
@@ -995,8 +994,6 @@
     "value3Body": "商业归根结底是关于人的。",
     "value4Title": "创新",
     "value4Body": "我们拥抱变化并持续改进。",
-    "statsEyebrow": "Indexia Group一览",
-    "statsTitle": "增长背后的数字",
     "stat1Label": "公司",
     "stat2Label": "地点",
     "stat3Label": "经营年限",

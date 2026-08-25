@@ -8,8 +8,7 @@
       "home": "Inicio",
       "groupCompanies": "Empresas del Grupo",
       "companies": "Empresas",
-      "contact": "Contacto",
-      "viewAllCompanies": "Ver todas las empresas →"
+      "contact": "Contacto"
     },
     "aria": {
       "selectLanguage": "Seleccionar idioma",
@@ -997,8 +996,6 @@
     "value3Body": "Los negocios son fundamentalmente sobre personas. Diseñamos soluciones que empoderan a nuestros clientes.",
     "value4Title": "Innovación",
     "value4Body": "Abrazamos el cambio y mejoramos continuamente.",
-    "statsEyebrow": "Indexia Group de Un Vistazo",
-    "statsTitle": "Los Números Detrás de Nuestro Crecimiento",
     "stat1Label": "Empresas",
     "stat2Label": "Ubicaciones",
     "stat3Label": "Años de Experiencia",

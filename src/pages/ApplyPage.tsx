@@ -196,7 +196,7 @@ const ApplyPage = () => {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-(--color-ink-deep) px-4 py-14 pt-24 sm:px-5 sm:py-20 sm:pt-28 lg:px-8 lg:py-24 lg:pt-32">
+      <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14 lg:pt-24">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 opacity-30"
@@ -205,7 +205,7 @@ const ApplyPage = () => {
               "radial-gradient(circle at 20% 80%, rgba(38,174,144,0.3), transparent 50%), radial-gradient(circle at 80% 20%, rgba(242,242,49,0.15), transparent 45%)",
           }}
         />
-        <div className="container relative mx-auto max-w-3xl">
+        <div className="container relative mx-auto max-w-4xl">
           <Link
             to="/careers"
             className="mb-6 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-white/60 transition-colors hover:text-(--color-yellow)"
@@ -226,7 +226,7 @@ const ApplyPage = () => {
       </section>
 
       {/* Form */}
-      <section className="px-4 py-12 sm:px-5 sm:py-16 lg:px-8 lg:py-20">
+      <section className="px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="container mx-auto max-w-2xl">
           <Reveal>
             <p className="mb-6 sm:mb-8 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-(--color-muted)">

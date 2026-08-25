@@ -8,8 +8,7 @@
       "home": "Головна",
       "groupCompanies": "Компанії групи",
       "companies": "Компанії",
-      "contact": "Зв'язатися з нами",
-      "viewAllCompanies": "Переглянути всі компанії →"
+      "contact": "Зв'язатися з нами"
     },
     "aria": {
       "selectLanguage": "Виберіть мову",
@@ -610,8 +609,6 @@
     "value3Body": "Бізнес в кінці кінців — про людей.",
     "value4Title": "Інновації",
     "value4Body": "Ми приймаємо зміни та постійно вдосконалюємося.",
-    "statsEyebrow": "Indexia Group поглядом",
-    "statsTitle": "Цифри за нашим зростанням",
     "stat1Label": "Компанії",
     "stat2Label": "Локації",
     "stat3Label": "Років у бізнесі",

@@ -240,7 +240,7 @@ const HomeHeroGallery = ({
   };
 
   return (
-    <div className="w-full px-5 sm:px-8 -mt-2">
+    <div className="w-full px-5 sm:px-8 pt-3">
       <div
         ref={wrapRef}
         onPointerDown={handlePointerDown}
@@ -249,7 +249,7 @@ const HomeHeroGallery = ({
       >
         <div
           ref={trackRef}
-          className="infinite-marquee-track hero-marquee-track gap-4 py-2 select-none"
+          className="infinite-marquee-track hero-marquee-track gap-4 py-1 select-none"
           style={{ "--marquee-animation": "none" } as CSSProperties}
         >
           {marqueeList.map((p, i) => (

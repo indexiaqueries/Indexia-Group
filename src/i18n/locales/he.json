@@ -8,8 +8,7 @@
       "home": "בית",
       "groupCompanies": "חברות הקבוצה",
       "companies": "חברות",
-      "contact": "צרו קשר",
-      "viewAllCompanies": "הצג את כל החברות →"
+      "contact": "צרו קשר"
     },
     "aria": {
       "selectLanguage": "בחר שפה",
@@ -610,8 +609,6 @@
     "value3Body": "עסקים הם בסופו של דבר על אנשים.",
     "value4Title": "חדשנות",
     "value4Body": "אנחנו מחבקים שינוי ומתפתחים כל הזמן.",
-    "statsEyebrow": "Indexia Group במבט אחד",
-    "statsTitle": "המספרים מאחורי הצמיחה שלנו",
     "stat1Label": "חברות",
     "stat2Label": "מיקומים",
     "stat3Label": "שנים בעסק",

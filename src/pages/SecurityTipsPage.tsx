@@ -54,8 +54,7 @@ type SectionProps = {
 };
 
 const SecuritySection = ({ eyebrow, heading, subtitle, tips, contact, image }: SectionProps) => (
-  <div className="mx-auto max-w-6xl">
-    <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+  <div className="mx-auto max-w-6xl">        <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
       <Eyebrow className="mb-3">{eyebrow}</Eyebrow>
       <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
         {heading}
@@ -151,7 +150,7 @@ const SecurityTipsPage = () => {
         </button>
       </HeroBackdrop>
 
-      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <SecuritySection
           eyebrow={t("securityTipsPage.featuresEyebrow")}
           heading={t("securityTipsPage.featuresHeading")}
@@ -161,7 +160,7 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section id="practices" className="scroll-mt-24 bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section id="practices" className="scroll-mt-24 bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <SecuritySection
           eyebrow={t("securityTipsPage.practicesEyebrow")}
           heading={t("securityTipsPage.practicesHeading")}
@@ -171,7 +170,7 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section className="bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <SecuritySection
           eyebrow={t("securityTipsPage.contactsEyebrow")}
           heading={t("securityTipsPage.contactsHeading")}

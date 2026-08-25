@@ -20,10 +20,10 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative bg-white px-4 py-12 sm:px-5 sm:py-16 lg:px-8 lg:py-20">
+    <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <Reveal className="mx-auto mb-10 sm:mb-14 max-w-2xl text-center">
+        <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("careersPage.cultureEyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(26px,4vw,40px)] font-bold text-(--color-ink)">
             {t("careersPage.cultureHeading")}
@@ -39,7 +39,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
               alt="Indexia Group culture and team"
               width={1200}
               height={800}
-              className="aspect-[16/9] w-full object-cover sm:aspect-[21/9]"
+              className="aspect-[16/7] w-full object-cover sm:aspect-[21/8]"
             />
             {/* Gradient overlays for card readability */}
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-linear-to-br from-black/40 via-transparent to-black/40" />
@@ -75,10 +75,10 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
         </Reveal>
 
         {/* Culture Paragraphs */}
-        <div className="mt-12 grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
           {culture.map((paragraph, i) => (
             <Reveal key={i} delay={i * 0.1} amount={0.2}>
-              <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 sm:p-7 shadow-sm transition-all duration-300 hover:shadow-md">
+              <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-4 sm:p-5 shadow-sm transition-all duration-300 hover:shadow-md">
                 <div className="mb-3 flex items-center gap-3">
                   <span
                     className="flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold text-white"
@@ -88,7 +88,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
                   </span>
                   <span className="h-px flex-1 bg-slate-100" />
                 </div>
-                <p className="flex-1 text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-slate-600">{paragraph}</p>
+                <p className="flex-1 text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-slate-600">{paragraph}</p>
               </div>
             </Reveal>
           ))}

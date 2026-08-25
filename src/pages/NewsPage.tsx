@@ -28,7 +28,7 @@ const NewsPage = () => {
       <NewsHero />
       <NewsVideo />
 
-      <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="mb-8 flex items-center gap-4">

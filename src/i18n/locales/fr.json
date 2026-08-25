@@ -8,8 +8,7 @@
       "home": "Accueil",
       "groupCompanies": "Entreprises du Groupe",
       "companies": "Entreprises",
-      "contact": "Contact",
-      "viewAllCompanies": "Voir toutes les entreprises →"
+      "contact": "Contact"
     },
     "aria": {
       "selectLanguage": "Choisir la langue",
@@ -997,8 +996,6 @@
     "value3Body": "Les affaires sont fondamentalement des personnes.",
     "value4Title": "Innovation",
     "value4Body": "Nous embrassons le changement et nous améliorons continuellement.",
-    "statsEyebrow": "Indexia Group en Chiffres",
-    "statsTitle": "Les Chiffres Derrière Notre Croissance",
     "stat1Label": "Entreprises",
     "stat2Label": "Bureaux",
     "stat3Label": "Années d'Expérience",

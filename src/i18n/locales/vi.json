@@ -8,8 +8,7 @@
       "home": "Trang chủ",
       "groupCompanies": "Các Công ty Tập đoàn",
       "companies": "Công ty",
-      "contact": "Liên hệ",
-      "viewAllCompanies": "Xem tất cả công ty →"
+      "contact": "Liên hệ"
     },
     "aria": {
       "selectLanguage": "Chọn ngôn ngữ",
@@ -610,8 +609,6 @@
     "value3Body": "Kinh doanh cuối cùng là về con người.",
     "value4Title": "Đổi Mới",
     "value4Body": "Chúng tôi đón nhận thay đổi và liên tục cải tiến.",
-    "statsEyebrow": "Indexia Group Nhìn Nhanh",
-    "statsTitle": "Những Con Số Đằng Sau Sự Phát Triển",
     "stat1Label": "Công Ty",
     "stat2Label": "Địa Điểm",
     "stat3Label": "Năm Hoạt Động",

@@ -32,7 +32,7 @@ const ImpactBand = ({
   const action = `mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 ${actionClass}`;
 
   return (
-    <section className={`relative overflow-hidden px-5 py-20 sm:px-6 sm:py-24 lg:px-8 ${className}`}>
+    <section className={`relative overflow-hidden px-2 py-8 sm:px-3 sm:py-10 lg:px-5 ${className}`}>
       <img
         src={image}
         alt=""

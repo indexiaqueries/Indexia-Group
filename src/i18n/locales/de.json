@@ -8,8 +8,7 @@
       "home": "Startseite",
       "groupCompanies": "Gruppenunternehmen",
       "companies": "Unternehmen",
-      "contact": "Kontakt",
-      "viewAllCompanies": "Alle Unternehmen ansehen →"
+      "contact": "Kontakt"
     },
     "aria": {
       "selectLanguage": "Sprache wählen",
@@ -997,8 +996,6 @@
     "value3Body": "Geschäft handelt von Menschen.",
     "value4Title": "Innovation",
     "value4Body": "Wir umarmen Veränderung.",
-    "statsEyebrow": "Indexia Group Auf Einen Blick",
-    "statsTitle": "Die Zahlen Hinter Unserem Wachstum",
     "stat1Label": "Unternehmen",
     "stat2Label": "Standorte",
     "stat3Label": "Jahre Erfahrung",

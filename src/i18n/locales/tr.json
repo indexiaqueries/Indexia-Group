@@ -8,8 +8,7 @@
       "home": "Ana Sayfa",
       "groupCompanies": "Grup Şirketleri",
       "companies": "Şirketler",
-      "contact": "İletişim",
-      "viewAllCompanies": "Tüm şirketleri görüntüle →"
+      "contact": "İletişim"
     },
     "aria": {
       "selectLanguage": "Dil seçin",
@@ -610,8 +609,6 @@
     "value3Body": "İş sonuçta insanlarla ilgilidir.",
     "value4Title": "İnovasyon",
     "value4Body": "Değişimi kucaklıyor ve sürekli geliştiriyoruz.",
-    "statsEyebrow": "Indexia Group Bir Bakışta",
-    "statsTitle": "Büyümenin Arkasındaki Sayılar",
     "stat1Label": "Şirket",
     "stat2Label": "Konum",
     "stat3Label": "İş Yılları",

@@ -8,8 +8,7 @@
       "home": "홈",
       "groupCompanies": "그룹 회사",
       "companies": "회사",
-      "contact": "문의하기",
-      "viewAllCompanies": "전체 회사 보기 →"
+      "contact": "문의하기"
     },
     "aria": {
       "selectLanguage": "언어 선택",
@@ -610,8 +609,6 @@
     "value3Body": "사업은 결국 사람에 관한 것입니다.",
     "value4Title": "혁신",
     "value4Body": "우리는 변화를 수용하고 지속적으로 개선합니다.",
-    "statsEyebrow": "Indexia Group 한눈에 보기",
-    "statsTitle": "성장 뒤의 숫자들",
     "stat1Label": "자회사",
     "stat2Label": "위치",
     "stat3Label": "사업 연수",

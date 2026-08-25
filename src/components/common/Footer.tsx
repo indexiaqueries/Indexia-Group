@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer-img/footer-img.webp";
 import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, Clock } from "lucide-react";
 import { phoneNumbers } from "../../data/contact";
 import BackToTop from "./BackToTop";
 
@@ -45,7 +45,6 @@ const contactInfo: {
 }[] = [
   { icon: Mail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
   { icon: Phone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
-  { icon: MapPin, text: "Mumbai · Delhi · Ecuador", href: "/contact" },
   { icon: Clock, textKey: "footer.hours" },
 ];
 
@@ -91,7 +90,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-10 sm:px-6 sm:pt-14 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-3 pt-10 sm:px-4 sm:pt-14 lg:px-6">
 
         {/* Brand + CTA row — compact, horizontal on desktop */}
         <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:justify-between">
@@ -163,7 +162,7 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 mt-4 border-t border-white/8 bg-black/30">
-        <div className="mx-auto max-w-7xl px-4 py-3 text-center text-[13px] text-white/50 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-3 py-3 text-center text-[13px] text-white/50 sm:px-4 lg:px-6">
           <p>{t("footer.rights")}</p>
         </div>
       </div>

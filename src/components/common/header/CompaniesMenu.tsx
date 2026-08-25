@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { companies } from "../../../data/companies";
@@ -54,15 +54,6 @@ const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenu
               isActive={!!isCompanyPage && currentSlug === company.slug}
             />
           ))}
-        </div>
-        <div className="mt-1.5 border-t border-white/10 pt-1.5">
-          <Link
-            to="/businesses"
-            onClick={onClose}
-            className="block rounded-lg px-2.5 py-1 text-[13px] font-bold text-(--color-yellow) transition-colors hover:bg-white/10"
-          >
-            {t("header.menu.viewAllCompanies")}
-          </Link>
         </div>
       </DropdownPanel>
     </div>

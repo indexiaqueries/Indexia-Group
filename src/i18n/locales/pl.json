@@ -8,8 +8,7 @@
       "home": "Strona główna",
       "groupCompanies": "Firmy Grupy",
       "companies": "Firmy",
-      "contact": "Kontakt",
-      "viewAllCompanies": "Zobacz wszystkie firmy →"
+      "contact": "Kontakt"
     },
     "aria": {
       "selectLanguage": "Wybierz język",
@@ -610,8 +609,6 @@
     "value3Body": "Biznes to ostatecznie o ludziach.",
     "value4Title": "Innowacyjność",
     "value4Body": "Przyjmujemy zmiany i ciągle się doskonalimy.",
-    "statsEyebrow": "Indexia Group w Skrócie",
-    "statsTitle": "Liczby Stojące za Naszym Wzrostem",
     "stat1Label": "Firmy",
     "stat2Label": "Lokalizacje",
     "stat3Label": "Lat w Biznesie",

@@ -124,7 +124,7 @@ const ContactInfo = () => {
       {t("contactInfo.paragraph")}
     </p>
 
-    <div className="mt-8 sm:mt-10 flex flex-1 flex-col justify-center gap-4 sm:gap-5">
+    <div className="mt-5 sm:mt-6 flex flex-1 flex-col justify-center gap-3 sm:gap-4">
       <EmailsSection />
       <LocationHoursTile />
     </div>
