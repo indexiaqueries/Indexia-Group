@@ -1,15 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { NavLink } from "react-router-dom";
 import { EllipsisVertical, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
 import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
-import CompaniesMenu from "./header/CompaniesMenu";
-import LanguageMenu from "./header/LanguageMenu";
-import MobileMenu from "./header/MobileMenu";
 import { navPillClass } from "./header/navPill";
 import { useHeaderScroll } from "./header/useHeaderScroll";
+
+// Lazy-load sub-menus — they pull in companies data and extra components,
+// but are only needed when the user actually opens the menu.
+const CompaniesMenu = lazy(() => import("./header/CompaniesMenu"));
+const LanguageMenu = lazy(() => import("./header/LanguageMenu"));
+const MobileMenu = lazy(() => import("./header/MobileMenu"));
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -91,12 +94,14 @@ const Header = () => {
           {t("header.nav.about")}
         </NavLink>
 
-        <CompaniesMenu
-          open={companiesOpen}
-          reducedMotion={!!prefersReducedMotion}
-          onToggle={setCompaniesOpen}
-          onClose={closeAll}
-        />
+        <Suspense fallback={null}>
+          <CompaniesMenu
+            open={companiesOpen}
+            reducedMotion={!!prefersReducedMotion}
+            onToggle={setCompaniesOpen}
+            onClose={closeAll}
+          />
+        </Suspense>
 
         <NavLink
           to="/contact"
@@ -107,12 +112,14 @@ const Header = () => {
       </nav>
 
       <div className="pointer-events-auto absolute inset-e-3 top-1/2 z-30 flex -translate-y-1/2 items-center gap-2 sm:inset-e-5">
-        <LanguageMenu
-          open={langOpen}
-          reducedMotion={!!prefersReducedMotion}
-          onToggle={setLangOpen}
-          onClose={closeAll}
-        />
+        <Suspense fallback={null}>
+          <LanguageMenu
+            open={langOpen}
+            reducedMotion={!!prefersReducedMotion}
+            onToggle={setLangOpen}
+            onClose={closeAll}
+          />
+        </Suspense>
 
         <button
           onClick={() => setMenuOpen((o) => !o)}
@@ -131,11 +138,13 @@ const Header = () => {
           )}
         </button>
 
-        <MobileMenu
-          open={menuOpen}
-          reducedMotion={!!prefersReducedMotion}
-          onClose={closeAll}
-        />
+        <Suspense fallback={null}>
+          <MobileMenu
+            open={menuOpen}
+            reducedMotion={!!prefersReducedMotion}
+            onClose={closeAll}
+          />
+        </Suspense>
       </div>
     </header>
   );

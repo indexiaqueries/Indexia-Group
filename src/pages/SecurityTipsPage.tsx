@@ -7,7 +7,8 @@ import HeroBackdrop from "../components/banners/HeroBackdrop";
 import ImageSlot from "../components/common/ImageSlot";
 import ImpactBand from "../components/common/ImpactBand";
 import { colors } from "../lib/theme";
-import securityBg from "../assets/public-images/heroes/security-hero.webp";
+const securityBg = "/images/heroes/security-hero.webp";
+const securityFooterImg = "/images/security/security-footer.webp";
 import { siteImages } from "../data/siteImages";
 import type { ImageSlotData } from "../components/common/ImageSlot";
 import {
@@ -166,7 +167,7 @@ const SecurityTipsPage = () => {
           heading={t("securityTipsPage.practicesHeading")}
           subtitle={t("securityTipsPage.practicesSubtitle")}
           tips={practices}
-          image={siteImages.securityPractices}
+          image={siteImages.securityKeepSafe}
         />
       </section>
 
@@ -177,11 +178,12 @@ const SecurityTipsPage = () => {
           subtitle={t("securityTipsPage.contactsSubtitle")}
           tips={contacts}
           contact
+          image={siteImages.securityProtectDetails}
         />
       </section>
 
       <ImpactBand
-        image={securityBg}
+        image={securityFooterImg}
         eyebrow={t("securityTipsPage.contactsEyebrow")}
         title={t("securityTipsPage.ctaTitle")}
         body={t("securityTipsPage.ctaBody")}

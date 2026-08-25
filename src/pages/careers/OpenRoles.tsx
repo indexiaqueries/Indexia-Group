@@ -31,15 +31,15 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
   const internCount = roles.filter((r) => r.type === "Intern").length;
 
   return (
-    <section id="open-roles" className="scroll-mt-24 bg-(--color-mist) px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="open-roles" className="scroll-mt-24 bg-(--color-mist) px-4 py-12 sm:px-5 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
-        <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+        <Reveal className="mx-auto mb-8 sm:mb-12 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("careersPage.rolesEyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(26px,4vw,40px)] font-bold text-(--color-ink)">
             {t("careersPage.rolesHeading")}
           </h2>
-          <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{t("careersPage.rolesSubtitle")}</p>
+          <p className="mt-4 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-(--color-muted)">{t("careersPage.rolesSubtitle")}</p>
         </Reveal>
 
         {/* Banner Image */}
@@ -61,7 +61,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
           <div className="mx-auto flex w-fit items-center gap-1 rounded-full border border-slate-200 bg-white p-1 shadow-sm">
             <button
               onClick={() => setActiveType("Full-time")}
-              className={`flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-bold transition-all duration-200 ${
+              className={`flex items-center gap-2 rounded-full px-4 py-2 sm:px-6 sm:py-2.5 text-[13px] sm:text-sm font-bold transition-all duration-200 ${
                 activeType === "Full-time"
                   ? "bg-(--color-teal) text-white shadow-md"
                   : "text-slate-500 hover:text-slate-700"
@@ -78,7 +78,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
             </button>
             <button
               onClick={() => setActiveType("Intern")}
-              className={`flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-bold transition-all duration-200 ${
+              className={`flex items-center gap-2 rounded-full px-4 py-2 sm:px-6 sm:py-2.5 text-[13px] sm:text-sm font-bold transition-all duration-200 ${
                 activeType === "Intern"
                   ? "bg-(--color-teal) text-white shadow-md"
                   : "text-slate-500 hover:text-slate-700"
@@ -98,8 +98,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
 
         {/* Loading State */}
         {loading && (
-          <Reveal>
-            <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-12 text-center">
+          <Reveal>              <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-8 sm:p-12 text-center">
               <div className="mx-auto mb-3 h-6 w-6 animate-spin rounded-full border-2 border-(--color-teal) border-t-transparent" />
               <p className="text-sm text-slate-500">Loading openings...</p>
             </div>
@@ -113,7 +112,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
             const deptColor = departmentColors[role.department] || colors.teal;
             return (
               <Reveal key={role._id || role.title} delay={(i % 3) * 0.06} amount={0.1}>
-                <div className="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                <div className="group rounded-2xl border border-slate-100 bg-white p-4 sm:p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div className="min-w-0 flex-1">
                       {/* Tags */}
@@ -133,13 +132,13 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
                       </div>
 
                       {/* Title */}
-                      <h3 className="font-display mt-3 text-lg font-bold text-slate-900 group-hover:text-(--color-teal) transition-colors">
+                      <h3 className="font-display mt-3 text-[17px] sm:text-lg font-bold text-slate-900 group-hover:text-(--color-teal) transition-colors">
                         {role.title}
                       </h3>
 
                       {/* Description */}
                       {role.description && (
-                        <p className="mt-2 text-sm leading-6 text-slate-500">{role.description}</p>
+                        <p className="mt-2 text-[13px] sm:text-sm leading-5 sm:leading-6 text-slate-500">{role.description}</p>
                       )}
 
                       {/* Requirements */}
@@ -177,8 +176,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
 
         {/* Empty State */}
         {filteredRoles.length === 0 && (
-          <Reveal>
-            <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-12 text-center">
+          <Reveal>              <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-8 sm:p-12 text-center">
               <p className="text-sm text-slate-500">No {activeType.toLowerCase()} positions available at the moment.</p>
             </div>
           </Reveal>

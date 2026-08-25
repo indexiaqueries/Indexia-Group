@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
+import DeferredFooter from "../components/common/DeferredFooter";
 import FoundationQR from "../components/common/FoundationQR";
 
 const MainLayout = () => {
@@ -27,7 +27,7 @@ const MainLayout = () => {
           <Outlet />
         </div>
       </main>
-      <Footer />
+      <DeferredFooter />
       {showQR && <FoundationQR />}
     </div>
   );

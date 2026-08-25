@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import { memo, type CSSProperties, type ReactNode } from "react";
 import { useInView } from "../../hooks/useInView";
 
 type RevealProps = {
@@ -31,4 +31,4 @@ const Reveal = ({
   );
 };
 
-export default Reveal;
+export default memo(Reveal);

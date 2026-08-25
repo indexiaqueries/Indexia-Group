@@ -5,7 +5,7 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
 import { colors } from "../lib/theme";
-import legalBg from "../assets/public-images/heroes/legal-hero.webp";
+const legalBg = "/images/heroes/legal-hero.webp";
 import { legalDocuments, type LegalDocumentId, type LegalSection } from "../data/legal";
 
 const ROUTES: Record<LegalDocumentId, string> = {

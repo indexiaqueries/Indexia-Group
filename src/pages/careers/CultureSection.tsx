@@ -20,10 +20,10 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative bg-white px-5 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section className="relative bg-white px-4 py-12 sm:px-5 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <Reveal className="mx-auto mb-14 max-w-2xl text-center">
+        <Reveal className="mx-auto mb-10 sm:mb-14 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("careersPage.cultureEyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(26px,4vw,40px)] font-bold text-(--color-ink)">
             {t("careersPage.cultureHeading")}
@@ -78,7 +78,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
         <div className="mt-12 grid grid-cols-1 gap-5 lg:grid-cols-2">
           {culture.map((paragraph, i) => (
             <Reveal key={i} delay={i * 0.1} amount={0.2}>
-              <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-md">
+              <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 sm:p-7 shadow-sm transition-all duration-300 hover:shadow-md">
                 <div className="mb-3 flex items-center gap-3">
                   <span
                     className="flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold text-white"
@@ -88,7 +88,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
                   </span>
                   <span className="h-px flex-1 bg-slate-100" />
                 </div>
-                <p className="flex-1 text-[15px] leading-8 text-slate-600">{paragraph}</p>
+                <p className="flex-1 text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-slate-600">{paragraph}</p>
               </div>
             </Reveal>
           ))}

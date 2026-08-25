@@ -43,7 +43,7 @@ const CareersHero = () => {
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 py-20 pt-28 sm:px-6 lg:px-8 lg:py-24">
+      <div className="relative mx-auto w-full max-w-7xl px-4 py-14 pt-24 sm:px-5 sm:py-20 sm:pt-28 lg:px-8 lg:py-24">
         <div className="mb-5 flex items-center gap-3">
           <span className="h-px w-10 bg-(--color-yellow)/60" />
           <Eyebrow color="var(--color-yellow)" size="md">
@@ -59,7 +59,7 @@ const CareersHero = () => {
           </span>
         </h1>
 
-        <p className="mt-6 max-w-2xl text-[17px] leading-8 text-white/80">
+        <p className="mt-5 max-w-2xl text-[15px] sm:text-[17px] leading-7 sm:leading-8 text-white/80">
           {t("careersPage.subtitle")}
         </p>
 
@@ -67,7 +67,7 @@ const CareersHero = () => {
           <button
             type="button"
             onClick={() => document.getElementById("open-roles")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-8 py-3.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+            className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-3 sm:px-8 sm:py-3.5 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
           >
             {t("careersPage.ctaButton")}
             <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ const CareersHero = () => {
           </button>
         </div>
 
-        <div className="mt-14 flex flex-wrap items-center gap-8 text-sm text-white/60">
+        <div className="mt-10 sm:mt-14 flex flex-wrap items-center gap-5 sm:gap-8 text-[13px] sm:text-sm text-white/60">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-(--color-teal)" />
             {t("careersPage.rolesSubtitle")}

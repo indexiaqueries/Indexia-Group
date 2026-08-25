@@ -37,10 +37,19 @@ const NewsVideo = () => {
               <button
                 type="button"
                 onClick={() => setPlayVideo(true)}
-                className="group absolute inset-0 flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_35%,rgba(242,242,49,0.2),transparent_32%),linear-gradient(135deg,rgba(12,54,82,0.98),rgba(6,106,156,0.82)_48%,rgba(38,174,144,0.76))] text-white"
+                className="group absolute inset-0 flex h-full w-full items-center justify-center text-white"
                 aria-label="Play Indexia Finance TV ad"
               >
-                <span className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px)] bg-size-[42px_42px] opacity-30" />
+                <img
+                  src="https://img.youtube.com/vi/pnmXG9j8148/maxresdefault.jpg"
+                  alt="Indexia Finance TV Ad - News18"
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <span className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/30" />
                 <span className="relative flex h-18 w-18 items-center justify-center rounded-full border border-white/35 bg-white/15 text-(--color-yellow) backdrop-blur-md transition-transform duration-300 group-hover:scale-105">
                   <Play size={30} fill="currentColor" strokeWidth={1.5} aria-hidden="true" />
                 </span>

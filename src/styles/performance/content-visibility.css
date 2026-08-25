@@ -1,0 +1,25 @@
+/*
+ * content-visibility: auto tells the browser to skip layout/paint work
+ * for off-screen sections, significantly reducing rendering cost on long pages.
+ * contain-intrinsic-size provides an estimated height so the scrollbar stays accurate.
+ */
+
+/* Any <section> that is not the first in a page benefits from this.
+ * The browser auto-calculates the intrinsic size from the first render pass. */
+section:not(:first-child) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* Footer is always below the fold */
+footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 400px;
+}
+
+/* Reduce scope on very small screens where the cost/benefit ratio is lower */
+@media (max-width: 639px) {
+  section:not(:first-child) {
+    contain-intrinsic-size: auto 500px;
+  }
+}

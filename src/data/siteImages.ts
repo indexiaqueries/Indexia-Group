@@ -11,12 +11,18 @@ import companyEnquiry from "../assets/company-pages-img/common/enquiry-support.w
 import companyImpact from "../assets/company-pages-img/common/impact-banner.webp";
 import companyStory from "../assets/company-pages-img/common/overview-banner.webp";
 import newsFeatured from "../assets/news&knowledge-img/featured-story.webp";
-import securityFeatures from "../assets/security-img/online-security.webp";
-import researchOTGImg from "../assets/public-images/research/otg-report.webp";
-import researchACTImg from "../assets/public-images/research/act-report.webp";
-import researchSpecialImg from "../assets/public-images/research/special-reports.webp";
-import newsFeaturedNew from "../assets/public-images/news/featured-story.webp";
-import securityPracticesImg from "../assets/public-images/security/online-security.webp";
+const securityFeatures = "/images/security/online-security.webp";
+// Images moved to public/images/ — referenced as absolute URL paths
+const researchOTGImg = "/images/research/otg-report.webp";
+const researchACTImg = "/images/research/act-report.webp";
+const researchSpecialImg = "/images/research/special-reports.webp";
+const newsFeaturedNew = "/images/news/featured-story.webp";
+const securityPracticesImg = "/images/security/online-security.webp";
+const featuredEnquiryImg = "/images/news/featured-enquiry.webp";
+const researchFooterImg = "/images/research/research-footer.webp";
+const securityProtectDetailsImg = "/images/security/protect-your-details.webp";
+const securityKeepSafeImg = "/images/security/keep-you-safe-online.webp";
+const securityFooterImg = "/images/security/security-footer.webp";
 
 export const siteImages: Record<string, ImageSlotData> = {
   contactCorporate: {
@@ -90,5 +96,25 @@ export const siteImages: Record<string, ImageSlotData> = {
   securityFeatures: {
     src: securityFeatures,
     label: "Online security illustration",
+  },
+  featuredEnquiry: {
+    src: featuredEnquiryImg,
+    label: "Featured enquiry image",
+  },
+  researchFooter: {
+    src: researchFooterImg,
+    label: "Research footer image",
+  },
+  securityProtectDetails: {
+    src: securityProtectDetailsImg,
+    label: "Protect your details illustration",
+  },
+  securityKeepSafe: {
+    src: securityKeepSafeImg,
+    label: "Keep you safe online illustration",
+  },
+  securityFooter: {
+    src: securityFooterImg,
+    label: "Security footer image",
   },
 };

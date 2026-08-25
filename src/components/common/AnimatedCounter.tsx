@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useInView } from "../../hooks/useInView";
 import { useCountUp } from "../../hooks/useCountUp";
 
@@ -76,4 +77,4 @@ const AnimatedCounter = ({
   );
 };
 
-export default AnimatedCounter;
+export default memo(AnimatedCounter);

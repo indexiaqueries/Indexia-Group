@@ -31,3 +31,6 @@
 /* ── Accessibility ── */
 @import "./styles/accessibility/reduced-motion.css";
 @import "./styles/accessibility/print.css";
+
+/* ── Performance ── */
+@import "./styles/performance/content-visibility.css";

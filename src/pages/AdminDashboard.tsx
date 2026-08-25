@@ -87,6 +87,8 @@ const AdminDashboard = () => {
   // Shared state
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [loginLoading, setLoginLoading] = useState(false);
+  const [loginError, setLoginError] = useState("");
 
   // ── New opening form state ──
   const emptyForm = { title: "", department: "Finance", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "", requirements: "" };
@@ -258,9 +260,25 @@ const AdminDashboard = () => {
           <div className="w-full max-w-sm">
             <h1 className="font-display mb-6 text-center text-2xl font-bold text-(--color-ink)">Admin Login</h1>
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                setIsAuthed(true);
+                if (!token) return;
+                setLoginLoading(true);
+                setLoginError("");
+                try {
+                  const res = await fetch("/api/admin/applications", {
+                    headers: { "x-admin-token": token },
+                  });
+                  if (res.ok) {
+                    setIsAuthed(true);
+                  } else {
+                    setLoginError("Invalid admin token. Please try again.");
+                  }
+                } catch {
+                  setLoginError("Cannot reach server. Please try again.");
+                } finally {
+                  setLoginLoading(false);
+                }
               }}
               className="space-y-4"
             >
@@ -276,13 +294,13 @@ const AdminDashboard = () => {
                   className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20"
                 />
               </div>
-              {error && <p className="text-center text-sm text-red-500">{error}</p>}
+              {loginError && <p className="text-center text-sm text-red-500">{loginError}</p>}
               <button
                 type="submit"
-                disabled={loading || !token}
+                disabled={loginLoading || !token}
                 className="w-full rounded-full bg-(--color-teal) px-6 py-3 text-sm font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-(--color-teal-deep) disabled:opacity-50"
               >
-                {loading ? "Signing in..." : "Sign In"}
+                {loginLoading ? "Signing in..." : "Sign In"}
               </button>
             </form>
             <Link to="/" className="mt-6 flex items-center justify-center gap-2 text-sm text-(--color-muted) hover:text-(--color-teal)">
