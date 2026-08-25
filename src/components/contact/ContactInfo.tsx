@@ -1,13 +1,11 @@
-import type { CSSProperties } from "react";
-import { Clock3, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { phoneNumbers } from "../../data/contact";
-import { accent, cardBaseClass, monoFont } from "../../lib/theme";
+import { accent, monoFont } from "../../lib/theme";
 import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 
-const tileLabelClass = "block text-[10px] font-bold uppercase tracking-[0.15em]";
 
 const emailAddresses = [
   { label: "General Enquiries", email: "contactus@indexiagroup.com", color: accent.green },
@@ -22,7 +20,7 @@ const EmailsSection = () => {
   return (
   <div
     ref={ref}
-    className={`reveal rounded-2xl border border-(--color-sand-deep) bg-(--color-paper) p-5 shadow-sm${inView ? " is-in-view" : ""}`}
+    className={`reveal rounded-2xl border border-slate-700 bg-slate-800 p-5 shadow-sm${inView ? " is-in-view" : ""}`}
   >
     <Eyebrow size="md" color={accent.green} style={{ letterSpacing: "0.18em" }}>
       {t("contactInfo.enquiries")}
@@ -54,56 +52,17 @@ const EmailsSection = () => {
 const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[number]) => {
   const { t } = useTranslation();
   return (
-  <a href={href} className="group flex items-center gap-4 py-3.5 first:pt-1 last:pb-1">
-    <span
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
-      style={{ backgroundColor: accent.blue, boxShadow: `0 6px 18px rgba(6,106,156,.22)` }}
-    >
-      <Phone size={20} />
+  <a href={href} className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm transition-all duration-200 hover:border-(--color-blue)/40 hover:shadow-md">
+    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent.blue }}>
+      <Phone size={12} />
     </span>
-    <span>
-      <span className={tileLabelClass} style={{ color: accent.gray }}>
-        {labelKey ? t(`phoneLabel.${labelKey}`, { defaultValue: label }) : label}
-      </span>
-      <span className="mt-1 block text-base font-bold text-slate-800 group-hover:text-(--color-blue)" style={monoFont}>
-        {number}
-      </span>
+    <span className="text-[10px] font-bold uppercase tracking-wide" style={{ color: accent.gray }}>
+      {labelKey ? t(`phoneLabel.${labelKey}`, { defaultValue: label }) : label}
+    </span>
+    <span className="text-[13px] font-bold text-slate-800 group-hover:text-(--color-blue)" style={monoFont}>
+      {number}
     </span>
   </a>
-  );
-};
-
-const LocationHoursTile = () => {
-  const { t } = useTranslation();
-  const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
-
-  return (
-  <div
-    ref={ref}
-    className={`reveal flex items-start gap-4 ${cardBaseClass} p-5${inView ? " is-in-view" : ""}`}
-    style={{ "--reveal-delay": "0.1s" } as CSSProperties}
-  >
-    <span
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-white shadow-lg"
-      style={{ backgroundColor: accent.blue, boxShadow: `0 6px 18px rgba(6,106,156,.22)` }}
-    >
-      <MapPin size={20} />
-    </span>
-    <div>
-      <span className={tileLabelClass} style={{ color: accent.gray }}>
-        {t("contactInfo.location")}
-      </span>
-      <span className="mt-1 block text-sm font-semibold text-slate-800">{t("contactInfo.country")}</span>
-
-      <div className="mt-4 flex items-center gap-2 border-t border-slate-100 pt-4">
-        <Clock3 size={16} style={{ color: accent.green }} />
-        <span className={tileLabelClass.replace("block ", "")} style={{ color: accent.gray }}>
-          {t("contactInfo.workingHours")}
-        </span>
-      </div>
-      <span className="mt-1 block text-sm font-semibold text-slate-800">{t("footer.hours")}</span>
-    </div>
-  </div>
   );
 };
 
@@ -126,14 +85,14 @@ const ContactInfo = () => {
 
     <div className="mt-5 sm:mt-6 flex flex-1 flex-col justify-center gap-3 sm:gap-4">
       <EmailsSection />
-      <LocationHoursTile />
+
     </div>
 
-<div className="mt-6 sm:mt-8 rounded-2xl border border-(--color-sand-deep) bg-(--color-paper) p-4 sm:p-5 shadow-sm">
-      <Eyebrow size="md" color={accent.green} style={{ letterSpacing: "0.18em" }}>
+<div className="mt-6 sm:mt-8">
+      <span className="mb-3 block font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
         {t("contactInfo.phoneNumbers")}
-      </Eyebrow>
-      <div className="mt-2 divide-y divide-(--color-sand)">
+      </span>
+      <div className="flex flex-wrap gap-2">
         {phoneNumbers.map((phone) => (
           <PhoneTile key={phone.number} {...phone} />
         ))}

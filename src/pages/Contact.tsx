@@ -1,17 +1,12 @@
 import { useTranslation } from "react-i18next";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
-import ImageSlot from "../components/common/ImageSlot";
-import MediaFrame from "../components/common/MediaFrame";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { branches } from "../data/contact";
 import { GlowingCards, GlowingCard } from "../components/lightswind/glowing-cards";
-import { siteImages } from "../data/siteImages";
 import { accent } from "../lib/theme";
-import Reveal from "../components/common/Reveal";
-import { getResponsiveVariants } from "../lib/responsiveVariants";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -82,17 +77,7 @@ const Contact = () => {
           <div className="flex flex-col gap-6 sm:gap-8 lg:sticky lg:top-28">
             <ContactInfo />
           </div>
-          <div className="flex flex-col gap-4 sm:gap-5">
-            <Reveal variant="scale" y={20} amount={0.15}>
-              <MediaFrame className="image-zoom-frame shadow-sm ring-1 ring-slate-200 rounded-2xl">
-                <ImageSlot
-                  {...siteImages.contactEnquiry}
-                  aspect="aspect-[16/9]"
-                  className="image-zoom-media rounded-2xl"
-                  srcSet={siteImages.contactEnquiry?.src ? getResponsiveVariants(siteImages.contactEnquiry.src) ?? undefined : undefined}
-                />
-              </MediaFrame>
-            </Reveal>
+          <div className="flex flex-col">
             <EnquiryForm />
           </div>
         </div>

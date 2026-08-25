@@ -127,7 +127,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     <div
       ref={ref}
       id="enquiry-form"
-      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-white bg-white px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
+      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-slate-700 bg-slate-800 px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
       style={{ "--reveal-delay": "0.1s" } as CSSProperties}
     >
       <div

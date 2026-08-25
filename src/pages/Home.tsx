@@ -68,53 +68,44 @@ const Home = () => {
     </section>
 
     {/* Our Reach */}
-    <section className="relative overflow-hidden bg-reach-gradient px-3 sm:px-4 lg:px-6 pt-5">
-      <div aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-72 sm:h-96 w-72 sm:w-96 rounded-full bg-(--color-teal)/25 blur-[100px] sm:blur-[120px]" />
-      <div aria-hidden="true" className="pointer-events-none absolute -inset-s-40 bottom-0 h-64 sm:h-80 w-64 sm:w-80 rounded-full bg-(--color-yellow)/15 blur-[80px] sm:blur-[100px]" />
+    <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 sm:h-64 w-48 sm:w-64 rounded-full bg-(--color-teal)/15 blur-[80px] sm:blur-[100px]" />
+      <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 sm:h-52 w-40 sm:w-52 rounded-full bg-(--color-yellow)/10 blur-[60px] sm:blur-[80px]" />
       <div className="container relative">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <Eyebrow color="var(--color-yellow)">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
-          <h2 className="font-display text-[clamp(22px,4vw,42px)] font-bold text-white">
+        <Reveal className="mx-auto max-w-xl text-center">
+          <Eyebrow color="var(--color-yellow)" className="mb-1">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
+          <h2 className="font-display text-[clamp(20px,3.5vw,36px)] font-bold text-white">
             {t("homeReach.title", "Trusted Across Borders")}
           </h2>
-          <p className="text-[10px] sm:text-[12px] leading-6 sm:leading-7 text-white/70">
-            {t("homeReach.subtitle", "Our businesses serve clients worldwide with the same commitment to integrity and results.")}
-          </p>
         </Reveal>
-
-        {/* Globe */}
-        <div className="mx-auto -my-2">
-          <div className="relative mx-auto h-48 sm:h-60 w-full max-w-lg lg:h-80">
-            <Suspense fallback={<div className="h-full w-full" />}>
-              <Globe
-                theta={0.3}
-                dark={0}
-                scale={1}
-                diffuse={1.2}
-                baseColor="#066a9c"
-                markerColor="#26ae90"
-                glowColor="#ffffff"
-                mapSamples={50000}
-                mapBrightness={14}
-                enableZoom={false}
-                autoRotate={true}
-                autoRotateSpeed={0.004}
-              />
-            </Suspense>
-            {/* Indexia "I" overlay */}
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 flex items-center justify-center select-none">
-              <div
-                className="absolute h-[clamp(50px,10vw,90px)] w-[clamp(50px,10vw,90px)] rounded-full"
-                style={{ background: "radial-gradient(circle, rgba(242,242,49,0.25) 0%, rgba(242,242,49,0.08) 50%, transparent 70%)", filter: "blur(8px)" }}
-              />
-              <span className="relative font-display text-[clamp(50px,10vw,80px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_16px_rgba(242,242,49,0.5)]">
-                I
-              </span>
-            </div>
+n        {/* Globe + I overlay */}
+        <div className="relative mx-auto -my-1 h-36 sm:h-44 w-full max-w-sm lg:h-56">
+          <Suspense fallback={<div className="h-full w-full" />}>
+            <Globe
+              theta={0.3}
+              dark={0}
+              scale={1}
+              diffuse={1.2}
+              baseColor="#066a9c"
+              markerColor="#26ae90"
+              glowColor="#ffffff"
+              mapSamples={50000}
+              mapBrightness={14}
+              enableZoom={false}
+              autoRotate={true}
+              autoRotateSpeed={0.004}
+            />
+          </Suspense>
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 flex items-center justify-center select-none">
+            <div
+              className="absolute h-[clamp(40px,8vw,70px)] w-[clamp(40px,8vw,70px)] rounded-full"
+              style={{ background: "radial-gradient(circle, rgba(242,242,49,0.25) 0%, rgba(242,242,49,0.08) 50%, transparent 70%)", filter: "blur(6px)" }}
+            />
+            <span className="relative font-display text-[clamp(36px,8vw,64px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_12px_rgba(242,242,49,0.5)]">
+              I
+            </span>
           </div>
         </div>
-
-
       </div>
     </section>
 
