@@ -11,7 +11,6 @@ const Banner = () => {
   const { t } = useTranslation();
   const [currentId, setCurrentId] = useState(0);
   const [bgId, setBgId] = useState(0);
-  const [prevBgId, setPrevBgId] = useState<number | null>(null);
   const [morph, setMorph] = useState<MorphRect | null>(null);
   const prefersReducedMotion = useReducedMotion();
   const panels = useMemo(() => makePanels(t), [t]);
@@ -118,7 +117,6 @@ const Banner = () => {
   const nextPanel = () => selectPanel(panels[(currentIndex + 1) % panels.length].id);
 
   const handleMorphComplete = (id: number) => {
-    setPrevBgId(bgId);
     setBgId(id);
     setMorph(null);
   };
@@ -135,16 +133,13 @@ const Banner = () => {
             bgMobileImage={bgPanel.mobileImage}
             bgPlaceholderImage={bgPanel.placeholderImage}
             bgPlaceholderMobileImage={bgPanel.placeholderMobileImage}
-            prevBgImage={prevBgId !== null ? (panels.find((p) => p.id === prevBgId)?.image ?? panels[0].image) : undefined}
-            prevBgMobileImage={prevBgId !== null ? (panels.find((p) => p.id === prevBgId)?.mobileImage ?? panels[0].mobileImage) : undefined}
-            onPrevBgFadeOut={() => setPrevBgId(null)}
             morph={morph}
             panels={panels}
             prefersReducedMotion={prefersReducedMotion}
             onMorphComplete={handleMorphComplete}
           />
 
-          <div className="container relative z-3 flex-1 flex flex-col items-center justify-center text-center px-5 pt-28 pb-20 sm:pt-32 sm:pb-28 overflow-hidden">
+          <div className="container relative z-3 flex-1 flex flex-col items-center justify-center px-5 pt-28 pb-20 sm:pt-32 sm:pb-28 overflow-hidden">
             <HeroSlideContent panel={current} isHome={isHome} shadowLevel={shadowLevel} />
           </div>
 

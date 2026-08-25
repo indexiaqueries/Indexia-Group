@@ -65,9 +65,9 @@ const FooterLink = memo(({
   <li>
     <Link
       to={href}
-      className="group inline-flex items-center gap-2 text-sm text-white/85 transition-all duration-200 hover:text-(--color-yellow) link-underline"
+      className="group inline-flex items-center gap-1.5 text-[13px] text-white/75 transition-colors duration-200 hover:text-(--color-yellow)"
     >
-      <span className="text-(--color-teal) transition-transform duration-200 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">›</span>
+      <span className="text-(--color-teal) transition-transform duration-200 group-hover:translate-x-0.5">›</span>
       {t(labelKey)}
     </Link>
   </li>
@@ -77,7 +77,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer id="footer" className="relative overflow-hidden bg-(--color-deep) text-white">
+    <footer id="footer" className="relative overflow-hidden bg-[#040d14] text-white">
       <div className="absolute inset-0">
         <img
           src={footerBg}
@@ -87,45 +87,50 @@ const Footer = () => {
           height={678}
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-cover object-center opacity-[0.22] select-none pointer-events-none"
+          className="h-full w-full object-cover object-center opacity-[0.12] select-none pointer-events-none"
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-10 sm:px-6 sm:pt-14 lg:px-8">
 
-        {/* Brand section — full width, centered */}
-        <div className="flex flex-col items-center gap-4 text-center">
-          <img src={logo} alt={t("common.logoAlt")} width={96} height={96} className="h-24 w-24 object-contain sm:h-28 sm:w-28" />
-          <div>
-            <div className="flex flex-row items-center justify-center gap-1 text-2xl font-extrabold">
-              <span className="text-(--color-yellow)">Indexia</span>
-              <span className="text-white">Group</span>
+        {/* Brand + CTA row — compact, horizontal on desktop */}
+        <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex items-center gap-3">
+            <img src={logo} alt={t("common.logoAlt")} width={48} height={48} className="h-12 w-12 object-contain" />
+            <div>
+              <div className="flex items-center gap-1 text-lg font-extrabold">
+                <span className="text-(--color-yellow)">Indexia</span>
+                <span className="text-white">Group</span>
+              </div>
+              <p className="font-ledger text-[9px] font-bold uppercase tracking-[0.22em] text-white/60">
+                {t("footer.tagline")}
+              </p>
             </div>
-            <p className="mt-1 font-ledger text-[10px] font-bold uppercase tracking-[0.24em] text-white/75">
-              {t("footer.tagline")}
-            </p>
           </div>
-          <p className="w-full max-w-3xl text-sm leading-7 text-(--color-yellow)">
-            {t("footer.blurb")}
-          </p>
+          <Link
+            to="/contact"
+            className="shrink-0 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-5 py-2 text-[13px] font-bold text-(--color-yellow) transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow)/20"
+          >
+            {t("footer.enquiry")} →
+          </Link>
         </div>
 
-        {/* Sections below — Contact, Company, Resources, Legal */}
+        {/* Nav columns */}
         <h2 className="sr-only">{t("footer.siteFooter") || "Site footer navigation"}</h2>
-        <nav aria-label="Footer navigation" className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 lg:grid-cols-4 lg:divide-x lg:divide-white/10">
+        <nav aria-label="Footer navigation" className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-4 lg:divide-x lg:divide-white/10">
           {/* Contact */}
           <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />
-            <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
-            <div className="mt-6 space-y-4">
+            <div className="mt-2 h-0.5 w-8 rounded-full bg-(--color-teal)" />
+            <div className="mt-3 space-y-2">
               {contactInfo.map((item) => {
                 const Icon = item.icon;
                 const content = (
-                  <span className="flex items-start justify-start gap-3 text-sm text-white/85">
+                  <span className="flex items-start gap-2 text-[13px] text-white/80">
                     <span className="mt-0.5 shrink-0 text-(--color-teal)">
-                      <Icon className="h-4 w-4" />
+                      <Icon className="h-3.5 w-3.5" />
                     </span>
-                    <span className={`wrap-break-word min-w-0 ${item.href ? "transition-all duration-200 hover:text-(--color-yellow)" : ""}`}>
+                    <span className={`wrap-break-word min-w-0 ${item.href ? "transition-colors duration-200 hover:text-(--color-yellow)" : ""}`}>
                       {item.textKey ? t(item.textKey) : item.text}
                     </span>
                   </span>
@@ -144,8 +149,8 @@ const Footer = () => {
           {linkGroups.map((group) => (
             <div key={group.titleKey} className="text-start">
               <ColumnHeader title={t(group.titleKey)} />
-              <div className="mt-3 h-1 w-10 rounded-full bg-(--color-teal)" />
-              <ul className="mt-6 space-y-3">
+              <div className="mt-2 h-0.5 w-8 rounded-full bg-(--color-teal)" />
+              <ul className="mt-3 space-y-1.5">
                 {group.links.map((item) => (
                   <FooterLink key={item.labelKey} href={item.href} labelKey={item.labelKey} t={t} />
                 ))}
@@ -154,26 +159,13 @@ const Footer = () => {
           ))}
         </nav>
 
-        <div className="mt-12 rounded-2xl border border-white/12 bg-white/5 px-6 py-6 backdrop-blur-sm sm:px-8">
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm text-white/90">
-              {t("footer.cta")}{" "}
-              <Link to="/contact" className="font-bold text-(--color-yellow) underline-offset-4 transition-colors hover:text-(--color-yellow-bright) hover:underline">
-                {t("footer.enquiry")}
-              </Link>
-            </p>
-            <p className="font-ledger text-[10px] font-bold uppercase tracking-[0.24em] text-white/55">
-              {t("footer.stats")}
-            </p>
-          </div>
-        </div>
+
       </div>
 
-      <div className="relative z-10 mt-12 border-t border-white/10 bg-(--color-navy-black)/50">
-        <div className="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-white/60 sm:px-6 lg:px-8">
-          <p className="pe-16 text-white/80 sm:pe-0">{t("footer.rights")}</p>
+      <div className="relative z-10 mt-4 border-t border-white/8 bg-black/30">
+        <div className="mx-auto max-w-7xl px-4 py-3 text-center text-[13px] text-white/50 sm:px-6 lg:px-8">
+          <p>{t("footer.rights")}</p>
         </div>
-
       </div>
 
       <BackToTop />

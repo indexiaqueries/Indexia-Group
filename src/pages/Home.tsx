@@ -1,5 +1,5 @@
+import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import Banner from "../components/banners/HomeHero";
 import SEO from "../components/common/SEO";
 import AnimatedCounter from "../components/common/AnimatedCounter";
@@ -8,7 +8,6 @@ import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
 import { colors } from "../lib/theme";
-import { lazy, Suspense } from "react";
 const Globe = lazy(() => import("../components/lightswind/globe"));
 
 const Home = () => {
@@ -76,16 +75,10 @@ const Home = () => {
     {/* Gradient fade from light to dark section */}
     <div aria-hidden="true" className="relative h-10 sm:h-16 bg-linear-to-b from-(--color-soft) to-[#122029]" />
 
-    {/* Global Reach & Impact */}
+    {/* Our Reach */}
     <section className="relative overflow-hidden bg-reach-gradient px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -inset-e-32 top-0 h-72 sm:h-96 w-72 sm:w-96 rounded-full bg-(--color-teal)/25 blur-[100px] sm:blur-[120px]"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -inset-s-40 bottom-0 h-64 sm:h-80 w-64 sm:w-80 rounded-full bg-(--color-yellow)/15 blur-[80px] sm:blur-[100px]"
-      />
+      <div aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-72 sm:h-96 w-72 sm:w-96 rounded-full bg-(--color-teal)/25 blur-[100px] sm:blur-[120px]" />
+      <div aria-hidden="true" className="pointer-events-none absolute -inset-s-40 bottom-0 h-64 sm:h-80 w-64 sm:w-80 rounded-full bg-(--color-yellow)/15 blur-[80px] sm:blur-[100px]" />
       <div className="container relative">
         <Reveal className="mx-auto max-w-2xl text-center">
           <Eyebrow color="var(--color-yellow)">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
@@ -97,10 +90,10 @@ const Home = () => {
           </p>
         </Reveal>
 
-        {/* Globe — lazy-loaded to keep initial JS execution light */}
+        {/* Globe */}
         <div className="mx-auto">
           <div className="relative mx-auto h-72 sm:h-87.5 w-full max-w-3xl lg:h-120">
-            <Suspense fallback={<div className="h-full w-full" /> }>
+            <Suspense fallback={<div className="h-full w-full" />}>
               <Globe
                 theta={0.3}
                 dark={0}
@@ -116,22 +109,13 @@ const Home = () => {
                 autoRotateSpeed={0.004}
               />
             </Suspense>
-            {/* Indexia "I" overlay — centered on the globe */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
-            >
-              {/* Translucent glow circle behind the I */}
+            {/* Indexia "I" overlay */}
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0 flex items-center justify-center select-none">
               <div
                 className="absolute h-[clamp(70px,14vw,130px)] w-[clamp(70px,14vw,130px)] rounded-full"
-                style={{
-                  background: "radial-gradient(circle, rgba(242,242,49,0.25) 0%, rgba(242,242,49,0.08) 50%, transparent 70%)",
-                  filter: "blur(8px)",
-                }}
+                style={{ background: "radial-gradient(circle, rgba(242,242,49,0.25) 0%, rgba(242,242,49,0.08) 50%, transparent 70%)", filter: "blur(8px)" }}
               />
-              <span
-                className="relative font-display text-[clamp(60px,10vw,100px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_16px_rgba(242,242,49,0.5)]"
-              >
+              <span className="relative font-display text-[clamp(90px,15vw,150px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_16px_rgba(242,242,49,0.5)]">
                 I
               </span>
             </div>
@@ -152,17 +136,9 @@ const Home = () => {
             <AnimatedCounter value="500+" label={t("homeReach.stat4Label", "Clients Served")} color={colors.white} numberClassName="font-display text-[32px] sm:text-[40px] font-bold text-white leading-none" labelClassName="mt-2 sm:mt-2.5 font-ledger text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-white/50" />
           </Reveal>
         </div>
-
-        <Reveal delay={0.3} amount={0.15} className="mt-10 sm:mt-12 text-center">
-          <Link
-            to="/about"
-            className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-(--color-yellow)/40 hover:bg-(--color-yellow)/10 hover:text-(--color-yellow)"
-          >
-            {t("homeReach.cta", "Learn More About Us")} →
-          </Link>
-        </Reveal>
       </div>
     </section>
+
   </main>
   );
 };
