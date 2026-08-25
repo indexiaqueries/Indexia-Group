@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer-img/footer-img.webp";
@@ -48,11 +49,11 @@ const contactInfo: {
   { icon: Clock, textKey: "footer.hours" },
 ];
 
-const ColumnHeader = ({ title }: { title: string }) => (
+const ColumnHeader = memo(({ title }: { title: string }) => (
   <h3 className="font-ledger text-[10px] font-bold uppercase tracking-[0.22em] text-white">{title}</h3>
-);
+));
 
-const FooterLink = ({
+const FooterLink = memo(({
   href,
   labelKey,
   t,
@@ -70,7 +71,7 @@ const FooterLink = ({
       {t(labelKey)}
     </Link>
   </li>
-);
+));
 
 const Footer = () => {
   const { t } = useTranslation();

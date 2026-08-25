@@ -99,7 +99,7 @@ const Home = () => {
 
         {/* Globe — lazy-loaded to keep initial JS execution light */}
         <div className="mx-auto">
-          <div className="mx-auto h-72 sm:h-87.5 w-full max-w-3xl lg:h-120">
+          <div className="relative mx-auto h-72 sm:h-87.5 w-full max-w-3xl lg:h-120">
             <Suspense fallback={<div className="h-full w-full" /> }>
               <Globe
                 theta={0.3}
@@ -113,9 +113,28 @@ const Home = () => {
                 mapBrightness={14}
                 enableZoom={false}
                 autoRotate={true}
-                autoRotateSpeed={0.005}
+                autoRotateSpeed={0.004}
               />
             </Suspense>
+            {/* Indexia "I" overlay — centered on the globe */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
+            >
+              {/* Translucent glow circle behind the I */}
+              <div
+                className="absolute h-[clamp(70px,14vw,130px)] w-[clamp(70px,14vw,130px)] rounded-full"
+                style={{
+                  background: "radial-gradient(circle, rgba(242,242,49,0.25) 0%, rgba(242,242,49,0.08) 50%, transparent 70%)",
+                  filter: "blur(8px)",
+                }}
+              />
+              <span
+                className="relative font-display text-[clamp(60px,10vw,100px)] font-bold leading-none text-(--color-yellow) drop-shadow-[0_2px_16px_rgba(242,242,49,0.5)]"
+              >
+                I
+              </span>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import { memo, type CSSProperties, type ReactNode } from "react";
 
 type EyebrowProps = {
   children: ReactNode;
@@ -17,4 +17,4 @@ const Eyebrow = ({ children, color = "var(--color-teal)", size = "sm", className
   </p>
 );
 
-export default Eyebrow;
+export default memo(Eyebrow);

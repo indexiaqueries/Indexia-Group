@@ -17,7 +17,6 @@ const researchOTGImg = "/images/research/otg-report.webp";
 const researchACTImg = "/images/research/act-report.webp";
 const researchSpecialImg = "/images/research/special-reports.webp";
 const newsFeaturedNew = "/images/news/featured-story.webp";
-const securityPracticesImg = "/images/security/online-security.webp";
 const featuredEnquiryImg = "/images/news/featured-enquiry.webp";
 const researchFooterImg = "/images/research/research-footer.webp";
 const securityProtectDetailsImg = "/images/security/protect-your-details.webp";
@@ -88,10 +87,6 @@ export const siteImages: Record<string, ImageSlotData> = {
   newsFeaturedNew: {
     src: newsFeaturedNew,
     label: "News featured story image",
-  },
-  securityPractices: {
-    src: securityPracticesImg,
-    label: "Security practices illustration",
   },
   securityFeatures: {
     src: securityFeatures,

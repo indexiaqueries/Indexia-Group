@@ -16,6 +16,9 @@ type HeroBackgroundProps = {
   bgMobileImage: string;
   bgPlaceholderImage?: string;
   bgPlaceholderMobileImage?: string;
+  prevBgImage?: string;
+  prevBgMobileImage?: string;
+  onPrevBgFadeOut?: () => void;
   morph: MorphRect | null;
   panels: HeroPanel[];
   prefersReducedMotion: boolean | null;
@@ -59,8 +62,14 @@ const MorphLayer = ({
   // don't emit transitionend events).
   const duration = reducedMotion ? 0 : morph.calm ? MORPH_MS.calm : MORPH_MS.thumb;
   useEffect(() => {
-    const timeout = window.setTimeout(() => onComplete(morph.id), duration + 60);
-    return () => window.clearTimeout(timeout);
+    let cancelled = false;
+    const timeout = window.setTimeout(() => {
+      if (!cancelled) onComplete(morph.id);
+    }, duration + 60);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timeout);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -95,19 +104,54 @@ const MorphLayer = ({
   );
 };
 
-const HeroBackground = ({ bgImage, bgMobileImage, bgPlaceholderImage, bgPlaceholderMobileImage, morph, panels, prefersReducedMotion, onMorphComplete }: HeroBackgroundProps) => {
+const HeroBackground = ({ bgImage, bgMobileImage, bgPlaceholderImage, bgPlaceholderMobileImage, prevBgImage, prevBgMobileImage, onPrevBgFadeOut, morph, panels, prefersReducedMotion, onMorphComplete }: HeroBackgroundProps) => {
   const reducedMotion = !!prefersReducedMotion;
   const [imgLoaded, setImgLoaded] = useState(false);
+  const [prevFading, setPrevFading] = useState(false);
+  const prevFadeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Determine the correct placeholder source based on viewport
   const placeholderSrc = typeof window !== "undefined" && window.innerWidth >= 900
     ? (bgPlaceholderImage ?? bgImage)
     : (bgPlaceholderMobileImage ?? bgMobileImage);
 
+  // When a new bg image appears, fade out the previous one after the new one loads
+  useEffect(() => {
+    if (prevBgImage && imgLoaded && !morph) {
+      setPrevFading(true);
+      prevFadeTimer.current = setTimeout(() => {
+        setPrevFading(false);
+        onPrevBgFadeOut?.();
+      }, 800);
+    }
+    return () => { if (prevFadeTimer.current) clearTimeout(prevFadeTimer.current); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [prevBgImage, imgLoaded]);
+
+  // Reset loaded state when the bg image changes
+  useEffect(() => {
+    setImgLoaded(false);
+    setPrevFading(false);
+  }, [bgImage]);
+
   return (
     <div className="absolute inset-0 overflow-hidden">
+      {/* Previous bg image — stays visible underneath until new one loads and fades in */}
+      {prevBgImage && !prevFading && (
+        <img
+          src={prevBgImage}
+          srcSet={`${prevBgMobileImage} 900w, ${prevBgImage} 1900w`}
+          sizes="100vw"
+          alt=""
+          aria-hidden="true"
+          width={1408}
+          height={768}
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+      )}
+
       {/* Blur-up placeholder — blurred q80 image shown while original loads */}
-      {bgPlaceholderImage && !imgLoaded && (
+      {bgPlaceholderImage && !imgLoaded && !prevBgImage && (
         <img
           src={placeholderSrc}
           alt=""

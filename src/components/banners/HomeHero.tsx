@@ -11,6 +11,7 @@ const Banner = () => {
   const { t } = useTranslation();
   const [currentId, setCurrentId] = useState(0);
   const [bgId, setBgId] = useState(0);
+  const [prevBgId, setPrevBgId] = useState<number | null>(null);
   const [morph, setMorph] = useState<MorphRect | null>(null);
   const prefersReducedMotion = useReducedMotion();
   const panels = useMemo(() => makePanels(t), [t]);
@@ -117,6 +118,7 @@ const Banner = () => {
   const nextPanel = () => selectPanel(panels[(currentIndex + 1) % panels.length].id);
 
   const handleMorphComplete = (id: number) => {
+    setPrevBgId(bgId);
     setBgId(id);
     setMorph(null);
   };
@@ -133,6 +135,9 @@ const Banner = () => {
             bgMobileImage={bgPanel.mobileImage}
             bgPlaceholderImage={bgPanel.placeholderImage}
             bgPlaceholderMobileImage={bgPanel.placeholderMobileImage}
+            prevBgImage={prevBgId !== null ? (panels.find((p) => p.id === prevBgId)?.image ?? panels[0].image) : undefined}
+            prevBgMobileImage={prevBgId !== null ? (panels.find((p) => p.id === prevBgId)?.mobileImage ?? panels[0].mobileImage) : undefined}
+            onPrevBgFadeOut={() => setPrevBgId(null)}
             morph={morph}
             panels={panels}
             prefersReducedMotion={prefersReducedMotion}
