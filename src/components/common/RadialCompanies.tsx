@@ -66,7 +66,7 @@ export default function RadialCompanies() {
   return (
     <>
       {/* Desktop: radial layout */}
-      <div className="relative mx-auto hidden lg:block" style={{ width: "100%", maxWidth: 960, aspectRatio: "4 / 3" }}>
+      <div className="relative mx-auto hidden lg:block" style={{ width: "100%", maxWidth: 960, aspectRatio: "5 / 3" }}>
         <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true" viewBox={`0 0 ${SVG_SIZE} ${SVG_SIZE}`} preserveAspectRatio="xMidYMid meet">
           {COMPANIES.map((c, i) => {
             const angle = (i * 45 - 90) * (Math.PI / 180);
@@ -130,8 +130,6 @@ function RadialCard({
 }) {
   const [hovered, setHovered] = useState(false);
   const name = tr(company.slug, "name", company.nameDefault);
-  const tag = tr(company.slug, "tag", company.tagDefault);
-  const { Icon } = company;
 
   const angle = (index * 45 - 90) * (Math.PI / 180);
   const radiusPct = RADIUS_PCT[index] ?? RADIUS_PCT_DEFAULT;
@@ -188,8 +186,6 @@ function MobileCard({
 }) {
   const [hovered, setHovered] = useState(false);
   const name = tr(company.slug, "name", company.nameDefault);
-  const tag = tr(company.slug, "tag", company.tagDefault);
-  const { Icon } = company;
 
   return (
     <div
