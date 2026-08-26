@@ -183,7 +183,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
             {VALUES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.15}>
-                <div className="group rounded-2xl border border-white/40 bg-white/80 backdrop-blur-xl p-4 sm:p-5 shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:bg-white/35">
+                <div className="group rounded-2xl border border-white/40 bg-white/80 backdrop-blur-xl p-4 sm:p-5 shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:bg-white/90">
                   <span className="font-ledger text-lg font-bold text-(--color-teal)">
                     {String(i).padStart(2, "0")}
                   </span>
@@ -204,7 +204,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Companies */}
-      <section className="relative overflow-hidden bg-[#2a2a2a]/20 px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+      <section className="relative overflow-hidden bg-linear-to-r from-[#2a2a2a]/50 to-bg-[#2a2a2a]/50 px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-2 sm:mb-4 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
