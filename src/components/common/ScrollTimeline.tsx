@@ -14,7 +14,6 @@ const MilestoneItem = ({
   m,
   index,
   activeIndex,
-  total,
 }: {
   m: MilestoneData;
   index: number;
