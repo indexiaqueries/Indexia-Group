@@ -128,7 +128,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           {slug === "warehouse" ? (
             <section className="px-5 pb-6 sm:px-8 sm:pb-8">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("warehousePricing.title")}</h2>
-              <p className="mt-1 text-[13px] text-(--color-muted)">{t("warehousePricing.subtitle")}</p>
+              <p className="mt-1 text-[11px] text-(--color-muted)">{t("warehousePricing.subtitle")}</p>
 
               <div className="mt-5 overflow-hidden rounded-xl border border-slate-100">
                 <div className="grid grid-cols-2 gap-2 sm:gap-4 bg-(--color-soft) px-4 py-2.5 sm:px-6 sm:py-3 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
@@ -177,7 +177,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           ) : (
             <section className="px-5 pb-6 sm:px-8 sm:pb-8">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("unipolePricing.title")}</h2>
-              <p className="mt-1 text-[13px] text-(--color-muted)">{t("unipolePricing.subtitle")}</p>
+              <p className="mt-1 text-[11px] text-(--color-muted)">{t("unipolePricing.subtitle")}</p>
 
               <div className="mt-5 overflow-hidden rounded-xl border border-slate-100">
                 <div className="grid grid-cols-3 gap-4 bg-(--color-soft) px-6 py-3 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">

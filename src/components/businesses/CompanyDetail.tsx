@@ -478,7 +478,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
               {t("companyDetail.enquireTitle", { name })}
             </h2>
-            <p className="mt-4 sm:mt-5 max-w-md text-[14px] sm:text-[15px] leading-7 text-(--color-muted)">
+            <p className="mt-4 sm:mt-5 max-w-md text-[12px] sm:text-[13px] leading-6 text-(--color-muted)">
               {t("companyDetail.enquireSub", { name })}
             </p>
 

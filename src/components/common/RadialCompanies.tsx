@@ -81,6 +81,11 @@ export default function RadialCompanies() {
       `}</style>
       <div className="relative mx-auto hidden lg:block radial-hovers" style={{ width: "100%", maxWidth: 1000, aspectRatio: "4 / 3" }}>
         <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true" viewBox={`0 0 ${SVG_SIZE} ${SVG_SIZE}`} preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <marker id="radial-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="rgb(1,1,1)" />
+            </marker>
+          </defs>
           {COMPANIES.map((c, i) => {
             const angle = (i * 45 - 90) * (Math.PI / 180);
             const cardR = CARD_R[i] ?? CARD_R_DEFAULT;
@@ -94,6 +99,7 @@ export default function RadialCompanies() {
                 stroke="rgb(1,1,1)"
                 strokeWidth="2"
                 strokeDasharray="2 2"
+                markerEnd="url(#radial-arrow)"
               />
             );
           })}

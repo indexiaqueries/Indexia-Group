@@ -68,7 +68,7 @@ const PricingTable = ({
           <h2 className="font-display mt-3 text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
             {title}
           </h2>
-          <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{subtitle}</p>
+          <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">{subtitle}</p>
         </Reveal>
 
         <Reveal className="mx-auto max-w-3xl" amount={0.15}>

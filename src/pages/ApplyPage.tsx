@@ -164,7 +164,7 @@ const ApplyPage = () => {
                 <CheckCircle size={40} className="text-(--color-teal)" />
               </div>
               <h1 className="font-display text-2xl font-bold text-(--color-ink)">Application Submitted!</h1>
-              <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">
+              <p className="mt-4 text-[13px] leading-6 text-(--color-muted)">
                 Thank you for applying for the <strong>{roleTitle}</strong> position. Our HR team has received your application and will review it shortly.
               </p>
               <div className="mt-6 rounded-xl border border-slate-200 bg-(--color-soft) p-4 text-sm text-slate-600">
@@ -229,7 +229,7 @@ const ApplyPage = () => {
       <section className="px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="container mx-auto max-w-2xl">
           <Reveal>
-            <p className="mb-6 sm:mb-8 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-(--color-muted)">
+            <p className="mb-6 sm:mb-8 text-[12px] sm:text-[13px] leading-5 sm:leading-6 text-(--color-muted)">
               Fill out the form below and we'll open your email client with all the details. Just attach your resume and hit send!
             </p>
 

@@ -73,7 +73,7 @@ const AboutPage = () => {
         <p className="mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm uppercase tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80">
           {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
         </p>
-        <p className="mx-auto max-w-2xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/80">
+        <p className="mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80">
           {tr("subtitle", "")}
         </p>
       </HeroBackdrop>
@@ -204,14 +204,16 @@ const AboutPage = () => {
       </section>
 
       {/* Our Companies */}
-      <section className="relative overflow-hidden bg-linear-to-r from-[#2a2a2a]/50 to-bg-[#2a2a2a]/50 px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+            <div className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
+
+      <section className="relative overflow-hidden bg-[#f0f9ff99] px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-2 sm:mb-4 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("companiesTitle", "Eight Businesses, One Vision")}
             </h2>
-            <p className="mt-2 text-[13px] leading-5 sm:text-[14px] sm:leading-6 text-(--color-muted)">
+            <p className="mt-1 text-[13px] leading-5 sm:text-[14px] sm:leading-6 text-(--color-muted)">
               {tr("companiesSubtitle", "")}
             </p>
           </Reveal>
@@ -219,6 +221,8 @@ const AboutPage = () => {
           <RadialCompanies />
         </div>
       </section>
+            <div className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
+
 
       {/* Timeline */}
       <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">

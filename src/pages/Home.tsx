@@ -51,7 +51,7 @@ const Home = () => {
               {t("businesses.titleStart")}
               <span className="text-(--color-blue)">{t("businesses.titleAccent")}</span>
             </h2>
-            <p className="mt-1 text-[10px] sm:text-[11px] leading-5 sm:leading-6 text-(--color-muted)">
+            <p className="mt-1 text-[9px] sm:text-[10px] leading-4 sm:leading-5 text-(--color-muted)">
               {t("businesses.subtitle")}
             </p>
           </div>

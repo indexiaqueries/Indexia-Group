@@ -74,7 +74,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
           {title}
         </h1>
-        <p className="mx-auto mb-7 max-w-2xl text-base leading-8 text-white/80">{t(`legal.${docId}Subtitle`)}</p>
+        <p className="mx-auto mb-7 max-w-2xl text-sm leading-7 text-white/80">{t(`legal.${docId}Subtitle`)}</p>
         <p className="font-ledger text-[11px] font-bold uppercase tracking-[0.22em] text-white/55">
           {t("legal.lastUpdated")}: {doc.lastUpdated}
         </p>

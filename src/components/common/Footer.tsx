@@ -76,7 +76,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="relative overflow-hidden bg-[#040d14] text-white">
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-(--color-teal) to-transparent" />
+      <div className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
       <div className="absolute inset-0">
         <img
           src={footerBg}

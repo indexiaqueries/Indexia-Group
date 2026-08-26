@@ -20,7 +20,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
           <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("newsPage.knowledgeHeading")}
           </h2>
-          <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{t("newsPage.knowledgeSubtitle")}</p>
+          <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">{t("newsPage.knowledgeSubtitle")}</p>
         </Reveal>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">

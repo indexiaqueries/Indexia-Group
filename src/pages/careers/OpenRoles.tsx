@@ -38,7 +38,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
           <h2 className="font-display text-[clamp(26px,4vw,40px)] font-bold text-(--color-ink)">
             {t("careersPage.rolesHeading")}
           </h2>
-          <p className="mt-4 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-(--color-muted)">{t("careersPage.rolesSubtitle")}</p>
+          <p className="mt-1 text-[12px] sm:text-[13px] leading-5 sm:leading-6 text-(--color-muted)">{t("careersPage.rolesSubtitle")}</p>
         </Reveal>
 
         {/* Banner Image */}

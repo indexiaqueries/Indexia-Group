@@ -20,7 +20,7 @@ const NewsHero = () => {
         {t("newsPage.titleStart")}
         <span className="text-(--color-yellow)">{t("newsPage.titleAccent")}</span>
       </h1>
-      <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">{t("newsPage.subtitle")}</p>
+      <p className="mx-auto max-w-2xl text-sm leading-7 text-white/80">{t("newsPage.subtitle")}</p>
     </HeroBackdrop>
   );
 };

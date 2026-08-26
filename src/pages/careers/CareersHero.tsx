@@ -59,7 +59,7 @@ const CareersHero = () => {
           </span>
         </h1>
 
-        <p className="mt-5 max-w-2xl text-[15px] sm:text-[17px] leading-7 sm:leading-8 text-white/80">
+        <p className="mt-5 max-w-2xl text-[13px] sm:text-[15px] leading-6 sm:leading-7 text-white/80">
           {t("careersPage.subtitle")}
         </p>
 

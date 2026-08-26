@@ -59,7 +59,7 @@ const SecuritySection = ({ eyebrow, heading, subtitle, tips, contact, image }: S
       <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
         {heading}
       </h2>
-      <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{subtitle}</p>
+      <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">{subtitle}</p>
     </Reveal>
 
     {image && (
@@ -140,7 +140,7 @@ const SecurityTipsPage = () => {
           {t("securityTipsPage.titleStart")}
           <span className="text-(--color-yellow)">{t("securityTipsPage.titleAccent")}</span>
         </h1>
-        <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">{t("securityTipsPage.subtitle")}</p>
+        <p className="mx-auto max-w-2xl text-sm leading-7 text-white/80">{t("securityTipsPage.subtitle")}</p>
         <button
           type="button"
           onClick={() => document.getElementById("practices")?.scrollIntoView({ behavior: "smooth" })}

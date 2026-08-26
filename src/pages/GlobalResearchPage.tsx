@@ -80,7 +80,7 @@ const GlobalResearchPage = () => {
           {t("globalResearchPage.titleStart")}
           <span className="text-(--color-yellow)">{t("globalResearchPage.titleAccent")}</span>
         </h1>
-        <p className="mx-auto max-w-2xl text-base leading-8 text-white/80">{t("globalResearchPage.subtitle")}</p>
+        <p className="mx-auto max-w-2xl text-sm leading-7 text-white/80">{t("globalResearchPage.subtitle")}</p>
         <button
           type="button"
           onClick={() => document.getElementById("research-areas")?.scrollIntoView({ behavior: "smooth" })}
@@ -97,7 +97,7 @@ const GlobalResearchPage = () => {
             <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
               {t("globalResearchPage.areasHeading")}
             </h2>
-            <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{t("globalResearchPage.areasSubtitle")}</p>
+            <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">{t("globalResearchPage.areasSubtitle")}</p>
           </Reveal>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -123,7 +123,7 @@ const GlobalResearchPage = () => {
             <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
               {t("globalResearchPage.reportsHeading")}
             </h2>
-            <p className="mt-4 text-[15px] leading-7 text-(--color-muted)">{t("globalResearchPage.reportsSubtitle")}</p>
+            <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">{t("globalResearchPage.reportsSubtitle")}</p>
           </Reveal>
 
           <div className="space-y-4">
