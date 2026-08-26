@@ -109,7 +109,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </span>
           {showBackLink && (
             <Link
-              to="/businesses"
+              to="/about"
               className="mb-8 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-white/70 transition-colors hover:text-(--color-yellow)"
             >
               <span aria-hidden="true">←</span> {t("companyDetail.backAll")}

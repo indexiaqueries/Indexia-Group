@@ -15,7 +15,7 @@ const linkGroups: {
     titleKey: "footer.company",
     links: [
       { labelKey: "footer.links.aboutUs", href: "/about" },
-      { labelKey: "footer.links.groupCompanies", href: "/businesses" },
+      { labelKey: "footer.links.groupCompanies", href: "/about" },
       { labelKey: "footer.links.careers", href: "/careers" },
     ],
   },

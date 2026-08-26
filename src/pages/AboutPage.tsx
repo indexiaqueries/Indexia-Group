@@ -25,52 +25,61 @@ const MILESTONES_DATA = [
 ];
 
 const COMPANY_LEFT = [
-  { slug: "finance", tag: "c1Tag", tagDefault: "Multinational Fintech", name: "c1Name", nameDefault: "Indexia Finance", color: colors.teal },
-  { slug: "finserve", tag: "c2Tag", tagDefault: "Lending Arm", name: "c2Name", nameDefault: "Indexia Finserve", color: colors.yellow },
-  { slug: "overseas", tag: "c3Tag", tagDefault: "Global Export", name: "c3Name", nameDefault: "Indexia Overseas", color: colors.gray },
-  { slug: "agro-bio", tag: "c4Tag", tagDefault: "Organic Agriculture", name: "c4Name", nameDefault: "Indexia Agro Bio", color: colors.yellow },
+  { slug: "finance", tag: "c1Tag", tagDefault: "Multinational Fintech", name: "c1Name", nameDefault: "Indexia Finance", color: colors.teal, desc: "Multinational fintech platform delivering financial services globally with 43+ bank partnerships" },
+  { slug: "finserve", tag: "c2Tag", tagDefault: "Lending Arm", name: "c2Name", nameDefault: "Indexia Finserve", color: colors.yellow, desc: "Investment and finance arm specializing in lending and wealth management" },
+  { slug: "overseas", tag: "c3Tag", tagDefault: "Global Export", name: "c3Name", nameDefault: "Indexia Overseas", color: colors.gray, desc: "Connecting Indian agriculture with global edible export markets across continents" },
+  { slug: "agro-bio", tag: "c4Tag", tagDefault: "Organic Agriculture", name: "c4Name", nameDefault: "Indexia Agro Bio", color: colors.yellow, desc: "Eco-friendly bio-fertilizers restoring soil health and boosting crop productivity" },
 ] as const;
 
 const COMPANY_RIGHT = [
-  { slug: "securities", tag: "c5Tag", tagDefault: "Armed Protection", name: "c5Name", nameDefault: "Indexia Securities", color: colors.navy },
-  { slug: "warehouse", tag: "c6Tag", tagDefault: "Strategic Land", name: "c6Name", nameDefault: "Indexia Warehouse", color: colors.teal },
-  { slug: "advertising", tag: "c7Tag", tagDefault: "Highway Advertising", name: "c7Name", nameDefault: "Indexia Advertising", color: colors.gray },
-  { slug: "foundation", tag: "c8Tag", tagDefault: "Social Impact", name: "c8Name", nameDefault: "Indexia Foundation", color: colors.tealDeep },
+  { slug: "securities", tag: "c5Tag", tagDefault: "Armed Protection", name: "c5Name", nameDefault: "Indexia Securities", color: colors.navy, desc: "Professional armed protection services safeguarding people and assets" },
+  { slug: "warehouse", tag: "c6Tag", tagDefault: "Strategic Land", name: "c6Name", nameDefault: "Indexia Warehouse", color: colors.teal, desc: "21-acre strategic land leasing hub with access to 8 expressways and 8 states" },
+  { slug: "advertising", tag: "c7Tag", tagDefault: "Highway Advertising", name: "c7Name", nameDefault: "Indexia Advertising", color: colors.gray, desc: "Highway billboard advertising reaching millions of commuters daily" },
+  { slug: "foundation", tag: "c8Tag", tagDefault: "Social Impact", name: "c8Name", nameDefault: "Indexia Foundation", color: colors.tealDeep, desc: "Nurturing Indian athletes from grassroots to the Olympic Games" },
 ] as const;
 
-type CompanyEntry = { slug: string; tag: string; tagDefault: string; name: string; nameDefault: string; color: string };
+type CompanyEntry = { slug: string; tag: string; tagDefault: string; name: string; nameDefault: string; color: string; desc: string };
 
 const CompanyNode = ({ c, side, tr }: { c: CompanyEntry; side: "left" | "right"; tr: (p: string, f: string) => string }) => {
   const [open, setOpen] = useState(false);
   const tag = tr(`pageContent.companies.${c.slug}.${c.tag}`, c.tagDefault);
   const name = tr(`pageContent.companies.${c.slug}.${c.name}`, c.nameDefault);
   return (
-    <div className={`group relative flex items-center gap-3 ${side === "right" ? "flex-row-reverse" : ""}`}>
-      {/* Dotted connector line */}
-      <div className={`h-px flex-1 border-t border-dashed border-slate-300 transition-colors duration-300 group-hover:border-(--color-teal) ${side === "right" ? "origin-left" : "origin-right"}`} />
-      {/* Image node */}
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
-        className="relative z-10 h-14 w-14 shrink-0 overflow-hidden rounded-xl border-2 border-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-(--color-yellow)/50 focus:outline-none focus:ring-2 focus:ring-(--color-teal)/40"
-      >
-        <img src={companyImages[c.slug]} alt={name} className="h-full w-full object-cover" />
-      </button>
-      {/* Hover detail card */}
-      {open && (
-        <div className={`absolute z-30 w-56 rounded-xl border border-slate-100 bg-white p-3 shadow-xl ${side === "left" ? "left-20" : "right-20"}`}>
+    <div
+      className={`group relative flex items-center ${side === "right" ? "flex-row-reverse" : ""}`}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      {/* Vertical portrait frame with hover detail card */}
+      <div className="relative z-10">
+        <div className="h-28 w-20 shrink-0 overflow-hidden rounded-xl border-2 border-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:border-(--color-yellow)/50 cursor-pointer">
+          <img src={companyImages[c.slug]} alt={name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-1.5 pb-1.5 pt-4">
+            <span className="font-display text-[9px] font-bold leading-tight text-white line-clamp-2 drop-shadow">
+              {name}
+            </span>
+          </div>
+        </div>
+        {/* Hover detail card */}
+        <div className={`absolute z-30 w-52 rounded-xl border border-slate-100 bg-white p-3 shadow-xl transition-all duration-300 ${
+          side === "left" ? "left-full ml-2 top-0" : "right-full mr-2 top-0"
+        } ${open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"}`}>
           <span className="inline-block rounded-full px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide" style={{ backgroundColor: `${c.color}18`, color: c.color }}>
             {tag}
           </span>
-          <Link to={`/businesses/${c.slug}`} className="mt-1.5 block font-display text-sm font-bold text-slate-900 hover:text-(--color-teal)">
-            {name}
-          </Link>
-          <p className="mt-1 text-[11px] leading-4 text-slate-500">Eight businesses under one vision</p>
-          <Link to={`/businesses/${c.slug}`} className="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-(--color-teal)">Learn More →</Link>
+          <h3 className="mt-1.5 font-display text-[13px] font-bold text-slate-900">{name}</h3>
+          <p className="mt-1 text-[11px] leading-4 text-slate-500">{c.desc}</p>
         </div>
-      )}
+      </div>
+
+      {/* Connector line to center */}
+      <div className={`flex-1 transition-all duration-300 ${side === "right" ? "origin-left" : "origin-right"}`}>
+        <div className={`h-px w-full transition-all duration-300 ${
+          open
+            ? "bg-(--color-yellow)"
+            : "border-t border-dashed border-slate-300"
+        }`} />
+      </div>
     </div>
   );
 };
@@ -154,7 +163,7 @@ const AboutPage = () => {
       {/* Leadership */}
       <section className="relative bg-(--color-ink-deep) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
+          <Reveal className="mb-4 sm:mb-6 sm:ml-auto sm:max-w-xl sm:text-right">
             <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("leaderEyebrow", "Leadership")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
               {tr("leaderTitle", "The People Behind Indexia Group")}
@@ -251,14 +260,14 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
             {VALUES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.15}>
-                <div className="group rounded-xl border border-slate-200 bg-white p-3 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div className="group rounded-xl border border-slate-200 bg-white p-4 sm:p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <span className="font-ledger text-lg font-bold text-(--color-teal)">
                     {String(i).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-1 text-[13px] sm:text-sm font-bold text-slate-900 leading-tight">
+                  <h3 className="mt-1.5 text-[13px] sm:text-sm font-bold text-slate-900 leading-tight">
                     {tr(`value${i}Title`, "")}
                   </h3>
-                  <p className="mt-1 text-[11px] sm:text-[12px] leading-4 text-slate-500 line-clamp-2 group-hover:text-slate-700">
+                  <p className="mt-1.5 text-[12px] sm:text-[13px] leading-5 text-slate-500 group-hover:text-slate-700">
                     {tr(`value${i}Body`, "")}
                   </p>
                 </div>
@@ -274,37 +283,37 @@ const AboutPage = () => {
       {/* Our Companies */}
       <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-5 sm:mb-8 max-w-4xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("companiesTitle", "Eight Businesses, One Vision")}
             </h2>
-            <p className="mt-2 text-[13px] leading-5 text-(--color-muted)">
+            <p className="mt-2 whitespace-nowrap text-[13px] leading-5 text-(--color-muted)">
               {tr("companiesSubtitle", "")}
             </p>
           </Reveal>
 
           {/* Interactive company map — desktop only */}
           <Reveal amount={0.15}>
-            <div className="relative hidden lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-0">
+            <div className="relative hidden lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-stretch lg:gap-0">
               {/* Left column — 4 companies */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col justify-between">
                 {COMPANY_LEFT.map((c) => (
                   <CompanyNode key={c.slug} c={c} side="left" tr={tr} />
                 ))}
               </div>
 
-              {/* Center group image */}
-              <div className="relative mx-4 flex flex-col items-center">
-                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border-2 border-(--color-yellow)/30 shadow-lg ring-4 ring-white">
+              {/* Center group image — same height as 4 company rows */}
+              <div className="relative mx-4 flex items-center justify-center">
+                <div className="relative h-full w-36 overflow-hidden rounded-2xl border-2 border-(--color-yellow)/30 shadow-lg ring-4 ring-white">
                   <img src={companyImages.group} alt="Indexia Group" className="h-full w-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute bottom-2 inset-x-0 text-center font-display text-xs font-bold text-white drop-shadow">Indexia Group</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
+                  <span className="absolute bottom-3 inset-x-0 text-center font-display text-xs font-bold text-white drop-shadow-lg">Indexia Group</span>
                 </div>
               </div>
 
               {/* Right column — 4 companies */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col justify-between">
                 {COMPANY_RIGHT.map((c) => (
                   <CompanyNode key={c.slug} c={c} side="right" tr={tr} />
                 ))}
@@ -322,7 +331,7 @@ const AboutPage = () => {
       </section>
 
       {/* Timeline */}
-      <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div className="mx-auto max-w-4xl">
           <Reveal className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
@@ -340,11 +349,11 @@ const AboutPage = () => {
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 w-40 rounded-full bg-(--color-yellow)/10 blur-[60px]" />
 
         <div className="relative mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-5 sm:mb-7 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-5 sm:mb-7 max-w-4xl text-center">
             <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
               {tr("registrationTitle", "Registered Entities")}</h2>
-            <p className="mt-2 text-[13px] leading-5 text-white/60">
+            <p className="mt-2 whitespace-nowrap text-[13px] leading-5 text-white/60">
               {tr("registrationSubtitle", "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.")}
             </p>
           </Reveal>

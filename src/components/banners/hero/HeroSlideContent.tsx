@@ -131,7 +131,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
             {/* CTA */}
             <div className="hero-slide-child flex flex-wrap gap-3 justify-center sm:justify-start mt-5 sm:mt-6" style={{ animationDelay: CHILD_DELAYS[3] }}>
               <Link
-                to={isHome || !current.slug ? "/businesses" : `/businesses/${current.slug}`}
+                to="/about"
                 className="group inline-flex items-center gap-2 rounded-full bg-(--color-teal) text-white font-bold text-[13px] tracking-wide px-6 py-2.5 sm:px-8 sm:py-3 shadow-[0_4px_20px_rgba(38,174,144,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(38,174,144,0.5)]"
               >
                 {isHome ? t("hero.ctaExploreGroup") : t("hero.ctaExploreMore")}

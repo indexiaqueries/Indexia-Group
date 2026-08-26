@@ -47,7 +47,7 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
           <div className="relative mt-6 flex flex-wrap items-center gap-4">
             {companies.find((c) => c.name === featured.company) && (
               <Link
-                to={`/businesses/${companies.find((c) => c.name === featured.company)?.slug ?? ""}`}
+                to="/about"
                 className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-2.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
               >
                 {t("newsPage.readMore")}

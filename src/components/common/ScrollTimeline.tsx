@@ -85,7 +85,7 @@ const MilestoneItem = ({
           <span
             className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-bold transition-colors duration-500 ${
               isCurrent
-                ? "bg-(--color-yellow)/20 text-(--color-yellow)"
+                ? "bg-(--color-yellow) text-black"
                 : isActive
                   ? "bg-(--color-teal)/10 text-(--color-teal)"
                   : "bg-slate-100 text-slate-400"
