@@ -47,15 +47,15 @@ const COMPANIES = [
 const CARD_W = 190;
 const CARD_H = 160;
 const HUB_SIZE = 200;
-const SVG_SIZE = 900;
+const SVG_SIZE = 1400;
 const CX = SVG_SIZE / 2;
 const CY = SVG_SIZE / 2;
 const HUB_R = 60;
 // Line lengths: top/bottom shorter, sides/diagonals longer
-const CARD_R: Record<number, number> = { 0: 320, 4: 320 };
+const CARD_R: Record<number, number> = { 0: 400, 1: 480, 2: 560, 3: 480, 4: 400, 5: 480, 6: 560, 7: 480 };
 const CARD_R_DEFAULT = 380;
 // Percentage radius for CSS positioning
-const RADIUS_PCT: Record<number, number> = { 0: 33, 4: 33 };
+const RADIUS_PCT: Record<number, number> = { 0: 40, 1: 40, 2: 40, 3: 40, 4: 40, 5: 40, 6: 40, 7: 40 };
 const RADIUS_PCT_DEFAULT = 40;
 
 export default function RadialCompanies() {

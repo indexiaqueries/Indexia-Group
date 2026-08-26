@@ -14,11 +14,6 @@
   100% { transform: scale(1.5);  opacity: 0; }
 }
 
-@keyframes tap-hint-pulse {
-  0%, 100% { opacity: 0.55; }
-  50%      { opacity: 1; }
-}
-
 /* --- Page transitions --- */
 @keyframes page-enter {
   from { opacity: 0; transform: translateY(18px); }
@@ -97,25 +92,9 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes bg-morph-out {
-  from { opacity: 1; transform: translateY(0) scale(1); }
-  to   { opacity: 0; transform: translateY(var(--morph-y, 40%)) scale(1.1); }
-}
-
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
-}
-
-/* --- Foundation badge --- */
-@keyframes foundation-pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(38,130,110,0.25), 0 10px 28px rgba(2,16,26,0.45); }
-  50% { box-shadow: 0 0 0 8px rgba(38,130,110,0.15), 0 10px 28px rgba(2,16,26,0.45); }
-}
-
-@keyframes foundation-pop-in {
-  0% { opacity: 0; transform: scale(0.9) translateY(8px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 /* --- Glowing cards --- */

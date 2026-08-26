@@ -10,13 +10,10 @@
   .back-to-top-pulse::before {
     animation: none;
   }
-  .tap-hint-pulse {
-    animation: none;
-  }
 
   /* Entry animations */
   .fade-up, .fade-in, .slide-in-left, .scale-in, .dropdown-in, .icon-in,
-  .hero-slide-child, .kenburns, .morph-zoom, .passbook-in, .bg-morph-out,
+  .hero-slide-child, .kenburns, .morph-zoom, .passbook-in,
   .page-enter {
     animation: none;
   }
@@ -30,14 +27,11 @@
     transition: none;
   }
 
-  /* Scroll reveal & hover lift */
-  .reveal, .hover-lift {
+  /* Scroll reveal */
+  .reveal {
     opacity: 1;
     transform: none;
     transition: none;
-  }
-  .hover-lift:hover {
-    box-shadow: none;
   }
 
   /* Morph layer */
@@ -71,28 +65,15 @@
     opacity: 0 !important;
   }
 
-  /* Foundation badge */
-  .animate-foundation-pulse, .animate-foundation-pop-in {
-    animation: none;
-  }
-
   /* Visual effects */
   .text-shimmer {
     background: none;
     -webkit-text-fill-color: currentColor;
     animation: none;
   }
-  .link-underline::after {
-    display: none;
-  }
   .img-reveal {
     clip-path: none;
     animation: none;
-  }
-  .img-blur-in {
-    filter: none;
-    opacity: 1;
-    transition: none;
   }
   .float-subtle {
     animation: none;

@@ -13,12 +13,12 @@ const hexToRgb = (hex: string): [number, number, number] => {
 const resolveColor = (c: [number, number, number] | string): [number, number, number] =>
   typeof c === "string" ? hexToRgb(c) : c;
 
-export interface GlobeMarker {
+interface GlobeMarker {
   location: [number, number];
   size: number;
 }
 
-export interface GlobeProps {
+interface GlobeProps {
   className?: string;
   theta?: number;
   dark?: number;

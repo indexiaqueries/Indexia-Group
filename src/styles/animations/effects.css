@@ -1,5 +1,5 @@
 /* ================================================================
-   Visual Effects — Shimmer, underline, image reveal, blur-in
+   Visual Effects — Shimmer, image reveal
    ================================================================ */
 
 /* Gradient shimmer sweep across text on hover */
@@ -21,41 +21,8 @@
   animation: shimmer-sweep 3s ease-in-out infinite;
 }
 
-/* Smooth animated underline for links and CTAs */
-.link-underline {
-  position: relative;
-  text-decoration: none;
-}
-.link-underline::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.link-underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
 /* Image clip-path reveal — wipe from left */
 .img-reveal {
   clip-path: inset(0 100% 0 0);
   animation: img-reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-/* Image blur-to-sharp on load */
-.img-blur-in {
-  filter: blur(12px);
-  opacity: 0.7;
-  transition: filter 0.6s ease, opacity 0.6s ease;
-}
-.img-blur-in.loaded {
-  filter: blur(0);
-  opacity: 1;
 }

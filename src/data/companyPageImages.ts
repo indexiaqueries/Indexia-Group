@@ -5,13 +5,8 @@ import securityTeam from "../assets/company-pages-img/page-specific/security-tea
 import shamliLand from "../assets/company-pages-img/page-specific/shamli-land.png";
 import shippingPort from "../assets/company-pages-img/page-specific/shipping-port.png";
 import unipoleHoarding from "../assets/company-pages-img/page-specific/unipole-hoarding.png";
-// Images moved to public/images/, referenced as absolute URL paths
 const financeSpotlight = "/images/companies/finance-spotlight.webp";
 const finserveSpotlight = "/images/companies/finserve-spotlight.webp";
-
-// Common images used across all company pages
-import enquirySupport from "../assets/company-pages-img/common/enquiry-support.webp";
-import impactBanner from "../assets/company-pages-img/common/impact-banner.webp";
 import overviewBanner from "../assets/company-pages-img/common/overview-banner.webp";
 
 export const companyPageImages: Record<string, string> = {
@@ -23,12 +18,6 @@ export const companyPageImages: Record<string, string> = {
   warehouse: shamliLand,
   advertising: unipoleHoarding,
   foundation: athleticsTraining,
-};
-
-export const commonImages = {
-  enquirySupport,
-  impactBanner,
-  overviewBanner,
 };
 
 export const getCompanyPageImage = (slug: string): string =>
