@@ -39,8 +39,10 @@ const VideoHoverGallery = ({
   const autoPlayRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const idxRef = useRef<number | null>(null);
 
-  // Keep ref in sync
-  idxRef.current = activeIdx;
+  // Keep ref in sync via effect to satisfy React purity rules
+  useEffect(() => {
+    idxRef.current = activeIdx;
+  }, [activeIdx]);
 
   const activateCard = useCallback((idx: number) => {
     setActiveIdx(idx);
@@ -56,6 +58,16 @@ const VideoHoverGallery = ({
       }
     });
   }, []);
+
+  // startAutoPlay must be declared before handleMouseLeave since it references it.
+  const startAutoPlay = useCallback(() => {
+    if (!autoPlay) return;
+    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    autoPlayRef.current = setInterval(() => {
+      const next = idxRef.current === null ? 0 : (idxRef.current + 1) % videos.length;
+      activateCard(next);
+    }, autoPlayDelay);
+  }, [autoPlay, autoPlayDelay, videos.length, activateCard]);
 
   const handleMouseEnter = useCallback((idx: number) => {
     activateCard(idx);
@@ -73,16 +85,7 @@ const VideoHoverGallery = ({
     });
     // Resume autoplay
     startAutoPlay();
-  }, []);
-
-  const startAutoPlay = useCallback(() => {
-    if (!autoPlay) return;
-    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
-    autoPlayRef.current = setInterval(() => {
-      const next = idxRef.current === null ? 0 : (idxRef.current + 1) % videos.length;
-      activateCard(next);
-    }, autoPlayDelay);
-  }, [autoPlay, autoPlayDelay, videos.length, activateCard]);
+  }, [startAutoPlay]);
 
   // Keyboard navigation
   useEffect(() => {

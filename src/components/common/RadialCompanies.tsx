@@ -52,11 +52,11 @@ const CX = SVG_SIZE / 2;
 const CY = SVG_SIZE / 2;
 const HUB_R = 60;
 // Line lengths: top/bottom shorter, sides/diagonals longer
-const CARD_R: Record<number, number> = { 0: 260, 4: 260 };
-const CARD_R_DEFAULT = 310;
+const CARD_R: Record<number, number> = { 0: 320, 4: 320 };
+const CARD_R_DEFAULT = 380;
 // Percentage radius for CSS positioning
-const RADIUS_PCT: Record<number, number> = { 0: 28, 4: 28 };
-const RADIUS_PCT_DEFAULT = 34;
+const RADIUS_PCT: Record<number, number> = { 0: 33, 4: 33 };
+const RADIUS_PCT_DEFAULT = 40;
 
 export default function RadialCompanies() {
   const { t } = useTranslation();
@@ -66,7 +66,20 @@ export default function RadialCompanies() {
   return (
     <>
       {/* Desktop: radial layout */}
-      <div className="relative mx-auto hidden lg:block" style={{ width: "100%", maxWidth: 960, aspectRatio: "5 / 3" }}>
+      <style>{`
+        @keyframes marchingAnts {
+          to { stroke-dashoffset: -8; }
+        }
+        .radial-hovers svg line {
+          stroke-dasharray: 2 2;
+          stroke-dashoffset: 0;
+          transition: stroke-dashoffset 0.3s;
+        }
+        .radial-hovers:hover svg line {
+          animation: marchingAnts 0.4s linear infinite;
+        }
+      `}</style>
+      <div className="relative mx-auto hidden lg:block radial-hovers" style={{ width: "100%", maxWidth: 1000, aspectRatio: "4 / 3" }}>
         <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true" viewBox={`0 0 ${SVG_SIZE} ${SVG_SIZE}`} preserveAspectRatio="xMidYMid meet">
           {COMPANIES.map((c, i) => {
             const angle = (i * 45 - 90) * (Math.PI / 180);
@@ -79,7 +92,7 @@ export default function RadialCompanies() {
                 x2={CX + Math.cos(angle) * cardR}
                 y2={CY + Math.sin(angle) * cardR}
                 stroke="rgb(1,1,1)"
-                strokeWidth="1"
+                strokeWidth="2"
                 strokeDasharray="2 2"
               />
             );

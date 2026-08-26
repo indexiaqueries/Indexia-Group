@@ -132,6 +132,7 @@ const HomeHeroGallery = ({
       moved: false,
     };
     suppressClickRef.current = false;
+    // eslint-disable-next-line react-hooks/purity -- performance.now() is in an event handler, not render
     velocityTracker.current = { times: [performance.now()], x: [e.clientX] };
 
     // Listen on window so fast swipes that leave the strip still track;

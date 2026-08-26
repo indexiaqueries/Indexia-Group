@@ -7,9 +7,7 @@
   --color-yellow-bright: #f7f75c;
   --color-yellow-ink: #241a03;
   --color-gray: #7b7b7b;
-  --color-gray-light: #9ca3af;
 
-  --color-paper: #f6f2e9;
   --color-ink: #111827;
   --color-ink-deep: #122029;
   --color-ink-soft: #374151;
@@ -22,28 +20,8 @@
   --color-navy-deep: #0a2233;
   --color-navy-mid: #0f4a6e;
   --color-navy-black: #043249;
-  --color-sand: #e3dcc9;
-  --color-sand-deep: #ddd6c4;
   --color-success: #14765f;
   --color-danger: #b91c1c;
 
-  /* Business-card description scrim (over card imagery) */
-  --card-desc-gradient: linear-gradient(
-    160deg,
-    rgba(2, 8, 23, 0.88) 0%,
-    rgba(4, 32, 58, 0.7) 55%,
-    rgba(2, 8, 23, 0.55) 100%
-  );
 
-  /* Hero description highlight (over hero imagery) */
-  --hero-sub-gradient: linear-gradient(
-    120deg,
-    rgba(2, 8, 23, 0.82) 0%,
-    rgba(4, 32, 58, 0.62) 55%,
-    rgba(2, 8, 23, 0.45) 100%
-  );
-
-  /* Business-card photo overlays */
-  --card-tint: color-mix(in srgb, var(--color-night) 35%, transparent);
-  --card-icon-shadow: color-mix(in srgb, var(--color-night) 60%, transparent);
 }

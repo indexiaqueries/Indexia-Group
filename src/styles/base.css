@@ -73,13 +73,3 @@ ul {
   font-family: "IBM Plex Mono", "Cascadia Mono", "SFMono-Regular", Consolas, Menlo, monospace;
 }
 
-/* Our Reach section gradient background */
-.bg-reach-gradient {
-  background: linear-gradient(
-    160deg,
-    var(--color-night) 0%,
-    var(--color-navy-deep) 30%,
-    var(--color-deep) 60%,
-    var(--color-navy) 100%
-  );
-}

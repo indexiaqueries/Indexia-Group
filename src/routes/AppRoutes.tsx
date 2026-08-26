@@ -59,8 +59,8 @@ const AppRoutes = () => (
         <Route path="/terms-of-use" element={<LegalDocumentPage docId="termsOfUse" />} />
         <Route path="/terms" element={<LegalDocumentPage docId="terms" />} />
       </Route>
-      <Route path="*" element={<NotFoundPage />} />
       <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </Suspense>
 );

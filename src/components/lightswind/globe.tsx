@@ -54,7 +54,11 @@ const Globe: React.FC<GlobeProps> = ({
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const propsRef = useRef({ theta, dark, scale, diffuse, mapSamples, mapBrightness, baseColor, markerColor, glowColor, markers: markers ?? EMPTY_MARKERS, autoRotate, autoRotateSpeed });
-  propsRef.current = { theta, dark, scale, diffuse, mapSamples, mapBrightness, baseColor, markerColor, glowColor, markers: markers ?? EMPTY_MARKERS, autoRotate, autoRotateSpeed };
+
+  // Keep propsRef in sync via effect to satisfy React purity rules
+  useEffect(() => {
+    propsRef.current = { theta, dark, scale, diffuse, mapSamples, mapBrightness, baseColor, markerColor, glowColor, markers: markers ?? EMPTY_MARKERS, autoRotate, autoRotateSpeed };
+  });
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -162,7 +166,6 @@ const Globe: React.FC<GlobeProps> = ({
     };
   // Only run once on mount, prop changes are read from propsRef.current
   // to avoid destroying/recreating the globe on every render.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

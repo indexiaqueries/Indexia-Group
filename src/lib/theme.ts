@@ -15,7 +15,6 @@ export const colors = {
 export const accent = {
   green: "var(--color-teal)",
   blue: "var(--color-blue)",
-  yellow: "var(--color-yellow)",
   gray: "var(--color-gray)",
 } as const;
 
@@ -23,5 +22,3 @@ export const displayFont = { fontFamily: "'Fraunces', Georgia, serif", fontOptic
 
 export const monoFont = { fontFamily: "'IBM Plex Mono', 'Cascadia Mono', Menlo, monospace" } as const;
 
-export const cardBaseClass =
-  "rounded-2xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md";
