@@ -206,14 +206,14 @@ const AboutPage = () => {
       </section>
 
       {/* Our Companies */}
-      <section className="relative overflow-hidden bg-[#2a2a2a] px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="relative overflow-hidden bg-[#2a2a2a]/20 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-2 sm:mb-4 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
-            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("companiesTitle", "Eight Businesses, One Vision")}
             </h2>
-            <p className="mt-2 text-[13px] leading-5 text-white/60">
+            <p className="mt-2 text-[13px] leading-5 sm:text-[14px] sm:leading-6 text-(--color-muted)">
               {tr("companiesSubtitle", "")}
             </p>
           </Reveal>
