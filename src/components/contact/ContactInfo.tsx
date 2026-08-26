@@ -35,10 +35,10 @@ const EmailsSection = () => {
             <Mail size={18} />
           </span>
           <span className="min-w-0">
-            <span className="block text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: accent.gray }}>
+            <span className="block text-[10px] font-bold uppercase tracking-[0.15em] text-white/50">
               {label}
             </span>
-            <span className="mt-0.5 block text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)">
+            <span className="mt-0.5 block text-sm font-semibold text-white group-hover:text-(--color-yellow)">
               {email}
             </span>
           </span>

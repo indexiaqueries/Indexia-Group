@@ -19,6 +19,6 @@ export const subjectOptions: { value: string; labelKey?: string }[] = [
   ...companies.map((company) => ({ value: company.name, labelKey: `pageContent.companies.${company.slug}.name` })),
 ];
 
-export const ledgerLabel = "text-xs font-bold uppercase tracking-wider text-slate-600";
-export const selectClass = "h-11 rounded-xl px-4 text-sm text-slate-900";
+export const ledgerLabel = "text-xs font-bold uppercase tracking-wider text-white/70";
+export const selectClass = "h-11 rounded-xl px-4 text-sm text-white bg-slate-700 border-slate-600";
 export const errorText = "text-xs font-medium text-(--color-danger)";

@@ -12,9 +12,17 @@ import aboutBg from "../assets/hero-img/AboutHero.png";
 import founderImg from "../assets/about-img/founder_MD.png";
 import ourStoryImg from "../assets/about-img/OurStory.png";
 import valuesImg from "../assets/about-img/OurValues.png";
+import ScrollTimeline from "../components/common/ScrollTimeline";
 
 const VALUES = [1, 2, 3, 4] as const;
-const MILESTONES = [1, 2, 3, 4, 5] as const;
+
+const MILESTONES_DATA = [
+  { year: "2005", title: "Company Founded", body: "Started with a vision to build a diversified Indian business group rooted in integrity and expertise." },
+  { year: "2012", title: "Indexia Finserve Launch", body: "Expanded into investment and finance, creating a dedicated lending and wealth management arm." },
+  { year: "2015", title: "Global Edible Export", body: "Launched Indexia Overseas to connect Indian agriculture with global markets across multiple continents." },
+  { year: "2021", title: "Rapid Expansion", body: "Launched Agro Bio, Securities, Warehouse, and Advertising verticals — growing to eight companies." },
+  { year: "2024", title: "Social Impact", body: "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games." },
+];
 
 const COMPANY_LEFT = [
   { slug: "finance", tag: "c1Tag", tagDefault: "Multinational Fintech", name: "c1Name", nameDefault: "Indexia Finance", color: colors.teal },
@@ -154,8 +162,7 @@ const AboutPage = () => {
           </Reveal>
 
           <Reveal delay={0.1} amount={0.15}>
-            <div className="mx-auto grid max-w-6xl items-center gap-5 sm:grid-cols-5">
-              <div className="relative overflow-hidden rounded-2xl sm:col-span-2">
+            <div className="mx-auto grid max-w-6xl items-stretch gap-5 sm:grid-cols-5">              <div className="relative rounded-2xl sm:col-span-2">
                 <img
                   src={founderImg}
                   alt={tr("founderName", "Founder & Managing Director")}
@@ -163,7 +170,7 @@ const AboutPage = () => {
                   height={700}
                   loading="lazy"
                   decoding="async"
-                  className="w-full object-contain"
+                  className="h-auto w-full rounded-2xl object-contain"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
                 {/* Floating name badge */}
@@ -226,9 +233,9 @@ const AboutPage = () => {
       </section>
 
       {/* Values */}
-      <section className="relative min-h-[50vh] sm:min-h-[55vh] flex flex-col justify-end overflow-hidden">
-        {/* Background image */}
-        <div className="absolute inset-0">
+      <section className="relative">
+        {/* Background image — top portion only */}
+        <div className="relative h-[45vh] sm:h-[50vh] overflow-hidden">
           <ResponsiveImage
             src={valuesImg}
             alt=""
@@ -236,29 +243,22 @@ const AboutPage = () => {
             height={500}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
-        </div>
+          <div className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/60" />
+          </div>
 
-        {/* Content pinned to bottom */}
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-2 py-5 sm:px-3 sm:py-6 lg:px-5">
-          <Reveal className="mb-3 text-center sm:text-left">
-            <h2 className="font-display text-[clamp(20px,3vw,32px)] font-bold text-white">
-              {tr("valuesTitle", "What We Stand For")}
-            </h2>
-          </Reveal>
-
-          {/* 4 cards in a single row */}
+        {/* Cards — half on image, half below */}
+        <div className="relative z-20 -mt-12 sm:-mt-16 mx-auto w-full max-w-6xl px-2 sm:px-3 lg:px-5">
           <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
             {VALUES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.15}>
-                <div className="group rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm p-3 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20 hover:border-white/30">
-                  <span className="font-ledger text-lg font-bold text-(--color-yellow)">
+                <div className="group rounded-xl border border-slate-200 bg-white p-3 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <span className="font-ledger text-lg font-bold text-(--color-teal)">
                     {String(i).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-1 text-[13px] sm:text-sm font-bold text-white leading-tight">
+                  <h3 className="mt-1 text-[13px] sm:text-sm font-bold text-slate-900 leading-tight">
                     {tr(`value${i}Title`, "")}
                   </h3>
-                  <p className="mt-1 text-[11px] sm:text-[12px] leading-4 text-white/65 line-clamp-2 group-hover:text-white/80">
+                  <p className="mt-1 text-[11px] sm:text-[12px] leading-4 text-slate-500 line-clamp-2 group-hover:text-slate-700">
                     {tr(`value${i}Body`, "")}
                   </p>
                 </div>
@@ -266,6 +266,9 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
+
+        {/* Solid background for the lower half of cards */}
+        <div className="bg-white h-16 sm:h-20" />
       </section>
 
       {/* Our Companies */}
@@ -328,72 +331,44 @@ const AboutPage = () => {
             </h2>
           </Reveal>
 
-          <div className="relative">
-            {/* Animated center line */}
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-(--color-teal)/20 via-(--color-teal) to-(--color-teal)/20 sm:left-1/2" />
-
-            <div className="space-y-6 sm:space-y-8">
-              {MILESTONES.map((i) => (
-                <Reveal key={i} delay={(i - 1) * 0.06} amount={0.1}>
-                  <div className="relative flex items-center sm:justify-center">
-                    {/* Center dot */}
-                    <div className="absolute left-4 sm:left-1/2 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border-2 border-(--color-teal) bg-white shadow-md">
-                      <span className="font-ledger text-[8px] sm:text-[9px] font-bold text-(--color-teal)">
-                        {tr(`milestone${i}Year`, "")}
-                      </span>
-                    </div>
-
-                    {/* Content card */}
-                    <div className={`ml-10 sm:ml-0 sm:w-[calc(50%-2.5rem)] ${
-                      i % 2 === 0 ? "sm:mr-auto sm:pr-6 sm:text-right" : "sm:ml-auto sm:pl-6"
-                    }`}>
-                      <div className="rounded-xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
-                        <h3 className="font-display text-[15px] sm:text-base font-bold text-slate-900">
-                          {tr(`milestone${i}Title`, "")}
-                        </h3>
-                        <p className="mt-1.5 text-[12px] sm:text-[13px] leading-5 sm:leading-6 text-slate-500">
-                          {tr(`milestone${i}Body`, "")}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
+          <ScrollTimeline milestones={MILESTONES_DATA} />
         </div>
-      </section>
+      </section>      {/* Registration & Compliance */}
+      <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+        {/* Decorative glow */}
+        <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 w-48 rounded-full bg-(--color-teal)/15 blur-[80px]" />
+        <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 w-40 rounded-full bg-(--color-yellow)/10 blur-[60px]" />
 
-      {/* Registration & Compliance */}
-      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
-        <div className="mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
-            <Eyebrow className="mb-2">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
-            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
+        <div className="relative mx-auto max-w-6xl">
+          <Reveal className="mx-auto mb-5 sm:mb-7 max-w-2xl text-center">
+            <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
               {tr("registrationTitle", "Registered Entities")}</h2>
-            <p className="mt-3 text-[14px] leading-6 text-(--color-muted)">
+            <p className="mt-2 text-[13px] leading-5 text-white/60">
               {tr("registrationSubtitle", "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.")}
             </p>
           </Reveal>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { name: "Indexia Finserve Pvt. Ltd.", cin: "U65990MH2012PTC234568", est: "2012" },
               { name: "Indexia Overseas Pvt. Ltd.", cin: "U51909MH2015PTC367890", est: "2015" },
               { name: "Indexia Agro Bio Fertilizers Pvt. Ltd.", cin: "U01100MH2018PTC390123", est: "2018" },
             ].map((entity) => (
               <Reveal key={entity.cin} delay={0.05} amount={0.15}>
-                <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md">
-                  <h3 className="font-display text-sm font-bold text-slate-900">{entity.name}</h3>
-                  <div className="mt-3 space-y-2 text-xs text-slate-500">
-                    <p><span className="font-semibold text-slate-700">CIN:</span> {entity.cin}</p>
-                    <p><span className="font-semibold text-slate-700">Est.:</span> {entity.est}</p>
+                <div className="rounded-xl border border-white/15 bg-white/10 backdrop-blur-sm p-4 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/15 hover:border-white/25">
+                  <h3 className="font-display text-[13px] sm:text-sm font-bold text-white">{entity.name}</h3>
+                  <div className="mt-2.5 flex items-center gap-3 text-[11px] text-white/50">
+                    <span><span className="font-semibold text-white/70">CIN:</span> {entity.cin}</span>
+                  </div>
+                  <div className="mt-1 text-[11px] text-white/50">
+                    <span className="font-semibold text-white/70">Est.:</span> {entity.est}
                   </div>
                   <a
                     href="https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-(--color-teal) transition-colors hover:text-(--color-blue)"
+                    className="mt-2.5 inline-flex items-center gap-1 text-[11px] font-bold text-(--color-teal) transition-colors hover:text-(--color-yellow)"
                   >
                     {tr("viewOnMCA", "View on MCA")} →
                   </a>
@@ -402,15 +377,18 @@ const AboutPage = () => {
             ))}
           </div>
 
-          <Reveal delay={0.2} amount={0.15} className="mt-5">
-            <div className="rounded-2xl border border-slate-100 bg-(--color-soft) p-6 text-center">
-              <p className="text-sm text-slate-500">
-                {tr("registrationNote", "All company registrations are verifiable on the")}
-                <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="ml-1 font-bold text-(--color-teal) hover:text-(--color-blue)">
-                  {tr("mcaPortal", "MCA Portal")}
-                </a>
-              </p>
-            </div>
+          <Reveal delay={0.2} amount={0.15} className="mt-5 sm:mt-6 text-center">
+            <a
+              href="https://www.mca.gov.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-5 py-2 text-[12px] font-bold text-(--color-yellow) transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow)/20"
+            >
+              Verify on MCA Portal
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </Reveal>
         </div>
       </section>

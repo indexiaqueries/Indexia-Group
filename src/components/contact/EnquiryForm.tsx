@@ -143,7 +143,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
         <Eyebrow size="md" color={accent.green}>
           {t("form.eyebrow")}
         </Eyebrow>
-        <p className="mt-3 text-sm leading-6 text-slate-500">{t("form.intro")}</p>
+        <p className="mt-3 text-sm leading-6 text-white/60">{t("form.intro")}</p>
 
         <form onSubmit={handleSubmit} noValidate className="mt-6 sm:mt-8 flex flex-1 flex-col gap-4 sm:gap-5">
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
@@ -179,7 +179,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
                 required
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? "phone-error" : undefined}
-                className="h-11 rounded-xl px-4 text-sm placeholder:text-slate-400"
+                className="h-11 rounded-xl px-4 text-sm text-white bg-slate-700 border-slate-600 placeholder:text-slate-400"
               />
               {errors.phone && (
                 <p id="phone-error" role="alert" className={errorText}>
@@ -256,7 +256,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
               placeholder={t("form.messagePlaceholder")}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? "message-error" : undefined}
-              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm"
+              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm text-white bg-slate-700 border-slate-600 placeholder:text-slate-400"
             />
             {errors.message && (
               <p id="message-error" role="alert" className={errorText}>
