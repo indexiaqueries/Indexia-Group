@@ -72,7 +72,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
 
   return (
     <Link
-      to="/about"
+      to={`/businesses/${company.slug}`}
       aria-label={t("companyLinkCard.visitPageAria", { name })}
     >
       {card}

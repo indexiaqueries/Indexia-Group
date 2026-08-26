@@ -74,7 +74,7 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
       </NavLink>
 
       <NavLink
-        to="/about"
+        to="/businesses"
         onClick={onClose}
         className={() =>
           `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${

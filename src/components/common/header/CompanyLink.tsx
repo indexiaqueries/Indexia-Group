@@ -36,7 +36,7 @@ const CompanyLink = ({ company, onNavigate, isActive = false }: CompanyLinkProps
     );
   }
   return (
-    <Link key={company.slug} to="/about" className={getLinkClass(isActive)} onClick={onNavigate}>
+    <Link key={company.slug} to={`/businesses/${company.slug}`} className={getLinkClass(isActive)} onClick={onNavigate}>
       {name}
     </Link>
   );
