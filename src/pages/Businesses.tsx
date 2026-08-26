@@ -34,14 +34,14 @@ const Businesses = () => {
           position: index + 1,
           name: company.name,
           description: company.desc,
-          url: company.link ?? `https://www.indexiagroup.com/businesses/${company.slug}`,
+          url: company.link ?? `https://www.indexiagroup.com/${company.slug}`,
         })),
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
-          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbCompanies", "Group Companies"), item: "https://www.indexiagroup.com/businesses" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbCompanies", "Group Companies"), item: "https://www.indexiagroup.com/about" },
         ],
       },
     ],
@@ -53,7 +53,7 @@ const Businesses = () => {
       title={t("seo.businessesTitle")}
       description={t("seo.businessesDescription")}
       keywords="Indexia Group businesses, Indexia Finance, Indexia Finserve loans, Indexia Securities, sugar export South America, organic fertilizer Shamli UP, warehousing Delhi NCR, highway advertising, Olympic athlete support"
-      canonicalPath="/businesses"
+      canonicalPath="/about"
       jsonLd={businessesJsonLd}
     />
 

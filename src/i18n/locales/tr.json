@@ -27,7 +27,7 @@
     "p1": {
       "tag": "Indexia Finance",
       "heading": "Eksiksiz Bir\nKredi Merkezi.",
-      "sub": "Her türlü kredi için portalımıza www.indexiafinance.com adresinden başvurabilirsiniz. Hizmetlerimizi küresel olarak sunuyoruz — Hindistan'da 43 banka ve NBFC ile iş ortağıyız."
+      "sub": "Her türlü kredi için portalımıza www.indexiafinance.com adresinden başvurabilirsiniz. Hizmetlerimizi küresel olarak sunuyoruz, Hindistan'da 43 banka ve NBFC ile iş ortağıyız."
     },
     "p2": {
       "tag": "Indexia Finserve Pvt. Ltd.",
@@ -71,7 +71,7 @@
   },
   "footer": {
     "tagline": "Çeşitlendirilmiş Hint İş Grubu",
-    "blurb": "Tek bir çeşitlendirilmiş Hint grubu altında sekiz güvenilir işletme — finans, ihracat, tarım, lojistik, güvenlik, reklamcılık ve sporcu desteği — dürüstlük ve sonuç üzerine inşa edilmiştir.",
+    "blurb": "Tek bir çeşitlendirilmiş Hint grubu altında sekiz güvenilir işletme, finans, ihracat, tarım, lojistik, güvenlik, reklamcılık ve sporcu desteği, dürüstlük ve sonuç üzerine inşa edilmiştir.",
     "contactUs": "İletişim",
     "hours": "Pzt - Cmt: 09.00 - 18.00",
     "company": "Şirket",
@@ -106,13 +106,13 @@
     "eyebrow": "Grup Şirketleri",
     "titleStart": "Sekiz Şirket, ",
     "titleAccent": "Tek Grup",
-    "subtitle": "Kendi sayfasını ziyaret etmek için bir şirket seçin — ardından sorunuzu doğru ekibe iletin."
+    "subtitle": "Kendi sayfasını ziyaret etmek için bir şirket seçin, ardından sorunuzu doğru ekibe iletin."
   },
   "businessesHero": {
     "eyebrow": "Indexia Farkı",
     "titleStart": "Tek Grup. Sekiz İşletme. ",
     "titleAccent": "Tek Ortak Söz.",
-    "paragraph": "Finans ve danışmanlıktan ihracat, tarım, lojistik, güvenlik, spor ve medyaya kadar — her Indexia işletmesi aynı temel üzerine kuruludur: dürüstlük, uzmanlık ve insan odaklı yaklaşım. Ne ihtiyacınız olursa olsun, doğru ekip zaten ailenin bir parçasıdır.",
+    "paragraph": "Finans ve danışmanlıktan ihracat, tarım, lojistik, güvenlik, spor ve medyaya kadar, her Indexia işletmesi aynı temel üzerine kuruludur: dürüstlük, uzmanlık ve insan odaklı yaklaşım. Ne ihtiyacınız olursa olsun, doğru ekip zaten ailenin bir parçasıdır.",
     "counterClients": "Hizmet Verilen Müşteri",
     "counterBusinesses": "İşletme",
     "counterLocations": "Şehir",
@@ -133,7 +133,7 @@
     "eyebrow": "Sorunuzu Gönderin",
     "headlineStart": "",
     "headlineAccent": "Indexia Şirketi Hakkında Sorun",
-    "paragraph": "Hizmetlerimizle ilgili bir sorunuz, iş danışmanlığı ihtiyacınız veya ortaklık keşfetme isteğiniz olsun, ekibimiz size yardımcı olmaya hazırdır — 24 saat içinde yanıt veriyoruz.",
+    "paragraph": "Hizmetlerimizle ilgili bir sorunuz, iş danışmanlığı ihtiyacınız veya ortaklık keşfetme isteğiniz olsun, ekibimiz size yardımcı olmaya hazırdır, 24 saat içinde yanıt veriyoruz.",
     "enquiries": "Sorular",
     "location": "Konum",
     "workingHours": "Çalışma Saatleri",
@@ -210,7 +210,7 @@
     "title": "Haber & Bilgi Merkezi",
     "titleStart": "Grup Genelinden ",
     "titleAccent": "Hikayeler ve Görüşler.",
-    "subtitle": "En güncel bankacılık haberleri — finansman güncellemeleri, dijital ödemeler, politika değişiklikleri ve piyasa gelişmeleri — ayrıca işletmelerimizden pratik rehberler.",
+    "subtitle": "En güncel bankacılık haberleri, finansman güncellemeleri, dijital ödemeler, politika değişiklikleri ve piyasa gelişmeleri, ayrıca işletmelerimizden pratik rehberler.",
     "tvEyebrow": "Bizi TV'de İzleyin",
     "tvHeading": "Tüm Kredi İhtiyaçlarınız İçin",
     "tvCaption": "Kredi Gerekirse… Indexia Finance",
@@ -221,16 +221,16 @@
     "knowledgeHeading": "İşletmelerimizden Pratik Rehberler",
     "knowledgeSubtitle": "Bu işi her gün yapan ekiplerin yazdığı anlaşılır açıklamalar.",
     "ctaTitle": "İşletmelerimiz hakkında bir sorunuz mu var?",
-    "ctaBody": "FDI danışmanlığından organik tarıma, silahlı güvenliğe kadar — doğru Indexia şirketi yardıma hazır. Bize bir soru gönderin, sizi bağlayalım.",
+    "ctaBody": "FDI danışmanlığından organik tarıma, silahlı güvenliğe kadar, doğru Indexia şirketi yardıma hazır. Bize bir soru gönderin, sizi bağlayalım.",
     "ctaButton": "Sorunuzu Gönderin",
-    "metaDescription": "Haber & Bilgi Merkezi — finansman, dijital ödemeler ve politika hakkında en güncel bankacılık haberleri, ayrıca Indexia Group'tan pratik bilgi rehberleri."
+    "metaDescription": "Haber & Bilgi Merkezi, finansman, dijital ödemeler ve politika hakkında en güncel bankacılık haberleri, ayrıca Indexia Group'tan pratik bilgi rehberleri."
   },
   "careersPage": {
     "eyebrow": "Kariyer",
     "title": "Indexia Group'ta Kariyer",
     "titleStart": "Kariyerinizi Bizimle ",
     "titleAccent": "İnşa Edin.",
-    "subtitle": "Indexia Group öğrenen bir organizasyondur — ve kurum kültürü de ekibidir.",
+    "subtitle": "Indexia Group öğrenen bir organizasyondur, ve kurum kültürü de ekibidir.",
     "ctaButton": "Açık Pozisyonları Görüntüle",
     "cultureEyebrow": "Kültürümüz",
     "cultureHeading": "Öğrenen Bir Organizasyon",
@@ -240,7 +240,7 @@
     "apply": "Başvur",
     "ctaTitle": "Özgeçmişinizi Bize Gönderin",
     "ctaBody": "Her zaman harika insanlar arıyoruz. CV'nizi hr@indexiafinance.com adresine gönderin, sizinle iletişime geçelim.",
-    "metaDescription": "Indexia Group'ta kariyer — Mumbai'deki Indexia Finserve'de açık pozisyonları olan öğrenen bir organizasyon. Özgeçmişinizi göndererek kariyerinize başlayın.",
+    "metaDescription": "Indexia Group'ta kariyer, Mumbai'deki Indexia Finserve'de açık pozisyonları olan öğrenen bir organizasyon. Özgeçmişinizi göndererek kariyerinize başlayın.",
     "mailResume": "Özgeçmişinizi Gönderin –"
   },
   "legal": {
@@ -257,7 +257,7 @@
     "contactHeading": "Bu politika hakkında sorularınız mı var?",
     "contactBody": "contactus@indexiagroup.com adresine yazın veya bir soru gönderin; ekibimiz size dönecektir.",
     "sendEnquiry": "Sorunuzu Gönderin",
-    "metaPrivacyDescription": "Indexia Group'un Gizlilik Politikası'nı okuyun — kişisel bilgilerinizi nasıl topladığımız, kullandığımız, sakladığımız ve koruduğumuz.",
+    "metaPrivacyDescription": "Indexia Group'un Gizlilik Politikası'nı okuyun, kişisel bilgilerinizi nasıl topladığımız, kullandığımız, sakladığımız ve koruduğumuz.",
     "metaTermsDescription": "Indexia Group web sitesinin ve şirketlerinin hizmetlerinin kullanımını düzenleyen Şartlar ve Koşullar'ı okuyun.",
     "metaTermsOfUseDescription": "Indexia Group web sitesine ve şirketlerinin web sitelerine nasıl erişebileceğinizi ve gezinebileceğinizi düzenleyen Kullanım Koşulları'nı okuyun."
   },
@@ -266,17 +266,17 @@
     "title": "Indexia Group'ta Küresel Araştırma",
     "titleStart": "Küresel Finansal Araştırma ",
     "titleAccent": "& Kaynaklar.",
-    "subtitle": "Makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler ve keskin görüşler — Asya, Afrika ve Orta Doğu genelinde güçlü sahada edinilen içgörüler üzerine inşa edilmiştir.",
+    "subtitle": "Makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler ve keskin görüşler, Asya, Afrika ve Orta Doğu genelinde güçlü sahada edinilen içgörüler üzerine inşa edilmiştir.",
     "ctaButton": "Araştırma Kapsamını Keşfedin",
     "areasEyebrow": "Araştırma Kapsamı",
     "areasHeading": "Disiplinler Genelinde Küresel Araştırma",
     "areasSubtitle": "Tüm kapsam alanımız genelinde içgörülü, ilgili analizler.",
     "reportsEyebrow": "Yayınlar",
     "reportsHeading": "Araştırmayı Nasıl Paylaşıyoruz",
-    "reportsSubtitle": "Sık sunumlar ve yüksek kaliteli yayınlar — sahada edinilen analizimiz OTG; uygulanabilir piyasa fikirlerimiz ACT; ve küresel önem taşıyan temalar üzerine Özel Raporlar.",
+    "reportsSubtitle": "Sık sunumlar ve yüksek kaliteli yayınlar, sahada edinilen analizimiz OTG; uygulanabilir piyasa fikirlerimiz ACT; ve küresel önem taşıyan temalar üzerine Özel Raporlar.",
     "ctaTitle": "Araştırmamıza Erişin",
     "ctaBody": "Daha fazla bilgi almak ve araştırmamızı almak için Küresel Araştırma portalımızı ziyaret edin. Erişim için lütfen İlişki Yöneticinizle iletişime geçin.",
-    "metaDescription": "Indexia Group Küresel Araştırma — makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler; Asya, Afrika ve Orta Doğu'da sahada edinilen içgörülerle.",
+    "metaDescription": "Indexia Group Küresel Araştırma, makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler; Asya, Afrika ve Orta Doğu'da sahada edinilen içgörülerle.",
     "reportFormat": "Yayın"
   },
   "securityTipsPage": {
@@ -297,7 +297,7 @@
     "contactsSubtitle": "Hesap bilgilerinizi şüpheli bir tarafa açıkladığınızı düşünüyorsanız veya dolandırıcılığa maruz kaldıysanız, derhal Müşteri Hizmetleri Hattı'nı arayarak bizimle iletişime geçin.",
     "ctaTitle": "Şüpheli bir şey mi görüyorsunuz?",
     "ctaBody": "Bunu soru formumuz aracılığıyla bildirin veya ilgili Indexia Group şirketiyle doğrudan iletişime geçin.",
-    "metaDescription": "Indexia Group'tan güvenlik ipuçları — hesaplarınızı çevrimiçi nasıl koruduğumuz, cihazlarınızda neler yapabileceğiniz ve bir sorun olursa kime başvurmanız gerektiği."
+    "metaDescription": "Indexia Group'tan güvenlik ipuçları, hesaplarınızı çevrimiçi nasıl koruduğumuz, cihazlarınızda neler yapabileceğiniz ve bir sorun olursa kime başvurmanız gerektiği."
   },
   "common": {
     "logoAlt": "Indexia Group logosu",
@@ -330,10 +330,10 @@
   "seo": {
     "homeTitle": "Finansal Hizmetler, Krediler, İhracat & Lojistik",
     "homeDescription": "Çeşitlendirilmiş Hint iş grubu: finansal hizmetler, NBFC kredileri, küresel ihracat, tarım gübreleri, depolama & güvenlik. Mumbai, Delhi ve Ekvador'da ofisler.",
-    "businessesTitle": "Grup Şirketleri — Finans, Tarım, İhracat & Lojistik",
+    "businessesTitle": "Grup Şirketleri, Finans, Tarım, İhracat & Lojistik",
     "businessesDescription": "Indexia Group'un sekiz işletmesi: finans, krediler, güvenlik, şeker ihracatı, organik gübre, depolama, reklamcılık ve sporcu desteği.",
-    "contactTitle": "İletişim — Mumbai & Delhi Ofisleri",
-    "contactDescription": "Finansal hizmetler, krediler, ihracat, tarım ve lojistik soruları için Indexia Group ile iletişime geçin. Mumbai, Delhi ve Ekvador'da ofisler — 24 saat içinde yanıt."
+    "contactTitle": "İletişim, Mumbai & Delhi Ofisleri",
+    "contactDescription": "Finansal hizmetler, krediler, ihracat, tarım ve lojistik soruları için Indexia Group ile iletişime geçin. Mumbai, Delhi ve Ekvador'da ofisler, 24 saat içinde yanıt."
   },
   "branches": {
     "corporateOffice": "Merkez Ofis",
@@ -371,7 +371,7 @@
       "finance": {
         "tag": "Çok Uluslu Fintech",
         "desc": "Yatırımcı hizmetleri, FDI, NBFC ve bankacılık finansmanı alanlarında küresel fintech.",
-        "overview": "Indexia Finance, dünya genelindeki müşterilere finansal hizmetler sunan çok uluslu bir fintech platformudur. Her türlü kredi için www.indexiafinance.com portalımıza başvurabilirsiniz — hizmetlerimizi küresel olarak sunuyoruz ve Hindistan'da 43 banka ve NBFC ile iş ortağıyız. Dört temel alan etrafında inşa edilen — yatırımcı hizmetleri, FDI danışmanlığı, NBFC operasyonları ve bankacılık finansmanı — şirket, sermayeyi fırsatlarla buluşturarak yatırımcıların, işletmelerin ve kurumların sınırlar ötesinde güvenli finansal kararlar almasına yardımcı olur.",
+        "overview": "Indexia Finance, dünya genelindeki müşterilere finansal hizmetler sunan çok uluslu bir fintech platformudur. Her türlü kredi için www.indexiafinance.com portalımıza başvurabilirsiniz, hizmetlerimizi küresel olarak sunuyoruz ve Hindistan'da 43 banka ve NBFC ile iş ortağıyız. Dört temel alan etrafında inşa edilen, yatırımcı hizmetleri, FDI danışmanlığı, NBFC operasyonları ve bankacılık finansmanı, şirket, sermayeyi fırsatlarla buluşturarak yatırımcıların, işletmelerin ve kurumların sınırlar ötesinde güvenli finansal kararlar almasına yardımcı olur.",
         "tagline": "Eksiksiz Bir Kredi Merkezi",
         "highlights": [
           "Hindistan öncelikli uygulama ile küresel fintech erişimi",
@@ -391,7 +391,7 @@
       "finserve": {
         "tag": "Krediler & Finans",
         "desc": "Bireylere ve işletmelere özel her türlü kredi.",
-        "overview": "Indexia Finserve, Indexia Group'un kredi koludur ve finans kapsamında her türlü krediyi sunar. Artık doğru banka kapınıza gelecek — şirket, müşterileri kişisel, konut, işletme, KOBİ ve özel finansman için uygunluk, belgelendirme ve ödeme süreçlerinde tek ve kolaylaştırılmış bir süreçle yönlendiren eksiksiz bir kredi merkezi olarak çalışır.",
+        "overview": "Indexia Finserve, Indexia Group'un kredi koludur ve finans kapsamında her türlü krediyi sunar. Artık doğru banka kapınıza gelecek, şirket, müşterileri kişisel, konut, işletme, KOBİ ve özel finansman için uygunluk, belgelendirme ve ödeme süreçlerinde tek ve kolaylaştırılmış bir süreçle yönlendiren eksiksiz bir kredi merkezi olarak çalışır.",
         "tagline": "Yeni Nesil Finans Yöntemi",
         "highlights": [
           "Tek çatı altında her kredi türü",
@@ -419,7 +419,7 @@
         "desc": "Rafine şeker ve tüm gıda ürünlerini dünya geneline ihraç ediyoruz.",
         "overview": "Indexia Overseas, tüm gıda ürünlerinin küresel ihracatını yürütür ve özellikle 14 Güney Amerika ülkesine şeker ihracatına odaklanır. Şirket; tedarik, kalite, lojistik ve uluslararası uyumluluğu yöneterek gıda sınıfı ürünlerin kaynaktan pazara güvenilir ve ölçekli şekilde ulaşmasını sağlar.",
         "highlights": [
-          "Tüm gıda ürünlerinin ihracatı — şeker odakta",
+          "Tüm gıda ürünlerinin ihracatı, şeker odakta",
           "14 Güney Amerika pazarında yerleşik varlık",
           "Uçtan uca tedarik, kalite ve lojistik"
         ],
@@ -436,7 +436,7 @@
         "desc": "Hindistan'da üretilen ve küresel olarak ihraç edilen organik gübreler.",
         "overview": "Indexia Agro Bio Fertilizers, Delhi NCR bölgesinin bir parçası olan Uttar Pradesh, Shamli'deki üretim tesisinde organik gübreler üretir. Şirketin biyo bazlı ürünleri toprak sağlığını iyileştirir, ürün verimini artırır ve Kuzey Hindistan genelindeki çiftçiler için sürdürülebilir tarımı destekler.",
         "highlights": [
-          "Organik, biyo bazlı üretim — sert kimyasal yok",
+          "Organik, biyo bazlı üretim, sert kimyasal yok",
           "Delhi NCR kuşağında Shamli, UP tesisi",
           "Daha iyi toprak sağlığı, daha yüksek ürün verimi"
         ],
@@ -474,18 +474,18 @@
         "desc": "Shamli'de 8 ulusal otoyola bağlı 21 dönümlük stratejik arazi.",
         "overview": "Indexia Warehouse, Delhi'deki Tronica City, Loni'den yalnızca ~65 km uzaklıktaki Uttar Pradesh, Shamli'de stratejik bir arazi yatırım fırsatı sunar. Konum bir bağlantı merkezidir: 8 eyaleti bağlayan 8 ulusal otoyol ve 2 ana karayolu, Butan ve Nepal'e doğrudan erişim ve 50 crore kişilik pazar erişimi. Dört büyük liman (Gujarat, Maharashtra, Chennai, Kolkata) otoyollar üzerinden doğrudan ulaşılabilir durumdadır ve hem Delhi IGI Havalimanı hem de Noida Uluslararası Havalimanı, Jewar bir saat içindedir. Arazi portföyü 5 konumu ve toplam 21 dönümü kapsar; 1, 2, 2,5, 5 ve 8 dönümlük esnek parseller ve yükleme rampalı 2 dönüm üzerine inşa edilecek modern bir depo içerir. Beklenen fiyat metrekare başına ₹30'dur, pazarlık payı vardır.",
         "highlights": [
-          "Birinci sınıf konum — Shamli, UP, Delhi'ye ~65 km",
+          "Birinci sınıf konum, Shamli, UP, Delhi'ye ~65 km",
           "8 ulusal otoyol + 8 eyaleti bağlayan 2 ana karayolu",
-          "5 konumda 21 dönüm — 1, 2, 2,5, 5 ve 8 dönümlük parseller",
+          "5 konumda 21 dönüm, 1, 2, 2,5, 5 ve 8 dönümlük parseller",
           "Metrekare başına ₹30, pazarlık payı var"
         ],
         "services": [
-          "Arazi Parselleri — 1, 2, 2,5, 5 ve 8 Dönüm",
+          "Arazi Parselleri, 1, 2, 2,5, 5 ve 8 Dönüm",
           "5 Konumda 21 Dönüm",
           "2 Dönümlük Parcelde Depo İnşaatı",
           "Otoyol ve Karayolu Bağlantısı",
-          "Liman Erişimi — Gujarat, Maharashtra, Chennai, Kolkata",
-          "Havalimanı Erişimi — Delhi ve Jewar 1 Saat İçinde"
+          "Liman Erişimi, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Havalimanı Erişimi, Delhi ve Jewar 1 Saat İçinde"
         ],
         "name": "Indexia Warehouse",
         "location": "Shamli, Uttar Pradesh"
@@ -493,17 +493,17 @@
       "advertising": {
         "tag": "Premium Unipole Reklam Panoları",
         "desc": "Kuzey Hindistan'ın en yoğun kavşağında premium otoyol reklam panoları.",
-        "overview": "Indexia Advertising, Kuzey Hindistan'ın merkezi olan Shamli'deki Delhi–Dehradun Otoyolu'nda (NH-709B) premium tek direkli unipole reklam panoları işletir. 8 ulusal otoyol ve 2 ana karayolunun kavşağında konumlanan unipole'larımız, 50 crore nüfusa ulaşan 10 eyaleti birbirine bağlar ve günlük 1+ crore maruz kalma sağlar. Premium yükseklik ve engelsiz 360° görüş açısına sahip tek direkli unipole'lar, görsel karmaşa olmadan markanıza maksimum görünürlük kazandırır ve imza Bisleri Green markalamasıyla desteklenir. Baskı ve kurulumdan bakıma kadar her şeyi uçtan uca biz yönetiyoruz. 10×20 fit unipole'u ayda ₹25.000 veya 12×24 fit unipole'u ayda ₹36.000'a rezerve edin — standart ücret ayda yüz başına ₹125/metrekare, uzun vadeli paketlerde pazarlık payı vardır. Rezervasyon için 86918 86919 veya 011 4629 1155 numaralarını arayın ya da indexia.queries@gmail.com adresine e-posta gönderin.",
+        "overview": "Indexia Advertising, Kuzey Hindistan'ın merkezi olan Shamli'deki Delhi–Dehradun Otoyolu'nda (NH-709B) premium tek direkli unipole reklam panoları işletir. 8 ulusal otoyol ve 2 ana karayolunun kavşağında konumlanan unipole'larımız, 50 crore nüfusa ulaşan 10 eyaleti birbirine bağlar ve günlük 1+ crore maruz kalma sağlar. Premium yükseklik ve engelsiz 360° görüş açısına sahip tek direkli unipole'lar, görsel karmaşa olmadan markanıza maksimum görünürlük kazandırır ve imza Bisleri Green markalamasıyla desteklenir. Baskı ve kurulumdan bakıma kadar her şeyi uçtan uca biz yönetiyoruz. 10×20 fit unipole'u ayda ₹25.000 veya 12×24 fit unipole'u ayda ₹36.000'a rezerve edin, standart ücret ayda yüz başına ₹125/metrekare, uzun vadeli paketlerde pazarlık payı vardır. Rezervasyon için 86918 86919 veya 011 4629 1155 numaralarını arayın ya da indexia.queries@gmail.com adresine e-posta gönderin.",
         "highlights": [
           "NH-709B, Delhi–Dehradun otoyolunda stratejik yerleşimler",
-          "10 bağlı eyalet — 50 crore nüfus erişimi, günlük 1+ crore maruz kalma",
+          "10 bağlı eyalet, 50 crore nüfus erişimi, günlük 1+ crore maruz kalma",
           "360° görünürlük ve premium yüksekliğe sahip tek direkli unipole'lar",
-          "Uçtan uca hizmet — baskı, kurulum ve bakım"
+          "Uçtan uca hizmet, baskı, kurulum ve bakım"
         ],
         "services": [
-          "Unipole 10×20 fit — ayda ₹25.000",
-          "Unipole 12×24 fit — ayda ₹36.000",
-          "Standart Ücret — ayda yüz başına ₹125/metrekare",
+          "Unipole 10×20 fit, ayda ₹25.000",
+          "Unipole 12×24 fit, ayda ₹36.000",
+          "Standart Ücret, ayda yüz başına ₹125/metrekare",
           "Delhi–Dehradun Otoyolu ve Shamli Çevre Yolu Yerleşimleri",
           "Baskı, Kurulum ve Bakım",
           "Uzun Vadeli ve Toplu Paketler"
@@ -514,7 +514,7 @@
       "foundation": {
         "tag": "Sporcu Desteği",
         "desc": "Olimpiyatlara kadar uluslararası düzeyde eğitim ve destek.",
-        "overview": "Indexia Foundation, sporcuları mümkün olan tüm destekle güçlendirir — uluslararası düzeyde eğitim, yapılandırılmış diyet ve beslenme, uzman koçluk ve Olimpiyat Oyunlarına giden yolda ihtiyaç duyulan her türlü yardım. Vakıf, sporcuların yanında ilk vaatten dünyanın en büyük sahnesine kadar durur.",
+        "overview": "Indexia Foundation, sporcuları mümkün olan tüm destekle güçlendirir, uluslararası düzeyde eğitim, yapılandırılmış diyet ve beslenme, uzman koçluk ve Olimpiyat Oyunlarına giden yolda ihtiyaç duyulan her türlü yardım. Vakıf, sporcuların yanında ilk vaatten dünyanın en büyük sahnesine kadar durur.",
         "highlights": [
           "Uluslararası düzeyde eğitim ve uzman koçluk",
           "Yapılandırılmış diyet ve beslenme programları",
@@ -535,7 +535,7 @@
   "warehousePricing": {
     "eyebrow": "Arazi Portföyü",
     "title": "Arazi Portföyü ve Fiyatlandırma",
-    "subtitle": "5 konum | toplam 21 dönüm — Shamli, Uttar Pradesh",
+    "subtitle": "5 konum | toplam 21 dönüm, Shamli, Uttar Pradesh",
     "portfolioCol": "Portföy",
     "valueCol": "Değer",
     "locations": "Konum",
@@ -548,8 +548,8 @@
     "plot2_5": "2,5 Dönüm",
     "plot5": "5 Dönüm",
     "plot8": "8 Dönüm",
-    "standardRate": "Beklenen Fiyat: Metrekare başına ₹30 — Pazarlık payı var",
-    "note": "Yükleme rampalı 2 dönüm üzerine modern bir depo inşa edilecektir. Fiyatlar pazarlığa açıktır — ayrıntılar için iletişime geçin.",
+    "standardRate": "Beklenen Fiyat: Metrekare başına ₹30, Pazarlık payı var",
+    "note": "Yükleme rampalı 2 dönüm üzerine modern bir depo inşa edilecektir. Fiyatlar pazarlığa açıktır, ayrıntılar için iletişime geçin.",
     "enquire": "Sorun",
     "plotArea1": "Arazi alanı: 1 dönüm",
     "plotArea2": "Arazi alanı: 2 dönüm",
@@ -598,7 +598,7 @@
     "storyEyebrow": "Hikayemiz",
     "storyTitle": "Ortak Bir Vizyondan Ulusal Bir Gruba",
     "storyBody1": "Indexia Group, Hint şirketlerinin küresel olarak rekabet edebileceğine dair basit bir inançla kuruldu.",
-    "storyBody2": "Bugün Indexia Group üç konumda faaliyet gösteriyor — Mumbai, Delhi ve Ekvador.",
+    "storyBody2": "Bugün Indexia Group üç konumda faaliyet gösteriyor, Mumbai, Delhi ve Ekvador.",
     "valuesEyebrow": "Değerlerimiz",
     "valuesTitle": "Ne İçin Savaşıyoruz",
     "value1Title": "Bütünlük",
@@ -626,16 +626,16 @@
     "milestone5Title": "Sosyal Etki",
     "milestone5Body": "Hint sporcuları desteklemek için Indexia Foundation'u kurdu.",
     "ctaTitle": "Birlikte Bir Şey İnşa Edelim",
-    "ctaBody": "Finansal hizmetler, ortaklık ya da daha fazla bilgi arıyorsanız — buradayız.",
+    "ctaBody": "Finansal hizmetler, ortaklık ya da daha fazla bilgi arıyorsanız, buradayız.",
     "ctaButton": "Bize Ulaşın",
-    "metaDescription": "About Indexia Group — a diversified Indian business group.",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
     "aboutUs": "About Us",
     "leaderEyebrow": "Liderlik",
     "leaderTitle": "Indexia Group'un Arkasındaki Vizyoner",
     "founderName": "Kurucu ve Genel Müdür",
     "founderRole": "Kurucu ve Genel Müdür",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
     "founderQuote": "İş güvenilirlikle ilgilidir. Bütünlük üzerine inşa ettiğinizde, her şey peşinizden gelir.",
     "companiesEyebrow": "Şirketlerimiz",
     "companiesTitle": "Sekiz İş, Bir Vizyon",
@@ -716,9 +716,9 @@
     "delhiOffice": "Delhi Ofisi",
     "businessesName": "Indexia Group İşleri",
     "businessesDescription": "Indexia Group altında sekiz iş.",
-    "newsName": "Indexia Group — Haberler ve Bilgi Merkezi",
+    "newsName": "Indexia Group, Haberler ve Bilgi Merkezi",
     "careersName": "Indexia Group'ta açık pozisyonlar",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "{{name}} hakkında bilgi edinin, Indexia Group şirketi. {{description}}"
   }
 }

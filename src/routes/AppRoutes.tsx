@@ -2,10 +2,10 @@ import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import MainLayout from "../layout/MainLayout";
+import { companies } from "../data/companies";
 
 const Home = lazy(() => import("../pages/Home"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
-const Businesses = lazy(() => import("../pages/Businesses"));
 const CompanyPage = lazy(() => import("../pages/CompanyPage"));
 const Contact = lazy(() => import("../pages/Contact"));
 const LegalDocumentPage = lazy(() => import("../pages/LegalDocumentPage"));
@@ -17,6 +17,7 @@ const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
 const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
 const AdvertisingBrochure = lazy(() => import("../pages/AdvertisingBrochure"));
 const AdminDashboard = lazy(() => import("../pages/AdminDashboard"));
+const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 
 import logo from "../assets/logo/IndexiaGroup_Logo.webp";
 
@@ -43,8 +44,9 @@ const AppRoutes = () => (
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/businesses" element={<Businesses />} />
-        <Route path="/businesses/:slug" element={<CompanyPage />} />
+        {companies.map((c) => (
+          <Route key={c.slug} path={`/${c.slug}`} element={<CompanyPage slug={c.slug} />} />
+        ))}
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/careers" element={<CareersPage />} />
@@ -57,6 +59,7 @@ const AppRoutes = () => (
         <Route path="/terms-of-use" element={<LegalDocumentPage docId="termsOfUse" />} />
         <Route path="/terms" element={<LegalDocumentPage docId="terms" />} />
       </Route>
+      <Route path="*" element={<NotFoundPage />} />
       <Route path="/admin" element={<AdminDashboard />} />
     </Routes>
   </Suspense>

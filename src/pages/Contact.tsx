@@ -68,7 +68,7 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="relative flex min-h-svh items-center overflow-hidden bg-(--color-soft) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="relative flex min-h-svh items-center overflow-hidden bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"

@@ -20,7 +20,7 @@ const EmailsSection = () => {
   return (
   <div
     ref={ref}
-    className={`reveal rounded-2xl border border-slate-700 bg-slate-800 p-5 shadow-sm${inView ? " is-in-view" : ""}`}
+    className={`reveal rounded-2xl bg-white p-5 shadow-sm${inView ? " is-in-view" : ""}`}
   >
     <Eyebrow size="md" color={accent.green} style={{ letterSpacing: "0.18em" }}>
       {t("contactInfo.enquiries")}
@@ -35,10 +35,10 @@ const EmailsSection = () => {
             <Mail size={18} />
           </span>
           <span className="min-w-0">
-            <span className="block text-[10px] font-bold uppercase tracking-[0.15em] text-white/50">
+            <span className="block text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400">
               {label}
             </span>
-            <span className="mt-0.5 block text-sm font-semibold text-white group-hover:text-(--color-yellow)">
+            <span className="mt-0.5 block text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)">
               {email}
             </span>
           </span>

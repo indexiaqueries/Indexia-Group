@@ -51,12 +51,12 @@ type ResearchReport = {
 export const researchReports: ResearchReport[] = [
   {
     key: "otg",
-    title: "OTG — On-The-Ground",
+    title: "OTG, On-The-Ground",
     summary: "Our on-the-ground analysis of the dynamic regions we study in depth.",
   },
   {
     key: "act",
-    title: "ACT — Actionable Ideas",
+    title: "ACT, Actionable Ideas",
     summary: "Actionable market ideas that give our clients a leading edge.",
   },
   {

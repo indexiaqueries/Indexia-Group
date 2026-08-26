@@ -27,7 +27,7 @@
     "p1": {
       "tag": "Indexia Finanz",
       "heading": "Ein komplettes\nKredit-Portal.",
-      "sub": "Sie können über unser Portal www.indexiafinance.com jede Art von Kredit beantragen. Wir bieten unsere Dienste weltweit an — in Indien sind wir Geschäftspartner von 43 Banken und NBFCs."
+      "sub": "Sie können über unser Portal www.indexiafinance.com jede Art von Kredit beantragen. Wir bieten unsere Dienste weltweit an, in Indien sind wir Geschäftspartner von 43 Banken und NBFCs."
     },
     "p2": {
       "tag": "Indexia Finserve GmbH",
@@ -71,7 +71,7 @@
   },
   "footer": {
     "tagline": "Diversifizierter indischer Wirtschaftskonzern",
-    "blurb": "Acht vertrauenswürdige Unternehmen unter einer diversifizierten indischen Gruppe — Finanzen, Export, Landwirtschaft, Logistik, Sicherheit, Werbung und Sportförderung — gegründet auf Integrität und Ergebnisse.",
+    "blurb": "Acht vertrauenswürdige Unternehmen unter einer diversifizierten indischen Gruppe, Finanzen, Export, Landwirtschaft, Logistik, Sicherheit, Werbung und Sportförderung, gegründet auf Integrität und Ergebnisse.",
     "contactUs": "Kontakt",
     "hours": "Mo - Sa: 9 - 18 Uhr",
     "company": "Unternehmen",
@@ -106,13 +106,13 @@
     "eyebrow": "Gruppenunternehmen",
     "titleStart": "Acht Unternehmen, ",
     "titleAccent": "eine Gruppe",
-    "subtitle": "Wählen Sie ein Unternehmen, um seine Seite zu besuchen — und senden Sie Ihre Anfrage an das richtige Team."
+    "subtitle": "Wählen Sie ein Unternehmen, um seine Seite zu besuchen, und senden Sie Ihre Anfrage an das richtige Team."
   },
   "businessesHero": {
     "eyebrow": "Der Indexia-Unterschied",
     "titleStart": "Eine Gruppe. Acht Unternehmen. ",
     "titleAccent": "Ein gemeinsames Versprechen.",
-    "paragraph": "Von Finanzen und Geschäft bis zu Export, Landwirtschaft, Logistik, Sicherheit, Sport und Medien — jedes Indexia-Unternehmen steht auf demselben Fundament: Integrität, Fachwissen und ein menschenzentrierter Ansatz. Was auch immer Sie brauchen, das richtige Team gehört bereits zur Familie.",
+    "paragraph": "Von Finanzen und Geschäft bis zu Export, Landwirtschaft, Logistik, Sicherheit, Sport und Medien, jedes Indexia-Unternehmen steht auf demselben Fundament: Integrität, Fachwissen und ein menschenzentrierter Ansatz. Was auch immer Sie brauchen, das richtige Team gehört bereits zur Familie.",
     "counterClients": "Betreute Kunden",
     "counterBusinesses": "Unternehmen",
     "counterLocations": "Standorte",
@@ -122,7 +122,7 @@
   "contactHero": {
     "eyebrow": "Sprechen Sie mit Indexia",
     "title": "Eine direkte Verbindung zu unserem Team",
-    "paragraph": "Von Dokumentationsfragen bis zu neuen Kreditanfragen: Jede Nachricht wird von einem Mitglied unseres Teams geprüft und beantwortet — nicht von einer Warteschlange.",
+    "paragraph": "Von Dokumentationsfragen bis zu neuen Kreditanfragen: Jede Nachricht wird von einem Mitglied unseres Teams geprüft und beantwortet, nicht von einer Warteschlange.",
     "sendEnquiry": "Anfrage senden",
     "callNow": "Rufen Sie uns an · 86551 68551",
     "offices": "{{count}} Standorte",
@@ -133,7 +133,7 @@
     "eyebrow": "Anfrage senden",
     "headlineStart": "Anfrage zu ",
     "headlineAccent": "Indexia-Unternehmen",
-    "paragraph": "Ob Sie eine Frage zu unseren Dienstleistungen haben, Geschäftsunterstützung benötigen oder eine Partnerschaft erkunden möchten — unser Team ist bereit, Ihnen zu helfen: Wir antworten innerhalb von 24 Stunden.",
+    "paragraph": "Ob Sie eine Frage zu unseren Dienstleistungen haben, Geschäftsunterstützung benötigen oder eine Partnerschaft erkunden möchten, unser Team ist bereit, Ihnen zu helfen: Wir antworten innerhalb von 24 Stunden.",
     "enquiries": "Anfragen",
     "location": "Standort",
     "workingHours": "Öffnungszeiten",
@@ -210,7 +210,7 @@
     "title": "Nachrichten & Wissenszentrum",
     "titleStart": "Geschichten & Einblicke aus ",
     "titleAccent": "dem gesamten Konzern.",
-    "subtitle": "Aktuelle Bankennachrichten — Finanzierung, digitales Bezahlen, politische Veränderungen und Marktentwicklungen — plus praktische Ratgeber aus unseren Unternehmen.",
+    "subtitle": "Aktuelle Bankennachrichten, Finanzierung, digitales Bezahlen, politische Veränderungen und Marktentwicklungen, plus praktische Ratgeber aus unseren Unternehmen.",
     "featuredLabel": "Top-Story",
     "readMore": "Mehr lesen",
     "askUs": "Fragen Sie uns",
@@ -218,9 +218,9 @@
     "knowledgeHeading": "Praktische Leitfäden aus unseren Unternehmen",
     "knowledgeSubtitle": "Verständliche Erklärungen von den Teams, die diese Arbeit täglich leben.",
     "ctaTitle": "Fragen zu unseren Unternehmen?",
-    "ctaBody": "Von FDI-Facilitation über Bio-Landwirtschaft bis zu bewaffneter Sicherheit — das richtige Indexia-Unternehmen hilft Ihnen gern. Senden Sie uns Ihre Anfrage und wir verbinden Sie.",
+    "ctaBody": "Von FDI-Facilitation über Bio-Landwirtschaft bis zu bewaffneter Sicherheit, das richtige Indexia-Unternehmen hilft Ihnen gern. Senden Sie uns Ihre Anfrage und wir verbinden Sie.",
     "ctaButton": "Anfrage senden",
-    "metaDescription": "News & Knowledge Centre — aktuelle Bankennachrichten zu Finanzierung, digitalen Zahlungen und Politik sowie praktische Wissensratgeber von Indexia Group.",
+    "metaDescription": "News & Knowledge Centre, aktuelle Bankennachrichten zu Finanzierung, digitalen Zahlungen und Politik sowie praktische Wissensratgeber von Indexia Group.",
     "tvEyebrow": "Sehen Sie Uns Im Fernsehen",
     "tvHeading": "Für Alle Ihre Kreditbedürfnisse",
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance"
@@ -230,7 +230,7 @@
     "title": "Karriere bei Indexia Group",
     "titleStart": "Baue Deine Karriere Mit ",
     "titleAccent": "Uns.",
-    "subtitle": "Indexia Group ist eine lernende Organisation — und ihre Unternehmenskultur ist ihr Team.",
+    "subtitle": "Indexia Group ist eine lernende Organisation, und ihre Unternehmenskultur ist ihr Team.",
     "ctaButton": "Offene Stellen ansehen",
     "rolesEyebrow": "Offene Positionen",
     "rolesHeading": "Unsere Aktuellen Stellenangebote",
@@ -238,7 +238,7 @@
     "apply": "Bewerben",
     "ctaTitle": "Senden Sie Uns Ihren Lebenslauf",
     "ctaBody": "Wir suchen immer großartige Menschen. Senden Sie Ihren Lebenslauf an hr@indexiafinance.com und wir melden uns bei Ihnen.",
-    "metaDescription": "Karriere bei Indexia Group — eine lernende Organisation mit Stellen bei Indexia Finserve in Mumbai. Senden Sie Ihren Lebenslauf, um Ihre Karriere bei uns zu starten.",
+    "metaDescription": "Karriere bei Indexia Group, eine lernende Organisation mit Stellen bei Indexia Finserve in Mumbai. Senden Sie Ihren Lebenslauf, um Ihre Karriere bei uns zu starten.",
     "cultureEyebrow": "Unsere Kultur",
     "cultureHeading": "Eine Lernende Organisation",
     "mailResume": "Senden Sie uns Ihren Lebenslauf –"
@@ -278,7 +278,7 @@
         {
           "title": "Wie wir Ihre Daten verwenden",
           "paragraphs": [
-            "Wir verwenden Ihre Daten, um Anfragen zu beantworten, unsere Dienste zu bewerten und zu erbringen, Ihre Identität zu verifizieren, wo dies erforderlich ist, unsere Websites und Dienste zu verbessern, rechtlichen Verpflichtungen nachzukommen und — mit Ihrer Einwilligung — Ihnen Informationen über unsere Konzernunternehmen zu senden.",
+            "Wir verwenden Ihre Daten, um Anfragen zu beantworten, unsere Dienste zu bewerten und zu erbringen, Ihre Identität zu verifizieren, wo dies erforderlich ist, unsere Websites und Dienste zu verbessern, rechtlichen Verpflichtungen nachzukommen und, mit Ihrer Einwilligung, Ihnen Informationen über unsere Konzernunternehmen zu senden.",
             "Wir stützen die Verarbeitung auf folgende Rechtsgrundlagen: Ihre Einwilligung, die Erfüllung eines Vertrags, die Erfüllung einer rechtlichen Verpflichtung und unser berechtigtes Interesse am Betrieb und an der Verbesserung unseres Unternehmens."
           ]
         },
@@ -292,7 +292,7 @@
         {
           "title": "Datensicherheit",
           "paragraphs": [
-            "Wir wenden angemessene technische und organisatorische Maßnahmen an — einschließlich Zugriffskontrollen, Verschlüsselung während der Übertragung und Überwachung —, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.",
+            "Wir wenden angemessene technische und organisatorische Maßnahmen an, einschließlich Zugriffskontrollen, Verschlüsselung während der Übertragung und Überwachung , um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.",
             "Keine Übertragungs- oder Speichermethode ist vollständig sicher. Obwohl wir uns bemühen, Ihre Daten zu schützen, können wir deren absolute Sicherheit nicht garantieren."
           ]
         },
@@ -366,7 +366,7 @@
         {
           "title": "Rückerstattungsrichtlinie",
           "paragraphs": [
-            "Wenn Sie unsere Dienstleistungen in Anspruch nehmen, ist Ihre Zahlung nicht durch eine Geld-zurück-Garantie abgedeckt. Wenn Sie aus irgendeinem Grund mit unserer Dienstleistung nicht vollständig zufrieden sind, nehmen wir dieses Anliegen sehr ernst und werden versuchen, es so schnell wie möglich zu lösen. Um eine Rückerstattung zu beantragen, kontaktieren Sie uns einfach innerhalb von neunzig (90) Tagen nach Ihrer Zahlung mit Ihren Zahlungsdaten. Bitte geben Sie Ihre Zahlungsdaten und Ihre Bestellnummer (nach der Zahlung per E-Mail an Sie gesendet) an und teilen Sie uns optional mit, warum Sie eine Rückerstattung beantragen — wir nehmen Kundenfeedback sehr ernst und nutzen es, um unsere Produkte und die Qualität unseres Service kontinuierlich zu verbessern. Für vollständig erbrachte Dienstleistungen wie Installationsdienste und Hosting-Dienste für Wissensdatenbanken werden keine Rückerstattungen gewährt. Rückerstattungen werden innerhalb von 21 Tagen bearbeitet."
+            "Wenn Sie unsere Dienstleistungen in Anspruch nehmen, ist Ihre Zahlung nicht durch eine Geld-zurück-Garantie abgedeckt. Wenn Sie aus irgendeinem Grund mit unserer Dienstleistung nicht vollständig zufrieden sind, nehmen wir dieses Anliegen sehr ernst und werden versuchen, es so schnell wie möglich zu lösen. Um eine Rückerstattung zu beantragen, kontaktieren Sie uns einfach innerhalb von neunzig (90) Tagen nach Ihrer Zahlung mit Ihren Zahlungsdaten. Bitte geben Sie Ihre Zahlungsdaten und Ihre Bestellnummer (nach der Zahlung per E-Mail an Sie gesendet) an und teilen Sie uns optional mit, warum Sie eine Rückerstattung beantragen, wir nehmen Kundenfeedback sehr ernst und nutzen es, um unsere Produkte und die Qualität unseres Service kontinuierlich zu verbessern. Für vollständig erbrachte Dienstleistungen wie Installationsdienste und Hosting-Dienste für Wissensdatenbanken werden keine Rückerstattungen gewährt. Rückerstattungen werden innerhalb von 21 Tagen bearbeitet."
           ]
         },
         {
@@ -396,7 +396,7 @@
     },
     "terms": {
       "intro": [
-        "Der Website-Eigentümer, einschließlich Tochtergesellschaften und verbundener Unternehmen — Indexia Group (oder „wir“, „uns“ oder „unser“) — stellt den Besuchern und Antragstellern (gemeinsam als „Sie“ oder „Ihr“ bezeichnet) die auf dieser Website oder auf einer der sie umfassenden Seiten enthaltenen Informationen zur Verfügung, vorbehaltlich der in diesen Website-Bedingungen festgelegten Bedingungen, der Datenschutzrichtlinie und aller anderen relevanten Bedingungen, Richtlinien und Hinweise, die für einen bestimmten Abschnitt oder ein bestimmtes Modul der Website gelten können.",
+        "Der Website-Eigentümer, einschließlich Tochtergesellschaften und verbundener Unternehmen, Indexia Group (oder „wir“, „uns“ oder „unser“), stellt den Besuchern und Antragstellern (gemeinsam als „Sie“ oder „Ihr“ bezeichnet) die auf dieser Website oder auf einer der sie umfassenden Seiten enthaltenen Informationen zur Verfügung, vorbehaltlich der in diesen Website-Bedingungen festgelegten Bedingungen, der Datenschutzrichtlinie und aller anderen relevanten Bedingungen, Richtlinien und Hinweise, die für einen bestimmten Abschnitt oder ein bestimmtes Modul der Website gelten können.",
         "Willkommen auf unserer Website. Wenn Sie weiter auf dieser Website surfen und sie nutzen, erklären Sie sich damit einverstanden, die folgenden Nutzungsbedingungen einzuhalten und an sie gebunden zu sein, die zusammen mit unserer Datenschutzrichtlinie die Beziehung zwischen Indexia Group und Ihnen in Bezug auf diese Website regeln.",
         "Der Begriff „Indexia Group“ oder „wir“ oder „uns“ bezeichnet den Eigentümer der Website, dessen eingetragener Sitz sich in 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053 befindet. Der Begriff „Sie“ bezeichnet den Nutzer oder Besucher unserer Website."
       ],
@@ -469,17 +469,17 @@
     "title": "Globale Forschung bei Indexia Group",
     "titleStart": "Globale Finanzforschung ",
     "titleAccent": "und Ressourcen.",
-    "subtitle": "Aufschlussreiche, relevante Analysen und präzise Einschätzungen in makroökonomischen, festverzinslichen, Währungs- und Rohstoffdisziplinen — gestützt auf fundierte Vor-Ort-Kenntnisse in Asien, Afrika und dem Nahen Osten.",
+    "subtitle": "Aufschlussreiche, relevante Analysen und präzise Einschätzungen in makroökonomischen, festverzinslichen, Währungs- und Rohstoffdisziplinen, gestützt auf fundierte Vor-Ort-Kenntnisse in Asien, Afrika und dem Nahen Osten.",
     "ctaButton": "Forschungsabdeckung erkunden",
     "areasEyebrow": "Forschungsabdeckung",
     "areasHeading": "Globale Forschung über alle Disziplinen",
     "areasSubtitle": "Aufschlussreiche, relevante Analysen und präzise Einschätzungen in unserer gesamten Abdeckung.",
     "reportsEyebrow": "Publikationen",
     "reportsHeading": "Wie wir Forschung teilen",
-    "reportsSubtitle": "Häufige Präsentationen und hochwertige Publikationen — OTG, unsere Vor-Ort-Analyse; ACT, unsere umsetzbaren Marktideen; und Sonderberichte zu global bedeutsamen Themen.",
+    "reportsSubtitle": "Häufige Präsentationen und hochwertige Publikationen, OTG, unsere Vor-Ort-Analyse; ACT, unsere umsetzbaren Marktideen; und Sonderberichte zu global bedeutsamen Themen.",
     "ctaTitle": "Zugang zu unserer Forschung",
     "ctaBody": "Um mehr zu erfahren und unsere Forschung zu erhalten, besuchen Sie unser Portal für globale Forschung. Für den Zugang wenden Sie sich bitte an Ihren Relationship Manager.",
-    "metaDescription": "Globale Forschung von Indexia Group — aufschlussreiche, relevante Analysen und präzise Einschätzungen in makroökonomischen, festverzinslichen, Währungs- und Rohstoffdisziplinen, mit Vor-Ort-Kenntnissen in Asien, Afrika und dem Nahen Osten.",
+    "metaDescription": "Globale Forschung von Indexia Group, aufschlussreiche, relevante Analysen und präzise Einschätzungen in makroökonomischen, festverzinslichen, Währungs- und Rohstoffdisziplinen, mit Vor-Ort-Kenntnissen in Asien, Afrika und dem Nahen Osten.",
     "reportFormat": "Publikation"
   },
   "securityTipsPage": {
@@ -494,7 +494,7 @@
     "practicesSubtitle": "Wir arbeiten jeden Tag daran, Ihre Konten beim Online-Banking zu schützen. Darüber hinaus gibt es ein paar einfache Dinge, die Sie an Ihren Geräten tun können, um online sicher zu bleiben.",
     "ctaTitle": "Etwas Verdächtiges gesehen?",
     "ctaBody": "Melden Sie es über unser Anfrageformular oder kontaktieren Sie das betreffende Indexia-Group-Unternehmen direkt.",
-    "metaDescription": "Sicherheitstipps von Indexia Group — wie wir Ihre Konten online schützen, was Sie an Ihren Geräten tun können und wen Sie kontaktieren, wenn etwas schiefgeht.",
+    "metaDescription": "Sicherheitstipps von Indexia Group, wie wir Ihre Konten online schützen, was Sie an Ihren Geräten tun können und wen Sie kontaktieren, wenn etwas schiefgeht.",
     "featuresEyebrow": "Was Wir Tun",
     "featuresHeading": "Wir Halten Sie Online Sicher",
     "featuresSubtitle": "Lesen Sie weiter, um zu erfahren, was wir tun, um Ihre Konten beim Online-Banking zu schützen.",
@@ -526,7 +526,7 @@
       "finance": {
         "tag": "Multinationales Fintech-Unternehmen",
         "desc": "Globales Fintech für Anlegerservices, FDI, NBFC und Bankfinanzierung.",
-        "overview": "Indexia Finance ist eine multinationale Fintech-Plattform, die Kunden auf der ganzen Welt Finanzdienstleistungen bietet. Sie können über unser Portal unter www.indexiafinance.com jede Art von Kredit beantragen — wir bieten unsere Dienstleistungen weltweit an und sind in Indien Geschäftspartner von 43 Banken und NBFCs. Aufgebaut um vier Kernbereiche — Anlegerservices, FDI-Facilitation, NBFC-Geschäft und Bankfinanzierung — verbindet das Unternehmen Kapital mit Chancen und hilft Anlegern, Unternehmen und Institutionen, über Grenzen hinweg souveräne Finanzentscheidungen zu treffen.",
+        "overview": "Indexia Finance ist eine multinationale Fintech-Plattform, die Kunden auf der ganzen Welt Finanzdienstleistungen bietet. Sie können über unser Portal unter www.indexiafinance.com jede Art von Kredit beantragen, wir bieten unsere Dienstleistungen weltweit an und sind in Indien Geschäftspartner von 43 Banken und NBFCs. Aufgebaut um vier Kernbereiche, Anlegerservices, FDI-Facilitation, NBFC-Geschäft und Bankfinanzierung, verbindet das Unternehmen Kapital mit Chancen und hilft Anlegern, Unternehmen und Institutionen, über Grenzen hinweg souveräne Finanzentscheidungen zu treffen.",
         "tagline": "Ein komplettes Kreditziel",
         "highlights": [
           "Globale Fintech-Reichweite mit Indien-zentrierter Umsetzung",
@@ -545,8 +545,8 @@
       },
       "finserve": {
         "tag": "Kredite und Finanzen",
-        "desc": "Jede Kreditart — zugeschnitten auf Privatpersonen und Unternehmen.",
-        "overview": "Indexia Finserve ist die Kreditsparte der Indexia Group und bietet jede Art von Kredit im Finanzbereich an. Jetzt kommt die richtige Bank zu Ihnen nach Hause: Das Unternehmen arbeitet als vollständiges Kreditziel und begleitet Kunden durch Eignungsprüfung, Dokumentation und Auszahlung bei Privat-, Haus-, Geschäfts-, MSME- und Spezialfinanzierungen — in einem einzigen, schlanken Prozess.",
+        "desc": "Jede Kreditart, zugeschnitten auf Privatpersonen und Unternehmen.",
+        "overview": "Indexia Finserve ist die Kreditsparte der Indexia Group und bietet jede Art von Kredit im Finanzbereich an. Jetzt kommt die richtige Bank zu Ihnen nach Hause: Das Unternehmen arbeitet als vollständiges Kreditziel und begleitet Kunden durch Eignungsprüfung, Dokumentation und Auszahlung bei Privat-, Haus-, Geschäfts-, MSME- und Spezialfinanzierungen, in einem einzigen, schlanken Prozess.",
         "tagline": "Die Finanzmethode der nächsten Generation",
         "highlights": [
           "Alle Kreditarten unter einem Dach",
@@ -574,7 +574,7 @@
         "desc": "Export von raffiniertem Zucker und allen Lebensmitteln weltweit.",
         "overview": "Indexia Overseas treibt den globalen Export aller Lebensmittel voran, mit besonderem Fokus auf Zuckerexporte in 14 südamerikanische Länder. Das Unternehmen übernimmt Beschaffung, Qualität, Logistik und internationale Konformität, damit lebensmitteltaugliche Produkte zuverlässig und in großem Umfang vom Ursprung zum Markt gelangen.",
         "highlights": [
-          "Export aller Lebensmittel — Zucker im Kern",
+          "Export aller Lebensmittel, Zucker im Kern",
           "Etablierte Präsenz in 14 südamerikanischen Märkten",
           "Durchgängige Beschaffung, Qualität und Logistik"
         ],
@@ -590,8 +590,8 @@
       },
       "agro-bio": {
         "tag": "Organische Düngemittelproduktion",
-        "desc": "Organische Düngemittel — in Indien hergestellt, weltweit exportiert.",
-        "overview": "Indexia Agro Bio Fertilizers stellt organische Düngemittel in seiner Produktionsstätte in Shamli, Uttar Pradesh — Teil der Region Delhi NCR — her. Die biobasierten Produkte des Unternehmens verbessern die Bodengesundheit, steigern die Ernteerträge und unterstützen den nachhaltigen Anbau für Landwirte in ganz Nordindien.",
+        "desc": "Organische Düngemittel, in Indien hergestellt, weltweit exportiert.",
+        "overview": "Indexia Agro Bio Fertilizers stellt organische Düngemittel in seiner Produktionsstätte in Shamli, Uttar Pradesh, Teil der Region Delhi NCR, her. Die biobasierten Produkte des Unternehmens verbessern die Bodengesundheit, steigern die Ernteerträge und unterstützen den nachhaltigen Anbau für Landwirte in ganz Nordindien.",
         "highlights": [
           "Organische, biobasierte Produktion ohne aggressive Chemikalien",
           "Standort Shamli (UP) im Delhi-NCR-Gürtel",
@@ -629,20 +629,20 @@
       "warehouse": {
         "tag": "Strategische Landinvestition",
         "desc": "21 Acres strategisches Land in Shamli, angebunden an 8 nationale Schnellstraßen.",
-        "overview": "Indexia Warehouse bietet eine strategische Landinvestitionsmöglichkeit in Shamli, Uttar Pradesh — nur etwa 65 km von Tronica City, Loni, Delhi entfernt. Der Standort ist ein Verkehrsknotenpunkt: 8 nationale Schnellstraßen und 2 Hauptstraßen verbinden 8 Bundesstaaten, mit direktem Zugang zu Bhutan und Nepal und einer Marktreichweite von 50 Crore Menschen. Vier große Häfen (Gujarat, Maharashtra, Chennai, Kolkata) sind über Schnellstraßen direkt erreichbar, und sowohl der Flughafen IGI Delhi als auch der Noida Int'l Airport, Jewar, liegen innerhalb einer Stunde. Das Grundstücksportfolio umfasst 5 Standorte und insgesamt 21 Acres, mit flexiblen Parzellen von 1, 2, 2,5, 5 und 8 Acres sowie einem modernen Lager, das auf 2 Acres mit Verladerampen entstehen soll. Der erwartete Preis beträgt ₹30 pro Quadratfuß, verhandelbar.",
+        "overview": "Indexia Warehouse bietet eine strategische Landinvestitionsmöglichkeit in Shamli, Uttar Pradesh, nur etwa 65 km von Tronica City, Loni, Delhi entfernt. Der Standort ist ein Verkehrsknotenpunkt: 8 nationale Schnellstraßen und 2 Hauptstraßen verbinden 8 Bundesstaaten, mit direktem Zugang zu Bhutan und Nepal und einer Marktreichweite von 50 Crore Menschen. Vier große Häfen (Gujarat, Maharashtra, Chennai, Kolkata) sind über Schnellstraßen direkt erreichbar, und sowohl der Flughafen IGI Delhi als auch der Noida Int'l Airport, Jewar, liegen innerhalb einer Stunde. Das Grundstücksportfolio umfasst 5 Standorte und insgesamt 21 Acres, mit flexiblen Parzellen von 1, 2, 2,5, 5 und 8 Acres sowie einem modernen Lager, das auf 2 Acres mit Verladerampen entstehen soll. Der erwartete Preis beträgt ₹30 pro Quadratfuß, verhandelbar.",
         "highlights": [
-          "Top-Lage — Shamli, UP, ~65 km von Delhi",
+          "Top-Lage, Shamli, UP, ~65 km von Delhi",
           "8 nationale Schnellstraßen + 2 Hauptstraßen verbinden 8 Bundesstaaten",
-          "21 Acres an 5 Standorten — Parzellen von 1, 2, 2,5, 5 und 8 Acres",
+          "21 Acres an 5 Standorten, Parzellen von 1, 2, 2,5, 5 und 8 Acres",
           "₹30 pro Quadratfuß, verhandelbar"
         ],
         "services": [
-          "Grundstücksparzellen — 1, 2, 2,5, 5 und 8 Acres",
+          "Grundstücksparzellen, 1, 2, 2,5, 5 und 8 Acres",
           "21 Acres an 5 Standorten",
           "Lagerbau auf 2-Acre-Parzelle",
           "Schnellstraßen- und Autobahnanbindung",
-          "Hafenzugang — Gujarat, Maharashtra, Chennai, Kolkata",
-          "Flughafenzugang — Delhi und Jewar in weniger als 1 Stunde"
+          "Hafenzugang, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Flughafenzugang, Delhi und Jewar in weniger als 1 Stunde"
         ],
         "name": "Indexia Lager",
         "location": "Shamli, Uttar Pradesh"
@@ -650,17 +650,17 @@
       "advertising": {
         "tag": "Premium-Unipole-Werbetafeln",
         "desc": "Premium-Werbetafeln am verkehrsreichsten Knotenpunkt Nordindiens.",
-        "overview": "Indexia Advertising betreibt Premium-Unipole-Werbetafeln am Delhi–Dehradun Highway (NH-709B) in Shamli — dem Drehkreuz Nordindiens. An der Kreuzung von 8 nationalen Schnellstraßen und 2 Hauptstraßen gelegen, verbinden unsere Unipole 10 Bundesstaaten mit einer Reichweite von 50 Crore Menschen und erzielen täglich über 1 Crore Kontakte. Einmastige Unipole mit erhöhter Position und uneingeschränktem 360°-Blickwinkel verschaffen Ihrer Marke maximale Sichtbarkeit ohne visuelles Rauschen — unterstrichen durch ein charakteristisches Bisleri-Grün-Branding. Vom Druck über die Installation bis zur Wartung übernehmen wir alles aus einer Hand. Buchen Sie einen 10×20-ft-Unipole für 25.000 ₹/Monat oder einen 12×24-ft-Unipole für 36.000 ₹/Monat — Standardpreis 125 ₹/Quadratfuß pro Seite pro Monat, verhandelbar bei langfristigen Paketen. Für Buchungen rufen Sie 86918 86919 oder 011 4629 1155 an oder schreiben Sie an indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising betreibt Premium-Unipole-Werbetafeln am Delhi–Dehradun Highway (NH-709B) in Shamli, dem Drehkreuz Nordindiens. An der Kreuzung von 8 nationalen Schnellstraßen und 2 Hauptstraßen gelegen, verbinden unsere Unipole 10 Bundesstaaten mit einer Reichweite von 50 Crore Menschen und erzielen täglich über 1 Crore Kontakte. Einmastige Unipole mit erhöhter Position und uneingeschränktem 360°-Blickwinkel verschaffen Ihrer Marke maximale Sichtbarkeit ohne visuelles Rauschen, unterstrichen durch ein charakteristisches Bisleri-Grün-Branding. Vom Druck über die Installation bis zur Wartung übernehmen wir alles aus einer Hand. Buchen Sie einen 10×20-ft-Unipole für 25.000 ₹/Monat oder einen 12×24-ft-Unipole für 36.000 ₹/Monat, Standardpreis 125 ₹/Quadratfuß pro Seite pro Monat, verhandelbar bei langfristigen Paketen. Für Buchungen rufen Sie 86918 86919 oder 011 4629 1155 an oder schreiben Sie an indexia.queries@gmail.com.",
         "highlights": [
           "Strategische Platzierungen am NH-709B, dem Delhi–Dehradun Highway",
-          "10 verbundene Bundesstaaten — 50 Crore Reichweite, über 1 Crore tägliche Kontakte",
+          "10 verbundene Bundesstaaten, 50 Crore Reichweite, über 1 Crore tägliche Kontakte",
           "Einmastige Unipole mit 360°-Sichtbarkeit und erhöhter Position",
-          "Kompletter Service — Druck, Installation und Wartung"
+          "Kompletter Service, Druck, Installation und Wartung"
         ],
         "services": [
-          "Unipole 10×20 ft — 25.000 ₹/Monat",
-          "Unipole 12×24 ft — 36.000 ₹/Monat",
-          "Standardpreis — 125 ₹/Quadratfuß pro Seite pro Monat",
+          "Unipole 10×20 ft, 25.000 ₹/Monat",
+          "Unipole 12×24 ft, 36.000 ₹/Monat",
+          "Standardpreis, 125 ₹/Quadratfuß pro Seite pro Monat",
           "Platzierungen am Delhi–Dehradun Highway und Shamli Ring Road",
           "Druck, Installation & Wartung",
           "Langfristige & Mengen-Pakete"
@@ -670,8 +670,8 @@
       },
       "foundation": {
         "tag": "Sportlerförderung",
-        "desc": "Training und Förderung auf internationalem Niveau — bis zu den Olympischen Spielen.",
-        "overview": "Indexia Foundation unterstützt Sportler mit allen erdenklichen Mitteln — Training auf internationalem Niveau, strukturierte Ernährung und Diät, Expertencoaching und jede Art von Unterstützung auf dem Weg zu den Olympischen Spielen. Die Stiftung steht Sportlern von der frühen Begabung bis zur größten Bühne der Welt zur Seite.",
+        "desc": "Training und Förderung auf internationalem Niveau, bis zu den Olympischen Spielen.",
+        "overview": "Indexia Foundation unterstützt Sportler mit allen erdenklichen Mitteln, Training auf internationalem Niveau, strukturierte Ernährung und Diät, Expertencoaching und jede Art von Unterstützung auf dem Weg zu den Olympischen Spielen. Die Stiftung steht Sportlern von der frühen Begabung bis zur größten Bühne der Welt zur Seite.",
         "highlights": [
           "Training auf internationalem Niveau und Expertencoaching",
           "Strukturierte Ernährungs- und Diätprogramme",
@@ -713,7 +713,7 @@
         "nakshatra-gili-directors": {
           "title": "Chawl-Bewohner als Direktoren von Nakshatra und Gili India benannt",
           "category": "Märkte",
-          "excerpt": "Einfache Angestellte und Kleinanleger wurden überredet, als Strohdirektoren der Firmen Gili, Nakshatra und Gitanjali aufzutreten — ein Fall für die Frage nach der Unternehmensführung."
+          "excerpt": "Einfache Angestellte und Kleinanleger wurden überredet, als Strohdirektoren der Firmen Gili, Nakshatra und Gitanjali aufzutreten, ein Fall für die Frage nach der Unternehmensführung."
         },
         "sebi-hdfc-information-leak": {
           "title": "SEBI fordert HDFC Bank zur Verantwortung für Informationsleck auf",
@@ -724,7 +724,7 @@
       "insights": {
         "understanding-fdi": {
           "title": "FDI in Indien verstehen",
-          "body": "Ein praxisnaher Leitfaden zu Eintrittswegen, Branchenobergrenzen und den Einreichungen, die für ausländisches Kapital in einem indischen Unternehmen nötig sind — und wo ein Fachexperte am wichtigsten ist."
+          "body": "Ein praxisnaher Leitfaden zu Eintrittswegen, Branchenobergrenzen und den Einreichungen, die für ausländisches Kapital in einem indischen Unternehmen nötig sind, und wo ein Fachexperte am wichtigsten ist."
         },
         "choosing-loan": {
           "title": "Den richtigen Kredit wählen",
@@ -742,7 +742,7 @@
     },
     "careers": {
       "culture": [
-        "Indexia Group ist eine lernende Organisation und ihre Unternehmenskultur ist ihr Team. Unsere Mitarbeiter sind ein wertvolles Gut, und wir verpflichten uns, ihnen die neuesten Technologieprojekte und ein Arbeitsumfeld zu bieten, das Spaß macht, kollaborativ und teamorientiert ist. Wir glauben daran, unseren Mitarbeitern die Erfahrungen und Schulungsmöglichkeiten zu bieten, die ihr bestehendes Wissen erweitern — mit flexiblen Arbeitszeiten, dem Schwerpunkt auf offener Kommunikation und einer Politik der offenen Tür zwischen Management und Mitarbeitern.",
+        "Indexia Group ist eine lernende Organisation und ihre Unternehmenskultur ist ihr Team. Unsere Mitarbeiter sind ein wertvolles Gut, und wir verpflichten uns, ihnen die neuesten Technologieprojekte und ein Arbeitsumfeld zu bieten, das Spaß macht, kollaborativ und teamorientiert ist. Wir glauben daran, unseren Mitarbeitern die Erfahrungen und Schulungsmöglichkeiten zu bieten, die ihr bestehendes Wissen erweitern, mit flexiblen Arbeitszeiten, dem Schwerpunkt auf offener Kommunikation und einer Politik der offenen Tür zwischen Management und Mitarbeitern.",
         "Wir sind stolz darauf, die Möglichkeit zu bieten, Ihre Karriere in einem Umfeld auszubauen und zu entwickeln, das den unternehmerischen Charakter eines Start-ups mit der finanziellen Stabilität und den großen Vorteilen eines etablierten Unternehmens verbindet. Wir laden Sie ein, Ihren Lebenslauf einzureichen, während die Gruppe ihre Marktoperationen und ihren Kundenstamm mit Menschen erweitert, die unsere Leidenschaft für operative Exzellenz teilen."
       ],
       "roles": {
@@ -821,11 +821,11 @@
       },
       "reports": {
         "otg": {
-          "title": "OTG — Vor-Ort-Analyse",
+          "title": "OTG, Vor-Ort-Analyse",
           "summary": "Unsere Vor-Ort-Analyse der dynamischen Regionen, die wir eingehend untersuchen."
         },
         "act": {
-          "title": "ACT — Umsetzbare Ideen",
+          "title": "ACT, Umsetzbare Ideen",
           "summary": "Umsetzbare Marktideen, die unseren Kunden einen entscheidenden Vorsprung verschaffen."
         },
         "special-reports": {
@@ -848,7 +848,7 @@
       "practices": {
         "devices": {
           "title": "Schützen Sie Ihre Geräte",
-          "body": "Stellen Sie sicher, dass alle Ihre Computer, Mobiltelefone, tragbaren Geräte, Betriebssysteme und Internetbrowser — insbesondere die für Online-Banking verwendeten — regelmäßig mit der neuesten Software aktualisiert werden."
+          "body": "Stellen Sie sicher, dass alle Ihre Computer, Mobiltelefone, tragbaren Geräte, Betriebssysteme und Internetbrowser, insbesondere die für Online-Banking verwendeten, regelmäßig mit der neuesten Software aktualisiert werden."
         },
         "connections": {
           "title": "Sichern Sie Ihre Verbindungen",
@@ -922,7 +922,7 @@
   "warehousePricing": {
     "eyebrow": "Grundstücksportfolio",
     "title": "Grundstücksportfolio & Preise",
-    "subtitle": "5 Standorte | insgesamt 21 Acres — Shamli, Uttar Pradesh",
+    "subtitle": "5 Standorte | insgesamt 21 Acres, Shamli, Uttar Pradesh",
     "portfolioCol": "Portfolio",
     "valueCol": "Wert",
     "locations": "Standorte",
@@ -935,8 +935,8 @@
     "plot2_5": "2,5 Acres",
     "plot5": "5 Acres",
     "plot8": "8 Acres",
-    "standardRate": "Erwarteter Preis: ₹30 pro Quadratfuß — verhandelbar",
-    "note": "Modernes Lager auf 2 Acres mit Verladerampen geplant. Preise verhandelbar — Kontakt für Details.",
+    "standardRate": "Erwarteter Preis: ₹30 pro Quadratfuß, verhandelbar",
+    "note": "Modernes Lager auf 2 Acres mit Verladerampen geplant. Preise verhandelbar, Kontakt für Details.",
     "enquire": "Anfragen",
     "plotArea1": "Grundstücksfläche: 1 Acre",
     "plotArea2": "Grundstücksfläche: 2 Acres",
@@ -1049,7 +1049,7 @@
     "c5Highlights": "Ex-Militär-Commandos,Betriebszentrale 24/7,VIP- und Unternehmensschutz,Kritische Infrastruktursicherheit",
     "c6Tag": "Strategischer Grundbesitz",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres in Shamli UP,8 Nationalstraßen,5 Standorte,65 km von Delhi",
     "c7Tag": "Autobahnwerbung",
     "c7Name": "Indexia Advertising",
@@ -1103,9 +1103,9 @@
     "delhiOffice": "Delhi Office",
     "businessesName": "Indexia Group Businesses",
     "businessesDescription": "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, warehousing, advertising and Athlete Support.",
-    "newsName": "Indexia Group — News & Knowledge Centre",
+    "newsName": "Indexia Group, News & Knowledge Centre",
     "careersName": "Open roles at Indexia Group",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
   }
 }

@@ -18,7 +18,7 @@ const star = (cx: number, cy: number, rOuter: number, rInner: number): string =>
 };
 
 const FLAGS: Record<string, ReactNode> = {
-  // United Kingdom — simplified Union Jack
+  // United Kingdom, simplified Union Jack
   en: (
     <>
       <rect width="20" height="14" fill="#012169" />

@@ -5,9 +5,10 @@ import SEO from "../components/common/SEO";
 import CompanyDetail from "../components/businesses/CompanyDetail";
 import { companies } from "../data/companies";
 
-const CompanyPage = () => {
+const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
   const { t } = useTranslation();
-  const { slug } = useParams();
+  const params = useParams();
+  const slug = slugProp ?? params.slug;
   const company = companies.find((c) => c.slug === slug);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const CompanyPage = () => {
   }, [company]);
 
   if (!company) {
-    return <Navigate to="/businesses" replace />;
+    return <Navigate to="/about" replace />;
   }
 
   if (company.link) {
@@ -28,7 +29,7 @@ const CompanyPage = () => {
   const name = tr("name", company.name);
   const tag = tr("tag", company.tag);
   const desc = tr("desc", company.desc);
-  const canonicalPath = `/businesses/${company.slug}`;
+  const canonicalPath = `/${company.slug}`;
   const companyJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -53,7 +54,7 @@ const CompanyPage = () => {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/businesses" },
+          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/about" },
           { "@type": "ListItem", position: 3, name, item: `https://www.indexiagroup.com${canonicalPath}` },
         ],
       },

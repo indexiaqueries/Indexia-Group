@@ -25,11 +25,11 @@ const BusinessCard = ({ business }: BusinessCardProps) => {
   const { handleCardClick, revealedClass } = useTapReveal();
   const Icon = business.icon;
   const external = Boolean(business.link);
-  const href = external ? business.link! : `/businesses/${business.slug}`;
+  const href = external ? business.link! : `/${business.slug}`;
   const tag = t(`pageContent.companies.${business.slug}.tag`, { defaultValue: business.tag });
   const description = t(`pageContent.companies.${business.slug}.desc`, { defaultValue: business.description });
   const name = t(`pageContent.companies.${business.slug}.name`, { defaultValue: business.name });
-  const label = `${name} — ${tag}. ${external ? "Visit website" : "Visit company page"}`;
+  const label = `${name}, ${tag}. ${external ? "Visit website" : "Visit company page"}`;
 
   const inner = (
     <>

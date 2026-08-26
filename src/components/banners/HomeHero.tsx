@@ -159,7 +159,7 @@ const Banner = () => {
           </button>
         </div>
 
-        {/* Gallery thumbnails — overlaid at bottom of hero */}
+        {/* Gallery thumbnails, overlaid at bottom of hero */}
         <div className="absolute inset-x-0 bottom-0 z-3">
           <HomeHeroGallery
             panels={panels}

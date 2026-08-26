@@ -110,7 +110,7 @@ const HeroBackground = ({ bgImage, bgMobileImage, bgPlaceholderImage, bgPlacehol
   // When bgImage changes, save the old image as a fallback layer
   useEffect(() => {
     return () => {
-      // Cleanup runs before the new render — stash current image as prev
+      // Cleanup runs before the new render, stash current image as prev
       setPrevImage({ src: bgImage, mobileSrc: bgMobileImage });
     };
   }, [bgImage, bgMobileImage]);
@@ -131,7 +131,7 @@ const HeroBackground = ({ bgImage, bgMobileImage, bgPlaceholderImage, bgPlacehol
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Previous bg image — stays visible underneath while new one loads */}
+      {/* Previous bg image, stays visible underneath while new one loads */}
       {prevImage && (
         <img
           src={prevImage.src}
@@ -145,7 +145,7 @@ const HeroBackground = ({ bgImage, bgMobileImage, bgPlaceholderImage, bgPlacehol
         />
       )}
 
-      {/* Blur-up placeholder — blurred q80 image shown while original loads */}
+      {/* Blur-up placeholder, blurred q80 image shown while original loads */}
       {bgPlaceholderImage && !imgLoaded && !prevImage && (
         <img
           src={placeholderSrc}

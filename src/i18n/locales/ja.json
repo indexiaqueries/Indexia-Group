@@ -27,7 +27,7 @@
     "p1": {
       "tag": "インデキシアファイナンス",
       "heading": "あらゆる\nローン先。",
-      "sub": "www.indexiafinance.com のポータルで、あらゆる種類のローンを申請できます。私たちはグローバルにサービスを提供しています — インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。"
+      "sub": "www.indexiafinance.com のポータルで、あらゆる種類のローンを申請できます。私たちはグローバルにサービスを提供しています, インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。"
     },
     "p2": {
       "tag": "インデキシアフィンサーブ株式会社",
@@ -71,7 +71,7 @@
   },
   "footer": {
     "tagline": "多角化するインドのビジネスグループ",
-    "blurb": "一つの多角化したインドのグループの下に、金融、輸出、農業、物流、警備、広告、アスリート支援という8つの信頼できる事業 — 誠実さと結果に基づいています。",
+    "blurb": "一つの多角化したインドのグループの下に、金融、輸出、農業、物流、警備、広告、アスリート支援という8つの信頼できる事業, 誠実さと結果に基づいています。",
     "contactUs": "お問い合わせ",
     "hours": "月〜土: 午前9時 - 午後6時",
     "company": "会社",
@@ -112,7 +112,7 @@
     "eyebrow": "インデキシアの違い",
     "titleStart": "1つのグループ。8つの事業。",
     "titleAccent": "1つの共通の約束。",
-    "paragraph": "金融・コンサルティングから輸出、農業、物流、警備、スポーツ、メディアまで — すべてのインデキシア事業は同じ基盤の上に成り立っています。誠実さ、専門性、そして人を第一に考えるアプローチ。必要なものがあれば、適切なチームはすでにファミリーの一員です。",
+    "paragraph": "金融・コンサルティングから輸出、農業、物流、警備、スポーツ、メディアまで, すべてのインデキシア事業は同じ基盤の上に成り立っています。誠実さ、専門性、そして人を第一に考えるアプローチ。必要なものがあれば、適切なチームはすでにファミリーの一員です。",
     "counterClients": "サービス提供クライアント",
     "counterBusinesses": "事業",
     "counterLocations": "拠点",
@@ -122,7 +122,7 @@
   "contactHero": {
     "eyebrow": "インデキシアに相談",
     "title": "チームへの直通ライン",
-    "paragraph": "書類の質問から新しいローンのお問い合わせまで、すべてのメッセージはチームメンバーが確認し回答します — 待ち行列はありません。",
+    "paragraph": "書類の質問から新しいローンのお問い合わせまで、すべてのメッセージはチームメンバーが確認し回答します, 待ち行列はありません。",
     "sendEnquiry": "お問い合わせを送信",
     "callNow": "今すぐお電話 · 86551 68551",
     "offices": "{{count}}拠点",
@@ -131,9 +131,9 @@
   },
   "contactInfo": {
     "eyebrow": "お問い合わせを送信",
-    "headlineStart": "お問い合わせ — ",
+    "headlineStart": "お問い合わせ, ",
     "headlineAccent": "インデキシア企業",
-    "paragraph": "当社のサービスについてのご質問、ビジネス相談、パートナーシップのご検討など、当チームがいつでもサポートいたします — 24時間以内に返信いたします。",
+    "paragraph": "当社のサービスについてのご質問、ビジネス相談、パートナーシップのご検討など、当チームがいつでもサポートいたします, 24時間以内に返信いたします。",
     "enquiries": "お問い合わせ",
     "location": "所在地",
     "workingHours": "営業時間",
@@ -210,7 +210,7 @@
     "title": "ニュース＆ナレッジセンター",
     "titleStart": "グループ全体からの",
     "titleAccent": "ストーリーとインサイト。",
-    "subtitle": "最新の銀行ニュース — 資金調達情報、デジタル決済、政策変更、市場動向 — に加え、当社企業からの実用的なガイド。",
+    "subtitle": "最新の銀行ニュース, 資金調達情報、デジタル決済、政策変更、市場動向, に加え、当社企業からの実用的なガイド。",
     "tvEyebrow": "テレビでご覧ください",
     "tvHeading": "あらゆるローンのご相談に",
     "tvCaption": "Loan Chahiye Matlab… インデキシアファイナンス",
@@ -221,16 +221,16 @@
     "knowledgeHeading": "当社企業からの実用的なガイド",
     "knowledgeSubtitle": "この仕事を毎日行っているチームが書いた、わかりやすい解説。",
     "ctaTitle": "当社の事業についてご質問がありますか？",
-    "ctaBody": "FDIアドバイザリーから有機農業、武装警備まで — 適切なインデキシア企業がお手伝いします。お問い合わせを送信してください。",
+    "ctaBody": "FDIアドバイザリーから有機農業、武装警備まで, 適切なインデキシア企業がお手伝いします。お問い合わせを送信してください。",
     "ctaButton": "お問い合わせを送信",
-    "metaDescription": "ニュース＆ナレッジセンター — 資金調達、デジタル決済、政策に関する最新の銀行ニュースと、インデキシアグループからの実用的な知識ガイド。"
+    "metaDescription": "ニュース＆ナレッジセンター, 資金調達、デジタル決済、政策に関する最新の銀行ニュースと、インデキシアグループからの実用的な知識ガイド。"
   },
   "careersPage": {
     "eyebrow": "採用情報",
     "title": "インデキシアグループでのキャリア",
     "titleStart": "当社とともにキャリアを",
     "titleAccent": "築きましょう。",
-    "subtitle": "インデキシアグループは学び続ける組織です — その企業文化こそがチームです。",
+    "subtitle": "インデキシアグループは学び続ける組織です, その企業文化こそがチームです。",
     "ctaButton": "募集中の職種を見る",
     "cultureEyebrow": "私たちの文化",
     "cultureHeading": "学び続ける組織",
@@ -240,7 +240,7 @@
     "apply": "応募する",
     "ctaTitle": "履歴書をメールで送信",
     "ctaBody": "私たちは常に優秀な人材を求めています。履歴書を hr@indexiafinance.com までお送りください。",
-    "metaDescription": "インデキシアグループでのキャリア — ムンバイのインデキシアフィンサーブに募集枠がある学び続ける組織。履歴書をメールで送ってキャリアを始めましょう。",
+    "metaDescription": "インデキシアグループでのキャリア, ムンバイのインデキシアフィンサーブに募集枠がある学び続ける組織。履歴書をメールで送ってキャリアを始めましょう。",
     "mailResume": "履歴書を送信 –"
   },
   "legal": {
@@ -257,7 +257,7 @@
     "contactHeading": "このポリシーについてご質問がありますか？",
     "contactBody": "contactus@indexiagroup.com までご連絡いただくか、お問い合わせを送信してください。担当チームがご連絡いたします。",
     "sendEnquiry": "お問い合わせを送信",
-    "metaPrivacyDescription": "インデキシアグループのプライバシーポリシーをお読みください — 個人情報の収集、利用、保管、保護の方法について。",
+    "metaPrivacyDescription": "インデキシアグループのプライバシーポリシーをお読みください, 個人情報の収集、利用、保管、保護の方法について。",
     "metaTermsDescription": "インデキシアグループのウェブサイトとその企業サービスの利用を規定する利用条件をお読みください。",
     "metaTermsOfUseDescription": "インデキシアグループのウェブサイトとその企業ウェブサイトへのアクセスと閲覧を規定する利用規約をお読みください。"
   },
@@ -266,17 +266,17 @@
     "title": "インデキシアグループのグローバルリサーチ",
     "titleStart": "グローバル金融リサーチ",
     "titleAccent": "＆リソース。",
-    "subtitle": "マクロ経済、債券、為替、コモディティにわたる、洞察に富み、関連性の高い分析と鋭い見解 — アジア、アフリカ、中東での確かな現場知見に基づいています。",
+    "subtitle": "マクロ経済、債券、為替、コモディティにわたる、洞察に富み、関連性の高い分析と鋭い見解, アジア、アフリカ、中東での確かな現場知見に基づいています。",
     "ctaButton": "リサーチカバレッジを見る",
     "areasEyebrow": "リサーチカバレッジ",
     "areasHeading": "分野横断的なグローバルリサーチ",
     "areasSubtitle": "当社の全カバレッジにわたる、洞察に富み、関連性の高い分析。",
     "reportsEyebrow": "出版物",
     "reportsHeading": "リサーチの共有方法",
-    "reportsSubtitle": "頻繁なプレゼンテーションと高品質な出版物 — 現場分析のOTG、実行可能なマーケットアイデアのACT、そして世界的に重要なテーマに関するスペシャルレポート。",
+    "reportsSubtitle": "頻繁なプレゼンテーションと高品質な出版物, 現場分析のOTG、実行可能なマーケットアイデアのACT、そして世界的に重要なテーマに関するスペシャルレポート。",
     "ctaTitle": "当社のリサーチにアクセス",
     "ctaBody": "詳細とリサーチの受け取りについては、当社のグローバルリサーチポータルをご覧ください。アクセスをご希望の場合は、担当のリレーションシップマネージャーにお問い合わせください。",
-    "metaDescription": "インデキシアグループ グローバルリサーチ — マクロ経済、債券、為替、コモディティ分野における洞察に富み、関連性の高い分析。アジア、アフリカ、中東にわたる現場知見を備えています。",
+    "metaDescription": "インデキシアグループ グローバルリサーチ, マクロ経済、債券、為替、コモディティ分野における洞察に富み、関連性の高い分析。アジア、アフリカ、中東にわたる現場知見を備えています。",
     "reportFormat": "出版物"
   },
   "securityTipsPage": {
@@ -297,7 +297,7 @@
     "contactsSubtitle": "口座情報を不審な相手に開示してしまった可能性がある場合、または不正被害に遭った場合は、カスタマーサービスホットラインにすぐにお電話ください。",
     "ctaTitle": "不審なものをお見かけしましたか？",
     "ctaBody": "お問い合わせフォームから報告するか、関連するインデキシアグループ企業に直接ご連絡ください。",
-    "metaDescription": "インデキシアグループからのセキュリティのヒント — オンラインで口座を保護する方法、デバイスでできること、問題が発生した場合の連絡先。"
+    "metaDescription": "インデキシアグループからのセキュリティのヒント, オンラインで口座を保護する方法、デバイスでできること、問題が発生した場合の連絡先。"
   },
   "common": {
     "logoAlt": "インデキシアグループロゴ",
@@ -330,10 +330,10 @@
   "seo": {
     "homeTitle": "金融サービス、ローン、輸出＆物流",
     "homeDescription": "多角化するインドのビジネスグループ：金融サービス、NBFCローン、グローバル輸出、農業肥料、倉庫＆警備。ムンバイ、デリー、スーラトに拠点。",
-    "businessesTitle": "グループ企業 — 金融、農業、輸出＆物流",
+    "businessesTitle": "グループ企業, 金融、農業、輸出＆物流",
     "businessesDescription": "インデキシアグループの8つの事業：金融、ローン、警備、砂糖輸出、有機肥料、倉庫、広告、アスリート支援。",
-    "contactTitle": "お問い合わせ — ムンバイ、デリー、スーラト拠点",
-    "contactDescription": "金融サービス、ローン、輸出、農業、物流に関するお問い合わせはインデキシアグループへ。ムンバイ、デリー、スーラト、エクアドルに拠点 — 24時間以内に返信。"
+    "contactTitle": "お問い合わせ, ムンバイ、デリー、スーラト拠点",
+    "contactDescription": "金融サービス、ローン、輸出、農業、物流に関するお問い合わせはインデキシアグループへ。ムンバイ、デリー、スーラト、エクアドルに拠点, 24時間以内に返信。"
   },
   "branches": {
     "corporateOffice": "本社オフィス",
@@ -371,7 +371,7 @@
       "finance": {
         "tag": "多国籍フィンテック",
         "desc": "投資家サービス、FDI、NBFC、銀行融資を手掛けるグローバルなフィンテック。",
-        "overview": "インデキシアファイナンスは、世界中のクライアントに金融サービスを提供する多国籍フィンテックプラットフォームです。あらゆる種類のローンを www.indexiafinance.com のポータルで申請できます — グローバルにサービスを提供しており、インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。投資家サービス、FDIアドバイザリー、NBFC運営、銀行融資という4つの核となる事業分野を中心に、資本と機会をつなぎ、投資家、企業、機関が国境を越えて自信を持って金融判断を下せるよう支援しています。",
+        "overview": "インデキシアファイナンスは、世界中のクライアントに金融サービスを提供する多国籍フィンテックプラットフォームです。あらゆる種類のローンを www.indexiafinance.com のポータルで申請できます, グローバルにサービスを提供しており、インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。投資家サービス、FDIアドバイザリー、NBFC運営、銀行融資という4つの核となる事業分野を中心に、資本と機会をつなぎ、投資家、企業、機関が国境を越えて自信を持って金融判断を下せるよう支援しています。",
         "tagline": "あらゆるローン先",
         "highlights": [
           "インドを起点とした実行力を持つグローバルフィンテック",
@@ -391,7 +391,7 @@
       "finserve": {
         "tag": "ローン＆ファイナンス",
         "desc": "個人向け・法人向けを問わず、あらゆるローンを提供。",
-        "overview": "インデキシアフィンサーブはインデキシアグループの貸付部門であり、金融分野のあらゆる種類のローンを提供しています。今、正しい銀行があなたの玄関先までやって来ます — 同社は完全なローンの目的地として機能し、個人、住宅、事業、MSME、専門融資の資格、書類、実行を、単一の合理化されたプロセスで案内します。",
+        "overview": "インデキシアフィンサーブはインデキシアグループの貸付部門であり、金融分野のあらゆる種類のローンを提供しています。今、正しい銀行があなたの玄関先までやって来ます, 同社は完全なローンの目的地として機能し、個人、住宅、事業、MSME、専門融資の資格、書類、実行を、単一の合理化されたプロセスで案内します。",
         "tagline": "金融の次世代メソッド",
         "highlights": [
           "1つの屋根の下であらゆる種類のローン",
@@ -419,7 +419,7 @@
         "desc": "精製糖をはじめ、あらゆる食品を世界中へ輸出。",
         "overview": "インデキシアオーバーシーズはすべての食用品のグローバル輸出を推進しており、特に南米14か国への砂糖輸出に注力しています。同社は調達、品質、物流、国際コンプライアンスを管理し、食品グレードの製品が産地から市場へ確実に、大規模に移動できるようにしています。",
         "highlights": [
-          "すべての食用品の輸出 — 砂糖を中核に",
+          "すべての食用品の輸出, 砂糖を中核に",
           "南米14市場での確立されたプレゼンス",
           "エンドツーエンドの調達・品質・物流"
         ],
@@ -436,7 +436,7 @@
         "desc": "インドで製造し、世界へ輸出する有機肥料。",
         "overview": "インデキシアアグロバイオ肥料は、デリー首都圏の一部であるウッタル・プラデーシュ州シャムリーの生産施設で有機肥料を製造しています。同社のバイオベース製品は土壌の健康を改善し、作物の収量を高め、北インドの農家の持続可能な農業を支援します。",
         "highlights": [
-          "有機・バイオベース生産 — 刺激の強い化学薬品なし",
+          "有機・バイオベース生産, 刺激の強い化学薬品なし",
           "デリー首都圏ベルトのシャムリー（UP）施設",
           "より良い土壌健康、より高い作物収量"
         ],
@@ -472,20 +472,20 @@
       "warehouse": {
         "tag": "戦略的用地投資",
         "desc": "シャムリの戦略的用地21エーカー、8本の国内高速道路に接続。",
-        "overview": "インデキシアウェアハウスは、ウッタル・プラデーシュ州シャムリでの戦略的用地投資の機会を提供します — デリーのロニ、トロニカシティから約65km。この立地は交通の要衝です：8本の国内高速道路と2本の主要道路が8州を結び、ブータンとネパールへの直接アクセスと5億人（50クロール）の市場リーチを実現。4つの主要港（グジャラート、マハラシュトラ、チェンナイ、コルカタ）へは高速道路で直接アクセスでき、デリーのIGI空港とジェワールのノイダ国際空港はどちらも1時間以内です。土地ポートフォリオは5か所・合計21エーカーで、1、2、2.5、5、8エーカーの柔軟な区画があり、2エーカーの土地には積み込みドック付きの近代的な倉庫を建設予定です。期待価格は1平方フィートあたり₹30、交渉可能です。",
+        "overview": "インデキシアウェアハウスは、ウッタル・プラデーシュ州シャムリでの戦略的用地投資の機会を提供します, デリーのロニ、トロニカシティから約65km。この立地は交通の要衝です：8本の国内高速道路と2本の主要道路が8州を結び、ブータンとネパールへの直接アクセスと5億人（50クロール）の市場リーチを実現。4つの主要港（グジャラート、マハラシュトラ、チェンナイ、コルカタ）へは高速道路で直接アクセスでき、デリーのIGI空港とジェワールのノイダ国際空港はどちらも1時間以内です。土地ポートフォリオは5か所・合計21エーカーで、1、2、2.5、5、8エーカーの柔軟な区画があり、2エーカーの土地には積み込みドック付きの近代的な倉庫を建設予定です。期待価格は1平方フィートあたり₹30、交渉可能です。",
         "highlights": [
-          "一等地 — ウッタル・プラデーシュ州シャムリ、デリーから約65km",
+          "一等地, ウッタル・プラデーシュ州シャムリ、デリーから約65km",
           "8本の国内高速道路 + 2本の主要道路が8州を結ぶ",
-          "5か所に21エーカー — 1、2、2.5、5、8エーカーの区画",
+          "5か所に21エーカー, 1、2、2.5、5、8エーカーの区画",
           "1平方フィートあたり₹30、交渉可能"
         ],
         "services": [
-          "土地区画 — 1、2、2.5、5、8エーカー",
+          "土地区画, 1、2、2.5、5、8エーカー",
           "5か所に合計21エーカー",
           "2エーカー区画での倉庫建設",
           "高速道路・主要道路への接続",
-          "港湾アクセス — グジャラート、マハラシュトラ、チェンナイ、コルカタ",
-          "空港アクセス — デリーとジェワールまで1時間以内"
+          "港湾アクセス, グジャラート、マハラシュトラ、チェンナイ、コルカタ",
+          "空港アクセス, デリーとジェワールまで1時間以内"
         ],
         "name": "Indexia Warehouse",
         "location": "シャムリ、ウッタル・プラデーシュ州"
@@ -493,17 +493,17 @@
       "advertising": {
         "tag": "プレミアム単柱広告塔",
         "desc": "北インドで最も交通量の多い交差点に設置するプレミアム単柱広告塔。",
-        "overview": "インデキシアアドバタイジングは、北インドの拠点であるシャムリのデリー-デラドゥン高速道路（NH-709B）沿いでプレミアム単柱広告塔を運営しています。8本の国家高速道路と2本の主要高速道路の合流点に位置する当社の広告塔は、10州を結び、5億人（50クロール）の人口にリーチし、毎日1クロール以上の露出を集めます。プレミアムな高さと遮るもののない360°の視野角を持つ単柱広告塔は、特徴的なBisleriグリーンのブランディングで、ブランドに視覚的なノイズゼロで最大の視認性を提供します。印刷、設置からメンテナンスまで、すべてをエンドツーエンドで対応します。10×20フィートの広告塔は月額₹25,000、12×24フィートは月額₹36,000でご予約いただけます — 標準料金は1平方フィートあたり片側月額₹125、長期パッケージは交渉可能です。ご予約は86918 86919または011 4629 1155、またはindexia.queries@gmail.comまでご連絡ください。",
+        "overview": "インデキシアアドバタイジングは、北インドの拠点であるシャムリのデリー-デラドゥン高速道路（NH-709B）沿いでプレミアム単柱広告塔を運営しています。8本の国家高速道路と2本の主要高速道路の合流点に位置する当社の広告塔は、10州を結び、5億人（50クロール）の人口にリーチし、毎日1クロール以上の露出を集めます。プレミアムな高さと遮るもののない360°の視野角を持つ単柱広告塔は、特徴的なBisleriグリーンのブランディングで、ブランドに視覚的なノイズゼロで最大の視認性を提供します。印刷、設置からメンテナンスまで、すべてをエンドツーエンドで対応します。10×20フィートの広告塔は月額₹25,000、12×24フィートは月額₹36,000でご予約いただけます, 標準料金は1平方フィートあたり片側月額₹125、長期パッケージは交渉可能です。ご予約は86918 86919または011 4629 1155、またはindexia.queries@gmail.comまでご連絡ください。",
         "highlights": [
           "NH-709Bデリー-デラドゥン高速道路沿いの戦略的な位置",
-          "10州を接続 — 50クロールの人口リーチ、毎日1クロール以上の露出",
+          "10州を接続, 50クロールの人口リーチ、毎日1クロール以上の露出",
           "360°の視認性とプレミアムな高さの単柱広告塔",
-          "エンドツーエンドのサービス — 印刷、設置、メンテナンス"
+          "エンドツーエンドのサービス, 印刷、設置、メンテナンス"
         ],
         "services": [
-          "広告塔 10×20フィート — ₹25,000/月",
-          "広告塔 12×24フィート — ₹36,000/月",
-          "標準料金 — 1平方フィートあたり片側月額₹125",
+          "広告塔 10×20フィート, ₹25,000/月",
+          "広告塔 12×24フィート, ₹36,000/月",
+          "標準料金, 1平方フィートあたり片側月額₹125",
           "デリー-デラドゥン高速道路とシャムリ環状道路の位置",
           "印刷、設置、メンテナンス",
           "長期・大量パッケージ"
@@ -513,8 +513,8 @@
       },
       "foundation": {
         "tag": "アスリート支援",
-        "desc": "国際レベルのトレーニングと支援 — オリンピックまで。",
-        "overview": "インデキシア財団は、可能な限りの支援 — 国際レベルのトレーニング、体系化された食事と栄養、専門コーチング、オリンピックへの道のりで必要とされるあらゆる支援 — を提供することでアスリートを支援します。財団は、最初の可能性から世界最大の舞台まで、スポーツ選手のそばに立ち続けます。",
+        "desc": "国際レベルのトレーニングと支援, オリンピックまで。",
+        "overview": "インデキシア財団は、可能な限りの支援, 国際レベルのトレーニング、体系化された食事と栄養、専門コーチング、オリンピックへの道のりで必要とされるあらゆる支援, を提供することでアスリートを支援します。財団は、最初の可能性から世界最大の舞台まで、スポーツ選手のそばに立ち続けます。",
         "highlights": [
           "国際レベルのトレーニングと専門コーチング",
           "体系化された食事・栄養プログラム",
@@ -567,7 +567,7 @@
       "insights": {
         "understanding-fdi": {
           "title": "インドのFDIを理解する",
-          "body": "インドのビジネスに外国資本を導入する際の参入経路、セクター別上限、必要な申請書類についての実践的な入門書 — そしてアドバイザリー支援が最も重要となる場面。"
+          "body": "インドのビジネスに外国資本を導入する際の参入経路、セクター別上限、必要な申請書類についての実践的な入門書, そしてアドバイザリー支援が最も重要となる場面。"
         },
         "choosing-loan": {
           "title": "適切なローンを選ぶ",
@@ -664,11 +664,11 @@
       },
       "reports": {
         "otg": {
-          "title": "OTG — 現場",
+          "title": "OTG, 現場",
           "summary": "当社が深く研究するダイナミックな地域の現場分析。"
         },
         "act": {
-          "title": "ACT — 実行可能なアイデア",
+          "title": "ACT, 実行可能なアイデア",
           "summary": "クライアントにリーディングエッジを与える実行可能なマーケットアイデア。"
         },
         "special-reports": {
@@ -819,7 +819,7 @@
         {
           "title": "返金ポリシー",
           "paragraphs": [
-            "当社のサービスをご利用いただく場合、お支払いは返金保証の対象ではありません。何らかの理由で当社のサービスに完全にご満足いただけない場合、当社はこの問題を非常に真剣に受け止め、できるだけ早く解決するよう努めます。返金をリクエストするには、支払いから90日以内に支払い詳細を添えてご連絡ください。支払い詳細と注文番号（支払い後にメールで送信されます）を含め、返金をリクエストする理由を任意でお知らせください — 当社は顧客からのフィードバックを非常に真剣に受け止め、製品とサービスの質を継続的に改善するために活用しています。設置サービスやナレッジベースのホスティングサービスなど、完全に提供されたサービスに対する返金は行われません。返金は21日以内に処理されます。"
+            "当社のサービスをご利用いただく場合、お支払いは返金保証の対象ではありません。何らかの理由で当社のサービスに完全にご満足いただけない場合、当社はこの問題を非常に真剣に受け止め、できるだけ早く解決するよう努めます。返金をリクエストするには、支払いから90日以内に支払い詳細を添えてご連絡ください。支払い詳細と注文番号（支払い後にメールで送信されます）を含め、返金をリクエストする理由を任意でお知らせください, 当社は顧客からのフィードバックを非常に真剣に受け止め、製品とサービスの質を継続的に改善するために活用しています。設置サービスやナレッジベースのホスティングサービスなど、完全に提供されたサービスに対する返金は行われません。返金は21日以内に処理されます。"
           ]
         },
         {
@@ -920,7 +920,7 @@
   "warehousePricing": {
     "eyebrow": "土地ポートフォリオ",
     "title": "土地ポートフォリオと価格",
-    "subtitle": "5か所 | 合計21エーカー — シャムリ、ウッタル・プラデーシュ州",
+    "subtitle": "5か所 | 合計21エーカー, シャムリ、ウッタル・プラデーシュ州",
     "portfolioCol": "ポートフォリオ",
     "valueCol": "値",
     "locations": "拠点数",
@@ -933,8 +933,8 @@
     "plot2_5": "2.5エーカー",
     "plot5": "5エーカー",
     "plot8": "8エーカー",
-    "standardRate": "期待価格：1平方フィートあたり₹30 — 交渉可能",
-    "note": "2エーカーの土地に積み込みドック付きの近代的な倉庫を建設予定。価格は交渉可能 — 詳細はお問い合わせください。",
+    "standardRate": "期待価格：1平方フィートあたり₹30, 交渉可能",
+    "note": "2エーカーの土地に積み込みドック付きの近代的な倉庫を建設予定。価格は交渉可能, 詳細はお問い合わせください。",
     "enquire": "お問い合わせ",
     "plotArea1": "土地面積：1エーカー",
     "plotArea2": "土地面積：2エーカー",
@@ -983,7 +983,7 @@
     "storyEyebrow": "Our Story",
     "storyTitle": "From a Shared Vision to a National Group",
     "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve.",
-    "storyBody2": "Today, Indexia Group operates across three locations — Mumbai, Delhi, and Ecuador — with a team that shares a common purpose.",
+    "storyBody2": "Today, Indexia Group operates across three locations, Mumbai, Delhi, and Ecuador, with a team that shares a common purpose.",
     "valuesEyebrow": "Our Values",
     "valuesTitle": "What We Stand For",
     "value1Title": "Integrity",
@@ -1011,16 +1011,16 @@
     "milestone5Title": "Social Impact",
     "milestone5Body": "Founded Indexia Foundation to support Indian athletes.",
     "ctaTitle": "Let's Build Something Together",
-    "ctaBody": "Whether you're looking for financial services or simply want to learn more about our group — we're here to help.",
+    "ctaBody": "Whether you're looking for financial services or simply want to learn more about our group, we're here to help.",
     "ctaButton": "Get in Touch",
-    "metaDescription": "About Indexia Group — a diversified Indian business group.",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
     "aboutUs": "About Us",
     "leaderEyebrow": "Leadership",
     "leaderTitle": "The Visionary Behind Indexia Group",
     "founderName": "創業者兼最高経営責任者",
     "founderRole": "Founder & Managing Director",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
     "founderQuote": "Business is about trust. When you build on integrity, everything else follows.",
     "companiesEyebrow": "Our Companies",
     "companiesTitle": "Eight Businesses, One Vision",
@@ -1047,7 +1047,7 @@
     "c5Highlights": "元軍隊コマンド,24/7運用センター,VIP・企業警護,重要インフラセキュリティ",
     "c6Tag": "戦略的用地",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "Shamli UPに21エーカー,8本の国道,5拠点,デリーから65km",
     "c7Tag": "高速道路広告",
     "c7Name": "Indexia Advertising",
@@ -1101,9 +1101,9 @@
     "delhiOffice": "デリー事務所",
     "businessesName": "Indexia Group事業",
     "businessesDescription": "Indexia Group傘下の8つの事業。",
-    "newsName": "Indexia Group — ニュース＆ナレッジセンター",
+    "newsName": "Indexia Group, ニュース＆ナレッジセンター",
     "careersName": "Indexia Groupの求人",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "{{name}}について見る。Indexia Groupの企業。{{description}}"
   }
 }

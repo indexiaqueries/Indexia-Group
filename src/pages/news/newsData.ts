@@ -16,7 +16,7 @@ export const useNewsJsonLd = () => {
     "@graph": [
       {
         "@type": "Blog",
-        name: t("jsonLd.newsName", "Indexia Group — News & Knowledge Centre"),
+        name: t("jsonLd.newsName", "Indexia Group, News & Knowledge Centre"),
         url: "https://www.indexiagroup.com/news",
         blogPost: newsArticles.map((article) => ({
           "@type": "BlogPosting",

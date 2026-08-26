@@ -102,7 +102,7 @@ const Globe: React.FC<GlobeProps> = ({
         markers: p.markers,
       });
 
-      // Manual rAF loop — cobe v2 renders one frame per update() call.
+      // Manual rAF loop, cobe v2 renders one frame per update() call.
       const animate = () => {
         if (!mounted || !globe) return;
         const cur = propsRef.current;
@@ -123,7 +123,7 @@ const Globe: React.FC<GlobeProps> = ({
       if (typeof requestIdleCallback === "function") {
         idleId = requestIdleCallback(() => { if (mounted) init(); }, { timeout: 2000 });
       } else {
-        // Safari does not support requestIdleCallback — schedule on the next frame
+        // Safari does not support requestIdleCallback, schedule on the next frame
         idleId = requestAnimationFrame(() => { if (mounted) init(); }) as unknown as number;
       }
       // Safety net: if rIC / rAF never fires (rare on Safari), init after 500ms
@@ -160,7 +160,7 @@ const Globe: React.FC<GlobeProps> = ({
         globe = null;
       }
     };
-  // Only run once on mount — prop changes are read from propsRef.current
+  // Only run once on mount, prop changes are read from propsRef.current
   // to avoid destroying/recreating the globe on every render.
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

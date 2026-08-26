@@ -15,7 +15,7 @@ type ResponsiveImageProps = {
   height?: number;
   /** CSS classes */
   className?: string;
-  /** loading attribute — default "lazy" */
+  /** loading attribute, default "lazy" */
   loading?: "lazy" | "eager";
   /** decoding attribute */
   decoding?: "async" | "sync" | "auto";
@@ -23,14 +23,14 @@ type ResponsiveImageProps = {
   fetchPriority?: "high" | "low" | "auto";
   /** Extra CSS style */
   style?: React.CSSProperties;
-  /** sizes attribute override — auto-generated if omitted */
+  /** sizes attribute override, auto-generated if omitted */
   sizes?: string;
   /** Whether to also include the original (non-WebP) format as a fallback */
   includeOriginal?: boolean;
 };
 
 /**
- * ResponsiveImage — serves smaller WebP files on narrow viewports
+ * ResponsiveImage, serves smaller WebP files on narrow viewports
  * via native srcSet/sizes, with automatic fallback to the original image.
  *
  * Responsive variants must be generated first:

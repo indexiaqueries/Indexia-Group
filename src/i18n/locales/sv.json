@@ -27,7 +27,7 @@
     "p1": {
       "tag": "Indexia Finance",
       "heading": "En komplett\nlåneplattform.",
-      "sub": "Du kan ansöka om alla typer av lån via vår portal på www.indexiafinance.com. Vi erbjuder våra tjänster globalt — i Indien är vi affärspartners med 43 banker och NBFC:er."
+      "sub": "Du kan ansöka om alla typer av lån via vår portal på www.indexiafinance.com. Vi erbjuder våra tjänster globalt, i Indien är vi affärspartners med 43 banker och NBFC:er."
     },
     "p2": {
       "tag": "Indexia Finserve Pvt. Ltd.",
@@ -71,7 +71,7 @@
   },
   "footer": {
     "tagline": "Diversifierad indisk företagskoncern",
-    "blurb": "Åtta pålitliga företag under en diversifierad indisk koncern — finans, export, jordbruk, logistik, säkerhet, reklam och idrottsstöd — byggda på integritet och resultat.",
+    "blurb": "Åtta pålitliga företag under en diversifierad indisk koncern, finans, export, jordbruk, logistik, säkerhet, reklam och idrottsstöd, byggda på integritet och resultat.",
     "contactUs": "Kontakta oss",
     "hours": "Mån–lör: 09.00–18.00",
     "company": "Företaget",
@@ -106,13 +106,13 @@
     "eyebrow": "Koncernbolag",
     "titleStart": "Åtta bolag, ",
     "titleAccent": "en koncern",
-    "subtitle": "Välj ett bolag för att besöka dess egen sida — och skicka sedan din förfrågan till rätt team."
+    "subtitle": "Välj ett bolag för att besöka dess egen sida, och skicka sedan din förfrågan till rätt team."
   },
   "businessesHero": {
     "eyebrow": "Indexia-skillnaden",
     "titleStart": "En koncern. Åtta företag. ",
     "titleAccent": "Ett gemensamt löfte.",
-    "paragraph": "Från finans och rådgivning till export, jordbruk, logistik, säkerhet, sport och media — varje Indexia-företag bygger på samma grund: integritet, expertis och ett människoförst approach. Vad du än behöver finns rätt team redan i familjen.",
+    "paragraph": "Från finans och rådgivning till export, jordbruk, logistik, säkerhet, sport och media, varje Indexia-företag bygger på samma grund: integritet, expertis och ett människoförst approach. Vad du än behöver finns rätt team redan i familjen.",
     "counterClients": "Betjänade kunder",
     "counterBusinesses": "Företag",
     "counterLocations": "Orter",
@@ -122,7 +122,7 @@
   "contactHero": {
     "eyebrow": "Prata med Indexia",
     "title": "En direktlinje till vårt team",
-    "paragraph": "Från dokumentationsfrågor till nya låneförfrågningar — varje meddelande granskas och besvaras av en medlem i vårt team, inte av en kö.",
+    "paragraph": "Från dokumentationsfrågor till nya låneförfrågningar, varje meddelande granskas och besvaras av en medlem i vårt team, inte av en kö.",
     "sendEnquiry": "Skicka din förfrågan",
     "callNow": "Ring oss · 86551 68551",
     "offices": "{{count}} kontor",
@@ -133,7 +133,7 @@
     "eyebrow": "Skicka din förfrågan",
     "headlineStart": "Fråga om ",
     "headlineAccent": "ett Indexia-bolag",
-    "paragraph": "Oavsett om du har en fråga om våra tjänster, behöver en företagskonsultation eller vill utforska ett partnerskap, är vårt team redo att hjälpa dig — vi svarar inom 24 timmar.",
+    "paragraph": "Oavsett om du har en fråga om våra tjänster, behöver en företagskonsultation eller vill utforska ett partnerskap, är vårt team redo att hjälpa dig, vi svarar inom 24 timmar.",
     "enquiries": "Förfrågningar",
     "location": "Plats",
     "workingHours": "Arbetstider",
@@ -210,7 +210,7 @@
     "title": "Nyheter & Kunskapscenter",
     "titleStart": "Berättelser & insikter från ",
     "titleAccent": "hela koncernen.",
-    "subtitle": "Senaste banknyheterna — finansieringsuppdateringar, digitala betalningar, policyförändringar och marknadsutveckling — tillsammans med praktiska guider från våra företag.",
+    "subtitle": "Senaste banknyheterna, finansieringsuppdateringar, digitala betalningar, policyförändringar och marknadsutveckling, tillsammans med praktiska guider från våra företag.",
     "tvEyebrow": "Se oss på TV",
     "tvHeading": "För alla dina lånebehov",
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
@@ -221,16 +221,16 @@
     "knowledgeHeading": "Praktiska guider från våra företag",
     "knowledgeSubtitle": "Rakförklarade guider skrivna av teamen som lever detta arbete varje dag.",
     "ctaTitle": "Har du en fråga om våra företag?",
-    "ctaBody": "Från FDI-rådgivning till ekologiskt jordbruk och beväpnad säkerhet — rätt Indexia-företag är redo att hjälpa. Skicka en förfrågan så kopplar vi dig.",
+    "ctaBody": "Från FDI-rådgivning till ekologiskt jordbruk och beväpnad säkerhet, rätt Indexia-företag är redo att hjälpa. Skicka en förfrågan så kopplar vi dig.",
     "ctaButton": "Skicka en förfrågan",
-    "metaDescription": "Nyheter & Kunskapscenter — senaste banknyheterna om finansiering, digitala betalningar och policy, plus praktiska kunskapsguider från Indexia Group."
+    "metaDescription": "Nyheter & Kunskapscenter, senaste banknyheterna om finansiering, digitala betalningar och policy, plus praktiska kunskapsguider från Indexia Group."
   },
   "careersPage": {
     "eyebrow": "Karriär",
     "title": "Karriär på Indexia Group",
     "titleStart": "Bygg din karriär med ",
     "titleAccent": "oss.",
-    "subtitle": "Indexia Group är en lärande organisation — och dess företagskultur är dess team.",
+    "subtitle": "Indexia Group är en lärande organisation, och dess företagskultur är dess team.",
     "ctaButton": "Visa lediga tjänster",
     "cultureEyebrow": "Vår kultur",
     "cultureHeading": "En lärande organisation",
@@ -240,7 +240,7 @@
     "apply": "Ansök",
     "ctaTitle": "Maila oss ditt CV",
     "ctaBody": "Vi söker alltid bra människor. Skicka ditt CV till hr@indexiafinance.com så hör vi av oss.",
-    "metaDescription": "Karriär på Indexia Group — en lärande organisation med tjänster på Indexia Finserve i Mumbai. Maila ditt CV för att starta din karriär hos oss.",
+    "metaDescription": "Karriär på Indexia Group, en lärande organisation med tjänster på Indexia Finserve i Mumbai. Maila ditt CV för att starta din karriär hos oss.",
     "mailResume": "Maila oss ditt CV –"
   },
   "legal": {
@@ -257,7 +257,7 @@
     "contactHeading": "Frågor om denna policy?",
     "contactBody": "Skriv till oss på contactus@indexiagroup.com eller skicka en förfrågan så återkommer vårt team.",
     "sendEnquiry": "Skicka en förfrågan",
-    "metaPrivacyDescription": "Läs Indexia Groups integritetspolicy — hur vi samlar in, använder, lagrar och skyddar din personliga information.",
+    "metaPrivacyDescription": "Läs Indexia Groups integritetspolicy, hur vi samlar in, använder, lagrar och skyddar din personliga information.",
     "metaTermsDescription": "Läs villkoren som styr din användning av Indexia Group-webbplatsen och tjänsterna från dess företag.",
     "metaTermsOfUseDescription": "Läs användarvillkoren som styr hur du får komma åt och bläddra på Indexia Group-webbplatsen och dess företags webbplatser."
   },
@@ -266,17 +266,17 @@
     "title": "Global forskning på Indexia Group",
     "titleStart": "Global finansiell forskning ",
     "titleAccent": "& resurser.",
-    "subtitle": "Insiktsfulla, relevanta analyser och skarpa perspektiv inom makroekonomi, räntebärande, valuta och råvaror — byggda på stark lokal kunskap i Asien, Afrika och Mellanöstern.",
+    "subtitle": "Insiktsfulla, relevanta analyser och skarpa perspektiv inom makroekonomi, räntebärande, valuta och råvaror, byggda på stark lokal kunskap i Asien, Afrika och Mellanöstern.",
     "ctaButton": "Utforska forskningstäckningen",
     "areasEyebrow": "Forskningstäckning",
     "areasHeading": "Global forskning över discipliner",
     "areasSubtitle": "Insiktsfulla, relevanta analyser och skarpa perspektiv över hela vår täckning.",
     "reportsEyebrow": "Publikationer",
     "reportsHeading": "Så delar vi forskning",
-    "reportsSubtitle": "Frekventa presentationer och högkvalitativa publikationer — OTG, vår analys på plats; ACT, våra handlingsbara marknadsidéer; och Special Reports om globalt viktiga teman.",
+    "reportsSubtitle": "Frekventa presentationer och högkvalitativa publikationer, OTG, vår analys på plats; ACT, våra handlingsbara marknadsidéer; och Special Reports om globalt viktiga teman.",
     "ctaTitle": "Få tillgång till vår forskning",
     "ctaBody": "För att veta mer och få vår forskning, besök vår portal för global forskning. För åtkomst, kontakta din Relationship Manager.",
-    "metaDescription": "Indexia Group Global Research — insiktsfulla, relevanta analyser och skarpa perspektiv inom makroekonomi, räntebärande, valuta och råvaror, med lokal kunskap i Asien, Afrika och Mellanöstern.",
+    "metaDescription": "Indexia Group Global Research, insiktsfulla, relevanta analyser och skarpa perspektiv inom makroekonomi, räntebärande, valuta och råvaror, med lokal kunskap i Asien, Afrika och Mellanöstern.",
     "reportFormat": "Publikation"
   },
   "securityTipsPage": {
@@ -297,7 +297,7 @@
     "contactsSubtitle": "Om du tror att du kan ha lämnat ut dina kontouppgifter till en misstänkt part, eller utsatts för bedrägeri, kontakta oss omedelbart via kundtjänstens hotline.",
     "ctaTitle": "Ser du något misstänkt?",
     "ctaBody": "Rapportera det via vårt förfrågningsformulär eller kontakta det aktuella Indexia Group-företaget direkt.",
-    "metaDescription": "Säkerhetstips från Indexia Group — hur vi skyddar dina konton online, vad du kan göra på dina enheter och vem du ska kontakta om något går fel."
+    "metaDescription": "Säkerhetstips från Indexia Group, hur vi skyddar dina konton online, vad du kan göra på dina enheter och vem du ska kontakta om något går fel."
   },
   "common": {
     "logoAlt": "Indexia Group-logotyp",
@@ -330,10 +330,10 @@
   "seo": {
     "homeTitle": "Finansiella tjänster, lån, export & logistik",
     "homeDescription": "Diversifierad indisk företagskoncern: finansiella tjänster, NBFC-lån, global export, agrogödsel, lager och säkerhet. Kontor i Mumbai och Delhi.",
-    "businessesTitle": "Koncernbolag — finans, agro, export & logistik",
+    "businessesTitle": "Koncernbolag, finans, agro, export & logistik",
     "businessesDescription": "Indexia Groups åtta företag: finans, lån, säkerhet, sockerexport, ekologiska gödselmedel, lager, reklam och idrottsstöd.",
-    "contactTitle": "Kontakta oss — kontor i Mumbai & Delhi",
-    "contactDescription": "Kontakta Indexia Group för finansiella tjänster, lån, export, agro och logistikförfrågningar. Kontor i Mumbai, Delhi och Ecuador — svar inom 24 timmar."
+    "contactTitle": "Kontakta oss, kontor i Mumbai & Delhi",
+    "contactDescription": "Kontakta Indexia Group för finansiella tjänster, lån, export, agro och logistikförfrågningar. Kontor i Mumbai, Delhi och Ecuador, svar inom 24 timmar."
   },
   "branches": {
     "corporateOffice": "Huvudkontor",
@@ -371,7 +371,7 @@
       "finance": {
         "tag": "Multinationell fintech",
         "desc": "Global fintech inom investerartjänster, FDI, NBFC och bankfinansiering.",
-        "overview": "Indexia Finance är en multinationell fintechplattform som levererar finansiella tjänster till kunder världen över. Du kan ansöka om alla typer av lån via vår portal på www.indexiafinance.com — vi erbjuder våra tjänster globalt, och i Indien är vi affärspartners med 43 banker och NBFC:er. Uppbyggd kring fyra kärnområden — investerartjänster, FDI-rådgivning, NBFC-verksamhet och bankfinansiering — kopplar företaget samman kapital med möjligheter och hjälper investerare, företag och institutioner att fatta trygga finansiella beslut över gränserna.",
+        "overview": "Indexia Finance är en multinationell fintechplattform som levererar finansiella tjänster till kunder världen över. Du kan ansöka om alla typer av lån via vår portal på www.indexiafinance.com, vi erbjuder våra tjänster globalt, och i Indien är vi affärspartners med 43 banker och NBFC:er. Uppbyggd kring fyra kärnområden, investerartjänster, FDI-rådgivning, NBFC-verksamhet och bankfinansiering, kopplar företaget samman kapital med möjligheter och hjälper investerare, företag och institutioner att fatta trygga finansiella beslut över gränserna.",
         "tagline": "En komplett låneplattform",
         "highlights": [
           "Global fintech-räckvidd med Indien-först-genomförande",
@@ -391,7 +391,7 @@
       "finserve": {
         "tag": "Lån & finans",
         "desc": "Alla typer av lån, anpassade för privatpersoner och företag.",
-        "overview": "Indexia Finserve är utlåningsarmen inom Indexia Group och erbjuder alla typer av lån. Nu kommer rätt bank till din dörr — företaget fungerar som en komplett låneplattform och guidar kunder genom behörighet, dokumentation och utbetalning för privatlån, bolån, företagslån, MSME och specialiserad finansiering med en enda strömlinjeformad process.",
+        "overview": "Indexia Finserve är utlåningsarmen inom Indexia Group och erbjuder alla typer av lån. Nu kommer rätt bank till din dörr, företaget fungerar som en komplett låneplattform och guidar kunder genom behörighet, dokumentation och utbetalning för privatlån, bolån, företagslån, MSME och specialiserad finansiering med en enda strömlinjeformad process.",
         "tagline": "Framtidens finansmetod",
         "highlights": [
           "Alla låntyper under ett tak",
@@ -419,7 +419,7 @@
         "desc": "Exporterar raffinerat socker och alla livsmedel världen över.",
         "overview": "Indexia Overseas driver global export av alla livsmedel, med särskilt fokus på sockerexport till 14 sydamerikanska länder. Företaget hanterar inköp, kvalitet, logistik och internationell efterlevnad så att livsmedelsklassade produkter transporteras från ursprung till marknad på ett tillförlitligt sätt och i stor skala.",
         "highlights": [
-          "Export av alla livsmedel — socker i centrum",
+          "Export av alla livsmedel, socker i centrum",
           "Etablerad närvaro på 14 sydamerikanska marknader",
           "End-to-end inköp, kvalitet och logistik"
         ],
@@ -434,9 +434,9 @@
       "agro-bio": {
         "tag": "Produktion av ekologiska gödselmedel",
         "desc": "Ekologiska gödselmedel, tillverkade i Indien och exporterade globalt.",
-        "overview": "Indexia Agro Bio Fertilizers tillverkar ekologiska gödselmedel vid sin produktionsanläggning i Shamli, Uttar Pradesh — en del av Delhi NCR-regionen. Företagets biobaserade produkter förbättrar markhälsan, ökar skördarna och stödjer hållbart jordbruk för odlare i norra Indien.",
+        "overview": "Indexia Agro Bio Fertilizers tillverkar ekologiska gödselmedel vid sin produktionsanläggning i Shamli, Uttar Pradesh, en del av Delhi NCR-regionen. Företagets biobaserade produkter förbättrar markhälsan, ökar skördarna och stödjer hållbart jordbruk för odlare i norra Indien.",
         "highlights": [
-          "Ekologisk, biobaserad produktion — inga hårda kemikalier",
+          "Ekologisk, biobaserad produktion, inga hårda kemikalier",
           "Anläggning i Shamli, UP i Delhi NCR-bältet",
           "Bättre markhälsa, högre skördar"
         ],
@@ -453,7 +453,7 @@
       "securities": {
         "tag": "Beväpnad säkerhet & kommandosoldater",
         "desc": "Beväpnade kommandosoldater och vakter som skyddar ledare och företag.",
-        "overview": "Indexia Securities erbjuder den bästa tillgängliga beväpnade säkerheten och kommandoskyddet, och skyddar människor, egendom och högt profilerade verksamheter dygnet runt. Från utbildade kommandosoldater och beväpnade vakter till VIP-eskorter och evenemangssäkerhet — företaget för militärdisciplin till varje uppdrag.",
+        "overview": "Indexia Securities erbjuder den bästa tillgängliga beväpnade säkerheten och kommandoskyddet, och skyddar människor, egendom och högt profilerade verksamheter dygnet runt. Från utbildade kommandosoldater och beväpnade vakter till VIP-eskorter och evenemangssäkerhet, företaget för militärdisciplin till varje uppdrag.",
         "highlights": [
           "Bäst-i-klassen beväpnat och kommandoskydd",
           "Utbildade kommandosoldater med snabbinsatsdisciplin",
@@ -472,20 +472,20 @@
       "warehouse": {
         "tag": "Strategisk markinvestering",
         "desc": "21 tunnland strategisk mark i Shamli, kopplad till 8 nationella motorvägar.",
-        "overview": "Indexia Warehouse erbjuder en strategisk markinvesteringsmöjlighet i Shamli, Uttar Pradesh — bara ~65 km från Tronica City, Loni, Delhi. Läget är en anslutningsnod: 8 nationella motorvägar och 2 större vägar som förbinder 8 delstater, med direkt tillgång till Bhutan och Nepal och en marknadsräckvidd på 50 crore människor. Fyra stora hamnar (Gujarat, Maharashtra, Chennai, Kolkata) nås direkt via motorvägar, och både IGI-flygplatsen i Delhi och Noida International Airport, Jewar ligger inom en timme. Markportföljen omfattar 5 platser och totalt 21 tunnland, med flexibla tomter på 1, 2, 2,5, 5 och 8 tunnland, samt ett modernt lager som ska byggas på 2 tunnland med lastkajer. Förväntat pris är ₹30 per kvm, förhandlingsbart.",
+        "overview": "Indexia Warehouse erbjuder en strategisk markinvesteringsmöjlighet i Shamli, Uttar Pradesh, bara ~65 km från Tronica City, Loni, Delhi. Läget är en anslutningsnod: 8 nationella motorvägar och 2 större vägar som förbinder 8 delstater, med direkt tillgång till Bhutan och Nepal och en marknadsräckvidd på 50 crore människor. Fyra stora hamnar (Gujarat, Maharashtra, Chennai, Kolkata) nås direkt via motorvägar, och både IGI-flygplatsen i Delhi och Noida International Airport, Jewar ligger inom en timme. Markportföljen omfattar 5 platser och totalt 21 tunnland, med flexibla tomter på 1, 2, 2,5, 5 och 8 tunnland, samt ett modernt lager som ska byggas på 2 tunnland med lastkajer. Förväntat pris är ₹30 per kvm, förhandlingsbart.",
         "highlights": [
-          "Primärt läge — Shamli, UP, ~65 km från Delhi",
+          "Primärt läge, Shamli, UP, ~65 km från Delhi",
           "8 nationella motorvägar + 2 större vägar som förbinder 8 delstater",
-          "21 tunnland på 5 platser — tomter på 1, 2, 2,5, 5 och 8 tunnland",
+          "21 tunnland på 5 platser, tomter på 1, 2, 2,5, 5 och 8 tunnland",
           "₹30 per kvm, förhandlingsbart"
         ],
         "services": [
-          "Marktomter — 1, 2, 2,5, 5 och 8 tunnland",
+          "Marktomter, 1, 2, 2,5, 5 och 8 tunnland",
           "21 tunnland på 5 platser",
           "Lagerbyggnation på 2-tunnlands-tomt",
           "Motorvägs- & väganslutning",
-          "Hamntillgång — Gujarat, Maharashtra, Chennai, Kolkata",
-          "Flygplatstillgång — Delhi & Jewar inom 1 timme"
+          "Hamntillgång, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Flygplatstillgång, Delhi & Jewar inom 1 timme"
         ],
         "name": "Indexia Warehouse",
         "location": "Shamli, Uttar Pradesh"
@@ -493,17 +493,17 @@
       "advertising": {
         "tag": "Premium unipole-tavlor",
         "desc": "Premium motorvägstavlor vid norra Indiens mest trafikerade knutpunkt.",
-        "overview": "Indexia Advertising driver premium unipole-tavlor med enkel stolpe på Delhi–Dehradun-motorvägen (NH-709B) i Shamli — norra Indiens nav. Våra unipoles ligger vid korsningen av 8 nationella motorvägar och 2 större vägar, förbinder 10 delstater med en räckvidd på 50 crore människor och lockar över 1 crore daglig exponering. Enkelstolpiga unipoles med premiumhöjd och obehindrad 360°-sikt ger ditt varumärke maximal synlighet utan visuellt brus, med signaturfärgen Bisleri Green. Från tryck och installation till underhåll hanterar vi allt end-to-end. Boka en 10×20 fot unipole för ₹25 000/månad eller en 12×24 fot unipole för ₹36 000/månad — standardpris ₹125/kvm per sida per månad, förhandlingsbart för långtidspaket. För bokning, ring 86918 86919 eller 011 4629 1155, eller maila indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising driver premium unipole-tavlor med enkel stolpe på Delhi–Dehradun-motorvägen (NH-709B) i Shamli, norra Indiens nav. Våra unipoles ligger vid korsningen av 8 nationella motorvägar och 2 större vägar, förbinder 10 delstater med en räckvidd på 50 crore människor och lockar över 1 crore daglig exponering. Enkelstolpiga unipoles med premiumhöjd och obehindrad 360°-sikt ger ditt varumärke maximal synlighet utan visuellt brus, med signaturfärgen Bisleri Green. Från tryck och installation till underhåll hanterar vi allt end-to-end. Boka en 10×20 fot unipole för ₹25 000/månad eller en 12×24 fot unipole för ₹36 000/månad, standardpris ₹125/kvm per sida per månad, förhandlingsbart för långtidspaket. För bokning, ring 86918 86919 eller 011 4629 1155, eller maila indexia.queries@gmail.com.",
         "highlights": [
           "Strategiska placeringar på NH-709B, Delhi–Dehradun-motorvägen",
-          "10 anslutna delstater — 50 crore räckvidd, över 1 crore daglig exponering",
+          "10 anslutna delstater, 50 crore räckvidd, över 1 crore daglig exponering",
           "Enkelstolpiga unipoles med 360°-sikt och premiumhöjd",
-          "End-to-end-tjänst — tryck, installation och underhåll"
+          "End-to-end-tjänst, tryck, installation och underhåll"
         ],
         "services": [
-          "Unipole 10×20 fot — ₹25 000/månad",
-          "Unipole 12×24 fot — ₹36 000/månad",
-          "Standardpris — ₹125/kvm per sida per månad",
+          "Unipole 10×20 fot, ₹25 000/månad",
+          "Unipole 12×24 fot, ₹36 000/månad",
+          "Standardpris, ₹125/kvm per sida per månad",
           "Delhi–Dehradun-motorvägen & Shamli Ring Road-placeringar",
           "Tryck, installation & underhåll",
           "Långtids- & bulkpaket"
@@ -514,7 +514,7 @@
       "foundation": {
         "tag": "Idrottsstöd",
         "desc": "Internationell träning och stöd, ända upp till OS.",
-        "overview": "Indexia Foundation stödjer idrottare genom att ge all tänkbar hjälp — internationell träning, strukturerad kost och nutrition, expertcoaching och alla typer av stöd som behövs på vägen mot de olympiska spelen. Stiftelsen står vid idrottarnas sida från tidig potential till världens största scen.",
+        "overview": "Indexia Foundation stödjer idrottare genom att ge all tänkbar hjälp, internationell träning, strukturerad kost och nutrition, expertcoaching och alla typer av stöd som behövs på vägen mot de olympiska spelen. Stiftelsen står vid idrottarnas sida från tidig potential till världens största scen.",
         "highlights": [
           "Internationell träning och expertcoaching",
           "Strukturerade kost- och näringsprogram",
@@ -535,7 +535,7 @@
   "warehousePricing": {
     "eyebrow": "Markportfölj",
     "title": "Markportfölj & priser",
-    "subtitle": "5 platser | totalt 21 tunnland — Shamli, Uttar Pradesh",
+    "subtitle": "5 platser | totalt 21 tunnland, Shamli, Uttar Pradesh",
     "portfolioCol": "Portfölj",
     "valueCol": "Värde",
     "locations": "Platser",
@@ -548,8 +548,8 @@
     "plot2_5": "2,5 tunnland",
     "plot5": "5 tunnland",
     "plot8": "8 tunnland",
-    "standardRate": "Förväntat pris: ₹30 per kvm — förhandlingsbart",
-    "note": "Modernt lager ska byggas på 2 tunnland med lastkajer. Priser förhandlingsbara — kontakta oss för detaljer.",
+    "standardRate": "Förväntat pris: ₹30 per kvm, förhandlingsbart",
+    "note": "Modernt lager ska byggas på 2 tunnland med lastkajer. Priser förhandlingsbara, kontakta oss för detaljer.",
     "enquire": "Fråga",
     "plotArea1": "Markarea: 1 tunnland",
     "plotArea2": "Markarea: 2 tunnland",
@@ -598,7 +598,7 @@
     "storyEyebrow": "Vår Historia",
     "storyTitle": "Från Gemensam Vision till National Grupp",
     "storyBody1": "Indexia Group grundades med en enkel övertygelse: indiska företag kan konkurrera globalt.",
-    "storyBody2": "Idag verkar Indexia Group på tre platser — Mumbai, Delhi och Ecuador.",
+    "storyBody2": "Idag verkar Indexia Group på tre platser, Mumbai, Delhi och Ecuador.",
     "valuesEyebrow": "Våra Värderingar",
     "valuesTitle": "Vad Vi Står För",
     "value1Title": "Integritet",
@@ -626,16 +626,16 @@
     "milestone5Title": "Social Påverkan",
     "milestone5Body": "Grundade Indexia Foundation för att stödja indiska idrottare.",
     "ctaTitle": "Låt Oss Bygga Något Tillsammans",
-    "ctaBody": "Oavsett om du söker finansiella tjänster, utforskar ett partnerskap, eller vill veta mer — vi är här.",
+    "ctaBody": "Oavsett om du söker finansiella tjänster, utforskar ett partnerskap, eller vill veta mer, vi är här.",
     "ctaButton": "Kontakta Oss",
-    "metaDescription": "About Indexia Group — a diversified Indian business group.",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
     "aboutUs": "About Us",
     "leaderEyebrow": "Ledarskap",
     "leaderTitle": "Visionären Bakom Indexia Group",
     "founderName": "Grundare ochVD",
     "founderRole": "Grundare och VD",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
     "founderQuote": "Affärer handlar om förtroende. Bygger du på integritet, följer allt annat.",
     "companiesEyebrow": "Våra Företag",
     "companiesTitle": "Åtta Företag, En Vision",
@@ -716,9 +716,9 @@
     "delhiOffice": "Delhi Kontor",
     "businessesName": "Indexia Group Företag",
     "businessesDescription": "Åtta företag under Indexia Group.",
-    "newsName": "Indexia Group — Nyheter & Kunskapscenter",
+    "newsName": "Indexia Group, Nyheter & Kunskapscenter",
     "careersName": "Lediga tjänster på Indexia Group",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Lär dig om {{name}}, ett företag inom Indexia Group. {{description}}"
   }
 }

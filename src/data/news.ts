@@ -72,7 +72,7 @@ export const knowledgeInsights: KnowledgeInsight[] = [
   {
     key: "understanding-fdi",
     title: "Understanding FDI in India",
-    body: "A practical primer on entry routes, sectoral caps, and the filings involved in bringing foreign capital into an Indian business — and where expert guidance matters most.",
+    body: "A practical primer on entry routes, sectoral caps, and the filings involved in bringing foreign capital into an Indian business, and where expert guidance matters most.",
   },
   {
     key: "choosing-loan",

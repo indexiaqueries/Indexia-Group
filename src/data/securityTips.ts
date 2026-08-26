@@ -23,7 +23,7 @@ export const securityPractices: SecurityTip[] = [
   {
     key: "devices",
     title: "Protect Your Devices",
-    body: "Ensure all your computers, mobile phones, portable devices, operating systems and Internet browsers — especially those used for online banking — are regularly updated with the latest software.",
+    body: "Ensure all your computers, mobile phones, portable devices, operating systems and Internet browsers, especially those used for online banking, are regularly updated with the latest software.",
   },
   {
     key: "connections",

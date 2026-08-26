@@ -210,7 +210,7 @@
     "title": "Noticias y Centro de Conocimiento",
     "titleStart": "Historias y perspectivas de ",
     "titleAccent": "todo el Grupo.",
-    "subtitle": "Últimas noticias bancarias — novedades sobre financiación, pagos digitales, cambios normativos y evolución de los mercados — junto con guías prácticas de nuestros negocios.",
+    "subtitle": "Últimas noticias bancarias, novedades sobre financiación, pagos digitales, cambios normativos y evolución de los mercados, junto con guías prácticas de nuestros negocios.",
     "featuredLabel": "Historia destacada",
     "readMore": "Leer más",
     "askUs": "Pregúntenos",
@@ -230,7 +230,7 @@
     "title": "Empleo en Indexia Group",
     "titleStart": "Construye Tu Carrera Con ",
     "titleAccent": "Nosotros.",
-    "subtitle": "Indexia Group es una organización que aprende — y su cultura corporativa es su equipo.",
+    "subtitle": "Indexia Group es una organización que aprende, y su cultura corporativa es su equipo.",
     "ctaButton": "Ver vacantes",
     "rolesEyebrow": "Vacantes",
     "rolesHeading": "Nuestras Vacantes Actuales",
@@ -238,7 +238,7 @@
     "apply": "Postular",
     "ctaTitle": "Envíanos Tu Currículum",
     "ctaBody": "Siempre estamos buscando grandes personas. Envía tu CV a hr@indexiafinance.com y nos pondremos en contacto.",
-    "metaDescription": "Carreras en Indexia Group — una organización que aprende con vacantes en Indexia Finserve en Mumbai. Envía tu currículum para comenzar tu carrera con nosotros.",
+    "metaDescription": "Carreras en Indexia Group, una organización que aprende con vacantes en Indexia Finserve en Mumbai. Envía tu currículum para comenzar tu carrera con nosotros.",
     "cultureEyebrow": "Nuestra Cultura",
     "cultureHeading": "Una Organización que Aprende",
     "mailResume": "Envíanos tu currículum –"
@@ -278,7 +278,7 @@
         {
           "title": "Cómo utilizamos su información",
           "paragraphs": [
-            "Utilizamos su información para responder a las consultas, evaluar y prestar nuestros servicios, verificar su identidad cuando sea necesario, mejorar nuestros sitios web y servicios, cumplir con las obligaciones legales y — cuando usted haya dado su consentimiento — enviarle novedades sobre nuestras empresas del grupo.",
+            "Utilizamos su información para responder a las consultas, evaluar y prestar nuestros servicios, verificar su identidad cuando sea necesario, mejorar nuestros sitios web y servicios, cumplir con las obligaciones legales y, cuando usted haya dado su consentimiento, enviarle novedades sobre nuestras empresas del grupo.",
             "Nos basamos en las siguientes bases legales para el tratamiento: su consentimiento, la ejecución de un contrato, el cumplimiento de una obligación legal y nuestro interés legítimo en operar y mejorar nuestro negocio."
           ]
         },
@@ -292,7 +292,7 @@
         {
           "title": "Seguridad de los datos",
           "paragraphs": [
-            "Aplicamos medidas técnicas y organizativas razonables — como controles de acceso, cifrado en tránsito y supervisión — para proteger su información personal contra el acceso no autorizado, la pérdida o el uso indebido.",
+            "Aplicamos medidas técnicas y organizativas razonables, como controles de acceso, cifrado en tránsito y supervisión, para proteger su información personal contra el acceso no autorizado, la pérdida o el uso indebido.",
             "Ningún método de transmisión o almacenamiento es completamente seguro. Aunque trabajamos para proteger sus datos, no podemos garantizar su seguridad absoluta."
           ]
         },
@@ -396,7 +396,7 @@
     },
     "terms": {
       "intro": [
-        "El propietario del sitio web, incluidas sus subsidiarias y afiliadas — Indexia Group (o «nosotros», «nos» o «nuestro») — proporciona la información contenida en este sitio web, o en cualquiera de las páginas que lo componen, a los visitantes y solicitantes (denominados colectivamente «usted» o «su»), sujeto a los términos y condiciones establecidos en estos términos y condiciones del sitio web, la política de privacidad y cualquier otro término, condición, política o aviso relevante que pueda ser aplicable a una sección o módulo específico del sitio web.",
+        "El propietario del sitio web, incluidas sus subsidiarias y afiliadas, Indexia Group (o «nosotros», «nos» o «nuestro»), proporciona la información contenida en este sitio web, o en cualquiera de las páginas que lo componen, a los visitantes y solicitantes (denominados colectivamente «usted» o «su»), sujeto a los términos y condiciones establecidos en estos términos y condiciones del sitio web, la política de privacidad y cualquier otro término, condición, política o aviso relevante que pueda ser aplicable a una sección o módulo específico del sitio web.",
         "Bienvenido a nuestro sitio web. Si continúa navegando y utilizando este sitio web, acepta cumplir y quedar sujeto a los siguientes términos y condiciones de uso, que junto con nuestra política de privacidad rigen la relación de Indexia Group con usted en relación con este sitio web.",
         "El término «Indexia Group» o «nosotros» o «nos» se refiere al propietario del sitio web, cuya oficina registrada se encuentra en 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. El término «usted» se refiere al usuario o visitante de nuestro sitio web."
       ],
@@ -494,7 +494,7 @@
     "practicesSubtitle": "Trabajamos todos los días para mantener protegidas tus cuentas cuando operas en línea. Además, hay algunas cosas sencillas que puedes hacer en tus dispositivos habituales para mantenerte seguro en línea.",
     "ctaTitle": "¿Ha visto algo sospechoso?",
     "ctaBody": "Repórtelo a través de nuestro formulario o contacte directamente con la empresa de Indexia Group correspondiente.",
-    "metaDescription": "Consejos de seguridad de Indexia Group — cómo protegemos tus cuentas en línea, qué puedes hacer en tus dispositivos y a quién contactar si algo sale mal.",
+    "metaDescription": "Consejos de seguridad de Indexia Group, cómo protegemos tus cuentas en línea, qué puedes hacer en tus dispositivos y a quién contactar si algo sale mal.",
     "featuresEyebrow": "Lo Que Hacemos",
     "featuresHeading": "Te Mantenemos Seguro en Línea",
     "featuresSubtitle": "Sigue leyendo para descubrir qué hacemos para proteger tus cuentas cuando operas en línea.",
@@ -526,7 +526,7 @@
       "finance": {
         "tag": "Fintech Multinacional",
         "desc": "Fintech global en servicios al inversor, IDE, NBFC y financiación bancaria.",
-        "overview": "Indexia Finance es una plataforma fintech multinacional que presta servicios financieros a clientes de todo el mundo. Puede solicitar cualquier tipo de préstamo en nuestro portal en www.indexiafinance.com — ofrecemos nuestros servicios a nivel global y, en India, somos socios comerciales de 43 bancos y entidades NBFC. Articulada en torno a cuatro áreas principales — servicios al inversor, facilitación de IDE, operaciones NBFC y financiación bancaria — la compañía conecta el capital con la oportunidad, ayudando a inversores, empresas e instituciones a tomar decisiones financieras seguras más allá de las fronteras.",
+        "overview": "Indexia Finance es una plataforma fintech multinacional que presta servicios financieros a clientes de todo el mundo. Puede solicitar cualquier tipo de préstamo en nuestro portal en www.indexiafinance.com, ofrecemos nuestros servicios a nivel global y, en India, somos socios comerciales de 43 bancos y entidades NBFC. Articulada en torno a cuatro áreas principales, servicios al inversor, facilitación de IDE, operaciones NBFC y financiación bancaria, la compañía conecta el capital con la oportunidad, ayudando a inversores, empresas e instituciones a tomar decisiones financieras seguras más allá de las fronteras.",
         "tagline": "Un destino completo para préstamos",
         "highlights": [
           "Alcance fintech global con ejecución centrada en India",
@@ -574,7 +574,7 @@
         "desc": "Exportamos azúcar refinada y todo tipo de alimentos en todo el mundo.",
         "overview": "Indexia Overseas impulsa la exportación global de productos alimenticios, con especial atención a la exportación de azúcar a 14 países de Sudamérica. La compañía gestiona abastecimiento, calidad, logística y cumplimiento internacional para que los productos de grado alimentario lleguen del origen al mercado de forma fiable y a escala.",
         "highlights": [
-          "Exportación de todo tipo de alimentos — el azúcar como núcleo",
+          "Exportación de todo tipo de alimentos, el azúcar como núcleo",
           "Presencia consolidada en 14 mercados sudamericanos",
           "Abastecimiento, calidad y logística de extremo a extremo"
         ],
@@ -591,7 +591,7 @@
       "agro-bio": {
         "tag": "Producción de Fertilizantes Orgánicos",
         "desc": "Fertilizantes orgánicos, fabricados en India y exportados a todo el mundo.",
-        "overview": "Indexia Agro Bio Fertilizers fabrica fertilizantes orgánicos en su planta de producción de Shamli, Uttar Pradesh — parte de la región Delhi NCR. Sus productos de base biológica mejoran la salud del suelo, aumentan el rendimiento de los cultivos y apoyan la agricultura sostenible de los productores del norte de India.",
+        "overview": "Indexia Agro Bio Fertilizers fabrica fertilizantes orgánicos en su planta de producción de Shamli, Uttar Pradesh, parte de la región Delhi NCR. Sus productos de base biológica mejoran la salud del suelo, aumentan el rendimiento de los cultivos y apoyan la agricultura sostenible de los productores del norte de India.",
         "highlights": [
           "Producción orgánica de base biológica, sin químicos agresivos",
           "Planta en Shamli, UP, en la zona de Delhi NCR",
@@ -629,20 +629,20 @@
       "warehouse": {
         "tag": "Inversión Estratégica en Terrenos",
         "desc": "21 acres de terreno estratégico en Shamli, conectados a 8 autopistas nacionales.",
-        "overview": "Indexia Warehouse ofrece una oportunidad de inversión estratégica en terrenos en Shamli, Uttar Pradesh — a solo ~65 km de Tronica City, Loni, Delhi. La ubicación es un centro de conectividad: 8 autopistas nacionales y 2 carreteras principales conectan 8 estados, con acceso directo a Bután y Nepal y un alcance de mercado de 50 crore de personas. Cuatro grandes puertos (Gujarat, Maharashtra, Chennai, Kolkata) son directamente accesibles por autopista, y tanto el aeropuerto IGI de Delhi como el Aeropuerto Internacional de Noida, Jewar, están a menos de una hora. El portafolio de terrenos abarca 5 ubicaciones y 21 acres en total, con parcelas flexibles de 1, 2, 2,5, 5 y 8 acres, y un almacén moderno que se construirá en 2 acres con muelles de carga. El precio esperado es de ₹30 por pie cuadrado, negociable.",
+        "overview": "Indexia Warehouse ofrece una oportunidad de inversión estratégica en terrenos en Shamli, Uttar Pradesh, a solo ~65 km de Tronica City, Loni, Delhi. La ubicación es un centro de conectividad: 8 autopistas nacionales y 2 carreteras principales conectan 8 estados, con acceso directo a Bután y Nepal y un alcance de mercado de 50 crore de personas. Cuatro grandes puertos (Gujarat, Maharashtra, Chennai, Kolkata) son directamente accesibles por autopista, y tanto el aeropuerto IGI de Delhi como el Aeropuerto Internacional de Noida, Jewar, están a menos de una hora. El portafolio de terrenos abarca 5 ubicaciones y 21 acres en total, con parcelas flexibles de 1, 2, 2,5, 5 y 8 acres, y un almacén moderno que se construirá en 2 acres con muelles de carga. El precio esperado es de ₹30 por pie cuadrado, negociable.",
         "highlights": [
-          "Ubicación privilegiada — Shamli, UP, ~65 km de Delhi",
+          "Ubicación privilegiada, Shamli, UP, ~65 km de Delhi",
           "8 autopistas nacionales + 2 carreteras principales que conectan 8 estados",
-          "21 acres en 5 ubicaciones — parcelas de 1, 2, 2,5, 5 y 8 acres",
+          "21 acres en 5 ubicaciones, parcelas de 1, 2, 2,5, 5 y 8 acres",
           "₹30 por pie cuadrado, negociable"
         ],
         "services": [
-          "Parcelas de Terreno — 1, 2, 2,5, 5 y 8 Acres",
+          "Parcelas de Terreno, 1, 2, 2,5, 5 y 8 Acres",
           "21 Acres en 5 Ubicaciones",
           "Construcción de Almacén en Parcela de 2 Acres",
           "Conectividad por Autopistas y Carreteras",
-          "Acceso a Puertos — Gujarat, Maharashtra, Chennai, Kolkata",
-          "Acceso a Aeropuertos — Delhi y Jewar en menos de 1 hora"
+          "Acceso a Puertos, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Acceso a Aeropuertos, Delhi y Jewar en menos de 1 hora"
         ],
         "name": "Indexia Almacenes",
         "location": "Shamli, Uttar Pradesh"
@@ -650,17 +650,17 @@
       "advertising": {
         "tag": "Unipolos publicitarios premium",
         "desc": "Unipolos publicitarios en el cruce más transitado del norte de India.",
-        "overview": "Indexia Advertising opera unipolos publicitarios premium de poste único en la carretera Delhi–Dehradun (NH-709B) en Shamli — el centro del norte de la India. Ubicados en la confluencia de 8 autopistas nacionales y 2 carreteras principales, nuestros unipolos conectan 10 estados con un alcance de 50 crore de personas y atraen más de 1 crore de exposiciones diarias. Los unipolos de poste único, con altura premium y ángulo de visión de 360° sin obstrucciones, dan a su marca máxima visibilidad sin desorden visual, respaldados por la firma de branding verde Bisleri. Desde la impresión y la instalación hasta el mantenimiento, lo gestionamos todo de principio a fin. Reserve un unipolo de 10×20 ft por ₹25.000/mes o uno de 12×24 ft por ₹36.000/mes — tarifa estándar de ₹125/pie² por lado al mes, negociable en paquetes a largo plazo. Para reservas llame al 86918 86919 o 011 4629 1155, o escriba a indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising opera unipolos publicitarios premium de poste único en la carretera Delhi–Dehradun (NH-709B) en Shamli, el centro del norte de la India. Ubicados en la confluencia de 8 autopistas nacionales y 2 carreteras principales, nuestros unipolos conectan 10 estados con un alcance de 50 crore de personas y atraen más de 1 crore de exposiciones diarias. Los unipolos de poste único, con altura premium y ángulo de visión de 360° sin obstrucciones, dan a su marca máxima visibilidad sin desorden visual, respaldados por la firma de branding verde Bisleri. Desde la impresión y la instalación hasta el mantenimiento, lo gestionamos todo de principio a fin. Reserve un unipolo de 10×20 ft por ₹25.000/mes o uno de 12×24 ft por ₹36.000/mes, tarifa estándar de ₹125/pie² por lado al mes, negociable en paquetes a largo plazo. Para reservas llame al 86918 86919 o 011 4629 1155, o escriba a indexia.queries@gmail.com.",
         "highlights": [
           "Ubicaciones estratégicas en la NH-709B, la carretera Delhi–Dehradun",
-          "10 estados conectados — alcance de 50 crore, más de 1 crore de exposiciones diarias",
+          "10 estados conectados, alcance de 50 crore, más de 1 crore de exposiciones diarias",
           "Unipolos de poste único con visibilidad de 360° y altura premium",
-          "Servicio integral — impresión, instalación y mantenimiento"
+          "Servicio integral, impresión, instalación y mantenimiento"
         ],
         "services": [
-          "Unipolo 10×20 ft — ₹25.000/mes",
-          "Unipolo 12×24 ft — ₹36.000/mes",
-          "Tarifa estándar — ₹125/pie² por lado al mes",
+          "Unipolo 10×20 ft, ₹25.000/mes",
+          "Unipolo 12×24 ft, ₹36.000/mes",
+          "Tarifa estándar, ₹125/pie² por lado al mes",
           "Ubicaciones en la carretera Delhi–Dehradun y la ronda de Shamli",
           "Impresión, instalación y mantenimiento",
           "Paquetes a largo plazo y por volumen"
@@ -671,7 +671,7 @@
       "foundation": {
         "tag": "Apoyo a Deportistas",
         "desc": "Entrenamiento y apoyo de nivel internacional, hasta los Juegos Olímpicos.",
-        "overview": "Indexia Foundation apoya a los deportistas ofreciendo todo el respaldo posible — entrenamiento de nivel internacional, dietas y nutrición estructuradas, entrenadores expertos y toda clase de asistencia en el camino hacia los Juegos Olímpicos. La fundación acompaña a los atletas desde sus primeros logros hasta el mayor escenario del mundo.",
+        "overview": "Indexia Foundation apoya a los deportistas ofreciendo todo el respaldo posible, entrenamiento de nivel internacional, dietas y nutrición estructuradas, entrenadores expertos y toda clase de asistencia en el camino hacia los Juegos Olímpicos. La fundación acompaña a los atletas desde sus primeros logros hasta el mayor escenario del mundo.",
         "highlights": [
           "Entrenamiento de nivel internacional y entrenadores expertos",
           "Programas estructurados de dieta y nutrición",
@@ -724,7 +724,7 @@
       "insights": {
         "understanding-fdi": {
           "title": "Cómo entender el IDE en India",
-          "body": "Una guía práctica sobre las vías de entrada, los límites sectoriales y los trámites necesarios para llevar capital extranjero a un negocio indio — y dónde importa más el apoyo experto."
+          "body": "Una guía práctica sobre las vías de entrada, los límites sectoriales y los trámites necesarios para llevar capital extranjero a un negocio indio, y dónde importa más el apoyo experto."
         },
         "choosing-loan": {
           "title": "Cómo elegir el préstamo adecuado",
@@ -742,7 +742,7 @@
     },
     "careers": {
       "culture": [
-        "Indexia Group es una organización que aprende y su cultura corporativa es su equipo. Nuestros empleados son un activo valioso, y estamos comprometidos a brindarles las asignaciones tecnológicas más recientes y un entorno de trabajo divertido, colaborativo y orientado al equipo. Creemos en ofrecer a nuestra gente las experiencias y oportunidades de formación que amplíen su base de conocimientos existente — con horarios flexibles, énfasis en la comunicación abierta y una política de puertas abiertas entre la dirección y el personal.",
+        "Indexia Group es una organización que aprende y su cultura corporativa es su equipo. Nuestros empleados son un activo valioso, y estamos comprometidos a brindarles las asignaciones tecnológicas más recientes y un entorno de trabajo divertido, colaborativo y orientado al equipo. Creemos en ofrecer a nuestra gente las experiencias y oportunidades de formación que amplíen su base de conocimientos existente, con horarios flexibles, énfasis en la comunicación abierta y una política de puertas abiertas entre la dirección y el personal.",
         "Nos enorgullece ofrecer la oportunidad de ampliar y desarrollar tu carrera en un ambiente que combina la naturaleza emprendedora de una empresa emergente con la estabilidad financiera y los grandes beneficios de una empresa consolidada. Te invitamos a enviar tu currículum para que lo consideremos mientras el grupo continúa expandiendo sus operaciones de mercado y su base de clientes con personas que comparten nuestra pasión por la excelencia operativa."
       ],
       "roles": {
@@ -821,11 +821,11 @@
       },
       "reports": {
         "otg": {
-          "title": "OTG — Análisis sobre el terreno",
+          "title": "OTG, Análisis sobre el terreno",
           "summary": "Nuestro análisis sobre el terreno de las regiones dinámicas que estudiamos en profundidad."
         },
         "act": {
-          "title": "ACT — Ideas de mercado",
+          "title": "ACT, Ideas de mercado",
           "summary": "Ideas de mercado accionables que dan a nuestros clientes una ventaja competitiva."
         },
         "special-reports": {
@@ -848,7 +848,7 @@
       "practices": {
         "devices": {
           "title": "Protege tus Dispositivos",
-          "body": "Asegúrate de que todos tus ordenadores, teléfonos móviles, dispositivos portátiles, sistemas operativos y navegadores de Internet — especialmente los utilizados para banca en línea — estén actualizados regularmente con el software más reciente."
+          "body": "Asegúrate de que todos tus ordenadores, teléfonos móviles, dispositivos portátiles, sistemas operativos y navegadores de Internet, especialmente los utilizados para banca en línea, estén actualizados regularmente con el software más reciente."
         },
         "connections": {
           "title": "Asegura tus Conexiones",
@@ -873,7 +873,7 @@
   },
   "common": {
     "logoAlt": "Logotipo de Indexia Group",
-    "homeAria": "Indexia Group — página de inicio",
+    "homeAria": "Indexia Group, página de inicio",
     "languages": {
       "en": "English",
       "es": "Español",
@@ -902,10 +902,10 @@
   "seo": {
     "homeTitle": "Servicios financieros, préstamos, exportación y logística",
     "homeDescription": "Grupo empresarial indio diversificado: servicios financieros, préstamos NBFC, comercio global, fertilizantes agro, almacenamiento y seguridad. Oficinas en Mumbai y Delhi.",
-    "businessesTitle": "Empresas del grupo — Finanzas, agro, exportación y logística",
+    "businessesTitle": "Empresas del grupo, Finanzas, agro, exportación y logística",
     "businessesDescription": "Las ocho empresas de Indexia Group: finanzas, préstamos, seguridad, comercio de azúcar, fertilizantes orgánicos, almacenamiento, publicidad y apoyo a deportistas.",
-    "contactTitle": "Contacto — Oficinas en Mumbai y Delhi",
-    "contactDescription": "Contacta con Indexia Group para consultas sobre servicios financieros, préstamos, comercio, agro y logística. Oficinas en Mumbai, Delhi y Ecuador — respuesta en un plazo de 24 horas."
+    "contactTitle": "Contacto, Oficinas en Mumbai y Delhi",
+    "contactDescription": "Contacta con Indexia Group para consultas sobre servicios financieros, préstamos, comercio, agro y logística. Oficinas en Mumbai, Delhi y Ecuador, respuesta en un plazo de 24 horas."
   },
   "branches": {
     "corporateOffice": "Oficina Corporativa",
@@ -922,7 +922,7 @@
   "warehousePricing": {
     "eyebrow": "Portafolio de Terrenos",
     "title": "Portafolio de Terrenos y Precios",
-    "subtitle": "5 ubicaciones | 21 acres en total — Shamli, Uttar Pradesh",
+    "subtitle": "5 ubicaciones | 21 acres en total, Shamli, Uttar Pradesh",
     "portfolioCol": "Portafolio",
     "valueCol": "Valor",
     "locations": "Ubicaciones",
@@ -935,8 +935,8 @@
     "plot2_5": "2,5 acres",
     "plot5": "5 acres",
     "plot8": "8 acres",
-    "standardRate": "Precio esperado: ₹30 por pie cuadrado — negociable",
-    "note": "Almacén moderno a construir en 2 acres con muelles de carga. Precios negociables — contacte para más detalles.",
+    "standardRate": "Precio esperado: ₹30 por pie cuadrado, negociable",
+    "note": "Almacén moderno a construir en 2 acres con muelles de carga. Precios negociables, contacte para más detalles.",
     "enquire": "Consultar",
     "plotArea1": "Superficie: 1 acre",
     "plotArea2": "Superficie: 2 acres",
@@ -985,7 +985,7 @@
     "storyEyebrow": "Nuestra Historia",
     "storyTitle": "De Una Visión Compartida a Un Grupo Nacional",
     "storyBody1": "Indexia Group fue fundado con una creencia simple: que los negocios indios pueden competir globalmente cuando se construyen con integridad, experiencia y un compromiso genuino con las personas a las que sirven.",
-    "storyBody2": "Hoy, Indexia Group opera en tres ubicaciones — Mumbai, Delhi y Ecuador — con un equipo que comparte un propósito común.",
+    "storyBody2": "Hoy, Indexia Group opera en tres ubicaciones, Mumbai, Delhi y Ecuador, con un equipo que comparte un propósito común.",
     "valuesEyebrow": "Nuestros Valores",
     "valuesTitle": "Lo Que Defendemos",
     "value1Title": "Integridad",
@@ -1013,9 +1013,9 @@
     "milestone5Title": "Impacto Social",
     "milestone5Body": "Fundó Indexia Foundation para apoyar a atletas indios.",
     "ctaTitle": "Construyamos Algo Juntos",
-    "ctaBody": "Ya sea que busques servicios financieros o quieras saber más sobre nuestro grupo — estamos aquí para ayudar.",
+    "ctaBody": "Ya sea que busques servicios financieros o quieras saber más sobre nuestro grupo, estamos aquí para ayudar.",
     "ctaButton": "Contáctanos",
-    "metaDescription": "Sobre Indexia Group — un grupo empresarial indio diversificado.",
+    "metaDescription": "Sobre Indexia Group, un grupo empresarial indio diversificado.",
     "aboutUs": "Sobre Nosotros",
     "leaderEyebrow": "Liderazgo",
     "leaderTitle": "Las Personas Detrás de Indexia Group",
@@ -1049,7 +1049,7 @@
     "c5Highlights": "Ex-Comandos Militares,Centro de Operaciones 24/7,Protección VIP y Corporativa,Seguridad de Infraestructura Crítica",
     "c6Tag": "Terreno Estratégico",
     "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic leased land in Shamli, UP — 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres en Shamli UP,8 Autopistas Nacionales,5 Ubicaciones,65 km de Delhi",
     "c7Tag": "Publicidad en Autopistas",
     "c7Name": "Indexia Advertising",
@@ -1103,9 +1103,9 @@
     "delhiOffice": "Delhi Office",
     "businessesName": "Indexia Group Businesses",
     "businessesDescription": "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, warehousing, advertising and Athlete Support.",
-    "newsName": "Indexia Group — News & Knowledge Centre",
+    "newsName": "Indexia Group, News & Knowledge Centre",
     "careersName": "Open roles at Indexia Group",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
   }
 }

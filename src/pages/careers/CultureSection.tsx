@@ -45,7 +45,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-linear-to-br from-black/40 via-transparent to-black/40" />
             <span aria-hidden="true" className="card-shine-lines" />
 
-            {/* Floating perk cards — 4 corners */}
+            {/* Floating perk cards, 4 corners */}
             {perks.map((perk, i) => {
               const labels = [
                 t(perk.labelKey, "Growth Mindset"),

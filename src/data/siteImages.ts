@@ -12,7 +12,7 @@ import companyImpact from "../assets/company-pages-img/common/impact-banner.webp
 import companyStory from "../assets/company-pages-img/common/overview-banner.webp";
 import newsFeatured from "../assets/news&knowledge-img/featured-story.webp";
 const securityFeatures = "/images/security/online-security.webp";
-// Images moved to public/images/ — referenced as absolute URL paths
+// Images moved to public/images/, referenced as absolute URL paths
 const researchOTGImg = "/images/research/otg-report.webp";
 const researchACTImg = "/images/research/act-report.webp";
 const researchSpecialImg = "/images/research/special-reports.webp";

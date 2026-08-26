@@ -8,7 +8,7 @@ import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
 import { navPillClass } from "./header/navPill";
 import { useHeaderScroll } from "./header/useHeaderScroll";
 
-// Lazy-load sub-menus — they pull in companies data and extra components,
+// Lazy-load sub-menus, they pull in companies data and extra components,
 // but are only needed when the user actually opens the menu.
 const CompaniesMenu = lazy(() => import("./header/CompaniesMenu"));
 const LanguageMenu = lazy(() => import("./header/LanguageMenu"));

@@ -68,7 +68,7 @@ const Home = () => {
     </section>
 
     {/* Our Reach */}
-    <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+    <section className="relative overflow-hidden bg-linear-to-b from-[#26ae90] to-[#066a9c] px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
       <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 sm:h-64 w-48 sm:w-64 rounded-full bg-(--color-teal)/15 blur-[80px] sm:blur-[100px]" />
       <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 sm:h-52 w-40 sm:w-52 rounded-full bg-(--color-yellow)/10 blur-[60px] sm:blur-[80px]" />
       <div className="container relative">
@@ -78,7 +78,8 @@ const Home = () => {
             {t("homeReach.title", "Trusted Across Borders")}
           </h2>
         </Reveal>
-n        {/* Globe + I overlay */}
+
+        {/* Globe + I overlay */}
         <div className="relative mx-auto -my-1 h-36 sm:h-44 w-full max-w-sm lg:h-56">
           <Suspense fallback={<div className="h-full w-full" />}>
             <Globe
@@ -107,6 +108,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-(--color-teal)/60 to-transparent" />
     </section>
 
   </main>

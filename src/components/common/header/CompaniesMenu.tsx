@@ -16,9 +16,9 @@ type CompaniesMenuProps = {
 const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenuProps) => {
   const { t } = useTranslation();
   const location = useLocation();
-  const onBusinesses = location.pathname.startsWith("/businesses");
-  const currentSlug = location.pathname.replace("/businesses/", "");
-  const isCompanyPage = onBusinesses && currentSlug && currentSlug !== "/businesses";
+  const currentSlug = location.pathname.split("/")[1] ?? "";
+  const isCompanyPage = companies.some((c) => c.slug === currentSlug);
+  const onBusinesses = isCompanyPage;
 
   return (
     <div

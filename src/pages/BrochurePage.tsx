@@ -43,7 +43,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/businesses" },
+          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/about" },
           { "@type": "ListItem", position: 3, name: `${name} Brochure`, item: `https://www.indexiagroup.com${canonicalPath}` },
         ],
       },
@@ -60,7 +60,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
         jsonLd={brochureJsonLd}
       />
       <div className="brochure-wrap mx-auto max-w-4xl px-4 sm:px-6">
-        {/* Action bar — hidden when printing */}
+        {/* Action bar, hidden when printing */}
         <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
           <Link
             to={backTo}
@@ -90,7 +90,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
 
         {/* Brochure sheet */}
         <article className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
-          {/* Header band — title / subtitle / location, matching the PDF */}
+          {/* Header band, title / subtitle / location, matching the PDF */}
           <header className="px-5 py-8 text-white sm:px-8 sm:py-10" style={{ background: band }}>
             <div className="flex items-center gap-3">
               <img
@@ -124,7 +124,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
             <p className="mt-3 text-[14px] leading-7 text-(--color-muted)">{overview}</p>
           </section>
 
-          {/* Pricing section — company-specific */}
+          {/* Pricing section, company-specific */}
           {slug === "warehouse" ? (
             <section className="px-5 pb-6 sm:px-8 sm:pb-8">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("warehousePricing.title")}</h2>

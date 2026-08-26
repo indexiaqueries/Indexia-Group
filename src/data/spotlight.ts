@@ -33,7 +33,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     eyebrow: "Lending Simplified",
     heading: "Every Loan Type\nUnder One Roof",
     description:
-      "From personal loans to working capital, Indexia Finserve makes the right bank come to your doorstep — streamlining eligibility, documentation, and disbursal into a single, guided process.",
+      "From personal loans to working capital, Indexia Finserve makes the right bank come to your doorstep, streamlining eligibility, documentation, and disbursal into a single, guided process.",
     stats: [
       { value: "12", label: "Loan Products" },
       { value: "24h", label: "Response Time" },
@@ -50,7 +50,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     eyebrow: "Global Trade",
     heading: "From India to\n14 Countries",
     description:
-      "With an established trade network across 14 South American countries, Indexia Overseas manages every stage of the export cycle — from sourcing and quality assurance to international logistics.",
+      "With an established trade network across 14 South American countries, Indexia Overseas manages every stage of the export cycle, from sourcing and quality assurance to international logistics.",
     stats: [
       { value: "14", label: "Countries" },
       { value: "100%", label: "Food-Grade" },
@@ -58,7 +58,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     ],
     bullets: [
       "Premium refined sugar and edible commodity exports",
-      "Full-cycle management — sourcing, QA, logistics, compliance",
+      "Full-cycle management, sourcing, QA, logistics, compliance",
       "Trusted partner for bulk buyers and institutional consumers",
       "Deep understanding of South American trade dynamics",
     ],
@@ -67,7 +67,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     eyebrow: "Sustainable Agriculture",
     heading: "Restoring Soil,\nMaximizing Yield",
     description:
-      "Operating from a state-of-the-art facility in Shamli, UP, Indexia Agro Bio manufactures scientifically formulated organic fertilizers that build long-term fertility — not short-term fixes.",
+      "Operating from a state-of-the-art facility in Shamli, UP, Indexia Agro Bio manufactures scientifically formulated organic fertilizers that build long-term fertility, not short-term fixes.",
     stats: [
       { value: "100%", label: "Organic" },
       { value: "6", label: "Product Lines" },
@@ -84,7 +84,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     eyebrow: "Elite Protection",
     heading: "Military-Grade\nSecurity Solutions",
     description:
-      "Staffed by ex-military commandos and trained security professionals, Indexia Securities delivers military-grade discipline and rapid-response capability to every assignment — 24/7.",
+      "Staffed by ex-military commandos and trained security professionals, Indexia Securities delivers military-grade discipline and rapid-response capability to every assignment, 24/7.",
     stats: [
       { value: "24/7", label: "Operations" },
       { value: "VIP", label: "Client Focus" },
@@ -118,7 +118,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     eyebrow: "Highway Visibility",
     heading: "50 Crore Reach,\n360° Visibility",
     description:
-      "Premium single-pole unipoles on the Delhi–Dehradun Highway give your brand maximum visibility with zero visual clutter — backed by signature Bisleri Green branding.",
+      "Premium single-pole unipoles on the Delhi–Dehradun Highway give your brand maximum visibility with zero visual clutter, backed by signature Bisleri Green branding.",
     stats: [
       { value: "1Cr+", label: "Daily Exposure" },
       { value: "10", label: "States Connected" },
@@ -127,7 +127,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     bullets: [
       "10×20 ft and 12×24 ft unipole packages available",
       "Strategic placements on NH-709B and Shamli Ring Road",
-      "End-to-end service — printing, installation, maintenance",
+      "End-to-end service, printing, installation, maintenance",
       "Long-term and bulk packages with negotiable rates",
     ],
   },
@@ -135,7 +135,7 @@ export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
     eyebrow: "Athlete Development",
     heading: "From Grassroots\nto the Olympics",
     description:
-      "Indexia Foundation removes the financial and logistical barriers that prevent talented athletes from reaching their potential — ensuring skill and dedication determine who represents India.",
+      "Indexia Foundation removes the financial and logistical barriers that prevent talented athletes from reaching their potential, ensuring skill and dedication determine who represents India.",
     stats: [
       { value: "5", label: "Support Pillars" },
       { value: "100%", label: "Funded" },

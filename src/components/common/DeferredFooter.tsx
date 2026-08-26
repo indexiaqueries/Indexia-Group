@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-// Lazy-load the heavy Footer — it pulls in footer-bg image, translations,
+// Lazy-load the heavy Footer, it pulls in footer-bg image, translations,
 // and link data, but is only visible when scrolled to the bottom.
 const Footer = lazy(() => import("./Footer"));
 

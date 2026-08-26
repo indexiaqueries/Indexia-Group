@@ -31,7 +31,7 @@ type EnquiryFormProps = {
   initialCompany?: string;
   initialCompanyLabel?: string;
   companyLocked?: boolean;
-  /** Pre-filled message (e.g. selected pricing package) — updates overwrite the message field. */
+  /** Pre-filled message (e.g. selected pricing package), updates overwrite the message field. */
   initialMessage?: string;
 };
 
@@ -45,7 +45,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
   }));
 
   // When a booking message arrives (e.g. a land-area or unipole package was
-  // selected), overwrite only the message field — name/phone/email typed so far
+  // selected), overwrite only the message field, name/phone/email typed so far
   // are preserved instead of the form being reset.
   const [prevInitialMessage, setPrevInitialMessage] = useState(initialMessage);
   if (prevInitialMessage !== initialMessage) {
@@ -127,23 +127,23 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     <div
       ref={ref}
       id="enquiry-form"
-      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-slate-700 bg-slate-800 px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
+      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-slate-200 bg-white px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
       style={{ "--reveal-delay": "0.1s" } as CSSProperties}
     >
       <div
         className="absolute right-0 top-0 h-40 w-40 rounded-full blur-3xl"
-        style={{ backgroundColor: "rgba(38,174,144,.09)" }}
+        style={{ backgroundColor: "rgba(38,174,144,.06)" }}
       />
       <div
         className="absolute bottom-0 left-0 h-40 w-40 rounded-full blur-3xl"
-        style={{ backgroundColor: "rgba(6,106,156,.09)" }}
+        style={{ backgroundColor: "rgba(6,106,156,.06)" }}
       />
 
       <div className="relative flex flex-1 flex-col">
         <Eyebrow size="md" color={accent.green}>
           {t("form.eyebrow")}
         </Eyebrow>
-        <p className="mt-3 text-sm leading-6 text-white/60">{t("form.intro")}</p>
+        <p className="mt-3 text-sm leading-6 text-slate-500">{t("form.intro")}</p>
 
         <form onSubmit={handleSubmit} noValidate className="mt-6 sm:mt-8 flex flex-1 flex-col gap-4 sm:gap-5">
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
@@ -179,7 +179,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
                 required
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? "phone-error" : undefined}
-                className="h-11 rounded-xl px-4 text-sm text-white bg-slate-700 border-slate-600 placeholder:text-slate-400"
+                className="h-11 rounded-xl px-4 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400"
               />
               {errors.phone && (
                 <p id="phone-error" role="alert" className={errorText}>
@@ -256,7 +256,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
               placeholder={t("form.messagePlaceholder")}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? "message-error" : undefined}
-              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm text-white bg-slate-700 border-slate-600 placeholder:text-slate-400"
+              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400"
             />
             {errors.message && (
               <p id="message-error" role="alert" className={errorText}>

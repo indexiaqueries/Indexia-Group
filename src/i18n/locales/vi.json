@@ -27,7 +27,7 @@
     "p1": {
       "tag": "Indexia Finance",
       "heading": "Điểm Đến\nCho Mọi Khoản Vay.",
-      "sub": "Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin của chúng tôi tại www.indexiafinance.com. Chúng tôi cung cấp dịch vụ toàn cầu — tại Ấn Độ, chúng tôi là đối tác kinh doanh của 43 ngân hàng và NBFC."
+      "sub": "Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin của chúng tôi tại www.indexiafinance.com. Chúng tôi cung cấp dịch vụ toàn cầu, tại Ấn Độ, chúng tôi là đối tác kinh doanh của 43 ngân hàng và NBFC."
     },
     "p2": {
       "tag": "Indexia Finserve Pvt. Ltd.",
@@ -71,7 +71,7 @@
   },
   "footer": {
     "tagline": "Tập đoàn Kinh doanh Đa ngành Ấn Độ",
-    "blurb": "Tám doanh nghiệp đáng tin cậy dưới một tập đoàn Ấn Độ đa ngành — tài chính, xuất khẩu, nông nghiệp, warehousing, an ninh, quảng cáo và hỗ trợ vận động viên — xây dựng trên nền tảng liêm chính và kết quả.",
+    "blurb": "Tám doanh nghiệp đáng tin cậy dưới một tập đoàn Ấn Độ đa ngành, tài chính, xuất khẩu, nông nghiệp, warehousing, an ninh, quảng cáo và hỗ trợ vận động viên, xây dựng trên nền tảng liêm chính và kết quả.",
     "contactUs": "Liên hệ",
     "hours": "Thứ Hai - Thứ Bảy: 9:00 - 18:00",
     "company": "Công ty",
@@ -106,13 +106,13 @@
     "eyebrow": "Các Công ty Tập đoàn",
     "titleStart": "Tám Công ty, ",
     "titleAccent": "Một Tập đoàn",
-    "subtitle": "Chọn một công ty để truy cập trang riêng của công ty đó — sau đó gửi yêu cầu của bạn đến đúng đội ngũ."
+    "subtitle": "Chọn một công ty để truy cập trang riêng của công ty đó, sau đó gửi yêu cầu của bạn đến đúng đội ngũ."
   },
   "businessesHero": {
     "eyebrow": "Sự Khác Biệt Indexia",
     "titleStart": "Một Tập đoàn. Tám Doanh nghiệp. ",
     "titleAccent": "Một Cam Kết Chung.",
-    "paragraph": "Từ tài chính và tư vấn đến xuất khẩu, nông nghiệp, warehousing, an ninh, thể thao và truyền thông — mỗi doanh nghiệp Indexia đều được xây dựng trên cùng một nền tảng: liêm chính, chuyên môn và cách tiếp cận lấy con người làm trung tâm. Dù bạn cần gì, đội ngũ phù hợp đã là một phần của gia đình.",
+    "paragraph": "Từ tài chính và tư vấn đến xuất khẩu, nông nghiệp, warehousing, an ninh, thể thao và truyền thông, mỗi doanh nghiệp Indexia đều được xây dựng trên cùng một nền tảng: liêm chính, chuyên môn và cách tiếp cận lấy con người làm trung tâm. Dù bạn cần gì, đội ngũ phù hợp đã là một phần của gia đình.",
     "counterClients": "Khách Hàng Đã Phục Vụ",
     "counterBusinesses": "Doanh Nghiệp",
     "counterLocations": "Thành Phố",
@@ -122,7 +122,7 @@
   "contactHero": {
     "eyebrow": "Trao Đổi Cùng Indexia",
     "title": "Đường Dây Trực Tiếp Đến Đội Ngũ",
-    "paragraph": "Từ câu hỏi về hồ sơ đến yêu cầu vay mới, mọi tin nhắn đều được thành viên trong đội ngũ của chúng tôi xem xét và trả lời — không phải hàng chờ.",
+    "paragraph": "Từ câu hỏi về hồ sơ đến yêu cầu vay mới, mọi tin nhắn đều được thành viên trong đội ngũ của chúng tôi xem xét và trả lời, không phải hàng chờ.",
     "sendEnquiry": "Gửi Yêu Cầu Của Bạn",
     "callNow": "Gọi Ngay · 86551 68551",
     "offices": "{{count}} văn phòng",
@@ -133,7 +133,7 @@
     "eyebrow": "Gửi Yêu Cầu Của Bạn",
     "headlineStart": "Hỏi Về ",
     "headlineAccent": "Công ty Indexia",
-    "paragraph": "Dù bạn có câu hỏi về dịch vụ của chúng tôi, cần tư vấn kinh doanh hay muốn khám phá hợp tác, đội ngũ của chúng tôi sẵn sàng hỗ trợ — chúng tôi trả lời trong vòng 24 giờ.",
+    "paragraph": "Dù bạn có câu hỏi về dịch vụ của chúng tôi, cần tư vấn kinh doanh hay muốn khám phá hợp tác, đội ngũ của chúng tôi sẵn sàng hỗ trợ, chúng tôi trả lời trong vòng 24 giờ.",
     "enquiries": "Yêu cầu",
     "location": "Địa điểm",
     "workingHours": "Giờ Làm Việc",
@@ -210,7 +210,7 @@
     "title": "Tin tức & Trung tâm Kiến thức",
     "titleStart": "Câu Chuyện & Góc Nhìn từ ",
     "titleAccent": "Khung Của Tập Đoàn.",
-    "subtitle": "Tin tức ngân hàng mới nhất — cập nhật tài trợ vốn, thanh toán kỹ thuật số, thay đổi chính sách và diễn biến thị trường — cùng các hướng dẫn thực tiễn từ các doanh nghiệp của chúng tôi.",
+    "subtitle": "Tin tức ngân hàng mới nhất, cập nhật tài trợ vốn, thanh toán kỹ thuật số, thay đổi chính sách và diễn biến thị trường, cùng các hướng dẫn thực tiễn từ các doanh nghiệp của chúng tôi.",
     "tvEyebrow": "Xem Chúng Tôi Trên TV",
     "tvHeading": "Cho Mọi Nhu Cầu Vay Vốn Của Bạn",
     "tvCaption": "Cần Vay Nghĩa Là… Indexia Finance",
@@ -221,16 +221,16 @@
     "knowledgeHeading": "Hướng Dẫn Thực Tiễn từ Doanh Nghiệp",
     "knowledgeSubtitle": "Những bài giải thích dễ hiểu do chính đội ngũ làm công việc này mỗi ngày viết.",
     "ctaTitle": "Bạn có câu hỏi về các doanh nghiệp của chúng tôi?",
-    "ctaBody": "Từ tư vấn FDI đến nông nghiệp hữu cơ, an ninh vũ trang — công ty Indexia phù hợp luôn sẵn sàng hỗ trợ. Gửi yêu cầu và chúng tôi sẽ kết nối bạn.",
+    "ctaBody": "Từ tư vấn FDI đến nông nghiệp hữu cơ, an ninh vũ trang, công ty Indexia phù hợp luôn sẵn sàng hỗ trợ. Gửi yêu cầu và chúng tôi sẽ kết nối bạn.",
     "ctaButton": "Gửi Yêu Cầu",
-    "metaDescription": "Tin tức & Trung tâm Kiến thức — tin tức ngân hàng mới nhất về tài trợ vốn, thanh toán kỹ thuật số và chính sách, cùng các hướng dẫn kiến thức thực tiễn từ Indexia Group."
+    "metaDescription": "Tin tức & Trung tâm Kiến thức, tin tức ngân hàng mới nhất về tài trợ vốn, thanh toán kỹ thuật số và chính sách, cùng các hướng dẫn kiến thức thực tiễn từ Indexia Group."
   },
   "careersPage": {
     "eyebrow": "Tuyển Dụng",
     "title": "Sự Nghiệp Tại Indexia Group",
     "titleStart": "Xây Dựng Sự Nghiệp Cùng ",
     "titleAccent": "Chúng Tôi.",
-    "subtitle": "Indexia Group là một tổ chức không ngừng học hỏi — và văn hóa doanh nghiệp chính là đội ngũ của nó.",
+    "subtitle": "Indexia Group là một tổ chức không ngừng học hỏi, và văn hóa doanh nghiệp chính là đội ngũ của nó.",
     "ctaButton": "Xem Vị Trí Tuyển Dụng",
     "cultureEyebrow": "Văn Hóa Của Chúng Tôi",
     "cultureHeading": "Một Tổ Chức Học Hỏi",
@@ -240,7 +240,7 @@
     "apply": "Ứng Tuyển",
     "ctaTitle": "Gửi Hồ Sơ Của Bạn",
     "ctaBody": "Chúng tôi luôn tìm kiếm những con người tuyệt vời. Gửi CV của bạn đến hr@indexiafinance.com và chúng tôi sẽ liên hệ.",
-    "metaDescription": "Sự nghiệp tại Indexia Group — một tổ chức học hỏi với các vị trí tuyển dụng tại Indexia Finserve Mumbai. Gửi hồ sơ để bắt đầu sự nghiệp cùng chúng tôi.",
+    "metaDescription": "Sự nghiệp tại Indexia Group, một tổ chức học hỏi với các vị trí tuyển dụng tại Indexia Finserve Mumbai. Gửi hồ sơ để bắt đầu sự nghiệp cùng chúng tôi.",
     "mailResume": "Gửi hồ sơ của bạn –"
   },
   "legal": {
@@ -257,7 +257,7 @@
     "contactHeading": "Có câu hỏi về chính sách này?",
     "contactBody": "Viết thư cho chúng tôi tại contactus@indexiagroup.com hoặc gửi yêu cầu và đội ngũ của chúng tôi sẽ liên hệ lại.",
     "sendEnquiry": "Gửi Yêu Cầu",
-    "metaPrivacyDescription": "Đọc Chính sách Bảo mật của Indexia Group — cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của bạn.",
+    "metaPrivacyDescription": "Đọc Chính sách Bảo mật của Indexia Group, cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của bạn.",
     "metaTermsDescription": "Đọc Điều khoản & Điều kiện quản lý việc sử dụng trang web Indexia Group và dịch vụ của các công ty trực thuộc.",
     "metaTermsOfUseDescription": "Đọc Điều khoản Sử dụng quy định cách bạn truy cập và duyệt trang web Indexia Group cũng như trang web của các công ty trực thuộc."
   },
@@ -266,17 +266,17 @@
     "title": "Nghiên Cứu Toàn Cầu Tại Indexia Group",
     "titleStart": "Nghiên Cứu Tài Chính Toàn Cầu ",
     "titleAccent": "& Tài Nguyên.",
-    "subtitle": "Các phân tích sâu sắc, phù hợp và góc nhìn sắc bén trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa — xây dựng trên nền tảng hiểu biết thực địa vững chắc tại Châu Á, Châu Phi và Trung Đông.",
+    "subtitle": "Các phân tích sâu sắc, phù hợp và góc nhìn sắc bén trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, xây dựng trên nền tảng hiểu biết thực địa vững chắc tại Châu Á, Châu Phi và Trung Đông.",
     "ctaButton": "Khám Phá Phạm Vi Nghiên Cứu",
     "areasEyebrow": "Phạm Vi Nghiên Cứu",
     "areasHeading": "Nghiên Cứu Toàn Cầu Trên Các Lĩnh Vực",
     "areasSubtitle": "Các phân tích sâu sắc, phù hợp trên toàn bộ phạm vi hoạt động của chúng tôi.",
     "reportsEyebrow": "Ấn Phẩm",
     "reportsHeading": "Cách Chúng Tôi Chia Sẻ Nghiên Cứu",
-    "reportsSubtitle": "Các bài trình bày thường xuyên và ấn phẩm chất lượng cao — OTG, phân tích thực địa của chúng tôi; ACT, các ý tưởng thị trường khả thi; và Báo cáo Đặc biệt về các chủ đề quan trọng toàn cầu.",
+    "reportsSubtitle": "Các bài trình bày thường xuyên và ấn phẩm chất lượng cao, OTG, phân tích thực địa của chúng tôi; ACT, các ý tưởng thị trường khả thi; và Báo cáo Đặc biệt về các chủ đề quan trọng toàn cầu.",
     "ctaTitle": "Truy Cập Nghiên Cứu Của Chúng Tôi",
     "ctaBody": "Để tìm hiểu thêm và nhận nghiên cứu của chúng tôi, hãy truy cập cổng thông tin Nghiên cứu Toàn cầu. Để được cấp quyền truy cập, vui lòng liên hệ Quản lý Quan hệ của bạn.",
-    "metaDescription": "Nghiên cứu Toàn cầu Indexia Group — các phân tích sâu sắc, phù hợp trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, với hiểu biết thực địa tại Châu Á, Châu Phi và Trung Đông.",
+    "metaDescription": "Nghiên cứu Toàn cầu Indexia Group, các phân tích sâu sắc, phù hợp trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, với hiểu biết thực địa tại Châu Á, Châu Phi và Trung Đông.",
     "reportFormat": "Ấn Phẩm"
   },
   "securityTipsPage": {
@@ -297,7 +297,7 @@
     "contactsSubtitle": "Nếu bạn nghĩ mình có thể đã tiết lộ thông tin tài khoản cho một bên đáng ngờ, hoặc bị lừa đảo, hãy liên hệ ngay với chúng tôi qua Đường dây Nóng Dịch vụ Khách hàng.",
     "ctaTitle": "Thấy điều gì đó đáng ngờ?",
     "ctaBody": "Hãy báo cáo qua biểu mẫu yêu cầu của chúng tôi hoặc liên hệ trực tiếp với công ty Indexia Group liên quan.",
-    "metaDescription": "Mẹo bảo mật từ Indexia Group — cách chúng tôi bảo vệ tài khoản của bạn trực tuyến, bạn có thể làm gì trên thiết bị của mình và liên hệ ai nếu có sự cố."
+    "metaDescription": "Mẹo bảo mật từ Indexia Group, cách chúng tôi bảo vệ tài khoản của bạn trực tuyến, bạn có thể làm gì trên thiết bị của mình và liên hệ ai nếu có sự cố."
   },
   "common": {
     "logoAlt": "Logo Indexia Group",
@@ -330,10 +330,10 @@
   "seo": {
     "homeTitle": "Dịch Vụ Tài Chính, Khoản Vay, Xuất Khẩu & Warehousing",
     "homeDescription": "Tập đoàn kinh doanh đa ngành Ấn Độ: dịch vụ tài chính, cho vay NBFC, xuất khẩu toàn cầu, phân bón nông nghiệp, kho bãi & an ninh. Văn phòng tại Mumbai, Delhi và Ecuador.",
-    "businessesTitle": "Các Công ty Tập đoàn — Tài chính, Nông nghiệp, Xuất khẩu & Warehousing",
+    "businessesTitle": "Các Công ty Tập đoàn, Tài chính, Nông nghiệp, Xuất khẩu & Warehousing",
     "businessesDescription": "Tám doanh nghiệp của Indexia Group: tài chính, cho vay, an ninh, xuất khẩu đường, phân bón hữu cơ, kho bãi, quảng cáo và hỗ trợ vận động viên.",
-    "contactTitle": "Liên Hệ — Văn Phòng Mumbai & Delhi",
-    "contactDescription": "Liên hệ Indexia Group để được giải đáp về dịch vụ tài chính, cho vay, xuất khẩu, nông nghiệp và warehousing. Văn phòng tại Mumbai, Delhi và Ecuador — phản hồi trong 24 giờ."
+    "contactTitle": "Liên Hệ, Văn Phòng Mumbai & Delhi",
+    "contactDescription": "Liên hệ Indexia Group để được giải đáp về dịch vụ tài chính, cho vay, xuất khẩu, nông nghiệp và warehousing. Văn phòng tại Mumbai, Delhi và Ecuador, phản hồi trong 24 giờ."
   },
   "branches": {
     "corporateOffice": "Văn Phòng Tập Đoàn",
@@ -371,7 +371,7 @@
       "finance": {
         "tag": "Fintech Đa Quốc Gia",
         "desc": "Fintech toàn cầu trong dịch vụ nhà đầu tư, FDI, NBFC và tài trợ ngân hàng.",
-        "overview": "Indexia Finance là nền tảng fintech đa quốc gia cung cấp dịch vụ tài chính cho khách hàng trên toàn thế giới. Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin www.indexiafinance.com — chúng tôi cung cấp dịch vụ toàn cầu và tại Ấn Độ là đối tác kinh doanh của 43 ngân hàng và NBFC. Được xây dựng quanh bốn mảng cốt lõi — dịch vụ nhà đầu tư, tư vấn FDI, vận hành NBFC và tài trợ ngân hàng — công ty kết nối vốn với cơ hội, giúp nhà đầu tư, doanh nghiệp và tổ chức đưa ra các quyết định tài chính tự tin xuyên biên giới.",
+        "overview": "Indexia Finance là nền tảng fintech đa quốc gia cung cấp dịch vụ tài chính cho khách hàng trên toàn thế giới. Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin www.indexiafinance.com, chúng tôi cung cấp dịch vụ toàn cầu và tại Ấn Độ là đối tác kinh doanh của 43 ngân hàng và NBFC. Được xây dựng quanh bốn mảng cốt lõi, dịch vụ nhà đầu tư, tư vấn FDI, vận hành NBFC và tài trợ ngân hàng, công ty kết nối vốn với cơ hội, giúp nhà đầu tư, doanh nghiệp và tổ chức đưa ra các quyết định tài chính tự tin xuyên biên giới.",
         "tagline": "Điểm Đến Cho Mọi Khoản Vay",
         "highlights": [
           "Tầm với fintech toàn cầu với cách vận hành Ấn Độ ưu tiên",
@@ -391,7 +391,7 @@
       "finserve": {
         "tag": "Khoản Vay & Tài Chính",
         "desc": "Mọi loại khoản vay, được thiết kế riêng cho cá nhân và doanh nghiệp.",
-        "overview": "Indexia Finserve là bộ phận cho vay của Indexia Group, cung cấp mọi loại khoản vay trong lĩnh vực tài chính. Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn — công ty hoạt động như một điểm đến vay vốn trọn gói, hướng dẫn khách hàng qua các bước đủ điều kiện, hồ sơ và giải ngân cho vay cá nhân, nhà ở, doanh nghiệp, MSME và tài trợ chuyên biệt với một quy trình gọn gàng duy nhất.",
+        "overview": "Indexia Finserve là bộ phận cho vay của Indexia Group, cung cấp mọi loại khoản vay trong lĩnh vực tài chính. Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn, công ty hoạt động như một điểm đến vay vốn trọn gói, hướng dẫn khách hàng qua các bước đủ điều kiện, hồ sơ và giải ngân cho vay cá nhân, nhà ở, doanh nghiệp, MSME và tài trợ chuyên biệt với một quy trình gọn gàng duy nhất.",
         "tagline": "Phương Thức Tài Chính Thế Hệ Mới",
         "highlights": [
           "Mọi loại khoản vay dưới một mái nhà",
@@ -419,7 +419,7 @@
         "desc": "Xuất khẩu đường tinh luyện và mọi thực phẩm ra toàn thế giới.",
         "overview": "Indexia Overseas thúc đẩy xuất khẩu toàn cầu mọi thực phẩm, đặc biệt tập trung vào xuất khẩu đường sang 14 quốc gia Nam Mỹ. Công ty quản lý nguồn cung, chất lượng, warehousing và tuân thủ quốc tế để các sản phẩm cấp thực phẩm di chuyển từ nguồn đến thị trường một cách đáng tin cậy và quy mô lớn.",
         "highlights": [
-          "Xuất khẩu mọi thực phẩm — đường là cốt lõi",
+          "Xuất khẩu mọi thực phẩm, đường là cốt lõi",
           "Hiện diện vững chắc tại 14 thị trường Nam Mỹ",
           "Nguồn cung, chất lượng và warehousing trọn gói"
         ],
@@ -434,9 +434,9 @@
       "agro-bio": {
         "tag": "Sản Xuất Phân Bón Hữu Cơ",
         "desc": "Phân bón hữu cơ, sản xuất tại Ấn Độ và xuất khẩu toàn cầu.",
-        "overview": "Indexia Agro Bio Fertilizers sản xuất phân bón hữu cơ tại cơ sở sản xuất ở Shamli, Uttar Pradesh — thuộc khu vực Delhi NCR. Các sản phẩm gốc sinh học của công ty cải thiện sức khỏe đất, tăng năng suất cây trồng và hỗ trợ nông nghiệp bền vững cho nông dân trên khắp Bắc Ấn Độ.",
+        "overview": "Indexia Agro Bio Fertilizers sản xuất phân bón hữu cơ tại cơ sở sản xuất ở Shamli, Uttar Pradesh, thuộc khu vực Delhi NCR. Các sản phẩm gốc sinh học của công ty cải thiện sức khỏe đất, tăng năng suất cây trồng và hỗ trợ nông nghiệp bền vững cho nông dân trên khắp Bắc Ấn Độ.",
         "highlights": [
-          "Sản xuất hữu cơ gốc sinh học — không hóa chất mạnh",
+          "Sản xuất hữu cơ gốc sinh học, không hóa chất mạnh",
           "Cơ sở Shamli, UP trong khu vực Delhi NCR",
           "Sức khỏe đất tốt hơn, năng suất cây trồng cao hơn"
         ],
@@ -472,20 +472,20 @@
       "warehouse": {
         "tag": "Đầu Tư Đất Chiến Lược",
         "desc": "21 mẫu đất chiến lược tại Shamli, kết nối 8 xa lộ quốc gia.",
-        "overview": "Indexia Warehouse mang đến cơ hội đầu tư đất chiến lược tại Shamli, Uttar Pradesh — chỉ cách Tronica City, Loni, Delhi khoảng 65 km. Đây là trung tâm kết nối: 8 xa lộ quốc gia và 2 đường cao tốc chính nối 8 bang, với lối tiếp cận trực tiếp đến Bhutan và Nepal và phạm vi thị trường 50 crore người. Bốn cảng lớn (Gujarat, Maharashtra, Chennai, Kolkata) có thể đến trực tiếp qua các xa lộ, và cả Sân bay IGI Delhi lẫn Sân bay Quốc tế Noida, Jewar đều trong vòng một giờ. Danh mục đất trải rộng 5 vị trí với tổng 21 mẫu, gồm các lô linh hoạt 1, 2, 2,5, 5 và 8 mẫu, cùng kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá dự kiến ₹30 mỗi ft vuông, có thể thương lượng.",
+        "overview": "Indexia Warehouse mang đến cơ hội đầu tư đất chiến lược tại Shamli, Uttar Pradesh, chỉ cách Tronica City, Loni, Delhi khoảng 65 km. Đây là trung tâm kết nối: 8 xa lộ quốc gia và 2 đường cao tốc chính nối 8 bang, với lối tiếp cận trực tiếp đến Bhutan và Nepal và phạm vi thị trường 50 crore người. Bốn cảng lớn (Gujarat, Maharashtra, Chennai, Kolkata) có thể đến trực tiếp qua các xa lộ, và cả Sân bay IGI Delhi lẫn Sân bay Quốc tế Noida, Jewar đều trong vòng một giờ. Danh mục đất trải rộng 5 vị trí với tổng 21 mẫu, gồm các lô linh hoạt 1, 2, 2,5, 5 và 8 mẫu, cùng kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá dự kiến ₹30 mỗi ft vuông, có thể thương lượng.",
         "highlights": [
-          "Vị trí đắc địa — Shamli, UP, cách Delhi ~65 km",
+          "Vị trí đắc địa, Shamli, UP, cách Delhi ~65 km",
           "8 xa lộ quốc gia + 2 đường cao tốc chính nối 8 bang",
-          "21 mẫu tại 5 vị trí — lô 1, 2, 2,5, 5 & 8 mẫu",
+          "21 mẫu tại 5 vị trí, lô 1, 2, 2,5, 5 & 8 mẫu",
           "₹30 mỗi ft vuông, có thể thương lượng"
         ],
         "services": [
-          "Lô Đất — 1, 2, 2,5, 5 & 8 Mẫu",
+          "Lô Đất, 1, 2, 2,5, 5 & 8 Mẫu",
           "21 Mẫu Tại 5 Vị Trí",
           "Xây Dựng Kho Hàng Trên Lô 2 Mẫu",
           "Kết Nối Xa Lộ & Cao Tốc",
-          "Tiếp Cận Cảng — Gujarat, Maharashtra, Chennai, Kolkata",
-          "Tiếp Cận Sân Bay — Delhi & Jewar Trong 1 Giờ"
+          "Tiếp Cận Cảng, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Tiếp Cận Sân Bay, Delhi & Jewar Trong 1 Giờ"
         ],
         "name": "Indexia Warehouse",
         "location": "Shamli, Uttar Pradesh"
@@ -493,17 +493,17 @@
       "advertising": {
         "tag": "Bảng Quảng Cáo Unipole Cao Cấp",
         "desc": "Bảng quảng cáo xa lộ cao cấp tại ngã tư nhộn nhịp nhất Bắc Ấn Độ.",
-        "overview": "Indexia Advertising vận hành các bảng quảng cáo unipole một trụ cao cấp trên Xa lộ Delhi–Dehradun (NH-709B) tại Shamli — trung tâm của Bắc Ấn Độ. Nằm tại ngã tư của 8 xa lộ quốc gia và 2 đường cao tốc chính, các trụ unipole của chúng tôi kết nối 10 bang với phạm vi tiếp cận 50 crore dân số và thu hút hơn 1 crore lượt tiếp xúc mỗi ngày. Unipole một trụ với độ cao cao cấp và góc nhìn 360° không bị che chắn mang đến cho thương hiệu của bạn độ phủ tối đa mà không có sự rối mắt, được hỗ trợ bởi thương hiệu đặc trưng Bisleri Green. Từ in ấn và lắp đặt đến bảo trì, chúng tôi xử lý mọi thứ trọn gói. Đặt unipole 10×20 ft với giá ₹25.000/tháng hoặc unipole 12×24 ft với giá ₹36.000/tháng — giá tiêu chuẩn ₹125/ft vuông mỗi mặt mỗi tháng, có thể thương lượng cho các gói dài hạn. Để đặt chỗ, gọi 86918 86919 hoặc 011 4629 1155, hoặc email indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising vận hành các bảng quảng cáo unipole một trụ cao cấp trên Xa lộ Delhi–Dehradun (NH-709B) tại Shamli, trung tâm của Bắc Ấn Độ. Nằm tại ngã tư của 8 xa lộ quốc gia và 2 đường cao tốc chính, các trụ unipole của chúng tôi kết nối 10 bang với phạm vi tiếp cận 50 crore dân số và thu hút hơn 1 crore lượt tiếp xúc mỗi ngày. Unipole một trụ với độ cao cao cấp và góc nhìn 360° không bị che chắn mang đến cho thương hiệu của bạn độ phủ tối đa mà không có sự rối mắt, được hỗ trợ bởi thương hiệu đặc trưng Bisleri Green. Từ in ấn và lắp đặt đến bảo trì, chúng tôi xử lý mọi thứ trọn gói. Đặt unipole 10×20 ft với giá ₹25.000/tháng hoặc unipole 12×24 ft với giá ₹36.000/tháng, giá tiêu chuẩn ₹125/ft vuông mỗi mặt mỗi tháng, có thể thương lượng cho các gói dài hạn. Để đặt chỗ, gọi 86918 86919 hoặc 011 4629 1155, hoặc email indexia.queries@gmail.com.",
         "highlights": [
           "Vị trí chiến lược trên NH-709B, xa lộ Delhi–Dehradun",
-          "10 bang kết nối — phạm vi 50 crore dân, hơn 1 crore tiếp xúc mỗi ngày",
+          "10 bang kết nối, phạm vi 50 crore dân, hơn 1 crore tiếp xúc mỗi ngày",
           "Unipole một trụ với tầm nhìn 360° và độ cao cao cấp",
-          "Dịch vụ trọn gói — in ấn, lắp đặt và bảo trì"
+          "Dịch vụ trọn gói, in ấn, lắp đặt và bảo trì"
         ],
         "services": [
-          "Unipole 10×20 ft — ₹25.000/tháng",
-          "Unipole 12×24 ft — ₹36.000/tháng",
-          "Giá Tiêu chuẩn — ₹125/ft vuông mỗi mặt mỗi tháng",
+          "Unipole 10×20 ft, ₹25.000/tháng",
+          "Unipole 12×24 ft, ₹36.000/tháng",
+          "Giá Tiêu chuẩn, ₹125/ft vuông mỗi mặt mỗi tháng",
           "Vị Trí Xa Lộ Delhi–Dehradun & Đường Vành Đai Shamli",
           "In Ấn, Lắp Đặt & Bảo Trì",
           "Gói Dài Hạn & Số Lượng Lớn"
@@ -514,7 +514,7 @@
       "foundation": {
         "tag": "Hỗ Trợ Vận Động Viên",
         "desc": "Đào tạo và hỗ trợ đẳng cấp quốc tế, đến tận Olympic.",
-        "overview": "Indexia Foundation hỗ trợ vận động viên bằng mọi sự hỗ trợ có thể — đào tạo đẳng cấp quốc tế, chế độ ăn và dinh dưỡng có cấu trúc, huấn luyện chuyên gia và mọi loại trợ giúp cần thiết trên hành trình đến Thế vận hội Olympic. Quỹ đồng hành cùng vận động viên từ những triển vọng ban đầu đến sân khấu lớn nhất thế giới.",
+        "overview": "Indexia Foundation hỗ trợ vận động viên bằng mọi sự hỗ trợ có thể, đào tạo đẳng cấp quốc tế, chế độ ăn và dinh dưỡng có cấu trúc, huấn luyện chuyên gia và mọi loại trợ giúp cần thiết trên hành trình đến Thế vận hội Olympic. Quỹ đồng hành cùng vận động viên từ những triển vọng ban đầu đến sân khấu lớn nhất thế giới.",
         "highlights": [
           "Đào tạo đẳng cấp quốc tế và huấn luyện chuyên gia",
           "Chương trình chế độ ăn và dinh dưỡng có cấu trúc",
@@ -535,7 +535,7 @@
   "warehousePricing": {
     "eyebrow": "Danh Mục Đất",
     "title": "Danh Mục & Giá Đất",
-    "subtitle": "5 vị trí | tổng 21 mẫu — Shamli, Uttar Pradesh",
+    "subtitle": "5 vị trí | tổng 21 mẫu, Shamli, Uttar Pradesh",
     "portfolioCol": "Danh Mục",
     "valueCol": "Giá Trị",
     "locations": "Vị Trí",
@@ -548,8 +548,8 @@
     "plot2_5": "2,5 Mẫu",
     "plot5": "5 Mẫu",
     "plot8": "8 Mẫu",
-    "standardRate": "Giá Dự Kiến: ₹30 mỗi ft vuông — Có thể thương lượng",
-    "note": "Kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá có thể thương lượng — liên hệ để biết chi tiết.",
+    "standardRate": "Giá Dự Kiến: ₹30 mỗi ft vuông, Có thể thương lượng",
+    "note": "Kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá có thể thương lượng, liên hệ để biết chi tiết.",
     "enquire": "Yêu Cầu",
     "plotArea1": "Diện tích đất: 1 mẫu",
     "plotArea2": "Diện tích đất: 2 mẫu",
@@ -598,7 +598,7 @@
     "storyEyebrow": "Câu Chuyện Của Chúng Tôi",
     "storyTitle": "Từ Tầm Nhìn Chung Đến Tập Đoàn Quốc Gia",
     "storyBody1": "Indexia Group được thành lập với niềm tin đơn giản: doanh nghiệp Ấn Độ có thể cạnh tranh toàn cầu.",
-    "storyBody2": "Ngày nay, Indexia Group hoạt động tại ba địa điểm — Mumbai, Delhi và Ecuador.",
+    "storyBody2": "Ngày nay, Indexia Group hoạt động tại ba địa điểm, Mumbai, Delhi và Ecuador.",
     "valuesEyebrow": "Giá Trị Của Chúng Tôi",
     "valuesTitle": "Chúng Tôi Đại Diện Cho Điều Gì",
     "value1Title": "Tính Toàn Vẹn",
@@ -626,16 +626,16 @@
     "milestone5Title": "Tác Động Xã Hội",
     "milestone5Body": "Thành lập Indexia Foundation hỗ trợ vận động viên Ấn Độ.",
     "ctaTitle": "Hãy Cùng Xây Dựng Điều Gì Đó",
-    "ctaBody": "Dù bạn đang tìm kiếm dịch vụ tài chính, khám phá đối tác, hay đơn giản muốn tìm hiểu thêm — chúng tôi ở đây.",
+    "ctaBody": "Dù bạn đang tìm kiếm dịch vụ tài chính, khám phá đối tác, hay đơn giản muốn tìm hiểu thêm, chúng tôi ở đây.",
     "ctaButton": "Liên Hệ",
-    "metaDescription": "About Indexia Group — a diversified Indian business group.",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
     "aboutUs": "About Us",
     "leaderEyebrow": "Lãnh Đạo",
     "leaderTitle": "Nhà Sáng Tạo Đằng Sau Indexia Group",
     "founderName": "Người Sáng Lập & Tổng Giám Đốc",
     "founderRole": "Người Sáng Lập & Tổng Giám Đốc",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
     "founderQuote": "Kinh doanh là về niềm tin. Khi bạn xây dựng trên tính toàn vẹn, mọi thứ khác sẽ theo sau.",
     "companiesEyebrow": "Các Công Ty Của Chúng Tôi",
     "companiesTitle": "Tám Doanh Nghiệp, Một Tầm Nhìn",
@@ -716,9 +716,9 @@
     "delhiOffice": "Văn Phòng Delhi",
     "businessesName": "Các Doanh Nghiệp Indexia Group",
     "businessesDescription": "Tám doanh nghiệp thuộc Indexia Group.",
-    "newsName": "Indexia Group — Tin Tức & Trung Tâm Kiến Thức",
+    "newsName": "Indexia Group, Tin Tức & Trung Tâm Kiến Thức",
     "careersName": "Vị Trí Tuyển Dụng Tại Indexia Group",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Tìm hiểu về {{name}}, công ty thuộc Indexia Group. {{description}}"
   }
 }

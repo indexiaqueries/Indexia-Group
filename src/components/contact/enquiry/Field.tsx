@@ -43,7 +43,7 @@ const Field = ({
       required={required}
       aria-invalid={!!error}
       aria-describedby={error ? `${id}-error` : undefined}
-      className="h-11 rounded-xl px-4 text-sm text-white bg-slate-700 border-slate-600 placeholder:text-slate-400"
+      className="h-11 rounded-xl px-4 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400"
     />
     {error && (
       <p id={`${id}-error`} role="alert" className={errorText}>

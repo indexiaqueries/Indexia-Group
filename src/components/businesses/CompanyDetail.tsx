@@ -72,13 +72,13 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const entryNo = String(index + 1).padStart(2, "0");
   const Icon = companyIcons[b.name] ?? Sparkles;
   const marqueeItems = [tr("tag", b.tag), ...b.services.map((s, i) => tr(`services.${i}`, s))];
-  // Home-hero slide copy for this company — already translated in every locale,
+  // Home-hero slide copy for this company, already translated in every locale,
   // unused on this page, and reused for the new impact band + story split.
   const slideHeading = t(`hero.p${index + 1}.heading`, b.tagline ?? b.name);
   const slideSub = t(`hero.p${index + 1}.sub`, b.desc);
 
   const handleBook = (row: PricingRow) => {
-    // Scroll the enquiry form into view first — a remount in the same tick cancels it.
+    // Scroll the enquiry form into view first, a remount in the same tick cancels it.
     const target = document.getElementById("enquiry");
     if (target) {
       const y = target.getBoundingClientRect().top + window.scrollY - 96;
@@ -109,7 +109,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </span>
           {showBackLink && (
             <Link
-              to="/businesses"
+              to="/about"
               className="mb-8 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-white/70 transition-colors hover:text-(--color-yellow)"
             >
               <span aria-hidden="true">←</span> {t("companyDetail.backAll")}
@@ -141,7 +141,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           {(b.slug === "warehouse" || b.slug === "advertising") && (
             <p className="mt-3 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.16em] text-white/75">
               <MapPin size={15} strokeWidth={2.2} aria-hidden="true" />
-              {tr("location", b.slug === "warehouse" ? "Shamli, Uttar Pradesh — Part of Delhi NCR" : "Delhi–Dehradun Highway, Shamli")}
+              {tr("location", b.slug === "warehouse" ? "Shamli, Uttar Pradesh, Part of Delhi NCR" : "Delhi–Dehradun Highway, Shamli")}
             </p>
           )}
 
@@ -226,7 +226,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               >
                 <img
                   src={getCompanyImage(b.slug)}
-                  alt={`${name} — ${tag}`}
+                  alt={`${name}, ${tag}`}
                   width={1536}
                   height={1024}
                   loading="lazy"
@@ -265,11 +265,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
-      {/* Impact band — full-bleed image as section background */}
+      {/* Impact band, full-bleed image as section background */}
       <section className="relative overflow-hidden">
         <ImageSlot
           {...siteImages.companyImpact}
-          alt={`${name} — ${tag}`}
+          alt={`${name}, ${tag}`}
           aspect="aspect-[21/9]"
           className="absolute inset-0 h-full w-full rounded-none"
         />
@@ -303,7 +303,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         services={b.services}
       />
 
-      {/* Story split — second image + pull-quote */}
+      {/* Story split, second image + pull-quote */}
       <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
         <div
           aria-hidden="true"
@@ -319,7 +319,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             />
             <ImageSlot
               {...siteImages.companyStory}
-              alt={`${name} — ${tag}`}
+              alt={`${name}, ${tag}`}
               aspect="aspect-[4/3]"
               className="relative rounded-3xl shadow-2xl ring-1 ring-white/15"
             />

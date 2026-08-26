@@ -15,7 +15,6 @@ const linkGroups: {
     titleKey: "footer.company",
     links: [
       { labelKey: "footer.links.aboutUs", href: "/about" },
-      { labelKey: "footer.links.groupCompanies", href: "/businesses" },
       { labelKey: "footer.links.careers", href: "/careers" },
     ],
   },
@@ -91,9 +90,9 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-3 pt-10 sm:px-4 sm:pt-14 lg:px-6">
+      <div className="relative z-10 mx-auto max-w-7xl px-3 pt-12 pb-6 sm:px-4 sm:pt-16 sm:pb-8 lg:px-6">
 
-        {/* Brand + CTA row — compact, horizontal on desktop */}
+        {/* Brand + CTA row, compact, horizontal on desktop */}
         <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt={t("common.logoAlt")} width={48} height={48} className="h-12 w-12 object-contain" />
@@ -162,8 +161,8 @@ const Footer = () => {
 
       </div>
 
-      <div className="relative z-10 mt-4 border-t border-white/8 bg-black/30">
-        <div className="mx-auto max-w-7xl px-3 py-3 text-center text-[13px] text-white/50 sm:px-4 lg:px-6">
+      <div className="relative z-10 mt-8 border-t border-white/8 bg-black/30">
+        <div className="mx-auto max-w-7xl px-3 py-4 text-center text-[13px] text-white/50 sm:px-4 lg:px-6">
           <p>{t("footer.rights")}</p>
         </div>
       </div>

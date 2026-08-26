@@ -4,9 +4,9 @@ type CompanyCardBaseProps = {
   image: string;
   imageSm?: string;
   imageAlt: string;
-  /** Ghost number shown in top-left — omit to hide */
+  /** Ghost number shown in top-left, omit to hide */
   cardNo?: string;
-  /** Optional gradient tint overlay color — defaults to night */
+  /** Optional gradient tint overlay color, defaults to night */
   tint?: string;
   /** Content rendered on top of the image/overlay */
   children: ReactNode;

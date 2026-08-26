@@ -8,9 +8,9 @@ export type PricingRow = {
   value: string;
   /** Optional third column (e.g. monthly rate). */
   rate?: string;
-  /** Optional per-row CTA label — shows a 'book' button on the row when provided. */
+  /** Optional per-row CTA label, shows a 'book' button on the row when provided. */
   ctaLabel?: string;
-  /** Pre-built booking message — bypasses template interpolation in the handler. */
+  /** Pre-built booking message, bypasses template interpolation in the handler. */
   message?: string;
 };
 
@@ -19,7 +19,7 @@ export type PricingGridItem = {
   value: string;
   /** Optional per-card CTA label. */
   ctaLabel?: string;
-  /** Numeric weight — cards grow in proportion to it (e.g. plot acreage). */
+  /** Numeric weight, cards grow in proportion to it (e.g. plot acreage). */
   size?: number;
 };
 
@@ -29,7 +29,7 @@ type PricingTableProps = {
   eyebrow: string;
   title: string;
   subtitle: string;
-  /** Optional column headers — rendered left-aligned with the last one right-aligned. */
+  /** Optional column headers, rendered left-aligned with the last one right-aligned. */
   headers?: { label: string; value: string; rate?: string };
   rows: PricingRow[];
   /** Optional chip list (e.g. available plot sizes). */
@@ -150,7 +150,7 @@ const PricingTable = ({
               </p>
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
                 {grid.items.map((item) => {
-                  // The largest plot spans two columns on sm+ — keeps the
+                  // The largest plot spans two columns on sm+, keeps the
                   // "size follows area" cue while staying in a tidy 3-up grid.
                   const wide = (item.size ?? 1) >= 8;
                   return (                    <div

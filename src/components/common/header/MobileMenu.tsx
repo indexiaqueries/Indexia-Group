@@ -19,9 +19,9 @@ type MobileMenuProps = {
 const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
   const { t } = useTranslation();
   const location = useLocation();
-  const onBusinesses = location.pathname.startsWith("/businesses");
-  const currentSlug = location.pathname.replace("/businesses/", "");
-  const isCompanyPage = onBusinesses && currentSlug && currentSlug !== "/businesses";
+  const currentSlug = location.pathname.split("/")[1] ?? "";
+  const isCompanyPage = companies.some((c) => c.slug === currentSlug);
+  const onBusinesses = isCompanyPage;
 
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -74,7 +74,7 @@ const MobileMenu = ({ open, reducedMotion, onClose }: MobileMenuProps) => {
       </NavLink>
 
       <NavLink
-        to="/businesses"
+        to="/about"
         onClick={onClose}
         className={() =>
           `block rounded-full px-5 py-2.5 text-center text-sm font-semibold transition-colors duration-200 ${

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type MilestoneData = {
   year: string;
@@ -13,31 +13,34 @@ type ScrollTimelineProps = {
 const MilestoneItem = ({
   m,
   index,
-  activeIndex,
+  isCurrent,
+  isPast,
+  onVisible,
 }: {
   m: MilestoneData;
   index: number;
-  activeIndex: number;
-  total: number;
+  isCurrent: boolean;
+  isPast: boolean;
+  onVisible: (index: number) => void;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [appeared, setAppeared] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setVisible(true);
+        if (entry.isIntersecting) {
+          setAppeared(true);
+          onVisible(index);
+        }
       },
-      { threshold: 0.3, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0.4, rootMargin: "0px 0px -5% 0px" }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
-
-  const isActive = index <= activeIndex;
-  const isCurrent = index === activeIndex;
+  }, [index, onVisible]);
 
   return (
     <div ref={ref} className="relative flex items-center sm:justify-center">
@@ -46,14 +49,14 @@ const MilestoneItem = ({
         className={`absolute left-4 sm:left-1/2 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border-2 transition-all duration-500 ${
           isCurrent
             ? "border-(--color-yellow) bg-(--color-yellow) scale-125 shadow-[0_0_20px_rgba(219,183,63,0.5)]"
-            : isActive
+            : isPast
               ? "border-(--color-teal) bg-(--color-teal) scale-110"
               : "border-slate-300 bg-white"
         }`}
       >
         <span
           className={`font-ledger text-[8px] sm:text-[9px] font-bold transition-colors duration-500 ${
-            isCurrent ? "text-black" : isActive ? "text-white" : "text-slate-400"
+            isCurrent ? "text-black" : isPast ? "text-white" : "text-slate-400"
           }`}
         >
           {m.year.slice(-2)}
@@ -67,7 +70,7 @@ const MilestoneItem = ({
             ? "sm:mr-auto sm:pr-6 sm:text-right"
             : "sm:ml-auto sm:pl-6"
         } ${
-          visible
+          appeared
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4"
         }`}
@@ -76,7 +79,7 @@ const MilestoneItem = ({
           className={`rounded-xl border p-4 transition-all duration-500 ${
             isCurrent
               ? "border-(--color-teal)/30 bg-(--color-teal)/5 shadow-lg -translate-y-0.5"
-              : isActive
+              : isPast
                 ? "border-slate-200 bg-white shadow-sm"
                 : "border-slate-100 bg-slate-50/50"
           }`}
@@ -85,7 +88,7 @@ const MilestoneItem = ({
             className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-bold transition-colors duration-500 ${
               isCurrent
                 ? "bg-(--color-yellow) text-black"
-                : isActive
+                : isPast
                   ? "bg-(--color-teal)/10 text-(--color-teal)"
                   : "bg-slate-100 text-slate-400"
             }`}
@@ -94,14 +97,14 @@ const MilestoneItem = ({
           </span>
           <h3
             className={`mt-2 font-display text-[14px] sm:text-[15px] font-bold transition-colors duration-500 ${
-              isCurrent ? "text-slate-900" : isActive ? "text-slate-700" : "text-slate-400"
+              isCurrent ? "text-slate-900" : isPast ? "text-slate-700" : "text-slate-400"
             }`}
           >
             {m.title}
           </h3>
           <p
             className={`mt-1 text-[12px] sm:text-[13px] leading-5 sm:leading-6 transition-colors duration-500 ${
-              isCurrent ? "text-slate-600" : isActive ? "text-slate-500" : "text-slate-400"
+              isCurrent ? "text-slate-600" : isPast ? "text-slate-500" : "text-slate-400"
             }`}
           >
             {m.body}
@@ -113,63 +116,68 @@ const MilestoneItem = ({
 };
 
 export default function ScrollTimeline({ milestones }: ScrollTimelineProps) {
-  const lineRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [progress, setProgress] = useState(0);
+  const dotRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
 
+  // Track which milestones have been scrolled past
+  const handleMilestoneVisible = useCallback((index: number) => {
+    setActiveIndex((prev) => Math.max(prev, index));
+  }, []);
+
+  // Update active index as user scrolls, track the highest dot past the viewport center
   useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
     const handleScroll = () => {
-      const rect = container.getBoundingClientRect();
-      const viewportH = window.innerHeight;
-      const totalH = rect.height;
+      const viewportCenter = window.innerHeight * 0.55;
+      let current = -1;
 
-      // Progress: 0 when container top reaches viewport bottom, 1 when bottom reaches viewport top
-      const scrolled = viewportH - rect.top;
-      const totalScrollable = viewportH + totalH;
-      const p = Math.max(0, Math.min(1, scrolled / totalScrollable));
-      setProgress(p);
+      dotRefs.current.forEach((el, i) => {
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        if (rect.top < viewportCenter) {
+          current = i;
+        }
+      });
 
-      // Active index based on progress
-      const idx = Math.floor(p * milestones.length);
-      setActiveIndex(Math.min(idx, milestones.length - 1));
+      if (current >= 0) {
+        setActiveIndex(current);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [milestones.length]);
+  }, []);
 
-  const lineProgress = Math.min(1, Math.max(0, progress * 1.3));
+  // Progress for the line fill (0 to 1 based on active index)
+  const lineProgress = activeIndex < 0 ? 0 : (activeIndex + 1) / milestones.length;
 
   return (
     <div ref={containerRef} className="relative">
       {/* Animated progress line */}
       <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-slate-200 sm:-translate-x-1/2">
         <div
-          ref={lineRef}
-          className="absolute top-0 left-0 w-full bg-gradient-to-b from-(--color-teal) to-(--color-yellow) transition-[height] duration-100"
+          className="absolute top-0 left-0 w-full bg-gradient-to-b from-(--color-teal) to-(--color-yellow) transition-[height] duration-300"
           style={{ height: `${lineProgress * 100}%` }}
         />
         {/* Glowing pointer */}
         <div
-          className="absolute left-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-(--color-teal) shadow-[0_0_12px_rgba(0,128,128,0.6)] transition-[top] duration-100"
+          className="absolute left-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-(--color-teal) shadow-[0_0_12px_rgba(0,128,128,0.6)] transition-[top] duration-300"
           style={{ top: `${lineProgress * 100}%` }}
         />
       </div>
 
       <div className="space-y-5 sm:space-y-7">
         {milestones.map((m, i) => (
-          <MilestoneItem
-            key={i}
-            m={m}
-            index={i}
-            activeIndex={activeIndex}
-            total={milestones.length}
-          />
+          <div key={i} ref={(el) => { dotRefs.current[i] = el; }}>
+            <MilestoneItem
+              m={m}
+              index={i}
+              isCurrent={i === activeIndex}
+              isPast={i < activeIndex}
+              onVisible={handleMilestoneVisible}
+            />
+          </div>
         ))}
       </div>
     </div>

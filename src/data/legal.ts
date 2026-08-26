@@ -33,7 +33,7 @@ export const legalDocuments: Record<LegalDocumentId, LegalDocument> = {
       {
         title: "How We Use Your Information",
         paragraphs: [
-          "We use your information to respond to enquiries, assess and deliver our services, verify identity where required, improve our websites and services, comply with legal obligations, and — where you have consented — send you updates about our group companies.",
+          "We use your information to respond to enquiries, assess and deliver our services, verify identity where required, improve our websites and services, comply with legal obligations, and, where you have consented, send you updates about our group companies.",
           "We rely on the following legal bases for processing: your consent, performance of a contract, compliance with a legal obligation, and our legitimate interest in operating and improving our business.",
         ],
       },
@@ -47,7 +47,7 @@ export const legalDocuments: Record<LegalDocumentId, LegalDocument> = {
       {
         title: "Data Security",
         paragraphs: [
-          "We apply reasonable technical and organisational measures — including access controls, encryption in transit, and monitoring — to protect your personal information against unauthorised access, loss, or misuse.",
+          "We apply reasonable technical and organisational measures, including access controls, encryption in transit, and monitoring, to protect your personal information against unauthorised access, loss, or misuse.",
           "No method of transmission or storage is completely secure. While we work to protect your data, we cannot guarantee its absolute security.",
         ],
       },
@@ -123,7 +123,7 @@ export const legalDocuments: Record<LegalDocumentId, LegalDocument> = {
       {
         title: "Refund Policy",
         paragraphs: [
-          "When you enjoy our services, your payment is not covered by a money-back guarantee. If you are, for any reason, not entirely happy with our service, we will take this issue very seriously and will try to resolve it as soon as possible. To request a refund, simply contact us with your payment details within ninety (90) days of your payment. Please include your payment details and order number (sent to you via email after payment) and optionally tell us why you're requesting a refund — we take customer feedback very seriously and use it to constantly improve our products and quality of service. Refunds are not provided for services delivered in full, such as installation services and knowledge base hosting services. Refunds are processed within a 21-day period.",
+          "When you enjoy our services, your payment is not covered by a money-back guarantee. If you are, for any reason, not entirely happy with our service, we will take this issue very seriously and will try to resolve it as soon as possible. To request a refund, simply contact us with your payment details within ninety (90) days of your payment. Please include your payment details and order number (sent to you via email after payment) and optionally tell us why you're requesting a refund, we take customer feedback very seriously and use it to constantly improve our products and quality of service. Refunds are not provided for services delivered in full, such as installation services and knowledge base hosting services. Refunds are processed within a 21-day period.",
         ],
       },
       {
@@ -155,7 +155,7 @@ export const legalDocuments: Record<LegalDocumentId, LegalDocument> = {
     id: "terms",
     lastUpdated: "August 14, 2026",
     intro: [
-      "The Website Owner, including subsidiaries and affiliates — Indexia Group (or \"we\", \"us\" or \"our\") — provides the information contained on this website, or on any of the pages comprising this website, to visitors and applicants (cumulatively referred to as \"you\" or \"your\") subject to the terms and conditions set out in these website terms and conditions, the privacy policy, and any other relevant terms and conditions, policies and notices which may be applicable to a specific section or module of the website.",
+      "The Website Owner, including subsidiaries and affiliates, Indexia Group (or \"we\", \"us\" or \"our\"), provides the information contained on this website, or on any of the pages comprising this website, to visitors and applicants (cumulatively referred to as \"you\" or \"your\") subject to the terms and conditions set out in these website terms and conditions, the privacy policy, and any other relevant terms and conditions, policies and notices which may be applicable to a specific section or module of the website.",
       "Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Indexia Group's relationship with you in relation to this website.",
       "The term \"Indexia Group\" or \"we\" or \"us\" refers to the owner of the website, whose registered office is at 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. The term \"you\" refers to the user or viewer of our website.",
     ],

@@ -92,7 +92,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">
               <img
                 src={getCompanyPageImage(company.slug)}
-                alt={`${company.name} — ${company.tag}`}
+                alt={`${company.name}, ${company.tag}`}
                 width={1536}
                 height={1024}
                 loading="lazy"

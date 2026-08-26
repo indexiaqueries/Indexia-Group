@@ -2,12 +2,10 @@ import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/common/Header";
 import DeferredFooter from "../components/common/DeferredFooter";
-import FoundationQR from "../components/common/FoundationQR";
 
 const MainLayout = () => {
   const { pathname } = useLocation();
   const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure" || pathname === "/careers/apply";
-  const showQR = pathname === "/businesses/foundation";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,7 +26,6 @@ const MainLayout = () => {
         </div>
       </main>
       <DeferredFooter />
-      {showQR && <FoundationQR />}
     </div>
   );
 };

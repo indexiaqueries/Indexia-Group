@@ -46,7 +46,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
           </div>
         </Reveal>
 
-        {/* Featured hero card — MAIN POINT */}
+        {/* Featured hero card, MAIN POINT */}
         {featured && (
           <Reveal amount={0.15}>
             <div
@@ -83,7 +83,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                 </span>
                 <div>
                   <p className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] opacity-70">
-                    {t("companyDetail.keyEntries")} — 01
+                    {t("companyDetail.keyEntries")}, 01
                   </p>
                   <p className="mt-2 text-[15px] sm:text-[17px] font-semibold leading-7 sm:leading-8 lg:text-xl">
                     {tr("highlights.0", featured)}
@@ -97,7 +97,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
           </Reveal>
         )}
 
-        {/* Remaining highlights — glass-style grid */}
+        {/* Remaining highlights, glass-style grid */}
         {rest.length > 0 && (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {rest.map((highlight, idx) => {

@@ -27,7 +27,7 @@
     "p1": {
       "tag": "Indexia Finance",
       "heading": "Satu Tempat\nuntuk Semua Pinjaman.",
-      "sub": "Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com. Kami melayani secara global — di India, kami bermitra dengan 43 bank dan NBFC."
+      "sub": "Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com. Kami melayani secara global, di India, kami bermitra dengan 43 bank dan NBFC."
     },
     "p2": {
       "tag": "Indexia Finserve Pvt. Ltd.",
@@ -71,7 +71,7 @@
   },
   "footer": {
     "tagline": "Grup Bisnis India yang Terdiversifikasi",
-    "blurb": "Delapan bisnis tepercaya dalam satu grup India yang terdiversifikasi — keuangan, ekspor, pertanian, logistik, keamanan, periklanan, dan dukungan atlet — dibangun di atas integritas dan hasil.",
+    "blurb": "Delapan bisnis tepercaya dalam satu grup India yang terdiversifikasi, keuangan, ekspor, pertanian, logistik, keamanan, periklanan, dan dukungan atlet, dibangun di atas integritas dan hasil.",
     "contactUs": "Hubungi Kami",
     "hours": "Sen - Sab: 09.00 - 18.00",
     "company": "Perusahaan",
@@ -106,13 +106,13 @@
     "eyebrow": "Perusahaan Grup",
     "titleStart": "Delapan Perusahaan, ",
     "titleAccent": "Satu Grup",
-    "subtitle": "Pilih perusahaan untuk mengunjungi halamannya — lalu kirim pertanyaan Anda ke tim yang tepat."
+    "subtitle": "Pilih perusahaan untuk mengunjungi halamannya, lalu kirim pertanyaan Anda ke tim yang tepat."
   },
   "businessesHero": {
     "eyebrow": "Perbedaan Indexia",
     "titleStart": "Satu Grup. Delapan Bisnis. ",
     "titleAccent": "Satu Janji Bersama.",
-    "paragraph": "Dari keuangan dan konsultasi hingga ekspor, pertanian, logistik, keamanan, olahraga, dan media — setiap bisnis Indexia dibangun di atas fondasi yang sama: integritas, keahlian, dan pendekatan yang mengutamakan manusia. Apa pun yang Anda butuhkan, tim yang tepat sudah menjadi bagian dari keluarga.",
+    "paragraph": "Dari keuangan dan konsultasi hingga ekspor, pertanian, logistik, keamanan, olahraga, dan media, setiap bisnis Indexia dibangun di atas fondasi yang sama: integritas, keahlian, dan pendekatan yang mengutamakan manusia. Apa pun yang Anda butuhkan, tim yang tepat sudah menjadi bagian dari keluarga.",
     "counterClients": "Klien Dilayani",
     "counterBusinesses": "Bisnis",
     "counterLocations": "Kota",
@@ -122,7 +122,7 @@
   "contactHero": {
     "eyebrow": "Bicara dengan Indexia",
     "title": "Jalur Langsung ke Tim Kami",
-    "paragraph": "Dari pertanyaan dokumen hingga pengajuan pinjaman baru, setiap pesan ditinjau dan dijawab oleh anggota tim kami — bukan antrean.",
+    "paragraph": "Dari pertanyaan dokumen hingga pengajuan pinjaman baru, setiap pesan ditinjau dan dijawab oleh anggota tim kami, bukan antrean.",
     "sendEnquiry": "Kirim Pertanyaan Anda",
     "callNow": "Hubungi Sekarang · 86551 68551",
     "offices": "{{count}} kantor",
@@ -133,7 +133,7 @@
     "eyebrow": "Kirim Pertanyaan Anda",
     "headlineStart": "Tanya Tentang ",
     "headlineAccent": "Perusahaan Indexia",
-    "paragraph": "Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan konsultasi bisnis, atau ingin menjajaki kemitraan, tim kami siap membantu — kami membalas dalam 24 jam.",
+    "paragraph": "Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan konsultasi bisnis, atau ingin menjajaki kemitraan, tim kami siap membantu, kami membalas dalam 24 jam.",
     "enquiries": "Pertanyaan",
     "location": "Lokasi",
     "workingHours": "Jam Kerja",
@@ -210,7 +210,7 @@
     "title": "Berita & Pusat Pengetahuan",
     "titleStart": "Cerita & Wawasan dari ",
     "titleAccent": "Seluruh Grup.",
-    "subtitle": "Berita perbankan terbaru — pembaruan pendanaan, pembayaran digital, perubahan kebijakan, dan perkembangan pasar — beserta panduan praktis dari bisnis kami.",
+    "subtitle": "Berita perbankan terbaru, pembaruan pendanaan, pembayaran digital, perubahan kebijakan, dan perkembangan pasar, beserta panduan praktis dari bisnis kami.",
     "tvEyebrow": "Tonton Kami di TV",
     "tvHeading": "Untuk Semua Kebutuhan Pinjaman Anda",
     "tvCaption": "Butuh Pinjaman Berarti… Indexia Finance",
@@ -221,16 +221,16 @@
     "knowledgeHeading": "Panduan Praktis dari Bisnis Kami",
     "knowledgeSubtitle": "Penjelasan sederhana yang ditulis oleh tim yang menjalani pekerjaan ini setiap hari.",
     "ctaTitle": "Punya pertanyaan tentang bisnis kami?",
-    "ctaBody": "Dari konsultasi FDI hingga pertanian organik hingga keamanan bersenjata — perusahaan Indexia yang tepat siap membantu. Kirim pertanyaan dan kami akan menghubungkan Anda.",
+    "ctaBody": "Dari konsultasi FDI hingga pertanian organik hingga keamanan bersenjata, perusahaan Indexia yang tepat siap membantu. Kirim pertanyaan dan kami akan menghubungkan Anda.",
     "ctaButton": "Kirim Pertanyaan",
-    "metaDescription": "Berita & Pusat Pengetahuan — berita perbankan terbaru tentang pendanaan, pembayaran digital, dan kebijakan, plus panduan pengetahuan praktis dari Indexia Group."
+    "metaDescription": "Berita & Pusat Pengetahuan, berita perbankan terbaru tentang pendanaan, pembayaran digital, dan kebijakan, plus panduan pengetahuan praktis dari Indexia Group."
   },
   "careersPage": {
     "eyebrow": "Karier",
     "title": "Karier di Indexia Group",
     "titleStart": "Bangun Karier Anda Bersama ",
     "titleAccent": "Kami.",
-    "subtitle": "Indexia Group adalah organisasi pembelajar — dan budaya perusahaannya adalah timnya.",
+    "subtitle": "Indexia Group adalah organisasi pembelajar, dan budaya perusahaannya adalah timnya.",
     "ctaButton": "Lihat Lowongan",
     "cultureEyebrow": "Budaya Kami",
     "cultureHeading": "Organisasi Pembelajar",
@@ -240,7 +240,7 @@
     "apply": "Lamar",
     "ctaTitle": "Kirim Resume Anda",
     "ctaBody": "Kami selalu mencari orang hebat. Kirim CV Anda ke hr@indexiafinance.com dan kami akan menghubungi Anda.",
-    "metaDescription": "Karier di Indexia Group — organisasi pembelajar dengan lowongan di Indexia Finserve Mumbai. Kirim resume untuk memulai karier bersama kami.",
+    "metaDescription": "Karier di Indexia Group, organisasi pembelajar dengan lowongan di Indexia Finserve Mumbai. Kirim resume untuk memulai karier bersama kami.",
     "mailResume": "Kirim Resume Anda –"
   },
   "legal": {
@@ -257,7 +257,7 @@
     "contactHeading": "Punya pertanyaan tentang kebijakan ini?",
     "contactBody": "Tulis ke kami di contactus@indexiagroup.com atau kirim pertanyaan dan tim kami akan menghubungi Anda.",
     "sendEnquiry": "Kirim Pertanyaan",
-    "metaPrivacyDescription": "Baca Kebijakan Privasi Indexia Group — cara kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda.",
+    "metaPrivacyDescription": "Baca Kebijakan Privasi Indexia Group, cara kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda.",
     "metaTermsDescription": "Baca Syarat & Ketentuan yang mengatur penggunaan situs web Indexia Group dan layanan perusahaannya.",
     "metaTermsOfUseDescription": "Baca Ketentuan Penggunaan yang mengatur cara Anda mengakses dan menjelajahi situs web Indexia Group dan situs web perusahaannya."
   },
@@ -266,17 +266,17 @@
     "title": "Riset Global di Indexia Group",
     "titleStart": "Riset Keuangan Global ",
     "titleAccent": "& Sumber Daya.",
-    "subtitle": "Analisis yang mendalam, relevan, dan pandangan tajam di seluruh disiplin makroekonomi, pendapatan tetap, mata uang, dan komoditas — dibangun di atas wawasan langsung yang kuat di Asia, Afrika, dan Timur Tengah.",
+    "subtitle": "Analisis yang mendalam, relevan, dan pandangan tajam di seluruh disiplin makroekonomi, pendapatan tetap, mata uang, dan komoditas, dibangun di atas wawasan langsung yang kuat di Asia, Afrika, dan Timur Tengah.",
     "ctaButton": "Jelajahi Cakupan Riset",
     "areasEyebrow": "Cakupan Riset",
     "areasHeading": "Riset Global di Seluruh Disiplin",
     "areasSubtitle": "Analisis yang mendalam dan relevan di seluruh cakupan kami.",
     "reportsEyebrow": "Publikasi",
     "reportsHeading": "Cara Kami Berbagi Riset",
-    "reportsSubtitle": "Presentasi rutin dan publikasi berkualitas tinggi — OTG, analisis langsung kami; ACT, ide pasar yang dapat ditindaklanjuti; dan Laporan Khusus tentang tema-tema penting global.",
+    "reportsSubtitle": "Presentasi rutin dan publikasi berkualitas tinggi, OTG, analisis langsung kami; ACT, ide pasar yang dapat ditindaklanjuti; dan Laporan Khusus tentang tema-tema penting global.",
     "ctaTitle": "Akses Riset Kami",
     "ctaBody": "Untuk mengetahui lebih lanjut dan menerima riset kami, kunjungi portal Riset Global kami. Untuk mendapatkan akses, silakan hubungi Relationship Manager Anda.",
-    "metaDescription": "Riset Global Indexia Group — analisis mendalam dan relevan di seluruh disiplin makroekonomi, pendapatan tetap, mata uang, dan komoditas, dengan wawasan langsung di Asia, Afrika, dan Timur Tengah.",
+    "metaDescription": "Riset Global Indexia Group, analisis mendalam dan relevan di seluruh disiplin makroekonomi, pendapatan tetap, mata uang, dan komoditas, dengan wawasan langsung di Asia, Afrika, dan Timur Tengah.",
     "reportFormat": "Publikasi"
   },
   "securityTipsPage": {
@@ -297,7 +297,7 @@
     "contactsSubtitle": "Jika Anda merasa telah membocorkan detail akun Anda kepada pihak yang mencurigakan, atau menjadi korban penipuan, segera hubungi kami melalui Saluran Layanan Pelanggan.",
     "ctaTitle": "Melihat sesuatu yang mencurigakan?",
     "ctaBody": "Laporkan melalui formulir pertanyaan kami atau hubungi perusahaan Indexia Group terkait secara langsung.",
-    "metaDescription": "Tips keamanan dari Indexia Group — cara kami melindungi akun Anda secara online, apa yang dapat Anda lakukan di perangkat Anda, dan siapa yang harus dihubungi jika terjadi masalah."
+    "metaDescription": "Tips keamanan dari Indexia Group, cara kami melindungi akun Anda secara online, apa yang dapat Anda lakukan di perangkat Anda, dan siapa yang harus dihubungi jika terjadi masalah."
   },
   "common": {
     "logoAlt": "Logo Indexia Group",
@@ -330,10 +330,10 @@
   "seo": {
     "homeTitle": "Layanan Keuangan, Pinjaman, Ekspor & Logistik",
     "homeDescription": "Grup bisnis India yang terdiversifikasi: layanan keuangan, pinjaman NBFC, ekspor global, pupuk agro, pergudangan & keamanan. Kantor di Mumbai, Delhi, dan Ekuador.",
-    "businessesTitle": "Perusahaan Grup — Keuangan, Agro, Ekspor & Logistik",
+    "businessesTitle": "Perusahaan Grup, Keuangan, Agro, Ekspor & Logistik",
     "businessesDescription": "Delapan bisnis Indexia Group: keuangan, pinjaman, keamanan, ekspor gula, pupuk organik, pergudangan, periklanan, dan dukungan atlet.",
-    "contactTitle": "Hubungi Kami — Kantor Mumbai & Delhi",
-    "contactDescription": "Hubungi Indexia Group untuk pertanyaan layanan keuangan, pinjaman, ekspor, agro, dan logistik. Kantor di Mumbai, Delhi, dan Ekuador — balasan dalam 24 jam."
+    "contactTitle": "Hubungi Kami, Kantor Mumbai & Delhi",
+    "contactDescription": "Hubungi Indexia Group untuk pertanyaan layanan keuangan, pinjaman, ekspor, agro, dan logistik. Kantor di Mumbai, Delhi, dan Ekuador, balasan dalam 24 jam."
   },
   "branches": {
     "corporateOffice": "Kantor Pusat",
@@ -371,7 +371,7 @@
       "finance": {
         "tag": "Fintech Multinasional",
         "desc": "Fintech global di bidang layanan investor, FDI, NBFC, dan pendanaan perbankan.",
-        "overview": "Indexia Finance adalah platform fintech multinasional yang memberikan layanan keuangan kepada klien di seluruh dunia. Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com — kami melayani secara global, dan di India kami bermitra dengan 43 bank dan NBFC. Dibangun di sekitar empat bidang inti — layanan investor, konsultasi FDI, operasi NBFC, dan pendanaan perbankan — perusahaan menghubungkan modal dengan peluang, membantu investor, bisnis, dan institusi membuat keputusan keuangan yang percaya diri lintas batas.",
+        "overview": "Indexia Finance adalah platform fintech multinasional yang memberikan layanan keuangan kepada klien di seluruh dunia. Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com, kami melayani secara global, dan di India kami bermitra dengan 43 bank dan NBFC. Dibangun di sekitar empat bidang inti, layanan investor, konsultasi FDI, operasi NBFC, dan pendanaan perbankan, perusahaan menghubungkan modal dengan peluang, membantu investor, bisnis, dan institusi membuat keputusan keuangan yang percaya diri lintas batas.",
         "tagline": "Satu Tempat untuk Semua Pinjaman",
         "highlights": [
           "Jangkauan fintech global dengan eksekusi India-first",
@@ -391,7 +391,7 @@
       "finserve": {
         "tag": "Pinjaman & Keuangan",
         "desc": "Semua jenis pinjaman, disesuaikan untuk individu dan bisnis.",
-        "overview": "Indexia Finserve adalah lengan peminjaman Indexia Group, menawarkan segala jenis pinjaman di bidang keuangan. Kini bank yang tepat akan datang ke depan pintu Anda — perusahaan berfungsi sebagai tempat tujuan pinjaman lengkap, membimbing klien melalui kelayakan, dokumentasi, dan pencairan untuk pinjaman pribadi, rumah, bisnis, MSME, dan pendanaan khusus dengan satu proses yang sederhana.",
+        "overview": "Indexia Finserve adalah lengan peminjaman Indexia Group, menawarkan segala jenis pinjaman di bidang keuangan. Kini bank yang tepat akan datang ke depan pintu Anda, perusahaan berfungsi sebagai tempat tujuan pinjaman lengkap, membimbing klien melalui kelayakan, dokumentasi, dan pencairan untuk pinjaman pribadi, rumah, bisnis, MSME, dan pendanaan khusus dengan satu proses yang sederhana.",
         "tagline": "Metode Keuangan Generasi Baru",
         "highlights": [
           "Semua jenis pinjaman dalam satu atap",
@@ -419,7 +419,7 @@
         "desc": "Mengekspor gula rafinasi dan semua bahan pangan ke seluruh dunia.",
         "overview": "Indexia Overseas mendorong ekspor global semua bahan pangan, dengan fokus khusus pada ekspor gula ke 14 negara Amerika Selatan. Perusahaan mengelola pengadaan, kualitas, logistik, dan kepatuhan internasional sehingga produk kelas pangan berpindah dari sumber ke pasar secara andal dan berskala.",
         "highlights": [
-          "Ekspor semua bahan pangan — gula sebagai inti",
+          "Ekspor semua bahan pangan, gula sebagai inti",
           "Kehadiran mapan di 14 pasar Amerika Selatan",
           "Pengadaan, kualitas, dan logistik menyeluruh"
         ],
@@ -434,9 +434,9 @@
       "agro-bio": {
         "tag": "Produksi Pupuk Organik",
         "desc": "Pupuk organik, dibuat di India dan diekspor secara global.",
-        "overview": "Indexia Agro Bio Fertilizers memproduksi pupuk organik di fasilitas produksinya di Shamli, Uttar Pradesh — bagian dari kawasan Delhi NCR. Produk berbasis hayati perusahaan meningkatkan kesehatan tanah, meningkatkan hasil panen, dan mendukung pertanian berkelanjutan bagi petani di seluruh India Utara.",
+        "overview": "Indexia Agro Bio Fertilizers memproduksi pupuk organik di fasilitas produksinya di Shamli, Uttar Pradesh, bagian dari kawasan Delhi NCR. Produk berbasis hayati perusahaan meningkatkan kesehatan tanah, meningkatkan hasil panen, dan mendukung pertanian berkelanjutan bagi petani di seluruh India Utara.",
         "highlights": [
-          "Produksi organik berbasis hayati — tanpa bahan kimia keras",
+          "Produksi organik berbasis hayati, tanpa bahan kimia keras",
           "Fasilitas Shamli, UP di kawasan Delhi NCR",
           "Kesehatan tanah lebih baik, hasil panen lebih tinggi"
         ],
@@ -472,20 +472,20 @@
       "warehouse": {
         "tag": "Investasi Lahan Strategis",
         "desc": "21 hektar lahan strategis di Shamli, terhubung ke 8 jalan tol nasional.",
-        "overview": "Indexia Warehouse menawarkan peluang investasi lahan strategis di Shamli, Uttar Pradesh — hanya ~65 km dari Tronica City, Loni, Delhi. Lokasinya adalah pusat konektivitas: 8 jalan tol nasional dan 2 jalan raya utama menghubungkan 8 negara bagian, dengan akses langsung ke Bhutan dan Nepal serta jangkauan pasar 50 crore orang. Empat pelabuhan utama (Gujarat, Maharashtra, Chennai, Kolkata) dapat dijangkau langsung melalui jalan tol, dan baik Bandara IGI Delhi maupun Bandara Internasional Noida, Jewar berada dalam satu jam. Portofolio lahan mencakup 5 lokasi dan total 21 hektar, dengan bidang fleksibel 1, 2, 2,5, 5, dan 8 hektar, serta gudang modern yang akan dibangun di atas 2 hektar dengan dermaga pemuatan. Harga perkiraan ₹30 per kaki persegi, dapat dinegosiasikan.",
+        "overview": "Indexia Warehouse menawarkan peluang investasi lahan strategis di Shamli, Uttar Pradesh, hanya ~65 km dari Tronica City, Loni, Delhi. Lokasinya adalah pusat konektivitas: 8 jalan tol nasional dan 2 jalan raya utama menghubungkan 8 negara bagian, dengan akses langsung ke Bhutan dan Nepal serta jangkauan pasar 50 crore orang. Empat pelabuhan utama (Gujarat, Maharashtra, Chennai, Kolkata) dapat dijangkau langsung melalui jalan tol, dan baik Bandara IGI Delhi maupun Bandara Internasional Noida, Jewar berada dalam satu jam. Portofolio lahan mencakup 5 lokasi dan total 21 hektar, dengan bidang fleksibel 1, 2, 2,5, 5, dan 8 hektar, serta gudang modern yang akan dibangun di atas 2 hektar dengan dermaga pemuatan. Harga perkiraan ₹30 per kaki persegi, dapat dinegosiasikan.",
         "highlights": [
-          "Lokasi utama — Shamli, UP, ~65 km dari Delhi",
+          "Lokasi utama, Shamli, UP, ~65 km dari Delhi",
           "8 jalan tol nasional + 2 jalan raya utama menghubungkan 8 negara bagian",
-          "21 hektar di 5 lokasi — bidang 1, 2, 2,5, 5 & 8 hektar",
+          "21 hektar di 5 lokasi, bidang 1, 2, 2,5, 5 & 8 hektar",
           "₹30 per kaki persegi, dapat dinegosiasikan"
         ],
         "services": [
-          "Bidang Lahan — 1, 2, 2,5, 5 & 8 Hektar",
+          "Bidang Lahan, 1, 2, 2,5, 5 & 8 Hektar",
           "21 Hektar di 5 Lokasi",
           "Konstruksi Gudang di Bidang 2 Hektar",
           "Konektivitas Jalan Tol & Jalan Raya",
-          "Akses Pelabuhan — Gujarat, Maharashtra, Chennai, Kolkata",
-          "Akses Bandara — Delhi & Jewar dalam 1 Jam"
+          "Akses Pelabuhan, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Akses Bandara, Delhi & Jewar dalam 1 Jam"
         ],
         "name": "Indexia Warehouse",
         "location": "Shamli, Uttar Pradesh"
@@ -493,17 +493,17 @@
       "advertising": {
         "tag": "Papan Iklan Unipole Premium",
         "desc": "Papan iklan jalan tol premium di persimpangan tersibuk India Utara.",
-        "overview": "Indexia Advertising mengoperasikan papan iklan unipole tiang tunggal premium di Jalan Tol Delhi–Dehradun (NH-709B) di Shamli — pusat India Utara. Berada di persimpangan 8 jalan tol nasional dan 2 jalan raya utama, unipole kami menghubungkan 10 negara bagian dengan jangkauan 50 crore penduduk dan menarik paparan harian 1+ crore. Unipole tiang tunggal dengan tinggi premium dan sudut pandang 360° tanpa hambatan memberi brand Anda visibilitas maksimal tanpa kekacauan visual, didukung branding khas Bisleri Green. Dari pencetakan dan pemasangan hingga perawatan, kami menangani semuanya secara menyeluruh. Pesan unipole 10×20 kaki seharga ₹25.000/bulan atau unipole 12×24 kaki seharga ₹36.000/bulan — tarif standar ₹125/kaki persegi per sisi per bulan, dapat dinegosiasikan untuk paket jangka panjang. Untuk pemesanan hubungi 86918 86919 atau 011 4629 1155, atau email indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising mengoperasikan papan iklan unipole tiang tunggal premium di Jalan Tol Delhi–Dehradun (NH-709B) di Shamli, pusat India Utara. Berada di persimpangan 8 jalan tol nasional dan 2 jalan raya utama, unipole kami menghubungkan 10 negara bagian dengan jangkauan 50 crore penduduk dan menarik paparan harian 1+ crore. Unipole tiang tunggal dengan tinggi premium dan sudut pandang 360° tanpa hambatan memberi brand Anda visibilitas maksimal tanpa kekacauan visual, didukung branding khas Bisleri Green. Dari pencetakan dan pemasangan hingga perawatan, kami menangani semuanya secara menyeluruh. Pesan unipole 10×20 kaki seharga ₹25.000/bulan atau unipole 12×24 kaki seharga ₹36.000/bulan, tarif standar ₹125/kaki persegi per sisi per bulan, dapat dinegosiasikan untuk paket jangka panjang. Untuk pemesanan hubungi 86918 86919 atau 011 4629 1155, atau email indexia.queries@gmail.com.",
         "highlights": [
           "Penempatan strategis di NH-709B, jalan tol Delhi–Dehradun",
-          "10 negara bagian terhubung — jangkauan 50 crore penduduk, paparan harian 1+ crore",
+          "10 negara bagian terhubung, jangkauan 50 crore penduduk, paparan harian 1+ crore",
           "Unipole tiang tunggal dengan visibilitas 360° dan tinggi premium",
-          "Layanan menyeluruh — pencetakan, pemasangan, dan perawatan"
+          "Layanan menyeluruh, pencetakan, pemasangan, dan perawatan"
         ],
         "services": [
-          "Unipole 10×20 kaki — ₹25.000/bulan",
-          "Unipole 12×24 kaki — ₹36.000/bulan",
-          "Tarif Standar — ₹125/kaki persegi per sisi per bulan",
+          "Unipole 10×20 kaki, ₹25.000/bulan",
+          "Unipole 12×24 kaki, ₹36.000/bulan",
+          "Tarif Standar, ₹125/kaki persegi per sisi per bulan",
           "Penempatan Jalan Tol Delhi–Dehradun & Jalan Lingkar Shamli",
           "Pencetakan, Pemasangan & Perawatan",
           "Paket Jangka Panjang & Borongan"
@@ -514,7 +514,7 @@
       "foundation": {
         "tag": "Dukungan Atlet",
         "desc": "Pelatihan dan dukungan tingkat internasional, hingga Olimpiade.",
-        "overview": "Indexia Foundation mendukung atlet dengan memberikan segala dukungan yang mungkin — pelatihan tingkat internasional, pola makan dan nutrisi terstruktur, pelatih ahli, dan segala jenis bantuan yang dibutuhkan dalam perjalanan menuju Olimpiade. Yayasan berdiri bersama olahragawan dari awal menjanjikan hingga panggung terbesar dunia.",
+        "overview": "Indexia Foundation mendukung atlet dengan memberikan segala dukungan yang mungkin, pelatihan tingkat internasional, pola makan dan nutrisi terstruktur, pelatih ahli, dan segala jenis bantuan yang dibutuhkan dalam perjalanan menuju Olimpiade. Yayasan berdiri bersama olahragawan dari awal menjanjikan hingga panggung terbesar dunia.",
         "highlights": [
           "Pelatihan tingkat internasional dan pelatih ahli",
           "Program pola makan dan nutrisi terstruktur",
@@ -535,7 +535,7 @@
   "warehousePricing": {
     "eyebrow": "Portofolio Lahan",
     "title": "Portofolio & Harga Lahan",
-    "subtitle": "5 lokasi | total 21 hektar — Shamli, Uttar Pradesh",
+    "subtitle": "5 lokasi | total 21 hektar, Shamli, Uttar Pradesh",
     "portfolioCol": "Portofolio",
     "valueCol": "Nilai",
     "locations": "Lokasi",
@@ -548,8 +548,8 @@
     "plot2_5": "2,5 Hektar",
     "plot5": "5 Hektar",
     "plot8": "8 Hektar",
-    "standardRate": "Harga Perkiraan: ₹30 per kaki persegi — Dapat dinegosiasikan",
-    "note": "Gudang modern akan dibangun di atas 2 hektar dengan dermaga pemuatan. Harga dapat dinegosiasikan — hubungi untuk detail.",
+    "standardRate": "Harga Perkiraan: ₹30 per kaki persegi, Dapat dinegosiasikan",
+    "note": "Gudang modern akan dibangun di atas 2 hektar dengan dermaga pemuatan. Harga dapat dinegosiasikan, hubungi untuk detail.",
     "enquire": "Tanya",
     "plotArea1": "Luas lahan: 1 hektar",
     "plotArea2": "Luas lahan: 2 hektar",
@@ -598,7 +598,7 @@
     "storyEyebrow": "Kisah Kami",
     "storyTitle": "Dari Visi Bersama ke Grup Nasional",
     "storyBody1": "Indexia Group didirikan dengan keyakinan sederhana: bisnis India dapat bersaing secara global.",
-    "storyBody2": "Hari ini, Indexia Group beroperasi di tiga lokasi — Mumbai, Delhi, dan Ekuador.",
+    "storyBody2": "Hari ini, Indexia Group beroperasi di tiga lokasi, Mumbai, Delhi, dan Ekuador.",
     "valuesEyebrow": "Nilai Kami",
     "valuesTitle": "Apa Yang Kami Perjuangkan",
     "value1Title": "Integritas",
@@ -626,16 +626,16 @@
     "milestone5Title": "Dampak Sosial",
     "milestone5Body": "Mendirikan Indexia Foundation untuk mendukung atlet India.",
     "ctaTitle": "Mari Bangun Sesuatu Bersama",
-    "ctaBody": "Baik Anda mencari layanan keuangan, menjelajahi kemitraan, atau ingin tahu lebih banyak — kami di sini.",
+    "ctaBody": "Baik Anda mencari layanan keuangan, menjelajahi kemitraan, atau ingin tahu lebih banyak, kami di sini.",
     "ctaButton": "Hubungi Kami",
-    "metaDescription": "About Indexia Group — a diversified Indian business group.",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
     "aboutUs": "About Us",
     "leaderEyebrow": "Kepemimpinan",
     "leaderTitle": "Visioner di Balik Indexia Group",
     "founderName": "Pendiri & Direktur Utama",
     "founderRole": "Pendiri & Direktur Utama",
     "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations — Mumbai, Delhi, and Ecuador — and built a team united by a common purpose.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
     "founderQuote": "Bisnis tentang kepercayaan. Saat Anda membangun dengan integritas, yang lain mengikuti.",
     "companiesEyebrow": "Perusahaan Kami",
     "companiesTitle": "Delapan Bisnis, Satu Visi",
@@ -716,9 +716,9 @@
     "delhiOffice": "Kantor Delhi",
     "businessesName": "Bisnis Indexia Group",
     "businessesDescription": "Delapan bisnis di bawah Indexia Group.",
-    "newsName": "Indexia Group — Berita & Pusat Pengetahuan",
+    "newsName": "Indexia Group, Berita & Pusat Pengetahuan",
     "careersName": "Lowongan di Indexia Group",
-    "companyPageName": "{{name}} — {{tag}}",
+    "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Pelajari tentang {{name}}, perusahaan di Indexia Group. {{description}}"
   }
 }
