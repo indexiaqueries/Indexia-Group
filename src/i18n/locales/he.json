@@ -530,6 +530,188 @@
         ],
         "name": "Indexia Foundation"
       }
+    },
+    "news": {
+      "articles": {
+        "yes-bank-sme-funding": {
+          "title": "Yes Bank obtient 150 millions de dollars du gouvernement américain et de Wells Fargo pour le crédit aux PME",
+          "category": "Banque",
+          "excerpt": "Le troisième volet de l'accord OPIC–Wells Fargo, soutenu par la finance de développement du gouvernement américain, élargira le crédit aux petites et moyennes entreprises dans toute l'Inde."
+        },
+        "uidai-aadhaar-banks": {
+          "title": "L'UIDAI demande aux banques d'ouvrir des centres d'inscription Aadhaar sur place",
+          "category": "Politique",
+          "excerpt": "Les banques ont été invitées à installer des centres d'inscription Aadhaar dans au moins une succursale sur dix, élargissant l'inscription bien au-delà des 25 000 centres autonomes actuels."
+        },
+        "demonetisation-digital-payments": {
+          "title": "La démonétisation fait gagner trois ans à l'Inde dans les paiements numériques, selon SBI",
+          "category": "Paiements Numériques",
+          "excerpt": "Le pôle recherche de la State Bank of India indique que les transactions par carte aux POS ont augmenté de 88 % et la banque mobile et les paiements prépayés de 122 %, avec un effet attendu aussi sur l'inflation."
+        },
+        "sbi-imps-fee-waiver": {
+          "title": "SBI supprime les frais sur les virements IMPS jusqu'à 1 000 ₹",
+          "category": "Banque",
+          "excerpt": "La plus grande banque indienne supprime les frais sur les petits virements instantanés pour encourager les paiements numériques ; les virements IMPS supérieurs à 1 000 ₹ coûtent désormais 5 ₹ plus la GST, jusqu'à 15 ₹ pour 1 à 2 lakh."
+        },
+        "nakshatra-gili-directors": {
+          "title": "Des habitants de chawls nommés administrateurs chez Nakshatra et Gili India",
+          "category": "Marchés",
+          "excerpt": "De simples employés et de petits investisseurs de détail ont été convaincus de figurer comme administrateurs de papier dans les sociétés Gili, Nakshatra et Gitanjali, soulevant des questions sur la gouvernance d'entreprise."
+        },
+        "sebi-hdfc-information-leak": {
+          "title": "SEBI demande à HDFC Bank d'assumer la fuite d'informations",
+          "category": "Marchés",
+          "excerpt": "Le régulateur des marchés a demandé à HDFC Bank de mener une enquête interne sur la manière dont une partie de ses résultats trimestriels a atteint des traders et d'autres personnes via WhatsApp."
+        }
+      },
+      "insights": {
+        "understanding-fdi": {
+          "title": "Comprendre l'IDE en Inde",
+          "body": "Un guide pratique des voies d'entrée, des plafonds sectoriels et des démarches nécessaires pour apporter du capital étranger dans une entreprise indienne, et où l'aide d'un conseil compte le plus."
+        },
+        "choosing-loan": {
+          "title": "Choisir le bon prêt",
+          "body": "Personnels, immobiliers, commerciaux ou de projet : comment assortir votre besoin au bon produit et ce qu'un prêteur évalue réellement avant d'approuver."
+        },
+        "organic-farming": {
+          "title": "L'agriculture biologique, expliquée",
+          "body": "Ce que les biofertilisants font à la santé des sols et aux rendements, pourquoi la production sans produits chimiques compte et comment les agriculteurs font la transition en pratique."
+        },
+        "securing-operations": {
+          "title": "Sécuriser les opérations à haute valeur",
+          "body": "Des gardes armés aux unités de commandos : comment une évaluation professionnelle de sécurité transforme le risque en un programme géré et mesurable."
+        }
+      }
+    },
+    "careers": {
+      "culture": [
+        "Indexia Group est une organisation apprenante et sa culture d'entreprise, c'est son équipe. Nos collaborateurs sont un atout précieux, et nous nous engageons à leur confier les missions technologiques les plus récentes et à leur offrir un environnement de travail agréable, collaboratif et axé sur l'esprit d'équipe. Nous croyons en offrant à nos équipes les expériences et les formations qui élargissent leurs connaissances existantes, avec des horaires flexibles, l'accent mis sur la communication ouverte et une politique de porte ouverte entre la direction et le personnel.",
+        "Nous sommes fiers d'offrir la possibilité d'élargir et de développer votre carrière dans un cadre qui combine la nature entrepreneuriale d'une jeune pousse avec la stabilité financière et les grands avantages d'une entreprise établie. Nous vous invitons à soumettre votre CV pour examen alors que le groupe continue d'étendre ses opérations de marché et sa clientèle avec des personnes qui partagent notre passion pour l'excellence opérationnelle."
+      ],
+      "roles": {
+        "business-development": {
+          "title": "Directeur du Développement Commercial",
+          "department": "Développement Commercial",
+          "type": "Temps plein"
+        },
+        "city-head": {
+          "title": "Responsable de Ville",
+          "department": "Ventes",
+          "type": "Temps plein"
+        },
+        "team-manager": {
+          "title": "Manager d'Équipe",
+          "department": "Opérations",
+          "type": "Temps plein"
+        },
+        "hr-manager": {
+          "title": "Responsable des Ressources Humaines",
+          "department": "Ressources Humaines",
+          "type": "Temps plein"
+        },
+        "team-leader": {
+          "title": "Chef d'Équipe",
+          "department": "Opérations",
+          "type": "Temps plein"
+        },
+        "customer-support": {
+          "title": "Chargé du Support Client",
+          "department": "Support Client",
+          "type": "Temps plein"
+        },
+        "field-executive": {
+          "title": "Exécutif de Terrain",
+          "department": "Opérations de Terrain",
+          "type": "Temps plein"
+        },
+        "seo-professional": {
+          "title": "Professionnel SEO",
+          "department": "Marketing Digital",
+          "type": "Temps plein"
+        }
+      }
+    },
+    "research": {
+      "areas": {
+        "economic": {
+          "title": "Recherche Économique",
+          "body": "Analyses incisives des économies mondiales et régionales, des évolutions politiques et des moteurs de la croissance."
+        },
+        "thematic": {
+          "title": "Recherche Thématique Mondiale",
+          "body": "Analyses approfondies de thèmes d'importance mondiale et de leur impact sur les économies et les marchés."
+        },
+        "macro": {
+          "title": "Stratégie Macro Mondiale",
+          "body": "Vues stratégiques et positionnement dans les disciplines macroéconomiques, de taux, de devises et de matières premières."
+        },
+        "fx": {
+          "title": "FX",
+          "body": "Analyse et perspectives des devises sur les marchés que nous couvrons."
+        },
+        "rates": {
+          "title": "Taux",
+          "body": "Recherche sur les taux et la dette à revenu fixe sur l'ensemble de notre périmètre."
+        },
+        "credit": {
+          "title": "Crédit",
+          "body": "Analyses et vues de crédit pour aider les clients à naviguer entre émissions et écarts de taux."
+        },
+        "commodities": {
+          "title": "Matières Premières",
+          "body": "Recherche sur les matières premières fondée sur une connaissance locale en Asie, en Afrique et au Moyen-Orient."
+        }
+      },
+      "reports": {
+        "otg": {
+          "title": "OTG, Sur le terrain",
+          "summary": "Notre analyse sur le terrain des régions dynamiques que nous étudions en profondeur."
+        },
+        "act": {
+          "title": "ACT, Idées actionnables",
+          "summary": "Des idées de marché actionnables qui donnent à nos clients un avantage décisif."
+        },
+        "special-reports": {
+          "title": "Rapports Spéciaux",
+          "summary": "Analyses de thèmes d'importance mondiale et de leur impact sur les économies et les marchés."
+        }
+      }
+    },
+    "security": {
+      "features": {
+        "tech": {
+          "title": "Technologies Fiables",
+          "body": "Nos systèmes bancaires sont gérés par des experts qualifiés et protégés par la meilleure technologie de sécurité disponible. Gérez votre argent en ligne en toute confiance et en toute sécurité."
+        },
+        "monitor": {
+          "title": "Systèmes Sécurisés",
+          "body": "Indexia Finance surveille en permanence toutes les menaces et activités en ligne, 24 heures sur 24, pour détecter toute fraude à un stade précoce et prendre des mesures préventives afin de garantir la sécurité de vos comptes."
+        }
+      },
+      "practices": {
+        "devices": {
+          "title": "Protégez vos Appareils",
+          "body": "Assurez-vous que tous vos ordinateurs, téléphones portables, appareils portables, systèmes d'exploitation et navigateurs Internet, en particulier ceux utilisés pour la banque en ligne, sont régulièrement mis à jour avec les derniers logiciels."
+        },
+        "connections": {
+          "title": "Sécurisez vos Connexions",
+          "body": "Un réseau bien conçu et bien géré maintient le trafic et les transactions à l'abri des intrusions."
+        },
+        "data": {
+          "title": "Sécurisez vos Données",
+          "body": "Les systèmes d'exploitation et les navigateurs web font un bon travail pour garder vos informations sécurisées et privées, mais vous pouvez envisager d'ajouter des couches de sécurité supplémentaires à votre ordinateur."
+        }
+      },
+      "contacts": {
+        "control": {
+          "title": "Contrôlez votre Sécurité en Ligne",
+          "body": "Nous ne demanderons jamais vos informations de compte ou votre mot de passe par téléphone, e-mail ou SMS. Contactez-nous si vous avez accidentellement divulgué les informations de votre compte ou si vous avez été victime d'une fraude."
+        },
+        "report": {
+          "title": "Contactez-Nous",
+          "body": "Si vous suspectez tout accès ou transaction non autorisé, appelez notre ligne d'assistance clientèle pour mettre fin immédiatement à votre accès à la banque en ligne et à tout autre canal d'accès à vos comptes, comme les cartes de guichet."
+        }
+      }
     }
   },
   "warehousePricing": {
@@ -720,5 +902,208 @@
     "careersName": "משרות פנויות ב-Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "למידע על {{name}}, חברה ב-Indexia Group. {{description}}"
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
+        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+      ],
+      "sections": [
+        {
+          "title": "Informations que nous collectons",
+          "paragraphs": [
+            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
+            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
+          ]
+        },
+        {
+          "title": "Comment nous utilisons vos informations",
+          "paragraphs": [
+            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
+            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
+          ]
+        },
+        {
+          "title": "Partage et divulgation",
+          "paragraphs": [
+            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Nous ne vendons pas vos informations personnelles à des tiers."
+          ]
+        },
+        {
+          "title": "Sécurité des données",
+          "paragraphs": [
+            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
+          ]
+        },
+        {
+          "title": "Cookies et technologies similaires",
+          "paragraphs": [
+            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
+          ]
+        },
+        {
+          "title": "Conservation des données",
+          "paragraphs": [
+            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
+          ]
+        },
+        {
+          "title": "Vos droits et choix",
+          "paragraphs": [
+            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
+          ]
+        },
+        {
+          "title": "Liens vers des tiers",
+          "paragraphs": [
+            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
+          ]
+        },
+        {
+          "title": "Confidentialité des enfants",
+          "paragraphs": [
+            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
+          ]
+        },
+        {
+          "title": "Modifications de la présente politique",
+          "paragraphs": [
+            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [],
+      "sections": [
+        {
+          "title": "Politique d'Annulation et de Remboursement",
+          "paragraphs": [
+            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
+          ]
+        },
+        {
+          "title": "Politique d'Annulation",
+          "paragraphs": [
+            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
+            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
+            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
+            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
+            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
+            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
+            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
+            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
+          ]
+        },
+        {
+          "title": "Politique de Remboursement",
+          "paragraphs": [
+            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
+          ]
+        },
+        {
+          "title": "Clause BO",
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ]
+        },
+        {
+          "title": "Politique de Clause de Non-Responsabilité",
+          "paragraphs": [
+            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
+            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
+            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
+          ]
+        },
+        {
+          "title": "Clause de Non-Responsabilité de ce Site Web",
+          "paragraphs": [
+            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
+            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
+            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
+            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
+        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
+        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+      ],
+      "sections": [
+        {
+          "title": "Contenu et Modifications",
+          "paragraphs": [
+            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
+          ]
+        },
+        {
+          "title": "Aucune Garantie",
+          "paragraphs": [
+            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
+          ]
+        },
+        {
+          "title": "Utilisation à Vos Risques",
+          "paragraphs": [
+            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
+          ]
+        },
+        {
+          "title": "Propriété Intellectuelle",
+          "paragraphs": [
+            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
+          ]
+        },
+        {
+          "title": "Marques Commerciales",
+          "paragraphs": [
+            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
+          ]
+        },
+        {
+          "title": "Utilisation Non Autorisée",
+          "paragraphs": [
+            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
+          ]
+        },
+        {
+          "title": "Liens Vers des Sites Tiers",
+          "paragraphs": [
+            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
+          ]
+        },
+        {
+          "title": "Liens Vers ce Site Web",
+          "paragraphs": [
+            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
+          ]
+        },
+        {
+          "title": "Droit Applicable",
+          "paragraphs": [
+            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
+          ]
+        },
+        {
+          "title": "Responsabilité des Transactions par Carte",
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ]
+        }
+      ]
+    }
   }
 }

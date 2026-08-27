@@ -30,6 +30,11 @@ html::-webkit-scrollbar-thumb:hover {
   background: var(--color-yellow);
 }
 
+#root {
+  position: relative;
+  z-index: 1;
+}
+
 body {
   background-color: #fff;
   color: var(--color-ink);
