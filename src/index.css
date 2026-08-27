@@ -22,6 +22,7 @@
 @import "./styles/cards/spotlight-tile.css";
 @import "./styles/cards/shine.css";
 @import "./styles/cards/marquee.css";
+@import "./styles/cards/radial-companies.css";
 
 /* ── Scroll ── */
 @import "./styles/scroll/reveal.css";

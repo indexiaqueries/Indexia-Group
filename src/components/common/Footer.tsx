@@ -16,21 +16,13 @@ const linkGroups: {
     links: [
       { labelKey: "footer.links.aboutUs", href: "/about" },
       { labelKey: "footer.links.careers", href: "/careers" },
-    ],
-  },
-  {
-    titleKey: "footer.resources",
-    links: [
       { labelKey: "footer.links.news", href: "/news" },
-      { labelKey: "footer.links.globalResearch", href: "/global-research" },
-      { labelKey: "footer.links.securityTips", href: "/security-tips" },
     ],
   },
   {
     titleKey: "footer.legal",
     links: [
       { labelKey: "footer.links.termsOfUse", href: "/terms-of-use" },
-      { labelKey: "footer.links.termsConditions", href: "/terms" },
       { labelKey: "footer.links.privacyPolicy", href: "/privacy-policy" },
     ],
   },
@@ -75,7 +67,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer id="footer" className="relative overflow-hidden bg-[#040d14] text-white">
+    <footer id="footer" className="relative overflow-hidden bg-(--color-night) text-white">
       <div className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
       <div className="absolute inset-0">
         <img
@@ -116,7 +108,7 @@ const Footer = () => {
 
         {/* Nav columns */}
         <h2 className="sr-only">{t("footer.siteFooter") || "Site footer navigation"}</h2>
-        <nav aria-label="Footer navigation" className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-4 lg:divide-x lg:divide-white/10">
+        <nav aria-label="Footer navigation" className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-3 lg:divide-x lg:divide-white/10">
           {/* Contact */}
           <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />

@@ -50,7 +50,7 @@ const AboutPage = () => {
     <main className="bg-white">
       <SEO
         title={tr("title", "About Indexia Group")}
-        description={tr("metaDescription", "")}
+        description={tr("metaDescription", "About Indexia Group - diversified Indian business group")}
         keywords="About Indexia Group, Indian business group, diversified company, finance export agriculture security"
         canonicalPath="/about"
         jsonLd={aboutJsonLd}
@@ -74,7 +74,7 @@ const AboutPage = () => {
           {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
         </p>
         <p className="mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80">
-          {tr("subtitle", "")}
+          {tr("subtitle", "Diverse Ventures. Unified Vision.")}
         </p>
       </HeroBackdrop>
 
@@ -82,8 +82,6 @@ const AboutPage = () => {
       <section className="relative bg-(--color-ink-deep) px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2 lg:gap-10">
           <Reveal delay={0.1} amount={0.15} className="relative">
-            {/* Glow behind founder */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-1/2 rounded-full bg-(--color-yellow)/20 blur-[60px] pointer-events-none z-0" />
             <div className="relative flex items-end justify-center overflow-hidden rounded-2xl z-10">
               <img
                 src={founderImg}
@@ -120,13 +118,13 @@ const AboutPage = () => {
                   {tr("founderRole", "Founder & Managing Director")}
                 </span>
                 <p className="text-[13px] sm:text-[14px] leading-6 text-white/70">
-                  {tr("founderBio1", "")}
+                  {tr("founderBio1", "Visionary leader with decades of experience in building diversified businesses across India.")}
                 </p>
                 <p className="text-[13px] sm:text-[14px] leading-6 text-white/70">
-                  {tr("founderBio2", "")}
+                  {tr("founderBio2", "Committed to creating value through innovation, integrity, and sustainable growth.")}
                 </p>
                 <blockquote className="border-l-2 border-(--color-yellow)/50 pl-3 text-[13px] italic text-(--color-yellow)/80">
-                  "{tr("founderQuote", "")}"
+                  "{tr("founderQuote", "Our strength lies in our diverse portfolio and unwavering commitment to excellence.")}"
                 </blockquote>
               </div>
             </Reveal>
@@ -147,8 +145,8 @@ const AboutPage = () => {
 
             <Reveal delay={0.1}>
               <div className="mt-4 space-y-3 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-slate-600">
-                <p>{tr("storyBody1", "")}</p>
-                <p>{tr("storyBody2", "")}</p>
+                <p>{tr("storyBody1", "From a small office in Mumbai, Indexia Group has grown into a diversified business conglomerate spanning multiple industries across India and beyond.")}</p>
+                <p>{tr("storyBody2", "Today, we operate eight distinct companies, each contributing to the nation's economic growth while maintaining our core values of integrity, innovation, and excellence.")}</p>
               </div>
             </Reveal>
           </div>
@@ -188,10 +186,10 @@ const AboutPage = () => {
                     {String(i).padStart(2, "0")}
                   </span>
                   <h3 className="mt-1.5 text-[13px] sm:text-sm font-bold text-slate-800 leading-tight">
-                    {tr(`value${i}Title`, "")}
+                    {tr(`value${i}Title`, "Integrity")}
                   </h3>
                   <p className="mt-1.5 text-[12px] sm:text-[13px] leading-5 text-slate-600 group-hover:text-slate-800">
-                    {tr(`value${i}Body`, "")}
+                    {tr(`value${i}Body`, "Building trust through transparent business practices.")}
                   </p>
                 </div>
               </Reveal>
@@ -214,7 +212,7 @@ const AboutPage = () => {
               {tr("companiesTitle", "Eight Businesses, One Vision")}
             </h2>
             <p className="mt-1 text-[13px] leading-5 sm:text-[14px] sm:leading-6 text-(--color-muted)">
-              {tr("companiesSubtitle", "")}
+              {tr("companiesSubtitle", "Eight companies united by a shared vision of growth and excellence.")}
             </p>
           </Reveal>
 

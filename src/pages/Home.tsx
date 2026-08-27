@@ -6,6 +6,7 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
+import HomeWorld from "../assets/footer-img/HomeWorld.png";
 const Globe = lazy(() => import("../components/lightswind/globe"));
 
 const Home = () => {
@@ -69,15 +70,28 @@ const Home = () => {
 
       {/* Our Reach */}
       <div className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
-      <section className="relative overflow-hidden bg-[#f0f9ff99] px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+      <section className="relative overflow-hidden px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+        <img
+          src={HomeWorld}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div aria-hidden="true" className="absolute inset-0 bg-(--color-ink)/70" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 sm:h-64 w-48 sm:w-64 rounded-full bg-(--color-teal)/15 blur-[80px] sm:blur-[100px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 sm:h-52 w-40 sm:w-52 rounded-full bg-(--color-yellow)/10 blur-[60px] sm:blur-[80px]" />
         <div className="container relative">
-          <Reveal className="mx-auto max-w-xl text-center">
-            <Eyebrow color="var(--color-yellow)" className="mb-1">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
-            <h2 className="font-display text-[clamp(20px,3.5vw,36px)] font-bold text-white">
-              {t("homeReach.title", "Trusted Across Borders")}
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <Eyebrow color="var(--color-yellow)" className="mb-2">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
+            <h2 className="font-display text-[clamp(22px,4vw,40px)] font-bold leading-[1.15] text-white">
+              From local expertise to <br/><span className="text-(--color-yellow)">Global Opportunities</span>
             </h2>
+            <div className="mx-auto mt-4 h-px w-16 bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
+            <p className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 sm:leading-7 text-white/70">
+              Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders.
+            </p>
           </Reveal>
 
           {/* Globe + I overlay */}

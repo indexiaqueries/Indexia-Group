@@ -1,0 +1,17 @@
+/* ================================================================
+   Radial Companies — SVG connector line animation
+   ================================================================ */
+
+@keyframes marchingAnts {
+  to { stroke-dashoffset: -8; }
+}
+
+.radial-hovers svg line {
+  stroke-dasharray: 2 2;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.3s;
+}
+
+.radial-hovers:hover svg line {
+  animation: marchingAnts 0.4s linear infinite;
+}

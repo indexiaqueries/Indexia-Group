@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -67,7 +66,6 @@ const DEPARTMENTS = ["Finance", "Human Resources", "Digital Marketing", "Informa
 /* ── Component ────────────────────────────────────────────────── */
 
 const AdminDashboard = () => {
-  useTranslation();
   const [token, setToken] = useState(() => localStorage.getItem("admin_token") || "");
   const [isAuthed, setIsAuthed] = useState(false);
   const [activeTab, setActiveTab] = useState<Tab>("applications");

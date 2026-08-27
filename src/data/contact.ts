@@ -72,6 +72,15 @@ Naraina Vihar, New Delhi - 110028`,
     ],
   },
   {
+    key: "shamliOffice",
+    name: "Shamli Office",
+    address: `Meerut Karnal Road,
+Shamli, Uttar Pradesh - 247776`,
+    phones: [
+      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+918691886919" },
+    ],
+  },
+  {
     key: "internationalOffice",
     name: "International Office",
     address: `Avenida Perez Guerrero OE-375,

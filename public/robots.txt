@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /admin
+Disallow: /admin/
+Disallow: /careers/apply
+Disallow: /warehouse-brochure
+Disallow: /advertising-brochure
 
 Sitemap: https://www.indexiagroup.com/sitemap.xml

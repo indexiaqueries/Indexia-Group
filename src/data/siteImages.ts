@@ -4,6 +4,7 @@ import contactCare from "../assets/contact-img/customercare.webp";
 import contactDelhi from "../assets/contact-img/delhioffice.webp";
 import contactInternational from "../assets/contact-img/internationaloffice.webp";
 import contactMumbai from "../assets/contact-img/mumbaioffice.webp";
+import contactShamli from "../assets/company-pages-img/page-specific/unipole-hoarding.png";
 import careersHeroNew from "../assets/hero-img/CareerHero.png";
 import careersCultureNew from "../assets/careers-img/OurCulture.png";
 import careersRolesNew from "../assets/careers-img/OpenPositions.png";
@@ -35,6 +36,10 @@ export const siteImages: Record<string, ImageSlotData> = {
   contactDelhi: {
     src: contactDelhi,
     label: "Delhi office (Naraina Vihar)",
+  },
+  contactShamli: {
+    src: contactShamli,
+    label: "Shamli office (Meerut Karnal Road)",
   },
   contactInternational: {
     src: contactInternational,

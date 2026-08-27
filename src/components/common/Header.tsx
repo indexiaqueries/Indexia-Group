@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { EllipsisVertical, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
-import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
+import logo from "../../assets/logo/IndexiaGroup_Logo.gif";
 import { navPillClass } from "./header/navPill";
 import { useHeaderScroll } from "./header/useHeaderScroll";
 

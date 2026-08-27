@@ -20,11 +20,13 @@ import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
 import VideoHoverGallery from "./VideoHoverGallery";
-import foundationVid1 from "../../assets/company-pages-img/foundation-gallery/horizontal.mp4";
+import foundationVid1 from "../../assets/company-pages-img/foundation-gallery/horizontal1.mp4";
 import foundationVid2 from "../../assets/company-pages-img/foundation-gallery/vertical1.mp4";
 import foundationVid3 from "../../assets/company-pages-img/foundation-gallery/vertical2.mp4";
 import foundationVid4 from "../../assets/company-pages-img/foundation-gallery/vertical3.mp4";
 import foundationVid5 from "../../assets/company-pages-img/foundation-gallery/vertical4.mp4";
+import foundationVid6 from "../../assets/company-pages-img/foundation-gallery/horizontal1.mp4";
+import foundationVid7 from "../../assets/company-pages-img/foundation-gallery/horizontal2.mp4";
 import type { PricingRow } from "./PricingTable";
 
 type CompanyDetailProps = {
@@ -453,6 +455,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 { src: foundationVid2, label: "Track Training", sublabel: "Sprint practice on track" },
                 { src: foundationVid3, label: "Field Practice", sublabel: "Athletic drills" },
                 { src: foundationVid1, label: "Training Session", sublabel: "Field training with coaches" },
+                { src: foundationVid6, label: "Horizontal Training 1", sublabel: "Athletic training session" },
+                { src: foundationVid7, label: "Horizontal Training 2", sublabel: "Sports practice session" },
                 { src: foundationVid4, label: "Sprint Drills", sublabel: "Speed training" },
                 { src: foundationVid5, label: "Team Session", sublabel: "Group training" },
               ]}
