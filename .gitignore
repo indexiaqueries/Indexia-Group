@@ -27,6 +27,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 nohup.out
+server.log
+server.log.err
+
+# Server uploads
+server/uploads/resumes/
 
 # Tooling caches
 .eslintcache

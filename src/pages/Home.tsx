@@ -123,7 +123,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-(--color-teal)/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-(--color-teal)/60 to-transparent" />
       </section>
 
     </main>

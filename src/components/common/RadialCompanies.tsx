@@ -168,7 +168,7 @@ function RadialCard({
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
         />
-        <div className={`absolute inset-0 bg-gradient-to-t transition-all duration-300 ${
+        <div className={`absolute inset-0 bg-linear-to-t transition-all duration-300 ${
           hovered ? "from-black/85 via-black/60 to-black/40" : "from-black/75 via-black/30 to-black/20"
         }`} />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-3 text-center">
