@@ -6,6 +6,9 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
+  "redirects": [
+    { "source": "/services", "destination": "/contact", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
