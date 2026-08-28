@@ -43,13 +43,13 @@ const NewsPage = () => {
         </div>
       </section>
 
-      <section className="relative mx-2 flex items-center overflow-hidden rounded-3xl sm:mx-3 lg:mx-5">
+      <section className="relative flex items-center overflow-hidden">
         {/* Backdrop image */}
         <img
           src={cardBg}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-[400px] w-full object-cover object-top sm:h-[440px]"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
         {/* Dark overlay */}
         <div
@@ -57,7 +57,7 @@ const NewsPage = () => {
           className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"
         />
 
-        {/* Cards — vertically centered over the image */}
+        {/* Cards */}
         <div className="relative mx-auto max-w-6xl px-2 py-12 sm:px-3 sm:py-16 lg:px-5">
           <NewsGrid latest={latest} />
         </div>

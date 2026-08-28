@@ -38,11 +38,4 @@
 .kenburns  { animation: kenburns 6.5s ease-in-out infinite alternate; }
 .morph-zoom { animation: morph-zoom 0.8s ease-out both; }
 
-/* Infinite card scroll */
-@keyframes infinite-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-.animate-scroll {
-  animation: infinite-scroll 30s linear infinite;
-}
+
