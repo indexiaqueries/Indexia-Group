@@ -13,7 +13,7 @@
 
   /* Entry animations */
   .fade-up, .fade-in, .slide-in-left, .scale-in, .dropdown-in, .icon-in,
-  .hero-slide-child, .kenburns, .morph-zoom, .passbook-in,
+  .hero-slide-child, .kenburns, .morph-zoom, .passbook-in, .animate-scroll,
   .page-enter {
     animation: none;
   }

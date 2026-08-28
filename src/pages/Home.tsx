@@ -77,9 +77,9 @@ const Home = () => {
           aria-hidden="true"
           loading="lazy"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
-        <div aria-hidden="true" className="absolute inset-0 bg-(--color-ink)/70" />
+        <div aria-hidden="true" className="absolute inset-0 bg-(--color-ink)/60" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 sm:h-64 w-48 sm:w-64 rounded-full bg-(--color-teal)/15 blur-[80px] sm:blur-[100px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 sm:h-52 w-40 sm:w-52 rounded-full bg-(--color-yellow)/10 blur-[60px] sm:blur-[80px]" />
         <div className="container relative">
