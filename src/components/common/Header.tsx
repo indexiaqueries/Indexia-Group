@@ -74,6 +74,7 @@ const Header = () => {
           alt={t("common.logoAlt")}
           width={112}
           height={112}
+          decoding="async"
           className="block h-16 object-contain transition-transform duration-300 ease-out group-hover:scale-105 sm:h-20"
         />
       </NavLink>

@@ -108,7 +108,7 @@ export default function RadialCompanies() {
       <div className="lg:hidden">
         <div className="mx-auto mb-4 flex max-w-xs items-center gap-3 rounded-xl border-2 border-(--color-yellow)/30 bg-white/5 p-3 shadow-lg backdrop-blur-sm">
           <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl border-2 border-(--color-yellow)/30">
-            <img src={aboutCompanyImages.group} alt="Indexia Group" className="h-full w-full object-cover" />
+            <img src={aboutCompanyImages.group} alt="Indexia Group" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
           <div>
             <span className="font-ledger text-[9px] font-bold uppercase tracking-[0.18em] text-(--color-yellow)">Hub</span>

@@ -12,6 +12,18 @@ const ApplyPage = () => {
   const roleTitle = searchParams.get("role");
   const department = searchParams.get("dept") || "";
   const [roleData, setRoleData] = useState<{ description?: string; requirements?: string[]; company?: string; location?: string } | null>(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    experience: "",
+    resumeFileName: "",
+    intro: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (!roleTitle) return;
@@ -27,19 +39,6 @@ const ApplyPage = () => {
   }, [roleTitle, department]);
 
   if (!roleTitle) return <Navigate to="/careers" replace />;
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    experience: "",
-    resumeFileName: "",
-    intro: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const validateField = (field: string, value: string): string => {
     switch (field) {
