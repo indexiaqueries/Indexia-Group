@@ -14,6 +14,7 @@ const NewsCta = () => {
       actionLabel={`${t("newsPage.ctaButton")} ->`}
       to="/contact"
       accent="teal"
+      className="!py-8 sm:!py-10"
     />
   );
 };

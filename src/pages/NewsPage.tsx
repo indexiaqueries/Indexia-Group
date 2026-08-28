@@ -2,12 +2,12 @@ import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
 import Reveal from "../components/common/Reveal";
 import { colors } from "../lib/theme";
+import cardBg from "../assets/news&knowledge-img/cardBG.png";
 import NewsHero from "./news/NewsHero";
 import NewsVideo from "./news/NewsVideo";
 import FeaturedArticle from "./news/FeaturedArticle";
 import NewsGrid from "./news/NewsGrid";
 import InsightsSection from "./news/InsightsSection";
-import NewsCta from "./news/NewsCta";
 import { useNewsJsonLd, useNewsContent } from "./news/newsData";
 
 const NewsPage = () => {
@@ -28,10 +28,10 @@ const NewsPage = () => {
       <NewsHero />
       <NewsVideo />
 
-      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="relative bg-white px-2 py-4 sm:px-3 sm:py-5 lg:px-5">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <div className="mb-8 flex items-center gap-4">
+            <div className="mb-5 flex items-center gap-4">
               <span className="font-ledger text-sm font-bold" style={{ color: colors.teal }}>
                 {t("newsPage.featuredLabel")}
               </span>
@@ -40,12 +40,30 @@ const NewsPage = () => {
           </Reveal>
 
           <FeaturedArticle featured={featured} />
+        </div>
+      </section>
+
+      <section className="relative mx-2 overflow-hidden rounded-3xl sm:mx-3 lg:mx-5">
+        {/* Backdrop image */}
+        <img
+          src={cardBg}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-top"
+        />
+        {/* Dark overlay */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"
+        />
+
+        {/* Cards — positioned at bottom, overlapping the image */}
+        <div className="relative mx-auto max-w-6xl px-2 pt-[320px] pb-8 sm:pt-[380px] sm:pb-10 lg:px-5">
           <NewsGrid latest={latest} />
         </div>
       </section>
 
       <InsightsSection insights={insights} />
-      <NewsCta />
     </main>
   );
 };

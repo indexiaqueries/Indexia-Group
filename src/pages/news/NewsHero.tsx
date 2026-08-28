@@ -3,6 +3,9 @@ import Eyebrow from "../../components/common/Eyebrow";
 import HeroBackdrop from "../../components/banners/HeroBackdrop";
 const newsBg = "/images/heroes/news-hero.webp";
 
+// Sections the group publishes across — same source of truth as the careers page ticker.
+const SECTIONS = ["Finance", "Trade & Export", "Agriculture", "Security", "Advertising", "Sport"];
+
 const NewsHero = () => {
   const { t } = useTranslation();
 
@@ -10,6 +13,41 @@ const NewsHero = () => {
     <HeroBackdrop
       image={newsBg}
       radial="radial-gradient(circle at 82% 18%, rgba(38,174,144,0.14), transparent 50%)"
+      ruledClassName="pointer-events-none absolute inset-0 opacity-60"
+      ruledStyle={{
+        backgroundImage:
+          "repeating-linear-gradient(to bottom, transparent 0px, transparent 35px, rgba(255,255,255,0.035) 35px, rgba(255,255,255,0.035) 36px)",
+      }}
+      extra={
+        <div className="absolute inset-x-0 bottom-0 border-t border-white/15 bg-black/10 backdrop-blur-sm">
+          <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-2 py-3 sm:justify-between sm:px-3 lg:px-5">
+            <span className="flex items-center gap-2">
+              <span className="relative flex h-1.5 w-1.5 motion-reduce:hidden">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-(--color-teal) opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-(--color-teal)" />
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-white/50">
+                Latest across the group
+              </span>
+            </span>
+
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+              {SECTIONS.map((s, i) => (
+                <span key={s} className="flex items-center gap-3">
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-white/40">
+                    {s}
+                  </span>
+                  {i !== SECTIONS.length - 1 && (
+                    <span aria-hidden="true" className="text-white/20">
+                      /
+                    </span>
+                  )}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      }
     >
       <div className="mb-4 flex items-center justify-center gap-3">
         <span className="h-px w-8 bg-(--color-yellow)/70" />

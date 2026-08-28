@@ -222,7 +222,8 @@
     "ctaButton": "Enviar uma consulta",
     "metaDescription": "News & Knowledge Centre, últimas notícias bancárias sobre financiamento, pagamentos digitais e política, além de guias práticos de conhecimento da Indexia Group.",
     "tvEyebrow": "Veja-Nos na TV",
-    "tvHeading": "Para Todas as Suas Necessidades de Empréstimo",
+    "tvHeadingStart": "Para Todas as Suas Necessidades de Empréstimo",
+    "tvHeadingAccent": "Indexia Finance",
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance"
   },
   "careersPage": {
