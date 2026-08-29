@@ -1108,5 +1108,78 @@
     "careersName": "Open roles at Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
+  },
+  "notFoundPage": {
+    "title": "Seite Nicht Gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backHome": "Zurück zur Startseite"
+  },
+  "applyPage": {
+    "successTitle": "Bewerbung Gesendet!",
+    "successBody": "Vielen Dank für Ihre Bewerbung für die Position <strong>{{role}}</strong>. Unser HR-Team hat Ihre Bewerbung erhalten und wird sie in Kürze prüfen.",
+    "successSentTo": "Bewerbung gesendet an",
+    "backToCareers": "Zurück zu Karriere",
+    "heroTitle": "Bewerben für",
+    "roleDetails": "Stellendetails",
+    "responsibilities": "Verantwortlichkeiten & Anforderungen",
+    "infoBanner": "Füllen Sie das untenstehende Formular aus und wir senden Ihre Bewerbung direkt an unser HR-Team. Fügen Sie Ihren Lebenslauf bei und erklären Sie, warum Sie perfekt passen.",
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Ihr vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "phonePlaceholder": "10-stellige Nummer",
+    "experience": "Erfahrung",
+    "selectExperience": "Erfahrung auswählen",
+    "fresher": "Einsteiger",
+    "lessThan1Year": "Weniger als 1 Jahr",
+    "1to2Years": "1-2 Jahre",
+    "2to5Years": "2-5 Jahre",
+    "5plusYears": "5+ Jahre",
+    "resume": "Lebenslauf",
+    "clickToUpload": "Klicken zum Hochladen des Lebenslaufs",
+    "clickToReplace": "Klicken zum Ersetzen",
+    "resumeFormats": "PDF, DOC oder DOCX (max 5MB)",
+    "tellUsAboutYourself": "Erzählen Sie uns über sich",
+    "introPlaceholder": "Teilen Sie Ihren Hintergrund, Ihre Fähigkeiten und warum Sie an dieser Rolle interessiert sind...",
+    "submitting": "Wird gesendet...",
+    "submitApplication": "Bewerbung Absenden",
+    "submitNote": "Ihre Bewerbung wird an hr@indexiafinance.com und hr.indexia@gmail.com gesendet.",
+    "errorNameEmpty": "Bitte geben Sie Ihren Namen ein.",
+    "errorNameShort": "Der Name muss mindestens 2 Zeichen lang sein.",
+    "errorNameLetters": "Der Name muss Buchstaben enthalten.",
+    "errorEmailEmpty": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+    "errorEmailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "errorPhoneEmpty": "Bitte geben Sie Ihre Telefonnummer ein.",
+    "errorPhoneInvalid": "Bitte geben Sie eine gültige 10-stellige Telefonnummer ein.",
+    "errorExperience": "Bitte wählen Sie Ihr Erfahrungsniveau.",
+    "errorResume": "Bitte laden Sie Ihren Lebenslauf hoch.",
+    "errorIntroEmpty": "Bitte erzählen Sie uns über sich.",
+    "errorIntroShort": "Bitte schreiben Sie mindestens 20 Zeichen.",
+    "errorFileSize": "Die Dateigröße muss unter 5MB liegen.",
+    "errorFileType": "Nur PDF-, DOC- oder DOCX-Dateien werden akzeptiert.",
+    "errorSubmit": "Ihre Bewerbung konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
+  },
+  "newsHero": {
+    "latestLabel": "Neueste aus der Gruppe",
+    "sectors": {
+      "finance": "Finanzen",
+      "tradeExport": "Handel & Export",
+      "agriculture": "Landwirtschaft",
+      "security": "Sicherheit",
+      "advertising": "Werbung",
+      "sport": "Sport"
+    }
+  },
+  "newsVideo": {
+    "onAir": "On Air",
+    "tvCommercial": "TV-Werbung"
+  },
+  "careersHero": {
+    "description": "Acht Unternehmen. Ein Team. Entwickeln Sie Ihre Karriere in Finanzen, Export, Landwirtschaft, Sicherheit, Werbung und Athletenförderung.",
+    "companiesOneGroup": "Unternehmen, eine Gruppe"
+  },
+  "openRoles": {
+    "loading": "Stellen werden geladen...",
+    "noPositions": "Derzeit sind keine {{type}}-Positionen verfügbar."
   }
 }

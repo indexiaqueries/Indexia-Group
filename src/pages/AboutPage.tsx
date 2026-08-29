@@ -79,27 +79,29 @@ const AboutPage = () => {
       </HeroBackdrop>
 
       {/* Leadership */}
-      <section className="relative bg-(--color-ink-deep) px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <section className="relative bg-(--color-ink-deep) px-4 py-3 sm:px-6 sm:py-5 lg:px-8">
         <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2 lg:gap-10">
           <Reveal delay={0.1} amount={0.15} className="relative">
-            <div className="relative flex items-end justify-center overflow-hidden rounded-2xl z-10">
-              <img
-                src={founderImg}
-                alt={tr("founderName", "Founder & Managing Director")}
-                width={500}
-                height={700}
-                loading="lazy"
-                decoding="async"
-                className="h-full w-auto object-contain object-bottom"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-(--color-ink-deep)/80 via-transparent to-transparent" />
-              {/* Floating name badge */}
-              <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3">
-                <div className="rounded-lg bg-black/60 px-2.5 py-1.5 shadow-xl backdrop-blur-md border-b-2 border-(--color-yellow)">
-                  <span className="font-display text-[10px] font-bold text-white sm:text-[11px]">
-                    Bijendra Malik
-                  </span>
-                </div>
+            <div className="flex flex-col items-center">
+              <div className="relative flex items-end justify-center overflow-hidden z-10">
+                <img
+                  src={founderImg}
+                  alt={tr("founderName", "Founder & Managing Director")}
+                  width={500}
+                  height={700}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-auto object-contain object-bottom"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-(--color-ink-deep)/40 via-transparent to-transparent" />
+              </div>
+              <div className="w-full bg-black/50 px-5 py-1 text-center backdrop-blur-md border border-t-0 border-white/10 rounded-b-2xl">
+                <span className="font-display text-[13px] sm:text-sm font-bold text-white">
+                  Bijendra Malik
+                </span>
+                <span className="block font-ledger text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-yellow)">
+                  {tr("founderRole", "Founder & Managing Director")}
+                </span>
               </div>
             </div>
           </Reveal>
@@ -108,15 +110,13 @@ const AboutPage = () => {
             <Reveal>
               <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("leaderEyebrow", "Leadership")}</Eyebrow>
               <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
-                {tr("leaderTitle", "The People Behind Indexia Group")}
+                {tr("visionaryTitle", "The Visionary Behind")}<br />
+                <span className="text-(--color-yellow)">{tr("visionaryAccent", "Indexia Group")}</span>
               </h2>
             </Reveal>
 
             <Reveal delay={0.1}>
               <div className="mt-4 space-y-3">
-                <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
-                  {tr("founderRole", "Founder & Managing Director")}
-                </span>
                 <p className="text-[13px] sm:text-[14px] leading-6 text-white/70">
                   {tr("founderBio1", "Visionary leader with decades of experience in building diversified businesses across India.")}
                 </p>

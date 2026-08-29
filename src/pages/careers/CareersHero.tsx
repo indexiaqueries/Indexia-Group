@@ -144,9 +144,7 @@ const CareersHero = () => {
           </div>
 
           <p className="mt-4 max-w-xl text-[13px] sm:text-[15px] leading-6 sm:leading-7 text-white/70">
-            Eight companies. One team. Build your career across finance,
-            export, agriculture, security, advertising, and athlete
-            development.
+            {t("careersHero.description")}
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-5">
@@ -182,7 +180,7 @@ const CareersHero = () => {
                 8
               </span>
               <span className="text-[11px] uppercase tracking-[0.14em] sm:text-xs">
-                companies, one group
+                {t("careersHero.companiesOneGroup")}
               </span>
             </div>
           </div>

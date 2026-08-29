@@ -4,7 +4,7 @@ import HeroBackdrop from "../../components/banners/HeroBackdrop";
 const newsBg = "/images/heroes/news-hero.webp";
 
 // Sections the group publishes across — same source of truth as the careers page ticker.
-const SECTIONS = ["Finance", "Trade & Export", "Agriculture", "Security", "Advertising", "Sport"];
+const SECTIONS_KEYS = ["finance", "tradeExport", "agriculture", "security", "advertising", "sport"] as const;
 
 const NewsHero = () => {
   const { t } = useTranslation();
@@ -27,17 +27,17 @@ const NewsHero = () => {
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-(--color-teal)" />
               </span>
               <span className="text-[10px] font-bold uppercase tracking-wider text-white/50">
-                Latest across the group
+                {t("newsHero.latestLabel")}
               </span>
             </span>
 
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-              {SECTIONS.map((s, i) => (
+              {SECTIONS_KEYS.map((s, i) => (
                 <span key={s} className="flex items-center gap-3">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-white/40">
-                    {s}
+                    {t(`newsHero.sectors.${s}`)}
                   </span>
-                  {i !== SECTIONS.length - 1 && (
+                  {i !== SECTIONS_KEYS.length - 1 && (
                     <span aria-hidden="true" className="text-white/20">
                       /
                     </span>

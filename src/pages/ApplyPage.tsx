@@ -43,27 +43,27 @@ const ApplyPage = () => {
   const validateField = (field: string, value: string): string => {
     switch (field) {
       case "name":
-        if (!value.trim()) return "Please enter your name.";
-        if (value.trim().length < 2) return "Name must be at least 2 characters.";
-        if (!/[a-zA-Z]/.test(value)) return "Name must contain letters.";
+        if (!value.trim()) return t("applyPage.errorNameEmpty");
+        if (value.trim().length < 2) return t("applyPage.errorNameShort");
+        if (!/[a-zA-Z]/.test(value)) return t("applyPage.errorNameLetters");
         return "";
       case "email":
-        if (!value.trim()) return "Please enter your email address.";
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return "Please enter a valid email address.";
+        if (!value.trim()) return t("applyPage.errorEmailEmpty");
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return t("applyPage.errorEmailInvalid");
         return "";
       case "phone":
-        if (!value.trim()) return "Please enter your phone number.";
-        if (!/^\d{10}$/.test(value.replace(/\D/g, ""))) return "Please enter a valid 10-digit phone number.";
+        if (!value.trim()) return t("applyPage.errorPhoneEmpty");
+        if (!/^\d{10}$/.test(value.replace(/\D/g, ""))) return t("applyPage.errorPhoneInvalid");
         return "";
       case "experience":
-        if (!value) return "Please select your experience level.";
+        if (!value) return t("applyPage.errorExperience");
         return "";
       case "resume":
-        if (!formData.resumeFileName) return "Please upload your resume.";
+        if (!formData.resumeFileName) return t("applyPage.errorResume");
         return "";
       case "intro":
-        if (!value.trim()) return "Please tell us about yourself.";
-        if (value.trim().length < 20) return "Please write at least 20 characters.";
+        if (!value.trim()) return t("applyPage.errorIntroEmpty");
+        if (value.trim().length < 20) return t("applyPage.errorIntroShort");
         return "";
       default:
         return "";
@@ -104,7 +104,7 @@ const ApplyPage = () => {
     const file = e.target.files?.[0];
     if (file) {
       if (file.size > 5 * 1024 * 1024) {
-        setErrors((prev) => ({ ...prev, resume: "File size must be under 5MB." }));
+        setErrors((prev) => ({ ...prev, resume: t("applyPage.errorFileSize") }));
         return;
       }
       const allowedTypes = [
@@ -113,7 +113,7 @@ const ApplyPage = () => {
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       ];
       if (!allowedTypes.includes(file.type)) {
-        setErrors((prev) => ({ ...prev, resume: "Only PDF, DOC, or DOCX files are accepted." }));
+        setErrors((prev) => ({ ...prev, resume: t("applyPage.errorFileType") }));
         return;
       }
       setFormData((prev) => ({ ...prev, resumeFileName: file.name }));
@@ -150,12 +150,12 @@ const ApplyPage = () => {
       });
       const data = (await response.json().catch(() => ({}))) as { ok?: boolean; error?: string };
       if (!response.ok || !data.ok) {
-        throw new Error(data.error || "Could not submit your application. Please try again later.");
+        throw new Error(data.error || t("applyPage.errorSubmit"));
       }
       setIsSubmitted(true);
     } catch (err) {
       setErrors({
-        submit: err instanceof Error ? err.message : "Could not submit your application. Please try again later.",
+        submit: err instanceof Error ? err.message : t("applyPage.errorSubmit"),
       });
     } finally {
       setIsSubmitting(false);
@@ -168,8 +168,8 @@ const ApplyPage = () => {
     return (
       <main className="bg-white">
         <SEO
-          title={`Application for ${roleTitle} - Indexia Group`}
-          description={`Your application for the ${roleTitle} position at Indexia Group has been submitted successfully.`}
+          title={`${t("applyPage.successTitle")} - Indexia Group`}
+          description={t("applyPage.successTitle")}
           keywords={`Indexia Group jobs, ${roleTitle}, career application`}
           canonicalPath="/careers/apply"
           noindex
@@ -182,14 +182,15 @@ const ApplyPage = () => {
                 <CheckCircle size={40} className="text-(--color-teal)" />
               </div>
               <h1 className="font-display text-[clamp(28px,5vw,40px)] font-bold text-white">
-                Application <span className="text-(--color-yellow)">Submitted!</span>
+                {t("applyPage.successTitle")}
               </h1>
-              <p className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 text-white/70">
-                Thank you for applying for the <strong className="text-white">{roleTitle}</strong> position. Our HR team has received your application and will review it shortly.
-              </p>
+              <p
+                className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 text-white/70"
+                dangerouslySetInnerHTML={{ __html: t("applyPage.successBody", { role: roleTitle }) }}
+              />
 
               <div className="mx-auto mt-6 max-w-sm rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur-sm">
-                <p className="text-xs font-bold uppercase tracking-wider text-white/50">Application sent to</p>
+                <p className="text-xs font-bold uppercase tracking-wider text-white/50">{t("applyPage.successSentTo")}</p>
                 <p className="mt-2 text-sm font-semibold text-(--color-teal)">hr@indexiafinance.com</p>
                 <p className="text-sm font-semibold text-(--color-teal)">hr.indexia@gmail.com</p>
               </div>
@@ -199,7 +200,7 @@ const ApplyPage = () => {
                 className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/20"
               >
                 <ArrowLeft size={16} strokeWidth={2.5} />
-                Back to Careers
+                {t("applyPage.backToCareers")}
               </Link>
             </Reveal>
           </div>
@@ -212,9 +213,8 @@ const ApplyPage = () => {
 
   return (
     <main className="bg-white">
-      <SEO
-        title={`Apply for ${roleTitle} - Indexia Group`}
-        description={`Apply for the ${roleTitle} position at Indexia Group. Submit your application with resume and cover letter.`}
+      <SEO          title={`${t("applyPage.heroTitle")} ${roleTitle} - Indexia Group`}
+          description={`${t("applyPage.heroTitle")} ${roleTitle} - Indexia Group`}
         keywords={`Indexia Group careers, ${roleTitle} job, apply ${roleTitle}, Indexia Finance jobs`}
         canonicalPath="/careers/apply"
       />
@@ -228,7 +228,7 @@ const ApplyPage = () => {
             className="mb-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/50 transition-colors hover:text-(--color-yellow)"
           >
             <ArrowLeft size={14} strokeWidth={2.5} />
-            Back to Careers
+            {t("applyPage.backToCareers")}
           </Link>
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-10 bg-(--color-yellow)/60" />
@@ -238,7 +238,7 @@ const ApplyPage = () => {
             <span className="h-px w-10 bg-(--color-yellow)/60" />
           </div>
           <h1 className="font-display text-[clamp(28px,5vw,44px)] font-bold leading-[1.1] text-white">
-            Apply for <span className="text-(--color-yellow)">{roleTitle}</span>
+            {t("applyPage.heroTitle")} <span className="text-(--color-yellow)">{roleTitle}</span>
           </h1>
           {department && (
             <p className="mt-3 font-ledger text-[11px] sm:text-xs uppercase tracking-[0.18em] text-(--color-teal)/80">{department}</p>
@@ -255,13 +255,13 @@ const ApplyPage = () => {
           <div className="mx-auto max-w-2xl">
             <Reveal>
               <div className="rounded-2xl border border-slate-100 bg-(--color-soft) p-5 sm:p-6">
-                <h2 className="font-display text-[15px] sm:text-base font-bold text-slate-900">Role Details</h2>
+                <h2 className="font-display text-[15px] sm:text-base font-bold text-slate-900">{t("applyPage.roleDetails")}</h2>
                 {roleData.description && (
                   <p className="mt-2 text-[13px] sm:text-sm leading-6 text-slate-600">{roleData.description}</p>
                 )}
                 {roleData.requirements && roleData.requirements.length > 0 && (
                   <div className="mt-4">
-                    <h3 className="mb-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">Responsibilities & Requirements</h3>
+                    <h3 className="mb-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">{t("applyPage.responsibilities")}</h3>
                     <ul className="space-y-1.5">
                       {roleData.requirements.map((req, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-[12px] sm:text-[13px] leading-5 text-slate-600">
@@ -289,7 +289,7 @@ const ApplyPage = () => {
             {/* Info banner */}
             <div className="mb-6 rounded-2xl border border-(--color-teal)/15 bg-(--color-teal)/5 p-4 sm:p-5">
               <p className="text-[12px] sm:text-[13px] leading-5 text-slate-600">
-                Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.
+                {t("applyPage.infoBanner")}
               </p>
             </div>
 
@@ -299,7 +299,7 @@ const ApplyPage = () => {
                 <div>
                   <label htmlFor="apply-name" className="mb-1.5 flex items-center gap-1.5 text-[13px] font-bold text-slate-700">
                     <User size={14} className="text-(--color-teal)" />
-                    Full Name
+                    {t("applyPage.fullName")}
                   </label>
                   <input
                     id="apply-name"
@@ -307,7 +307,7 @@ const ApplyPage = () => {
                     value={formData.name}
                     onChange={(e) => { setFormData((prev) => ({ ...prev, name: e.target.value })); clearError("name"); }}
                     onBlur={() => handleBlur("name")}
-                    placeholder="Your full name"
+                    placeholder={t("applyPage.fullNamePlaceholder")}
                     aria-required="true"
                     aria-invalid={!!errors.name}
                     aria-describedby={errors.name ? "apply-name-error" : undefined}
@@ -318,7 +318,7 @@ const ApplyPage = () => {
                 <div>
                   <label htmlFor="apply-email" className="mb-1.5 flex items-center gap-1.5 text-[13px] font-bold text-slate-700">
                     <Mail size={14} className="text-(--color-teal)" />
-                    Email
+                    {t("applyPage.email")}
                   </label>
                   <input
                     id="apply-email"
@@ -341,7 +341,7 @@ const ApplyPage = () => {
                 <div>
                   <label htmlFor="apply-phone" className="mb-1.5 flex items-center gap-1.5 text-[13px] font-bold text-slate-700">
                     <Phone size={14} className="text-(--color-teal)" />
-                    Phone
+                    {t("applyPage.phone")}
                   </label>
                   <input
                     id="apply-phone"
@@ -349,7 +349,7 @@ const ApplyPage = () => {
                     value={formData.phone}
                     onChange={(e) => { setFormData((prev) => ({ ...prev, phone: e.target.value })); clearError("phone"); }}
                     onBlur={() => handleBlur("phone")}
-                    placeholder="10-digit number"
+                    placeholder={t("applyPage.phonePlaceholder")}
                     aria-required="true"
                     aria-invalid={!!errors.phone}
                     aria-describedby={errors.phone ? "apply-phone-error" : undefined}
@@ -360,7 +360,7 @@ const ApplyPage = () => {
                 <div>
                   <label htmlFor="apply-experience" className="mb-1.5 flex items-center gap-1.5 text-[13px] font-bold text-slate-700">
                     <Briefcase size={14} className="text-(--color-teal)" />
-                    Experience
+                    {t("applyPage.experience")}
                   </label>
                   <select
                     id="apply-experience"
@@ -372,12 +372,12 @@ const ApplyPage = () => {
                     aria-describedby={errors.experience ? "apply-experience-error" : undefined}
                     className={`w-full rounded-xl border ${errors.experience ? "border-red-400 bg-red-50/50" : "border-slate-200 bg-white"} px-4 py-3 text-[14px] text-(--color-ink) outline-none transition-all focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/15`}
                   >
-                    <option value="">Select experience</option>
-                    <option value="Fresher">Fresher</option>
-                    <option value="Less than 1 year">Less than 1 year</option>
-                    <option value="1-2 years">1-2 years</option>
-                    <option value="2-5 years">2-5 years</option>
-                    <option value="5+ years">5+ years</option>
+                    <option value="">{t("applyPage.selectExperience")}</option>
+                    <option value="Fresher">{t("applyPage.fresher")}</option>
+                    <option value="Less than 1 year">{t("applyPage.lessThan1Year")}</option>
+                    <option value="1-2 years">{t("applyPage.1to2Years")}</option>
+                    <option value="2-5 years">{t("applyPage.2to5Years")}</option>
+                    <option value="5+ years">{t("applyPage.5plusYears")}</option>
                   </select>
                   {errors.experience && <p id="apply-experience-error" role="alert" className="mt-1 text-[11px] text-red-500">{errors.experience}</p>}
                 </div>
@@ -387,7 +387,7 @@ const ApplyPage = () => {
               <div>
                 <label htmlFor="apply-resume" className="mb-1.5 flex items-center gap-1.5 text-[13px] font-bold text-slate-700">
                   <FileText size={14} className="text-(--color-teal)" />
-                  Resume
+                  {t("applyPage.resume")}
                 </label>
                 <div
                   role="button"
@@ -404,12 +404,12 @@ const ApplyPage = () => {
                     {formData.resumeFileName ? (
                       <>
                         <p className="truncate text-sm font-semibold text-(--color-ink)">{formData.resumeFileName}</p>
-                        <p className="text-[11px] text-(--color-teal)">Click to replace</p>
+                        <p className="text-[11px] text-(--color-teal)">{t("applyPage.clickToReplace")}</p>
                       </>
                     ) : (
                       <>
-                        <p className="text-sm font-semibold text-(--color-ink)">Click to upload resume</p>
-                        <p className="text-[11px] text-(--color-muted)">PDF, DOC, or DOCX (max 5MB)</p>
+                        <p className="text-sm font-semibold text-(--color-ink)">{t("applyPage.clickToUpload")}</p>
+                        <p className="text-[11px] text-(--color-muted)">{t("applyPage.resumeFormats")}</p>
                       </>
                     )}
                   </div>
@@ -430,14 +430,14 @@ const ApplyPage = () => {
               <div>
                 <label htmlFor="apply-intro" className="mb-1.5 flex items-center gap-1.5 text-[13px] font-bold text-slate-700">
                   <FileText size={14} className="text-(--color-teal)" />
-                  Tell us about yourself
+                  {t("applyPage.tellUsAboutYourself")}
                 </label>
                 <textarea
                   id="apply-intro"
                   value={formData.intro}
                   onChange={(e) => { setFormData((prev) => ({ ...prev, intro: e.target.value })); clearError("intro"); }}
                   onBlur={() => handleBlur("intro")}
-                  placeholder="Share your background, skills, and why you're interested in this role..."
+                  placeholder={t("applyPage.introPlaceholder")}
                   rows={5}
                   maxLength={1000}
                   aria-required="true"
@@ -467,12 +467,12 @@ const ApplyPage = () => {
                   {isSubmitting ? (
                     <>
                       <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                      Submitting...
+                      {t("applyPage.submitting")}
                     </>
                   ) : (
                     <>
                       <Send size={15} strokeWidth={2.5} />
-                      Submit Application
+                      {t("applyPage.submitApplication")}
                     </>
                   )}
                 </button>
@@ -484,7 +484,7 @@ const ApplyPage = () => {
                 </div>
               )}
               <p className="text-center text-[11px] text-slate-400">
-                Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.
+                {t("applyPage.submitNote")}
               </p>
             </form>
           </Reveal>

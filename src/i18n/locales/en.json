@@ -1093,5 +1093,78 @@
         }
       ]
     }
+  },
+  "notFoundPage": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  },
+  "applyPage": {
+    "successTitle": "Application Submitted!",
+    "successBody": "Thank you for applying for the <strong>{{role}}</strong> position. Our HR team has received your application and will review it shortly.",
+    "successSentTo": "Application sent to",
+    "backToCareers": "Back to Careers",
+    "heroTitle": "Apply for",
+    "roleDetails": "Role Details",
+    "responsibilities": "Responsibilities & Requirements",
+    "infoBanner": "Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Your full name",
+    "email": "Email",
+    "phone": "Phone",
+    "phonePlaceholder": "10-digit number",
+    "experience": "Experience",
+    "selectExperience": "Select experience",
+    "fresher": "Fresher",
+    "lessThan1Year": "Less than 1 year",
+    "1to2Years": "1-2 years",
+    "2to5Years": "2-5 years",
+    "5plusYears": "5+ years",
+    "resume": "Resume",
+    "clickToUpload": "Click to upload resume",
+    "clickToReplace": "Click to replace",
+    "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
+    "tellUsAboutYourself": "Tell us about yourself",
+    "introPlaceholder": "Share your background, skills, and why you're interested in this role...",
+    "submitting": "Submitting...",
+    "submitApplication": "Submit Application",
+    "submitNote": "Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.",
+    "errorNameEmpty": "Please enter your name.",
+    "errorNameShort": "Name must be at least 2 characters.",
+    "errorNameLetters": "Name must contain letters.",
+    "errorEmailEmpty": "Please enter your email address.",
+    "errorEmailInvalid": "Please enter a valid email address.",
+    "errorPhoneEmpty": "Please enter your phone number.",
+    "errorPhoneInvalid": "Please enter a valid 10-digit phone number.",
+    "errorExperience": "Please select your experience level.",
+    "errorResume": "Please upload your resume.",
+    "errorIntroEmpty": "Please tell us about yourself.",
+    "errorIntroShort": "Please write at least 20 characters.",
+    "errorFileSize": "File size must be under 5MB.",
+    "errorFileType": "Only PDF, DOC, or DOCX files are accepted.",
+    "errorSubmit": "Could not submit your application. Please try again later."
+  },
+  "newsHero": {
+    "latestLabel": "Latest across the group",
+    "sectors": {
+      "finance": "Finance",
+      "tradeExport": "Trade & Export",
+      "agriculture": "Agriculture",
+      "security": "Security",
+      "advertising": "Advertising",
+      "sport": "Sport"
+    }
+  },
+  "newsVideo": {
+    "onAir": "On Air",
+    "tvCommercial": "TV Commercial"
+  },
+  "careersHero": {
+    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
+    "companiesOneGroup": "companies, one group"
+  },
+  "openRoles": {
+    "loading": "Loading openings...",
+    "noPositions": "No {{type}} positions available at the moment."
   }
 }

@@ -8,7 +8,14 @@ const MainLayout = () => {
   const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure" || pathname === "/careers/apply";
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Use View Transitions API for smooth cross-fade between pages
+    if (document.startViewTransition) {
+      document.startViewTransition(() => {
+        window.scrollTo(0, 0);
+      });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return (
@@ -20,7 +27,7 @@ const MainLayout = () => {
         Skip to main content
       </a>
       {!hideHeader && <Header />}
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className="flex-1" style={{ viewTransitionName: "main-content" } as React.CSSProperties}>
         <div key={pathname} className="page-enter">
           <Outlet />
         </div>

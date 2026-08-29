@@ -1106,5 +1106,78 @@
     "careersName": "Open roles at Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
+  },
+  "notFoundPage": {
+    "title": "الصفحة غير موجودة",
+    "description": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "applyPage": {
+    "successTitle": "تم تقديم الطلب!",
+    "successBody": "شكراً لتقديمك للمنصب <strong>{{role}}</strong>. تلقى فريق الموارد البشرية طلبك وسيراجعه قريباً.",
+    "successSentTo": "تم إرسال الطلب إلى",
+    "backToCareers": "العودة إلى Careers",
+    "heroTitle": "التقدم بطلب لـ",
+    "roleDetails": "تفاصيل المنصب",
+    "responsibilities": "المسؤوليات والمتطلبات",
+    "infoBanner": "املأ النموذج أدناه وسنرسل طلبك مباشرة إلى فريق الموارد البشرية. أرفق سيرتك الذاتية وأخبرنا لماذا أنت مناسب لهذا الدور.",
+    "fullName": "الاسم الكامل",
+    "fullNamePlaceholder": "اسمك الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "phonePlaceholder": "رقم مكون من 10 أرقام",
+    "experience": "الخبرة",
+    "selectExperience": "اختر مستوى الخبرة",
+    "fresher": "مبتدئ",
+    "lessThan1Year": "أقل من سنة",
+    "1to2Years": "1-2 سنة",
+    "2to5Years": "2-5 سنوات",
+    "5plusYears": "5+ سنوات",
+    "resume": "السيرة الذاتية",
+    "clickToUpload": "انقر لرفع السيرة الذاتية",
+    "clickToReplace": "انقر للاستبدال",
+    "resumeFormats": "PDF، DOC، أو DOCX (حد أقصى 5 ميجا)",
+    "tellUsAboutYourself": "أخبرنا عن نفسك",
+    "introPlaceholder": "شارك خلفيتك ومهاراتك ولماذا أنت مهتم بهذا الدور...",
+    "submitting": "جارٍ الإرسال...",
+    "submitApplication": "تقديم الطلب",
+    "submitNote": "سيتم إرسال طلبك إلى hr@indexiafinance.com و hr.indexia@gmail.com.",
+    "errorNameEmpty": "يرجى إدخال اسمك.",
+    "errorNameShort": "يجب أن يكون الاسم على الأقل حرفين.",
+    "errorNameLetters": "يجب أن يحتوي الاسم على أحرف.",
+    "errorEmailEmpty": "يرجى إدخال بريدك الإلكتروني.",
+    "errorEmailInvalid": "يرجى إدخال بريد إلكتروني صالح.",
+    "errorPhoneEmpty": "يرجى إدخال رقم هاتفك.",
+    "errorPhoneInvalid": "يرجى إدخال رقم هاتف صالح مكون من 10 أرقام.",
+    "errorExperience": "يرجى اختيار مستوى خبرتك.",
+    "errorResume": "يرجى رفع سيرتك الذاتية.",
+    "errorIntroEmpty": "يرجى إخبارنا عن نفسك.",
+    "errorIntroShort": "يرجى كتابة 20 حرفاً على الأقل.",
+    "errorFileSize": "يجب أن يكون حجم الملف أقل من 5 ميجا.",
+    "errorFileType": "يتم قبول ملفات PDF أو DOC أو DOCX فقط.",
+    "errorSubmit": "تعذر تقديم طلبك. يرجى المحاولة مرة أخرى لاحقاً."
+  },
+  "newsHero": {
+    "latestLabel": "آخر أخبار المجموعة",
+    "sectors": {
+      "finance": "المالية",
+      "tradeExport": "التجارة والتصدير",
+      "agriculture": "الزراعة",
+      "security": "الأمن",
+      "advertising": "الإعلان",
+      "sport": "الرياضة"
+    }
+  },
+  "newsVideo": {
+    "onAir": "مباشر",
+    "tvCommercial": "إعلان تلفزيوني"
+  },
+  "careersHero": {
+    "description": "ثماني شركات. فريق واحد. ابنِ مسيرتك المهنية في المالية والتصدير والزراعة والأمن والإعلان وتطوير الرياضيين.",
+    "companiesOneGroup": "شركات، مجموعة واحدة"
+  },
+  "openRoles": {
+    "loading": "جارٍ تحميل الوظائف...",
+    "noPositions": "لا توجد وظائف {{type}} متاحة في الوقت الحالي."
   }
 }

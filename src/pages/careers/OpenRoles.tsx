@@ -86,7 +86,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
           {loading && (
             <div className="border border-slate-200 bg-white py-10 text-center">
               <div className="mx-auto mb-2 h-5 w-5 animate-spin rounded-full border-2 border-(--color-teal) border-t-transparent" />
-              <p className="text-sm text-slate-500">Loading openings…</p>
+              <p className="text-sm text-slate-500">{t("openRoles.loading")}</p>
             </div>
           )}
 
@@ -165,7 +165,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
               {filteredRoles.length === 0 && (
                 <div className="px-5 py-10 text-center">
                   <p className="text-sm text-slate-500">
-                    No {activeType.toLowerCase()} positions available at the moment.
+                    {t("openRoles.noPositions", { type: activeType.toLowerCase() })}
                   </p>
                 </div>
               )}

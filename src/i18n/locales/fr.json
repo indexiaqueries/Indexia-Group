@@ -1108,5 +1108,78 @@
     "careersName": "Open roles at Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
+  },
+  "notFoundPage": {
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'Accueil"
+  },
+  "applyPage": {
+    "successTitle": "Candidature Soumise !",
+    "successBody": "Merci d'avoir postulé pour le poste de <strong>{{role}}</strong>. Notre équipe RH a reçu votre candidature et l'examinera prochainement.",
+    "successSentTo": "Candidature envoyée à",
+    "backToCareers": "Retour aux Carrières",
+    "heroTitle": "Postuler pour",
+    "roleDetails": "Détails du Poste",
+    "responsibilities": "Responsabilités et Exigences",
+    "infoBanner": "Remplissez le formulaire ci-dessous et nous enverrons votre candidature directement à notre équipe RH. Joignez votre CV et expliquez pourquoi vous êtes un excellent candidat.",
+    "fullName": "Nom Complet",
+    "fullNamePlaceholder": "Votre nom complet",
+    "email": "Adresse E-mail",
+    "phone": "Téléphone",
+    "phonePlaceholder": "Numéro à 10 chiffres",
+    "experience": "Expérience",
+    "selectExperience": "Sélectionnez l'expérience",
+    "fresher": "Débutant",
+    "lessThan1Year": "Moins d'1 an",
+    "1to2Years": "1-2 ans",
+    "2to5Years": "2-5 ans",
+    "5plusYears": "5+ ans",
+    "resume": "CV",
+    "clickToUpload": "Cliquez pour télécharger le CV",
+    "clickToReplace": "Cliquez pour remplacer",
+    "resumeFormats": "PDF, DOC ou DOCX (max 5 Mo)",
+    "tellUsAboutYourself": "Parlez-nous de vous",
+    "introPlaceholder": "Partagez votre parcours, vos compétences et pourquoi ce poste vous intéresse...",
+    "submitting": "Envoi en cours...",
+    "submitApplication": "Soumettre la Candidature",
+    "submitNote": "Votre candidature sera envoyée à hr@indexiafinance.com et hr.indexia@gmail.com.",
+    "errorNameEmpty": "Veuillez entrer votre nom.",
+    "errorNameShort": "Le nom doit contenir au moins 2 caractères.",
+    "errorNameLetters": "Le nom doit contenir des lettres.",
+    "errorEmailEmpty": "Veuillez entrer votre adresse e-mail.",
+    "errorEmailInvalid": "Veuillez entrer une adresse e-mail valide.",
+    "errorPhoneEmpty": "Veuillez entrer votre numéro de téléphone.",
+    "errorPhoneInvalid": "Veuillez entrer un numéro de téléphone à 10 chiffres valide.",
+    "errorExperience": "Veuillez sélectionner votre niveau d'expérience.",
+    "errorResume": "Veuillez télécharger votre CV.",
+    "errorIntroEmpty": "Veuillez vous présenter.",
+    "errorIntroShort": "Veuillez écrire au moins 20 caractères.",
+    "errorFileSize": "La taille du fichier doit être inférieure à 5 Mo.",
+    "errorFileType": "Seuls les fichiers PDF, DOC ou DOCX sont acceptés.",
+    "errorSubmit": "Impossible de soumettre votre candidature. Veuillez réessayer plus tard."
+  },
+  "newsHero": {
+    "latestLabel": "Dernières nouvelles du groupe",
+    "sectors": {
+      "finance": "Finance",
+      "tradeExport": "Commerce et Export",
+      "agriculture": "Agriculture",
+      "security": "Sécurité",
+      "advertising": "Publicité",
+      "sport": "Sport"
+    }
+  },
+  "newsVideo": {
+    "onAir": "À l'Antenne",
+    "tvCommercial": "Publicité TV"
+  },
+  "careersHero": {
+    "description": "Huit entreprises. Une équipe. Construisez votre carrière dans la finance, l'export, l'agriculture, la sécurité, la publicité et le développement sportif.",
+    "companiesOneGroup": "entreprises, un groupe"
+  },
+  "openRoles": {
+    "loading": "Chargement des postes...",
+    "noPositions": "Aucun poste de {{type}} disponible pour le moment."
   }
 }

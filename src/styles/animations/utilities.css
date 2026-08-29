@@ -38,4 +38,32 @@
 .kenburns  { animation: kenburns 6.5s ease-in-out infinite alternate; }
 .morph-zoom { animation: morph-zoom 0.8s ease-out both; }
 
+/* ================================================================
+   View Transitions API — smooth cross-fade between SPA pages
+   ================================================================ */
+@view-transition {
+  navigation: auto;
+}
+
+/* The main content area cross-fades */
+::view-transition-old(main-content),
+::view-transition-new(main-content) {
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* The header stays fixed — no transition */
+::view-transition-old(site-header),
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation-duration: 0s;
+  }
+}
+
 

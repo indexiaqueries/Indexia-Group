@@ -74,7 +74,7 @@ const NewsVideo = () => {
                       <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.6)]" />
                     </span>
                     <span className="text-[10px] font-semibold uppercase tracking-widest text-white/90">
-                      On Air
+                      {t("newsVideo.onAir")}
                     </span>
                   </span>
 
@@ -89,7 +89,7 @@ const NewsVideo = () => {
             {/* Bottom bar */}
             <div className="flex items-center justify-between border-t border-white/[0.06] bg-gradient-to-r from-[#0a1929] via-[#0d1f35] to-[#0a1929] px-5 py-3">
               <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/30">
-                TV Commercial
+                {t("newsVideo.tvCommercial")}
               </span>
               <span className="rounded bg-(--color-yellow)/10 px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-yellow)">
                 News18

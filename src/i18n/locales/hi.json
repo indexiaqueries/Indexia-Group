@@ -1106,5 +1106,78 @@
     "careersName": "Open roles at Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
     "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
+  },
+  "notFoundPage": {
+    "title": "पृष्ठ नहीं मिला",
+    "description": "आप जो पृष्ठ खोज रहे हैं वह मौजूद नहीं है या स्थानांतरित कर दिया गया है।",
+    "backHome": "होम पेज पर वापस जाएं"
+  },
+  "applyPage": {
+    "successTitle": "आवेदन जमा हो गया!",
+    "successBody": "<strong>{{role}}</strong> पद के लिए आवेदन करने के लिए धन्यवाद। हमारी HR टीम ने आपका आवेदन प्राप्त कर लिया है और शीघ्र ही इसकी समीक्षा करेगी।",
+    "successSentTo": "आवेदन भेजा गया",
+    "backToCareers": "करियर पर वापस जाएं",
+    "heroTitle": "के लिए आवेदन करें",
+    "roleDetails": "पद विवरण",
+    "responsibilities": "जिम्मेदारियां और आवश्यकताएं",
+    "infoBanner": "नीचे दिया गया फॉर्म भरें और हम आपका आवेदन सीधे हमारी HR टीम को भेज देंगे। अपना रिज्यूमे संलग्न करें और बताएं कि आप इस भूमिका के लिए क्यों उपयुक्त हैं।",
+    "fullName": "पूरा नाम",
+    "fullNamePlaceholder": "आपका पूरा नाम",
+    "email": "ईमेल",
+    "phone": "फ़ोन",
+    "phonePlaceholder": "10 अंकों का नंबर",
+    "experience": "अनुभव",
+    "selectExperience": "अनुभव चुनें",
+    "fresher": "बिना अनुभव",
+    "lessThan1Year": "1 वर्ष से कम",
+    "1to2Years": "1-2 वर्ष",
+    "2to5Years": "2-5 वर्ष",
+    "5plusYears": "5+ वर्ष",
+    "resume": "रिज्यूमे",
+    "clickToUpload": "रिज्यूमे अपलोड करने के लिए क्लिक करें",
+    "clickToReplace": "बदलने के लिए क्लिक करें",
+    "resumeFormats": "PDF, DOC या DOCX (अधिकतम 5MB)",
+    "tellUsAboutYourself": "हमें अपने बारे में बताएं",
+    "introPlaceholder": "अपनी पृष्ठभूमि, कौशल और इस भूमिका में रुचि के बारे में बताएं...",
+    "submitting": "जमा हो रहा है...",
+    "submitApplication": "आवेदन जमा करें",
+    "submitNote": "आपका आवेदन hr@indexiafinance.com और hr.indexia@gmail.com पर भेजा जाएगा।",
+    "errorNameEmpty": "कृपया अपना नाम दर्ज करें।",
+    "errorNameShort": "नाम कम से कम 2 अक्षरों का होना चाहिए।",
+    "errorNameLetters": "नाम में अक्षर होने चाहिए।",
+    "errorEmailEmpty": "कृपया अपना ईमेल पता दर्ज करें।",
+    "errorEmailInvalid": "कृपया एक मान्य ईमेल पता दर्ज करें।",
+    "errorPhoneEmpty": "कृपया अपना फ़ोन नंबर दर्ज करें।",
+    "errorPhoneInvalid": "कृपया एक मान्य 10 अंकों का फ़ोन नंबर दर्ज करें।",
+    "errorExperience": "कृपया अपना अनुभव स्तर चुनें।",
+    "errorResume": "कृपया अपना रिज्यूमे अपलोड करें।",
+    "errorIntroEmpty": "कृपया हमें अपने बारे में बताएं।",
+    "errorIntroShort": "कृपया कम से कम 20 अक्षर लिखें।",
+    "errorFileSize": "फ़ाइल का आकार 5MB से कम होना चाहिए।",
+    "errorFileType": "केवल PDF, DOC या DOCX फ़ाइलें स्वीकार की जाती हैं।",
+    "errorSubmit": "आपका आवेदन जमा नहीं हो सका। कृपया बाद में पुनः प्रयास करें।"
+  },
+  "newsHero": {
+    "latestLabel": "समूह से नवीनतम",
+    "sectors": {
+      "finance": "वित्त",
+      "tradeExport": "व्यापार और निर्यात",
+      "agriculture": "कृषि",
+      "security": "सुरक्षा",
+      "advertising": "विज्ञापन",
+      "sport": "खेल"
+    }
+  },
+  "newsVideo": {
+    "onAir": "ऑन एयर",
+    "tvCommercial": "टीवी विज्ञापन"
+  },
+  "careersHero": {
+    "description": "आठ कंपनियां। एक टीम। वित्त, निर्यात, कृषि, सुरक्षा, विज्ञापन और एथलीट विकास में अपना करियर बनाएं।",
+    "companiesOneGroup": "कंपनियां, एक समूह"
+  },
+  "openRoles": {
+    "loading": "पद लोड हो रहे हैं...",
+    "noPositions": "फिलहाल कोई {{type}} पद उपलब्ध नहीं है।"
   }
 }
