@@ -2,12 +2,101 @@ import { useTranslation } from "react-i18next";
 import { newsArticles, knowledgeInsights } from "../../data/news";
 import { companies } from "../../data/companies";
 import { colors } from "../../lib/theme";
+import { useLiveNews, type LiveArticle } from "../../hooks/useLiveNews";
 
-export type ArticleItem = (typeof newsArticles)[number];
+export type ArticleItem = {
+  slug: string;
+  title: string;
+  category: string;
+  company: string;
+  date?: string;
+  excerpt: string;
+  featured?: boolean;
+  image?: string;
+  source?: string;
+  articleUrl?: string;
+};
+
 export type InsightItem = (typeof knowledgeInsights)[number];
 
 export const companyColor = (name: string) =>
   companies.find((c) => c.name === name)?.color ?? colors.blue;
+
+// Map live API categories to display categories
+const LIVE_CATEGORY_MAP: Record<string, string> = {
+  finance: "Finance",
+  warehouse: "Warehousing",
+  export: "Trade & Export",
+  athlete: "Sports",
+};
+
+// Map live API categories to company names
+const LIVE_COMPANY_MAP: Record<string, string> = {
+  finance: "Indexia Finance",
+  warehouse: "Indexia Warehouse",
+  export: "Indexia Overseas",
+  athlete: "Indexia Foundation",
+};
+
+/**
+ * Convert a live API article to the ArticleItem format.
+ */
+function liveToArticleItem(article: LiveArticle, _index: number): ArticleItem {
+  const publishedDate = article.publishedAt
+    ? new Date(article.publishedAt).toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      })
+    : "";
+
+  return {
+    slug: `live-${article.category}-${_index}`,
+    title: article.title,
+    category: LIVE_CATEGORY_MAP[article.category] || article.category,
+    company: LIVE_COMPANY_MAP[article.category] || article.source,
+    date: publishedDate,
+    excerpt:
+      article.description.length > 200
+        ? article.description.substring(0, 197) + "..."
+        : article.description,
+    image: article.image,
+    source: article.source,
+    articleUrl: article.articleUrl,
+  };
+}
+
+/**
+ * Merge live API articles with static fallback articles.
+ * Live articles take priority; static articles fill remaining slots.
+ */
+function mergeArticles(
+  liveNews: Record<string, LiveArticle[]>,
+  staticArticles: typeof newsArticles
+): ArticleItem[] {
+  const liveItems: ArticleItem[] = [];
+
+  // Convert all live articles
+  for (const [_cat, articles] of Object.entries(liveNews)) {
+    articles.forEach((article, i) => {
+      liveItems.push(liveToArticleItem(article, i));
+    });
+  }
+
+  if (liveItems.length > 0) {
+    // Mark the first live article as featured
+    liveItems[0].featured = true;
+    return liveItems;
+  }
+
+  // Fallback to static articles
+  return staticArticles.map((a) => ({
+    ...a,
+    image: undefined,
+    source: undefined,
+    articleUrl: undefined,
+  }));
+}
 
 export const useNewsJsonLd = () => {
   const { t } = useTranslation();
@@ -29,8 +118,18 @@ export const useNewsJsonLd = () => {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome", "Home"), item: "https://www.indexiagroup.com/" },
-          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbNews", "News & Knowledge Centre"), item: "https://www.indexiagroup.com/news" },
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: t("jsonLd.breadcrumbHome", "Home"),
+            item: "https://www.indexiagroup.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: t("jsonLd.breadcrumbNews", "News & Knowledge Centre"),
+            item: "https://www.indexiagroup.com/news",
+          },
         ],
       },
     ],
@@ -39,14 +138,25 @@ export const useNewsJsonLd = () => {
 
 export const useNewsContent = () => {
   const { t } = useTranslation();
-  const tr = (path: string, fallback: string) => t(`pageContent.news.${path}`, { defaultValue: fallback });
+  const { news: liveNews, loading } = useLiveNews(5);
+  const tr = (path: string, fallback: string) =>
+    t(`pageContent.news.${path}`, { defaultValue: fallback });
 
-  const articles = newsArticles.map((a) => ({
+  // Merge live articles with static fallback
+  const allArticles = mergeArticles(liveNews, newsArticles);
+
+  // Apply translations to article titles/excerpts from static data
+  const articles = allArticles.map((a) => ({
     ...a,
-    title: tr(`articles.${a.slug}.title`, a.title),
-    category: tr(`articles.${a.slug}.category`, a.category),
-    excerpt: tr(`articles.${a.slug}.excerpt`, a.excerpt),
+    title: a.articleUrl ? a.title : tr(`articles.${a.slug}.title`, a.title),
+    category: a.articleUrl
+      ? a.category
+      : tr(`articles.${a.slug}.category`, a.category),
+    excerpt: a.articleUrl
+      ? a.excerpt
+      : tr(`articles.${a.slug}.excerpt`, a.excerpt),
   }));
+
   const insights = knowledgeInsights.map((ins) => ({
     ...ins,
     title: tr(`insights.${ins.key}.title`, ins.title),
@@ -56,5 +166,5 @@ export const useNewsContent = () => {
   const featured = articles.find((a) => a.featured) ?? articles[0];
   const latest = articles.filter((a) => a !== featured);
 
-  return { articles, insights, featured, latest };
+  return { articles, insights, featured, latest, loading };
 };

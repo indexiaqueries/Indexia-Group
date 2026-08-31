@@ -1,384 +1,870 @@
 {
-  "header": {
-    "nav": {
-      "contact": "İletişim",
-      "about": "Hakkımızda"
-    },
-    "menu": {
-      "home": "Ana Sayfa",
-      "groupCompanies": "Grup Şirketleri",
-      "companies": "Şirketler",
-      "contact": "İletişim"
-    },
-    "aria": {
-      "selectLanguage": "Dil seçin",
-      "toggleMenu": "Menüyü aç/kapat",
-      "closeMenu": "Menüyü kapat"
-    }
+  "aboutPage": {
+    "aboutUs": "Hakkımızda",
+    "c1Body": "2012'de kurulan Indexia Finance, Hindistan'ın en büyük uluslararası finans şirketidir.",
+    "c1Highlights": "43+ Kredi Veren Ortaklar,4 Şehirde 5 Şube,2016 En İyi Finans Şirketi Ödülü,Küresel Varlık",
+    "c1Name": "Indexia Finance",
+    "c1Tag": "Çok uluslu Fintech",
+    "c2Body": "Indexia Finserve, Indexia Group'un özel kredi koludur.",
+    "c2Highlights": "12 Kredi Ürünü,Kişisel ve İş Kredileri,Konut Kredisi ve Teminatlı Kredi,Bakiye Transferi ve İşletme Sermayesi",
+    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Tag": "Kredi Kolu",
+    "c3Body": "Indexia Overseas, Indexia Group'un küresel ihracat koludur.",
+    "c3Highlights": "14 Güney Amerika Ülkesi,Premium Rafine Şeker İhracatı,Gıda Sınıfı Kalite Belgeli,Tam Döngü İhracat Yönetimi",
+    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Tag": "Küresel İhracat",
+    "c4Body": "Indexia Agro Bio Fertilizers, Hint tarımını dönüştürmeye adanmıştır.",
+    "c4Highlights": "%100 Organik Bio Gübreler,Shamli UP'da Üretim,Toprak Testi ve Çiftçi Desteği,Yurtiçi ve İhracat Dağıtımı",
+    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Tag": "Organik Tarım",
+    "c5Body": "Indexia Securities, önde gelen güvenlik çözümleri sağlayıcısıdır.",
+    "c5Highlights": "Eski Askeri Komandolar,24/7 Operasyon Merkezi,VIP ve Kurumsal Koruma,Kritik Altyapı Güvenliği",
+    "c5Name": "Indexia Securities",
+    "c5Tag": "Silahlı Koruma",
+    "c6Body": "Indexia Warehouse, stratejik arazi kiralama fırsatı sunar.",
+    "c6Highlights": "Shamli UP'da 21 Acre,8 Otoyol,5 Konum,Delhi'den 65 km",
+    "c6Name": "Indexia Warehouse",
+    "c6Tag": "Stratejik Arazi",
+    "c7Body": "Indexia Advertising, premium reklam panoları işletmektedir.",
+    "c7Highlights": "NH-709B Delhi-Dehradun Otoyolu,10 Bağlı Eyalet,360° Görünürlük,1+ Crore Günlük Maruz Kalma",
+    "c7Name": "Indexia Advertising",
+    "c7Tag": "Otoyol Reklamı",
+    "c8Body": "Indexia Foundation, Indexia Group'un sosyal etki koludur.",
+    "c8Highlights": "Tabandan Olimpiyatlara,Eğitim ve Beslenme,Koçluk ve Mentorluk,Yarışma Finansmanı",
+    "c8Name": "Indexia Foundation",
+    "c8Tag": "Sosyal Etki",
+    "companiesEyebrow": "Şirketlerimiz",
+    "companiesSubtitle": "Mumbai'deki tek finansal hizmet şirketinden sekiz şirketten oluşan çeşitlendirilmiş gruba.",
+    "companiesTitle": "Sekiz İş, Bir Vizyon",
+    "ctaBody": "Finansal hizmetler, ortaklık ya da daha fazla bilgi arıyorsanız, buradayız.",
+    "ctaButton": "İletişim",
+    "ctaTitle": "Birlikte Bir Şeyler İnşa Edelim",
+    "eyebrow": "Hakkımızda",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderName": "Kurucu ve Genel Müdür",
+    "founderQuote": "İş, güven üzerine kuruludur. Dürüstlük üzerine inşa ettiğinizde, gerisi gelir.",
+    "founderRole": "Kurucu ve İcra Kurulu Başkanı",
+    "leaderEyebrow": "Liderlik",
+    "leaderTitle": "Indexia Group'un Arkasındaki Vizyoner",
+    "learnMore": "Daha Fazla Bilgi",
+    "mcaPortal": "MCA Portalı",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
+    "milestone1Body": "Indexia Group Mumbai'de ilk şirketini kurdu.",
+    "milestone1Title": "Mumbai'de Kuruldu",
+    "milestone1Year": "2012",
+    "milestone2Body": "Delhi NCR'ye genişledi.",
+    "milestone2Title": "Ulusal Genişleme",
+    "milestone2Year": "2015",
+    "milestone3Body": "Güney Amerika'ya şeker ihracatıyla uluslararası pazarlara girdi.",
+    "milestone3Title": "Küresel Erişim",
+    "milestone3Year": "2018",
+    "milestone4Body": "Agro Bio, Securities, Warehouse ve Advertising'i başlattı.",
+    "milestone4Title": "Çeşitlilik",
+    "milestone4Year": "2021",
+    "milestone5Body": "Hint sporcuları desteklemek için Indexia Foundation'u kurdu.",
+    "milestone5Title": "Sosyal Etki",
+    "milestone5Year": "2024",
+    "registrationEyebrow": "Kayıt ve Uyumluluk",
+    "registrationNote": "Tüm kayıtlar şurada doğrulanabilir",
+    "registrationSubtitle": "Tüm Indexia Group şirketleri 2013 Şirketler Yasası kapsamında kayıtlıdır.",
+    "registrationTitle": "Kayıtlı Kuruluşlar",
+    "stat1Label": "Şirketler",
+    "stat1Value": "08",
+    "stat2Label": "Lokasyonlar",
+    "stat2Value": "03",
+    "stat3Label": "Yıllık İş Deneyimi",
+    "stat3Value": "12+",
+    "stat4Label": "Hizmet Verilen Ülkeler",
+    "stat4Value": "14",
+    "storyBody1": "Indexia Group, Hint şirketlerinin küresel olarak rekabet edebileceğine dair basit bir inançla kuruldu.",
+    "storyBody2": "Bugün Indexia Group üç konumda faaliyet gösteriyor, Mumbai, Delhi ve Ekvador.",
+    "storyEyebrow": "Hikayemiz",
+    "storyTitle": "Ortak Bir Vizyondan Ulusal Bir Gruba",
+    "subtitle": "Bütünlük, uzmanlık ve insana odaklı yaklaşıma bağlı Hint iş grubu.",
+    "taglineSecondary": "Çeşitli Girişimler. Birliği Vizyon.",
+    "timelineEyebrow": "Yolculuğumuz",
+    "timelineTitle": "Ana Kilometre Taşları",
+    "title": "Indexia Group Hakkında",
+    "titleAccent": "Sektörler Genelinde.",
+    "titleStart": "Güven İnşa Etmek ",
+    "value1Body": "Söylediğimizi yaparız.",
+    "value1Title": "Dürüstlük",
+    "value2Body": "Derin alan bilgisine yatırım yapıyoruz.",
+    "value2Title": "Uzmanlık",
+    "value3Body": "İş sonuçta insanlarla ilgilidir.",
+    "value3Title": "İnsanlar Önce",
+    "value4Body": "Değişimi kucaklıyor ve sürekli geliştiriyoruz.",
+    "value4Title": "İnovasyon",
+    "valuesEyebrow": "Değerlerimiz",
+    "valuesTitle": "Savunduğumuz Şeyler",
+    "viewOnMCA": "MCA'da Görüntüle",
+    "visitWebsite": "Web Sitesini Ziyaret Et"
   },
-  "hero": {
-    "p0": {
-      "tag": "Indexia Group",
-      "heading": "Tek Grup.\nÇoklu Çözümler.",
-      "tagline": "Çeşitli Girişimler. Birliği Vizyon.",
-      "sub": "Finanstan lojistiğe, tarımdan reklamcılığa kadar Indexia Group, güvenilir ve geleceğe hazır işletmeleriyle sektörler arası büyümeyi güçlendirir.",
-      "motto": "Ulusa hizmet etmek için bazı adımlar"
-    },
-    "p1": {
-      "tag": "Indexia Finance",
-      "heading": "Eksiksiz Bir\nKredi Merkezi.",
-      "sub": "Her türlü kredi için portalımıza www.indexiafinance.com adresinden başvurabilirsiniz. Hizmetlerimizi küresel olarak sunuyoruz, Hindistan'da 43 banka ve NBFC ile iş ortağıyız."
-    },
-    "p2": {
-      "tag": "Indexia Finserve Pvt. Ltd.",
-      "heading": "Yeni Nesil\nFinans Yöntemi.",
-      "sub": "Artık doğru banka kapınıza gelecek."
-    },
-    "p3": {
-      "tag": "Indexia Overseas Pvt. Ltd.",
-      "heading": "Rafine Şeker &\nTüm Gıda Ürünleri.",
-      "sub": "Rafine şeker ve tüm gıda ürünlerinin ticaretini ve ihracatını yapıyoruz."
-    },
-    "p4": {
-      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-      "heading": "Organik Gübre\nÜretiyor & İhraç Ediyoruz",
-      "sub": "Hindistan'da organik gübre üretiyor ve dünya geneline ihraç ediyoruz."
-    },
-    "p5": {
-      "tag": "Indexia Securities",
-      "heading": "Silahlı Komandolar &\nSilahlı Güvenlik",
-      "sub": "Siyasetçileri ve büyük iş insanlarını koruyoruz."
-    },
-    "p6": {
-      "tag": "Indexia Warehouse",
-      "heading": "Ölçek İçin\nİnşa Edilmiş Depolama.",
-      "sub": "Ürünlerin verimli şekilde hareket etmesini sağlayan modern depolama ve lojistik altyapısı."
-    },
-    "p7": {
-      "tag": "Indexia Advertising",
-      "heading": "Markanız\nHer Otoyolda.",
-      "sub": "Otoyollar boyunca uzanan çok sayıda reklam alanıyla markalara yüksek görünürlüklü kampanyalar sunuyoruz."
-    },
-    "p8": {
-      "tag": "Indexia Foundation",
-      "heading": "Sporcuları\nGüçlendiriyoruz.",
-      "sub": "Sporcuları zirve performansa giden yolda eğiten, yönlendiren ve finanse eden spor programları."
-    },
-    "ctaExploreGroup": "Grup Şirketlerini Keşfedin",
-    "ctaExploreMore": "Daha Fazla Keşfet",
-    "prevPanel": "Önceki panel",
-    "nextPanel": "Sonraki panel"
+  "advertisingContact": {
+    "address": "Ofis Adresi",
+    "brochure": "Broşürü indir",
+    "emails": "E-posta",
+    "eyebrow": "İletişim",
+    "phones": "Telefon",
+    "title": "Yerinizi Bugün Ayırtın"
   },
-  "footer": {
-    "tagline": "Çeşitlendirilmiş Hint İş Grubu",
-    "blurb": "Tek bir çeşitlendirilmiş Hint grubu altında sekiz güvenilir işletme, finans, ihracat, tarım, lojistik, güvenlik, reklamcılık ve sporcu desteği, dürüstlük ve sonuç üzerine inşa edilmiştir.",
-    "contactUs": "İletişim",
-    "hours": "Pzt - Cmt: 09.00 - 18.00",
-    "company": "Şirket",
-    "resources": "Kaynaklar",
-    "legal": "Yasal",
-    "links": {
-      "groupCompanies": "Grup Şirketleri",
-      "advertise": "Bizimle Reklam Verin",
-      "careers": "Kariyer",
-      "news": "Haber & Bilgi Merkezi",
-      "globalResearch": "Küresel Araştırma",
-      "securityTips": "Güvenlik İpuçları",
-      "termsOfUse": "Kullanım Koşulları",
-      "termsConditions": "Şartlar & Koşullar",
-      "privacyPolicy": "Gizlilik Politikası",
-      "aboutUs": "Hakkımızda"
-    },
-    "cta": "Grup şirketlerimizden biriyle ilgili bir sorunuz mu var?",
-    "enquiry": "Sorunuzu bize iletin.",
-    "stats": "Indexia Group · 08 Şirket · 03 Şehir",
-    "rights": "© 2026 Indexia Group. Tüm hakları saklıdır.",
-    "backToTop": "Başa dön",
-    "taglineSecondary": "Çeşitli Girişimler. Birliği Vizyon."
-  },
-  "home": {
-    "groupCompanies": {
-      "title": "Grup Şirketleri",
-      "description": "Indexia Group; Finans, İhracat, Tarım, Depolama, Güvenlik, Sosyal Etki ve Reklamcılık alanlarını kapsayan çeşitlendirilmiş bir holdingdir. Müşterileri, Ortakları ve Toplulukları güvenle büyümeleri için güçlendiren işletmeler kuruyoruz."
-    }
-  },
-  "businesses": {
-    "eyebrow": "Grup Şirketleri",
-    "titleStart": "Sekiz Şirket, ",
-    "titleAccent": "Tek Grup",
-    "subtitle": "Kendi sayfasını ziyaret etmek için bir şirket seçin, ardından sorunuzu doğru ekibe iletin."
-  },
-  "businessesHero": {
-    "eyebrow": "Indexia Farkı",
-    "titleStart": "Tek Grup. Sekiz İşletme. ",
-    "titleAccent": "Tek Ortak Söz.",
-    "paragraph": "Finans ve danışmanlıktan ihracat, tarım, lojistik, güvenlik, spor ve medyaya kadar, her Indexia işletmesi aynı temel üzerine kuruludur: dürüstlük, uzmanlık ve insan odaklı yaklaşım. Ne ihtiyacınız olursa olsun, doğru ekip zaten ailenin bir parçasıdır.",
-    "counterClients": "Hizmet Verilen Müşteri",
-    "counterBusinesses": "İşletme",
-    "counterLocations": "Şehir",
-    "counterYears": "Faaliyet Yılı",
-    "cta": "Ücretsiz Danışmanlık Rezervasyonu →"
-  },
-  "contactHero": {
-    "eyebrow": "Indexia ile Konuşun",
-    "title": "Ekibimize Doğrudan Hat",
-    "paragraph": "Belge sorularından yeni kredi başvurularına kadar her mesaj, bir kuyruk değil, ekibimizin bir üyesi tarafından incelenir ve yanıtlanır.",
-    "sendEnquiry": "Sorunuzu Gönderin",
-    "callNow": "Hemen Arayın · 86551 68551",
-    "offices": "{{count}} ofis",
-    "directLines": "{{count}} doğrudan hat",
-    "reply": "< 24 saat ortalama yanıt"
-  },
-  "contactInfo": {
-    "eyebrow": "Sorunuzu Gönderin",
-    "headlineStart": "",
-    "headlineAccent": "Indexia Şirketi Hakkında Sorun",
-    "paragraph": "Hizmetlerimizle ilgili bir sorunuz, iş danışmanlığı ihtiyacınız veya ortaklık keşfetme isteğiniz olsun, ekibimiz size yardımcı olmaya hazırdır, 24 saat içinde yanıt veriyoruz.",
-    "enquiries": "Sorular",
-    "location": "Konum",
-    "workingHours": "Çalışma Saatleri",
-    "phoneNumbers": "Telefon Numaraları",
-    "country": "Hindistan"
-  },
-  "form": {
-    "eyebrow": "Sorunuzu Gönderin",
-    "intro": "Aşağıdaki formu doldurun; sorunuz ekibimiz tarafından ele alınacaktır.",
-    "name": "Ad Soyad",
-    "namePlaceholder": "Adınız soyadınız",
-    "email": "E-posta Adresi",
-    "emailPlaceholder": "you@example.com",
-    "phone": "Telefon Numarası",
-    "phonePlaceholder": "10 haneli numara",
-    "subject": "Konu / Şirket",
-    "subjectPlaceholder": "Bir şirket seçin…",
-    "message": "Mesaj",
-    "messagePlaceholder": "Sorunuzu buraya yazın...",
-    "submit": "Soruyu Gönder",
-    "sending": "Gönderiliyor…",
-    "success": "Sorunuz gönderildi! Ekibimiz en kısa sürede sizinle iletişime geçecek.",
-    "errorName": "Lütfen adınızı girin.",
+  "applyPage": {
+    "1to2Years": "1-2 yıl",
+    "2to5Years": "2-5 yıl",
+    "5plusYears": "5+ yıl",
+    "backToCareers": "Kariyere Dön",
+    "clickToReplace": "Değiştirmek için tıklayın",
+    "clickToUpload": "Özgeçmiş yüklemek için tıklayın",
+    "email": "E-posta",
+    "errorEmailEmpty": "Lütfen e-posta adresinizi girin.",
+    "errorEmailInvalid": "Lütfen geçerli bir e-posta adresi girin.",
+    "errorExperience": "Lütfen deneyim seviyenizi seçin.",
+    "errorFileSize": "Dosya boyutu 5MB'dan küçük olmalıdır.",
+    "errorFileType": "Yalnızca PDF, DOC veya DOCX dosyaları kabul edilir.",
+    "errorIntroEmpty": "Lütfen kendinizden bahsedin.",
+    "errorIntroShort": "Lütfen en az 20 karakter yazın.",
+    "errorNameEmpty": "Lütfen adınızı girin.",
     "errorNameLetters": "Ad harf içermelidir.",
-    "errorPhone": "Geçerli bir 10 haneli telefon numarası girin.",
-    "errorEmail": "Geçerli bir e-posta adresi girin.",
-    "errorSubject": "Lütfen bir konu veya şirket seçin.",
-    "errorMessage": "Lütfen mesajınızı girin.",
-    "errorGeneric": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
-    "generalEnquiry": "Genel Soru"
-  },
-  "companyDetail": {
-    "backAll": "Tüm Şirketler",
-    "register": "Kayıt No. {{no}} / 08",
-    "keyEntries": "Ana kayıtlar",
-    "servicesTitle": "Bu kayıt altındaki hizmetler",
-    "registerOf": "Indexia Group · Şirketler Sicili",
-    "entryOf": "Kayıt {{no}} / 08",
-    "eyebrow": "Sorunuzu Gönderin",
-    "enquireTitle": "{{name}} Hakkında Sorun",
-    "enquireSub": "Sorunuzun başında {{name}} adı yer alır; böylece doğru ekip önce onu ele alır.",
-    "responseTime": "Yanıt süresi",
-    "responseValue": "24 saat içinde, Pzt – Cmt",
-    "overviewEyebrow": "Genel Bakış",
-    "overviewTitle": "{{name}} Hakkında",
-    "exploreServices": "Hizmetleri Keşfedin",
-    "statServices": "Hizmet",
-    "statHighlights": "Öne Çıkanlar",
-    "statRegister": "Sicil Kaydı",
-    "mainPoint": "Ana nokta",
-    "whyChoose": "Neden bizi seçin",
-    "whyChooseDesc": "Bu şirketi diğerlerinden ayıran özellik.",
-    "keyNumbers": "Temel rakamlar",
-    "keyNumbersDesc": "Etkimizi tanımlayan rakamlar.",
-    "globalReach": "Küresel erişim",
-    "globalReachDesc": "Sınır ötesi ve pazarlardaki varlığımız."
-  },
-  "contact": {
-    "locationsTitleStart": "Ofislerimiz",
-    "locationsTitleAccent": ""
-  },
-  "businessCard": {
-    "tapToView": "Görmek için dokunun",
-    "readMore": "Daha fazla oku"
-  },
-  "companyLinkCard": {
-    "visitPage": "Sayfayı ziyaret et",
-    "visitWebsiteAria": "{{name}} web sitesini ziyaret et",
-    "visitPageAria": "{{name}} sayfasını ziyaret et",
-    "visualAlt": "{{name}} görseli"
-  },
-  "newsPage": {
-    "eyebrow": "Haber & Bilgi Merkezi",
-    "title": "Haber & Bilgi Merkezi",
-    "titleStart": "Grup Genelinden ",
-    "titleAccent": "Hikayeler ve Görüşler.",
-    "subtitle": "En güncel bankacılık haberleri, finansman güncellemeleri, dijital ödemeler, politika değişiklikleri ve piyasa gelişmeleri, ayrıca işletmelerimizden pratik rehberler.",
-    "tvEyebrow": "Bizi TV'de İzleyin",
-    "tvHeadingStart": "Tüm Kredi İhtiyaçlarınız İçin",
-    "tvHeadingAccent": "Indexia Finance",
-    "tvCaption": "Kredi Gerekirse… Indexia Finance",
-    "featuredLabel": "Öne Çıkan Haber",
-    "readMore": "Devamını Oku",
-    "askUs": "Bize Sorun",
-    "knowledgeEyebrow": "Bilgi Merkezi",
-    "knowledgeHeading": "İşletmelerimizden Pratik Rehberler",
-    "knowledgeSubtitle": "Bu işi her gün yapan ekiplerin yazdığı anlaşılır açıklamalar.",
-    "ctaTitle": "İşletmelerimiz hakkında bir sorunuz mu var?",
-    "ctaBody": "FDI danışmanlığından organik tarıma, silahlı güvenliğe kadar, doğru Indexia şirketi yardıma hazır. Bize bir soru gönderin, sizi bağlayalım.",
-    "ctaButton": "Sorunuzu Gönderin",
-    "metaDescription": "Haber & Bilgi Merkezi, finansman, dijital ödemeler ve politika hakkında en güncel bankacılık haberleri, ayrıca Indexia Group'tan pratik bilgi rehberleri."
-  },
-  "careersPage": {
-    "eyebrow": "Kariyer",
-    "title": "Indexia Group'ta Kariyer",
-    "titleStart": "Kariyerinizi Bizimle ",
-    "titleAccent": "İnşa Edin.",
-    "subtitle": "Indexia Group öğrenen bir organizasyondur, ve kurum kültürü de ekibidir.",
-    "ctaButton": "Açık Pozisyonları Görüntüle",
-    "cultureEyebrow": "Kültürümüz",
-    "cultureHeading": "Öğrenen Bir Organizasyon",
-    "rolesEyebrow": "Açık Pozisyonlar",
-    "rolesHeading": "Güncel İş İlanlarımız",
-    "rolesSubtitle": "Güncel iş ilanlarımız şunlardır:",
-    "apply": "Başvur",
-    "ctaTitle": "Özgeçmişinizi Bize Gönderin",
-    "ctaBody": "Her zaman harika insanlar arıyoruz. CV'nizi hr@indexiafinance.com adresine gönderin, sizinle iletişime geçelim.",
-    "metaDescription": "Indexia Group'ta kariyer, Mumbai'deki Indexia Finserve'de açık pozisyonları olan öğrenen bir organizasyon. Özgeçmişinizi göndererek kariyerinize başlayın.",
-    "mailResume": "Özgeçmişinizi Gönderin –"
-  },
-  "legal": {
-    "eyebrow": "Yasal",
-    "privacyTitle": "Gizlilik Politikası",
-    "privacySubtitle": "Indexia Group'un kişisel bilgilerinizi nasıl topladığı, kullandığı ve koruduğu.",
-    "termsTitle": "Şartlar & Koşullar",
-    "termsSubtitle": "Indexia Group web sitesinin ve şirketlerinin hizmetlerinin kullanımını düzenleyen koşullar.",
-    "termsOfUseTitle": "Kullanım Koşulları",
-    "termsOfUseSubtitle": "Indexia Group web sitesine ve şirketlerinin web sitelerine erişim ve gezinme kuralları.",
-    "lastUpdated": "Son güncelleme",
-    "backHome": "Ana Sayfaya Dön",
-    "contactUs": "İletişim",
-    "contactHeading": "Bu politika hakkında sorularınız mı var?",
-    "contactBody": "contactus@indexiagroup.com adresine yazın veya bir soru gönderin; ekibimiz size dönecektir.",
-    "sendEnquiry": "Sorunuzu Gönderin",
-    "metaPrivacyDescription": "Indexia Group'un Gizlilik Politikası'nı okuyun, kişisel bilgilerinizi nasıl topladığımız, kullandığımız, sakladığımız ve koruduğumuz.",
-    "metaTermsDescription": "Indexia Group web sitesinin ve şirketlerinin hizmetlerinin kullanımını düzenleyen Şartlar ve Koşullar'ı okuyun.",
-    "metaTermsOfUseDescription": "Indexia Group web sitesine ve şirketlerinin web sitelerine nasıl erişebileceğinizi ve gezinebileceğinizi düzenleyen Kullanım Koşulları'nı okuyun."
-  },
-  "globalResearchPage": {
-    "eyebrow": "Küresel Araştırma",
-    "title": "Indexia Group'ta Küresel Araştırma",
-    "titleStart": "Küresel Finansal Araştırma ",
-    "titleAccent": "& Kaynaklar.",
-    "subtitle": "Makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler ve keskin görüşler, Asya, Afrika ve Orta Doğu genelinde güçlü sahada edinilen içgörüler üzerine inşa edilmiştir.",
-    "ctaButton": "Araştırma Kapsamını Keşfedin",
-    "areasEyebrow": "Araştırma Kapsamı",
-    "areasHeading": "Disiplinler Genelinde Küresel Araştırma",
-    "areasSubtitle": "Tüm kapsam alanımız genelinde içgörülü, ilgili analizler.",
-    "reportsEyebrow": "Yayınlar",
-    "reportsHeading": "Araştırmayı Nasıl Paylaşıyoruz",
-    "reportsSubtitle": "Sık sunumlar ve yüksek kaliteli yayınlar, sahada edinilen analizimiz OTG; uygulanabilir piyasa fikirlerimiz ACT; ve küresel önem taşıyan temalar üzerine Özel Raporlar.",
-    "ctaTitle": "Araştırmamıza Erişin",
-    "ctaBody": "Daha fazla bilgi almak ve araştırmamızı almak için Küresel Araştırma portalımızı ziyaret edin. Erişim için lütfen İlişki Yöneticinizle iletişime geçin.",
-    "metaDescription": "Indexia Group Küresel Araştırma, makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler; Asya, Afrika ve Orta Doğu'da sahada edinilen içgörülerle.",
-    "reportFormat": "Yayın"
-  },
-  "securityTipsPage": {
-    "eyebrow": "Güvenlik İpuçları",
-    "title": "Indexia Group'tan Güvenlik İpuçları",
-    "titleStart": "Dolandırıcılıktan ",
-    "titleAccent": "Bir Adım Önde Olun.",
-    "subtitle": "Nereye giderseniz gidin, paranızı çevrimiçi olarak güvenle yönetebilirsiniz.",
-    "ctaButton": "Bilgilerinizi Koruyun",
-    "featuresEyebrow": "Biz Ne Yapıyoruz",
-    "featuresHeading": "Sizi Çevrimiçi Güvende Tutuyoruz",
-    "featuresSubtitle": "Çevrimiçi bankacılık yaptığınızda hesaplarınızı korumak için neler yaptığımızı okuyun.",
-    "practicesEyebrow": "Siz Ne Yapabilirsiniz",
-    "practicesHeading": "Bilgilerinizi Koruyun",
-    "practicesSubtitle": "Çevrimiçi bankacılıkta hesaplarınızı korumak için her gün çalışıyoruz. Günlük cihazlarınızda da çevrimiçi güvende kalmak için yapabileceğiniz birkaç basit şey var.",
-    "contactsEyebrow": "Yardıma mı İhtiyacınız Var?",
-    "contactsHeading": "Bizimle Konuşmanız mı Gerekli?",
-    "contactsSubtitle": "Hesap bilgilerinizi şüpheli bir tarafa açıkladığınızı düşünüyorsanız veya dolandırıcılığa maruz kaldıysanız, derhal Müşteri Hizmetleri Hattı'nı arayarak bizimle iletişime geçin.",
-    "ctaTitle": "Şüpheli bir şey mi görüyorsunuz?",
-    "ctaBody": "Bunu soru formumuz aracılığıyla bildirin veya ilgili Indexia Group şirketiyle doğrudan iletişime geçin.",
-    "metaDescription": "Indexia Group'tan güvenlik ipuçları, hesaplarınızı çevrimiçi nasıl koruduğumuz, cihazlarınızda neler yapabileceğiniz ve bir sorun olursa kime başvurmanız gerektiği."
-  },
-  "common": {
-    "logoAlt": "Indexia Group logosu",
-    "homeAria": "Indexia Group ana sayfası",
-    "languages": {
-      "en": "English",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch",
-      "it": "Italiano",
-      "pt": "Português",
-      "hi": "हिन्दी",
-      "ar": "العربية",
-      "zh": "中文",
-      "ja": "日本語",
-      "ru": "Русский",
-      "ko": "한국어",
-      "id": "Bahasa Indonesia",
-      "tr": "Türkçe",
-      "vi": "Tiếng Việt",
-      "nl": "Nederlands",
-      "pl": "Polski",
-      "th": "ไทย",
-      "sv": "Svenska",
-      "uk": "Українська",
-      "el": "Ελληνικά",
-      "he": "עברית"
-    }
-  },
-  "seo": {
-    "homeTitle": "Finansal Hizmetler, Krediler, İhracat & Lojistik",
-    "homeDescription": "Çeşitlendirilmiş Hint iş grubu: finansal hizmetler, NBFC kredileri, küresel ihracat, tarım gübreleri, depolama & güvenlik. Mumbai, Delhi ve Ekvador'da ofisler.",
-    "businessesTitle": "Grup Şirketleri, Finans, Tarım, İhracat & Lojistik",
-    "businessesDescription": "Indexia Group'un sekiz işletmesi: finans, krediler, güvenlik, şeker ihracatı, organik gübre, depolama, reklamcılık ve sporcu desteği.",
-    "contactTitle": "İletişim, Mumbai & Delhi Ofisleri",
-    "contactDescription": "Finansal hizmetler, krediler, ihracat, tarım ve lojistik soruları için Indexia Group ile iletişime geçin. Mumbai, Delhi ve Ekvador'da ofisler, 24 saat içinde yanıt."
+    "errorNameShort": "Ad en az 2 karakter olmalıdır.",
+    "errorPhoneEmpty": "Lütfen telefon numaranızı girin.",
+    "errorPhoneInvalid": "Lütfen geçerli 10 haneli bir telefon numarası girin.",
+    "errorResume": "Lütfen özgeçmişinizi yükleyin.",
+    "errorSubmit": "Başvurunuz gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+    "experience": "Deneyim",
+    "fresher": "Deneyimsiz",
+    "fullName": "Tam Ad",
+    "fullNamePlaceholder": "Adınız ve soyadınız",
+    "heroTitle": "Pozisyona Başvur",
+    "infoBanner": "Aşağıdaki formu doldurun, başvurunuzu doğrudan İK ekibimize göndereceğiz.",
+    "introPlaceholder": "Arka planınızı, becerilerinizi ve bu pozisyona neden ilgi duyduğunuzu paylaşın...",
+    "lessThan1Year": "1 yıldan az",
+    "phone": "Telefon",
+    "phonePlaceholder": "10 haneli numara",
+    "responsibilities": "Sorumluluklar ve Gereksinimler",
+    "resume": "Özgeçmiş",
+    "resumeFormats": "PDF, DOC veya DOCX (maks 5MB)",
+    "roleDetails": "Pozisyon Detayları",
+    "selectExperience": "Deneyim seçin",
+    "submitApplication": "Başvuruyu Gönder",
+    "submitNote": "Başvurunuz hr@indexiafinance.com ve hr.indexia@gmail.com adresine gönderilecek.",
+    "submitting": "Gönderiliyor...",
+    "successBody": "<strong>{{role}}</strong> pozisyonuna başvurunuz için teşekkürler. İK ekibimiz başvurunuzu aldı.",
+    "successSentTo": "Başvuru gönderildi",
+    "successTitle": "Başvuru Gönderildi!",
+    "tellUsAboutYourself": "Kendinizden bahsedin"
   },
   "branches": {
     "corporateOffice": "Merkez Ofis",
-    "mumbaiOffice": "Mumbai Ofisi",
     "delhiOffice": "Delhi Ofisi",
-    "internationalOffice": "Uluslararası Ofis"
+    "internationalOffice": "Uluslararası Ofis",
+    "mumbaiOffice": "Mumbai Ofisi"
   },
-  "phoneLabel": {
-    "landline": "Sabit hat",
-    "mobile": "Cep",
-    "mob": "Cep",
-    "tel": "Tel"
+  "brochure": {
+    "about": "Proje Hakkında",
+    "advertisingFooter": "Indexia Group | Ücretler müsaitliğe bağlıdır. Rezervasyon için arayın, e-posta gönderin veya ofisimizi ziyaret edin.",
+    "advertisingHeadline": "Shamli, Delhi–Dehradun Otoyolu'nda Premium Unipole Reklam Panoları",
+    "backAdvertising": "Reklamcılığa Dön",
+    "backWarehouse": "Depoya Dön",
+    "contact": "İletişim",
+    "download": "PDF İndir",
+    "footer": "Indexia Group · Sorularınız için arayın, e-posta gönderin veya ofisimizi ziyaret edin. Fiyatlar gösterge niteliğindedir ve pazarlığa açıktır.",
+    "headline": "Kuzey Hindistan'ın Kalbinde Stratejik Arazi Yatırımı",
+    "locationAdvertising": "Delhi-Dehradun Otoyolu, Shamli",
+    "locationWarehouse": "Shamli, Uttar Pradesh",
+    "print": "Yazdır"
   },
-  "unipolePricing": {
-    "eyebrow": "Unipole Paketleri",
-    "title": "Mevcut Boyutlar ve Fiyatlar",
-    "subtitle": "Shamli, Delhi–Dehradun Otoyolu'nda premium unipole paketleri",
-    "sizeCol": "Boyut",
-    "areaCol": "Metrekare",
-    "rateCol": "Aylık Ücret",
-    "sizeSmall": "10 × 20 fit",
-    "areaSmall": "200 metrekare",
-    "rateSmall": "₹25.000",
-    "sizeLarge": "12 × 24 fit",
-    "areaLarge": "288 metrekare",
-    "rateLarge": "₹36.000",
-    "standardRate": "Standart Ücret: 1 ay tek yüz için ₹125/metrekare",
-    "note": "* Ücretler müsaitliğe bağlıdır. Uzun vadeli paketler için iletişime geçin.",
-    "bookNow": "Hemen rezerve et",
-    "bookSize": "Bu boyutu rezerve et",
-    "bookMessage": "{{size}} unipole'u ({{area}}) aylık {{rate}} ücretiyle rezerve etmek istiyorum."
+  "businessCard": {
+    "readMore": "Daha fazla oku",
+    "tapToView": "Görmek için dokunun"
+  },
+  "businesses": {
+    "eyebrow": "Grup Şirketleri",
+    "subtitle": "Kendi sayfasını ziyaret etmek için bir şirket seçin, ardından sorunuzu doğru ekibe iletin.",
+    "titleAccent": "Tek Grup",
+    "titleStart": "Sekiz Şirket, "
+  },
+  "businessesHero": {
+    "counterBusinesses": "İşletme",
+    "counterClients": "Hizmet Verilen Müşteri",
+    "counterLocations": "Şehir",
+    "counterYears": "Faaliyet Yılı",
+    "cta": "Ücretsiz Danışmanlık Rezervasyonu →",
+    "eyebrow": "Indexia Farkı",
+    "paragraph": "Finans ve danışmanlıktan ihracat, tarım, lojistik, güvenlik, spor ve medyaya kadar, her Indexia işletmesi aynı temel üzerine kuruludur: dürüstlük, uzmanlık ve insan odaklı yaklaşım. Ne ihtiyacınız olursa olsun, doğru ekip zaten ailenin bir parçasıdır.",
+    "titleAccent": "Tek Ortak Söz.",
+    "titleStart": "Tek Grup. Sekiz İşletme. "
+  },
+  "careersHero": {
+    "companiesOneGroup": "şirket, bir grup",
+    "description": "Sekiz şirket. Bir ekip. Finans, ihracat, tarım, güvenlik, reklam ve sporcu gelişiminde kariyerinizi inşa edin."
+  },
+  "careersPage": {
+    "apply": "Başvur",
+    "ctaBody": "Her zaman harika insanlar arıyoruz. CV'nizi hr@indexiafinance.com adresine gönderin, sizinle iletişime geçelim.",
+    "ctaButton": "Açık Pozisyonları Görüntüle",
+    "ctaTitle": "Özgeçmişinizi Bize Gönderin",
+    "cultureEyebrow": "Kültürümüz",
+    "cultureHeading": "Öğrenen Bir Organizasyon",
+    "eyebrow": "Kariyer",
+    "mailResume": "Özgeçmişinizi Gönderin –",
+    "metaDescription": "Indexia Group'ta kariyer, Mumbai'deki Indexia Finserve'de açık pozisyonları olan öğrenen bir organizasyon. Özgeçmişinizi göndererek kariyerinize başlayın.",
+    "rolesEyebrow": "Açık Pozisyonlar",
+    "rolesHeading": "Güncel İş İlanlarımız",
+    "rolesSubtitle": "Güncel iş ilanlarımız şunlardır:",
+    "subtitle": "Indexia Group öğrenen bir organizasyondur, ve kurum kültürü de ekibidir.",
+    "title": "Indexia Group'ta Kariyer",
+    "titleAccent": "İnşa Edin.",
+    "titleStart": "Kariyerinizi Bizimle "
+  },
+  "common": {
+    "homeAria": "Indexia Group Ana Sayfa",
+    "languages": {
+      "ar": "العربية",
+      "de": "Deutsch",
+      "el": "Ελληνικά",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "he": "עברית",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ja": "日本語",
+      "ko": "한국어",
+      "nl": "Nederlands",
+      "pl": "Polski",
+      "pt": "Português",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "th": "ไทย",
+      "tr": "Türkçe",
+      "uk": "Українська",
+      "vi": "Tiếng Việt",
+      "zh": "中文"
+    },
+    "logoAlt": "Indexia Group Logosu"
+  },
+  "companyDetail": {
+    "backAll": "Tüm Şirketler",
+    "enquireSub": "Sorunuzun başında {{name}} adı yer alır; böylece doğru ekip önce onu ele alır.",
+    "enquireTitle": "{{name}} Hakkında Sorun",
+    "entryOf": "Kayıt {{no}} / 08",
+    "exploreServices": "Hizmetleri Keşfedin",
+    "eyebrow": "Sorunuzu Gönderin",
+    "globalReach": "Küresel erişim",
+    "globalReachDesc": "Sınır ötesi ve pazarlardaki varlığımız.",
+    "keyEntries": "Ana kayıtlar",
+    "keyNumbers": "Temel rakamlar",
+    "keyNumbersDesc": "Etkimizi tanımlayan rakamlar.",
+    "mainPoint": "Ana nokta",
+    "overviewEyebrow": "Genel Bakış",
+    "overviewTitle": "{{name}} Hakkında",
+    "register": "Kayıt No. {{no}} / 08",
+    "registerOf": "Indexia Group · Şirketler Sicili",
+    "responseTime": "Yanıt süresi",
+    "responseValue": "24 saat içinde, Pzt – Cmt",
+    "servicesTitle": "Bu kayıt altındaki hizmetler",
+    "statHighlights": "Öne Çıkanlar",
+    "statRegister": "Sicil Kaydı",
+    "statServices": "Hizmetler",
+    "whyChoose": "Neden bizi seçin",
+    "whyChooseDesc": "Bu şirketi diğerlerinden ayıran özellik."
+  },
+  "companyLinkCard": {
+    "visitPage": "Sayfayı ziyaret et",
+    "visitPageAria": "{{name}} sayfasını ziyaret et",
+    "visitWebsiteAria": "{{name}} web sitesini ziyaret et",
+    "visualAlt": "{{name}} görseli"
+  },
+  "contact": {
+    "locationsTitleAccent": "",
+    "locationsTitleStart": "Ofislerimiz"
+  },
+  "contactHero": {
+    "callNow": "Hemen Arayın · 86551 68551",
+    "directLines": "{{count}} doğrudan hat",
+    "eyebrow": "Indexia ile Konuşun",
+    "offices": "{{count}} ofis",
+    "paragraph": "Belge sorularından yeni kredi başvurularına kadar her mesaj, bir kuyruk değil, ekibimizin bir üyesi tarafından incelenir ve yanıtlanır.",
+    "reply": "< 24 saat ortalama yanıt",
+    "sendEnquiry": "Sorunuzu Gönderin",
+    "title": "Ekibimize Doğrudan Hat"
+  },
+  "contactInfo": {
+    "country": "Hindistan",
+    "enquiries": "Sorular",
+    "eyebrow": "Sorunuzu Gönderin",
+    "headlineAccent": "Indexia Şirketi Hakkında Sorun",
+    "headlineStart": "",
+    "location": "Konum",
+    "paragraph": "Hizmetlerimizle ilgili bir sorunuz, iş danışmanlığı ihtiyacınız veya ortaklık keşfetme isteğiniz olsun, ekibimiz size yardımcı olmaya hazırdır, 24 saat içinde yanıt veriyoruz.",
+    "phoneNumbers": "Telefon Numaraları",
+    "workingHours": "Çalışma Saatleri"
+  },
+  "footer": {
+    "backToTop": "Başa dön",
+    "blurb": "Tek bir çeşitlendirilmiş Hint grubu altında sekiz güvenilir işletme, finans, ihracat, tarım, lojistik, güvenlik, reklamcılık ve sporcu desteği, dürüstlük ve sonuç üzerine inşa edilmiştir.",
+    "company": "Şirket",
+    "contactUs": "İletişim",
+    "cta": "Grup şirketlerimizden biriyle ilgili bir sorunuz mu var?",
+    "enquiry": "Sorunuzu bize iletin.",
+    "hours": "Pzt - Cmt: 09.00 - 18.00",
+    "legal": "Yasal",
+    "links": {
+      "aboutUs": "Hakkımızda",
+      "advertise": "Bizimle Reklam Verin",
+      "careers": "Kariyer",
+      "globalResearch": "Küresel Araştırma",
+      "groupCompanies": "Grup Şirketleri",
+      "news": "Haber & Bilgi Merkezi",
+      "privacyPolicy": "Gizlilik Politikası",
+      "securityTips": "Güvenlik İpuçları",
+      "termsConditions": "Şartlar & Koşullar",
+      "termsOfUse": "Kullanım Koşulları"
+    },
+    "resources": "Kaynaklar",
+    "rights": "© 2026 Indexia Group. Tüm hakları saklıdır.",
+    "stats": "Indexia Group · 08 Şirket · 03 Şehir",
+    "tagline": "Çeşitlendirilmiş Hint İş Grubu",
+    "taglineSecondary": "Çeşitli Girişimler. Birliği Vizyon."
+  },
+  "form": {
+    "email": "E-posta Adresi",
+    "emailPlaceholder": "you@example.com",
+    "errorEmail": "Geçerli bir e-posta adresi girin.",
+    "errorGeneric": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.",
+    "errorMessage": "Lütfen mesajınızı girin.",
+    "errorName": "Lütfen adınızı girin.",
+    "errorNameLetters": "Ad harf içermelidir.",
+    "errorPhone": "Geçerli bir 10 haneli telefon numarası girin.",
+    "errorSubject": "Lütfen bir konu veya şirket seçin.",
+    "eyebrow": "Sorunuzu Gönderin",
+    "generalEnquiry": "Genel Soru",
+    "intro": "Aşağıdaki formu doldurun; sorunuz ekibimiz tarafından ele alınacaktır.",
+    "message": "Mesaj",
+    "messagePlaceholder": "Sorunuzu buraya yazın...",
+    "name": "Ad",
+    "namePlaceholder": "Adınız soyadınız",
+    "phone": "Telefon Numarası",
+    "phonePlaceholder": "10 haneli numara",
+    "sending": "Gönderiliyor…",
+    "subject": "Konu / Şirket",
+    "subjectPlaceholder": "Bir şirket seçin…",
+    "submit": "Soruyu Gönder",
+    "success": "Sorunuz gönderildi! Ekibimiz en kısa sürede sizinle iletişime geçecek."
+  },
+  "globalResearchPage": {
+    "areasEyebrow": "Araştırma Kapsamı",
+    "areasHeading": "Disiplinler Genelinde Küresel Araştırma",
+    "areasSubtitle": "Tüm kapsam alanımız genelinde içgörülü, ilgili analizler.",
+    "ctaBody": "Daha fazla bilgi almak ve araştırmamızı almak için Küresel Araştırma portalımızı ziyaret edin. Erişim için lütfen İlişki Yöneticinizle iletişime geçin.",
+    "ctaButton": "Araştırma Kapsamını Keşfedin",
+    "ctaTitle": "Araştırmamıza Erişin",
+    "eyebrow": "Küresel Araştırma",
+    "metaDescription": "Indexia Group Küresel Araştırma, makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler; Asya, Afrika ve Orta Doğu'da sahada edinilen içgörülerle.",
+    "reportFormat": "Yayın",
+    "reportsEyebrow": "Yayınlar",
+    "reportsHeading": "Araştırmayı Nasıl Paylaşıyoruz",
+    "reportsSubtitle": "Sık sunumlar ve yüksek kaliteli yayınlar, sahada edinilen analizimiz OTG; uygulanabilir piyasa fikirlerimiz ACT; ve küresel önem taşıyan temalar üzerine Özel Raporlar.",
+    "subtitle": "Makroekonomik, sabit getiri, döviz ve emtia disiplinleri genelinde içgörülü, ilgili analizler ve keskin görüşler, Asya, Afrika ve Orta Doğu genelinde güçlü sahada edinilen içgörüler üzerine inşa edilmiştir.",
+    "title": "Indexia Group'ta Küresel Araştırma",
+    "titleAccent": "& Kaynaklar.",
+    "titleStart": "Küresel Finansal Araştırma "
+  },
+  "header": {
+    "aria": {
+      "closeMenu": "Menüyü kapat",
+      "selectLanguage": "Dil seçin",
+      "toggleMenu": "Menüyü aç/kapat"
+    },
+    "menu": {
+      "companies": "Şirketler",
+      "contact": "İletişim",
+      "groupCompanies": "Grup Şirketleri",
+      "home": "Ana Sayfa"
+    },
+    "nav": {
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    }
+  },
+  "hero": {
+    "ctaExploreGroup": "Grup Şirketlerini Keşfedin",
+    "ctaExploreMore": "Daha Fazla Keşfet",
+    "nextPanel": "Sonraki panel",
+    "p0": {
+      "heading": "Tek Grup.\nÇoklu Çözümler.",
+      "motto": "Ulusa hizmet etmek için bazı adımlar",
+      "sub": "Finanstan lojistiğe, tarımdan reklamcılığa kadar Indexia Group, güvenilir ve geleceğe hazır işletmeleriyle sektörler arası büyümeyi güçlendirir.",
+      "tag": "Indexia Group",
+      "tagline": "Çeşitli Girişimler. Birliği Vizyon."
+    },
+    "p1": {
+      "heading": "Eksiksiz Bir\nKredi Merkezi.",
+      "sub": "Her türlü kredi için portalımıza www.indexiafinance.com adresinden başvurabilirsiniz. Hizmetlerimizi küresel olarak sunuyoruz, Hindistan'da 43 banka ve NBFC ile iş ortağıyız.",
+      "tag": "Indexia Finance"
+    },
+    "p2": {
+      "heading": "Yeni Nesil\nFinans Yöntemi.",
+      "sub": "Artık doğru banka kapınıza gelecek.",
+      "tag": "Indexia Finserve Pvt. Ltd."
+    },
+    "p3": {
+      "heading": "Rafine Şeker &\nTüm Gıda Ürünleri.",
+      "sub": "Rafine şeker ve tüm gıda ürünlerinin ticaretini ve ihracatını yapıyoruz.",
+      "tag": "Indexia Overseas Pvt. Ltd."
+    },
+    "p4": {
+      "heading": "Organik Gübre\nÜretiyor & İhraç Ediyoruz",
+      "sub": "Hindistan'da organik gübre üretiyor ve dünya geneline ihraç ediyoruz.",
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+    },
+    "p5": {
+      "heading": "Silahlı Komandolar &\nSilahlı Güvenlik",
+      "sub": "Siyasetçileri ve büyük iş insanlarını koruyoruz.",
+      "tag": "Indexia Securities"
+    },
+    "p6": {
+      "heading": "Ölçek İçin\nİnşa Edilmiş Depolama.",
+      "sub": "Ürünlerin verimli şekilde hareket etmesini sağlayan modern depolama ve lojistik altyapısı.",
+      "tag": "Indexia Warehouse"
+    },
+    "p7": {
+      "heading": "Markanız\nHer Otoyolda.",
+      "sub": "Otoyollar boyunca uzanan çok sayıda reklam alanıyla markalara yüksek görünürlüklü kampanyalar sunuyoruz.",
+      "tag": "Indexia Advertising"
+    },
+    "p8": {
+      "heading": "Sporcuları\nGüçlendiriyoruz.",
+      "sub": "Sporcuları zirve performansa giden yolda eğiten, yönlendiren ve finanse eden spor programları.",
+      "tag": "Indexia Foundation"
+    },
+    "prevPanel": "Önceki panel"
+  },
+  "home": {
+    "groupCompanies": {
+      "description": "Indexia Group; Finans, İhracat, Tarım, Depolama, Güvenlik, Sosyal Etki ve Reklamcılık alanlarını kapsayan çeşitlendirilmiş bir holdingdir. Müşterileri, Ortakları ve Toplulukları güvenle büyümeleri için güçlendiren işletmeler kuruyoruz.",
+      "title": "Grup Şirketleri"
+    }
+  },
+  "homeReach": {
+    "cta": "Daha Fazla Bilgi",
+    "eyebrow": "Erişim Alanımız",
+    "stat1Label": "Şirket",
+    "stat2Label": "Ülke",
+    "stat3Label": "Güçlü Yıllar",
+    "stat4Label": "Hizmet Verilen Müşteriler",
+    "subtitle": "Mumbai'den Ekvador'a şirketlerimiz üç kıtada bütünlük ve sonuçlara olan bağlılıkla hizmet veriyor.",
+    "title": "Sınırların Ötesinde Güvenilir"
+  },
+  "jsonLd": {
+    "aboutDescription": "Indexia Group, Finans, İhracat, Tarım, Depolama, Güvenlik, Reklam ve Sporcu Desteği alanlarında faaliyet gösteren çeşitli bir Hint işletme grubudur.",
+    "aboutName": "Indexia Group Hakkında",
+    "breadcrumbAbout": "Hakkımızda",
+    "breadcrumbCareers": "Kariyer",
+    "breadcrumbCompanies": "Grup Şirketleri",
+    "breadcrumbContact": "Bize Ulaşın",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbNews": "Haberler ve Bilgi Merkezi",
+    "businessesDescription": "Indexia Group altında finans, krediler, güvenlik, ihracat, tarım, depolama, reklam ve sporcu desteği olmak üzere sekiz işletme.",
+    "businessesName": "Indexia Group İşletmeleri",
+    "careersName": "Indexia Group Açık Pozisyonlar",
+    "companyPageDescription": "{{name}} hakkında bilgi edinin, Indexia Group bünyesindeki bir şirket. {{description}}",
+    "companyPageName": "{{name}}, {{tag}}",
+    "contactName": "Indexia Group ile İletişim",
+    "corporateOffice": "Kurumsal Ofis",
+    "delhiOffice": "Delhi Ofisi",
+    "newsName": "Indexia Group, Haberler ve Bilgi Merkezi",
+    "orgName": "Indexia Group"
+  },
+  "legal": {
+    "backHome": "Ana Sayfaya Dön",
+    "contactBody": "contactus@indexiagroup.com adresine yazın veya bir soru gönderin; ekibimiz size dönecektir.",
+    "contactHeading": "Bu politika hakkında sorularınız mı var?",
+    "contactUs": "İletişim",
+    "eyebrow": "Yasal",
+    "lastUpdated": "Son güncelleme",
+    "metaPrivacyDescription": "Indexia Group'un Gizlilik Politikası'nı okuyun, kişisel bilgilerinizi nasıl topladığımız, kullandığımız, sakladığımız ve koruduğumuz.",
+    "metaTermsDescription": "Indexia Group web sitesinin ve şirketlerinin hizmetlerinin kullanımını düzenleyen Şartlar ve Koşullar'ı okuyun.",
+    "metaTermsOfUseDescription": "Indexia Group web sitesine ve şirketlerinin web sitelerine nasıl erişebileceğinizi ve gezinebileceğinizi düzenleyen Kullanım Koşulları'nı okuyun.",
+    "privacySubtitle": "Indexia Group'un kişisel bilgilerinizi nasıl topladığı, kullandığı ve koruduğu.",
+    "privacyTitle": "Gizlilik Politikası",
+    "sendEnquiry": "Sorunuzu Gönderin",
+    "termsOfUseSubtitle": "Indexia Group web sitesine ve şirketlerinin web sitelerine erişim ve gezinme kuralları.",
+    "termsOfUseTitle": "Kullanım Koşulları",
+    "termsSubtitle": "Indexia Group web sitesinin ve şirketlerinin hizmetlerinin kullanımını düzenleyen koşullar.",
+    "termsTitle": "Şartlar & Koşullar"
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
+        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
+            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
+          ],
+          "title": "Informations que nous collectons"
+        },
+        {
+          "paragraphs": [
+            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
+            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
+          ],
+          "title": "Comment nous utilisons vos informations"
+        },
+        {
+          "paragraphs": [
+            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Nous ne vendons pas vos informations personnelles à des tiers."
+          ],
+          "title": "Partage et divulgation"
+        },
+        {
+          "paragraphs": [
+            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
+          ],
+          "title": "Sécurité des données"
+        },
+        {
+          "paragraphs": [
+            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
+          ],
+          "title": "Cookies et technologies similaires"
+        },
+        {
+          "paragraphs": [
+            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
+          ],
+          "title": "Conservation des données"
+        },
+        {
+          "paragraphs": [
+            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
+          ],
+          "title": "Vos droits et choix"
+        },
+        {
+          "paragraphs": [
+            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
+          ],
+          "title": "Liens vers des tiers"
+        },
+        {
+          "paragraphs": [
+            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
+          ],
+          "title": "Confidentialité des enfants"
+        },
+        {
+          "paragraphs": [
+            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
+          ],
+          "title": "Modifications de la présente politique"
+        },
+        {
+          "paragraphs": [
+            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ],
+          "title": "Contact"
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
+        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
+        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
+          ],
+          "title": "Contenu et Modifications"
+        },
+        {
+          "paragraphs": [
+            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
+          ],
+          "title": "Aucune Garantie"
+        },
+        {
+          "paragraphs": [
+            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
+          ],
+          "title": "Utilisation à Vos Risques"
+        },
+        {
+          "paragraphs": [
+            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
+          ],
+          "title": "Propriété Intellectuelle"
+        },
+        {
+          "paragraphs": [
+            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
+          ],
+          "title": "Marques Commerciales"
+        },
+        {
+          "paragraphs": [
+            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
+          ],
+          "title": "Utilisation Non Autorisée"
+        },
+        {
+          "paragraphs": [
+            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
+          ],
+          "title": "Liens Vers des Sites Tiers"
+        },
+        {
+          "paragraphs": [
+            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
+          ],
+          "title": "Liens Vers ce Site Web"
+        },
+        {
+          "paragraphs": [
+            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
+          ],
+          "title": "Droit Applicable"
+        },
+        {
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ],
+          "title": "Responsabilité des Transactions par Carte"
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        null,
+        "Bu koşulları kabul etmiyorsanız, lütfen web sitelerimize erişmeyin veya kullanmayın."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
+          ],
+          "title": "Politique d'Annulation et de Remboursement"
+        },
+        {
+          "paragraphs": [
+            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
+            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
+            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
+            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
+            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
+            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
+            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
+            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
+          ],
+          "title": "Politique d'Annulation"
+        },
+        {
+          "paragraphs": [
+            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
+          ],
+          "title": "Politique de Remboursement"
+        },
+        {
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ],
+          "title": "Clause BO"
+        },
+        {
+          "paragraphs": [
+            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
+            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
+            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
+          ],
+          "title": "Politique de Clause de Non-Responsabilité"
+        },
+        {
+          "paragraphs": [
+            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
+            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
+            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
+            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
+          ],
+          "title": "Clause de Non-Responsabilité de ce Site Web"
+        },
+        {
+          "paragraphs": {
+            "0": "Bu Kullanım Koşullarını istediğiniz zaman değiştirme hakkını saklı tutarız."
+          },
+          "title": "Bu Koşullardaki Değişiklikler"
+        },
+        {
+          "paragraphs": {
+            "0": "Sorularınız için lütfen contactus@indexiagroup.com adresinden bize ulaşın."
+          },
+          "title": "İletişim"
+        }
+      ]
+    }
+  },
+  "newsHero": {
+    "latestLabel": "Grubun en son haberleri",
+    "sectors": {
+      "advertising": "Reklam",
+      "agriculture": "Tarım",
+      "finance": "Finans",
+      "security": "Güvenlik",
+      "sport": "Spor",
+      "tradeExport": "Ticaret ve İhracat"
+    }
+  },
+  "newsPage": {
+    "askUs": "Bize Sorun",
+    "ctaBody": "FDI danışmanlığından organik tarıma, silahlı güvenliğe kadar, doğru Indexia şirketi yardıma hazır. Bize bir soru gönderin, sizi bağlayalım.",
+    "ctaButton": "Sorunuzu Gönderin",
+    "ctaTitle": "İşletmelerimiz hakkında bir sorunuz mu var?",
+    "eyebrow": "Haber & Bilgi Merkezi",
+    "featuredLabel": "Öne Çıkan Haber",
+    "knowledgeEyebrow": "Bilgi Merkezi",
+    "knowledgeHeading": "İşletmelerimizden Pratik Rehberler",
+    "knowledgeSubtitle": "Bu işi her gün yapan ekiplerin yazdığı anlaşılır açıklamalar.",
+    "metaDescription": "Haber & Bilgi Merkezi, finansman, dijital ödemeler ve politika hakkında en güncel bankacılık haberleri, ayrıca Indexia Group'tan pratik bilgi rehberleri.",
+    "readMore": "Devamını Oku",
+    "subtitle": "En güncel bankacılık haberleri, finansman güncellemeleri, dijital ödemeler, politika değişiklikleri ve piyasa gelişmeleri, ayrıca işletmelerimizden pratik rehberler.",
+    "title": "Haber & Bilgi Merkezi",
+    "titleAccent": "Hikayeler ve Görüşler.",
+    "titleStart": "Grup Genelinden ",
+    "tvCaption": "Kredi Gerekirse… Indexia Finance",
+    "tvEyebrow": "Bizi TV'de İzleyin",
+    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingStart": "Tüm Kredi İhtiyaçlarınız İçin"
+  },
+  "newsVideo": {
+    "onAir": "Yayında",
+    "tvCommercial": "TV Reklamı"
+  },
+  "notFoundPage": {
+    "backHome": "Ana Sayfaya Dön",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "title": "Sayfa Bulunamadı"
+  },
+  "openRoles": {
+    "loading": "Pozisyonlar yükleniyor...",
+    "noPositions": "Şu anda {{type}} pozisyonu bulunmuyor."
   },
   "pageContent": {
+    "careers": {
+      "culture": [
+        "Indexia Group öğrenen bir organizasyondur ve kurum kültürü ekibidir. İnsanlarımız en büyük varlığımızdır.",
+        "Fintech ve küresel ihracattan organik tarıma, silahlı güvenliğe ve sporcu gelişimine kadar tek bir dikeye bağlı değilsiniz.",
+        "Öğren, Eğitim Al, İlerle",
+        "Her rol, yapılandırılmış eğitim, iç_WORKSHOP'lara erişim ve kıdemli liderlerden mentorluk içerir.",
+        "Küresel Deneyim, Yerel Kökler",
+        "Indexia, Hindistan, Ekvador, Güney Amerika ve Avrupa'da faaliyet göstermektedir.",
+        "Esnek Çalışma Saatleri, Gerçek Sorumluluk",
+        "Ekibimizin zamanını yönetmesine güveniyoruz."
+      ],
+      "roles": {
+        "business-development": {
+          "department": "Satış ve Ortaklıklar",
+          "title": "İş Geliştirme Uzmanı",
+          "type": "Tam Zamanlı"
+        },
+        "city-head": {
+          "department": "Operasyonlar",
+          "title": "Şehir Müdürü",
+          "type": "Tam Zamanlı"
+        },
+        "customer-support": {
+          "department": "Müşteri Hizmetleri",
+          "title": "Müşteri Destek Uzmanı",
+          "type": "Tam Zamanlı"
+        },
+        "field-executive": {
+          "department": "Operasyonlar",
+          "title": "Saha Uzmanı",
+          "type": "Tam Zamanlı"
+        },
+        "hr-manager": {
+          "department": "İnsan Kaynakları",
+          "title": "İK Müdürü",
+          "type": "Tam Zamanlı"
+        },
+        "seo-professional": {
+          "department": "Dijital Pazarlama",
+          "title": "SEO Uzmanı",
+          "type": "Tam Zamanlı"
+        },
+        "team-leader": {
+          "department": "Operasyonlar",
+          "title": "Takım Lideri",
+          "type": "Tam Zamanlı"
+        },
+        "team-manager": {
+          "department": "Operasyonlar",
+          "title": "Takım Yöneticisi",
+          "type": "Tam Zamanlı"
+        }
+      }
+    },
     "companies": {
+      "advertising": {
+        "desc": "Kuzey Hindistan'ın en yoğun kavşağında premium otoyol reklam panoları.",
+        "highlights": [
+          "NH-709B, Delhi–Dehradun otoyolunda stratejik yerleşimler",
+          "10 bağlı eyalet, 50 crore nüfus erişimi, günlük 1+ crore maruz kalma",
+          "360° görünürlük ve premium yüksekliğe sahip tek direkli unipole'lar",
+          "Uçtan uca hizmet, baskı, kurulum ve bakım"
+        ],
+        "location": "Delhi-Dehradun Otoyolu, Shamli",
+        "name": "Indexia Advertising",
+        "overview": "Indexia Advertising, Kuzey Hindistan'ın merkezi olan Shamli'deki Delhi–Dehradun Otoyolu'nda (NH-709B) premium tek direkli unipole reklam panoları işletir. 8 ulusal otoyol ve 2 ana karayolunun kavşağında konumlanan unipole'larımız, 50 crore nüfusa ulaşan 10 eyaleti birbirine bağlar ve günlük 1+ crore maruz kalma sağlar. Premium yükseklik ve engelsiz 360° görüş açısına sahip tek direkli unipole'lar, görsel karmaşa olmadan markanıza maksimum görünürlük kazandırır ve imza Bisleri Green markalamasıyla desteklenir. Baskı ve kurulumdan bakıma kadar her şeyi uçtan uca biz yönetiyoruz. 10×20 fit unipole'u ayda ₹25.000 veya 12×24 fit unipole'u ayda ₹36.000'a rezerve edin, standart ücret ayda yüz başına ₹125/metrekare, uzun vadeli paketlerde pazarlık payı vardır. Rezervasyon için 86918 86919 veya 011 4629 1155 numaralarını arayın ya da indexia.queries@gmail.com adresine e-posta gönderin.",
+        "services": [
+          "Unipole 10×20 fit, ayda ₹25.000",
+          "Unipole 12×24 fit, ayda ₹36.000",
+          "Standart Ücret, ayda yüz başına ₹125/metrekare",
+          "Delhi–Dehradun Otoyolu ve Shamli Çevre Yolu Yerleşimleri",
+          "Baskı, Kurulum ve Bakım",
+          "Uzun Vadeli ve Toplu Paketler"
+        ],
+        "tag": "Premium Unipole Reklam Panoları"
+      },
+      "agro-bio": {
+        "desc": "Hindistan'da üretilen ve küresel olarak ihraç edilen organik gübreler.",
+        "highlights": [
+          "Organik, biyo bazlı üretim, sert kimyasal yok",
+          "Delhi NCR kuşağında Shamli, UP tesisi",
+          "Daha iyi toprak sağlığı, daha yüksek ürün verimi",
+          "Çiftçilere kapsamlı destek, toprak analizi, eğitim"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "overview": "Indexia Agro Bio Fertilizers, Delhi NCR bölgesinin bir parçası olan Uttar Pradesh, Shamli'deki üretim tesisinde organik gübreler üretir. Şirketin biyo bazlı ürünleri toprak sağlığını iyileştirir, ürün verimini artırır ve Kuzey Hindistan genelindeki çiftçiler için sürdürülebilir tarımı destekler.",
+        "services": [
+          "Organik Gübre Üretimi",
+          "Biyo-Gübre Karışımları",
+          "Toprak Sağlığı Çözümleri",
+          "Verim Artırma Programları",
+          "Çiftçi Desteği ve Eğitimi",
+          "Shamli, UP Tesisi (Delhi NCR)"
+        ],
+        "tag": "Organik Gübre Üretimi"
+      },
       "finance": {
-        "tag": "Çok Uluslu Fintech",
         "desc": "Yatırımcı hizmetleri, FDI, NBFC ve bankacılık finansmanı alanlarında küresel fintech.",
-        "overview": "Indexia Finance, dünya genelindeki müşterilere finansal hizmetler sunan çok uluslu bir fintech platformudur. Her türlü kredi için www.indexiafinance.com portalımıza başvurabilirsiniz, hizmetlerimizi küresel olarak sunuyoruz ve Hindistan'da 43 banka ve NBFC ile iş ortağıyız. Dört temel alan etrafında inşa edilen, yatırımcı hizmetleri, FDI danışmanlığı, NBFC operasyonları ve bankacılık finansmanı, şirket, sermayeyi fırsatlarla buluşturarak yatırımcıların, işletmelerin ve kurumların sınırlar ötesinde güvenli finansal kararlar almasına yardımcı olur.",
-        "tagline": "Eksiksiz Bir Kredi Merkezi",
         "highlights": [
           "Hindistan öncelikli uygulama ile küresel fintech erişimi",
           "Tek çatı altında dört entegre alan",
           "Uçtan uca finansman ve danışmanlık desteği"
         ],
+        "name": "Indexia Finance",
+        "overview": "Indexia Finance, dünya genelindeki müşterilere finansal hizmetler sunan çok uluslu bir fintech platformudur. Her türlü kredi için www.indexiafinance.com portalımıza başvurabilirsiniz, hizmetlerimizi küresel olarak sunuyoruz ve Hindistan'da 43 banka ve NBFC ile iş ortağıyız. Dört temel alan etrafında inşa edilen, yatırımcı hizmetleri, FDI danışmanlığı, NBFC operasyonları ve bankacılık finansmanı, şirket, sermayeyi fırsatlarla buluşturarak yatırımcıların, işletmelerin ve kurumların sınırlar ötesinde güvenli finansal kararlar almasına yardımcı olur.",
         "services": [
           "FDI Danışmanlığı ve Kolaylaştırma",
           "Yatırımcı Hizmetleri",
@@ -387,18 +873,18 @@
           "Sınır Ötesi Sermaye Çözümleri",
           "Varlık ve Servet Danışmanlığı"
         ],
-        "name": "Indexia Finance"
+        "tag": "Çok Uluslu Fintech",
+        "tagline": "Eksiksiz Bir Kredi Merkezi"
       },
       "finserve": {
-        "tag": "Krediler & Finans",
         "desc": "Bireylere ve işletmelere özel her türlü kredi.",
-        "overview": "Indexia Finserve, Indexia Group'un kredi koludur ve finans kapsamında her türlü krediyi sunar. Artık doğru banka kapınıza gelecek, şirket, müşterileri kişisel, konut, işletme, KOBİ ve özel finansman için uygunluk, belgelendirme ve ödeme süreçlerinde tek ve kolaylaştırılmış bir süreçle yönlendiren eksiksiz bir kredi merkezi olarak çalışır.",
-        "tagline": "Yeni Nesil Finans Yöntemi",
         "highlights": [
           "Tek çatı altında her kredi türü",
           "Kolaylaştırılmış uygunluk, belgelendirme ve ödeme",
           "Her adımda özel danışmanlık"
         ],
+        "name": "Indexia Finserve Pvt. Ltd.",
+        "overview": "Indexia Finserve, Indexia Group'un kredi koludur ve finans kapsamında her türlü krediyi sunar. Artık doğru banka kapınıza gelecek, şirket, müşterileri kişisel, konut, işletme, KOBİ ve özel finansman için uygunluk, belgelendirme ve ödeme süreçlerinde tek ve kolaylaştırılmış bir süreçle yönlendiren eksiksiz bir kredi merkezi olarak çalışır.",
         "services": [
           "Bireysel Kredi",
           "İşletme Kredisi",
@@ -413,114 +899,19 @@
           "Lease R İskontosu",
           "İşletme Sermayesi"
         ],
-        "name": "Indexia Finserve Pvt. Ltd."
-      },
-      "overseas": {
-        "tag": "Gıda İhracatçısı",
-        "desc": "Rafine şeker ve tüm gıda ürünlerini dünya geneline ihraç ediyoruz.",
-        "overview": "Indexia Overseas, tüm gıda ürünlerinin küresel ihracatını yürütür ve özellikle 14 Güney Amerika ülkesine şeker ihracatına odaklanır. Şirket; tedarik, kalite, lojistik ve uluslararası uyumluluğu yöneterek gıda sınıfı ürünlerin kaynaktan pazara güvenilir ve ölçekli şekilde ulaşmasını sağlar.",
-        "highlights": [
-          "Tüm gıda ürünlerinin ihracatı, şeker odakta",
-          "14 Güney Amerika pazarında yerleşik varlık",
-          "Uçtan uca tedarik, kalite ve lojistik"
-        ],
-        "services": [
-          "Şeker İhracatı ve Ticareti",
-          "Tedarik ve Kalite Kontrol",
-          "Uluslararası Lojistik",
-          "14 Güney Amerika Pazarı"
-        ],
-        "name": "Indexia Overseas Pvt. Ltd."
-      },
-      "agro-bio": {
-        "tag": "Organik Gübre Üretimi",
-        "desc": "Hindistan'da üretilen ve küresel olarak ihraç edilen organik gübreler.",
-        "overview": "Indexia Agro Bio Fertilizers, Delhi NCR bölgesinin bir parçası olan Uttar Pradesh, Shamli'deki üretim tesisinde organik gübreler üretir. Şirketin biyo bazlı ürünleri toprak sağlığını iyileştirir, ürün verimini artırır ve Kuzey Hindistan genelindeki çiftçiler için sürdürülebilir tarımı destekler.",
-        "highlights": [
-          "Organik, biyo bazlı üretim, sert kimyasal yok",
-          "Delhi NCR kuşağında Shamli, UP tesisi",
-          "Daha iyi toprak sağlığı, daha yüksek ürün verimi"
-        ],
-        "services": [
-          "Organik Gübre Üretimi",
-          "Biyo-Gübre Karışımları",
-          "Toprak Sağlığı Çözümleri",
-          "Verim Artırma Programları",
-          "Çiftçi Desteği ve Eğitimi",
-          "Shamli, UP Tesisi (Delhi NCR)"
-        ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
-      },
-      "securities": {
-        "tag": "Silahlı Güvenlik & Komandolar",
-        "desc": "Liderleri ve işletmeleri koruyan silahlı komandolar ve güvenlik görevlileri.",
-        "overview": "Indexia Securities, mevcut en iyi silahlı güvenlik ve komando korumasını sağlar; insanları, mülkleri ve üst düzey operasyonları günün her saati korur. Eğitimli komandolardan ve silahlı muhafızlardan VIP eskortlara ve etkinlik güvenliğine kadar şirket, her göreve askeri düzeyde disiplin getirir.",
-        "highlights": [
-          "En üst düzey silahlı ve komando koruması",
-          "Hızlı müdahale disiplinine sahip eğitimli komandolar",
-          "24×7 izleme ve saha müdahalesi"
-        ],
-        "services": [
-          "Silahlı Güvenlik Görevlileri",
-          "Komando Koruma Birimleri",
-          "VIP ve Önemli Kişi Eskortları",
-          "Etkinlik ve Mekan Güvenliği",
-          "Kurumsal ve Saha Güvenliği",
-          "24×7 İzleme ve Hızlı Müdahale"
-        ],
-        "name": "Indexia Securities"
-      },
-      "warehouse": {
-        "tag": "Stratejik Arazi Yatırımı",
-        "desc": "Shamli'de 8 ulusal otoyola bağlı 21 dönümlük stratejik arazi.",
-        "overview": "Indexia Warehouse, Delhi'deki Tronica City, Loni'den yalnızca ~65 km uzaklıktaki Uttar Pradesh, Shamli'de stratejik bir arazi yatırım fırsatı sunar. Konum bir bağlantı merkezidir: 8 eyaleti bağlayan 8 ulusal otoyol ve 2 ana karayolu, Butan ve Nepal'e doğrudan erişim ve 50 crore kişilik pazar erişimi. Dört büyük liman (Gujarat, Maharashtra, Chennai, Kolkata) otoyollar üzerinden doğrudan ulaşılabilir durumdadır ve hem Delhi IGI Havalimanı hem de Noida Uluslararası Havalimanı, Jewar bir saat içindedir. Arazi portföyü 5 konumu ve toplam 21 dönümü kapsar; 1, 2, 2,5, 5 ve 8 dönümlük esnek parseller ve yükleme rampalı 2 dönüm üzerine inşa edilecek modern bir depo içerir. Beklenen fiyat metrekare başına ₹30'dur, pazarlık payı vardır.",
-        "highlights": [
-          "Birinci sınıf konum, Shamli, UP, Delhi'ye ~65 km",
-          "8 ulusal otoyol + 8 eyaleti bağlayan 2 ana karayolu",
-          "5 konumda 21 dönüm, 1, 2, 2,5, 5 ve 8 dönümlük parseller",
-          "Metrekare başına ₹30, pazarlık payı var"
-        ],
-        "services": [
-          "Arazi Parselleri, 1, 2, 2,5, 5 ve 8 Dönüm",
-          "5 Konumda 21 Dönüm",
-          "2 Dönümlük Parcelde Depo İnşaatı",
-          "Otoyol ve Karayolu Bağlantısı",
-          "Liman Erişimi, Gujarat, Maharashtra, Chennai, Kolkata",
-          "Havalimanı Erişimi, Delhi ve Jewar 1 Saat İçinde"
-        ],
-        "name": "Indexia Warehouse",
-        "location": "Shamli, Uttar Pradesh"
-      },
-      "advertising": {
-        "tag": "Premium Unipole Reklam Panoları",
-        "desc": "Kuzey Hindistan'ın en yoğun kavşağında premium otoyol reklam panoları.",
-        "overview": "Indexia Advertising, Kuzey Hindistan'ın merkezi olan Shamli'deki Delhi–Dehradun Otoyolu'nda (NH-709B) premium tek direkli unipole reklam panoları işletir. 8 ulusal otoyol ve 2 ana karayolunun kavşağında konumlanan unipole'larımız, 50 crore nüfusa ulaşan 10 eyaleti birbirine bağlar ve günlük 1+ crore maruz kalma sağlar. Premium yükseklik ve engelsiz 360° görüş açısına sahip tek direkli unipole'lar, görsel karmaşa olmadan markanıza maksimum görünürlük kazandırır ve imza Bisleri Green markalamasıyla desteklenir. Baskı ve kurulumdan bakıma kadar her şeyi uçtan uca biz yönetiyoruz. 10×20 fit unipole'u ayda ₹25.000 veya 12×24 fit unipole'u ayda ₹36.000'a rezerve edin, standart ücret ayda yüz başına ₹125/metrekare, uzun vadeli paketlerde pazarlık payı vardır. Rezervasyon için 86918 86919 veya 011 4629 1155 numaralarını arayın ya da indexia.queries@gmail.com adresine e-posta gönderin.",
-        "highlights": [
-          "NH-709B, Delhi–Dehradun otoyolunda stratejik yerleşimler",
-          "10 bağlı eyalet, 50 crore nüfus erişimi, günlük 1+ crore maruz kalma",
-          "360° görünürlük ve premium yüksekliğe sahip tek direkli unipole'lar",
-          "Uçtan uca hizmet, baskı, kurulum ve bakım"
-        ],
-        "services": [
-          "Unipole 10×20 fit, ayda ₹25.000",
-          "Unipole 12×24 fit, ayda ₹36.000",
-          "Standart Ücret, ayda yüz başına ₹125/metrekare",
-          "Delhi–Dehradun Otoyolu ve Shamli Çevre Yolu Yerleşimleri",
-          "Baskı, Kurulum ve Bakım",
-          "Uzun Vadeli ve Toplu Paketler"
-        ],
-        "name": "Indexia Advertising",
-        "location": "Delhi–Dehradun Otoyolu, Shamli"
+        "tag": "Krediler & Finans",
+        "tagline": "Yeni Nesil Finans Yöntemi"
       },
       "foundation": {
-        "tag": "Sporcu Desteği",
         "desc": "Olimpiyatlara kadar uluslararası düzeyde eğitim ve destek.",
-        "overview": "Indexia Foundation, sporcuları mümkün olan tüm destekle güçlendirir, uluslararası düzeyde eğitim, yapılandırılmış diyet ve beslenme, uzman koçluk ve Olimpiyat Oyunlarına giden yolda ihtiyaç duyulan her türlü yardım. Vakıf, sporcuların yanında ilk vaatten dünyanın en büyük sahnesine kadar durur.",
         "highlights": [
           "Uluslararası düzeyde eğitim ve uzman koçluk",
           "Yapılandırılmış diyet ve beslenme programları",
-          "Olimpiyatlara kadar eksiksiz destek"
+          "Olimpiyatlara kadar eksiksiz destek",
+          "Olimpiyat seviyesinde Hintli sporcular için sürdürülebilir bir hat oluşturma"
         ],
+        "name": "Indexia Foundation",
+        "overview": "Indexia Foundation, sporcuları mümkün olan tüm destekle güçlendirir, uluslararası düzeyde eğitim, yapılandırılmış diyet ve beslenme, uzman koçluk ve Olimpiyat Oyunlarına giden yolda ihtiyaç duyulan her türlü yardım. Vakıf, sporcuların yanında ilk vaatten dünyanın en büyük sahnesine kadar durur.",
         "services": [
           "Uluslararası Düzeyde Eğitim",
           "Diyet ve Beslenme Programları",
@@ -529,654 +920,291 @@
           "Spor Hekimliği ve İyileşme",
           "Olimpiyat Düzeyinde Destek"
         ],
-        "name": "Indexia Foundation"
+        "tag": "Sporcu Desteği"
+      },
+      "overseas": {
+        "desc": "Rafine şeker ve tüm gıda ürünlerini dünya geneline ihraç ediyoruz.",
+        "highlights": [
+          "Tüm gıda ürünlerinin ihracatı, şeker odakta",
+          "14 Güney Amerika pazarında yerleşik varlık",
+          "Uçtan uca tedarik, kalite ve lojistik",
+          "Toptan alıcılar için güvenilir ortak"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd.",
+        "overview": "Indexia Overseas, tüm gıda ürünlerinin küresel ihracatını yürütür ve özellikle 14 Güney Amerika ülkesine şeker ihracatına odaklanır. Şirket; tedarik, kalite, lojistik ve uluslararası uyumluluğu yöneterek gıda sınıfı ürünlerin kaynaktan pazara güvenilir ve ölçekli şekilde ulaşmasını sağlar.",
+        "services": [
+          "Şeker İhracatı ve Ticareti",
+          "Tedarik ve Kalite Kontrol",
+          "Uluslararası Lojistik",
+          "14 Güney Amerika Pazarı",
+          "Düzenleyici ve Uyum Yönetimi",
+          "Güney Amerika Pazarı Dağıtımı"
+        ],
+        "tag": "Gıda İhracatçısı"
+      },
+      "securities": {
+        "desc": "Liderleri ve işletmeleri koruyan silahlı komandolar ve güvenlik görevlileri.",
+        "highlights": [
+          "En üst düzey silahlı ve komando koruması",
+          "Hızlı müdahale disiplinine sahip eğitimli komandolar",
+          "24×7 izleme ve saha müdahalesi",
+          "Yüksek profilli müşterileri korumada kanıtlanmış geçmiş"
+        ],
+        "name": "Indexia Securities",
+        "overview": "Indexia Securities, mevcut en iyi silahlı güvenlik ve komando korumasını sağlar; insanları, mülkleri ve üst düzey operasyonları günün her saati korur. Eğitimli komandolardan ve silahlı muhafızlardan VIP eskortlara ve etkinlik güvenliğine kadar şirket, her göreve askeri düzeyde disiplin getirir.",
+        "services": [
+          "Silahlı Güvenlik Görevlileri",
+          "Komando Koruma Birimleri",
+          "VIP ve Önemli Kişi Eskortları",
+          "Etkinlik ve Mekan Güvenliği",
+          "Kurumsal ve Saha Güvenliği",
+          "24×7 İzleme ve Hızlı Müdahale"
+        ],
+        "tag": "Silahlı Güvenlik & Komandolar"
+      },
+      "warehouse": {
+        "desc": "Shamli'de 8 ulusal otoyola bağlı 21 dönümlük stratejik arazi.",
+        "highlights": [
+          "Birinci sınıf konum, Shamli, UP, Delhi'ye ~65 km",
+          "8 ulusal otoyol + 8 eyaleti bağlayan 2 ana karayolu",
+          "5 konumda 21 dönüm, 1, 2, 2,5, 5 ve 8 dönümlük parseller",
+          "Metrekare başına ₹30, pazarlık payı var"
+        ],
+        "location": "Shamli, Uttar Pradesh",
+        "name": "Indexia Warehouse",
+        "overview": "Indexia Warehouse, Delhi'deki Tronica City, Loni'den yalnızca ~65 km uzaklıktaki Uttar Pradesh, Shamli'de stratejik bir arazi yatırım fırsatı sunar. Konum bir bağlantı merkezidir: 8 eyaleti bağlayan 8 ulusal otoyol ve 2 ana karayolu, Butan ve Nepal'e doğrudan erişim ve 50 crore kişilik pazar erişimi. Dört büyük liman (Gujarat, Maharashtra, Chennai, Kolkata) otoyollar üzerinden doğrudan ulaşılabilir durumdadır ve hem Delhi IGI Havalimanı hem de Noida Uluslararası Havalimanı, Jewar bir saat içindedir. Arazi portföyü 5 konumu ve toplam 21 dönümü kapsar; 1, 2, 2,5, 5 ve 8 dönümlük esnek parseller ve yükleme rampalı 2 dönüm üzerine inşa edilecek modern bir depo içerir. Beklenen fiyat metrekare başına ₹30'dur, pazarlık payı vardır.",
+        "services": [
+          "Arazi Parselleri, 1, 2, 2,5, 5 ve 8 Dönüm",
+          "5 Konumda 21 Dönüm",
+          "2 Dönümlük Parcelde Depo İnşaatı",
+          "Otoyol ve Karayolu Bağlantısı",
+          "Liman Erişimi, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Havalimanı Erişimi, Delhi ve Jewar 1 Saat İçinde"
+        ],
+        "tag": "Stratejik Arazi Yatırımı"
       }
     },
     "news": {
       "articles": {
-        "yes-bank-sme-funding": {
-          "title": "Yes Bank, ABD Hükümeti ve Wells Fargo'dan KOBİ Kredileri İçin 150 Milyon Dolar Alıyor",
-          "category": "Bankacılık",
-          "excerpt": "OPIC–Wells Fargo kolunun üçüncü dilimi, küçük ve orta ölçekli işletmelere kredi vermeyi genişletecek."
-        },
-        "uidai-aadhaar-banks": {
-          "title": "UIDAI, Bankalardan Aadhaar Kayıt Merkezleri Kurmalarını İstiyor",
-          "category": "Dijital Bankacılık",
-          "excerpt": "Hindistan'ın Tek Kimlik Otoritesi, kimlik doğrulamayı iyileştirmek için bankalardan Aadhaar kayıt ve güncelleme merkezleri kurmasını istedi."
-        },
         "demonetisation-digital-payments": {
-          "title": "Demonetizasyon, Hindistan'da Dijital Ödeme Benimsemesini Hızlandırıyor",
           "category": "Ödemeler",
-          "excerpt": "Hindistan'ın demonetizasyon programı, dijital ödemelere geçişi hızlandırdı."
-        },
-        "sbi-imps-fee-waiver": {
-          "title": "SBI, Dijital Transferleri Teşvik Etmek İçin IMPS Ücretlerini Kaldırıyor",
-          "category": "Bankacılık",
-          "excerpt": "State Bank of India, IMPS transferleri için ücretleri kaldırdı."
+          "excerpt": "Hindistan'ın demonetizasyon programı, dijital ödemelere geçişi hızlandırdı.",
+          "title": "Demonetizasyon, Hindistan'da Dijital Ödeme Benimsemesini Hızlandırıyor"
         },
         "nakshatra-gili-directors": {
-          "title": "Nakshatra Gili, Yeni Bağımsız Yöneticiler Atıyor",
-          "category": "Kurumsal Yönetim",
-          "excerpt": "Nakshatra Gili, bağımsız yönetici atamaları ile yönetim kurulunu güçlendirdi."
+          "category": "Kurumsal Yönetişim",
+          "excerpt": "Nakshatra Gili, bağımsız yönetici atamaları ile yönetim kurulunu güçlendirdi.",
+          "title": "Nakshatra Gili, Yeni Bağımsız Yöneticiler Atıyor"
+        },
+        "sbi-imps-fee-waiver": {
+          "category": "Bankacılık",
+          "excerpt": "State Bank of India, IMPS transferleri için ücretleri kaldırdı.",
+          "title": "SBI, Dijital Transferleri Teşvik Etmek İçin IMPS Ücretlerini Kaldırıyor"
         },
         "sebi-hdfc-information-leak": {
-          "title": "SEBI, HDFC Bilgi Sızıntısı Davasında Soruşturma Emrediyor",
           "category": "Düzenleme",
-          "excerpt": "Hindistan Menkul Kıymetler ve Borsa Kurulu, soruşturma başlattı."
+          "excerpt": "Hindistan Menkul Kıymetler ve Borsa Komisyonu, HDFC ile ilgili kamuoyuna açıklanmayan bilgi sızıntısı iddiasını araştırmaya başladı.",
+          "title": "SEBI, HDFC Bilgi Sızıntısı Davasında Soruşturma Emri Verdi"
+        },
+        "uidai-aadhaar-banks": {
+          "category": "Dijital Bankacılık",
+          "excerpt": "Hindistan'ın Tek Kimlik Otoritesi, kimlik doğrulamayı iyileştirmek için bankalardan Aadhaar kayıt ve güncelleme merkezleri kurmasını istedi.",
+          "title": "UIDAI, Bankalardan Aadhaar Kayıt Merkezleri Kurmalarını İstiyor"
+        },
+        "yes-bank-sme-funding": {
+          "category": "Bankacılık",
+          "excerpt": "OPIC–Wells Fargo kolunun üçüncü dilimi, küçük ve orta ölçekli işletmelere kredi vermeyi genişletecek.",
+          "title": "Yes Bank, ABD Hükümeti ve Wells Fargo'dan KOBİ Kredileri İçin 150 Milyon Dolar Alıyor"
         }
       },
       "insights": {
-        "understanding-fdi": {
-          "title": "YDY'yi Anlamak: Hindistan'da Yabancı Doğrudan Yatırım Nasıl Çalışır",
-          "body": "Yabancı Doğrudan Yatırım (YDY), Hindistan'da ekonomik büyümenin它temel bir itici gücüdür."
-        },
         "choosing-loan": {
-          "title": "Doğru Krediyi Seçme: Pratik Bir Rehber",
-          "body": "Doğru kredi ürününü seçme, finansal hedeflerinize ve ödeme kapasitenize bağlıdır."
+          "body": "Doğru kredi ürününü seçme, finansal hedeflerinize ve ödeme kapasitenize bağlıdır.",
+          "title": "Doğru Krediyi Seçme: Pratik Bir Rehber"
         },
         "organic-farming": {
-          "title": "Hindistan'da Organik Tarımın Yükselişi",
-          "body": "Organik tarım, Hindistan genelinde artan bir popülerlik kazanıyor."
+          "body": "Organik tarım, Hindistan genelinde artan bir popülerlik kazanıyor.",
+          "title": "Hindistan'da Organik Tarımın Yükselişi"
         },
         "securing-operations": {
-          "title": "İşletme Operasyonlarınızı Çevrimiçi Güvence Altına Alma",
-          "body": "Artan siber tehditler çağında, işletme operasyonlarınızı çevrimiçi güvence altına almak artık isteğe bağlı değil."
-        }
-      }
-    },
-    "careers": {
-      "culture": [
-        "Indexia Group öğrenen bir organizasyondur ve kurum kültürü ekibidir. İnsanlarımız en büyük varlığımızdır."
-      ],
-      "roles": {
-        "business-development": {
-          "title": "İş Geliştirme Uzmanı",
-          "department": "Satış ve Ortaklıklar",
-          "type": "Tam Zamanlı"
+          "body": "Çevrimiçi işlemlerinizi güvence altına almak artık isteğe bağlı değil. Çok faktörlü kimlik doğrulama kullanın ve hassas verileri şifreleyin.",
+          "title": "Çevrimiçi İşlemlerinizi Güvence Altına Alın"
         },
-        "city-head": {
-          "title": "Şehir Müdürü",
-          "department": "Operasyonlar",
-          "type": "Tam Zamanlı"
-        },
-        "team-manager": {
-          "title": "Ekip Müdürü",
-          "department": "Operasyonlar",
-          "type": "Tam Zamanlı"
-        },
-        "hr-manager": {
-          "title": "İK Müdürü",
-          "department": "İnsan Kaynakları",
-          "type": "Tam Zamanlı"
-        },
-        "team-leader": {
-          "title": "Ekip Lideri",
-          "department": "Operasyonlar",
-          "type": "Tam Zamanlı"
-        },
-        "customer-support": {
-          "title": "Müşteri Destek Uzmanı",
-          "department": "Müşteri Hizmetleri",
-          "type": "Tam Zamanlı"
-        },
-        "field-executive": {
-          "title": "Saha Uzmanı",
-          "department": "Operasyonlar",
-          "type": "Tam Zamanlı"
-        },
-        "seo-professional": {
-          "title": "SEO Uzmanı",
-          "department": "Dijital Pazarlama",
-          "type": "Tam Zamanlı"
+        "understanding-fdi": {
+          "body": "Yabancı Doğrudan Yatırım (YDY), Hindistan'da ekonomik büyümenin它temel bir itici gücüdür.",
+          "title": "YDY'yi Anlamak: Hindistan'da Yabancı Doğrudan Yatırım Nasıl Çalışır"
         }
       }
     },
     "research": {
       "areas": {
-        "economic": {
-          "title": "Ekonomik Araştırma",
-          "body": "Küresel ve bölgesel ekonomiler, politika değişiklikleri ve büyüme sürücüleri hakkında derin analiz."
-        },
-        "thematic": {
-          "title": "Küresel Tematik Araştırma",
-          "body": "Küresel öneme sahip temalar ve ekonomiler ile piyasalar üzerindeki etkileri hakkında derin analiz."
-        },
-        "macro": {
-          "title": "Küresel Makro Strateji",
-          "body": "Makroekonomik eğilimler, faiz oranları ve varlık tahsisindeki etkileri hakkında stratejik değerlendirme."
-        },
-        "fx": {
-          "title": "Döviz",
-          "body": "Döviz piyasaları, kur hareketleri ve forex ticaret stratejileri hakkında uzman görüşleri."
-        },
-        "rates": {
-          "title": "Sabit Getiri & Faiz Oranları",
-          "body": "Tahvil piyasaları, faiz oranı yörüngeleri ve sabit getiri yatırım fırsatları analizi."
+        "commodities": {
+          "body": "Emtia fiyat trendleri, arz-talep dinamikleri ve küresel piyasalar üzerindeki etkileri hakkında içgörüler.",
+          "title": "Emtia Araştırma"
         },
         "credit": {
-          "title": "Kredi Araştırma",
-          "body": "Kredi kalitesi, kurumsal borç piyasaları ve sektör bazlı kredi riski değerlendirmesi."
+          "body": "Kredi kalitesi, kurumsal borç piyasaları ve sektör bazlı kredi riski değerlendirmesi.",
+          "title": "Kredi Araştırma"
         },
-        "commodities": {
-          "title": "Emtia Araştırma",
-          "body": "Emtia fiyat trendleri, arz-talep dinamikleri ve küresel piyasalar üzerindeki etkileri hakkında içgörüler."
+        "economic": {
+          "body": "Küresel ve bölgesel ekonomiler, politika değişiklikleri ve büyüme sürücüleri hakkında derin analiz.",
+          "title": "Ekonomik Araştırma"
+        },
+        "fx": {
+          "body": "Döviz piyasaları, kur hareketleri ve forex ticaret stratejileri hakkında uzman görüşleri.",
+          "title": "Döviz"
+        },
+        "macro": {
+          "body": "Makroekonomik eğilimler, faiz oranları ve varlık tahsisindeki etkileri hakkında stratejik değerlendirme.",
+          "title": "Küresel Makro Strateji"
+        },
+        "rates": {
+          "body": "Tahvil piyasaları, faiz oranı yörüngeleri ve sabit getiri yatırım fırsatları analizi.",
+          "title": "Sabit Getiri & Faiz Oranları"
+        },
+        "thematic": {
+          "body": "Küresel öneme sahip temalar ve ekonomiler ile piyasalar üzerindeki etkileri hakkında derin analiz.",
+          "title": "Küresel Tematik Araştırma"
         }
       },
       "reports": {
-        "otg": {
-          "title": "Sahadan (OTG)",
-          "summary": "Saha analizimiz, Asya, Afrika ve Orta Doğu'daki ana pazarlardan birinci el saha içgörüleri sunar."
-        },
         "act": {
-          "title": "Uygulanabilir Fikirler (ACT)",
-          "summary": "Net giriş ve çıkış noktalarına sahip kısa, uygulanabilir piyasa fikirleri."
+          "summary": "Net giriş ve çıkış noktalarına sahip kısa, uygulanabilir piyasa fikirleri.",
+          "title": "Uygulanabilir Fikirler (ACT)"
+        },
+        "otg": {
+          "summary": "Saha analizimiz, Asya, Afrika ve Orta Doğu'daki ana pazarlardan birinci el saha içgörüleri sunar.",
+          "title": "Sahadan (OTG)"
         },
         "special-reports": {
-          "title": "Özel Raporlar",
-          "summary": "Küresel öneme sahip temalarda derin raporlar."
+          "summary": "Küresel öneme sahip temalarda derin raporlar.",
+          "title": "Özel Raporlar"
         }
       }
     },
     "security": {
-      "features": {
-        "tech": {
-          "title": "Güçlü Teknolojiler",
-          "body": "Bankacılık sistemlerimiz deneyimli uzmanlar tarafından yönetilir ve mevcut en iyi güvenlik teknolojisiyle korunur."
+      "contacts": {
+        "control": {
+          "body": "Hesabınızda yetkisiz faaliyet şüpheleniyorsanız, müşteri hizmetleri hattımızı hemen arayın.",
+          "title": "İletişim Merkezi"
         },
+        "report": {
+          "body": "Şüpheli faaliyeti sorgulama formumuz aracılığıyla bildirin veya ilgili Indexia Group şirketiyle doğrudan iletişime geçin.",
+          "title": "Dolandırıcılığı Bildirin"
+        }
+      },
+      "features": {
         "monitor": {
-          "title": "Güvenli Sistemler",
-          "body": "Indexia Finance, dolandırıcılığı erken tespit etmek ve önleyici tedbirler almak için 7/24 tüm tehditleri ve çevrimiçi etkinlikleri izler."
+          "body": "Indexia Finance, dolandırıcılığı erken tespit etmek ve önleyici tedbirler almak için 7/24 tüm tehditleri ve çevrimiçi etkinlikleri izler.",
+          "title": "Güvenli Sistemler"
+        },
+        "tech": {
+          "body": "Bankacılık sistemlerimiz deneyimli uzmanlar tarafından yönetilir ve mevcut en iyi güvenlik teknolojisiyle korunur.",
+          "title": "Güçlü Teknolojiler"
         }
       },
       "practices": {
-        "devices": {
-          "title": "Cihazlarınızı Güvenli Tutun",
-          "body": "Cihazlarınızı her zaman PIN veya biyometrik kimlik doğrulama ile kilitleyin."
-        },
         "connections": {
-          "title": "Güvenli Bağlantılar Kullanın",
-          "body": "Genel Wi-Fi ağlarında finansal işlemlerden kaçının."
+          "body": "Genel Wi-Fi ağlarında finansal işlemlerden kaçının.",
+          "title": "Güvenli Bağlantılar Kullanın"
         },
         "data": {
-          "title": "Kişisel Verilerinizi Koruyun",
-          "body": "Banka şifrelerinizi, OTP'lerinizi veya PIN'lerinizi kimseyle paylaşmayın."
-        }
-      },
-      "contacts": {
-        "control": {
-          "title": "İletişim Merkezi",
-          "body": "Hesabınızda yetkisiz faaliyet şüpheleniyorsanız, müşteri hizmetleri hattımızı hemen arayın."
+          "body": "Banka şifrelerinizi, OTP'lerinizi veya PIN'lerinizi kimseyle paylaşmayın.",
+          "title": "Kişisel Verilerinizi Koruyun"
         },
-        "report": {
-          "title": "Dolandırıcılığı Bildirin",
-          "body": "Şüpheli faaliyeti sorgulama formumuz aracılığıyla bildirin veya ilgili Indexia Group şirketiyle doğrudan iletişime geçin."
+        "devices": {
+          "body": "Cihazlarınızı her zaman PIN veya biyometrik kimlik doğrulama ile kilitleyin.",
+          "title": "Cihazlarınızı Güvenli Tutun"
         }
       }
     }
   },
+  "phoneLabel": {
+    "landline": "Sabit hat",
+    "mob": "Mobil",
+    "mobile": "Cep",
+    "tel": "Tel"
+  },
+  "securityTipsPage": {
+    "contactsEyebrow": "Yardıma mı İhtiyacınız Var?",
+    "contactsHeading": "Bizimle Konuşmanız mı Gerekli?",
+    "contactsSubtitle": "Hesap bilgilerinizi şüpheli bir tarafa açıkladığınızı düşünüyorsanız veya dolandırıcılığa maruz kaldıysanız, derhal Müşteri Hizmetleri Hattı'nı arayarak bizimle iletişime geçin.",
+    "ctaBody": "Bunu soru formumuz aracılığıyla bildirin veya ilgili Indexia Group şirketiyle doğrudan iletişime geçin.",
+    "ctaButton": "Bilgilerinizi Koruyun",
+    "ctaTitle": "Şüpheli bir şey mi görüyorsunuz?",
+    "eyebrow": "Güvenlik İpuçları",
+    "featuresEyebrow": "Biz Ne Yapıyoruz",
+    "featuresHeading": "Sizi Çevrimiçi Güvende Tutuyoruz",
+    "featuresSubtitle": "Çevrimiçi bankacılık yaptığınızda hesaplarınızı korumak için neler yaptığımızı okuyun.",
+    "metaDescription": "Indexia Group'tan güvenlik ipuçları, hesaplarınızı çevrimiçi nasıl koruduğumuz, cihazlarınızda neler yapabileceğiniz ve bir sorun olursa kime başvurmanız gerektiği.",
+    "practicesEyebrow": "Siz Ne Yapabilirsiniz",
+    "practicesHeading": "Bilgilerinizi Koruyun",
+    "practicesSubtitle": "Çevrimiçi bankacılıkta hesaplarınızı korumak için her gün çalışıyoruz. Günlük cihazlarınızda da çevrimiçi güvende kalmak için yapabileceğiniz birkaç basit şey var.",
+    "subtitle": "Nereye giderseniz gidin, paranızı çevrimiçi olarak güvenle yönetebilirsiniz.",
+    "title": "Indexia Group'tan Güvenlik İpuçları",
+    "titleAccent": "Bir Adım Önde Olun.",
+    "titleStart": "Dolandırıcılıktan "
+  },
+  "seo": {
+    "businessesDescription": "Indexia Group'un sekiz işletmesi: finans, krediler, güvenlik, şeker ihracatı, organik gübre, depolama, reklamcılık ve sporcu desteği.",
+    "businessesTitle": "Grup Şirketleri, Finans, Tarım, İhracat & Lojistik",
+    "contactDescription": "Finansal hizmetler, krediler, ihracat, tarım ve lojistik soruları için Indexia Group ile iletişime geçin. Mumbai, Delhi ve Ekvador'da ofisler, 24 saat içinde yanıt.",
+    "contactTitle": "İletişim, Mumbai & Delhi Ofisleri",
+    "homeDescription": "Çeşitlendirilmiş Hint iş grubu: finansal hizmetler, NBFC kredileri, küresel ihracat, tarım gübreleri, depolama & güvenlik. Mumbai, Delhi ve Ekvador'da ofisler.",
+    "homeTitle": "Finansal Hizmetler, Krediler, İhracat & Lojistik"
+  },
+  "unipolePricing": {
+    "areaCol": "Metrekare",
+    "areaLarge": "288 metrekare",
+    "areaSmall": "200 metrekare",
+    "bookMessage": "{{size}} unipole'u ({{area}}) aylık {{rate}} ücretiyle rezerve etmek istiyorum.",
+    "bookNow": "Hemen rezerve et",
+    "bookSize": "Bu boyutu rezerve et",
+    "eyebrow": "Unipole Paketleri",
+    "note": "* Ücretler müsaitliğe bağlıdır. Uzun vadeli paketler için iletişime geçin.",
+    "rateCol": "Aylık Ücret",
+    "rateLarge": "₹36.000",
+    "rateSmall": "₹25.000",
+    "sizeCol": "Boyut",
+    "sizeLarge": "12 × 24 fit",
+    "sizeSmall": "10 × 20 fit",
+    "standardRate": "Standart Ücret: 1 ay tek yüz için ₹125/metrekare",
+    "subtitle": "Shamli, Delhi–Dehradun Otoyolu'nda premium unipole paketleri",
+    "title": "Mevcut Boyutlar ve Fiyatlar"
+  },
+  "warehouseContact": {
+    "address": "Ofis Adresi",
+    "brochure": "Broşürü indir",
+    "emails": "E-posta",
+    "eyebrow": "İletişim",
+    "phones": "Telefon",
+    "title": "Depo Ekibine Ulaşın"
+  },
   "warehousePricing": {
+    "bookMessage": "Metrekare başına ₹30 olan {{size}} arazi parseli ({{area}}) hakkında bilgi almak istiyorum.",
+    "bookNow": "Hemen rezerve et",
+    "enquire": "Sorun",
     "eyebrow": "Arazi Portföyü",
-    "title": "Arazi Portföyü ve Fiyatlandırma",
-    "subtitle": "5 konum | toplam 21 dönüm, Shamli, Uttar Pradesh",
-    "portfolioCol": "Portföy",
-    "valueCol": "Değer",
     "locations": "Konum",
     "locationsValue": "5 Konum",
-    "total": "Toplam Arazi",
-    "totalValue": "21 Dönüm",
-    "plotCol": "Mevcut Parsel Boyutları",
+    "note": "Yükleme rampalı 2 dönüm üzerine modern bir depo inşa edilecektir. Fiyatlar pazarlığa açıktır, ayrıntılar için iletişime geçin.",
     "plot1": "1 Dönüm",
     "plot2": "2 Dönüm",
     "plot2_5": "2,5 Dönüm",
     "plot5": "5 Dönüm",
     "plot8": "8 Dönüm",
-    "standardRate": "Beklenen Fiyat: Metrekare başına ₹30, Pazarlık payı var",
-    "note": "Yükleme rampalı 2 dönüm üzerine modern bir depo inşa edilecektir. Fiyatlar pazarlığa açıktır, ayrıntılar için iletişime geçin.",
-    "enquire": "Sorun",
     "plotArea1": "Arazi alanı: 1 dönüm",
     "plotArea2": "Arazi alanı: 2 dönüm",
     "plotArea2_5": "Arazi alanı: 2,5 dönüm",
     "plotArea5": "Arazi alanı: 5 dönüm",
     "plotArea8": "Arazi alanı: 8 dönüm",
-    "bookMessage": "Metrekare başına ₹30 olan {{size}} arazi parseli ({{area}}) hakkında bilgi almak istiyorum.",
-    "bookNow": "Hemen rezerve et"
-  },
-  "warehouseContact": {
-    "eyebrow": "İletişim",
-    "title": "Depo Ekibine Ulaşın",
-    "phones": "Telefon",
-    "emails": "E-posta",
-    "address": "Ofis Adresi",
-    "brochure": "Broşürü indir"
-  },
-  "brochure": {
-    "download": "PDF İndir",
-    "headline": "Kuzey Hindistan'ın Kalbinde Stratejik Arazi Yatırımı",
-    "about": "Proje Hakkında",
-    "contact": "İletişim",
-    "footer": "Indexia Group · Sorularınız için arayın, e-posta gönderin veya ofisimizi ziyaret edin. Fiyatlar gösterge niteliğindedir ve pazarlığa açıktır.",
-    "print": "Yazdır",
-    "advertisingHeadline": "Shamli, Delhi–Dehradun Otoyolu'nda Premium Unipole Reklam Panoları",
-    "advertisingFooter": "Indexia Group | Ücretler müsaitliğe bağlıdır. Rezervasyon için arayın, e-posta gönderin veya ofisimizi ziyaret edin.",
-    "backWarehouse": "Depoya Dön",
-    "backAdvertising": "Reklamcılığa Dön",
-    "locationWarehouse": "Shamli, Uttar Pradesh",
-    "locationAdvertising": "Delhi–Dehradun Otoyolu, Shamli"
-  },
-  "advertisingContact": {
-    "eyebrow": "İletişim",
-    "title": "Yerinizi Bugün Ayırtın",
-    "phones": "Telefon",
-    "emails": "E-posta",
-    "address": "Ofis Adresi",
-    "brochure": "Broşürü indir"
-  },
-  "aboutPage": {
-    "eyebrow": "Hakkımızda",
-    "title": "Indexia Group Hakkında",
-    "titleStart": "Güven İnşa Etmek ",
-    "titleAccent": "Sektörler Genelinde.",
-    "subtitle": "Bütünlük, uzmanlık ve insana odaklı yaklaşıma bağlı Hint iş grubu.",
-    "storyEyebrow": "Hikayemiz",
-    "storyTitle": "Ortak Bir Vizyondan Ulusal Bir Gruba",
-    "storyBody1": "Indexia Group, Hint şirketlerinin küresel olarak rekabet edebileceğine dair basit bir inançla kuruldu.",
-    "storyBody2": "Bugün Indexia Group üç konumda faaliyet gösteriyor, Mumbai, Delhi ve Ekvador.",
-    "valuesEyebrow": "Değerlerimiz",
-    "valuesTitle": "Ne İçin Savaşıyoruz",
-    "value1Title": "Bütünlük",
-    "value1Body": "Söylediğimizi yaparız.",
-    "value2Title": "Uzmanlık",
-    "value2Body": "Derin alan bilgisine yatırım yapıyoruz.",
-    "value3Title": "İnsanlar Önce",
-    "value3Body": "İş sonuçta insanlarla ilgilidir.",
-    "value4Title": "İnovasyon",
-    "value4Body": "Değişimi kucaklıyor ve sürekli geliştiriyoruz.",
-    "stat1Label": "Şirket",
-    "stat2Label": "Konum",
-    "stat3Label": "İş Yılları",
-    "stat4Label": "Hizmet Verilen Ülkeler",
-    "timelineEyebrow": "Yolculuğumuz",
-    "timelineTitle": "Ana Kilometre Taşları",
-    "milestone1Title": "Mumbai'de Kuruldu",
-    "milestone1Body": "Indexia Group Mumbai'de ilk şirketini kurdu.",
-    "milestone2Title": "Ulusal Genişleme",
-    "milestone2Body": "Delhi NCR'ye genişledi.",
-    "milestone3Title": "Küreselleşme",
-    "milestone3Body": "Güney Amerika'ya şeker ihracatıyla uluslararası pazarlara girdi.",
-    "milestone4Title": "Çeşitlendirme",
-    "milestone4Body": "Agro Bio, Securities, Warehouse ve Advertising'i başlattı.",
-    "milestone5Title": "Sosyal Etki",
-    "milestone5Body": "Hint sporcuları desteklemek için Indexia Foundation'u kurdu.",
-    "ctaTitle": "Birlikte Bir Şey İnşa Edelim",
-    "ctaBody": "Finansal hizmetler, ortaklık ya da daha fazla bilgi arıyorsanız, buradayız.",
-    "ctaButton": "Bize Ulaşın",
-    "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "aboutUs": "About Us",
-    "leaderEyebrow": "Liderlik",
-    "leaderTitle": "Indexia Group'un Arkasındaki Vizyoner",
-    "founderName": "Kurucu ve Genel Müdür",
-    "founderRole": "Kurucu ve Genel Müdür",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
-    "founderQuote": "İş güvenilirlikle ilgilidir. Bütünlük üzerine inşa ettiğinizde, her şey peşinizden gelir.",
-    "companiesEyebrow": "Şirketlerimiz",
-    "companiesTitle": "Sekiz İş, Bir Vizyon",
-    "companiesSubtitle": "Mumbai'deki tek finansal hizmet şirketinden sekiz şirketten oluşan çeşitlendirilmiş gruba.",
-    "c1Tag": "Çok uluslu Fintech",
-    "c1Name": "Indexia Finance",
-    "c1Body": "2012'de kurulan Indexia Finance, Hindistan'ın en büyük uluslararası finans şirketidir.",
-    "c1Highlights": "43+ Kredi Veren Ortaklar,4 Şehirde 5 Şube,2016 En İyi Finans Şirketi Ödülü,Küresel Varlık",
-    "c2Tag": "Kredi Kolu",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
-    "c2Body": "Indexia Finserve, Indexia Group'un özel kredi koludur.",
-    "c2Highlights": "12 Kredi Ürünü,Kişisel ve İş Kredileri,Konut Kredisi ve Teminatlı Kredi,Bakiye Transferi ve İşletme Sermayesi",
-    "c3Tag": "Küresel İhracat",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
-    "c3Body": "Indexia Overseas, Indexia Group'un küresel ihracat koludur.",
-    "c3Highlights": "14 Güney Amerika Ülkesi,Premium Rafine Şeker İhracatı,Gıda Sınıfı Kalite Belgeli,Tam Döngü İhracat Yönetimi",
-    "c4Tag": "Organik Tarım",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    "c4Body": "Indexia Agro Bio Fertilizers, Hint tarımını dönüştürmeye adanmıştır.",
-    "c4Highlights": "%100 Organik Bio Gübreler,Shamli UP'da Üretim,Toprak Testi ve Çiftçi Desteği,Yurtiçi ve İhracat Dağıtımı",
-    "c5Tag": "Silahlı Koruma",
-    "c5Name": "Indexia Securities",
-    "c5Body": "Indexia Securities, önde gelen güvenlik çözümleri sağlayıcısıdır.",
-    "c5Highlights": "Eski Askeri Komandolar,24/7 Operasyon Merkezi,VIP ve Kurumsal Koruma,Kritik Altyapı Güvenliği",
-    "c6Tag": "Stratejik Arazi",
-    "c6Name": "Indexia Warehouse",
-    "c6Body": "Indexia Warehouse, stratejik arazi kiralama fırsatı sunar.",
-    "c6Highlights": "Shamli UP'da 21 Acre,8 Otoyol,5 Konum,Delhi'den 65 km",
-    "c7Tag": "Otoyol Reklamı",
-    "c7Name": "Indexia Advertising",
-    "c7Body": "Indexia Advertising, premium reklam panoları işletmektedir.",
-    "c7Highlights": "NH-709B Delhi-Dehradun Otoyolu,10 Bağlı Eyalet,360° Görünürlük,1+ Crore Günlük Maruz Kalma",
-    "c8Tag": "Sosyal Etki",
-    "c8Name": "Indexia Foundation",
-    "c8Body": "Indexia Foundation, Indexia Group'un sosyal etki koludur.",
-    "c8Highlights": "Tabandan Olimpiyatlara,Eğitim ve Beslenme,Koçluk ve Mentorluk,Yarışma Finansmanı",
-    "visitWebsite": "Web Sitesini Ziyaret Et",
-    "learnMore": "Daha Fazla Bilgi",
-    "registrationEyebrow": "Kayıt ve Uyumluluk",
-    "registrationTitle": "Kayıtlı Varlıklar",
-    "registrationSubtitle": "Tüm Indexia Group şirketleri kayıtlıdır.",
-    "viewOnMCA": "MCA'da Görüntüle",
-    "registrationNote": "Tüm şirket kayıtları şu adreste doğrulanabilir:",
-    "mcaPortal": "MCA Portalı",
-    "taglineSecondary": "Çeşitli Girişimler. Birliği Vizyon.",
-    "stat1Value": "08",
-    "stat2Value": "03",
-    "stat3Value": "12+",
-    "stat4Value": "14",
-    "milestone1Year": "2012",
-    "milestone2Year": "2015",
-    "milestone3Year": "2018",
-    "milestone4Year": "2021",
-    "milestone5Year": "2024"
-  },
-  "homeReach": {
-    "eyebrow": "Erişim Alanımız",
-    "title": "Sınırların Ötesinde Güvenilir",
-    "subtitle": "Mumbai'den Ekvador'a şirketlerimiz üç kıtada bütünlük ve sonuçlara olan bağlılıkla hizmet veriyor.",
-    "stat1Label": "Şirket",
-    "stat2Label": "Ülke",
-    "stat3Label": "Güçlü Yıllar",
-    "stat4Label": "Hizmet Verilen Müşteriler",
-    "cta": "Daha Fazla Bilgi"
-  },
-  "jsonLd": {
-    "orgName": "Indexia Group",
-    "breadcrumbHome": "Ana Sayfa",
-    "breadcrumbAbout": "Hakkımızda",
-    "breadcrumbCompanies": "Grup Şirketleri",
-    "breadcrumbContact": "İletişim",
-    "breadcrumbNews": "Haberler ve Bilgi Merkezi",
-    "breadcrumbCareers": "Kariyer",
-    "aboutName": "Indexia Group Hakkında",
-    "aboutDescription": "Indexia Group, çeşitli bir Hint iş grubudur.",
-    "contactName": "Indexia Group İletişim",
-    "corporateOffice": "Merkez Ofis",
-    "delhiOffice": "Delhi Ofisi",
-    "businessesName": "Indexia Group İşleri",
-    "businessesDescription": "Indexia Group altında sekiz iş.",
-    "newsName": "Indexia Group, Haberler ve Bilgi Merkezi",
-    "careersName": "Indexia Group'ta açık pozisyonlar",
-    "companyPageName": "{{name}}, {{tag}}",
-    "companyPageDescription": "{{name}} hakkında bilgi edinin, Indexia Group şirketi. {{description}}"
-  },
-  "legalContent": {
-    "privacy": {
-      "intro": [
-        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
-        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
-      ],
-      "sections": [
-        {
-          "title": "Informations que nous collectons",
-          "paragraphs": [
-            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
-            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
-          ]
-        },
-        {
-          "title": "Comment nous utilisons vos informations",
-          "paragraphs": [
-            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
-            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
-          ]
-        },
-        {
-          "title": "Partage et divulgation",
-          "paragraphs": [
-            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
-            "Nous ne vendons pas vos informations personnelles à des tiers."
-          ]
-        },
-        {
-          "title": "Sécurité des données",
-          "paragraphs": [
-            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
-            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
-          ]
-        },
-        {
-          "title": "Cookies et technologies similaires",
-          "paragraphs": [
-            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
-          ]
-        },
-        {
-          "title": "Conservation des données",
-          "paragraphs": [
-            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
-          ]
-        },
-        {
-          "title": "Vos droits et choix",
-          "paragraphs": [
-            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
-            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
-          ]
-        },
-        {
-          "title": "Liens vers des tiers",
-          "paragraphs": [
-            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
-          ]
-        },
-        {
-          "title": "Confidentialité des enfants",
-          "paragraphs": [
-            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
-          ]
-        },
-        {
-          "title": "Modifications de la présente politique",
-          "paragraphs": [
-            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
-          ]
-        },
-        {
-          "title": "Contact",
-          "paragraphs": [
-            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
-          ]
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [],
-      "sections": [
-        {
-          "title": "Politique d'Annulation et de Remboursement",
-          "paragraphs": [
-            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
-          ]
-        },
-        {
-          "title": "Politique d'Annulation",
-          "paragraphs": [
-            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
-            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
-            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
-            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
-            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
-            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
-            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
-            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
-          ]
-        },
-        {
-          "title": "Politique de Remboursement",
-          "paragraphs": [
-            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
-          ]
-        },
-        {
-          "title": "Clause BO",
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ]
-        },
-        {
-          "title": "Politique de Clause de Non-Responsabilité",
-          "paragraphs": [
-            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
-            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
-            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
-          ]
-        },
-        {
-          "title": "Clause de Non-Responsabilité de ce Site Web",
-          "paragraphs": [
-            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
-            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
-            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
-            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
-          ]
-        }
-      ]
-    },
-    "terms": {
-      "intro": [
-        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
-        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
-        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
-      ],
-      "sections": [
-        {
-          "title": "Contenu et Modifications",
-          "paragraphs": [
-            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
-          ]
-        },
-        {
-          "title": "Aucune Garantie",
-          "paragraphs": [
-            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
-          ]
-        },
-        {
-          "title": "Utilisation à Vos Risques",
-          "paragraphs": [
-            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
-          ]
-        },
-        {
-          "title": "Propriété Intellectuelle",
-          "paragraphs": [
-            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
-          ]
-        },
-        {
-          "title": "Marques Commerciales",
-          "paragraphs": [
-            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
-          ]
-        },
-        {
-          "title": "Utilisation Non Autorisée",
-          "paragraphs": [
-            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
-          ]
-        },
-        {
-          "title": "Liens Vers des Sites Tiers",
-          "paragraphs": [
-            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
-          ]
-        },
-        {
-          "title": "Liens Vers ce Site Web",
-          "paragraphs": [
-            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
-          ]
-        },
-        {
-          "title": "Droit Applicable",
-          "paragraphs": [
-            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
-          ]
-        },
-        {
-          "title": "Responsabilité des Transactions par Carte",
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ]
-        }
-      ]
-    }
-  },
-  "notFoundPage": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "backHome": "Back to Home"
-  },
-  "applyPage": {
-    "successTitle": "Application Submitted!",
-    "successBody": "Thank you for applying for the <strong>{{role}}</strong> position. Our HR team has received your application and will review it shortly.",
-    "successSentTo": "Application sent to",
-    "backToCareers": "Back to Careers",
-    "heroTitle": "Apply for",
-    "roleDetails": "Role Details",
-    "responsibilities": "Responsibilities & Requirements",
-    "infoBanner": "Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.",
-    "fullName": "Full Name",
-    "fullNamePlaceholder": "Your full name",
-    "email": "Email",
-    "phone": "Phone",
-    "phonePlaceholder": "10-digit number",
-    "experience": "Experience",
-    "selectExperience": "Select experience",
-    "fresher": "Fresher",
-    "lessThan1Year": "Less than 1 year",
-    "1to2Years": "1-2 years",
-    "2to5Years": "2-5 years",
-    "5plusYears": "5+ years",
-    "resume": "Resume",
-    "clickToUpload": "Click to upload resume",
-    "clickToReplace": "Click to replace",
-    "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
-    "tellUsAboutYourself": "Tell us about yourself",
-    "introPlaceholder": "Share your background, skills, and why you're interested in this role...",
-    "submitting": "Submitting...",
-    "submitApplication": "Submit Application",
-    "submitNote": "Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.",
-    "errorNameEmpty": "Please enter your name.",
-    "errorNameShort": "Name must be at least 2 characters.",
-    "errorNameLetters": "Name must contain letters.",
-    "errorEmailEmpty": "Please enter your email address.",
-    "errorEmailInvalid": "Please enter a valid email address.",
-    "errorPhoneEmpty": "Please enter your phone number.",
-    "errorPhoneInvalid": "Please enter a valid 10-digit phone number.",
-    "errorExperience": "Please select your experience level.",
-    "errorResume": "Please upload your resume.",
-    "errorIntroEmpty": "Please tell us about yourself.",
-    "errorIntroShort": "Please write at least 20 characters.",
-    "errorFileSize": "File size must be under 5MB.",
-    "errorFileType": "Only PDF, DOC, or DOCX files are accepted.",
-    "errorSubmit": "Could not submit your application. Please try again later."
-  },
-  "newsHero": {
-    "latestLabel": "Latest across the group",
-    "sectors": {
-      "finance": "Finance",
-      "tradeExport": "Trade & Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "advertising": "Advertising",
-      "sport": "Sport"
-    }
-  },
-  "newsVideo": {
-    "onAir": "On Air",
-    "tvCommercial": "TV Commercial"
-  },
-  "careersHero": {
-    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
-    "companiesOneGroup": "companies, one group"
-  },
-  "openRoles": {
-    "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment."
+    "plotCol": "Mevcut Parsel Boyutları",
+    "portfolioCol": "Portföy",
+    "standardRate": "Beklenen Fiyat: Metrekare başına ₹30, Pazarlık payı var",
+    "subtitle": "5 konum | toplam 21 dönüm, Shamli, Uttar Pradesh",
+    "title": "Arazi Portföyü ve Fiyatlandırma",
+    "total": "Toplam Arazi",
+    "totalValue": "21 Dönüm",
+    "valueCol": "Değer"
   }
 }

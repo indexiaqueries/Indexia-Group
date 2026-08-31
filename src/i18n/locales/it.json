@@ -1,266 +1,500 @@
 {
-  "header": {
-    "nav": {
-      "contact": "Contatti",
-      "about": "About Us"
-    },
-    "menu": {
-      "home": "Home",
-      "groupCompanies": "Aziende del Gruppo",
-      "companies": "Aziende",
-      "contact": "Contatti"
-    },
-    "aria": {
-      "selectLanguage": "Seleziona lingua",
-      "toggleMenu": "Apri menu",
-      "closeMenu": "Chiudi menu"
-    }
+  "aboutPage": {
+    "aboutUs": "Chi siamo",
+    "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
+    "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
+    "c1Name": "Indexia Finance",
+    "c1Tag": "Fintech Multinazionale",
+    "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
+    "c2Highlights": "12 Prodotti di Prestito,Prestiti Personali e Aziendali,Mutuo e Prestito Garantito,Trasferimento Saldo e Capitale Circolante",
+    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Tag": "Braccio Prestiti",
+    "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
+    "c3Highlights": "14 Paesi Sudamericani,Esportazione Zucchero Raffinato Premium,Certificazione Qualità Alimentare,Gestione Completa del Ciclo di Esportazione",
+    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Tag": "Esportazione Globale",
+    "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
+    "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
+    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Tag": "Agricoltura Biologica",
+    "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
+    "c5Highlights": "Ex-Comandanti Militari,Centro Operativo 24/7,Protezione VIP e Aziendale,Sicurezza Infrastrutture Critiche",
+    "c5Name": "Indexia Securities",
+    "c5Tag": "Protezione Armata",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Highlights": "21 Acri a Shamli UP,8 Autostrade Nazionali,5 Sedi,65 km da Delhi",
+    "c6Name": "Indexia Warehouse",
+    "c6Tag": "Terreno Strategico",
+    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
+    "c7Highlights": "Autostrada NH-709B Delhi-Dehradun,10 Stati Collegati,Visibilità 360°,1+ Crore Esposizione Giornaliera",
+    "c7Name": "Indexia Advertising",
+    "c7Tag": "Pubblicità Autostradale",
+    "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
+    "c8Highlights": "Dalla Base alle Olimpiadi,Allenamento e Nutrizione,Coaching e Mentoring,Finanziamento Competizioni",
+    "c8Name": "Indexia Foundation",
+    "c8Tag": "Impatto Sociale",
+    "companiesEyebrow": "Le Nostre Aziende",
+    "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
+    "companiesTitle": "Otto Aziende, Una Visione",
+    "ctaBody": "Whether you're looking for financial services or simply want to learn more about our group, we're here to help.",
+    "ctaButton": "Contattaci",
+    "ctaTitle": "Costruiamo Qualcosa Insieme",
+    "eyebrow": "Chi siamo",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderName": "Fondatore e Amministratore Delegato",
+    "founderQuote": "Gli affari si basano sulla fiducia. Quando costruisci con integrità, tutto il resto segue.",
+    "founderRole": "Fondatore e Amministratore Delegato",
+    "leaderEyebrow": "Leadership",
+    "leaderTitle": "Il Visionario dietro Indexia Group",
+    "learnMore": "Scopri di più",
+    "mcaPortal": "Portale MCA",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
+    "milestone1Body": "Indexia Group established its first company in Mumbai.",
+    "milestone1Title": "Founded in Mumbai",
+    "milestone1Year": "2012",
+    "milestone2Body": "Expanded operations to Delhi NCR.",
+    "milestone2Title": "Espansione Nazionale",
+    "milestone2Year": "2013",
+    "milestone3Body": "Entered international markets with sugar exports to South America.",
+    "milestone3Title": "Portata Globale",
+    "milestone3Year": "2014",
+    "milestone4Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals.",
+    "milestone4Title": "Diversificazione",
+    "milestone4Year": "2021",
+    "milestone5Body": "Founded Indexia Foundation to support Indian athletes.",
+    "milestone5Title": "Impatto Sociale",
+    "milestone5Year": "2024",
+    "registrationEyebrow": "Registrazione e Conformità",
+    "registrationNote": "Tutte le registrazioni sono verificabili sul",
+    "registrationSubtitle": "Tutte le società del gruppo Indexia sono registrate secondo il Companies Act del 2013.",
+    "registrationTitle": "Entità Registrate",
+    "stat1Label": "Aziende",
+    "stat1Value": "08",
+    "stat2Label": "Sedi",
+    "stat2Value": "03",
+    "stat3Label": "Anni di Attività",
+    "stat3Value": "12+",
+    "stat4Label": "Paesi Serviti",
+    "stat4Value": "14",
+    "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve.",
+    "storyBody2": "Today, Indexia Group operates across three locations, Mumbai, Delhi, and Ecuador, with a team that shares a common purpose.",
+    "storyEyebrow": "La Nostra Storia",
+    "storyTitle": "Da una Visione Condivisa a un Gruppo Nazionale",
+    "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach.",
+    "taglineSecondary": "Imprese Diversificate. Visione Unificata.",
+    "timelineEyebrow": "Il Nostro Percorso",
+    "timelineTitle": "Traguardi Chiave",
+    "title": "Su Indexia Group",
+    "titleAccent": "Across Industries.",
+    "titleStart": "Building Trust ",
+    "value1Body": "We do what we say. Every relationship is built on honesty, transparency, and mutual respect.",
+    "value1Title": "Integrità",
+    "value2Body": "We invest in deep domain knowledge across every vertical.",
+    "value2Title": "Competenza",
+    "value3Body": "Business is ultimately about people. We design solutions that empower our clients.",
+    "value3Title": "Le Persone Prima",
+    "value4Body": "We embrace change and continuously improve.",
+    "value4Title": "Innovazione",
+    "valuesEyebrow": "I Nostri Valori",
+    "valuesTitle": "Cosa Difendiamo",
+    "viewOnMCA": "Visualizza su MCA",
+    "visitWebsite": "Visita il Sito"
   },
-  "hero": {
-    "p0": {
-      "tag": "Indexia Group",
-      "heading": "Un Gruppo.\nMolteplici Soluzioni.",
-      "tagline": "Diverse Ventures. Unified Vision.",
-      "sub": "Dalla finanza e logistica all'agro e alla pubblicità, Indexia Group alimenta la crescita di ogni settore con aziende affidabili e pronte per il futuro.",
-      "motto": "Alcuni passi per servire la nazione"
-    },
-    "p1": {
-      "tag": "Indexia Finanza",
-      "heading": "Una destinazione\ncompleta per i prestiti.",
-      "sub": "Puoi richiedere qualsiasi tipo di prestito tramite il nostro portale www.indexiafinance.com. Offriamo i nostri servizi a livello globale, in India siamo partner commerciali di 43 banche e NBFC."
-    },
-    "p2": {
-      "tag": "Indexia Finserve S.r.l.",
-      "heading": "Il metodo finanziario\ndi nuova generazione.",
-      "sub": "Ora la banca giusta arriverà alla tua porta."
-    },
-    "p3": {
-      "tag": "Indexia International S.r.l.",
-      "heading": "Zucchero raffinato e\ntutti gli alimenti.",
-      "sub": "Trattiamo ed esportiamo zucchero raffinato e tutti gli alimenti."
-    },
-    "p4": {
-      "tag": "Indexia Agro Bio Fertilizzanti S.r.l.",
-      "heading": "Produciamo ed\nesportiamo fertilizzanti organici",
-      "sub": "Produciamo fertilizzanti organici in India e li esportiamo in tutto il mondo."
-    },
-    "p5": {
-      "tag": "Indexia Sicurezza",
-      "heading": "Commando armati e\nsicurezza armata",
-      "sub": "Proteggiamo politici e grandi magnati del business."
-    },
-    "p6": {
-      "tag": "Indexia Magazzini",
-      "heading": "Stoccaggio progettato\nper crescere.",
-      "sub": "Infrastrutture moderne di magazzinaggio e logistica che mantengono le merci in movimento in modo efficiente."
-    },
-    "p7": {
-      "tag": "Indexia Pubblicità",
-      "heading": "Il tuo marchio su\nogni autostrada.",
-      "sub": "Numerosi spazi pubblicitari lungo le autostrade, per campagne ad alta visibilità."
-    },
-    "p8": {
-      "tag": "Indexia Fondazione",
-      "heading": "Sostenere\ngli atleti.",
-      "sub": "Programmi sportivi che allenano, guidano e finanziano gli atleti nel loro percorso verso le massime prestazioni."
-    },
-    "ctaExploreGroup": "Scopri le aziende del gruppo",
-    "ctaExploreMore": "Scopri di più",
-    "prevPanel": "Pannello precedente",
-    "nextPanel": "Pannello successivo"
+  "advertisingContact": {
+    "address": "Indirizzo ufficio",
+    "brochure": "Scarica la brochure",
+    "emails": "Email",
+    "eyebrow": "Contatto",
+    "phones": "Telefono",
+    "title": "Prenota il tuo spazio oggi"
   },
-  "footer": {
-    "tagline": "Gruppo imprenditoriale indiano diversificato",
-    "blurb": "Otto aziende affidabili sotto un unico gruppo indiano diversificato, finanza, export, agricoltura, logistica, sicurezza, pubblicità e sostegno agli atleti, costruite su integrità e risultati.",
-    "contactUs": "Contatti",
-    "hours": "Lun - Sab: 9:00 - 18:00",
-    "company": "Azienda",
-    "resources": "Risorse",
-    "legal": "Legale",
-    "links": {
-      "groupCompanies": "Aziende del Gruppo",
-      "advertise": "Pubblicità con Noi",
-      "careers": "Carriere",
-      "news": "Notizie e Centro di Conoscenza",
-      "globalResearch": "Ricerca Globale",
-      "securityTips": "Consigli di Sicurezza",
-      "termsOfUse": "Termini di Utilizzo",
-      "termsConditions": "Termini e Condizioni",
-      "privacyPolicy": "Informativa sulla Privacy",
-      "aboutUs": "About Us"
-    },
-    "cta": "Hai una richiesta su una delle nostre società del gruppo?",
-    "enquiry": "Inviaci la tua richiesta.",
-    "stats": "INDEXIA GROUP · 08 AZIENDE · 03 SEDI",
-    "rights": "© 2026 Indexia Group. Tutti i diritti riservati.",
-    "backToTop": "Torna in alto",
-    "taglineSecondary": "Imprese Diversificate. Visione Unificata."
+  "applyPage": {
+    "1to2Years": "1-2 anni",
+    "2to5Years": "2-5 anni",
+    "5plusYears": "5+ anni",
+    "backToCareers": "Torna alle Carriere",
+    "clickToReplace": "Clicca per sostituire",
+    "clickToUpload": "Clicca per caricare il CV",
+    "email": "Email",
+    "errorEmailEmpty": "Inserisci il tuo indirizzo email.",
+    "errorEmailInvalid": "Inserisci un indirizzo email valido.",
+    "errorExperience": "Seleziona il tuo livello di esperienza.",
+    "errorFileSize": "La dimensione del file deve essere inferiore a 5MB.",
+    "errorFileType": "Sono accettati solo file PDF, DOC o DOCX.",
+    "errorIntroEmpty": "Raccontaci di te.",
+    "errorIntroShort": "Scrivi almeno 20 caratteri.",
+    "errorNameEmpty": "Inserisci il tuo nome.",
+    "errorNameLetters": "Il nome deve contenere lettere.",
+    "errorNameShort": "Il nome deve avere almeno 2 caratteri.",
+    "errorPhoneEmpty": "Inserisci il tuo numero di telefono.",
+    "errorPhoneInvalid": "Inserisci un numero di telefono valido a 10 cifre.",
+    "errorResume": "Carica il tuo CV.",
+    "errorSubmit": "Impossibile inviare la candidatura. Riprova più tardi.",
+    "experience": "Esperienza",
+    "fresher": "Neolaureato",
+    "fullName": "Nome Completo",
+    "fullNamePlaceholder": "Il tuo nome completo",
+    "heroTitle": "Candidati per",
+    "infoBanner": "Compila il modulo e invieremo la tua candidatura direttamente al nostro team HR.",
+    "introPlaceholder": "Condividi il tuo percorso, le tue competenze e perché ti interessa questo ruolo...",
+    "lessThan1Year": "Meno di 1 anno",
+    "phone": "Telefono",
+    "phonePlaceholder": "Numero a 10 cifre",
+    "responsibilities": "Responsabilità e Requisiti",
+    "resume": "CV",
+    "resumeFormats": "PDF, DOC o DOCX (max 5MB)",
+    "roleDetails": "Dettagli Posizione",
+    "selectExperience": "Seleziona esperienza",
+    "submitApplication": "Invia Candidatura",
+    "submitNote": "La tua candidatura sarà inviata a hr@indexiafinance.com e hr.indexia@gmail.com.",
+    "submitting": "Invio in corso...",
+    "successBody": "Grazie per la tua candidatura per la posizione <strong>{{role}}</strong>. Il nostro team HR ha ricevuto la tua candidatura.",
+    "successSentTo": "Candidatura inviata a",
+    "successTitle": "Candidatura Inviata!",
+    "tellUsAboutYourself": "Raccontati"
   },
-  "home": {
-    "groupCompanies": {
-      "title": "Aziende del Gruppo",
-      "description": "Indexia Group è una holding diversificata che abbraccia Finanza, Commercio, Agricoltura, Magazzinaggio, Valori, Impatto Sociale e Pubblicità. Costruiamo aziende che aiutano clienti, partner e comunità a crescere con fiducia."
-    }
+  "branches": {
+    "corporateOffice": "Sede Centrale",
+    "delhiOffice": "Ufficio di Delhi",
+    "internationalOffice": "Ufficio Internazionale",
+    "mumbaiOffice": "Ufficio di Mumbai"
+  },
+  "brochure": {
+    "about": "Informazioni sul progetto",
+    "advertisingFooter": "Indexia Group | Tariffe soggette a disponibilità. Per prenotare, chiamate, scrivete o visitate il nostro ufficio.",
+    "advertisingHeadline": "Unipoli pubblicitari premium sulla Delhi–Dehradun Highway, Shamli",
+    "backAdvertising": "Torna a Pubblicità",
+    "backWarehouse": "Torna a Magazzini",
+    "contact": "Contattaci",
+    "download": "Scarica PDF",
+    "footer": "Indexia Group · Per richieste, chiamate, scrivete o visitate il nostro ufficio. I prezzi sono indicativi e negoziabili.",
+    "headline": "Investimento fondiario strategico nel cuore del Nord India",
+    "locationAdvertising": "Autostrada Delhi-Dehradun, Shamli",
+    "locationWarehouse": "Shamli, Uttar Pradesh",
+    "print": "Stampa"
+  },
+  "businessCard": {
+    "readMore": "Leggi di più",
+    "tapToView": "Tocca per vedere"
   },
   "businesses": {
     "eyebrow": "Aziende del Gruppo",
-    "titleStart": "Otto aziende, ",
+    "subtitle": "Scegli un'azienda per visitare la sua pagina, poi invia la tua richiesta al team giusto.",
     "titleAccent": "un solo gruppo",
-    "subtitle": "Scegli un'azienda per visitare la sua pagina, poi invia la tua richiesta al team giusto."
+    "titleStart": "Otto aziende, "
   },
   "businessesHero": {
-    "eyebrow": "La Differenza Indexia",
-    "titleStart": "Un gruppo. Otto aziende. ",
-    "titleAccent": "Una sola promessa.",
-    "paragraph": "Dalla finanza e dagli affari all'esportazione, agricoltura, logistica, sicurezza, sport e media, ogni azienda Indexia si basa sulle stesse fondamenta: integrità, competenza e un approccio incentrato sulle persone. Qualunque cosa ti serva, il team giusto fa già parte della famiglia.",
-    "counterClients": "Clienti Serviti",
     "counterBusinesses": "Aziende",
+    "counterClients": "Clienti Serviti",
     "counterLocations": "Sedi",
     "counterYears": "Anni di Attività",
-    "cta": "Contattaci →"
+    "cta": "Contattaci →",
+    "eyebrow": "La Differenza Indexia",
+    "paragraph": "Dalla finanza e dagli affari all'esportazione, agricoltura, logistica, sicurezza, sport e media, ogni azienda Indexia si basa sulle stesse fondamenta: integrità, competenza e un approccio incentrato sulle persone. Qualunque cosa ti serva, il team giusto fa già parte della famiglia.",
+    "titleAccent": "Una sola promessa.",
+    "titleStart": "Un gruppo. Otto aziende. "
   },
-  "contactHero": {
-    "eyebrow": "Parla con Indexia",
-    "title": "Una linea diretta con il nostro team",
-    "paragraph": "Dalle domande sulla documentazione alle nuove richieste di prestito, ogni messaggio viene esaminato e risposto da un membro del nostro team, non da una coda.",
-    "sendEnquiry": "Invia la Tua Richiesta",
-    "callNow": "Chiamaci Ora · 86551 68551",
-    "offices": "{{count}} sedi",
-    "directLines": "{{count}} linee dirette",
-    "reply": "< 24 ore tempo medio di risposta"
-  },
-  "contactInfo": {
-    "eyebrow": "Invia la Tua Richiesta",
-    "headlineStart": "Richiedi informazioni su ",
-    "headlineAccent": "Indexia Company",
-    "paragraph": "Che tu abbia una domanda sui nostri servizi, abbia bisogno di una consulenza aziendale o voglia esplorare una partnership, il nostro team è pronto ad aiutarti: rispondiamo entro 24 ore.",
-    "enquiries": "Richieste",
-    "location": "Sede",
-    "workingHours": "Orario di Lavoro",
-    "phoneNumbers": "Numeri di Telefono",
-    "country": "India"
-  },
-  "form": {
-    "eyebrow": "Invia la Tua Richiesta",
-    "intro": "Compila il modulo qui sotto e la tua richiesta verrà gestita dal nostro team.",
-    "name": "Nome",
-    "namePlaceholder": "Il tuo nome completo",
-    "email": "Indirizzo E-mail",
-    "emailPlaceholder": "you@example.com",
-    "phone": "Numero di Telefono",
-    "phonePlaceholder": "Numero a 10 cifre",
-    "subject": "Oggetto / Azienda",
-    "subjectPlaceholder": "Seleziona un'azienda…",
-    "message": "Messaggio",
-    "messagePlaceholder": "Scrivi qui la tua richiesta...",
-    "submit": "Invia Richiesta",
-    "sending": "Invio…",
-    "success": "La tua richiesta è stata inviata! Il nostro team ti ricontatterà a breve.",
-    "errorName": "Inserisci il tuo nome.",
-    "errorNameLetters": "Il nome deve contenere lettere.",
-    "errorPhone": "Inserisci un numero di telefono valido a 10 cifre.",
-    "errorEmail": "Inserisci un indirizzo e-mail valido.",
-    "errorSubject": "Seleziona un oggetto o un'azienda.",
-    "errorMessage": "Inserisci il tuo messaggio.",
-    "errorGeneric": "Qualcosa è andato storto. Riprova più tardi.",
-    "generalEnquiry": "Richiesta Generale"
-  },
-  "companyDetail": {
-    "backAll": "Tutte le Aziende",
-    "register": "Registro Nº {{no}} / 08",
-    "keyEntries": "Voci Chiave",
-    "servicesTitle": "Servizi di questa voce",
-    "registerOf": "Indexia Group · Registro delle Aziende",
-    "entryOf": "Voce {{no}} di 08",
-    "eyebrow": "Invia la Tua Richiesta",
-    "enquireTitle": "Richiedi informazioni su {{name}}",
-    "enquireSub": "La tua richiesta viene inoltrata con {{name}} in evidenza, così il team giusto la prende in carico per primo.",
-    "responseTime": "Tempo di risposta",
-    "responseValue": "Entro 24 ore, lun – sab",
-    "overviewEyebrow": "Panoramica",
-    "overviewTitle": "Informazioni su {{name}}",
-    "exploreServices": "Esplora i servizi",
-    "statServices": "Servizi",
-    "statHighlights": "Punti salienti",
-    "statRegister": "Voce di registro",
-    "mainPoint": "Punto principale",
-    "whyChoose": "Perché scegliere noi",
-    "whyChooseDesc": "Cosa rende questa azienda unica.",
-    "keyNumbers": "Cifre chiave",
-    "keyNumbersDesc": "Le cifre che definiscono il nostro impatto.",
-    "globalReach": "Portata globale",
-    "globalReachDesc": "La nostra presenza oltre i confini e i mercati."
-  },
-  "contact": {
-    "locationsTitleStart": "Le nostre ",
-    "locationsTitleAccent": "Sedi"
-  },
-  "businessCard": {
-    "tapToView": "Tocca per vedere",
-    "readMore": "Leggi di più"
-  },
-  "companyLinkCard": {
-    "visitPage": "Visita la pagina",
-    "visitWebsiteAria": "Visita il sito di {{name}}",
-    "visitPageAria": "Visita la pagina di {{name}}",
-    "visualAlt": "Immagine di {{name}}"
-  },
-  "newsPage": {
-    "eyebrow": "Notizie e Centro di Conoscenza",
-    "title": "Notizie e Centro di Conoscenza",
-    "titleStart": "Storie e approfondimenti da ",
-    "titleAccent": "tutto il Gruppo.",
-    "subtitle": "Ultime notizie bancarie, finanziamenti, pagamenti digitali, cambi di policy e andamento dei mercati, insieme a guide pratiche delle nostre attività.",
-    "featuredLabel": "Storia in evidenza",
-    "readMore": "Leggi di più",
-    "askUs": "Chiedici",
-    "knowledgeEyebrow": "Centro di Conoscenza",
-    "knowledgeHeading": "Guide pratiche dalle nostre società",
-    "knowledgeSubtitle": "Spiegazioni semplici scritte dai team che vivono questo lavoro ogni giorno.",
-    "ctaTitle": "Hai domande sulle nostre società?",
-    "ctaBody": "Dalla facilitazione FDI all'agricoltura biologica fino alla sicurezza armata, la società Indexia giusta è pronta ad aiutarti. Inviaci una richiesta e ti metteremo in contatto.",
-    "ctaButton": "Invia una richiesta",
-    "metaDescription": "News & Knowledge Centre, ultime notizie bancarie su finanziamenti, pagamenti digitali e politica, più guide pratiche di conoscenza di Indexia Group.",
-    "tvEyebrow": "Guardaci in TV",
-    "tvHeadingStart": "Per Tutte le Tue Esigenze di Prestito",
-    "tvHeadingAccent": "Indexia Finance",
-    "tvCaption": "Loan Chahiye Matlab… Indexia Finance"
+  "careersHero": {
+    "companiesOneGroup": "aziende, un gruppo",
+    "description": "Otto aziende. Un team. Costruisci la tua carriera in finanza, esportazione, agricoltura, sicurezza, pubblicità e sviluppo atleti."
   },
   "careersPage": {
-    "eyebrow": "Carriere",
-    "title": "Carriere presso Indexia Group",
-    "titleStart": "Costruisci La Tua Carriera Con ",
-    "titleAccent": "Noi.",
-    "subtitle": "Indexia Group è un'organizzazione che apprende, e la sua cultura aziendale è il suo team.",
+    "apply": "Candidati",
+    "ctaBody": "Siamo sempre alla ricerca di grandi persone. Invia il tuo CV a hr@indexiafinance.com e ti ricontatteremo.",
     "ctaButton": "Vedi le posizioni aperte",
+    "ctaTitle": "Inviaci Il Tuo Curriculum",
+    "cultureEyebrow": "La Nostra Cultura",
+    "cultureHeading": "Un'Organizzazione che Impara",
+    "eyebrow": "Carriere",
+    "mailResume": "Inviaci il tuo curriculum –",
+    "metaDescription": "Carriere in Indexia Group, un'organizzazione che apprende con posizioni presso Indexia Finserve a Mumbai. Invia il tuo curriculum per iniziare la tua carriera con noi.",
     "rolesEyebrow": "Posizioni aperte",
     "rolesHeading": "Le Nostre Posizioni Aperte",
     "rolesSubtitle": "Le nostre posizioni attualmente aperte sono:",
-    "apply": "Candidati",
-    "ctaTitle": "Inviaci Il Tuo Curriculum",
-    "ctaBody": "Siamo sempre alla ricerca di grandi persone. Invia il tuo CV a hr@indexiafinance.com e ti ricontatteremo.",
-    "metaDescription": "Carriere in Indexia Group, un'organizzazione che apprende con posizioni presso Indexia Finserve a Mumbai. Invia il tuo curriculum per iniziare la tua carriera con noi.",
-    "cultureEyebrow": "La Nostra Cultura",
-    "cultureHeading": "Un'Organizzazione che Impara",
-    "mailResume": "Inviaci il tuo curriculum –"
+    "subtitle": "Indexia Group è un'organizzazione che apprende, e la sua cultura aziendale è il suo team.",
+    "title": "Carriere presso Indexia Group",
+    "titleAccent": "Noi.",
+    "titleStart": "Costruisci La Tua Carriera Con "
+  },
+  "common": {
+    "homeAria": "Home di Indexia Group",
+    "languages": {
+      "ar": "العربية",
+      "de": "Deutsch",
+      "el": "Ελληνικά",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "he": "עברית",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ja": "日本語",
+      "ko": "한국어",
+      "nl": "Nederlands",
+      "pl": "Polski",
+      "pt": "Português",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "th": "ไทย",
+      "tr": "Türkçe",
+      "uk": "Українська",
+      "vi": "Tiếng Việt",
+      "zh": "中文"
+    },
+    "logoAlt": "Logo di Indexia Group"
+  },
+  "companyDetail": {
+    "backAll": "Tutte le Aziende",
+    "enquireSub": "La tua richiesta viene inoltrata con {{name}} in evidenza, così il team giusto la prende in carico per primo.",
+    "enquireTitle": "Richiedi informazioni su {{name}}",
+    "entryOf": "Voce {{no}} di 08",
+    "exploreServices": "Esplora i servizi",
+    "eyebrow": "Invia la Tua Richiesta",
+    "globalReach": "Portata globale",
+    "globalReachDesc": "La nostra presenza oltre i confini e i mercati.",
+    "keyEntries": "Voci Chiave",
+    "keyNumbers": "Cifre chiave",
+    "keyNumbersDesc": "Le cifre che definiscono il nostro impatto.",
+    "mainPoint": "Punto principale",
+    "overviewEyebrow": "Panoramica",
+    "overviewTitle": "Informazioni su {{name}}",
+    "register": "Registro Nº {{no}} / 08",
+    "registerOf": "Indexia Group · Registro delle Aziende",
+    "responseTime": "Tempo di risposta",
+    "responseValue": "Entro 24 ore, lun – sab",
+    "servicesTitle": "Servizi di questa voce",
+    "statHighlights": "Punti salienti",
+    "statRegister": "Voce di registro",
+    "statServices": "Servizi",
+    "whyChoose": "Perché scegliere noi",
+    "whyChooseDesc": "Cosa rende questa azienda unica."
+  },
+  "companyLinkCard": {
+    "visitPage": "Visita la pagina",
+    "visitPageAria": "Visita la pagina di {{name}}",
+    "visitWebsiteAria": "Visita il sito di {{name}}",
+    "visualAlt": "Visuale di {{name}}"
+  },
+  "contact": {
+    "locationsTitleAccent": "Sedi",
+    "locationsTitleStart": "Le nostre "
+  },
+  "contactHero": {
+    "callNow": "Chiamaci Ora · 86551 68551",
+    "directLines": "{{count}} linee dirette",
+    "eyebrow": "Parla con Indexia",
+    "offices": "{{count}} sedi",
+    "paragraph": "Dalle domande sulla documentazione alle nuove richieste di prestito, ogni messaggio viene esaminato e risposto da un membro del nostro team, non da una coda.",
+    "reply": "< 24 ore tempo medio di risposta",
+    "sendEnquiry": "Invia la Tua Richiesta",
+    "title": "Una linea diretta con il nostro team"
+  },
+  "contactInfo": {
+    "country": "India",
+    "enquiries": "Richieste",
+    "eyebrow": "Invia la Tua Richiesta",
+    "headlineAccent": "Indexia Company",
+    "headlineStart": "Richiedi informazioni su ",
+    "location": "Sede",
+    "paragraph": "Che tu abbia una domanda sui nostri servizi, abbia bisogno di una consulenza aziendale o voglia esplorare una partnership, il nostro team è pronto ad aiutarti: rispondiamo entro 24 ore.",
+    "phoneNumbers": "Numeri di Telefono",
+    "workingHours": "Orario di Lavoro"
+  },
+  "footer": {
+    "backToTop": "Torna in alto",
+    "blurb": "Otto aziende affidabili sotto un unico gruppo indiano diversificato, finanza, export, agricoltura, logistica, sicurezza, pubblicità e sostegno agli atleti, costruite su integrità e risultati.",
+    "company": "Azienda",
+    "contactUs": "Contatti",
+    "cta": "Hai una richiesta su una delle nostre società del gruppo?",
+    "enquiry": "Inviaci la tua richiesta.",
+    "hours": "Lun - Sab: 9:00 - 18:00",
+    "legal": "Legale",
+    "links": {
+      "aboutUs": "Chi siamo",
+      "advertise": "Pubblicità con Noi",
+      "careers": "Carriere",
+      "globalResearch": "Ricerca Globale",
+      "groupCompanies": "Aziende del Gruppo",
+      "news": "Notizie e Centro di Conoscenza",
+      "privacyPolicy": "Informativa sulla Privacy",
+      "securityTips": "Consigli di Sicurezza",
+      "termsConditions": "Termini e Condizioni",
+      "termsOfUse": "Termini di Utilizzo"
+    },
+    "resources": "Risorse",
+    "rights": "© 2026 Indexia Group. Tutti i diritti riservati.",
+    "stats": "INDEXIA GROUP · 08 AZIENDE · 03 SEDI",
+    "tagline": "Gruppo imprenditoriale indiano diversificato",
+    "taglineSecondary": "Imprese Diversificate. Visione Unificata."
+  },
+  "form": {
+    "email": "Indirizzo E-mail",
+    "emailPlaceholder": "you@example.com",
+    "errorEmail": "Inserisci un indirizzo e-mail valido.",
+    "errorGeneric": "Qualcosa è andato storto. Riprova più tardi.",
+    "errorMessage": "Inserisci il tuo messaggio.",
+    "errorName": "Inserisci il tuo nome.",
+    "errorNameLetters": "Il nome deve contenere lettere.",
+    "errorPhone": "Inserisci un numero di telefono valido a 10 cifre.",
+    "errorSubject": "Seleziona un oggetto o un'azienda.",
+    "eyebrow": "Invia la Tua Richiesta",
+    "generalEnquiry": "Richiesta Generale",
+    "intro": "Compila il modulo qui sotto e la tua richiesta verrà gestita dal nostro team.",
+    "message": "Messaggio",
+    "messagePlaceholder": "Scrivi qui la tua richiesta...",
+    "name": "Nome",
+    "namePlaceholder": "Il tuo nome completo",
+    "phone": "Numero di Telefono",
+    "phonePlaceholder": "Numero a 10 cifre",
+    "sending": "Invio…",
+    "subject": "Oggetto / Azienda",
+    "subjectPlaceholder": "Seleziona un'azienda…",
+    "submit": "Invia Richiesta",
+    "success": "La tua richiesta è stata inviata! Il nostro team ti ricontatterà a breve."
+  },
+  "globalResearchPage": {
+    "areasEyebrow": "Copertura della ricerca",
+    "areasHeading": "Ricerca globale in tutte le discipline",
+    "areasSubtitle": "Analisi pertinenti e approfondite e viste incisive in tutta la nostra copertura.",
+    "ctaBody": "Per saperne di più e ricevere la nostra ricerca, visita il nostro portale di Ricerca Globale. Per ottenere l'accesso, contatta il tuo Relationship Manager.",
+    "ctaButton": "Esplora la copertura della ricerca",
+    "ctaTitle": "Accedi alla nostra ricerca",
+    "eyebrow": "Ricerca Globale",
+    "metaDescription": "Ricerca Globale di Indexia Group, analisi pertinenti e approfondite e viste incisive nelle discipline macroeconomiche, del reddito fisso, valutarie e delle materie prime, con conoscenza sul campo in Asia, Africa e Medio Oriente.",
+    "reportFormat": "Pubblicazione",
+    "reportsEyebrow": "Pubblicazioni",
+    "reportsHeading": "Come condividiamo la ricerca",
+    "reportsSubtitle": "Presentazioni frequenti e pubblicazioni di alta qualità, OTG, la nostra analisi sul campo; ACT, le nostre idee azionabili; e Rapporti Speciali su temi di rilevanza globale.",
+    "subtitle": "Analisi pertinenti e approfondite e viste incisive nelle discipline macroeconomiche, del reddito fisso, valutarie e delle materie prime, basate su una solida conoscenza sul campo in Asia, Africa e Medio Oriente.",
+    "title": "Ricerca Globale in Indexia Group",
+    "titleAccent": "e Risorse.",
+    "titleStart": "Ricerca Finanziaria Globale "
+  },
+  "header": {
+    "aria": {
+      "closeMenu": "Chiudi menu",
+      "selectLanguage": "Seleziona lingua",
+      "toggleMenu": "Apri menu"
+    },
+    "menu": {
+      "companies": "Aziende",
+      "contact": "Contatti",
+      "groupCompanies": "Aziende del Gruppo",
+      "home": "Home"
+    },
+    "nav": {
+      "about": "Chi siamo",
+      "contact": "Contatti"
+    }
+  },
+  "hero": {
+    "ctaExploreGroup": "Scopri le aziende del gruppo",
+    "ctaExploreMore": "Scopri di più",
+    "nextPanel": "Pannello successivo",
+    "p0": {
+      "heading": "Un Gruppo.\nMolteplici Soluzioni.",
+      "motto": "Alcuni passi per servire la nazione",
+      "sub": "Dalla finanza e logistica all'agro e alla pubblicità, Indexia Group alimenta la crescita di ogni settore con aziende affidabili e pronte per il futuro.",
+      "tag": "Indexia Group",
+      "tagline": "Diverse Ventures. Unified Vision."
+    },
+    "p1": {
+      "heading": "Una destinazione\ncompleta per i prestiti.",
+      "sub": "Puoi richiedere qualsiasi tipo di prestito tramite il nostro portale www.indexiafinance.com. Offriamo i nostri servizi a livello globale, in India siamo partner commerciali di 43 banche e NBFC.",
+      "tag": "Indexia Finanza"
+    },
+    "p2": {
+      "heading": "Il metodo finanziario\ndi nuova generazione.",
+      "sub": "Ora la banca giusta arriverà alla tua porta.",
+      "tag": "Indexia Finserve S.r.l."
+    },
+    "p3": {
+      "heading": "Zucchero raffinato e\ntutti gli alimenti.",
+      "sub": "Trattiamo ed esportiamo zucchero raffinato e tutti gli alimenti.",
+      "tag": "Indexia International S.r.l."
+    },
+    "p4": {
+      "heading": "Produciamo ed\nesportiamo fertilizzanti organici",
+      "sub": "Produciamo fertilizzanti organici in India e li esportiamo in tutto il mondo.",
+      "tag": "Indexia Agro Bio Fertilizzanti S.r.l."
+    },
+    "p5": {
+      "heading": "Commando armati e\nsicurezza armata",
+      "sub": "Proteggiamo politici e grandi magnati del business.",
+      "tag": "Indexia Sicurezza"
+    },
+    "p6": {
+      "heading": "Stoccaggio progettato\nper crescere.",
+      "sub": "Infrastrutture moderne di magazzinaggio e logistica che mantengono le merci in movimento in modo efficiente.",
+      "tag": "Indexia Magazzini"
+    },
+    "p7": {
+      "heading": "Il tuo marchio su\nogni autostrada.",
+      "sub": "Numerosi spazi pubblicitari lungo le autostrade, per campagne ad alta visibilità.",
+      "tag": "Indexia Pubblicità"
+    },
+    "p8": {
+      "heading": "Sostenere\ngli atleti.",
+      "sub": "Programmi sportivi che allenano, guidano e finanziano gli atleti nel loro percorso verso le massime prestazioni.",
+      "tag": "Indexia Fondazione"
+    },
+    "prevPanel": "Pannello precedente"
+  },
+  "home": {
+    "groupCompanies": {
+      "description": "Indexia Group è una holding diversificata che abbraccia Finanza, Commercio, Agricoltura, Magazzinaggio, Valori, Impatto Sociale e Pubblicità. Costruiamo aziende che aiutano clienti, partner e comunità a crescere con fiducia.",
+      "title": "Aziende del Gruppo"
+    }
+  },
+  "homeReach": {
+    "cta": "Scopri di Più",
+    "eyebrow": "La Nostra Portata",
+    "stat1Label": "Aziende",
+    "stat2Label": "Paesi",
+    "stat3Label": "Anni di Forza",
+    "stat4Label": "Clienti Serviti",
+    "subtitle": "Da Mumbai all'Ecuador, le nostre aziende servono clienti su tre continenti.",
+    "title": "Affidabili Oltre i Confini"
+  },
+  "jsonLd": {
+    "aboutDescription": "Indexia Group è un gruppo aziendale indiano diversificato attivo in Finanza, Esportazione, Agricoltura, Magazzinaggio, Sicurezza, Pubblicità e Sostegno agli Atleti.",
+    "aboutName": "Su Indexia Group",
+    "breadcrumbAbout": "Chi siamo",
+    "breadcrumbCareers": "Carriere",
+    "breadcrumbCompanies": "Aziende del Gruppo",
+    "breadcrumbContact": "Contattaci",
+    "breadcrumbHome": "Home",
+    "breadcrumbNews": "Notizie e Centro di Conoscenza",
+    "businessesDescription": "Otto aziende sotto Indexia Group nei settori finanziari, prestiti, sicurezza, esportazione, agricoltura, magazzinaggio, pubblicità e sostegno agli atleti.",
+    "businessesName": "Aziende di Indexia Group",
+    "careersName": "Posizioni aperte in Indexia Group",
+    "companyPageDescription": "Scopri {{name}}, un'azienda dell'Indexia Group. {{description}}",
+    "companyPageName": "{{name}}, {{tag}}",
+    "contactName": "Contatta Indexia Group",
+    "corporateOffice": "Sede Direzionale",
+    "delhiOffice": "Ufficio Delhi",
+    "newsName": "Indexia Group, Notizie e Centro di Conoscenza",
+    "orgName": "Indexia Group"
   },
   "legal": {
-    "eyebrow": "Note legali",
-    "privacyTitle": "Informativa sulla privacy",
-    "privacySubtitle": "Come Indexia Group raccoglie, utilizza e protegge le tue informazioni personali.",
-    "termsTitle": "Termini e condizioni",
-    "termsSubtitle": "I termini che regolano l'uso del sito web di Indexia Group e dei servizi delle sue società.",
-    "termsOfUseTitle": "Termini di Utilizzo",
-    "termsOfUseSubtitle": "Le regole per accedere e navigare nel sito di Indexia Group e nei siti delle sue società.",
-    "lastUpdated": "Ultimo aggiornamento",
     "backHome": "Torna alla home",
-    "contactUs": "Contattaci",
-    "contactHeading": "Domande su questa informativa?",
     "contactBody": "Scrivici a contactus@indexiagroup.com o invia una richiesta: il nostro team ti risponderà.",
-    "sendEnquiry": "Invia una richiesta",
+    "contactHeading": "Domande su questa informativa?",
+    "contactUs": "Contattaci",
+    "eyebrow": "Legale",
+    "lastUpdated": "Ultimo aggiornamento",
     "metaPrivacyDescription": "Leggi l'informativa sulla privacy di Indexia Group: come raccogliamo, usiamo, conserviamo e proteggiamo le tue informazioni personali.",
     "metaTermsDescription": "Leggi i termini e le condizioni che regolano l'uso del sito web di Indexia Group e dei servizi delle sue società.",
-    "metaTermsOfUseDescription": "Leggi i Termini di Utilizzo che regolano l'accesso e la navigazione nel sito di Indexia Group e nei siti delle sue società."
+    "metaTermsOfUseDescription": "Leggi i Termini di Utilizzo che regolano l'accesso e la navigazione nel sito di Indexia Group e nei siti delle sue società.",
+    "privacySubtitle": "Come Indexia Group raccoglie, utilizza e protegge le tue informazioni personali.",
+    "privacyTitle": "Informativa sulla privacy",
+    "sendEnquiry": "Invia una richiesta",
+    "termsOfUseSubtitle": "Le regole per accedere e navigare nel sito di Indexia Group e nei siti delle sue società.",
+    "termsOfUseTitle": "Termini di Utilizzo",
+    "termsSubtitle": "I termini che regolano l'uso del sito web di Indexia Group e dei servizi delle sue società.",
+    "termsTitle": "Termini e condizioni"
   },
   "legalContent": {
     "privacy": {
@@ -270,128 +504,75 @@
       ],
       "sections": [
         {
-          "title": "Informazioni che raccogliamo",
           "paragraphs": [
             "Informazioni fornite da te: raccogliamo i dati che ci fornisci direttamente, come nome, indirizzo email, numero di telefono, nome dell'azienda e il contenuto della tua richiesta o candidatura.",
             "Informazioni raccolte automaticamente: quando visiti i nostri siti web, potremmo raccogliere informazioni sul dispositivo e sull'utilizzo, come indirizzo IP, tipo di browser, pagine visitate e URL di provenienza, tramite cookie e tecnologie simili."
-          ]
+          ],
+          "title": "Informazioni che raccogliamo"
         },
         {
-          "title": "Come utilizziamo le tue informazioni",
           "paragraphs": [
             "Utilizziamo le tue informazioni per rispondere alle richieste, valutare ed erogare i nostri servizi, verificare l'identità quando richiesto, migliorare i nostri siti web e servizi, adempiere agli obblighi legali e, con il tuo consenso, inviarti aggiornamenti sulle nostre società del gruppo.",
             "Facciamo affidamento sulle seguenti basi giuridiche per il trattamento: il tuo consenso, l'esecuzione di un contratto, l'adempimento di un obbligo legale e il nostro legittimo interesse a gestire e migliorare la nostra attività."
-          ]
+          ],
+          "title": "Come utilizziamo le tue informazioni"
         },
         {
-          "title": "Condivisione e divulgazione",
           "paragraphs": [
             "Possiamo condividere le tue informazioni all'interno di Indexia Group affinché la società giusta possa rispondere alla tua richiesta. Possiamo inoltre condividere informazioni con fornitori di servizi che ci aiutano a operare (come fornitori di hosting e comunicazione), con autorità di regolamentazione o pubbliche autorità quando richiesto dalla legge, e in relazione a una fusione, acquisizione o cessione di attività.",
             "Non vendiamo i tuoi dati personali a terzi."
-          ]
+          ],
+          "title": "Condivisione e divulgazione"
         },
         {
-          "title": "Sicurezza dei dati",
           "paragraphs": [
             "Applichiamo misure tecniche e organizzative ragionevoli, tra cui controlli degli accessi, crittografia in transito e monitoraggio, per proteggere i tuoi dati personali da accessi non autorizzati, perdite o usi impropri.",
             "Nessun metodo di trasmissione o archiviazione è completamente sicuro. Sebbene ci impegniamo a proteggere i tuoi dati, non possiamo garantirne la sicurezza assoluta."
-          ]
+          ],
+          "title": "Sicurezza dei dati"
         },
         {
-          "title": "Cookie e tecnologie simili",
           "paragraphs": [
             "I nostri siti web utilizzano cookie essenziali per funzionare correttamente e possono utilizzare cookie analitici per comprendere come i visitatori usano i nostri siti. Puoi controllare o disabilitare i cookie tramite le impostazioni del browser; tuttavia, alcune parti dei nostri siti web potrebbero non funzionare come previsto senza di essi."
-          ]
+          ],
+          "title": "Cookie e tecnologie simili"
         },
         {
-          "title": "Conservazione dei dati",
           "paragraphs": [
             "Conserviamo i tuoi dati personali solo per il tempo necessario a soddisfare le finalità descritte nella presente informativa, a conformarci ai requisiti legali e normativi e a risolvere eventuali controversie."
-          ]
+          ],
+          "title": "Conservazione dei dati"
         },
         {
-          "title": "I tuoi diritti e le tue scelte",
           "paragraphs": [
             "A seconda della legge applicabile, potresti avere il diritto di accedere, correggere, aggiornare o richiedere la cancellazione dei tuoi dati personali, nonché di revocare il consenso quando il trattamento si basa su di esso.",
             "Per esercitare questi diritti, contattaci utilizzando i recapiti indicati alla fine della presente informativa. Risponderemo entro i termini previsti dalla legge applicabile."
-          ]
+          ],
+          "title": "I tuoi diritti e le tue scelte"
         },
         {
-          "title": "Link di terze parti",
           "paragraphs": [
             "I nostri siti web e le nostre comunicazioni possono contenere link a siti web esterni gestiti dalle nostre società del gruppo o da altre terze parti. La presente informativa non si applica a tali siti web e ti invitiamo a consultare le rispettive informative sulla privacy."
-          ]
+          ],
+          "title": "Link di terze parti"
         },
         {
-          "title": "Privacy dei minori",
           "paragraphs": [
             "I nostri servizi non sono destinati a minori di 18 anni e non raccogliamo consapevolmente dati personali da minori. Se ritieni che un minore ci abbia fornito dati personali, ti preghiamo di contattarci affinché possiamo rimuoverli."
-          ]
+          ],
+          "title": "Privacy dei minori"
         },
         {
-          "title": "Modifiche alla presente informativa",
           "paragraphs": [
             "Possiamo aggiornare la presente Informativa sulla Privacy di volta in volta. Le eventuali modifiche saranno pubblicate su questa pagina con una data di revisione aggiornata. Le modifiche sostanziali saranno evidenziate ove possibile."
-          ]
+          ],
+          "title": "Modifiche alla presente informativa"
         },
         {
-          "title": "Contattaci",
           "paragraphs": [
             "Se hai domande o dubbi sulla presente Informativa sulla Privacy o su come trattiamo i tuoi dati personali, contattaci all'indirizzo contactus@indexiagroup.com o telefonicamente al +91 011 4629 1155."
-          ]
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [],
-      "sections": [
-        {
-          "title": "Politica di Cancellazione e Rimborso",
-          "paragraphs": [
-            "La politica di reso e annullamento dei commercianti deve essere resa disponibile ai clienti sul sito web, e questi devono accettarne i termini durante il processo di pagamento. I clienti devono fare clic su un pulsante «Accetta» o «Acconsento» per reso e annullamento prima di inviare le proprie informazioni di pagamento. Una volta effettuato il pagamento, la politica può essere inviata ai clienti insieme all'e-mail di conferma del pagamento."
-          ]
-        },
-        {
-          "title": "Politica di Cancellazione",
-          "paragraphs": [
-            "Indexia Group crede nell'aiutare i propri clienti il più possibile e ha quindi una politica di cancellazione liberale. Secondo questa politica:",
-            "Le cancellazioni saranno prese in considerazione solo se la richiesta viene effettuata entro 72 ore dal pagamento. Tuttavia, la richiesta di cancellazione non sarà accettata se i dettagli del pagamento sono stati comunicati ai fornitori/commercianti e questi hanno avviato il processo di pagamento.",
-            "Non è prevista alcuna cancellazione per i pagamenti effettuati nella categoria di servizio Same Day.",
-            "Non vengono accolte cancellazioni per i pagamenti che Indexia Group ha ricevuto in occasioni speciali come Pongal, Diwali e San Valentino, ecc. Queste sono offerte a tempo limitato e pertanto le cancellazioni non sono possibili.",
-            "Indexia Group non accetta richieste di cancellazione per servizi deperibili. Non è possibile effettuare un rimborso nemmeno se il cliente dimostra che la qualità del servizio non è buona.",
-            "Nel caso in cui i servizi e le informazioni correlate non vi riguardino, segnalatelo al nostro team di assistenza. La richiesta verrà comunque accolta una volta che il commerciante avrà verificato e determinato il tutto per proprio conto. Ciò deve essere segnalato entro 21 giorni dalla ricezione dei servizi.",
-            "Se ritieni che il servizio offerto non sia come mostrato sul sito o non corrisponda alle tue aspettative, devi segnalarlo al nostro servizio di assistenza entro 24 ore dalla ricezione del servizio. Il team del servizio di assistenza, dopo aver esaminato il tuo reclamo, prenderà una decisione appropriata.",
-            "In caso di reclami relativi a servizi con un periodo di tempo specifico, contattaci a contactus@indexiagroup.com."
-          ]
-        },
-        {
-          "title": "Politica di Rimborso",
-          "paragraphs": [
-            "Quando utilizzi i nostri servizi, il tuo pagamento non è coperto da una garanzia di rimborso. Se, per qualsiasi motivo, non sei completamente soddisfatto del nostro servizio, prenderemo la questione molto seriamente e cercheremo di risolverla il prima possibile. Per richiedere un rimborso, contattaci semplicemente con i tuoi dati di pagamento entro novanta (90) giorni dal pagamento. Includi i tuoi dati di pagamento e il numero d'ordine (inviato via e-mail dopo il pagamento) e, facoltativamente, indicaci il motivo della richiesta di rimborso, prendiamo molto sul serio il feedback dei clienti e lo utilizziamo per migliorare costantemente i nostri prodotti e la qualità del servizio. Non vengono forniti rimborsi per servizi erogati integralmente, come servizi di installazione e servizi di hosting di knowledge base. I rimborsi vengono elaborati entro un periodo di 21 giorni."
-          ]
-        },
-        {
-          "title": "Clausola BO",
-          "paragraphs": [
-            "«In qualità di fornitore di servizi, non avremo alcuna responsabilità per qualsiasi perdita o danno derivante direttamente o indirettamente dal rifiuto dell'autorizzazione di qualsiasi transazione, a causa del superamento da parte del titolare della carta del limite preimpostato concordato reciprocamente con la nostra banca acquirente di volta in volta»."
-          ]
-        },
-        {
-          "title": "Politica di Esclusione della Responsabilità",
-          "paragraphs": [
-            "Una clausola di esclusione della responsabilità può specificare termini e condizioni concordati reciprocamente e stipulati privatamente come parte di un contratto; oppure può specificare avvertimenti o aspettative per il pubblico in generale (o per un'altra categoria di persone) al fine di adempiere a un dovere di diligenza volto a prevenire un rischio irragionevole di danni o lesioni. Alcune clausole di esclusione intendono limitare l'esposizione ai danni dopo che un danno o una lesione è già stato subito. Inoltre, alcuni tipi di clausole possono rappresentare una rinuncia volontaria a un diritto o a un obbligo che potrebbe essere dovuto alla parte che rinuncia.",
-            "Le clausole di esclusione variano in termini di uniformità. Alcune possono variare a seconda del contesto specifico e delle parti coinvolte, mentre altri tipi possono attenersi rigorosamente a un insieme uniforme e consolidato di formalità che raramente o mai vengono modificate, se non sotto autorità ufficiale.",
-            "La clausola di esclusione del sito web copre quanto segue: assenza di garanzie, limitazioni di responsabilità, eccezioni, ragionevolezza, altre parti e disposizioni inapplicabili."
-          ]
-        },
-        {
-          "title": "Esclusione della Responsabilità di Questo Sito Web",
-          "paragraphs": [
-            "Le informazioni contenute in questo sito web sono fornite solo a scopo di informazione generale. Le informazioni sono fornite da Indexia Group e, sebbene ci sforziamo di mantenerle aggiornate e corrette, non forniamo alcuna dichiarazione o garanzia di alcun tipo, espressa o implicita, sulla completezza, accuratezza, affidabilità, idoneità o disponibilità del sito web o delle informazioni, prodotti, servizi o grafiche correlate in esso contenuti per qualsiasi scopo. Qualsiasi affidamento su tali informazioni è quindi strettamente a vostro rischio.",
-            "In nessun caso saremo responsabili per qualsiasi perdita o danno, inclusi, a titolo esemplificativo, danni indiretti o consequenziali, o qualsiasi perdita o danno derivante dalla perdita di dati o profitti derivanti dall'uso di questo sito web o in connessione con esso.",
-            "Attraverso questo sito web è possibile collegarsi ad altri siti web che non sono sotto il controllo di Indexia Group. Non abbiamo alcun controllo sulla natura, il contenuto e la disponibilità di questi siti. L'inclusione di collegamenti non implica necessariamente una raccomandazione né un'approvazione delle opinioni in essi espresse.",
-            "Facciamo ogni sforzo per mantenere il sito web operativo. Tuttavia, Indexia Group non si assume alcuna responsabilità per l'indisponibilità temporanea del sito web dovuta a problemi tecnici fuori dal nostro controllo."
-          ]
+          ],
+          "title": "Contattaci"
         }
       ]
     },
@@ -403,137 +584,287 @@
       ],
       "sections": [
         {
-          "title": "Contenuti e Modifiche",
           "paragraphs": [
             "Il contenuto delle pagine di questo sito web è fornito solo per informazioni generali e per il vostro utilizzo. È soggetto a modifiche senza preavviso."
-          ]
+          ],
+          "title": "Contenuti e Modifiche"
         },
         {
-          "title": "Nessuna Garanzia",
           "paragraphs": [
             "Né noi né terze parti forniamo alcuna garanzia in merito all'accuratezza, alla tempestività, alle prestazioni, alla completezza o all'idoneità delle informazioni e dei materiali trovati o offerti su questo sito web per uno scopo particolare. Riconoscete che tali informazioni e materiali possono contenere inesattezze o errori, ed escludiamo espressamente ogni responsabilità per tali inesattezze o errori nella misura massima consentita dalla legge."
-          ]
+          ],
+          "title": "Nessuna Garanzia"
         },
         {
-          "title": "Uso a Vostro Rischio",
           "paragraphs": [
             "L'uso di qualsiasi informazione o materiale su questo sito web è interamente a vostro rischio, per il quale non saremo responsabili. Sarà vostra responsabilità assicurarvi che qualsiasi prodotto, servizio o informazione disponibile attraverso questo sito web soddisfi le vostre esigenze specifiche."
-          ]
+          ],
+          "title": "Uso a Vostro Rischio"
         },
         {
-          "title": "Proprietà Intellettuale",
           "paragraphs": [
             "Questo sito web contiene materiale di nostra proprietà o concesso in licenza a noi. Questo materiale include, a titolo esemplificativo, il design, il layout, l'aspetto e la grafica. La riproduzione è vietata salvo quanto previsto dall'avviso sul copyright, che fa parte dei presenti termini e condizioni."
-          ]
+          ],
+          "title": "Proprietà Intellettuale"
         },
         {
-          "title": "Marchi Commerciali",
           "paragraphs": [
             "Tutti i marchi commerciali riprodotti in questo sito web che non sono di proprietà dell'operatore o non sono concessi in licenza a esso sono riconosciuti sul sito web."
-          ]
+          ],
+          "title": "Marchi Commerciali"
         },
         {
-          "title": "Uso Non Autorizzato",
           "paragraphs": [
             "L'uso non autorizzato di questo sito web può dare luogo a una richiesta di risarcimento danni e/o costituire un reato penale."
-          ]
+          ],
+          "title": "Uso Non Autorizzato"
         },
         {
-          "title": "Collegamenti a Terze Parti",
           "paragraphs": [
             "Di tanto in tanto, questo sito web può includere collegamenti ad altri siti web. Questi collegamenti sono forniti per vostra comodità per offrire ulteriori informazioni. Non significano che approviamo i siti web collegati. Non abbiamo alcuna responsabilità per il contenuto dei siti web collegati."
-          ]
+          ],
+          "title": "Collegamenti a Terze Parti"
         },
         {
-          "title": "Collegamenti a Questo Sito Web",
           "paragraphs": [
             "Non è consentito creare un collegamento a questo sito web da un altro sito web o documento senza il previo consenso scritto di Indexia Group."
-          ]
+          ],
+          "title": "Collegamenti a Questo Sito Web"
         },
         {
-          "title": "Legge Applicabile",
           "paragraphs": [
             "L'uso di questo sito web e qualsiasi controversia derivante da tale uso sono soggetti alle leggi dell'India o ad altra autorità di regolamentazione."
-          ]
+          ],
+          "title": "Legge Applicabile"
         },
         {
-          "title": "Responsabilità per Transazioni con Carta",
           "paragraphs": [
             "«In qualità di fornitore di servizi, non avremo alcuna responsabilità per qualsiasi perdita o danno derivante direttamente o indirettamente dal rifiuto dell'autorizzazione di qualsiasi transazione, a causa del superamento da parte del titolare della carta del limite preimpostato concordato reciprocamente con la nostra banca acquirente di volta in volta»."
-          ]
+          ],
+          "title": "Responsabilità per Transazioni con Carta"
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        null,
+        "Se non accetti questi termini, non accedere o utilizzare i nostri siti web."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "La politica di reso e annullamento dei commercianti deve essere resa disponibile ai clienti sul sito web, e questi devono accettarne i termini durante il processo di pagamento. I clienti devono fare clic su un pulsante «Accetta» o «Acconsento» per reso e annullamento prima di inviare le proprie informazioni di pagamento. Una volta effettuato il pagamento, la politica può essere inviata ai clienti insieme all'e-mail di conferma del pagamento."
+          ],
+          "title": "Politica di Cancellazione e Rimborso"
+        },
+        {
+          "paragraphs": [
+            "Indexia Group crede nell'aiutare i propri clienti il più possibile e ha quindi una politica di cancellazione liberale. Secondo questa politica:",
+            "Le cancellazioni saranno prese in considerazione solo se la richiesta viene effettuata entro 72 ore dal pagamento. Tuttavia, la richiesta di cancellazione non sarà accettata se i dettagli del pagamento sono stati comunicati ai fornitori/commercianti e questi hanno avviato il processo di pagamento.",
+            "Non è prevista alcuna cancellazione per i pagamenti effettuati nella categoria di servizio Same Day.",
+            "Non vengono accolte cancellazioni per i pagamenti che Indexia Group ha ricevuto in occasioni speciali come Pongal, Diwali e San Valentino, ecc. Queste sono offerte a tempo limitato e pertanto le cancellazioni non sono possibili.",
+            "Indexia Group non accetta richieste di cancellazione per servizi deperibili. Non è possibile effettuare un rimborso nemmeno se il cliente dimostra che la qualità del servizio non è buona.",
+            "Nel caso in cui i servizi e le informazioni correlate non vi riguardino, segnalatelo al nostro team di assistenza. La richiesta verrà comunque accolta una volta che il commerciante avrà verificato e determinato il tutto per proprio conto. Ciò deve essere segnalato entro 21 giorni dalla ricezione dei servizi.",
+            "Se ritieni che il servizio offerto non sia come mostrato sul sito o non corrisponda alle tue aspettative, devi segnalarlo al nostro servizio di assistenza entro 24 ore dalla ricezione del servizio. Il team del servizio di assistenza, dopo aver esaminato il tuo reclamo, prenderà una decisione appropriata.",
+            "In caso di reclami relativi a servizi con un periodo di tempo specifico, contattaci a contactus@indexiagroup.com."
+          ],
+          "title": "Politica di Cancellazione"
+        },
+        {
+          "paragraphs": [
+            "Quando utilizzi i nostri servizi, il tuo pagamento non è coperto da una garanzia di rimborso. Se, per qualsiasi motivo, non sei completamente soddisfatto del nostro servizio, prenderemo la questione molto seriamente e cercheremo di risolverla il prima possibile. Per richiedere un rimborso, contattaci semplicemente con i tuoi dati di pagamento entro novanta (90) giorni dal pagamento. Includi i tuoi dati di pagamento e il numero d'ordine (inviato via e-mail dopo il pagamento) e, facoltativamente, indicaci il motivo della richiesta di rimborso, prendiamo molto sul serio il feedback dei clienti e lo utilizziamo per migliorare costantemente i nostri prodotti e la qualità del servizio. Non vengono forniti rimborsi per servizi erogati integralmente, come servizi di installazione e servizi di hosting di knowledge base. I rimborsi vengono elaborati entro un periodo di 21 giorni."
+          ],
+          "title": "Politica di Rimborso"
+        },
+        {
+          "paragraphs": [
+            "«In qualità di fornitore di servizi, non avremo alcuna responsabilità per qualsiasi perdita o danno derivante direttamente o indirettamente dal rifiuto dell'autorizzazione di qualsiasi transazione, a causa del superamento da parte del titolare della carta del limite preimpostato concordato reciprocamente con la nostra banca acquirente di volta in volta»."
+          ],
+          "title": "Clausola BO"
+        },
+        {
+          "paragraphs": [
+            "Una clausola di esclusione della responsabilità può specificare termini e condizioni concordati reciprocamente e stipulati privatamente come parte di un contratto; oppure può specificare avvertimenti o aspettative per il pubblico in generale (o per un'altra categoria di persone) al fine di adempiere a un dovere di diligenza volto a prevenire un rischio irragionevole di danni o lesioni. Alcune clausole di esclusione intendono limitare l'esposizione ai danni dopo che un danno o una lesione è già stato subito. Inoltre, alcuni tipi di clausole possono rappresentare una rinuncia volontaria a un diritto o a un obbligo che potrebbe essere dovuto alla parte che rinuncia.",
+            "Le clausole di esclusione variano in termini di uniformità. Alcune possono variare a seconda del contesto specifico e delle parti coinvolte, mentre altri tipi possono attenersi rigorosamente a un insieme uniforme e consolidato di formalità che raramente o mai vengono modificate, se non sotto autorità ufficiale.",
+            "La clausola di esclusione del sito web copre quanto segue: assenza di garanzie, limitazioni di responsabilità, eccezioni, ragionevolezza, altre parti e disposizioni inapplicabili."
+          ],
+          "title": "Politica di Esclusione della Responsabilità"
+        },
+        {
+          "paragraphs": [
+            "Le informazioni contenute in questo sito web sono fornite solo a scopo di informazione generale. Le informazioni sono fornite da Indexia Group e, sebbene ci sforziamo di mantenerle aggiornate e corrette, non forniamo alcuna dichiarazione o garanzia di alcun tipo, espressa o implicita, sulla completezza, accuratezza, affidabilità, idoneità o disponibilità del sito web o delle informazioni, prodotti, servizi o grafiche correlate in esso contenuti per qualsiasi scopo. Qualsiasi affidamento su tali informazioni è quindi strettamente a vostro rischio.",
+            "In nessun caso saremo responsabili per qualsiasi perdita o danno, inclusi, a titolo esemplificativo, danni indiretti o consequenziali, o qualsiasi perdita o danno derivante dalla perdita di dati o profitti derivanti dall'uso di questo sito web o in connessione con esso.",
+            "Attraverso questo sito web è possibile collegarsi ad altri siti web che non sono sotto il controllo di Indexia Group. Non abbiamo alcun controllo sulla natura, il contenuto e la disponibilità di questi siti. L'inclusione di collegamenti non implica necessariamente una raccomandazione né un'approvazione delle opinioni in essi espresse.",
+            "Facciamo ogni sforzo per mantenere il sito web operativo. Tuttavia, Indexia Group non si assume alcuna responsabilità per l'indisponibilità temporanea del sito web dovuta a problemi tecnici fuori dal nostro controllo."
+          ],
+          "title": "Esclusione della Responsabilità di Questo Sito Web"
+        },
+        {
+          "paragraphs": {
+            "0": "Ci riserviamo il diritto di modificare questi Termini di Utilizzo in qualsiasi momento."
+          },
+          "title": "Modifiche a Questi Termini"
+        },
+        {
+          "paragraphs": {
+            "0": "Per domande, contattaci a contactus@indexiagroup.com."
+          },
+          "title": "Contatto"
         }
       ]
     }
   },
-  "globalResearchPage": {
-    "eyebrow": "Ricerca Globale",
-    "title": "Ricerca Globale in Indexia Group",
-    "titleStart": "Ricerca Finanziaria Globale ",
-    "titleAccent": "e Risorse.",
-    "subtitle": "Analisi pertinenti e approfondite e viste incisive nelle discipline macroeconomiche, del reddito fisso, valutarie e delle materie prime, basate su una solida conoscenza sul campo in Asia, Africa e Medio Oriente.",
-    "ctaButton": "Esplora la copertura della ricerca",
-    "areasEyebrow": "Copertura della ricerca",
-    "areasHeading": "Ricerca globale in tutte le discipline",
-    "areasSubtitle": "Analisi pertinenti e approfondite e viste incisive in tutta la nostra copertura.",
-    "reportsEyebrow": "Pubblicazioni",
-    "reportsHeading": "Come condividiamo la ricerca",
-    "reportsSubtitle": "Presentazioni frequenti e pubblicazioni di alta qualità, OTG, la nostra analisi sul campo; ACT, le nostre idee azionabili; e Rapporti Speciali su temi di rilevanza globale.",
-    "ctaTitle": "Accedi alla nostra ricerca",
-    "ctaBody": "Per saperne di più e ricevere la nostra ricerca, visita il nostro portale di Ricerca Globale. Per ottenere l'accesso, contatta il tuo Relationship Manager.",
-    "metaDescription": "Ricerca Globale di Indexia Group, analisi pertinenti e approfondite e viste incisive nelle discipline macroeconomiche, del reddito fisso, valutarie e delle materie prime, con conoscenza sul campo in Asia, Africa e Medio Oriente.",
-    "reportFormat": "Pubblicazione"
+  "newsHero": {
+    "latestLabel": "Ultime notizie dal gruppo",
+    "sectors": {
+      "advertising": "Pubblicità",
+      "agriculture": "Agricoltura",
+      "finance": "Finanza",
+      "security": "Sicurezza",
+      "sport": "Sport",
+      "tradeExport": "Commercio ed Esportazione"
+    }
   },
-  "securityTipsPage": {
-    "eyebrow": "Consigli di Sicurezza",
-    "title": "Consigli di Sicurezza di Indexia Group",
-    "titleStart": "Resta un passo avanti alla ",
-    "titleAccent": "frode.",
-    "subtitle": "Ovunque tu sia, puoi gestire i tuoi soldi online con fiducia.",
-    "ctaButton": "Proteggi i Tuoi Dati",
-    "practicesEyebrow": "Cosa Puoi Fare",
-    "practicesHeading": "Proteggi i Tuoi Dati",
-    "practicesSubtitle": "Lavoriamo ogni giorno per mantenere protetti i tuoi conti quando fai banking online. Inoltre, ci sono alcune semplici cose che puoi fare sui tuoi dispositivi di tutti i giorni per restare al sicuro online.",
-    "ctaTitle": "Hai visto qualcosa di sospetto?",
-    "ctaBody": "Segnalalo tramite il nostro modulo o contatta direttamente la società di Indexia Group interessata.",
-    "metaDescription": "Consigli di sicurezza di Indexia Group, come proteggiamo i tuoi conti online, cosa puoi fare sui tuoi dispositivi e chi contattare se qualcosa va storto.",
-    "featuresEyebrow": "Cosa Facciamo",
-    "featuresHeading": "Ti Teniamo al Sicuro Online",
-    "featuresSubtitle": "Continua a leggere per scoprire cosa facciamo per proteggere i tuoi conti quando fai banking online.",
-    "contactsEyebrow": "Serve Aiuto?",
-    "contactsHeading": "Devi Parlare con Noi?",
-    "contactsSubtitle": "Se pensi di aver rivelato i dati del tuo conto a una parte sospetta o di essere stato vittima di frode, contattaci subito chiamando la linea di assistenza clienti."
+  "newsPage": {
+    "askUs": "Chiedici",
+    "ctaBody": "Dalla facilitazione FDI all'agricoltura biologica fino alla sicurezza armata, la società Indexia giusta è pronta ad aiutarti. Inviaci una richiesta e ti metteremo in contatto.",
+    "ctaButton": "Invia una richiesta",
+    "ctaTitle": "Hai domande sulle nostre società?",
+    "eyebrow": "Notizie e Centro di Conoscenza",
+    "featuredLabel": "Storia in evidenza",
+    "knowledgeEyebrow": "Centro di Conoscenza",
+    "knowledgeHeading": "Guide pratiche dalle nostre società",
+    "knowledgeSubtitle": "Spiegazioni semplici scritte dai team che vivono questo lavoro ogni giorno.",
+    "metaDescription": "News & Knowledge Centre, ultime notizie bancarie su finanziamenti, pagamenti digitali e politica, più guide pratiche di conoscenza di Indexia Group.",
+    "readMore": "Leggi di più",
+    "subtitle": "Ultime notizie bancarie, finanziamenti, pagamenti digitali, cambi di policy e andamento dei mercati, insieme a guide pratiche delle nostre attività.",
+    "title": "Notizie e Centro di Conoscenza",
+    "titleAccent": "tutto il Gruppo.",
+    "titleStart": "Storie e approfondimenti da ",
+    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
+    "tvEyebrow": "Guardaci in TV",
+    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingStart": "Per Tutte le Tue Esigenze di Prestito"
   },
-  "unipolePricing": {
-    "eyebrow": "Pacchetti unipoli",
-    "title": "Dimensioni e prezzi disponibili",
-    "subtitle": "Pacchetti unipoli premium sulla Delhi–Dehradun Highway, Shamli",
-    "sizeCol": "Dimensione",
-    "areaCol": "Piedi quadrati",
-    "rateCol": "Tariffa mensile",
-    "sizeSmall": "10 × 20 piedi",
-    "areaSmall": "200 piedi²",
-    "rateSmall": "₹25.000",
-    "sizeLarge": "12 × 24 piedi",
-    "areaLarge": "288 piedi²",
-    "rateLarge": "₹36.000",
-    "standardRate": "Tariffa standard: ₹125/piedi² per un lato per 1 mese",
-    "note": "* Tariffe soggette a disponibilità. Contattaci per pacchetti a lungo termine.",
-    "bookNow": "Prenota ora",
-    "bookSize": "Prenota questa misura",
-    "bookMessage": "Vorrei prenotare l'unipolo {{size}} ({{area}}) a {{rate}} al mese."
+  "newsVideo": {
+    "onAir": "In OnDA",
+    "tvCommercial": "Pubblicità TV"
+  },
+  "notFoundPage": {
+    "backHome": "Torna alla Home",
+    "description": "La pagina che stai cercando non esiste o è stata spostata.",
+    "title": "Pagina Non Trovata"
+  },
+  "openRoles": {
+    "loading": "Caricamento posizioni...",
+    "noPositions": "Nessuna posizione {{type}} disponibile al momento."
   },
   "pageContent": {
+    "careers": {
+      "culture": [
+        "Indexia Group è un'organizzazione che apprende e la sua cultura aziendale è il suo team. I nostri dipendenti sono una risorsa preziosa e ci impegniamo a offrire loro i progetti tecnologici più recenti e un ambiente di lavoro divertente, collaborativo e orientato al team. Crediamo nel fornire alle nostre persone le esperienze e le opportunità di formazione che ampliano le loro conoscenze esistenti, con orari flessibili, l'enfasi sulla comunicazione aperta e una politica della porta aperta tra management e staff.",
+        "Dalla fintech e l'esportazione globale all'agricoltura biologica, sicurezza armata e sviluppo sportivo — non sei bloccato in una sola verticale.",
+        "Impara, Allena, Avanza",
+        "Ogni ruolo prevede formazione strutturata, accesso a workshop interni e mentorship di leader senior.",
+        "Esposizione Globale, Radici Locali",
+        "Indexia opera in India, Ecuador, Sud America e Europa.",
+        "Orari Flessibili, VERA Responsabilità",
+        "Ci fidiamo del nostro team per gestire il proprio tempo."
+      ],
+      "roles": {
+        "business-development": {
+          "department": "Sviluppo Business",
+          "title": "Esecutivo Sviluppo Business",
+          "type": "Tempo pieno"
+        },
+        "city-head": {
+          "department": "Vendite",
+          "title": "Responsabile di Città",
+          "type": "Tempo pieno"
+        },
+        "customer-support": {
+          "department": "Supporto Clienti",
+          "title": "Assistente Supporto Clienti",
+          "type": "Tempo pieno"
+        },
+        "field-executive": {
+          "department": "Operazioni sul Campo",
+          "title": "Esecutivo di Campo",
+          "type": "Tempo pieno"
+        },
+        "hr-manager": {
+          "department": "Risorse Umane",
+          "title": "Responsabile Risorse Umane",
+          "type": "Tempo pieno"
+        },
+        "seo-professional": {
+          "department": "Marketing Digitale",
+          "title": "Professionista SEO",
+          "type": "Tempo pieno"
+        },
+        "team-leader": {
+          "department": "Operazioni",
+          "title": "Capo Squadra",
+          "type": "Tempo pieno"
+        },
+        "team-manager": {
+          "department": "Operazioni",
+          "title": "Manager di Team",
+          "type": "Tempo pieno"
+        }
+      }
+    },
     "companies": {
+      "advertising": {
+        "desc": "Unipoli pubblicitari al crocevia più trafficato del Nord India.",
+        "highlights": [
+          "Posizionamenti strategici sulla NH-709B, la Delhi–Dehradun Highway",
+          "10 stati collegati, copertura di 50 crore, oltre 1 crore di esposizioni giornaliere",
+          "Unipoli a palo singolo con visibilità a 360° e altezza premium",
+          "Servizio completo, stampa, installazione e manutenzione"
+        ],
+        "location": "Autostrada Delhi-Dehradun, Shamli",
+        "name": "Indexia Advertising",
+        "overview": "Indexia Advertising gestisce unipoli pubblicitari premium a palo singolo sulla Delhi–Dehradun Highway (NH-709B) a Shamli, il hub del Nord India. Posizionati all'incrocio di 8 autostrade nazionali e 2 superstrade principali, i nostri unipoli collegano 10 stati con una copertura di 50 crore di persone e attirano oltre 1 crore di esposizioni giornaliere. Gli unipoli a palo singolo, con altezza premium e angolo di visuale a 360° senza ostacoli, offrono al vostro brand la massima visibilità senza confusione visiva, supportata dal marchio verde Bisleri. Dalla stampa e installazione alla manutenzione, gestiamo tutto end-to-end. Prenotate un unipolo 10×20 ft a ₹25.000/mese o un unipolo 12×24 ft a ₹36.000/mese, tariffa standard ₹125/piedi² per lato al mese, negoziabile per pacchetti a lungo termine. Per prenotazioni chiamate 86918 86919 o 011 4629 1155, oppure scrivete a indexia.queries@gmail.com.",
+        "services": [
+          "Unipolo 10×20 ft, ₹25.000/mese",
+          "Unipolo 12×24 ft, ₹36.000/mese",
+          "Tariffa standard, ₹125/piedi² per lato al mese",
+          "Posizionamenti su Delhi–Dehradun Highway e Shamli Ring Road",
+          "Stampa, installazione e manutenzione",
+          "Pacchetti a lungo termine e volumi"
+        ],
+        "tag": "Unipoli pubblicitari premium"
+      },
+      "agro-bio": {
+        "desc": "Fertilizzanti organici, prodotti in India ed esportati nel mondo.",
+        "highlights": [
+          "Produzione organica biobased, senza sostanze chimiche aggressive",
+          "Stabilimento a Shamli, UP, nella cintura di Delhi NCR",
+          "Migliore salute del suolo, rese dei raccolti più alte",
+          "Supporto completo agli agricoltori, analisi del suolo, formazione"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "overview": "Indexia Agro Bio Fertilizers produce fertilizzanti organici nel suo stabilimento di Shamli, Uttar Pradesh, parte della regione di Delhi NCR. I prodotti biobased dell'azienda migliorano la salute del suolo, aumentano le rese dei raccolti e supportano l'agricoltura sostenibile per gli agricoltori del Nord India.",
+        "services": [
+          "Produzione di Fertilizzanti Organici",
+          "Miscele di Biofertilizzanti",
+          "Soluzioni per la Salute del Suolo",
+          "Programmi di Miglioramento delle Rese",
+          "Supporto e Formazione agli Agricoltori",
+          "Stabilimento di Shamli, UP (Delhi NCR)"
+        ],
+        "tag": "Produzione di Fertilizzanti Organici"
+      },
       "finance": {
-        "tag": "Fintech Multinazionale",
         "desc": "Fintech globale tra servizi agli investitori, IDE, NBFC e finanziamento bancario.",
-        "overview": "Indexia Finance è una piattaforma fintech multinazionale che eroga servizi finanziari a clienti in tutto il mondo. Puoi richiedere qualsiasi tipo di prestito sul nostro portale all'indirizzo www.indexiafinance.com, offriamo i nostri servizi a livello globale e, in India, siamo partner commerciali di 43 banche e NBFC. Strutturata attorno a quattro aree principali, servizi agli investitori, facilitazione IDE, operazioni NBFC e finanziamento bancario, l'azienda collega il capitale alle opportunità, aiutando investitori, imprese e istituzioni a prendere decisioni finanziarie sicure oltre i confini.",
-        "tagline": "Una destinazione completa per i prestiti",
         "highlights": [
           "Portata fintech globale con esecuzione incentrata sull'India",
           "Quattro aree integrate sotto un unico tetto",
           "Supporto completo di finanziamento"
         ],
+        "name": "Indexia Finance",
+        "overview": "Indexia Finance è una piattaforma fintech multinazionale che eroga servizi finanziari a clienti in tutto il mondo. Puoi richiedere qualsiasi tipo di prestito sul nostro portale all'indirizzo www.indexiafinance.com, offriamo i nostri servizi a livello globale e, in India, siamo partner commerciali di 43 banche e NBFC. Strutturata attorno a quattro aree principali, servizi agli investitori, facilitazione IDE, operazioni NBFC e finanziamento bancario, l'azienda collega il capitale alle opportunità, aiutando investitori, imprese e istituzioni a prendere decisioni finanziarie sicure oltre i confini.",
         "services": [
           "Facilitazione IDE",
           "Servizi agli Investitori",
@@ -542,18 +873,18 @@
           "Soluzioni di Capitale Transfrontaliero",
           "Consulenza Patrimoniale e sugli Investimenti"
         ],
-        "name": "Indexia Finance"
+        "tag": "Fintech Multinazionale",
+        "tagline": "Una destinazione completa per i prestiti"
       },
       "finserve": {
-        "tag": "Prestiti e Finanza",
         "desc": "Ogni tipo di prestito, su misura per privati e imprese.",
-        "overview": "Indexia Finserve è il braccio creditizio del Gruppo Indexia e offre ogni tipo di prestito in ambito finanziario. Ora la banca giusta arriva direttamente alla tua porta: l'azienda opera come una destinazione completa per il credito, guidando i clienti attraverso eleggibilità, documentazione ed erogazione per prestiti personali, casa, business, MSME e finanziamenti specializzati, con un unico processo snello.",
-        "tagline": "Il metodo finanziario di nuova generazione",
         "highlights": [
           "Ogni tipo di prestito sotto un unico tetto",
           "Eleggibilità, documentazione ed erogazione semplificate",
           "Consulenza dedicata in ogni fase"
         ],
+        "name": "Indexia Finserve Pvt. Ltd.",
+        "overview": "Indexia Finserve è il braccio creditizio del Gruppo Indexia e offre ogni tipo di prestito in ambito finanziario. Ora la banca giusta arriva direttamente alla tua porta: l'azienda opera come una destinazione completa per il credito, guidando i clienti attraverso eleggibilità, documentazione ed erogazione per prestiti personali, casa, business, MSME e finanziamenti specializzati, con un unico processo snello.",
         "services": [
           "Prestito Personale",
           "Prestito Business",
@@ -568,116 +899,19 @@
           "Sconto di Leasing",
           "Capitale Circolante"
         ],
-        "name": "Indexia Finserve Pvt. Ltd."
-      },
-      "overseas": {
-        "tag": "Esportatore di Prodotti Alimentari",
-        "desc": "Esportiamo zucchero raffinato e tutti i prodotti alimentari nel mondo.",
-        "overview": "Indexia Overseas promuove l'esportazione globale di tutti i prodotti alimentari, con particolare attenzione alle esportazioni di zucchero verso 14 paesi sudamericani. L'azienda gestisce approvvigionamento, qualità, logistica e conformità internazionale affinché i prodotti di grado alimentare arrivino dall'origine al mercato in modo affidabile e su larga scala.",
-        "highlights": [
-          "Esportazione di tutti i prodotti alimentari, lo zucchero al centro",
-          "Presenza consolidata in 14 mercati sudamericani",
-          "Approvvigionamento, qualità e logistica end-to-end"
-        ],
-        "services": [
-          "Esportazione e Commercio di Zucchero",
-          "Oli e Legumi Commestibili",
-          "Cereali e Spezie",
-          "Approvvigionamento e Controllo Qualità",
-          "Logistica Internazionale",
-          "14 Mercati Sudamericani"
-        ],
-        "name": "Indexia Overseas Pvt. Ltd."
-      },
-      "agro-bio": {
-        "tag": "Produzione di Fertilizzanti Organici",
-        "desc": "Fertilizzanti organici, prodotti in India ed esportati nel mondo.",
-        "overview": "Indexia Agro Bio Fertilizers produce fertilizzanti organici nel suo stabilimento di Shamli, Uttar Pradesh, parte della regione di Delhi NCR. I prodotti biobased dell'azienda migliorano la salute del suolo, aumentano le rese dei raccolti e supportano l'agricoltura sostenibile per gli agricoltori del Nord India.",
-        "highlights": [
-          "Produzione organica biobased, senza sostanze chimiche aggressive",
-          "Stabilimento a Shamli, UP, nella cintura di Delhi NCR",
-          "Migliore salute del suolo, rese dei raccolti più alte"
-        ],
-        "services": [
-          "Produzione di Fertilizzanti Organici",
-          "Miscele di Biofertilizzanti",
-          "Soluzioni per la Salute del Suolo",
-          "Programmi di Miglioramento delle Rese",
-          "Supporto e Formazione agli Agricoltori",
-          "Stabilimento di Shamli, UP (Delhi NCR)"
-        ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
-      },
-      "securities": {
-        "tag": "Sicurezza Armata e Commando",
-        "desc": "Commando armati e guardie a protezione di leader e aziende.",
-        "overview": "Indexia Securities offre la migliore sicurezza armata e protezione commando disponibile, salvaguardando persone, proprietà e operazioni ad alto profilo 24 ore su 24. Dai commando addestrati e guardie armate alle scorte VIP e alla sicurezza per eventi, l'azienda porta disciplina di livello militare in ogni incarico.",
-        "highlights": [
-          "Protezione armata e commando di prim'ordine",
-          "Commando addestrati con disciplina a risposta rapida",
-          "Monitoraggio 24×7 e risposta sul campo"
-        ],
-        "services": [
-          "Guardie di Sicurezza Armate",
-          "Unità di Protezione Commando",
-          "Scorte VIP e di Autorità",
-          "Sicurezza Eventi e Sedi",
-          "Sicurezza Aziendale e dei Siti",
-          "Monitoraggio 24×7 e Risposta Rapida"
-        ],
-        "name": "Indexia Securities"
-      },
-      "warehouse": {
-        "tag": "Investimento Fondiario Strategico",
-        "desc": "21 acri di terreno strategico a Shamli, collegati a 8 autostrade nazionali.",
-        "overview": "Indexia Warehouse offre un'opportunità di investimento fondiario strategico a Shamli, Uttar Pradesh, a soli ~65 km da Tronica City, Loni, Delhi. La località è un hub di connettività: 8 autostrade nazionali e 2 strade principali collegano 8 stati, con accesso diretto a Bhutan e Nepal e una copertura di mercato di 50 crore di persone. Quattro grandi porti (Gujarat, Maharashtra, Chennai, Kolkata) sono direttamente raggiungibili via autostrada, e sia l'aeroporto IGI di Delhi sia l'Aeroporto Internazionale di Noida, Jewar, sono a meno di un'ora. Il portafoglio fondiario comprende 5 località e 21 acri in totale, con appezzamenti flessibili da 1, 2, 2,5, 5 e 8 acri, e un magazzino moderno da costruire su 2 acri con banchine di carico. Il prezzo previsto è di ₹30 per piede quadrato, negoziabile.",
-        "highlights": [
-          "Posizione privilegiata, Shamli, UP, ~65 km da Delhi",
-          "8 autostrade nazionali + 2 strade principali che collegano 8 stati",
-          "21 acri in 5 località, appezzamenti da 1, 2, 2,5, 5 e 8 acri",
-          "₹30 per piede quadrato, negoziabile"
-        ],
-        "services": [
-          "Appezzamenti di Terreno, 1, 2, 2,5, 5 e 8 Acri",
-          "21 Acri in 5 Località",
-          "Costruzione Magazzino su Appezzamento di 2 Acri",
-          "Collegamenti Autostradali e Stradali",
-          "Accesso ai Porti, Gujarat, Maharashtra, Chennai, Kolkata",
-          "Accesso agli Aeroporti, Delhi e Jewar entro 1 ora"
-        ],
-        "name": "Indexia Warehouse",
-        "location": "Shamli, Uttar Pradesh"
-      },
-      "advertising": {
-        "tag": "Unipoli pubblicitari premium",
-        "desc": "Unipoli pubblicitari al crocevia più trafficato del Nord India.",
-        "overview": "Indexia Advertising gestisce unipoli pubblicitari premium a palo singolo sulla Delhi–Dehradun Highway (NH-709B) a Shamli, il hub del Nord India. Posizionati all'incrocio di 8 autostrade nazionali e 2 superstrade principali, i nostri unipoli collegano 10 stati con una copertura di 50 crore di persone e attirano oltre 1 crore di esposizioni giornaliere. Gli unipoli a palo singolo, con altezza premium e angolo di visuale a 360° senza ostacoli, offrono al vostro brand la massima visibilità senza confusione visiva, supportata dal marchio verde Bisleri. Dalla stampa e installazione alla manutenzione, gestiamo tutto end-to-end. Prenotate un unipolo 10×20 ft a ₹25.000/mese o un unipolo 12×24 ft a ₹36.000/mese, tariffa standard ₹125/piedi² per lato al mese, negoziabile per pacchetti a lungo termine. Per prenotazioni chiamate 86918 86919 o 011 4629 1155, oppure scrivete a indexia.queries@gmail.com.",
-        "highlights": [
-          "Posizionamenti strategici sulla NH-709B, la Delhi–Dehradun Highway",
-          "10 stati collegati, copertura di 50 crore, oltre 1 crore di esposizioni giornaliere",
-          "Unipoli a palo singolo con visibilità a 360° e altezza premium",
-          "Servizio completo, stampa, installazione e manutenzione"
-        ],
-        "services": [
-          "Unipolo 10×20 ft, ₹25.000/mese",
-          "Unipolo 12×24 ft, ₹36.000/mese",
-          "Tariffa standard, ₹125/piedi² per lato al mese",
-          "Posizionamenti su Delhi–Dehradun Highway e Shamli Ring Road",
-          "Stampa, installazione e manutenzione",
-          "Pacchetti a lungo termine e volumi"
-        ],
-        "name": "Indexia Advertising",
-        "location": "Autostrada Delhi–Dehradun, Shamli"
+        "tag": "Prestiti e Finanza",
+        "tagline": "Il metodo finanziario di nuova generazione"
       },
       "foundation": {
-        "tag": "Supporto agli Atleti",
         "desc": "Allenamento e supporto di livello internazionale, fino alle Olimpiadi.",
-        "overview": "Indexia Foundation supporta gli atleti fornendo ogni possibile sostegno, allenamento di livello internazionale, dieta e nutrizione strutturate, coaching di esperti e ogni tipo di assistenza necessaria nel percorso verso i Giochi Olimpici. La fondazione accompagna gli sportivi dai primi risultati promettenti fino al palcoscenico più grande del mondo.",
         "highlights": [
           "Allenamento di livello internazionale e coaching di esperti",
           "Programmi strutturati di dieta e nutrizione",
-          "Supporto completo fino alle Olimpiadi"
+          "Supporto completo fino alle Olimpiadi",
+          "Costruire un pipeline sostenibile di atleti indiani di livello olimpico"
         ],
+        "name": "Indexia Foundation",
+        "overview": "Indexia Foundation supporta gli atleti fornendo ogni possibile sostegno, allenamento di livello internazionale, dieta e nutrizione strutturate, coaching di esperti e ogni tipo di assistenza necessaria nel percorso verso i Giochi Olimpici. La fondazione accompagna gli sportivi dai primi risultati promettenti fino al palcoscenico più grande del mondo.",
         "services": [
           "Allenamento di Livello Internazionale",
           "Programmi di Dieta e Nutrizione",
@@ -686,500 +920,291 @@
           "Medicina Sportiva e Recupero",
           "Supporto di Livello Olimpico"
         ],
-        "name": "Indexia Foundation"
+        "tag": "Supporto agli Atleti"
+      },
+      "overseas": {
+        "desc": "Esportiamo zucchero raffinato e tutti i prodotti alimentari nel mondo.",
+        "highlights": [
+          "Esportazione di tutti i prodotti alimentari, lo zucchero al centro",
+          "Presenza consolidata in 14 mercati sudamericani",
+          "Approvvigionamento, qualità e logistica end-to-end",
+          "Partner affidabile per acquirenti all'ingrosso"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd.",
+        "overview": "Indexia Overseas promuove l'esportazione globale di tutti i prodotti alimentari, con particolare attenzione alle esportazioni di zucchero verso 14 paesi sudamericani. L'azienda gestisce approvvigionamento, qualità, logistica e conformità internazionale affinché i prodotti di grado alimentare arrivino dall'origine al mercato in modo affidabile e su larga scala.",
+        "services": [
+          "Esportazione e Commercio di Zucchero",
+          "Oli e Legumi Commestibili",
+          "Cereali e Spezie",
+          "Approvvigionamento e Controllo Qualità",
+          "Gestione Normativa e Conformità",
+          "Distribuzione nel Mercato Sudamericano"
+        ],
+        "tag": "Esportatore di Prodotti Alimentari"
+      },
+      "securities": {
+        "desc": "Commando armati e guardie a protezione di leader e aziende.",
+        "highlights": [
+          "Protezione armata e commando di prim'ordine",
+          "Commando addestrati con disciplina a risposta rapida",
+          "Monitoraggio 24×7 e risposta sul campo",
+          "Percorso comprovato nella protezione di clienti ad alto profilo"
+        ],
+        "name": "Indexia Securities",
+        "overview": "Indexia Securities offre la migliore sicurezza armata e protezione commando disponibile, salvaguardando persone, proprietà e operazioni ad alto profilo 24 ore su 24. Dai commando addestrati e guardie armate alle scorte VIP e alla sicurezza per eventi, l'azienda porta disciplina di livello militare in ogni incarico.",
+        "services": [
+          "Guardie di Sicurezza Armate",
+          "Unità di Protezione Commando",
+          "Scorte VIP e di Autorità",
+          "Sicurezza Eventi e Sedi",
+          "Sicurezza Aziendale e dei Siti",
+          "Monitoraggio 24×7 e Risposta Rapida"
+        ],
+        "tag": "Sicurezza Armata e Commando"
+      },
+      "warehouse": {
+        "desc": "21 acri di terreno strategico a Shamli, collegati a 8 autostrade nazionali.",
+        "highlights": [
+          "Posizione privilegiata, Shamli, UP, ~65 km da Delhi",
+          "8 autostrade nazionali + 2 strade principali che collegano 8 stati",
+          "21 acri in 5 località, appezzamenti da 1, 2, 2,5, 5 e 8 acri",
+          "₹30 per piede quadrato, negoziabile"
+        ],
+        "location": "Shamli, Uttar Pradesh",
+        "name": "Indexia Warehouse",
+        "overview": "Indexia Warehouse offre un'opportunità di investimento fondiario strategico a Shamli, Uttar Pradesh, a soli ~65 km da Tronica City, Loni, Delhi. La località è un hub di connettività: 8 autostrade nazionali e 2 strade principali collegano 8 stati, con accesso diretto a Bhutan e Nepal e una copertura di mercato di 50 crore di persone. Quattro grandi porti (Gujarat, Maharashtra, Chennai, Kolkata) sono direttamente raggiungibili via autostrada, e sia l'aeroporto IGI di Delhi sia l'Aeroporto Internazionale di Noida, Jewar, sono a meno di un'ora. Il portafoglio fondiario comprende 5 località e 21 acri in totale, con appezzamenti flessibili da 1, 2, 2,5, 5 e 8 acri, e un magazzino moderno da costruire su 2 acri con banchine di carico. Il prezzo previsto è di ₹30 per piede quadrato, negoziabile.",
+        "services": [
+          "Appezzamenti di Terreno, 1, 2, 2,5, 5 e 8 Acri",
+          "21 Acri in 5 Località",
+          "Costruzione Magazzino su Appezzamento di 2 Acri",
+          "Collegamenti Autostradali e Stradali",
+          "Accesso ai Porti, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Accesso agli Aeroporti, Delhi e Jewar entro 1 ora"
+        ],
+        "tag": "Investimento Fondiario Strategico"
       }
     },
     "news": {
       "articles": {
-        "yes-bank-sme-funding": {
-          "title": "Yes Bank ottiene 150 milioni di dollari dal governo USA e da Wells Fargo per il credito alle PMI",
-          "category": "Banca",
-          "excerpt": "La terza tranche dell'accordo OPIC–Wells Fargo, sostenuta dalla finanza per lo sviluppo del governo USA, amplierà il credito alle piccole e medie imprese in tutta l'India."
-        },
-        "uidai-aadhaar-banks": {
-          "title": "L'UIDAI chiede alle banche centri di registrazione Aadhaar nelle proprie filiali",
-          "category": "Politica",
-          "excerpt": "Alle banche è stato chiesto di attivare centri di registrazione Aadhaar in almeno una filiale su dieci, estendendo la registrazione ben oltre i 25.000 centri autonomi esistenti."
-        },
         "demonetisation-digital-payments": {
-          "title": "La demonetizzazione porta l'India tre anni avanti nei pagamenti digitali: ricerca SBI",
           "category": "Pagamenti Digitali",
-          "excerpt": "Il centro ricerche della State Bank of India rileva un +88% nelle transazioni con carta ai POS e un +122% in mobile banking e pagamenti prepagati, con un effetto atteso anche sull'inflazione."
-        },
-        "sbi-imps-fee-waiver": {
-          "title": "SBI azzera le commissioni sui bonifici IMPS fino a ₹1.000",
-          "category": "Banca",
-          "excerpt": "La più grande banca indiana elimina le commissioni sui piccoli bonifici istantanei per favorire i pagamenti digitali; i bonifici IMPS oltre ₹1.000 ora costano ₹5 più GST, fino a ₹15 per 1–2 lakh."
+          "excerpt": "Il centro ricerche della State Bank of India rileva un +88% nelle transazioni con carta ai POS e un +122% in mobile banking e pagamenti prepagati, con un effetto atteso anche sull'inflazione.",
+          "title": "La demonetizzazione porta l'India tre anni avanti nei pagamenti digitali: ricerca SBI"
         },
         "nakshatra-gili-directors": {
-          "title": "Abitanti di chawl nominati amministratori in Nakshatra e Gili India",
-          "category": "Mercati",
-          "excerpt": "Semplici dipendenti e piccoli investitori al dettaglio sono stati convinti a figurare come amministratori di comodo delle società Gili, Nakshatra e Gitanjali, sollevando interrogativi sul governo societario."
+          "category": "Governance Aziendale",
+          "excerpt": "Semplici dipendenti e piccoli investitori al dettaglio sono stati convinti a figurare come amministratori di comodo delle società Gili, Nakshatra e Gitanjali, sollevando interrogativi sul governo societario.",
+          "title": "Abitanti di chawl nominati amministratori in Nakshatra e Gili India"
+        },
+        "sbi-imps-fee-waiver": {
+          "category": "Banca",
+          "excerpt": "La più grande banca indiana elimina le commissioni sui piccoli bonifici istantanei per favorire i pagamenti digitali; i bonifici IMPS oltre ₹1.000 ora costano ₹5 più GST, fino a ₹15 per 1–2 lakh.",
+          "title": "SBI azzera le commissioni sui bonifici IMPS fino a ₹1.000"
         },
         "sebi-hdfc-information-leak": {
-          "title": "La SEBI chiede a HDFC Bank di assumersi la responsabilità per la fuga di informazioni",
-          "category": "Mercati",
-          "excerpt": "Il regolatore dei mercati ha chiesto a HDFC Bank un'indagine interna su come parte dei risultati trimestrali sia arrivata a trader e altri tramite WhatsApp."
+          "category": "Regolamentazione",
+          "excerpt": "L'autorità di borsa indiana ha avviato un'indagine sulla presunta fuga di informazioni non pubbliche relative a HDFC.",
+          "title": "SEBI Ordina Inchiesta su Fuga Informazioni HDFC"
+        },
+        "uidai-aadhaar-banks": {
+          "category": "Politica",
+          "excerpt": "Alle banche è stato chiesto di attivare centri di registrazione Aadhaar in almeno una filiale su dieci, estendendo la registrazione ben oltre i 25.000 centri autonomi esistenti.",
+          "title": "L'UIDAI chiede alle banche centri di registrazione Aadhaar nelle proprie filiali"
+        },
+        "yes-bank-sme-funding": {
+          "category": "Banca",
+          "excerpt": "La terza tranche dell'accordo OPIC–Wells Fargo, sostenuta dalla finanza per lo sviluppo del governo USA, amplierà il credito alle piccole e medie imprese in tutta l'India.",
+          "title": "Yes Bank ottiene 150 milioni di dollari dal governo USA e da Wells Fargo per il credito alle PMI"
         }
       },
       "insights": {
-        "understanding-fdi": {
-          "title": "Capire gli IDE in India",
-          "body": "Una guida pratica su vie d'ingresso, limiti settoriali e adempimenti necessari per portare capitale estero in un'impresa indiana, e dove l'aiuto di un esperto conta di più."
-        },
         "choosing-loan": {
-          "title": "Scegliere il prestito giusto",
-          "body": "Personali, casa, business o di progetto: come abbinare la tua esigenza al prodotto giusto e cosa valuta davvero un finanziatore prima di approvare."
+          "body": "Personali, casa, business o di progetto: come abbinare la tua esigenza al prodotto giusto e cosa valuta davvero un finanziatore prima di approvare.",
+          "title": "Scegliere il prestito giusto"
         },
         "organic-farming": {
-          "title": "Agricoltura biologica, spiegata",
-          "body": "Cosa fanno i biofertilizzanti per la salute del suolo e le rese, perché conta la produzione senza sostanze chimiche e come gli agricoltori effettuano il passaggio nella pratica."
+          "body": "Cosa fanno i biofertilizzanti per la salute del suolo e le rese, perché conta la produzione senza sostanze chimiche e come gli agricoltori effettuano il passaggio nella pratica.",
+          "title": "Agricoltura biologica, spiegata"
         },
         "securing-operations": {
-          "title": "Proteggere le operazioni ad alto valore",
-          "body": "Dalle guardie armate alle unità commando: come una valutazione professionale della sicurezza trasforma il rischio in un programma gestito e misurabile."
-        }
-      }
-    },
-    "careers": {
-      "culture": [
-        "Indexia Group è un'organizzazione che apprende e la sua cultura aziendale è il suo team. I nostri dipendenti sono una risorsa preziosa e ci impegniamo a offrire loro i progetti tecnologici più recenti e un ambiente di lavoro divertente, collaborativo e orientato al team. Crediamo nel fornire alle nostre persone le esperienze e le opportunità di formazione che ampliano le loro conoscenze esistenti, con orari flessibili, l'enfasi sulla comunicazione aperta e una politica della porta aperta tra management e staff.",
-        "Siamo orgogliosi di offrire l'opportunità di ampliare e sviluppare la tua carriera in un ambiente che combina la natura imprenditoriale di una startup con la stabilità finanziaria e i grandi vantaggi di un'azienda affermata. Ti invitiamo a inviare il tuo curriculum per la valutazione mentre il gruppo continua ad espandere le sue operazioni di mercato e la sua base di clienti con persone che condividono la nostra passione per l'eccellenza operativa."
-      ],
-      "roles": {
-        "business-development": {
-          "title": "Responsabile Sviluppo Business",
-          "department": "Sviluppo Business",
-          "type": "Tempo pieno"
+          "body": "Proteggere le operazioni online non è più opzionale. Usa l'autenticazione a più fattori e crittografa i dati sensibili.",
+          "title": "Proteggere le Tue Operazioni Online"
         },
-        "city-head": {
-          "title": "Responsabile di Città",
-          "department": "Vendite",
-          "type": "Tempo pieno"
-        },
-        "team-manager": {
-          "title": "Team Manager",
-          "department": "Operazioni",
-          "type": "Tempo pieno"
-        },
-        "hr-manager": {
-          "title": "Responsabile Risorse Umane",
-          "department": "Risorse Umane",
-          "type": "Tempo pieno"
-        },
-        "team-leader": {
-          "title": "Team Leader",
-          "department": "Operazioni",
-          "type": "Tempo pieno"
-        },
-        "customer-support": {
-          "title": "Assistente Supporto Clienti",
-          "department": "Supporto Clienti",
-          "type": "Tempo pieno"
-        },
-        "field-executive": {
-          "title": "Esecutivo di Campo",
-          "department": "Operazioni sul Campo",
-          "type": "Tempo pieno"
-        },
-        "seo-professional": {
-          "title": "Professionista SEO",
-          "department": "Marketing Digitale",
-          "type": "Tempo pieno"
+        "understanding-fdi": {
+          "body": "Una guida pratica su vie d'ingresso, limiti settoriali e adempimenti necessari per portare capitale estero in un'impresa indiana, e dove l'aiuto di un esperto conta di più.",
+          "title": "Capire gli IDE in India"
         }
       }
     },
     "research": {
       "areas": {
-        "economic": {
-          "title": "Ricerca Economica",
-          "body": "Analisi incisive delle economie globali e regionali, dei cambi di politica e dei motori della crescita."
-        },
-        "thematic": {
-          "title": "Ricerca Tematica Globale",
-          "body": "Analisi approfondite di temi di rilevanza globale e del loro impatto su economie e mercati."
-        },
-        "macro": {
-          "title": "Strategia Macro Globale",
-          "body": "Viste strategiche e posizionamento nelle discipline macroeconomiche, del reddito fisso, valutarie e delle materie prime."
-        },
-        "fx": {
-          "title": "FX",
-          "body": "Analisi e prospettive valutarie sui mercati che copriamo."
-        },
-        "rates": {
-          "title": "Tassi",
-          "body": "Ricerca su reddito fisso e tassi di interesse in tutta la nostra area di copertura."
+        "commodities": {
+          "body": "Ricerca sulle materie prime basata sulla conoscenza locale in Asia, Africa e Medio Oriente.",
+          "title": "Materie Prime"
         },
         "credit": {
-          "title": "Credito",
-          "body": "Viste e analisi del credito per aiutare i clienti a orientarsi tra emissioni e spread."
+          "body": "Viste e analisi del credito per aiutare i clienti a orientarsi tra emissioni e spread.",
+          "title": "Credito"
         },
-        "commodities": {
-          "title": "Materie Prime",
-          "body": "Ricerca sulle materie prime basata sulla conoscenza locale in Asia, Africa e Medio Oriente."
+        "economic": {
+          "body": "Analisi incisive delle economie globali e regionali, dei cambi di politica e dei motori della crescita.",
+          "title": "Ricerca Economica"
+        },
+        "fx": {
+          "body": "Analisi e prospettive valutarie sui mercati che copriamo.",
+          "title": "FX"
+        },
+        "macro": {
+          "body": "Viste strategiche e posizionamento nelle discipline macroeconomiche, del reddito fisso, valutarie e delle materie prime.",
+          "title": "Strategia Macro Globale"
+        },
+        "rates": {
+          "body": "Ricerca su reddito fisso e tassi di interesse in tutta la nostra area di copertura.",
+          "title": "Tassi"
+        },
+        "thematic": {
+          "body": "Analisi approfondite di temi di rilevanza globale e del loro impatto su economie e mercati.",
+          "title": "Ricerca Tematica Globale"
         }
       },
       "reports": {
-        "otg": {
-          "title": "OTG, Analisi sul campo",
-          "summary": "La nostra analisi sul campo delle regioni dinamiche che studiamo in profondità."
-        },
         "act": {
-          "title": "ACT, Idee azionabili",
-          "summary": "Idee di mercato azionabili che danno ai nostri clienti un vantaggio competitivo."
+          "summary": "Idee di mercato azionabili che danno ai nostri clienti un vantaggio competitivo.",
+          "title": "ACT, Idee azionabili"
+        },
+        "otg": {
+          "summary": "La nostra analisi sul campo delle regioni dinamiche che studiamo in profondità.",
+          "title": "OTG, Analisi sul campo"
         },
         "special-reports": {
-          "title": "Rapporti Speciali",
-          "summary": "Analisi di temi di rilevanza globale e del loro impatto su economie e mercati."
+          "summary": "Analisi di temi di rilevanza globale e del loro impatto su economie e mercati.",
+          "title": "Rapporti Speciali"
         }
       }
     },
     "security": {
-      "features": {
-        "tech": {
-          "title": "Tecnologie Affidabili",
-          "body": "I nostri sistemi bancari sono gestiti da esperti qualificati e protetti dalla migliore tecnologia di sicurezza disponibile. Gestisci i tuoi soldi online con fiducia e sicurezza."
+      "contacts": {
+        "control": {
+          "body": "Non richiederemo mai le tue informazioni di conto o la tua password per telefono, e-mail o SMS. Contattaci se hai accidentalmente rivelato i dati del tuo conto o sei stato vittima di frode.",
+          "title": "Controlla la Tua Sicurezza Online"
         },
+        "report": {
+          "body": "Se sospetti accessi o transazioni non autorizzati, chiama la nostra linea di assistenza clienti per terminare immediatamente l'accesso al banking online e a qualsiasi altro canale di accesso ai tuoi conti, come le carte bancomat.",
+          "title": "Contattaci"
+        }
+      },
+      "features": {
         "monitor": {
-          "title": "Sistemi Sicuri",
-          "body": "Indexia Finance monitora costantemente tutte le minacce e le attività online 24 ore su 24 per individuare precocemente le frodi e adottare misure preventive per garantire la sicurezza dei tuoi conti."
+          "body": "Indexia Finance monitora costantemente tutte le minacce e le attività online 24 ore su 24 per individuare precocemente le frodi e adottare misure preventive per garantire la sicurezza dei tuoi conti.",
+          "title": "Sistemi Sicuri"
+        },
+        "tech": {
+          "body": "I nostri sistemi bancari sono gestiti da esperti qualificati e protetti dalla migliore tecnologia di sicurezza disponibile. Gestisci i tuoi soldi online con fiducia e sicurezza.",
+          "title": "Tecnologie Affidabili"
         }
       },
       "practices": {
-        "devices": {
-          "title": "Proteggi i Tuoi Dispositivi",
-          "body": "Assicurati che tutti i tuoi computer, telefoni cellulari, dispositivi portatili, sistemi operativi e browser Internet, soprattutto quelli usati per il banking online, siano aggiornati regolarmente con i software più recenti."
-        },
         "connections": {
-          "title": "Proteggi le Tue Connessioni",
-          "body": "Una rete ben progettata e gestita mantiene traffico e transazioni al riparo dalle intrusioni."
+          "body": "Una rete ben progettata e gestita mantiene traffico e transazioni al riparo dalle intrusioni.",
+          "title": "Proteggi le Tue Connessioni"
         },
         "data": {
-          "title": "Proteggi i Tuoi Dati",
-          "body": "I sistemi operativi e i browser web fanno un buon lavoro nel mantenere le tue informazioni sicure e private, ma potresti voler aggiungere ulteriori livelli di sicurezza al tuo computer."
-        }
-      },
-      "contacts": {
-        "control": {
-          "title": "Controlla la Tua Sicurezza Online",
-          "body": "Non richiederemo mai le tue informazioni di conto o la tua password per telefono, e-mail o SMS. Contattaci se hai accidentalmente rivelato i dati del tuo conto o sei stato vittima di frode."
+          "body": "I sistemi operativi e i browser web fanno un buon lavoro nel mantenere le tue informazioni sicure e private, ma potresti voler aggiungere ulteriori livelli di sicurezza al tuo computer.",
+          "title": "Proteggi i Tuoi Dati"
         },
-        "report": {
-          "title": "Contattaci",
-          "body": "Se sospetti accessi o transazioni non autorizzati, chiama la nostra linea di assistenza clienti per terminare immediatamente l'accesso al banking online e a qualsiasi altro canale di accesso ai tuoi conti, come le carte bancomat."
+        "devices": {
+          "body": "Assicurati che tutti i tuoi computer, telefoni cellulari, dispositivi portatili, sistemi operativi e browser Internet, soprattutto quelli usati per il banking online, siano aggiornati regolarmente con i software più recenti.",
+          "title": "Proteggi i Tuoi Dispositivi"
         }
       }
     }
   },
-  "common": {
-    "logoAlt": "Logo Indexia Group",
-    "homeAria": "Indexia Group, pagina iniziale",
-    "languages": {
-      "en": "English",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch",
-      "it": "Italiano",
-      "pt": "Português",
-      "hi": "हिन्दी",
-      "ar": "العربية",
-      "zh": "中文",
-      "ja": "日本語",
-      "ru": "Русский",
-      "ko": "한국어",
-      "id": "Bahasa Indonesia",
-      "tr": "Türkçe",
-      "vi": "Tiếng Việt",
-      "nl": "Nederlands",
-      "pl": "Polski",
-      "th": "ไทย",
-      "sv": "Svenska",
-      "uk": "Українська",
-      "el": "Ελληνικά",
-      "he": "עברית"
-    }
-  },
-  "seo": {
-    "homeTitle": "Servizi finanziari, prestiti, export e logistica",
-    "homeDescription": "Gruppo indiano diversificato: servizi finanziari, prestiti NBFC, commercio globale, fertilizzanti agro, magazzinaggio e sicurezza. Uffici a Mumbai e Delhi.",
-    "businessesTitle": "Aziende del gruppo, Finanza, agro, export e logistica",
-    "businessesDescription": "Le otto aziende di Indexia Group: finanza, prestiti, sicurezza, commercio di zucchero, fertilizzanti organici, magazzinaggio, pubblicità e supporto agli atleti.",
-    "contactTitle": "Contatti, Uffici di Mumbai e Delhi",
-    "contactDescription": "Contatta Indexia Group per richieste su servizi finanziari, prestiti, commercio, agro e logistica. Uffici a Mumbai, Delhi ed Ecuador, risposta entro 24 ore."
-  },
-  "branches": {
-    "corporateOffice": "Sede Centrale",
-    "mumbaiOffice": "Ufficio di Mumbai",
-    "delhiOffice": "Ufficio di Delhi",
-    "internationalOffice": "Ufficio Internazionale"
-  },
   "phoneLabel": {
     "landline": "Fisso",
+    "mob": "Mobile",
     "mobile": "Cellulare",
-    "mob": "Cell.",
-    "tel": "Tel."
+    "tel": "Tel"
+  },
+  "securityTipsPage": {
+    "contactsEyebrow": "Serve Aiuto?",
+    "contactsHeading": "Devi Parlare con Noi?",
+    "contactsSubtitle": "Se pensi di aver rivelato i dati del tuo conto a una parte sospetta o di essere stato vittima di frode, contattaci subito chiamando la linea di assistenza clienti.",
+    "ctaBody": "Segnalalo tramite il nostro modulo o contatta direttamente la società di Indexia Group interessata.",
+    "ctaButton": "Proteggi i Tuoi Dati",
+    "ctaTitle": "Hai visto qualcosa di sospetto?",
+    "eyebrow": "Consigli di Sicurezza",
+    "featuresEyebrow": "Cosa Facciamo",
+    "featuresHeading": "Ti Teniamo al Sicuro Online",
+    "featuresSubtitle": "Continua a leggere per scoprire cosa facciamo per proteggere i tuoi conti quando fai banking online.",
+    "metaDescription": "Consigli di sicurezza di Indexia Group, come proteggiamo i tuoi conti online, cosa puoi fare sui tuoi dispositivi e chi contattare se qualcosa va storto.",
+    "practicesEyebrow": "Cosa Puoi Fare",
+    "practicesHeading": "Proteggi i Tuoi Dati",
+    "practicesSubtitle": "Lavoriamo ogni giorno per mantenere protetti i tuoi conti quando fai banking online. Inoltre, ci sono alcune semplici cose che puoi fare sui tuoi dispositivi di tutti i giorni per restare al sicuro online.",
+    "subtitle": "Ovunque tu sia, puoi gestire i tuoi soldi online con fiducia.",
+    "title": "Consigli di Sicurezza di Indexia Group",
+    "titleAccent": "frode.",
+    "titleStart": "Resta un passo avanti alla "
+  },
+  "seo": {
+    "businessesDescription": "Le otto aziende di Indexia Group: finanza, prestiti, sicurezza, commercio di zucchero, fertilizzanti organici, magazzinaggio, pubblicità e supporto agli atleti.",
+    "businessesTitle": "Aziende del gruppo, Finanza, agro, export e logistica",
+    "contactDescription": "Contatta Indexia Group per richieste su servizi finanziari, prestiti, commercio, agro e logistica. Uffici a Mumbai, Delhi ed Ecuador, risposta entro 24 ore.",
+    "contactTitle": "Contatti, Uffici di Mumbai e Delhi",
+    "homeDescription": "Gruppo indiano diversificato: servizi finanziari, prestiti NBFC, commercio globale, fertilizzanti agro, magazzinaggio e sicurezza. Uffici a Mumbai e Delhi.",
+    "homeTitle": "Servizi finanziari, prestiti, export e logistica"
+  },
+  "unipolePricing": {
+    "areaCol": "Piedi quadrati",
+    "areaLarge": "288 piedi²",
+    "areaSmall": "200 piedi²",
+    "bookMessage": "Vorrei prenotare l'unipolo {{size}} ({{area}}) a {{rate}} al mese.",
+    "bookNow": "Prenota ora",
+    "bookSize": "Prenota questa misura",
+    "eyebrow": "Pacchetti unipoli",
+    "note": "* Tariffe soggette a disponibilità. Contattaci per pacchetti a lungo termine.",
+    "rateCol": "Tariffa mensile",
+    "rateLarge": "₹36.000",
+    "rateSmall": "₹25.000",
+    "sizeCol": "Dimensione",
+    "sizeLarge": "12 × 24 piedi",
+    "sizeSmall": "10 × 20 piedi",
+    "standardRate": "Tariffa standard: ₹125/piedi² per un lato per 1 mese",
+    "subtitle": "Pacchetti unipoli premium sulla Delhi–Dehradun Highway, Shamli",
+    "title": "Dimensioni e prezzi disponibili"
+  },
+  "warehouseContact": {
+    "address": "Indirizzo ufficio",
+    "brochure": "Scarica la brochure",
+    "emails": "Email",
+    "eyebrow": "Contatto",
+    "phones": "Telefono",
+    "title": "Contatta il team magazzino"
   },
   "warehousePricing": {
+    "bookMessage": "Vorrei informarmi sul terreno di {{size}} ({{area}}) a ₹30 per piede quadrato.",
+    "bookNow": "Prenota ora",
+    "enquire": "Richiedi",
     "eyebrow": "Portafoglio Fondiario",
-    "title": "Portafoglio Fondiario e Prezzi",
-    "subtitle": "5 località | 21 acri in totale, Shamli, Uttar Pradesh",
-    "portfolioCol": "Portafoglio",
-    "valueCol": "Valore",
     "locations": "Località",
     "locationsValue": "5 località",
-    "total": "Terreno totale",
-    "totalValue": "21 acri",
-    "plotCol": "Dimensioni appezzamenti disponibili",
+    "note": "Magazzino moderno da costruire su 2 acri con banchine di carico. Prezzi negoziabili, contattateci per i dettagli.",
     "plot1": "1 acro",
     "plot2": "2 acri",
     "plot2_5": "2,5 acri",
     "plot5": "5 acri",
     "plot8": "8 acri",
-    "standardRate": "Prezzo previsto: ₹30 per piede quadrato, negoziabile",
-    "note": "Magazzino moderno da costruire su 2 acri con banchine di carico. Prezzi negoziabili, contattateci per i dettagli.",
-    "enquire": "Richiedi",
     "plotArea1": "Superficie: 1 acro",
     "plotArea2": "Superficie: 2 acri",
     "plotArea2_5": "Superficie: 2,5 acri",
     "plotArea5": "Superficie: 5 acri",
     "plotArea8": "Superficie: 8 acri",
-    "bookMessage": "Vorrei informarmi sul terreno di {{size}} ({{area}}) a ₹30 per piede quadrato.",
-    "bookNow": "Prenota ora"
-  },
-  "warehouseContact": {
-    "eyebrow": "Contatti",
-    "title": "Contatta il team magazzino",
-    "phones": "Telefono",
-    "emails": "E-mail",
-    "address": "Indirizzo ufficio",
-    "brochure": "Scarica la brochure"
-  },
-  "brochure": {
-    "download": "Scarica PDF",
-    "headline": "Investimento fondiario strategico nel cuore del Nord India",
-    "about": "Informazioni sul progetto",
-    "contact": "Contattaci",
-    "footer": "Indexia Group · Per richieste, chiamate, scrivete o visitate il nostro ufficio. I prezzi sono indicativi e negoziabili.",
-    "print": "Stampa",
-    "advertisingHeadline": "Unipoli pubblicitari premium sulla Delhi–Dehradun Highway, Shamli",
-    "advertisingFooter": "Indexia Group | Tariffe soggette a disponibilità. Per prenotare, chiamate, scrivete o visitate il nostro ufficio.",
-    "backWarehouse": "Torna a Magazzini",
-    "backAdvertising": "Torna a Pubblicità",
-    "locationWarehouse": "Shamli, Uttar Pradesh",
-    "locationAdvertising": "Autostrada Delhi–Dehradun, Shamli"
-  },
-  "advertisingContact": {
-    "eyebrow": "Contatti",
-    "title": "Prenota il tuo spazio oggi",
-    "phones": "Telefono",
-    "emails": "E-mail",
-    "address": "Indirizzo ufficio",
-    "brochure": "Scarica la brochure"
-  },
-  "aboutPage": {
-    "eyebrow": "About Us",
-    "title": "About Indexia Group",
-    "titleStart": "Building Trust ",
-    "titleAccent": "Across Industries.",
-    "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach.",
-    "storyEyebrow": "Our Story",
-    "storyTitle": "From a Shared Vision to a National Group",
-    "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve.",
-    "storyBody2": "Today, Indexia Group operates across three locations, Mumbai, Delhi, and Ecuador, with a team that shares a common purpose.",
-    "valuesEyebrow": "Our Values",
-    "valuesTitle": "What We Stand For",
-    "value1Title": "Integrity",
-    "value1Body": "We do what we say. Every relationship is built on honesty, transparency, and mutual respect.",
-    "value2Title": "Expertise",
-    "value2Body": "We invest in deep domain knowledge across every vertical.",
-    "value3Title": "People First",
-    "value3Body": "Business is ultimately about people. We design solutions that empower our clients.",
-    "value4Title": "Innovation",
-    "value4Body": "We embrace change and continuously improve.",
-    "stat1Label": "Companies",
-    "stat2Label": "Locations",
-    "stat3Label": "Years in Business",
-    "stat4Label": "Countries Served",
-    "timelineEyebrow": "Our Journey",
-    "timelineTitle": "Key Milestones",
-    "milestone1Title": "Founded in Mumbai",
-    "milestone1Body": "Indexia Group established its first company in Mumbai.",
-    "milestone2Title": "National Expansion",
-    "milestone2Body": "Expanded operations to Delhi NCR.",
-    "milestone3Title": "Going Global",
-    "milestone3Body": "Entered international markets with sugar exports to South America.",
-    "milestone4Title": "Diversification",
-    "milestone4Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals.",
-    "milestone5Title": "Social Impact",
-    "milestone5Body": "Founded Indexia Foundation to support Indian athletes.",
-    "ctaTitle": "Let's Build Something Together",
-    "ctaBody": "Whether you're looking for financial services or simply want to learn more about our group, we're here to help.",
-    "ctaButton": "Get in Touch",
-    "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "aboutUs": "About Us",
-    "leaderEyebrow": "Leadership",
-    "leaderTitle": "The Visionary Behind Indexia Group",
-    "founderName": "Fondatore e Amministratore Delegato",
-    "founderRole": "Founder & Managing Director",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
-    "founderQuote": "Business is about trust. When you build on integrity, everything else follows.",
-    "companiesEyebrow": "Our Companies",
-    "companiesTitle": "Eight Businesses, One Vision",
-    "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
-    "c1Tag": "Fintech Multinazionale",
-    "c1Name": "Indexia Finance",
-    "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
-    "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
-    "c2Tag": "Braccio Prestiti",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
-    "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
-    "c2Highlights": "12 Prodotti di Prestito,Prestiti Personali e Aziendali,Mutuo e Prestito Garantito,Trasferimento Saldo e Capitale Circolante",
-    "c3Tag": "Esportazione Globale",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
-    "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
-    "c3Highlights": "14 Paesi Sudamericani,Esportazione Zucchero Raffinato Premium,Certificazione Qualità Alimentare,Gestione Completa del Ciclo di Esportazione",
-    "c4Tag": "Agricoltura Biologica",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
-    "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
-    "c5Tag": "Protezione Armata",
-    "c5Name": "Indexia Securities",
-    "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
-    "c5Highlights": "Ex-Comandanti Militari,Centro Operativo 24/7,Protezione VIP e Aziendale,Sicurezza Infrastrutture Critiche",
-    "c6Tag": "Terreno Strategico",
-    "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
-    "c6Highlights": "21 Acri a Shamli UP,8 Autostrade Nazionali,5 Sedi,65 km da Delhi",
-    "c7Tag": "Pubblicità Autostradale",
-    "c7Name": "Indexia Advertising",
-    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
-    "c7Highlights": "Autostrada NH-709B Delhi-Dehradun,10 Stati Collegati,Visibilità 360°,1+ Crore Esposizione Giornaliera",
-    "c8Tag": "Impatto Sociale",
-    "c8Name": "Indexia Foundation",
-    "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
-    "c8Highlights": "Dalla Base alle Olimpiadi,Allenamento e Nutrizione,Coaching e Mentoring,Finanziamento Competizioni",
-    "visitWebsite": "Visit Website",
-    "learnMore": "Learn More",
-    "registrationEyebrow": "Registration & Compliance",
-    "registrationTitle": "Registered Entities",
-    "registrationSubtitle": "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.",
-    "viewOnMCA": "View on MCA",
-    "registrationNote": "All company registrations are verifiable on the",
-    "mcaPortal": "MCA Portal",
-    "taglineSecondary": "Imprese Diversificate. Visione Unificata.",
-    "stat1Value": "08",
-    "stat2Value": "03",
-    "stat3Value": "12+",
-    "stat4Value": "14",
-    "milestone1Year": "2012",
-    "milestone2Year": "2013",
-    "milestone3Year": "2014",
-    "milestone4Year": "2021",
-    "milestone5Year": "2024"
-  },
-  "homeReach": {
-    "eyebrow": "La Nostra Portata",
-    "title": "Affidabili Oltre i Confini",
-    "subtitle": "Da Mumbai all'Ecuador, le nostre aziende servono clienti su tre continenti.",
-    "stat1Label": "Aziende",
-    "stat2Label": "Paesi",
-    "stat3Label": "Anni di Forza",
-    "stat4Label": "Clienti Serviti",
-    "cta": "Scopri di Più"
-  },
-  "jsonLd": {
-    "orgName": "Indexia Group",
-    "breadcrumbHome": "Home",
-    "breadcrumbAbout": "Su di Noi",
-    "breadcrumbCompanies": "Aziende del Gruppo",
-    "breadcrumbContact": "Contatti",
-    "breadcrumbNews": "Notizie e Centro Conoscenze",
-    "breadcrumbCareers": "Carriere",
-    "aboutName": "Su Indexia Group",
-    "aboutDescription": "Indexia Group è un gruppo aziendale indiano diversificato.",
-    "contactName": "Contatta Indexia Group",
-    "corporateOffice": "Sede Centrale",
-    "delhiOffice": "Ufficio Delhi",
-    "businessesName": "Imprese Indexia Group",
-    "businessesDescription": "Otto imprese sotto Indexia Group.",
-    "newsName": "Indexia Group, Notizie e Centro Conoscenze",
-    "careersName": "Posizioni aperte presso Indexia Group",
-    "companyPageName": "{{name}}, {{tag}}",
-    "companyPageDescription": "Scopri {{name}}, un'azienda di Indexia Group. {{description}}"
-  },
-  "notFoundPage": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "backHome": "Back to Home"
-  },
-  "applyPage": {
-    "successTitle": "Application Submitted!",
-    "successBody": "Thank you for applying for the <strong>{{role}}</strong> position. Our HR team has received your application and will review it shortly.",
-    "successSentTo": "Application sent to",
-    "backToCareers": "Back to Careers",
-    "heroTitle": "Apply for",
-    "roleDetails": "Role Details",
-    "responsibilities": "Responsibilities & Requirements",
-    "infoBanner": "Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.",
-    "fullName": "Full Name",
-    "fullNamePlaceholder": "Your full name",
-    "email": "Email",
-    "phone": "Phone",
-    "phonePlaceholder": "10-digit number",
-    "experience": "Experience",
-    "selectExperience": "Select experience",
-    "fresher": "Fresher",
-    "lessThan1Year": "Less than 1 year",
-    "1to2Years": "1-2 years",
-    "2to5Years": "2-5 years",
-    "5plusYears": "5+ years",
-    "resume": "Resume",
-    "clickToUpload": "Click to upload resume",
-    "clickToReplace": "Click to replace",
-    "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
-    "tellUsAboutYourself": "Tell us about yourself",
-    "introPlaceholder": "Share your background, skills, and why you're interested in this role...",
-    "submitting": "Submitting...",
-    "submitApplication": "Submit Application",
-    "submitNote": "Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.",
-    "errorNameEmpty": "Please enter your name.",
-    "errorNameShort": "Name must be at least 2 characters.",
-    "errorNameLetters": "Name must contain letters.",
-    "errorEmailEmpty": "Please enter your email address.",
-    "errorEmailInvalid": "Please enter a valid email address.",
-    "errorPhoneEmpty": "Please enter your phone number.",
-    "errorPhoneInvalid": "Please enter a valid 10-digit phone number.",
-    "errorExperience": "Please select your experience level.",
-    "errorResume": "Please upload your resume.",
-    "errorIntroEmpty": "Please tell us about yourself.",
-    "errorIntroShort": "Please write at least 20 characters.",
-    "errorFileSize": "File size must be under 5MB.",
-    "errorFileType": "Only PDF, DOC, or DOCX files are accepted.",
-    "errorSubmit": "Could not submit your application. Please try again later."
-  },
-  "newsHero": {
-    "latestLabel": "Latest across the group",
-    "sectors": {
-      "finance": "Finance",
-      "tradeExport": "Trade & Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "advertising": "Advertising",
-      "sport": "Sport"
-    }
-  },
-  "newsVideo": {
-    "onAir": "On Air",
-    "tvCommercial": "TV Commercial"
-  },
-  "careersHero": {
-    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
-    "companiesOneGroup": "companies, one group"
-  },
-  "openRoles": {
-    "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment."
+    "plotCol": "Dimensioni appezzamenti disponibili",
+    "portfolioCol": "Portafoglio",
+    "standardRate": "Prezzo previsto: ₹30 per piede quadrato, negoziabile",
+    "subtitle": "5 località | 21 acri in totale, Shamli, Uttar Pradesh",
+    "title": "Portafoglio Fondiario e Prezzi",
+    "total": "Terreno totale",
+    "totalValue": "21 acri",
+    "valueCol": "Valore"
   }
 }

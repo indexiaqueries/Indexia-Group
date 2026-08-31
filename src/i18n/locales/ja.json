@@ -1,384 +1,870 @@
 {
-  "header": {
-    "nav": {
-      "contact": "お問い合わせ",
-      "about": "About Us"
-    },
-    "menu": {
-      "home": "ホーム",
-      "groupCompanies": "グループ企業",
-      "companies": "企業一覧",
-      "contact": "お問い合わせ"
-    },
-    "aria": {
-      "selectLanguage": "言語を選択",
-      "toggleMenu": "メニューを開く/閉じる",
-      "closeMenu": "メニューを閉じる"
-    }
+  "aboutPage": {
+    "aboutUs": "会社概要",
+    "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
+    "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
+    "c1Name": "Indexia Finance",
+    "c1Tag": "多国籍フィンテック",
+    "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
+    "c2Highlights": "12種のローン商品,個人・法人ローン,住宅ローン・担保ローン,残高移転・運転資金",
+    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Tag": "融資部門",
+    "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
+    "c3Highlights": "14カ国南米,高級精製糖輸出,食品安全認証,フルサイクル輸出管理",
+    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Tag": "グローバル輸出",
+    "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
+    "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
+    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Tag": "有機農業",
+    "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
+    "c5Highlights": "元軍隊コマンド,24/7運用センター,VIP・企業警護,重要インフラセキュリティ",
+    "c5Name": "Indexia Securities",
+    "c5Tag": "武装警備",
+    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
+    "c6Highlights": "Shamli UPに21エーカー,8本の国道,5拠点,デリーから65km",
+    "c6Name": "Indexia Warehouse",
+    "c6Tag": "戦略的用地",
+    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
+    "c7Highlights": "NH-709Bデリー・デーラードゥーン高速道路,10州接続,360°可視性,1+クロール日間曝光",
+    "c7Name": "Indexia Advertising",
+    "c7Tag": "高速道路広告",
+    "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
+    "c8Highlights": "地域から五輪へ,トレーニングと栄養,コーチングとメンタリング,大会資金支援",
+    "c8Name": "Indexia Foundation",
+    "c8Tag": "社会貢献",
+    "companiesEyebrow": "私たちの会社",
+    "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
+    "companiesTitle": "8つの事業、1つのビジョン",
+    "ctaBody": "Whether you're looking for financial services or simply want to learn more about our group, we're here to help.",
+    "ctaButton": "お問い合わせ",
+    "ctaTitle": "一緒に何かを作りましょう",
+    "eyebrow": "会社概要",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderName": "創業者兼最高経営責任者",
+    "founderQuote": "ビジネスとは信頼の上に成り立つもの。誠実さを基盤にすれば、その他の一切都是自然とついてくる。",
+    "founderRole": "創業者兼代表取締役",
+    "leaderEyebrow": "リーダーシップ",
+    "leaderTitle": "Indexia Groupを率いるビジョナー",
+    "learnMore": "詳しく見る",
+    "mcaPortal": "MCAポータル",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
+    "milestone1Body": "Indexia Group established its first company in Mumbai.",
+    "milestone1Title": "Founded in Mumbai",
+    "milestone1Year": "2012",
+    "milestone2Body": "Expanded operations to Delhi NCR.",
+    "milestone2Title": "国内展開",
+    "milestone2Year": "2013",
+    "milestone3Body": "Entered international markets with sugar exports to South America.",
+    "milestone3Title": "グローバル進出",
+    "milestone3Year": "2014",
+    "milestone4Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals.",
+    "milestone4Title": "多角化",
+    "milestone4Year": "2021",
+    "milestone5Body": "Founded Indexia Foundation to support Indian athletes.",
+    "milestone5Title": "社会貢献",
+    "milestone5Year": "2024",
+    "registrationEyebrow": "登録とコンプライアンス",
+    "registrationNote": "すべての登録は以下で確認できます",
+    "registrationSubtitle": "Indexia Groupのすべての会社は会社法2013に基づいて登録されています。",
+    "registrationTitle": "登録法人",
+    "stat1Label": "会社数",
+    "stat1Value": "08",
+    "stat2Label": "拠点数",
+    "stat2Value": "03",
+    "stat3Label": "事業年数",
+    "stat3Value": "12+",
+    "stat4Label": "対応国数",
+    "stat4Value": "14",
+    "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve.",
+    "storyBody2": "Today, Indexia Group operates across three locations, Mumbai, Delhi, and Ecuador, with a team that shares a common purpose.",
+    "storyEyebrow": "私たちの物語",
+    "storyTitle": "共有されたビジョンから国民的グループへ",
+    "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach.",
+    "taglineSecondary": "多様な事業。統一されたビジョン。",
+    "timelineEyebrow": "私たちの歩み",
+    "timelineTitle": "主要マイルストーン",
+    "title": "Indexia Groupについて",
+    "titleAccent": "Across Industries.",
+    "titleStart": "Building Trust ",
+    "value1Body": "We do what we say. Every relationship is built on honesty, transparency, and mutual respect.",
+    "value1Title": "誠実さ",
+    "value2Body": "We invest in deep domain knowledge across every vertical.",
+    "value2Title": "専門性",
+    "value3Body": "Business is ultimately about people. We design solutions that empower our clients.",
+    "value3Title": "人を第一に",
+    "value4Body": "We embrace change and continuously improve.",
+    "value4Title": "革新",
+    "valuesEyebrow": "私たちの価値観",
+    "valuesTitle": "私たちが守るもの",
+    "viewOnMCA": "MCAで見る",
+    "visitWebsite": "ウェブサイトを見る"
   },
-  "hero": {
-    "p0": {
-      "tag": "インデキシアグループ",
-      "heading": "一つのグループ。\n多様なソリューション。",
-      "tagline": "Diverse Ventures. Unified Vision.",
-      "sub": "金融やロジスティクスから農業や広告まで、インデキシアグループは信頼され、未来を見据えた企業を通じて、あらゆる業界の成長を促進します。",
-      "motto": "国に仕えるためのいくつかのステップ"
-    },
-    "p1": {
-      "tag": "インデキシアファイナンス",
-      "heading": "あらゆる\nローン先。",
-      "sub": "www.indexiafinance.com のポータルで、あらゆる種類のローンを申請できます。私たちはグローバルにサービスを提供しています, インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。"
-    },
-    "p2": {
-      "tag": "インデキシアフィンサーブ株式会社",
-      "heading": "金融の\n次世代メソッド。",
-      "sub": "今、正しい銀行があなたの玄関先までやって来ます。"
-    },
-    "p3": {
-      "tag": "インデキシアオーバーシーズ株式会社",
-      "heading": "精製糖と\nすべての食用品。",
-      "sub": "精製糖とすべての食用品を取り扱い、輸出しています。"
-    },
-    "p4": {
-      "tag": "インデキシアアグロバイオ肥料株式会社",
-      "heading": "有機肥料を製造し\n輸出しています",
-      "sub": "インドで有機肥料を製造し、グローバルに輸出しています。"
-    },
-    "p5": {
-      "tag": "インデキシアセキュリティーズ",
-      "heading": "武装コマンド部隊と\n武装警備",
-      "sub": "政治家や大企業経営者を守ります。"
-    },
-    "p6": {
-      "tag": "インデキシアウェアハウス",
-      "heading": "大規模な\n保管のために。",
-      "sub": "商品を効率的に動かし続ける、近代的な倉庫・物流インフラ。"
-    },
-    "p7": {
-      "tag": "インデキシアアドバタイジング",
-      "heading": "あなたのブランドを\nすべての高速道路に。",
-      "sub": "高速道路沿いの複数の広告媒体を所有し、ブランドに高い視認性のキャンペーンを提供します。"
-    },
-    "p8": {
-      "tag": "インデキシア財団",
-      "heading": "アスリートを\nエンパワー。",
-      "sub": "アスリートを最高のパフォーマンスへの道のりで育成・指導・資金支援するスポーツプログラム。"
-    },
-    "ctaExploreGroup": "グループ企業を探索",
-    "ctaExploreMore": "もっと見る",
-    "prevPanel": "前のパネル",
-    "nextPanel": "次のパネル"
+  "advertisingContact": {
+    "address": "オフィス住所",
+    "brochure": "パンフレットをダウンロード",
+    "emails": "メール",
+    "eyebrow": "お問い合わせ",
+    "phones": "電話",
+    "title": "今すぐスロットを予約"
   },
-  "footer": {
-    "tagline": "多角化するインドのビジネスグループ",
-    "blurb": "一つの多角化したインドのグループの下に、金融、輸出、農業、物流、警備、広告、アスリート支援という8つの信頼できる事業, 誠実さと結果に基づいています。",
-    "contactUs": "お問い合わせ",
-    "hours": "月〜土: 午前9時 - 午後6時",
-    "company": "会社",
-    "resources": "リソース",
-    "legal": "法務",
-    "links": {
-      "groupCompanies": "グループ企業",
-      "advertise": "広告掲載のお申し込み",
-      "careers": "採用情報",
-      "news": "ニュース＆ナレッジセンター",
-      "globalResearch": "グローバルリサーチ",
-      "securityTips": "セキュリティのヒント",
-      "termsOfUse": "利用規約",
-      "termsConditions": "利用条件",
-      "privacyPolicy": "プライバシーポリシー",
-      "aboutUs": "About Us"
-    },
-    "cta": "当社のグループ企業についてご質問がありますか？",
-    "enquiry": "お問い合わせをお送りください。",
-    "stats": "インデキシアグループ · 08社 · 03拠点",
-    "rights": "© 2026 インデキシアグループ。全著作権所有。",
-    "backToTop": "トップへ戻る",
-    "taglineSecondary": "多様な事業。統一されたビジョン。"
-  },
-  "home": {
-    "groupCompanies": {
-      "title": "グループ企業",
-      "description": "インデキシアグループは、金融、輸出、農業、倉庫、警備、社会貢献、広告にわたる多角的な企業グループです。私たちは、クライアント、パートナー、コミュニティが自信を持って成長できる企業を築いています。"
-    }
-  },
-  "businesses": {
-    "eyebrow": "グループ企業",
-    "titleStart": "8社、",
-    "titleAccent": "1つのグループ",
-    "subtitle": "企業を選んで専用ページをご覧いただき、適切なチームにお問い合わせください。"
-  },
-  "businessesHero": {
-    "eyebrow": "インデキシアの違い",
-    "titleStart": "1つのグループ。8つの事業。",
-    "titleAccent": "1つの共通の約束。",
-    "paragraph": "金融・コンサルティングから輸出、農業、物流、警備、スポーツ、メディアまで, すべてのインデキシア事業は同じ基盤の上に成り立っています。誠実さ、専門性、そして人を第一に考えるアプローチ。必要なものがあれば、適切なチームはすでにファミリーの一員です。",
-    "counterClients": "サービス提供クライアント",
-    "counterBusinesses": "事業",
-    "counterLocations": "拠点",
-    "counterYears": "事業年数",
-    "cta": "無料相談を予約 →"
-  },
-  "contactHero": {
-    "eyebrow": "インデキシアに相談",
-    "title": "チームへの直通ライン",
-    "paragraph": "書類の質問から新しいローンのお問い合わせまで、すべてのメッセージはチームメンバーが確認し回答します, 待ち行列はありません。",
-    "sendEnquiry": "お問い合わせを送信",
-    "callNow": "今すぐお電話 · 86551 68551",
-    "offices": "{{count}}拠点",
-    "directLines": "{{count}}直通回線",
-    "reply": "平均24時間以内に返信"
-  },
-  "contactInfo": {
-    "eyebrow": "お問い合わせを送信",
-    "headlineStart": "お問い合わせ, ",
-    "headlineAccent": "インデキシア企業",
-    "paragraph": "当社のサービスについてのご質問、ビジネス相談、パートナーシップのご検討など、当チームがいつでもサポートいたします, 24時間以内に返信いたします。",
-    "enquiries": "お問い合わせ",
-    "location": "所在地",
-    "workingHours": "営業時間",
-    "phoneNumbers": "電話番号",
-    "country": "インド"
-  },
-  "form": {
-    "eyebrow": "お問い合わせを送信",
-    "intro": "下のフォームにご記入ください。担当チームがお問い合わせに対応いたします。",
-    "name": "お名前",
-    "namePlaceholder": "氏名（フルネーム）",
-    "email": "メールアドレス",
-    "emailPlaceholder": "you@example.com",
-    "phone": "電話番号",
+  "applyPage": {
+    "1to2Years": "1-2年",
+    "2to5Years": "2-5年",
+    "5plusYears": "5年以上",
+    "backToCareers": "採用情報に戻る",
+    "clickToReplace": "差し替えるにはクリック",
+    "clickToUpload": "履歴書をアップロード",
+    "email": "メール",
+    "errorEmailEmpty": "メールアドレスを入力してください。",
+    "errorEmailInvalid": "有効なメールアドレスを入力してください。",
+    "errorExperience": "経験レベルを選択してください。",
+    "errorFileSize": "ファイルサイズは5MB以下にしてください。",
+    "errorFileType": "PDF、DOC、DOCXファイルのみ受け付けています。",
+    "errorIntroEmpty": "自己紹介をお書きください。",
+    "errorIntroShort": "20文字以上入力してください。",
+    "errorNameEmpty": "お名前を入力してください。",
+    "errorNameLetters": "名前には文字を含めてください。",
+    "errorNameShort": "名前は2文字以上必要です。",
+    "errorPhoneEmpty": "電話番号を入力してください。",
+    "errorPhoneInvalid": "有効な10桁の電話番号を入力してください。",
+    "errorResume": "履歴書をアップロードしてください。",
+    "errorSubmit": "応募を送信できませんでした。後でもう一度お試しください。",
+    "experience": "経験",
+    "fresher": "新卒",
+    "fullName": "氏名",
+    "fullNamePlaceholder": "フルネーム",
+    "heroTitle": "応募する",
+    "infoBanner": "以下のフォームにご記入ください。人事チームに直接お送りします。",
+    "introPlaceholder": "経験、スキル、この職務に興味がある理由をお聞かせください...",
+    "lessThan1Year": "1年未満",
+    "phone": "電話",
     "phonePlaceholder": "10桁の番号",
-    "subject": "件名 / 企業",
-    "subjectPlaceholder": "企業を選択…",
-    "message": "メッセージ",
-    "messagePlaceholder": "お問い合わせ内容をご記入ください...",
-    "submit": "お問い合わせを送信",
-    "sending": "送信中…",
-    "success": "お問い合わせを送信しました！担当チームがすぐにご連絡いたします。",
-    "errorName": "お名前を入力してください。",
-    "errorNameLetters": "お名前には文字を含めてください。",
-    "errorPhone": "有効な10桁の電話番号を入力してください。",
-    "errorEmail": "有効なメールアドレスを入力してください。",
-    "errorSubject": "件名または企業を選択してください。",
-    "errorMessage": "メッセージを入力してください。",
-    "errorGeneric": "問題が発生しました。しばらくしてからもう一度お試しください。",
-    "generalEnquiry": "一般的なお問い合わせ"
-  },
-  "companyDetail": {
-    "backAll": "すべての企業",
-    "register": "登録番号 {{no}} / 08",
-    "keyEntries": "主要項目",
-    "servicesTitle": "この項目のサービス",
-    "registerOf": "インデキシアグループ · 企業登記簿",
-    "entryOf": "項目 {{no}} / 08",
-    "eyebrow": "お問い合わせを送信",
-    "enquireTitle": "{{name}}についてお問い合わせ",
-    "enquireSub": "お問い合わせは {{name}} を最上位にしてルーティングされ、適切なチームが最初に受け取ります。",
-    "responseTime": "返信時間",
-    "responseValue": "24時間以内（月〜土）",
-    "overviewEyebrow": "概要",
-    "overviewTitle": "{{name}}について",
-    "exploreServices": "サービスを見る",
-    "statServices": "サービス",
-    "statHighlights": "主なハイライト",
-    "statRegister": "登録エントリー",
-    "mainPoint": "主要ポイント",
-    "whyChoose": "選ばれる理由",
-    "whyChooseDesc": "この会社を他と差別化するもの。",
-    "keyNumbers": "主要数値",
-    "keyNumbersDesc": "私たちの影響力を定義する数字。",
-    "globalReach": "グローバル展開",
-    "globalReachDesc": "国境や市場を超えた私たちの存在。"
-  },
-  "contact": {
-    "locationsTitleStart": "当社の",
-    "locationsTitleAccent": "拠点"
-  },
-  "businessCard": {
-    "tapToView": "タップして表示",
-    "readMore": "続きを読む"
-  },
-  "companyLinkCard": {
-    "visitPage": "ページを見る",
-    "visitWebsiteAria": "{{name}}のウェブサイトを見る",
-    "visitPageAria": "{{name}}のページを見る",
-    "visualAlt": "{{name}}ビジュアル"
-  },
-  "newsPage": {
-    "eyebrow": "ニュース＆ナレッジセンター",
-    "title": "ニュース＆ナレッジセンター",
-    "titleStart": "グループ全体からの",
-    "titleAccent": "ストーリーとインサイト。",
-    "subtitle": "最新の銀行ニュース, 資金調達情報、デジタル決済、政策変更、市場動向, に加え、当社企業からの実用的なガイド。",
-    "tvEyebrow": "テレビでご覧ください",
-    "tvHeadingStart": "あらゆるローンのご相談に",
-    "tvHeadingAccent": "Indexia Finance",
-    "tvCaption": "Loan Chahiye Matlab… インデキシアファイナンス",
-    "featuredLabel": "特集記事",
-    "readMore": "続きを読む",
-    "askUs": "お問い合わせ",
-    "knowledgeEyebrow": "ナレッジセンター",
-    "knowledgeHeading": "当社企業からの実用的なガイド",
-    "knowledgeSubtitle": "この仕事を毎日行っているチームが書いた、わかりやすい解説。",
-    "ctaTitle": "当社の事業についてご質問がありますか？",
-    "ctaBody": "FDIアドバイザリーから有機農業、武装警備まで, 適切なインデキシア企業がお手伝いします。お問い合わせを送信してください。",
-    "ctaButton": "お問い合わせを送信",
-    "metaDescription": "ニュース＆ナレッジセンター, 資金調達、デジタル決済、政策に関する最新の銀行ニュースと、インデキシアグループからの実用的な知識ガイド。"
-  },
-  "careersPage": {
-    "eyebrow": "採用情報",
-    "title": "インデキシアグループでのキャリア",
-    "titleStart": "当社とともにキャリアを",
-    "titleAccent": "築きましょう。",
-    "subtitle": "インデキシアグループは学び続ける組織です, その企業文化こそがチームです。",
-    "ctaButton": "募集中の職種を見る",
-    "cultureEyebrow": "私たちの文化",
-    "cultureHeading": "学び続ける組織",
-    "rolesEyebrow": "募集中の職種",
-    "rolesHeading": "現在募集中の職種",
-    "rolesSubtitle": "現在募集中の職種は以下のとおりです：",
-    "apply": "応募する",
-    "ctaTitle": "履歴書をメールで送信",
-    "ctaBody": "私たちは常に優秀な人材を求めています。履歴書を hr@indexiafinance.com までお送りください。",
-    "metaDescription": "インデキシアグループでのキャリア, ムンバイのインデキシアフィンサーブに募集枠がある学び続ける組織。履歴書をメールで送ってキャリアを始めましょう。",
-    "mailResume": "履歴書を送信 –"
-  },
-  "legal": {
-    "eyebrow": "法務",
-    "privacyTitle": "プライバシーポリシー",
-    "privacySubtitle": "インデキシアグループがお客様の個人情報をどのように収集、利用、保護するか。",
-    "termsTitle": "利用条件",
-    "termsSubtitle": "インデキシアグループのウェブサイトとその企業サービスの利用を規定する条件。",
-    "termsOfUseTitle": "利用規約",
-    "termsOfUseSubtitle": "インデキシアグループのウェブサイトとその企業ウェブサイトへのアクセスおよび閲覧のルール。",
-    "lastUpdated": "最終更新",
-    "backHome": "ホームに戻る",
-    "contactUs": "お問い合わせ",
-    "contactHeading": "このポリシーについてご質問がありますか？",
-    "contactBody": "contactus@indexiagroup.com までご連絡いただくか、お問い合わせを送信してください。担当チームがご連絡いたします。",
-    "sendEnquiry": "お問い合わせを送信",
-    "metaPrivacyDescription": "インデキシアグループのプライバシーポリシーをお読みください, 個人情報の収集、利用、保管、保護の方法について。",
-    "metaTermsDescription": "インデキシアグループのウェブサイトとその企業サービスの利用を規定する利用条件をお読みください。",
-    "metaTermsOfUseDescription": "インデキシアグループのウェブサイトとその企業ウェブサイトへのアクセスと閲覧を規定する利用規約をお読みください。"
-  },
-  "globalResearchPage": {
-    "eyebrow": "グローバルリサーチ",
-    "title": "インデキシアグループのグローバルリサーチ",
-    "titleStart": "グローバル金融リサーチ",
-    "titleAccent": "＆リソース。",
-    "subtitle": "マクロ経済、債券、為替、コモディティにわたる、洞察に富み、関連性の高い分析と鋭い見解, アジア、アフリカ、中東での確かな現場知見に基づいています。",
-    "ctaButton": "リサーチカバレッジを見る",
-    "areasEyebrow": "リサーチカバレッジ",
-    "areasHeading": "分野横断的なグローバルリサーチ",
-    "areasSubtitle": "当社の全カバレッジにわたる、洞察に富み、関連性の高い分析。",
-    "reportsEyebrow": "出版物",
-    "reportsHeading": "リサーチの共有方法",
-    "reportsSubtitle": "頻繁なプレゼンテーションと高品質な出版物, 現場分析のOTG、実行可能なマーケットアイデアのACT、そして世界的に重要なテーマに関するスペシャルレポート。",
-    "ctaTitle": "当社のリサーチにアクセス",
-    "ctaBody": "詳細とリサーチの受け取りについては、当社のグローバルリサーチポータルをご覧ください。アクセスをご希望の場合は、担当のリレーションシップマネージャーにお問い合わせください。",
-    "metaDescription": "インデキシアグループ グローバルリサーチ, マクロ経済、債券、為替、コモディティ分野における洞察に富み、関連性の高い分析。アジア、アフリカ、中東にわたる現場知見を備えています。",
-    "reportFormat": "出版物"
-  },
-  "securityTipsPage": {
-    "eyebrow": "セキュリティのヒント",
-    "title": "インデキシアグループからのセキュリティのヒント",
-    "titleStart": "不正から",
-    "titleAccent": "先手を打つ。",
-    "subtitle": "どこに行っても、安心してオンラインでお金を管理できます。",
-    "ctaButton": "情報を保護する",
-    "featuresEyebrow": "当社の取り組み",
-    "featuresHeading": "オンラインで安全を確保",
-    "featuresSubtitle": "オンラインバンキングの際に、当社が口座を保護するために何を行っているかをご覧ください。",
-    "practicesEyebrow": "お客様にできること",
-    "practicesHeading": "情報を保護する",
-    "practicesSubtitle": "当社は、オンラインバンキング時の口座保護に毎日取り組んでいます。また、お客様の日常のデバイスでもオンラインで安全に過ごすための簡単な方法がいくつかあります。",
-    "contactsEyebrow": "サポートが必要ですか？",
-    "contactsHeading": "当社にご相談ですか？",
-    "contactsSubtitle": "口座情報を不審な相手に開示してしまった可能性がある場合、または不正被害に遭った場合は、カスタマーサービスホットラインにすぐにお電話ください。",
-    "ctaTitle": "不審なものをお見かけしましたか？",
-    "ctaBody": "お問い合わせフォームから報告するか、関連するインデキシアグループ企業に直接ご連絡ください。",
-    "metaDescription": "インデキシアグループからのセキュリティのヒント, オンラインで口座を保護する方法、デバイスでできること、問題が発生した場合の連絡先。"
-  },
-  "common": {
-    "logoAlt": "インデキシアグループロゴ",
-    "homeAria": "インデキシアグループホーム",
-    "languages": {
-      "en": "English",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch",
-      "it": "Italiano",
-      "pt": "Português",
-      "hi": "हिन्दी",
-      "ar": "العربية",
-      "zh": "中文",
-      "ja": "日本語",
-      "ru": "Русский",
-      "ko": "한국어",
-      "id": "Bahasa Indonesia",
-      "tr": "Türkçe",
-      "vi": "Tiếng Việt",
-      "nl": "Nederlands",
-      "pl": "Polski",
-      "th": "ไทย",
-      "sv": "Svenska",
-      "uk": "Українська",
-      "el": "Ελληνικά",
-      "he": "עברית"
-    }
-  },
-  "seo": {
-    "homeTitle": "金融サービス、ローン、輸出＆物流",
-    "homeDescription": "多角化するインドのビジネスグループ：金融サービス、NBFCローン、グローバル輸出、農業肥料、倉庫＆警備。ムンバイ、デリー、スーラトに拠点。",
-    "businessesTitle": "グループ企業, 金融、農業、輸出＆物流",
-    "businessesDescription": "インデキシアグループの8つの事業：金融、ローン、警備、砂糖輸出、有機肥料、倉庫、広告、アスリート支援。",
-    "contactTitle": "お問い合わせ, ムンバイ、デリー、スーラト拠点",
-    "contactDescription": "金融サービス、ローン、輸出、農業、物流に関するお問い合わせはインデキシアグループへ。ムンバイ、デリー、スーラト、エクアドルに拠点, 24時間以内に返信。"
+    "responsibilities": "職責と要件",
+    "resume": "履歴書",
+    "resumeFormats": "PDF、DOC、DOCX（最大5MB）",
+    "roleDetails": "職務詳細",
+    "selectExperience": "経験を選択",
+    "submitApplication": "応募する",
+    "submitNote": "応募はhr@indexiafinance.comとhr.indexia@gmail.comに送信されます。",
+    "submitting": "送信中...",
+    "successBody": "<strong>{{role}}</strong>ポジションへのご応募ありがとうございます。人事チームが受領しました。",
+    "successSentTo": "送信先",
+    "successTitle": "応募完了！",
+    "tellUsAboutYourself": "自己紹介"
   },
   "branches": {
     "corporateOffice": "本社オフィス",
-    "mumbaiOffice": "ムンバイオフィス",
     "delhiOffice": "デリーオフィス",
-    "internationalOffice": "海外オフィス"
+    "internationalOffice": "海外オフィス",
+    "mumbaiOffice": "ムンバイオフィス"
   },
-  "phoneLabel": {
-    "landline": "固定電話",
-    "mobile": "携帯電話",
-    "mob": "携帯",
-    "tel": "電話"
+  "brochure": {
+    "about": "プロジェクトについて",
+    "advertisingFooter": "インデキシアグループ | 料金は空き状況により異なります。ご予約はお電話、メール、またはオフィスへ。",
+    "advertisingHeadline": "シャムリのデリー-デラドゥン高速道路沿いのプレミアム単柱広告塔",
+    "backAdvertising": "広告ページに戻る",
+    "backWarehouse": "倉庫ページに戻る",
+    "contact": "お問い合わせ",
+    "download": "PDFをダウンロード",
+    "footer": "インデキシアグループ · お問い合わせは、お電話、メール、またはオフィスへお越しください。価格は参考価格で交渉可能です。",
+    "headline": "北インドの中心部での戦略的用地投資",
+    "locationAdvertising": "デリー・デラドゥーン高速道路、シャムリー",
+    "locationWarehouse": "シャムリ、ウッタル・プラデーシュ州",
+    "print": "印刷"
   },
-  "unipolePricing": {
-    "eyebrow": "広告塔パッケージ",
-    "title": "対応サイズと料金",
-    "subtitle": "デリー-デラドゥン高速道路シャムリのプレミアム広告塔パッケージ",
-    "sizeCol": "サイズ",
-    "areaCol": "平方フィート",
-    "rateCol": "月額料金",
-    "sizeSmall": "10 × 20フィート",
-    "areaSmall": "200平方フィート",
-    "rateSmall": "₹25,000",
-    "sizeLarge": "12 × 24フィート",
-    "areaLarge": "288平方フィート",
-    "rateLarge": "₹36,000",
-    "standardRate": "標準料金: 片側1平方フィートあたり月額₹125",
-    "note": "* 料金は空き状況により異なります。長期パッケージについてはお問い合わせください。",
-    "bookNow": "今すぐ予約",
-    "bookSize": "このサイズを予約",
-    "bookMessage": "{{size}}の広告塔（{{area}}）を月額{{rate}}で予約したいです。"
+  "businessCard": {
+    "readMore": "続きを読む",
+    "tapToView": "タップして表示"
+  },
+  "businesses": {
+    "eyebrow": "グループ企業",
+    "subtitle": "企業を選んで専用ページをご覧いただき、適切なチームにお問い合わせください。",
+    "titleAccent": "1つのグループ",
+    "titleStart": "8社、"
+  },
+  "businessesHero": {
+    "counterBusinesses": "事業",
+    "counterClients": "サービス提供クライアント",
+    "counterLocations": "拠点",
+    "counterYears": "事業年数",
+    "cta": "無料相談を予約 →",
+    "eyebrow": "インデキシアの違い",
+    "paragraph": "金融・コンサルティングから輸出、農業、物流、警備、スポーツ、メディアまで, すべてのインデキシア事業は同じ基盤の上に成り立っています。誠実さ、専門性、そして人を第一に考えるアプローチ。必要なものがあれば、適切なチームはすでにファミリーの一員です。",
+    "titleAccent": "1つの共通の約束。",
+    "titleStart": "1つのグループ。8つの事業。"
+  },
+  "careersHero": {
+    "companiesOneGroup": "社、1つのグループ",
+    "description": "8つの会社。1つのチーム。金融、輸出、農業、セキュリティ、広告、アスリート支援でキャリアを築きましょう。"
+  },
+  "careersPage": {
+    "apply": "応募する",
+    "ctaBody": "私たちは常に優秀な人材を求めています。履歴書を hr@indexiafinance.com までお送りください。",
+    "ctaButton": "募集中の職種を見る",
+    "ctaTitle": "履歴書をメールで送信",
+    "cultureEyebrow": "私たちの文化",
+    "cultureHeading": "学び続ける組織",
+    "eyebrow": "採用情報",
+    "mailResume": "履歴書を送信 –",
+    "metaDescription": "インデキシアグループでのキャリア, ムンバイのインデキシアフィンサーブに募集枠がある学び続ける組織。履歴書をメールで送ってキャリアを始めましょう。",
+    "rolesEyebrow": "募集中の職種",
+    "rolesHeading": "現在募集中の職種",
+    "rolesSubtitle": "現在募集中の職種は以下のとおりです：",
+    "subtitle": "インデキシアグループは学び続ける組織です, その企業文化こそがチームです。",
+    "title": "インデキシアグループでのキャリア",
+    "titleAccent": "築きましょう。",
+    "titleStart": "当社とともにキャリアを"
+  },
+  "common": {
+    "homeAria": "Indexia Group ホーム",
+    "languages": {
+      "ar": "العربية",
+      "de": "Deutsch",
+      "el": "Ελληνικά",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "he": "עברית",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ja": "日本語",
+      "ko": "한국어",
+      "nl": "Nederlands",
+      "pl": "Polski",
+      "pt": "Português",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "th": "ไทย",
+      "tr": "Türkçe",
+      "uk": "Українська",
+      "vi": "Tiếng Việt",
+      "zh": "中文"
+    },
+    "logoAlt": "Indexia Group ロゴ"
+  },
+  "companyDetail": {
+    "backAll": "すべての企業",
+    "enquireSub": "お問い合わせは {{name}} を最上位にしてルーティングされ、適切なチームが最初に受け取ります。",
+    "enquireTitle": "{{name}}についてお問い合わせ",
+    "entryOf": "項目 {{no}} / 08",
+    "exploreServices": "サービスを見る",
+    "eyebrow": "お問い合わせを送信",
+    "globalReach": "グローバル展開",
+    "globalReachDesc": "国境や市場を超えた私たちの存在。",
+    "keyEntries": "主要項目",
+    "keyNumbers": "主要数値",
+    "keyNumbersDesc": "私たちの影響力を定義する数字。",
+    "mainPoint": "主要ポイント",
+    "overviewEyebrow": "概要",
+    "overviewTitle": "{{name}}について",
+    "register": "登録番号 {{no}} / 08",
+    "registerOf": "インデキシアグループ · 企業登記簿",
+    "responseTime": "返信時間",
+    "responseValue": "24時間以内（月〜土）",
+    "servicesTitle": "この項目のサービス",
+    "statHighlights": "主なハイライト",
+    "statRegister": "登録エントリー",
+    "statServices": "サービス",
+    "whyChoose": "選ばれる理由",
+    "whyChooseDesc": "この会社を他と差別化するもの。"
+  },
+  "companyLinkCard": {
+    "visitPage": "ページを見る",
+    "visitPageAria": "{{name}}のページを見る",
+    "visitWebsiteAria": "{{name}}のウェブサイトを見る",
+    "visualAlt": "{{name}}のビジュアル"
+  },
+  "contact": {
+    "locationsTitleAccent": "拠点",
+    "locationsTitleStart": "当社の"
+  },
+  "contactHero": {
+    "callNow": "今すぐお電話 · 86551 68551",
+    "directLines": "{{count}}直通回線",
+    "eyebrow": "インデキシアに相談",
+    "offices": "{{count}}拠点",
+    "paragraph": "書類の質問から新しいローンのお問い合わせまで、すべてのメッセージはチームメンバーが確認し回答します, 待ち行列はありません。",
+    "reply": "平均24時間以内に返信",
+    "sendEnquiry": "お問い合わせを送信",
+    "title": "チームへの直通ライン"
+  },
+  "contactInfo": {
+    "country": "インド",
+    "enquiries": "お問い合わせ",
+    "eyebrow": "お問い合わせを送信",
+    "headlineAccent": "インデキシア企業",
+    "headlineStart": "お問い合わせ, ",
+    "location": "所在地",
+    "paragraph": "当社のサービスについてのご質問、ビジネス相談、パートナーシップのご検討など、当チームがいつでもサポートいたします, 24時間以内に返信いたします。",
+    "phoneNumbers": "電話番号",
+    "workingHours": "営業時間"
+  },
+  "footer": {
+    "backToTop": "トップへ戻る",
+    "blurb": "一つの多角化したインドのグループの下に、金融、輸出、農業、物流、警備、広告、アスリート支援という8つの信頼できる事業, 誠実さと結果に基づいています。",
+    "company": "会社",
+    "contactUs": "お問い合わせ",
+    "cta": "当社のグループ企業についてご質問がありますか？",
+    "enquiry": "お問い合わせをお送りください。",
+    "hours": "月〜土: 午前9時 - 午後6時",
+    "legal": "法的情報",
+    "links": {
+      "aboutUs": "会社概要",
+      "advertise": "広告掲載のお申し込み",
+      "careers": "採用情報",
+      "globalResearch": "グローバル研究",
+      "groupCompanies": "グループ企業",
+      "news": "ニュース＆ナレッジセンター",
+      "privacyPolicy": "プライバシーポリシー",
+      "securityTips": "セキュリティのヒント",
+      "termsConditions": "利用条件",
+      "termsOfUse": "利用規約"
+    },
+    "resources": "リソース",
+    "rights": "© 2026 インデキシアグループ。全著作権所有。",
+    "stats": "インデキシアグループ · 08社 · 03拠点",
+    "tagline": "多角化するインドのビジネスグループ",
+    "taglineSecondary": "多様な事業。統一されたビジョン。"
+  },
+  "form": {
+    "email": "メールアドレス",
+    "emailPlaceholder": "you@example.com",
+    "errorEmail": "有効なメールアドレスを入力してください。",
+    "errorGeneric": "問題が発生しました。しばらくしてからもう一度お試しください。",
+    "errorMessage": "メッセージを入力してください。",
+    "errorName": "お名前を入力してください。",
+    "errorNameLetters": "お名前には文字を含めてください。",
+    "errorPhone": "有効な10桁の電話番号を入力してください。",
+    "errorSubject": "件名または企業を選択してください。",
+    "eyebrow": "お問い合わせを送信",
+    "generalEnquiry": "一般的なお問い合わせ",
+    "intro": "下のフォームにご記入ください。担当チームがお問い合わせに対応いたします。",
+    "message": "メッセージ",
+    "messagePlaceholder": "お問い合わせ内容をご記入ください...",
+    "name": "名前",
+    "namePlaceholder": "氏名（フルネーム）",
+    "phone": "電話番号",
+    "phonePlaceholder": "10桁の番号",
+    "sending": "送信中…",
+    "subject": "件名 / 企業",
+    "subjectPlaceholder": "企業を選択…",
+    "submit": "お問い合わせを送信",
+    "success": "お問い合わせを送信しました！担当チームがすぐにご連絡いたします。"
+  },
+  "globalResearchPage": {
+    "areasEyebrow": "リサーチカバレッジ",
+    "areasHeading": "分野横断的なグローバルリサーチ",
+    "areasSubtitle": "当社の全カバレッジにわたる、洞察に富み、関連性の高い分析。",
+    "ctaBody": "詳細とリサーチの受け取りについては、当社のグローバルリサーチポータルをご覧ください。アクセスをご希望の場合は、担当のリレーションシップマネージャーにお問い合わせください。",
+    "ctaButton": "リサーチカバレッジを見る",
+    "ctaTitle": "当社のリサーチにアクセス",
+    "eyebrow": "グローバル研究",
+    "metaDescription": "インデキシアグループ グローバルリサーチ, マクロ経済、債券、為替、コモディティ分野における洞察に富み、関連性の高い分析。アジア、アフリカ、中東にわたる現場知見を備えています。",
+    "reportFormat": "出版物",
+    "reportsEyebrow": "出版物",
+    "reportsHeading": "リサーチの共有方法",
+    "reportsSubtitle": "頻繁なプレゼンテーションと高品質な出版物, 現場分析のOTG、実行可能なマーケットアイデアのACT、そして世界的に重要なテーマに関するスペシャルレポート。",
+    "subtitle": "マクロ経済、債券、為替、コモディティにわたる、洞察に富み、関連性の高い分析と鋭い見解, アジア、アフリカ、中東での確かな現場知見に基づいています。",
+    "title": "インデキシアグループのグローバルリサーチ",
+    "titleAccent": "＆リソース。",
+    "titleStart": "グローバル金融リサーチ"
+  },
+  "header": {
+    "aria": {
+      "closeMenu": "メニューを閉じる",
+      "selectLanguage": "言語を選択",
+      "toggleMenu": "メニューを開く/閉じる"
+    },
+    "menu": {
+      "companies": "企業一覧",
+      "contact": "お問い合わせ",
+      "groupCompanies": "グループ企業",
+      "home": "ホーム"
+    },
+    "nav": {
+      "about": "会社概要",
+      "contact": "お問い合わせ"
+    }
+  },
+  "hero": {
+    "ctaExploreGroup": "グループ企業を探索",
+    "ctaExploreMore": "もっと見る",
+    "nextPanel": "次のパネル",
+    "p0": {
+      "heading": "一つのグループ。\n多様なソリューション。",
+      "motto": "国に仕えるためのいくつかのステップ",
+      "sub": "金融やロジスティクスから農業や広告まで、インデキシアグループは信頼され、未来を見据えた企業を通じて、あらゆる業界の成長を促進します。",
+      "tag": "インデキシアグループ",
+      "tagline": "Diverse Ventures. Unified Vision."
+    },
+    "p1": {
+      "heading": "あらゆる\nローン先。",
+      "sub": "www.indexiafinance.com のポータルで、あらゆる種類のローンを申請できます。私たちはグローバルにサービスを提供しています, インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。",
+      "tag": "インデキシアファイナンス"
+    },
+    "p2": {
+      "heading": "金融の\n次世代メソッド。",
+      "sub": "今、正しい銀行があなたの玄関先までやって来ます。",
+      "tag": "インデキシアフィンサーブ株式会社"
+    },
+    "p3": {
+      "heading": "精製糖と\nすべての食用品。",
+      "sub": "精製糖とすべての食用品を取り扱い、輸出しています。",
+      "tag": "インデキシアオーバーシーズ株式会社"
+    },
+    "p4": {
+      "heading": "有機肥料を製造し\n輸出しています",
+      "sub": "インドで有機肥料を製造し、グローバルに輸出しています。",
+      "tag": "インデキシアアグロバイオ肥料株式会社"
+    },
+    "p5": {
+      "heading": "武装コマンド部隊と\n武装警備",
+      "sub": "政治家や大企業経営者を守ります。",
+      "tag": "インデキシアセキュリティーズ"
+    },
+    "p6": {
+      "heading": "大規模な\n保管のために。",
+      "sub": "商品を効率的に動かし続ける、近代的な倉庫・物流インフラ。",
+      "tag": "インデキシアウェアハウス"
+    },
+    "p7": {
+      "heading": "あなたのブランドを\nすべての高速道路に。",
+      "sub": "高速道路沿いの複数の広告媒体を所有し、ブランドに高い視認性のキャンペーンを提供します。",
+      "tag": "インデキシアアドバタイジング"
+    },
+    "p8": {
+      "heading": "アスリートを\nエンパワー。",
+      "sub": "アスリートを最高のパフォーマンスへの道のりで育成・指導・資金支援するスポーツプログラム。",
+      "tag": "インデキシア財団"
+    },
+    "prevPanel": "前のパネル"
+  },
+  "home": {
+    "groupCompanies": {
+      "description": "インデキシアグループは、金融、輸出、農業、倉庫、警備、社会貢献、広告にわたる多角的な企業グループです。私たちは、クライアント、パートナー、コミュニティが自信を持って成長できる企業を築いています。",
+      "title": "グループ企業"
+    }
+  },
+  "homeReach": {
+    "cta": "詳しく見る",
+    "eyebrow": "私たちの展開",
+    "stat1Label": "企業",
+    "stat2Label": "国",
+    "stat3Label": "強さの年数",
+    "stat4Label": "サービス顧客",
+    "subtitle": "ムンバイからエクアドルまで、3大陸の顧客にサービスを提供しています。",
+    "title": "国境を越えた信頼"
+  },
+  "jsonLd": {
+    "aboutDescription": "Indexia Groupは、金融、輸出、農業、倉庫、セキュリティ、広告、アスリート支援を幅広くカバーする多角的なインドのビジネスグループです。",
+    "aboutName": "Indexia Groupについて",
+    "breadcrumbAbout": "会社概要",
+    "breadcrumbCareers": "採用情報",
+    "breadcrumbCompanies": "グループ企業",
+    "breadcrumbContact": "お問い合わせ",
+    "breadcrumbHome": "ホーム",
+    "breadcrumbNews": "ニュース＆ナレッジセンター",
+    "businessesDescription": "Indexia Group傘下の8つの事業 - 金融、融資、セキュリティ、輸出、農業、倉庫、広告、アスリート支援。",
+    "businessesName": "Indexia Groupの事業",
+    "careersName": "Indexia Groupの求人情報",
+    "companyPageDescription": "{{name}について見る。Indexia Groupの子会社です。{{description}}",
+    "companyPageName": "{{name}}, {{tag}}",
+    "contactName": "Indexia Groupへのお問い合わせ",
+    "corporateOffice": "本社",
+    "delhiOffice": "デリー事務所",
+    "newsName": "Indexia Group、ニュース＆ナレッジセンター",
+    "orgName": "Indexia Group"
+  },
+  "legal": {
+    "backHome": "ホームに戻る",
+    "contactBody": "contactus@indexiagroup.com までご連絡いただくか、お問い合わせを送信してください。担当チームがご連絡いたします。",
+    "contactHeading": "このポリシーについてご質問がありますか？",
+    "contactUs": "お問い合わせ",
+    "eyebrow": "法的情報",
+    "lastUpdated": "最終更新",
+    "metaPrivacyDescription": "インデキシアグループのプライバシーポリシーをお読みください, 個人情報の収集、利用、保管、保護の方法について。",
+    "metaTermsDescription": "インデキシアグループのウェブサイトとその企業サービスの利用を規定する利用条件をお読みください。",
+    "metaTermsOfUseDescription": "インデキシアグループのウェブサイトとその企業ウェブサイトへのアクセスと閲覧を規定する利用規約をお読みください。",
+    "privacySubtitle": "インデキシアグループがお客様の個人情報をどのように収集、利用、保護するか。",
+    "privacyTitle": "プライバシーポリシー",
+    "sendEnquiry": "お問い合わせを送信",
+    "termsOfUseSubtitle": "インデキシアグループのウェブサイトとその企業ウェブサイトへのアクセスおよび閲覧のルール。",
+    "termsOfUseTitle": "利用規約",
+    "termsSubtitle": "インデキシアグループのウェブサイトとその企業サービスの利用を規定する条件。",
+    "termsTitle": "利用条件"
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "本プライバシーポリシーは、インデキシアグループおよびそのグループ企業（総称して「インデキシアグループ」「当社」「当社の」）が、お客様が当社のウェブサイトを訪問し、お問い合わせを送信し、または当社のサービスを利用する際に、お客様の個人情報をどのように収集、利用、開示、保護するかを説明します。",
+        "当社のウェブサイトを利用するか、当社に情報を提供することにより、お客様は本ポリシーに記載された慣行に同意したものとみなされます。同意されない場合は、個人情報を提供したり、当社のサービスを利用したりしないでください。"
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "お客様が提供する情報：氏名、メールアドレス、電話番号、会社名、お問い合わせや申請の内容など、お客様が直接提供する詳細情報を収集します。",
+            "自動的に収集される情報：当社のウェブサイトを訪問すると、Cookieや類似の技術を通じて、IPアドレス、ブラウザーの種類、訪問ページ、参照URLなどのデバイスおよび利用情報を収集する場合があります。"
+          ],
+          "title": "当社が収集する情報"
+        },
+        {
+          "paragraphs": [
+            "当社は、お問い合わせへの対応、サービスの評価と提供、必要な場合の本人確認、ウェブサイトとサービスの改善、法的義務の遵守、およびお客様が同意した場合にはグループ企業に関する最新情報の送信に、お客様の情報を利用します。",
+            "当社は、処理の法的根拠として、お客様の同意、契約の履行、法的義務の遵守、および当社の事業の運営と改善における正当な利益に依拠しています。"
+          ],
+          "title": "お客様の情報の利用方法"
+        },
+        {
+          "paragraphs": [
+            "当社は、適切な企業がお問い合わせに対応できるよう、インデキシアグループ内でお客様の情報を共有する場合があります。また、当社の運営を支援するサービスプロバイダー（ホスティングや通信プロバイダーなど）、法律で要求される規制当局や行政機関、および合併・買収・資産売却に関連して情報を共有する場合があります。",
+            "当社はお客様の個人情報を第三者に販売しません。"
+          ],
+          "title": "共有と開示"
+        },
+        {
+          "paragraphs": [
+            "当社は、不正アクセス、紛失、悪用からお客様の個人情報を保護するため、アクセス制御、転送中の暗号化、監視など、合理的な技術的・組織的措置を講じています。",
+            "転送や保存の方法が完全に安全であることはありません。当社はデータの保護に努めていますが、その絶対的な安全性を保証することはできません。"
+          ],
+          "title": "データセキュリティ"
+        },
+        {
+          "paragraphs": [
+            "当社のウェブサイトは、正しく機能するために必須のCookieを使用し、訪問者が当社のサイトをどのように利用しているかを理解するために分析Cookieを使用する場合があります。ブラウザーの設定でCookieを制御または無効化できますが、それがない場合、当社のウェブサイトの一部が意図したとおりに機能しない可能性があります。"
+          ],
+          "title": "Cookieと類似の技術"
+        },
+        {
+          "paragraphs": [
+            "当社は、本ポリシーに記載された目的の達成、法的・規制上の要件の遵守、紛争解決に必要な期間のみ、お客様の個人情報を保持します。"
+          ],
+          "title": "データの保持"
+        },
+        {
+          "paragraphs": [
+            "適用される法律に応じて、お客様は自分の個人情報へのアクセス、訂正、更新、削除の要求、および処理が同意に基づく場合の同意の撤回の権利を有する場合があります。",
+            "これらの権利を行使するには、本ポリシーの末尾に記載されている連絡先を使用して当社にご連絡ください。当社は適用される法律で要求される期間内に回答します。"
+          ],
+          "title": "お客様の権利と選択肢"
+        },
+        {
+          "paragraphs": [
+            "当社のウェブサイトや通信には、当社のグループ企業や他の第三者が運営する外部ウェブサイトへのリンクが含まれる場合があります。本ポリシーはそれらのウェブサイトには適用されませんので、それぞれのプライバシーポリシーをご確認ください。"
+          ],
+          "title": "第三者リンク"
+        },
+        {
+          "paragraphs": [
+            "当社のサービスは18歳未満の子供を対象としておらず、子供から個人情報を意図的に収集することはありません。子供が当社に個人情報を提供したと思われる場合は、削除できるようご連絡ください。"
+          ],
+          "title": "子供のプライバシー"
+        },
+        {
+          "paragraphs": [
+            "当社は本プライバシーポリシーを随時更新する場合があります。変更は更新された改訂日とともにこのページに掲載されます。重要な変更は、可能な範囲で強調表示されます。"
+          ],
+          "title": "本ポリシーの変更"
+        },
+        {
+          "paragraphs": [
+            "本プライバシーポリシーまたは当社の個人情報の取り扱いについてご質問やご懸念がある場合は、contactus@indexiagroup.com または電話 +91 011 4629 1155 までご連絡ください。"
+          ],
+          "title": "お問い合わせ"
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "ウェブサイト所有者（子会社および関連会社を含む）であるインデキシアグループ（または「当社」）は、本ウェブサイトまたは本ウェブサイトを構成するいずれかのページに含まれる情報を、訪問者および申込者（総称して「お客様」）に対して、本ウェブサイトの利用条件、プライバシーポリシー、およびウェブサイトの特定のセクションやモジュールに適用される可能性のあるその他の関連する利用条件、ポリシー、通知に従って提供します。",
+        "当社のウェブサイトへようこそ。本ウェブサイトの閲覧と利用を継続する場合、お客様は以下の利用条件を遵守し拘束されることに同意したものとみなされます。これらの条件は、プライバシーポリシーとともに、本ウェブサイトに関するインデキシアグループとお客様との関係を規定します。",
+        "「インデキシアグループ」または「当社」という用語は、登録事務所が 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053 にあるウェブサイトの所有者を指します。「お客様」という用語は、当社ウェブサイトのユーザーまたは閲覧者を指します。"
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "本ウェブサイトのページの内容は、一般的な情報提供と利用のみを目的としています。予告なく変更されることがあります。"
+          ],
+          "title": "コンテンツと変更"
+        },
+        {
+          "paragraphs": [
+            "当社も第三者も、特定の目的のために本ウェブサイトで見つかったり提供されたりする情報や資料の正確性、適時性、性能、完全性、適合性について、いかなる保証も与えません。お客様は、このような情報や資料に不正確さや誤りが含まれる可能性があることを認め、当社は法律で許される最大限の範囲で、そのような不正確さや誤りに対する責任を明示的に免除します。"
+          ],
+          "title": "保証なし"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイト上の情報や資料の利用は完全に自己責任であり、当社は責任を負いません。本ウェブサイトを通じて利用可能な製品、サービス、情報がお客様の特定の要件を満たすことを確認するのはお客様自身の責任です。"
+          ],
+          "title": "自己責任での利用"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイトには、当社が所有またはライセンスを受けている資料が含まれています。この資料には、デザイン、レイアウト、外観、見た目、グラフィックが含まれますが、これらに限定されません。本利用条件の一部を構成する著作権表示に従う場合を除き、複製は禁止されています。"
+          ],
+          "title": "知的財産"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイトで複製されている、運営者の所有物ではない、またはライセンスを受けていないすべての商標は、ウェブサイト上で確認されています。"
+          ],
+          "title": "商標"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイトの不正利用は、損害賠償請求や刑事犯罪の原因となる場合があります。"
+          ],
+          "title": "不正利用"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイトには、他のウェブサイトへのリンクが随時含まれる場合があります。これらのリンクは、追加情報を提供するためのお客様の便宜のために提供されています。当社がそれらのウェブサイトを承認していることを示すものではありません。当社はリンク先ウェブサイトの内容について責任を負いません。"
+          ],
+          "title": "第三者リンク"
+        },
+        {
+          "paragraphs": [
+            "インデキシアグループの事前の書面による同意なしに、他のウェブサイトや文書から本ウェブサイトへのリンクを作成することはできません。"
+          ],
+          "title": "本ウェブサイトへのリンク"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイトの利用およびそのような利用から生じる紛争は、インドの法律またはその他の規制当局の管轄に従います。"
+          ],
+          "title": "準拠法"
+        },
+        {
+          "paragraphs": [
+            "「サービスプロバイダーとしての当社は、カード会員が当社と加盟銀行が随時相互に合意した所定の限度額を超えたために取引の承認が拒否されたことに起因して直接的または間接的に生じた損失や損害について、一切の責任を負わないものとします」。"
+          ],
+          "title": "カード取引の責任"
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        null,
+        "これらの条件に同意しない場合は、当社のウェブサイトにアクセスしたり使用しないでください。"
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "加盟店事業者の返品・キャンセルポリシーはウェブサイト上で顧客に公開され、支払いプロセス中にその条件への同意が必要です。顧客は支払い情報を送信する前に、返品・キャンセルボタンの「同意する」または「承認する」をクリックする必要があります。支払いが完了したら、ポリシーは支払い確認メールとともに顧客に送信できます。"
+          ],
+          "title": "キャンセル＆返金ポリシー"
+        },
+        {
+          "paragraphs": [
+            "インデキシアグループは可能な限り顧客を支援することを信条としており、そのため柔軟なキャンセルポリシーを設けています。本ポリシーの下では：",
+            "キャンセルは、支払いから72時間以内に申し出があった場合にのみ検討されます。ただし、支払い詳細がベンダー/加盟店に伝達され、支払いプロセスが開始されている場合は、キャンセル申し出は受け付けられません。",
+            "同日サービスカテゴリーで行われた支払いのキャンセルはありません。",
+            "ポンガル、ディワリ、バレンタインデーなどの特別な機会にインデキシアグループが受け取った支払いのキャンセルは受け付けられません。これらは限定機会オファーであり、キャンセルはできません。",
+            "インデキシアグループは、生鮮サービスに対するキャンセル申し出を受け付けません。顧客がサービスの質が良くないと立証した場合でも、返金はできません。",
+            "サービスや関連情報がお客様に関係ない場合は、当社のサポートチームにご報告ください。ただし、加盟店が自己の判断で確認・決定した後でなければ、申し出は受け付けられません。これはサービスの受領から21日以内に報告する必要があります。",
+            "提供されたサービスがサイトに表示されている内容やお客様の期待と異なると感じる場合は、サービスの受領から24時間以内に当社のサポートサービスに通知する必要があります。サポートサービスチームは、苦情を調査した上で適切な判断を下します。",
+            "特定の期間が設定されているサービスに関する苦情の場合は、contactus@indexiagroup.com までご連絡ください。"
+          ],
+          "title": "キャンセルポリシー"
+        },
+        {
+          "paragraphs": [
+            "当社のサービスをご利用いただく場合、お支払いは返金保証の対象ではありません。何らかの理由で当社のサービスに完全にご満足いただけない場合、当社はこの問題を非常に真剣に受け止め、できるだけ早く解決するよう努めます。返金をリクエストするには、支払いから90日以内に支払い詳細を添えてご連絡ください。支払い詳細と注文番号（支払い後にメールで送信されます）を含め、返金をリクエストする理由を任意でお知らせください, 当社は顧客からのフィードバックを非常に真剣に受け止め、製品とサービスの質を継続的に改善するために活用しています。設置サービスやナレッジベースのホスティングサービスなど、完全に提供されたサービスに対する返金は行われません。返金は21日以内に処理されます。"
+          ],
+          "title": "返金ポリシー"
+        },
+        {
+          "paragraphs": [
+            "サービスプロバイダーとしての当社は、カード会員が当社と加盟銀行が随時相互に合意した所定の限度額を超えたために取引の承認が拒否されたことに起因して直接的または間接的に生じた損失や損害について、一切の責任を負わないものとします。"
+          ],
+          "title": "BO条項"
+        },
+        {
+          "paragraphs": [
+            "免責事項は、契約の一部として相互に合意され、非公開で取り決められた条件を規定する場合があります。また、不当な危害や傷害のリスクを防ぐために負う注意義務を果たすため、一般公衆（またはその他の特定の階層）への警告や期待を規定する場合があります。一部の免責事項は、危害や傷害が生じた後の損害へのエクスポージャーを制限することを目的としています。さらに、一部の種類の免責事項は、免責を行う当事者に負う権利や義務の自発的な放棄を表す場合があります。",
+            "免責事項はその均一性において異なります。特定の状況や関与する当事者によって異なるものもありますが、他の種類の免責事項は、公式の権限下でない限り変更されることがほとんどない、または決して変更されない、統一された確立された形式に厳密に従う場合があります。",
+            "ウェブサイトの免責事項は、保証なし、責任の制限、例外、合理性、他の当事者、および執行不能な条項を対象としています。"
+          ],
+          "title": "免責事項ポリシー"
+        },
+        {
+          "paragraphs": [
+            "本ウェブサイトに含まれる情報は、一般的な情報提供のみを目的としています。情報はインデキシアグループによって提供されており、当社は情報を最新かつ正確に保つよう努めていますが、ウェブサイトまたはウェブサイトに含まれる情報、製品、サービス、関連グラフィックの完全性、正確性、信頼性、適合性、利用可能性について、いかなる目的に対しても、明示または黙示を問わず、いかなる表明や保証も行いません。このような情報に依拠することは、完全に自己責任となります。",
+            "当社は、間接的または結果的な損失や損害を含め（ただしこれらに限定されません）、本ウェブサイトの利用から生じるデータや利益の喪失に起因する、あらゆる損失や損害について責任を負いません。",
+            "本ウェブサイトを通じて、インデキシアグループの管理下にない他のウェブサイトにリンクすることができます。当社はそれらのサイトの性質、内容、利用可能性を管理することはできません。リンクの掲載は、必ずしもその中の見解の推奨や承認を意味するものではありません。",
+            "ウェブサイトをスムーズに稼働させ続けるためにあらゆる努力が払われています。ただし、インデキシアグループは、当社の管理外の技術的問題によるウェブサイトの一時的な利用不能について責任を負わず、責任を負いません。"
+          ],
+          "title": "本ウェブサイトの免責事項"
+        },
+        {
+          "paragraphs": {
+            "0": "当社はいつでもこれらの利用規約を変更する権利を留保します。"
+          },
+          "title": "利用規約の変更"
+        },
+        {
+          "paragraphs": {
+            "0": "ご質問がございましたら、contactus@indexiagroup.comまでご連絡ください。"
+          },
+          "title": "お問い合わせ"
+        }
+      ]
+    }
+  },
+  "newsHero": {
+    "latestLabel": "グループの最新ニュース",
+    "sectors": {
+      "advertising": "広告",
+      "agriculture": "農業",
+      "finance": "金融",
+      "security": "セキュリティ",
+      "sport": "スポーツ",
+      "tradeExport": "貿易・輸出"
+    }
+  },
+  "newsPage": {
+    "askUs": "お問い合わせ",
+    "ctaBody": "FDIアドバイザリーから有機農業、武装警備まで, 適切なインデキシア企業がお手伝いします。お問い合わせを送信してください。",
+    "ctaButton": "お問い合わせを送信",
+    "ctaTitle": "当社の事業についてご質問がありますか？",
+    "eyebrow": "ニュース＆ナレッジセンター",
+    "featuredLabel": "特集記事",
+    "knowledgeEyebrow": "ナレッジセンター",
+    "knowledgeHeading": "当社企業からの実用的なガイド",
+    "knowledgeSubtitle": "この仕事を毎日行っているチームが書いた、わかりやすい解説。",
+    "metaDescription": "ニュース＆ナレッジセンター, 資金調達、デジタル決済、政策に関する最新の銀行ニュースと、インデキシアグループからの実用的な知識ガイド。",
+    "readMore": "続きを読む",
+    "subtitle": "最新の銀行ニュース, 資金調達情報、デジタル決済、政策変更、市場動向, に加え、当社企業からの実用的なガイド。",
+    "title": "ニュース＆ナレッジセンター",
+    "titleAccent": "ストーリーとインサイト。",
+    "titleStart": "グループ全体からの",
+    "tvCaption": "Loan Chahiye Matlab… インデキシアファイナンス",
+    "tvEyebrow": "テレビでご覧ください",
+    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingStart": "あらゆるローンのご相談に"
+  },
+  "newsVideo": {
+    "onAir": "オンエア",
+    "tvCommercial": "テレビコマーシャル"
+  },
+  "notFoundPage": {
+    "backHome": "ホームに戻る",
+    "description": "お探しのページは存在しないか、移動された可能性があります。",
+    "title": "ページが見つかりません"
+  },
+  "openRoles": {
+    "loading": "求人を読み込み中...",
+    "noPositions": "現在{{type}}のポジションは利用できません。"
   },
   "pageContent": {
+    "careers": {
+      "culture": [
+        "インデキシアグループは学び続ける組織であり、その企業文化こそがチームです。従業員は貴重な資産であり、最新のテクノロジー業務と、楽しく、協力的で、チーム志向の働く環境を提供することに取り組んでいます。柔軟な勤務時間、オープンなコミュニケーションの重視、経営陣とスタッフ間のオープンドアポリシーにより、既存の知識基盤を広げる経験とトレーニングの機会を提供することを信条としています。",
+        "フィンテックやグローバル輸出から有機農業、武装警備、アスリート開発まで——1つの分野に限定されません。",
+        "学び、訓練し、進化する",
+        "すべての役職に構造化された研修、社内ワークショップ、シニアリーダーからのメンタリングが付きます。",
+        "グローバルな経験、ローカルなルーツ",
+        "Indexiaはインド、エクアドル、南米、ヨーロッパで事業を展開しています。",
+        "柔軟な勤務時間、真の責任",
+        "チームメンバーの時間管理を信頼しています。"
+      ],
+      "roles": {
+        "business-development": {
+          "department": "ビジネス開発",
+          "title": "事業開発エグゼクティブ",
+          "type": "フルタイム"
+        },
+        "city-head": {
+          "department": "営業",
+          "title": "シティヘッド",
+          "type": "フルタイム"
+        },
+        "customer-support": {
+          "department": "カスタマーサポート",
+          "title": "カスタマーサポートアソシエイト",
+          "type": "フルタイム"
+        },
+        "field-executive": {
+          "department": "現場オペレーション",
+          "title": "フィールドエグゼクティブ",
+          "type": "フルタイム"
+        },
+        "hr-manager": {
+          "department": "人事部",
+          "title": "人事マネージャー",
+          "type": "フルタイム"
+        },
+        "seo-professional": {
+          "department": "デジタルマーケティング",
+          "title": "SEO専門家",
+          "type": "フルタイム"
+        },
+        "team-leader": {
+          "department": "オペレーション",
+          "title": "チームリーダー",
+          "type": "フルタイム"
+        },
+        "team-manager": {
+          "department": "オペレーション",
+          "title": "チームマネージャー",
+          "type": "フルタイム"
+        }
+      }
+    },
     "companies": {
+      "advertising": {
+        "desc": "北インドで最も交通量の多い交差点に設置するプレミアム単柱広告塔。",
+        "highlights": [
+          "NH-709Bデリー-デラドゥン高速道路沿いの戦略的な位置",
+          "10州を接続, 50クロールの人口リーチ、毎日1クロール以上の露出",
+          "360°の視認性とプレミアムな高さの単柱広告塔",
+          "エンドツーエンドのサービス, 印刷、設置、メンテナンス"
+        ],
+        "location": "デリー・デラドゥーン高速道路、シャムリー",
+        "name": "Indexia Advertising",
+        "overview": "インデキシアアドバタイジングは、北インドの拠点であるシャムリのデリー-デラドゥン高速道路（NH-709B）沿いでプレミアム単柱広告塔を運営しています。8本の国家高速道路と2本の主要高速道路の合流点に位置する当社の広告塔は、10州を結び、5億人（50クロール）の人口にリーチし、毎日1クロール以上の露出を集めます。プレミアムな高さと遮るもののない360°の視野角を持つ単柱広告塔は、特徴的なBisleriグリーンのブランディングで、ブランドに視覚的なノイズゼロで最大の視認性を提供します。印刷、設置からメンテナンスまで、すべてをエンドツーエンドで対応します。10×20フィートの広告塔は月額₹25,000、12×24フィートは月額₹36,000でご予約いただけます, 標準料金は1平方フィートあたり片側月額₹125、長期パッケージは交渉可能です。ご予約は86918 86919または011 4629 1155、またはindexia.queries@gmail.comまでご連絡ください。",
+        "services": [
+          "広告塔 10×20フィート, ₹25,000/月",
+          "広告塔 12×24フィート, ₹36,000/月",
+          "標準料金, 1平方フィートあたり片側月額₹125",
+          "デリー-デラドゥン高速道路とシャムリ環状道路の位置",
+          "印刷、設置、メンテナンス",
+          "長期・大量パッケージ"
+        ],
+        "tag": "プレミアム単柱広告塔"
+      },
+      "agro-bio": {
+        "desc": "インドで製造し、世界へ輸出する有機肥料。",
+        "highlights": [
+          "有機・バイオベース生産, 刺激の強い化学薬品なし",
+          "デリー首都圏ベルトのシャムリー（UP）施設",
+          "より良い土壌健康、より高い作物収量",
+          "農家への包括的支援、土壌分析、研修"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "overview": "インデキシアアグロバイオ肥料は、デリー首都圏の一部であるウッタル・プラデーシュ州シャムリーの生産施設で有機肥料を製造しています。同社のバイオベース製品は土壌の健康を改善し、作物の収量を高め、北インドの農家の持続可能な農業を支援します。",
+        "services": [
+          "有機肥料生産",
+          "バイオ肥料ブレンド",
+          "土壌健康ソリューション",
+          "収量向上プログラム",
+          "農家支援＆トレーニング",
+          "シャムリー施設（デリー首都圏）"
+        ],
+        "tag": "有機肥料生産"
+      },
       "finance": {
-        "tag": "多国籍フィンテック",
         "desc": "投資家サービス、FDI、NBFC、銀行融資を手掛けるグローバルなフィンテック。",
-        "overview": "インデキシアファイナンスは、世界中のクライアントに金融サービスを提供する多国籍フィンテックプラットフォームです。あらゆる種類のローンを www.indexiafinance.com のポータルで申請できます, グローバルにサービスを提供しており、インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。投資家サービス、FDIアドバイザリー、NBFC運営、銀行融資という4つの核となる事業分野を中心に、資本と機会をつなぎ、投資家、企業、機関が国境を越えて自信を持って金融判断を下せるよう支援しています。",
-        "tagline": "あらゆるローン先",
         "highlights": [
           "インドを起点とした実行力を持つグローバルフィンテック",
           "1つの屋根の下で4つの統合された事業分野",
           "エンドツーエンドの融資・アドバイザリーサポート"
         ],
+        "name": "Indexia Finance",
+        "overview": "インデキシアファイナンスは、世界中のクライアントに金融サービスを提供する多国籍フィンテックプラットフォームです。あらゆる種類のローンを www.indexiafinance.com のポータルで申請できます, グローバルにサービスを提供しており、インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。投資家サービス、FDIアドバイザリー、NBFC運営、銀行融資という4つの核となる事業分野を中心に、資本と機会をつなぎ、投資家、企業、機関が国境を越えて自信を持って金融判断を下せるよう支援しています。",
         "services": [
           "FDIアドバイザリー＆ファシリテーション",
           "投資家サービス",
@@ -387,18 +873,18 @@
           "クロスボーダー資本ソリューション",
           "ウェルス＆アセットアドバイザリー"
         ],
-        "name": "Indexia Finance"
+        "tag": "多国籍フィンテック",
+        "tagline": "あらゆるローン先"
       },
       "finserve": {
-        "tag": "ローン＆ファイナンス",
         "desc": "個人向け・法人向けを問わず、あらゆるローンを提供。",
-        "overview": "インデキシアフィンサーブはインデキシアグループの貸付部門であり、金融分野のあらゆる種類のローンを提供しています。今、正しい銀行があなたの玄関先までやって来ます, 同社は完全なローンの目的地として機能し、個人、住宅、事業、MSME、専門融資の資格、書類、実行を、単一の合理化されたプロセスで案内します。",
-        "tagline": "金融の次世代メソッド",
         "highlights": [
           "1つの屋根の下であらゆる種類のローン",
           "合理化された資格・書類・実行プロセス",
           "すべてのステップで専任アドバイザリー"
         ],
+        "name": "Indexia Finserve Pvt. Ltd.",
+        "overview": "インデキシアフィンサーブはインデキシアグループの貸付部門であり、金融分野のあらゆる種類のローンを提供しています。今、正しい銀行があなたの玄関先までやって来ます, 同社は完全なローンの目的地として機能し、個人、住宅、事業、MSME、専門融資の資格、書類、実行を、単一の合理化されたプロセスで案内します。",
         "services": [
           "パーソナルローン",
           "ビジネスローン",
@@ -413,114 +899,19 @@
           "リース割引",
           "運転資金"
         ],
-        "name": "Indexia Finserve Pvt. Ltd."
-      },
-      "overseas": {
-        "tag": "食用品輸出業者",
-        "desc": "精製糖をはじめ、あらゆる食品を世界中へ輸出。",
-        "overview": "インデキシアオーバーシーズはすべての食用品のグローバル輸出を推進しており、特に南米14か国への砂糖輸出に注力しています。同社は調達、品質、物流、国際コンプライアンスを管理し、食品グレードの製品が産地から市場へ確実に、大規模に移動できるようにしています。",
-        "highlights": [
-          "すべての食用品の輸出, 砂糖を中核に",
-          "南米14市場での確立されたプレゼンス",
-          "エンドツーエンドの調達・品質・物流"
-        ],
-        "services": [
-          "砂糖輸出＆トレーディング",
-          "調達＆品質管理",
-          "国際物流",
-          "南米14市場"
-        ],
-        "name": "Indexia Overseas Pvt. Ltd."
-      },
-      "agro-bio": {
-        "tag": "有機肥料生産",
-        "desc": "インドで製造し、世界へ輸出する有機肥料。",
-        "overview": "インデキシアアグロバイオ肥料は、デリー首都圏の一部であるウッタル・プラデーシュ州シャムリーの生産施設で有機肥料を製造しています。同社のバイオベース製品は土壌の健康を改善し、作物の収量を高め、北インドの農家の持続可能な農業を支援します。",
-        "highlights": [
-          "有機・バイオベース生産, 刺激の強い化学薬品なし",
-          "デリー首都圏ベルトのシャムリー（UP）施設",
-          "より良い土壌健康、より高い作物収量"
-        ],
-        "services": [
-          "有機肥料生産",
-          "バイオ肥料ブレンド",
-          "土壌健康ソリューション",
-          "収量向上プログラム",
-          "農家支援＆トレーニング",
-          "シャムリー施設（デリー首都圏）"
-        ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
-      },
-      "securities": {
-        "tag": "武装警備＆コマンド部隊",
-        "desc": "武装コマンドと警備員がリーダーと企業を守ります。",
-        "overview": "インデキシアセキュリティーズは、利用可能な最高の武装警備とコマンド部隊による保護を提供し、人、財産、高機密の運用を24時間体制で守ります。訓練されたコマンド部隊や武装警備員から、VIP護衛やイベント警備まで、同社はあらゆる任務に軍事的な規律をもたらします。",
-        "highlights": [
-          "最高水準の武装・コマンド部隊保護",
-          "迅速な対応規律を持つ訓練済みコマンド部隊",
-          "24時間体制の監視と現場対応"
-        ],
-        "services": [
-          "武装警備員",
-          "コマンド保護部隊",
-          "VIP＆要人護衛",
-          "イベント＆会場警備",
-          "企業＆サイト警備",
-          "24時間体制の監視＆迅速対応"
-        ],
-        "name": "Indexia Securities"
-      },
-      "warehouse": {
-        "tag": "戦略的用地投資",
-        "desc": "シャムリの戦略的用地21エーカー、8本の国内高速道路に接続。",
-        "overview": "インデキシアウェアハウスは、ウッタル・プラデーシュ州シャムリでの戦略的用地投資の機会を提供します, デリーのロニ、トロニカシティから約65km。この立地は交通の要衝です：8本の国内高速道路と2本の主要道路が8州を結び、ブータンとネパールへの直接アクセスと5億人（50クロール）の市場リーチを実現。4つの主要港（グジャラート、マハラシュトラ、チェンナイ、コルカタ）へは高速道路で直接アクセスでき、デリーのIGI空港とジェワールのノイダ国際空港はどちらも1時間以内です。土地ポートフォリオは5か所・合計21エーカーで、1、2、2.5、5、8エーカーの柔軟な区画があり、2エーカーの土地には積み込みドック付きの近代的な倉庫を建設予定です。期待価格は1平方フィートあたり₹30、交渉可能です。",
-        "highlights": [
-          "一等地, ウッタル・プラデーシュ州シャムリ、デリーから約65km",
-          "8本の国内高速道路 + 2本の主要道路が8州を結ぶ",
-          "5か所に21エーカー, 1、2、2.5、5、8エーカーの区画",
-          "1平方フィートあたり₹30、交渉可能"
-        ],
-        "services": [
-          "土地区画, 1、2、2.5、5、8エーカー",
-          "5か所に合計21エーカー",
-          "2エーカー区画での倉庫建設",
-          "高速道路・主要道路への接続",
-          "港湾アクセス, グジャラート、マハラシュトラ、チェンナイ、コルカタ",
-          "空港アクセス, デリーとジェワールまで1時間以内"
-        ],
-        "name": "Indexia Warehouse",
-        "location": "シャムリ、ウッタル・プラデーシュ州"
-      },
-      "advertising": {
-        "tag": "プレミアム単柱広告塔",
-        "desc": "北インドで最も交通量の多い交差点に設置するプレミアム単柱広告塔。",
-        "overview": "インデキシアアドバタイジングは、北インドの拠点であるシャムリのデリー-デラドゥン高速道路（NH-709B）沿いでプレミアム単柱広告塔を運営しています。8本の国家高速道路と2本の主要高速道路の合流点に位置する当社の広告塔は、10州を結び、5億人（50クロール）の人口にリーチし、毎日1クロール以上の露出を集めます。プレミアムな高さと遮るもののない360°の視野角を持つ単柱広告塔は、特徴的なBisleriグリーンのブランディングで、ブランドに視覚的なノイズゼロで最大の視認性を提供します。印刷、設置からメンテナンスまで、すべてをエンドツーエンドで対応します。10×20フィートの広告塔は月額₹25,000、12×24フィートは月額₹36,000でご予約いただけます, 標準料金は1平方フィートあたり片側月額₹125、長期パッケージは交渉可能です。ご予約は86918 86919または011 4629 1155、またはindexia.queries@gmail.comまでご連絡ください。",
-        "highlights": [
-          "NH-709Bデリー-デラドゥン高速道路沿いの戦略的な位置",
-          "10州を接続, 50クロールの人口リーチ、毎日1クロール以上の露出",
-          "360°の視認性とプレミアムな高さの単柱広告塔",
-          "エンドツーエンドのサービス, 印刷、設置、メンテナンス"
-        ],
-        "services": [
-          "広告塔 10×20フィート, ₹25,000/月",
-          "広告塔 12×24フィート, ₹36,000/月",
-          "標準料金, 1平方フィートあたり片側月額₹125",
-          "デリー-デラドゥン高速道路とシャムリ環状道路の位置",
-          "印刷、設置、メンテナンス",
-          "長期・大量パッケージ"
-        ],
-        "name": "Indexia Advertising",
-        "location": "シャムリのデリー-デラドゥン高速道路"
+        "tag": "ローン＆ファイナンス",
+        "tagline": "金融の次世代メソッド"
       },
       "foundation": {
-        "tag": "アスリート支援",
         "desc": "国際レベルのトレーニングと支援, オリンピックまで。",
-        "overview": "インデキシア財団は、可能な限りの支援, 国際レベルのトレーニング、体系化された食事と栄養、専門コーチング、オリンピックへの道のりで必要とされるあらゆる支援, を提供することでアスリートを支援します。財団は、最初の可能性から世界最大の舞台まで、スポーツ選手のそばに立ち続けます。",
         "highlights": [
           "国際レベルのトレーニングと専門コーチング",
           "体系化された食事・栄養プログラム",
-          "オリンピックまでの完全サポート"
+          "オリンピックまでの完全サポート",
+          "オリンピック級インド人アスリートの持続可能なパイプライン構築"
         ],
+        "name": "Indexia Foundation",
+        "overview": "インデキシア財団は、可能な限りの支援, 国際レベルのトレーニング、体系化された食事と栄養、専門コーチング、オリンピックへの道のりで必要とされるあらゆる支援, を提供することでアスリートを支援します。財団は、最初の可能性から世界最大の舞台まで、スポーツ選手のそばに立ち続けます。",
         "services": [
           "国際レベルのトレーニング",
           "食事＆栄養プログラム",
@@ -529,655 +920,291 @@
           "スポーツ医学＆リハビリテーション",
           "オリンピック級サポート"
         ],
-        "name": "Indexia Foundation"
+        "tag": "アスリート支援"
+      },
+      "overseas": {
+        "desc": "精製糖をはじめ、あらゆる食品を世界中へ輸出。",
+        "highlights": [
+          "すべての食用品の輸出, 砂糖を中核に",
+          "南米14市場での確立されたプレゼンス",
+          "エンドツーエンドの調達・品質・物流",
+          "卸売業者への信頼できるパートナー"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd.",
+        "overview": "インデキシアオーバーシーズはすべての食用品のグローバル輸出を推進しており、特に南米14か国への砂糖輸出に注力しています。同社は調達、品質、物流、国際コンプライアンスを管理し、食品グレードの製品が産地から市場へ確実に、大規模に移動できるようにしています。",
+        "services": [
+          "砂糖輸出＆トレーディング",
+          "調達＆品質管理",
+          "国際物流",
+          "南米14市場",
+          "規制・コンプライアンス管理",
+          "南米市場流通"
+        ],
+        "tag": "食用品輸出業者"
+      },
+      "securities": {
+        "desc": "武装コマンドと警備員がリーダーと企業を守ります。",
+        "highlights": [
+          "最高水準の武装・コマンド部隊保護",
+          "迅速な対応規律を持つ訓練済みコマンド部隊",
+          "24時間体制の監視と現場対応",
+          "ハイプロファイル顧客保護の実績"
+        ],
+        "name": "Indexia Securities",
+        "overview": "インデキシアセキュリティーズは、利用可能な最高の武装警備とコマンド部隊による保護を提供し、人、財産、高機密の運用を24時間体制で守ります。訓練されたコマンド部隊や武装警備員から、VIP護衛やイベント警備まで、同社はあらゆる任務に軍事的な規律をもたらします。",
+        "services": [
+          "武装警備員",
+          "コマンド保護部隊",
+          "VIP＆要人護衛",
+          "イベント＆会場警備",
+          "企業＆サイト警備",
+          "24時間体制の監視＆迅速対応"
+        ],
+        "tag": "武装警備＆コマンド部隊"
+      },
+      "warehouse": {
+        "desc": "シャムリの戦略的用地21エーカー、8本の国内高速道路に接続。",
+        "highlights": [
+          "一等地, ウッタル・プラデーシュ州シャムリ、デリーから約65km",
+          "8本の国内高速道路 + 2本の主要道路が8州を結ぶ",
+          "5か所に21エーカー, 1、2、2.5、5、8エーカーの区画",
+          "1平方フィートあたり₹30、交渉可能"
+        ],
+        "location": "シャムリ、ウッタル・プラデーシュ州",
+        "name": "Indexia Warehouse",
+        "overview": "インデキシアウェアハウスは、ウッタル・プラデーシュ州シャムリでの戦略的用地投資の機会を提供します, デリーのロニ、トロニカシティから約65km。この立地は交通の要衝です：8本の国内高速道路と2本の主要道路が8州を結び、ブータンとネパールへの直接アクセスと5億人（50クロール）の市場リーチを実現。4つの主要港（グジャラート、マハラシュトラ、チェンナイ、コルカタ）へは高速道路で直接アクセスでき、デリーのIGI空港とジェワールのノイダ国際空港はどちらも1時間以内です。土地ポートフォリオは5か所・合計21エーカーで、1、2、2.5、5、8エーカーの柔軟な区画があり、2エーカーの土地には積み込みドック付きの近代的な倉庫を建設予定です。期待価格は1平方フィートあたり₹30、交渉可能です。",
+        "services": [
+          "土地区画, 1、2、2.5、5、8エーカー",
+          "5か所に合計21エーカー",
+          "2エーカー区画での倉庫建設",
+          "高速道路・主要道路への接続",
+          "港湾アクセス, グジャラート、マハラシュトラ、チェンナイ、コルカタ",
+          "空港アクセス, デリーとジェワールまで1時間以内"
+        ],
+        "tag": "戦略的用地投資"
       }
     },
     "news": {
       "articles": {
-        "yes-bank-sme-funding": {
-          "title": "Yes Bank、中小企業融資のため米政府とウェルズ・ファーゴから1億5000万ドルを調達",
-          "category": "銀行",
-          "excerpt": "米政府の開発金融に支えられたOPIC–ウェルズ・ファーゴ枠組みの下での第3ラウンドは、インド全土の中小企業への信用を拡大します。"
-        },
-        "uidai-aadhaar-banks": {
-          "title": "UIDAI、銀行に支店内のアーダール登録センター開設を要請",
-          "category": "政策",
-          "excerpt": "銀行は10支店に1つ以上の割合でアーダール登録施設を運営するよう求められており、現在運営されている25,000の独立センターをはるかに超えて登録範囲が拡大します。"
-        },
         "demonetisation-digital-payments": {
-          "title": "デモネタイゼーションがインドのデジタル決済を3年前倒し：SBI調査",
           "category": "デジタル決済",
-          "excerpt": "インドステイト銀行の調査部門によると、POSカード取引は88%増、モバイルバンキングとプリペイド決済は122%増となり、この移行はインフレ緩和にもつながると期待されています。"
-        },
-        "sbi-imps-fee-waiver": {
-          "title": "SBI、1,000ルピーまでのIMPS送金手数料を免除",
-          "category": "銀行",
-          "excerpt": "インド最大の銀行がデジタル決済を促進するため少額の即時送金手数料を撤廃。1,000ルピー超のIMPS送金は現在5ルピー＋GST、1〜2ラクの場合は15ルピーに上昇します。"
+          "excerpt": "インドステイト銀行の調査部門によると、POSカード取引は88%増、モバイルバンキングとプリペイド決済は122%増となり、この移行はインフレ緩和にもつながると期待されています。",
+          "title": "デモネタイゼーションがインドのデジタル決済を3年前倒し：SBI調査"
         },
         "nakshatra-gili-directors": {
-          "title": "チャウル住民がNakshatraとGili Indiaの取締役に指名される",
-          "category": "マーケット",
-          "excerpt": "一般従業員や小規模な個人投資家が、Gili、Nakshatra、Gitanjali各社の名義上の取締役になるよう説得され、コーポレートガバナンスへの疑問が生じています。"
+          "category": "企業ガバナンス",
+          "excerpt": "一般従業員や小規模な個人投資家が、Gili、Nakshatra、Gitanjali各社の名義上の取締役になるよう説得され、コーポレートガバナンスへの疑問が生じています。",
+          "title": "チャウル住民がNakshatraとGili Indiaの取締役に指名される"
+        },
+        "sbi-imps-fee-waiver": {
+          "category": "銀行",
+          "excerpt": "インド最大の銀行がデジタル決済を促進するため少額の即時送金手数料を撤廃。1,000ルピー超のIMPS送金は現在5ルピー＋GST、1〜2ラクの場合は15ルピーに上昇します。",
+          "title": "SBI、1,000ルピーまでのIMPS送金手数料を免除"
         },
         "sebi-hdfc-information-leak": {
-          "title": "SEBI、HDFC銀行に情報漏えいの責任を取るよう要求",
-          "category": "マーケット",
-          "excerpt": "市場規制当局はHDFC銀行に対し、四半期業績の一部がWhatsAppメッセージを通じて株式トレーダーらにどのように届いたかを内部調査するよう指示しました。"
+          "category": "規制",
+          "excerpt": "インド証券取引委員会は、HDFCに関連する情報漏洩の疑いについて調査を開始しました。",
+          "title": "SEBI、HDFC情報漏洩事件の調査を命令"
+        },
+        "uidai-aadhaar-banks": {
+          "category": "政策",
+          "excerpt": "銀行は10支店に1つ以上の割合でアーダール登録施設を運営するよう求められており、現在運営されている25,000の独立センターをはるかに超えて登録範囲が拡大します。",
+          "title": "UIDAI、銀行に支店内のアーダール登録センター開設を要請"
+        },
+        "yes-bank-sme-funding": {
+          "category": "銀行",
+          "excerpt": "米政府の開発金融に支えられたOPIC–ウェルズ・ファーゴ枠組みの下での第3ラウンドは、インド全土の中小企業への信用を拡大します。",
+          "title": "Yes Bank、中小企業融資のため米政府とウェルズ・ファーゴから1億5000万ドルを調達"
         }
       },
       "insights": {
-        "understanding-fdi": {
-          "title": "インドのFDIを理解する",
-          "body": "インドのビジネスに外国資本を導入する際の参入経路、セクター別上限、必要な申請書類についての実践的な入門書, そしてアドバイザリー支援が最も重要となる場面。"
-        },
         "choosing-loan": {
-          "title": "適切なローンを選ぶ",
-          "body": "パーソナル、住宅、ビジネス、プロジェクトファイナンス：ニーズを適切な商品にどうマッチさせるか、そして承認前に貸し手が実際に評価するもの。"
+          "body": "パーソナル、住宅、ビジネス、プロジェクトファイナンス：ニーズを適切な商品にどうマッチさせるか、そして承認前に貸し手が実際に評価するもの。",
+          "title": "適切なローンを選ぶ"
         },
         "organic-farming": {
-          "title": "有機農業を解説",
-          "body": "バイオ肥料が土壌の健康と収量に与える影響、化学肥料を使わない生産が重要な理由、そして農家が実際にどう切り替えるか。"
+          "body": "バイオ肥料が土壌の健康と収量に与える影響、化学肥料を使わない生産が重要な理由、そして農家が実際にどう切り替えるか。",
+          "title": "有機農業を解説"
         },
         "securing-operations": {
-          "title": "高価値業務の保護",
-          "body": "武装警備員からコマンド部隊まで：専門的なセキュリティ評価がリスクを管理可能で測定可能なプログラムに変える仕組み。"
-        }
-      }
-    },
-    "careers": {
-      "culture": [
-        "インデキシアグループは学び続ける組織であり、その企業文化こそがチームです。従業員は貴重な資産であり、最新のテクノロジー業務と、楽しく、協力的で、チーム志向の働く環境を提供することに取り組んでいます。柔軟な勤務時間、オープンなコミュニケーションの重視、経営陣とスタッフ間のオープンドアポリシーにより、既存の知識基盤を広げる経験とトレーニングの機会を提供することを信条としています。",
-        "スタートアップ企業の起業家的な性質と、確立された企業の財務的安定性と充実した福利厚生を兼ね備えた環境で、キャリアを広げ発展させる機会を提供できることを誇りに思っています。グループが市場展開と顧客基盤を拡大し続ける中、業務の卓越性への情熱を共有する人材の検討のため、履歴書の提出をご検討ください。"
-      ],
-      "roles": {
-        "business-development": {
-          "title": "ビジネス開発マネージャー",
-          "department": "ビジネス開発",
-          "type": "フルタイム"
+          "body": "オンライン事業の保護はもはや選択肢ではありません。多要素認証を使用し、機密データを暗号化してください。",
+          "title": "オンライン事業の保護"
         },
-        "city-head": {
-          "title": "シティヘッド",
-          "department": "営業",
-          "type": "フルタイム"
-        },
-        "team-manager": {
-          "title": "チームマネージャー",
-          "department": "オペレーション",
-          "type": "フルタイム"
-        },
-        "hr-manager": {
-          "title": "人事マネージャー",
-          "department": "人事",
-          "type": "フルタイム"
-        },
-        "team-leader": {
-          "title": "チームリーダー",
-          "department": "オペレーション",
-          "type": "フルタイム"
-        },
-        "customer-support": {
-          "title": "カスタマーサポートアソシエイト",
-          "department": "カスタマーサポート",
-          "type": "フルタイム"
-        },
-        "field-executive": {
-          "title": "フィールドエグゼクティブ",
-          "department": "現場オペレーション",
-          "type": "フルタイム"
-        },
-        "seo-professional": {
-          "title": "SEOプロフェッショナル",
-          "department": "デジタルマーケティング",
-          "type": "フルタイム"
+        "understanding-fdi": {
+          "body": "インドのビジネスに外国資本を導入する際の参入経路、セクター別上限、必要な申請書類についての実践的な入門書, そしてアドバイザリー支援が最も重要となる場面。",
+          "title": "インドのFDIを理解する"
         }
       }
     },
     "research": {
       "areas": {
-        "economic": {
-          "title": "経済リサーチ",
-          "body": "世界および地域経済、政策転換、成長の原動力に関する鋭い分析。"
-        },
-        "thematic": {
-          "title": "グローバルテーマリサーチ",
-          "body": "世界的に重要なテーマと、それが経済や市場に与える影響への深掘り。"
-        },
-        "macro": {
-          "title": "グローバルマクロ戦略",
-          "body": "マクロ経済、債券、為替、コモディティ分野にわたる戦略的見解とポジショニング。"
-        },
-        "fx": {
-          "title": "FX",
-          "body": "当社がカバーする市場における通貨分析と見解。"
-        },
-        "rates": {
-          "title": "金利",
-          "body": "当社のカバレッジにわたる債券と金利のリサーチ。"
+        "commodities": {
+          "body": "アジア、アフリカ、中東の現地知見に基づくコモディティリサーチ。",
+          "title": "コモディティ"
         },
         "credit": {
-          "title": "クレジット",
-          "body": "クライアントが発行とスプレッドを乗り切るのに役立つクレジット見解と分析。"
+          "body": "クライアントが発行とスプレッドを乗り切るのに役立つクレジット見解と分析。",
+          "title": "クレジット"
         },
-        "commodities": {
-          "title": "コモディティ",
-          "body": "アジア、アフリカ、中東の現地知見に基づくコモディティリサーチ。"
+        "economic": {
+          "body": "世界および地域経済、政策転換、成長の原動力に関する鋭い分析。",
+          "title": "経済リサーチ"
+        },
+        "fx": {
+          "body": "当社がカバーする市場における通貨分析と見解。",
+          "title": "FX"
+        },
+        "macro": {
+          "body": "マクロ経済、債券、為替、コモディティ分野にわたる戦略的見解とポジショニング。",
+          "title": "グローバルマクロ戦略"
+        },
+        "rates": {
+          "body": "当社のカバレッジにわたる債券と金利のリサーチ。",
+          "title": "金利"
+        },
+        "thematic": {
+          "body": "世界的に重要なテーマと、それが経済や市場に与える影響への深掘り。",
+          "title": "グローバルテーマリサーチ"
         }
       },
       "reports": {
-        "otg": {
-          "title": "OTG, 現場",
-          "summary": "当社が深く研究するダイナミックな地域の現場分析。"
-        },
         "act": {
-          "title": "ACT, 実行可能なアイデア",
-          "summary": "クライアントにリーディングエッジを与える実行可能なマーケットアイデア。"
+          "summary": "クライアントにリーディングエッジを与える実行可能なマーケットアイデア。",
+          "title": "ACT, 実行可能なアイデア"
+        },
+        "otg": {
+          "summary": "当社が深く研究するダイナミックな地域の現場分析。",
+          "title": "OTG, 現場"
         },
         "special-reports": {
-          "title": "スペシャルレポート",
-          "summary": "世界的に重要なテーマと、それが経済や市場に与える影響の分析。"
+          "summary": "世界的に重要なテーマと、それが経済や市場に与える影響の分析。",
+          "title": "スペシャルレポート"
         }
       }
     },
     "security": {
-      "features": {
-        "tech": {
-          "title": "強力なテクノロジー",
-          "body": "当社の銀行システムは熟練した専門家によって管理され、利用可能な最高のセキュリティ技術で保護されています。自信と安全性を持ってオンラインでお金を管理してください。"
+      "contacts": {
+        "control": {
+          "body": "当社が電話、メール、SMSで口座情報やパスワードを求めることは決してありません。誤って口座情報を開示してしまった場合や不正被害に遭った場合は、ご連絡ください。",
+          "title": "オンラインセキュリティを管理する"
         },
+        "report": {
+          "body": "不正なアクセスや取引の疑いがある場合は、カスタマーサービスホットラインに電話し、オンラインバンキングアクセスやATMカードなどの他の口座アクセスチャネルを直ちに停止してください。",
+          "title": "お問い合わせ"
+        }
+      },
+      "features": {
         "monitor": {
-          "title": "安全なシステム",
-          "body": "インデキシアファイナンスは、不正を早期に検出し、口座の安全を確保するための予防措置を講じるため、すべての脅威とオンライン活動を24時間体制で継続的に監視しています。"
+          "body": "インデキシアファイナンスは、不正を早期に検出し、口座の安全を確保するための予防措置を講じるため、すべての脅威とオンライン活動を24時間体制で継続的に監視しています。",
+          "title": "安全なシステム"
+        },
+        "tech": {
+          "body": "当社の銀行システムは熟練した専門家によって管理され、利用可能な最高のセキュリティ技術で保護されています。自信と安全性を持ってオンラインでお金を管理してください。",
+          "title": "強力なテクノロジー"
         }
       },
       "practices": {
-        "devices": {
-          "title": "デバイスを保護する",
-          "body": "すべてのコンピューター、携帯電話、ポータブルデバイス、オペレーティングシステム、インターネットブラウザー（特にオンラインバンキングに使用するもの）が、最新のソフトウェアで定期的に更新されていることを確認してください。"
-        },
         "connections": {
-          "title": "接続を保護する",
-          "body": "適切に設計・管理されたネットワークは、トラフィックと取引を侵入から守ります。"
+          "body": "適切に設計・管理されたネットワークは、トラフィックと取引を侵入から守ります。",
+          "title": "接続を保護する"
         },
         "data": {
-          "title": "データを保護する",
-          "body": "オペレーティングシステムとウェブブラウザーは情報の安全性とプライバシーを保つ優れた役割を果たしますが、コンピューターに追加のセキュリティレイヤーを設けることを検討してもよいでしょう。"
-        }
-      },
-      "contacts": {
-        "control": {
-          "title": "オンラインセキュリティを管理する",
-          "body": "当社が電話、メール、SMSで口座情報やパスワードを求めることは決してありません。誤って口座情報を開示してしまった場合や不正被害に遭った場合は、ご連絡ください。"
+          "body": "オペレーティングシステムとウェブブラウザーは情報の安全性とプライバシーを保つ優れた役割を果たしますが、コンピューターに追加のセキュリティレイヤーを設けることを検討してもよいでしょう。",
+          "title": "データを保護する"
         },
-        "report": {
-          "title": "お問い合わせ",
-          "body": "不正なアクセスや取引の疑いがある場合は、カスタマーサービスホットラインに電話し、オンラインバンキングアクセスやATMカードなどの他の口座アクセスチャネルを直ちに停止してください。"
+        "devices": {
+          "body": "すべてのコンピューター、携帯電話、ポータブルデバイス、オペレーティングシステム、インターネットブラウザー（特にオンラインバンキングに使用するもの）が、最新のソフトウェアで定期的に更新されていることを確認してください。",
+          "title": "デバイスを保護する"
         }
       }
     }
   },
-  "legalContent": {
-    "privacy": {
-      "intro": [
-        "本プライバシーポリシーは、インデキシアグループおよびそのグループ企業（総称して「インデキシアグループ」「当社」「当社の」）が、お客様が当社のウェブサイトを訪問し、お問い合わせを送信し、または当社のサービスを利用する際に、お客様の個人情報をどのように収集、利用、開示、保護するかを説明します。",
-        "当社のウェブサイトを利用するか、当社に情報を提供することにより、お客様は本ポリシーに記載された慣行に同意したものとみなされます。同意されない場合は、個人情報を提供したり、当社のサービスを利用したりしないでください。"
-      ],
-      "sections": [
-        {
-          "title": "当社が収集する情報",
-          "paragraphs": [
-            "お客様が提供する情報：氏名、メールアドレス、電話番号、会社名、お問い合わせや申請の内容など、お客様が直接提供する詳細情報を収集します。",
-            "自動的に収集される情報：当社のウェブサイトを訪問すると、Cookieや類似の技術を通じて、IPアドレス、ブラウザーの種類、訪問ページ、参照URLなどのデバイスおよび利用情報を収集する場合があります。"
-          ]
-        },
-        {
-          "title": "お客様の情報の利用方法",
-          "paragraphs": [
-            "当社は、お問い合わせへの対応、サービスの評価と提供、必要な場合の本人確認、ウェブサイトとサービスの改善、法的義務の遵守、およびお客様が同意した場合にはグループ企業に関する最新情報の送信に、お客様の情報を利用します。",
-            "当社は、処理の法的根拠として、お客様の同意、契約の履行、法的義務の遵守、および当社の事業の運営と改善における正当な利益に依拠しています。"
-          ]
-        },
-        {
-          "title": "共有と開示",
-          "paragraphs": [
-            "当社は、適切な企業がお問い合わせに対応できるよう、インデキシアグループ内でお客様の情報を共有する場合があります。また、当社の運営を支援するサービスプロバイダー（ホスティングや通信プロバイダーなど）、法律で要求される規制当局や行政機関、および合併・買収・資産売却に関連して情報を共有する場合があります。",
-            "当社はお客様の個人情報を第三者に販売しません。"
-          ]
-        },
-        {
-          "title": "データセキュリティ",
-          "paragraphs": [
-            "当社は、不正アクセス、紛失、悪用からお客様の個人情報を保護するため、アクセス制御、転送中の暗号化、監視など、合理的な技術的・組織的措置を講じています。",
-            "転送や保存の方法が完全に安全であることはありません。当社はデータの保護に努めていますが、その絶対的な安全性を保証することはできません。"
-          ]
-        },
-        {
-          "title": "Cookieと類似の技術",
-          "paragraphs": [
-            "当社のウェブサイトは、正しく機能するために必須のCookieを使用し、訪問者が当社のサイトをどのように利用しているかを理解するために分析Cookieを使用する場合があります。ブラウザーの設定でCookieを制御または無効化できますが、それがない場合、当社のウェブサイトの一部が意図したとおりに機能しない可能性があります。"
-          ]
-        },
-        {
-          "title": "データの保持",
-          "paragraphs": [
-            "当社は、本ポリシーに記載された目的の達成、法的・規制上の要件の遵守、紛争解決に必要な期間のみ、お客様の個人情報を保持します。"
-          ]
-        },
-        {
-          "title": "お客様の権利と選択肢",
-          "paragraphs": [
-            "適用される法律に応じて、お客様は自分の個人情報へのアクセス、訂正、更新、削除の要求、および処理が同意に基づく場合の同意の撤回の権利を有する場合があります。",
-            "これらの権利を行使するには、本ポリシーの末尾に記載されている連絡先を使用して当社にご連絡ください。当社は適用される法律で要求される期間内に回答します。"
-          ]
-        },
-        {
-          "title": "第三者リンク",
-          "paragraphs": [
-            "当社のウェブサイトや通信には、当社のグループ企業や他の第三者が運営する外部ウェブサイトへのリンクが含まれる場合があります。本ポリシーはそれらのウェブサイトには適用されませんので、それぞれのプライバシーポリシーをご確認ください。"
-          ]
-        },
-        {
-          "title": "子供のプライバシー",
-          "paragraphs": [
-            "当社のサービスは18歳未満の子供を対象としておらず、子供から個人情報を意図的に収集することはありません。子供が当社に個人情報を提供したと思われる場合は、削除できるようご連絡ください。"
-          ]
-        },
-        {
-          "title": "本ポリシーの変更",
-          "paragraphs": [
-            "当社は本プライバシーポリシーを随時更新する場合があります。変更は更新された改訂日とともにこのページに掲載されます。重要な変更は、可能な範囲で強調表示されます。"
-          ]
-        },
-        {
-          "title": "お問い合わせ",
-          "paragraphs": [
-            "本プライバシーポリシーまたは当社の個人情報の取り扱いについてご質問やご懸念がある場合は、contactus@indexiagroup.com または電話 +91 011 4629 1155 までご連絡ください。"
-          ]
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [],
-      "sections": [
-        {
-          "title": "キャンセル＆返金ポリシー",
-          "paragraphs": [
-            "加盟店事業者の返品・キャンセルポリシーはウェブサイト上で顧客に公開され、支払いプロセス中にその条件への同意が必要です。顧客は支払い情報を送信する前に、返品・キャンセルボタンの「同意する」または「承認する」をクリックする必要があります。支払いが完了したら、ポリシーは支払い確認メールとともに顧客に送信できます。"
-          ]
-        },
-        {
-          "title": "キャンセルポリシー",
-          "paragraphs": [
-            "インデキシアグループは可能な限り顧客を支援することを信条としており、そのため柔軟なキャンセルポリシーを設けています。本ポリシーの下では：",
-            "キャンセルは、支払いから72時間以内に申し出があった場合にのみ検討されます。ただし、支払い詳細がベンダー/加盟店に伝達され、支払いプロセスが開始されている場合は、キャンセル申し出は受け付けられません。",
-            "同日サービスカテゴリーで行われた支払いのキャンセルはありません。",
-            "ポンガル、ディワリ、バレンタインデーなどの特別な機会にインデキシアグループが受け取った支払いのキャンセルは受け付けられません。これらは限定機会オファーであり、キャンセルはできません。",
-            "インデキシアグループは、生鮮サービスに対するキャンセル申し出を受け付けません。顧客がサービスの質が良くないと立証した場合でも、返金はできません。",
-            "サービスや関連情報がお客様に関係ない場合は、当社のサポートチームにご報告ください。ただし、加盟店が自己の判断で確認・決定した後でなければ、申し出は受け付けられません。これはサービスの受領から21日以内に報告する必要があります。",
-            "提供されたサービスがサイトに表示されている内容やお客様の期待と異なると感じる場合は、サービスの受領から24時間以内に当社のサポートサービスに通知する必要があります。サポートサービスチームは、苦情を調査した上で適切な判断を下します。",
-            "特定の期間が設定されているサービスに関する苦情の場合は、contactus@indexiagroup.com までご連絡ください。"
-          ]
-        },
-        {
-          "title": "返金ポリシー",
-          "paragraphs": [
-            "当社のサービスをご利用いただく場合、お支払いは返金保証の対象ではありません。何らかの理由で当社のサービスに完全にご満足いただけない場合、当社はこの問題を非常に真剣に受け止め、できるだけ早く解決するよう努めます。返金をリクエストするには、支払いから90日以内に支払い詳細を添えてご連絡ください。支払い詳細と注文番号（支払い後にメールで送信されます）を含め、返金をリクエストする理由を任意でお知らせください, 当社は顧客からのフィードバックを非常に真剣に受け止め、製品とサービスの質を継続的に改善するために活用しています。設置サービスやナレッジベースのホスティングサービスなど、完全に提供されたサービスに対する返金は行われません。返金は21日以内に処理されます。"
-          ]
-        },
-        {
-          "title": "BO条項",
-          "paragraphs": [
-            "サービスプロバイダーとしての当社は、カード会員が当社と加盟銀行が随時相互に合意した所定の限度額を超えたために取引の承認が拒否されたことに起因して直接的または間接的に生じた損失や損害について、一切の責任を負わないものとします。"
-          ]
-        },
-        {
-          "title": "免責事項ポリシー",
-          "paragraphs": [
-            "免責事項は、契約の一部として相互に合意され、非公開で取り決められた条件を規定する場合があります。また、不当な危害や傷害のリスクを防ぐために負う注意義務を果たすため、一般公衆（またはその他の特定の階層）への警告や期待を規定する場合があります。一部の免責事項は、危害や傷害が生じた後の損害へのエクスポージャーを制限することを目的としています。さらに、一部の種類の免責事項は、免責を行う当事者に負う権利や義務の自発的な放棄を表す場合があります。",
-            "免責事項はその均一性において異なります。特定の状況や関与する当事者によって異なるものもありますが、他の種類の免責事項は、公式の権限下でない限り変更されることがほとんどない、または決して変更されない、統一された確立された形式に厳密に従う場合があります。",
-            "ウェブサイトの免責事項は、保証なし、責任の制限、例外、合理性、他の当事者、および執行不能な条項を対象としています。"
-          ]
-        },
-        {
-          "title": "本ウェブサイトの免責事項",
-          "paragraphs": [
-            "本ウェブサイトに含まれる情報は、一般的な情報提供のみを目的としています。情報はインデキシアグループによって提供されており、当社は情報を最新かつ正確に保つよう努めていますが、ウェブサイトまたはウェブサイトに含まれる情報、製品、サービス、関連グラフィックの完全性、正確性、信頼性、適合性、利用可能性について、いかなる目的に対しても、明示または黙示を問わず、いかなる表明や保証も行いません。このような情報に依拠することは、完全に自己責任となります。",
-            "当社は、間接的または結果的な損失や損害を含め（ただしこれらに限定されません）、本ウェブサイトの利用から生じるデータや利益の喪失に起因する、あらゆる損失や損害について責任を負いません。",
-            "本ウェブサイトを通じて、インデキシアグループの管理下にない他のウェブサイトにリンクすることができます。当社はそれらのサイトの性質、内容、利用可能性を管理することはできません。リンクの掲載は、必ずしもその中の見解の推奨や承認を意味するものではありません。",
-            "ウェブサイトをスムーズに稼働させ続けるためにあらゆる努力が払われています。ただし、インデキシアグループは、当社の管理外の技術的問題によるウェブサイトの一時的な利用不能について責任を負わず、責任を負いません。"
-          ]
-        }
-      ]
-    },
-    "terms": {
-      "intro": [
-        "ウェブサイト所有者（子会社および関連会社を含む）であるインデキシアグループ（または「当社」）は、本ウェブサイトまたは本ウェブサイトを構成するいずれかのページに含まれる情報を、訪問者および申込者（総称して「お客様」）に対して、本ウェブサイトの利用条件、プライバシーポリシー、およびウェブサイトの特定のセクションやモジュールに適用される可能性のあるその他の関連する利用条件、ポリシー、通知に従って提供します。",
-        "当社のウェブサイトへようこそ。本ウェブサイトの閲覧と利用を継続する場合、お客様は以下の利用条件を遵守し拘束されることに同意したものとみなされます。これらの条件は、プライバシーポリシーとともに、本ウェブサイトに関するインデキシアグループとお客様との関係を規定します。",
-        "「インデキシアグループ」または「当社」という用語は、登録事務所が 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053 にあるウェブサイトの所有者を指します。「お客様」という用語は、当社ウェブサイトのユーザーまたは閲覧者を指します。"
-      ],
-      "sections": [
-        {
-          "title": "コンテンツと変更",
-          "paragraphs": [
-            "本ウェブサイトのページの内容は、一般的な情報提供と利用のみを目的としています。予告なく変更されることがあります。"
-          ]
-        },
-        {
-          "title": "保証なし",
-          "paragraphs": [
-            "当社も第三者も、特定の目的のために本ウェブサイトで見つかったり提供されたりする情報や資料の正確性、適時性、性能、完全性、適合性について、いかなる保証も与えません。お客様は、このような情報や資料に不正確さや誤りが含まれる可能性があることを認め、当社は法律で許される最大限の範囲で、そのような不正確さや誤りに対する責任を明示的に免除します。"
-          ]
-        },
-        {
-          "title": "自己責任での利用",
-          "paragraphs": [
-            "本ウェブサイト上の情報や資料の利用は完全に自己責任であり、当社は責任を負いません。本ウェブサイトを通じて利用可能な製品、サービス、情報がお客様の特定の要件を満たすことを確認するのはお客様自身の責任です。"
-          ]
-        },
-        {
-          "title": "知的財産",
-          "paragraphs": [
-            "本ウェブサイトには、当社が所有またはライセンスを受けている資料が含まれています。この資料には、デザイン、レイアウト、外観、見た目、グラフィックが含まれますが、これらに限定されません。本利用条件の一部を構成する著作権表示に従う場合を除き、複製は禁止されています。"
-          ]
-        },
-        {
-          "title": "商標",
-          "paragraphs": [
-            "本ウェブサイトで複製されている、運営者の所有物ではない、またはライセンスを受けていないすべての商標は、ウェブサイト上で確認されています。"
-          ]
-        },
-        {
-          "title": "不正利用",
-          "paragraphs": [
-            "本ウェブサイトの不正利用は、損害賠償請求や刑事犯罪の原因となる場合があります。"
-          ]
-        },
-        {
-          "title": "第三者リンク",
-          "paragraphs": [
-            "本ウェブサイトには、他のウェブサイトへのリンクが随時含まれる場合があります。これらのリンクは、追加情報を提供するためのお客様の便宜のために提供されています。当社がそれらのウェブサイトを承認していることを示すものではありません。当社はリンク先ウェブサイトの内容について責任を負いません。"
-          ]
-        },
-        {
-          "title": "本ウェブサイトへのリンク",
-          "paragraphs": [
-            "インデキシアグループの事前の書面による同意なしに、他のウェブサイトや文書から本ウェブサイトへのリンクを作成することはできません。"
-          ]
-        },
-        {
-          "title": "準拠法",
-          "paragraphs": [
-            "本ウェブサイトの利用およびそのような利用から生じる紛争は、インドの法律またはその他の規制当局の管轄に従います。"
-          ]
-        },
-        {
-          "title": "カード取引の責任",
-          "paragraphs": [
-            "「サービスプロバイダーとしての当社は、カード会員が当社と加盟銀行が随時相互に合意した所定の限度額を超えたために取引の承認が拒否されたことに起因して直接的または間接的に生じた損失や損害について、一切の責任を負わないものとします」。"
-          ]
-        }
-      ]
-    }
+  "phoneLabel": {
+    "landline": "固定電話",
+    "mob": "携帯",
+    "mobile": "携帯電話",
+    "tel": "電話"
+  },
+  "securityTipsPage": {
+    "contactsEyebrow": "サポートが必要ですか？",
+    "contactsHeading": "当社にご相談ですか？",
+    "contactsSubtitle": "口座情報を不審な相手に開示してしまった可能性がある場合、または不正被害に遭った場合は、カスタマーサービスホットラインにすぐにお電話ください。",
+    "ctaBody": "お問い合わせフォームから報告するか、関連するインデキシアグループ企業に直接ご連絡ください。",
+    "ctaButton": "情報を保護する",
+    "ctaTitle": "不審なものをお見かけしましたか？",
+    "eyebrow": "セキュリティのヒント",
+    "featuresEyebrow": "当社の取り組み",
+    "featuresHeading": "オンラインで安全を確保",
+    "featuresSubtitle": "オンラインバンキングの際に、当社が口座を保護するために何を行っているかをご覧ください。",
+    "metaDescription": "インデキシアグループからのセキュリティのヒント, オンラインで口座を保護する方法、デバイスでできること、問題が発生した場合の連絡先。",
+    "practicesEyebrow": "お客様にできること",
+    "practicesHeading": "情報を保護する",
+    "practicesSubtitle": "当社は、オンラインバンキング時の口座保護に毎日取り組んでいます。また、お客様の日常のデバイスでもオンラインで安全に過ごすための簡単な方法がいくつかあります。",
+    "subtitle": "どこに行っても、安心してオンラインでお金を管理できます。",
+    "title": "インデキシアグループからのセキュリティのヒント",
+    "titleAccent": "先手を打つ。",
+    "titleStart": "不正から"
+  },
+  "seo": {
+    "businessesDescription": "インデキシアグループの8つの事業：金融、ローン、警備、砂糖輸出、有機肥料、倉庫、広告、アスリート支援。",
+    "businessesTitle": "グループ企業, 金融、農業、輸出＆物流",
+    "contactDescription": "金融サービス、ローン、輸出、農業、物流に関するお問い合わせはインデキシアグループへ。ムンバイ、デリー、スーラト、エクアドルに拠点, 24時間以内に返信。",
+    "contactTitle": "お問い合わせ, ムンバイ、デリー、スーラト拠点",
+    "homeDescription": "多角化するインドのビジネスグループ：金融サービス、NBFCローン、グローバル輸出、農業肥料、倉庫＆警備。ムンバイ、デリー、スーラトに拠点。",
+    "homeTitle": "金融サービス、ローン、輸出＆物流"
+  },
+  "unipolePricing": {
+    "areaCol": "平方フィート",
+    "areaLarge": "288平方フィート",
+    "areaSmall": "200平方フィート",
+    "bookMessage": "{{size}}の広告塔（{{area}}）を月額{{rate}}で予約したいです。",
+    "bookNow": "今すぐ予約",
+    "bookSize": "このサイズを予約",
+    "eyebrow": "広告塔パッケージ",
+    "note": "* 料金は空き状況により異なります。長期パッケージについてはお問い合わせください。",
+    "rateCol": "月額料金",
+    "rateLarge": "₹36,000",
+    "rateSmall": "₹25,000",
+    "sizeCol": "サイズ",
+    "sizeLarge": "12 × 24フィート",
+    "sizeSmall": "10 × 20フィート",
+    "standardRate": "標準料金: 片側1平方フィートあたり月額₹125",
+    "subtitle": "デリー-デラドゥン高速道路シャムリのプレミアム広告塔パッケージ",
+    "title": "対応サイズと料金"
+  },
+  "warehouseContact": {
+    "address": "オフィス住所",
+    "brochure": "パンフレットをダウンロード",
+    "emails": "メール",
+    "eyebrow": "お問い合わせ",
+    "phones": "電話",
+    "title": "倉庫チームへの連絡"
   },
   "warehousePricing": {
+    "bookMessage": "{{size}}の土地区画（{{area}}）について、1平方フィートあたり₹30でお問い合わせしたいです。",
+    "bookNow": "今すぐ予約",
+    "enquire": "お問い合わせ",
     "eyebrow": "土地ポートフォリオ",
-    "title": "土地ポートフォリオと価格",
-    "subtitle": "5か所 | 合計21エーカー, シャムリ、ウッタル・プラデーシュ州",
-    "portfolioCol": "ポートフォリオ",
-    "valueCol": "値",
     "locations": "拠点数",
     "locationsValue": "5か所",
-    "total": "総土地面積",
-    "totalValue": "21エーカー",
-    "plotCol": "利用可能な区画サイズ",
+    "note": "2エーカーの土地に積み込みドック付きの近代的な倉庫を建設予定。価格は交渉可能, 詳細はお問い合わせください。",
     "plot1": "1エーカー",
     "plot2": "2エーカー",
     "plot2_5": "2.5エーカー",
     "plot5": "5エーカー",
     "plot8": "8エーカー",
-    "standardRate": "期待価格：1平方フィートあたり₹30, 交渉可能",
-    "note": "2エーカーの土地に積み込みドック付きの近代的な倉庫を建設予定。価格は交渉可能, 詳細はお問い合わせください。",
-    "enquire": "お問い合わせ",
     "plotArea1": "土地面積：1エーカー",
     "plotArea2": "土地面積：2エーカー",
     "plotArea2_5": "土地面積：2.5エーカー",
     "plotArea5": "土地面積：5エーカー",
     "plotArea8": "土地面積：8エーカー",
-    "bookMessage": "{{size}}の土地区画（{{area}}）について、1平方フィートあたり₹30でお問い合わせしたいです。",
-    "bookNow": "今すぐ予約"
-  },
-  "warehouseContact": {
-    "eyebrow": "お問い合わせ",
-    "title": "倉庫チームへの連絡",
-    "phones": "電話",
-    "emails": "メール",
-    "address": "オフィス住所",
-    "brochure": "パンフレットをダウンロード"
-  },
-  "brochure": {
-    "download": "PDFをダウンロード",
-    "headline": "北インドの中心部での戦略的用地投資",
-    "about": "プロジェクトについて",
-    "contact": "お問い合わせ",
-    "footer": "インデキシアグループ · お問い合わせは、お電話、メール、またはオフィスへお越しください。価格は参考価格で交渉可能です。",
-    "print": "印刷",
-    "advertisingHeadline": "シャムリのデリー-デラドゥン高速道路沿いのプレミアム単柱広告塔",
-    "advertisingFooter": "インデキシアグループ | 料金は空き状況により異なります。ご予約はお電話、メール、またはオフィスへ。",
-    "backWarehouse": "倉庫ページに戻る",
-    "backAdvertising": "広告ページに戻る",
-    "locationWarehouse": "シャムリ、ウッタル・プラデーシュ州",
-    "locationAdvertising": "シャムリのデリー-デラドゥン高速道路"
-  },
-  "advertisingContact": {
-    "eyebrow": "お問い合わせ",
-    "title": "今すぐスロットを予約",
-    "phones": "電話",
-    "emails": "メール",
-    "address": "オフィス住所",
-    "brochure": "パンフレットをダウンロード"
-  },
-  "aboutPage": {
-    "eyebrow": "About Us",
-    "title": "About Indexia Group",
-    "titleStart": "Building Trust ",
-    "titleAccent": "Across Industries.",
-    "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach.",
-    "storyEyebrow": "Our Story",
-    "storyTitle": "From a Shared Vision to a National Group",
-    "storyBody1": "Indexia Group was founded with a simple belief: that Indian businesses can compete globally when built on integrity, expertise, and a genuine commitment to the people they serve.",
-    "storyBody2": "Today, Indexia Group operates across three locations, Mumbai, Delhi, and Ecuador, with a team that shares a common purpose.",
-    "valuesEyebrow": "Our Values",
-    "valuesTitle": "What We Stand For",
-    "value1Title": "Integrity",
-    "value1Body": "We do what we say. Every relationship is built on honesty, transparency, and mutual respect.",
-    "value2Title": "Expertise",
-    "value2Body": "We invest in deep domain knowledge across every vertical.",
-    "value3Title": "People First",
-    "value3Body": "Business is ultimately about people. We design solutions that empower our clients.",
-    "value4Title": "Innovation",
-    "value4Body": "We embrace change and continuously improve.",
-    "stat1Label": "Companies",
-    "stat2Label": "Locations",
-    "stat3Label": "Years in Business",
-    "stat4Label": "Countries Served",
-    "timelineEyebrow": "Our Journey",
-    "timelineTitle": "Key Milestones",
-    "milestone1Title": "Founded in Mumbai",
-    "milestone1Body": "Indexia Group established its first company in Mumbai.",
-    "milestone2Title": "National Expansion",
-    "milestone2Body": "Expanded operations to Delhi NCR.",
-    "milestone3Title": "Going Global",
-    "milestone3Body": "Entered international markets with sugar exports to South America.",
-    "milestone4Title": "Diversification",
-    "milestone4Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals.",
-    "milestone5Title": "Social Impact",
-    "milestone5Body": "Founded Indexia Foundation to support Indian athletes.",
-    "ctaTitle": "Let's Build Something Together",
-    "ctaBody": "Whether you're looking for financial services or simply want to learn more about our group, we're here to help.",
-    "ctaButton": "Get in Touch",
-    "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "aboutUs": "About Us",
-    "leaderEyebrow": "Leadership",
-    "leaderTitle": "The Visionary Behind Indexia Group",
-    "founderName": "創業者兼最高経営責任者",
-    "founderRole": "Founder & Managing Director",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
-    "founderQuote": "Business is about trust. When you build on integrity, everything else follows.",
-    "companiesEyebrow": "Our Companies",
-    "companiesTitle": "Eight Businesses, One Vision",
-    "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
-    "c1Tag": "多国籍フィンテック",
-    "c1Name": "Indexia Finance",
-    "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
-    "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
-    "c2Tag": "融資部門",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
-    "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
-    "c2Highlights": "12種のローン商品,個人・法人ローン,住宅ローン・担保ローン,残高移転・運転資金",
-    "c3Tag": "グローバル輸出",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
-    "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
-    "c3Highlights": "14カ国南米,高級精製糖輸出,食品安全認証,フルサイクル輸出管理",
-    "c4Tag": "有機農業",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
-    "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
-    "c5Tag": "武装警備",
-    "c5Name": "Indexia Securities",
-    "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
-    "c5Highlights": "元軍隊コマンド,24/7運用センター,VIP・企業警護,重要インフラセキュリティ",
-    "c6Tag": "戦略的用地",
-    "c6Name": "Indexia Warehouse",
-    "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
-    "c6Highlights": "Shamli UPに21エーカー,8本の国道,5拠点,デリーから65km",
-    "c7Tag": "高速道路広告",
-    "c7Name": "Indexia Advertising",
-    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
-    "c7Highlights": "NH-709Bデリー・デーラードゥーン高速道路,10州接続,360°可視性,1+クロール日間曝光",
-    "c8Tag": "社会貢献",
-    "c8Name": "Indexia Foundation",
-    "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
-    "c8Highlights": "地域から五輪へ,トレーニングと栄養,コーチングとメンタリング,大会資金支援",
-    "visitWebsite": "Visit Website",
-    "learnMore": "Learn More",
-    "registrationEyebrow": "Registration & Compliance",
-    "registrationTitle": "Registered Entities",
-    "registrationSubtitle": "All Indexia Group companies are registered under the Companies Act, 2013 with the Ministry of Corporate Affairs, Government of India.",
-    "viewOnMCA": "View on MCA",
-    "registrationNote": "All company registrations are verifiable on the",
-    "mcaPortal": "MCA Portal",
-    "taglineSecondary": "多様な事業。統一されたビジョン。",
-    "stat1Value": "08",
-    "stat2Value": "03",
-    "stat3Value": "12+",
-    "stat4Value": "14",
-    "milestone1Year": "2012",
-    "milestone2Year": "2013",
-    "milestone3Year": "2014",
-    "milestone4Year": "2021",
-    "milestone5Year": "2024"
-  },
-  "homeReach": {
-    "eyebrow": "私たちの展開",
-    "title": "国境を越えた信頼",
-    "subtitle": "ムンバイからエクアドルまで、3大陸の顧客にサービスを提供しています。",
-    "stat1Label": "企業",
-    "stat2Label": "国",
-    "stat3Label": "強さの年数",
-    "stat4Label": "サービス顧客",
-    "cta": "詳しく見る"
-  },
-  "jsonLd": {
-    "orgName": "Indexia Group",
-    "breadcrumbHome": "ホーム",
-    "breadcrumbAbout": "会社概要",
-    "breadcrumbCompanies": "グループ企業",
-    "breadcrumbContact": "お問い合わせ",
-    "breadcrumbNews": "ニュース＆ナレッジセンター",
-    "breadcrumbCareers": "採用情報",
-    "aboutName": "Indexia Groupについて",
-    "aboutDescription": "Indexia Groupは多角的なインドの企業グループです。",
-    "contactName": "Indexia Group お問い合わせ",
-    "corporateOffice": "本社",
-    "delhiOffice": "デリー事務所",
-    "businessesName": "Indexia Group事業",
-    "businessesDescription": "Indexia Group傘下の8つの事業。",
-    "newsName": "Indexia Group, ニュース＆ナレッジセンター",
-    "careersName": "Indexia Groupの求人",
-    "companyPageName": "{{name}}, {{tag}}",
-    "companyPageDescription": "{{name}}について見る。Indexia Groupの企業。{{description}}"
-  },
-  "notFoundPage": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "backHome": "Back to Home"
-  },
-  "applyPage": {
-    "successTitle": "Application Submitted!",
-    "successBody": "Thank you for applying for the <strong>{{role}}</strong> position. Our HR team has received your application and will review it shortly.",
-    "successSentTo": "Application sent to",
-    "backToCareers": "Back to Careers",
-    "heroTitle": "Apply for",
-    "roleDetails": "Role Details",
-    "responsibilities": "Responsibilities & Requirements",
-    "infoBanner": "Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.",
-    "fullName": "Full Name",
-    "fullNamePlaceholder": "Your full name",
-    "email": "Email",
-    "phone": "Phone",
-    "phonePlaceholder": "10-digit number",
-    "experience": "Experience",
-    "selectExperience": "Select experience",
-    "fresher": "Fresher",
-    "lessThan1Year": "Less than 1 year",
-    "1to2Years": "1-2 years",
-    "2to5Years": "2-5 years",
-    "5plusYears": "5+ years",
-    "resume": "Resume",
-    "clickToUpload": "Click to upload resume",
-    "clickToReplace": "Click to replace",
-    "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
-    "tellUsAboutYourself": "Tell us about yourself",
-    "introPlaceholder": "Share your background, skills, and why you're interested in this role...",
-    "submitting": "Submitting...",
-    "submitApplication": "Submit Application",
-    "submitNote": "Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.",
-    "errorNameEmpty": "Please enter your name.",
-    "errorNameShort": "Name must be at least 2 characters.",
-    "errorNameLetters": "Name must contain letters.",
-    "errorEmailEmpty": "Please enter your email address.",
-    "errorEmailInvalid": "Please enter a valid email address.",
-    "errorPhoneEmpty": "Please enter your phone number.",
-    "errorPhoneInvalid": "Please enter a valid 10-digit phone number.",
-    "errorExperience": "Please select your experience level.",
-    "errorResume": "Please upload your resume.",
-    "errorIntroEmpty": "Please tell us about yourself.",
-    "errorIntroShort": "Please write at least 20 characters.",
-    "errorFileSize": "File size must be under 5MB.",
-    "errorFileType": "Only PDF, DOC, or DOCX files are accepted.",
-    "errorSubmit": "Could not submit your application. Please try again later."
-  },
-  "newsHero": {
-    "latestLabel": "Latest across the group",
-    "sectors": {
-      "finance": "Finance",
-      "tradeExport": "Trade & Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "advertising": "Advertising",
-      "sport": "Sport"
-    }
-  },
-  "newsVideo": {
-    "onAir": "On Air",
-    "tvCommercial": "TV Commercial"
-  },
-  "careersHero": {
-    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
-    "companiesOneGroup": "companies, one group"
-  },
-  "openRoles": {
-    "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment."
+    "plotCol": "利用可能な区画サイズ",
+    "portfolioCol": "ポートフォリオ",
+    "standardRate": "期待価格：1平方フィートあたり₹30, 交渉可能",
+    "subtitle": "5か所 | 合計21エーカー, シャムリ、ウッタル・プラデーシュ州",
+    "title": "土地ポートフォリオと価格",
+    "total": "総土地面積",
+    "totalValue": "21エーカー",
+    "valueCol": "値"
   }
 }

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { companyColor, type ArticleItem } from "./newsData";
 
 type NewsGridProps = {
@@ -7,7 +7,6 @@ type NewsGridProps = {
 };
 
 // How many cards we clone onto each end to fake an infinite loop.
-// Must be >= the max number of cards visible at once (3, on large screens).
 const CLONE_COUNT = 3;
 
 const NewsGrid = ({ latest }: NewsGridProps) => {
@@ -15,7 +14,6 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
   const firstCardRef = useRef<HTMLDivElement>(null);
 
   const n = latest.length;
-  // Too few articles to loop meaningfully — fall back to a plain static row.
   const canLoop = n > CLONE_COUNT;
 
   const slides = canLoop
@@ -44,7 +42,6 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
     setIndex((i) => i + dir);
   };
 
-  // When we drift into the cloned zone, snap instantly back into the real range.
   const handleTransitionEnd = () => {
     if (!canLoop) return;
     if (index >= n + CLONE_COUNT) {
@@ -100,7 +97,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
               <article
                 key={`${article.slug}-${i}`}
                 ref={i === 0 ? firstCardRef : undefined}
-                className="group/card relative flex h-full w-[85%] shrink-0 flex-col overflow-hidden rounded-2xl border border-white/20 bg-white/85 p-6 pl-7 shadow-lg backdrop-blur-md sm:w-[calc(50%-0.5rem)] lg:w-[calc((100%-2rem)/3)]"
+                className="group/card relative flex h-full w-[85%] shrink-0 flex-col overflow-hidden rounded-2xl border border-white/20 bg-white/85 shadow-lg backdrop-blur-md sm:w-[calc(50%-0.5rem)] lg:w-[calc((100%-2rem)/3)]"
               >
                 <span
                   aria-hidden="true"
@@ -108,27 +105,75 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                   style={{ backgroundColor: color }}
                 />
 
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color }}>
-                    {article.category}
-                  </span>
-                  {article.date && (
-                    <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-                      {article.date}
+                {/* Image */}
+                {article.image && (
+                  <div className="relative h-36 overflow-hidden">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-[1.03]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
+                )}
+
+                <div className="flex flex-1 flex-col p-6 pl-7">
+                  <div className="flex items-center justify-between gap-3">
+                    <span
+                      className="text-[10px] font-bold uppercase tracking-[0.16em]"
+                      style={{ color }}
+                    >
+                      {article.category}
                     </span>
-                  )}
-                </div>
+                    {article.date && (
+                      <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+                        {article.date}
+                      </span>
+                    )}
+                  </div>
 
-                <h3 className="font-display mt-3 text-lg font-bold leading-snug text-slate-900">
-                  {article.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">{article.excerpt}</p>
+                  <h3 className="font-display mt-3 text-lg font-bold leading-snug text-slate-900">
+                    {article.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                    {article.excerpt}
+                  </p>
 
-                <div className="mt-auto flex items-center justify-between border-t border-black/10 pt-4">
-                  <span className="text-xs font-semibold text-slate-400">{article.company}</span>
-                  <span aria-hidden="true" className="text-sm font-bold" style={{ color }}>
-                    →
-                  </span>
+                  {/* Source + Read Full Story */}
+                  <div className="mt-auto flex items-center justify-between border-t border-black/10 pt-4">
+                    <div className="flex flex-col">
+                      {article.source && (
+                        <span className="text-[10px] font-semibold text-slate-400">
+                          {article.source}
+                        </span>
+                      )}
+                      <span className="text-xs font-semibold text-slate-400">
+                        {article.company}
+                      </span>
+                    </div>
+                    {article.articleUrl ? (
+                      <a
+                        href={article.articleUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-bold transition-colors hover:underline"
+                        style={{ color }}
+                      >
+                        Read Full Story
+                        <ExternalLink size={12} />
+                      </a>
+                    ) : (
+                      <span
+                        aria-hidden="true"
+                        className="text-sm font-bold"
+                        style={{ color }}
+                      >
+                        →
+                      </span>
+                    )}
+                  </div>
                 </div>
               </article>
             );

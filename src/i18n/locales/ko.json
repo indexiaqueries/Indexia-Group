@@ -1,384 +1,870 @@
 {
-  "header": {
-    "nav": {
-      "contact": "문의하기",
-      "about": "회사 소개"
-    },
-    "menu": {
-      "home": "홈",
-      "groupCompanies": "그룹 회사",
-      "companies": "회사",
-      "contact": "문의하기"
-    },
-    "aria": {
-      "selectLanguage": "언어 선택",
-      "toggleMenu": "메뉴 열기/닫기",
-      "closeMenu": "메뉴 닫기"
-    }
+  "aboutPage": {
+    "aboutUs": "소개",
+    "c1Body": "2012년 설립된 Indexia Finance는 인도 최대의 국제 금융 회사입니다.",
+    "c1Highlights": "43+ 대출 파트너,4개 도시 5개 지점,2016 최우수 금융 회사 수상,글로벌 입지",
+    "c1Name": "Indexia Finance",
+    "c1Tag": "다국적 핀테크",
+    "c2Body": "Indexia Finserve는 Indexia Group의 전담 대출 부문입니다.",
+    "c2Highlights": "12개 대출 상품,개인 및 사업 대출,주택 담보 대출,잔액 이전 및 운전자본",
+    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Tag": "대출 부문",
+    "c3Body": "Indexia Overseas는 Indexia Group의 글로벌 수출 부문입니다.",
+    "c3Highlights": "14개 남미 국가,프리미엄 정제 설탕 수출,식품 등급 품질 인증,전체 수출 관리",
+    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Tag": "글로벌 수출",
+    "c4Body": "Indexia Agro Bio Fertilizers는 인도 농업의 혁신에 전념합니다.",
+    "c4Highlights": "100% 유기농 바이오 비료,Shamli UP 생산,토양 검사 및 농민 지원,국내 및 수출 유통",
+    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Tag": "유기농 농업",
+    "c5Body": "Indexia Securities는 프리미어 보안 솔루션 제공업체입니다.",
+    "c5Highlights": "전 군사 특수부대,24/7 작전 센터,VIP 및 기업 보호,핵심 인프라 보안",
+    "c5Name": "Indexia Securities",
+    "c5Tag": "무장 보호",
+    "c6Body": "Indexia Warehouse는 전략적 토지 임대 기회를 제공합니다.",
+    "c6Highlights": "Shamli UP 21에이커,8개 국립 고속도로,5개 위치,델리에서 65km",
+    "c6Name": "Indexia Warehouse",
+    "c6Tag": "전략적 토지",
+    "c7Body": "Indexia Advertising는 프리미엄 광고를 운영합니다.",
+    "c7Highlights": "NH-709B 델리-데흐라둔 고속도로,10개 주 연결,360° 가시성,1+ 크로어 일일 노출",
+    "c7Name": "Indexia Advertising",
+    "c7Tag": "고속도로 광고",
+    "c8Body": "Indexia Foundation은 Indexia Group의 사회적 영향 부문입니다.",
+    "c8Highlights": " grassroots에서 올림픽까지,훈련 및 영양,코칭 및 멘토링,대회 자금 지원",
+    "c8Name": "Indexia Foundation",
+    "c8Tag": "사회적 영향",
+    "companiesEyebrow": "회사 소개",
+    "companiesSubtitle": "뭄바이의 단일 금융 서비스 회사에서 8개 사업을 아우르는 다양한 그룹으로 성장.",
+    "companiesTitle": "여덟 개의 사업, 하나의 비전",
+    "ctaBody": "금융 서비스를 찾으시든, 파트너십을 탐구하시든, 더 알아보시든, 우리는 여기 있습니다.",
+    "ctaButton": "문의하기",
+    "ctaTitle": "함께 무언가를 만들어 봅시다",
+    "eyebrow": "소개",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderName": "창립자 겸 대표이사",
+    "founderQuote": "사업은 신뢰에 기반합니다. 진정성으로 구축하면 나머지는 자연히 따라옵니다.",
+    "founderRole": "설립자 겸 대표이사",
+    "leaderEyebrow": "리더십",
+    "leaderTitle": "Indexia Group를 이끄는 비전가",
+    "learnMore": "더 알아보기",
+    "mcaPortal": "MCA 포털",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
+    "milestone1Body": "Indexia Group이 뭄바이에 첫 회사를 설립했습니다.",
+    "milestone1Title": "뭄바이 설립",
+    "milestone1Year": "2012",
+    "milestone2Body": "델리 NCR로 운영을 확장했습니다.",
+    "milestone2Title": "국내 확장",
+    "milestone2Year": "2015",
+    "milestone3Body": "남미 설탕 수출로 국제 시장에 진출했습니다.",
+    "milestone3Title": "글로벌 진출",
+    "milestone3Year": "2018",
+    "milestone4Body": "Agro Bio, Securities, Warehouse, Advertising를 출범시켰습니다.",
+    "milestone4Title": "다각화",
+    "milestone4Year": "2021",
+    "milestone5Body": "인도 선수 지원을 위한 Indexia Foundation을 설립했습니다.",
+    "milestone5Title": "사회적 영향",
+    "milestone5Year": "2024",
+    "registrationEyebrow": "등록 및 컴플라이언스",
+    "registrationNote": "모든 등록은 다음에서 확인 가능합니다",
+    "registrationSubtitle": "모든 Indexia Group 회사는 2013년 회사법에 따라 등록되어 있습니다.",
+    "registrationTitle": "등록된 법인",
+    "stat1Label": "회사",
+    "stat1Value": "08",
+    "stat2Label": "지사",
+    "stat2Value": "03",
+    "stat3Label": "경영 연수",
+    "stat3Value": "12+",
+    "stat4Label": "서비스 국가",
+    "stat4Value": "14",
+    "storyBody1": "Indexia Group은 인도 기업들이 글로벌 경쟁을 할 수 있다는 단순한 신념으로 설립되었습니다.",
+    "storyBody2": "오늘날 Indexia Group은 뭄바이, 델리, 에콰도르 3곳에서 운영됩니다.",
+    "storyEyebrow": "우리의 이야기",
+    "storyTitle": "공유된 비전에서 국가적 그룹으로",
+    "subtitle": "무결성, 전문성 및 사람 중심 접근 방식을 실천하는 다양한 인도 기업 그룹.",
+    "taglineSecondary": "다양한 사업. 통합된 비전.",
+    "timelineEyebrow": "우리의 여정",
+    "timelineTitle": "주요 이정표",
+    "title": "Indexia Group 소개",
+    "titleAccent": "각 산업 전반에 걸쳐.",
+    "titleStart": "신뢰 구축 ",
+    "value1Body": "우리는 말한 것을 실행합니다.",
+    "value1Title": "진정성",
+    "value2Body": "우리는 심도 있는 도메인 지식에 투자합니다.",
+    "value2Title": "전문성",
+    "value3Body": "사업은 결국 사람에 관한 것입니다.",
+    "value3Title": "사람이 먼저",
+    "value4Body": "우리는 변화를 수용하고 지속적으로 개선합니다.",
+    "value4Title": "혁신",
+    "valuesEyebrow": "우리의 가치",
+    "valuesTitle": "우리가 지키는 것",
+    "viewOnMCA": "MCA에서 보기",
+    "visitWebsite": "웹사이트 방문"
   },
-  "hero": {
-    "p0": {
-      "tag": "Indexia Group",
-      "heading": "하나의 그룹.\n다양한 솔루션.",
-      "tagline": "다양한 사업. 통합된 비전.",
-      "sub": "금융과 물류에서 농업과 광고까지, Indexia Group은 신뢰받는 미래 지향적 비즈니스로 다양한 산업의 성장을 이끕니다.",
-      "motto": "국가를 위한 몇 가지 발걸음"
-    },
-    "p1": {
-      "tag": "Indexia Finance",
-      "heading": "모든 대출의\n완전한 목적지.",
-      "sub": "모든 종류의 대출은 www.indexiafinance.com 포털에서 신청하실 수 있습니다. 우리는 전 세계에서 서비스를 제공하며, 인도에서는 43개 은행 및 NBFC와 비즈니스 파트너 관계를 맺고 있습니다."
-    },
-    "p2": {
-      "tag": "Indexia Finserve Pvt. Ltd.",
-      "heading": "차세대\n금융 방식.",
-      "sub": "이제 올바른 은행이 당신의 문 앞에 찾아옵니다."
-    },
-    "p3": {
-      "tag": "Indexia Overseas Pvt. Ltd.",
-      "heading": "정제 설탕과\n모든 식품.",
-      "sub": "우리는 정제 설탕과 모든 식품을 거래하고 수출합니다."
-    },
-    "p4": {
-      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-      "heading": "유기농 비료\n생산 및 수출",
-      "sub": "우리는 인도에서 유기농 비료를 생산하여 전 세계로 수출합니다."
-    },
-    "p5": {
-      "tag": "Indexia Securities",
-      "heading": "무장 코만도 &\n무장 보안",
-      "sub": "정치인과 대기업 경영진의 안전을 지킵니다."
-    },
-    "p6": {
-      "tag": "Indexia Warehouse",
-      "heading": "규모에 맞춰\n지어진 물류창고.",
-      "sub": "상품이 효율적으로 이동하도록 돕는 현대적인 물류창고 및 물류 인프라."
-    },
-    "p7": {
-      "tag": "Indexia Advertising",
-      "heading": "모든 고속도로에\n당신의 브랜드를.",
-      "sub": "고속도로 주변의 다양한 광고 매체로 브랜드에 높은 가시성 캠페인을 제공합니다."
-    },
-    "p8": {
-      "tag": "Indexia Foundation",
-      "heading": "선수들의\n힘을 키우다.",
-      "sub": "선수들을 훈련, 멘토링, 지원하여 최고의 기량에 도달하도록 돕는 스포츠 프로그램."
-    },
-    "ctaExploreGroup": "그룹 회사 살펴보기",
-    "ctaExploreMore": "더 알아보기",
-    "prevPanel": "이전 패널",
-    "nextPanel": "다음 패널"
+  "advertisingContact": {
+    "address": "사무실 주소",
+    "brochure": "브로셔 다운로드",
+    "emails": "이메일",
+    "eyebrow": "문의",
+    "phones": "전화",
+    "title": "지금 슬롯 예약하기"
   },
-  "footer": {
-    "tagline": "다각화된 인도 비즈니스 그룹",
-    "blurb": "하나의 다각화된 인도 그룹 아래 여덟 개의 신뢰받는 비즈니스, 금융, 수출, 농업, 물류, 보안, 광고, 선수 지원, 정직함과 성과를 바탕으로 성장해 왔습니다.",
-    "contactUs": "문의하기",
-    "hours": "월 - 토: 오전 9시 - 오후 6시",
-    "company": "회사",
-    "resources": "자료실",
-    "legal": "법적 고지",
-    "links": {
-      "groupCompanies": "그룹 회사",
-      "advertise": "광고 문의",
-      "careers": "채용",
-      "news": "뉴스 & 지식 센터",
-      "globalResearch": "글로벌 리서치",
-      "securityTips": "보안 팁",
-      "termsOfUse": "이용 약관",
-      "termsConditions": "서비스 약관",
-      "privacyPolicy": "개인정보 처리방침",
-      "aboutUs": "회사 소개"
-    },
-    "cta": "그룹 회사에 대해 궁금한 점이 있으신가요?",
-    "enquiry": "문의를 보내주세요.",
-    "stats": "Indexia Group · 08개 회사 · 03개 도시",
-    "rights": "© 2026 Indexia Group. 모든 권리 보유.",
-    "backToTop": "맨 위로",
-    "taglineSecondary": "다양한 사업. 통합된 비전."
-  },
-  "home": {
-    "groupCompanies": {
-      "title": "그룹 회사",
-      "description": "Indexia Group은 금융, 수출, 농업, 물류창고, 보안, 사회공헌, 광고에 걸친 다각화된 지주회사입니다. 우리는 고객, 파트너, 지역사회가 자신 있게 성장할 수 있도록 돕는 비즈니스를 구축합니다."
-    }
-  },
-  "businesses": {
-    "eyebrow": "그룹 회사",
-    "titleStart": "여덟 개 회사, ",
-    "titleAccent": "하나의 그룹",
-    "subtitle": "회사를 선택하여 해당 페이지를 방문한 뒤, 올바른 팀에 문의를 보내세요."
-  },
-  "businessesHero": {
-    "eyebrow": "Indexia의 차별점",
-    "titleStart": "하나의 그룹. 여덟 개의 사업. ",
-    "titleAccent": "하나의 약속.",
-    "paragraph": "금융과 자문에서 수출, 농업, 물류, 보안, 스포츠, 미디어까지, 모든 Indexia 비즈니스는 같은 기반 위에 세워졌습니다: 정직함, 전문성, 사람 중심의 접근. 필요한 것이 무엇이든, 올바른 팀은 이미 가족의 일부입니다.",
-    "counterClients": "서비스 고객",
-    "counterBusinesses": "사업체",
-    "counterLocations": "도시",
-    "counterYears": "업력",
-    "cta": "무료 상담 예약 →"
-  },
-  "contactHero": {
-    "eyebrow": "Indexia에 문의",
-    "title": "우리 팀과의 직접 연결",
-    "paragraph": "서류 문의부터 신규 대출 문의까지, 모든 메시지는 대기열이 아닌 우리 팀 구성원이 직접 검토하고 답변합니다.",
-    "sendEnquiry": "문의 보내기",
-    "callNow": "지금 전화 · 86551 68551",
-    "offices": "사무실 {{count}}곳",
-    "directLines": "직통 {{count}}개",
-    "reply": "평균 답변 < 24시간"
-  },
-  "contactInfo": {
-    "eyebrow": "문의 보내기",
-    "headlineStart": "",
-    "headlineAccent": "Indexia 회사에 대해 문의",
-    "paragraph": "서비스에 대한 질문, 비즈니스 상담, 파트너십 모색 등 무엇이든 우리 팀이 도와드릴 준비가 되어 있습니다, 24시간 이내에 답변해 드립니다.",
-    "enquiries": "문의",
-    "location": "위치",
-    "workingHours": "근무 시간",
-    "phoneNumbers": "전화번호",
-    "country": "인도"
-  },
-  "form": {
-    "eyebrow": "문의 보내기",
-    "intro": "아래 양식을 작성하시면 문의 사항이 우리 팀에 전달됩니다.",
-    "name": "이름",
-    "namePlaceholder": "성함을 입력하세요",
-    "email": "이메일 주소",
-    "emailPlaceholder": "you@example.com",
-    "phone": "전화번호",
-    "phonePlaceholder": "10자리 숫자",
-    "subject": "주제 / 회사",
-    "subjectPlaceholder": "회사를 선택하세요…",
-    "message": "메시지",
-    "messagePlaceholder": "문의 내용을 입력하세요...",
-    "submit": "문의 보내기",
-    "sending": "보내는 중…",
-    "success": "문의가 전송되었습니다! 곧 팀이 연락드리겠습니다.",
-    "errorName": "이름을 입력해 주세요.",
-    "errorNameLetters": "이름에는 문자가 포함되어야 합니다.",
-    "errorPhone": "올바른 10자리 전화번호를 입력하세요.",
-    "errorEmail": "올바른 이메일 주소를 입력하세요.",
-    "errorSubject": "주제 또는 회사를 선택해 주세요.",
-    "errorMessage": "메시지를 입력해 주세요.",
-    "errorGeneric": "문제가 발생했습니다. 나중에 다시 시도해 주세요.",
-    "generalEnquiry": "일반 문의"
-  },
-  "companyDetail": {
-    "backAll": "전체 회사",
-    "register": "등록 번호 {{no}} / 08",
-    "keyEntries": "주요 항목",
-    "servicesTitle": "이 항목의 서비스",
-    "registerOf": "Indexia Group · 회사 등록부",
-    "entryOf": "항목 {{no}} / 08",
-    "eyebrow": "문의 보내기",
-    "enquireTitle": "{{name}} 문의",
-    "enquireSub": "문의 상단에 {{name}} 이름이 명시되어 올바른 팀이 먼저 확인합니다.",
-    "responseTime": "응답 시간",
-    "responseValue": "24시간 이내, 월 – 토",
-    "overviewEyebrow": "개요",
-    "overviewTitle": "{{name}} 소개",
-    "exploreServices": "서비스 살펴보기",
-    "statServices": "서비스",
-    "statHighlights": "주요 특징",
-    "statRegister": "등록 항목",
-    "mainPoint": "핵심 포인트",
-    "whyChoose": "선택하는 이유",
-    "whyChooseDesc": "이 회사를 다른 회사와 구별하는 점.",
-    "keyNumbers": "핵심 수치",
-    "keyNumbersDesc": "우리의 영향력을 정의하는 수치.",
-    "globalReach": "글로벌 도달",
-    "globalReachDesc": "국경과 시장을 넘나드는 우리의 존재."
-  },
-  "contact": {
-    "locationsTitleStart": "우리의 ",
-    "locationsTitleAccent": "위치"
-  },
-  "businessCard": {
-    "tapToView": "탭하여 보기",
-    "readMore": "더 보기"
-  },
-  "companyLinkCard": {
-    "visitPage": "페이지 방문",
-    "visitWebsiteAria": "{{name}} 웹사이트 방문",
-    "visitPageAria": "{{name}} 페이지 방문",
-    "visualAlt": "{{name}} 이미지"
-  },
-  "newsPage": {
-    "eyebrow": "뉴스 & 지식 센터",
-    "title": "뉴스 & 지식 센터",
-    "titleStart": "그룹 전반의 ",
-    "titleAccent": "이야기와 인사이트.",
-    "subtitle": "최신 은행 뉴스, 자금 조달 업데이트, 디지털 결제, 정책 변화, 시장 동향, 그리고 우리 비즈니스의 실용적인 가이드.",
-    "tvEyebrow": "TV에서 만나보세요",
-    "tvHeadingStart": "모든 대출 요구를 위해",
-    "tvHeadingAccent": "Indexia Finance",
-    "tvCaption": "대출이 필요하다면… Indexia Finance",
-    "featuredLabel": "주요 기사",
-    "readMore": "더 보기",
-    "askUs": "문의하기",
-    "knowledgeEyebrow": "지식 센터",
-    "knowledgeHeading": "우리 비즈니스의 실용 가이드",
-    "knowledgeSubtitle": "매일 이 일을 하는 팀이 직접 쓴 이해하기 쉬운 설명서.",
-    "ctaTitle": "우리 비즈니스에 대해 궁금한 점이 있으신가요?",
-    "ctaBody": "FDI 자문에서 유기농 농업, 무장 보안까지, 적합한 Indexia 회사가 도와드릴 준비가 되어 있습니다. 문의를 보내주시면 연결해 드리겠습니다.",
-    "ctaButton": "문의 보내기",
-    "metaDescription": "뉴스 & 지식 센터, 자금 조달, 디지털 결제, 정책에 관한 최신 은행 뉴스와 Indexia Group의 실용 지식 가이드."
-  },
-  "careersPage": {
-    "eyebrow": "채용",
-    "title": "Indexia Group에서의 커리어",
-    "titleStart": "우리와 함께 ",
-    "titleAccent": "커리어를 쌓으세요.",
-    "subtitle": "Indexia Group은 학습하는 조직입니다, 그리고 그 기업 문화가 곧 팀입니다.",
-    "ctaButton": "채용 공고 보기",
-    "cultureEyebrow": "우리의 문화",
-    "cultureHeading": "학습하는 조직",
-    "rolesEyebrow": "채용 중",
-    "rolesHeading": "현재 채용 공고",
-    "rolesSubtitle": "현재 채용 중인 직무는 다음과 같습니다:",
-    "apply": "지원하기",
-    "ctaTitle": "이력서를 보내주세요",
-    "ctaBody": "우리는 항상 훌륭한 인재를 찾고 있습니다. 이력서를 hr@indexiafinance.com으로 보내주시면 연락드리겠습니다.",
-    "metaDescription": "Indexia Group 채용, 뭄바이의 Indexia Finserve에 채용 공고가 있는 학습 조직. 이력서를 보내 커리어를 시작하세요.",
-    "mailResume": "이력서를 보내주세요 –"
-  },
-  "legal": {
-    "eyebrow": "법적 고지",
-    "privacyTitle": "개인정보 처리방침",
-    "privacySubtitle": "Indexia Group이 개인정보를 수집, 사용, 보호하는 방법.",
-    "termsTitle": "서비스 약관",
-    "termsSubtitle": "Indexia Group 웹사이트와 회사 서비스 이용에 적용되는 약관.",
-    "termsOfUseTitle": "이용 약관",
-    "termsOfUseSubtitle": "Indexia Group 웹사이트와 회사 웹사이트 접속 및 이용 규칙.",
-    "lastUpdated": "최종 업데이트",
-    "backHome": "홈으로 돌아가기",
-    "contactUs": "문의하기",
-    "contactHeading": "이 정책에 대해 궁금한 점이 있으신가요?",
-    "contactBody": "contactus@indexiagroup.com으로 연락하거나 문의를 보내주시면 팀이 답변드리겠습니다.",
-    "sendEnquiry": "문의 보내기",
-    "metaPrivacyDescription": "Indexia Group의 개인정보 처리방침, 개인정보 수집, 사용, 보관, 보호 방법을 확인하세요.",
-    "metaTermsDescription": "Indexia Group 웹사이트와 회사 서비스 이용에 적용되는 약관을 확인하세요.",
-    "metaTermsOfUseDescription": "Indexia Group 웹사이트와 회사 웹사이트 접속 및 이용 규칙을 확인하세요."
-  },
-  "globalResearchPage": {
-    "eyebrow": "글로벌 리서치",
-    "title": "Indexia Group 글로벌 리서치",
-    "titleStart": "글로벌 금융 리서치 ",
-    "titleAccent": "& 자료.",
-    "subtitle": "거시경제, 채권, 외환, 원자재 분야의 통찰력 있는 분석과 날카로운 시각, 아시아, 아프리카, 중동 전역의 현장 기반 인사이트 위에 구축되었습니다.",
-    "ctaButton": "리서치 범위 살펴보기",
-    "areasEyebrow": "리서치 범위",
-    "areasHeading": "다양한 분야의 글로벌 리서치",
-    "areasSubtitle": "전체 커버리지에 걸친 통찰력 있는 관련 분석.",
-    "reportsEyebrow": "발간물",
-    "reportsHeading": "리서치 공유 방식",
-    "reportsSubtitle": "정기 프레젠테이션과 고품질 발간물, 현장 분석 OTG, 실행 가능한 시장 아이디어 ACT, 그리고 세계적으로 중요한 주제의 특별 보고서.",
-    "ctaTitle": "리서치 이용하기",
-    "ctaBody": "자세한 내용과 리서치 수령을 원하시면 글로벌 리서치 포털을 방문하세요. 이용을 원하시면 담당 매니저에게 문의해 주세요.",
-    "metaDescription": "Indexia Group 글로벌 리서치, 거시경제, 채권, 외환, 원자재 분야의 통찰력 있는 분석, 아시아, 아프리카, 중동의 현장 인사이트를 바탕으로.",
-    "reportFormat": "발간물"
-  },
-  "securityTipsPage": {
-    "eyebrow": "보안 팁",
-    "title": "Indexia Group의 보안 팁",
-    "titleStart": "사기보다 ",
-    "titleAccent": "한발 앞서.",
-    "subtitle": "어디에서든 온라인으로 안심하고 자금을 관리할 수 있습니다.",
-    "ctaButton": "내 정보 보호하기",
-    "featuresEyebrow": "우리가 하는 일",
-    "featuresHeading": "온라인 안전 지키기",
-    "featuresSubtitle": "온라인 뱅킹 시 계정을 보호하기 위해 우리가 하는 일을 알아보세요.",
-    "practicesEyebrow": "당신이 할 수 있는 일",
-    "practicesHeading": "내 정보 보호하기",
-    "practicesSubtitle": "우리는 온라인 뱅킹 시 계정을 보호하기 위해 매일 노력합니다. 일상 기기에서 안전을 지키기 위한 몇 가지 간단한 방법도 있습니다.",
-    "contactsEyebrow": "도움이 필요하신가요?",
-    "contactsHeading": "우리와 상담이 필요하신가요?",
-    "contactsSubtitle": "의심스러운 상대에게 계정 정보를 유출했거나 사기를 당했을 가능성이 있다면, 즉시 고객 서비스 핫라인으로 연락하세요.",
-    "ctaTitle": "수상한 점을 발견하셨나요?",
-    "ctaBody": "문의 양식으로 신고하거나 관련 Indexia Group 회사에 직접 연락하세요.",
-    "metaDescription": "Indexia Group 보안 팁, 온라인 계정 보호 방법, 기기에서 할 수 있는 일, 문제 발생 시 연락처."
-  },
-  "common": {
-    "logoAlt": "Indexia Group 로고",
-    "homeAria": "Indexia Group 홈",
-    "languages": {
-      "en": "English",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch",
-      "it": "Italiano",
-      "pt": "Português",
-      "hi": "हिन्दी",
-      "ar": "العربية",
-      "zh": "中文",
-      "ja": "日本語",
-      "ru": "Русский",
-      "ko": "한국어",
-      "id": "Bahasa Indonesia",
-      "tr": "Türkçe",
-      "vi": "Tiếng Việt",
-      "nl": "Nederlands",
-      "pl": "Polski",
-      "th": "ไทย",
-      "sv": "Svenska",
-      "uk": "Українська",
-      "el": "Ελληνικά",
-      "he": "עברית"
-    }
-  },
-  "seo": {
-    "homeTitle": "금융 서비스, 대출, 수출 & 물류",
-    "homeDescription": "다각화된 인도 비즈니스 그룹: 금융 서비스, NBFC 대출, 글로벌 수출, 농업 비료, 물류창고, 보안. 뭄바이, 델리, 에콰도르 사무소.",
-    "businessesTitle": "그룹 회사, 금융, 농업, 수출 & 물류",
-    "businessesDescription": "Indexia Group의 여덟 가지 사업: 금융, 대출, 보안, 설탕 수출, 유기농 비료, 물류창고, 광고, 선수 지원.",
-    "contactTitle": "문의하기, 뭄바이 & 델리 사무소",
-    "contactDescription": "금융 서비스, 대출, 수출, 농업, 물류 문의를 위해 Indexia Group에 연락하세요. 뭄바이, 델리, 에콰도르 사무소, 24시간 이내 답변."
+  "applyPage": {
+    "1to2Years": "1-2년",
+    "2to5Years": "2-5년",
+    "5plusYears": "5년 이상",
+    "backToCareers": "채용으로 돌아가기",
+    "clickToReplace": "변경하려면 클릭",
+    "clickToUpload": "이력서 업로드",
+    "email": "이메일",
+    "errorEmailEmpty": "이메일을 입력해주세요.",
+    "errorEmailInvalid": "유효한 이메일을 입력해주세요.",
+    "errorExperience": "경력 수준을 선택해주세요.",
+    "errorFileSize": "파일 크기는 5MB 이하여야 합니다.",
+    "errorFileType": "PDF, DOC 또는 DOCX 파일만 허용됩니다.",
+    "errorIntroEmpty": "자기소개를 작성해주세요.",
+    "errorIntroShort": "최소 20자 이상 작성해주세요.",
+    "errorNameEmpty": "이름을 입력해주세요.",
+    "errorNameLetters": "이름에 문자가 포함되어야 합니다.",
+    "errorNameShort": "이름은 2자 이상이어야 합니다.",
+    "errorPhoneEmpty": "전화번호를 입력해주세요.",
+    "errorPhoneInvalid": "유효한 10자리 전화번호를 입력해주세요.",
+    "errorResume": "이력서를 업로드해주세요.",
+    "errorSubmit": "지원서를 제출할 수 없습니다. 나중에 다시 시도해주세요.",
+    "experience": "경력",
+    "fresher": "신입",
+    "fullName": "성명",
+    "fullNamePlaceholder": "이름을 입력하세요",
+    "heroTitle": "지원하기",
+    "infoBanner": "아래 양식을 작성하시면 인사팀에 직접 전달됩니다.",
+    "introPlaceholder": "배경, 기술, 이 직무에 관심을 갖게 된 이유를 공유해주세요...",
+    "lessThan1Year": "1년 미만",
+    "phone": "전화",
+    "phonePlaceholder": "10자리 번호",
+    "responsibilities": "책임 및 요구 사항",
+    "resume": "이력서",
+    "resumeFormats": "PDF, DOC 또는 DOCX (최대 5MB)",
+    "roleDetails": "직위 상세",
+    "selectExperience": "경력 선택",
+    "submitApplication": "지원서 제출",
+    "submitNote": "지원서는 hr@indexiafinance.com과 hr.indexia@gmail.com으로 전송됩니다.",
+    "submitting": "제출 중...",
+    "successBody": "<strong>{{role}}</strong> 직무에 지원해 주셔서 감사합니다. 인사팀이 지원서를 접수했습니다.",
+    "successSentTo": "지원서 전송 완료",
+    "successTitle": "지원 완료!",
+    "tellUsAboutYourself": "자기소개"
   },
   "branches": {
     "corporateOffice": "본사",
-    "mumbaiOffice": "뭄바이 사무소",
     "delhiOffice": "델리 사무소",
-    "internationalOffice": "국제 사무소"
+    "internationalOffice": "국제 사무소",
+    "mumbaiOffice": "뭄바이 사무소"
   },
-  "phoneLabel": {
-    "landline": "유선",
-    "mobile": "휴대폰",
-    "mob": "휴대",
-    "tel": "유선"
+  "brochure": {
+    "about": "프로젝트 소개",
+    "advertisingFooter": "Indexia Group | 요금은 공급 상황에 따라 달라질 수 있습니다. 예약 문의는 전화, 이메일 또는 사무실 방문.",
+    "advertisingHeadline": "샴리 델리–데라둔 고속도로의 프리미엄 유니폴 옥외광고",
+    "backAdvertising": "광고로 돌아가기",
+    "backWarehouse": "물류창고로 돌아가기",
+    "contact": "문의하기",
+    "download": "PDF 다운로드",
+    "footer": "Indexia Group · 문의는 전화, 이메일, 또는 사무실 방문. 가격은 참고용이며 협상 가능합니다.",
+    "headline": "북인도 중심부의 전략적 토지 투자",
+    "locationAdvertising": "델리-데라둔 고속도로, 샴리",
+    "locationWarehouse": "샴리, 우타르프라데시",
+    "print": "인쇄"
   },
-  "unipolePricing": {
-    "eyebrow": "유니폴 패키지",
-    "title": "이용 가능한 크기 및 요금",
-    "subtitle": "샴리, 델리–데라둔 고속도로의 프리미엄 유니폴 패키지",
-    "sizeCol": "크기",
-    "areaCol": "제곱피트",
-    "rateCol": "월 요금",
-    "sizeSmall": "10 × 20피트",
-    "areaSmall": "200제곱피트",
-    "rateSmall": "₹25,000",
-    "sizeLarge": "12 × 24피트",
-    "areaLarge": "288제곱피트",
-    "rateLarge": "₹36,000",
-    "standardRate": "기준 요금: 1개월 1면 ₹125/제곱피트",
-    "note": "* 요금은 공급 상황에 따라 달라질 수 있습니다. 장기 패키지는 문의하세요.",
-    "bookNow": "지금 예약",
-    "bookSize": "이 크기 예약",
-    "bookMessage": "{{size}} 유니폴({{area}})을 월 {{rate}}로 예약하고 싶습니다."
+  "businessCard": {
+    "readMore": "더 보기",
+    "tapToView": "탭하여 보기"
+  },
+  "businesses": {
+    "eyebrow": "그룹 회사",
+    "subtitle": "회사를 선택하여 해당 페이지를 방문한 뒤, 올바른 팀에 문의를 보내세요.",
+    "titleAccent": "하나의 그룹",
+    "titleStart": "여덟 개 회사, "
+  },
+  "businessesHero": {
+    "counterBusinesses": "사업체",
+    "counterClients": "서비스 고객",
+    "counterLocations": "도시",
+    "counterYears": "업력",
+    "cta": "무료 상담 예약 →",
+    "eyebrow": "Indexia의 차별점",
+    "paragraph": "금융과 자문에서 수출, 농업, 물류, 보안, 스포츠, 미디어까지, 모든 Indexia 비즈니스는 같은 기반 위에 세워졌습니다: 정직함, 전문성, 사람 중심의 접근. 필요한 것이 무엇이든, 올바른 팀은 이미 가족의 일부입니다.",
+    "titleAccent": "하나의 약속.",
+    "titleStart": "하나의 그룹. 여덟 개의 사업. "
+  },
+  "careersHero": {
+    "companiesOneGroup": "개 회사, 하나의 그룹",
+    "description": "여덟 개의 회사. 하나의 팀. 금융, 수출, 농업, 보안, 광고, 선수 육성 분야에서 커리어를 쌓으세요."
+  },
+  "careersPage": {
+    "apply": "지원하기",
+    "ctaBody": "우리는 항상 훌륭한 인재를 찾고 있습니다. 이력서를 hr@indexiafinance.com으로 보내주시면 연락드리겠습니다.",
+    "ctaButton": "채용 공고 보기",
+    "ctaTitle": "이력서를 보내주세요",
+    "cultureEyebrow": "우리의 문화",
+    "cultureHeading": "학습하는 조직",
+    "eyebrow": "채용",
+    "mailResume": "이력서를 보내주세요 –",
+    "metaDescription": "Indexia Group 채용, 뭄바이의 Indexia Finserve에 채용 공고가 있는 학습 조직. 이력서를 보내 커리어를 시작하세요.",
+    "rolesEyebrow": "채용 중",
+    "rolesHeading": "현재 채용 공고",
+    "rolesSubtitle": "현재 채용 중인 직무는 다음과 같습니다:",
+    "subtitle": "Indexia Group은 학습하는 조직입니다, 그리고 그 기업 문화가 곧 팀입니다.",
+    "title": "Indexia Group에서의 커리어",
+    "titleAccent": "커리어를 쌓으세요.",
+    "titleStart": "우리와 함께 "
+  },
+  "common": {
+    "homeAria": "Indexia Group 홈",
+    "languages": {
+      "ar": "العربية",
+      "de": "Deutsch",
+      "el": "Ελληνικά",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "he": "עברית",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ja": "日本語",
+      "ko": "한국어",
+      "nl": "Nederlands",
+      "pl": "Polski",
+      "pt": "Português",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "th": "ไทย",
+      "tr": "Türkçe",
+      "uk": "Українська",
+      "vi": "Tiếng Việt",
+      "zh": "中文"
+    },
+    "logoAlt": "Indexia Group 로고"
+  },
+  "companyDetail": {
+    "backAll": "전체 회사",
+    "enquireSub": "문의 상단에 {{name}} 이름이 명시되어 올바른 팀이 먼저 확인합니다.",
+    "enquireTitle": "{{name}} 문의",
+    "entryOf": "항목 {{no}} / 08",
+    "exploreServices": "서비스 살펴보기",
+    "eyebrow": "문의 보내기",
+    "globalReach": "글로벌 도달",
+    "globalReachDesc": "국경과 시장을 넘나드는 우리의 존재.",
+    "keyEntries": "주요 항목",
+    "keyNumbers": "핵심 수치",
+    "keyNumbersDesc": "우리의 영향력을 정의하는 수치.",
+    "mainPoint": "핵심 포인트",
+    "overviewEyebrow": "개요",
+    "overviewTitle": "{{name}} 소개",
+    "register": "등록 번호 {{no}} / 08",
+    "registerOf": "Indexia Group · 회사 등록부",
+    "responseTime": "응답 시간",
+    "responseValue": "24시간 이내, 월 – 토",
+    "servicesTitle": "이 항목의 서비스",
+    "statHighlights": "주요 특징",
+    "statRegister": "등록 항목",
+    "statServices": "서비스",
+    "whyChoose": "선택하는 이유",
+    "whyChooseDesc": "이 회사를 다른 회사와 구별하는 점."
+  },
+  "companyLinkCard": {
+    "visitPage": "페이지 방문",
+    "visitPageAria": "{{name}} 페이지 방문",
+    "visitWebsiteAria": "{{name}} 웹사이트 방문",
+    "visualAlt": "{{name}} 비주얼"
+  },
+  "contact": {
+    "locationsTitleAccent": "위치",
+    "locationsTitleStart": "우리의 "
+  },
+  "contactHero": {
+    "callNow": "지금 전화 · 86551 68551",
+    "directLines": "직통 {{count}}개",
+    "eyebrow": "Indexia에 문의",
+    "offices": "사무실 {{count}}곳",
+    "paragraph": "서류 문의부터 신규 대출 문의까지, 모든 메시지는 대기열이 아닌 우리 팀 구성원이 직접 검토하고 답변합니다.",
+    "reply": "평균 답변 < 24시간",
+    "sendEnquiry": "문의 보내기",
+    "title": "우리 팀과의 직접 연결"
+  },
+  "contactInfo": {
+    "country": "인도",
+    "enquiries": "문의",
+    "eyebrow": "문의 보내기",
+    "headlineAccent": "Indexia 회사에 대해 문의",
+    "headlineStart": "",
+    "location": "위치",
+    "paragraph": "서비스에 대한 질문, 비즈니스 상담, 파트너십 모색 등 무엇이든 우리 팀이 도와드릴 준비가 되어 있습니다, 24시간 이내에 답변해 드립니다.",
+    "phoneNumbers": "전화번호",
+    "workingHours": "근무 시간"
+  },
+  "footer": {
+    "backToTop": "맨 위로",
+    "blurb": "하나의 다각화된 인도 그룹 아래 여덟 개의 신뢰받는 비즈니스, 금융, 수출, 농업, 물류, 보안, 광고, 선수 지원, 정직함과 성과를 바탕으로 성장해 왔습니다.",
+    "company": "회사",
+    "contactUs": "문의하기",
+    "cta": "그룹 회사에 대해 궁금한 점이 있으신가요?",
+    "enquiry": "문의를 보내주세요.",
+    "hours": "월 - 토: 오전 9시 - 오후 6시",
+    "legal": "법적 정보",
+    "links": {
+      "aboutUs": "소개",
+      "advertise": "광고 문의",
+      "careers": "채용",
+      "globalResearch": "글로벌 리서치",
+      "groupCompanies": "그룹 회사",
+      "news": "뉴스 & 지식 센터",
+      "privacyPolicy": "개인정보 처리방침",
+      "securityTips": "보안 팁",
+      "termsConditions": "서비스 약관",
+      "termsOfUse": "이용 약관"
+    },
+    "resources": "자료실",
+    "rights": "© 2026 Indexia Group. 모든 권리 보유.",
+    "stats": "Indexia Group · 08개 회사 · 03개 도시",
+    "tagline": "다각화된 인도 비즈니스 그룹",
+    "taglineSecondary": "다양한 사업. 통합된 비전."
+  },
+  "form": {
+    "email": "이메일 주소",
+    "emailPlaceholder": "you@example.com",
+    "errorEmail": "올바른 이메일 주소를 입력하세요.",
+    "errorGeneric": "문제가 발생했습니다. 나중에 다시 시도해 주세요.",
+    "errorMessage": "메시지를 입력해 주세요.",
+    "errorName": "이름을 입력해 주세요.",
+    "errorNameLetters": "이름에는 문자가 포함되어야 합니다.",
+    "errorPhone": "올바른 10자리 전화번호를 입력하세요.",
+    "errorSubject": "주제 또는 회사를 선택해 주세요.",
+    "eyebrow": "문의 보내기",
+    "generalEnquiry": "일반 문의",
+    "intro": "아래 양식을 작성하시면 문의 사항이 우리 팀에 전달됩니다.",
+    "message": "메시지",
+    "messagePlaceholder": "문의 내용을 입력하세요...",
+    "name": "이름",
+    "namePlaceholder": "성함을 입력하세요",
+    "phone": "전화번호",
+    "phonePlaceholder": "10자리 숫자",
+    "sending": "보내는 중…",
+    "subject": "주제 / 회사",
+    "subjectPlaceholder": "회사를 선택하세요…",
+    "submit": "문의 보내기",
+    "success": "문의가 전송되었습니다! 곧 팀이 연락드리겠습니다."
+  },
+  "globalResearchPage": {
+    "areasEyebrow": "리서치 범위",
+    "areasHeading": "다양한 분야의 글로벌 리서치",
+    "areasSubtitle": "전체 커버리지에 걸친 통찰력 있는 관련 분석.",
+    "ctaBody": "자세한 내용과 리서치 수령을 원하시면 글로벌 리서치 포털을 방문하세요. 이용을 원하시면 담당 매니저에게 문의해 주세요.",
+    "ctaButton": "리서치 범위 살펴보기",
+    "ctaTitle": "리서치 이용하기",
+    "eyebrow": "글로벌 리서치",
+    "metaDescription": "Indexia Group 글로벌 리서치, 거시경제, 채권, 외환, 원자재 분야의 통찰력 있는 분석, 아시아, 아프리카, 중동의 현장 인사이트를 바탕으로.",
+    "reportFormat": "간행물",
+    "reportsEyebrow": "간행물",
+    "reportsHeading": "리서치 공유 방식",
+    "reportsSubtitle": "정기 프레젠테이션과 고품질 발간물, 현장 분석 OTG, 실행 가능한 시장 아이디어 ACT, 그리고 세계적으로 중요한 주제의 특별 보고서.",
+    "subtitle": "거시경제, 채권, 외환, 원자재 분야의 통찰력 있는 분석과 날카로운 시각, 아시아, 아프리카, 중동 전역의 현장 기반 인사이트 위에 구축되었습니다.",
+    "title": "Indexia Group 글로벌 리서치",
+    "titleAccent": "& 자료.",
+    "titleStart": "글로벌 금융 리서치 "
+  },
+  "header": {
+    "aria": {
+      "closeMenu": "메뉴 닫기",
+      "selectLanguage": "언어 선택",
+      "toggleMenu": "메뉴 열기/닫기"
+    },
+    "menu": {
+      "companies": "회사",
+      "contact": "문의하기",
+      "groupCompanies": "그룹 회사",
+      "home": "홈"
+    },
+    "nav": {
+      "about": "소개",
+      "contact": "문의"
+    }
+  },
+  "hero": {
+    "ctaExploreGroup": "그룹 회사 살펴보기",
+    "ctaExploreMore": "더 알아보기",
+    "nextPanel": "다음 패널",
+    "p0": {
+      "heading": "하나의 그룹.\n다양한 솔루션.",
+      "motto": "국가를 위한 몇 가지 발걸음",
+      "sub": "금융과 물류에서 농업과 광고까지, Indexia Group은 신뢰받는 미래 지향적 비즈니스로 다양한 산업의 성장을 이끕니다.",
+      "tag": "Indexia Group",
+      "tagline": "다양한 사업. 통합된 비전."
+    },
+    "p1": {
+      "heading": "모든 대출의\n완전한 목적지.",
+      "sub": "모든 종류의 대출은 www.indexiafinance.com 포털에서 신청하실 수 있습니다. 우리는 전 세계에서 서비스를 제공하며, 인도에서는 43개 은행 및 NBFC와 비즈니스 파트너 관계를 맺고 있습니다.",
+      "tag": "Indexia Finance"
+    },
+    "p2": {
+      "heading": "차세대\n금융 방식.",
+      "sub": "이제 올바른 은행이 당신의 문 앞에 찾아옵니다.",
+      "tag": "Indexia Finserve Pvt. Ltd."
+    },
+    "p3": {
+      "heading": "정제 설탕과\n모든 식품.",
+      "sub": "우리는 정제 설탕과 모든 식품을 거래하고 수출합니다.",
+      "tag": "Indexia Overseas Pvt. Ltd."
+    },
+    "p4": {
+      "heading": "유기농 비료\n생산 및 수출",
+      "sub": "우리는 인도에서 유기농 비료를 생산하여 전 세계로 수출합니다.",
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+    },
+    "p5": {
+      "heading": "무장 코만도 &\n무장 보안",
+      "sub": "정치인과 대기업 경영진의 안전을 지킵니다.",
+      "tag": "Indexia Securities"
+    },
+    "p6": {
+      "heading": "규모에 맞춰\n지어진 물류창고.",
+      "sub": "상품이 효율적으로 이동하도록 돕는 현대적인 물류창고 및 물류 인프라.",
+      "tag": "Indexia Warehouse"
+    },
+    "p7": {
+      "heading": "모든 고속도로에\n당신의 브랜드를.",
+      "sub": "고속도로 주변의 다양한 광고 매체로 브랜드에 높은 가시성 캠페인을 제공합니다.",
+      "tag": "Indexia Advertising"
+    },
+    "p8": {
+      "heading": "선수들의\n힘을 키우다.",
+      "sub": "선수들을 훈련, 멘토링, 지원하여 최고의 기량에 도달하도록 돕는 스포츠 프로그램.",
+      "tag": "Indexia Foundation"
+    },
+    "prevPanel": "이전 패널"
+  },
+  "home": {
+    "groupCompanies": {
+      "description": "Indexia Group은 금융, 수출, 농업, 물류창고, 보안, 사회공헌, 광고에 걸친 다각화된 지주회사입니다. 우리는 고객, 파트너, 지역사회가 자신 있게 성장할 수 있도록 돕는 비즈니스를 구축합니다.",
+      "title": "그룹 회사"
+    }
+  },
+  "homeReach": {
+    "cta": "더 알아보기",
+    "eyebrow": "우리의 도달 범위",
+    "stat1Label": "자회사",
+    "stat2Label": "국가",
+    "stat3Label": "강한 연수",
+    "stat4Label": "서비스 고객",
+    "subtitle": "뭄바이에서 에콰도르까지, 우리 회사들은 무결성과 결과에 대한 같은 헌신으로 3대륙 고객을 서비스합니다.",
+    "title": "국경을 넘어 신뢰"
+  },
+  "jsonLd": {
+    "aboutDescription": "Indexia Group은 금융, 수출, 농업, 창고, 보안, 광고, 선수 지원을 아우르는 인도의 다양한 사업 그룹입니다.",
+    "aboutName": "Indexia Group 소개",
+    "breadcrumbAbout": "회사 소개",
+    "breadcrumbCareers": "채용",
+    "breadcrumbCompanies": "그룹 회사",
+    "breadcrumbContact": "문의하기",
+    "breadcrumbHome": "홈",
+    "breadcrumbNews": "뉴스 및 지식 센터",
+    "businessesDescription": "Indexia Group 산하 8개 사업: 금융, 대출, 보안, 수출, 농업, 창고, 광고, 선수 지원.",
+    "businessesName": "Indexia Group 사업",
+    "careersName": "Indexia Group 채용 공고",
+    "companyPageDescription": "{{name} 알아보기. Indexia Group 소속 회사입니다. {{description}}",
+    "companyPageName": "{{name}}, {{tag}}",
+    "contactName": "Indexia Group 문의",
+    "corporateOffice": "본사",
+    "delhiOffice": "델리 오피스",
+    "newsName": "Indexia Group, 뉴스 및 지식 센터",
+    "orgName": "Indexia Group"
+  },
+  "legal": {
+    "backHome": "홈으로 돌아가기",
+    "contactBody": "contactus@indexiagroup.com으로 연락하거나 문의를 보내주시면 팀이 답변드리겠습니다.",
+    "contactHeading": "이 정책에 대해 궁금한 점이 있으신가요?",
+    "contactUs": "문의하기",
+    "eyebrow": "법적 정보",
+    "lastUpdated": "최종 업데이트",
+    "metaPrivacyDescription": "Indexia Group의 개인정보 처리방침, 개인정보 수집, 사용, 보관, 보호 방법을 확인하세요.",
+    "metaTermsDescription": "Indexia Group 웹사이트와 회사 서비스 이용에 적용되는 약관을 확인하세요.",
+    "metaTermsOfUseDescription": "Indexia Group 웹사이트와 회사 웹사이트 접속 및 이용 규칙을 확인하세요.",
+    "privacySubtitle": "Indexia Group이 개인정보를 수집, 사용, 보호하는 방법.",
+    "privacyTitle": "개인정보 처리방침",
+    "sendEnquiry": "문의 보내기",
+    "termsOfUseSubtitle": "Indexia Group 웹사이트와 회사 웹사이트 접속 및 이용 규칙.",
+    "termsOfUseTitle": "이용 약관",
+    "termsSubtitle": "Indexia Group 웹사이트와 회사 서비스 이용에 적용되는 약관.",
+    "termsTitle": "서비스 약관"
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
+        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
+            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
+          ],
+          "title": "Informations que nous collectons"
+        },
+        {
+          "paragraphs": [
+            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
+            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
+          ],
+          "title": "Comment nous utilisons vos informations"
+        },
+        {
+          "paragraphs": [
+            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Nous ne vendons pas vos informations personnelles à des tiers."
+          ],
+          "title": "Partage et divulgation"
+        },
+        {
+          "paragraphs": [
+            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
+          ],
+          "title": "Sécurité des données"
+        },
+        {
+          "paragraphs": [
+            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
+          ],
+          "title": "Cookies et technologies similaires"
+        },
+        {
+          "paragraphs": [
+            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
+          ],
+          "title": "Conservation des données"
+        },
+        {
+          "paragraphs": [
+            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
+          ],
+          "title": "Vos droits et choix"
+        },
+        {
+          "paragraphs": [
+            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
+          ],
+          "title": "Liens vers des tiers"
+        },
+        {
+          "paragraphs": [
+            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
+          ],
+          "title": "Confidentialité des enfants"
+        },
+        {
+          "paragraphs": [
+            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
+          ],
+          "title": "Modifications de la présente politique"
+        },
+        {
+          "paragraphs": [
+            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ],
+          "title": "Contact"
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
+        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
+        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
+          ],
+          "title": "Contenu et Modifications"
+        },
+        {
+          "paragraphs": [
+            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
+          ],
+          "title": "Aucune Garantie"
+        },
+        {
+          "paragraphs": [
+            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
+          ],
+          "title": "Utilisation à Vos Risques"
+        },
+        {
+          "paragraphs": [
+            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
+          ],
+          "title": "Propriété Intellectuelle"
+        },
+        {
+          "paragraphs": [
+            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
+          ],
+          "title": "Marques Commerciales"
+        },
+        {
+          "paragraphs": [
+            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
+          ],
+          "title": "Utilisation Non Autorisée"
+        },
+        {
+          "paragraphs": [
+            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
+          ],
+          "title": "Liens Vers des Sites Tiers"
+        },
+        {
+          "paragraphs": [
+            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
+          ],
+          "title": "Liens Vers ce Site Web"
+        },
+        {
+          "paragraphs": [
+            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
+          ],
+          "title": "Droit Applicable"
+        },
+        {
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ],
+          "title": "Responsabilité des Transactions par Carte"
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        null,
+        "이 약관에 동의하지 않는 경우 웹사이트에 접근하거나 사용하지 마세요."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
+          ],
+          "title": "Politique d'Annulation et de Remboursement"
+        },
+        {
+          "paragraphs": [
+            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
+            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
+            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
+            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
+            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
+            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
+            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
+            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
+          ],
+          "title": "Politique d'Annulation"
+        },
+        {
+          "paragraphs": [
+            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
+          ],
+          "title": "Politique de Remboursement"
+        },
+        {
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ],
+          "title": "Clause BO"
+        },
+        {
+          "paragraphs": [
+            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
+            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
+            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
+          ],
+          "title": "Politique de Clause de Non-Responsabilité"
+        },
+        {
+          "paragraphs": [
+            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
+            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
+            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
+            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
+          ],
+          "title": "Clause de Non-Responsabilité de ce Site Web"
+        },
+        {
+          "paragraphs": {
+            "0": "당사는 언제든지 본 이용약관을 수정할 권리를 보유합니다."
+          },
+          "title": "약관 변경"
+        },
+        {
+          "paragraphs": {
+            "0": "문의 사항이 있으시면 contactus@indexiagroup.com으로 연락해주세요."
+          },
+          "title": "문의"
+        }
+      ]
+    }
+  },
+  "newsHero": {
+    "latestLabel": "그룹 최신 뉴스",
+    "sectors": {
+      "advertising": "광고",
+      "agriculture": "농업",
+      "finance": "금융",
+      "security": "보안",
+      "sport": "스포츠",
+      "tradeExport": "무역 및 수출"
+    }
+  },
+  "newsPage": {
+    "askUs": "문의하기",
+    "ctaBody": "FDI 자문에서 유기농 농업, 무장 보안까지, 적합한 Indexia 회사가 도와드릴 준비가 되어 있습니다. 문의를 보내주시면 연결해 드리겠습니다.",
+    "ctaButton": "문의 보내기",
+    "ctaTitle": "우리 비즈니스에 대해 궁금한 점이 있으신가요?",
+    "eyebrow": "뉴스 & 지식 센터",
+    "featuredLabel": "주요 기사",
+    "knowledgeEyebrow": "지식 센터",
+    "knowledgeHeading": "우리 비즈니스의 실용 가이드",
+    "knowledgeSubtitle": "매일 이 일을 하는 팀이 직접 쓴 이해하기 쉬운 설명서.",
+    "metaDescription": "뉴스 & 지식 센터, 자금 조달, 디지털 결제, 정책에 관한 최신 은행 뉴스와 Indexia Group의 실용 지식 가이드.",
+    "readMore": "더 보기",
+    "subtitle": "최신 은행 뉴스, 자금 조달 업데이트, 디지털 결제, 정책 변화, 시장 동향, 그리고 우리 비즈니스의 실용적인 가이드.",
+    "title": "뉴스 & 지식 센터",
+    "titleAccent": "이야기와 인사이트.",
+    "titleStart": "그룹 전반의 ",
+    "tvCaption": "대출이 필요하다면… Indexia Finance",
+    "tvEyebrow": "TV에서 만나보세요",
+    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingStart": "모든 대출 요구를 위해"
+  },
+  "newsVideo": {
+    "onAir": "방송 중",
+    "tvCommercial": "TV 광고"
+  },
+  "notFoundPage": {
+    "backHome": "홈으로 돌아가기",
+    "description": "찾으시는 페이지가 존재하지 않거나 이동되었습니다.",
+    "title": "페이지를 찾을 수 없습니다"
+  },
+  "openRoles": {
+    "loading": "채용 정보 로딩 중...",
+    "noPositions": "현재 {{type}} 직위가 없습니다."
   },
   "pageContent": {
+    "careers": {
+      "culture": [
+        "Indexia Group은 학습하는 조직이며, 기업 문화가 곧 팀입니다. 우리의 인재는 가장 큰 자산이며, 최신 기술 프로젝트와 재미있고 협력적이며 팀 중심적인 작업 환경을 제공하는 데 전념하고 있습니다.",
+        "핀테크와 글로벌 수출부터 유기농 농업, 무장 보안, 선수 육성까지 — 하나의 분야에 국한되지 않습니다.",
+        "배우고, 훈련하고, 성장하세요",
+        "모든 직위에 구조화된 교육, 사내 워크숍, 시니어 리더의 멘토링이 포함됩니다.",
+        "글로벌 경험, 현지 뿌리",
+        "Indexia는 인도, 에콰도르, 남미 및 유럽에서 운영됩니다.",
+        "유연한 근무 시간, 진정한 책임",
+        "팀원들의 시간 관리를 신뢰합니다."
+      ],
+      "roles": {
+        "business-development": {
+          "department": "영업 및 파트너십",
+          "title": "비즈니스 개발 전문가",
+          "type": "정규직"
+        },
+        "city-head": {
+          "department": "운영",
+          "title": "도시장",
+          "type": "정규직"
+        },
+        "customer-support": {
+          "department": "고객 서비스",
+          "title": "고객 지원 담당자",
+          "type": "정규직"
+        },
+        "field-executive": {
+          "department": "운영",
+          "title": "현장 담당자",
+          "type": "정규직"
+        },
+        "hr-manager": {
+          "department": "인사",
+          "title": "인사 매니저",
+          "type": "정규직"
+        },
+        "seo-professional": {
+          "department": "디지털 마케팅",
+          "title": "SEO 전문가",
+          "type": "정규직"
+        },
+        "team-leader": {
+          "department": "운영",
+          "title": "팀 리더",
+          "type": "정규직"
+        },
+        "team-manager": {
+          "department": "운영",
+          "title": "팀 매니저",
+          "type": "정규직"
+        }
+      }
+    },
     "companies": {
+      "advertising": {
+        "desc": "북인도에서 가장 분주한 교차로의 프리미엄 고속도로 옥외광고.",
+        "highlights": [
+          "NH-709B 델리–데라둔 고속도로 전략적 위치",
+          "10개 연결 주, 5억 명 도달, 일일 1천만 이상 노출",
+          "360° 가시성과 프리미엄 높이의 단일 기둥 유니폴",
+          "종합 서비스, 인쇄, 설치, 유지보수"
+        ],
+        "location": "델리-데라둔 고속도로, 샴리",
+        "name": "Indexia Advertising",
+        "overview": "Indexia Advertising은 북인도의 중심인 샴리 델리–데라둔 고속도로(NH-709B)에서 프리미엄 단일 기둥 유니폴 옥외광고를 운영합니다. 8개 국도와 2개 주요 고속도로가 만나는 지점에 위치한 유니폴은 10개 주, 5억 명 인구에 도달하며 일일 1천만 이상의 노출을 창출합니다. 프리미엄 높이와 방해받지 않는 360° 시야를 갖춘 단일 기둥 유니폴은 시각적 혼잡 없이 브랜드에 최대 가시성을 제공하며, 시그니처 Bisleri Green 브랜딩이 적용됩니다. 인쇄와 설치에서 유지보수까지 모든 것을 원스톱으로 처리합니다. 10×20피트 유니폴 월 ₹25,000 또는 12×24피트 유니폴 월 ₹36,000에 예약하세요, 기준 요금은 면당 월 ₹125/제곱피트이며 장기 패키지는 협상 가능합니다. 예약 문의: 86918 86919 또는 011 4629 1155, 이메일 indexia.queries@gmail.com.",
+        "services": [
+          "유니폴 10×20피트, 월 ₹25,000",
+          "유니폴 12×24피트, 월 ₹36,000",
+          "기준 요금, 면당 월 ₹125/제곱피트",
+          "델리–데라둔 고속도로 & 샴리 링로드 배치",
+          "인쇄, 설치 & 유지보수",
+          "장기 및 대량 패키지"
+        ],
+        "tag": "프리미엄 유니폴 옥외광고"
+      },
+      "agro-bio": {
+        "desc": "인도에서 생산되어 전 세계로 수출되는 유기농 비료.",
+        "highlights": [
+          "유기농 바이오 기반 생산, 유해 화학물질 없음",
+          "델리 NCR 지역의 샴리, UP 생산 시설",
+          "더 나은 토양 건강, 더 높은 작물 수확량",
+          "농가 지원, 토양 분석, 교육"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "overview": "Indexia Agro Bio Fertilizers는 델리 NCR 지역의 일부인 우타르프라데시주 샴리 생산 시설에서 유기농 비료를 생산합니다. 회사의 바이오 기반 제품은 토양 건강을 개선하고 작물 수확량을 높이며 북부 인도 농민들의 지속 가능한 농업을 지원합니다.",
+        "services": [
+          "유기농 비료 생산",
+          "바이오 비료 혼합",
+          "토양 건강 솔루션",
+          "수확량 개선 프로그램",
+          "농민 지원 및 교육",
+          "샴리, UP 생산 시설 (델리 NCR)"
+        ],
+        "tag": "유기농 비료 생산"
+      },
       "finance": {
-        "tag": "글로벌 핀테크",
         "desc": "투자자 서비스, FDI, NBFC, 은행 자금 조달에 걸친 글로벌 핀테크.",
-        "overview": "Indexia Finance는 전 세계 고객에게 금융 서비스를 제공하는 글로벌 핀테크 플랫폼입니다. 모든 종류의 대출은 www.indexiafinance.com 포털에서 신청할 수 있으며, 인도에서는 43개 은행 및 NBFC와 파트너십을 맺고 있습니다. 투자자 서비스, FDI 자문, NBFC 운영, 은행 자금 조달의 네 가지 핵심 분야를 중심으로 자본과 기회를 연결하여 투자자, 기업, 기관이 국경을 넘어 자신 있는 금융 결정을 내릴 수 있도록 돕습니다.",
-        "tagline": "모든 대출의 목적지",
         "highlights": [
           "인도 우선 실행의 글로벌 핀테크 범위",
           "한 지붕 아래 통합된 네 가지 분야",
           "종합적인 자금 조달 및 자문 지원"
         ],
+        "name": "Indexia Finance",
+        "overview": "Indexia Finance는 전 세계 고객에게 금융 서비스를 제공하는 글로벌 핀테크 플랫폼입니다. 모든 종류의 대출은 www.indexiafinance.com 포털에서 신청할 수 있으며, 인도에서는 43개 은행 및 NBFC와 파트너십을 맺고 있습니다. 투자자 서비스, FDI 자문, NBFC 운영, 은행 자금 조달의 네 가지 핵심 분야를 중심으로 자본과 기회를 연결하여 투자자, 기업, 기관이 국경을 넘어 자신 있는 금융 결정을 내릴 수 있도록 돕습니다.",
         "services": [
           "FDI 자문 및 지원",
           "투자자 서비스",
@@ -387,18 +873,18 @@
           "국경 간 자본 솔루션",
           "자산 및 투자 자문"
         ],
-        "name": "Indexia Finance"
+        "tag": "다국적 핀테크",
+        "tagline": "모든 대출의 목적지"
       },
       "finserve": {
-        "tag": "대출 & 금융",
         "desc": "개인과 기업을 위한 모든 유형의 대출.",
-        "overview": "Indexia Finserve는 Indexia Group의 대출 부문으로, 금융 전반의 모든 대출을 제공합니다. 이제 올바른 은행이 당신의 문 앞에 찾아옵니다, 개인, 주택, 기업, MSME 및 전문 자금 조달을 위한 자격, 서류, 지급 절차를 하나의 간소화된 프로세스로 안내하는 완전한 대출 목적지입니다.",
-        "tagline": "차세대 금융 방식",
         "highlights": [
           "한 지붕 아래 모든 대출 유형",
           "간소화된 자격, 서류, 지급 절차",
           "각 단계에서의 전담 자문"
         ],
+        "name": "Indexia Finserve Pvt. Ltd.",
+        "overview": "Indexia Finserve는 Indexia Group의 대출 부문으로, 금융 전반의 모든 대출을 제공합니다. 이제 올바른 은행이 당신의 문 앞에 찾아옵니다, 개인, 주택, 기업, MSME 및 전문 자금 조달을 위한 자격, 서류, 지급 절차를 하나의 간소화된 프로세스로 안내하는 완전한 대출 목적지입니다.",
         "services": [
           "개인 대출",
           "기업 대출",
@@ -413,114 +899,19 @@
           "리스 할인",
           "운전자본"
         ],
-        "name": "Indexia Finserve Pvt. Ltd."
-      },
-      "overseas": {
-        "tag": "식품 수출업체",
-        "desc": "정제 설탕과 모든 식품을 세계로 수출합니다.",
-        "overview": "Indexia Overseas는 모든 식품의 글로벌 수출을 이끌며, 특히 14개 남미 국가로의 설탕 수출에 주력합니다. 회사는 조달, 품질, 물류, 국제 규정 준수를 관리하여 식품 등급 제품이 원산지에서 시장까지 안정적으로 대규모로 이동하도록 합니다.",
-        "highlights": [
-          "모든 식품 수출, 설탕이 핵심",
-          "14개 남미 시장에서의 확고한 입지",
-          "종합적인 조달, 품질, 물류"
-        ],
-        "services": [
-          "설탕 수출 및 거래",
-          "조달 및 품질 관리",
-          "국제 물류",
-          "14개 남미 시장"
-        ],
-        "name": "Indexia Overseas Pvt. Ltd."
-      },
-      "agro-bio": {
-        "tag": "유기농 비료 생산",
-        "desc": "인도에서 생산되어 전 세계로 수출되는 유기농 비료.",
-        "overview": "Indexia Agro Bio Fertilizers는 델리 NCR 지역의 일부인 우타르프라데시주 샴리 생산 시설에서 유기농 비료를 생산합니다. 회사의 바이오 기반 제품은 토양 건강을 개선하고 작물 수확량을 높이며 북부 인도 농민들의 지속 가능한 농업을 지원합니다.",
-        "highlights": [
-          "유기농 바이오 기반 생산, 유해 화학물질 없음",
-          "델리 NCR 지역의 샴리, UP 생산 시설",
-          "더 나은 토양 건강, 더 높은 작물 수확량"
-        ],
-        "services": [
-          "유기농 비료 생산",
-          "바이오 비료 혼합",
-          "토양 건강 솔루션",
-          "수확량 개선 프로그램",
-          "농민 지원 및 교육",
-          "샴리, UP 생산 시설 (델리 NCR)"
-        ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
-      },
-      "securities": {
-        "tag": "무장 보안 & 코만도",
-        "desc": "지도자와 기업을 보호하는 무장 코만도와 경비.",
-        "overview": "Indexia Securities는 최고 수준의 무장 보안과 코만도 보호를 제공하여 사람, 재산, 고위급 작전을 24시간 안전하게 지킵니다. 훈련된 코만도와 무장 경비에서 VIP 호위와 행사 보안까지, 군사 수준의 규율을 모든 임무에 적용합니다.",
-        "highlights": [
-          "최고 수준의 무장 및 코만도 보호",
-          "신속 대응 규율을 갖춘 훈련된 코만도",
-          "24×7 모니터링 및 현장 대응"
-        ],
-        "services": [
-          "무장 보안 경비",
-          "코만도 보호 부대",
-          "VIP 및 요인 호위",
-          "행사 및 장소 보안",
-          "기업 및 시설 보안",
-          "24×7 모니터링 및 신속 대응"
-        ],
-        "name": "Indexia Securities"
-      },
-      "warehouse": {
-        "tag": "전략적 토지 투자",
-        "desc": "8개 국도와 연결된 샴리의 21에이커 전략적 토지.",
-        "overview": "Indexia Warehouse는 델리의 트로니카 시티(로니)에서 약 65km 떨어진 우타르프라데시주 샴리의 전략적 토지 투자 기회를 제공합니다. 이곳은 연결의 중심지입니다: 8개 주를 연결하는 8개 국도와 2개 주요 고속도로, 부탄·네팔 직접 접근, 5억 명의 시장 도달. 4개 주요 항구(구자라트, 마하라슈트라, 첸나이, 콜카타)가 고속도로로 직접 연결되며, 델리 IGI 공항과 노이다 국제공항(제와르)이 모두 1시간 이내입니다. 토지 포트폴리오는 5개 위치 총 21에이커로, 1, 2, 2.5, 5, 8에이커의 유연한 필지와 로딩 도크가 있는 2에이커 규모의 현대식 물류창고 건설 계획이 포함됩니다. 예상 가격은 제곱피트당 ₹30이며 협상 가능합니다.",
-        "highlights": [
-          "프라임 위치, 델리에서 약 65km 떨어진 샴리, UP",
-          "8개 국도 + 8개 주를 연결하는 2개 주요 고속도로",
-          "5개 위치에 21에이커, 1, 2, 2.5, 5, 8에이커 필지",
-          "제곱피트당 ₹30, 협상 가능"
-        ],
-        "services": [
-          "토지 필지, 1, 2, 2.5, 5, 8에이커",
-          "5개 위치에 21에이커",
-          "2에이커 필지 물류창고 건설",
-          "고속도로 연결성",
-          "항구 접근, 구자라트, 마하라슈트라, 첸나이, 콜카타",
-          "공항 접근, 델리 & 제와르 1시간 이내"
-        ],
-        "name": "Indexia Warehouse",
-        "location": "샴리, 우타르프라데시"
-      },
-      "advertising": {
-        "tag": "프리미엄 유니폴 옥외광고",
-        "desc": "북인도에서 가장 분주한 교차로의 프리미엄 고속도로 옥외광고.",
-        "overview": "Indexia Advertising은 북인도의 중심인 샴리 델리–데라둔 고속도로(NH-709B)에서 프리미엄 단일 기둥 유니폴 옥외광고를 운영합니다. 8개 국도와 2개 주요 고속도로가 만나는 지점에 위치한 유니폴은 10개 주, 5억 명 인구에 도달하며 일일 1천만 이상의 노출을 창출합니다. 프리미엄 높이와 방해받지 않는 360° 시야를 갖춘 단일 기둥 유니폴은 시각적 혼잡 없이 브랜드에 최대 가시성을 제공하며, 시그니처 Bisleri Green 브랜딩이 적용됩니다. 인쇄와 설치에서 유지보수까지 모든 것을 원스톱으로 처리합니다. 10×20피트 유니폴 월 ₹25,000 또는 12×24피트 유니폴 월 ₹36,000에 예약하세요, 기준 요금은 면당 월 ₹125/제곱피트이며 장기 패키지는 협상 가능합니다. 예약 문의: 86918 86919 또는 011 4629 1155, 이메일 indexia.queries@gmail.com.",
-        "highlights": [
-          "NH-709B 델리–데라둔 고속도로 전략적 위치",
-          "10개 연결 주, 5억 명 도달, 일일 1천만 이상 노출",
-          "360° 가시성과 프리미엄 높이의 단일 기둥 유니폴",
-          "종합 서비스, 인쇄, 설치, 유지보수"
-        ],
-        "services": [
-          "유니폴 10×20피트, 월 ₹25,000",
-          "유니폴 12×24피트, 월 ₹36,000",
-          "기준 요금, 면당 월 ₹125/제곱피트",
-          "델리–데라둔 고속도로 & 샴리 링로드 배치",
-          "인쇄, 설치 & 유지보수",
-          "장기 및 대량 패키지"
-        ],
-        "name": "Indexia Advertising",
-        "location": "델리–데라둔 고속도로, 샴리"
+        "tag": "대출 & 금융",
+        "tagline": "차세대 금융 방식"
       },
       "foundation": {
-        "tag": "선수 지원",
         "desc": "국제 수준의 훈련과 지원, 올림픽까지.",
-        "overview": "Indexia Foundation은 국제 수준의 훈련, 체계적인 식단과 영양, 전문 코칭, 올림픽을 향한 여정에 필요한 모든 지원을 제공하여 선수들을 뒷받침합니다. 재단은 선수들과 초기 가능성부터 세계 최대 무대까지 함께합니다.",
         "highlights": [
           "국제 수준의 훈련과 전문 코칭",
           "체계적인 식단 및 영양 프로그램",
-          "올림픽까지의 완전한 지원"
+          "올림픽까지의 완전한 지원",
+          "올림픽 수준 인도 선수의 지속 가능한 파이프라인 구축"
         ],
+        "name": "Indexia Foundation",
+        "overview": "Indexia Foundation은 국제 수준의 훈련, 체계적인 식단과 영양, 전문 코칭, 올림픽을 향한 여정에 필요한 모든 지원을 제공하여 선수들을 뒷받침합니다. 재단은 선수들과 초기 가능성부터 세계 최대 무대까지 함께합니다.",
         "services": [
           "국제 수준 훈련",
           "식단 및 영양 프로그램",
@@ -529,654 +920,291 @@
           "스포츠 의학 및 회복",
           "올림픽 수준 지원"
         ],
-        "name": "Indexia Foundation"
+        "tag": "선수 지원"
+      },
+      "overseas": {
+        "desc": "정제 설탕과 모든 식품을 세계로 수출합니다.",
+        "highlights": [
+          "모든 식품 수출, 설탕이 핵심",
+          "14개 남미 시장에서의 확고한 입지",
+          "종합적인 조달, 품질, 물류",
+          "도매 바이어를 위한 신뢰할 수 있는 파트너"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd.",
+        "overview": "Indexia Overseas는 모든 식품의 글로벌 수출을 이끌며, 특히 14개 남미 국가로의 설탕 수출에 주력합니다. 회사는 조달, 품질, 물류, 국제 규정 준수를 관리하여 식품 등급 제품이 원산지에서 시장까지 안정적으로 대규모로 이동하도록 합니다.",
+        "services": [
+          "설탕 수출 및 거래",
+          "조달 및 품질 관리",
+          "국제 물류",
+          "14개 남미 시장",
+          "규제 및 컴플라이언스 관리",
+          "남미 시장 유통"
+        ],
+        "tag": "식품 수출업체"
+      },
+      "securities": {
+        "desc": "지도자와 기업을 보호하는 무장 코만도와 경비.",
+        "highlights": [
+          "최고 수준의 무장 및 코만도 보호",
+          "신속 대응 규율을 갖춘 훈련된 코만도",
+          "24×7 모니터링 및 현장 대응",
+          "고위험 고객 보호의 검증된 실적"
+        ],
+        "name": "Indexia Securities",
+        "overview": "Indexia Securities는 최고 수준의 무장 보안과 코만도 보호를 제공하여 사람, 재산, 고위급 작전을 24시간 안전하게 지킵니다. 훈련된 코만도와 무장 경비에서 VIP 호위와 행사 보안까지, 군사 수준의 규율을 모든 임무에 적용합니다.",
+        "services": [
+          "무장 보안 경비",
+          "코만도 보호 부대",
+          "VIP 및 요인 호위",
+          "행사 및 장소 보안",
+          "기업 및 시설 보안",
+          "24×7 모니터링 및 신속 대응"
+        ],
+        "tag": "무장 보안 & 코만도"
+      },
+      "warehouse": {
+        "desc": "8개 국도와 연결된 샴리의 21에이커 전략적 토지.",
+        "highlights": [
+          "프라임 위치, 델리에서 약 65km 떨어진 샴리, UP",
+          "8개 국도 + 8개 주를 연결하는 2개 주요 고속도로",
+          "5개 위치에 21에이커, 1, 2, 2.5, 5, 8에이커 필지",
+          "제곱피트당 ₹30, 협상 가능"
+        ],
+        "location": "샴리, 우타르프라데시",
+        "name": "Indexia Warehouse",
+        "overview": "Indexia Warehouse는 델리의 트로니카 시티(로니)에서 약 65km 떨어진 우타르프라데시주 샴리의 전략적 토지 투자 기회를 제공합니다. 이곳은 연결의 중심지입니다: 8개 주를 연결하는 8개 국도와 2개 주요 고속도로, 부탄·네팔 직접 접근, 5억 명의 시장 도달. 4개 주요 항구(구자라트, 마하라슈트라, 첸나이, 콜카타)가 고속도로로 직접 연결되며, 델리 IGI 공항과 노이다 국제공항(제와르)이 모두 1시간 이내입니다. 토지 포트폴리오는 5개 위치 총 21에이커로, 1, 2, 2.5, 5, 8에이커의 유연한 필지와 로딩 도크가 있는 2에이커 규모의 현대식 물류창고 건설 계획이 포함됩니다. 예상 가격은 제곱피트당 ₹30이며 협상 가능합니다.",
+        "services": [
+          "토지 필지, 1, 2, 2.5, 5, 8에이커",
+          "5개 위치에 21에이커",
+          "2에이커 필지 물류창고 건설",
+          "고속도로 연결성",
+          "항구 접근, 구자라트, 마하라슈트라, 첸나이, 콜카타",
+          "공항 접근, 델리 & 제와르 1시간 이내"
+        ],
+        "tag": "전략적 토지 투자"
       }
     },
     "news": {
       "articles": {
-        "yes-bank-sme-funding": {
-          "title": "Yes Bank, 미국 정부 및 Wells Fargo에서 중소기업 대출용 1억 5천만 달러 확보",
-          "category": "뱅킹",
-          "excerpt": "OPIC-Wells Fargo 대출의 3차 트랜치가 인도 전역의 중소기업 대출을 확대합니다."
-        },
-        "uidai-aadhaar-banks": {
-          "title": "UIDAI, 은행들에 Aadhaar 등록 센터 설립 요청",
-          "category": "디지털 뱅킹",
-          "excerpt": "인도 고유식별기관이 금융 서비스를 위한 본인 확인 개선을 위해 은행들에 Aadhaar 등록 및 업데이트 센터 구축을 요청했습니다."
-        },
         "demonetisation-digital-payments": {
-          "title": "화폐 개혁, 인도 전역의 디지털 결제 도입 가속화",
           "category": "결제",
-          "excerpt": "인도의 화폐 개혁이 UPI 거래와 모바일 지갑 사용이 도시와 농촌 시장 모두에서 급증하는 디지털 결제로의 전환을 가속화하고 있습니다."
-        },
-        "sbi-imps-fee-waiver": {
-          "title": "SBI, 디지털 송금 촉진을 위해 IMPS 수수료 면제",
-          "category": "뱅킹",
-          "excerpt": "인도국립은행이 고객들의 디지털 뱅킹 촉진과 현금 의존도 감소를 위해 IMPS(즉시결제서비스) 이체 수수료를 면제했습니다."
+          "excerpt": "인도의 화폐 개혁이 UPI 거래와 모바일 지갑 사용이 도시와 농촌 시장 모두에서 급증하는 디지털 결제로의 전환을 가속화하고 있습니다.",
+          "title": "화폐 개혁, 인도 전역의 디지털 결제 도입 가속화"
         },
         "nakshatra-gili-directors": {
-          "title": "Nakshatra Gili, 신규 사외이사 선임",
           "category": "기업 거버넌스",
-          "excerpt": "Nakshatra Gili가 거버넌스 기준과 전략적 감독 강화를 위해 사외이사를 선임하여 이사회를 강화했습니다."
+          "excerpt": "Nakshatra Gili가 거버넌스 기준과 전략적 감독 강화를 위해 사외이사를 선임하여 이사회를 강화했습니다.",
+          "title": "Nakshatra Gili, 신규 사외이사 선임"
+        },
+        "sbi-imps-fee-waiver": {
+          "category": "뱅킹",
+          "excerpt": "인도국립은행이 고객들의 디지털 뱅킹 촉진과 현금 의존도 감소를 위해 IMPS(즉시결제서비스) 이체 수수료를 면제했습니다.",
+          "title": "SBI, 디지털 송금 촉진을 위해 IMPS 수수료 면제"
         },
         "sebi-hdfc-information-leak": {
-          "title": "SEBI, HDFC 정보 유출 사건 조사 명령",
           "category": "규제",
-          "excerpt": "인도증권거래위원회가 HDFC 관련 실질 비공개 정보의 의심스러운 유출에 대한 조사를 시작했습니다."
+          "excerpt": "인도 증권거래위원회가 HDFC 관련 비공개 정보 유출 의혹에 대한 조사를 시작했습니다.",
+          "title": "SEBI, HDFC 정보 유출 사건 조사 명령"
+        },
+        "uidai-aadhaar-banks": {
+          "category": "디지털 뱅킹",
+          "excerpt": "인도 고유식별기관이 금융 서비스를 위한 본인 확인 개선을 위해 은행들에 Aadhaar 등록 및 업데이트 센터 구축을 요청했습니다.",
+          "title": "UIDAI, 은행들에 Aadhaar 등록 센터 설립 요청"
+        },
+        "yes-bank-sme-funding": {
+          "category": "뱅킹",
+          "excerpt": "OPIC-Wells Fargo 대출의 3차 트랜치가 인도 전역의 중소기업 대출을 확대합니다.",
+          "title": "Yes Bank, 미국 정부 및 Wells Fargo에서 중소기업 대출용 1억 5천만 달러 확보"
         }
       },
       "insights": {
-        "understanding-fdi": {
-          "title": "FDI 이해: 인도에서 외국인 직접투자가 어떻게 작동하는가",
-          "body": "외국인 직접투자(FDI)는 인도의 경제 성장 핵심 동력입니다. 이는 외국 기관이 인도 기업에 투자하는 것으로, 일반적으로 지속적인 관심과 상당한 영향력을 수반합니다."
-        },
         "choosing-loan": {
-          "title": "올바른 대출 선택: 실용 가이드",
-          "body": "적절한 대출 상품 선택은 재무 목표, 상환 능력 및 요구 사항의 성격에 따라 다릅니다. 개인 대출은 유연성을 제공하지만 이자율이 높습니다."
+          "body": "적절한 대출 상품 선택은 재무 목표, 상환 능력 및 요구 사항의 성격에 따라 다릅니다. 개인 대출은 유연성을 제공하지만 이자율이 높습니다.",
+          "title": "올바른 대출 선택: 실용 가이드"
         },
         "organic-farming": {
-          "title": "인도의 유기농 농업 부상",
-          "body": "유기농 농업이 인도 전역에서 농민과 소비자 모두 화학물질 없는 농업의 이점을 인식하면서 확산되고 있습니다."
+          "body": "유기농 농업이 인도 전역에서 농민과 소비자 모두 화학물질 없는 농업의 이점을 인식하면서 확산되고 있습니다.",
+          "title": "인도의 유기농 농업 부상"
         },
         "securing-operations": {
-          "title": "비즈니스 온라인 운영 보안",
-          "body": "사이버 위협이 증가하는 시대에 비즈니스 온라인 운영 보안은 더 이상 선택이 아닙니다."
-        }
-      }
-    },
-    "careers": {
-      "culture": [
-        "Indexia Group은 학습하는 조직이며, 기업 문화가 곧 팀입니다. 우리의 인재는 가장 큰 자산이며, 최신 기술 프로젝트와 재미있고 협력적이며 팀 중심적인 작업 환경을 제공하는 데 전념하고 있습니다."
-      ],
-      "roles": {
-        "business-development": {
-          "title": "비즈니스 개발 담당자",
-          "department": "영업 및 파트너십",
-          "type": "정규직"
+          "body": "온라인 비즈니스 보호는 더 이상 선택 사항이 아닙니다. 다중 인증을 사용하고 민감한 데이터를 암호화하세요.",
+          "title": "온라인 비즈니스 보호"
         },
-        "city-head": {
-          "title": "도시장",
-          "department": "운영",
-          "type": "정규직"
-        },
-        "team-manager": {
-          "title": "팀 매니저",
-          "department": "운영",
-          "type": "정규직"
-        },
-        "hr-manager": {
-          "title": "인사 매니저",
-          "department": "인적 자원",
-          "type": "정규직"
-        },
-        "team-leader": {
-          "title": "팀 리더",
-          "department": "운영",
-          "type": "정규직"
-        },
-        "customer-support": {
-          "title": "고객 지원 담당자",
-          "department": "고객 서비스",
-          "type": "정규직"
-        },
-        "field-executive": {
-          "title": "현장 담당자",
-          "department": "운영",
-          "type": "정규직"
-        },
-        "seo-professional": {
-          "title": "SEO 전문가",
-          "department": "디지털 마케팅",
-          "type": "정규직"
+        "understanding-fdi": {
+          "body": "외국인 직접투자(FDI)는 인도의 경제 성장 핵심 동력입니다. 이는 외국 기관이 인도 기업에 투자하는 것으로, 일반적으로 지속적인 관심과 상당한 영향력을 수반합니다.",
+          "title": "FDI 이해: 인도에서 외국인 직접투자가 어떻게 작동하는가"
         }
       }
     },
     "research": {
       "areas": {
-        "economic": {
-          "title": "경제 연구",
-          "body": "글로벌 및 지역 경제, 정책 변화 및 성장 동력에 대한 심층 분석."
-        },
-        "thematic": {
-          "title": "글로벌 테마 연구",
-          "body": "전 세계적으로 중요한 주제와 경제 및 시장에 대한 영향에 대한 심층 분석."
-        },
-        "macro": {
-          "title": "글로벌 매크로 전략",
-          "body": "거시 경제 동향, 금리 및 자산 배분에 대한 전략적 평가."
-        },
-        "fx": {
-          "title": "외환",
-          "body": "외환 시장, 환율 움직임 및 외환 거래 전략에 대한 전문가 견해."
-        },
-        "rates": {
-          "title": "고정 수익 & 금리",
-          "body": "채권 시장, 금리 궤적 및 고정 수익 투자 기회에 대한 분석."
+        "commodities": {
+          "body": "원자재 가격 동향, 수급 역학 및 글로벌 시장에 대한 영향에 대한 통찰력.",
+          "title": "원자재 연구"
         },
         "credit": {
-          "title": "신용 연구",
-          "body": "신용 품질, 기업 부채 시장 및 부문별 대출 위험에 대한 평가."
+          "body": "신용 품질, 기업 부채 시장 및 부문별 대출 위험에 대한 평가.",
+          "title": "신용 연구"
         },
-        "commodities": {
-          "title": "원자재 연구",
-          "body": "원자재 가격 동향, 수급 역학 및 글로벌 시장에 대한 영향에 대한 통찰력."
+        "economic": {
+          "body": "글로벌 및 지역 경제, 정책 변화 및 성장 동력에 대한 심층 분석.",
+          "title": "경제 연구"
+        },
+        "fx": {
+          "body": "외환 시장, 환율 움직임 및 외환 거래 전략에 대한 전문가 견해.",
+          "title": "외환"
+        },
+        "macro": {
+          "body": "거시 경제 동향, 금리 및 자산 배분에 대한 전략적 평가.",
+          "title": "글로벌 매크로 전략"
+        },
+        "rates": {
+          "body": "채권 시장, 금리 궤적 및 고정 수익 투자 기회에 대한 분석.",
+          "title": "고정 수익 & 금리"
+        },
+        "thematic": {
+          "body": "전 세계적으로 중요한 주제와 경제 및 시장에 대한 영향에 대한 심층 분석.",
+          "title": "글로벌 테마 연구"
         }
       },
       "reports": {
-        "otg": {
-          "title": "현장 분석 (OTG)",
-          "summary": "아시아, 아프리카, 중동 주요 시장에서의 현장 수준 통찰력을 제공하는 현장 분석."
-        },
         "act": {
-          "title": "실행 가능한 아이디어 (ACT)",
-          "summary": "적극적인 포트폴리오 결정을 위해 명확한 진입점과 철회점이 있는 간결한 시장 아이디어."
+          "summary": "적극적인 포트폴리오 결정을 위해 명확한 진입점과 철회점이 있는 간결한 시장 아이디어.",
+          "title": "실행 가능한 아이디어 (ACT)"
+        },
+        "otg": {
+          "summary": "아시아, 아프리카, 중동 주요 시장에서의 현장 수준 통찰력을 제공하는 현장 분석.",
+          "title": "현장 분석 (OTG)"
         },
         "special-reports": {
-          "title": "특별 보고서",
-          "summary": "정량적 연구와 질적 분석을 결합한 글로벌 주제에 대한 심층 보고서."
+          "summary": "정량적 연구와 질적 분석을 결합한 글로벌 주제에 대한 심층 보고서.",
+          "title": "특별 보고서"
         }
       }
     },
     "security": {
-      "features": {
-        "tech": {
-          "title": "강력한 기술",
-          "body": "뱅킹 시스템은 경험이 풍부한 전문가가 관리하고 최고의 보안 기술로 보호됩니다."
+      "contacts": {
+        "control": {
+          "body": "계정에서 무단 활동이 의심되면 즉시 고객 서비스 핫라인에 연락하세요.",
+          "title": "고객 센터"
         },
+        "report": {
+          "body": "문의 양식을 통해 의심스러운 활동을 신고하거나 해당 Indexia Group 회사에 직접 연락하세요.",
+          "title": "사기 신고"
+        }
+      },
+      "features": {
         "monitor": {
-          "title": "안전한 시스템",
-          "body": "Indexia Finance는 사기를 조기에 감지하고 예방 조치를 취하기 위해 24시간 모든 위협과 온라인 활동을 모니터링합니다."
+          "body": "Indexia Finance는 사기를 조기에 감지하고 예방 조치를 취하기 위해 24시간 모든 위협과 온라인 활동을 모니터링합니다.",
+          "title": "안전한 시스템"
+        },
+        "tech": {
+          "body": "뱅킹 시스템은 경험이 풍부한 전문가가 관리하고 최고의 보안 기술로 보호됩니다.",
+          "title": "강력한 기술"
         }
       },
       "practices": {
-        "devices": {
-          "title": "장치 보안 유지",
-          "body": "항상 PIN 또는 생체 인증으로 장치를 잠그고 운영 체제와 앱을 업데이트하세요."
-        },
         "connections": {
-          "title": "안전한 연결 사용",
-          "body": "공개 Wi-Fi 네트워크에서 금융 거래를 피하고 민감한 정보를 입력하기 전에 자물쇠 아이콘과 'https'를 확인하세요."
+          "body": "공개 Wi-Fi 네트워크에서 금융 거래를 피하고 민감한 정보를 입력하기 전에 자물쇠 아이콘과 'https'를 확인하세요.",
+          "title": "안전한 연결 사용"
         },
         "data": {
-          "title": "개인 데이터 보호",
-          "body": "뱅킹 비밀번호, OTP 또는 PIN을 누구에게도 절대 공유하지 마세요."
-        }
-      },
-      "contacts": {
-        "control": {
-          "title": "고객 센터",
-          "body": "계정에서 무단 활동이 의심되면 즉시 고객 서비스 핫라인에 연락하세요."
+          "body": "뱅킹 비밀번호, OTP 또는 PIN을 누구에게도 절대 공유하지 마세요.",
+          "title": "개인 데이터 보호"
         },
-        "report": {
-          "title": "사기 신고",
-          "body": "문의 양식을 통해 의심스러운 활동을 신고하거나 해당 Indexia Group 회사에 직접 연락하세요."
+        "devices": {
+          "body": "항상 PIN 또는 생체 인증으로 장치를 잠그고 운영 체제와 앱을 업데이트하세요.",
+          "title": "장치 보안 유지"
         }
       }
     }
   },
+  "phoneLabel": {
+    "landline": "유선",
+    "mob": "휴대폰",
+    "mobile": "휴대폰",
+    "tel": "전화"
+  },
+  "securityTipsPage": {
+    "contactsEyebrow": "도움이 필요하신가요?",
+    "contactsHeading": "우리와 상담이 필요하신가요?",
+    "contactsSubtitle": "의심스러운 상대에게 계정 정보를 유출했거나 사기를 당했을 가능성이 있다면, 즉시 고객 서비스 핫라인으로 연락하세요.",
+    "ctaBody": "문의 양식으로 신고하거나 관련 Indexia Group 회사에 직접 연락하세요.",
+    "ctaButton": "내 정보 보호하기",
+    "ctaTitle": "수상한 점을 발견하셨나요?",
+    "eyebrow": "보안 팁",
+    "featuresEyebrow": "우리가 하는 일",
+    "featuresHeading": "온라인 안전 지키기",
+    "featuresSubtitle": "온라인 뱅킹 시 계정을 보호하기 위해 우리가 하는 일을 알아보세요.",
+    "metaDescription": "Indexia Group 보안 팁, 온라인 계정 보호 방법, 기기에서 할 수 있는 일, 문제 발생 시 연락처.",
+    "practicesEyebrow": "당신이 할 수 있는 일",
+    "practicesHeading": "내 정보 보호하기",
+    "practicesSubtitle": "우리는 온라인 뱅킹 시 계정을 보호하기 위해 매일 노력합니다. 일상 기기에서 안전을 지키기 위한 몇 가지 간단한 방법도 있습니다.",
+    "subtitle": "어디에서든 온라인으로 안심하고 자금을 관리할 수 있습니다.",
+    "title": "Indexia Group의 보안 팁",
+    "titleAccent": "한발 앞서.",
+    "titleStart": "사기보다 "
+  },
+  "seo": {
+    "businessesDescription": "Indexia Group의 여덟 가지 사업: 금융, 대출, 보안, 설탕 수출, 유기농 비료, 물류창고, 광고, 선수 지원.",
+    "businessesTitle": "그룹 회사, 금융, 농업, 수출 & 물류",
+    "contactDescription": "금융 서비스, 대출, 수출, 농업, 물류 문의를 위해 Indexia Group에 연락하세요. 뭄바이, 델리, 에콰도르 사무소, 24시간 이내 답변.",
+    "contactTitle": "문의하기, 뭄바이 & 델리 사무소",
+    "homeDescription": "다각화된 인도 비즈니스 그룹: 금융 서비스, NBFC 대출, 글로벌 수출, 농업 비료, 물류창고, 보안. 뭄바이, 델리, 에콰도르 사무소.",
+    "homeTitle": "금융 서비스, 대출, 수출 & 물류"
+  },
+  "unipolePricing": {
+    "areaCol": "제곱피트",
+    "areaLarge": "288제곱피트",
+    "areaSmall": "200제곱피트",
+    "bookMessage": "{{size}} 유니폴({{area}})을 월 {{rate}}로 예약하고 싶습니다.",
+    "bookNow": "지금 예약",
+    "bookSize": "이 크기 예약",
+    "eyebrow": "유니폴 패키지",
+    "note": "* 요금은 공급 상황에 따라 달라질 수 있습니다. 장기 패키지는 문의하세요.",
+    "rateCol": "월 요금",
+    "rateLarge": "₹36,000",
+    "rateSmall": "₹25,000",
+    "sizeCol": "크기",
+    "sizeLarge": "12 × 24피트",
+    "sizeSmall": "10 × 20피트",
+    "standardRate": "기준 요금: 1개월 1면 ₹125/제곱피트",
+    "subtitle": "샴리, 델리–데라둔 고속도로의 프리미엄 유니폴 패키지",
+    "title": "이용 가능한 크기 및 요금"
+  },
+  "warehouseContact": {
+    "address": "사무실 주소",
+    "brochure": "브로셔 다운로드",
+    "emails": "이메일",
+    "eyebrow": "문의",
+    "phones": "전화",
+    "title": "물류창고 팀에 연락하기"
+  },
   "warehousePricing": {
+    "bookMessage": "제곱피트당 ₹30인 {{size}} 토지 필지({{area}})에 대해 문의하고 싶습니다.",
+    "bookNow": "지금 예약",
+    "enquire": "문의하기",
     "eyebrow": "토지 포트폴리오",
-    "title": "토지 포트폴리오 및 요금",
-    "subtitle": "5개 위치 | 총 21에이커, 샴리, 우타르프라데시",
-    "portfolioCol": "포트폴리오",
-    "valueCol": "가치",
     "locations": "위치",
     "locationsValue": "5개 위치",
-    "total": "총 토지",
-    "totalValue": "21에이커",
-    "plotCol": "이용 가능한 필지 크기",
+    "note": "로딩 도크가 있는 2에이커 규모의 현대식 물류창고가 건설될 예정입니다. 가격은 협상 가능, 자세한 내용은 문의하세요.",
     "plot1": "1에이커",
     "plot2": "2에이커",
     "plot2_5": "2.5에이커",
     "plot5": "5에이커",
     "plot8": "8에이커",
-    "standardRate": "예상 가격: 제곱피트당 ₹30, 협상 가능",
-    "note": "로딩 도크가 있는 2에이커 규모의 현대식 물류창고가 건설될 예정입니다. 가격은 협상 가능, 자세한 내용은 문의하세요.",
-    "enquire": "문의하기",
     "plotArea1": "토지 면적: 1에이커",
     "plotArea2": "토지 면적: 2에이커",
     "plotArea2_5": "토지 면적: 2.5에이커",
     "plotArea5": "토지 면적: 5에이커",
     "plotArea8": "토지 면적: 8에이커",
-    "bookMessage": "제곱피트당 ₹30인 {{size}} 토지 필지({{area}})에 대해 문의하고 싶습니다.",
-    "bookNow": "지금 예약"
-  },
-  "warehouseContact": {
-    "eyebrow": "연락처",
-    "title": "물류창고 팀에 연락하기",
-    "phones": "전화",
-    "emails": "이메일",
-    "address": "사무실 주소",
-    "brochure": "브로셔 다운로드"
-  },
-  "brochure": {
-    "download": "PDF 다운로드",
-    "headline": "북인도 중심부의 전략적 토지 투자",
-    "about": "프로젝트 소개",
-    "contact": "문의하기",
-    "footer": "Indexia Group · 문의는 전화, 이메일, 또는 사무실 방문. 가격은 참고용이며 협상 가능합니다.",
-    "print": "인쇄",
-    "advertisingHeadline": "샴리 델리–데라둔 고속도로의 프리미엄 유니폴 옥외광고",
-    "advertisingFooter": "Indexia Group | 요금은 공급 상황에 따라 달라질 수 있습니다. 예약 문의는 전화, 이메일 또는 사무실 방문.",
-    "backWarehouse": "물류창고로 돌아가기",
-    "backAdvertising": "광고로 돌아가기",
-    "locationWarehouse": "샴리, 우타르프라데시",
-    "locationAdvertising": "델리–데라둔 고속도로, 샴리"
-  },
-  "advertisingContact": {
-    "eyebrow": "연락처",
-    "title": "지금 슬롯 예약하기",
-    "phones": "전화",
-    "emails": "이메일",
-    "address": "사무실 주소",
-    "brochure": "브로셔 다운로드"
-  },
-  "aboutPage": {
-    "eyebrow": "회사 소개",
-    "title": "Indexia Group 소개",
-    "titleStart": "신뢰 구축 ",
-    "titleAccent": "각 산업 전반에 걸쳐.",
-    "subtitle": "무결성, 전문성 및 사람 중심 접근 방식을 실천하는 다양한 인도 기업 그룹.",
-    "storyEyebrow": "우리의 이야기",
-    "storyTitle": "공유된 비전에서 국가 그룹으로",
-    "storyBody1": "Indexia Group은 인도 기업들이 글로벌 경쟁을 할 수 있다는 단순한 신념으로 설립되었습니다.",
-    "storyBody2": "오늘날 Indexia Group은 뭄바이, 델리, 에콰도르 3곳에서 운영됩니다.",
-    "valuesEyebrow": "우리의 가치",
-    "valuesTitle": "우리가 지키는 것",
-    "value1Title": "무결성",
-    "value1Body": "우리는 말한 것을 실행합니다.",
-    "value2Title": "전문성",
-    "value2Body": "우리는 심도 있는 도메인 지식에 투자합니다.",
-    "value3Title": "사람 우선",
-    "value3Body": "사업은 결국 사람에 관한 것입니다.",
-    "value4Title": "혁신",
-    "value4Body": "우리는 변화를 수용하고 지속적으로 개선합니다.",
-    "stat1Label": "자회사",
-    "stat2Label": "위치",
-    "stat3Label": "사업 연수",
-    "stat4Label": "서비스 국가",
-    "timelineEyebrow": "우리의 여정",
-    "timelineTitle": "주요 이정표",
-    "milestone1Title": "뭄바이 설립",
-    "milestone1Body": "Indexia Group이 뭄바이에 첫 회사를 설립했습니다.",
-    "milestone2Title": "국내 확장",
-    "milestone2Body": "델리 NCR로 운영을 확장했습니다.",
-    "milestone3Title": "글로벌 진출",
-    "milestone3Body": "남미 설탕 수출로 국제 시장에 진출했습니다.",
-    "milestone4Title": "다각화",
-    "milestone4Body": "Agro Bio, Securities, Warehouse, Advertising를 출범시켰습니다.",
-    "milestone5Title": "사회적 영향",
-    "milestone5Body": "인도 선수 지원을 위한 Indexia Foundation을 설립했습니다.",
-    "ctaTitle": "함께 무언가를 만들어 봅시다",
-    "ctaBody": "금융 서비스를 찾으시든, 파트너십을 탐구하시든, 더 알아보시든, 우리는 여기 있습니다.",
-    "ctaButton": "연락하기",
-    "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "aboutUs": "About Us",
-    "leaderEyebrow": "리더십",
-    "leaderTitle": "Indexia Group의 비전가",
-    "founderName": "창립자 겸 대표이사",
-    "founderRole": "창립자 겸 대표이사",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
-    "founderQuote": "사업은 신뢰에 관한 것입니다. 무결성 위에 쌓으면 모든 것이 따라옵니다.",
-    "companiesEyebrow": "자회사",
-    "companiesTitle": "8개 사업, 하나의 비전",
-    "companiesSubtitle": "뭄바이의 단일 금융 서비스 회사에서 8개 사업을 아우르는 다양한 그룹으로 성장.",
-    "c1Tag": "다국적 핀테크",
-    "c1Name": "Indexia Finance",
-    "c1Body": "2012년 설립된 Indexia Finance는 인도 최대의 국제 금융 회사입니다.",
-    "c1Highlights": "43+ 대출 파트너,4개 도시 5개 지점,2016 최우수 금융 회사 수상,글로벌 입지",
-    "c2Tag": "대출 부문",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
-    "c2Body": "Indexia Finserve는 Indexia Group의 전담 대출 부문입니다.",
-    "c2Highlights": "12개 대출 상품,개인 및 사업 대출,주택 담보 대출,잔액 이전 및 운전자본",
-    "c3Tag": "글로벌 수출",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
-    "c3Body": "Indexia Overseas는 Indexia Group의 글로벌 수출 부문입니다.",
-    "c3Highlights": "14개 남미 국가,프리미엄 정제 설탕 수출,식품 등급 품질 인증,전체 수출 관리",
-    "c4Tag": "유기농 농업",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    "c4Body": "Indexia Agro Bio Fertilizers는 인도 농업의 혁신에 전념합니다.",
-    "c4Highlights": "100% 유기농 바이오 비료,Shamli UP 생산,토양 검사 및 농민 지원,국내 및 수출 유통",
-    "c5Tag": "무장 보호",
-    "c5Name": "Indexia Securities",
-    "c5Body": "Indexia Securities는 프리미어 보안 솔루션 제공업체입니다.",
-    "c5Highlights": "전 군사 특수부대,24/7 작전 센터,VIP 및 기업 보호,핵심 인프라 보안",
-    "c6Tag": "전략적 토지",
-    "c6Name": "Indexia Warehouse",
-    "c6Body": "Indexia Warehouse는 전략적 토지 임대 기회를 제공합니다.",
-    "c6Highlights": "Shamli UP 21에이커,8개 국립 고속도로,5개 위치,델리에서 65km",
-    "c7Tag": "고속도로 광고",
-    "c7Name": "Indexia Advertising",
-    "c7Body": "Indexia Advertising는 프리미엄 광고를 운영합니다.",
-    "c7Highlights": "NH-709B 델리-데흐라둔 고속도로,10개 주 연결,360° 가시성,1+ 크로어 일일 노출",
-    "c8Tag": "사회적 영향",
-    "c8Name": "Indexia Foundation",
-    "c8Body": "Indexia Foundation은 Indexia Group의 사회적 영향 부문입니다.",
-    "c8Highlights": " grassroots에서 올림픽까지,훈련 및 영양,코칭 및 멘토링,대회 자금 지원",
-    "visitWebsite": "웹사이트 방문",
-    "learnMore": "더 알아보기",
-    "registrationEyebrow": "등록 및 컴플라이언스",
-    "registrationTitle": "등록 법인",
-    "registrationSubtitle": "모든 Indexia Group 회사는 등록되어 있습니다.",
-    "viewOnMCA": "MCA에서 보기",
-    "registrationNote": "모든 회사 등록은 에서 확인할 수 있습니다",
-    "mcaPortal": "MCA 포털",
-    "taglineSecondary": "다양한 사업. 통합된 비전.",
-    "stat1Value": "08",
-    "stat2Value": "03",
-    "stat3Value": "12+",
-    "stat4Value": "14",
-    "milestone1Year": "2012",
-    "milestone2Year": "2015",
-    "milestone3Year": "2018",
-    "milestone4Year": "2021",
-    "milestone5Year": "2024"
-  },
-  "homeReach": {
-    "eyebrow": "우리의 도달 범위",
-    "title": "국경을 넘어 신뢰",
-    "subtitle": "뭄바이에서 에콰도르까지, 우리 회사들은 무결성과 결과에 대한 같은 헌신으로 3대륙 고객을 서비스합니다.",
-    "stat1Label": "자회사",
-    "stat2Label": "국가",
-    "stat3Label": "강한 연수",
-    "stat4Label": "서비스 고객",
-    "cta": "더 알아보기"
-  },
-  "jsonLd": {
-    "orgName": "Indexia Group",
-    "breadcrumbHome": "홈",
-    "breadcrumbAbout": "회사 소개",
-    "breadcrumbCompanies": "그룹 회사",
-    "breadcrumbContact": "문의하기",
-    "breadcrumbNews": "뉴스 및 지식 센터",
-    "breadcrumbCareers": "채용",
-    "aboutName": "Indexia Group 소개",
-    "aboutDescription": "Indexia Group은 다양한 인도 기업 그룹입니다.",
-    "contactName": "Indexia Group 문의",
-    "corporateOffice": "본사",
-    "delhiOffice": "델리 사무소",
-    "businessesName": "Indexia Group 사업",
-    "businessesDescription": "Indexia Group 산하 8개 사업.",
-    "newsName": "Indexia Group, 뉴스 및 지식 센터",
-    "careersName": "Indexia Group 채용",
-    "companyPageName": "{{name}}, {{tag}}",
-    "companyPageDescription": "{{name}}에 대해 알아보세요, Indexia Group 소속 회사. {{description}}"
-  },
-  "legalContent": {
-    "privacy": {
-      "intro": [
-        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
-        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
-      ],
-      "sections": [
-        {
-          "title": "Informations que nous collectons",
-          "paragraphs": [
-            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
-            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
-          ]
-        },
-        {
-          "title": "Comment nous utilisons vos informations",
-          "paragraphs": [
-            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
-            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
-          ]
-        },
-        {
-          "title": "Partage et divulgation",
-          "paragraphs": [
-            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
-            "Nous ne vendons pas vos informations personnelles à des tiers."
-          ]
-        },
-        {
-          "title": "Sécurité des données",
-          "paragraphs": [
-            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
-            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
-          ]
-        },
-        {
-          "title": "Cookies et technologies similaires",
-          "paragraphs": [
-            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
-          ]
-        },
-        {
-          "title": "Conservation des données",
-          "paragraphs": [
-            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
-          ]
-        },
-        {
-          "title": "Vos droits et choix",
-          "paragraphs": [
-            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
-            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
-          ]
-        },
-        {
-          "title": "Liens vers des tiers",
-          "paragraphs": [
-            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
-          ]
-        },
-        {
-          "title": "Confidentialité des enfants",
-          "paragraphs": [
-            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
-          ]
-        },
-        {
-          "title": "Modifications de la présente politique",
-          "paragraphs": [
-            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
-          ]
-        },
-        {
-          "title": "Contact",
-          "paragraphs": [
-            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
-          ]
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [],
-      "sections": [
-        {
-          "title": "Politique d'Annulation et de Remboursement",
-          "paragraphs": [
-            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
-          ]
-        },
-        {
-          "title": "Politique d'Annulation",
-          "paragraphs": [
-            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
-            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
-            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
-            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
-            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
-            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
-            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
-            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
-          ]
-        },
-        {
-          "title": "Politique de Remboursement",
-          "paragraphs": [
-            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
-          ]
-        },
-        {
-          "title": "Clause BO",
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ]
-        },
-        {
-          "title": "Politique de Clause de Non-Responsabilité",
-          "paragraphs": [
-            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
-            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
-            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
-          ]
-        },
-        {
-          "title": "Clause de Non-Responsabilité de ce Site Web",
-          "paragraphs": [
-            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
-            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
-            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
-            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
-          ]
-        }
-      ]
-    },
-    "terms": {
-      "intro": [
-        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
-        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
-        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
-      ],
-      "sections": [
-        {
-          "title": "Contenu et Modifications",
-          "paragraphs": [
-            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
-          ]
-        },
-        {
-          "title": "Aucune Garantie",
-          "paragraphs": [
-            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
-          ]
-        },
-        {
-          "title": "Utilisation à Vos Risques",
-          "paragraphs": [
-            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
-          ]
-        },
-        {
-          "title": "Propriété Intellectuelle",
-          "paragraphs": [
-            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
-          ]
-        },
-        {
-          "title": "Marques Commerciales",
-          "paragraphs": [
-            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
-          ]
-        },
-        {
-          "title": "Utilisation Non Autorisée",
-          "paragraphs": [
-            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
-          ]
-        },
-        {
-          "title": "Liens Vers des Sites Tiers",
-          "paragraphs": [
-            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
-          ]
-        },
-        {
-          "title": "Liens Vers ce Site Web",
-          "paragraphs": [
-            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
-          ]
-        },
-        {
-          "title": "Droit Applicable",
-          "paragraphs": [
-            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
-          ]
-        },
-        {
-          "title": "Responsabilité des Transactions par Carte",
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ]
-        }
-      ]
-    }
-  },
-  "notFoundPage": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "backHome": "Back to Home"
-  },
-  "applyPage": {
-    "successTitle": "Application Submitted!",
-    "successBody": "Thank you for applying for the <strong>{{role}}</strong> position. Our HR team has received your application and will review it shortly.",
-    "successSentTo": "Application sent to",
-    "backToCareers": "Back to Careers",
-    "heroTitle": "Apply for",
-    "roleDetails": "Role Details",
-    "responsibilities": "Responsibilities & Requirements",
-    "infoBanner": "Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.",
-    "fullName": "Full Name",
-    "fullNamePlaceholder": "Your full name",
-    "email": "Email",
-    "phone": "Phone",
-    "phonePlaceholder": "10-digit number",
-    "experience": "Experience",
-    "selectExperience": "Select experience",
-    "fresher": "Fresher",
-    "lessThan1Year": "Less than 1 year",
-    "1to2Years": "1-2 years",
-    "2to5Years": "2-5 years",
-    "5plusYears": "5+ years",
-    "resume": "Resume",
-    "clickToUpload": "Click to upload resume",
-    "clickToReplace": "Click to replace",
-    "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
-    "tellUsAboutYourself": "Tell us about yourself",
-    "introPlaceholder": "Share your background, skills, and why you're interested in this role...",
-    "submitting": "Submitting...",
-    "submitApplication": "Submit Application",
-    "submitNote": "Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.",
-    "errorNameEmpty": "Please enter your name.",
-    "errorNameShort": "Name must be at least 2 characters.",
-    "errorNameLetters": "Name must contain letters.",
-    "errorEmailEmpty": "Please enter your email address.",
-    "errorEmailInvalid": "Please enter a valid email address.",
-    "errorPhoneEmpty": "Please enter your phone number.",
-    "errorPhoneInvalid": "Please enter a valid 10-digit phone number.",
-    "errorExperience": "Please select your experience level.",
-    "errorResume": "Please upload your resume.",
-    "errorIntroEmpty": "Please tell us about yourself.",
-    "errorIntroShort": "Please write at least 20 characters.",
-    "errorFileSize": "File size must be under 5MB.",
-    "errorFileType": "Only PDF, DOC, or DOCX files are accepted.",
-    "errorSubmit": "Could not submit your application. Please try again later."
-  },
-  "newsHero": {
-    "latestLabel": "Latest across the group",
-    "sectors": {
-      "finance": "Finance",
-      "tradeExport": "Trade & Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "advertising": "Advertising",
-      "sport": "Sport"
-    }
-  },
-  "newsVideo": {
-    "onAir": "On Air",
-    "tvCommercial": "TV Commercial"
-  },
-  "careersHero": {
-    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
-    "companiesOneGroup": "companies, one group"
-  },
-  "openRoles": {
-    "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment."
+    "plotCol": "이용 가능한 필지 크기",
+    "portfolioCol": "포트폴리오",
+    "standardRate": "예상 가격: 제곱피트당 ₹30, 협상 가능",
+    "subtitle": "5개 위치 | 총 21에이커, 샴리, 우타르프라데시",
+    "title": "토지 포트폴리오 및 요금",
+    "total": "총 토지",
+    "totalValue": "21에이커",
+    "valueCol": "가치"
   }
 }

@@ -9,6 +9,8 @@ import { connectDB } from "./db.js";
 import Application from "./models/Application.js";
 import JobOpening from "./models/JobOpening.js";
 import adminRoutes from "./routes/admin.js";
+import newsRoutes from "./routes/news.js";
+import { startNewsScheduler } from "./services/newsScheduler.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const IS_VERCEL = Boolean(process.env.VERCEL);
@@ -164,7 +166,10 @@ const upload = multer({
 });
 
 // Connect to MongoDB (non-blocking)
-connectDB().then(seedOpenings);
+connectDB().then(() => {
+  seedOpenings();
+  if (!IS_VERCEL) startNewsScheduler();
+});
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, smtpConfigured, mailTo });
@@ -175,6 +180,7 @@ app.locals.sendMail = sendMail;
 
 // Mount admin routes
 app.use("/api/admin", adminRoutes);
+app.use("/api/news", newsRoutes);
 
 // ── Job Openings CRUD ─────────────────────────────────────────────
 

@@ -1,384 +1,870 @@
 {
-  "header": {
-    "nav": {
-      "contact": "Liên hệ",
-      "about": "Về Chúng Tôi"
-    },
-    "menu": {
-      "home": "Trang chủ",
-      "groupCompanies": "Các Công ty Tập đoàn",
-      "companies": "Công ty",
-      "contact": "Liên hệ"
-    },
-    "aria": {
-      "selectLanguage": "Chọn ngôn ngữ",
-      "toggleMenu": "Mở/đóng menu",
-      "closeMenu": "Đóng menu"
-    }
+  "aboutPage": {
+    "aboutUs": "Về chúng tôi",
+    "c1Body": "Được thành lập năm 2012, Indexia Finance là công ty tài chính quốc tế lớn nhất Ấn Độ.",
+    "c1Highlights": "43+ Đối Tác Cho Vay,5 Chi Nhánh Tại 4 Thành Phố,Công Ty Tài Chính Tốt Nhất 2016,Sự presence Toàn Cầu",
+    "c1Name": "Indexia Finance",
+    "c1Tag": "Fintech Đa Quốc Gia",
+    "c2Body": "Indexia Finserve là cánh cho vay chuyên dụng của Indexia Group.",
+    "c2Highlights": "12 Sản Phẩm Cho Vay,Vay Cá Nhân & Thương Mại,Vay Nhà Ở & Vay Đảm Bảo,Chuyển Số Dư & Vốn Lưu Động",
+    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Tag": "Cánh Cho Vay",
+    "c3Body": "Indexia Overseas là cánh xuất khẩu toàn cầu của Indexia Group.",
+    "c3Highlights": "14 Quốc Gia Nam Mỹ,Xuất Khẩu Đường Tinh Chế Cao Cấp,Chứng Nhận Chất Lượng Thực Phẩm,Quản Lý Vòng Đời Xuất Khẩu Đầy Đủ",
+    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Tag": "Xuất khẩu toàn cầu",
+    "c4Body": "Indexia Agro Bio Fertilizers cam kết chuyển đổi nông nghiệp Ấn Độ.",
+    "c4Highlights": "100% Phân Bón Sinh Học Hữu Cơ,Sản Xuất Tại Shamli UP,Kiểm Tra Đất & Hỗ Trợ Nông Dân,Phân Phối Trong Nước & Xuất Khẩu",
+    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Tag": "Nông Nghiệp Hữu Cơ",
+    "c5Body": "Indexia Securities là nhà cung cấp giải pháp bảo mật hàng đầu.",
+    "c5Highlights": "Lính Đặc Nhiệu Quân Đội,Cơ Sở Vận Hành 24/7,Bảo Vệ VIP & Doanh Nghiệp,Bảo Mật Hạ Tầng Trọng Yếu",
+    "c5Name": "Indexia Securities",
+    "c5Tag": "Bảo Vệ Vũ Trang",
+    "c6Body": "Indexia Warehouse cung cấp cho thuê đất chiến lược.",
+    "c6Highlights": "21 Acre Tại Shamli UP,8 Đường Cao Tốc Quốc Gia,5 Địa Điểm,Cách Delhi 65 km",
+    "c6Name": "Indexia Warehouse",
+    "c6Tag": "Đất Chiến Lược",
+    "c7Body": "Indexia Advertising vận hành bảng quảng cáo cao cấp.",
+    "c7Highlights": "Cao Tốc NH-709B Delhi-Dehradun,10 Bang Kết Nối,Tầm Nhìn 360°,1+ Crore Tiếp Cận Hàng Ngày",
+    "c7Name": "Indexia Advertising",
+    "c7Tag": "Quảng Cáo Đường Cao Tốc",
+    "c8Body": "Indexia Foundation là cánh tác động xã hội của Indexia Group.",
+    "c8Highlights": "Từ Cơ Sở Đến Thế Vận Hội,Đào Tạo & Dinh Dưỡng,Coaching & Mentorship,Tài Trợ Giải Đấu",
+    "c8Name": "Indexia Foundation",
+    "c8Tag": "Tác Động Xã Hội",
+    "companiesEyebrow": "Các công ty",
+    "companiesSubtitle": "Từ một công ty dịch vụ tài chính tại Mumbai đến một tập đoàn đa dạng với tám doanh nghiệp.",
+    "companiesTitle": "Tám doanh nghiệp, Một tầm nhìn",
+    "ctaBody": "Dù bạn đang tìm kiếm dịch vụ tài chính, khám phá đối tác, hay đơn giản muốn tìm hiểu thêm, chúng tôi ở đây.",
+    "ctaButton": "Liên hệ",
+    "ctaTitle": "Hãy cùng xây dựng điều gì đó",
+    "eyebrow": "Về chúng tôi",
+    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
+    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderName": "Người Sáng Lập & Tổng Giám Đốc",
+    "founderQuote": "Kinh doanh dựa trên niềm tin. Khi bạn xây dựng bằng sự chính trực, mọi thứ khác sẽ theo sau.",
+    "founderRole": "Người sáng lập và Tổng giám đốc",
+    "leaderEyebrow": "Ban lãnh đạo",
+    "leaderTitle": "Nhà kiến tạo đằng sau Indexia Group",
+    "learnMore": "Tìm hiểu thêm",
+    "mcaPortal": "Cổng thông tin MCA",
+    "metaDescription": "About Indexia Group, a diversified Indian business group.",
+    "milestone1Body": "Indexia Group thành lập công ty đầu tiên tại Mumbai.",
+    "milestone1Title": "Thành Lập Tại Mumbai",
+    "milestone1Year": "2012",
+    "milestone2Body": "Mở rộng hoạt động đến Delhi NCR.",
+    "milestone2Title": "Mở rộng quốc gia",
+    "milestone2Year": "2015",
+    "milestone3Body": "Đi vào thị trường quốc tế với xuất khẩu đường sang Nam Mỹ.",
+    "milestone3Title": "Vươn ra toàn cầu",
+    "milestone3Year": "2018",
+    "milestone4Body": "Ra mắt Agro Bio, Securities, Warehouse và Advertising.",
+    "milestone4Title": "Đa dạng hóa",
+    "milestone4Year": "2021",
+    "milestone5Body": "Thành lập Indexia Foundation hỗ trợ vận động viên Ấn Độ.",
+    "milestone5Title": "Tác động xã hội",
+    "milestone5Year": "2024",
+    "registrationEyebrow": "Đăng ký & Tuân thủ",
+    "registrationNote": "Tất cả đăng ký đều có thể xác minh tại",
+    "registrationSubtitle": "Tất cả các công ty Indexia Group đều được đăng ký theo Luật Công ty 2013.",
+    "registrationTitle": "Các thực thể đã đăng ký",
+    "stat1Label": "Công ty",
+    "stat1Value": "08",
+    "stat2Label": "Văn phòng",
+    "stat2Value": "03",
+    "stat3Label": "Năm hoạt động",
+    "stat3Value": "12+",
+    "stat4Label": "Quốc gia phục vụ",
+    "stat4Value": "14",
+    "storyBody1": "Indexia Group được thành lập với niềm tin đơn giản: doanh nghiệp Ấn Độ có thể cạnh tranh toàn cầu.",
+    "storyBody2": "Ngày nay, Indexia Group hoạt động tại ba địa điểm, Mumbai, Delhi và Ecuador.",
+    "storyEyebrow": "Câu chuyện của chúng tôi",
+    "storyTitle": "Từ tầm nhìn chung đến tập đoàn quốc gia",
+    "subtitle": "Tập đoàn kinh doanh Ấn Độ đa dạng cam kết với tính toàn vẹn, chuyên môn và cách tiếp cận lấy con người làm trung tâm.",
+    "taglineSecondary": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất.",
+    "timelineEyebrow": "Hành trình của chúng tôi",
+    "timelineTitle": "Các cột mốc quan trọng",
+    "title": "Về Indexia Group",
+    "titleAccent": "Trên Mọi Lĩnh Vực.",
+    "titleStart": "Xây Dựng Niềm Tin ",
+    "value1Body": "Chúng tôi làm những gì chúng tôi nói.",
+    "value1Title": "Chính trực",
+    "value2Body": "Chúng tôi đầu tư vào kiến thức chuyên sâu.",
+    "value2Title": "Chuyên môn",
+    "value3Body": "Kinh doanh cuối cùng là về con người.",
+    "value3Title": "Con người là ưu tiên",
+    "value4Body": "Chúng tôi đón nhận thay đổi và liên tục cải tiến.",
+    "value4Title": "Đổi mới",
+    "valuesEyebrow": "Giá trị của chúng tôi",
+    "valuesTitle": "Dưỡa chúng tôi theo đuồi",
+    "viewOnMCA": "Xem trên MCA",
+    "visitWebsite": "Xem website"
   },
-  "hero": {
-    "p0": {
-      "tag": "Indexia Group",
-      "heading": "Một Tập đoàn.\nNhiều Giải pháp.",
-      "tagline": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất.",
-      "sub": "Từ tài chính và warehousing đến nông nghiệp và quảng cáo, Indexia Group thúc đẩy tăng trưởng trên nhiều ngành với các doanh nghiệp đáng tin cậy, sẵn sàng cho tương lai.",
-      "motto": "Một vài bước để phục vụ đất nước"
-    },
-    "p1": {
-      "tag": "Indexia Finance",
-      "heading": "Điểm Đến\nCho Mọi Khoản Vay.",
-      "sub": "Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin của chúng tôi tại www.indexiafinance.com. Chúng tôi cung cấp dịch vụ toàn cầu, tại Ấn Độ, chúng tôi là đối tác kinh doanh của 43 ngân hàng và NBFC."
-    },
-    "p2": {
-      "tag": "Indexia Finserve Pvt. Ltd.",
-      "heading": "Phương Thức Tài Chính\nThế Hệ Mới.",
-      "sub": "Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn."
-    },
-    "p3": {
-      "tag": "Indexia Overseas Pvt. Ltd.",
-      "heading": "Đường Tinh Luyện &\nMọi Thực Phẩm.",
-      "sub": "Chúng tôi kinh doanh và xuất khẩu đường tinh luyện cùng mọi thực phẩm."
-    },
-    "p4": {
-      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-      "heading": "Chúng Tôi Sản Xuất &\nXuất Khẩu Phân Bón Hữu Cơ",
-      "sub": "Chúng tôi sản xuất phân bón hữu cơ tại Ấn Độ và xuất khẩu ra toàn cầu."
-    },
-    "p5": {
-      "tag": "Indexia Securities",
-      "heading": "Biệt Kích Vũ Trang &\nAn Ninh Vũ Trang",
-      "sub": "Bảo vệ các chính trị gia và những ông trùm kinh doanh lớn."
-    },
-    "p6": {
-      "tag": "Indexia Warehouse",
-      "heading": "Kho Bãi Xây Dựng\nCho Quy Mô Lớn.",
-      "sub": "Cơ sở hạ tầng kho bãi và warehousing hiện đại giúp hàng hóa di chuyển hiệu quả."
-    },
-    "p7": {
-      "tag": "Indexia Advertising",
-      "heading": "Thương Hiệu Của Bạn\nTrên Mọi Xa Lộ.",
-      "sub": "Nhiều vị trí quảng cáo dọc các xa lộ, mang đến các chiến dịch có độ phủ cao cho thương hiệu."
-    },
-    "p8": {
-      "tag": "Indexia Foundation",
-      "heading": "Nâng Tầm\nVận Động Viên.",
-      "sub": "Các chương trình thể thao đào tạo, cố vấn và tài trợ cho vận động viên trên hành trình đến đỉnh cao phong độ."
-    },
-    "ctaExploreGroup": "Khám Phá Các Công ty Tập đoàn",
-    "ctaExploreMore": "Khám Phá Thêm",
-    "prevPanel": "Bảng trước",
-    "nextPanel": "Bảng tiếp theo"
+  "advertisingContact": {
+    "address": "Địa Chỉ Văn Phòng",
+    "brochure": "Tải tài liệu giới thiệu",
+    "emails": "Email",
+    "eyebrow": "Liên hệ",
+    "phones": "Điện Thoại",
+    "title": "Đặt Chỗ Ngay Hôm Nay"
   },
-  "footer": {
-    "tagline": "Tập đoàn Kinh doanh Đa ngành Ấn Độ",
-    "blurb": "Tám doanh nghiệp đáng tin cậy dưới một tập đoàn Ấn Độ đa ngành, tài chính, xuất khẩu, nông nghiệp, warehousing, an ninh, quảng cáo và hỗ trợ vận động viên, xây dựng trên nền tảng liêm chính và kết quả.",
-    "contactUs": "Liên hệ",
-    "hours": "Thứ Hai - Thứ Bảy: 9:00 - 18:00",
-    "company": "Công ty",
-    "resources": "Tài nguyên",
-    "legal": "Pháp lý",
-    "links": {
-      "groupCompanies": "Các Công ty Tập đoàn",
-      "advertise": "Quảng Cáo Cùng Chúng Tôi",
-      "careers": "Tuyển dụng",
-      "news": "Tin tức & Trung tâm Kiến thức",
-      "globalResearch": "Nghiên cứu Toàn cầu",
-      "securityTips": "Mẹo Bảo mật",
-      "termsOfUse": "Điều khoản Sử dụng",
-      "termsConditions": "Điều khoản & Điều kiện",
-      "privacyPolicy": "Chính sách Bảo mật",
-      "aboutUs": "Về Chúng Tôi"
-    },
-    "cta": "Bạn có thắc mắc về bất kỳ công ty nào trong tập đoàn của chúng tôi?",
-    "enquiry": "Gửi yêu cầu của bạn.",
-    "stats": "Indexia Group · 08 Công ty · 03 Thành phố",
-    "rights": "© 2026 Indexia Group. Bảo lưu mọi quyền.",
-    "backToTop": "Về đầu trang",
-    "taglineSecondary": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất."
-  },
-  "home": {
-    "groupCompanies": {
-      "title": "Các Công ty Tập đoàn",
-      "description": "Indexia Group là một công ty mẹ đa ngành bao gồm Tài chính, Xuất khẩu, Nông nghiệp, Kho bãi, An ninh, Tác động Xã hội và Quảng cáo. Chúng tôi xây dựng các doanh nghiệp giúp Khách hàng, Đối tác và Cộng đồng phát triển một cách tự tin."
-    }
-  },
-  "businesses": {
-    "eyebrow": "Các Công ty Tập đoàn",
-    "titleStart": "Tám Công ty, ",
-    "titleAccent": "Một Tập đoàn",
-    "subtitle": "Chọn một công ty để truy cập trang riêng của công ty đó, sau đó gửi yêu cầu của bạn đến đúng đội ngũ."
-  },
-  "businessesHero": {
-    "eyebrow": "Sự Khác Biệt Indexia",
-    "titleStart": "Một Tập đoàn. Tám Doanh nghiệp. ",
-    "titleAccent": "Một Cam Kết Chung.",
-    "paragraph": "Từ tài chính và tư vấn đến xuất khẩu, nông nghiệp, warehousing, an ninh, thể thao và truyền thông, mỗi doanh nghiệp Indexia đều được xây dựng trên cùng một nền tảng: liêm chính, chuyên môn và cách tiếp cận lấy con người làm trung tâm. Dù bạn cần gì, đội ngũ phù hợp đã là một phần của gia đình.",
-    "counterClients": "Khách Hàng Đã Phục Vụ",
-    "counterBusinesses": "Doanh Nghiệp",
-    "counterLocations": "Thành Phố",
-    "counterYears": "Năm Hoạt Động",
-    "cta": "Đặt Lịch Tư Vấn Miễn Phí →"
-  },
-  "contactHero": {
-    "eyebrow": "Trao Đổi Cùng Indexia",
-    "title": "Đường Dây Trực Tiếp Đến Đội Ngũ",
-    "paragraph": "Từ câu hỏi về hồ sơ đến yêu cầu vay mới, mọi tin nhắn đều được thành viên trong đội ngũ của chúng tôi xem xét và trả lời, không phải hàng chờ.",
-    "sendEnquiry": "Gửi Yêu Cầu Của Bạn",
-    "callNow": "Gọi Ngay · 86551 68551",
-    "offices": "{{count}} văn phòng",
-    "directLines": "{{count}} đường dây trực tiếp",
-    "reply": "Trả lời trung bình < 24 giờ"
-  },
-  "contactInfo": {
-    "eyebrow": "Gửi Yêu Cầu Của Bạn",
-    "headlineStart": "Hỏi Về ",
-    "headlineAccent": "Công ty Indexia",
-    "paragraph": "Dù bạn có câu hỏi về dịch vụ của chúng tôi, cần tư vấn kinh doanh hay muốn khám phá hợp tác, đội ngũ của chúng tôi sẵn sàng hỗ trợ, chúng tôi trả lời trong vòng 24 giờ.",
-    "enquiries": "Yêu cầu",
-    "location": "Địa điểm",
-    "workingHours": "Giờ Làm Việc",
-    "phoneNumbers": "Số Điện Thoại",
-    "country": "Ấn Độ"
-  },
-  "form": {
-    "eyebrow": "Gửi Yêu Cầu Của Bạn",
-    "intro": "Hoàn thành biểu mẫu bên dưới và yêu cầu của bạn sẽ được đội ngũ của chúng tôi xử lý.",
-    "name": "Họ và Tên",
-    "namePlaceholder": "Họ và tên đầy đủ của bạn",
-    "email": "Địa chỉ Email",
-    "emailPlaceholder": "you@example.com",
-    "phone": "Số Điện Thoại",
-    "phonePlaceholder": "Số 10 chữ số",
-    "subject": "Chủ đề / Công ty",
-    "subjectPlaceholder": "Chọn một công ty…",
-    "message": "Tin nhắn",
-    "messagePlaceholder": "Viết yêu cầu của bạn tại đây...",
-    "submit": "Gửi Yêu Cầu",
-    "sending": "Đang gửi…",
-    "success": "Yêu cầu của bạn đã được gửi! Đội ngũ của chúng tôi sẽ sớm liên hệ với bạn.",
-    "errorName": "Vui lòng nhập tên của bạn.",
+  "applyPage": {
+    "1to2Years": "1-2 năm",
+    "2to5Years": "2-5 năm",
+    "5plusYears": "5+ năm",
+    "backToCareers": "Quay lại tuyển dụng",
+    "clickToReplace": "Nhấn để thay thế",
+    "clickToUpload": "Nhấn để tải lên CV",
+    "email": "Email",
+    "errorEmailEmpty": "Vui lòng nhập email.",
+    "errorEmailInvalid": "Vui lòng nhập email hợp lệ.",
+    "errorExperience": "Vui lòng chọn cấp bậc kinh nghiệm.",
+    "errorFileSize": "Kích thước tệp phải dưới 5MB.",
+    "errorFileType": "Chỉ chấp nhận tệp PDF, DOC hoặc DOCX.",
+    "errorIntroEmpty": "Vui lòng giới thiệu về bản thân.",
+    "errorIntroShort": "Vui lòng viết ít nhất 20 ký tự.",
+    "errorNameEmpty": "Vui lòng nhập tên.",
     "errorNameLetters": "Tên phải chứa chữ cái.",
-    "errorPhone": "Nhập số điện thoại 10 chữ số hợp lệ.",
-    "errorEmail": "Nhập địa chỉ email hợp lệ.",
-    "errorSubject": "Vui lòng chọn chủ đề hoặc công ty.",
-    "errorMessage": "Vui lòng nhập tin nhắn của bạn.",
-    "errorGeneric": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
-    "generalEnquiry": "Yêu Cầu Chung"
-  },
-  "companyDetail": {
-    "backAll": "Tất Cả Công Ty",
-    "register": "Số Đăng ký {{no}} / 08",
-    "keyEntries": "Các mục chính",
-    "servicesTitle": "Dịch vụ trong mục này",
-    "registerOf": "Indexia Group · Sổ Đăng ký Công ty",
-    "entryOf": "Mục {{no}} / 08",
-    "eyebrow": "Gửi Yêu Cầu Của Bạn",
-    "enquireTitle": "Hỏi Về {{name}}",
-    "enquireSub": "Yêu cầu của bạn được ghi tên {{name}} ở đầu, để đúng đội ngũ tiếp nhận trước.",
-    "responseTime": "Thời gian phản hồi",
-    "responseValue": "Trong vòng 24 giờ, Thứ Hai – Thứ Bảy",
-    "overviewEyebrow": "Tổng Quan",
-    "overviewTitle": "Về {{name}}",
-    "exploreServices": "Khám Phá Dịch Vụ",
-    "statServices": "Dịch Vụ",
-    "statHighlights": "Điểm Nổi Bật",
-    "statRegister": "Mục Đăng Ký",
-    "mainPoint": "Điểm chính",
-    "whyChoose": "Tại sao chọn chúng tôi",
-    "whyChooseDesc": "Điều khiến công ty này khác biệt.",
-    "keyNumbers": "Con số then chốt",
-    "keyNumbersDesc": "Những con số định hình tác động của chúng tôi.",
-    "globalReach": "Phạm vi toàn cầu",
-    "globalReachDesc": "Sự hiện diện xuyên biên giới và thị trường."
-  },
-  "contact": {
-    "locationsTitleStart": "Văn Phòng ",
-    "locationsTitleAccent": "Của Chúng Tôi"
-  },
-  "businessCard": {
-    "tapToView": "Chạm để xem",
-    "readMore": "Đọc thêm"
-  },
-  "companyLinkCard": {
-    "visitPage": "Truy cập trang",
-    "visitWebsiteAria": "Truy cập trang web {{name}}",
-    "visitPageAria": "Truy cập trang {{name}}",
-    "visualAlt": "Hình ảnh {{name}}"
-  },
-  "newsPage": {
-    "eyebrow": "Tin tức & Trung tâm Kiến thức",
-    "title": "Tin tức & Trung tâm Kiến thức",
-    "titleStart": "Câu Chuyện & Góc Nhìn từ ",
-    "titleAccent": "Khung Của Tập Đoàn.",
-    "subtitle": "Tin tức ngân hàng mới nhất, cập nhật tài trợ vốn, thanh toán kỹ thuật số, thay đổi chính sách và diễn biến thị trường, cùng các hướng dẫn thực tiễn từ các doanh nghiệp của chúng tôi.",
-    "tvEyebrow": "Xem Chúng Tôi Trên TV",
-    "tvHeadingStart": "Cho Mọi Nhu Cầu Vay Vốn Của Bạn",
-    "tvHeadingAccent": "Indexia Finance",
-    "tvCaption": "Cần Vay Nghĩa Là… Indexia Finance",
-    "featuredLabel": "Bài Viết Nổi Bật",
-    "readMore": "Đọc Thêm",
-    "askUs": "Hỏi Chúng Tôi",
-    "knowledgeEyebrow": "Trung tâm Kiến thức",
-    "knowledgeHeading": "Hướng Dẫn Thực Tiễn từ Doanh Nghiệp",
-    "knowledgeSubtitle": "Những bài giải thích dễ hiểu do chính đội ngũ làm công việc này mỗi ngày viết.",
-    "ctaTitle": "Bạn có câu hỏi về các doanh nghiệp của chúng tôi?",
-    "ctaBody": "Từ tư vấn FDI đến nông nghiệp hữu cơ, an ninh vũ trang, công ty Indexia phù hợp luôn sẵn sàng hỗ trợ. Gửi yêu cầu và chúng tôi sẽ kết nối bạn.",
-    "ctaButton": "Gửi Yêu Cầu",
-    "metaDescription": "Tin tức & Trung tâm Kiến thức, tin tức ngân hàng mới nhất về tài trợ vốn, thanh toán kỹ thuật số và chính sách, cùng các hướng dẫn kiến thức thực tiễn từ Indexia Group."
-  },
-  "careersPage": {
-    "eyebrow": "Tuyển Dụng",
-    "title": "Sự Nghiệp Tại Indexia Group",
-    "titleStart": "Xây Dựng Sự Nghiệp Cùng ",
-    "titleAccent": "Chúng Tôi.",
-    "subtitle": "Indexia Group là một tổ chức không ngừng học hỏi, và văn hóa doanh nghiệp chính là đội ngũ của nó.",
-    "ctaButton": "Xem Vị Trí Tuyển Dụng",
-    "cultureEyebrow": "Văn Hóa Của Chúng Tôi",
-    "cultureHeading": "Một Tổ Chức Học Hỏi",
-    "rolesEyebrow": "Vị Trí Tuyển Dụng",
-    "rolesHeading": "Các Vị Trí Đang Tuyển",
-    "rolesSubtitle": "Các vị trí đang tuyển hiện tại của chúng tôi là:",
-    "apply": "Ứng Tuyển",
-    "ctaTitle": "Gửi Hồ Sơ Của Bạn",
-    "ctaBody": "Chúng tôi luôn tìm kiếm những con người tuyệt vời. Gửi CV của bạn đến hr@indexiafinance.com và chúng tôi sẽ liên hệ.",
-    "metaDescription": "Sự nghiệp tại Indexia Group, một tổ chức học hỏi với các vị trí tuyển dụng tại Indexia Finserve Mumbai. Gửi hồ sơ để bắt đầu sự nghiệp cùng chúng tôi.",
-    "mailResume": "Gửi hồ sơ của bạn –"
-  },
-  "legal": {
-    "eyebrow": "Pháp Lý",
-    "privacyTitle": "Chính sách Bảo mật",
-    "privacySubtitle": "Indexia Group thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn như thế nào.",
-    "termsTitle": "Điều khoản & Điều kiện",
-    "termsSubtitle": "Các điều khoản quản lý việc sử dụng trang web Indexia Group và dịch vụ của các công ty trực thuộc.",
-    "termsOfUseTitle": "Điều khoản Sử dụng",
-    "termsOfUseSubtitle": "Các quy tắc truy cập và duyệt trang web Indexia Group cũng như trang web của các công ty trực thuộc.",
-    "lastUpdated": "Cập nhật lần cuối",
-    "backHome": "Về Trang Chủ",
-    "contactUs": "Liên Hệ",
-    "contactHeading": "Có câu hỏi về chính sách này?",
-    "contactBody": "Viết thư cho chúng tôi tại contactus@indexiagroup.com hoặc gửi yêu cầu và đội ngũ của chúng tôi sẽ liên hệ lại.",
-    "sendEnquiry": "Gửi Yêu Cầu",
-    "metaPrivacyDescription": "Đọc Chính sách Bảo mật của Indexia Group, cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của bạn.",
-    "metaTermsDescription": "Đọc Điều khoản & Điều kiện quản lý việc sử dụng trang web Indexia Group và dịch vụ của các công ty trực thuộc.",
-    "metaTermsOfUseDescription": "Đọc Điều khoản Sử dụng quy định cách bạn truy cập và duyệt trang web Indexia Group cũng như trang web của các công ty trực thuộc."
-  },
-  "globalResearchPage": {
-    "eyebrow": "Nghiên Cứu Toàn Cầu",
-    "title": "Nghiên Cứu Toàn Cầu Tại Indexia Group",
-    "titleStart": "Nghiên Cứu Tài Chính Toàn Cầu ",
-    "titleAccent": "& Tài Nguyên.",
-    "subtitle": "Các phân tích sâu sắc, phù hợp và góc nhìn sắc bén trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, xây dựng trên nền tảng hiểu biết thực địa vững chắc tại Châu Á, Châu Phi và Trung Đông.",
-    "ctaButton": "Khám Phá Phạm Vi Nghiên Cứu",
-    "areasEyebrow": "Phạm Vi Nghiên Cứu",
-    "areasHeading": "Nghiên Cứu Toàn Cầu Trên Các Lĩnh Vực",
-    "areasSubtitle": "Các phân tích sâu sắc, phù hợp trên toàn bộ phạm vi hoạt động của chúng tôi.",
-    "reportsEyebrow": "Ấn Phẩm",
-    "reportsHeading": "Cách Chúng Tôi Chia Sẻ Nghiên Cứu",
-    "reportsSubtitle": "Các bài trình bày thường xuyên và ấn phẩm chất lượng cao, OTG, phân tích thực địa của chúng tôi; ACT, các ý tưởng thị trường khả thi; và Báo cáo Đặc biệt về các chủ đề quan trọng toàn cầu.",
-    "ctaTitle": "Truy Cập Nghiên Cứu Của Chúng Tôi",
-    "ctaBody": "Để tìm hiểu thêm và nhận nghiên cứu của chúng tôi, hãy truy cập cổng thông tin Nghiên cứu Toàn cầu. Để được cấp quyền truy cập, vui lòng liên hệ Quản lý Quan hệ của bạn.",
-    "metaDescription": "Nghiên cứu Toàn cầu Indexia Group, các phân tích sâu sắc, phù hợp trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, với hiểu biết thực địa tại Châu Á, Châu Phi và Trung Đông.",
-    "reportFormat": "Ấn Phẩm"
-  },
-  "securityTipsPage": {
-    "eyebrow": "Mẹo Bảo Mật",
-    "title": "Mẹo Bảo Mật Từ Indexia Group",
-    "titleStart": "Đi Trước ",
-    "titleAccent": "Lừa Đảo.",
-    "subtitle": "Dù bạn ở đâu, bạn vẫn có thể quản lý tiền trực tuyến một cách tự tin.",
-    "ctaButton": "Bảo Vệ Thông Tin Của Bạn",
-    "featuresEyebrow": "Chúng Tôi Làm Gì",
-    "featuresHeading": "Giữ Bạn An Toàn Trực Tuyến",
-    "featuresSubtitle": "Đọc để biết chúng tôi đang làm gì để bảo vệ tài khoản của bạn khi bạn giao dịch ngân hàng trực tuyến.",
-    "practicesEyebrow": "Bạn Có Thể Làm Gì",
-    "practicesHeading": "Bảo Vệ Thông Tin Của Bạn",
-    "practicesSubtitle": "Chúng tôi làm việc mỗi ngày để giữ tài khoản của bạn an toàn khi giao dịch ngân hàng trực tuyến. Ngoài ra, có một số điều đơn giản bạn có thể làm trên các thiết bị hàng ngày để an toàn trực tuyến.",
-    "contactsEyebrow": "Cần Trợ Giúp?",
-    "contactsHeading": "Cần Trao Đổi Với Chúng Tôi?",
-    "contactsSubtitle": "Nếu bạn nghĩ mình có thể đã tiết lộ thông tin tài khoản cho một bên đáng ngờ, hoặc bị lừa đảo, hãy liên hệ ngay với chúng tôi qua Đường dây Nóng Dịch vụ Khách hàng.",
-    "ctaTitle": "Thấy điều gì đó đáng ngờ?",
-    "ctaBody": "Hãy báo cáo qua biểu mẫu yêu cầu của chúng tôi hoặc liên hệ trực tiếp với công ty Indexia Group liên quan.",
-    "metaDescription": "Mẹo bảo mật từ Indexia Group, cách chúng tôi bảo vệ tài khoản của bạn trực tuyến, bạn có thể làm gì trên thiết bị của mình và liên hệ ai nếu có sự cố."
-  },
-  "common": {
-    "logoAlt": "Logo Indexia Group",
-    "homeAria": "Trang chủ Indexia Group",
-    "languages": {
-      "en": "English",
-      "es": "Español",
-      "fr": "Français",
-      "de": "Deutsch",
-      "it": "Italiano",
-      "pt": "Português",
-      "hi": "हिन्दी",
-      "ar": "العربية",
-      "zh": "中文",
-      "ja": "日本語",
-      "ru": "Русский",
-      "ko": "한국어",
-      "id": "Bahasa Indonesia",
-      "tr": "Türkçe",
-      "vi": "Tiếng Việt",
-      "nl": "Nederlands",
-      "pl": "Polski",
-      "th": "ไทย",
-      "sv": "Svenska",
-      "uk": "Українська",
-      "el": "Ελληνικά",
-      "he": "עברית"
-    }
-  },
-  "seo": {
-    "homeTitle": "Dịch Vụ Tài Chính, Khoản Vay, Xuất Khẩu & Warehousing",
-    "homeDescription": "Tập đoàn kinh doanh đa ngành Ấn Độ: dịch vụ tài chính, cho vay NBFC, xuất khẩu toàn cầu, phân bón nông nghiệp, kho bãi & an ninh. Văn phòng tại Mumbai, Delhi và Ecuador.",
-    "businessesTitle": "Các Công ty Tập đoàn, Tài chính, Nông nghiệp, Xuất khẩu & Warehousing",
-    "businessesDescription": "Tám doanh nghiệp của Indexia Group: tài chính, cho vay, an ninh, xuất khẩu đường, phân bón hữu cơ, kho bãi, quảng cáo và hỗ trợ vận động viên.",
-    "contactTitle": "Liên Hệ, Văn Phòng Mumbai & Delhi",
-    "contactDescription": "Liên hệ Indexia Group để được giải đáp về dịch vụ tài chính, cho vay, xuất khẩu, nông nghiệp và warehousing. Văn phòng tại Mumbai, Delhi và Ecuador, phản hồi trong 24 giờ."
+    "errorNameShort": "Tên phải có ít nhất 2 ký tự.",
+    "errorPhoneEmpty": "Vui lòng nhập số điện thoại.",
+    "errorPhoneInvalid": "Vui lòng nhập số điện thoại 10 chữ số hợp lệ.",
+    "errorResume": "Vui lòng tải lên CV.",
+    "errorSubmit": "Không thể gửi đơn. Vui lòng thử lại sau.",
+    "experience": "Kinh nghiệm",
+    "fresher": "Chưa có kinh nghiệm",
+    "fullName": "Họ và tên",
+    "fullNamePlaceholder": "Họ và tên của bạn",
+    "heroTitle": "Ứng tuyển vị trí",
+    "infoBanner": "Điền vào biểu mẫu bên dưới và chúng tôi sẽ gửi đơn ứng tuyển trực tiếp đến bộ phận nhân sự.",
+    "introPlaceholder": "Chia sẻ nền tảng, kỹ năng và lý do bạn quan tâm đến vị trí này...",
+    "lessThan1Year": "Dưới 1 năm",
+    "phone": "Điện thoại",
+    "phonePlaceholder": "Số 10 chữ số",
+    "responsibilities": "Trách nhiệm & Yêu cầu",
+    "resume": "CV",
+    "resumeFormats": "PDF, DOC hoặc DOCX (tối đa 5MB)",
+    "roleDetails": "Chi tiết vị trí",
+    "selectExperience": "Chọn kinh nghiệm",
+    "submitApplication": "Gửi đơn ứng tuyển",
+    "submitNote": "Đơn của bạn sẽ được gửi đến hr@indexiafinance.com và hr.indexia@gmail.com.",
+    "submitting": "Đang gửi...",
+    "successBody": "Cảm ơn bạn đã ứng tuyển vị trí <strong>{{role}}</strong>. Bộ phận nhân sự đã nhận được đơn của bạn.",
+    "successSentTo": "Đơn gửi đến",
+    "successTitle": "Đơn đã gửi!",
+    "tellUsAboutYourself": "Hãy nói về bản thân"
   },
   "branches": {
     "corporateOffice": "Văn Phòng Tập Đoàn",
-    "mumbaiOffice": "Văn Phòng Mumbai",
     "delhiOffice": "Văn Phòng Delhi",
-    "internationalOffice": "Văn Phòng Quốc Tế"
+    "internationalOffice": "Văn Phòng Quốc Tế",
+    "mumbaiOffice": "Văn Phòng Mumbai"
   },
-  "phoneLabel": {
-    "landline": "Điện thoại cố định",
-    "mobile": "Di động",
-    "mob": "Di động",
-    "tel": "ĐT"
+  "brochure": {
+    "about": "Về Dự Án",
+    "advertisingFooter": "Indexia Group | Giá tùy thuộc tình trạng còn chỗ. Để đặt chỗ, hãy gọi, email hoặc ghé văn phòng của chúng tôi.",
+    "advertisingHeadline": "Bảng Quảng Cáo Unipole Cao Cấp Trên Xa Lộ Delhi–Dehradun, Shamli",
+    "backAdvertising": "Quay Lại Trang Quảng Cáo",
+    "backWarehouse": "Quay Lại Trang Kho Hàng",
+    "contact": "Liên Hệ",
+    "download": "Tải PDF",
+    "footer": "Indexia Group · Để được giải đáp, hãy gọi, email hoặc ghé văn phòng của chúng tôi. Giá chỉ mang tính tham khảo và có thể thương lượng.",
+    "headline": "Đầu Tư Đất Chiến Lược Tại Trung Tâm Bắc Ấn Độ",
+    "locationAdvertising": "Đường cao tốc Delhi-Dehradun, Shamli",
+    "locationWarehouse": "Shamli, Uttar Pradesh",
+    "print": "In"
   },
-  "unipolePricing": {
-    "eyebrow": "Gói Unipole",
-    "title": "Kích Thước & Giá Có Sẵn",
-    "subtitle": "Gói unipole cao cấp trên Xa lộ Delhi–Dehradun, Shamli",
-    "sizeCol": "Kích thước",
-    "areaCol": "Ft Vuông",
-    "rateCol": "Giá Hàng Tháng",
-    "sizeSmall": "10 × 20 ft",
-    "areaSmall": "200 ft vuông",
-    "rateSmall": "₹25.000",
-    "sizeLarge": "12 × 24 ft",
-    "areaLarge": "288 ft vuông",
-    "rateLarge": "₹36.000",
-    "standardRate": "Giá Tiêu chuẩn: ₹125/ft vuông mỗi mặt mỗi tháng",
-    "note": "* Giá tùy thuộc vào tình trạng còn chỗ. Liên hệ để biết các gói dài hạn.",
-    "bookNow": "Đặt ngay",
-    "bookSize": "Đặt kích thước này",
-    "bookMessage": "Tôi muốn đặt unipole {{size}} ({{area}}) với giá {{rate}} mỗi tháng."
+  "businessCard": {
+    "readMore": "Đọc thêm",
+    "tapToView": "Chạm để xem"
+  },
+  "businesses": {
+    "eyebrow": "Các Công ty Tập đoàn",
+    "subtitle": "Chọn một công ty để truy cập trang riêng của công ty đó, sau đó gửi yêu cầu của bạn đến đúng đội ngũ.",
+    "titleAccent": "Một Tập đoàn",
+    "titleStart": "Tám Công ty, "
+  },
+  "businessesHero": {
+    "counterBusinesses": "Doanh Nghiệp",
+    "counterClients": "Khách Hàng Đã Phục Vụ",
+    "counterLocations": "Thành Phố",
+    "counterYears": "Năm Hoạt Động",
+    "cta": "Đặt Lịch Tư Vấn Miễn Phí →",
+    "eyebrow": "Sự Khác Biệt Indexia",
+    "paragraph": "Từ tài chính và tư vấn đến xuất khẩu, nông nghiệp, warehousing, an ninh, thể thao và truyền thông, mỗi doanh nghiệp Indexia đều được xây dựng trên cùng một nền tảng: liêm chính, chuyên môn và cách tiếp cận lấy con người làm trung tâm. Dù bạn cần gì, đội ngũ phù hợp đã là một phần của gia đình.",
+    "titleAccent": "Một Cam Kết Chung.",
+    "titleStart": "Một Tập đoàn. Tám Doanh nghiệp. "
+  },
+  "careersHero": {
+    "companiesOneGroup": "công ty, một tập đoàn",
+    "description": "Tám công ty. Một đội ngũ. Xây dựng sự nghiệp trong tài chính, xuất khẩu, nông nghiệp, an ninh, quảng cáo và phát triển vận động viên."
+  },
+  "careersPage": {
+    "apply": "Ứng Tuyển",
+    "ctaBody": "Chúng tôi luôn tìm kiếm những con người tuyệt vời. Gửi CV của bạn đến hr@indexiafinance.com và chúng tôi sẽ liên hệ.",
+    "ctaButton": "Xem Vị Trí Tuyển Dụng",
+    "ctaTitle": "Gửi Hồ Sơ Của Bạn",
+    "cultureEyebrow": "Văn Hóa Của Chúng Tôi",
+    "cultureHeading": "Một Tổ Chức Học Hỏi",
+    "eyebrow": "Tuyển Dụng",
+    "mailResume": "Gửi hồ sơ của bạn –",
+    "metaDescription": "Sự nghiệp tại Indexia Group, một tổ chức học hỏi với các vị trí tuyển dụng tại Indexia Finserve Mumbai. Gửi hồ sơ để bắt đầu sự nghiệp cùng chúng tôi.",
+    "rolesEyebrow": "Vị Trí Tuyển Dụng",
+    "rolesHeading": "Các Vị Trí Đang Tuyển",
+    "rolesSubtitle": "Các vị trí đang tuyển hiện tại của chúng tôi là:",
+    "subtitle": "Indexia Group là một tổ chức không ngừng học hỏi, và văn hóa doanh nghiệp chính là đội ngũ của nó.",
+    "title": "Sự Nghiệp Tại Indexia Group",
+    "titleAccent": "Chúng Tôi.",
+    "titleStart": "Xây Dựng Sự Nghiệp Cùng "
+  },
+  "common": {
+    "homeAria": "Trang chủ Indexia Group",
+    "languages": {
+      "ar": "العربية",
+      "de": "Deutsch",
+      "el": "Ελληνικά",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "he": "עברית",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "it": "Italiano",
+      "ja": "日本語",
+      "ko": "한국어",
+      "nl": "Nederlands",
+      "pl": "Polski",
+      "pt": "Português",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "th": "ไทย",
+      "tr": "Türkçe",
+      "uk": "Українська",
+      "vi": "Tiếng Việt",
+      "zh": "中文"
+    },
+    "logoAlt": "Logo Indexia Group"
+  },
+  "companyDetail": {
+    "backAll": "Tất Cả Công Ty",
+    "enquireSub": "Yêu cầu của bạn được ghi tên {{name}} ở đầu, để đúng đội ngũ tiếp nhận trước.",
+    "enquireTitle": "Hỏi Về {{name}}",
+    "entryOf": "Mục {{no}} / 08",
+    "exploreServices": "Khám Phá Dịch Vụ",
+    "eyebrow": "Gửi Yêu Cầu Của Bạn",
+    "globalReach": "Phạm vi toàn cầu",
+    "globalReachDesc": "Sự hiện diện xuyên biên giới và thị trường.",
+    "keyEntries": "Các mục chính",
+    "keyNumbers": "Con số then chốt",
+    "keyNumbersDesc": "Những con số định hình tác động của chúng tôi.",
+    "mainPoint": "Điểm chính",
+    "overviewEyebrow": "Tổng Quan",
+    "overviewTitle": "Về {{name}}",
+    "register": "Số Đăng ký {{no}} / 08",
+    "registerOf": "Indexia Group · Sổ Đăng ký Công ty",
+    "responseTime": "Thời gian phản hồi",
+    "responseValue": "Trong vòng 24 giờ, Thứ Hai – Thứ Bảy",
+    "servicesTitle": "Dịch vụ trong mục này",
+    "statHighlights": "Điểm Nổi Bật",
+    "statRegister": "Mục Đăng Ký",
+    "statServices": "Dịch vụ",
+    "whyChoose": "Tại sao chọn chúng tôi",
+    "whyChooseDesc": "Điều khiến công ty này khác biệt."
+  },
+  "companyLinkCard": {
+    "visitPage": "Truy cập trang",
+    "visitPageAria": "Truy cập trang {{name}}",
+    "visitWebsiteAria": "Truy cập trang web {{name}}",
+    "visualAlt": "Hình ảnh {{name}}"
+  },
+  "contact": {
+    "locationsTitleAccent": "Của Chúng Tôi",
+    "locationsTitleStart": "Văn Phòng "
+  },
+  "contactHero": {
+    "callNow": "Gọi Ngay · 86551 68551",
+    "directLines": "{{count}} đường dây trực tiếp",
+    "eyebrow": "Trao Đổi Cùng Indexia",
+    "offices": "{{count}} văn phòng",
+    "paragraph": "Từ câu hỏi về hồ sơ đến yêu cầu vay mới, mọi tin nhắn đều được thành viên trong đội ngũ của chúng tôi xem xét và trả lời, không phải hàng chờ.",
+    "reply": "Trả lời trung bình < 24 giờ",
+    "sendEnquiry": "Gửi Yêu Cầu Của Bạn",
+    "title": "Đường Dây Trực Tiếp Đến Đội Ngũ"
+  },
+  "contactInfo": {
+    "country": "Ấn Độ",
+    "enquiries": "Yêu cầu",
+    "eyebrow": "Gửi Yêu Cầu Của Bạn",
+    "headlineAccent": "Công ty Indexia",
+    "headlineStart": "Hỏi Về ",
+    "location": "Địa điểm",
+    "paragraph": "Dù bạn có câu hỏi về dịch vụ của chúng tôi, cần tư vấn kinh doanh hay muốn khám phá hợp tác, đội ngũ của chúng tôi sẵn sàng hỗ trợ, chúng tôi trả lời trong vòng 24 giờ.",
+    "phoneNumbers": "Số Điện Thoại",
+    "workingHours": "Giờ Làm Việc"
+  },
+  "footer": {
+    "backToTop": "Về đầu trang",
+    "blurb": "Tám doanh nghiệp đáng tin cậy dưới một tập đoàn Ấn Độ đa ngành, tài chính, xuất khẩu, nông nghiệp, warehousing, an ninh, quảng cáo và hỗ trợ vận động viên, xây dựng trên nền tảng liêm chính và kết quả.",
+    "company": "Công ty",
+    "contactUs": "Liên hệ",
+    "cta": "Bạn có thắc mắc về bất kỳ công ty nào trong tập đoàn của chúng tôi?",
+    "enquiry": "Gửi yêu cầu của bạn.",
+    "hours": "Thứ Hai - Thứ Bảy: 9:00 - 18:00",
+    "legal": "Pháp lý",
+    "links": {
+      "aboutUs": "Về chúng tôi",
+      "advertise": "Quảng Cáo Cùng Chúng Tôi",
+      "careers": "Tuyển dụng",
+      "globalResearch": "Nghiên cứu toàn cầu",
+      "groupCompanies": "Các Công ty Tập đoàn",
+      "news": "Tin tức & Trung tâm Kiến thức",
+      "privacyPolicy": "Chính sách Bảo mật",
+      "securityTips": "Mẹo Bảo mật",
+      "termsConditions": "Điều khoản & Điều kiện",
+      "termsOfUse": "Điều khoản Sử dụng"
+    },
+    "resources": "Tài nguyên",
+    "rights": "© 2026 Indexia Group. Bảo lưu mọi quyền.",
+    "stats": "Indexia Group · 08 Công ty · 03 Thành phố",
+    "tagline": "Tập đoàn Kinh doanh Đa ngành Ấn Độ",
+    "taglineSecondary": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất."
+  },
+  "form": {
+    "email": "Địa chỉ Email",
+    "emailPlaceholder": "you@example.com",
+    "errorEmail": "Nhập địa chỉ email hợp lệ.",
+    "errorGeneric": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
+    "errorMessage": "Vui lòng nhập tin nhắn của bạn.",
+    "errorName": "Vui lòng nhập tên của bạn.",
+    "errorNameLetters": "Tên phải chứa chữ cái.",
+    "errorPhone": "Nhập số điện thoại 10 chữ số hợp lệ.",
+    "errorSubject": "Vui lòng chọn chủ đề hoặc công ty.",
+    "eyebrow": "Gửi Yêu Cầu Của Bạn",
+    "generalEnquiry": "Yêu Cầu Chung",
+    "intro": "Hoàn thành biểu mẫu bên dưới và yêu cầu của bạn sẽ được đội ngũ của chúng tôi xử lý.",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Viết yêu cầu của bạn tại đây...",
+    "name": "Họ tên",
+    "namePlaceholder": "Họ và tên đầy đủ của bạn",
+    "phone": "Số Điện Thoại",
+    "phonePlaceholder": "Số 10 chữ số",
+    "sending": "Đang gửi…",
+    "subject": "Chủ đề / Công ty",
+    "subjectPlaceholder": "Chọn một công ty…",
+    "submit": "Gửi Yêu Cầu",
+    "success": "Yêu cầu của bạn đã được gửi! Đội ngũ của chúng tôi sẽ sớm liên hệ với bạn."
+  },
+  "globalResearchPage": {
+    "areasEyebrow": "Phạm Vi Nghiên Cứu",
+    "areasHeading": "Nghiên Cứu Toàn Cầu Trên Các Lĩnh Vực",
+    "areasSubtitle": "Các phân tích sâu sắc, phù hợp trên toàn bộ phạm vi hoạt động của chúng tôi.",
+    "ctaBody": "Để tìm hiểu thêm và nhận nghiên cứu của chúng tôi, hãy truy cập cổng thông tin Nghiên cứu Toàn cầu. Để được cấp quyền truy cập, vui lòng liên hệ Quản lý Quan hệ của bạn.",
+    "ctaButton": "Khám Phá Phạm Vi Nghiên Cứu",
+    "ctaTitle": "Truy Cập Nghiên Cứu Của Chúng Tôi",
+    "eyebrow": "Nghiên cứu toàn cầu",
+    "metaDescription": "Nghiên cứu Toàn cầu Indexia Group, các phân tích sâu sắc, phù hợp trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, với hiểu biết thực địa tại Châu Á, Châu Phi và Trung Đông.",
+    "reportFormat": "Ấn phẩm",
+    "reportsEyebrow": "Ấn phẩm",
+    "reportsHeading": "Cách Chúng Tôi Chia Sẻ Nghiên Cứu",
+    "reportsSubtitle": "Các bài trình bày thường xuyên và ấn phẩm chất lượng cao, OTG, phân tích thực địa của chúng tôi; ACT, các ý tưởng thị trường khả thi; và Báo cáo Đặc biệt về các chủ đề quan trọng toàn cầu.",
+    "subtitle": "Các phân tích sâu sắc, phù hợp và góc nhìn sắc bén trên các lĩnh vực kinh tế vĩ mô, thu nhập cố định, tiền tệ và hàng hóa, xây dựng trên nền tảng hiểu biết thực địa vững chắc tại Châu Á, Châu Phi và Trung Đông.",
+    "title": "Nghiên Cứu Toàn Cầu Tại Indexia Group",
+    "titleAccent": "& Tài Nguyên.",
+    "titleStart": "Nghiên Cứu Tài Chính Toàn Cầu "
+  },
+  "header": {
+    "aria": {
+      "closeMenu": "Đóng menu",
+      "selectLanguage": "Chọn ngôn ngữ",
+      "toggleMenu": "Mở/đóng menu"
+    },
+    "menu": {
+      "companies": "Công ty",
+      "contact": "Liên hệ",
+      "groupCompanies": "Các Công ty Tập đoàn",
+      "home": "Trang chủ"
+    },
+    "nav": {
+      "about": "Về chúng tôi",
+      "contact": "Liên hệ"
+    }
+  },
+  "hero": {
+    "ctaExploreGroup": "Khám Phá Các Công ty Tập đoàn",
+    "ctaExploreMore": "Khám Phá Thêm",
+    "nextPanel": "Bảng tiếp theo",
+    "p0": {
+      "heading": "Một Tập đoàn.\nNhiều Giải pháp.",
+      "motto": "Một vài bước để phục vụ đất nước",
+      "sub": "Từ tài chính và warehousing đến nông nghiệp và quảng cáo, Indexia Group thúc đẩy tăng trưởng trên nhiều ngành với các doanh nghiệp đáng tin cậy, sẵn sàng cho tương lai.",
+      "tag": "Indexia Group",
+      "tagline": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất."
+    },
+    "p1": {
+      "heading": "Điểm Đến\nCho Mọi Khoản Vay.",
+      "sub": "Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin của chúng tôi tại www.indexiafinance.com. Chúng tôi cung cấp dịch vụ toàn cầu, tại Ấn Độ, chúng tôi là đối tác kinh doanh của 43 ngân hàng và NBFC.",
+      "tag": "Indexia Finance"
+    },
+    "p2": {
+      "heading": "Phương Thức Tài Chính\nThế Hệ Mới.",
+      "sub": "Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn.",
+      "tag": "Indexia Finserve Pvt. Ltd."
+    },
+    "p3": {
+      "heading": "Đường Tinh Luyện &\nMọi Thực Phẩm.",
+      "sub": "Chúng tôi kinh doanh và xuất khẩu đường tinh luyện cùng mọi thực phẩm.",
+      "tag": "Indexia Overseas Pvt. Ltd."
+    },
+    "p4": {
+      "heading": "Chúng Tôi Sản Xuất &\nXuất Khẩu Phân Bón Hữu Cơ",
+      "sub": "Chúng tôi sản xuất phân bón hữu cơ tại Ấn Độ và xuất khẩu ra toàn cầu.",
+      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+    },
+    "p5": {
+      "heading": "Biệt Kích Vũ Trang &\nAn Ninh Vũ Trang",
+      "sub": "Bảo vệ các chính trị gia và những ông trùm kinh doanh lớn.",
+      "tag": "Indexia Securities"
+    },
+    "p6": {
+      "heading": "Kho Bãi Xây Dựng\nCho Quy Mô Lớn.",
+      "sub": "Cơ sở hạ tầng kho bãi và warehousing hiện đại giúp hàng hóa di chuyển hiệu quả.",
+      "tag": "Indexia Warehouse"
+    },
+    "p7": {
+      "heading": "Thương Hiệu Của Bạn\nTrên Mọi Xa Lộ.",
+      "sub": "Nhiều vị trí quảng cáo dọc các xa lộ, mang đến các chiến dịch có độ phủ cao cho thương hiệu.",
+      "tag": "Indexia Advertising"
+    },
+    "p8": {
+      "heading": "Nâng Tầm\nVận Động Viên.",
+      "sub": "Các chương trình thể thao đào tạo, cố vấn và tài trợ cho vận động viên trên hành trình đến đỉnh cao phong độ.",
+      "tag": "Indexia Foundation"
+    },
+    "prevPanel": "Bảng trước"
+  },
+  "home": {
+    "groupCompanies": {
+      "description": "Indexia Group là một công ty mẹ đa ngành bao gồm Tài chính, Xuất khẩu, Nông nghiệp, Kho bãi, An ninh, Tác động Xã hội và Quảng cáo. Chúng tôi xây dựng các doanh nghiệp giúp Khách hàng, Đối tác và Cộng đồng phát triển một cách tự tin.",
+      "title": "Các Công ty Tập đoàn"
+    }
+  },
+  "homeReach": {
+    "cta": "Tìm Hiểu Thêm",
+    "eyebrow": "Phạm Vi Của Chúng Tôi",
+    "stat1Label": "Công Ty",
+    "stat2Label": "Quốc Gia",
+    "stat3Label": "Năm Mạnh Mẽ",
+    "stat4Label": "Khách Hàng Phục Vụ",
+    "subtitle": "Từ Mumbai đến Ecuador, các công ty chúng tôi phục vụ khách hàng trên ba lục địa.",
+    "title": "Đáng Tin Cậy Vượt Biên Giới"
+  },
+  "jsonLd": {
+    "aboutDescription": "Indexia Group là một tập đoàn kinh doanh Ấn Độ đa dạng hoạt động trong Tài chính, Xuất khẩu, Nông nghiệp, Kho vận, An ninh, Quảng cáo và Hỗ trợ Vận động viên.",
+    "aboutName": "Về Indexia Group",
+    "breadcrumbAbout": "Về chúng tôi",
+    "breadcrumbCareers": "Tuyển dụng",
+    "breadcrumbCompanies": "Công ty thuộc nhóm",
+    "breadcrumbContact": "Liên hệ",
+    "breadcrumbHome": "Trang chủ",
+    "breadcrumbNews": "Tin tức và Trung tâm Kiến thức",
+    "businessesDescription": "Tám doanh nghiệp thuộc Indexia Group trong lĩnh vực tài chính, cho vay, an ninh, xuất khẩu, nông nghiệp, kho vận, quảng cáo và hỗ trợ vận động viên.",
+    "businessesName": "Doanh nghiệp Indexia Group",
+    "careersName": "Vị trí tuyển dụng tại Indexia Group",
+    "companyPageDescription": "Tìm hiểu về {{name}}, công ty thuộc Indexia Group. {{description}}",
+    "companyPageName": "{{name}}, {{tag}}",
+    "contactName": "Liên hệ Indexia Group",
+    "corporateOffice": "Trụ sở chính",
+    "delhiOffice": "Văn phòng Delhi",
+    "newsName": "Indexia Group, Tin tức và Trung tâm Kiến thức",
+    "orgName": "Indexia Group"
+  },
+  "legal": {
+    "backHome": "Về Trang Chủ",
+    "contactBody": "Viết thư cho chúng tôi tại contactus@indexiagroup.com hoặc gửi yêu cầu và đội ngũ của chúng tôi sẽ liên hệ lại.",
+    "contactHeading": "Có câu hỏi về chính sách này?",
+    "contactUs": "Liên Hệ",
+    "eyebrow": "Pháp lý",
+    "lastUpdated": "Cập nhật lần cuối",
+    "metaPrivacyDescription": "Đọc Chính sách Bảo mật của Indexia Group, cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của bạn.",
+    "metaTermsDescription": "Đọc Điều khoản & Điều kiện quản lý việc sử dụng trang web Indexia Group và dịch vụ của các công ty trực thuộc.",
+    "metaTermsOfUseDescription": "Đọc Điều khoản Sử dụng quy định cách bạn truy cập và duyệt trang web Indexia Group cũng như trang web của các công ty trực thuộc.",
+    "privacySubtitle": "Indexia Group thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn như thế nào.",
+    "privacyTitle": "Chính sách Bảo mật",
+    "sendEnquiry": "Gửi Yêu Cầu",
+    "termsOfUseSubtitle": "Các quy tắc truy cập và duyệt trang web Indexia Group cũng như trang web của các công ty trực thuộc.",
+    "termsOfUseTitle": "Điều khoản Sử dụng",
+    "termsSubtitle": "Các điều khoản quản lý việc sử dụng trang web Indexia Group và dịch vụ của các công ty trực thuộc.",
+    "termsTitle": "Điều khoản & Điều kiện"
+  },
+  "legalContent": {
+    "privacy": {
+      "intro": [
+        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
+        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
+            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
+          ],
+          "title": "Informations que nous collectons"
+        },
+        {
+          "paragraphs": [
+            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
+            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
+          ],
+          "title": "Comment nous utilisons vos informations"
+        },
+        {
+          "paragraphs": [
+            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Nous ne vendons pas vos informations personnelles à des tiers."
+          ],
+          "title": "Partage et divulgation"
+        },
+        {
+          "paragraphs": [
+            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
+          ],
+          "title": "Sécurité des données"
+        },
+        {
+          "paragraphs": [
+            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
+          ],
+          "title": "Cookies et technologies similaires"
+        },
+        {
+          "paragraphs": [
+            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
+          ],
+          "title": "Conservation des données"
+        },
+        {
+          "paragraphs": [
+            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
+          ],
+          "title": "Vos droits et choix"
+        },
+        {
+          "paragraphs": [
+            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
+          ],
+          "title": "Liens vers des tiers"
+        },
+        {
+          "paragraphs": [
+            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
+          ],
+          "title": "Confidentialité des enfants"
+        },
+        {
+          "paragraphs": [
+            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
+          ],
+          "title": "Modifications de la présente politique"
+        },
+        {
+          "paragraphs": [
+            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
+          ],
+          "title": "Contact"
+        }
+      ]
+    },
+    "terms": {
+      "intro": [
+        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
+        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
+        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
+          ],
+          "title": "Contenu et Modifications"
+        },
+        {
+          "paragraphs": [
+            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
+          ],
+          "title": "Aucune Garantie"
+        },
+        {
+          "paragraphs": [
+            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
+          ],
+          "title": "Utilisation à Vos Risques"
+        },
+        {
+          "paragraphs": [
+            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
+          ],
+          "title": "Propriété Intellectuelle"
+        },
+        {
+          "paragraphs": [
+            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
+          ],
+          "title": "Marques Commerciales"
+        },
+        {
+          "paragraphs": [
+            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
+          ],
+          "title": "Utilisation Non Autorisée"
+        },
+        {
+          "paragraphs": [
+            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
+          ],
+          "title": "Liens Vers des Sites Tiers"
+        },
+        {
+          "paragraphs": [
+            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
+          ],
+          "title": "Liens Vers ce Site Web"
+        },
+        {
+          "paragraphs": [
+            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
+          ],
+          "title": "Droit Applicable"
+        },
+        {
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ],
+          "title": "Responsabilité des Transactions par Carte"
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        null,
+        "Nếu bạn không đồng ý với các điều khoản này, vui lòng không truy cập hoặc sử dụng trang web của chúng tôi."
+      ],
+      "sections": [
+        {
+          "paragraphs": [
+            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
+          ],
+          "title": "Politique d'Annulation et de Remboursement"
+        },
+        {
+          "paragraphs": [
+            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
+            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
+            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
+            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
+            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
+            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
+            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
+            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
+          ],
+          "title": "Politique d'Annulation"
+        },
+        {
+          "paragraphs": [
+            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
+          ],
+          "title": "Politique de Remboursement"
+        },
+        {
+          "paragraphs": [
+            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
+          ],
+          "title": "Clause BO"
+        },
+        {
+          "paragraphs": [
+            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
+            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
+            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
+          ],
+          "title": "Politique de Clause de Non-Responsabilité"
+        },
+        {
+          "paragraphs": [
+            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
+            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
+            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
+            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
+          ],
+          "title": "Clause de Non-Responsabilité de ce Site Web"
+        },
+        {
+          "paragraphs": {
+            "0": "Chúng tôi giữ quỳn sửa đổi Điều khoản Sử dụng này bất kỳ lúc nào."
+          },
+          "title": "Thay đổi Điều khoản"
+        },
+        {
+          "paragraphs": {
+            "0": "Nếu có thắc mắc, vui lòng liên hệ contactus@indexiagroup.com."
+          },
+          "title": "Liên hệ"
+        }
+      ]
+    }
+  },
+  "newsHero": {
+    "latestLabel": "Tin tức mới nhất từ tập đoàn",
+    "sectors": {
+      "advertising": "Quảng cáo",
+      "agriculture": "Nông nghiệp",
+      "finance": "Tài chính",
+      "security": "An ninh",
+      "sport": "Thể thao",
+      "tradeExport": "Thương mại & Xuất khẩu"
+    }
+  },
+  "newsPage": {
+    "askUs": "Hỏi Chúng Tôi",
+    "ctaBody": "Từ tư vấn FDI đến nông nghiệp hữu cơ, an ninh vũ trang, công ty Indexia phù hợp luôn sẵn sàng hỗ trợ. Gửi yêu cầu và chúng tôi sẽ kết nối bạn.",
+    "ctaButton": "Gửi Yêu Cầu",
+    "ctaTitle": "Bạn có câu hỏi về các doanh nghiệp của chúng tôi?",
+    "eyebrow": "Tin tức & Trung tâm Kiến thức",
+    "featuredLabel": "Bài Viết Nổi Bật",
+    "knowledgeEyebrow": "Trung tâm Kiến thức",
+    "knowledgeHeading": "Hướng Dẫn Thực Tiễn từ Doanh Nghiệp",
+    "knowledgeSubtitle": "Những bài giải thích dễ hiểu do chính đội ngũ làm công việc này mỗi ngày viết.",
+    "metaDescription": "Tin tức & Trung tâm Kiến thức, tin tức ngân hàng mới nhất về tài trợ vốn, thanh toán kỹ thuật số và chính sách, cùng các hướng dẫn kiến thức thực tiễn từ Indexia Group.",
+    "readMore": "Đọc Thêm",
+    "subtitle": "Tin tức ngân hàng mới nhất, cập nhật tài trợ vốn, thanh toán kỹ thuật số, thay đổi chính sách và diễn biến thị trường, cùng các hướng dẫn thực tiễn từ các doanh nghiệp của chúng tôi.",
+    "title": "Tin tức & Trung tâm Kiến thức",
+    "titleAccent": "Khung Của Tập Đoàn.",
+    "titleStart": "Câu Chuyện & Góc Nhìn từ ",
+    "tvCaption": "Cần Vay Nghĩa Là… Indexia Finance",
+    "tvEyebrow": "Xem Chúng Tôi Trên TV",
+    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingStart": "Cho Mọi Nhu Cầu Vay Vốn Của Bạn"
+  },
+  "newsVideo": {
+    "onAir": "Đang phát",
+    "tvCommercial": "Quảng cáo truyền hình"
+  },
+  "notFoundPage": {
+    "backHome": "Về trang chủ",
+    "description": "Trang bạn tìm kiếm không tồn tại hoặc đã được di chuyển.",
+    "title": "Không tìm thấy trang"
+  },
+  "openRoles": {
+    "loading": "Đang tải vị trí...",
+    "noPositions": "Hiện không có vị trí {{type}} nào."
   },
   "pageContent": {
+    "careers": {
+      "culture": [
+        "Indexia Group là một tổ chức học tập, và văn hóa doanh nghiệp chính là đội ngũ của nó. Con người là tài sản lớn nhất của chúng tôi.",
+        "Từ công nghệ tài chính và xuất khẩu toàn cầu đến nông nghiệp hữu cộc, an ninh vỡ trang và phát triển vận động viên — bạn không bị giới hạn trong một lĩnh vực.",
+        "Học hỏi, Huấn luyện, Thăng tiến",
+        "Mỗi vị trí đều bao gồm đào tạo có cấu trúc, quyền tham gia workshop nội bộ và cổ vấn từ các nhà lậnh đạo cấp cao.",
+        "Kinh nghiệm toàn cầu, Gốc rỉ địa phương",
+        "Indexia hoạt động tại An Đức, Ecuador, Nam Mỹ và châu Âu.",
+        "Giờ làm việc linh hoạt, Trách nhiệm thật sự",
+        "Chúng tôi tin tượng đồi ngũ quản lý thời gian của học."
+      ],
+      "roles": {
+        "business-development": {
+          "department": "Bán hàng & Đối tác",
+          "title": "Chuyên viên phát triển kinh doanh",
+          "type": "Toàn thời gian"
+        },
+        "city-head": {
+          "department": "Vận hành",
+          "title": "Trưởng Thành phố",
+          "type": "Toàn thời gian"
+        },
+        "customer-support": {
+          "department": "Dịch vụ Khách hàng",
+          "title": "Chuyên viên Hỗ trợ Khách hàng",
+          "type": "Toàn thời gian"
+        },
+        "field-executive": {
+          "department": "Vận hành",
+          "title": "Nhân viên Hiện trường",
+          "type": "Toàn thời gian"
+        },
+        "hr-manager": {
+          "department": "Nhân sự",
+          "title": "Quản lý Nhân sự",
+          "type": "Toàn thời gian"
+        },
+        "seo-professional": {
+          "department": "Marketing Kỹ thuật số",
+          "title": "Chuyên gia SEO",
+          "type": "Toàn thời gian"
+        },
+        "team-leader": {
+          "department": "Vận hành",
+          "title": "Trưởng nhóm",
+          "type": "Toàn thời gian"
+        },
+        "team-manager": {
+          "department": "Vận hành",
+          "title": "Quản lý nhóm",
+          "type": "Toàn thời gian"
+        }
+      }
+    },
     "companies": {
+      "advertising": {
+        "desc": "Bảng quảng cáo xa lộ cao cấp tại ngã tư nhộn nhịp nhất Bắc Ấn Độ.",
+        "highlights": [
+          "Vị trí chiến lược trên NH-709B, xa lộ Delhi–Dehradun",
+          "10 bang kết nối, phạm vi 50 crore dân, hơn 1 crore tiếp xúc mỗi ngày",
+          "Unipole một trụ với tầm nhìn 360° và độ cao cao cấp",
+          "Dịch vụ trọn gói, in ấn, lắp đặt và bảo trì"
+        ],
+        "location": "Đường cao tốc Delhi-Dehradun, Shamli",
+        "name": "Indexia Advertising",
+        "overview": "Indexia Advertising vận hành các bảng quảng cáo unipole một trụ cao cấp trên Xa lộ Delhi–Dehradun (NH-709B) tại Shamli, trung tâm của Bắc Ấn Độ. Nằm tại ngã tư của 8 xa lộ quốc gia và 2 đường cao tốc chính, các trụ unipole của chúng tôi kết nối 10 bang với phạm vi tiếp cận 50 crore dân số và thu hút hơn 1 crore lượt tiếp xúc mỗi ngày. Unipole một trụ với độ cao cao cấp và góc nhìn 360° không bị che chắn mang đến cho thương hiệu của bạn độ phủ tối đa mà không có sự rối mắt, được hỗ trợ bởi thương hiệu đặc trưng Bisleri Green. Từ in ấn và lắp đặt đến bảo trì, chúng tôi xử lý mọi thứ trọn gói. Đặt unipole 10×20 ft với giá ₹25.000/tháng hoặc unipole 12×24 ft với giá ₹36.000/tháng, giá tiêu chuẩn ₹125/ft vuông mỗi mặt mỗi tháng, có thể thương lượng cho các gói dài hạn. Để đặt chỗ, gọi 86918 86919 hoặc 011 4629 1155, hoặc email indexia.queries@gmail.com.",
+        "services": [
+          "Unipole 10×20 ft, ₹25.000/tháng",
+          "Unipole 12×24 ft, ₹36.000/tháng",
+          "Giá Tiêu chuẩn, ₹125/ft vuông mỗi mặt mỗi tháng",
+          "Vị Trí Xa Lộ Delhi–Dehradun & Đường Vành Đai Shamli",
+          "In Ấn, Lắp Đặt & Bảo Trì",
+          "Gói Dài Hạn & Số Lượng Lớn"
+        ],
+        "tag": "Bảng Quảng Cáo Unipole Cao Cấp"
+      },
+      "agro-bio": {
+        "desc": "Phân bón hữu cơ, sản xuất tại Ấn Độ và xuất khẩu toàn cầu.",
+        "highlights": [
+          "Sản xuất hữu cơ gốc sinh học, không hóa chất mạnh",
+          "Cơ sở Shamli, UP trong khu vực Delhi NCR",
+          "Sức khỏe đất tốt hơn, năng suất cây trồng cao hơn",
+          "Hỗ trợ toàn diện cho nông dân, phân tích đất, đào tạo"
+        ],
+        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "overview": "Indexia Agro Bio Fertilizers sản xuất phân bón hữu cơ tại cơ sở sản xuất ở Shamli, Uttar Pradesh, thuộc khu vực Delhi NCR. Các sản phẩm gốc sinh học của công ty cải thiện sức khỏe đất, tăng năng suất cây trồng và hỗ trợ nông nghiệp bền vững cho nông dân trên khắp Bắc Ấn Độ.",
+        "services": [
+          "Sản Xuất Phân Bón Hữu Cơ",
+          "Hỗn Hợp Phân Bón Sinh Học",
+          "Giải Pháp Sức Khỏe Đất",
+          "Chương Trình Nâng Cao Năng Suất",
+          "Hỗ Trợ & Đào Tạo Nông Dân",
+          "Cơ Sở Shamli, UP (Delhi NCR)"
+        ],
+        "tag": "Sản Xuất Phân Bón Hữu Cơ"
+      },
       "finance": {
-        "tag": "Fintech Đa Quốc Gia",
         "desc": "Fintech toàn cầu trong dịch vụ nhà đầu tư, FDI, NBFC và tài trợ ngân hàng.",
-        "overview": "Indexia Finance là nền tảng fintech đa quốc gia cung cấp dịch vụ tài chính cho khách hàng trên toàn thế giới. Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin www.indexiafinance.com, chúng tôi cung cấp dịch vụ toàn cầu và tại Ấn Độ là đối tác kinh doanh của 43 ngân hàng và NBFC. Được xây dựng quanh bốn mảng cốt lõi, dịch vụ nhà đầu tư, tư vấn FDI, vận hành NBFC và tài trợ ngân hàng, công ty kết nối vốn với cơ hội, giúp nhà đầu tư, doanh nghiệp và tổ chức đưa ra các quyết định tài chính tự tin xuyên biên giới.",
-        "tagline": "Điểm Đến Cho Mọi Khoản Vay",
         "highlights": [
           "Tầm với fintech toàn cầu với cách vận hành Ấn Độ ưu tiên",
           "Bốn mảng tích hợp dưới một mái nhà",
           "Hỗ trợ tài trợ và tư vấn trọn gói"
         ],
+        "name": "Indexia Finance",
+        "overview": "Indexia Finance là nền tảng fintech đa quốc gia cung cấp dịch vụ tài chính cho khách hàng trên toàn thế giới. Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin www.indexiafinance.com, chúng tôi cung cấp dịch vụ toàn cầu và tại Ấn Độ là đối tác kinh doanh của 43 ngân hàng và NBFC. Được xây dựng quanh bốn mảng cốt lõi, dịch vụ nhà đầu tư, tư vấn FDI, vận hành NBFC và tài trợ ngân hàng, công ty kết nối vốn với cơ hội, giúp nhà đầu tư, doanh nghiệp và tổ chức đưa ra các quyết định tài chính tự tin xuyên biên giới.",
         "services": [
           "Tư Vấn & Hỗ Trợ FDI",
           "Dịch Vụ Nhà Đầu Tư",
@@ -387,18 +873,18 @@
           "Giải Pháp Vốn Xuyên Biên Giới",
           "Tư Vấn Tài Sản & Đầu Tư"
         ],
-        "name": "Indexia Finance"
+        "tag": "Công nghệ tài chính đa quốc gia",
+        "tagline": "Điểm Đến Cho Mọi Khoản Vay"
       },
       "finserve": {
-        "tag": "Khoản Vay & Tài Chính",
         "desc": "Mọi loại khoản vay, được thiết kế riêng cho cá nhân và doanh nghiệp.",
-        "overview": "Indexia Finserve là bộ phận cho vay của Indexia Group, cung cấp mọi loại khoản vay trong lĩnh vực tài chính. Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn, công ty hoạt động như một điểm đến vay vốn trọn gói, hướng dẫn khách hàng qua các bước đủ điều kiện, hồ sơ và giải ngân cho vay cá nhân, nhà ở, doanh nghiệp, MSME và tài trợ chuyên biệt với một quy trình gọn gàng duy nhất.",
-        "tagline": "Phương Thức Tài Chính Thế Hệ Mới",
         "highlights": [
           "Mọi loại khoản vay dưới một mái nhà",
           "Quy trình đủ điều kiện, hồ sơ và giải ngân gọn gàng",
           "Tư vấn tận tâm ở mọi bước"
         ],
+        "name": "Indexia Finserve Pvt. Ltd.",
+        "overview": "Indexia Finserve là bộ phận cho vay của Indexia Group, cung cấp mọi loại khoản vay trong lĩnh vực tài chính. Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn, công ty hoạt động như một điểm đến vay vốn trọn gói, hướng dẫn khách hàng qua các bước đủ điều kiện, hồ sơ và giải ngân cho vay cá nhân, nhà ở, doanh nghiệp, MSME và tài trợ chuyên biệt với một quy trình gọn gàng duy nhất.",
         "services": [
           "Vay Cá Nhân",
           "Vay Kinh Doanh",
@@ -413,114 +899,19 @@
           "Chiết Khấu Hợp Đồng Thuê",
           "Vốn Lưu Động"
         ],
-        "name": "Indexia Finserve Pvt. Ltd."
-      },
-      "overseas": {
-        "tag": "Nhà Xuất Khẩu Thực Phẩm",
-        "desc": "Xuất khẩu đường tinh luyện và mọi thực phẩm ra toàn thế giới.",
-        "overview": "Indexia Overseas thúc đẩy xuất khẩu toàn cầu mọi thực phẩm, đặc biệt tập trung vào xuất khẩu đường sang 14 quốc gia Nam Mỹ. Công ty quản lý nguồn cung, chất lượng, warehousing và tuân thủ quốc tế để các sản phẩm cấp thực phẩm di chuyển từ nguồn đến thị trường một cách đáng tin cậy và quy mô lớn.",
-        "highlights": [
-          "Xuất khẩu mọi thực phẩm, đường là cốt lõi",
-          "Hiện diện vững chắc tại 14 thị trường Nam Mỹ",
-          "Nguồn cung, chất lượng và warehousing trọn gói"
-        ],
-        "services": [
-          "Xuất Khẩu & Kinh Doanh Đường",
-          "Nguồn Cung & Kiểm Soát Chất Lượng",
-          "Warehousing Quốc Tế",
-          "14 Thị Trường Nam Mỹ"
-        ],
-        "name": "Indexia Overseas Pvt. Ltd."
-      },
-      "agro-bio": {
-        "tag": "Sản Xuất Phân Bón Hữu Cơ",
-        "desc": "Phân bón hữu cơ, sản xuất tại Ấn Độ và xuất khẩu toàn cầu.",
-        "overview": "Indexia Agro Bio Fertilizers sản xuất phân bón hữu cơ tại cơ sở sản xuất ở Shamli, Uttar Pradesh, thuộc khu vực Delhi NCR. Các sản phẩm gốc sinh học của công ty cải thiện sức khỏe đất, tăng năng suất cây trồng và hỗ trợ nông nghiệp bền vững cho nông dân trên khắp Bắc Ấn Độ.",
-        "highlights": [
-          "Sản xuất hữu cơ gốc sinh học, không hóa chất mạnh",
-          "Cơ sở Shamli, UP trong khu vực Delhi NCR",
-          "Sức khỏe đất tốt hơn, năng suất cây trồng cao hơn"
-        ],
-        "services": [
-          "Sản Xuất Phân Bón Hữu Cơ",
-          "Hỗn Hợp Phân Bón Sinh Học",
-          "Giải Pháp Sức Khỏe Đất",
-          "Chương Trình Nâng Cao Năng Suất",
-          "Hỗ Trợ & Đào Tạo Nông Dân",
-          "Cơ Sở Shamli, UP (Delhi NCR)"
-        ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
-      },
-      "securities": {
-        "tag": "An Ninh Vũ Trang & Biệt Kích",
-        "desc": "Biệt kích vũ trang và bảo vệ những nhà lãnh đạo và doanh nghiệp.",
-        "overview": "Indexia Securities cung cấp dịch vụ an ninh vũ trang và bảo vệ biệt kích tốt nhất hiện có, bảo vệ con người, tài sản và các hoạt động cấp cao suốt ngày đêm. Từ biệt kích được đào tạo và bảo vệ vũ trang đến hộ tống VIP và an ninh sự kiện, công ty mang kỷ luật cấp quân đội vào mọi nhiệm vụ.",
-        "highlights": [
-          "Bảo vệ vũ trang và biệt kích hàng đầu",
-          "Biệt kích được đào tạo với kỷ luật phản ứng nhanh",
-          "Giám sát 24×7 và phản ứng hiện trường"
-        ],
-        "services": [
-          "Bảo Vệ An Ninh Vũ Trang",
-          "Đơn Vị Bảo Vệ Biệt Kích",
-          "Hộ Tống VIP & Quan Chức",
-          "An Ninh Sự Kiện & Địa Điểm",
-          "An Ninh Doanh Nghiệp & Công Trình",
-          "Giám Sát 24×7 & Phản Ứng Nhanh"
-        ],
-        "name": "Indexia Securities"
-      },
-      "warehouse": {
-        "tag": "Đầu Tư Đất Chiến Lược",
-        "desc": "21 mẫu đất chiến lược tại Shamli, kết nối 8 xa lộ quốc gia.",
-        "overview": "Indexia Warehouse mang đến cơ hội đầu tư đất chiến lược tại Shamli, Uttar Pradesh, chỉ cách Tronica City, Loni, Delhi khoảng 65 km. Đây là trung tâm kết nối: 8 xa lộ quốc gia và 2 đường cao tốc chính nối 8 bang, với lối tiếp cận trực tiếp đến Bhutan và Nepal và phạm vi thị trường 50 crore người. Bốn cảng lớn (Gujarat, Maharashtra, Chennai, Kolkata) có thể đến trực tiếp qua các xa lộ, và cả Sân bay IGI Delhi lẫn Sân bay Quốc tế Noida, Jewar đều trong vòng một giờ. Danh mục đất trải rộng 5 vị trí với tổng 21 mẫu, gồm các lô linh hoạt 1, 2, 2,5, 5 và 8 mẫu, cùng kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá dự kiến ₹30 mỗi ft vuông, có thể thương lượng.",
-        "highlights": [
-          "Vị trí đắc địa, Shamli, UP, cách Delhi ~65 km",
-          "8 xa lộ quốc gia + 2 đường cao tốc chính nối 8 bang",
-          "21 mẫu tại 5 vị trí, lô 1, 2, 2,5, 5 & 8 mẫu",
-          "₹30 mỗi ft vuông, có thể thương lượng"
-        ],
-        "services": [
-          "Lô Đất, 1, 2, 2,5, 5 & 8 Mẫu",
-          "21 Mẫu Tại 5 Vị Trí",
-          "Xây Dựng Kho Hàng Trên Lô 2 Mẫu",
-          "Kết Nối Xa Lộ & Cao Tốc",
-          "Tiếp Cận Cảng, Gujarat, Maharashtra, Chennai, Kolkata",
-          "Tiếp Cận Sân Bay, Delhi & Jewar Trong 1 Giờ"
-        ],
-        "name": "Indexia Warehouse",
-        "location": "Shamli, Uttar Pradesh"
-      },
-      "advertising": {
-        "tag": "Bảng Quảng Cáo Unipole Cao Cấp",
-        "desc": "Bảng quảng cáo xa lộ cao cấp tại ngã tư nhộn nhịp nhất Bắc Ấn Độ.",
-        "overview": "Indexia Advertising vận hành các bảng quảng cáo unipole một trụ cao cấp trên Xa lộ Delhi–Dehradun (NH-709B) tại Shamli, trung tâm của Bắc Ấn Độ. Nằm tại ngã tư của 8 xa lộ quốc gia và 2 đường cao tốc chính, các trụ unipole của chúng tôi kết nối 10 bang với phạm vi tiếp cận 50 crore dân số và thu hút hơn 1 crore lượt tiếp xúc mỗi ngày. Unipole một trụ với độ cao cao cấp và góc nhìn 360° không bị che chắn mang đến cho thương hiệu của bạn độ phủ tối đa mà không có sự rối mắt, được hỗ trợ bởi thương hiệu đặc trưng Bisleri Green. Từ in ấn và lắp đặt đến bảo trì, chúng tôi xử lý mọi thứ trọn gói. Đặt unipole 10×20 ft với giá ₹25.000/tháng hoặc unipole 12×24 ft với giá ₹36.000/tháng, giá tiêu chuẩn ₹125/ft vuông mỗi mặt mỗi tháng, có thể thương lượng cho các gói dài hạn. Để đặt chỗ, gọi 86918 86919 hoặc 011 4629 1155, hoặc email indexia.queries@gmail.com.",
-        "highlights": [
-          "Vị trí chiến lược trên NH-709B, xa lộ Delhi–Dehradun",
-          "10 bang kết nối, phạm vi 50 crore dân, hơn 1 crore tiếp xúc mỗi ngày",
-          "Unipole một trụ với tầm nhìn 360° và độ cao cao cấp",
-          "Dịch vụ trọn gói, in ấn, lắp đặt và bảo trì"
-        ],
-        "services": [
-          "Unipole 10×20 ft, ₹25.000/tháng",
-          "Unipole 12×24 ft, ₹36.000/tháng",
-          "Giá Tiêu chuẩn, ₹125/ft vuông mỗi mặt mỗi tháng",
-          "Vị Trí Xa Lộ Delhi–Dehradun & Đường Vành Đai Shamli",
-          "In Ấn, Lắp Đặt & Bảo Trì",
-          "Gói Dài Hạn & Số Lượng Lớn"
-        ],
-        "name": "Indexia Advertising",
-        "location": "Xa lộ Delhi–Dehradun, Shamli"
+        "tag": "Khoản Vay & Tài Chính",
+        "tagline": "Phương Thức Tài Chính Thế Hệ Mới"
       },
       "foundation": {
-        "tag": "Hỗ Trợ Vận Động Viên",
         "desc": "Đào tạo và hỗ trợ đẳng cấp quốc tế, đến tận Olympic.",
-        "overview": "Indexia Foundation hỗ trợ vận động viên bằng mọi sự hỗ trợ có thể, đào tạo đẳng cấp quốc tế, chế độ ăn và dinh dưỡng có cấu trúc, huấn luyện chuyên gia và mọi loại trợ giúp cần thiết trên hành trình đến Thế vận hội Olympic. Quỹ đồng hành cùng vận động viên từ những triển vọng ban đầu đến sân khấu lớn nhất thế giới.",
         "highlights": [
           "Đào tạo đẳng cấp quốc tế và huấn luyện chuyên gia",
           "Chương trình chế độ ăn và dinh dưỡng có cấu trúc",
-          "Hỗ trợ toàn diện đến tận Olympic"
+          "Hỗ trợ toàn diện đến tận Olympic",
+          "Xây dựng nguồn vận động viên Olympic Ấn Độ bền vững"
         ],
+        "name": "Indexia Foundation",
+        "overview": "Indexia Foundation hỗ trợ vận động viên bằng mọi sự hỗ trợ có thể, đào tạo đẳng cấp quốc tế, chế độ ăn và dinh dưỡng có cấu trúc, huấn luyện chuyên gia và mọi loại trợ giúp cần thiết trên hành trình đến Thế vận hội Olympic. Quỹ đồng hành cùng vận động viên từ những triển vọng ban đầu đến sân khấu lớn nhất thế giới.",
         "services": [
           "Đào Tạo Đẳng Cấp Quốc Tế",
           "Chương Trình Chế Độ Ăn & Dinh Dưỡng",
@@ -529,654 +920,291 @@
           "Y Học Thể Thao & Hồi Phục",
           "Hỗ Trợ Đẳng Cấp Olympic"
         ],
-        "name": "Indexia Foundation"
+        "tag": "Hỗ Trợ Vận Động Viên"
+      },
+      "overseas": {
+        "desc": "Xuất khẩu đường tinh luyện và mọi thực phẩm ra toàn thế giới.",
+        "highlights": [
+          "Xuất khẩu mọi thực phẩm, đường là cốt lõi",
+          "Hiện diện vững chắc tại 14 thị trường Nam Mỹ",
+          "Nguồn cung, chất lượng và warehousing trọn gói",
+          "Đối tác đáng tin cậy cho khách buôn"
+        ],
+        "name": "Indexia Overseas Pvt. Ltd.",
+        "overview": "Indexia Overseas thúc đẩy xuất khẩu toàn cầu mọi thực phẩm, đặc biệt tập trung vào xuất khẩu đường sang 14 quốc gia Nam Mỹ. Công ty quản lý nguồn cung, chất lượng, warehousing và tuân thủ quốc tế để các sản phẩm cấp thực phẩm di chuyển từ nguồn đến thị trường một cách đáng tin cậy và quy mô lớn.",
+        "services": [
+          "Xuất Khẩu & Kinh Doanh Đường",
+          "Nguồn Cung & Kiểm Soát Chất Lượng",
+          "Warehousing Quốc Tế",
+          "14 Thị Trường Nam Mỹ",
+          "Quản lý tuân thủ và quy định",
+          "Phân phối thị trường Nam Mỹ"
+        ],
+        "tag": "Nhà Xuất Khẩu Thực Phẩm"
+      },
+      "securities": {
+        "desc": "Biệt kích vũ trang và bảo vệ những nhà lãnh đạo và doanh nghiệp.",
+        "highlights": [
+          "Bảo vệ vũ trang và biệt kích hàng đầu",
+          "Biệt kích được đào tạo với kỷ luật phản ứng nhanh",
+          "Giám sát 24×7 và phản ứng hiện trường",
+          "Thành tích đã được chứng minh trong bảo vệ khách hàng rủi ro cao"
+        ],
+        "name": "Indexia Securities",
+        "overview": "Indexia Securities cung cấp dịch vụ an ninh vũ trang và bảo vệ biệt kích tốt nhất hiện có, bảo vệ con người, tài sản và các hoạt động cấp cao suốt ngày đêm. Từ biệt kích được đào tạo và bảo vệ vũ trang đến hộ tống VIP và an ninh sự kiện, công ty mang kỷ luật cấp quân đội vào mọi nhiệm vụ.",
+        "services": [
+          "Bảo Vệ An Ninh Vũ Trang",
+          "Đơn Vị Bảo Vệ Biệt Kích",
+          "Hộ Tống VIP & Quan Chức",
+          "An Ninh Sự Kiện & Địa Điểm",
+          "An Ninh Doanh Nghiệp & Công Trình",
+          "Giám Sát 24×7 & Phản Ứng Nhanh"
+        ],
+        "tag": "An Ninh Vũ Trang & Biệt Kích"
+      },
+      "warehouse": {
+        "desc": "21 mẫu đất chiến lược tại Shamli, kết nối 8 xa lộ quốc gia.",
+        "highlights": [
+          "Vị trí đắc địa, Shamli, UP, cách Delhi ~65 km",
+          "8 xa lộ quốc gia + 2 đường cao tốc chính nối 8 bang",
+          "21 mẫu tại 5 vị trí, lô 1, 2, 2,5, 5 & 8 mẫu",
+          "₹30 mỗi ft vuông, có thể thương lượng"
+        ],
+        "location": "Shamli, Uttar Pradesh",
+        "name": "Indexia Warehouse",
+        "overview": "Indexia Warehouse mang đến cơ hội đầu tư đất chiến lược tại Shamli, Uttar Pradesh, chỉ cách Tronica City, Loni, Delhi khoảng 65 km. Đây là trung tâm kết nối: 8 xa lộ quốc gia và 2 đường cao tốc chính nối 8 bang, với lối tiếp cận trực tiếp đến Bhutan và Nepal và phạm vi thị trường 50 crore người. Bốn cảng lớn (Gujarat, Maharashtra, Chennai, Kolkata) có thể đến trực tiếp qua các xa lộ, và cả Sân bay IGI Delhi lẫn Sân bay Quốc tế Noida, Jewar đều trong vòng một giờ. Danh mục đất trải rộng 5 vị trí với tổng 21 mẫu, gồm các lô linh hoạt 1, 2, 2,5, 5 và 8 mẫu, cùng kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá dự kiến ₹30 mỗi ft vuông, có thể thương lượng.",
+        "services": [
+          "Lô Đất, 1, 2, 2,5, 5 & 8 Mẫu",
+          "21 Mẫu Tại 5 Vị Trí",
+          "Xây Dựng Kho Hàng Trên Lô 2 Mẫu",
+          "Kết Nối Xa Lộ & Cao Tốc",
+          "Tiếp Cận Cảng, Gujarat, Maharashtra, Chennai, Kolkata",
+          "Tiếp Cận Sân Bay, Delhi & Jewar Trong 1 Giờ"
+        ],
+        "tag": "Đầu Tư Đất Chiến Lược"
       }
     },
     "news": {
       "articles": {
-        "yes-bank-sme-funding": {
-          "title": "Yes Bank nhận 150 triệu USD từ Chính phủ Mỹ và Wells Fargo cho vay SME",
-          "category": "Ngân hàng",
-          "excerpt": "Đợt thứ ba của cơ chế OPIC–Wells Fargo sẽ mở rộng cho vay doanh nghiệp vừa và nhỏ trên khắp Ấn Độ."
-        },
-        "uidai-aadhaar-banks": {
-          "title": "UIDAI yêu cầu các ngân hàng thiết lập trung tâm đăng ký Aadhaar",
-          "category": "Ngân hàng số",
-          "excerpt": "Cơ quan Nhận dạng duy nhất của Ấn Độ đã yêu cầu các ngân hàng thiết lập trung tâm đăng ký và cập nhật Aadhaar."
-        },
         "demonetisation-digital-payments": {
-          "title": "Demonetisation thúc đẩy việc sử dụng thanh toán kỹ thuật số tại Ấn Độ",
           "category": "Thanh toán",
-          "excerpt": "Chương trình demonetisation của Ấn Độ đã đẩy nhanh việc chuyển đổi sang thanh toán kỹ thuật số."
-        },
-        "sbi-imps-fee-waiver": {
-          "title": "SBI miễn phí IMPS để khuyến khích chuyển khoản kỹ thuật số",
-          "category": "Ngân hàng",
-          "excerpt": "Ngân hàng Nhà nước Ấn Độ đã bỏ phí chuyển khoản IMPS."
+          "excerpt": "Chương trình demonetisation của Ấn Độ đã đẩy nhanh việc chuyển đổi sang thanh toán kỹ thuật số.",
+          "title": "Demonetisation thúc đẩy việc sử dụng thanh toán kỹ thuật số tại Ấn Độ"
         },
         "nakshatra-gili-directors": {
-          "title": "Nakshatra Gili bổ nhiệm giám đốc độc lập mới",
-          "category": "Quản trị Doanh nghiệp",
-          "excerpt": "Nakshatra Gili đã củng cố hội đồng quản trị với việc bổ nhiệm các giám đốc độc lập."
+          "category": "Quản trị doanh nghiệp",
+          "excerpt": "Nakshatra Gili đã củng cố hội đồng quản trị với việc bổ nhiệm các giám đốc độc lập.",
+          "title": "Nakshatra Gili bổ nhiệm giám đốc độc lập mới"
+        },
+        "sbi-imps-fee-waiver": {
+          "category": "Ngân hàng",
+          "excerpt": "Ngân hàng Nhà nước Ấn Độ đã bỏ phí chuyển khoản IMPS.",
+          "title": "SBI miễn phí IMPS để khuyến khích chuyển khoản kỹ thuật số"
         },
         "sebi-hdfc-information-leak": {
-          "title": "SEBI ra lệnh điều tra vụ rò rỉ thông tin HDFC",
           "category": "Quy định",
-          "excerpt": "Ủy ban Chứng khoán và Sàn giao dịch Ấn Độ đã khởi xướng điều tra."
+          "excerpt": "Uỷy ban chứng khoán An Đức đã bắt đầu điều tra cáo bỏ rò rỉ thông tin không công khai liên quan đến HDFC.",
+          "title": "SEBI ra lệnh điều tra vụ rò rỉ thông tin HDFC"
+        },
+        "uidai-aadhaar-banks": {
+          "category": "Ngân hàng số",
+          "excerpt": "Cơ quan Nhận dạng duy nhất của Ấn Độ đã yêu cầu các ngân hàng thiết lập trung tâm đăng ký và cập nhật Aadhaar.",
+          "title": "UIDAI yêu cầu các ngân hàng thiết lập trung tâm đăng ký Aadhaar"
+        },
+        "yes-bank-sme-funding": {
+          "category": "Ngân hàng",
+          "excerpt": "Đợt thứ ba của cơ chế OPIC–Wells Fargo sẽ mở rộng cho vay doanh nghiệp vừa và nhỏ trên khắp Ấn Độ.",
+          "title": "Yes Bank nhận 150 triệu USD từ Chính phủ Mỹ và Wells Fargo cho vay SME"
         }
       },
       "insights": {
-        "understanding-fdi": {
-          "title": "Hiểu FDI: Đầu tư trực tiếp nước ngoài hoạt động như thế nào tại Ấn Độ",
-          "body": "Đầu tư Trực tiếp Nước ngoài (FDI) là động lực chính của tăng trưởng kinh tế tại Ấn Độ."
-        },
         "choosing-loan": {
-          "title": "Chọn khoản vay phù hợp: Hướng dẫn thực tế",
-          "body": "Việc chọn sản phẩm khoản vay phù hợp phụ thuộc vào mục tiêu tài chính và khả năng trả nợ của bạn."
+          "body": "Việc chọn sản phẩm khoản vay phù hợp phụ thuộc vào mục tiêu tài chính và khả năng trả nợ của bạn.",
+          "title": "Chọn khoản vay phù hợp: Hướng dẫn thực tế"
         },
         "organic-farming": {
-          "title": "Sự phát triển của nông nghiệp hữu cơ tại Ấn Độ",
-          "body": "Nông nghiệp hữu cơ đang ngày càng phổ biến trên khắp Ấn Độ."
+          "body": "Nông nghiệp hữu cơ đang ngày càng phổ biến trên khắp Ấn Độ.",
+          "title": "Sự phát triển của nông nghiệp hữu cơ tại Ấn Độ"
         },
         "securing-operations": {
-          "title": "Bảo mật hoạt động kinh doanh trực tuyến",
-          "body": "Trong thời đại các mối đe dọa mạng ngày càng gia tăng, việc bảo mật hoạt động kinh doanh trực tuyến không còn là tùy chọn."
-        }
-      }
-    },
-    "careers": {
-      "culture": [
-        "Indexia Group là một tổ chức học tập, và văn hóa doanh nghiệp chính là đội ngũ của nó. Con người là tài sản lớn nhất của chúng tôi."
-      ],
-      "roles": {
-        "business-development": {
-          "title": "Chuyên viên Phát triển Kinh doanh",
-          "department": "Bán hàng & Đối tác",
-          "type": "Toàn thời gian"
+          "body": "Bảo vệ hoạt động trực tuyến không còn là tùy chọn. Sử dụng xác thực đa yếu tố và mã hóa dữ liệu nhạy cảm.",
+          "title": "Bảo vệ hoạt động trực tuyến của bạn"
         },
-        "city-head": {
-          "title": "Trưởng Thành phố",
-          "department": "Vận hành",
-          "type": "Toàn thời gian"
-        },
-        "team-manager": {
-          "title": "Quản lý Nhóm",
-          "department": "Vận hành",
-          "type": "Toàn thời gian"
-        },
-        "hr-manager": {
-          "title": "Quản lý Nhân sự",
-          "department": "Nhân sự",
-          "type": "Toàn thời gian"
-        },
-        "team-leader": {
-          "title": "Trưởng Nhóm",
-          "department": "Vận hành",
-          "type": "Toàn thời gian"
-        },
-        "customer-support": {
-          "title": "Chuyên viên Hỗ trợ Khách hàng",
-          "department": "Dịch vụ Khách hàng",
-          "type": "Toàn thời gian"
-        },
-        "field-executive": {
-          "title": "Nhân viên Hiện trường",
-          "department": "Vận hành",
-          "type": "Toàn thời gian"
-        },
-        "seo-professional": {
-          "title": "Chuyên gia SEO",
-          "department": "Marketing Kỹ thuật số",
-          "type": "Toàn thời gian"
+        "understanding-fdi": {
+          "body": "Đầu tư Trực tiếp Nước ngoài (FDI) là động lực chính của tăng trưởng kinh tế tại Ấn Độ.",
+          "title": "Hiểu FDI: Đầu tư trực tiếp nước ngoài hoạt động như thế nào tại Ấn Độ"
         }
       }
     },
     "research": {
       "areas": {
-        "economic": {
-          "title": "Nghiên cứu Kinh tế",
-          "body": "Phân tích sâu về kinh tế toàn cầu và khu vực, thay đổi chính sách và động lực tăng trưởng."
-        },
-        "thematic": {
-          "title": "Nghiên cứu Chủ đề Toàn cầu",
-          "body": "Phân tích sâu về các chủ đề có ý nghĩa toàn cầu và tác động của chúng lên nền kinh tế và thị trường."
-        },
-        "macro": {
-          "title": "Chiến lược Vĩ mô Toàn cầu",
-          "body": "Đánh giá chiến lược về xu hướng kinh tế vĩ mô, lãi suất và hàm ý cho phân bổ tài sản."
-        },
-        "fx": {
-          "title": "Ngoại hối",
-          "body": "Quan điểm chuyên gia về thị trường ngoại hối, biến động tỷ giá và chiến lược giao dịch forex."
-        },
-        "rates": {
-          "title": "Thu nhập cố định & Lãi suất",
-          "body": "Phân tích thị trường trái phiếu, quỹ đạo lãi suất và cơ hội đầu tư."
+        "commodities": {
+          "body": "Thông tin chi tiết về xu hướng giá hàng hóa, cung-cầu và tác động lên thị trường toàn cầu.",
+          "title": "Nghiên cứu Hàng hóa"
         },
         "credit": {
-          "title": "Nghiên cứu Tín dụng",
-          "body": "Đánh giá chất lượng tín dụng, thị trường nợ doanh nghiệp và rủi ro cho vay."
+          "body": "Đánh giá chất lượng tín dụng, thị trường nợ doanh nghiệp và rủi ro cho vay.",
+          "title": "Nghiên cứu Tín dụng"
         },
-        "commodities": {
-          "title": "Nghiên cứu Hàng hóa",
-          "body": "Thông tin chi tiết về xu hướng giá hàng hóa, cung-cầu và tác động lên thị trường toàn cầu."
+        "economic": {
+          "body": "Phân tích sâu về kinh tế toàn cầu và khu vực, thay đổi chính sách và động lực tăng trưởng.",
+          "title": "Nghiên cứu Kinh tế"
+        },
+        "fx": {
+          "body": "Quan điểm chuyên gia về thị trường ngoại hối, biến động tỷ giá và chiến lược giao dịch forex.",
+          "title": "Ngoại hối"
+        },
+        "macro": {
+          "body": "Đánh giá chiến lược về xu hướng kinh tế vĩ mô, lãi suất và hàm ý cho phân bổ tài sản.",
+          "title": "Chiến lược Vĩ mô Toàn cầu"
+        },
+        "rates": {
+          "body": "Phân tích thị trường trái phiếu, quỹ đạo lãi suất và cơ hội đầu tư.",
+          "title": "Thu nhập cố định & Lãi suất"
+        },
+        "thematic": {
+          "body": "Phân tích sâu về các chủ đề có ý nghĩa toàn cầu và tác động của chúng lên nền kinh tế và thị trường.",
+          "title": "Nghiên cứu Chủ đề Toàn cầu"
         }
       },
       "reports": {
-        "otg": {
-          "title": "Tại Hiện trường (OTG)",
-          "summary": "Phân tích tại hiện trường cung cấp thông tin thực tế từ các thị trường trọng điểm."
-        },
         "act": {
-          "title": "Ý tưởng Hành động (ACT)",
-          "summary": "Ý tưởng thị trường ngắn gọn, có thể thực hiện với điểm vào và ra rõ ràng."
+          "summary": "Ý tưởng thị trường ngắn gọn, có thể thực hiện với điểm vào và ra rõ ràng.",
+          "title": "Ý tưởng Hành động (ACT)"
+        },
+        "otg": {
+          "summary": "Phân tích tại hiện trường cung cấp thông tin thực tế từ các thị trường trọng điểm.",
+          "title": "Tại Hiện trường (OTG)"
         },
         "special-reports": {
-          "title": "Báo cáo Đặc biệt",
-          "summary": "Báo cáo chuyên sâu về các chủ đề có ý nghĩa toàn cầu."
+          "summary": "Báo cáo chuyên sâu về các chủ đề có ý nghĩa toàn cầu.",
+          "title": "Báo cáo Đặc biệt"
         }
       }
     },
     "security": {
-      "features": {
-        "tech": {
-          "title": "Công nghệ Mạnh mẽ",
-          "body": "Hệ thống ngân hàng của chúng tôi được quản lý bởi các chuyên gia giàu kinh nghiệm và được bảo vệ bằng công nghệ bảo mật tốt nhất."
+      "contacts": {
+        "control": {
+          "body": "Nếu bạn nghi ngờ hoạt động trái phép trên tài khoản, hãy liên hệ đường dây hỗ trợ khách hàng ngay lập tức.",
+          "title": "Trung tâm Liên hệ"
         },
+        "report": {
+          "body": "Báo cáo hoạt động đáng ngờ qua biểu mẫu liên hệ của chúng tôi.",
+          "title": "Báo cáo Lừa đảo"
+        }
+      },
+      "features": {
         "monitor": {
-          "title": "Hệ thống An toàn",
-          "body": "Indexia Finance giám sát mọi mối đe dọa và hoạt động trực tuyến 24/7 để phát hiện gian lận sớm."
+          "body": "Indexia Finance giám sát mọi mối đe dọa và hoạt động trực tuyến 24/7 để phát hiện gian lận sớm.",
+          "title": "Hệ thống An toàn"
+        },
+        "tech": {
+          "body": "Hệ thống ngân hàng của chúng tôi được quản lý bởi các chuyên gia giàu kinh nghiệm và được bảo vệ bằng công nghệ bảo mật tốt nhất.",
+          "title": "Công nghệ Mạnh mẽ"
         }
       },
       "practices": {
-        "devices": {
-          "title": "Bảo mật Thiết bị của Bạn",
-          "body": "Luôn khóa thiết bị bằng mã PIN hoặc xác thực sinh trắc học."
-        },
         "connections": {
-          "title": "Sử dụng Kết nối An toàn",
-          "body": "Tránh giao dịch tài chính trên mạng Wi-Fi công cộng."
+          "body": "Tránh giao dịch tài chính trên mạng Wi-Fi công cộng.",
+          "title": "Sử dụng Kết nối An toàn"
         },
         "data": {
-          "title": "Bảo vệ Dữ liệu Cá nhân",
-          "body": "Không bao giờ chia sẻ mật khẩu ngân hàng, mã OTP hoặc mã PIN với bất kỳ ai."
-        }
-      },
-      "contacts": {
-        "control": {
-          "title": "Trung tâm Liên hệ",
-          "body": "Nếu bạn nghi ngờ hoạt động trái phép trên tài khoản, hãy liên hệ đường dây hỗ trợ khách hàng ngay lập tức."
+          "body": "Không bao giờ chia sẻ mật khẩu ngân hàng, mã OTP hoặc mã PIN với bất kỳ ai.",
+          "title": "Bảo vệ Dữ liệu Cá nhân"
         },
-        "report": {
-          "title": "Báo cáo Lừa đảo",
-          "body": "Báo cáo hoạt động đáng ngờ qua biểu mẫu liên hệ của chúng tôi."
+        "devices": {
+          "body": "Luôn khóa thiết bị bằng mã PIN hoặc xác thực sinh trắc học.",
+          "title": "Bảo mật Thiết bị của Bạn"
         }
       }
     }
   },
+  "phoneLabel": {
+    "landline": "Điện thoại cố định",
+    "mob": "Di động",
+    "mobile": "Di động",
+    "tel": "Điện thoại"
+  },
+  "securityTipsPage": {
+    "contactsEyebrow": "Cần Trợ Giúp?",
+    "contactsHeading": "Cần Trao Đổi Với Chúng Tôi?",
+    "contactsSubtitle": "Nếu bạn nghĩ mình có thể đã tiết lộ thông tin tài khoản cho một bên đáng ngờ, hoặc bị lừa đảo, hãy liên hệ ngay với chúng tôi qua Đường dây Nóng Dịch vụ Khách hàng.",
+    "ctaBody": "Hãy báo cáo qua biểu mẫu yêu cầu của chúng tôi hoặc liên hệ trực tiếp với công ty Indexia Group liên quan.",
+    "ctaButton": "Bảo Vệ Thông Tin Của Bạn",
+    "ctaTitle": "Thấy điều gì đó đáng ngờ?",
+    "eyebrow": "Mẹo Bảo Mật",
+    "featuresEyebrow": "Chúng Tôi Làm Gì",
+    "featuresHeading": "Giữ Bạn An Toàn Trực Tuyến",
+    "featuresSubtitle": "Đọc để biết chúng tôi đang làm gì để bảo vệ tài khoản của bạn khi bạn giao dịch ngân hàng trực tuyến.",
+    "metaDescription": "Mẹo bảo mật từ Indexia Group, cách chúng tôi bảo vệ tài khoản của bạn trực tuyến, bạn có thể làm gì trên thiết bị của mình và liên hệ ai nếu có sự cố.",
+    "practicesEyebrow": "Bạn Có Thể Làm Gì",
+    "practicesHeading": "Bảo Vệ Thông Tin Của Bạn",
+    "practicesSubtitle": "Chúng tôi làm việc mỗi ngày để giữ tài khoản của bạn an toàn khi giao dịch ngân hàng trực tuyến. Ngoài ra, có một số điều đơn giản bạn có thể làm trên các thiết bị hàng ngày để an toàn trực tuyến.",
+    "subtitle": "Dù bạn ở đâu, bạn vẫn có thể quản lý tiền trực tuyến một cách tự tin.",
+    "title": "Mẹo Bảo Mật Từ Indexia Group",
+    "titleAccent": "Lừa Đảo.",
+    "titleStart": "Đi Trước "
+  },
+  "seo": {
+    "businessesDescription": "Tám doanh nghiệp của Indexia Group: tài chính, cho vay, an ninh, xuất khẩu đường, phân bón hữu cơ, kho bãi, quảng cáo và hỗ trợ vận động viên.",
+    "businessesTitle": "Các Công ty Tập đoàn, Tài chính, Nông nghiệp, Xuất khẩu & Warehousing",
+    "contactDescription": "Liên hệ Indexia Group để được giải đáp về dịch vụ tài chính, cho vay, xuất khẩu, nông nghiệp và warehousing. Văn phòng tại Mumbai, Delhi và Ecuador, phản hồi trong 24 giờ.",
+    "contactTitle": "Liên Hệ, Văn Phòng Mumbai & Delhi",
+    "homeDescription": "Tập đoàn kinh doanh đa ngành Ấn Độ: dịch vụ tài chính, cho vay NBFC, xuất khẩu toàn cầu, phân bón nông nghiệp, kho bãi & an ninh. Văn phòng tại Mumbai, Delhi và Ecuador.",
+    "homeTitle": "Dịch Vụ Tài Chính, Khoản Vay, Xuất Khẩu & Warehousing"
+  },
+  "unipolePricing": {
+    "areaCol": "Ft Vuông",
+    "areaLarge": "288 ft vuông",
+    "areaSmall": "200 ft vuông",
+    "bookMessage": "Tôi muốn đặt unipole {{size}} ({{area}}) với giá {{rate}} mỗi tháng.",
+    "bookNow": "Đặt ngay",
+    "bookSize": "Đặt kích thước này",
+    "eyebrow": "Gói Unipole",
+    "note": "* Giá tùy thuộc vào tình trạng còn chỗ. Liên hệ để biết các gói dài hạn.",
+    "rateCol": "Giá Hàng Tháng",
+    "rateLarge": "₹36.000",
+    "rateSmall": "₹25.000",
+    "sizeCol": "Kích thước",
+    "sizeLarge": "12 × 24 ft",
+    "sizeSmall": "10 × 20 ft",
+    "standardRate": "Giá Tiêu chuẩn: ₹125/ft vuông mỗi mặt mỗi tháng",
+    "subtitle": "Gói unipole cao cấp trên Xa lộ Delhi–Dehradun, Shamli",
+    "title": "Kích Thước & Giá Có Sẵn"
+  },
+  "warehouseContact": {
+    "address": "Địa Chỉ Văn Phòng",
+    "brochure": "Tải tài liệu giới thiệu",
+    "emails": "Email",
+    "eyebrow": "Liên hệ",
+    "phones": "Điện Thoại",
+    "title": "Liên Hệ Đội Ngũ Kho Hàng"
+  },
   "warehousePricing": {
+    "bookMessage": "Tôi muốn hỏi về lô đất {{size}} ({{area}}) với giá ₹30 mỗi ft vuông.",
+    "bookNow": "Đặt Ngay",
+    "enquire": "Yêu Cầu",
     "eyebrow": "Danh Mục Đất",
-    "title": "Danh Mục & Giá Đất",
-    "subtitle": "5 vị trí | tổng 21 mẫu, Shamli, Uttar Pradesh",
-    "portfolioCol": "Danh Mục",
-    "valueCol": "Giá Trị",
     "locations": "Vị Trí",
     "locationsValue": "5 Vị Trí",
-    "total": "Tổng Đất",
-    "totalValue": "21 Mẫu",
-    "plotCol": "Kích Thước Lô Có Sẵn",
+    "note": "Kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá có thể thương lượng, liên hệ để biết chi tiết.",
     "plot1": "1 Mẫu",
     "plot2": "2 Mẫu",
     "plot2_5": "2,5 Mẫu",
     "plot5": "5 Mẫu",
     "plot8": "8 Mẫu",
-    "standardRate": "Giá Dự Kiến: ₹30 mỗi ft vuông, Có thể thương lượng",
-    "note": "Kho hàng hiện đại sẽ được xây trên 2 mẫu với bến bốc xếp. Giá có thể thương lượng, liên hệ để biết chi tiết.",
-    "enquire": "Yêu Cầu",
     "plotArea1": "Diện tích đất: 1 mẫu",
     "plotArea2": "Diện tích đất: 2 mẫu",
     "plotArea2_5": "Diện tích đất: 2,5 mẫu",
     "plotArea5": "Diện tích đất: 5 mẫu",
     "plotArea8": "Diện tích đất: 8 mẫu",
-    "bookMessage": "Tôi muốn hỏi về lô đất {{size}} ({{area}}) với giá ₹30 mỗi ft vuông.",
-    "bookNow": "Đặt Ngay"
-  },
-  "warehouseContact": {
-    "eyebrow": "Liên Hệ",
-    "title": "Liên Hệ Đội Ngũ Kho Hàng",
-    "phones": "Điện Thoại",
-    "emails": "Email",
-    "address": "Địa Chỉ Văn Phòng",
-    "brochure": "Tải tài liệu giới thiệu"
-  },
-  "brochure": {
-    "download": "Tải PDF",
-    "headline": "Đầu Tư Đất Chiến Lược Tại Trung Tâm Bắc Ấn Độ",
-    "about": "Về Dự Án",
-    "contact": "Liên Hệ",
-    "footer": "Indexia Group · Để được giải đáp, hãy gọi, email hoặc ghé văn phòng của chúng tôi. Giá chỉ mang tính tham khảo và có thể thương lượng.",
-    "print": "In",
-    "advertisingHeadline": "Bảng Quảng Cáo Unipole Cao Cấp Trên Xa Lộ Delhi–Dehradun, Shamli",
-    "advertisingFooter": "Indexia Group | Giá tùy thuộc tình trạng còn chỗ. Để đặt chỗ, hãy gọi, email hoặc ghé văn phòng của chúng tôi.",
-    "backWarehouse": "Quay Lại Trang Kho Hàng",
-    "backAdvertising": "Quay Lại Trang Quảng Cáo",
-    "locationWarehouse": "Shamli, Uttar Pradesh",
-    "locationAdvertising": "Xa lộ Delhi–Dehradun, Shamli"
-  },
-  "advertisingContact": {
-    "eyebrow": "Liên Hệ",
-    "title": "Đặt Chỗ Ngay Hôm Nay",
-    "phones": "Điện Thoại",
-    "emails": "Email",
-    "address": "Địa Chỉ Văn Phòng",
-    "brochure": "Tải tài liệu giới thiệu"
-  },
-  "aboutPage": {
-    "eyebrow": "Về Chúng Tôi",
-    "title": "Về Indexia Group",
-    "titleStart": "Xây Dựng Niềm Tin ",
-    "titleAccent": "Trên Mọi Lĩnh Vực.",
-    "subtitle": "Tập đoàn kinh doanh Ấn Độ đa dạng cam kết với tính toàn vẹn, chuyên môn và cách tiếp cận lấy con người làm trung tâm.",
-    "storyEyebrow": "Câu Chuyện Của Chúng Tôi",
-    "storyTitle": "Từ Tầm Nhìn Chung Đến Tập Đoàn Quốc Gia",
-    "storyBody1": "Indexia Group được thành lập với niềm tin đơn giản: doanh nghiệp Ấn Độ có thể cạnh tranh toàn cầu.",
-    "storyBody2": "Ngày nay, Indexia Group hoạt động tại ba địa điểm, Mumbai, Delhi và Ecuador.",
-    "valuesEyebrow": "Giá Trị Của Chúng Tôi",
-    "valuesTitle": "Chúng Tôi Đại Diện Cho Điều Gì",
-    "value1Title": "Tính Toàn Vẹn",
-    "value1Body": "Chúng tôi làm những gì chúng tôi nói.",
-    "value2Title": "Chuyên Môn",
-    "value2Body": "Chúng tôi đầu tư vào kiến thức chuyên sâu.",
-    "value3Title": "Con Người Là Trọng Tâm",
-    "value3Body": "Kinh doanh cuối cùng là về con người.",
-    "value4Title": "Đổi Mới",
-    "value4Body": "Chúng tôi đón nhận thay đổi và liên tục cải tiến.",
-    "stat1Label": "Công Ty",
-    "stat2Label": "Địa Điểm",
-    "stat3Label": "Năm Hoạt Động",
-    "stat4Label": "Quốc Gia Phục Vụ",
-    "timelineEyebrow": "Hành Trình Của Chúng Tôi",
-    "timelineTitle": "Các Mốc Quan Trọng",
-    "milestone1Title": "Thành Lập Tại Mumbai",
-    "milestone1Body": "Indexia Group thành lập công ty đầu tiên tại Mumbai.",
-    "milestone2Title": "Mở Rộng Quốc Gia",
-    "milestone2Body": "Mở rộng hoạt động đến Delhi NCR.",
-    "milestone3Title": "Vươn Tới Toàn Cầu",
-    "milestone3Body": "Đi vào thị trường quốc tế với xuất khẩu đường sang Nam Mỹ.",
-    "milestone4Title": "Đa Dạng Hóa",
-    "milestone4Body": "Ra mắt Agro Bio, Securities, Warehouse và Advertising.",
-    "milestone5Title": "Tác Động Xã Hội",
-    "milestone5Body": "Thành lập Indexia Foundation hỗ trợ vận động viên Ấn Độ.",
-    "ctaTitle": "Hãy Cùng Xây Dựng Điều Gì Đó",
-    "ctaBody": "Dù bạn đang tìm kiếm dịch vụ tài chính, khám phá đối tác, hay đơn giản muốn tìm hiểu thêm, chúng tôi ở đây.",
-    "ctaButton": "Liên Hệ",
-    "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "aboutUs": "About Us",
-    "leaderEyebrow": "Lãnh Đạo",
-    "leaderTitle": "Nhà Sáng Tạo Đằng Sau Indexia Group",
-    "founderName": "Người Sáng Lập & Tổng Giám Đốc",
-    "founderRole": "Người Sáng Lập & Tổng Giám Đốc",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
-    "founderQuote": "Kinh doanh là về niềm tin. Khi bạn xây dựng trên tính toàn vẹn, mọi thứ khác sẽ theo sau.",
-    "companiesEyebrow": "Các Công Ty Của Chúng Tôi",
-    "companiesTitle": "Tám Doanh Nghiệp, Một Tầm Nhìn",
-    "companiesSubtitle": "Từ một công ty dịch vụ tài chính tại Mumbai đến một tập đoàn đa dạng với tám doanh nghiệp.",
-    "c1Tag": "Fintech Đa Quốc Gia",
-    "c1Name": "Indexia Finance",
-    "c1Body": "Được thành lập năm 2012, Indexia Finance là công ty tài chính quốc tế lớn nhất Ấn Độ.",
-    "c1Highlights": "43+ Đối Tác Cho Vay,5 Chi Nhánh Tại 4 Thành Phố,Công Ty Tài Chính Tốt Nhất 2016,Sự presence Toàn Cầu",
-    "c2Tag": "Cánh Cho Vay",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
-    "c2Body": "Indexia Finserve là cánh cho vay chuyên dụng của Indexia Group.",
-    "c2Highlights": "12 Sản Phẩm Cho Vay,Vay Cá Nhân & Thương Mại,Vay Nhà Ở & Vay Đảm Bảo,Chuyển Số Dư & Vốn Lưu Động",
-    "c3Tag": "Xuất Khẩu Toàn Cầu",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
-    "c3Body": "Indexia Overseas là cánh xuất khẩu toàn cầu của Indexia Group.",
-    "c3Highlights": "14 Quốc Gia Nam Mỹ,Xuất Khẩu Đường Tinh Chế Cao Cấp,Chứng Nhận Chất Lượng Thực Phẩm,Quản Lý Vòng Đời Xuất Khẩu Đầy Đủ",
-    "c4Tag": "Nông Nghiệp Hữu Cơ",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
-    "c4Body": "Indexia Agro Bio Fertilizers cam kết chuyển đổi nông nghiệp Ấn Độ.",
-    "c4Highlights": "100% Phân Bón Sinh Học Hữu Cơ,Sản Xuất Tại Shamli UP,Kiểm Tra Đất & Hỗ Trợ Nông Dân,Phân Phối Trong Nước & Xuất Khẩu",
-    "c5Tag": "Bảo Vệ Vũ Trang",
-    "c5Name": "Indexia Securities",
-    "c5Body": "Indexia Securities là nhà cung cấp giải pháp bảo mật hàng đầu.",
-    "c5Highlights": "Lính Đặc Nhiệu Quân Đội,Cơ Sở Vận Hành 24/7,Bảo Vệ VIP & Doanh Nghiệp,Bảo Mật Hạ Tầng Trọng Yếu",
-    "c6Tag": "Đất Chiến Lược",
-    "c6Name": "Indexia Warehouse",
-    "c6Body": "Indexia Warehouse cung cấp cho thuê đất chiến lược.",
-    "c6Highlights": "21 Acre Tại Shamli UP,8 Đường Cao Tốc Quốc Gia,5 Địa Điểm,Cách Delhi 65 km",
-    "c7Tag": "Quảng Cáo Đường Cao Tốc",
-    "c7Name": "Indexia Advertising",
-    "c7Body": "Indexia Advertising vận hành bảng quảng cáo cao cấp.",
-    "c7Highlights": "Cao Tốc NH-709B Delhi-Dehradun,10 Bang Kết Nối,Tầm Nhìn 360°,1+ Crore Tiếp Cận Hàng Ngày",
-    "c8Tag": "Tác Động Xã Hội",
-    "c8Name": "Indexia Foundation",
-    "c8Body": "Indexia Foundation là cánh tác động xã hội của Indexia Group.",
-    "c8Highlights": "Từ Cơ Sở Đến Thế Vận Hội,Đào Tạo & Dinh Dưỡng,Coaching & Mentorship,Tài Trợ Giải Đấu",
-    "visitWebsite": "Truy Cập Website",
-    "learnMore": "Tìm Hiểu Thêm",
-    "registrationEyebrow": "Đăng Ký & Tuân Thủ",
-    "registrationTitle": "Tổ Chức Đã Đăng Ký",
-    "registrationSubtitle": "Tất cả công ty Indexia Group đều đã đăng ký.",
-    "viewOnMCA": "Xem Trên MCA",
-    "registrationNote": "Tất cả đăng ký công ty có thể xác minh trên",
-    "mcaPortal": "Cổng Thông Tin MCA",
-    "taglineSecondary": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất.",
-    "stat1Value": "08",
-    "stat2Value": "03",
-    "stat3Value": "12+",
-    "stat4Value": "14",
-    "milestone1Year": "2012",
-    "milestone2Year": "2015",
-    "milestone3Year": "2018",
-    "milestone4Year": "2021",
-    "milestone5Year": "2024"
-  },
-  "homeReach": {
-    "eyebrow": "Phạm Vi Của Chúng Tôi",
-    "title": "Đáng Tin Cậy Vượt Biên Giới",
-    "subtitle": "Từ Mumbai đến Ecuador, các công ty chúng tôi phục vụ khách hàng trên ba lục địa.",
-    "stat1Label": "Công Ty",
-    "stat2Label": "Quốc Gia",
-    "stat3Label": "Năm Mạnh Mẽ",
-    "stat4Label": "Khách Hàng Phục Vụ",
-    "cta": "Tìm Hiểu Thêm"
-  },
-  "jsonLd": {
-    "orgName": "Indexia Group",
-    "breadcrumbHome": "Trang Chủ",
-    "breadcrumbAbout": "Về Chúng Tôi",
-    "breadcrumbCompanies": "Công Ty Tập Đoàn",
-    "breadcrumbContact": "Liên Hệ",
-    "breadcrumbNews": "Tin Tức & Trung Tâm Kiến Thức",
-    "breadcrumbCareers": "Tuyển Dụng",
-    "aboutName": "Về Indexia Group",
-    "aboutDescription": "Indexia Group là tập đoàn kinh doanh Ấn Độ đa dạng.",
-    "contactName": "Liên Hệ Indexia Group",
-    "corporateOffice": "Văn Phòng Trụ Sở",
-    "delhiOffice": "Văn Phòng Delhi",
-    "businessesName": "Các Doanh Nghiệp Indexia Group",
-    "businessesDescription": "Tám doanh nghiệp thuộc Indexia Group.",
-    "newsName": "Indexia Group, Tin Tức & Trung Tâm Kiến Thức",
-    "careersName": "Vị Trí Tuyển Dụng Tại Indexia Group",
-    "companyPageName": "{{name}}, {{tag}}",
-    "companyPageDescription": "Tìm hiểu về {{name}}, công ty thuộc Indexia Group. {{description}}"
-  },
-  "legalContent": {
-    "privacy": {
-      "intro": [
-        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
-        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
-      ],
-      "sections": [
-        {
-          "title": "Informations que nous collectons",
-          "paragraphs": [
-            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
-            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
-          ]
-        },
-        {
-          "title": "Comment nous utilisons vos informations",
-          "paragraphs": [
-            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
-            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
-          ]
-        },
-        {
-          "title": "Partage et divulgation",
-          "paragraphs": [
-            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
-            "Nous ne vendons pas vos informations personnelles à des tiers."
-          ]
-        },
-        {
-          "title": "Sécurité des données",
-          "paragraphs": [
-            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
-            "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
-          ]
-        },
-        {
-          "title": "Cookies et technologies similaires",
-          "paragraphs": [
-            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
-          ]
-        },
-        {
-          "title": "Conservation des données",
-          "paragraphs": [
-            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
-          ]
-        },
-        {
-          "title": "Vos droits et choix",
-          "paragraphs": [
-            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
-            "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
-          ]
-        },
-        {
-          "title": "Liens vers des tiers",
-          "paragraphs": [
-            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
-          ]
-        },
-        {
-          "title": "Confidentialité des enfants",
-          "paragraphs": [
-            "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
-          ]
-        },
-        {
-          "title": "Modifications de la présente politique",
-          "paragraphs": [
-            "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
-          ]
-        },
-        {
-          "title": "Contact",
-          "paragraphs": [
-            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
-          ]
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [],
-      "sections": [
-        {
-          "title": "Politique d'Annulation et de Remboursement",
-          "paragraphs": [
-            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
-          ]
-        },
-        {
-          "title": "Politique d'Annulation",
-          "paragraphs": [
-            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
-            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
-            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
-            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
-            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
-            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
-            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
-            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
-          ]
-        },
-        {
-          "title": "Politique de Remboursement",
-          "paragraphs": [
-            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
-          ]
-        },
-        {
-          "title": "Clause BO",
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ]
-        },
-        {
-          "title": "Politique de Clause de Non-Responsabilité",
-          "paragraphs": [
-            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
-            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
-            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
-          ]
-        },
-        {
-          "title": "Clause de Non-Responsabilité de ce Site Web",
-          "paragraphs": [
-            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
-            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
-            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
-            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
-          ]
-        }
-      ]
-    },
-    "terms": {
-      "intro": [
-        "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
-        "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
-        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
-      ],
-      "sections": [
-        {
-          "title": "Contenu et Modifications",
-          "paragraphs": [
-            "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
-          ]
-        },
-        {
-          "title": "Aucune Garantie",
-          "paragraphs": [
-            "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
-          ]
-        },
-        {
-          "title": "Utilisation à Vos Risques",
-          "paragraphs": [
-            "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
-          ]
-        },
-        {
-          "title": "Propriété Intellectuelle",
-          "paragraphs": [
-            "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
-          ]
-        },
-        {
-          "title": "Marques Commerciales",
-          "paragraphs": [
-            "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
-          ]
-        },
-        {
-          "title": "Utilisation Non Autorisée",
-          "paragraphs": [
-            "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
-          ]
-        },
-        {
-          "title": "Liens Vers des Sites Tiers",
-          "paragraphs": [
-            "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
-          ]
-        },
-        {
-          "title": "Liens Vers ce Site Web",
-          "paragraphs": [
-            "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
-          ]
-        },
-        {
-          "title": "Droit Applicable",
-          "paragraphs": [
-            "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
-          ]
-        },
-        {
-          "title": "Responsabilité des Transactions par Carte",
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ]
-        }
-      ]
-    }
-  },
-  "notFoundPage": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or has been moved.",
-    "backHome": "Back to Home"
-  },
-  "applyPage": {
-    "successTitle": "Application Submitted!",
-    "successBody": "Thank you for applying for the <strong>{{role}}</strong> position. Our HR team has received your application and will review it shortly.",
-    "successSentTo": "Application sent to",
-    "backToCareers": "Back to Careers",
-    "heroTitle": "Apply for",
-    "roleDetails": "Role Details",
-    "responsibilities": "Responsibilities & Requirements",
-    "infoBanner": "Fill out the form below and we'll send your application directly to our HR team. Attach your resume and tell us why you're a great fit.",
-    "fullName": "Full Name",
-    "fullNamePlaceholder": "Your full name",
-    "email": "Email",
-    "phone": "Phone",
-    "phonePlaceholder": "10-digit number",
-    "experience": "Experience",
-    "selectExperience": "Select experience",
-    "fresher": "Fresher",
-    "lessThan1Year": "Less than 1 year",
-    "1to2Years": "1-2 years",
-    "2to5Years": "2-5 years",
-    "5plusYears": "5+ years",
-    "resume": "Resume",
-    "clickToUpload": "Click to upload resume",
-    "clickToReplace": "Click to replace",
-    "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
-    "tellUsAboutYourself": "Tell us about yourself",
-    "introPlaceholder": "Share your background, skills, and why you're interested in this role...",
-    "submitting": "Submitting...",
-    "submitApplication": "Submit Application",
-    "submitNote": "Your application will be sent to hr@indexiafinance.com and hr.indexia@gmail.com.",
-    "errorNameEmpty": "Please enter your name.",
-    "errorNameShort": "Name must be at least 2 characters.",
-    "errorNameLetters": "Name must contain letters.",
-    "errorEmailEmpty": "Please enter your email address.",
-    "errorEmailInvalid": "Please enter a valid email address.",
-    "errorPhoneEmpty": "Please enter your phone number.",
-    "errorPhoneInvalid": "Please enter a valid 10-digit phone number.",
-    "errorExperience": "Please select your experience level.",
-    "errorResume": "Please upload your resume.",
-    "errorIntroEmpty": "Please tell us about yourself.",
-    "errorIntroShort": "Please write at least 20 characters.",
-    "errorFileSize": "File size must be under 5MB.",
-    "errorFileType": "Only PDF, DOC, or DOCX files are accepted.",
-    "errorSubmit": "Could not submit your application. Please try again later."
-  },
-  "newsHero": {
-    "latestLabel": "Latest across the group",
-    "sectors": {
-      "finance": "Finance",
-      "tradeExport": "Trade & Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "advertising": "Advertising",
-      "sport": "Sport"
-    }
-  },
-  "newsVideo": {
-    "onAir": "On Air",
-    "tvCommercial": "TV Commercial"
-  },
-  "careersHero": {
-    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
-    "companiesOneGroup": "companies, one group"
-  },
-  "openRoles": {
-    "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment."
+    "plotCol": "Kích Thước Lô Có Sẵn",
+    "portfolioCol": "Danh mục",
+    "standardRate": "Giá Dự Kiến: ₹30 mỗi ft vuông, Có thể thương lượng",
+    "subtitle": "5 vị trí | tổng 21 mẫu, Shamli, Uttar Pradesh",
+    "title": "Danh Mục & Giá Đất",
+    "total": "Tổng Đất",
+    "totalValue": "21 Mẫu",
+    "valueCol": "Giá Trị"
   }
 }
