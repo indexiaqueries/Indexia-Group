@@ -32,7 +32,7 @@ const Home = () => {
   };
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={t("seo.homeTitle")}
         description={t("seo.homeDescription")}
@@ -43,7 +43,7 @@ const Home = () => {
 
       <Banner />
 
-      <section className="relative bg-(--color-soft) mx-3 mt-4 mb-2 sm:mx-5 sm:mt-5 sm:mb-3">
+      <section className="section-ruled section-paper relative mx-3 mt-4 mb-2 rounded-[var(--radius-panel)] py-2 sm:mx-5 sm:mt-5 sm:mb-3">
         <div className="container">
           <Reveal>
             <div className="mx-auto max-w-180 text-center">
@@ -58,7 +58,7 @@ const Home = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 py-3">
+          <div className="grid grid-cols-1 gap-3 py-4 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
             {companies.map((company, i) => (
               <Reveal key={company.name} delay={(i % 4) * 0.08} amount={0.15}>
                 <CompanyLinkCard company={company} index={i} />
@@ -69,8 +69,8 @@ const Home = () => {
       </section>
 
       {/* Our Reach */}
-      <div className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
-      <section className="relative overflow-hidden px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+      <div className="atlas-divider" />
+      <section className="section-ruled relative overflow-hidden px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <img
           src={HomeWorld}
           alt=""

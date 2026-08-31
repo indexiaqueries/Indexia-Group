@@ -93,12 +93,13 @@
       "privacyPolicy": "Privacy Policy"
     },
     "cta": "Have an enquiry about any of our group companies?",
-    "enquiry": "Send us your enquiry.",
+    "enquiry": "Send us your enquiry",
     "stats": "Indexia Group · 08 Companies · 03 Locations",
     "rights": "© 2026 Indexia Group. All rights reserved.",
     "backToTop": "Back to top",
     "siteFooter": "Site footer navigation",
-    "footerNav": "Footer navigation"
+    "footerNav": "Footer navigation",
+    "brand": "Indexia Group"
   },
   "home": {
     "groupCompanies": {
@@ -146,6 +147,216 @@
     "emailGeneralEnquiries": "General Enquiries",
     "emailQueries": "Queries",
     "emailViniMalik": "Vini Malik"
+  },
+  "passbook": {
+    "branchOffices": "Branch offices",
+    "directLines": "Direct lines",
+    "avgReplyTime": "Avg. reply time",
+    "enquiryStatus": "Enquiry status",
+    "lessThan24hrs": "< 24 hrs",
+    "inReview": "In review"
+  },
+  "spotlight": {
+    "finance": {
+      "eyebrow": "Global Fintech",
+      "heading": "Connecting Capital\nWith Opportunity",
+      "description": "With operations spanning four continents and partnerships with 43 banks and NBFCs in India alone, Indexia Finance bridges the gap between investors and high-growth opportunities across borders.",
+      "stats": [
+        {
+          "value": "43+",
+          "label": "Bank Partners"
+        },
+        {
+          "value": "4",
+          "label": "Core Verticals"
+        },
+        {
+          "value": "∞",
+          "label": "Global Reach"
+        }
+      ],
+      "bullets": [
+        "FDI facilitation across emerging and developed markets",
+        "NBFC operations with regulated lending frameworks",
+        "Banking & institutional funding for large-scale projects",
+        "Cross-border capital solutions for multinational clients"
+      ]
+    },
+    "finserve": {
+      "eyebrow": "Lending Simplified",
+      "heading": "Every Loan Type\nUnder One Roof",
+      "description": "From personal loans to working capital, Indexia Finserve makes the right bank come to your doorstep, streamlining eligibility, documentation, and disbursal into a single, guided process.",
+      "stats": [
+        {
+          "value": "12",
+          "label": "Loan Products"
+        },
+        {
+          "value": "24h",
+          "label": "Response Time"
+        },
+        {
+          "value": "100%",
+          "label": "Digital Process"
+        }
+      ],
+      "bullets": [
+        "Personal, home, and business loans with competitive rates",
+        "MSME and project funding with flexible terms",
+        "Balance transfer and loan against property options",
+        "Dedicated relationship manager assigned from enquiry to disbursal"
+      ]
+    },
+    "overseas": {
+      "eyebrow": "Global Trade",
+      "heading": "From India to\n14 Countries",
+      "description": "With an established trade network across 14 South American countries, Indexia Overseas manages every stage of the export cycle, from sourcing and quality assurance to international logistics.",
+      "stats": [
+        {
+          "value": "14",
+          "label": "Countries"
+        },
+        {
+          "value": "100%",
+          "label": "Food-Grade"
+        },
+        {
+          "value": "24/7",
+          "label": "Logistics"
+        }
+      ],
+      "bullets": [
+        "Premium refined sugar and edible commodity exports",
+        "Full-cycle management, sourcing, QA, logistics, compliance",
+        "Trusted partner for bulk buyers and institutional consumers",
+        "Deep understanding of South American trade dynamics"
+      ]
+    },
+    "agro-bio": {
+      "eyebrow": "Sustainable Agriculture",
+      "heading": "Restoring Soil,\nMaximizing Yield",
+      "description": "Operating from a state-of-the-art facility in Shamli, UP, Indexia Agro Bio manufactures scientifically formulated organic fertilizers that build long-term fertility, not short-term fixes.",
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Organic"
+        },
+        {
+          "value": "6",
+          "label": "Product Lines"
+        },
+        {
+          "value": "NCR",
+          "label": "Location"
+        }
+      ],
+      "bullets": [
+        "Bio-based solutions that work with nature, not against it",
+        "Soil health assessment and customized fertilizer blends",
+        "Crop yield optimization with hands-on farmer training",
+        "Expanding domestic and international distribution network"
+      ]
+    },
+    "securities": {
+      "eyebrow": "Elite Protection",
+      "heading": "Military-Grade\nSecurity Solutions",
+      "description": "Staffed by ex-military commandos and trained security professionals, Indexia Securities delivers military-grade discipline and rapid-response capability to every assignment, 24/7.",
+      "stats": [
+        {
+          "value": "24/7",
+          "label": "Operations"
+        },
+        {
+          "value": "VIP",
+          "label": "Client Focus"
+        },
+        {
+          "value": "Rapid",
+          "label": "Response"
+        }
+      ],
+      "bullets": [
+        "Close protection details for politicians and corporate leaders",
+        "Corporate, industrial, and event security management",
+        "Real-time surveillance with technology-driven monitoring",
+        "Rapid deployment commando and response units"
+      ]
+    },
+    "warehouse": {
+      "eyebrow": "Strategic Investment",
+      "heading": "8 Expressways,\n21 Acres, One Location",
+      "description": "Positioned at the junction of 8 national expressways and 2 major highways, the Shamli land portfolio connects 8 states with a market reach of 50 crore people.",
+      "stats": [
+        {
+          "value": "21",
+          "label": "Acres Total"
+        },
+        {
+          "value": "8",
+          "label": "Expressways"
+        },
+        {
+          "value": "₹30",
+          "label": "Per Sq Ft"
+        }
+      ],
+      "bullets": [
+        "5 locations with flexible plots from 1 to 8 acres",
+        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
+        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
+        "Modern warehouse planned on 2 acres with loading docks"
+      ]
+    },
+    "advertising": {
+      "eyebrow": "Highway Visibility",
+      "heading": "50 Crore Reach,\n360° Visibility",
+      "description": "Premium single-pole unipoles on the Delhi–Dehradun Highway give your brand maximum visibility with zero visual clutter, backed by signature Bisleri Green branding.",
+      "stats": [
+        {
+          "value": "1Cr+",
+          "label": "Daily Exposure"
+        },
+        {
+          "value": "10",
+          "label": "States Connected"
+        },
+        {
+          "value": "360°",
+          "label": "Visibility"
+        }
+      ],
+      "bullets": [
+        "10×20 ft and 12×24 ft unipole packages available",
+        "Strategic placements on NH-709B and Shamli Ring Road",
+        "End-to-end service, printing, installation, maintenance",
+        "Long-term and bulk packages with negotiable rates"
+      ]
+    },
+    "foundation": {
+      "eyebrow": "Athlete Development",
+      "heading": "From Grassroots\nto the Olympics",
+      "description": "Indexia Foundation removes the financial and logistical barriers that prevent talented athletes from reaching their potential, ensuring skill and dedication determine who represents India.",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Support Pillars"
+        },
+        {
+          "value": "100%",
+          "label": "Funded"
+        },
+        {
+          "value": "∞",
+          "label": "Potential"
+        }
+      ],
+      "bullets": [
+        "International-standard training facilities and expert coaching",
+        "Complete nutrition, diet planning, and sports medicine",
+        "Competition funding, equipment, and psychological support",
+        "Building a sustainable pipeline of world-class athletes"
+      ]
+    }
   },
   "form": {
     "eyebrow": "Send Your Enquiry",
@@ -254,7 +465,9 @@
     "ctaTitle": "Mail Us Your Resume",
     "ctaBody": "We are always looking for great people. Send your CV to hr.indexia@gmail.com and we will be in touch.",
     "metaDescription": "Careers at Indexia Group, a learning organization with opportunities across our diverse businesses. Mail your resume to start your career with us.",
-    "mailResume": "Mail us your Resume –"
+    "mailResume": "Mail us your Resume –",
+    "cultureBody1": "Indexia Group is a learning organization, and our culture starts with our team. We invest in our people — the latest tools, real training, flexible hours, and a workplace that's collaborative and genuinely fun. Communication runs both ways here, from the newest hire straight through to management.",
+    "cultureBody2": "You'll find the pace of a start-up, backed by the stability and benefits of an established group. As we grow into new markets and new clients, we're looking for people who share our drive for doing exceptional work. If that's you, we'd love to see your resume."
   },
   "legal": {
     "eyebrow": "Legal",
@@ -414,15 +627,15 @@
     "stat4Label": "Countries Served",
     "timelineEyebrow": "Our Journey",
     "timelineTitle": "Key Milestones",
-    "milestone1Year": "2012",
-    "milestone1Title": "Founded",
-    "milestone1Body": "Indexia Group established its first company, starting with financial services and lending.",
-    "milestone2Year": "2013",
-    "milestone2Title": "National Expansion",
-    "milestone2Body": "Expanded operations across India, launching Finserve and building a pan-India lending network.",
-    "milestone3Year": "2014",
-    "milestone3Title": "Going Global",
-    "milestone3Body": "Expanded internationally with financial services, exports, sugar, and other edible items across the globe.",
+    "milestone1Year": "2005",
+    "milestone1Title": "Company Founded",
+    "milestone1Body": "Started with a vision to build a diversified Indian business group rooted in integrity and expertise.",
+    "milestone2Year": "2012",
+    "milestone2Title": "Indexia Finserve Launch",
+    "milestone2Body": "Expanded into investment and finance, creating a dedicated lending and wealth management arm.",
+    "milestone3Year": "2015",
+    "milestone3Title": "Global Edible Export",
+    "milestone3Body": "Launched Indexia Overseas to connect Indian agriculture with global markets across multiple continents.",
     "milestone4Year": "2021",
     "milestone4Title": "Diversification",
     "milestone4Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
@@ -443,21 +656,29 @@
     "aboutUs": "About Us",
     "storyImageAlt": "Indexia Group founding story",
     "verifyOnMCA": "Verify on MCA Portal",
-    "milestone1Year": "2005",
-    "milestone1Title": "Company Founded",
-    "milestone1Body": "Started with a vision to build a diversified Indian business group rooted in integrity and expertise.",
-    "milestone2Year": "2012",
-    "milestone2Title": "Indexia Finserve Launch",
-    "milestone2Body": "Expanded into investment and finance, creating a dedicated lending and wealth management arm.",
-    "milestone3Year": "2015",
-    "milestone3Title": "Global Edible Export",
-    "milestone3Body": "Launched Indexia Overseas to connect Indian agriculture with global markets across multiple continents.",
     "milestone6Year": "2021",
     "milestone6Title": "Rapid Expansion",
     "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
     "milestone7Year": "2024",
     "milestone7Title": "Social Impact",
-    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
+    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games.",
+    "radialFinanceDesc": "Multinational fintech platform delivering financial services globally with 43+ bank partnerships",
+    "radialFinserveDesc": "Investment and finance arm specializing in lending and wealth management",
+    "radialOverseasDesc": "Connecting Indian agriculture with global edible export markets across continents",
+    "radialAgroDesc": "Eco-friendly bio-fertilizers restoring soil health and boosting crop productivity",
+    "radialSecuritiesDesc": "Professional armed protection services safeguarding people and assets",
+    "radialWarehouseDesc": "21-acre strategic land leasing hub with access to 8 expressways and 8 states",
+    "radialAdvertisingDesc": "Highway billboard advertising reaching millions of commuters daily",
+    "radialFoundationDesc": "Nurturing Indian athletes from grassroots to the Olympic Games",
+    "hubLabel": "Hub",
+    "hubGroupLabel": "Group hub",
+    "hubDescription": "Eight specialist businesses working from one shared vision.",
+    "founderPersonName": "Bijendra Malik",
+    "visionaryTitle": "The Visionary Behind",
+    "visionaryAccent": "Indexia Group",
+    "entityFinserveName": "Indexia Finserve Pvt. Ltd.",
+    "entityOverseasName": "Indexia Overseas Pvt. Ltd.",
+    "entityAgroName": "Indexia Agro Bio Fertilizers Pvt. Ltd."
   },
   "seo": {
     "homeTitle": "Financial Services, Loans, Export & Warehousing",
@@ -472,6 +693,13 @@
     "mumbaiOffice": "Mumbai Office",
     "delhiOffice": "Delhi Office",
     "internationalOffice": "International Office"
+  },
+  "addresses": {
+    "corporateOffice": "Office No. 3, 1st Floor,\nRahimtoola House, Homji Street,\nOpposite RBI, Fort,\nMumbai - 400001, Maharashtra",
+    "mumbaiOffice": "2A/1402, New Mhada Complex,\nNear Lokhandwala Circle,\nAndheri West,\nMumbai - 400053, Maharashtra",
+    "delhiOffice": "213, Second Floor, Imperial Tower,\nNear Gurudwara,\nC Block Commercial Complex,\nNaraina Vihar, New Delhi - 110028",
+    "shamliOffice": "Meerut Karnal Road,\nShamli, Uttar Pradesh - 247776",
+    "internationalOffice": "Avenida Perez Guerrero OE-375,\ny Avenida Quito,\nEcuador, South America"
   },
   "phoneLabel": {
     "landline": "Landline",
@@ -1248,12 +1476,6 @@
       "advertising": "Advertising",
       "athleteDevelopment": "Athlete Development"
     }
-  },
-  "openRoles": {
-    "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment.",
-    "fullTime": "Full-time",
-    "intern": "Intern"
   },
   "openRoles": {
     "loading": "Loading openings...",

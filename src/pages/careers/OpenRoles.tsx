@@ -84,7 +84,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
       </div>
 
       {/* Roster */}
-      <div className="bg-(--color-soft) px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+      <div className="section-ruled section-paper px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-5xl">
           {loading && (
             <div className="border border-slate-200 bg-white py-10 text-center">
@@ -94,12 +94,12 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
           )}
 
           {!loading && (
-            <div className="border-t border-slate-200 bg-white sm:rounded-sm">
+            <div className="card-premium overflow-hidden rounded-2xl">
               {filteredRoles.map((role, i) => {
                 const dc = departmentColors[role.department] || colors.teal;
                 return (
                   <Reveal key={role._id || role.title} delay={(i % 8) * 0.03} amount={0.1}>
-                    <div className="group relative flex flex-col gap-2 border-b border-slate-100 px-3 py-4 transition-colors last:border-none hover:bg-(--color-soft)/50 sm:flex-row sm:items-center sm:gap-6 sm:px-5 sm:py-5">
+                    <div className="group relative flex flex-col gap-2 border-b border-slate-100 px-4 py-5 transition-colors last:border-none hover:bg-(--color-soft)/70 sm:flex-row sm:items-center sm:gap-6 sm:px-6">
                       <span
                         aria-hidden="true"
                         className="absolute inset-y-0 left-0 w-0.75"

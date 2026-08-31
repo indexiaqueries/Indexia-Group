@@ -12,7 +12,7 @@ const CareersPage = () => {
   const careersJsonLd = useCareersJsonLd();
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={t("careersPage.title")}
         description={t("careersPage.metaDescription")}

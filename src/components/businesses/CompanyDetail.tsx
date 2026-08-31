@@ -20,7 +20,6 @@ import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
 import VideoHoverGallery from "./VideoHoverGallery";
-import foundationVid1 from "../../assets/company-pages-img/foundation-gallery/horizontal1.mp4";
 import foundationVid2 from "../../assets/company-pages-img/foundation-gallery/vertical1.mp4";
 import foundationVid3 from "../../assets/company-pages-img/foundation-gallery/vertical2.mp4";
 import foundationVid4 from "../../assets/company-pages-img/foundation-gallery/vertical3.mp4";
@@ -203,7 +202,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </div>
 
       {/* Overview + image split */}
-      <section className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-12">
+      <section className="section-ruled section-paper relative overflow-hidden py-10 sm:py-14 lg:py-16">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-e-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
@@ -224,7 +223,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 style={{ background: `linear-gradient(135deg, ${b.color}66, transparent 55%, ${b.color}33)` }}
               />
               <div
-                className="group thumb-tilt relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10"
+                className="group thumb-tilt media-polished relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10"
               >
                 <img
                   src={getCompanyImage(b.slug)}
@@ -268,7 +267,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </section>
 
       {/* Impact band, full-bleed image as section background */}
-      <section className="relative overflow-hidden">
+      <section className="section-ruled relative overflow-hidden">
         <ImageSlot
           {...siteImages.companyImpact}
           alt={`${name}, ${tag}`}
@@ -306,7 +305,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       />
 
       {/* Story split, second image + pull-quote */}
-      <section className="relative overflow-hidden" style={{ background: "var(--color-ink-deep)" }}>
+      <section className="section-ruled section-ink relative overflow-hidden">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-s-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
@@ -360,7 +359,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       )}
 
       {/* Services */}
-      <section id="company-services" className="scroll-mt-24 bg-white py-8 sm:py-12 lg:py-16">
+      <section id="company-services" className="section-ruled section-paper scroll-mt-24 py-10 sm:py-14 lg:py-16">
         <div className="container">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
@@ -382,7 +381,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               return (
                 <Reveal key={service} delay={(i % 3) * 0.06} amount={0.1}>
                   <div
-                    className="spotlight-tile group relative flex items-center gap-4 overflow-hidden rounded-2xl border border-slate-100 bg-linear-to-br from-white to-(--color-soft) p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(2,16,26,0.1)]"
+                    className="spotlight-tile card-premium card-premium-hover group relative flex items-center gap-4 overflow-hidden rounded-2xl p-5"
                     style={{ "--spot-color": `${b.color}24` } as React.CSSProperties}
                   >
                     <span
@@ -441,7 +440,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (
-        <section ref={gallerySectionRef} className="relative" style={{ background: "var(--color-ink-deep)" }}>
+        <section ref={gallerySectionRef} className="section-ruled section-ink relative">
           <div ref={glowRef} aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl transition-transform duration-150 ease-out" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
           <div className="container relative py-10 lg:py-14">
             <Reveal className="mx-auto mb-6 max-w-3xl text-center">
@@ -454,7 +453,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               videos={[
                 { src: foundationVid2, label: t("foundationGallery.videos.trackTraining.label"), sublabel: t("foundationGallery.videos.trackTraining.sublabel") },
                 { src: foundationVid3, label: t("foundationGallery.videos.fieldPractice.label"), sublabel: t("foundationGallery.videos.fieldPractice.sublabel") },
-                { src: foundationVid1, label: t("foundationGallery.videos.trainingSession.label"), sublabel: t("foundationGallery.videos.trainingSession.sublabel") },
                 { src: foundationVid6, label: t("foundationGallery.videos.horizontalTraining1.label"), sublabel: t("foundationGallery.videos.horizontalTraining1.sublabel") },
                 { src: foundationVid7, label: t("foundationGallery.videos.horizontalTraining2.label"), sublabel: t("foundationGallery.videos.horizontalTraining2.sublabel") },
                 { src: foundationVid4, label: t("foundationGallery.videos.sprintDrills.label"), sublabel: t("foundationGallery.videos.sprintDrills.sublabel") },
@@ -471,8 +469,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       <section
         id="enquiry"
-        className="relative flex min-h-svh scroll-mt-24 items-center overflow-hidden"
-        style={{ background: "var(--color-soft)", padding: "clamp(40px, 5vw, 64px) 0" }}
+        className="section-ruled section-paper relative flex min-h-svh scroll-mt-24 items-center overflow-hidden"
+        style={{ padding: "clamp(40px, 5vw, 64px) 0" }}
       >
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
 

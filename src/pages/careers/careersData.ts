@@ -51,7 +51,10 @@ export const useCareersContent = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  const culture = careerCulture;
+  const culture = [
+    t("careersPage.cultureBody1", careerCulture[0]),
+    t("careersPage.cultureBody2", careerCulture[1]),
+  ];
 
   return { roles, culture, loading };
 };

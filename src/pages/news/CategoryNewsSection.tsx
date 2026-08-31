@@ -56,7 +56,7 @@ const ArticleCard = ({
     href={article.articleUrl}
     target="_blank"
     rel="noopener noreferrer"
-    className="group/card flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+    className="card-premium card-premium-hover group/card flex flex-col overflow-hidden rounded-2xl"
   >
     {/* Image */}
     {article.image ? (
@@ -68,7 +68,7 @@ const ArticleCard = ({
           decoding="async"
           className="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-[1.05]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/15 to-transparent" />
       </div>
     ) : (
       <div
@@ -143,7 +143,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
   const Icon = activeCategory.icon;
 
   return (
-    <section className="bg-white px-2 py-10 sm:px-3 sm:py-14 lg:px-5">
+    <section className="section-ruled section-paper px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <Reveal className="mb-8">
@@ -160,7 +160,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
 
         {/* Category tabs */}
         <Reveal delay={0.05}>
-          <div className="mb-8 flex flex-wrap gap-2">
+          <div className="mb-8 flex flex-wrap gap-2 rounded-2xl border border-slate-200/80 bg-white/80 p-2 shadow-sm backdrop-blur-sm">
             {CATEGORIES.map((cat) => {
               const CatIcon = cat.icon;
               const isActive = activeTab === cat.key;
@@ -206,7 +206,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
         {/* Category header bar */}
         <Reveal delay={0.1}>
           <div
-            className={`mb-6 flex items-center gap-3 rounded-xl bg-gradient-to-r px-5 py-3.5 ${activeCategory.gradient}`}
+            className={`mb-6 flex items-center gap-3 rounded-xl border border-white/70 bg-linear-to-r px-5 py-3.5 shadow-sm ${activeCategory.gradient}`}
           >
             <div
               className="flex h-9 w-9 items-center justify-center rounded-lg"
@@ -241,7 +241,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
             ))}
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-16">
+          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-white/70 py-16 shadow-sm">
             <Icon size={32} className="text-slate-300" />
             <p className="mt-3 text-sm text-slate-400">
               {t("newsPage.noArticlesYet")}

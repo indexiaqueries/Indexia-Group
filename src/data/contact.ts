@@ -8,7 +8,7 @@ type PhoneLink = {
 type Branch = {
   key: string;
   name: string;
-  address: string;
+  addressKey: string;
   phones: PhoneLink[];
 };
 
@@ -38,10 +38,7 @@ export const branches: Branch[] = [
   {
     key: "corporateOffice",
     name: "Corporate Office",
-    address: `Office No. 3, 1st Floor,
-Rahimtoola House, Homji Street,
-Opposite RBI, Fort,
-Mumbai - 400001, Maharashtra`,
+    addressKey: "addresses.corporateOffice",
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 73026 47817", href: "tel:+917302647817" },
       { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+9186918 86919" },
@@ -50,22 +47,16 @@ Mumbai - 400001, Maharashtra`,
   {
     key: "mumbaiOffice",
     name: "Mumbai Office",
-    address: `2A/1402, New Mhada Complex,
-Near Lokhandwala Circle,
-Andheri West,
-Mumbai - 400053, Maharashtra`,
+    addressKey: "addresses.mumbaiOffice",
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 73026 47817", href: "tel:+917302647817" },
-      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+9186918 86919" },
+      { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "+9186918 86919" },
     ],
   },
   {
     key: "delhiOffice",
     name: "Delhi Office",
-    address: `213, Second Floor, Imperial Tower,
-Near Gurudwara,
-C Block Commercial Complex,
-Naraina Vihar, New Delhi - 110028`,
+    addressKey: "addresses.delhiOffice",
     phones: [
       { label: "Tel", labelKey: "tel", number: "011-46291155", href: "tel:+911146291155" },
       { label: "Mob", labelKey: "mob", number: "+91 8928 786 594", href: "tel:+918928786594" },
@@ -74,8 +65,7 @@ Naraina Vihar, New Delhi - 110028`,
   {
     key: "shamliOffice",
     name: "Shamli Office",
-    address: `Meerut Karnal Road,
-Shamli, Uttar Pradesh - 247776`,
+    addressKey: "addresses.shamliOffice",
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 86918 86919", href: "tel:+918691886919" },
     ],
@@ -83,9 +73,7 @@ Shamli, Uttar Pradesh - 247776`,
   {
     key: "internationalOffice",
     name: "International Office",
-    address: `Avenida Perez Guerrero OE-375,
-y Avenida Quito,
-Ecuador, South America`,
+    addressKey: "addresses.internationalOffice",
     phones: [],
   },
 ];

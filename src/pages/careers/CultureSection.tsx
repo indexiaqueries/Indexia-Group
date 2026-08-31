@@ -15,7 +15,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
   }
 
   return (
-    <section className="relative bg-white px-2 py-5 sm:px-3 sm:py-5 lg:px-5">
+    <section className="section-ruled section-paper relative px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"
@@ -32,13 +32,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
         <div className="space-y-10 sm:space-y-14">
           {items.map((item, i) => (
             <Reveal key={i} delay={i * 0.06} amount={0.12}>
-              <div
-                className={`grid grid-cols-1 gap-6 sm:grid-cols-[1fr_1px_1.15fr] sm:gap-10 ${
-                  i !== items.length - 1
-                    ? "border-b border-slate-100 pb-10 sm:pb-14"
-                    : ""
-                }`}
-              >
+              <div className="card-premium grid grid-cols-1 gap-6 rounded-2xl p-5 sm:grid-cols-[1fr_1px_1.15fr] sm:gap-10 sm:p-7">
                 <div>
                   <span
                     aria-hidden="true"

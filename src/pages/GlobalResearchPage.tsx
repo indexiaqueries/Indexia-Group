@@ -58,7 +58,7 @@ const GlobalResearchPage = () => {
   };
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={t("globalResearchPage.title")}
         description={t("globalResearchPage.metaDescription")}
@@ -90,7 +90,7 @@ const GlobalResearchPage = () => {
         </button>
       </HeroBackdrop>
 
-      <section id="research-areas" className="scroll-mt-24 bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section id="research-areas" className="section-ruled section-paper scroll-mt-24 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-3">{t("globalResearchPage.areasEyebrow")}</Eyebrow>
@@ -103,7 +103,7 @@ const GlobalResearchPage = () => {
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {areas.map((area, i) => (
               <Reveal key={area.key} delay={(i % 4) * 0.08} amount={0.15}>
-                <div className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div className="card-premium card-premium-hover flex h-full flex-col rounded-2xl p-6">
                   <span className="font-ledger text-sm font-bold" style={{ color: i % 2 === 0 ? colors.teal : colors.blue }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -116,7 +116,7 @@ const GlobalResearchPage = () => {
         </div>
       </section>
 
-      <section className="relative bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="section-ruled relative bg-(--color-mist) px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-3">{t("globalResearchPage.reportsEyebrow")}</Eyebrow>
@@ -129,7 +129,7 @@ const GlobalResearchPage = () => {
           <div className="space-y-4">
             {reports.map((report, i) => (
               <Reveal key={report.key} delay={(i % 3) * 0.06} amount={0.1}>
-                <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                <div className="card-premium card-premium-hover rounded-2xl p-6">
                   <ImageSlot {...reportSlots[report.key]} className="mb-5" />
                   <div className="flex flex-wrap items-center gap-3">
                     <span

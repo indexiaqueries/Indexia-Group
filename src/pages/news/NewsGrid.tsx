@@ -117,7 +117,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                       decoding="async"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-[1.03]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
                   </div>
                 )}
 

@@ -6,7 +6,7 @@ type MediaFrameProps = {
 };
 
 const MediaFrame = ({ children, className = "" }: MediaFrameProps) => (
-  <div className={`image-zoom-frame overflow-hidden rounded-2xl ${className}`}>
+  <div className={`image-zoom-frame media-polished overflow-hidden rounded-2xl ${className}`}>
     {children}
   </div>
 );

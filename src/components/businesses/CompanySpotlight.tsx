@@ -12,11 +12,14 @@ type CompanySpotlightProps = {
 };
 
 const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
-  useTranslation();
+  const { t } = useTranslation();
   const data = SPOTLIGHT_DATA[company.slug];
   if (!data) return null;
 
-  const headingLines = data.heading.split("\n");
+  const eyebrow = t(data.eyebrowKey);
+  const heading = t(data.headingKey);
+  const description = t(data.descriptionKey);
+  const headingLines = heading.split("\n");
 
   return (
     <section className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-12">
@@ -36,7 +39,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
         {/* Content side */}
         <Reveal amount={0.2}>
           <Eyebrow color={accentInk(company.color)} className="mb-3">
-            {data.eyebrow}
+            {eyebrow}
           </Eyebrow>
           <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
             {headingLines.map((line, i) => (
@@ -50,15 +53,14 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
             ))}
           </h2>
           <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
-            {data.description}
-          </p>
-
-          {/* Stats grid */}
+            {description}
+          </p>          {/* Stats grid */}
           <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-3">
-            {data.stats.map((stat) => (              <div key={stat.label} className="rounded-2xl border border-slate-100 bg-white p-3 sm:p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+            {data.stats.map((stat, i) => (
+              <div key={i} className="rounded-2xl border border-slate-100 bg-white p-3 sm:p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                 <AnimatedCounter
-                  value={stat.value}
-                  label={stat.label}
+                  value={t(stat.valueKey)}
+                  label={t(stat.labelKey)}
                   color={accentInk(company.color)}
                   numberClassName="font-display text-2xl font-bold"
                   labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
@@ -69,13 +71,13 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
 
           {/* Bullet points */}
           <ul className="mt-6 sm:mt-8 space-y-2 sm:space-y-3">
-            {data.bullets.map((bullet) => (
-              <li key={bullet} className="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-(--color-ink-soft)">
+            {data.bulletsKeys.map((bulletKey) => (
+              <li key={bulletKey} className="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-(--color-ink-soft)">
                 <span
                   className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
                   style={{ background: company.color }}
                 />
-                {bullet}
+                {t(bulletKey)}
               </li>
             ))}
           </ul>

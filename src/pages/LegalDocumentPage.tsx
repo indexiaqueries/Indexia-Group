@@ -59,7 +59,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
   };
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO title={title} description={t(descriptionKey)} canonicalPath={path} jsonLd={jsonLd} />
 
       <HeroBackdrop
@@ -80,8 +80,8 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         </p>
       </HeroBackdrop>
 
-      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
-        <div className="mx-auto max-w-4xl">
+      <section className="section-ruled section-paper relative px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <div className="card-premium mx-auto max-w-4xl rounded-2xl p-5 sm:p-8 lg:p-10">
           <Reveal>
             <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-slate-200 pb-6">
               <Link
@@ -101,7 +101,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
           </Reveal>
 
           <Reveal>
-            <div className="mb-5 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-5 py-3">
+            <div className="mb-5 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-5 py-3 shadow-sm">
               <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
                 {t("legal.lastUpdated")}
               </span>
@@ -120,7 +120,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
 
           {content.sections.map((section, index) => (
             <Reveal key={section.title} delay={0.05 * (index % 3)}>
-              <section className="mt-12">
+              <section className="mt-12 rounded-xl border border-slate-100 bg-white/70 p-4 sm:p-6">
                 <div className="flex items-center gap-4">
                   <span className="font-ledger text-sm font-bold" style={{ color: colors.teal }}>
                     {String(index + 1).padStart(2, "0")}
@@ -140,7 +140,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
           ))}
 
           <Reveal>
-            <div className="mt-10 rounded-2xl border border-slate-200 bg-(--color-soft) p-7 sm:p-8">
+            <div className="mt-10 rounded-2xl border border-slate-200 bg-(--color-soft) p-7 shadow-sm sm:p-8">
               <h3 className="font-display text-xl font-bold text-slate-900">{t("legal.contactHeading")}</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">{t("legal.contactBody")}</p>
               <Link

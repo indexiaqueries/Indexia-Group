@@ -90,8 +90,7 @@ const Footer = () => {
             <img src={logo} alt={t("common.logoAlt")} width={48} height={48} className="h-12 w-12 object-contain" />
             <div>
               <div className="flex items-center gap-1 text-lg font-extrabold">
-                <span className="text-(--color-yellow)">Indexia</span>
-                <span className="text-white">Group</span>
+                <span className="text-(--color-yellow)">{t("footer.brand")}</span>
               </div>
               <p className="font-ledger text-[9px] font-bold uppercase tracking-[0.22em] text-white/60">
                 {t("footer.tagline")}

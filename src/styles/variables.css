@@ -14,6 +14,10 @@
   --color-muted: #6b7280;
   --color-soft: #f8fafc;
   --color-mist: #f6f9fb;
+  --color-paper: #fbfcfa;
+  --color-paper-warm: #f7fbf8;
+  --color-line: #d9e7e3;
+  --color-line-strong: #b8d7cf;
   --color-deep: #044e74;
   --color-night: #02101a;
   --color-navy: #0c3652;
@@ -23,5 +27,10 @@
   --color-success: #14765f;
   --color-danger: #b91c1c;
 
+  --shadow-card: 0 18px 48px rgba(2, 16, 26, 0.08);
+  --shadow-card-hover: 0 24px 64px rgba(2, 16, 26, 0.14);
+  --shadow-ink: 0 24px 80px rgba(2, 16, 26, 0.28);
+  --radius-panel: 18px;
+  --radius-card: 14px;
 
 }

@@ -24,7 +24,7 @@ const CompanyCardBase = ({
   className = "",
 }: CompanyCardBaseProps) => (
   <div
-    className={`group relative flex h-48 sm:h-56 flex-col overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-(--color-ink-deep) shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-white/30 hover:shadow-2xl ${className}`}
+    className={`group relative flex h-52 flex-col overflow-hidden rounded-xl border border-white/12 bg-(--color-ink-deep) shadow-[0_18px_45px_rgba(2,16,26,0.16)] transition-all duration-500 hover:-translate-y-1.5 hover:border-(--color-yellow)/45 hover:shadow-[0_26px_70px_rgba(2,16,26,0.24)] sm:h-60 ${className}`}
   >
     {/* Background image */}
     <div className="absolute inset-0 overflow-hidden">
@@ -37,7 +37,7 @@ const CompanyCardBase = ({
         height={426}
         loading="lazy"
         decoding="async"
-        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
       />
     </div>
 
@@ -49,6 +49,14 @@ const CompanyCardBase = ({
         background:
           tint ??
           "linear-gradient(to top, var(--color-night), color-mix(in srgb, var(--color-night) 50%, transparent), transparent)",
+      }}
+    />
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(38,174,144,0.16), transparent 38%, rgba(242,242,49,0.1))",
       }}
     />
 

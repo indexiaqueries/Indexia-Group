@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={t("seo.contactTitle")}
         description={t("seo.contactDescription")}
@@ -68,7 +68,7 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="relative flex min-h-svh items-center overflow-hidden bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="section-ruled section-paper relative flex min-h-svh items-center overflow-hidden px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"
@@ -83,7 +83,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="branches" className="bg-white py-6 sm:py-8">
+      <section id="branches" className="section-ruled section-paper py-10 sm:py-14">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 sm:text-4xl">
@@ -94,8 +94,12 @@ const Contact = () => {
 
           <GlowingCards gap="1.5rem">
             {branches.map((branch, index) => (
-              <GlowingCard key={branch.name} glowColor={['#26ae90', '#f2f231', '#066a9c', '#94a3b8'][index % 4]} className="p-0">
-                <LocationCard location={branch} delay={index * 0.08} />
+              <GlowingCard
+                key={branch.name}
+                glowColor={['#26ae90', '#f2f231', '#066a9c', '#94a3b8'][index % 4]}
+                className="border-slate-200/80 bg-white p-0 shadow-[0_18px_48px_rgba(2,16,26,0.08)] hover:border-(--color-teal)/30 hover:shadow-[0_24px_64px_rgba(2,16,26,0.14)]"
+              >
+                <LocationCard location={branch} delay={index * 0.08} tone="light" />
               </GlowingCard>
             ))}
           </GlowingCards>

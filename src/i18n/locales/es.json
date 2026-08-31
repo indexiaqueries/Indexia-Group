@@ -3,35 +3,35 @@
     "aboutUs": "Sobre Nosotros",
     "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. It partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, and more. Winner of the Best Finance Company 2016 award.",
     "c1Highlights": "43+ Lender Partners,5 Branches in 4 Cities,Best Finance Company 2016 Award,Global Presence",
-    "c1Name": "Indexia Finance",
+    "c1Name": "Indexia Finanzas",
     "c1Tag": "Fintech Multinacional",
     "c2Body": "Indexia Finserve is the dedicated lending arm, offering every kind of loan with a streamlined process from eligibility to disbursal.",
     "c2Highlights": "12 Productos de Préstamo,Préstamos Personales y Comerciales,Préstamo Hipotecario y LAP,Transferencia de Saldo y Capital de Trabajo",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Name": "Indexia Finserve S.L.",
     "c2Tag": "Brazo de Préstamos",
     "c3Body": "Specializing in refined sugar and edible commodity exports across 14 South American countries with full-cycle export management.",
     "c3Highlights": "14 Países Sudamericanos,Exportación de Azúcar Refinada Premium,Certificación de Calidad Alimentaria,Gestión Completa del Ciclo de Exportación",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Name": "Indexia Internacional S.L.",
     "c3Tag": "Exportación Global",
     "c4Body": "Scientifically formulated organic bio-fertilizers from a state-of-the-art facility in Shamli, UP within the Delhi NCR belt.",
     "c4Highlights": "100% Organic Bio-Fertilizers,Production in Shamli UP,Soil Testing & Farmer Support,Domestic & Export Distribution",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Name": "Indexia Agro Bio Fertilizantes S.L.",
     "c4Tag": "Agricultura Orgánica",
     "c5Body": "Premier security solutions with ex-military commandos, 24/7 operations centre, protecting VIPs, corporations, and critical infrastructure.",
     "c5Highlights": "Ex-Comandos Militares,Centro de Operaciones 24/7,Protección VIP y Corporativa,Seguridad de Infraestructura Crítica",
-    "c5Name": "Indexia Securities",
+    "c5Name": "Indexia Seguridad",
     "c5Tag": "Protección Armada",
     "c6Body": "21 acres of strategic leased land in Shamli, UP, 65 km from Delhi, at the junction of 8 national expressways connecting 8 states.",
     "c6Highlights": "21 Acres en Shamli UP,8 Autopistas Nacionales,5 Ubicaciones,65 km de Delhi",
-    "c6Name": "Indexia Warehouse",
+    "c6Name": "Indexia Almacenes",
     "c6Tag": "Terreno Estratégico",
     "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
     "c7Highlights": "Autopista Delhi-Dehradun NH-709B,10 Estados Conectados,Visibilidad 360°,1+ Crore Exposición Diaria",
-    "c7Name": "Indexia Advertising",
+    "c7Name": "Indexia Publicidad",
     "c7Tag": "Publicidad en Autopistas",
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
     "c8Highlights": "De la Base Olímpica,Entrenamiento y Nutrición,Coaching y Mentoring,Financiación de Competiciones",
-    "c8Name": "Indexia Foundation",
+    "c8Name": "Indexia Fundación",
     "c8Tag": "Impacto Social",
     "companiesEyebrow": "Nuestras Empresas",
     "companiesSubtitle": "From a single financial services company in Mumbai to a diversified group of eight businesses.",
@@ -40,8 +40,8 @@
     "ctaButton": "Contactar",
     "ctaTitle": "Construyamos Algo Juntos",
     "eyebrow": "Sobre Nosotros",
-    "founderBio1": "El fundador de Indexia Group construyó la empresa con una idea simple pero poderosa. Comenzando con una sola empresa de servicios financieros en Mumbai, el fundador expandió el grupo a ocho negocios diversos.",
-    "founderBio2": "El Director General lidera la excelencia operativa y el crecimiento estratégico. Bajo este liderazgo, Indexia Group se ha expandido a tres ubicaciones.",
+    "founderBio1": "Indexia Group se construyó sobre una idea simple pero poderosa: las empresas indias pueden competir a nivel mundial cuando se basan en integridad, experiencia profunda y un compromiso genuino con las personas a las que sirven. Comenzando con el sector financiero, el grupo ha crecido hasta convertirse en ocho negocios diversificados.",
+    "founderBio2": "El Director General lidera la excelencia operativa y el crecimiento estratégico de todas las empresas del grupo, asegurando que cada empresa cumpla con su promesa de fiabilidad, transparencia y resultados.",
     "founderName": "Fundador y Director General",
     "founderQuote": "Los negocios se basan en la confianza. Cuando construyes con integridad, todo lo demás sigue.",
     "founderRole": "Fundador y Director General",
@@ -50,19 +50,19 @@
     "learnMore": "Saber Más",
     "mcaPortal": "Portal MCA",
     "metaDescription": "Sobre Indexia Group, un grupo empresarial indio diversificado.",
-    "milestone1Body": "Indexia Group estableció su primera empresa en Mumbai.",
-    "milestone1Title": "Fundado en Mumbai",
-    "milestone1Year": "2012",
-    "milestone2Body": "Expandió operaciones a Delhi NCR.",
-    "milestone2Title": "Expansión Nacional",
-    "milestone2Year": "2013",
-    "milestone3Body": "Entró a mercados internacionales con exportaciones de azúcar a Sudamérica.",
-    "milestone3Title": "Alcance Global",
-    "milestone3Year": "2014",
-    "milestone4Body": "Lanzó Agro Bio, Seguridad, Almacenamiento y Publicidad.",
+    "milestone1Body": "Iniciado con la visión de construir un grupo empresarial indio diversificado.",
+    "milestone1Title": "Fundación de la empresa",
+    "milestone1Year": "2005",
+    "milestone2Body": "Expansión en inversión y finanzas con un brazo dedicado a préstamos y gestión de patrimonio.",
+    "milestone2Title": "Lanzamiento de Indexia Finserve",
+    "milestone2Year": "2012",
+    "milestone3Body": "Lanzamiento de Indexia Internacional para conectar la agricultura india con mercados globales.",
+    "milestone3Title": "Exportación alimentaria global",
+    "milestone3Year": "2015",
+    "milestone4Body": "Lanzamiento de nuevos departamentos y crecimiento a ocho empresas.",
     "milestone4Title": "Diversificación",
     "milestone4Year": "2021",
-    "milestone5Body": "Fundó Indexia Foundation para apoyar a atletas indios.",
+    "milestone5Body": "Fundación de Indexia Fundación para apoyar a atletas indios.",
     "milestone5Title": "Impacto Social",
     "milestone5Year": "2024",
     "registrationEyebrow": "Registro y Cumplimiento",
@@ -77,8 +77,8 @@
     "stat3Value": "12+",
     "stat4Label": "Países Atendidos",
     "stat4Value": "14",
-    "storyBody1": "Indexia Group fue fundado con una creencia simple: que los negocios indios pueden competir globalmente cuando se construyen con integridad, experiencia y un compromiso genuino con las personas a las que sirven.",
-    "storyBody2": "Hoy, Indexia Group opera en tres ubicaciones, Mumbai, Delhi y Ecuador, con un equipo que comparte un propósito común.",
+    "storyBody1": "Indexia Group fue fundado con una creencia simple: las empresas indias pueden competir a nivel mundial cuando se construyen con integridad, experiencia y un compromiso genuino.",
+    "storyBody2": "Hoy, Indexia Group opera en todo el mundo con un equipo que comparte un propósito común: entregar resultados que importan.",
     "storyEyebrow": "Nuestra Historia",
     "storyTitle": "De una Visión Compartida a un Grupo Nacional",
     "subtitle": "Un grupo empresarial indio diversificado comprometido con la integridad, la experiencia y un enfoque centrado en las personas.",
@@ -88,26 +88,43 @@
     "title": "Sobre Indexia Group",
     "titleAccent": "En Todas Las Industrias.",
     "titleStart": "Construyendo Confianza ",
-    "value1Body": "Hacemos lo que decimos. Cada relación se construye sobre honestidad, transparencia y respeto mutuo.",
+    "value1Body": "Hacemos lo que decimos. Cada relación se basa en honestidad, transparencia y respeto mutuo.",
     "value1Title": "Integridad",
-    "value2Body": "Invertimos en conocimiento profundo del dominio en cada vertical.",
+    "value2Body": "Invertimos en conocimiento profundo en cada área. Nuestros equipos aportan habilidades especializadas y experiencia en la industria.",
     "value2Title": "Experiencia",
-    "value3Body": "Los negocios son fundamentalmente sobre personas. Diseñamos soluciones que empoderan a nuestros clientes.",
+    "value3Body": "Los negocios son fundamentalmente sobre personas. Diseñamos soluciones que empoderan a nuestros clientes y apoyan a nuestras comunidades.",
     "value3Title": "Personas Primero",
-    "value4Body": "Abrazamos el cambio y mejoramos continuamente.",
+    "value4Body": "Abrazamos el cambio y mejoramos continuamente. De plataformas fintech a agricultura orgánica, invertimos en ideas que impulsan las industrias.",
     "value4Title": "Innovación",
     "valuesEyebrow": "Nuestros Valores",
     "valuesTitle": "Lo Que Defendemos",
     "viewOnMCA": "Ver en MCA",
     "visitWebsite": "Visitar Sitio Web",
-    "storyImageAlt": "Indexia Group founding story",
-    "verifyOnMCA": "Verify on MCA Portal",
+    "storyImageAlt": "Historia de la fundación de Indexia Group",
+    "verifyOnMCA": "Verificar en el portal MCA",
     "milestone6Year": "2021",
-    "milestone6Title": "Rapid Expansion",
-    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone6Title": "Expansión rápida",
+    "milestone6Body": "Lanzamiento de Agro Bio, Seguridad, Almacenamiento y Publicidad, creciendo a ocho empresas.",
     "milestone7Year": "2024",
-    "milestone7Title": "Social Impact",
-    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
+    "milestone7Title": "Impacto social",
+    "milestone7Body": "Fundación de Indexia Fundación para apoyar a atletas indios desde la base hasta los Juegos Olímpicos.",
+    "radialFinanceDesc": "Plataforma fintech multinacional que ofrece servicios financieros a nivel mundial con más de 43 alianzas bancarias",
+    "radialFinserveDesc": "Rama de inversión y finanzas especializada en préstamos y gestión de patrimonio",
+    "radialOverseasDesc": "Conectar la agricultura india con los mercados de exportación alimentaria global a través de continentes",
+    "radialAgroDesc": "Fertilizantes biológicos ecológicos que restauran la salud del suelo y aumentan la productividad de los cultivos",
+    "radialSecuritiesDesc": "Servicios de protección armada profesional que protegen personas y activos",
+    "radialWarehouseDesc": "Centro de arrendamiento de tierras estratégicas de 21 acres con acceso a 8 autopistas y 8 estados",
+    "radialAdvertisingDesc": "Publicidad en vallas de carretera que alcanza a millones de viajeros diariamente",
+    "radialFoundationDesc": "Apoyar a los atletas indios desde la base hasta los Juegos Olímpicos",
+    "hubLabel": "Hub",
+    "hubGroupLabel": "Group hub",
+    "hubDescription": "Ocho empresas especializadas trabajando desde una visión compartida.",
+    "visionaryTitle": "El Visionario detrás de",
+    "visionaryAccent": "Grupo Indexia",
+    "founderPersonName": "Bijendra Malik",
+    "entityFinserveName": "Indexia Finserve S.L.",
+    "entityOverseasName": "Indexia Internacional S.L.",
+    "entityAgroName": "Indexia Agro Bio Fertilizantes S.L."
   },
   "advertisingContact": {
     "address": "Dirección de la oficina",
@@ -207,13 +224,13 @@
     "companiesOneGroup": "empresas, un grupo",
     "description": "Ocho empresas. Un equipo. Desarrolla tu carrera en finanzas, exportación, agricultura, seguridad, publicidad y desarrollo deportivo.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "leasing": "Leasing",
-      "advertising": "Advertising",
-      "athleteDevelopment": "Athlete Development"
+      "finance": "Finanzas",
+      "export": "Exportación",
+      "agriculture": "Agricultura",
+      "security": "Seguridad",
+      "leasing": "Arrendamiento",
+      "advertising": "Publicidad",
+      "athleteDevelopment": "Desarrollo de atletas"
     }
   },
   "careersPage": {
@@ -232,7 +249,9 @@
     "subtitle": "Indexia Group es una organización que aprende, y su cultura corporativa es su equipo.",
     "title": "Empleo en Indexia Group",
     "titleAccent": "Nosotros.",
-    "titleStart": "Construye Tu Carrera Con "
+    "titleStart": "Construye Tu Carrera Con ",
+    "cultureBody1": "Indexia Group es una organización de aprendizaje, y nuestra cultura comienza con nuestro equipo. Invertimos en nuestro personal — las últimas herramientas, formación real, horarios flexibles y un lugar de trabajo colaborativo y genuinamente divertido. La comunicación fluye en ambas direcciones, desde el empleado más nuevo hasta la gerencia.",
+    "cultureBody2": "Encontrarás el ritmo de una start-up, respaldado por la estabilidad y los beneficios de un grupo establecido. Buscamos personas que compartan nuestra pasión por hacer un trabajo excepcional. Si eres tú, nos encantaría ver tu currículum."
   },
   "common": {
     "homeAria": "Inicio de Indexia Group",
@@ -318,8 +337,8 @@
     "paragraph": "Tanto si tiene una pregunta sobre nuestros servicios, necesita una consultoría empresarial o quiere explorar una alianza, nuestro equipo está listo para ayudarle: respondemos en un plazo de 24 horas.",
     "phoneNumbers": "Números de Teléfono",
     "workingHours": "Horario Laboral",
-    "emailGeneralEnquiries": "General Enquiries",
-    "emailQueries": "Queries",
+    "emailGeneralEnquiries": "Consultas generales",
+    "emailQueries": "Consultas",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -348,8 +367,9 @@
     "stats": "INDEXIA GROUP · 08 EMPRESAS · 03 UBICACIONES",
     "tagline": "Grupo Empresarial Indio Diversificado",
     "taglineSecondary": "Ventajas Diversas. Visión Unificada.",
-    "siteFooter": "Site footer navigation",
-    "footerNav": "Footer navigation"
+    "siteFooter": "Navegación del pie de página",
+    "footerNav": "Navegación del pie de página",
+    "brand": "Grupo Indexia"
   },
   "form": {
     "email": "Correo Electrónico",
@@ -372,7 +392,7 @@
     "phonePlaceholder": "Número de 10 dígitos",
     "sending": "Enviando…",
     "subject": "Asunto / Empresa",
-    "subjectPlaceholder": "Seleccione una empresa…",
+    "subjectPlaceholder": "Seleccionar empresa...",
     "submit": "Enviar Consulta",
     "success": "¡Su consulta ha sido enviada! Nuestro equipo se pondrá en contacto con usted en breve."
   },
@@ -421,7 +441,7 @@
       "heading": "Un Grupo.\nMúltiples Soluciones.",
       "motto": "Algunos pasos para servir a la nación",
       "sub": "Desde finanzas y logística hasta agro y publicidad, Indexia Group impulsa el crecimiento en todos los sectores con negocios fiables y preparados para el futuro.",
-      "tag": "Indexia Group",
+      "tag": "Grupo Indexia",
       "tagline": "Ventajas Diversas. Visión Unificada."
     },
     "p1": {
@@ -481,9 +501,9 @@
     "stat4Label": "Clientes Atendidos",
     "subtitle": "De Mumbai a Ecuador, nuestros negocios atienden clientes en tres continentes con el mismo compromiso de integridad y resultados.",
     "title": "Confiable en Fronteras",
-    "taglineStart": "From local expertise to",
-    "taglineAccent": "Global Opportunities",
-    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
+    "taglineStart": "De la experiencia local a",
+    "taglineAccent": "Oportunidades globales",
+    "description": "Indexia Group opera en mercados diversos, reuniendo negocios y servicios que crean valor más allá de las fronteras."
   },
   "jsonLd": {
     "aboutDescription": "Indexia Group es un grupo empresarial indio diversificado que abarca Finanzas, Exportación, Agricultura, Almacenamiento, Seguridad, Publicidad y Apoyo Atlético.",
@@ -504,7 +524,7 @@
     "delhiOffice": "Oficina de Delhi",
     "newsName": "Indexia Group, Noticias y Centro de Conocimiento",
     "orgName": "Indexia Group",
-    "brochureName": "{{name}} Brochure"
+    "brochureName": "Folleto {{name}}"
   },
   "legal": {
     "backHome": "Volver al inicio",
@@ -773,19 +793,19 @@
     "titleStart": "Historias y perspectivas de ",
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
     "tvEyebrow": "Míranos en TV",
-    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingAccent": "Indexia Finanzas",
     "tvHeadingStart": "Para Todos Tus Requisitos de Préstamo",
     "readFullStory": "Read Full Story",
-    "latestNews": "Latest News",
-    "noArticlesYet": "No articles available for this category yet.",
-    "articleCount": "{{count}} article from live news feed",
+    "latestNews": "Últimas Noticias",
+    "noArticlesYet": "No hay artículos disponibles para esta categoría aún.",
+    "articleCount": "{{count}} artículo del feed de noticias en vivo",
     "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
     "onAir": "En Antena",
     "tvCommercial": "Comercial de TV",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Anuncio de TV Indexia Finance - News18",
+    "playAriaLabel": "Reproducir anuncio de TV Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "Volver al Inicio",
@@ -794,7 +814,9 @@
   },
   "openRoles": {
     "loading": "Cargando ofertas...",
-    "noPositions": "No hay posiciones de {{type}} disponibles."
+    "noPositions": "No hay posiciones de {{type}} disponibles.",
+    "fullTime": "Tiempo completo",
+    "intern": "Pasante"
   },
   "pageContent": {
     "careers": {
@@ -1245,43 +1267,260 @@
     "valueCol": "Valor"
   },
   "foundationGallery": {
-    "eyebrow": "Training & Media",
-    "title": "Our Athletes in Action",
+    "eyebrow": "Entrenamiento y Medios",
+    "title": "Nuestros atletas en acción",
     "videos": {
       "trackTraining": {
-        "label": "Track Training",
-        "sublabel": "Sprint practice on track"
+        "label": "Entrenamiento en pista",
+        "sublabel": "Práctica de sprint en pista"
       },
       "fieldPractice": {
-        "label": "Field Practice",
-        "sublabel": "Athletic drills"
+        "label": "Práctica de campo",
+        "sublabel": "Ejercicios atléticos"
       },
       "trainingSession": {
-        "label": "Training Session",
-        "sublabel": "Field training with coaches"
+        "label": "Sesión de entrenamiento",
+        "sublabel": "Entrenamiento de campo con entrenadores"
       },
       "horizontalTraining1": {
-        "label": "Horizontal Training 1",
-        "sublabel": "Athletic training session"
+        "label": "Entrenamiento horizontal 1",
+        "sublabel": "Sesión de entrenamiento atlético"
       },
       "horizontalTraining2": {
-        "label": "Horizontal Training 2",
-        "sublabel": "Sports practice session"
+        "label": "Entrenamiento horizontal 2",
+        "sublabel": "Sesión de práctica deportiva"
       },
       "sprintDrills": {
-        "label": "Sprint Drills",
-        "sublabel": "Speed training"
+        "label": "Ejercicios de sprint",
+        "sublabel": "Entrenamiento de velocidad"
       },
       "teamSession": {
-        "label": "Team Session",
-        "sublabel": "Group training"
+        "label": "Sesión de equipo",
+        "sublabel": "Entrenamiento grupal"
       }
     }
   },
   "newsCategories": {
-    "finance": "Finance",
-    "warehouse": "Warehousing",
-    "export": "Trade & Export",
-    "athlete": "Sports"
+    "finance": "Finanzas",
+    "warehouse": "Almacenamiento",
+    "export": "Comercio y Exportación",
+    "athlete": "Deportes"
+  },
+  "passbook": {
+    "branchOffices": "Sucursales",
+    "directLines": "Líneas directas",
+    "avgReplyTime": "Tiempo prom. de respuesta",
+    "enquiryStatus": "Estado de la consulta",
+    "lessThan24hrs": "< 24 hrs",
+    "inReview": "En revisión"
+  },
+  "spotlight": {
+    "finance": {
+      "eyebrow": "Fintech Global",
+      "heading": "Conectar el Capital\ncon Oportunidades",
+      "description": "Con operaciones en cuatro continentes y alianzas con 43 bancos y NBFCs solo en la India, Indexia Finance conecta a los inversores con oportunidades de alto crecimiento transfronterizas.",
+      "stats": [
+        {
+          "value": "43+",
+          "label": "Bank Partners"
+        },
+        {
+          "value": "4",
+          "label": "Core Verticals"
+        },
+        {
+          "value": "∞",
+          "label": "Global Reach"
+        }
+      ],
+      "bullets": [
+        "FDI facilitation across emerging and developed markets",
+        "NBFC operations with regulated lending frameworks",
+        "Banking & institutional funding for large-scale projects",
+        "Cross-border capital solutions for multinational clients"
+      ]
+    },
+    "finserve": {
+      "eyebrow": "Préstamos Simplificados",
+      "heading": "Todos los Tipos de Préstamos\nBajo un Mismo Techo",
+      "description": "Desde préstamos personales hasta capital de trabajo, Indexia Finserve trae el banco adecuado a tu puerta, simplificando elegibilidad, documentación y desembolso en un solo proceso guiado.",
+      "stats": [
+        {
+          "value": "12",
+          "label": "Loan Products"
+        },
+        {
+          "value": "24h",
+          "label": "Response Time"
+        },
+        {
+          "value": "100%",
+          "label": "Digital Process"
+        }
+      ],
+      "bullets": [
+        "Personal, home, and business loans with competitive rates",
+        "MSME and project funding with flexible terms",
+        "Balance transfer and loan against property options",
+        "Dedicated relationship manager assigned from enquiry to disbursal"
+      ]
+    },
+    "overseas": {
+      "eyebrow": "Comercio Global",
+      "heading": "De la India a\n14 Países",
+      "description": "Con una red comercial establecida en 14 países sudamericanos, Indexia Overseas gestiona cada etapa del ciclo de exportación, desde abastecimiento y aseguramiento de calidad hasta logística internacional.",
+      "stats": [
+        {
+          "value": "14",
+          "label": "Countries"
+        },
+        {
+          "value": "100%",
+          "label": "Food-Grade"
+        },
+        {
+          "value": "24/7",
+          "label": "Logistics"
+        }
+      ],
+      "bullets": [
+        "Premium refined sugar and edible commodity exports",
+        "Full-cycle management, sourcing, QA, logistics, compliance",
+        "Trusted partner for bulk buyers and institutional consumers",
+        "Deep understanding of South American trade dynamics"
+      ]
+    },
+    "agro-bio": {
+      "eyebrow": "Agricultura Sostenible",
+      "heading": "Restaurar el Suelo\nMaximizar el Rendimiento",
+      "description": "Operando desde una instalación de última generación en Shamli, UP, Indexia Agro Bio fabrica fertilizantes orgánicos formulados científicamente que construyen fertilidad a largo plazo.",
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Organic"
+        },
+        {
+          "value": "6",
+          "label": "Product Lines"
+        },
+        {
+          "value": "NCR",
+          "label": "Location"
+        }
+      ],
+      "bullets": [
+        "Bio-based solutions that work with nature, not against it",
+        "Soil health assessment and customized fertilizer blends",
+        "Crop yield optimization with hands-on farmer training",
+        "Expanding domestic and international distribution network"
+      ]
+    },
+    "securities": {
+      "eyebrow": "Protección de Élite",
+      "heading": "Soluciones de Seguridad\nde Grado Militar",
+      "description": "Con personal de excomandos militares y profesionales de seguridad capacitados, Indexia Securities ofrece disciplina de grado militar y capacidad de respuesta rápida en cada asignación, 24/7.",
+      "stats": [
+        {
+          "value": "24/7",
+          "label": "Operations"
+        },
+        {
+          "value": "VIP",
+          "label": "Client Focus"
+        },
+        {
+          "value": "Rapid",
+          "label": "Response"
+        }
+      ],
+      "bullets": [
+        "Close protection details for politicians and corporate leaders",
+        "Corporate, industrial, and event security management",
+        "Real-time surveillance with technology-driven monitoring",
+        "Rapid deployment commando and response units"
+      ]
+    },
+    "warehouse": {
+      "eyebrow": "Inversión Estratégica",
+      "heading": "8 Autopistas\n21 Acres",
+      "description": "Ubicado en la intersección de 8 autopistas nacionales y 2 carreteras principales, el portafolio de terrenos de Shamli conecta 8 estados con un alcance de mercado de 50 millones de personas.",
+      "stats": [
+        {
+          "value": "21",
+          "label": "Acres Total"
+        },
+        {
+          "value": "8",
+          "label": "Expressways"
+        },
+        {
+          "value": "₹30",
+          "label": "Per Sq Ft"
+        }
+      ],
+      "bullets": [
+        "5 locations with flexible plots from 1 to 8 acres",
+        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
+        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
+        "Modern warehouse planned on 2 acres with loading docks"
+      ]
+    },
+    "advertising": {
+      "eyebrow": "Visibilidad en Autopistas",
+      "heading": "Alcance de 50 Crore\nVisibilidad 360°",
+      "description": "Unipoles premium de un solo mástil en la autopista Delhi–Dehradun otorgan a su marca máxima visibilidad sin desorden visual, respaldados por el branding característico Bisleri Green.",
+      "stats": [
+        {
+          "value": "1Cr+",
+          "label": "Daily Exposure"
+        },
+        {
+          "value": "10",
+          "label": "States Connected"
+        },
+        {
+          "value": "360°",
+          "label": "Visibility"
+        }
+      ],
+      "bullets": [
+        "10×20 ft and 12×24 ft unipole packages available",
+        "Strategic placements on NH-709B and Shamli Ring Road",
+        "End-to-end service, printing, installation, maintenance",
+        "Long-term and bulk packages with negotiable rates"
+      ]
+    },
+    "foundation": {
+      "eyebrow": "Desarrollo de Atletas",
+      "heading": "De lo Básico\na los Juegos Olímpicos",
+      "description": "Indexia Foundation elimina las barreras financieras y logísticas que impiden que los atletas talentosos alcancen su potencial, asegurando que la habilidad y la dedicación determinen a quién representa a la India.",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Support Pillars"
+        },
+        {
+          "value": "100%",
+          "label": "Funded"
+        },
+        {
+          "value": "∞",
+          "label": "Potential"
+        }
+      ],
+      "bullets": [
+        "International-standard training facilities and expert coaching",
+        "Complete nutrition, diet planning, and sports medicine",
+        "Competition funding, equipment, and psychological support",
+        "Building a sustainable pipeline of world-class athletes"
+      ]
+    }
+  },
+  "addresses": {
+    "corporateOffice": "Oficina N° 3, 1er Piso,\nRahimtoola House, Homji Street,\nFrente al RBI, Fort,\nMumbai - 400001, Maharashtra",
+    "mumbaiOffice": "2A/1402, New Mhada Complex,\nNear Lokhandwala Circle,\nAndheri West,\nMumbai - 400053, Maharashtra",
+    "delhiOffice": "213, Second Floor, Imperial Tower,\nNear Gurudwara,\nC Block Commercial Complex,\nNaraina Vihar, New Delhi - 110028",
+    "shamliOffice": "Meerut Karnal Road,\nShamli, Uttar Pradesh - 247776",
+    "internationalOffice": "Avenida Perez Guerrero OE-375,\ny Avenida Quito,\nEcuador, South America"
   }
 }

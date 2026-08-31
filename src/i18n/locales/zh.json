@@ -3,35 +3,35 @@
     "aboutUs": "关于我们",
     "c1Body": "成立于2012年，Indexia Finance是印度最大的国际金融公司。",
     "c1Highlights": "43+贷款合作伙伴,4个城市5个分支机构,2016最佳金融公司奖,全球布局",
-    "c1Name": "Indexia Finance",
+    "c1Name": "英德西亚金融",
     "c1Tag": "跨国金融科技",
     "c2Body": "Indexia Finserve是Indexia Group的专业贷款部门。",
     "c2Highlights": "12种贷款产品,个人和商业贷款,住房贷款和抵押贷款,余额转账和营运资金",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Name": "英德西亚金融服务有限公司",
     "c2Tag": "贷款部门",
     "c3Body": "Indexia Overseas是Indexia Group的全球出口部门。",
     "c3Highlights": "14个南美国家,优质精炼糖出口,食品安全认证,全周期出口管理",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Name": "英德西亚海外有限公司",
     "c3Tag": "全球出口",
     "c4Body": "Indexia Agro Bio致力于改变印度农业。",
     "c4Highlights": "100%有机生物肥料,Shamli UP生产,土壤检测和农民支持,国内和出口分销",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Name": "英德西亚农科生物肥料有限公司",
     "c4Tag": "有机农业",
     "c5Body": "Indexia Securities是领先的安保解决方案提供商。",
     "c5Highlights": "前军事特种部队,24/7运营中心,VIP和企业保护,关键基础设施安全",
-    "c5Name": "Indexia Securities",
+    "c5Name": "英德西亚安保",
     "c5Tag": "武装保护",
     "c6Body": "Indexia Warehouse提供战略土地租赁。",
     "c6Highlights": "Shamli UP 21英亩,8条国道,5个地点,距德里65公里",
-    "c6Name": "Indexia Warehouse",
+    "c6Name": "英德西亚仓储",
     "c6Tag": "战略土地",
     "c7Body": "Indexia Advertising运营高端广告牌。",
     "c7Highlights": "NH-709B德里-德拉敦高速公路,10个连接邦,360°可视性,1+亿日曝光",
-    "c7Name": "Indexia Advertising",
+    "c7Name": "英德西亚广告",
     "c7Tag": "高速公路广告",
     "c8Body": "Indexia Foundation是Indexia Group的社会影响部门。",
     "c8Highlights": "从基层到奥运会,训练和营养,教练和指导,比赛资金",
-    "c8Name": "Indexia Foundation",
+    "c8Name": "英德西亚基金会",
     "c8Tag": "社会影响",
     "companiesEyebrow": "我们的公司",
     "companiesSubtitle": "从孟买的一家金融服务公司发展为八家多元化企业的集团。",
@@ -40,8 +40,8 @@
     "ctaButton": "联系我们",
     "ctaTitle": "让我们一起创造",
     "eyebrow": "关于我们",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, logistics, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderBio1": "Indexia Group建立在一个简单但强大的理念之上：当印度企业建立在诚信、深厚专业知识和对所服务人民的真诚承诺之上时，它们可以在全球范围内竞争。从金融部门开始，该集团已发展成为八家多元化企业。",
+    "founderBio2": "董事总经理领导集团所有公司的卓越运营和战略增长，确保每家公司都能兑现其可靠性、透明度和成果的承诺。",
     "founderName": "创始人兼董事总经理",
     "founderQuote": "商业建立在信任之上。当你以诚信为基础时，一切都会随之而来。",
     "founderRole": "创始人兼董事总经理",
@@ -50,19 +50,19 @@
     "learnMore": "了解更多",
     "mcaPortal": "MCA 门户",
     "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "milestone1Body": "Indexia Group在孟买成立了第一家公司。",
-    "milestone1Title": "成立于孟买",
-    "milestone1Year": "2012",
-    "milestone2Body": "将业务扩展到德里NCR。",
-    "milestone2Title": "全国扩张",
-    "milestone2Year": "2015",
-    "milestone3Body": "通过向南美出口糖进入国际市场。",
-    "milestone3Title": "走向全球",
-    "milestone3Year": "2018",
-    "milestone4Body": "推出了Agro Bio、Securities、Warehouse和Advertising。",
+    "milestone1Body": "以建立多元化印度企业集团的愿景开始。",
+    "milestone1Title": "公司成立",
+    "milestone1Year": "2005",
+    "milestone2Body": "扩展到投资和金融领域，创建专门的贷款和财富管理部门。",
+    "milestone2Title": "Indexia Finserve 启动",
+    "milestone2Year": "2012",
+    "milestone3Body": "推出英德西亚海外，将印度农业与全球市场连接。",
+    "milestone3Title": "全球食品出口",
+    "milestone3Year": "2015",
+    "milestone4Body": "推出新部门，发展为八家公司。",
     "milestone4Title": "多元化",
     "milestone4Year": "2021",
-    "milestone5Body": "成立Indexia Foundation支持印度运动员。",
+    "milestone5Body": "成立英德西亚基金会支持印度运动员。",
     "milestone5Title": "社会影响",
     "milestone5Year": "2024",
     "registrationEyebrow": "注册与合规",
@@ -77,8 +77,8 @@
     "stat3Value": "12+",
     "stat4Label": "服务国家",
     "stat4Value": "14",
-    "storyBody1": "Indexia Group的创立基于一个简单的信念：印度企业可以在全球竞争。",
-    "storyBody2": "如今，Indexia Group在三个地点运营, 孟买、德里和厄瓜多尔。",
+    "storyBody1": "Indexia Group的成立基于一个简单的信念：当印度企业建立在诚信、专业知识和真诚承诺之上时，它们可以在全球范围内竞争。",
+    "storyBody2": "如今，Indexia Group在全球范围内运营，拥有一支怀有共同目标的团队：提供有意义的成果。",
     "storyEyebrow": "我们的故事",
     "storyTitle": "从共同愿景到全国性集团",
     "subtitle": "一家致力于诚信、专业知识和以人为本的印度多元化企业集团。",
@@ -88,26 +88,43 @@
     "title": "关于 Indexia Group",
     "titleAccent": "跨行业。",
     "titleStart": "建立信任 ",
-    "value1Body": "我们说到做到。",
+    "value1Body": "我们说到做到。每段关系都建立在诚实、透明和相互尊重的基础上。",
     "value1Title": "诚信",
-    "value2Body": "我们投资于深入的领域知识。",
+    "value2Body": "我们在每个领域都投资于深厚的专业知识。我们的团队带来专业技能和行业经验。",
     "value2Title": "专业",
-    "value3Body": "商业归根结底是关于人的。",
+    "value3Body": "商业归根结底是关于人。我们设计赋权客户、支持社区并为团队创造有意义机会的解决方案。",
     "value3Title": "以人为本",
-    "value4Body": "我们拥抱变化并持续改进。",
+    "value4Body": "我们拥抱变化并持续改进。从金融科技平台到有机农业，我们投资于推动行业前进的想法。",
     "value4Title": "创新",
     "valuesEyebrow": "我们的价值观",
     "valuesTitle": "我们的坚守",
     "viewOnMCA": "在 MCA 查看",
     "visitWebsite": "访问网站",
-    "storyImageAlt": "Indexia Group founding story",
-    "verifyOnMCA": "Verify on MCA Portal",
+    "storyImageAlt": "Indexia Group 创立故事",
+    "verifyOnMCA": "在 MCA 门户验证",
     "milestone6Year": "2021",
-    "milestone6Title": "Rapid Expansion",
-    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone6Title": "快速扩张",
+    "milestone6Body": "推出农科生物、安保、仓储和广告业务，发展为八家公司。",
     "milestone7Year": "2024",
-    "milestone7Title": "Social Impact",
-    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
+    "milestone7Title": "社会影响",
+    "milestone7Body": "成立英德西亚基金会，支持印度运动员从基层走向奥运会。",
+    "radialFinanceDesc": "跨国金融科技平台，在全球范围内提供金融服务，拥有43+银行合作伙伴",
+    "radialFinserveDesc": "专注于贷款和财富管理的投资与金融部门",
+    "radialOverseasDesc": "连接印度农业与全球食用出口市场，跨越各大洲",
+    "radialAgroDesc": "生态友好型生物肥料，恢复土壤健康，提高作物产量",
+    "radialSecuritiesDesc": "专业武装保护服务，保障人员和资产安全",
+    "radialWarehouseDesc": "21英亩战略土地租赁枢纽，连接8条高速公路和8个邦",
+    "radialAdvertisingDesc": "高速公路广告牌广告，每天触达数百万通勤者",
+    "radialFoundationDesc": "培养印度运动员，从草根到奥运会",
+    "hubLabel": "Hub",
+    "hubGroupLabel": "Group hub",
+    "hubDescription": "八家专业企业，共同愿景。",
+    "visionaryTitle": "英德西亚集团",
+    "visionaryAccent": "背后的远见者",
+    "founderPersonName": "Bijendra Malik",
+    "entityFinserveName": "英德西亚金融服务有限公司",
+    "entityOverseasName": "英德西亚海外有限公司",
+    "entityAgroName": "英德西亚农科生物肥料有限公司"
   },
   "advertisingContact": {
     "address": "办公地址",
@@ -207,13 +224,13 @@
     "companiesOneGroup": "家公司，一个集团",
     "description": "八家公司，一个团队。在金融、出口、农业、安保、广告和运动员发展领域建立您的职业生涯。",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
-      "agriculture": "Agriculture",
-      "security": "Security",
-      "leasing": "Leasing",
-      "advertising": "Advertising",
-      "athleteDevelopment": "Athlete Development"
+      "finance": "金融",
+      "export": "出口",
+      "agriculture": "农业",
+      "security": "安全",
+      "leasing": "租赁",
+      "advertising": "广告",
+      "athleteDevelopment": "运动员发展"
     }
   },
   "careersPage": {
@@ -232,7 +249,9 @@
     "subtitle": "英德西亚集团是一个学习型组织, 其企业文化就是它的团队。",
     "title": "加入英德西亚集团",
     "titleAccent": "您的职业生涯。",
-    "titleStart": "与我们共同打造"
+    "titleStart": "与我们共同打造",
+    "cultureBody1": "英德西亚集团是一个学习型组织，我们的文化始于团队。我们投资于员工——最新的工具、真正的培训、灵活的工作时间，以及一个协作且真正有趣的工作场所。这里的沟通是双向的，从新入职员工一直到管理层。",
+    "cultureBody2": "您将体验到初创企业的节奏，同时享有成熟集团的稳定性和福利。随着我们拓展新市场和新客户，我们正在寻找与我们一样追求卓越工作的人才。如果您是这样的人，我们期待看到您的简历。"
   },
   "common": {
     "homeAria": "Indexia Group 首页",
@@ -318,8 +337,8 @@
     "paragraph": "无论您对我们的服务有疑问、需要商业咨询，还是想探索合作机会，我们的团队都随时准备为您提供帮助, 我们会在24小时内回复。",
     "phoneNumbers": "电话号码",
     "workingHours": "工作时间",
-    "emailGeneralEnquiries": "General Enquiries",
-    "emailQueries": "Queries",
+    "emailGeneralEnquiries": "一般咨询",
+    "emailQueries": "查询",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -348,8 +367,9 @@
     "stats": "英德西亚集团 · 08家企业 · 03个地点",
     "tagline": "多元化的印度商业集团",
     "taglineSecondary": "多元企业。统一愿景。",
-    "siteFooter": "Site footer navigation",
-    "footerNav": "Footer navigation"
+    "siteFooter": "网站页脚导航",
+    "footerNav": "页脚导航",
+    "brand": "英德西亚集团"
   },
   "form": {
     "email": "电子邮箱",
@@ -372,7 +392,7 @@
     "phonePlaceholder": "10位数字",
     "sending": "发送中…",
     "subject": "主题 / 企业",
-    "subjectPlaceholder": "选择企业…",
+    "subjectPlaceholder": "选择企业...",
     "submit": "发送咨询",
     "success": "您的咨询已发送！我们的团队将很快与您联系。"
   },
@@ -481,9 +501,9 @@
     "stat4Label": "服务客户",
     "subtitle": "从孟买到厄瓜多尔，我们的公司在三大洲为客户提供服务。",
     "title": "跨境信任",
-    "taglineStart": "From local expertise to",
-    "taglineAccent": "Global Opportunities",
-    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
+    "taglineStart": "从本地专业知识到",
+    "taglineAccent": "全球机遇",
+    "description": "Indexia Group 在多元化市场运营，汇聚跨越边界创造价值的企业和服务。"
   },
   "jsonLd": {
     "aboutDescription": "Indexia Group 是一家多元化的印度商业集团，业务涵盖金融、出口、农业、仓储、安保、广告和运动员支持。",
@@ -504,7 +524,7 @@
     "delhiOffice": "德里办公室",
     "newsName": "Indexia Group，新闻与知识中心",
     "orgName": "Indexia Group",
-    "brochureName": "{{name}} Brochure"
+    "brochureName": "{{name}} 宣传册"
   },
   "legal": {
     "backHome": "返回首页",
@@ -773,19 +793,19 @@
     "titleStart": "来自集团各地的",
     "tvCaption": "Loan Chahiye Matlab… 英德西亚金融",
     "tvEyebrow": "在电视上观看我们",
-    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingAccent": "英德西亚金融",
     "tvHeadingStart": "满足您的所有贷款需求",
     "readFullStory": "Read Full Story",
-    "latestNews": "Latest News",
-    "noArticlesYet": "No articles available for this category yet.",
-    "articleCount": "{{count}} article from live news feed",
+    "latestNews": "最新动态",
+    "noArticlesYet": "此分类暂无可用文章。",
+    "articleCount": "{{count}} 篇来自实时新闻的文章",
     "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
     "onAir": "播出中",
     "tvCommercial": "电视广告",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Indexia Finance 电视广告 - News18",
+    "playAriaLabel": "播放 Indexia Finance 电视广告"
   },
   "notFoundPage": {
     "backHome": "返回首页",
@@ -794,7 +814,9 @@
   },
   "openRoles": {
     "loading": "加载职位中...",
-    "noPositions": "目前暂无 {{type}} 职位。"
+    "noPositions": "目前暂无 {{type}} 职位。",
+    "fullTime": "全职",
+    "intern": "实习生"
   },
   "pageContent": {
     "careers": {
@@ -861,7 +883,7 @@
           "端到端服务, 印刷、安装和维护"
         ],
         "location": "德里-德拉敦高速公路，沙姆利",
-        "name": "Indexia Advertising",
+        "name": "英德西亚广告",
         "overview": "英德西亚广告在沙姆利（印度北部枢纽）的德里-德拉敦高速公路（NH-709B）上运营高端单柱广告牌。我们的广告牌位于8条国家高速公路和2条主要公路的交汇处，连接10个邦，覆盖5亿人口，每天吸引超过1000万次曝光。单柱广告牌拥有高端高度和无遮挡的360°视角，为您的品牌带来最大可见度且零视觉干扰，并配以标志性的Bisleri绿品牌形象。从印刷、安装到维护，我们提供端到端服务。预订10×20英尺广告牌每月₹25,000，或12×24英尺广告牌每月₹36,000 ,  标准费率为每平方英尺每侧每月₹125，长期套餐可议。预订请致电86918 86919或011 4629 1155，或发送邮件至indexia.queries@gmail.com。",
         "services": [
           "广告牌10×20英尺, ₹25,000/月",
@@ -881,7 +903,7 @@
           "更好的土壤健康，更高的作物产量",
           "为农民提供全面支持，土壤检测，培训"
         ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "name": "英德西亚农科生物肥料有限公司",
         "overview": "英德西亚农业生物肥料在其位于北方邦沙姆利的生产工厂, 德里国家首都辖区的一部分, 制造有机肥料。公司的生物基产品改善土壤健康、提高作物产量，并支持北印度种植者的可持续农业。",
         "services": [
           "有机肥料生产",
@@ -900,7 +922,7 @@
           "四大业务板块集于一体",
           "端到端融资与咨询支持"
         ],
-        "name": "Indexia Finance",
+        "name": "英德西亚金融",
         "overview": "英德西亚金融是一家跨国金融科技平台，为世界各地的客户提供金融服务。您可以在 www.indexiafinance.com 通过我们的门户申请任何类型的贷款, 我们提供全球服务，在印度我们与43家银行和非银行金融公司建立了业务合作。围绕四大核心业务, 投资者服务、外商直接投资咨询、非银行金融公司运营和银行融资, 公司将资本与机遇连接起来，帮助投资者、企业和机构自信地做出跨境金融决策。",
         "services": [
           "外商直接投资咨询与协助",
@@ -920,7 +942,7 @@
           "简化的资格、文件和放款流程",
           "每一步都有专属顾问"
         ],
-        "name": "Indexia Finserve Pvt. Ltd.",
+        "name": "英德西亚金融服务有限公司",
         "overview": "英德西亚金融服务是英德西亚集团的贷款业务部门，提供金融领域所有类型的贷款。现在，合适的银行将来到您的家门口, 公司作为一个完整的贷款目的地，通过单一、简化的流程，为个人、住房、企业、中小微企业和专业融资提供资格、文件和放款指导。",
         "services": [
           "个人贷款",
@@ -947,7 +969,7 @@
           "直至奥运会的全面支持",
           "建设印度奥运级运动员的可持续管道"
         ],
-        "name": "Indexia Foundation",
+        "name": "英德西亚基金会",
         "overview": "英德西亚基金会通过提供一切可能的支持来帮助运动员, 国际水准的训练、结构化的饮食与营养、专家教练，以及通往奥运会的道路上所需的各种援助。基金会陪伴运动员从初露锋芒到世界最大的舞台。",
         "services": [
           "国际水准的训练",
@@ -967,7 +989,7 @@
           "端到端采购、质量与物流",
           "批发买家可信赖的合作伙伴"
         ],
-        "name": "Indexia Overseas Pvt. Ltd.",
+        "name": "英德西亚海外有限公司",
         "overview": "英德西亚海外推动所有食用品的全球出口，特别专注于向14个南美国家出口食糖。公司管理采购、质量、物流和国际合规，确保食品级产品从产地可靠地、规模化地到达市场。",
         "services": [
           "食糖出口与贸易",
@@ -987,7 +1009,7 @@
           "24×7监控与现场响应",
           "保护高净值客户的成熟记录"
         ],
-        "name": "Indexia Securities",
+        "name": "英德西亚安保",
         "overview": "英德西亚安保提供现有最佳的武装安保和突击队保护，全天候保护人员、财产和高规格运营。从训练有素的突击队和武装警卫到贵宾护送和活动安保，公司为每项任务带来军事级别的纪律。",
         "services": [
           "武装安保警卫",
@@ -1008,7 +1030,7 @@
           "每平方英尺₹30，可议价"
         ],
         "location": "北方邦沙姆利",
-        "name": "Indexia Warehouse",
+        "name": "英德西亚仓储",
         "overview": "英德西亚仓储提供位于北方邦沙姆利的战略土地投资机会, 距德里洛尼的特罗尼卡城仅约65公里。该地点是交通枢纽：8条国家高速公路和2条主要公路连接8个邦，直通不丹和尼泊尔，市场覆盖5亿人口。四个主要港口（古吉拉特邦、马哈拉施特拉邦、金奈、加尔各答）均可经高速公路直达，德里英迪拉·甘地国际机场和诺伊达国际机场（杰瓦尔）都在一小时车程内。土地组合涵盖5个地点共21英亩，提供1、2、2.5、5和8英亩的灵活地块，并将在2英亩地块上建设带装卸码头的现代化仓库。预期价格为每平方英尺₹30，可议价。",
         "services": [
           "土地地块, 1、2、2.5、5和8英亩",
@@ -1245,43 +1267,260 @@
     "valueCol": "数值"
   },
   "foundationGallery": {
-    "eyebrow": "Training & Media",
-    "title": "Our Athletes in Action",
+    "eyebrow": "培训与媒体",
+    "title": "我们的运动员风采",
     "videos": {
       "trackTraining": {
-        "label": "Track Training",
-        "sublabel": "Sprint practice on track"
+        "label": "跑道训练",
+        "sublabel": "跑道冲刺练习"
       },
       "fieldPractice": {
-        "label": "Field Practice",
-        "sublabel": "Athletic drills"
+        "label": "田径练习",
+        "sublabel": "田径训练"
       },
       "trainingSession": {
-        "label": "Training Session",
-        "sublabel": "Field training with coaches"
+        "label": "训练课程",
+        "sublabel": "教练带领的场地训练"
       },
       "horizontalTraining1": {
-        "label": "Horizontal Training 1",
-        "sublabel": "Athletic training session"
+        "label": "横向训练 1",
+        "sublabel": "田径训练课程"
       },
       "horizontalTraining2": {
-        "label": "Horizontal Training 2",
-        "sublabel": "Sports practice session"
+        "label": "横向训练 2",
+        "sublabel": "运动训练课程"
       },
       "sprintDrills": {
-        "label": "Sprint Drills",
-        "sublabel": "Speed training"
+        "label": "冲刺训练",
+        "sublabel": "速度训练"
       },
       "teamSession": {
-        "label": "Team Session",
-        "sublabel": "Group training"
+        "label": "团队课程",
+        "sublabel": "团体训练"
       }
     }
   },
   "newsCategories": {
-    "finance": "Finance",
-    "warehouse": "Warehousing",
-    "export": "Trade & Export",
-    "athlete": "Sports"
+    "finance": "金融",
+    "warehouse": "仓储",
+    "export": "贸易与出口",
+    "athlete": "体育"
+  },
+  "passbook": {
+    "branchOffices": "分支机构",
+    "directLines": "直线电话",
+    "avgReplyTime": "平均回复时间",
+    "enquiryStatus": "咨询状态",
+    "lessThan24hrs": "< 24小时",
+    "inReview": "审核中"
+  },
+  "spotlight": {
+    "finance": {
+      "eyebrow": "全球金融科技",
+      "heading": "连接资本\n与机遇",
+      "description": "业务覆盖四大洲，在印度与43家银行和NBFC建立合作伙伴关系，Indexia Finance帮助投资者、企业和机构在跨境做出自信的财务决策。",
+      "stats": [
+        {
+          "value": "43+",
+          "label": "银行合作伙伴"
+        },
+        {
+          "value": "4",
+          "label": "核心垂直领域"
+        },
+        {
+          "value": "∞",
+          "label": "全球覆盖"
+        }
+      ],
+      "bullets": [
+        "在新兴和发达市场进行FDI便利化",
+        "受监管的NBFC贷款框架运营",
+        "为大型项目提供银行和机构融资",
+        "为跨国客户提供跨境资本解决方案"
+      ]
+    },
+    "finserve": {
+      "eyebrow": "简化贷款",
+      "heading": "所有贷款类型\n一站解决",
+      "description": "从个人贷款到营运资金，Indexia Finserve让获取贷款变得简单。作为完全的贷款目的地，合适的银行就在您家门口。",
+      "stats": [
+        {
+          "value": "12",
+          "label": "贷款产品"
+        },
+        {
+          "value": "24h",
+          "label": "响应时间"
+        },
+        {
+          "value": "100%",
+          "label": "数字化流程"
+        }
+      ],
+      "bullets": [
+        "具有竞争力利率的个人、房屋和商业贷款",
+        "灵活条款的MSME和项目融资",
+        "余额转贷和房产抵押贷款选择",
+        "从咨询到放款全程专属客户经理"
+      ]
+    },
+    "overseas": {
+      "eyebrow": "全球贸易",
+      "heading": "从印度到\n14个国家",
+      "description": "凭借在14个南美国家建立的贸易网络，Indexia Overseas管理出口周期的每个阶段，从采购和质量保证到国际物流。",
+      "stats": [
+        {
+          "value": "14",
+          "label": "国家"
+        },
+        {
+          "value": "100%",
+          "label": "食品级"
+        },
+        {
+          "value": "24/7",
+          "label": "物流"
+        }
+      ],
+      "bullets": [
+        "优质精炼糖和食用商品出口",
+        "全周期管理：采购、质检、物流、合规",
+        "大宗买家和机构消费者的可靠合作伙伴",
+        "深入了解南美贸易动态"
+      ]
+    },
+    "agro-bio": {
+      "eyebrow": "可持续农业",
+      "heading": "恢复土壤\n最大化产量",
+      "description": "Indexia Agro Bio位于北方邦沙姆利的先进工厂，生产环保生物肥料，恢复退化土壤，增强微生物活性，显著提高作物生产力。",
+      "stats": [
+        {
+          "value": "100%",
+          "label": "有机"
+        },
+        {
+          "value": "6",
+          "label": "产品线"
+        },
+        {
+          "value": "NCR",
+          "label": "位置"
+        }
+      ],
+      "bullets": [
+        "与自然合作而非对抗的生物解决方案",
+        "土壤健康评估和定制肥料混合",
+        "通过实地农民培训优化作物产量",
+        "扩展国内和国际分销网络"
+      ]
+    },
+    "securities": {
+      "eyebrow": "精英保护",
+      "heading": "军用级\n安全解决方案",
+      "description": "Indexia Securities由退伍军人突击队和训练有素的安全专业人员组成，为高调个人、企业设施和大型活动提供军事级别的保护。",
+      "stats": [
+        {
+          "value": "24/7",
+          "label": "运营"
+        },
+        {
+          "value": "VIP",
+          "label": "客户焦点"
+        },
+        {
+          "value": "快速",
+          "label": "响应"
+        }
+      ],
+      "bullets": [
+        "为政治家和企业领导人提供贴身保护",
+        "企业、工业和活动安全管理",
+        "技术驱动的实时监控",
+        "快速部署突击队和响应单位"
+      ]
+    },
+    "warehouse": {
+      "eyebrow": "战略投资",
+      "heading": "8条高速公路\n21英亩一个位置",
+      "description": "位于8条国家高速公路和2条主要公路的交汇处，21英亩战略性土地租赁机会，连接8个邦，直达不丹和尼泊尔。",
+      "stats": [
+        {
+          "value": "21",
+          "label": "英亩总计"
+        },
+        {
+          "value": "8",
+          "label": "高速公路"
+        },
+        {
+          "value": "₹30",
+          "label": "每平方英尺"
+        }
+      ],
+      "bullets": [
+        "5个地点，1至8英亩灵活地块",
+        "直达古吉拉特、马哈拉施特拉、钦奈、加尔各答港口",
+        "IGI机场德里和诺伊达国际机场1小时内到达",
+        "计划在2英亩土地上建设现代仓库"
+      ]
+    },
+    "advertising": {
+      "eyebrow": "高速公路可见性",
+      "heading": "50亿触达\n360°可见性",
+      "description": "德里-德拉敦高速公路上的优质单杆广告牌，连接10个邦，触达5000万人口，每日曝光超过1000万。",
+      "stats": [
+        {
+          "value": "1Cr+",
+          "label": "每日曝光"
+        },
+        {
+          "value": "10",
+          "label": "连接邦数"
+        },
+        {
+          "value": "360°",
+          "label": "可见性"
+        }
+      ],
+      "bullets": [
+        "10×20英尺和12×24英尺广告牌套餐",
+        "NH-709B和沙姆利环路战略位置",
+        "端到端服务：印刷、安装、维护",
+        "长期和批量套餐，价格可协商"
+      ]
+    },
+    "foundation": {
+      "eyebrow": "运动员发展",
+      "heading": "从草根到\n奥运会",
+      "description": "Indexia Foundation消除有才华运动员的财务和后勤障碍，确保技能和奉献决定谁能代表印度登上世界舞台。",
+      "stats": [
+        {
+          "value": "5",
+          "label": "支持支柱"
+        },
+        {
+          "value": "100%",
+          "label": "资助"
+        },
+        {
+          "value": "∞",
+          "label": "潜力"
+        }
+      ],
+      "bullets": [
+        "国际标准培训设施和专家教练",
+        "完整的营养、饮食规划和运动医学",
+        "比赛资助、设备和心理支持",
+        "建立世界级印度运动员的可持续管道"
+      ]
+    }
+  },
+  "addresses": {
+    "corporateOffice": "办公室3号，一楼，\nRahimtoola House，Homji Street，\nRBI对面，Fort，\nMumbai - 400001，Maharashtra",
+    "mumbaiOffice": "2A/1402，New Mhada Complex，\nLokhandwala Circle附近，\nAndheri West，\nMumbai - 400053，Maharashtra",
+    "delhiOffice": "213，二楼，Imperial Tower，\nGurudwara附近，\nC Block Commercial Complex，\nNaraina Vihar，New Delhi - 110028",
+    "shamliOffice": "Meerut Karnal Road，\nShamli，Uttar Pradesh - 247776",
+    "internationalOffice": "Avenida Perez Guerrero OE-375，\ny Avenida Quito，\nEcuador，South America"
   }
 }

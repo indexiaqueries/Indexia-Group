@@ -3,35 +3,35 @@
     "aboutUs": "אודותינו",
     "c1Body": "AgentInfo Finance הוקמה ב-2012.",
     "c1Highlights": "43+ שותפי מלווים,5 סניפים ב-4 ערים,פרס חברה פיננסית-best 2016,נוכחות גלובלית",
-    "c1Name": "Indexia Finance",
+    "c1Name": "אינדקסיה פייננס",
     "c1Tag": "פינטק רב-לאומי",
     "c2Body": "Indexia Finserve היא זרוע ההלוואות הייעודית של Indexia Group.",
     "c2Highlights": "12 מוצרי הלוואה,הלוואות אישיות ועסקיות,משכנתא והלוואה נגד נכס,המרת יתרון והון חוזר",
-    "c2Name": "Indexia Finserve Pvt. Ltd.",
+    "c2Name": "אינדקסיה פינסרב בע\"מ",
     "c2Tag": "זרוע הלוואות",
     "c3Body": "Indexia Overseas היא זרוע הייצוא הגלובלית של Indexia Group.",
     "c3Highlights": "14 מדינות דרום אמריקה,ייצוא סוכר מזוקק פרימיום,אישור איכות מזון,ניהול מחזור ייצוא מלא",
-    "c3Name": "Indexia Overseas Pvt. Ltd.",
+    "c3Name": "אינדקסיה אוורסיס בע\"מ",
     "c3Tag": "ייצוא גלובלי",
     "c4Body": "Indexia Agro Bio Fertilizers מוקדשת לשינוי החקלאות ההודית.",
     "c4Highlights": "100% דשנים ביולוגיים אורגניים,ייצור ב שאמלי UP,בדיקות קרקע ותמיכה חקלאית,הפצה מקומית ויצוא",
-    "c4Name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+    "c4Name": "אינדקסיה אגרו בייו דשנים בע\"מ",
     "c4Tag": "חקלאות אורגנית",
     "c5Body": "Indexia Securities היא ספק פתרונות ביטחון מוביל.",
     "c5Highlights": "קצינים צבאיים לשעבר,מרכז ת operate 24/7,הגנה VIP ו corporate,ביטחון תשתיות קריטי",
-    "c5Name": "Indexia Securities",
+    "c5Name": "אינדקסיה אבטחה",
     "c5Tag": "הגנה חמושה",
     "c6Body": "Indexia Warehouse מציעה השכרת קרקע אסטרטגית.",
     "c6Highlights": "21 דונם בשאמלי UP,8 כבישים מהירים לאומיים,5 מיקומים,65 ק\"מ מדלהי",
-    "c6Name": "Indexia Warehouse",
+    "c6Name": "אינדקסיה מחסנים",
     "c6Tag": "קרקעות אסטרטגיות",
     "c7Body": "Indexia Advertising מפעילה שלטי פרסום פרימיום.",
     "c7Highlights": "כביש NH-709B דלהי-דהרדון,10 מדינות מחוברות,נראות 360°,1+ קרור חשיפה יומית",
-    "c7Name": "Indexia Advertising",
+    "c7Name": "אינדקסיה פרסום",
     "c7Tag": "פרסום בכבישי מהיר",
     "c8Body": "Indexia Foundation היא זרוע ההשפעה החברתית של Indexia Group.",
     "c8Highlights": "מ grassroots לאולימפיאדה,אימון ותזונה,חניכה וליווי,מימון תחרויות",
-    "c8Name": "Indexia Foundation",
+    "c8Name": "קרן אינדקסיה",
     "c8Tag": "השפעה חברתית",
     "companiesEyebrow": "החברות שלנו",
     "companiesSubtitle": "מחברת שירותי פיננסים אחת במומבאי לקבוצה מגוונת של שמונה עסקים.",
@@ -40,8 +40,8 @@
     "ctaButton": "צור קשר",
     "ctaTitle": "בואו נבנה משהו יחד",
     "eyebrow": "אודותינו",
-    "founderBio1": "The founder of Indexia Group built the company on a simple but powerful idea: that Indian businesses can compete globally when they are built on integrity, deep expertise, and a genuine commitment to the people they serve. Starting with a single financial services company in Mumbai, the founder expanded the group into eight diverse businesses spanning finance, export, agriculture, warehousing, security, advertising, and social impact.",
-    "founderBio2": "The Managing Director leads the operational excellence and strategic growth of Indexia Group, ensuring every company delivers on its promise of reliability, transparency, and results. Under this leadership, Indexia Group has expanded to three locations, Mumbai, Delhi, and Ecuador, and built a team united by a common purpose.",
+    "founderBio1": "בנה את Indexia Group על רעיון פשוט אך עוצמתי: שחברות הודיות יכולות להתחרות בעולמי כשהם מבנויות על יושרה, מומחיות עמוקה ומחובות אמיתיה לאינשים שהם משרתהם.",
+    "founderBio2": "מוביל את ההצטיינות התעשותית והצמיגה האסטרטגית בכל חברות הקבוצה, ומבטיח שכל עסק מקיים את הבטחת האמינות, הסרטות והתצאות.",
     "founderName": "מייסד ומנכ\"ל",
     "founderQuote": "עסקים בנויים על אמון. כשאתה בונה על יושרה, כל השאר מגיע בעקבותיו.",
     "founderRole": "מייסד ומנכ\"ל",
@@ -50,19 +50,19 @@
     "learnMore": "למידע נוסף",
     "mcaPortal": "פורטל MCA",
     "metaDescription": "About Indexia Group, a diversified Indian business group.",
-    "milestone1Body": "Indexia Group הקימה את החברה הראשונה שלה במומבאי.",
+    "milestone1Body": "החל עם חזון לבנות קבוצה עסקית הודית מגוונת המבוסת על יושרה ומומחיות.",
     "milestone1Title": "הוקמה במומבאי",
     "milestone1Year": "2012",
-    "milestone2Body": "הרחבת פעילות ל Delhi NCR.",
+    "milestone2Body": "התרחב להשקעות ופיננסים וציצור זרוע מתמחה בהלואות וניהול עשור.",
     "milestone2Title": "התרחבות לאומית",
     "milestone2Year": "2015",
-    "milestone3Body": "כניסה לשווקים בינלאומיים עם ייצוא סוכר לדרום אמריקה.",
+    "milestone3Body": "Launched אינדקסיה אוורסיס to connect Indian agriculture with global markets across multiple continents.",
     "milestone3Title": "טווח גלובלי",
     "milestone3Year": "2018",
-    "milestone4Body": "השקת Agro Bio, Securities, Warehouse ו-Advertising.",
+    "milestone4Body": "Launched אגרו בייו, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
     "milestone4Title": "גיוון",
     "milestone4Year": "2021",
-    "milestone5Body": "הקמת Indexia Foundation לתמיכה בספורטאים הודים.",
+    "milestone5Body": "Founded קרן אינדקסיה to support Indian athletes from grassroots to the Olympic Games.",
     "milestone5Title": "השפעה חברתית",
     "milestone5Year": "2024",
     "registrationEyebrow": "רישוי וציות",
@@ -77,8 +77,8 @@
     "stat3Value": "12+",
     "stat4Label": "מדינות משרתות",
     "stat4Value": "14",
-    "storyBody1": "Indexia Group הוקמה עם אמונה פשוטה: עסקים הודים יכולים להתחרות בעולם.",
-    "storyBody2": "היום, Indexia Group פועלת בשלוש מיקומים, מומבאי, דלהי ואקוודור.",
+    "storyBody1": "Indexia Group נוסדה עם אמונה פשוטה: שחברות הודיות יכולות להתחרות בעולמי כשהם מבנויות על יושרה, מומחיות ומחובות אמיתיה לאינשים שהן משרתות.",
+    "storyBody2": "היום, Indexia Group פועלת ברחבי העולם עם צוות שחולקת מטרה משותפת: לספוק תוצאות שמשנות.",
     "storyEyebrow": "הסיפור שלנו",
     "storyTitle": "מחזון משותף לקבוצה לאומית",
     "subtitle": "קבוצת עסקים הודית מגוינת המחויבת ליושרה, מומחיות וגישה המעמידה אנשים במקום הראשון.",
@@ -88,26 +88,47 @@
     "title": "אודות Indexia Group",
     "titleAccent": "בתעשיות.",
     "titleStart": "בניית אמון ",
-    "value1Body": "אנחנו עושים מה שאנחנו אומרים.",
+    "value1Body": "אנו עושים מה שאנו אומרים. כל מערכת יחסים בנויה על כנות, שקיפות וכבוד הדי.",
     "value1Title": "יושרה",
-    "value2Body": "אנחנו משקיעים בידע תחום עמוק.",
+    "value2Body": "אנו משקיעים בידע תחום עמיק בכל מגזר. הצוותים שלונו מביאות מומחיות מומחות וניתוי תעשויתי לכל מערוכות.",
     "value2Title": "מומחיות",
-    "value3Body": "עסקים הם בסופו של דבר על אנשים.",
+    "value3Body": "עסקים הם בסופרו על אנשים. אנחנו מעצבים פתרוסות שמעצימות את הלקוחות שלנו, תומכים בקהילותינו ויוצרים זוומניות משמעות לצוותנו.",
     "value3Title": "אנשים לפני הכל",
-    "value4Body": "אנחנו מחבקים שינוי ומתפתחים כל הזמן.",
+    "value4Body": "אנחנו מאמצאים שינוי ומתמידים בשפרור. מפלטפורמות fintech עד חקלאות אורגנית, אנחנו משקיעים ברעיונות שמקדמים את התישויות קדימה.",
     "value4Title": "חדשנות",
     "valuesEyebrow": "הערכים שלנו",
     "valuesTitle": "מה אנחנו מייצגים",
     "viewOnMCA": "צפה ב-MCA",
     "visitWebsite": "בקר באתר",
-    "storyImageAlt": "Indexia Group founding story",
-    "verifyOnMCA": "Verify on MCA Portal",
+    "storyImageAlt": "סיפור ההקמה של Indexia Group",
+    "verifyOnMCA": "אמת בפורטל MCA",
     "milestone6Year": "2021",
-    "milestone6Title": "Rapid Expansion",
-    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone6Title": "התרחבות מהירה",
+    "milestone6Body": "Launched אגרו בייו, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
     "milestone7Year": "2024",
-    "milestone7Title": "Social Impact",
-    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
+    "milestone7Title": "השפעה חברתית",
+    "milestone7Body": "Founded קרן אינדקסיה to support Indian athletes from grassroots to the Olympic Games.",
+    "radialFinanceDesc": "פלטפורמת פינטק רב-לאומית עם למעלה מ-43 שותפויות בנקאיות",
+    "radialFinserveDesc": "זרוע השקעות ופיננסים המתמחה בהלוואות וניהול עושר",
+    "radialOverseasDesc": "קישור החקלאות ההודית לשווקי יצוא מזון עולמיים",
+    "radialAgroDesc": "דשנים ידידותיים לסביבה המשחזרים בריאות קרקע",
+    "radialSecuritiesDesc": "שירותי הגנה חמושים מקצועיים",
+    "radialWarehouseDesc": "מרכז השכרת אסטרטגי של 21 דונם עם גישה ל-8 כבישים מהירים",
+    "radialAdvertisingDesc": "פרסום שלטי חוצות בכבישים מהירים",
+    "radialFoundationDesc": "תמיכה בספורטאים הודים מהבסיס ועד האולימפיאדה",
+    "hubLabel": "Hub",
+    "hubGroupLabel": "Group hub",
+    "hubDescription": "שמנה עסקים מומחצות הפועלים מראייה משותפת אחת.",
+    "ourStory": "הסיפור שלנו",
+    "ourValues": "הערכים שלנו",
+    "ourCompanies": "החברות שלנו",
+    "leadership": "מנהיגות",
+    "visionaryTitle": "החלום שמאחורי",
+    "visionaryAccent": "קבוצת אינדקסיה",
+    "founderPersonName": "Bijendra Malik",
+    "entityFinserveName": "אינדקסיה פינסרב בע\"מ",
+    "entityOverseasName": "אינדקסיה אוורסיס בע\"מ",
+    "entityAgroName": "אינדקסיה אגרו בייו דשנים בע\"מ"
   },
   "advertisingContact": {
     "address": "כתובת המשרד",
@@ -209,15 +230,15 @@
     "sectors": {
       "finance": "Finance",
       "export": "Export",
-      "agriculture": "Agriculture",
+      "agriculture": "חקלאות",
       "security": "Security",
       "leasing": "Leasing",
-      "advertising": "Advertising",
-      "athleteDevelopment": "Athlete Development"
+      "advertising": "פרסום",
+      "athleteDevelopment": "פיתוח ספורטאים"
     }
   },
   "careersPage": {
-    "apply": "הגישו מועמדות",
+    "apply": " הגש מועמדות",
     "ctaBody": "אנחנו תמיד מחפשים אנשים נהדרים. שלחו את קורות החיים שלכם ל-hr@indexiafinance.com ונחזור אליכם.",
     "ctaButton": "צפו במשרות פתוחות",
     "ctaTitle": "שלחו לנו את קורות החיים שלכם",
@@ -230,9 +251,11 @@
     "rolesHeading": "המשרות הפתוחות שלנו כיום",
     "rolesSubtitle": "המשרות הפתוחות שלנו כיום:",
     "subtitle": "קבוצת Indexia היא ארגון לומד, והתרבות הארגונית שלו היא הצוות שלו.",
-    "title": "קריירה בקבוצת Indexia",
+    "title": "קריירה ב-Indexia Group",
     "titleAccent": "אתנו.",
-    "titleStart": "בנו את הקריירה שלכם עם "
+    "titleStart": "בנו את הקריירה שלכם עם ",
+    "cultureBody1": "קבוצת אינדקסיה היא ארגון למידה, והתרבות שלנו מתחילה מהצוות שלנו. אנחנו משקיעים באנשים שלנו — הכלים האחרונים, הכשרה אמיתית, שעות גמישות וסביבת עבודה שיתופית ומהנה באמת. התקשורת כאן הולכת לשני הכיוונים, מהעובד החדש ביותר דרך ההנהלה.",
+    "cultureBody2": "תמצאו את קצב של סטארט-אפ, מגובה על ידי היציבות והיתרונות של קבוצה מבוססת. אנחנו מחפשים אנשים ששותפים לתשוקה שלנו לעשייה יוצאת דופן. אם זה אתם, נשמח לראות את קורות החיים שלכם."
   },
   "common": {
     "homeAria": "דף הבית Indexia Group",
@@ -299,45 +322,45 @@
     "locationsTitleStart": "המיקומים "
   },
   "contactHero": {
-    "callNow": "התקשרו עכשיו · 86551 68551",
+    "callNow": "התקשר עכשיו · 86551 68551",
     "directLines": "{{count}} קווים ישירים",
-    "eyebrow": "דברו עם Indexia",
+    "eyebrow": "דבר עם אינדקסיה",
     "offices": "{{count}} משרדים",
     "paragraph": "משאלות תיעוד ועד פניות הלוואות חדשות, כל הודעה נבדקת ונענית על ידי חבר צוות שלנו - לא על ידי תור.",
     "reply": "< 24 שעות זמן מענה ממוצע",
-    "sendEnquiry": "שלחו את פנייתכם",
+    "sendEnquiry": "שלח פניה",
     "title": "קו ישיר לצוות שלנו"
   },
   "contactInfo": {
     "country": "הודו",
     "enquiries": "פניות",
-    "eyebrow": "שלחו את פנייתכם",
+    "eyebrow": "שלח פניה",
     "headlineAccent": "חברת Indexia",
     "headlineStart": "פנייה לגבי ",
     "location": "מיקום",
     "paragraph": "בין אם יש לכם שאלה על השירותים שלנו, אתם צריכים ייעוץ עסקי או רוצים לחקור שותפות, הצוות שלנו מוכן לעזור לכם, אנו עונים תוך 24 שעות.",
-    "phoneNumbers": "מספרי טלפון",
-    "workingHours": "שעות פעילות",
-    "emailGeneralEnquiries": "General Enquiries",
+    "phoneNumbers": "טלפונים",
+    "workingHours": "שעות עבודה",
+    "emailGeneralEnquiries": "פניות כלליות",
     "emailQueries": "Queries",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
-    "backToTop": "חזרה לראש העמוד",
+    "backToTop": "חזרה למעלה",
     "blurb": "שמונה עסקים אמינים תחת קבוצה הודית מגוונת אחת, פיננסים, ייצוא, חקלאות, לוגיסטיקה, אבטחה, פרסום ותמיכה בספורטאים, הבנויים על יושרה ותוצאות.",
     "company": "חברה",
-    "contactUs": "צרו קשר",
+    "contactUs": "צור קשר",
     "cta": "יש לכם שאלה על אחת מחברות הקבוצה שלנו?",
     "enquiry": "שלחו לנו את פנייתכם.",
-    "hours": "א' – שבת: 9:00 – 18:00",
+    "hours": "א'-ו': 9:00 - 18:00",
     "legal": "משפטי",
     "links": {
       "aboutUs": "אודותינו",
       "advertise": "פרסמו אצלנו",
       "careers": "קריירה",
       "globalResearch": "מחקר גלובלי",
-      "groupCompanies": "חברות הקבוצה",
-      "news": "חדשות ומרכז ידע",
+      "groupCompanies": "חברות קבוצה",
+      "news": "מרכז חדשות וידע",
       "privacyPolicy": "מדיניות פרטיות",
       "securityTips": "טיפים לאבטחה",
       "termsConditions": "תנאים והגבלות",
@@ -346,13 +369,14 @@
     "resources": "משאבים",
     "rights": "© 2026 Indexia Group. כל הזכויות שמורות.",
     "stats": "Indexia Group · 08 חברות · 03 מיקומים",
-    "tagline": "קבוצה עסקית הודית מגוונת",
+    "tagline": "כמה צעדים לשירות האומה",
     "taglineSecondary": "מיזמים מגוונים. חזון מאוחד.",
-    "siteFooter": "Site footer navigation",
-    "footerNav": "Footer navigation"
+    "siteFooter": "ניתוג כותרת תחתונה של האתר",
+    "footerNav": "ניתוג כותרת תחתונה",
+    "brand": "קבוצת אינדקסיה"
   },
   "form": {
-    "email": "כתובת אימייל",
+    "email": "דוא\"ל",
     "emailPlaceholder": "you@example.com",
     "errorEmail": "הזינו כתובת אימייל תקינה.",
     "errorGeneric": "משהו השתבש. נסו שוב מאוחר יותר.",
@@ -361,20 +385,20 @@
     "errorNameLetters": "השם חייב להכיל אותיות.",
     "errorPhone": "הזינו מספר טלפון תקין בן 10 ספרות.",
     "errorSubject": "נא לבחור נושא או חברה.",
-    "eyebrow": "שלחו את פנייתכם",
-    "generalEnquiry": "פנייה כללית",
+    "eyebrow": "שלח פניה",
+    "generalEnquiry": "פניה כללית",
     "intro": "מלאו את הטופס למטה ופנייתכם תטופל על ידי הצוות שלנו.",
     "message": "הודעה",
     "messagePlaceholder": "כתבו כאן את פנייתכם...",
     "name": "שם",
     "namePlaceholder": "שמכם המלא",
-    "phone": "מספר טלפון",
+    "phone": "טלפון",
     "phonePlaceholder": "מספר בן 10 ספרות",
-    "sending": "שולח…",
+    "sending": "שולח...",
     "subject": "נושא / חברה",
-    "subjectPlaceholder": "בחרו חברה…",
-    "submit": "שלח פנייה",
-    "success": "פנייתכם נשלחה! הצוות שלנו יחזור אליכם בקרוב."
+    "subjectPlaceholder": "בחר חברה...",
+    "submit": "שלח פניה",
+    "success": "הפנייה שלך נשלחה!"
   },
   "globalResearchPage": {
     "areasEyebrow": "כיסוי מחקר",
@@ -399,12 +423,12 @@
       "closeMenu": "סגור תפריט",
       "selectLanguage": "בחר שפה",
       "toggleMenu": "החלף תפריט",
-      "previousArticles": "Previous articles",
-      "nextArticles": "Next articles"
+      "previousArticles": "מאמרים קודמים",
+      "nextArticles": "מאמרים הבאים"
     },
     "menu": {
       "companies": "חברות",
-      "contact": "צרו קשר",
+      "contact": "צור קשר",
       "groupCompanies": "חברות הקבוצה",
       "home": "דף הבית"
     },
@@ -414,55 +438,55 @@
     }
   },
   "hero": {
-    "ctaExploreGroup": "חקור את חברות הקבוצה",
+    "ctaExploreGroup": "חקור חברות קבוצה",
     "ctaExploreMore": "חקור עוד",
     "nextPanel": "פאנל הבא",
     "p0": {
-      "heading": "קבוצה אחת.\nפתרונות רבים.",
-      "motto": "כמה צעדים לשרת את האומה",
+      "heading": "קבוצה אחת. פתרונות רבים.",
+      "motto": "כמה צעדים לשירות האומה",
       "sub": "מפיננסים ולוגיסטיקה ועד חקלאות ופרסום, קבוצת Indexia מובילה צמיחה בתעשיות מגוונות באמצעות עסקים אמינים ומוכנים לעתיד.",
-      "tag": "Indexia Group",
+      "tag": "קבוצת אינדקסיה",
       "tagline": "מיזמים מגוונים. חזון מאוחד."
     },
     "p1": {
       "heading": "יעד אחד\nלכל ההלוואות.",
       "sub": "ניתן להגיש בקשה לכל סוג הלוואה דרך הפורטל שלנו בכתובת www.indexiafinance.com. אנו מספקים את שירותינו ברחבי העולם, בהודו אנו שותפים עסקיים של 43 בנקים וחברות NBFC.",
-      "tag": "Indexia Finance"
+      "tag": "אינדקסיה פייננס"
     },
     "p2": {
       "heading": "שיטת הפיננסים\nשל הדור הבא.",
       "sub": "עכשיו הבנק הנכון יגיע עד לדלתכם.",
-      "tag": "Indexia Finserve Pvt. Ltd."
+      "tag": "אינדקסיה פינסרב בע\"מ"
     },
     "p3": {
       "heading": "סוכר מזוקק ו\nכל המוצרים האכילים.",
       "sub": "אנו סוחרים ומייצאים סוכר מזוקק וכל המוצרים האכילים.",
-      "tag": "Indexia Overseas Pvt. Ltd."
+      "tag": "אינדקסיה אוורסיס בע\"מ"
     },
     "p4": {
       "heading": "אנו מייצרים ו\nמייצאים דשנים אורגניים",
       "sub": "אנו מייצרים דשנים אורגניים בהודו ומייצאים אותם ברחבי העולם.",
-      "tag": "Indexia Agro Bio Fertilizers Pvt. Ltd."
+      "tag": "אינדקסיה אגרו בייו דשנים בע\"מ"
     },
     "p5": {
       "heading": "קומנדו חמוש ו\nאבטחה חמושה",
       "sub": "שומרים על פוליטיקאים וטייקונים עסקיים גדולים.",
-      "tag": "Indexia Securities"
+      "tag": "אינדקסיה אבטחה"
     },
     "p6": {
       "heading": "אחסון שנבנה\nלקנה מידה.",
       "sub": "תשתית אחסון ולוגיסטיקה מודרנית שמניעה סחורות ביעילות.",
-      "tag": "Indexia Warehouse"
+      "tag": "אינדקסיה מחסנים"
     },
     "p7": {
       "heading": "המותג שלכם\nעל כל כביש מהיר.",
       "sub": "מבני פרסום רבים לאורך כבישים מהירים, המעניקים למותגים קמפיינים בעלי נראות גבוהה.",
-      "tag": "Indexia Advertising"
+      "tag": "אינדקסיה פרסום"
     },
     "p8": {
       "heading": "מחזקים\nספורטאים.",
       "sub": "תוכניות ספורט שמאמנות, מלוות ומממנות ספורטאים בדרך להישגי שיא.",
-      "tag": "Indexia Foundation"
+      "tag": "קרן אינדקסיה"
     },
     "prevPanel": "פאנל קודם"
   },
@@ -481,9 +505,9 @@
     "stat4Label": "לקוחות שרות",
     "subtitle": "ממומבאי לאקוודור, החברות שלנו משרתות לקוחות בשלוש יבשות.",
     "title": "אמינים מעבר לגבולות",
-    "taglineStart": "From local expertise to",
-    "taglineAccent": "Global Opportunities",
-    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
+    "taglineStart": "ממומחיות מקומית אל",
+    "taglineAccent": "הזדמנויות גלובליות",
+    "description": "Indexia Group פועלת בשווקים מגוונים ומאחדת עסקים שרתואים ערך הגבולות."
   },
   "jsonLd": {
     "aboutDescription": "Indexia Group היא קבוצת עסקית הודית מפורסת שמכילה פיננסים, ייצואות, חקלאות, אחזנה, אבטחה, פרסומות ותמיכות ספורטאים.",
@@ -504,7 +528,7 @@
     "delhiOffice": "משרד Delhi",
     "newsName": "Indexia Group, חדשות ומרכז ידעי״",
     "orgName": "Indexia Group",
-    "brochureName": "{{name}} Brochure"
+    "brochureName": "{{name}} פרוספקט"
   },
   "legal": {
     "backHome": "חזרה לבית",
@@ -751,7 +775,7 @@
       "security": "אבטחה",
       "sport": "ספורט",
       "tradeExport": "מסחר וייצוא",
-      "warehouse": "Warehousing",
+      "warehouse": "שינוע ומחסנים",
       "athlete": "Sports"
     }
   },
@@ -760,25 +784,25 @@
     "ctaBody": "מייעוץ FDI ועד חקלאות אורגנית ואבטחה חמושה, חברת Indexia הנכונה מוכנה לעזור. שלחו לנו פנייה ונחבר אתכם.",
     "ctaButton": "שלחו פנייה",
     "ctaTitle": "יש לכם שאלה על העסקים שלנו?",
-    "eyebrow": "חדשות ומרכז ידע",
+    "eyebrow": "מרכז חדשות וידע",
     "featuredLabel": "סיפור נבחר",
     "knowledgeEyebrow": "מרכז ידע",
     "knowledgeHeading": "מדריכים מעשיים מהעסקים שלנו",
     "knowledgeSubtitle": "הסברים פשוטים שנכתבו על ידי הצוותים שחיים את העבודה הזו כל יום.",
     "metaDescription": "חדשות ומרכז ידע, חדשות הבנקאות האחרונות על מימון, תשלומים דיגיטליים ומדיניות, ובנוסף מדריכי ידע מעשיים מקבוצת Indexia.",
-    "readMore": "קראו עוד",
+    "readMore": "קרא עוד",
     "subtitle": "חדשות הבנקאות האחרונות, עדכוני מימון, תשלומים דיגיטליים, שינויי מדיניות והתפתחויות בשוק, לצד מדריכים מעשיים מהעסקים שלנו.",
-    "title": "חדשות ומרכז ידע",
+    "title": "מרכז חדשות וידע",
     "titleAccent": "כל הקבוצה.",
     "titleStart": "סיפורים ותובנות מ",
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
     "tvEyebrow": "צפו בנו בטלוויזיה",
-    "tvHeadingAccent": "Indexia Finance",
+    "tvHeadingAccent": "אינדקסיה פייננס",
     "tvHeadingStart": "לכל צורכי ההלוואות שלכם",
-    "readFullStory": "Read Full Story",
-    "latestNews": "Latest News",
-    "noArticlesYet": "No articles available for this category yet.",
-    "articleCount": "{{count}} article from live news feed",
+    "readFullStory": "קרא את הכתבה המלאה",
+    "latestNews": "חדשות אחרונות",
+    "noArticlesYet": "אין עדיין כתבות זמינות בקטגוריה זו.",
+    "articleCount": "{{count}} כתבה מ-feed החדשות החי",
     "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
@@ -861,7 +885,7 @@
           "שירות מקצה לקצה, הדפסה, התקנה ותחזוקה"
         ],
         "location": "כביש Delhi-Dehradun, Shamli",
-        "name": "Indexia Advertising",
+        "name": "אינדקסיה פרסום",
         "overview": "Indexia Advertising מפעילה שילוט יוניפול חד-עמוד פרימיום על הכביש המהיר דלהי–דהראדון (NH-709B) בשמלי, המרכז של צפון הודו. ממוקמים בצומת של 8 כבישים מהירים לאומיים ו-2 כבישים ראשיים, היוניפולים שלנו מחברים 10 מדינות עם טווח של 50 קור אנשים ומושכים חשיפה יומית של 1+ קור. יוניפול חד-עמוד עם גובה פרימיום וזוויות צפייה ללא הפרעה של 360° מעניקים למותג שלכם נראות מקסימלית ללא עומס ויזואלי, עם המותג הירוק של ביסלרי. מהדפסה והתקנה ועד תחזוקה, אנו מטפלים בהכל מקצה לקצה. הזמינו יוניפול של 10×20 רגל ב-₹25,000/חודש או 12×24 רגל ב-₹36,000/חודש, תעריף סטנדרטי ₹125/מ\"ר לצד לחודש, ניתן למשא ומתן לחבילות ארוכות טווח. להזמנות חייגו 86918 86919 או 011 4629 1155, או שלחו אימייל ל-indexia.queries@gmail.com.",
         "services": [
           "יוניפול 10×20 רגל, ₹25,000/חודש",
@@ -881,7 +905,7 @@
           "בריאות קרקע טובה יותר, יבול גבוה יותר",
           "תמיכה מקיפה לחקלאים, ניתוח קרקע, הכשרה"
         ],
-        "name": "Indexia Agro Bio Fertilizers Pvt. Ltd.",
+        "name": "אינדקסיה אגרו בייו דשנים בע\"מ",
         "overview": "Indexia Agro Bio Fertilizers מייצרת דשנים אורגניים במתקן הייצור שלה בשמלי, אוטר פרדש, חלק מאזור דלהי NCR. המוצרים הביולוגיים של החברה משפרים את בריאות הקרקע, מגדילים את יבול הגידולים ותומכים בחקלאות בת קיימא לחקלאים ברחבי צפון הודו.",
         "services": [
           "ייצור דשנים אורגניים",
@@ -900,7 +924,7 @@
           "ארבעה תחומים משולבים תחת קורת גג אחת",
           "תמיכת מימון וייעוץ מלאה מקצה לקצה"
         ],
-        "name": "Indexia Finance",
+        "name": "אינדקסיה פייננס",
         "overview": "Indexia Finance היא פלטפורמת פינטק רב-לאומית המספקת שירותים פיננסיים ללקוחות ברחבי העולם. ניתן להגיש בקשה לכל סוג הלוואה דרך הפורטל שלנו בכתובת www.indexiafinance.com, אנו מספקים את שירותינו ברחבי העולם, ובהודו אנו שותפים עסקיים של 43 בנקים וחברות NBFC. החברה, הבנויה סביב ארבעה תחומי ליבה, שירותי משקיעים, ייעוץ FDI, פעילות NBFC ומימון בנקאי, מחברת הון עם הזדמנויות, ומסייעת למשקיעים, עסקים ומוסדות לקבל החלטות פיננסיות בטוחות מעבר לגבולות.",
         "services": [
           "ייעוץ ותיווך FDI",
@@ -920,7 +944,7 @@
           "זכאות, תיעוד ומשיכה יעילים",
           "ייעוץ ייעודי בכל שלב"
         ],
-        "name": "Indexia Finserve Pvt. Ltd.",
+        "name": "אינדקסיה פינסרב בע\"מ",
         "overview": "Indexia Finserve היא זרוע ההלוואות של קבוצת Indexia, המציעה כל סוג של הלוואה. עכשיו הבנק הנכון יגיע עד לדלתכם, החברה פועלת כיעד הלוואות מלא, ומלווה לקוחות דרך זכאות, תיעוד ומשיכה להלוואות אישיות, דיור, עסקים, MSME ומימון ייעודי בתהליך אחד יעיל.",
         "services": [
           "הלוואה אישית",
@@ -947,7 +971,7 @@
           "תמיכה מלאה עד לאולימפיאדה",
           "בניית צינור בר קיימא של ספורטאים אולימפיים הודים"
         ],
-        "name": "Indexia Foundation",
+        "name": "קרן אינדקסיה",
         "overview": "קרן Indexia תומכת בספורטאים על ידי מתן כל גיבוי אפשרי, אימונים ברמה בינלאומית, תזונה מובנית, אימון מקצועי וכל סוג של סיוע הנדרש בדרך למשחקים האולימפיים. הקרן עומדת לצד הספורטאים מההבטחה המוקדמת ועד לבמה הגדולה בעולם.",
         "services": [
           "אימונים ברמה בינלאומית",
@@ -967,7 +991,7 @@
           "מקורות, איכות ולוגיסטיקה מקצה לקצה",
           "שותף אמין לסיטונאים"
         ],
-        "name": "Indexia Overseas Pvt. Ltd.",
+        "name": "אינדקסיה אוורסיס בע\"מ",
         "overview": "Indexia Overseas מובילה את הייצוא הגלובלי של כל המוצרים האכילים, עם דגש מיוחד על ייצוא סוכר ל-14 מדינות בדרום אמריקה. החברה מנהלת מקורות, איכות, לוגיסטיקה ועמידה בתקנים בינלאומיים כך שמוצרי מזון נעים מהמקור לשוק באופן אמין ובהיקף.",
         "services": [
           "ייצוא וסחר בסוכר",
@@ -987,7 +1011,7 @@
           "ניטור 24×7 ותגובה בשטח",
           "הוכחת רקורד בהגנה על לקוחות בסיכון גבוה"
         ],
-        "name": "Indexia Securities",
+        "name": "אינדקסיה אבטחה",
         "overview": "Indexia Securities מספקת את האבטחה החמושה והגנת הקומנדו הטובה ביותר הזמינה, ושומרת על אנשים, רכוש ופעולות בעלות פרופיל גבוה סביב השעון. מחיילי קומנדו מאומנים ושומרים חמושים ועד ליווי VIP ואבטחת אירועים, החברה מביאה משמעת צבאית לכל משימה.",
         "services": [
           "שומרי אבטחה חמושים",
@@ -1008,7 +1032,7 @@
           "₹30 למ\"ר, ניתן למשא ומתן"
         ],
         "location": "שמלי, אוטר פרדש",
-        "name": "Indexia Warehouse",
+        "name": "אינדקסיה מחסנים",
         "overview": "Indexia Warehouse מציעה הזדמנות השקעה אסטרטגית בקרקע בשמלי, אוטר פרדש, רק ~65 ק\"מ מטרוניקה סיטי, לוני, דלהי. המיקום הוא מוקד קישוריות: 8 כבישים מהירים לאומיים ו-2 כבישים ראשיים המחברים 8 מדינות, עם גישה ישירה לבהוטן ונפאל וטווח שוק של 50 קור אנשים. ארבעה נמלים מרכזיים (גוג'ראט, מהרשטרה, צ'נאי, קולקטה) נגישים ישירות דרך כבישים מהירים, וגם נמל התעופה IGI דלהי וגם נמל התעופה הבינלאומי נוידה, ג'וואר נמצאים בטווח שעה. תיק הקרקעות משתרע על 5 מיקומים ו-21 דונם בסך הכל, עם מגרשים גמישים של 1, 2, 2.5, 5 ו-8 דונם, ומחסן מודרני שיוקם על 2 דונם עם רציפי העמסה. המחיר הצפוי הוא ₹30 למ\"ר, ניתן למשא ומתן.",
         "services": [
           "מגרשי קרקע, 1, 2, 2.5, 5 ו-8 דונם",
@@ -1245,43 +1269,260 @@
     "valueCol": "ערך"
   },
   "foundationGallery": {
-    "eyebrow": "Training & Media",
-    "title": "Our Athletes in Action",
+    "eyebrow": "אימונים ומדיה",
+    "title": "הספורטאים שלנו בפעילות",
     "videos": {
       "trackTraining": {
-        "label": "Track Training",
-        "sublabel": "Sprint practice on track"
+        "label": "אימון מסלול",
+        "sublabel": "אימון ריצה על המסלול"
       },
       "fieldPractice": {
-        "label": "Field Practice",
-        "sublabel": "Athletic drills"
+        "label": "תרגול שדה",
+        "sublabel": "תרגולי אתלטיקה"
       },
       "trainingSession": {
-        "label": "Training Session",
-        "sublabel": "Field training with coaches"
+        "label": "Session אימון",
+        "sublabel": "אימון שדה עם מאמנים"
       },
       "horizontalTraining1": {
-        "label": "Horizontal Training 1",
-        "sublabel": "Athletic training session"
+        "label": "אימון אופקי 1",
+        "sublabel": "Session אימון אתלטי"
       },
       "horizontalTraining2": {
-        "label": "Horizontal Training 2",
-        "sublabel": "Sports practice session"
+        "label": "אימון אופקי 2",
+        "sublabel": "Session תרגול ספורט"
       },
       "sprintDrills": {
-        "label": "Sprint Drills",
-        "sublabel": "Speed training"
+        "label": "תרגולי ספרינט",
+        "sublabel": "אימון מהירות"
       },
       "teamSession": {
-        "label": "Team Session",
-        "sublabel": "Group training"
+        "label": "Session צוות",
+        "sublabel": "אימון קבוצתי"
       }
     }
   },
   "newsCategories": {
     "finance": "Finance",
-    "warehouse": "Warehousing",
-    "export": "Trade & Export",
+    "warehouse": "שינוע ומחסנים",
+    "export": "מסחר ויצוא",
     "athlete": "Sports"
+  },
+  "passbook": {
+    "branchOffices": "סניפים",
+    "directLines": "קווים ישירים",
+    "avgReplyTime": "זמן תתגובה ממצוע",
+    "enquiryStatus": "סטטוס פנייה",
+    "lessThan24hrs": "< 24 hrs",
+    "inReview": "In review"
+  },
+  "spotlight": {
+    "finance": {
+      "eyebrow": "פינטק גלובלי",
+      "heading": "חיבור הון\nעם הזדמנויות",
+      "description": "עם פעילות בארבע יבשות ושותפויות עם 43 בנקים וגופים פיננסיים בהודו בלבד, Indexia Finance מחבר בין משקיעים לבין הזדמנויות צמיחה גבוהות מעבר לגבולות.",
+      "stats": [
+        {
+          "value": "43+",
+          "label": "Bank Partners"
+        },
+        {
+          "value": "4",
+          "label": "Core Verticals"
+        },
+        {
+          "value": "∞",
+          "label": "Global Reach"
+        }
+      ],
+      "bullets": [
+        "FDI facilitation across emerging and developed markets",
+        "NBFC operations with regulated lending frameworks",
+        "Banking & institutional funding for large-scale projects",
+        "Cross-border capital solutions for multinational clients"
+      ]
+    },
+    "finserve": {
+      "eyebrow": "הלוואות פשוטות",
+      "heading": "כל סוגי ההלוואות\nתחת קורת גג אחת",
+      "description": "מ대출ים אישיים להון סחר, Indexia Finserve מביאה את הבנק המתאים עד לפתח ביתכם, ומייעלת את הזכאות, התיעוד והעובדה למסור תהליך אחד מלווה.",
+      "stats": [
+        {
+          "value": "12",
+          "label": "Loan Products"
+        },
+        {
+          "value": "24h",
+          "label": "Response Time"
+        },
+        {
+          "value": "100%",
+          "label": "Digital Process"
+        }
+      ],
+      "bullets": [
+        "Personal, home, and business loans with competitive rates",
+        "MSME and project funding with flexible terms",
+        "Balance transfer and loan against property options",
+        "Dedicated relationship manager assigned from enquiry to disbursal"
+      ]
+    },
+    "overseas": {
+      "eyebrow": "מסחר עולמי",
+      "heading": "מהודו ל-14\nמדינות",
+      "description": "עם רשת מסחר מבוססת ב-14 מדינות דרום אמריקה, Indexia Overseas מנהלת כל שלב במחזור הייצוא, החל מאספקה ואבטחת איכות ועד לוגיסטיקה בינלאומית.",
+      "stats": [
+        {
+          "value": "14",
+          "label": "Countries"
+        },
+        {
+          "value": "100%",
+          "label": "Food-Grade"
+        },
+        {
+          "value": "24/7",
+          "label": "Logistics"
+        }
+      ],
+      "bullets": [
+        "Premium refined sugar and edible commodity exports",
+        "Full-cycle management, sourcing, QA, logistics, compliance",
+        "Trusted partner for bulk buyers and institutional consumers",
+        "Deep understanding of South American trade dynamics"
+      ]
+    },
+    "agro-bio": {
+      "eyebrow": "griculture בת קיימא",
+      "heading": "שיקום קרקע\nמקסום יבול",
+      "description": "מפעל מתקדם בשמלי, אוטר פרדש, מייצר דשנים אורגניים מנוסחים מדעית שבונים פוריות לטווח ארוך.",
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Organic"
+        },
+        {
+          "value": "6",
+          "label": "Product Lines"
+        },
+        {
+          "value": "NCR",
+          "label": "Location"
+        }
+      ],
+      "bullets": [
+        "Bio-based solutions that work with nature, not against it",
+        "Soil health assessment and customized fertilizer blends",
+        "Crop yield optimization with hands-on farmer training",
+        "Expanding domestic and international distribution network"
+      ]
+    },
+    "securities": {
+      "eyebrow": "הגנה אליטיסטית",
+      "heading": "פתרונות אבטחה\nברמה צבאית",
+      "description": "עם צוות של לוחמי קומנדו לשעבר ואנשי ביטחון מאומנים, Indexia Securities מספקת משמעת ברמת צבא ותגובתיות מהירה לכל משימה, 24/7.",
+      "stats": [
+        {
+          "value": "24/7",
+          "label": "Operations"
+        },
+        {
+          "value": "VIP",
+          "label": "Client Focus"
+        },
+        {
+          "value": "Rapid",
+          "label": "Response"
+        }
+      ],
+      "bullets": [
+        "Close protection details for politicians and corporate leaders",
+        "Corporate, industrial, and event security management",
+        "Real-time surveillance with technology-driven monitoring",
+        "Rapid deployment commando and response units"
+      ]
+    },
+    "warehouse": {
+      "eyebrow": "השקעה אסטרטגית",
+      "heading": "8 כבישים מהירים\n21 דונם",
+      "description": "בצומת 8 כבישים מהירים לאומיים ו-2 כבישים ראשיים, תיק הקרקעות של שמלי מחבר 8 מדינות עם הגעת שוק של 50 מיליון אנשים.",
+      "stats": [
+        {
+          "value": "21",
+          "label": "Acres Total"
+        },
+        {
+          "value": "8",
+          "label": "Expressways"
+        },
+        {
+          "value": "₹30",
+          "label": "Per Sq Ft"
+        }
+      ],
+      "bullets": [
+        "5 locations with flexible plots from 1 to 8 acres",
+        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
+        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
+        "Modern warehouse planned on 2 acres with loading docks"
+      ]
+    },
+    "advertising": {
+      "eyebrow": "נראות בכבישים מהירים",
+      "heading": " הגעה ל-50 קרור\nנראות 360°",
+      "description": "יוניפולים פרימיום במוט בודד בכביש דלהי-דהרדון מעניקים למותג שלכם נראות מרבית ללא עומס ויזואלי.",
+      "stats": [
+        {
+          "value": "1Cr+",
+          "label": "Daily Exposure"
+        },
+        {
+          "value": "10",
+          "label": "States Connected"
+        },
+        {
+          "value": "360°",
+          "label": "Visibility"
+        }
+      ],
+      "bullets": [
+        "10×20 ft and 12×24 ft unipole packages available",
+        "Strategic placements on NH-709B and Shamli Ring Road",
+        "End-to-end service, printing, installation, maintenance",
+        "Long-term and bulk packages with negotiable rates"
+      ]
+    },
+    "foundation": {
+      "eyebrow": "פיתוח ספורטאים",
+      "heading": "מהבסיס\nלאולימפיאדה",
+      "description": "קרן Indexia מסירה את החסמים הפיננסיים והלוגיסטיים שמונעים ספורטאים מוכשרים לממש את הפוטנציאל שלהם.",
+      "stats": [
+        {
+          "value": "5",
+          "label": "Support Pillars"
+        },
+        {
+          "value": "100%",
+          "label": "Funded"
+        },
+        {
+          "value": "∞",
+          "label": "Potential"
+        }
+      ],
+      "bullets": [
+        "International-standard training facilities and expert coaching",
+        "Complete nutrition, diet planning, and sports medicine",
+        "Competition funding, equipment, and psychological support",
+        "Building a sustainable pipeline of world-class athletes"
+      ]
+    }
+  },
+  "addresses": {
+    "corporateOffice": "משרד מקצועי",
+    "mumbaiOffice": "משרד מומבאי",
+    "delhiOffice": "משרד דלהי",
+    "shamliOffice": "משרד שמלי",
+    "internationalOffice": "משרד בינלאומי"
   }
 }

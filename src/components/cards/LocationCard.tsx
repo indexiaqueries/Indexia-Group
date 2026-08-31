@@ -9,19 +9,21 @@ import { getResponsiveVariants } from "../../lib/responsiveVariants";
 type LocationCardItem = {
   key: string;
   name: string;
-  address: string;
+  addressKey: string;
   phones?: { label: string; labelKey?: string; number: string; href: string }[];
 };
 
 type LocationCardProps = {
   location: LocationCardItem;
   delay?: number;
+  tone?: "light" | "dark";
 };
 
-const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
+const LocationCard = ({ location, delay = 0, tone = "dark" }: LocationCardProps) => {
   const { t } = useTranslation();
   const slotKey = `contact${location.key.replace(/Office$/, "").replace(/^./, (c) => c.toUpperCase())}`;
   const slot = siteImages[slotKey];
+  const isLight = tone === "light";
 
   return (
     <article className="flex h-full flex-col">
@@ -43,23 +45,27 @@ const LocationCard = ({ location, delay = 0 }: LocationCardProps) => {
         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-(--color-teal) text-white shadow-lg">
           <MapPin size={21} />
         </span>
-        <h3 className="pt-2 text-lg sm:text-xl font-extrabold text-white">
+        <h3 className={`pt-2 text-lg font-extrabold sm:text-xl ${isLight ? "text-(--color-ink)" : "text-white"}`}>
           {t(`branches.${location.key}`, { defaultValue: location.name })}
         </h3>
       </div>
 
       <div className="mt-4 flex-1">
-        <p className="whitespace-pre-line text-[13px] sm:text-sm leading-6 sm:leading-7 text-white/70">{location.address}</p>
+        <p className={`whitespace-pre-line text-[13px] leading-6 sm:text-sm sm:leading-7 ${isLight ? "text-slate-600" : "text-white/70"}`}>
+          {t(location.addressKey)}
+        </p>
         {!!location.phones?.length && (              <div className="mt-3 sm:mt-4 space-y-2">
             {location.phones.map((phone) => (
               <a
                 key={`${location.name}-${phone.label}-${phone.number}`}
                 href={phone.href}
-                className="flex items-center gap-2.5 sm:gap-3 text-[13px] sm:text-sm font-semibold text-white/80 hover:text-(--color-yellow)"
+                className={`flex items-center gap-2.5 text-[13px] font-semibold sm:gap-3 sm:text-sm ${
+                  isLight ? "text-slate-700 hover:text-(--color-teal)" : "text-white/80 hover:text-(--color-yellow)"
+                }`}
               >
-                <Phone size={16} className="shrink-0 text-(--color-yellow)" />
+                <Phone size={16} className={`shrink-0 ${isLight ? "text-(--color-teal)" : "text-(--color-yellow)"}`} />
                 <span>
-                  <span className="me-2 text-xs font-bold uppercase tracking-wider text-white/40">
+                  <span className={`me-2 text-xs font-bold uppercase tracking-wider ${isLight ? "text-slate-400" : "text-white/40"}`}>
                     {phone.labelKey ? t(`phoneLabel.${phone.labelKey}`, { defaultValue: phone.label }) : phone.label}:
                   </span>
                   {phone.number}

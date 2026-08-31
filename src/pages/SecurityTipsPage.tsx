@@ -76,10 +76,8 @@ const SecuritySection = ({ eyebrow, heading, subtitle, tips, contact, image }: S
       {tips.map((tip, i) => (
         <Reveal key={tip.key} delay={(i % 3) * 0.08} amount={0.15} className="h-full">
           <div
-            className={`flex h-full flex-col rounded-2xl border p-6 shadow-sm ${
-              contact
-                ? "border-(--color-yellow)/40 bg-(--color-yellow)/10"
-                : "border-slate-100 bg-white"
+            className={`card-premium card-premium-hover flex h-full flex-col rounded-2xl p-6 ${
+              contact ? "border-(--color-yellow)/40 bg-(--color-yellow)/10" : ""
             }`}
           >
             <span
@@ -118,7 +116,7 @@ const SecurityTipsPage = () => {
   }));
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={t("securityTipsPage.title")}
         description={t("securityTipsPage.metaDescription")}
@@ -150,7 +148,7 @@ const SecurityTipsPage = () => {
         </button>
       </HeroBackdrop>
 
-      <section className="relative bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="section-ruled section-paper relative px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <SecuritySection
           eyebrow={t("securityTipsPage.featuresEyebrow")}
           heading={t("securityTipsPage.featuresHeading")}
@@ -160,7 +158,7 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section id="practices" className="scroll-mt-24 bg-(--color-mist) px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section id="practices" className="section-ruled scroll-mt-24 bg-(--color-mist) px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <SecuritySection
           eyebrow={t("securityTipsPage.practicesEyebrow")}
           heading={t("securityTipsPage.practicesHeading")}
@@ -170,7 +168,7 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section className="bg-white px-2 py-6 sm:px-3 sm:py-8 lg:px-5">
+      <section className="section-ruled section-paper px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <SecuritySection
           eyebrow={t("securityTipsPage.contactsEyebrow")}
           heading={t("securityTipsPage.contactsHeading")}

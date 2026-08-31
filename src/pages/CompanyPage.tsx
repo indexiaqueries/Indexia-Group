@@ -62,7 +62,7 @@ const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
   };
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={`${name} - ${tag}`}
         description={desc}

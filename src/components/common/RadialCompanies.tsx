@@ -33,14 +33,14 @@ const aboutCompanyImages: Record<string, string> = {
 };
 
 const COMPANIES = [
-  { slug: "finance", tagDefault: "Multinational Fintech", nameDefault: "Indexia Finance", desc: "Multinational fintech platform delivering financial services globally with 43+ bank partnerships", Icon: Landmark },
-  { slug: "finserve", tagDefault: "Lending Arm", nameDefault: "Indexia Finserve", desc: "Investment and finance arm specializing in lending and wealth management", Icon: Coins },
-  { slug: "overseas", tagDefault: "Global Export", nameDefault: "Indexia Overseas", desc: "Connecting Indian agriculture with global edible export markets across continents", Icon: Globe },
-  { slug: "agro-bio", tagDefault: "Organic Agriculture", nameDefault: "Indexia Agro Bio", desc: "Eco-friendly bio-fertilizers restoring soil health and boosting crop productivity", Icon: Leaf },
-  { slug: "securities", tagDefault: "Armed Protection", nameDefault: "Indexia Securities", desc: "Professional armed protection services safeguarding people and assets", Icon: Shield },
-  { slug: "warehouse", tagDefault: "Strategic Land", nameDefault: "Indexia Warehouse", desc: "21-acre strategic land leasing hub with access to 8 expressways and 8 states", Icon: Warehouse },
-  { slug: "advertising", tagDefault: "Highway Advertising", nameDefault: "Indexia Advertising", desc: "Highway billboard advertising reaching millions of commuters daily", Icon: Megaphone },
-  { slug: "foundation", tagDefault: "Social Impact", nameDefault: "Indexia Foundation", desc: "Nurturing Indian athletes from grassroots to the Olympic Games", Icon: Heart },
+  { slug: "finance", tagDefault: "Multinational Fintech", nameDefault: "Indexia Finance", descKey: "aboutPage.radialFinanceDesc", Icon: Landmark },
+  { slug: "finserve", tagDefault: "Lending Arm", nameDefault: "Indexia Finserve", descKey: "aboutPage.radialFinserveDesc", Icon: Coins },
+  { slug: "overseas", tagDefault: "Global Export", nameDefault: "Indexia Overseas", descKey: "aboutPage.radialOverseasDesc", Icon: Globe },
+  { slug: "agro-bio", tagDefault: "Organic Agriculture", nameDefault: "Indexia Agro Bio", descKey: "aboutPage.radialAgroDesc", Icon: Leaf },
+  { slug: "securities", tagDefault: "Armed Protection", nameDefault: "Indexia Securities", descKey: "aboutPage.radialSecuritiesDesc", Icon: Shield },
+  { slug: "warehouse", tagDefault: "Strategic Land", nameDefault: "Indexia Warehouse", descKey: "aboutPage.radialWarehouseDesc", Icon: Warehouse },
+  { slug: "advertising", tagDefault: "Highway Advertising", nameDefault: "Indexia Advertising", descKey: "aboutPage.radialAdvertisingDesc", Icon: Megaphone },
+  { slug: "foundation", tagDefault: "Social Impact", nameDefault: "Indexia Foundation", descKey: "aboutPage.radialFoundationDesc", Icon: Heart },
 ] as const;
 
 // Shared constants for desktop layout
@@ -104,20 +104,23 @@ export default function RadialCompanies() {
         ))}
       </div>
 
-      {/* Mobile: 2-col grid */}
+      {/* Mobile/tablet: readable register cards */}
       <div className="lg:hidden">
-        <div className="mx-auto mb-4 flex max-w-xs items-center gap-3 rounded-xl border-2 border-(--color-yellow)/30 bg-white/5 p-3 shadow-lg backdrop-blur-sm">
-          <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl border-2 border-(--color-yellow)/30">
+        <div className="mx-auto mb-4 flex max-w-md items-center gap-3 rounded-xl border border-(--color-teal)/15 bg-white p-3 shadow-[0_16px_40px_rgba(15,23,42,0.08)] sm:mb-5 sm:p-4">
+          <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg border border-(--color-yellow)/50 sm:h-16 sm:w-16">
             <img src={aboutCompanyImages.group} alt="Indexia Group" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
-          <div>
-            <span className="font-ledger text-[9px] font-bold uppercase tracking-[0.18em] text-(--color-yellow)">Hub</span>
-            <h3 className="font-display text-sm font-bold text-white">Indexia Group</h3>
+          <div className="min-w-0">
+            <span className="font-ledger text-[9px] font-bold uppercase tracking-[0.18em] text-(--color-teal)">{t("aboutPage.hubGroupLabel")}</span>
+            <h3 className="font-display text-base font-bold leading-tight text-(--color-ink)">Indexia Group</h3>
+            <p className="mt-1 text-[12px] leading-5 text-slate-600 sm:text-[13px]">
+              {t("aboutPage.hubDescription")}
+            </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-3">
-          {COMPANIES.map((c) => (
-            <MobileCard key={c.slug} company={c} tr={tr} />
+        <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
+          {COMPANIES.map((c, index) => (
+            <MobileCard key={c.slug} company={c} index={index} tr={tr} />
           ))}
         </div>
       </div>
@@ -134,8 +137,10 @@ function RadialCard({
   index: number;
   tr: (slug: string, key: string, fallback: string) => string;
 }) {
+  const { t } = useTranslation();
   const [hovered, setHovered] = useState(false);
   const name = tr(company.slug, "name", company.nameDefault);
+  const desc = t(company.descKey);
 
   const angle = (index * 45 - 90) * (Math.PI / 180);
   const radiusPct = RADIUS_PCT[index] ?? RADIUS_PCT_DEFAULT;
@@ -175,7 +180,7 @@ function RadialCard({
           <p className={`text-white/90 transition-all duration-300 ${
             hovered ? "text-[11px] leading-5 line-clamp-none opacity-100" : "opacity-0"
           }`}>
-            {company.desc}
+            {desc}
           </p>
         </div>
       </div>
@@ -185,29 +190,55 @@ function RadialCard({
 
 function MobileCard({
   company,
+  index,
   tr,
 }: {
   company: (typeof COMPANIES)[number];
+  index: number;
   tr: (slug: string, key: string, fallback: string) => string;
 }) {
-  const [hovered, setHovered] = useState(false);
+  const { t } = useTranslation();
   const name = tr(company.slug, "name", company.nameDefault);
+  const tag = tr(company.slug, "tag", company.tagDefault);
+  const desc = t(company.descKey);
+  const Icon = company.Icon;
 
   return (
-    <div
-      className="group relative overflow-hidden rounded-xl border border-white/10 shadow-md cursor-pointer" style={{ aspectRatio: "1 / 1" }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+    <article
+      className="group overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-[0_14px_34px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-0.5 hover:border-(--color-teal)/35 hover:shadow-[0_18px_44px_rgba(15,23,42,0.12)]"
+      aria-label={name}
     >
-      <img src={aboutCompanyImages[company.slug]} alt={name} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
-      <div className={`absolute inset-0 bg-linear-to-t transition-all duration-300 ${
-        hovered ? "from-black/80 via-black/50 to-black/40" : "from-black/70 via-black/30 to-black/20"
-      }`} />
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-3 py-2 text-center transition-all duration-300">
-        <p className={`text-[11px] leading-5 text-white/90 transition-all duration-300 ${
-          hovered ? "line-clamp-none opacity-100" : "opacity-0"
-        }`}>{company.desc}</p>
+      <div className="relative h-32 shrink-0 overflow-hidden bg-slate-100 sm:h-28">
+        <img
+          src={aboutCompanyImages[company.slug]}
+          alt={name}
+          className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-black/45 via-black/5 to-transparent" />
       </div>
-    </div>
+      <div className="flex min-w-0 flex-col p-3 sm:p-4">
+        <div className="mb-2 grid grid-cols-[auto_1fr_auto] items-start gap-2">
+          <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-(--color-teal)/10 text-(--color-teal)">
+            <Icon size={16} strokeWidth={2.25} aria-hidden="true" />
+          </span>
+          <div className="min-w-0">
+            <p className="font-ledger text-[9px] font-bold uppercase tracking-[0.14em] text-(--color-teal) sm:text-[10px]">
+              {tag}
+            </p>
+            <h3 className="font-display text-[15px] font-bold leading-snug text-(--color-ink) sm:text-base">
+              {name}
+            </h3>
+          </div>
+          <span className="rounded-full bg-slate-100 px-2 py-1 font-ledger text-[10px] font-bold leading-none text-slate-500">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+        </div>
+        <p className="mt-auto text-[12px] leading-5 text-slate-600 sm:text-[13px] sm:leading-6">
+          {desc}
+        </p>
+      </div>
+    </article>
   );
 }

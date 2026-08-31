@@ -1,151 +1,143 @@
 export type StatItem = {
-  value: string;
-  label: string;
+  valueKey: string;
+  labelKey: string;
 };
 
 export type SpotlightContent = {
-  eyebrow: string;
-  heading: string;
-  description: string;
+  eyebrowKey: string;
+  headingKey: string;
+  descriptionKey: string;
   stats: StatItem[];
-  bullets: string[];
+  bulletsKeys: string[];
 };
 
 export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
   finance: {
-    eyebrow: "Global Fintech",
-    heading: "Connecting Capital\nWith Opportunity",
-    description:
-      "With operations spanning four continents and partnerships with 43 banks and NBFCs in India alone, Indexia Finance bridges the gap between investors and high-growth opportunities across borders.",
+    eyebrowKey: "spotlight.finance.eyebrow",
+    headingKey: "spotlight.finance.heading",
+    descriptionKey: "spotlight.finance.description",
     stats: [
-      { value: "43+", label: "Bank Partners" },
-      { value: "4", label: "Core Verticals" },
-      { value: "∞", label: "Global Reach" },
+      { valueKey: "spotlight.finance.stats.0.value", labelKey: "spotlight.finance.stats.0.label" },
+      { valueKey: "spotlight.finance.stats.1.value", labelKey: "spotlight.finance.stats.1.label" },
+      { valueKey: "spotlight.finance.stats.2.value", labelKey: "spotlight.finance.stats.2.label" },
     ],
-    bullets: [
-      "FDI facilitation across emerging and developed markets",
-      "NBFC operations with regulated lending frameworks",
-      "Banking & institutional funding for large-scale projects",
-      "Cross-border capital solutions for multinational clients",
+    bulletsKeys: [
+      "spotlight.finance.bullets.0",
+      "spotlight.finance.bullets.1",
+      "spotlight.finance.bullets.2",
+      "spotlight.finance.bullets.3",
     ],
   },
   finserve: {
-    eyebrow: "Lending Simplified",
-    heading: "Every Loan Type\nUnder One Roof",
-    description:
-      "From personal loans to working capital, Indexia Finserve makes the right bank come to your doorstep, streamlining eligibility, documentation, and disbursal into a single, guided process.",
+    eyebrowKey: "spotlight.finserve.eyebrow",
+    headingKey: "spotlight.finserve.heading",
+    descriptionKey: "spotlight.finserve.description",
     stats: [
-      { value: "12", label: "Loan Products" },
-      { value: "24h", label: "Response Time" },
-      { value: "100%", label: "Digital Process" },
+      { valueKey: "spotlight.finserve.stats.0.value", labelKey: "spotlight.finserve.stats.0.label" },
+      { valueKey: "spotlight.finserve.stats.1.value", labelKey: "spotlight.finserve.stats.1.label" },
+      { valueKey: "spotlight.finserve.stats.2.value", labelKey: "spotlight.finserve.stats.2.label" },
     ],
-    bullets: [
-      "Personal, home, and business loans with competitive rates",
-      "MSME and project funding with flexible terms",
-      "Balance transfer and loan against property options",
-      "Dedicated relationship manager assigned from enquiry to disbursal",
+    bulletsKeys: [
+      "spotlight.finserve.bullets.0",
+      "spotlight.finserve.bullets.1",
+      "spotlight.finserve.bullets.2",
+      "spotlight.finserve.bullets.3",
     ],
   },
   overseas: {
-    eyebrow: "Global Trade",
-    heading: "From India to\n14 Countries",
-    description:
-      "With an established trade network across 14 South American countries, Indexia Overseas manages every stage of the export cycle, from sourcing and quality assurance to international logistics.",
+    eyebrowKey: "spotlight.overseas.eyebrow",
+    headingKey: "spotlight.overseas.heading",
+    descriptionKey: "spotlight.overseas.description",
     stats: [
-      { value: "14", label: "Countries" },
-      { value: "100%", label: "Food-Grade" },
-      { value: "24/7", label: "Logistics" },
+      { valueKey: "spotlight.overseas.stats.0.value", labelKey: "spotlight.overseas.stats.0.label" },
+      { valueKey: "spotlight.overseas.stats.1.value", labelKey: "spotlight.overseas.stats.1.label" },
+      { valueKey: "spotlight.overseas.stats.2.value", labelKey: "spotlight.overseas.stats.2.label" },
     ],
-    bullets: [
-      "Premium refined sugar and edible commodity exports",
-      "Full-cycle management, sourcing, QA, logistics, compliance",
-      "Trusted partner for bulk buyers and institutional consumers",
-      "Deep understanding of South American trade dynamics",
+    bulletsKeys: [
+      "spotlight.overseas.bullets.0",
+      "spotlight.overseas.bullets.1",
+      "spotlight.overseas.bullets.2",
+      "spotlight.overseas.bullets.3",
     ],
   },
   "agro-bio": {
-    eyebrow: "Sustainable Agriculture",
-    heading: "Restoring Soil,\nMaximizing Yield",
-    description:
-      "Operating from a state-of-the-art facility in Shamli, UP, Indexia Agro Bio manufactures scientifically formulated organic fertilizers that build long-term fertility, not short-term fixes.",
+    eyebrowKey: "spotlight.agro-bio.eyebrow",
+    headingKey: "spotlight.agro-bio.heading",
+    descriptionKey: "spotlight.agro-bio.description",
     stats: [
-      { value: "100%", label: "Organic" },
-      { value: "6", label: "Product Lines" },
-      { value: "NCR", label: "Location" },
+      { valueKey: "spotlight.agro-bio.stats.0.value", labelKey: "spotlight.agro-bio.stats.0.label" },
+      { valueKey: "spotlight.agro-bio.stats.1.value", labelKey: "spotlight.agro-bio.stats.1.label" },
+      { valueKey: "spotlight.agro-bio.stats.2.value", labelKey: "spotlight.agro-bio.stats.2.label" },
     ],
-    bullets: [
-      "Bio-based solutions that work with nature, not against it",
-      "Soil health assessment and customized fertilizer blends",
-      "Crop yield optimization with hands-on farmer training",
-      "Expanding domestic and international distribution network",
+    bulletsKeys: [
+      "spotlight.agro-bio.bullets.0",
+      "spotlight.agro-bio.bullets.1",
+      "spotlight.agro-bio.bullets.2",
+      "spotlight.agro-bio.bullets.3",
     ],
   },
   securities: {
-    eyebrow: "Elite Protection",
-    heading: "Military-Grade\nSecurity Solutions",
-    description:
-      "Staffed by ex-military commandos and trained security professionals, Indexia Securities delivers military-grade discipline and rapid-response capability to every assignment, 24/7.",
+    eyebrowKey: "spotlight.securities.eyebrow",
+    headingKey: "spotlight.securities.heading",
+    descriptionKey: "spotlight.securities.description",
     stats: [
-      { value: "24/7", label: "Operations" },
-      { value: "VIP", label: "Client Focus" },
-      { value: "Rapid", label: "Response" },
+      { valueKey: "spotlight.securities.stats.0.value", labelKey: "spotlight.securities.stats.0.label" },
+      { valueKey: "spotlight.securities.stats.1.value", labelKey: "spotlight.securities.stats.1.label" },
+      { valueKey: "spotlight.securities.stats.2.value", labelKey: "spotlight.securities.stats.2.label" },
     ],
-    bullets: [
-      "Close protection details for politicians and corporate leaders",
-      "Corporate, industrial, and event security management",
-      "Real-time surveillance with technology-driven monitoring",
-      "Rapid deployment commando and response units",
+    bulletsKeys: [
+      "spotlight.securities.bullets.0",
+      "spotlight.securities.bullets.1",
+      "spotlight.securities.bullets.2",
+      "spotlight.securities.bullets.3",
     ],
   },
   warehouse: {
-    eyebrow: "Strategic Investment",
-    heading: "8 Expressways,\n21 Acres, One Location",
-    description:
-      "Positioned at the junction of 8 national expressways and 2 major highways, the Shamli land portfolio connects 8 states with a market reach of 50 crore people.",
+    eyebrowKey: "spotlight.warehouse.eyebrow",
+    headingKey: "spotlight.warehouse.heading",
+    descriptionKey: "spotlight.warehouse.description",
     stats: [
-      { value: "21", label: "Acres Total" },
-      { value: "8", label: "Expressways" },
-      { value: "₹30", label: "Per Sq Ft" },
+      { valueKey: "spotlight.warehouse.stats.0.value", labelKey: "spotlight.warehouse.stats.0.label" },
+      { valueKey: "spotlight.warehouse.stats.1.value", labelKey: "spotlight.warehouse.stats.1.label" },
+      { valueKey: "spotlight.warehouse.stats.2.value", labelKey: "spotlight.warehouse.stats.2.label" },
     ],
-    bullets: [
-      "5 locations with flexible plots from 1 to 8 acres",
-      "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-      "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-      "Modern warehouse planned on 2 acres with loading docks",
+    bulletsKeys: [
+      "spotlight.warehouse.bullets.0",
+      "spotlight.warehouse.bullets.1",
+      "spotlight.warehouse.bullets.2",
+      "spotlight.warehouse.bullets.3",
     ],
   },
   advertising: {
-    eyebrow: "Highway Visibility",
-    heading: "50 Crore Reach,\n360° Visibility",
-    description:
-      "Premium single-pole unipoles on the Delhi–Dehradun Highway give your brand maximum visibility with zero visual clutter, backed by signature Bisleri Green branding.",
+    eyebrowKey: "spotlight.advertising.eyebrow",
+    headingKey: "spotlight.advertising.heading",
+    descriptionKey: "spotlight.advertising.description",
     stats: [
-      { value: "1Cr+", label: "Daily Exposure" },
-      { value: "10", label: "States Connected" },
-      { value: "360°", label: "Visibility" },
+      { valueKey: "spotlight.advertising.stats.0.value", labelKey: "spotlight.advertising.stats.0.label" },
+      { valueKey: "spotlight.advertising.stats.1.value", labelKey: "spotlight.advertising.stats.1.label" },
+      { valueKey: "spotlight.advertising.stats.2.value", labelKey: "spotlight.advertising.stats.2.label" },
     ],
-    bullets: [
-      "10×20 ft and 12×24 ft unipole packages available",
-      "Strategic placements on NH-709B and Shamli Ring Road",
-      "End-to-end service, printing, installation, maintenance",
-      "Long-term and bulk packages with negotiable rates",
+    bulletsKeys: [
+      "spotlight.advertising.bullets.0",
+      "spotlight.advertising.bullets.1",
+      "spotlight.advertising.bullets.2",
+      "spotlight.advertising.bullets.3",
     ],
   },
   foundation: {
-    eyebrow: "Athlete Development",
-    heading: "From Grassroots\nto the Olympics",
-    description:
-      "Indexia Foundation removes the financial and logistical barriers that prevent talented athletes from reaching their potential, ensuring skill and dedication determine who represents India.",
+    eyebrowKey: "spotlight.foundation.eyebrow",
+    headingKey: "spotlight.foundation.heading",
+    descriptionKey: "spotlight.foundation.description",
     stats: [
-      { value: "5", label: "Support Pillars" },
-      { value: "100%", label: "Funded" },
-      { value: "∞", label: "Potential" },
+      { valueKey: "spotlight.foundation.stats.0.value", labelKey: "spotlight.foundation.stats.0.label" },
+      { valueKey: "spotlight.foundation.stats.1.value", labelKey: "spotlight.foundation.stats.1.label" },
+      { valueKey: "spotlight.foundation.stats.2.value", labelKey: "spotlight.foundation.stats.2.label" },
     ],
-    bullets: [
-      "International-standard training facilities and expert coaching",
-      "Complete nutrition, diet planning, and sports medicine",
-      "Competition funding, equipment, and psychological support",
-      "Building a sustainable pipeline of world-class athletes",
+    bulletsKeys: [
+      "spotlight.foundation.bullets.0",
+      "spotlight.foundation.bullets.1",
+      "spotlight.foundation.bullets.2",
+      "spotlight.foundation.bullets.3",
     ],
   },
 };

@@ -12,7 +12,7 @@ const NewsPage = () => {
   const newsJsonLd = useNewsJsonLd();
 
   return (
-    <main className="bg-white">
+    <main className="site-shell">
       <SEO
         title={t("newsPage.title")}
         description={t("newsPage.metaDescription")}

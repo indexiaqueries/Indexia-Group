@@ -17,7 +17,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
   const toggle = (i: number) => setOpenIndex((prev) => (prev === i ? null : i));
 
   return (
-    <section className="relative bg-(--color-mist) px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+    <section className="section-ruled relative bg-(--color-mist) px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
       <div className="mx-auto max-w-4xl">
         <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("newsPage.knowledgeEyebrow")}</Eyebrow>
@@ -29,7 +29,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
           </p>
         </Reveal>
 
-        <div className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm">
+        <div className="card-premium overflow-hidden rounded-2xl">
           {insights.map((insight, i) => {
             const isOpen = openIndex === i;
             return (

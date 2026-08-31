@@ -39,7 +39,7 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
 
         {/* Content — right side */}
         <div
-          className="relative flex min-h-[280px] flex-col justify-between overflow-hidden p-8 text-white sm:p-10"
+          className="relative flex min-h-70 flex-col justify-between overflow-hidden p-8 text-white sm:p-10"
           style={{ background: `linear-gradient(135deg, ${colors.navyDeep}, ${colors.navyMid})` }}
         >
           <div

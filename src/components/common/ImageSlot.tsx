@@ -23,7 +23,7 @@ const ImageSlot = ({
   alt,
   label,
   aspect = "aspect-[16/9]",
-  className = "rounded-2xl",
+  className = "rounded-2xl media-polished",
   srcSet,
 }: ImageSlotProps) => {
   const [failed, setFailed] = useState(false);

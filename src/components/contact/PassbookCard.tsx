@@ -1,4 +1,5 @@
 import { Landmark } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import SealStamp from "../common/SealStamp";
 import customerImg from "../../assets/hero-img/PassbookCard.webp";
@@ -6,11 +7,12 @@ import { branches, phoneNumbers } from "../../data/contact";
 import { colors, monoFont } from "../../lib/theme";
 
 const PassbookCard = () => {
+  const { t } = useTranslation();
   const rows = [
-    { label: "Branch offices", value: String(branches.length).padStart(2, "0") },
-    { label: "Direct lines", value: String(phoneNumbers.length).padStart(2, "0") },
-    { label: "Avg. reply time", value: "< 24 hrs" },
-    { label: "Enquiry status", value: "In review" },
+    { label: t("passbook.branchOffices"), value: String(branches.length).padStart(2, "0") },
+    { label: t("passbook.directLines"), value: String(phoneNumbers.length).padStart(2, "0") },
+    { label: t("passbook.avgReplyTime"), value: t("passbook.lessThan24hrs") },
+    { label: t("passbook.enquiryStatus"), value: t("passbook.inReview") },
   ];
 
   return (
