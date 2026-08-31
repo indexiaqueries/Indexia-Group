@@ -13,8 +13,12 @@ export type ArticleItem = {
   excerpt: string;
   featured?: boolean;
   image?: string;
-  source?: string;
-  articleUrl?: string;
+  source?: string;         // source_name
+  sourceIcon?: string;     // source_icon
+  sourceUrl?: string;      // source website URL
+  creator?: string[];      // author names
+  keywords?: string[];
+  articleUrl?: string;     // link to original article
 };
 
 export type InsightItem = (typeof knowledgeInsights)[number];
@@ -42,8 +46,8 @@ const LIVE_COMPANY_MAP: Record<string, string> = {
  * Convert a live API article to the ArticleItem format.
  */
 function liveToArticleItem(article: LiveArticle, _index: number): ArticleItem {
-  const publishedDate = article.publishedAt
-    ? new Date(article.publishedAt).toLocaleDateString("en-IN", {
+  const publishedDate = article.pubDate
+    ? new Date(article.pubDate).toLocaleDateString("en-IN", {
         day: "numeric",
         month: "short",
         year: "numeric",
@@ -54,15 +58,19 @@ function liveToArticleItem(article: LiveArticle, _index: number): ArticleItem {
     slug: `live-${article.category}-${_index}`,
     title: article.title,
     category: LIVE_CATEGORY_MAP[article.category] || article.category,
-    company: LIVE_COMPANY_MAP[article.category] || article.source,
+    company: LIVE_COMPANY_MAP[article.category] || article.sourceName,
     date: publishedDate,
     excerpt:
       article.description.length > 200
         ? article.description.substring(0, 197) + "..."
         : article.description,
     image: article.image,
-    source: article.source,
-    articleUrl: article.articleUrl,
+    source: article.sourceName,
+    sourceIcon: article.sourceIcon,
+    sourceUrl: article.sourceUrl,
+    creator: article.creator,
+    keywords: article.keywords,
+    articleUrl: article.link,
   };
 }
 
@@ -136,9 +144,38 @@ export const useNewsJsonLd = () => {
   };
 };
 
+/**
+ * Group articles by their raw category key (finance, warehouse, export, athlete).
+ */
+function groupByCategory(articles: ArticleItem[]): Record<string, ArticleItem[]> {
+  const result: Record<string, ArticleItem[]> = {
+    finance: [],
+    warehouse: [],
+    export: [],
+    athlete: [],
+  };
+
+  // Reverse-map display names back to keys
+  const displayToKey: Record<string, string> = {
+    Finance: "finance",
+    Warehousing: "warehouse",
+    "Trade & Export": "export",
+    Sports: "athlete",
+  };
+
+  for (const article of articles) {
+    const key = displayToKey[article.category] ?? article.category.toLowerCase();
+    if (result[key]) {
+      result[key].push(article);
+    }
+  }
+
+  return result;
+}
+
 export const useNewsContent = () => {
   const { t } = useTranslation();
-  const { news: liveNews, loading } = useLiveNews(5);
+  const { news: liveNews, loading } = useLiveNews(15);
   const tr = (path: string, fallback: string) =>
     t(`pageContent.news.${path}`, { defaultValue: fallback });
 
@@ -165,6 +202,7 @@ export const useNewsContent = () => {
 
   const featured = articles.find((a) => a.featured) ?? articles[0];
   const latest = articles.filter((a) => a !== featured);
+  const articlesByCategory = groupByCategory(articles);
 
-  return { articles, insights, featured, latest, loading };
+  return { articles, insights, featured, latest, articlesByCategory, loading };
 };

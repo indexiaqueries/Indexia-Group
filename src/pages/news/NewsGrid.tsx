@@ -143,15 +143,29 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
 
                   {/* Source + Read Full Story */}
                   <div className="mt-auto flex items-center justify-between border-t border-black/10 pt-4">
-                    <div className="flex flex-col">
-                      {article.source && (
-                        <span className="text-[10px] font-semibold text-slate-400">
-                          {article.source}
-                        </span>
-                      )}
-                      <span className="text-xs font-semibold text-slate-400">
-                        {article.company}
-                      </span>
+                    <div className="flex items-center gap-2">
+                      {article.sourceIcon ? (
+                        <img
+                          src={article.sourceIcon}
+                          alt=""
+                          className="h-4 w-4 rounded-full object-contain"
+                          loading="lazy"
+                          decoding="async"
+                          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                      ) : null}
+                      <div className="flex flex-col">
+                        {article.source && (
+                          <span className="text-[10px] font-semibold text-slate-400">
+                            {article.source}
+                          </span>
+                        )}
+                        {article.creator && article.creator.length > 0 && (
+                          <span className="text-[10px] text-slate-300">
+                            {article.creator.join(', ')}
+                          </span>
+                        )}
+                      </div>
                     </div>
                     {article.articleUrl ? (
                       <a

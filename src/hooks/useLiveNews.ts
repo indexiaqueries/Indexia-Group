@@ -3,12 +3,23 @@ import { useEffect, useState } from "react";
 export type LiveArticle = {
   title: string;
   description: string;
-  image: string;
-  source: string;
-  sourceUrl: string;
-  publishedAt: string;
-  category: string;
-  articleUrl: string;
+  link: string;            // article URL
+  image: string;           // image_url
+  videoUrl: string;        // video_url
+  sourceId: string;        // source_id
+  sourceName: string;      // source_name
+  sourceUrl: string;       // source_url
+  sourceIcon: string;      // source_icon
+  sourcePriority: number;  // source_priority
+  creator: string[];       // author names
+  keywords: string[];
+  language: string;
+  country: string[];
+  categories: string[];    // API categories e.g. ["business","top"]
+  datatype: string;
+  pubDate: string;         // ISO date string
+  articleId: string;       // article_id
+  category: string;        // mapped: finance|warehouse|export|athlete
 };
 
 type NewsResponse = {
