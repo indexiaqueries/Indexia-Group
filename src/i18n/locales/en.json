@@ -13,7 +13,9 @@
     "aria": {
       "selectLanguage": "Select language",
       "toggleMenu": "Toggle menu",
-      "closeMenu": "Close menu"
+      "closeMenu": "Close menu",
+      "previousArticles": "Previous articles",
+      "nextArticles": "Next articles"
     }
   },
   "hero": {
@@ -94,7 +96,9 @@
     "enquiry": "Send us your enquiry.",
     "stats": "Indexia Group · 08 Companies · 03 Locations",
     "rights": "© 2026 Indexia Group. All rights reserved.",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "siteFooter": "Site footer navigation",
+    "footerNav": "Footer navigation"
   },
   "home": {
     "groupCompanies": {
@@ -138,7 +142,10 @@
     "location": "Location",
     "workingHours": "Working Hours",
     "phoneNumbers": "Phone Numbers",
-    "country": "India"
+    "country": "India",
+    "emailGeneralEnquiries": "General Enquiries",
+    "emailQueries": "Queries",
+    "emailViniMalik": "Vini Malik"
   },
   "form": {
     "eyebrow": "Send Your Enquiry",
@@ -217,7 +224,12 @@
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
     "featuredLabel": "Featured Story",
     "readMore": "Read More",
+    "readFullStory": "Read Full Story",
     "askUs": "Ask Us",
+    "latestNews": "Latest News",
+    "noArticlesYet": "No articles available for this category yet.",
+    "articleCount": "{{count}} article from live news feed",
+    "articleCount_plural": "{{count}} articles from live news feed",
     "knowledgeEyebrow": "Knowledge Centre",
     "knowledgeHeading": "Practical Guides from Our Businesses",
     "knowledgeSubtitle": "Straightforward explainers written by the teams who live this work every day.",
@@ -428,7 +440,24 @@
     "mcaPortal": "MCA Portal",
     "metaDescription": "About Indexia Group, a diversified Indian business group spanning Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support. Founded in 2012.",
     "taglineSecondary": "Diverse Ventures. Unified Vision.",
-    "aboutUs": "About Us"
+    "aboutUs": "About Us",
+    "storyImageAlt": "Indexia Group founding story",
+    "verifyOnMCA": "Verify on MCA Portal",
+    "milestone1Year": "2005",
+    "milestone1Title": "Company Founded",
+    "milestone1Body": "Started with a vision to build a diversified Indian business group rooted in integrity and expertise.",
+    "milestone2Year": "2012",
+    "milestone2Title": "Indexia Finserve Launch",
+    "milestone2Body": "Expanded into investment and finance, creating a dedicated lending and wealth management arm.",
+    "milestone3Year": "2015",
+    "milestone3Title": "Global Edible Export",
+    "milestone3Body": "Launched Indexia Overseas to connect Indian agriculture with global markets across multiple continents.",
+    "milestone6Year": "2021",
+    "milestone6Title": "Rapid Expansion",
+    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone7Year": "2024",
+    "milestone7Title": "Social Impact",
+    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
   },
   "seo": {
     "homeTitle": "Financial Services, Loans, Export & Warehousing",
@@ -903,7 +932,42 @@
     "newsName": "Indexia Group, News & Knowledge Centre",
     "careersName": "Open roles at Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
-    "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}"
+    "companyPageDescription": "Learn about {{name}}, a company under the Indexia Group. {{description}}",
+    "brochureName": "{{name}} Brochure"
+  },
+  "foundationGallery": {
+    "eyebrow": "Training & Media",
+    "title": "Our Athletes in Action",
+    "videos": {
+      "trackTraining": {
+        "label": "Track Training",
+        "sublabel": "Sprint practice on track"
+      },
+      "fieldPractice": {
+        "label": "Field Practice",
+        "sublabel": "Athletic drills"
+      },
+      "trainingSession": {
+        "label": "Training Session",
+        "sublabel": "Field training with coaches"
+      },
+      "horizontalTraining1": {
+        "label": "Horizontal Training 1",
+        "sublabel": "Athletic training session"
+      },
+      "horizontalTraining2": {
+        "label": "Horizontal Training 2",
+        "sublabel": "Sports practice session"
+      },
+      "sprintDrills": {
+        "label": "Sprint Drills",
+        "sublabel": "Speed training"
+      },
+      "teamSession": {
+        "label": "Team Session",
+        "sublabel": "Group training"
+      }
+    }
   },
   "homeReach": {
     "eyebrow": "Our Reach",
@@ -913,7 +977,10 @@
     "stat2Label": "Countries",
     "stat3Label": "Years Strong",
     "stat4Label": "Clients Served",
-    "cta": "Learn More About Us"
+    "cta": "Learn More About Us",
+    "taglineStart": "From local expertise to",
+    "taglineAccent": "Global Opportunities",
+    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
   },
   "legalContent": {
     "privacy": {
@@ -1148,20 +1215,45 @@
     "latestLabel": "Latest across the group",
     "sectors": {
       "finance": "Finance",
+      "warehouse": "Warehousing",
       "tradeExport": "Trade & Export",
       "agriculture": "Agriculture",
       "security": "Security",
       "advertising": "Advertising",
+      "athlete": "Sports",
       "sport": "Sport"
     }
   },
+  "newsCategories": {
+    "finance": "Finance",
+    "warehouse": "Warehousing",
+    "export": "Trade & Export",
+    "athlete": "Sports"
+  },
   "newsVideo": {
     "onAir": "On Air",
-    "tvCommercial": "TV Commercial"
+    "tvCommercial": "TV Commercial",
+    "videoTitle": "Indexia Finance TV Ad - News18",
+    "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "careersHero": {
     "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
-    "companiesOneGroup": "companies, one group"
+    "companiesOneGroup": "companies, one group",
+    "sectors": {
+      "finance": "Finance",
+      "export": "Export",
+      "agriculture": "Agriculture",
+      "security": "Security",
+      "leasing": "Leasing",
+      "advertising": "Advertising",
+      "athleteDevelopment": "Athlete Development"
+    }
+  },
+  "openRoles": {
+    "loading": "Loading openings...",
+    "noPositions": "No {{type}} positions available at the moment.",
+    "fullTime": "Full-time",
+    "intern": "Intern"
   },
   "openRoles": {
     "loading": "Loading openings...",

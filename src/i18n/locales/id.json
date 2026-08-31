@@ -99,7 +99,15 @@
     "valuesEyebrow": "Nilai Kami",
     "valuesTitle": "Yang Kami Perjuangkan",
     "viewOnMCA": "Lihat di MCA",
-    "visitWebsite": "Kunjungi Situs"
+    "visitWebsite": "Kunjungi Situs",
+    "storyImageAlt": "Indexia Group founding story",
+    "verifyOnMCA": "Verify on MCA Portal",
+    "milestone6Year": "2021",
+    "milestone6Title": "Rapid Expansion",
+    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone7Year": "2024",
+    "milestone7Title": "Social Impact",
+    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
   },
   "advertisingContact": {
     "address": "Alamat Kantor",
@@ -197,7 +205,16 @@
   },
   "careersHero": {
     "companiesOneGroup": "perusahaan, satu grup",
-    "description": "Delapan perusahaan. Satu tim. Bangun karir Anda di keuangan, ekspor, pertanian, keamanan, periklanan, dan pengembangan atlet."
+    "description": "Delapan perusahaan. Satu tim. Bangun karir Anda di keuangan, ekspor, pertanian, keamanan, periklanan, dan pengembangan atlet.",
+    "sectors": {
+      "finance": "Finance",
+      "export": "Export",
+      "agriculture": "Agriculture",
+      "security": "Security",
+      "leasing": "Leasing",
+      "advertising": "Advertising",
+      "athleteDevelopment": "Athlete Development"
+    }
   },
   "careersPage": {
     "apply": "Lamar",
@@ -300,7 +317,10 @@
     "location": "Lokasi",
     "paragraph": "Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan konsultasi bisnis, atau ingin menjajaki kemitraan, tim kami siap membantu, kami membalas dalam 24 jam.",
     "phoneNumbers": "Nomor Telepon",
-    "workingHours": "Jam Kerja"
+    "workingHours": "Jam Kerja",
+    "emailGeneralEnquiries": "General Enquiries",
+    "emailQueries": "Queries",
+    "emailViniMalik": "Vini Malik"
   },
   "footer": {
     "backToTop": "Kembali ke atas",
@@ -327,7 +347,9 @@
     "rights": "© 2026 Indexia Group. Seluruh hak cipta dilindungi.",
     "stats": "Indexia Group · 08 Perusahaan · 03 Kota",
     "tagline": "Grup Bisnis India yang Terdiversifikasi",
-    "taglineSecondary": "Usaha Beragam. Visi Terpadu."
+    "taglineSecondary": "Usaha Beragam. Visi Terpadu.",
+    "siteFooter": "Site footer navigation",
+    "footerNav": "Footer navigation"
   },
   "form": {
     "email": "Alamat Email",
@@ -376,7 +398,9 @@
     "aria": {
       "closeMenu": "Tutup menu",
       "selectLanguage": "Pilih bahasa",
-      "toggleMenu": "Buka/tutup menu"
+      "toggleMenu": "Buka/tutup menu",
+      "previousArticles": "Previous articles",
+      "nextArticles": "Next articles"
     },
     "menu": {
       "companies": "Perusahaan",
@@ -456,7 +480,10 @@
     "stat3Label": "Tahun Kuat",
     "stat4Label": "Klien Dilayani",
     "subtitle": "Dari Mumbai ke Ekuador, bisnis kami melayani klien di tiga benua dengan komitmen yang sama terhadap integritas dan hasil.",
-    "title": "Terpercaya Melintasi Batas"
+    "title": "Terpercaya Melintasi Batas",
+    "taglineStart": "From local expertise to",
+    "taglineAccent": "Global Opportunities",
+    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
   },
   "jsonLd": {
     "aboutDescription": "Indexia Group adalah grup bisnis India yang terdiversifikasi mencakup Keuangan, Ekspor, Pertanian, Gudang, Keamanan, Periklanan, dan Dukungan Atlet.",
@@ -476,7 +503,8 @@
     "corporateOffice": "Kantor Pusat",
     "delhiOffice": "Kantor Delhi",
     "newsName": "Indexia Group, Berita & Pusat Pengetahuan",
-    "orgName": "Indexia Group"
+    "orgName": "Indexia Group",
+    "brochureName": "{{name}} Brochure"
   },
   "legal": {
     "backHome": "Kembali ke Beranda",
@@ -722,7 +750,9 @@
       "finance": "Keuangan",
       "security": "Keamanan",
       "sport": "Olahraga",
-      "tradeExport": "Perdagangan & Ekspor"
+      "tradeExport": "Perdagangan & Ekspor",
+      "warehouse": "Warehousing",
+      "athlete": "Sports"
     }
   },
   "newsPage": {
@@ -744,11 +774,18 @@
     "tvCaption": "Butuh Pinjaman Berarti… Indexia Finance",
     "tvEyebrow": "Tonton Kami di TV",
     "tvHeadingAccent": "Indexia Finance",
-    "tvHeadingStart": "Untuk Semua Kebutuhan Pinjaman Anda"
+    "tvHeadingStart": "Untuk Semua Kebutuhan Pinjaman Anda",
+    "readFullStory": "Read Full Story",
+    "latestNews": "Latest News",
+    "noArticlesYet": "No articles available for this category yet.",
+    "articleCount": "{{count}} article from live news feed",
+    "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
     "onAir": "Sedang Tayang",
-    "tvCommercial": "Iklan TV"
+    "tvCommercial": "Iklan TV",
+    "videoTitle": "Indexia Finance TV Ad - News18",
+    "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "notFoundPage": {
     "backHome": "Kembali ke Beranda",
@@ -1210,5 +1247,45 @@
     "total": "Total Lahan",
     "totalValue": "21 Hektar",
     "valueCol": "Nilai"
+  },
+  "foundationGallery": {
+    "eyebrow": "Training & Media",
+    "title": "Our Athletes in Action",
+    "videos": {
+      "trackTraining": {
+        "label": "Track Training",
+        "sublabel": "Sprint practice on track"
+      },
+      "fieldPractice": {
+        "label": "Field Practice",
+        "sublabel": "Athletic drills"
+      },
+      "trainingSession": {
+        "label": "Training Session",
+        "sublabel": "Field training with coaches"
+      },
+      "horizontalTraining1": {
+        "label": "Horizontal Training 1",
+        "sublabel": "Athletic training session"
+      },
+      "horizontalTraining2": {
+        "label": "Horizontal Training 2",
+        "sublabel": "Sports practice session"
+      },
+      "sprintDrills": {
+        "label": "Sprint Drills",
+        "sublabel": "Speed training"
+      },
+      "teamSession": {
+        "label": "Team Session",
+        "sublabel": "Group training"
+      }
+    }
+  },
+  "newsCategories": {
+    "finance": "Finance",
+    "warehouse": "Warehousing",
+    "export": "Trade & Export",
+    "athlete": "Sports"
   }
 }

@@ -445,20 +445,20 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           <div ref={glowRef} aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl transition-transform duration-150 ease-out" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
           <div className="container relative py-10 lg:py-14">
             <Reveal className="mx-auto mb-6 max-w-3xl text-center">
-              <Eyebrow color="var(--color-yellow)">{t("pageContent.companies.foundation.galleryEyebrow", "Training & Media")}</Eyebrow>
+              <Eyebrow color="var(--color-yellow)">{t("foundationGallery.eyebrow")}</Eyebrow>
               <h2 className="font-display mt-3 text-[clamp(24px,3.2vw,38px)] font-bold leading-[1.1] text-white">
-                {t("pageContent.companies.foundation.galleryTitle", "Our Athletes in Action")}
+                {t("foundationGallery.title")}
               </h2>
             </Reveal>
             <VideoHoverGallery
               videos={[
-                { src: foundationVid2, label: "Track Training", sublabel: "Sprint practice on track" },
-                { src: foundationVid3, label: "Field Practice", sublabel: "Athletic drills" },
-                { src: foundationVid1, label: "Training Session", sublabel: "Field training with coaches" },
-                { src: foundationVid6, label: "Horizontal Training 1", sublabel: "Athletic training session" },
-                { src: foundationVid7, label: "Horizontal Training 2", sublabel: "Sports practice session" },
-                { src: foundationVid4, label: "Sprint Drills", sublabel: "Speed training" },
-                { src: foundationVid5, label: "Team Session", sublabel: "Group training" },
+                { src: foundationVid2, label: t("foundationGallery.videos.trackTraining.label"), sublabel: t("foundationGallery.videos.trackTraining.sublabel") },
+                { src: foundationVid3, label: t("foundationGallery.videos.fieldPractice.label"), sublabel: t("foundationGallery.videos.fieldPractice.sublabel") },
+                { src: foundationVid1, label: t("foundationGallery.videos.trainingSession.label"), sublabel: t("foundationGallery.videos.trainingSession.sublabel") },
+                { src: foundationVid6, label: t("foundationGallery.videos.horizontalTraining1.label"), sublabel: t("foundationGallery.videos.horizontalTraining1.sublabel") },
+                { src: foundationVid7, label: t("foundationGallery.videos.horizontalTraining2.label"), sublabel: t("foundationGallery.videos.horizontalTraining2.sublabel") },
+                { src: foundationVid4, label: t("foundationGallery.videos.sprintDrills.label"), sublabel: t("foundationGallery.videos.sprintDrills.sublabel") },
+                { src: foundationVid5, label: t("foundationGallery.videos.teamSession.label"), sublabel: t("foundationGallery.videos.teamSession.sublabel") },
               ]}
               activeWidth={35}
               gap={0.5}

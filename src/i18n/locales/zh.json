@@ -99,7 +99,15 @@
     "valuesEyebrow": "我们的价值观",
     "valuesTitle": "我们的坚守",
     "viewOnMCA": "在 MCA 查看",
-    "visitWebsite": "访问网站"
+    "visitWebsite": "访问网站",
+    "storyImageAlt": "Indexia Group founding story",
+    "verifyOnMCA": "Verify on MCA Portal",
+    "milestone6Year": "2021",
+    "milestone6Title": "Rapid Expansion",
+    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone7Year": "2024",
+    "milestone7Title": "Social Impact",
+    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
   },
   "advertisingContact": {
     "address": "办公地址",
@@ -197,7 +205,16 @@
   },
   "careersHero": {
     "companiesOneGroup": "家公司，一个集团",
-    "description": "八家公司，一个团队。在金融、出口、农业、安保、广告和运动员发展领域建立您的职业生涯。"
+    "description": "八家公司，一个团队。在金融、出口、农业、安保、广告和运动员发展领域建立您的职业生涯。",
+    "sectors": {
+      "finance": "Finance",
+      "export": "Export",
+      "agriculture": "Agriculture",
+      "security": "Security",
+      "leasing": "Leasing",
+      "advertising": "Advertising",
+      "athleteDevelopment": "Athlete Development"
+    }
   },
   "careersPage": {
     "apply": "申请",
@@ -228,19 +245,19 @@
       "fr": "Français",
       "he": "עברית",
       "hi": "हिन्दी",
-      "id": "Bahasa Indonesia",
+      "id": "印尼语",
       "it": "Italiano",
       "ja": "日本語",
       "ko": "한국어",
-      "nl": "Nederlands",
+      "nl": "荷兰语",
       "pl": "Polski",
       "pt": "Português",
       "ru": "Русский",
       "sv": "Svenska",
       "th": "ไทย",
       "tr": "Türkçe",
-      "uk": "Українська",
-      "vi": "Tiếng Việt",
+      "uk": "乌克兰语",
+      "vi": "越南语",
       "zh": "中文"
     },
     "logoAlt": "Indexia Group 标志"
@@ -300,7 +317,10 @@
     "location": "地点",
     "paragraph": "无论您对我们的服务有疑问、需要商业咨询，还是想探索合作机会，我们的团队都随时准备为您提供帮助, 我们会在24小时内回复。",
     "phoneNumbers": "电话号码",
-    "workingHours": "工作时间"
+    "workingHours": "工作时间",
+    "emailGeneralEnquiries": "General Enquiries",
+    "emailQueries": "Queries",
+    "emailViniMalik": "Vini Malik"
   },
   "footer": {
     "backToTop": "返回顶部",
@@ -327,7 +347,9 @@
     "rights": "© 2026 英德西亚集团。保留所有权利。",
     "stats": "英德西亚集团 · 08家企业 · 03个地点",
     "tagline": "多元化的印度商业集团",
-    "taglineSecondary": "多元企业。统一愿景。"
+    "taglineSecondary": "多元企业。统一愿景。",
+    "siteFooter": "Site footer navigation",
+    "footerNav": "Footer navigation"
   },
   "form": {
     "email": "电子邮箱",
@@ -376,7 +398,9 @@
     "aria": {
       "closeMenu": "关闭菜单",
       "selectLanguage": "选择语言",
-      "toggleMenu": "打开/关闭菜单"
+      "toggleMenu": "打开/关闭菜单",
+      "previousArticles": "Previous articles",
+      "nextArticles": "Next articles"
     },
     "menu": {
       "companies": "企业",
@@ -456,7 +480,10 @@
     "stat3Label": "实力年份",
     "stat4Label": "服务客户",
     "subtitle": "从孟买到厄瓜多尔，我们的公司在三大洲为客户提供服务。",
-    "title": "跨境信任"
+    "title": "跨境信任",
+    "taglineStart": "From local expertise to",
+    "taglineAccent": "Global Opportunities",
+    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
   },
   "jsonLd": {
     "aboutDescription": "Indexia Group 是一家多元化的印度商业集团，业务涵盖金融、出口、农业、仓储、安保、广告和运动员支持。",
@@ -476,7 +503,8 @@
     "corporateOffice": "企业办公室",
     "delhiOffice": "德里办公室",
     "newsName": "Indexia Group，新闻与知识中心",
-    "orgName": "Indexia Group"
+    "orgName": "Indexia Group",
+    "brochureName": "{{name}} Brochure"
   },
   "legal": {
     "backHome": "返回首页",
@@ -722,7 +750,9 @@
       "finance": "金融",
       "security": "安保",
       "sport": "体育",
-      "tradeExport": "贸易与出口"
+      "tradeExport": "贸易与出口",
+      "warehouse": "Warehousing",
+      "athlete": "Sports"
     }
   },
   "newsPage": {
@@ -744,11 +774,18 @@
     "tvCaption": "Loan Chahiye Matlab… 英德西亚金融",
     "tvEyebrow": "在电视上观看我们",
     "tvHeadingAccent": "Indexia Finance",
-    "tvHeadingStart": "满足您的所有贷款需求"
+    "tvHeadingStart": "满足您的所有贷款需求",
+    "readFullStory": "Read Full Story",
+    "latestNews": "Latest News",
+    "noArticlesYet": "No articles available for this category yet.",
+    "articleCount": "{{count}} article from live news feed",
+    "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
     "onAir": "播出中",
-    "tvCommercial": "电视广告"
+    "tvCommercial": "电视广告",
+    "videoTitle": "Indexia Finance TV Ad - News18",
+    "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "notFoundPage": {
     "backHome": "返回首页",
@@ -1206,5 +1243,45 @@
     "total": "土地总面积",
     "totalValue": "21英亩",
     "valueCol": "数值"
+  },
+  "foundationGallery": {
+    "eyebrow": "Training & Media",
+    "title": "Our Athletes in Action",
+    "videos": {
+      "trackTraining": {
+        "label": "Track Training",
+        "sublabel": "Sprint practice on track"
+      },
+      "fieldPractice": {
+        "label": "Field Practice",
+        "sublabel": "Athletic drills"
+      },
+      "trainingSession": {
+        "label": "Training Session",
+        "sublabel": "Field training with coaches"
+      },
+      "horizontalTraining1": {
+        "label": "Horizontal Training 1",
+        "sublabel": "Athletic training session"
+      },
+      "horizontalTraining2": {
+        "label": "Horizontal Training 2",
+        "sublabel": "Sports practice session"
+      },
+      "sprintDrills": {
+        "label": "Sprint Drills",
+        "sublabel": "Speed training"
+      },
+      "teamSession": {
+        "label": "Team Session",
+        "sublabel": "Group training"
+      }
+    }
+  },
+  "newsCategories": {
+    "finance": "Finance",
+    "warehouse": "Warehousing",
+    "export": "Trade & Export",
+    "athlete": "Sports"
   }
 }

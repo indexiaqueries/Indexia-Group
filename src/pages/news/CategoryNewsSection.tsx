@@ -4,6 +4,7 @@ import { ExternalLink, TrendingUp, Warehouse, Globe2, Trophy } from "lucide-reac
 import Reveal from "../../components/common/Reveal";
 import { colors } from "../../lib/theme";
 import type { ArticleItem } from "./newsData";
+import { t } from "i18next";
 
 type CategoryNewsSectionProps = {
   articlesByCategory: Record<string, ArticleItem[]>;
@@ -12,7 +13,7 @@ type CategoryNewsSectionProps = {
 const CATEGORIES = [
   {
     key: "finance",
-    label: "Finance",
+    labelKey: "newsHero.sectors.finance",
     icon: TrendingUp,
     color: colors.teal,
     gradient: "from-teal-500/10 to-emerald-500/5",
@@ -20,7 +21,7 @@ const CATEGORIES = [
   },
   {
     key: "warehouse",
-    label: "Warehousing",
+    labelKey: "newsHero.sectors.warehouse",
     icon: Warehouse,
     color: colors.blue,
     gradient: "from-blue-500/10 to-sky-500/5",
@@ -28,7 +29,7 @@ const CATEGORIES = [
   },
   {
     key: "export",
-    label: "Trade & Export",
+    labelKey: "newsHero.sectors.tradeExport",
     icon: Globe2,
     color: "#b45309",
     gradient: "from-amber-500/10 to-orange-500/5",
@@ -36,7 +37,7 @@ const CATEGORIES = [
   },
   {
     key: "athlete",
-    label: "Sports",
+    labelKey: "newsHero.sectors.athlete",
     icon: Trophy,
     color: "#7c3aed",
     gradient: "from-violet-500/10 to-purple-500/5",
@@ -123,7 +124,7 @@ const ArticleCard = ({
 
       {/* Read More */}
       <div className="mt-4 flex items-center gap-1.5 text-xs font-bold" style={{ color: accentColor }}>
-        <span>Read Full Story</span>
+        <span>{t("newsPage.readFullStory")}</span>
         <ExternalLink
           size={12}
           className="transition-transform group-hover/card:translate-x-0.5"
@@ -184,7 +185,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
                   }
                 >
                   <CatIcon size={15} />
-                  {cat.label}
+                  {t(cat.labelKey)}
                   {count > 0 && (
                     <span
                       className={`ml-0.5 rounded-full px-1.5 py-0.5 text-[10px] font-bold ${
@@ -218,10 +219,10 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
                 className="font-display text-base font-bold"
                 style={{ color: activeCategory.color }}
               >
-                {activeCategory.label}
+                {t(activeCategory.labelKey)}
               </h2>
               <p className="text-[11px] text-slate-400">
-                {activeArticles.length} article{activeArticles.length !== 1 ? "s" : ""} from live news feed
+                {t("newsPage.articleCount", { count: activeArticles.length })}
               </p>
             </div>
           </div>
@@ -243,7 +244,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
           <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 py-16">
             <Icon size={32} className="text-slate-300" />
             <p className="mt-3 text-sm text-slate-400">
-              No articles available for this category yet.
+              {t("newsPage.noArticlesYet")}
             </p>
           </div>
         )}

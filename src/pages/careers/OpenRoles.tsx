@@ -25,7 +25,7 @@ const departmentColors: Record<string, string> = {
 
 const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
   const { t } = useTranslation();
-  const [activeType, setActiveType] = useState<"Full-time" | "Intern">("Full-time");
+  const [activeType, setActiveType] = useState<string>("Full-time");
   const filteredRoles = roles.filter((role) => role.type === activeType);
 
   const fullTimeCount = roles.filter((r) => r.type === "Full-time").length;
@@ -54,7 +54,10 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
 
           <Reveal delay={0.05} className="mt-5">
             <div className="flex items-center gap-6 border-b border-white/15">
-              {(["Full-time", "Intern"] as const).map((type) => {
+              {([
+                  { key: "Full-time", labelKey: "openRoles.fullTime" },
+                  { key: "Intern", labelKey: "openRoles.intern" },
+                ]).map(({ key: type, labelKey }) => {
                 const count = type === "Full-time" ? fullTimeCount : internCount;
                 const active = activeType === type;
                 return (
@@ -65,7 +68,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
                       active ? "text-white" : "text-white/50 hover:text-white/80"
                     }`}
                   >
-                    {type}
+                    {t(labelKey)}
                     <span className={active ? "text-white/60" : "text-white/35"}>
                       ({count})
                     </span>

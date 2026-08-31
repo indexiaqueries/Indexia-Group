@@ -14,17 +14,24 @@ import RadialCompanies from "../components/common/RadialCompanies";
 const VALUES = [1, 2, 3, 4] as const;
 
 const MILESTONES_DATA = [
-  { year: "2005", title: "Company Founded", body: "Started with a vision to build a diversified Indian business group rooted in integrity and expertise." },
-  { year: "2012", title: "Indexia Finserve Launch", body: "Expanded into investment and finance, creating a dedicated lending and wealth management arm." },
-  { year: "2015", title: "Global Edible Export", body: "Launched Indexia Overseas to connect Indian agriculture with global markets across multiple continents." },
-  { year: "2021", title: "Rapid Expansion", body: "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies." },
-  { year: "2024", title: "Social Impact", body: "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games." },
+  { yearKey: "aboutPage.milestone1Year", titleKey: "aboutPage.milestone1Title", bodyKey: "aboutPage.milestone1Body" },
+  { yearKey: "aboutPage.milestone2Year", titleKey: "aboutPage.milestone2Title", bodyKey: "aboutPage.milestone2Body" },
+  { yearKey: "aboutPage.milestone3Year", titleKey: "aboutPage.milestone3Title", bodyKey: "aboutPage.milestone3Body" },
+  { yearKey: "aboutPage.milestone6Year", titleKey: "aboutPage.milestone6Title", bodyKey: "aboutPage.milestone6Body" },
+  { yearKey: "aboutPage.milestone7Year", titleKey: "aboutPage.milestone7Title", bodyKey: "aboutPage.milestone7Body" },
 ];
 
 const AboutPage = () => {
   const { t } = useTranslation();
 
   const tr = (path: string, fallback: string) => t(`aboutPage.${path}`, { defaultValue: fallback });
+
+  // Translate milestones data
+  const translatedMilestones = MILESTONES_DATA.map((m) => ({
+    year: tr(m.yearKey.replace('aboutPage.', ''), m.yearKey),
+    title: tr(m.titleKey.replace('aboutPage.', ''), m.titleKey),
+    body: tr(m.bodyKey.replace('aboutPage.', ''), m.bodyKey),
+  }));
 
   const aboutJsonLd = {
     "@context": "https://schema.org",
@@ -154,7 +161,7 @@ const AboutPage = () => {
           <Reveal delay={0.15} amount={0.15}>
             <ResponsiveImage
               src={ourStoryImg}
-              alt="Indexia Group founding story"
+              alt={tr("storyImageAlt", "Indexia Group founding story")}
               width={1200}
               height={500}
               className="w-full rounded-2xl object-cover shadow-lg"
@@ -232,7 +239,7 @@ const AboutPage = () => {
             </h2>
           </Reveal>
 
-          <ScrollTimeline milestones={MILESTONES_DATA} />
+          <ScrollTimeline milestones={translatedMilestones} />
         </div>
       </section>      {/* Registration & Compliance */}
       <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
@@ -282,7 +289,7 @@ const AboutPage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-5 py-2 text-[12px] font-bold text-(--color-yellow) transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow)/20"
             >
-              Verify on MCA Portal
+              {tr("verifyOnMCA", "Verify on MCA Portal")}
               <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

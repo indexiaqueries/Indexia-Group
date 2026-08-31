@@ -3,15 +3,15 @@ import Eyebrow from "../../components/common/Eyebrow";
 import { getResponsiveVariants, WIDTHS } from "../../lib/responsiveVariants";
 import careerHeroImg from "../../assets/hero-img/CareerHero.png";
 
-const SECTORS = [
-  "Finance",
-  "Export",
-  "Agriculture",
-  "Security",
-  "Leasing",
-  "Advertising",
-  "Athlete Development",
-];
+const SECTOR_KEYS = [
+  "finance",
+  "export",
+  "agriculture",
+  "security",
+  "leasing",
+  "advertising",
+  "athleteDevelopment",
+] as const;
 
 const CareerHeroBg = () => {
   const variants = getResponsiveVariants(careerHeroImg);
@@ -48,8 +48,10 @@ const CareerHeroBg = () => {
 };
 
 const SectorTicker = () => {
+  const { t } = useTranslation();
+  const sectors = SECTOR_KEYS.map((key) => t(`careersHero.sectors.${key}`));
   // Doubled for a seamless loop
-  const loop = [...SECTORS, ...SECTORS];
+  const loop = [...sectors, ...sectors];
   return (
     <div className="sector-ticker-mask relative border-t border-white/10 bg-(--color-ink-deep)/60 backdrop-blur-sm">
       <div className="sector-ticker group flex overflow-hidden py-3 sm:py-4">

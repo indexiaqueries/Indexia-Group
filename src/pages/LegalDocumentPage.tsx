@@ -51,7 +51,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome"), item: "https://www.indexiagroup.com/" },
           { "@type": "ListItem", position: 2, name: title, item: `https://www.indexiagroup.com${path}` },
         ],
       },

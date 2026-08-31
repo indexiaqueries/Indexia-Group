@@ -53,8 +53,8 @@ const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.indexiagroup.com/" },
-          { "@type": "ListItem", position: 2, name: "Group Companies", item: "https://www.indexiagroup.com/about" },
+          { "@type": "ListItem", position: 1, name: t("jsonLd.breadcrumbHome"), item: "https://www.indexiagroup.com/" },
+          { "@type": "ListItem", position: 2, name: t("jsonLd.breadcrumbCompanies"), item: "https://www.indexiagroup.com/about" },
           { "@type": "ListItem", position: 3, name, item: `https://www.indexiagroup.com${canonicalPath}` },
         ],
       },

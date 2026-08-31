@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { companyColor, type ArticleItem } from "./newsData";
 
@@ -10,6 +11,7 @@ type NewsGridProps = {
 const CLONE_COUNT = 3;
 
 const NewsGrid = ({ latest }: NewsGridProps) => {
+  const { t } = useTranslation();
   const trackRef = useRef<HTMLDivElement>(null);
   const firstCardRef = useRef<HTMLDivElement>(null);
 
@@ -66,7 +68,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
         type="button"
         onClick={() => goTo(-1)}
         disabled={!canLoop}
-        aria-label="Previous articles"
+        aria-label={t("header.aria.previousArticles")}
         className="absolute -left-3 top-1/2 z-20 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-600 shadow-md backdrop-blur-sm transition-all hover:border-slate-300 hover:text-slate-900 hover:shadow-lg disabled:opacity-0 lg:flex"
       >
         <ChevronLeft size={18} />
@@ -75,7 +77,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
         type="button"
         onClick={() => goTo(1)}
         disabled={!canLoop}
-        aria-label="Next articles"
+        aria-label={t("header.aria.nextArticles")}
         className="absolute -right-3 top-1/2 z-20 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-600 shadow-md backdrop-blur-sm transition-all hover:border-slate-300 hover:text-slate-900 hover:shadow-lg disabled:opacity-0 lg:flex"
       >
         <ChevronRight size={18} />
@@ -175,7 +177,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                         className="inline-flex items-center gap-1 text-xs font-bold transition-colors hover:underline"
                         style={{ color }}
                       >
-                        Read Full Story
+                        {t("newsPage.readFullStory")}
                         <ExternalLink size={12} />
                       </a>
                     ) : (

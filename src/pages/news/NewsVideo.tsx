@@ -44,7 +44,7 @@ const NewsVideo = () => {
               {playVideo ? (
                 <iframe
                   src="https://www.youtube.com/embed/pnmXG9j8148?autoplay=1"
-                  title="Indexia Finance TV Ad - News18"
+                  title={t("newsVideo.videoTitle")}
                   className="absolute inset-0 h-full w-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -54,11 +54,11 @@ const NewsVideo = () => {
                   type="button"
                   onClick={() => setPlayVideo(true)}
                   className="group absolute inset-0 flex h-full w-full items-center justify-center text-white"
-                  aria-label="Play Indexia Finance TV ad"
+                  aria-label={t("newsVideo.playAriaLabel")}
                 >
                   <img
                     src="https://img.youtube.com/vi/pnmXG9j8148/maxresdefault.jpg"
-                    alt="Indexia Finance TV Ad - News18"
+                    alt={t("newsVideo.videoTitle")}
                     width={1280}
                     height={720}
                     loading="lazy"

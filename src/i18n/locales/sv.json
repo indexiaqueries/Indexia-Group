@@ -99,7 +99,15 @@
     "valuesEyebrow": "Våra Värderingar",
     "valuesTitle": "Vad Vi Står För",
     "viewOnMCA": "Visa på MCA",
-    "visitWebsite": "Besök Webbplats"
+    "visitWebsite": "Besök Webbplats",
+    "storyImageAlt": "Indexia Group founding story",
+    "verifyOnMCA": "Verify on MCA Portal",
+    "milestone6Year": "2021",
+    "milestone6Title": "Rapid Expansion",
+    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone7Year": "2024",
+    "milestone7Title": "Social Impact",
+    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
   },
   "advertisingContact": {
     "address": "Kontorsadress",
@@ -197,7 +205,16 @@
   },
   "careersHero": {
     "companiesOneGroup": "företag, en koncern",
-    "description": "Åtta företag. Ett team. Bygg din karriär inom finans, export, jordbruk, säkerhet, reklam och atletutveckling."
+    "description": "Åtta företag. Ett team. Bygg din karriär inom finans, export, jordbruk, säkerhet, reklam och atletutveckling.",
+    "sectors": {
+      "finance": "Finance",
+      "export": "Export",
+      "agriculture": "Agriculture",
+      "security": "Security",
+      "leasing": "Leasing",
+      "advertising": "Advertising",
+      "athleteDevelopment": "Athlete Development"
+    }
   },
   "careersPage": {
     "apply": "Ansök",
@@ -228,19 +245,19 @@
       "fr": "Français",
       "he": "עברית",
       "hi": "हिन्दी",
-      "id": "Bahasa Indonesia",
+      "id": "Indonesiska",
       "it": "Italiano",
       "ja": "日本語",
       "ko": "한국어",
-      "nl": "Nederlands",
+      "nl": "Nederländska",
       "pl": "Polski",
       "pt": "Português",
       "ru": "Русский",
       "sv": "Svenska",
       "th": "ไทย",
       "tr": "Türkçe",
-      "uk": "Українська",
-      "vi": "Tiếng Việt",
+      "uk": "Ukrainska",
+      "vi": "Vietnamesiska",
       "zh": "中文"
     },
     "logoAlt": "Indexia Group logotyp"
@@ -300,7 +317,10 @@
     "location": "Plats",
     "paragraph": "Oavsett om du har en fråga om våra tjänster, behöver en företagskonsultation eller vill utforska ett partnerskap, är vårt team redo att hjälpa dig, vi svarar inom 24 timmar.",
     "phoneNumbers": "Telefonnummer",
-    "workingHours": "Arbetstider"
+    "workingHours": "Arbetstider",
+    "emailGeneralEnquiries": "General Enquiries",
+    "emailQueries": "Queries",
+    "emailViniMalik": "Vini Malik"
   },
   "footer": {
     "backToTop": "Till toppen",
@@ -327,7 +347,9 @@
     "rights": "© 2026 Indexia Group. Med ensamrätt.",
     "stats": "Indexia Group · 08 bolag · 03 orter",
     "tagline": "Diversifierad indisk företagskoncern",
-    "taglineSecondary": "Diversifierade Företag. Förenad Vision."
+    "taglineSecondary": "Diversifierade Företag. Förenad Vision.",
+    "siteFooter": "Site footer navigation",
+    "footerNav": "Footer navigation"
   },
   "form": {
     "email": "E-postadress",
@@ -376,7 +398,9 @@
     "aria": {
       "closeMenu": "Stäng meny",
       "selectLanguage": "Välj språk",
-      "toggleMenu": "Växla meny"
+      "toggleMenu": "Växla meny",
+      "previousArticles": "Previous articles",
+      "nextArticles": "Next articles"
     },
     "menu": {
       "companies": "Bolag",
@@ -456,7 +480,10 @@
     "stat3Label": "Starka År",
     "stat4Label": "Betjänade Kunder",
     "subtitle": "Från Mumbai till Ecuador betjänar våra företag kunder på tre kontinenter.",
-    "title": "Bortom Gränser"
+    "title": "Bortom Gränser",
+    "taglineStart": "From local expertise to",
+    "taglineAccent": "Global Opportunities",
+    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
   },
   "jsonLd": {
     "aboutDescription": "Indexia Group är ett diversifierat indiskt företag verksam inom Finans, Export, Jordbruk, Lager, Säkerhet, Reklam och Atletstöd.",
@@ -476,7 +503,8 @@
     "corporateOffice": "Huvudkontor",
     "delhiOffice": "Delhi-kontor",
     "newsName": "Indexia Group, Nyheter & Kunskapscenter",
-    "orgName": "Indexia Group"
+    "orgName": "Indexia Group",
+    "brochureName": "{{name}} Brochure"
   },
   "legal": {
     "backHome": "Tillbaka till start",
@@ -722,7 +750,9 @@
       "finance": "Finans",
       "security": "Säkerhet",
       "sport": "Sport",
-      "tradeExport": "Handel & Export"
+      "tradeExport": "Handel & Export",
+      "warehouse": "Warehousing",
+      "athlete": "Sports"
     }
   },
   "newsPage": {
@@ -744,11 +774,18 @@
     "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
     "tvEyebrow": "Se oss på TV",
     "tvHeadingAccent": "Indexia Finance",
-    "tvHeadingStart": "För alla dina lånebehov"
+    "tvHeadingStart": "För alla dina lånebehov",
+    "readFullStory": "Read Full Story",
+    "latestNews": "Latest News",
+    "noArticlesYet": "No articles available for this category yet.",
+    "articleCount": "{{count}} article from live news feed",
+    "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
     "onAir": "I Sändning",
-    "tvCommercial": "TV-reklam"
+    "tvCommercial": "TV-reklam",
+    "videoTitle": "Indexia Finance TV Ad - News18",
+    "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "notFoundPage": {
     "backHome": "Tillbaka till Hem",
@@ -1206,5 +1243,45 @@
     "total": "Total mark",
     "totalValue": "21 tunnland",
     "valueCol": "Värde"
+  },
+  "foundationGallery": {
+    "eyebrow": "Training & Media",
+    "title": "Our Athletes in Action",
+    "videos": {
+      "trackTraining": {
+        "label": "Track Training",
+        "sublabel": "Sprint practice on track"
+      },
+      "fieldPractice": {
+        "label": "Field Practice",
+        "sublabel": "Athletic drills"
+      },
+      "trainingSession": {
+        "label": "Training Session",
+        "sublabel": "Field training with coaches"
+      },
+      "horizontalTraining1": {
+        "label": "Horizontal Training 1",
+        "sublabel": "Athletic training session"
+      },
+      "horizontalTraining2": {
+        "label": "Horizontal Training 2",
+        "sublabel": "Sports practice session"
+      },
+      "sprintDrills": {
+        "label": "Sprint Drills",
+        "sublabel": "Speed training"
+      },
+      "teamSession": {
+        "label": "Team Session",
+        "sublabel": "Group training"
+      }
+    }
+  },
+  "newsCategories": {
+    "finance": "Finance",
+    "warehouse": "Warehousing",
+    "export": "Trade & Export",
+    "athlete": "Sports"
   }
 }

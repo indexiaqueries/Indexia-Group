@@ -26,12 +26,12 @@ export type InsightItem = (typeof knowledgeInsights)[number];
 export const companyColor = (name: string) =>
   companies.find((c) => c.name === name)?.color ?? colors.blue;
 
-// Map live API categories to display categories
-const LIVE_CATEGORY_MAP: Record<string, string> = {
-  finance: "Finance",
-  warehouse: "Warehousing",
-  export: "Trade & Export",
-  athlete: "Sports",
+// Map live API categories to translation keys
+const LIVE_CATEGORY_KEY_MAP: Record<string, string> = {
+  finance: "newsCategories.finance",
+  warehouse: "newsCategories.warehouse",
+  export: "newsCategories.export",
+  athlete: "newsCategories.athlete",
 };
 
 // Map live API categories to company names
@@ -45,7 +45,7 @@ const LIVE_COMPANY_MAP: Record<string, string> = {
 /**
  * Convert a live API article to the ArticleItem format.
  */
-function liveToArticleItem(article: LiveArticle, _index: number): ArticleItem {
+function liveToArticleItem(article: LiveArticle, _index: number, t: (key: string) => string): ArticleItem {
   const publishedDate = article.pubDate
     ? new Date(article.pubDate).toLocaleDateString("en-IN", {
         day: "numeric",
@@ -54,10 +54,11 @@ function liveToArticleItem(article: LiveArticle, _index: number): ArticleItem {
       })
     : "";
 
+  const categoryKey = LIVE_CATEGORY_KEY_MAP[article.category];
   return {
     slug: `live-${article.category}-${_index}`,
     title: article.title,
-    category: LIVE_CATEGORY_MAP[article.category] || article.category,
+    category: categoryKey ? t(categoryKey) : article.category,
     company: LIVE_COMPANY_MAP[article.category] || article.sourceName,
     date: publishedDate,
     excerpt:
@@ -80,14 +81,15 @@ function liveToArticleItem(article: LiveArticle, _index: number): ArticleItem {
  */
 function mergeArticles(
   liveNews: Record<string, LiveArticle[]>,
-  staticArticles: typeof newsArticles
+  staticArticles: typeof newsArticles,
+  t: (key: string) => string
 ): ArticleItem[] {
   const liveItems: ArticleItem[] = [];
 
   // Convert all live articles
   for (const [_cat, articles] of Object.entries(liveNews)) {
     articles.forEach((article, i) => {
-      liveItems.push(liveToArticleItem(article, i));
+      liveItems.push(liveToArticleItem(article, i, t));
     });
   }
 
@@ -147,7 +149,7 @@ export const useNewsJsonLd = () => {
 /**
  * Group articles by their raw category key (finance, warehouse, export, athlete).
  */
-function groupByCategory(articles: ArticleItem[]): Record<string, ArticleItem[]> {
+function groupByCategory(articles: ArticleItem[], t: (key: string) => string): Record<string, ArticleItem[]> {
   const result: Record<string, ArticleItem[]> = {
     finance: [],
     warehouse: [],
@@ -155,13 +157,11 @@ function groupByCategory(articles: ArticleItem[]): Record<string, ArticleItem[]>
     athlete: [],
   };
 
-  // Reverse-map display names back to keys
-  const displayToKey: Record<string, string> = {
-    Finance: "finance",
-    Warehousing: "warehouse",
-    "Trade & Export": "export",
-    Sports: "athlete",
-  };
+  // Build reverse-map from translated display names back to keys
+  const displayToKey: Record<string, string> = {};
+  for (const [key, translationKey] of Object.entries(LIVE_CATEGORY_KEY_MAP)) {
+    displayToKey[t(translationKey)] = key;
+  }
 
   for (const article of articles) {
     const key = displayToKey[article.category] ?? article.category.toLowerCase();
@@ -180,7 +180,7 @@ export const useNewsContent = () => {
     t(`pageContent.news.${path}`, { defaultValue: fallback });
 
   // Merge live articles with static fallback
-  const allArticles = mergeArticles(liveNews, newsArticles);
+  const allArticles = mergeArticles(liveNews, newsArticles, t);
 
   // Apply translations to article titles/excerpts from static data
   const articles = allArticles.map((a) => ({
@@ -202,7 +202,7 @@ export const useNewsContent = () => {
 
   const featured = articles.find((a) => a.featured) ?? articles[0];
   const latest = articles.filter((a) => a !== featured);
-  const articlesByCategory = groupByCategory(articles);
+  const articlesByCategory = groupByCategory(articles, t);
 
   return { articles, insights, featured, latest, articlesByCategory, loading };
 };

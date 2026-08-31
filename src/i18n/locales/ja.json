@@ -99,7 +99,15 @@
     "valuesEyebrow": "私たちの価値観",
     "valuesTitle": "私たちが守るもの",
     "viewOnMCA": "MCAで見る",
-    "visitWebsite": "ウェブサイトを見る"
+    "visitWebsite": "ウェブサイトを見る",
+    "storyImageAlt": "Indexia Group founding story",
+    "verifyOnMCA": "Verify on MCA Portal",
+    "milestone6Year": "2021",
+    "milestone6Title": "Rapid Expansion",
+    "milestone6Body": "Launched Agro Bio, Securities, Warehouse, and Advertising verticals, growing to eight companies.",
+    "milestone7Year": "2024",
+    "milestone7Title": "Social Impact",
+    "milestone7Body": "Founded Indexia Foundation to support Indian athletes from grassroots to the Olympic Games."
   },
   "advertisingContact": {
     "address": "オフィス住所",
@@ -197,7 +205,16 @@
   },
   "careersHero": {
     "companiesOneGroup": "社、1つのグループ",
-    "description": "8つの会社。1つのチーム。金融、輸出、農業、セキュリティ、広告、アスリート支援でキャリアを築きましょう。"
+    "description": "8つの会社。1つのチーム。金融、輸出、農業、セキュリティ、広告、アスリート支援でキャリアを築きましょう。",
+    "sectors": {
+      "finance": "Finance",
+      "export": "Export",
+      "agriculture": "Agriculture",
+      "security": "Security",
+      "leasing": "Leasing",
+      "advertising": "Advertising",
+      "athleteDevelopment": "Athlete Development"
+    }
   },
   "careersPage": {
     "apply": "応募する",
@@ -228,19 +245,19 @@
       "fr": "Français",
       "he": "עברית",
       "hi": "हिन्दी",
-      "id": "Bahasa Indonesia",
+      "id": "インドネシア語",
       "it": "Italiano",
       "ja": "日本語",
       "ko": "한국어",
-      "nl": "Nederlands",
+      "nl": "オランダ語",
       "pl": "Polski",
       "pt": "Português",
       "ru": "Русский",
       "sv": "Svenska",
       "th": "ไทย",
       "tr": "Türkçe",
-      "uk": "Українська",
-      "vi": "Tiếng Việt",
+      "uk": "ウクライナ語",
+      "vi": "ベトナム語",
       "zh": "中文"
     },
     "logoAlt": "Indexia Group ロゴ"
@@ -300,7 +317,10 @@
     "location": "所在地",
     "paragraph": "当社のサービスについてのご質問、ビジネス相談、パートナーシップのご検討など、当チームがいつでもサポートいたします, 24時間以内に返信いたします。",
     "phoneNumbers": "電話番号",
-    "workingHours": "営業時間"
+    "workingHours": "営業時間",
+    "emailGeneralEnquiries": "General Enquiries",
+    "emailQueries": "Queries",
+    "emailViniMalik": "Vini Malik"
   },
   "footer": {
     "backToTop": "トップへ戻る",
@@ -327,7 +347,9 @@
     "rights": "© 2026 インデキシアグループ。全著作権所有。",
     "stats": "インデキシアグループ · 08社 · 03拠点",
     "tagline": "多角化するインドのビジネスグループ",
-    "taglineSecondary": "多様な事業。統一されたビジョン。"
+    "taglineSecondary": "多様な事業。統一されたビジョン。",
+    "siteFooter": "Site footer navigation",
+    "footerNav": "Footer navigation"
   },
   "form": {
     "email": "メールアドレス",
@@ -376,7 +398,9 @@
     "aria": {
       "closeMenu": "メニューを閉じる",
       "selectLanguage": "言語を選択",
-      "toggleMenu": "メニューを開く/閉じる"
+      "toggleMenu": "メニューを開く/閉じる",
+      "previousArticles": "Previous articles",
+      "nextArticles": "Next articles"
     },
     "menu": {
       "companies": "企業一覧",
@@ -456,7 +480,10 @@
     "stat3Label": "強さの年数",
     "stat4Label": "サービス顧客",
     "subtitle": "ムンバイからエクアドルまで、3大陸の顧客にサービスを提供しています。",
-    "title": "国境を越えた信頼"
+    "title": "国境を越えた信頼",
+    "taglineStart": "From local expertise to",
+    "taglineAccent": "Global Opportunities",
+    "description": "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders."
   },
   "jsonLd": {
     "aboutDescription": "Indexia Groupは、金融、輸出、農業、倉庫、セキュリティ、広告、アスリート支援を幅広くカバーする多角的なインドのビジネスグループです。",
@@ -476,7 +503,8 @@
     "corporateOffice": "本社",
     "delhiOffice": "デリー事務所",
     "newsName": "Indexia Group、ニュース＆ナレッジセンター",
-    "orgName": "Indexia Group"
+    "orgName": "Indexia Group",
+    "brochureName": "{{name}} Brochure"
   },
   "legal": {
     "backHome": "ホームに戻る",
@@ -722,7 +750,9 @@
       "finance": "金融",
       "security": "セキュリティ",
       "sport": "スポーツ",
-      "tradeExport": "貿易・輸出"
+      "tradeExport": "貿易・輸出",
+      "warehouse": "Warehousing",
+      "athlete": "Sports"
     }
   },
   "newsPage": {
@@ -744,11 +774,18 @@
     "tvCaption": "Loan Chahiye Matlab… インデキシアファイナンス",
     "tvEyebrow": "テレビでご覧ください",
     "tvHeadingAccent": "Indexia Finance",
-    "tvHeadingStart": "あらゆるローンのご相談に"
+    "tvHeadingStart": "あらゆるローンのご相談に",
+    "readFullStory": "Read Full Story",
+    "latestNews": "Latest News",
+    "noArticlesYet": "No articles available for this category yet.",
+    "articleCount": "{{count}} article from live news feed",
+    "articleCount_plural": "{{count}} articles from live news feed"
   },
   "newsVideo": {
     "onAir": "オンエア",
-    "tvCommercial": "テレビコマーシャル"
+    "tvCommercial": "テレビコマーシャル",
+    "videoTitle": "Indexia Finance TV Ad - News18",
+    "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "notFoundPage": {
     "backHome": "ホームに戻る",
@@ -1206,5 +1243,45 @@
     "total": "総土地面積",
     "totalValue": "21エーカー",
     "valueCol": "値"
+  },
+  "foundationGallery": {
+    "eyebrow": "Training & Media",
+    "title": "Our Athletes in Action",
+    "videos": {
+      "trackTraining": {
+        "label": "Track Training",
+        "sublabel": "Sprint practice on track"
+      },
+      "fieldPractice": {
+        "label": "Field Practice",
+        "sublabel": "Athletic drills"
+      },
+      "trainingSession": {
+        "label": "Training Session",
+        "sublabel": "Field training with coaches"
+      },
+      "horizontalTraining1": {
+        "label": "Horizontal Training 1",
+        "sublabel": "Athletic training session"
+      },
+      "horizontalTraining2": {
+        "label": "Horizontal Training 2",
+        "sublabel": "Sports practice session"
+      },
+      "sprintDrills": {
+        "label": "Sprint Drills",
+        "sublabel": "Speed training"
+      },
+      "teamSession": {
+        "label": "Team Session",
+        "sublabel": "Group training"
+      }
+    }
+  },
+  "newsCategories": {
+    "finance": "Finance",
+    "warehouse": "Warehousing",
+    "export": "Trade & Export",
+    "athlete": "Sports"
   }
 }

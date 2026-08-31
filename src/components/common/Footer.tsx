@@ -108,7 +108,7 @@ const Footer = () => {
 
         {/* Nav columns */}
         <h2 className="sr-only">{t("footer.siteFooter") || "Site footer navigation"}</h2>
-        <nav aria-label="Footer navigation" className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-3 lg:divide-x lg:divide-white/10">
+        <nav aria-label={t("footer.footerNav")} className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-3 lg:divide-x lg:divide-white/10">
           {/* Contact */}
           <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />

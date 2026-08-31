@@ -86,11 +86,11 @@ const Home = () => {
           <Reveal className="mx-auto max-w-2xl text-center">
             <Eyebrow color="var(--color-yellow)" className="mb-2">{t("homeReach.eyebrow", "Our Reach")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,4vw,40px)] font-bold leading-[1.15] text-white">
-              From local expertise to <br/><span className="text-(--color-yellow)">Global Opportunities</span>
+              {t("homeReach.taglineStart", "From local expertise to")} <br/><span className="text-(--color-yellow)">{t("homeReach.taglineAccent", "Global Opportunities")}</span>
             </h2>
             <div className="mx-auto mt-4 h-px w-16 bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
             <p className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 sm:leading-7 text-white/70">
-              Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders.
+              {t("homeReach.description", "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders.")}
             </p>
           </Reveal>
 
