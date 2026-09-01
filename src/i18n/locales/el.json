@@ -250,7 +250,7 @@
     "title": "Καριέρα στο Indexia Group",
     "titleAccent": "Εμάς.",
     "titleStart": "Χτίστε την Καριέρα σας με ",
-    "cultureBody1": "Η Indexia Group είναι ένας οργανισμός μάθησης, και ο πολιτισμός μας ξεκινά από την ομάδα μας. Επενδύουμε στους ανθρώπους μας — τα πιο πρόσφατα εργαλεία, πραγματική εκπαίδευση, ευέλικτες ώρες και έναν συνεργατικό και γνήσια διασκεδαστικό χώρο εργασίας. Η επικοινωνία εδώ είναι δίοδος, από τον πιο πρόσφατο υπάλληλο έως τη διοίκηση.",
+    "cultureBody1": "Η Indexia Group είναι ένας οργανισμός μάθησης, και ο πολιτισμός μας ξεκινά από την ομάδα μας. Επενδύουμε στους ανθρώπους μας, τα πιο πρόσφατα εργαλεία, πραγματική εκπαίδευση, ευέλικτες ώρες και έναν συνεργατικό και γνήσια διασκεδαστικό χώρο εργασίας. Η επικοινωνία εδώ είναι δίοδος, από τον πιο πρόσφατο υπάλληλο έως τη διοίκηση.",
     "cultureBody2": "Θα βρείτε τον ρυθμό μιας start-up, υποστηριζόμενη από τη σταθερότητα και τα οφέλη ενός καθιερωμένου ομίλου. Ψάχνουμε άτομα που μοιράζονται το πάθος μας για εξαιρετική εργασία. Αν είσαστε εσείς, θα χαρούμε να δούμε το βιογραφικό σας."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Φόρτωση θέσεων...",
-    "noPositions": "Δεν υπάρχουν διαθέσιμες θέσεις {{type}} αυτή τη στιγμή."
+    "noPositions": "Δεν υπάρχουν διαθέσιμες θέσεις {{type}} αυτή τη στιγμή.",
+    "fullTime": "Πλήρης απασχόληση",
+    "intern": "Πρακτική άσκηση"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group est une organisation apprenante et sa culture d'entreprise, c'est son équipe. Nos collaborateurs sont un atout précieux, et nous nous engageons à leur confier les missions technologiques les plus récentes et à leur offrir un environnement de travail agréable, collaboratif et axé sur l'esprit d'équipe. Nous croyons en offrant à nos équipes les expériences et les formations qui élargissent leurs connaissances existantes, avec des horaires flexibles, l'accent mis sur la communication ouverte et une politique de porte ouverte entre la direction et le personnel.",
-        "Από fin-tech και παγκόσμια εξαγωγή έως βιολογική γεωργία, ασφάλεια και ανάπτυξη αθλητών — δεν είστε περιορισμένοι σε μία κατηγορία.",
+        "Από fin-tech και παγκόσμια εξαγωγή έως βιολογική γεωργία, ασφάλεια και ανάπτυξη αθλητών, δεν είστε περιορισμένοι σε μία κατηγορία.",
         "Μάθετε, Εκπαιδευτείτε, Εξελιχθείτε",
         "Κάθε θέση περιλαμβάνει δομημένη εκπαίδευση, πρόσβαση σε εσωτερικά εργαστήρια και καθοδήγηση από senior ηγέτες.",
         "Παγκόσμια Εμπειρία, Τοπικές Ρίζες",

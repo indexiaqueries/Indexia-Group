@@ -466,7 +466,7 @@
     "ctaBody": "We are always looking for great people. Send your CV to hr.indexia@gmail.com and we will be in touch.",
     "metaDescription": "Careers at Indexia Group, a learning organization with opportunities across our diverse businesses. Mail your resume to start your career with us.",
     "mailResume": "Mail us your Resume –",
-    "cultureBody1": "Indexia Group is a learning organization, and our culture starts with our team. We invest in our people — the latest tools, real training, flexible hours, and a workplace that's collaborative and genuinely fun. Communication runs both ways here, from the newest hire straight through to management.",
+    "cultureBody1": "Indexia Group is a learning organization, and our culture starts with our team. We invest in our people, the latest tools, real training, flexible hours, and a workplace that's collaborative and genuinely fun. Communication runs both ways here, from the newest hire straight through to management.",
     "cultureBody2": "You'll find the pace of a start-up, backed by the stability and benefits of an established group. As we grow into new markets and new clients, we're looking for people who share our drive for doing exceptional work. If that's you, we'd love to see your resume."
   },
   "legal": {
@@ -561,7 +561,7 @@
     "subtitle": "A diversified Indian business group committed to integrity, expertise, and a people-first approach, spanning Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support.",
     "companiesEyebrow": "Our Companies",
     "companiesTitle": "Eight Businesses, One Vision",
-    "companiesSubtitle": "From the financial sector to a diversified group of eight businesses — each built on the same foundation of integrity, expertise, and results.",
+    "companiesSubtitle": "From the financial sector to a diversified group of eight businesses, each built on the same foundation of integrity, expertise, and results.",
     "c1Tag": "Multinational Fintech",
     "c1Name": "Indexia Finance",
     "c1Body": "Founded in 2012, Indexia Finance is India's largest international finance company with 5 branches across 4 cities. As a multinational fintech platform, it partners with 43+ banks and NBFCs to deliver personal loans, business loans, home loans, loan against property, balance transfer, car loans, credit cards, education loans, project loans, commercial purchase, lease rental discounting, and working capital solutions. The company operates globally across India, the US, Ecuador, South America, Amsterdam, Europe, and London. Winner of the Best Finance Company 2016 award at the Capital First Limited Leadership Awards.",
@@ -944,18 +944,18 @@
         },
         "securing-operations": {
           "title": "Securing Your Business Operations Online",
-          "body": "In an era of increasing cyber threats, securing your business operations online is no longer optional—it is essential. Start with strong authentication: use multi-factor authentication (MFA) for all business accounts and enforce password policies. Keep your software and systems updated with the latest security patches. Train employees to recognise phishing emails and social engineering attacks. Implement data encryption for sensitive information, both in transit and at rest. Regularly back up your data and test your recovery procedures. Consider partnering with a managed security provider for 24/7 monitoring and incident response."
+          "body": "In an era of increasing cyber threats, securing your business operations online is no longer optional-it is essential. Start with strong authentication: use multi-factor authentication (MFA) for all business accounts and enforce password policies. Keep your software and systems updated with the latest security patches. Train employees to recognise phishing emails and social engineering attacks. Implement data encryption for sensitive information, both in transit and at rest. Regularly back up your data and test your recovery procedures. Consider partnering with a managed security provider for 24/7 monitoring and incident response."
         }
       }
     },
     "careers": {
       "culture": [
         "Work Across Eight Diverse Businesses",
-        "From fintech and global export to organic agriculture, armed security, highway advertising, and athlete development — you are not locked into one vertical. Move between companies, pick up cross-industry skills, and build a career that grows with the group.",
+        "From fintech and global export to organic agriculture, armed security, highway advertising, and athlete development, you are not locked into one vertical. Move between companies, pick up cross-industry skills, and build a career that grows with the group.",
         "Learn, Train, Advance",
-        "Every role comes with structured on-the-job training, access to internal workshops, and mentorship from senior leaders across the group. We invest in people who want to grow — and we back that investment with real opportunities to lead, specialize, or switch tracks.",
+        "Every role comes with structured on-the-job training, access to internal workshops, and mentorship from senior leaders across the group. We invest in people who want to grow, and we back that investment with real opportunities to lead, specialize, or switch tracks.",
         "Global Exposure, Local Roots",
-        "Indexia operates across India, Ecuador, South America, and Europe. Depending on your role, you may work on cross-border projects, coordinate with international teams, or contribute to operations that span continents — all from offices in Mumbai, Delhi, or Shamli.",
+        "Indexia operates across India, Ecuador, South America, and Europe. Depending on your role, you may work on cross-border projects, coordinate with international teams, or contribute to operations that span continents, all from offices in Mumbai, Delhi, or Shamli.",
         "Flexible Hours, Real Accountability",
         "We trust our people to manage their time. Flexible working hours, open communication channels, and a culture that rewards initiative over hierarchy. You are measured by results, not hours at a desk."
       ],
@@ -1479,6 +1479,8 @@
   },
   "openRoles": {
     "loading": "Loading openings...",
-    "noPositions": "No {{type}} positions available at the moment."
+    "noPositions": "No {{type}} positions available at the moment.",
+    "fullTime": "Full-time",
+    "intern": "Intern"
   }
 }

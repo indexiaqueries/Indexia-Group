@@ -250,7 +250,7 @@
     "title": "Karriere bei Indexia Group",
     "titleAccent": "Uns.",
     "titleStart": "Baue Deine Karriere Mit ",
-    "cultureBody1": "Indexia Group ist eine lernende Organisation, und unsere Kultur beginnt bei unserem Team. Wir investieren in unsere Mitarbeiter — die neuesten Tools, echtes Training, flexible Arbeitszeiten und einen Arbeitsplatz, der kooperativ und wirklich macht. Kommunikation findet hier in beide Richtungen statt, vom neuesten Mitarbeiter bis hin zum Management.",
+    "cultureBody1": "Indexia Group ist eine lernende Organisation, und unsere Kultur beginnt bei unserem Team. Wir investieren in unsere Mitarbeiter, die neuesten Tools, echtes Training, flexible Arbeitszeiten und einen Arbeitsplatz, der kooperativ und wirklich macht. Kommunikation findet hier in beide Richtungen statt, vom neuesten Mitarbeiter bis hin zum Management.",
     "cultureBody2": "Sie werden das Tempo eines Start-ups finden, unterstützt von der Stabilität und den Vorteilen einer etablierten Gruppe. Wir wachsen in neue Märkte und neue Kunden und suchen Menschen, die unsere Leidenschaft für außergewöhnliche Arbeit teilen. Wenn Sie das sind, würden wir Ihren Lebenslauf gerne sehen."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Stellen werden geladen...",
-    "noPositions": "Derzeit keine {{type}}-Stellen verfügbar."
+    "noPositions": "Derzeit keine {{type}}-Stellen verfügbar.",
+    "fullTime": "Vollzeit",
+    "intern": "Praktikant"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group ist eine lernende Organisation und ihre Unternehmenskultur ist ihr Team. Unsere Mitarbeiter sind ein wertvolles Gut, und wir verpflichten uns, ihnen die neuesten Technologieprojekte und ein Arbeitsumfeld zu bieten, das Spaß macht, kollaborativ und teamorientiert ist. Wir glauben daran, unseren Mitarbeitern die Erfahrungen und Schulungsmöglichkeiten zu bieten, die ihr bestehendes Wissen erweitern, mit flexiblen Arbeitszeiten, dem Schwerpunkt auf offener Kommunikation und einer Politik der offenen Tür zwischen Management und Mitarbeitern.",
-        "Von Fintech und globalem Export bis hin zu Bio-Landwirtschaft, bewaffneter Sicherheit und Athletenförderung — Sie sind nicht auf eine Branche beschränkt.",
+        "Von Fintech und globalem Export bis hin zu Bio-Landwirtschaft, bewaffneter Sicherheit und Athletenförderung, Sie sind nicht auf eine Branche beschränkt.",
         "Lernen, Trainieren, Aufsteigen",
         "Jede Position beinhaltet strukturierte Weiterbildung, Zugang zu internen Workshops und Mentoring von Senior Führungskräften.",
         "Globale Erfahrung, Lokale Wurzeln",

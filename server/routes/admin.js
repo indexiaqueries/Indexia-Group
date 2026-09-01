@@ -8,7 +8,7 @@ const RESUME_DIR = path.resolve(__dirname, "../uploads/resumes");
 
 const router = Router();
 
-// Simple admin token auth — set ADMIN_TOKEN in .env
+// Simple admin token auth, set ADMIN_TOKEN in .env
 const ADMIN_TOKEN = process.env.ADMIN_TOKEN;
 
 function requireAuth(req, res, next) {
@@ -60,28 +60,28 @@ const escapeHtml = (value) =>
 
 const STATUS_CONFIG = {
   pending: {
-    subject: "Your application is under review — Indexia Group",
+    subject: "Your application is under review, Indexia Group",
     heading: "Application Under Review",
     message: "Your application for <strong>{role}</strong> at Indexia Group is currently under review by our HR team.",
     note: "We will get back to you shortly with an update.",
     color: "#f59e0b",
   },
   reviewed: {
-    subject: "Your application has been reviewed — Indexia Group",
+    subject: "Your application has been reviewed, Indexia Group",
     heading: "Application Reviewed",
     message: "Your application for <strong>{role}</strong> at Indexia Group has been reviewed by our HR team.",
     note: "If your profile matches our requirements, we will reach out to you for the next steps.",
     color: "#3b82f6",
   },
   shortlisted: {
-    subject: "Congratulations! You've been shortlisted — Indexia Group",
+    subject: "Congratulations! You've been shortlisted, Indexia Group",
     heading: "You've Been Shortlisted!",
     message: "Great news! Your application for <strong>{role}</strong> at Indexia Group has been shortlisted.",
     note: "Our HR team will contact you soon to schedule the next round of interviews. Please keep your phone accessible.",
     color: "#10b981",
   },
   rejected: {
-    subject: "Update on your application — Indexia Group",
+    subject: "Update on your application, Indexia Group",
     heading: "Application Update",
     message: "Thank you for applying for <strong>{role}</strong> at Indexia Group. After careful consideration, we have decided to move forward with other candidates at this time.",
     note: "We encourage you to apply again for future openings that match your skills. We wish you the very best in your career.",
@@ -120,7 +120,7 @@ function buildStatusEmail({ name, role, status }) {
           <p style="margin:0">Warm regards,<br />The Indexia Group HR Team</p>
         </div>
         <div style="padding:4px 24px 24px;color:#9ca3af;font-size:12px">
-          This is an automated notification — please do not reply to this email.
+          This is an automated notification, please do not reply to this email.
         </div>
       </div>
     </div>`;
@@ -151,7 +151,7 @@ router.patch("/applications/:id", requireAuth, async (req, res) => {
           to: app.email,
           ...buildStatusEmail({ name: app.name, role: app.roleTitle, status }),
         });
-        console.log(`[admin] Status email sent to ${app.email} — ${status}`);
+        console.log(`[admin] Status email sent to ${app.email}, ${status}`);
       } catch (mailErr) {
         console.error(`[admin] Failed to send status email to ${app.email}:`, mailErr.message);
       }

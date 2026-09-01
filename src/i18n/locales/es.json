@@ -250,7 +250,7 @@
     "title": "Empleo en Indexia Group",
     "titleAccent": "Nosotros.",
     "titleStart": "Construye Tu Carrera Con ",
-    "cultureBody1": "Indexia Group es una organización de aprendizaje, y nuestra cultura comienza con nuestro equipo. Invertimos en nuestro personal — las últimas herramientas, formación real, horarios flexibles y un lugar de trabajo colaborativo y genuinamente divertido. La comunicación fluye en ambas direcciones, desde el empleado más nuevo hasta la gerencia.",
+    "cultureBody1": "Indexia Group es una organización de aprendizaje, y nuestra cultura comienza con nuestro equipo. Invertimos en nuestro personal, las últimas herramientas, formación real, horarios flexibles y un lugar de trabajo colaborativo y genuinamente divertido. La comunicación fluye en ambas direcciones, desde el empleado más nuevo hasta la gerencia.",
     "cultureBody2": "Encontrarás el ritmo de una start-up, respaldado por la estabilidad y los beneficios de un grupo establecido. Buscamos personas que compartan nuestra pasión por hacer un trabajo excepcional. Si eres tú, nos encantaría ver tu currículum."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Cargando ofertas...",
-    "noPositions": "No hay posiciones de {{type}} disponibles."
+    "noPositions": "No hay posiciones de {{type}} disponibles.",
+    "fullTime": "Tiempo completo",
+    "intern": "Becario"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group es una organización que aprende y su cultura corporativa es su equipo. Nuestros empleados son un activo valioso, y estamos comprometidos a brindarles las asignaciones tecnológicas más recientes y un entorno de trabajo divertido, colaborativo y orientado al equipo. Creemos en ofrecer a nuestra gente las experiencias y oportunidades de formación que amplíen su base de conocimientos existente, con horarios flexibles, énfasis en la comunicación abierta y una política de puertas abiertas entre la dirección y el personal.",
-        "Desde fintech y exportación hasta agricultura orgánica, seguridad armada y desarrollo deportivo — no estás encerrado en una sola vertical.",
+        "Desde fintech y exportación hasta agricultura orgánica, seguridad armada y desarrollo deportivo, no estás encerrado en una sola vertical.",
         "Aprende, Entrena, Avanza",
         "Cada puesto incluye capacitación estructurada, acceso a talleres internos y mentoría de líderes senior.",
         "Exposición Global, Raíces Locales",

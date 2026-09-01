@@ -250,7 +250,7 @@
     "title": "קריירה ב-Indexia Group",
     "titleAccent": "אתנו.",
     "titleStart": "בנו את הקריירה שלכם עם ",
-    "cultureBody1": "קבוצת אינדקסיה היא ארגון למידה, והתרבות שלנו מתחילה מהצוות שלנו. אנחנו משקיעים באנשים שלנו — הכלים האחרונים, הכשרה אמיתית, שעות גמישות וסביבת עבודה שיתופית ומהנה באמת. התקשורת כאן הולכת לשני הכיוונים, מהעובד החדש ביותר דרך ההנהלה.",
+    "cultureBody1": "קבוצת אינדקסיה היא ארגון למידה, והתרבות שלנו מתחילה מהצוות שלנו. אנחנו משקיעים באנשים שלנו, הכלים האחרונים, הכשרה אמיתית, שעות גמישות וסביבת עבודה שיתופית ומהנה באמת. התקשורת כאן הולכת לשני הכיוונים, מהעובד החדש ביותר דרך ההנהלה.",
     "cultureBody2": "תמצאו את קצב של סטארט-אפ, מגובה על ידי היציבות והיתרונות של קבוצה מבוססת. אנחנו מחפשים אנשים ששותפים לתשוקה שלנו לעשייה יוצאת דופן. אם זה אתם, נשמח לראות את קורות החיים שלכם."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "טוען משרות...",
-    "noPositions": "אין משרות {{type}} זמינות כרגע."
+    "noPositions": "אין משרות {{type}} זמינות כרגע.",
+    "fullTime": "משרה מלאה",
+    "intern": "מתמחה"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group est une organisation apprenante et sa culture d'entreprise, c'est son équipe. Nos collaborateurs sont un atout précieux, et nous nous engageons à leur confier les missions technologiques les plus récentes et à leur offrir un environnement de travail agréable, collaboratif et axé sur l'esprit d'équipe. Nous croyons en offrant à nos équipes les expériences et les formations qui élargissent leurs connaissances existantes, avec des horaires flexibles, l'accent mis sur la communication ouverte et une politique de porte ouverte entre la direction et le personnel.",
-        "מפינטק וייצוא גלובלי לחקלאות אורגנית, אבטחה חמושה ופיתוח ספורטאים — אתה לא מוגבל לבחוד אחד.",
+        "מפינטק וייצוא גלובלי לחקלאות אורגנית, אבטחה חמושה ופיתוח ספורטאים, אתה לא מוגבל לבחוד אחד.",
         "למד, התאמן, התקדם",
         "כל תפקידות כולל הכשרה מובנת, גישה לסדנות פנימיות וחניכה ממנהיגים מאתרים בכירים.",
         "ניסיון גלובלי, שורשים מקומיים",

@@ -7,7 +7,7 @@ let connected = false;
 export async function connectDB() {
   if (connected) return;
   if (!MONGODB_URI) {
-    console.log("[db] MONGODB_URI not set — database features disabled.");
+    console.log("[db] MONGODB_URI not set, database features disabled.");
     return;
   }
   try {

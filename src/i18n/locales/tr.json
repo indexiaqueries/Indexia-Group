@@ -250,7 +250,7 @@
     "title": "Indexia Group'ta Kariyer",
     "titleAccent": "İnşa Edin.",
     "titleStart": "Kariyerinizi Bizimle ",
-    "cultureBody1": "Indexia Group öğrenen bir kuruluştur ve kültürümüz ekibimizle başlar. İnsanlarımıza yatırım yapıyoruz — en son araçlar, gerçek eğitim, esnek çalışma saatleri ve işbirlikçi ve gerçekten eğlenceli bir iş yeri. Burada iletişim her iki yönde de yürür, en yeni çalışandan yöneticilere kadar.",
+    "cultureBody1": "Indexia Group öğrenen bir kuruluştur ve kültürümüz ekibimizle başlar. İnsanlarımıza yatırım yapıyoruz, en son araçlar, gerçek eğitim, esnek çalışma saatleri ve işbirlikçi ve gerçekten eğlenceli bir iş yeri. Burada iletişim her iki yönde de yürür, en yeni çalışandan yöneticilere kadar.",
     "cultureBody2": "Bir start-up'ın ritmini, yerleşik bir grubun istikrarı ve avantajlarıyla bulacaksınız. Olağanüstü iş yapma tutkumuzu paylaşan insanlar arıyoruz. Siz buysanız, özgeçmişinizi görmek isteriz."
   },
   "common": {
@@ -814,7 +814,9 @@
   },
   "openRoles": {
     "loading": "Pozisyonlar yükleniyor...",
-    "noPositions": "Şu anda {{type}} pozisyonu bulunmuyor."
+    "noPositions": "Şu anda {{type}} pozisyonu bulunmuyor.",
+    "fullTime": "Tam zamanlı",
+    "intern": "Stajyer"
   },
   "pageContent": {
     "careers": {

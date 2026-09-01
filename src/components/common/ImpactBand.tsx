@@ -50,7 +50,7 @@ const ImpactBand = ({
         className="absolute inset-0 bg-linear-to-r from-(--color-ink-deep)/95 via-(--color-ink-deep)/76 to-(--color-ink-deep)/34"
       />
 
-      {/* Hairline frame — same device as the rest of the site, in place of a glow */}
+      {/* Hairline frame, same device as the rest of the site, in place of a glow */}
       <span aria-hidden="true" className={`absolute inset-x-0 top-0 h-px ${accentLine}`} />
       <span aria-hidden="true" className={`absolute inset-x-0 bottom-0 h-px ${accentLine}`} />
 

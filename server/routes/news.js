@@ -11,8 +11,8 @@ const router = Router();
  * GET /api/news
  * Returns all cached news articles grouped by category.
  * Query params:
- *   ?category=finance|warehouse|export|athlete  (optional — filters to one category)
- *   ?limit=5                                     (optional — max articles per category, default 5)
+ *   ?category=finance|warehouse|export|athlete  (optional, filters to one category)
+ *   ?limit=5                                     (optional, max articles per category, default 5)
  */
 router.get("/", async (req, res) => {
   try {

@@ -250,7 +250,7 @@
     "title": "Carriere in Indexia Group",
     "titleAccent": "Noi.",
     "titleStart": "Costruisci La Tua Carriera Con ",
-    "cultureBody1": "Indexia Group è un'organizzazione di apprendimento, e la nostra cultura inizia dal nostro team. Investiamo nelle nostre persone — gli strumenti più recenti, una formazione reale, orari flessibili e un posto di lavoro collaborativo e genuinamente divertente. La comunicazione qui va in entrambe le direzioni, dal dipendente più recente alla gestione.",
+    "cultureBody1": "Indexia Group è un'organizzazione di apprendimento, e la nostra cultura inizia dal nostro team. Investiamo nelle nostre persone, gli strumenti più recenti, una formazione reale, orari flessibili e un posto di lavoro collaborativo e genuinamente divertente. La comunicazione qui va in entrambe le direzioni, dal dipendente più recente alla gestione.",
     "cultureBody2": "Troverai il ritmo di una start-up, supportato dalla stabilità e dai vantaggi di un gruppo affermato. Cerchiamo persone che condividano la nostra passione per un lavoro eccezionale. Se sei tu, ci piacerebbe vedere il tuo curriculum."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Caricamento posizioni...",
-    "noPositions": "Nessuna posizione {{type}} disponibile al momento."
+    "noPositions": "Nessuna posizione {{type}} disponibile al momento.",
+    "fullTime": "Tempo pieno",
+    "intern": "Stagista"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group è un'organizzazione che apprende e la sua cultura aziendale è il suo team. I nostri dipendenti sono una risorsa preziosa e ci impegniamo a offrire loro i progetti tecnologici più recenti e un ambiente di lavoro divertente, collaborativo e orientato al team. Crediamo nel fornire alle nostre persone le esperienze e le opportunità di formazione che ampliano le loro conoscenze esistenti, con orari flessibili, l'enfasi sulla comunicazione aperta e una politica della porta aperta tra management e staff.",
-        "Dalla fintech e l'esportazione globale all'agricoltura biologica, sicurezza armata e sviluppo sportivo — non sei bloccato in una sola verticale.",
+        "Dalla fintech e l'esportazione globale all'agricoltura biologica, sicurezza armata e sviluppo sportivo, non sei bloccato in una sola verticale.",
         "Impara, Allena, Avanza",
         "Ogni ruolo prevede formazione strutturata, accesso a workshop interni e mentorship di leader senior.",
         "Esposizione Globale, Radici Locali",

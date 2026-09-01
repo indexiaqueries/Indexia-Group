@@ -116,7 +116,7 @@
     "radialWarehouseDesc": "Centre de location de terrain stratégique de 21 acres avec accès à 8 autoroutes et 8 États",
     "radialAdvertisingDesc": "Publicité sur panneaux d'autoroute atteignant des millions de navetteurs quotidiennement",
     "radialFoundationDesc": "Soutenir les athlètes indiens du terrain à Jeux Olympiques",
-    "hubLabel": "Hub",
+    "hubLabel": "Centre",
     "hubGroupLabel": "Groupe",
     "hubDescription": "Huit entreprises spécialisées œuvrant depuis une vision commune.",
     "visionaryTitle": "Le Visionnaire à l'origine du",
@@ -250,7 +250,7 @@
     "title": "Carrières chez Indexia Group",
     "titleAccent": "Nous.",
     "titleStart": "Construisez Votre Carrière Avec ",
-    "cultureBody1": "Indexia Group est une organisation d'apprentissage, et notre culture commence par notre équipe. Nous investissons dans nos personnes — les derniers outils, une vraie formation, des heures flexibles et un environnement de travail collaboratif et vraiment agréable. La communication est bidirectionnelle ici, du plus récent employé à la direction.",
+    "cultureBody1": "Indexia Group est une organisation d'apprentissage, et notre culture commence par notre équipe. Nous investissons dans nos personnes, les derniers outils, une vraie formation, des heures flexibles et un environnement de travail collaboratif et vraiment agréable. La communication est bidirectionnelle ici, du plus récent employé à la direction.",
     "cultureBody2": "Vous trouverez le rythme d'une start-up, soutenu par la stabilité et les avantages d'un groupe établi. Nous cherchons des personnes qui partagent notre passion pour un travail exceptionnel. Si c'est vous, nous aimerions voir votre CV."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Chargement des postes...",
-    "noPositions": "Aucun poste de {{type}} disponible pour le moment."
+    "noPositions": "Aucun poste de {{type}} disponible pour le moment.",
+    "fullTime": "Temps plein",
+    "intern": "Stagiaire"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group est une organisation apprenante et sa culture d'entreprise, c'est son équipe. Nos collaborateurs sont un atout précieux, et nous nous engageons à leur confier les missions technologiques les plus récentes et à leur offrir un environnement de travail agréable, collaboratif et axé sur l'esprit d'équipe. Nous croyons en offrant à nos équipes les expériences et les formations qui élargissent leurs connaissances existantes, avec des horaires flexibles, l'accent mis sur la communication ouverte et une politique de porte ouverte entre la direction et le personnel.",
-        "De la fintech à l'exportation mondiale, agriculture biologique, sécurité armée et développement sportif — vous n'êtes pas enfermé dans une seule verticale.",
+        "De la fintech à l'exportation mondiale, agriculture biologique, sécurité armée et développement sportif, vous n'êtes pas enfermé dans une seule verticale.",
         "Apprenez, Entraînez-vous, Avancez",
         "Chaque poste comprend une formation structurée, des ateliers internes et un mentorat de dirigeants seniors.",
         "Exposition Mondiale, Racines Locales",

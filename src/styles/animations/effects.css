@@ -1,5 +1,5 @@
 /* ================================================================
-   Visual Effects — Shimmer, image reveal
+   Visual Effects, Shimmer, image reveal
    ================================================================ */
 
 /* Gradient shimmer sweep across text on hover */
@@ -21,7 +21,7 @@
   animation: shimmer-sweep 3s ease-in-out infinite;
 }
 
-/* Image clip-path reveal — wipe from left */
+/* Image clip-path reveal, wipe from left */
 .img-reveal {
   clip-path: inset(0 100% 0 0);
   animation: img-reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;

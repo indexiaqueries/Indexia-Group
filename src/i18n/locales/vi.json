@@ -250,7 +250,7 @@
     "title": "Tuyển Dụng Tại Indexia Group",
     "titleAccent": "Chúng Tôi.",
     "titleStart": "Xây Dựng Sự Nghiệp Cùng ",
-    "cultureBody1": "Indexia Group là một tổ chức học hỏi, và văn hóa của chúng tôi bắt đầu từ đội ngũ của chúng tôi. Chúng tôi đầu tư vào con người — công cụ mới nhất, đào tạo thực tế, giờ làm linh hoạt và một môi trường làm việc hợp tác và thực sự thú vị. Giao tiếp ở đây diễn ra hai chiều, từ nhân viên mới nhất đến ban lãnh đạo.",
+    "cultureBody1": "Indexia Group là một tổ chức học hỏi, và văn hóa của chúng tôi bắt đầu từ đội ngũ của chúng tôi. Chúng tôi đầu tư vào con người, công cụ mới nhất, đào tạo thực tế, giờ làm linh hoạt và một môi trường làm việc hợp tác và thực sự thú vị. Giao tiếp ở đây diễn ra hai chiều, từ nhân viên mới nhất đến ban lãnh đạo.",
     "cultureBody2": "Bạn sẽ tìm thấy nhịp độ của một start-up, được hỗ trợ bởi sự ổn định và lợi ích của một tập đoàn đã được thiết lập. Chúng tôi tìm kiếm những người chia sẻ niềm đam mê làm việc xuất sắc. Nếu đó là bạn, chúng tôi rất muốn xem sơ yếu lý lịch của bạn."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Đang tải vị trí...",
-    "noPositions": "Hiện không có vị trí {{type}} nào."
+    "noPositions": "Hiện không có vị trí {{type}} nào.",
+    "fullTime": "Toàn thời gian",
+    "intern": "Thực tập sinh"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group là một tổ chức học tập, và văn hóa doanh nghiệp chính là đội ngũ của nó. Con người là tài sản lớn nhất của chúng tôi.",
-        "Từ công nghệ tài chính và xuất khẩu toàn cầu đến nông nghiệp hữu cộc, an ninh vỡ trang và phát triển vận động viên — bạn không bị giới hạn trong một lĩnh vực.",
+        "Từ công nghệ tài chính và xuất khẩu toàn cầu đến nông nghiệp hữu cộc, an ninh vỡ trang và phát triển vận động viên, bạn không bị giới hạn trong một lĩnh vực.",
         "Học hỏi, Huấn luyện, Thăng tiến",
         "Mỗi vị trí đều bao gồm đào tạo có cấu trúc, quyền tham gia workshop nội bộ và cổ vấn từ các nhà lậnh đạo cấp cao.",
         "Kinh nghiệm toàn cầu, Gốc rỉ địa phương",

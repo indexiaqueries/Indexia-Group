@@ -1,5 +1,5 @@
 /* ================================================================
-   Business Card — Mobile overrides and tap-to-reveal
+   Business Card, Mobile overrides and tap-to-reveal
    ================================================================ */
 
 @media (max-width: 767.98px) {
@@ -37,7 +37,7 @@
     opacity: 1;
   }
 
-  /* Home card overview + redirect button — hidden until tapped, then shown
+  /* Home card overview + redirect button, hidden until tapped, then shown
      below the name. */
   .business-card .card-reveal {
     position: static;

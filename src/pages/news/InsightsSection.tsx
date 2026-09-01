@@ -37,7 +37,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
                 <div
                   className={`${i !== insights.length - 1 ? "border-b border-slate-100" : ""}`}
                 >
-                  {/* Header — always visible */}
+                  {/* Header, always visible */}
                   <button
                     type="button"
                     onClick={() => toggle(i)}
@@ -59,7 +59,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
                     />
                   </button>
 
-                  {/* Body — collapsible */}
+                  {/* Body, collapsible */}
                   <div
                     className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
                       isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"

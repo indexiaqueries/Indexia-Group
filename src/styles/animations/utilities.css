@@ -1,5 +1,5 @@
 /* ================================================================
-   Animation Utilities — Apply keyframes to elements
+   Animation Utilities, Apply keyframes to elements
    ================================================================ */
 
 /* Stamp & pulse */
@@ -39,7 +39,7 @@
 .morph-zoom { animation: morph-zoom 0.8s ease-out both; }
 
 /* ================================================================
-   View Transitions API — smooth cross-fade between SPA pages
+   View Transitions API, smooth cross-fade between SPA pages
    ================================================================ */
 @view-transition {
   navigation: auto;
@@ -52,7 +52,7 @@
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* The header stays fixed — no transition */
+/* The header stays fixed, no transition */
 ::view-transition-old(site-header),
 ::view-transition-new(site-header) {
   animation: none;

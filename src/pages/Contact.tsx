@@ -104,7 +104,7 @@ const Contact = () => {
           </div>
 
           <div className="relative">
-            {/* Scroll arrows — outside overflow so they're never clipped */}
+            {/* Scroll arrows, outside overflow so they're never clipped */}
             <button
               onClick={() => scrollLocations(-1)}
               className="absolute -inset-s-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-700 shadow-lg ring-1 ring-slate-200 transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
@@ -120,7 +120,7 @@ const Contact = () => {
               <ChevronRight size={18} />
             </button>
 
-            {/* Scrollable area — clips only on x, not y */}
+            {/* Scrollable area, clips only on x, not y */}
             <div
               ref={scrollRef}
               className="flex gap-5 overflow-x-auto scroll-smooth pt-6 pb-20"

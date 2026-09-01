@@ -1,5 +1,5 @@
 /* ================================================================
-   Card Shine — Glass reflection sweep on hover
+   Card Shine, Glass reflection sweep on hover
    ================================================================ */
 
 /* Standard card shine */
@@ -28,7 +28,7 @@
   transition: 600ms linear;
 }
 
-/* Double shine — used by CompanyHighlights featured card */
+/* Double shine, used by CompanyHighlights featured card */
 .pointers-main-shine {
   position: absolute;
   inset: 0;

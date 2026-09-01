@@ -1,5 +1,5 @@
 /* ================================================================
-   Reduced Motion — Disable all animations for accessibility
+   Reduced Motion, Disable all animations for accessibility
    ================================================================ */
 
 @media (prefers-reduced-motion: reduce) {

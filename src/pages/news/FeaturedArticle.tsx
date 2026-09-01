@@ -16,7 +16,7 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
   return (
     <Reveal>
       <article className="group relative grid overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg lg:grid-cols-[42%_1fr]">
-        {/* Image — left side */}
+        {/* Image, left side */}
         <div className="relative overflow-hidden">
           {hasImage ? (
             <img
@@ -37,7 +37,7 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
           )}
         </div>
 
-        {/* Content — right side */}
+        {/* Content, right side */}
         <div
           className="relative flex min-h-70 flex-col justify-between overflow-hidden p-8 text-white sm:p-10"
           style={{ background: `linear-gradient(135deg, ${colors.navyDeep}, ${colors.navyMid})` }}

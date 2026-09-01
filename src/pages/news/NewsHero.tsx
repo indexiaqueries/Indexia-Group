@@ -3,7 +3,7 @@ import Eyebrow from "../../components/common/Eyebrow";
 import HeroBackdrop from "../../components/banners/HeroBackdrop";
 const newsBg = "/images/heroes/news-hero.webp";
 
-// Sections the group publishes across — same source of truth as the careers page ticker.
+// Sections the group publishes across, same source of truth as the careers page ticker.
 const SECTIONS_KEYS = ["finance", "tradeExport", "agriculture", "security", "advertising", "sport"] as const;
 
 const NewsHero = () => {

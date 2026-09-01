@@ -250,7 +250,7 @@
     "title": "Carrières bij Indexia Group",
     "titleAccent": "Ons.",
     "titleStart": "Bouw Uw Carrière Met ",
-    "cultureBody1": "Indexia Group is een lerende organisatie, en onze cultuur begint bij ons team. We investeren in onze mensen — de nieuwste tools, echte training, flexibele uren en een werkplek die collaboratief en echt leuk is. Communicatie gaat hier in beide richtingen, van de nieuwste medewerker tot het management.",
+    "cultureBody1": "Indexia Group is een lerende organisatie, en onze cultuur begint bij ons team. We investeren in onze mensen, de nieuwste tools, echte training, flexibele uren en een werkplek die collaboratief en echt leuk is. Communicatie gaat hier in beide richtingen, van de nieuwste medewerker tot het management.",
     "cultureBody2": "Je vindt het tempo van een start-up, ondersteund door de stabiliteit en voordelen van een gevestigde groep. We zoeken mensen die onze passie delen voor uitzonderlijk werk. Als dat jij bent, willen we graag je CV zien."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Vacatures laden...",
-    "noPositions": "Momenteel geen {{type}}-vacatures beschikbaar."
+    "noPositions": "Momenteel geen {{type}}-vacatures beschikbaar.",
+    "fullTime": "Voltijd",
+    "intern": "Stage"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group is een lerende organisatie, en haar bedrijfscultuur is haar team. Onze mensen zijn ons grootste bezit.",
-        "Van fintech en wereldwijde export tot biologische landbouw, gewapende beveiliging en atletenontwikkeling — u bent niet beperkt tot één sector.",
+        "Van fintech en wereldwijde export tot biologische landbouw, gewapende beveiliging en atletenontwikkeling, u bent niet beperkt tot één sector.",
         "Leer, Train, Groei",
         "Elke functie omvat gestructureerde opleiding, toegang tot interne workshops en mentoring van senior leiders.",
         "Wereldwijde Ervaring, Lokale Wortels",

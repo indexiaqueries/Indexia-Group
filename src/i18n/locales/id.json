@@ -250,7 +250,7 @@
     "title": "Karir di Indexia Group",
     "titleAccent": "Kami.",
     "titleStart": "Bangun Karier Anda Bersama ",
-    "cultureBody1": "Indexia Group adalah organisasi pembelajaran, dan budaya kami dimulai dari tim kami. Kami berinvestasi pada orang-orang kami — alat terbaru, pelatihan nyata, jam kerja fleksibel, dan tempat kerja yang kolaboratif dan benar-benar menyenangkan. Komunikasi di sini berjalan dua arah, dari karyawan terbaru hingga manajemen.",
+    "cultureBody1": "Indexia Group adalah organisasi pembelajaran, dan budaya kami dimulai dari tim kami. Kami berinvestasi pada orang-orang kami, alat terbaru, pelatihan nyata, jam kerja fleksibel, dan tempat kerja yang kolaboratif dan benar-benar menyenangkan. Komunikasi di sini berjalan dua arah, dari karyawan terbaru hingga manajemen.",
     "cultureBody2": "Anda akan menemukan kecepatan start-up, didukung oleh stabilitas dan manfaat grup yang sudah mapan. Kami mencari orang yang membagi semangat kami untuk melakukan pekerjaan luar biasa. Jika itu Anda, kami ingin melihat resume Anda."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Memuat lowongan...",
-    "noPositions": "Tidak ada posisi {{type}} yang tersedia saat ini."
+    "noPositions": "Tidak ada posisi {{type}} yang tersedia saat ini.",
+    "fullTime": "Penuh waktu",
+    "intern": "Magang"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group adalah organisasi pembelajaran, dan budaya perusahaan adalah timnya. Orang-orang kami adalah aset terbesar kami.",
-        "Dari fintech dan ekspor global hingga pertanian organik, keamanan bersenjata, dan pengembangan atlet — Anda tidak terkunci dalam satu vertikal.",
+        "Dari fintech dan ekspor global hingga pertanian organik, keamanan bersenjata, dan pengembangan atlet, Anda tidak terkunci dalam satu vertikal.",
         "Belajar, Latih, Maju",
         "Setiap peran dilengkapi pelatihan terstruktur, akses workshop internal, dan bimbingan dari pemimpin senior.",
         "Paparan Global, Akar Lokal",

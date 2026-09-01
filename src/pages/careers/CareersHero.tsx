@@ -114,7 +114,7 @@ const CareersHero = () => {
         <CareerHeroBg />
         <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-(--color-ink-deep)/75 via-(--color-ink-deep)/45 to-(--color-ink-deep)/90" />
 
-        {/* Ledger rule lines — the one texture device, standing in for the paper trail of a finance & export group */}
+        {/* Ledger rule lines, the one texture device, standing in for the paper trail of a finance & export group */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 opacity-60"

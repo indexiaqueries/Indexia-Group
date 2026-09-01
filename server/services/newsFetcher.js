@@ -44,7 +44,7 @@ function deduplicateByTitle(articles) {
     // Check against all previously seen titles
     for (const entry of seen) {
       if (jaccardSimilarity(words, entry.words) >= 0.7) {
-        return false; // too similar — duplicate
+        return false; // too similar, duplicate
       }
     }
     seen.push({ words });
@@ -118,17 +118,17 @@ async function fetchPage(url, retries = MAX_RETRIES) {
 
   if (response.status === 429) {
     if (retries > 0) {
-      console.log(`[news] Rate limited (429) — waiting ${RETRY_DELAY_MS / 1000}s then retrying (${retries} left)...`);
+      console.log(`[news] Rate limited (429), waiting ${RETRY_DELAY_MS / 1000}s then retrying (${retries} left)...`);
       await wait(RETRY_DELAY_MS);
       return fetchPage(url, retries - 1);
     }
-    console.error(`[news] Rate limited (429) — no retries left, skipping.`);
+    console.error(`[news] Rate limited (429), no retries left, skipping.`);
     return { articles: [], nextPage: null };
   }
 
   if (!response.ok) {
     const body = await response.text().catch(() => "");
-    console.error(`[news] API error: ${response.status} — ${body}`);
+    console.error(`[news] API error: ${response.status}, ${body}`);
     return { articles: [], nextPage: null };
   }
 
@@ -144,7 +144,7 @@ async function fetchPage(url, retries = MAX_RETRIES) {
  */
 async function fetchCategoryNews(category) {
   if (!NEWSDATA_API_KEY) {
-    console.log("[news] NEWSDATA_API_KEY not set — skipping fetch.");
+    console.log("[news] NEWSDATA_API_KEY not set, skipping fetch.");
     return [];
   }
 
@@ -162,7 +162,7 @@ async function fetchCategoryNews(category) {
   nextPage = first.nextPage;
   pagesFetched = 1;
 
-  // Pages 2+ — follow pagination token with delay between each request
+  // Pages 2+, follow pagination token with delay between each request
   for (let page = 2; page <= MAX_PAGES_PER_CATEGORY && nextPage; page++) {
     await wait(REQUEST_DELAY_MS);
     const pageUrl = `${baseUrl}&page=${nextPage}`;
@@ -228,8 +228,8 @@ export async function fetchAndStoreNews() {
         await NewsArticle.insertMany(newArticles, { ordered: false });
         totalStored += newArticles.length;
       } catch (err) {
-        // ordered:false means partial inserts are OK — log the error for debugging
-        console.error(`[news] ${category}: insertMany error —`, err.message);
+        // ordered:false means partial inserts are OK, log the error for debugging
+        console.error(`[news] ${category}: insertMany error -`, err.message);
         // Count how many actually got inserted
         const insertedCount = err.insertedDocs?.length || 0;
         totalStored += insertedCount;
@@ -239,7 +239,7 @@ export async function fetchAndStoreNews() {
       }
     }
 
-    // Keep only the top MAX_PER_CATEGORY per category — delete older ones
+    // Keep only the top MAX_PER_CATEGORY per category, delete older ones
     const allCategoryArticles = await NewsArticle.find({ category })
       .sort({ pubDate: -1 })
       .select("_id");

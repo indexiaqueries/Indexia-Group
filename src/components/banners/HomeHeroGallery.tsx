@@ -27,7 +27,7 @@ const HomeHeroGallery = ({
   const trackRef = useRef<HTMLDivElement>(null);
   const xRef = useRef(0);
   const pitchRef = useRef(0);
-  // xRef / content index at the moment the active panel was last centered —
+  // xRef / content index at the moment the active panel was last centered -
   // the drag math is relative to this baseline, so mid-drag autoplay advances
   // (which skip recentering) can't corrupt the snap calculation.
   const centeredXRefRef = useRef(0);

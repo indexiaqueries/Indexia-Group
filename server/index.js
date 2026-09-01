@@ -40,7 +40,7 @@ if (smtpConfigured) {
 
 async function sendMail({ to = mailTo, subject, text, html }) {
   if (!transporter) {
-    console.log(`\n[mail:dev] SMTP not configured — email NOT sent.\nTo: ${to}\nSubject: ${subject}\n${text}\n`);
+    console.log(`\n[mail:dev] SMTP not configured, email NOT sent.\nTo: ${to}\nSubject: ${subject}\n${text}\n`);
     return { delivered: false, dev: true };
   }
   await transporter.sendMail({ from: mailFrom, to, subject, text, html });
@@ -82,7 +82,7 @@ function buildContactEmail({ name, phone, email, subject, message }) {
     <div style="font-family:Arial,Helvetica,sans-serif;background:#f8fafc;padding:24px">
       <div style="max-width:560px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden">
         <div style="background:#066a9c;color:#ffffff;padding:20px 24px;font-size:18px;font-weight:700">
-          New Website Enquiry — ${escapeHtml(cleanSubject)}
+          New Website Enquiry, ${escapeHtml(cleanSubject)}
         </div>
         <table style="width:100%;border-collapse:collapse;padding:0 24px">
           <tr><td style="padding:20px 24px 0">
@@ -274,7 +274,7 @@ async function seedOpenings() {
   try {
     const count = await JobOpening.countDocuments();
     if (count > 0) return;
-    console.log("[seed] No openings found — seeding from defaults...");
+    console.log("[seed] No openings found, seeding from defaults...");
     const defaults = [
       { title: "Finance Intern", department: "Finance", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Gain hands-on experience in financial operations, loan processing, and banking procedures.", requirements: ["Currently pursuing or recently completed degree in Finance/Commerce", "Interest in financial services and banking", "Proficiency in MS Excel and basic financial tools"] },
       { title: "HR Intern", department: "Human Resources", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Learn end-to-end HR processes including recruitment, onboarding, and employee management.", requirements: ["Currently pursuing or recently completed degree in HR/Management", "Strong communication and interpersonal skills", "Basic knowledge of HR practices"] },
@@ -349,7 +349,7 @@ function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, dep
     <div style="font-family:Arial,Helvetica,sans-serif;background:#f8fafc;padding:24px">
       <div style="max-width:560px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden">
         <div style="background:#26ae90;color:#ffffff;padding:20px 24px;font-size:18px;font-weight:700">
-          Job Application — ${escapeHtml(cleanRole)}
+          Job Application, ${escapeHtml(cleanRole)}
         </div>
         <table style="width:100%;border-collapse:collapse;padding:0 24px">
           <tr><td style="padding:20px 24px 0">
@@ -371,13 +371,13 @@ function buildApplyEmail({ name, email, phone, experience, intro, roleTitle, dep
       </div>
     </div>`;
 
-  return { subject: `New job application for ${cleanRole} — ${name}`, text, html };
+  return { subject: `New job application for ${cleanRole}, ${name}`, text, html };
 }
 
 function buildApplyAutoReply({ name, roleTitle }) {
   const cleanRole = (roleTitle || "the position").trim();
   return {
-    subject: "Application Received — Indexia Group",
+    subject: "Application Received, Indexia Group",
     text: [
       `Hi ${name},`,
       "",
@@ -402,7 +402,7 @@ function buildApplyAutoReply({ name, roleTitle }) {
             <p style="margin:0">Warm regards,<br />The Indexia Group HR Team</p>
           </div>
           <div style="padding:4px 24px 24px;color:#9ca3af;font-size:12px">
-            This is an automated acknowledgement — please do not reply to this email.
+            This is an automated acknowledgement, please do not reply to this email.
           </div>
         </div>
       </div>`,
@@ -425,7 +425,7 @@ app.post("/api/apply", upload.single("resume"), async (req, res) => {
   }
 
   try {
-    // Save to MongoDB — handle both disk and memory storage
+    // Save to MongoDB, handle both disk and memory storage
     const appData = {
       name,
       email,
@@ -528,7 +528,7 @@ if (existsSync(path.join(DIST_DIR, "index.html"))) {
 }
 } // end if (!IS_VERCEL)
 
-// SPA fallback — serve index.html for all non-API GET requests.
+// SPA fallback, serve index.html for all non-API GET requests.
 // On Vercel the Express app is invoked as a serverless function and the
 // rewrites in vercel.json may not reach the static file, so we handle it
 // here as well.  On the standalone server the express.static middleware
@@ -554,7 +554,7 @@ const isDirectRun =
 if (isDirectRun) {
   app.listen(PORT, () => {
     console.log(`Indexia backend listening on http://localhost:${PORT}`);
-    console.log(smtpConfigured ? `Email delivery via SMTP → ${mailTo}` : "SMTP not configured — emails will be logged to the console (dev mode). Set SMTP_* env vars to enable delivery.");
+    console.log(smtpConfigured ? `Email delivery via SMTP → ${mailTo}` : "SMTP not configured, emails will be logged to the console (dev mode). Set SMTP_* env vars to enable delivery.");
   });
 }
 

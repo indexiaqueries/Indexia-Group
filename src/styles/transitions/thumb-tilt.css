@@ -1,5 +1,5 @@
 /* ================================================================
-   Thumbnail Tilt — 3D pointer tilt + hover scale via CSS custom props
+   Thumbnail Tilt, 3D pointer tilt + hover scale via CSS custom props
    ================================================================ */
 
 .thumb-tilt {
@@ -17,7 +17,7 @@
   --tilt-scale: 0.96;
 }
 
-/* Snap pulse — subtle scale bounce when thumbnail becomes active */
+/* Snap pulse, subtle scale bounce when thumbnail becomes active */
 @keyframes thumb-snap-pulse {
   0%   { transform: scale(1); }
   40%  { transform: scale(1.08); }

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0c3652" />
 
-    <!-- LCP image preload — srcset-based responsive preloading (q80 for fast LCP on slow connections) -->
+    <!-- LCP image preload, srcset-based responsive preloading (q80 for fast LCP on slow connections) -->
     <link rel="preload" as="image" href="/IndexiaGroup-mobile-q80.webp" fetchpriority="high" imagesrcset="/IndexiaGroup-mobile-q80.webp 900w, /IndexiaGroup-q80.webp 1900w" imagesizes="100vw" />
 
-    <!-- Self-hosted Fraunces — inlined to eliminate render-blocking chain -->
+    <!-- Self-hosted Fraunces, inlined to eliminate render-blocking chain -->
     <link rel="preload" as="font" type="font/woff2" href="/fonts/fraunces-700.woff2" crossorigin />
     <style>@font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:optional;src:url('/fonts/fraunces-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:optional;src:url('/fonts/fraunces-600.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:optional;src:url('/fonts/fraunces-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
 
@@ -123,7 +123,7 @@
     </script>
   </head>
   <body>
-    <!-- Static hero — stays permanently, React renders on top via z-index. No MutationObserver = zero CLS. -->
+    <!-- Static hero, stays permanently, React renders on top via z-index. No MutationObserver = zero CLS. -->
     <div id="lcp-hero" style="position:fixed;inset:0;z-index:0;overflow:hidden;background:#0c3652">
       <img
         src="/IndexiaGroup-mobile-q80.webp"

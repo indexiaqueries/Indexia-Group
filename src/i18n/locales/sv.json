@@ -250,7 +250,7 @@
     "title": "Karriär på Indexia Group",
     "titleAccent": "oss.",
     "titleStart": "Bygg din karriär med ",
-    "cultureBody1": "Indexia Group är en lärande organisation, och vår kultur börjar med vårt team. Vi investerar i våra anställda — de senaste verktygen, riktig utbildning, flexibla arbetstimmar och en arbetsplats som är samarbetande och genuint rolig. Kommunikationen här går åt båda hållen, från den nyaste anställda till ledningen.",
+    "cultureBody1": "Indexia Group är en lärande organisation, och vår kultur börjar med vårt team. Vi investerar i våra anställda, de senaste verktygen, riktig utbildning, flexibla arbetstimmar och en arbetsplats som är samarbetande och genuint rolig. Kommunikationen här går åt båda hållen, från den nyaste anställda till ledningen.",
     "cultureBody2": "Du hittar tempot hos en start-up, stödd av stabiliteten och förmånerna hos en etablerad grupp. Vi söker människor som delar vår passion för att göra exceptionellt arbete. Om det är dig, skulle vi gärna se ditt CV."
   },
   "common": {
@@ -814,13 +814,15 @@
   },
   "openRoles": {
     "loading": "Laddar lediga jobb...",
-    "noPositions": "Inga {{type}}-tillfällen just nu."
+    "noPositions": "Inga {{type}}-tillfällen just nu.",
+    "fullTime": "Heltid",
+    "intern": "Praktik"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group är en lärande organisation, och dess företagskultur är dess team. Våra människor är vår största tillgång.",
-        "Från fin-tech och global export till organiskt jordbruk, beväpnad säkerhet och idrottsutveckling — du är inte begränsad till en vertikal.",
+        "Från fin-tech och global export till organiskt jordbruk, beväpnad säkerhet och idrottsutveckling, du är inte begränsad till en vertikal.",
         "Lär dig, Träna, Utvecklas",
         "Varje roll inkluderar strukturerad utbildning, tillgång till interna workshops och mentorer från seniora ledare.",
         "Global Erfarenhet, Lokala Rötter",

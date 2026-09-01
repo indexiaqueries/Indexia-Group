@@ -250,7 +250,7 @@
     "title": "Kariera w Indexia Group",
     "titleAccent": "Nami.",
     "titleStart": "Buduj Swoją Karierę Z ",
-    "cultureBody1": "Indexia Group to organizacja ucząca się, a nasza kultura zaczyna się od naszego zespołu. Inwestujemy w naszych ludzi — najnowsze narzędzia, prawdziwe szkolenia, elastyczne godziny i miejsce pracy, które jest colaboratywne i naprawdę zabawne. Komunikacja tutaj odbywa się w obie strony, od najnowszego pracownika aż po kierownictwo.",
+    "cultureBody1": "Indexia Group to organizacja ucząca się, a nasza kultura zaczyna się od naszego zespołu. Inwestujemy w naszych ludzi, najnowsze narzędzia, prawdziwe szkolenia, elastyczne godziny i miejsce pracy, które jest colaboratywne i naprawdę zabawne. Komunikacja tutaj odbywa się w obie strony, od najnowszego pracownika aż po kierownictwo.",
     "cultureBody2": "Znajdziesz tempo start-upu, wsparte stabilnością i korzyściami ugruntowanej grupy. Szukamy ludzi, którzy podzielają naszą pasję do wykonywania wyjątkowej pracy. Jeśli to Ty, chętnie zobaczymy Twoje CV."
   },
   "common": {
@@ -815,13 +815,15 @@
   },
   "openRoles": {
     "loading": "Ładowanie ofert...",
-    "noPositions": "Brak dostępnych stanowisk {{type}} w tej chwili."
+    "noPositions": "Brak dostępnych stanowisk {{type}} w tej chwili.",
+    "fullTime": "Pełny etat",
+    "intern": " stażysta"
   },
   "pageContent": {
     "careers": {
       "culture": [
         "Indexia Group to organizacja ucząca się, a jej kultura korporacyjna to jej zespół. Nasi ludzie są naszym największym atutem.",
-        "Od fintechu i eksportu globalnego po rolnictwo ekologiczne, ochronę zbrojną i rozwój sportowców — nie jesteś ograniczony do jednej branży.",
+        "Od fintechu i eksportu globalnego po rolnictwo ekologiczne, ochronę zbrojną i rozwój sportowców, nie jesteś ograniczony do jednej branży.",
         "Ucz się, Trenuj, Awansuj",
         "Każda rola obejmuje szkolenie, dostęp do warsztatów wewnętrznych i mentoring od starszych liderów.",
         "Globalne Doświadczenie, Lokalne Korzenie",
