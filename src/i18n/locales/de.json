@@ -91,7 +91,7 @@
     "value1Body": "Wir tun, was wir sagen. Jede Beziehung basiert auf Ehrlichkeit, Transparenz und gegenseitigem Respekt.",
     "value1Title": "Integrität",
     "value2Body": "Wir investieren in tiefes Fachwissen in jedem Bereich. Unsere Teams bringen spezialisierte Fähigkeiten und Branchenerfahrung mit.",
-    "value2Title": "Expertise",
+    "value2Title": "Fachkenntnis",
     "value3Body": "Geschäft dreht sich letztlich um Menschen. Wir entwickeln Lösungen, die unsere Kunden stärken, unsere Gemeinschaften unterstützen und bedeutungsvolle Möglichkeiten für unser Team schaffen.",
     "value3Title": "Menschen zuerst",
     "value4Body": "Wir umarmen Veränderung und verbessern uns kontinulierlich. Von Fintech-Plattformen bis hin zur organischen Landwirtschaft investieren wir in Ideen, die Branchen voranbringen.",
@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regulierung",
-          "excerpt": "Die Börsenaufsichtsbehörde Indiens hat eine Untersuchung über das vermutete Informationsleck im Zusammenhang mit HDFC eingeleitet."
+          "excerpt": "Die Börsenaufsichtsbehörde Indiens hat eine Untersuchung über das vermutete Informationsleck im Zusammenhang mit HDFC eingeleitet.",
+          "title": "SEBI warnt vor Informationsleck bei HDFC-Fonds"
         },
         "uidai-aadhaar-banks": {
           "category": "Politik",
@@ -1331,10 +1332,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "FDI-Förderung in Schwellen- und Industrieländern",
+        "NBFC-Operationen mit regulierten Kreditrahmen",
+        "Bank- und institutionelle Finanzierung für Großprojekte",
+        "Grenzüberschreitende Kapitallösungen für multinationale Kunden"
       ]
     },
     "finserve": {
@@ -1356,10 +1357,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Privat-, Wohn- und Geschäftskredite zu wettbewerbsfähigen Zinsen",
+        "MSME- und Projektfinanzierung mit flexiblen Konditionen",
+        "Kontoübertrag und Kredit gegen Immobilie Optionen",
+        "Zugewiesener Betreuer von der Anfrage bis zur Auszahlung"
       ]
     },
     "overseas": {
@@ -1381,10 +1382,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Premium-Raffinadezucker und essbare Waren Exporte",
+        "Full-Cycle-Management, Beschaffung, QA, Logistik, Compliance",
+        "Vertrauenswürdiger Partner für Großabnehmer und institutionelle Verbraucher",
+        "Tiefes Verständnis der südamerikanischen Handelsdynamik"
       ]
     },
     "agro-bio": {
@@ -1406,10 +1407,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Basierte Bio-Lösungen, die mit der Natur arbeiten",
+        "Bodengesundheitsbewertung und maßgeschneiderte Düngemittel",
+        "Ernteertrags-Optimierung mit praktischer Landwirtschaftsschulung",
+        "Erweiterung des nationalen und internationalen Vertriebsnetzes"
       ]
     },
     "securities": {
@@ -1431,10 +1432,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Personenschutz für Politiker und Unternehmensführer",
+        "Unternehmens-, Industrie- und Veranstaltungssicherheit",
+        "Echtzeitüberwachung mit technologiegestützter Überwachung",
+        "Schnell einsetzbare Kommando- und Reaktionseinheiten"
       ]
     },
     "warehouse": {
@@ -1456,10 +1457,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "5 Standorte mit flexiblen Grundstücken von 1 bis 8 Acres",
+        "Direkter Zugang zu Häfen in Gujarat, Maharashtra, Chennai, Kolkata",
+        "IGI Airport Delhi und Noida Int'l Airport innerhalb 1 Stunde",
+        "Modernes Lagerhaus auf 2 Acres mit Ladebrücken geplant"
       ]
     },
     "advertising": {
@@ -1481,10 +1482,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "10×20 ft und 12×24 ft Unipole-Pakete verfügbar",
+        "Strategische Platzierungen an NH-709B und Shamli Ring Road",
+        "End-to-End-Service, Druck, Installation, Wartung",
+        "Langfristige und Großpakete mit verhandelbaren Preisen"
       ]
     },
     "foundation": {
@@ -1506,10 +1507,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Trainingsstätten nach internationalem Standard und Expertencoaching",
+        "Vollständige Ernährung, Ernährungsplanung und Sportmedizin",
+        "Wettbewerbsfinanzierung, Ausrüstung und psychologische Unterstützung",
+        "Aufbau einer nachhaltigen Pipeline von Weltklasse-Athleten"
       ]
     }
   },

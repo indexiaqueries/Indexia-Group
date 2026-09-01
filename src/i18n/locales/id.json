@@ -349,7 +349,7 @@
     "cta": "Punya pertanyaan tentang salah satu perusahaan grup kami?",
     "enquiry": "Kirim pertanyaan Anda.",
     "hours": "Sen - Sab: 9 AM - 6 PM",
-    "legal": "Legal",
+    "legal": "Hukum",
     "links": {
       "aboutUs": "Tentang Kami",
       "advertise": "Beriklan Bersama Kami",
@@ -531,7 +531,7 @@
     "contactBody": "Tulis ke kami di contactus@indexiagroup.com atau kirim pertanyaan dan tim kami akan menghubungi Anda.",
     "contactHeading": "Punya pertanyaan tentang kebijakan ini?",
     "contactUs": "Hubungi Kami",
-    "eyebrow": "Legal",
+    "eyebrow": "Hukum",
     "lastUpdated": "Terakhir diperbarui",
     "metaPrivacyDescription": "Baca Kebijakan Privasi Indexia Group, cara kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda.",
     "metaTermsDescription": "Baca Syarat & Ketentuan yang mengatur penggunaan situs web Indexia Group dan layanan perusahaannya.",
@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regulasi",
-          "excerpt": "Otoritas Pasar Modal India telah memulai penyelidikan dugaan kebocoran informasi non-publik terkait HDFC."
+          "excerpt": "Otoritas Pasar Modal India telah memulai penyelidikan dugaan kebocoran informasi non-publik terkait HDFC.",
+          "title": "SEBI memperingatkan kebocoran informasi di dana HDFC"
         },
         "uidai-aadhaar-banks": {
           "category": "Perbankan Digital",
@@ -1332,10 +1333,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "Fasilitasi PDI di pasar berkembang dan maju",
+        "Operasi NBFC dengan kerangka pinjaman yang diatur",
+        "Pembiayaan perbankan dan institusional untuk proyek berskala besar",
+        "Solusi modal lintas batas untuk klien multinasional"
       ]
     },
     "finserve": {
@@ -1357,10 +1358,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Pinjaman pribadi, rumah, dan bisnis dengan tarif kompetitif",
+        "Pembiayaan UMKM dan proyek dengan syarat fleksibel",
+        "Opsi transfer saldo dan pinjaman dengan agunan properti",
+        "Manajer hubungan khusus ditugaskan dari pertanyaan hingga pencairan"
       ]
     },
     "overseas": {
@@ -1382,10 +1383,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Ekspor gula raffin premium dan komoditas pangan",
+        "Manajemen siklus penuh, pengadaan, QA, logistik, kepatuhan",
+        "Mitra terpercaya untuk pembeli grosir dan konsumen institusional",
+        "Pemahaman mendalam tentang dinamika perdagangan Amerika Selatan"
       ]
     },
     "agro-bio": {
@@ -1407,10 +1408,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Solusi berbasis biologi yang bekerja dengan alam, bukan melawannya",
+        "Penilaian kesehatan tanah dan campuran pupuk yang disesuaikan",
+        "Optimasi hasil panen dengan pelatihan praktis petani",
+        "Perluasan jaringan distribusi domestik dan internasional"
       ]
     },
     "securities": {
@@ -1432,10 +1433,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Detail perlindungan dekat untuk politisi dan pemimpin korporat",
+        "Manajemen keamanan korporat, industri, dan acara",
+        "Pengawasan real-time dengan pemantauan berbasis teknologi",
+        "Unit komando dan respons penempatan cepat"
       ]
     },
     "warehouse": {
@@ -1457,10 +1458,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "5 lokasi dengan lahan fleksibel dari 1 hingga 8 hektar",
+        "Akses langsung ke pelabuhan Gujarat, Maharashtra, Chennai, Kolkata",
+        "Bandara IGI Delhi dan Bandara Internasional Noida dalam 1 jam",
+        "Gudang modern direncanakan di 2 hektar dengan bongkar muat"
       ]
     },
     "advertising": {
@@ -1482,10 +1483,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "Paket unipole 10×20 kaki dan 12×24 kaki tersedia",
+        "Penempatan strategis di NH-709B dan Shamli Ring Road",
+        "Layanan端到端, pencetakan, instalasi, pemeliharaan",
+        "Paket jangka panjang dan volume dengan tarif yang dapat dinegosiasi"
       ]
     },
     "foundation": {
@@ -1507,10 +1508,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Fasilitas pelatihan standar internasional dan pelatihan ahli",
+        "Nutrisi lengkap, perencanaan diet, dan kedokteran olahraga",
+        "Pendanaan kompetisi, peralatan, dan dukungan psikologis",
+        "Membangun pipeline atlet kelas dunia yang berkelanjutan"
       ]
     }
   },

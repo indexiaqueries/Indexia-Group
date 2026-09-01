@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Réglementation",
-          "excerpt": "L'Autorité des valeurs mobilières de l'Inde a lancé une enquête sur la fuite d'informations relatives à HDFC."
+          "excerpt": "L'Autorité des valeurs mobilières de l'Inde a lancé une enquête sur la fuite d'informations relatives à HDFC.",
+          "title": "SEBI alerte sur une fuite d'informations dans les fonds HDFC"
         },
         "uidai-aadhaar-banks": {
           "category": "Politique",
@@ -1331,10 +1332,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "Facilitation des IDE sur les marchés émergents et développés",
+        "Opérations NBFC avec des cadres de prêt réglementés",
+        "Financement bancaire et institutionnel pour les projets d'envergure",
+        "Solutions de capital transfrontalier pour les clients multinationaux"
       ]
     },
     "finserve": {
@@ -1356,10 +1357,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Prêts personnels, immobiliers et professionnels avec des taux compétitifs",
+        "Financement PME et projets avec des conditions flexibles",
+        "Options de transfert de solde et de prêt sur garantie",
+        "Gestionnaire de relation dédié de la demande au décaissement"
       ]
     },
     "overseas": {
@@ -1381,10 +1382,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Exportations de sucre raffiné premium et produits alimentaires",
+        "Gestion complète, approvisionnement, QA, logistique, conformité",
+        "Partenaire de confiance pour les acheteurs en gros et les consommateurs institutionnels",
+        "Compréhension approfondie des dynamiques commerciales sud-américaines"
       ]
     },
     "agro-bio": {
@@ -1406,10 +1407,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Solutions biologiques qui travaillent avec la nature, pas contre elle",
+        "Évaluation de la santé du sol et mélanges d'engrais personnalisés",
+        "Optimisation des rendements avec formation pratique des agriculteurs",
+        "Extension du réseau de distribution national et international"
       ]
     },
     "securities": {
@@ -1431,10 +1432,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Détails de protection rapprochée pour politiques et dirigeants",
+        "Gestion de la sécurité corporate, industrielle et événementielle",
+        "Surveillance en temps réel avec suivi par la technologie",
+        "Unités de commandos et d'intervention à déploiement rapide"
       ]
     },
     "warehouse": {
@@ -1456,10 +1457,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "5 sites avec des parcelles flexibles de 1 à 8 acres",
+        "Accès direct aux ports du Gujarat, Maharashtra, Chennai, Kolkata",
+        "Aéroport IGI Delhi et Aéroport Int'l de Noida en moins d'1 heure",
+        "Entrepôt moderne prévu sur 2 acres avec quais de chargement"
       ]
     },
     "advertising": {
@@ -1481,10 +1482,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "Forfaits unipôles de 10×20 pi et 12×24 pi disponibles",
+        "Emplacements stratégiques sur la NH-709B et la Shamli Ring Road",
+        "Service complet, impression, installation, maintenance",
+        "Forfaits à long terme et en volume avec tarifs négociables"
       ]
     },
     "foundation": {
@@ -1506,10 +1507,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Installations d'entraînement de niveau international et coaching expert",
+        "Nutrition complète, planification alimentaire et médecine du sport",
+        "Financement des compétitions, équipement et soutien psychologique",
+        "Construction d'un vivier durable d'athlètes de classe mondiale"
       ]
     }
   },

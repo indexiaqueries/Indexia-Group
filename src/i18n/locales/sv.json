@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Reglering",
-          "excerpt": "Indiens värdepapperskommission har inlet en utredning om den påstädda läckan av icke-offentlig information relaterad till HDFC."
+          "excerpt": "Indiens värdepapperskommission har inlet en utredning om den påstädda läckan av icke-offentlig information relaterad till HDFC.",
+          "title": "SEBI varnar för information läckage i HDFC-fonder"
         },
         "uidai-aadhaar-banks": {
           "category": "Digital Bank",
@@ -1331,10 +1332,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "UDI-främjande i utvecklade och tillväxtmarknader",
+        "NBFC-verksamhet med reglerade låneramverk",
+        "Bank- och institutionell finansiering för storskaliga projekt",
+        "Gränsöverskridande kapitallösningar för multinationella kunder"
       ]
     },
     "finserve": {
@@ -1356,10 +1357,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Privat-, bostads- och företagslån med konkurrerande räntor",
+        "SME- och projektfinansiering med flexibla villkor",
+        "Saldoöverföring och lån mot fastighet alternativ",
+        "Dedikerad relationshandazed från förfrågan till utbetalning"
       ]
     },
     "overseas": {
@@ -1381,10 +1382,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Premium raffinerad socker och livsmedelsexport",
+        "Fullcykelhantering, inköp, QA, logistik, efterlevnad",
+        "Pålitlig partner för grossister och institutionella konsumenter",
+        "Djup förståelse för Sydamerikas handelsdynamik"
       ]
     },
     "agro-bio": {
@@ -1406,10 +1407,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Baserade biologiska lösningar som arbetar med naturen, inte emot den",
+        "Markhälsbedömning och anpassade gödselblandningar",
+        "Skördsoptimering med praktisk ombildning för bönder",
+        "Utökning av inhemskt och internationellt distributionsnätverk"
       ]
     },
     "securities": {
@@ -1431,10 +1432,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Närskyddsdetaljer för politiker och företagsledare",
+        "Företags-, industri- och evenemangssäkerhet",
+        "Övervakning i realtid med teknikbaserad övervakning",
+        "Snabbt deployerade kommando- och insatsenheter"
       ]
     },
     "warehouse": {
@@ -1456,10 +1457,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "5 platser med flexibla tomter från 1 till 8 tunnland",
+        "Direkt tillgång till hamnar i Gujarat, Maharashtra, Chennai, Kolkata",
+        "IGI Airport Delhi och Noida Int'l Airport inom 1 timme",
+        "Modernt lager planerat på 2 tunnland med lastkajer"
       ]
     },
     "advertising": {
@@ -1481,10 +1482,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "10×20 ft och 12×24 ft unipolepaket tillgängliga",
+        "Strategiska placeringar på NH-709B och Shamli Ring Road",
+        "Heltäckande tjänst, tryck, installation, underhåll",
+        "Långtids- och volym paket med förhandlingsbara priser"
       ]
     },
     "foundation": {
@@ -1506,10 +1507,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Träningsfaciliteter med internationell standard och expertcoaching",
+        "Komplett nutrition, kostplanering och sportmedicin",
+        "Tävlingsfinansiering, utrustning och psykologiskt stöd",
+        "Bygga en hållbar pipeline av världsklassidrottsmän"
       ]
     }
   },

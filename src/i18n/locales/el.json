@@ -524,7 +524,7 @@
     "delhiOffice": "Γραφείο Delhi",
     "newsName": "Indexia Group, Νέα & Κέντρο Γνώσης",
     "orgName": "Indexia Group",
-    "brochureName": "{{name}} Brochure"
+    "brochureName": "Brochure {{name}}"
   },
   "legal": {
     "backHome": "Επιστροφή στην Αρχική",
@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Κανονισμθνάς",
-          "excerpt": "Η Επιτροπή Αξιών Ινδίας ξεκίνησε έρευνα για υποτιθέμενη διαρροή μη δημόσιων πληροφοριών σχετικά με το HDFC."
+          "excerpt": "Η Επιτροπή Αξιών Ινδίας ξεκίνησε έρευνα για υποτιθέμενη διαρροή μη δημόσιων πληροφοριών σχετικά με το HDFC.",
+          "title": "Το SEBI προειδοποιεί για διαρροή πληροφοριών στα ταμεία HDFC"
         },
         "uidai-aadhaar-banks": {
           "category": "Politique",

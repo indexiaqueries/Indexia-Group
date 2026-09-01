@@ -524,7 +524,7 @@
     "delhiOffice": "Delhi Kantoor",
     "newsName": "Indexia Group, Nieuws & Kenniscentrum",
     "orgName": "Indexia Group",
-    "brochureName": "{{name}} Brochure"
+    "brochureName": "Brochure {{name}}"
   },
   "legal": {
     "backHome": "Terug Naar Home",
@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regelgeving",
-          "excerpt": "De Indiase effectenautoriteit heeft een onderzoek ingesteld naar het vermeende lek van niet-openbare informatie over HDFC."
+          "excerpt": "De Indiase effectenautoriteit heeft een onderzoek ingesteld naar het vermeende lek van niet-openbare informatie over HDFC.",
+          "title": "SEBI waarschuwt voor informatie-lek bij HDFC-fondsen"
         },
         "uidai-aadhaar-banks": {
           "category": "Digitale Bankzaken",
@@ -1331,10 +1332,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "FDI-facilitatie in opkomende en ontwikkelde markten",
+        "NBFC-operaties met gereguleerde kredietkaders",
+        "Bank- en institutionele financiering voor grootschalige projecten",
+        "Grensoverschrijdende kapitaaloplossingen voor multinationale klanten"
       ]
     },
     "finserve": {
@@ -1356,10 +1357,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Persoonlijke, hypotheek- en zakelijke leningen met concurrerende tarieven",
+        "MKB- en projectfinanciering met flexibele voorwaarden",
+        "Saldo-overdracht en lening tegen onderpand opties",
+        "Toegewijde relatiemanager van aanvraag tot uitbetaling"
       ]
     },
     "overseas": {
@@ -1381,10 +1382,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Premium geraffineerde suiker en eetbare grondstoffen export",
+        "Full-cycle beheer, inkoop, QA, logistiek, compliance",
+        "Betrouwbare partner voor groothandelaren en institutionele afnemers",
+        "Diep begrip van de Z-Amerikaanse handelsdynamiek"
       ]
     },
     "agro-bio": {
@@ -1406,10 +1407,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Biologische oplossingen die met de natuur werken, niet ertegen",
+        "Bodemgezondheidsbeoordeling en op maat gemaakte kunstmestmengsels",
+        "Oogstoptimalisatie met praktische boerentraining",
+        "Uitbreiding van het binnenlandse en internationale distributienetwerk"
       ]
     },
     "securities": {
@@ -1431,10 +1432,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Beveiligingsdetails voor politici en bedrijfsleiders",
+        "Bedrijfs-, industrie- en evenementenbeveiliging",
+        "Real-time bewaking met technologisch gestuurde monitoring",
+        "Snel inzetbare commando- en eenheden voor respons"
       ]
     },
     "warehouse": {
@@ -1456,10 +1457,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "5 locaties met flexibele percelen van 1 tot 8 acres",
+        "Directe toegang tot havens van Gujarat, Maharashtra, Chennai, Kolkata",
+        "IGI Airport Delhi en Noida Int'l Airport binnen 1 uur",
+        "Modern magazijn gepland op 2 acres met laadperrons"
       ]
     },
     "advertising": {
@@ -1481,10 +1482,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "10×20 ft en 12×24 ft unipole-pakketten beschikbaar",
+        "Strategische plaatsingen op NH-709B en Shamli Ring Road",
+        "End-to-end service, printen, installatie, onderhoud",
+        "Lange-termijn en volumepakketten met onderhandelbare tarieven"
       ]
     },
     "foundation": {
@@ -1506,10 +1507,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Trainingsfaciliteiten met internationale normen en deskundige coaching",
+        "Volledige voeding, dieetplanning en sportgeneeskunde",
+        "Kosten dekking van wedstrijden, uitrusting en psychologische ondersteuning",
+        "Opbouw van een duurzame pijplijn van wereldklasse atleten"
       ]
     }
   },

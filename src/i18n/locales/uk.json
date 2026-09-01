@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Регулювання",
-          "excerpt": "Комісія з цінних паперів Індії розпочала розслідування щодо нібито витоку конфіденційної інформації, пов'язаної з HDFC."
+          "excerpt": "Комісія з цінних паперів Індії розпочала розслідування щодо нібито витоку конфіденційної інформації, пов'язаної з HDFC.",
+          "title": "SEBI попереджає про витік інформації у фондах HDFC"
         },
         "uidai-aadhaar-banks": {
           "category": "Цифрове банківство",
@@ -1331,10 +1332,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "Сприяння ПІІ на ринках, що розвиваються та розвинених",
+        "Операції НФФК з регульованими кредитними рамками",
+        "Банківське та інституційне фінансування великих проектів",
+        "Транскордонні капітальні рішення для мультинаціональних клієнтів"
       ]
     },
     "finserve": {
@@ -1356,10 +1357,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Особисті, іпотечні та бізнес-кредити з конкурентними ставками",
+        "Фінансування МСП та проектів на гнучких умовах",
+        "Переказ балансу та кредит під заставу нерухомості",
+        "Персональний менеджер від запиту до видачі коштів"
       ]
     },
     "overseas": {
@@ -1381,10 +1382,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Експорт преміального рафінованого цукру та харчових товарів",
+        "Повний цикл управління, закупівлі, контроль якості, логістика, комплаєнс",
+        "Надійний партнер для оптових покупців та інституційних споживачів",
+        "Глибоке розуміння динаміки торгівлі Південної Америки"
       ]
     },
     "agro-bio": {
@@ -1406,10 +1407,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Біологічні рішення, що працюють у гармонії з природою",
+        "Оцінка здоров'я ґрунту та індивідуальні суміші добрив",
+        "Оптимізація врожайності з практичним навчанням фермерів",
+        "Розширення внутрішньої та міжнародної дистриб'юторської мережі"
       ]
     },
     "securities": {
@@ -1431,10 +1432,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Деталі особистої охорони політиків та корпоративних лідерів",
+        "Управління корпоративною, промисловою та подієвою безпекою",
+        "Моніторинг у реальному часі з технологічним контролем",
+        "Швидко розгортувані коммандос та підрозділи реагування"
       ]
     },
     "warehouse": {
@@ -1456,10 +1457,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "5 локацій з гнучкими ділянками від 1 до 8 акрів",
+        "Прямий доступ до портів Гуджарат, Махараштра, Ченнаї, Калькутти",
+        "Аеропорт ІГІ Делі та Міжнародний аеропорт Нойда в межах 1 години",
+        "Сучасний склад заплановано на 2 акрах з вантажними доками"
       ]
     },
     "advertising": {
@@ -1481,10 +1482,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "Пакети юніпол 10×20 футів та 12×24 футів доступні",
+        "Стратегічне розміщення на NH-709B та Shamli Ring Road",
+        "Комплексне обслуговування, друк, встановлення, технічне обслуговування",
+        "Довгострокові та оптові пакети з торгуємими ставками"
       ]
     },
     "foundation": {
@@ -1506,10 +1507,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Тренувальні об'єкти міжнародного стандарту та експертний коучинг",
+        "Повноцінне харчування, дієтичне планування та спортивна медицина",
+        "Фінансування змагань, спорядження та психологічна підтримка",
+        "Створення стійкого потоку спортсменів світового класу"
       ]
     }
   },

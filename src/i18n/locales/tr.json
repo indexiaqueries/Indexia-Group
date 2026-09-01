@@ -1060,7 +1060,8 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Düzenleme",
-          "excerpt": "Hindistan Menkul Kıymetler ve Borsa Komisyonu, HDFC ile ilgili kamuoyuna açıklanmayan bilgi sızıntısı iddiasını araştırmaya başladı."
+          "excerpt": "Hindistan Menkul Kıymetler ve Borsa Komisyonu, HDFC ile ilgili kamuoyuna açıklanmayan bilgi sızıntısı iddiasını araştırmaya başladı.",
+          "title": "SEBI, HDFC fonlarında bilgi sızıntısı uyarısı yapıyor"
         },
         "uidai-aadhaar-banks": {
           "category": "Dijital Bankacılık",
@@ -1331,10 +1332,10 @@
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "Gelişen ve gelişmiş pazarlarda YBY kolaylaştırma",
+        "Düzenlenmiş kredi çerçeveleriyle NBFC operasyonları",
+        "Büyük ölçekli projeler için bankacılık ve kurumsal finansman",
+        "Çok uluslu müşteriler için sınır ötesi sermaye çözümleri"
       ]
     },
     "finserve": {
@@ -1356,10 +1357,10 @@
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Rekabetçi oranlarla kişisel, konut ve iş kredileri",
+        "Esnek koşullarla KOBİ ve proje finansmanı",
+        "Bakiye transferi ve ipotekli kredi seçenekleri",
+        "Talepten ödeme sürecine kadar atanan özel ilişki yöneticisi"
       ]
     },
     "overseas": {
@@ -1381,10 +1382,10 @@
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Premium rafine şeker ve gıda maddesi ihracatı",
+        "Tam döngü yönetimi, tedarik, kalite kontrol, lojistik, uyumluluk",
+        "Toptan alıcılar ve kurumsal tüketiciler için güvenilir ortak",
+        "Güney Amerika ticaret dinamikleri hakkında derin anlayış"
       ]
     },
     "agro-bio": {
@@ -1406,10 +1407,10 @@
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "Doğayla birlikte çalışan biyolojik tabanlı çözümler",
+        "Toprak sağlığı değerlendirmesi ve özelleştirilmiş gübre karışımları",
+        "Pratik çiftçi eğitimiyle verim optimizasyonu",
+        "Yurt içi ve uluslararası dağıtım ağının genişletilmesi"
       ]
     },
     "securities": {
@@ -1431,10 +1432,10 @@
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Politikalar ve kurumsal liderler için yakın koruma detayları",
+        "Kurumsal, endüstriyel ve etkinlik güvenlik yönetimi",
+        "Teknoloji destekli izleme ile gerçek zamanlı gözetleme",
+        "Hızlı konuşlandırılan komando ve müdahale birimleri"
       ]
     },
     "warehouse": {
@@ -1456,10 +1457,10 @@
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "1'den 8 dönüme kadar esnek arsalı 5 konum",
+        "Gujarat, Maharashtra, Chennai, Kolkata limanlarına doğrudan erişim",
+        "IGI Havalimanı Delhi ve Noida Uluslararası Havalimanı 1 saat içinde",
+        "Yükleme iskeleleri olan 2 dönümlük modern depo planlandı"
       ]
     },
     "advertising": {
@@ -1481,10 +1482,10 @@
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "10×20 ft ve 12×24 ft unipol paketleri mevcut",
+        "NH-709B ve Shamli Ring Road üzerinde stratejik yerleşimler",
+        "Kapsamlı hizmet, baskı, kurulum, bakım",
+        "Uzun vadeli ve toplu paketler, müzakere edilebilir fiyatlarla"
       ]
     },
     "foundation": {
@@ -1506,10 +1507,10 @@
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Uluslararası standartlarda tesisler ve uzman antrenörlük",
+        "Tam beslenme, diyet planlaması ve spor tıbbı",
+        "Yarışma finansmanı, ekipman ve psikolojik destek",
+        "Dünya standartlarında sporcular için sürdürülebilir bir hattın oluşturulması"
       ]
     }
   },
