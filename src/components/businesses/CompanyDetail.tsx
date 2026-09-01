@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowRight, Clock, Layers, MapPin, Sparkles } from "lucide-react";
@@ -19,7 +19,7 @@ import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
-import VideoHoverGallery from "./VideoHoverGallery";
+import FoundationGallery from "./FoundationGallery";
 import foundationVid2 from "../../assets/company-pages-img/foundation-gallery/vertical1.mp4";
 import foundationVid3 from "../../assets/company-pages-img/foundation-gallery/vertical2.mp4";
 import foundationVid4 from "../../assets/company-pages-img/foundation-gallery/vertical3.mp4";
@@ -38,30 +38,6 @@ type CompanyDetailProps = {
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
   const [bookingMessage, setBookingMessage] = useState<string | undefined>(undefined);
-  const gallerySectionRef = useRef<HTMLDivElement>(null);
-  const glowRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (b.slug !== "foundation") return;
-    const section = gallerySectionRef.current;
-    const glow = glowRef.current;
-    if (!section || !glow) return;
-
-    let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const rect = section.getBoundingClientRect();
-        const progress = -rect.top / (rect.height + window.innerHeight);
-        const offset = Math.max(-60, Math.min(60, progress * 120));
-        glow.style.transform = `translateY(${offset}px)`;
-        ticking = false;
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [b.slug]);
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
@@ -232,7 +208,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   height={1024}
                   loading="lazy"
                   decoding="async"
-                  className="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 img-reveal"
+                  className="aspect-4/3 w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-110 img-reveal"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
                 <span aria-hidden="true" className="card-shine-lines" />
@@ -440,8 +416,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (
-        <section ref={gallerySectionRef} className="section-ruled section-ink relative">
-          <div ref={glowRef} aria-hidden="true" className="pointer-events-none absolute -inset-e-32 top-0 h-96 w-96 rounded-full opacity-20 blur-3xl transition-transform duration-150 ease-out" style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }} />
+        <section className="section-ruled section-ink relative">
           <div className="container relative py-10 lg:py-14">
             <Reveal className="mx-auto mb-6 max-w-3xl text-center">
               <Eyebrow color="var(--color-yellow)">{t("foundationGallery.eyebrow")}</Eyebrow>
@@ -449,7 +424,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 {t("foundationGallery.title")}
               </h2>
             </Reveal>
-            <VideoHoverGallery
+            <FoundationGallery
               videos={[
                 { src: foundationVid2, label: t("foundationGallery.videos.trackTraining.label"), sublabel: t("foundationGallery.videos.trackTraining.sublabel") },
                 { src: foundationVid3, label: t("foundationGallery.videos.fieldPractice.label"), sublabel: t("foundationGallery.videos.fieldPractice.sublabel") },
@@ -458,10 +433,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 { src: foundationVid4, label: t("foundationGallery.videos.sprintDrills.label"), sublabel: t("foundationGallery.videos.sprintDrills.sublabel") },
                 { src: foundationVid5, label: t("foundationGallery.videos.teamSession.label"), sublabel: t("foundationGallery.videos.teamSession.sublabel") },
               ]}
-              activeWidth={35}
-              gap={0.5}
-              perspective={35}
-              transitionDuration={0.6}
             />
           </div>
         </section>
