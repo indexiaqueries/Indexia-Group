@@ -28,11 +28,11 @@ const LocationCard = ({ location, delay = 0, tone = "dark" }: LocationCardProps)
   return (
     <article className="flex h-full flex-col">
       {slot && (
-        <Reveal variant="scale" y={16} amount={0.15} delay={delay} className="mb-4 shrink-0">
+        <Reveal variant="scale" y={16} amount={0.15} delay={delay} className="mb-3 shrink-0">
           <MediaFrame className="rounded-xl">
             <ImageSlot
               {...slot}
-              aspect="aspect-[16/10]"
+              aspect="aspect-[16/8]"
               alt={t(`branches.${location.key}`, { defaultValue: location.name })}
               className="image-zoom-media rounded-xl"
               srcSet={slot.src ? getResponsiveVariants(slot.src) ?? undefined : undefined}
@@ -50,11 +50,11 @@ const LocationCard = ({ location, delay = 0, tone = "dark" }: LocationCardProps)
         </h3>
       </div>
 
-      <div className="mt-4 flex-1">
+      <div className="mt-3 flex-1">
         <p className={`whitespace-pre-line text-[13px] leading-6 sm:text-sm sm:leading-7 ${isLight ? "text-slate-600" : "text-white/70"}`}>
           {t(location.addressKey)}
         </p>
-        {!!location.phones?.length && (              <div className="mt-3 sm:mt-4 space-y-2">
+        {!!location.phones?.length && (              <div className="mt-2 space-y-1.5">
             {location.phones.map((phone) => (
               <a
                 key={`${location.name}-${phone.label}-${phone.number}`}
