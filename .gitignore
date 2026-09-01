@@ -6,13 +6,6 @@ dist/
 .vite/
 src/assets-responsive/
 coverage/
-stats.html
-lighthouse-report.*
-playwright-report/
-test-results/
-*-check.png
-*-screenshot.png
-*.timestamp-*.mjs
 
 # Environment & secrets
 .env
@@ -38,8 +31,7 @@ server/uploads/resumes/
 *.tsbuildinfo
 .vercel/
 
-# Temp / scratch scripts
-.tmp-*
+# Temp / scratch
 *.tmp
 *.temp
 
@@ -56,5 +48,3 @@ Thumbs.db
 
 # Responsive images (generated)
 src/assets/public-images/
-
-scripts/
