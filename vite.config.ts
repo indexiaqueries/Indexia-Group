@@ -82,9 +82,6 @@ export default defineConfig({
     },
   },
   server: {
-    watch: {
-      ignored: ['**/.freebuff/**'],
-    },
     proxy: {
       '/api': {
         target: `http://localhost:${SERVER_PORT}`,

@@ -12,23 +12,28 @@
 ## Key Pages
 
 - [Home](https://www.indexiagroup.com/)
-- [Businesses](https://www.indexiagroup.com/businesses)
+- [About](https://www.indexiagroup.com/about)
 - [News and Knowledge](https://www.indexiagroup.com/news)
 - [Careers](https://www.indexiagroup.com/careers)
-- [Apply for Jobs](https://www.indexiagroup.com/careers/apply)
 - [Global Research](https://www.indexiagroup.com/global-research)
 - [Security Tips](https://www.indexiagroup.com/security-tips)
 
 ## Company Pages
 
-- [Indexia Finance](https://www.indexiagroup.com/businesses/finance)
-- [Indexia Finserve](https://www.indexiagroup.com/businesses/finserve)
-- [Indexia Overseas](https://www.indexiagroup.com/businesses/overseas)
-- [Indexia Agro Bio Fertilizers](https://www.indexiagroup.com/businesses/agro-bio)
-- [Indexia Securities](https://www.indexiagroup.com/businesses/securities)
-- [Indexia Warehouse](https://www.indexiagroup.com/businesses/warehouse)
-- [Indexia Advertising](https://www.indexiagroup.com/businesses/advertising)
-- [Indexia Foundation](https://www.indexiagroup.com/businesses/foundation)
+- [Indexia Finance](https://www.indexiagroup.com/finance)
+- [Indexia Finserve](https://www.indexiagroup.com/finserve)
+- [Indexia Overseas](https://www.indexiagroup.com/overseas)
+- [Indexia Agro Bio Fertilizers](https://www.indexiagroup.com/agro-bio)
+- [Indexia Securities](https://www.indexiagroup.com/securities)
+- [Indexia Warehouse](https://www.indexiagroup.com/warehouse)
+- [Indexia Advertising](https://www.indexiagroup.com/advertising)
+- [Indexia Foundation](https://www.indexiagroup.com/foundation)
+
+## Legal
+
+- [Privacy Policy](https://www.indexiagroup.com/privacy-policy)
+- [Terms of Use](https://www.indexiagroup.com/terms-of-use)
+- [Terms](https://www.indexiagroup.com/terms)
 
 ## Notes For Agents
 

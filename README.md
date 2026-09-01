@@ -1,115 +1,108 @@
 # Indexia Group Website
 
-Indexia Group Website is a React, TypeScript, Vite, and Tailwind CSS site for a diversified business group spanning finance, finserve, securities, overseas export, agro bio fertilizers, warehousing, advertising, foundation work, careers, news, research, security guidance, and contact enquiries.
+React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business group spanning finance, finserve, securities, overseas export, agro bio fertilizers, warehousing, advertising, foundation, careers, news, research, security tips, and contact enquiries.
 
-## What Was Completed
+## Tech Stack
 
-### Website Design And UX
+- **Framework**: React 19 + TypeScript
+- **Build**: Vite 6 with code splitting and lazy-loaded routes
+- **Styling**: Tailwind CSS 4
+- **i18n**: i18next with 22 language variants
+- **Routing**: React Router v7
+- **Backend**: Express.js with MongoDB (contact form, job applications, admin)
+- **Deployment**: Vercel (frontend + serverless API)
 
-- Improved the overall frontend design with a more polished, modular structure.
-- Reused shared components for imagery, reveal animations, media frames, cards, hero bands, and impact sections.
-- Added subtle image zoom interactions for contact office cards and enquiry images.
-- Reused the full-bleed impact band treatment across supporting pages such as news, careers, global research, and security tips.
-- Shared the infinite marquee styling utility between the home hero marquee and the company services ribbon.
-- Reduced repeated UI logic by centralizing image handling and media framing.
+## Features
 
-### Image Mapping And Asset Cleanup
+- 18 public routes with full SEO metadata (title, description, OG, Twitter, JSON-LD)
+- 22 locales with complete translations (en, ar, de, el, es, fr, he, hi, id, it, ja, ko, nl, pl, pt, ru, sv, th, tr, uk, vi, zh)
+- Company spotlight pages for 8 businesses with hero images, stats, and bullet points
+- Contact page with 5 office locations and enquiry form (sends email via SMTP)
+- News, global research, and security tips pages
+- Careers page with job listings and resume upload
+- Foundation gallery with athlete training videos
+- Admin dashboard (behind auth)
+- Brochure PDF generation for warehouse and advertising
+- Brotli + gzip compression
+- Speculation Rules API for instant navigation prerendering
+- Responsive images with srcset and quality variants
 
-- Mapped all reusable images through `src/data/siteImages.ts`.
-- Moved contact images into `src/assets/contact-img`.
-- Added `customercare.webp` above the contact enquiry form.
-- Removed image prompt fields and prompt display logic from the codebase.
-- Updated `docs/IMAGES.md` to document current image slots and sources.
-- Converted heavy PNG section images to WebP.
-- Added card-sized company images in `src/assets/company-img/cards`.
-- Added lightweight hero gallery thumbnails in `src/assets/company-img/thumbs`.
-- Recompressed selected assets based on Lighthouse image delivery findings.
+## Project Structure
 
-### SEO, Indexing, And Agent Accessibility
-
-- Updated SEO descriptions for Home and Businesses to match the updated headings.
-- Updated `public/sitemap.xml` and included all company routes.
-- Kept `public/robots.txt` valid and crawl-friendly while disallowing `/api/`.
-- Added `public/llms.txt` with Markdown links for AI-agent readability.
-- Fixed the invalid robots directive that Lighthouse reported.
-
-### Contact Page Work
-
-- Re-cropped and normalized office card images around a consistent landscape grid.
-- Restored `customercare.webp` to its original size after testing a smaller version.
-- Added `MediaFrame` for consistent reusable image framing.
-- Placed the customer-care image at the top of the contact form area.
-
-### Code Cleanup
-
-- Removed unused prompt data and placeholder prompt documentation.
-- Removed or ignored generated files such as `dist`, reports, screenshots, and temporary files.
-- Updated `.gitignore` for build output, audit reports, screenshots, temp files, and Vercel metadata.
-- Kept generated brochure PDF diffs out of the working changes after builds.
-
-## Performance Optimization
-
-Performance work was guided by Lighthouse audit results.
-
-- Lazy-loaded non-English i18n locale files so visitors do not download every translation up front.
-- Reduced the main app chunk from roughly 1 MB to about 63 KB before compression.
-- Converted large PNGs to WebP, reducing several files from around 1.8-2.4 MB to about 70-185 KB.
-- Replaced card usages of full hero images with smaller card-specific WebP assets.
-- Reduced hero gallery thumbnails from roughly 12-23 KB to about 4-7 KB.
-- Added explicit image dimensions and loading hints for hero gallery images.
-- Replaced the YouTube iframe with a click-to-load facade so third-party scripts load only when needed.
-- Removed Google Fonts from the critical render path and switched to local/system font stacks.
-- Reduced forced reflow risk by removing mouse-tracked layout reads from interactive image/card effects.
-- Kept Brotli and gzip compression enabled through Vite build configuration.
-
-Note: Some Lighthouse JavaScript warnings came from browser extensions, not the website bundle. Run Lighthouse in Incognito with extensions disabled for clean results.
-
-### Mobile Lighthouse Audit
-
-The mobile audit was extracted from `MOBILE.docx` and treated as reference material. The report was captured on an emulated Moto G Power using Slow 4G throttling.
-
-Actionable mobile issues addressed:
-
-- Created mobile hero image variants in `src/assets/company-img/mobile`.
-- Added responsive `srcSet` and `sizes` support to the home hero background so mobile devices can load the smaller 900px hero image instead of the desktop source.
-- Reduced card image dimensions and compression further for mobile/card display.
-- Reduced the Indexia Group logo asset from the original 160px source to a smaller optimized WebP.
-- Kept hero gallery thumbnail assets lightweight for mobile scrolling.
-- Made hero gallery thumbnail images decorative because the surrounding buttons already provide accessible labels, avoiding repeated screen-reader text.
-
-Mobile audit findings noted but not repo-caused:
-
-- Chrome extension scripts contributed to unused JavaScript, minification, long-task, forced-reflow, and third-party warnings.
-- The render-blocking CSS request is the main production stylesheet generated by Vite; it is already compressed and small.
-- Server/protocol recommendations such as modern HTTP, cache lifetime, and document latency depend on hosting/CDN configuration.
-
-## Main Files
-
-- `src/data/siteImages.ts` - shared page image registry.
-- `src/data/companyImages.ts` - company hero, card, and thumbnail image registry.
-- `src/components/common/ImageSlot.tsx` - reusable mapped image slot with fallback.
-- `src/components/common/MediaFrame.tsx` - shared zoom/framing wrapper.
-- `docs/IMAGES.md` - image folder and slot documentation.
-- `public/sitemap.xml` - crawlable route list.
-- `public/robots.txt` - crawler rules.
-- `public/llms.txt` - AI-agent readable site summary and links.
+```
+src/
+├── assets/          # Bundled images (company, contact, careers, heroes, logos)
+├── components/      # Reusable UI components
+├── data/            # Static data, image registries, i18n config
+├── hooks/           # Custom React hooks
+├── i18n/            # i18next setup and 22 locale JSON files
+├── layout/          # Main layout, header, footer
+├── pages/           # Page components (lazy-loaded)
+├── routes/          # React Router configuration
+├── utils/           # Helper functions
+├── App.tsx          # Root component
+└── main.tsx         # Entry point
+server/
+├── index.js         # Express server (API routes, email, file uploads)
+├── db.js            # MongoDB connection
+├── models/          # Mongoose models (Application, JobOpening, NewsArticle)
+├── routes/          # Admin and news API routes
+└── services/        # News fetcher and scheduler
+api/
+└── index.js         # Vercel serverless entry point
+public/
+├── brochures/       # Generated PDF brochures
+├── fonts/           # Self-hosted Fraunces font files
+├── images/          # Static images (heroes, security, research, news)
+├── favicon.svg      # Browser tab icon
+├── llms.txt         # AI-agent readable site summary
+├── robots.txt       # Crawler rules
+├── sitemap.xml      # 18 public routes
+└── og-image.png     # Social share image
+```
 
 ## Commands
 
 ```bash
 npm install
-npm run dev
-npm run lint
-npm run build
-npm run preview
+npm run dev          # Start dev server (Vite)
+npm run build        # Production build + compression
+npm run lint         # ESLint check
+npm run preview      # Preview production build
+npm run server       # Start Express backend
 ```
 
-## Build Notes
+## Environment Variables
 
-The production build runs TypeScript, Vite, and brochure PDF generation:
+Copy `.env.example` to `.env.local` and configure:
 
-```bash
-npm run build
-```
+| Variable | Purpose |
+|---|---|
+| `MONGODB_URI` | MongoDB connection string |
+| `ADMIN_TOKEN` | Admin dashboard auth token |
+| `SMTP_HOST` | SMTP server host |
+| `SMTP_PORT` | SMTP server port |
+| `SMTP_USER` | SMTP username |
+| `SMTP_PASS` | SMTP password |
+| `MAIL_TO` | Contact form recipient |
+| `MAIL_FROM` | Sender email address |
 
-The build may regenerate brochure PDFs in `public/brochures`. Restore those files if no brochure content changes are intended.
+## Performance
+
+- Lazy-loaded i18n locale files (only English loads initially)
+- Manual chunk splitting (react, lucide, router, i18n, cobe)
+- Self-hosted Fraunces font with `font-display: optional`
+- Non-blocking CSS via Vite plugin
+- LCP image preloaded with responsive srcset
+- `content-visibility: auto` on below-fold sections
+- Brotli + gzip dual compression
+- Speculation Rules for prerendering likely-next pages
+
+## SEO
+
+- Unique title, description, and canonical URL per page
+- Open Graph and Twitter Card metadata
+- JSON-LD structured data (Organization, WebSite, Company pages)
+- `robots.txt` blocks admin, apply, and brochure pages
+- `sitemap.xml` with 18 public routes
+- `llms.txt` for AI-agent readability
