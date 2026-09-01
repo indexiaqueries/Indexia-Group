@@ -34,7 +34,7 @@ const LocationCard = ({ location, delay = 0, tone = "dark" }: LocationCardProps)
               {...slot}
               aspect="aspect-[16/8]"
               alt={t(`branches.${location.key}`, { defaultValue: location.name })}
-              className="image-zoom-media rounded-xl"
+              className="image-zoom-media rounded-xl transition-transform duration-700 ease-out hover:scale-110"
               srcSet={slot.src ? getResponsiveVariants(slot.src) ?? undefined : undefined}
             />
           </MediaFrame>
