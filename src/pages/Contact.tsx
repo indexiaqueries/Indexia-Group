@@ -1,15 +1,26 @@
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { branches } from "../data/contact";
-import { GlowingCards, GlowingCard } from "../components/lightswind/glowing-cards";
-import { accent } from "../lib/theme";
+import { GlowingCard } from "../components/lightswind/glowing-cards";
+import { accent } from "../lib/theme"
 
 const Contact = () => {
   const { t } = useTranslation();
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollLocations = (dir: -1 | 1) => {
+    if (!scrollRef.current) return;
+    const card = scrollRef.current.firstElementChild as HTMLElement | null;
+    if (!card) return;
+    const amount = card.offsetWidth + 20;
+    scrollRef.current.scrollBy({ left: dir * amount, behavior: "smooth" });
+  };
 
   const contactJsonLd = {
     "@context": "https://schema.org",
@@ -83,26 +94,49 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="branches" className="section-ruled section-paper py-10 sm:py-14">
+      <section id="branches" className="section-ruled pt-10 sm:pt-8 lg:pt-12" style={{ background: 'rgba(2,16,26,0.08)' }}>
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 sm:text-4xl">
+            <h2 className="text-2xl font-extrabold text-slate-900 sm:text-4xl">
               {t("contact.locationsTitleStart")}
               <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
             </h2>
           </div>
 
-          <GlowingCards gap="1.5rem">
-            {branches.map((branch, index) => (
-              <GlowingCard
-                key={branch.name}
-                glowColor={['#26ae90', '#f2f231', '#066a9c', '#94a3b8'][index % 4]}
-                className="border-slate-200/80 bg-white p-0 shadow-[0_18px_48px_rgba(2,16,26,0.08)] hover:border-(--color-teal)/30 hover:shadow-[0_24px_64px_rgba(2,16,26,0.14)]"
-              >
-                <LocationCard location={branch} delay={index * 0.08} tone="light" />
-              </GlowingCard>
-            ))}
-          </GlowingCards>
+          <div className="relative">
+            {/* Scroll arrows — outside overflow so they're never clipped */}
+            <button
+              onClick={() => scrollLocations(-1)}
+              className="absolute -inset-s-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-700 shadow-lg ring-1 ring-slate-200 transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
+              aria-label="Scroll left"
+            >
+              <ChevronLeft size={18} />
+            </button>
+            <button
+              onClick={() => scrollLocations(1)}
+              className="absolute -inset-e-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-700 shadow-lg ring-1 ring-slate-200 transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
+              aria-label="Scroll right"
+            >
+              <ChevronRight size={18} />
+            </button>
+
+            {/* Scrollable area — clips only on x, not y */}
+            <div
+              ref={scrollRef}
+              className="flex gap-5 overflow-x-auto scroll-smooth pt-6 pb-20"
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            >
+              {branches.map((branch, index) => (
+                <GlowingCard
+                  key={branch.name}
+                  glowColor={['#26ae90', '#f2f231', '#066a9c', '#94a3b8'][index % 4]}
+                  className="shrink-0 w-[calc((100%-2.5rem)/3)] min-w-55 border-slate-200/80 bg-white p-0 hover:shadow-[0_24px_64px_rgba(2,16,26,0.14)]"
+                >
+                  <LocationCard location={branch} delay={index * 0.08} tone="light" />
+                </GlowingCard>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </main>
