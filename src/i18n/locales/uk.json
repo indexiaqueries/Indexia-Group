@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Реклама на рекламних щитах вздовж шосе",
     "radialFoundationDesc": "Підтримка індійських спортсменів від початкового рівня до Олімпійських ігор",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Група",
     "hubDescription": "Вісім спеціалізованих компаній, що працюють від спільного бачення.",
-    "ourStory": "Наша історія",
-    "ourValues": "Наші цінності",
-    "ourCompanies": "Наші компанії",
-    "leadership": "Керівництво",
     "visionaryTitle": "Візіонер, що стоїть за",
     "visionaryAccent": "Групою Індексія",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "компаній, одна група",
     "description": "Вісім компаній. Одна команда. Будуйте кар'єру у фінансах, експорті, сільському господарстві, безпеці, рекламі та розвитку спортсменів.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Фінанси",
+      "export": "Експорт",
       "agriculture": "Сільське Господарство",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Безпека",
+      "leasing": "Оренда",
       "advertising": "Реклама",
       "athleteDevelopment": "Розвиток Спортсменів"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Телефони",
     "workingHours": "Робочі години",
     "emailGeneralEnquiries": "Загальні Запити",
-    "emailQueries": "Queries",
+    "emailQueries": "Запити",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Спорт",
       "tradeExport": "Торгівля та Експорт",
       "warehouse": "Складське Господарство",
-      "athlete": "Sports"
+      "athlete": "Спорт"
     }
   },
   "newsPage": {
@@ -795,7 +791,7 @@
     "title": "Центр новин та знань",
     "titleAccent": "з усієї групи.",
     "titleStart": "Історії та інсайти ",
-    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
+    "tvCaption": "Потрібен кредит… Indexia Finance",
     "tvEyebrow": "Дивіться нас на ТБ",
     "tvHeadingAccent": "Індексія Фінанс",
     "tvHeadingStart": "Для всіх ваших кредитних потреб",
@@ -803,13 +799,13 @@
     "latestNews": "Останні новини",
     "noArticlesYet": "Для цієї категорії поки немає доступних статей.",
     "articleCount": "{{count}} стаття з стрічки новин",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} статей з стрічки новин"
   },
   "newsVideo": {
     "onAir": "В Ефірі",
     "tvCommercial": "ТВ-реклама",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "ТВ-реклама Indexia Finance - News18",
+    "playAriaLabel": "Відтворити ТВ-рекламу Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "Повернутися на Головну",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Регулювання",
-          "excerpt": "Комісія з цінних паперів Індії розпочала розслідування щодо нібито витоку конфіденційної інформації, пов'язаної з HDFC.",
-          "title": "SEBI Наказує Розслідування Витоку Інформації HDFC"
+          "excerpt": "Комісія з цінних паперів Індії розпочала розслідування щодо нібито витоку конфіденційної інформації, пов'язаної з HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Цифрове банківство",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Фінанси",
     "warehouse": "Складське Господарство",
     "export": "Торгівля та Експорт",
-    "athlete": "Sports"
+    "athlete": "Спорт"
   },
   "passbook": {
     "branchOffices": "Філіали",
     "directLines": "Прямі лінії",
     "avgReplyTime": "Ср. час відповіді",
     "enquiryStatus": "Статус запиту",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "менше 24 год",
+    "inReview": "На розгляді"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Банки"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Країни"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Роки"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Типи Кредитів"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Послуги"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Години"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Країни"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Продовольство"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Логістика"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Добрива"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Роки"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Сектори"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Офіцери"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Години"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Роки"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Гектари"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Автостради"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "км"
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Місця"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Штати"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Охоплення"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Спортсмени"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Дисципліни"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Роки"
         }
       ],
       "bullets": [

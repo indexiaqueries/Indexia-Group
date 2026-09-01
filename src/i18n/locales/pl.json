@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Reklama na billboardach autostradowych",
     "radialFoundationDesc": "Wsparcie dla sportowców indyjskich od podstaw do Igrzysk Olimpijskich",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Grupa",
     "hubDescription": "Osiem wyspecjalizowanych firm działających z jednej wspólnej wizji.",
-    "ourStory": "Nasza Historia",
-    "ourValues": "Nasze Wartości",
-    "ourCompanies": "Nasze Firmy",
-    "leadership": "Przywództwo",
     "visionaryTitle": "Wizjoner stojący za",
     "visionaryAccent": "Grupą Indexia",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "firm, jedna grupa",
     "description": "Osiem firm. Jeden zespół. Rozwiń karierę w finansach, eksporcie, rolnictwie, bezpieczeństwie, reklamie i rozwoju sportowców.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Finanse",
+      "export": "Eksport",
       "agriculture": "Rolnictwo",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Bezpieczeństwo",
+      "leasing": "Wynajem",
       "advertising": "Reklama",
       "athleteDevelopment": "Rozwój Sportowców"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Numery Telefonu",
     "workingHours": "Godziny Pracy",
     "emailGeneralEnquiries": "Zapytania Ogólne",
-    "emailQueries": "Queries",
+    "emailQueries": "Zapytania",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -435,7 +431,8 @@
     "nav": {
       "about": "O Nas",
       "contact": "Kontakt"
-    }
+    },
+    "ria": {}
   },
   "hero": {
     "ctaExploreGroup": "Poznaj Firmy Grupy",
@@ -776,7 +773,7 @@
       "sport": "Sport",
       "tradeExport": "Handel i Eksport",
       "warehouse": "Magazynowanie",
-      "athlete": "Sports"
+      "athlete": "Sport"
     }
   },
   "newsPage": {
@@ -803,13 +800,13 @@
     "latestNews": "Najnowsze Wiadomości",
     "noArticlesYet": "Brak dostępnych artykułów dla tej kategorii.",
     "articleCount": "{{count}} artykuł z feedu wiadomości na żywo",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} artykułów z aktualności na żywo"
   },
   "newsVideo": {
     "onAir": "Na Antenie",
     "tvCommercial": "Reklama TV",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Reklama TV Indexia Finance - News18",
+    "playAriaLabel": "Odtwórz reklamę TV Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "Powrót do Strony Głównej",
@@ -1065,11 +1062,6 @@
         "sebi-hdfc-information-leak": {
           "category": "Regulacja",
           "excerpt": "Indyjska Komisja Papierów Wartościowych wszczęła śledztwo w sprawie rzekomego wycieku poufnych informacji dotyczących HDFC.",
-          "title": "SEBI Nakazuje Śledztwo ws. Wycieku Informacji HDFC"
-        },
-        "sebi-hdfc-information-lek": {
-          "category": "Regulacje",
-          "excerpt": "Rada Papierów Wartościowych i Giełd Indii wszczęła dochodzenie.",
           "title": "SEBI nakazuje śledztwo w sprawie wycieku informacji HDFC"
         },
         "uidai-aadhaar-banks": {
@@ -1265,7 +1257,7 @@
     "plotArea5": "Powierzchnia gruntu: 5 akrów",
     "plotArea8": "Powierzchnia gruntu: 8 akrów",
     "plotCol": "Dostępne Rozmiary Działek",
-    "portfolioCol": "Portfolio",
+    "portfolioCol": "Portfel",
     "standardRate": "Oczekiwana Cena: ₹30 za stopę kw., Negocjowalna",
     "subtitle": "5 lokalizacji | łącznie 21 akrów, Shamli, Uttar Pradesh",
     "title": "Portfel Gruntów i Ceny",
@@ -1308,18 +1300,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Finanse",
     "warehouse": "Magazynowanie",
     "export": "Handel i Eksport",
-    "athlete": "Sports"
+    "athlete": "Sport"
   },
   "passbook": {
     "branchOffices": "Oddziały",
     "directLines": "Linie bezpośrednie",
     "avgReplyTime": "Śr. czas odpowiedzi",
     "enquiryStatus": "Status zapytania",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "poniżej 24 godz.",
+    "inReview": "W toku"
   },
   "spotlight": {
     "finance": {
@@ -1329,15 +1321,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Banki"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Kraje"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Lata"
         }
       ],
       "bullets": [
@@ -1354,15 +1346,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Rodzaje Kredytów"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Usługi"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Godziny"
         }
       ],
       "bullets": [
@@ -1379,15 +1371,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Kraje"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Żywność"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logistyka"
         }
       ],
       "bullets": [
@@ -1404,15 +1396,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Nawozy"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Lata"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Sektory"
         }
       ],
       "bullets": [
@@ -1429,15 +1421,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Oficerowie"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Godziny"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Lata"
         }
       ],
       "bullets": [
@@ -1454,15 +1446,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Hektary"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Autostrady"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1479,15 +1471,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Lokalizacje"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Stany"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Ekspozycja"
         }
       ],
       "bullets": [
@@ -1504,15 +1496,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Atleci"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Dyscypliny"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Lata"
         }
       ],
       "bullets": [

@@ -56,7 +56,7 @@
     "milestone2Body": "Mở rộng sang đầu tư và tài chính, tạo ra bộ phận cho vay và quản lý tài sản chuyên dụng.",
     "milestone2Title": "Mở rộng quốc gia",
     "milestone2Year": "2015",
-    "milestone3Body": "Launched Indexia Overseas to connect Indian agriculture with global markets across multiple continents.",
+    "milestone3Body": "Ra mắt Indexia Overseas để kết nối nông nghiệp Ấn Độ với thị trường toàn cầu trên nhiều lục địa.",
     "milestone3Title": "Vươn ra toàn cầu",
     "milestone3Year": "2018",
     "milestone4Body": "Ra mắt các lĩnh vực Agro Bio, Securities, Warehouse và Advertising, phát triển thành tám công ty.",
@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Quảng cáo biển billboard trên đường cao tốc",
     "radialFoundationDesc": "Hỗ trợ vận động viên Ấn Độ từ cơ sở đến Thế vận hội",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Tập đoàn",
     "hubDescription": "Tám doanh nghiệp chuyên biệt hoạt động từ một tầm nhìn chung.",
-    "ourStory": "Câu Chuyện Của Chúng Tôi",
-    "ourValues": "Giá Trị Của Chúng Tôi",
-    "ourCompanies": "Các Công Ty Của Chúng Tôi",
-    "leadership": "Ban Lãnh Đạo",
     "visionaryTitle": "Nhà Tư Tưởng đứng sau",
     "visionaryAccent": "Tập đoàn Indexia",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "công ty, một tập đoàn",
     "description": "Tám công ty. Một đội ngũ. Xây dựng sự nghiệp trong tài chính, xuất khẩu, nông nghiệp, an ninh, quảng cáo và phát triển vận động viên.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Tài chính",
+      "export": "Xuất khẩu",
       "agriculture": "Nông Nghiệp",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "An ninh",
+      "leasing": "Cho thuê",
       "advertising": "Quảng Cáo",
       "athleteDevelopment": "Phát Triển Vận Động Viên"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Số Điện Thoại",
     "workingHours": "Giờ Làm Việc",
     "emailGeneralEnquiries": "Câu Hỏi Chung",
-    "emailQueries": "Queries",
+    "emailQueries": "Câu hỏi",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Thể thao",
       "tradeExport": "Thương mại & Xuất khẩu",
       "warehouse": "Kho Bãi",
-      "athlete": "Sports"
+      "athlete": "Thể thao"
     }
   },
   "newsPage": {
@@ -803,13 +799,13 @@
     "latestNews": "Tin Mới Nhất",
     "noArticlesYet": "Chưa có bài viết nào cho danh mục này.",
     "articleCount": "{{count}} bài viết từ nguồn tin tức trực tiếp",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} bài viết từ nguồn tin tức trực tiếp"
   },
   "newsVideo": {
     "onAir": "Đang phát",
     "tvCommercial": "Quảng cáo truyền hình",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Quảng cáo TV Indexia Finance - News18",
+    "playAriaLabel": "Phát quảng cáo TV Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "Về trang chủ",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Quy định",
-          "excerpt": "Uỷy ban chứng khoán An Đức đã bắt đầu điều tra cáo bỏ rò rỉ thông tin không công khai liên quan đến HDFC.",
-          "title": "SEBI ra lệnh điều tra vụ rò rỉ thông tin HDFC"
+          "excerpt": "Uỷy ban chứng khoán An Đức đã bắt đầu điều tra cáo bỏ rò rỉ thông tin không công khai liên quan đến HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Ngân hàng số",
@@ -1277,12 +1272,12 @@
         "sublabel": "Tập chạy nước rút trên đường đua"
       },
       "fieldPractice": {
-        "label": "Tập Luyện Đồng trống",
+        "label": "Tập Luyện Đồng_decimal",
         "sublabel": "Bài tập điền kinh"
       },
       "trainingSession": {
         "label": "Buổi Huấn Luyện",
-        "sublabel": "Tập luyện đồng trống với huấn luyện viên"
+        "sublabel": "Tập luyện đồng_decimal với huấn luyện viên"
       },
       "horizontalTraining1": {
         "label": "Huấn Luyện Ngang 1",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Tài chính",
     "warehouse": "Kho Bãi",
     "export": "Thương Mại & Xuất Khẩu",
-    "athlete": "Sports"
+    "athlete": "Thể thao"
   },
   "passbook": {
     "branchOffices": "Chi nhánh",
     "directLines": "Đường dây trực tiếp",
     "avgReplyTime": "Thời gian phản hồi TB",
     "enquiryStatus": "Trạng thái yêu cầu",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "dưới 24 giờ",
+    "inReview": "Đang xem xét"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Ngân hàng"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Quốc gia"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Năm"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Loại khoản vay"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Dịch vụ"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Giờ"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Quốc gia"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Thực phẩm"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Hậu cần"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Phân bón"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Năm"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Lĩnh vực"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Sĩ quan"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Giờ"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Năm"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Hecta"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Đường cao tốc"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Địa điểm"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Tiểu bang"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Tiếp xúc"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Vận động viên"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Môn thể thao"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Năm"
         }
       ],
       "bullets": [

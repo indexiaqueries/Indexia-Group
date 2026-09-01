@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Pubblicità su cartelloni stradali",
     "radialFoundationDesc": "Supporto agli atleti indiani dalla base alle Olimpiadi",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Gruppo",
     "hubDescription": "Otto imprese specializzate che operano da una visione condivisa.",
-    "ourStory": "La Nostra Storia",
-    "ourValues": "I Nostri Valori",
-    "ourCompanies": "Le Nostre Aziende",
-    "leadership": "Leadership",
     "visionaryTitle": "Il Visionario dietro",
     "visionaryAccent": "Gruppo Indexia",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "aziende, un gruppo",
     "description": "Otto aziende. Un team. Costruisci la tua carriera in finanza, esportazione, agricoltura, sicurezza, pubblicità e sviluppo atleti.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Finanza",
+      "export": "Esportazione",
       "agriculture": "Agricoltura",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Sicurezza",
+      "leasing": "Noleggio",
       "advertising": "Pubblicità",
       "athleteDevelopment": "Sviluppo Atleti"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Numeri di Telefono",
     "workingHours": "Orari di Lavoro",
     "emailGeneralEnquiries": "Richieste Generali",
-    "emailQueries": "Queries",
+    "emailQueries": "Richieste",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -361,7 +357,7 @@
       "globalResearch": "Ricerca Globale",
       "groupCompanies": "Aziende del Gruppo",
       "news": "Centro News e Conoscenza",
-      "privacyPolicy": "Privacy Policy",
+      "privacyPolicy": "Privacy",
       "securityTips": "Consigli di Sicurezza",
       "termsConditions": "Termini e Condizioni",
       "termsOfUse": "Termini di Utilizzo"
@@ -776,7 +772,7 @@
       "sport": "Sport",
       "tradeExport": "Commercio ed Esportazione",
       "warehouse": "Magazzino",
-      "athlete": "Sports"
+      "athlete": "Sport"
     }
   },
   "newsPage": {
@@ -795,7 +791,7 @@
     "title": "Centro News e Conoscenza",
     "titleAccent": "tutto il Gruppo.",
     "titleStart": "Storie e approfondimenti da ",
-    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
+    "tvCaption": "Serve un prestito… Indexia Finance",
     "tvEyebrow": "Guardaci in TV",
     "tvHeadingAccent": "Indexia Finanza",
     "tvHeadingStart": "Per Tutte le Tue Esigenze di Prestito",
@@ -803,13 +799,13 @@
     "latestNews": "Ultime Notizie",
     "noArticlesYet": "Nessun articolo disponibile per questa categoria.",
     "articleCount": "{{count}} articolo dal feed notizie in tempo reale",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} articoli dal feed notizie dal vivo"
   },
   "newsVideo": {
     "onAir": "In OnDA",
     "tvCommercial": "Pubblicità TV",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Pubblicità TV Indexia Finance - News18",
+    "playAriaLabel": "Riproduci pubblicità TV Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "Torna alla Home",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regolamentazione",
-          "excerpt": "L'autorità di borsa indiana ha avviato un'indagine sulla presunta fuga di informazioni non pubbliche relative a HDFC.",
-          "title": "SEBI Ordina Inchiesta su Fuga Informazioni HDFC"
+          "excerpt": "L'autorità di borsa indiana ha avviato un'indagine sulla presunta fuga di informazioni non pubbliche relative a HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Politica",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Finanza",
     "warehouse": "Magazzino",
     "export": "Commercio ed Esportazione",
-    "athlete": "Sports"
+    "athlete": "Sport"
   },
   "passbook": {
     "branchOffices": "Sedi succursali",
     "directLines": "Linee dirette",
     "avgReplyTime": "Tempo medio di risposta",
     "enquiryStatus": "Stato della richiesta",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "meno di 24 ore",
+    "inReview": "In revisione"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Banche"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Paesi"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Anni"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Tipi di Prestito"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Servizi"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Ore"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Paesi"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Alimenti"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logistica"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Concimi"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Anni"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Settori"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Ufficiali"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Ore"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Anni"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Ettari"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Autostrade"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Posizioni"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Stati"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Esposizione"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Atleti"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Discipline"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Anni"
         }
       ],
       "bullets": [

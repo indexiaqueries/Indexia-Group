@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Snelwegreclame billboards",
     "radialFoundationDesc": "Ondersteuning van Indiase atleten van basis tot Olympische Spelen",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Groep",
     "hubDescription": "Acht gespecialiseerde bedrijven werkend vanuit één gedeelde visie.",
-    "ourStory": "Ons Verhaal",
-    "ourValues": "Onze Waarden",
-    "ourCompanies": "Onze Bedrijven",
-    "leadership": "Leiderschap",
     "visionaryTitle": "De Visionair achter",
     "visionaryAccent": "Indexia Groep",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "bedrijven, één groep",
     "description": "Acht bedrijven. Eén team. Bouw uw carrière in financiën, export, landbouw, beveiliging, reclame en atletenontwikkeling.",
     "sectors": {
-      "finance": "Finance",
+      "finance": "Financiën",
       "export": "Export",
       "agriculture": "Landbouw",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Beveiliging",
+      "leasing": "Verhuur",
       "advertising": "Reclame",
       "athleteDevelopment": "Atletenontwikkeling"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Telefoonnummers",
     "workingHours": "Openingstijden",
     "emailGeneralEnquiries": "Algemene Vragen",
-    "emailQueries": "Queries",
+    "emailQueries": "Vragen",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Sport",
       "tradeExport": "Handel & Export",
       "warehouse": "Opslag",
-      "athlete": "Sports"
+      "athlete": "Sport"
     }
   },
   "newsPage": {
@@ -803,13 +799,13 @@
     "latestNews": "Laatste Nieuws",
     "noArticlesYet": "Nog geen artikelen beschikbaar voor deze categorie.",
     "articleCount": "{{count}} artikel uit de live newsfeed",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} artikelen uit live nieuwsfeed"
   },
   "newsVideo": {
     "onAir": "In de Lucht",
     "tvCommercial": "TV-reclame",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Indexia Finance TV-reclame - News18",
+    "playAriaLabel": "Speel Indexia Finance TV-reclame"
   },
   "notFoundPage": {
     "backHome": "Terug naar Home",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regelgeving",
-          "excerpt": "De Indiase effectenautoriteit heeft een onderzoek ingesteld naar het vermeende lek van niet-openbare informatie over HDFC.",
-          "title": "SEBI Beveilt Onderzoek naar HDFC Informatielek"
+          "excerpt": "De Indiase effectenautoriteit heeft een onderzoek ingesteld naar het vermeende lek van niet-openbare informatie over HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Digitale Bankzaken",
@@ -1249,11 +1244,11 @@
     "locations": "Locaties",
     "locationsValue": "5 Locaties",
     "note": "Modern magazijn wordt gebouwd op 2 acres met laaddocks. Prijzen onderhandelbaar, neem contact op voor details.",
-    "plot1": "1 Acre",
-    "plot2": "2 Acres",
+    "plot1": "Perceelgrootte: 1 Acre",
+    "plot2": "Perceelgrootte: 2 Acres",
     "plot2_5": "2,5 Acres",
-    "plot5": "5 Acres",
-    "plot8": "8 Acres",
+    "plot5": "Perceelgrootte: 5 Acres",
+    "plot8": "Perceelgrootte: 8 Acres",
     "plotArea1": "Grondoppervlak: 1 acre",
     "plotArea2": "Grondoppervlak: 2 acres",
     "plotArea2_5": "Grondoppervlak: 2,5 acres",
@@ -1265,7 +1260,7 @@
     "subtitle": "5 locaties | 21 acres totaal, Shamli, Uttar Pradesh",
     "title": "Grondportefeuille & Prijzen",
     "total": "Totale Grond",
-    "totalValue": "21 Acres",
+    "totalValue": "Totale waarde",
     "valueCol": "Waarde"
   },
   "foundationGallery": {
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Financiën",
     "warehouse": "Opslag",
     "export": "Handel & Export",
-    "athlete": "Sports"
+    "athlete": "Sport"
   },
   "passbook": {
     "branchOffices": "Vestigingen",
     "directLines": "Directe lijnen",
     "avgReplyTime": "Gem. reactietijd",
     "enquiryStatus": "Vraagstatus",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "minder dan 24 uur",
+    "inReview": "In behandeling"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Banken"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Landen"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Jaren"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Leningsoorten"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Diensten"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Uren"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Landen"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Voedsel"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logistiek"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Kunstmest"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Jaren"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Sectoren"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Officieren"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Uren"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Jaren"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Hectare"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Snelwegen"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Locaties"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Staten"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Blootstelling"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Atleten"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Disciplines"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Jaren"
         }
       ],
       "bullets": [

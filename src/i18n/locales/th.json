@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "โฆษณาน Billboard บนทางด่วน",
     "radialFoundationDesc": "สนับสนุนนักกีฬาอินเดียจากระดับรากหญ้าจนถึงโอลิมปิก",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "กลุ่ม",
     "hubDescription": "แปดธุรกิจเฉพาะทางที่ทำงานจากวิสัยทัศน์ร่วมกัน",
-    "ourStory": "เรื่องราวของเรา",
-    "ourValues": "ค่านิยมของเรา",
-    "ourCompanies": "บริษัทของเรา",
-    "leadership": "ฝ่ายบริหาร",
     "visionaryTitle": "ผู้มองการณ์ไกลเบื้องหลัง",
     "visionaryAccent": "กลุ่มอินเด็กเซีย",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "บริษัท กลุ่มเดียว",
     "description": "แปดบริษัท ทีมเดียว สร้างอาชีพด้านการเงิน การส่งออก การเกษตร รักษาความปลอดภัย โฆษณา และพัฒนานักกีฬา",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "การเงิน",
+      "export": "ส่งออก",
       "agriculture": "การเกษตร",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "ความปลอดภัย",
+      "leasing": "ให้เช่า",
       "advertising": "โฆษณา",
       "athleteDevelopment": "การพัฒนานักกีฬา"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "หมายเลขโทรศัพท์",
     "workingHours": "เวลาทำการ",
     "emailGeneralEnquiries": "สอบถามทั่วไป",
-    "emailQueries": "Queries",
+    "emailQueries": "คำถาม",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "กีฬา",
       "tradeExport": "การค้าและการส่งออก",
       "warehouse": "คลังสินค้า",
-      "athlete": "Sports"
+      "athlete": "กีฬา"
     }
   },
   "newsPage": {
@@ -795,7 +791,7 @@
     "title": "ศูนย์ข่าวและองค์ความรู้",
     "titleAccent": "ทั่วทั้งกลุ่ม.",
     "titleStart": "เรื่องราวและข้อมูลเชิงลึกจาก ",
-    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
+    "tvCaption": "ต้องการเงินกู้… Indexia Finance",
     "tvEyebrow": "ชมเราทางทีวี",
     "tvHeadingAccent": "อินเด็กเซีย ไฟแนนซ์",
     "tvHeadingStart": "สำหรับทุกความต้องการสินเชื่อของคุณ",
@@ -803,13 +799,13 @@
     "latestNews": "ข่าวล่าสุด",
     "noArticlesYet": "ยังไม่มีบทความสำหรับหมวดหมู่นี้",
     "articleCount": "{{count}} บทความจากฟีดข่าวสด",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} บทความจากฟีดข่าวสด"
   },
   "newsVideo": {
     "onAir": "ออกอากาศ",
     "tvCommercial": "โฆษณาทางทีวี",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "โฆษณาทีวี Indexia Finance - News18",
+    "playAriaLabel": "เล่นโฆษณาทีวี Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "กลับหน้าแรก",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "กฎระเบียบ",
-          "excerpt": "คณะกรรมการหลักทรัพย์และตลาดหลักทรัพย์อินเดียเริ่มการสอบสวนการรั่วไหลของข้อมูลที่ไม่เปิดเผยต่อสาธารณะที่เกี่ยวข้องกับ HDFC",
-          "title": "SEBI สั่งสอบสวนคดีข้อมูลรั่ว HDFC"
+          "excerpt": "คณะกรรมการหลักทรัพย์และตลาดหลักทรัพย์อินเดียเริ่มการสอบสวนการรั่วไหลของข้อมูลที่ไม่เปิดเผยต่อสาธารณะที่เกี่ยวข้องกับ HDFC"
         },
         "uidai-aadhaar-banks": {
           "category": "ธนาคารดิจิทัล",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "การเงิน",
     "warehouse": "คลังสินค้า",
     "export": "การค้าและการส่งออก",
-    "athlete": "Sports"
+    "athlete": "กีฬา"
   },
   "passbook": {
     "branchOffices": "สำนักงานสาขา",
     "directLines": "สายตรง",
     "avgReplyTime": "เวลาตอบกลับเฉลี่ย",
     "enquiryStatus": "สถานะการสอบถาม",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "น้อยกว่า 24 ชม.",
+    "inReview": "อยู่ระหว่างตรวจสอบ"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "ธนาคาร"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "ประเทศ"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "ปี"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "ประเภทเงินกู้"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "บริการ"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "ชั่วโมง"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "ประเทศ"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "อาหาร"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "โลจิสติกส์"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "ปุ๋ย"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "ปี"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "ภาค"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "เจ้าหน้าที่"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "ชั่วโมง"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "ปี"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "ไร่"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "ทางด่วน"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "กม."
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "สถานที่"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "รัฐ"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "การเปิดเผย"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "นักกีฬา"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "ชนิดกีฬา"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "ปี"
         }
       ],
       "bullets": [

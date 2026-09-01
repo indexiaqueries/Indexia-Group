@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Iklan papan reklame jalan raya",
     "radialFoundationDesc": "Mendukung atlet India dari dasar hingga Olimpiade",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Grup",
     "hubDescription": "Delapan bisnis spesialis yang bekerja dari satu visi bersama.",
-    "ourStory": "Cerita Kami",
-    "ourValues": "Nilai Kami",
-    "ourCompanies": "Perusahaan Kami",
-    "leadership": "Kepemimpinan",
     "visionaryTitle": "Sang Visioner di Balik",
     "visionaryAccent": "Grup Indexia",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "perusahaan, satu grup",
     "description": "Delapan perusahaan. Satu tim. Bangun karir Anda di keuangan, ekspor, pertanian, keamanan, periklanan, dan pengembangan atlet.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Keuangan",
+      "export": "Ekspor",
       "agriculture": "Pertanian",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Keamanan",
+      "leasing": "Sewa",
       "advertising": "Periklanan",
       "athleteDevelopment": "Pengembangan Atlet"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Nomor Telepon",
     "workingHours": "Jam Kerja",
     "emailGeneralEnquiries": "Umum",
-    "emailQueries": "Queries",
+    "emailQueries": "Pertanyaan",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Olahraga",
       "tradeExport": "Perdagangan & Ekspor",
       "warehouse": "Pergudangan",
-      "athlete": "Sports"
+      "athlete": "Olahraga"
     }
   },
   "newsPage": {
@@ -803,13 +799,13 @@
     "latestNews": "Berita Terbaru",
     "noArticlesYet": "Belum ada artikel tersedia untuk kategori ini.",
     "articleCount": "{{count}} artikel dari feed berita langsung",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} artikel dari feed berita langsung"
   },
   "newsVideo": {
     "onAir": "Sedang Tayang",
     "tvCommercial": "Iklan TV",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Iklan TV Indexia Finance - News18",
+    "playAriaLabel": "Putar iklan TV Indexia Finance"
   },
   "notFoundPage": {
     "backHome": "Kembali ke Beranda",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regulasi",
-          "excerpt": "Otoritas Pasar Modal India telah memulai penyelidikan dugaan kebocoran informasi non-publik terkait HDFC.",
-          "title": "SEBI Memerintahkan Penyelidikan Kasus Kebocoran Informasi HDFC"
+          "excerpt": "Otoritas Pasar Modal India telah memulai penyelidikan dugaan kebocoran informasi non-publik terkait HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Perbankan Digital",
@@ -1087,10 +1082,7 @@
           "body": "Pertanian organik semakin populer di seluruh India.",
           "title": "Meningkatnya Pertanian Organik di India"
         },
-        "securing-Operations": {
-          "body": "Di era ancaman siber yang meningkat, mengamankan operasi bisnis online tidak lagi bersifat opsional.",
-          "title": "Mengamankan Operasi Bisnis Anda Secara Online"
-        },
+        "securing-Operations": {},
         "securing-operations": {
           "body": "Mengamankan operasi online Anda bukan lagi pilihan. Gunakan autentikasi multi-faktor dan enkripsi data sensitif.",
           "title": "Mengamankan Operasi Online Anda"
@@ -1307,18 +1299,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Keuangan",
     "warehouse": "Pergudangan",
     "export": "Perdagangan & Ekspor",
-    "athlete": "Sports"
+    "athlete": "Olahraga"
   },
   "passbook": {
     "branchOffices": "Kantor cabang",
     "directLines": "Garis langsung",
     "avgReplyTime": "Rata-rata waktu balas",
     "enquiryStatus": "Status pertanyaan",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "< 24 jam",
+    "inReview": "Sedang ditinjau"
   },
   "spotlight": {
     "finance": {
@@ -1328,15 +1320,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Bank"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Negara"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Tahun"
         }
       ],
       "bullets": [
@@ -1353,15 +1345,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Jenis Pinjaman"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Layanan"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Jam"
         }
       ],
       "bullets": [
@@ -1378,15 +1370,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Negara"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Pangan"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logistik"
         }
       ],
       "bullets": [
@@ -1403,15 +1395,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Pupuk"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Tahun"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Sektor"
         }
       ],
       "bullets": [
@@ -1428,15 +1420,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Perwira"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Jam"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Tahun"
         }
       ],
       "bullets": [
@@ -1453,15 +1445,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Hektar"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Jalan Tol"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1478,15 +1470,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Lokasi"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Negara Bagian"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Paparan"
         }
       ],
       "bullets": [
@@ -1503,15 +1495,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Atlet"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Cabang"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Tahun"
         }
       ],
       "bullets": [

@@ -117,10 +117,10 @@
     "radialAdvertisingDesc": "रोजाना लाखों यात्रियों तक पहुंचने वाले हाईवे बिलबोर्ड विज्ञापन",
     "radialFoundationDesc": "ओलंपिक खेलों तक जमीनी स्तर से भारतीय एथलीटों को पोषित करना",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "समूह",
     "hubDescription": "एक साझा दृष्टि से काम करने वाली आठ विशेषज्ञ कंपनियां।",
     "visionaryTitle": "इंडेक्सिया ग्रुप के पीछे का दूरदर्शी",
-    "visionaryAccent": "",
+    "visionaryAccent": "Indexia Group",
     "founderPersonName": "Bijendra Malik",
     "entityFinserveName": "इंडेक्सिया फिनसर्व प्राइवेट लिमिटेड",
     "entityOverseasName": "इंडेक्सिया ओवरसीज़ प्राइवेट लिमिटेड",
@@ -419,8 +419,8 @@
       "closeMenu": "मेनू बंद करें",
       "selectLanguage": "भाषा चुनें",
       "toggleMenu": "मेनू खोलें/बंद करें",
-      "previousArticles": "Previous articles",
-      "nextArticles": "Next articles"
+      "previousArticles": "पिछले लेख",
+      "nextArticles": "अगले लेख"
     },
     "menu": {
       "companies": "कंपनियाँ",
@@ -771,8 +771,8 @@
       "security": "सुरक्षा",
       "sport": "खेल",
       "tradeExport": "व्यापार और निर्यात",
-      "warehouse": "Warehousing",
-      "athlete": "Sports"
+      "warehouse": "गोदाम",
+      "athlete": "खेल"
     }
   },
   "newsPage": {
@@ -795,11 +795,11 @@
     "tvEyebrow": "हमें टीवी पर देखें",
     "tvHeadingAccent": "इंडिक्सिया फाइनेंस",
     "tvHeadingStart": "आपकी सभी ऋण आवश्यकताओं के लिए",
-    "readFullStory": "Read Full Story",
+    "readFullStory": "पूरी कहानी पढ़ें",
     "latestNews": "ताज़ा खबरें",
     "noArticlesYet": "इस श्रेणी के लिए अभी तक कोई लेख उपलब्ध नहीं है।",
     "articleCount": "{{count}} लाइव न्यूज़ फ़ीड से लेख",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} लाइव न्यूज़ फ़ीड से लेख"
   },
   "newsVideo": {
     "onAir": "ऑन एयर",
@@ -814,9 +814,7 @@
   },
   "openRoles": {
     "loading": "रिक्तियाँ लोड हो रही हैं...",
-    "noPositions": "फिलहाल कोई {{type}} पद उपलब्ध नहीं है।",
-    "fullTime": "पूर्णकालिक",
-    "intern": "इंटर्न"
+    "noPositions": "फिलहाल कोई {{type}} पद उपलब्ध नहीं है।"
   },
   "pageContent": {
     "careers": {
@@ -1062,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "विनियमन",
-          "excerpt": "भारतीय प्रतिभूति और विनिमय बोर्ड ने HDFC से संबंधित कथित सूचना लीक की जांच शुरू की है।",
-          "title": "SEBI ने HDFC सूचना लीक मामले में जांच का आदेश दिया"
+          "excerpt": "भारतीय प्रतिभूति और विनिमय बोर्ड ने HDFC से संबंधित कथित सूचना लीक की जांच शुरू की है।"
         },
         "uidai-aadhaar-banks": {
           "category": "नीति",

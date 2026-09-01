@@ -117,7 +117,7 @@
     "radialAdvertisingDesc": "Publicidad en vallas de carretera que alcanza a millones de viajeros diariamente",
     "radialFoundationDesc": "Apoyar a los atletas indios desde la base hasta los Juegos Olímpicos",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Grupo",
     "hubDescription": "Ocho empresas especializadas trabajando desde una visión compartida.",
     "visionaryTitle": "El Visionario detrás de",
     "visionaryAccent": "Grupo Indexia",
@@ -419,8 +419,8 @@
       "closeMenu": "Cerrar menú",
       "selectLanguage": "Seleccionar idioma",
       "toggleMenu": "Abrir menú",
-      "previousArticles": "Previous articles",
-      "nextArticles": "Next articles"
+      "previousArticles": "Artículos anteriores",
+      "nextArticles": "Siguientes artículos"
     },
     "menu": {
       "companies": "Empresas",
@@ -771,8 +771,8 @@
       "security": "Seguridad",
       "sport": "Deporte",
       "tradeExport": "Comercio y Exportación",
-      "warehouse": "Warehousing",
-      "athlete": "Sports"
+      "warehouse": "Almacenamiento",
+      "athlete": "Deportes"
     }
   },
   "newsPage": {
@@ -791,15 +791,15 @@
     "title": "Noticias y Centro de Conocimiento",
     "titleAccent": "todo el Grupo.",
     "titleStart": "Historias y perspectivas de ",
-    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
+    "tvCaption": "Necesita un préstamo… Indexia Finance",
     "tvEyebrow": "Míranos en TV",
     "tvHeadingAccent": "Indexia Finanzas",
     "tvHeadingStart": "Para Todos Tus Requisitos de Préstamo",
-    "readFullStory": "Read Full Story",
+    "readFullStory": "Leer artículo completo",
     "latestNews": "Últimas Noticias",
     "noArticlesYet": "No hay artículos disponibles para esta categoría aún.",
     "articleCount": "{{count}} artículo del feed de noticias en vivo",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} artículos del feed de noticias en vivo"
   },
   "newsVideo": {
     "onAir": "En Antena",
@@ -814,9 +814,7 @@
   },
   "openRoles": {
     "loading": "Cargando ofertas...",
-    "noPositions": "No hay posiciones de {{type}} disponibles.",
-    "fullTime": "Tiempo completo",
-    "intern": "Pasante"
+    "noPositions": "No hay posiciones de {{type}} disponibles."
   },
   "pageContent": {
     "careers": {
@@ -1062,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Regulación",
-          "excerpt": "La Junta de Valores de India ha iniciado una investigación sobre la filtración de información relacionada con HDFC.",
-          "title": "SEBI Ordena Investigación sobre Fuga de Información HDFC"
+          "excerpt": "La Junta de Valores de India ha iniciado una investigación sobre la filtración de información relacionada con HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Política",
@@ -1311,7 +1308,7 @@
     "directLines": "Líneas directas",
     "avgReplyTime": "Tiempo prom. de respuesta",
     "enquiryStatus": "Estado de la consulta",
-    "lessThan24hrs": "< 24 hrs",
+    "lessThan24hrs": "menos de 24 h",
     "inReview": "En revisión"
   },
   "spotlight": {
@@ -1322,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Bancos"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Países"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Años"
         }
       ],
       "bullets": [
@@ -1347,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Tipos de Préstamo"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Servicios"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Horas"
         }
       ],
       "bullets": [
@@ -1372,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Países"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Alimentos"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logística"
         }
       ],
       "bullets": [
@@ -1397,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Fertilizantes"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Años"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Sectores"
         }
       ],
       "bullets": [
@@ -1422,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Oficiales"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Horas"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Años"
         }
       ],
       "bullets": [
@@ -1447,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Hectáreas"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Autopistas"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1472,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Ubicaciones"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Estados"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Exposición"
         }
       ],
       "bullets": [
@@ -1497,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Atletas"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Disciplinas"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Años"
         }
       ],
       "bullets": [
@@ -1518,9 +1515,9 @@
   },
   "addresses": {
     "corporateOffice": "Oficina N° 3, 1er Piso,\nRahimtoola House, Homji Street,\nFrente al RBI, Fort,\nMumbai - 400001, Maharashtra",
-    "mumbaiOffice": "2A/1402, New Mhada Complex,\nNear Lokhandwala Circle,\nAndheri West,\nMumbai - 400053, Maharashtra",
-    "delhiOffice": "213, Second Floor, Imperial Tower,\nNear Gurudwara,\nC Block Commercial Complex,\nNaraina Vihar, New Delhi - 110028",
-    "shamliOffice": "Meerut Karnal Road,\nShamli, Uttar Pradesh - 247776",
-    "internationalOffice": "Avenida Perez Guerrero OE-375,\ny Avenida Quito,\nEcuador, South America"
+    "mumbaiOffice": "Oficina Mumbai",
+    "delhiOffice": "Oficina Delhi",
+    "shamliOffice": "Oficina Shamli",
+    "internationalOffice": "Oficina Internacional"
   }
 }

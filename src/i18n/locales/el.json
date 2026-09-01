@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Διαφημίσεις πινακίδων σε αυτοκινητόδρομους",
     "radialFoundationDesc": "Υποστήριξη Ινδών αθλητών από τη βάση έως τους Ολυμπιακούς Αγώνες",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Όμιλος",
     "hubDescription": "Οκτώ ειδικευμένες επιχειρήσεις που εργάζονται από μια κοινή όραση.",
-    "ourStory": "Η Ιστορία μας",
-    "ourValues": "Οι Αξίες μας",
-    "ourCompanies": "Οι Εταιρείες μας",
-    "leadership": "Ηγεσία",
     "visionaryTitle": "Ο Οραματιστής πίσω από",
     "visionaryAccent": "Ομάδα Indexia",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "εταιρείες, ένας όμιλος",
     "description": "Οκτώ εταιρείες. Μία ομάδα. Χτίστε την καριέρα σας στα οικονομικά, τις εξαγωγές, τη γεωργία, την ασφάλεια, τη διαφήμιση και την ανάπτυξη αθλητών.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Οικονομικά",
+      "export": "Εξαγωγή",
       "agriculture": "Γεωργία",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Ασφάλεια",
+      "leasing": "Ενοικίαση",
       "advertising": "Διαφήμιση",
       "athleteDevelopment": "Ανάπτυξη Αθλητών"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Τηλέφωνα",
     "workingHours": "Ώρες Εργασίας",
     "emailGeneralEnquiries": "Γενικά Ερωτήματα",
-    "emailQueries": "Queries",
+    "emailQueries": "Ερωτήματα",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Αθλητισμός",
       "tradeExport": "Εμπόριο & Εξαγωγή",
       "warehouse": "Αποθήκευση",
-      "athlete": "Sports"
+      "athlete": "Αθλητισμός"
     }
   },
   "newsPage": {
@@ -803,7 +799,7 @@
     "latestNews": "Τελευταία Νέα",
     "noArticlesYet": "Δεν υπάρχουν διαθέσιμα άρθρα για αυτή την κατηγορία.",
     "articleCount": "{{count}} άρθρο από τη ζωντανή ροή ειδήσεων",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} άρθρα από ζωντανή ροή ειδήσεων"
   },
   "newsVideo": {
     "onAir": "Στον Αέρα",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Κανονισμθνάς",
-          "excerpt": "Η Επιτροπή Αξιών Ινδίας ξεκίνησε έρευνα για υποτιθέμενη διαρροή μη δημόσιων πληροφοριών σχετικά με το HDFC.",
-          "title": "SEBI Διατάσσει Έρευνα για Διαρροή Πληροφοριών HDFC"
+          "excerpt": "Η Επιτροπή Αξιών Ινδίας ξεκίνησε έρευνα για υποτιθέμενη διαρροή μη δημόσιων πληροφοριών σχετικά με το HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Politique",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Οικονομικά",
     "warehouse": "Αποθήκευση",
     "export": "Εμπόριο & Εξαγωγή",
-    "athlete": "Sports"
+    "athlete": "Αθλητισμός"
   },
   "passbook": {
     "branchOffices": "Παραρτήματα",
     "directLines": "Άμεσες γραμμές",
     "avgReplyTime": "Μ.Ο. χρόνου απάντησης",
     "enquiryStatus": "Κατάσταση ερωτήματος",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "< 24 ώρ.",
+    "inReview": "Υπό εξέταση"
   },
   "spotlight": {
     "finance": {
@@ -1324,22 +1319,22 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Τράπεζες"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Χώρες"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Έτη"
         }
       ],
       "bullets": [
-        "FDI facilitation across emerging and developed markets",
-        "NBFC operations with regulated lending frameworks",
-        "Banking & institutional funding for large-scale projects",
-        "Cross-border capital solutions for multinational clients"
+        "Συνεργασίες με 43 τράπεζες και NBFC στην Ινδία",
+        "Παγκόσμια παρουσία σε 4 ηπείρους",
+        "Ψηφιακή πλατφόρμα για επενδυτές",
+        "Αξιόπιστες σχέσεις με πελάτες παγκοσμίως"
       ]
     },
     "finserve": {
@@ -1349,22 +1344,22 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Είδη Δανείου"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Υπηρεσίες"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Ωράριο"
         }
       ],
       "bullets": [
-        "Personal, home, and business loans with competitive rates",
-        "MSME and project funding with flexible terms",
-        "Balance transfer and loan against property options",
-        "Dedicated relationship manager assigned from enquiry to disbursal"
+        "Προσωπικά και επιχειρηματικά δάνεια",
+        "Στεγαστικό δάνειο και δάνειο ενεχύρου",
+        "Μεταφορά υπολοίπου και κεφάλαιο εργασίας",
+        "Γρήγορη επεξεργασία αιτημάτων"
       ]
     },
     "overseas": {
@@ -1374,22 +1369,22 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Χώρες"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Τρόφιμα"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logistik"
         }
       ],
       "bullets": [
-        "Premium refined sugar and edible commodity exports",
-        "Full-cycle management, sourcing, QA, logistics, compliance",
-        "Trusted partner for bulk buyers and institutional consumers",
-        "Deep understanding of South American trade dynamics"
+        "Premium εξαγωγές επεξεργασμένης ζάχαρης και τροφίμων",
+        "Διαχείριση πλήρους κύκλου, προμήθεια, Ελεγχος Ποιότητας, Logistik, Συμμόρφωση",
+        "Αξιόπιστος εταίρος για χονδρικούς αγοραστές και θεσμικούς καταναλωτές",
+        "Βαθιά κατανόηση των εμπορικών δυναμικών της Νότιας Αμερικής"
       ]
     },
     "agro-bio": {
@@ -1399,22 +1394,22 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Λιπάσματα"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Έτη"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Κλάδοι"
         }
       ],
       "bullets": [
-        "Bio-based solutions that work with nature, not against it",
-        "Soil health assessment and customized fertilizer blends",
-        "Crop yield optimization with hands-on farmer training",
-        "Expanding domestic and international distribution network"
+        "100% βιολογικά λιπάσματα",
+        "Εργοτάξιο στη Σάμλι UP",
+        "Έλεγχος εδάφους & υποστήριξη αγροτών",
+        "Εγχώρια & εξαγωγική διανομή"
       ]
     },
     "securities": {
@@ -1424,22 +1419,22 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Αξιωματικοί"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Ωράριο"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Έτη"
         }
       ],
       "bullets": [
-        "Close protection details for politicians and corporate leaders",
-        "Corporate, industrial, and event security management",
-        "Real-time surveillance with technology-driven monitoring",
-        "Rapid deployment commando and response units"
+        "Ειδικές δυνάμεις & εκπαίδευση",
+        "Κέντρο επιχειρήσεων 24/7",
+        "Προστασία VIP & εταιρική",
+        "Ασφάλεια κρίσιμης υποδομής"
       ]
     },
     "warehouse": {
@@ -1449,22 +1444,22 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Στρέμματα"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Αυτοκινητόδρομοι"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "Χλμ"
         }
       ],
       "bullets": [
-        "5 locations with flexible plots from 1 to 8 acres",
-        "Direct access to Gujarat, Maharashtra, Chennai, Kolkata ports",
-        "IGI Airport Delhi and Noida Int'l Airport within 1 hour",
-        "Modern warehouse planned on 2 acres with loading docks"
+        "21 στρέμματα στη Σάμλι UP",
+        "8 εθνικοί αυτοκινητόδρομοι",
+        "5 τοποθεσίες",
+        "65 χλμ από τη Δελχί"
       ]
     },
     "advertising": {
@@ -1474,22 +1469,22 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Τοποθεσίες"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Πολιτείες"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Έκθεση"
         }
       ],
       "bullets": [
-        "10×20 ft and 12×24 ft unipole packages available",
-        "Strategic placements on NH-709B and Shamli Ring Road",
-        "End-to-end service, printing, installation, maintenance",
-        "Long-term and bulk packages with negotiable rates"
+        "Αυτοκινητόδρομος NH-709B Δελχί-Ντεχραντούν",
+        "10 συνδεδεμένες πολιτείες",
+        "Ορατότητα 360°",
+        "1+ Crore ημερήσια έκθεση"
       ]
     },
     "foundation": {
@@ -1499,22 +1494,22 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Αθλητές"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Αγωνίσματα"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Έτη"
         }
       ],
       "bullets": [
-        "International-standard training facilities and expert coaching",
-        "Complete nutrition, diet planning, and sports medicine",
-        "Competition funding, equipment, and psychological support",
-        "Building a sustainable pipeline of world-class athletes"
+        "Από βάση έως Ολυμπιακούς",
+        "Εκπαίδευση & διατροφή",
+        "Coaching & mentoring",
+        "Χρηματοδότηση αγώνων"
       ]
     }
   },

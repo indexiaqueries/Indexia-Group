@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Otoyol reklam panoları",
     "radialFoundationDesc": "Temelden Olimpiyatlara kadar Hintli sporculara destek",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Grup",
     "hubDescription": "Ortak bir vizyondan çalışan sekiz uzman işletme.",
-    "ourStory": "Hikayemiz",
-    "ourValues": "Değerlerimiz",
-    "ourCompanies": "Şirketlerimiz",
-    "leadership": "Liderlik",
     "visionaryTitle": "Indexia Grubunun",
     "visionaryAccent": "Visioneri",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "şirket, bir grup",
     "description": "Sekiz şirket. Bir ekip. Finans, ihracat, tarım, güvenlik, reklam ve sporcu gelişiminde kariyerinizi inşa edin.",
     "sectors": {
-      "finance": "Finance",
-      "export": "Export",
+      "finance": "Finans",
+      "export": "İhracat",
       "agriculture": "Tarım",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Güvenlik",
+      "leasing": "Kiralama",
       "advertising": "Reklam",
       "athleteDevelopment": "Sporcu Gelişimi"
     }
@@ -318,7 +314,7 @@
     "visualAlt": "{{name}} görseli"
   },
   "contact": {
-    "locationsTitleAccent": "",
+    "locationsTitleAccent": "Konumlarımız",
     "locationsTitleStart": "Ofislerimiz"
   },
   "contactHero": {
@@ -336,13 +332,13 @@
     "enquiries": "Sorgular",
     "eyebrow": "Sorgu Gönder",
     "headlineAccent": "Indexia Şirketi Hakkında Sorun",
-    "headlineStart": "",
+    "headlineStart": "Bilgi Alın ",
     "location": "Konum",
     "paragraph": "Hizmetlerimizle ilgili bir sorunuz, iş danışmanlığı ihtiyacınız veya ortaklık keşfetme isteğiniz olsun, ekibimiz size yardımcı olmaya hazırdır, 24 saat içinde yanıt veriyoruz.",
     "phoneNumbers": "Telefon Numaraları",
     "workingHours": "Çalışma Saatleri",
     "emailGeneralEnquiries": "Genel Sorular",
-    "emailQueries": "Queries",
+    "emailQueries": "Sorular",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Spor",
       "tradeExport": "Ticaret ve İhracat",
       "warehouse": "Depolama",
-      "athlete": "Sports"
+      "athlete": "Spor"
     }
   },
   "newsPage": {
@@ -803,13 +799,13 @@
     "latestNews": "Son Haberler",
     "noArticlesYet": "Bu kategori için henüz makale mevcut değil.",
     "articleCount": "{{count}} canlı haber beslemesinden makale",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} canlı haber beslemesinden makale"
   },
   "newsVideo": {
     "onAir": "Yayında",
     "tvCommercial": "TV Reklamı",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Indexia Finance TV Reklamı - News18",
+    "playAriaLabel": "Indexia Finance TV reklamını oynat"
   },
   "notFoundPage": {
     "backHome": "Ana Sayfaya Dön",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Düzenleme",
-          "excerpt": "Hindistan Menkul Kıymetler ve Borsa Komisyonu, HDFC ile ilgili kamuoyuna açıklanmayan bilgi sızıntısı iddiasını araştırmaya başladı.",
-          "title": "SEBI, HDFC Bilgi Sızıntısı Davasında Soruşturma Emri Verdi"
+          "excerpt": "Hindistan Menkul Kıymetler ve Borsa Komisyonu, HDFC ile ilgili kamuoyuna açıklanmayan bilgi sızıntısı iddiasını araştırmaya başladı."
         },
         "uidai-aadhaar-banks": {
           "category": "Dijital Bankacılık",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Finans",
     "warehouse": "Depolama",
     "export": "Ticaret & İhracat",
-    "athlete": "Sports"
+    "athlete": "Spor"
   },
   "passbook": {
     "branchOffices": "Şubeler",
     "directLines": "Doğrudan hatlar",
     "avgReplyTime": "Ort. yanıt süresi",
     "enquiryStatus": "Sorgu durumu",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "24 saatten az",
+    "inReview": "İnceleniyor"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Bankalar"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Ülkeler"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "Yıl"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Kredi Türleri"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Hizmetler"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Saat"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Ülkeler"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Gıda"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Lojistik"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Gübreler"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "Yıl"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Sektörler"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Subaylar"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Saat"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "Yıl"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Dönüm"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Otoyollar"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Konumlar"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Eyaletler"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Maruz kalma"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Sporcular"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Dallar"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "Yıl"
         }
       ],
       "bullets": [

@@ -117,7 +117,7 @@
     "radialAdvertisingDesc": "毎日数百万の通勤者に届く高速道路看板広告",
     "radialFoundationDesc": "草の根からオリンピックまでインドのアスリートを育成",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "グループ",
     "hubDescription": "一つの共通のビジョンから働く八つの専門企業。",
     "visionaryTitle": "インデキシアグループを創る",
     "visionaryAccent": "ビジョナリー",
@@ -419,8 +419,8 @@
       "closeMenu": "メニューを閉じる",
       "selectLanguage": "言語を選択",
       "toggleMenu": "メニューを開く/閉じる",
-      "previousArticles": "Previous articles",
-      "nextArticles": "Next articles"
+      "previousArticles": "前の記事",
+      "nextArticles": "次の記事"
     },
     "menu": {
       "companies": "企業一覧",
@@ -771,8 +771,8 @@
       "security": "セキュリティ",
       "sport": "スポーツ",
       "tradeExport": "貿易・輸出",
-      "warehouse": "Warehousing",
-      "athlete": "Sports"
+      "warehouse": "倉庫",
+      "athlete": "スポーツ"
     }
   },
   "newsPage": {
@@ -795,11 +795,11 @@
     "tvEyebrow": "テレビでご覧ください",
     "tvHeadingAccent": "インデキシアファイナンス",
     "tvHeadingStart": "あらゆるローンのご相談に",
-    "readFullStory": "Read Full Story",
+    "readFullStory": "全文を読む",
     "latestNews": "最新ニュース",
     "noArticlesYet": "このカテゴリの記事はまだありません。",
     "articleCount": "{{count}} 件のライブニュースフィードからの記事",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}}件のライブニュースフィードからの記事"
   },
   "newsVideo": {
     "onAir": "オンエア",
@@ -814,9 +814,7 @@
   },
   "openRoles": {
     "loading": "求人を読み込み中...",
-    "noPositions": "現在{{type}}のポジションは利用できません。",
-    "fullTime": "正社員",
-    "intern": "インターン"
+    "noPositions": "現在{{type}}のポジションは利用できません。"
   },
   "pageContent": {
     "careers": {
@@ -1062,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "規制",
-          "excerpt": "インド証券取引委員会は、HDFCに関連する情報漏洩の疑いについて調査を開始しました。",
-          "title": "SEBI、HDFC情報漏洩事件の調査を命令"
+          "excerpt": "インド証券取引委員会は、HDFCに関連する情報漏洩の疑いについて調査を開始しました。"
         },
         "uidai-aadhaar-banks": {
           "category": "政策",

@@ -117,7 +117,7 @@
     "radialAdvertisingDesc": "إعلانات لافتات على الطرق السريعة تصل إلى ملايين الم commuting يومياً",
     "radialFoundationDesc": "رعاية الرياضيين الهنديين من الأساسيات إلى الألعاب الأولمبية",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "المجموعة",
     "hubDescription": "ثماني متخصصة تعمل من رؤية مشتركة واحدة.",
     "visionaryTitle": "الرائد وراء",
     "visionaryAccent": "مجموعة إنديكسيا",
@@ -799,7 +799,7 @@
     "latestNews": "آخر الأخبار",
     "noArticlesYet": "لا توجد مقالات متاحة لهذه الفئة بعد.",
     "articleCount": "{{count}} مقالة من خبر البث المباشر",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} مقالات من خبر مباشر"
   },
   "newsVideo": {
     "onAir": "على الهواء",
@@ -814,9 +814,7 @@
   },
   "openRoles": {
     "loading": "جاري تحميل الوظائف...",
-    "noPositions": "لا توجد وظائف {{type}} متاحة حالياً.",
-    "fullTime": "دوام كامل",
-    "intern": "متدرّب"
+    "noPositions": "لا توجد وظائف {{type}} متاحة حالياً."
   },
   "pageContent": {
     "careers": {
@@ -1062,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "التنظيم",
-          "excerpt": "أرسلت هيئة الأوراق المالية في الهند تحقيقاً بشأن التسريب المزعوم للمعلومات غير العامة المتعلقة بـ HDFC.",
-          "title": "SEBI يأمر بالتحقيق في قضية تسريب معلومات HDFC"
+          "excerpt": "أرسلت هيئة الأوراق المالية في الهند تحقيقاً بشأن التسريب المزعوم للمعلومات غير العامة المتعلقة بـ HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "السياسات",

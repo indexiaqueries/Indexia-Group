@@ -117,7 +117,7 @@
     "radialAdvertisingDesc": "매일 수백만 통근자에게 도달하는 고속도로 간판 광고",
     "radialFoundationDesc": "草の根から五輪までインドのアスリートを育成",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "그룹",
     "hubDescription": "하나의 공유 비전으로 운영되는 여덟 개의 전문 기업.",
     "visionaryTitle": "인덱시아 그룹을 만든",
     "visionaryAccent": "비전가",
@@ -332,7 +332,7 @@
     "enquiries": "문의",
     "eyebrow": "문의 보내기",
     "headlineAccent": "Indexia 회사에 대해 문의",
-    "headlineStart": "",
+    "headlineStart": "문의하기 ",
     "location": "위치",
     "paragraph": "서비스에 대한 질문, 비즈니스 상담, 파트너십 모색 등 무엇이든 우리 팀이 도와드릴 준비가 되어 있습니다, 24시간 이내에 답변해 드립니다.",
     "phoneNumbers": "전화번호",
@@ -419,8 +419,8 @@
       "closeMenu": "메뉴 닫기",
       "selectLanguage": "언어 선택",
       "toggleMenu": "메뉴 열기/닫기",
-      "previousArticles": "Previous articles",
-      "nextArticles": "Next articles"
+      "previousArticles": "이전 기사",
+      "nextArticles": "다음 기사"
     },
     "menu": {
       "companies": "회사",
@@ -771,8 +771,8 @@
       "security": "보안",
       "sport": "스포츠",
       "tradeExport": "무역 및 수출",
-      "warehouse": "Warehousing",
-      "athlete": "Sports"
+      "warehouse": "창고",
+      "athlete": "스포츠"
     }
   },
   "newsPage": {
@@ -795,11 +795,11 @@
     "tvEyebrow": "TV에서 만나보세요",
     "tvHeadingAccent": "인덱시아 파이낸스",
     "tvHeadingStart": "모든 대출 요구를 위해",
-    "readFullStory": "Read Full Story",
+    "readFullStory": "전체 기사 읽기",
     "latestNews": "최신 뉴스",
     "noArticlesYet": "이 카테고리의 기사는 아직 없습니다.",
     "articleCount": "{{count}}개의 라이브 뉴스 피드 기사",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}}개의 라이브 뉴스 피드 기사"
   },
   "newsVideo": {
     "onAir": "방송 중",
@@ -814,9 +814,7 @@
   },
   "openRoles": {
     "loading": "채용 정보 로딩 중...",
-    "noPositions": "현재 {{type}} 직위가 없습니다.",
-    "fullTime": "정규직",
-    "intern": "인턴"
+    "noPositions": "현재 {{type}} 직위가 없습니다."
   },
   "pageContent": {
     "careers": {
@@ -1062,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "규제",
-          "excerpt": "인도 증권거래위원회가 HDFC 관련 비공개 정보 유출 의혹에 대한 조사를 시작했습니다.",
-          "title": "SEBI, HDFC 정보 유출 사건 조사 명령"
+          "excerpt": "인도 증권거래위원회가 HDFC 관련 비공개 정보 유출 의혹에 대한 조사를 시작했습니다."
         },
         "uidai-aadhaar-banks": {
           "category": "디지털 뱅킹",
@@ -1520,7 +1517,7 @@
     "corporateOffice": "사무실 3번, 1층,\nRahimtoola House, Homji Street,\nRBI 맞은편, Fort,\nMumbai - 400001, Maharashtra",
     "mumbaiOffice": "2A/1402, New Mhada Complex,\nLokhandwala Circle 근처,\nAndheri West,\nMumbai - 400053, Maharashtra",
     "delhiOffice": "213, 2층, Imperial Tower,\nGurudwara 근처,\nC Block Commercial Complex,\nNaraina Vihar, New Delhi - 110028",
-    "shamliOffice": "Meerut Karnal Road,\nShamli, Uttar Pradesh - 247776",
-    "internationalOffice": "Avenida Perez Guerrero OE-375,\ny Avenida Quito,\nEcuador, South America"
+    "shamliOffice": "샴리 사무소",
+    "internationalOffice": "해외 사무소"
   }
 }

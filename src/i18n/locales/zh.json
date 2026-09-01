@@ -117,7 +117,7 @@
     "radialAdvertisingDesc": "高速公路广告牌广告，每天触达数百万通勤者",
     "radialFoundationDesc": "培养印度运动员，从草根到奥运会",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "集团",
     "hubDescription": "八家专业企业，共同愿景。",
     "visionaryTitle": "英德西亚集团",
     "visionaryAccent": "背后的远见者",
@@ -419,8 +419,8 @@
       "closeMenu": "关闭菜单",
       "selectLanguage": "选择语言",
       "toggleMenu": "打开/关闭菜单",
-      "previousArticles": "Previous articles",
-      "nextArticles": "Next articles"
+      "previousArticles": "上一篇文章",
+      "nextArticles": "下一篇文章"
     },
     "menu": {
       "companies": "企业",
@@ -771,8 +771,8 @@
       "security": "安保",
       "sport": "体育",
       "tradeExport": "贸易与出口",
-      "warehouse": "Warehousing",
-      "athlete": "Sports"
+      "warehouse": "仓储",
+      "athlete": "体育"
     }
   },
   "newsPage": {
@@ -795,11 +795,11 @@
     "tvEyebrow": "在电视上观看我们",
     "tvHeadingAccent": "英德西亚金融",
     "tvHeadingStart": "满足您的所有贷款需求",
-    "readFullStory": "Read Full Story",
+    "readFullStory": "阅读全文",
     "latestNews": "最新动态",
     "noArticlesYet": "此分类暂无可用文章。",
     "articleCount": "{{count}} 篇来自实时新闻的文章",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} 篇来自实时新闻的文章"
   },
   "newsVideo": {
     "onAir": "播出中",
@@ -814,9 +814,7 @@
   },
   "openRoles": {
     "loading": "加载职位中...",
-    "noPositions": "目前暂无 {{type}} 职位。",
-    "fullTime": "全职",
-    "intern": "实习生"
+    "noPositions": "目前暂无 {{type}} 职位。"
   },
   "pageContent": {
     "careers": {
@@ -1062,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "监管",
-          "excerpt": "印度证券交易委员会已对涉嫌泄露与 HDFC 相关的重大非公开信息展开调查。",
-          "title": "SEBI 命令调查 HDFC 信息泄露事件"
+          "excerpt": "印度证券交易委员会已对涉嫌泄露与 HDFC 相关的重大非公开信息展开调查。"
         },
         "uidai-aadhaar-banks": {
           "category": "政策",

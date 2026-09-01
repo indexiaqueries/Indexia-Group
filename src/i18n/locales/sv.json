@@ -117,12 +117,8 @@
     "radialAdvertisingDesc": "Motorvägsreklam på plakat",
     "radialFoundationDesc": "Stöd till indiska idrottare från basen till OS",
     "hubLabel": "Hub",
-    "hubGroupLabel": "Group hub",
+    "hubGroupLabel": "Grupp",
     "hubDescription": "Åtta specialiserade företag som arbetar från en gemensam vision.",
-    "ourStory": "Vår Historia",
-    "ourValues": "Våra Värderingar",
-    "ourCompanies": "Våra Företag",
-    "leadership": "Ledarskap",
     "visionaryTitle": "Visionären bakom",
     "visionaryAccent": "Indexia Grupp",
     "founderPersonName": "Bijendra Malik",
@@ -228,11 +224,11 @@
     "companiesOneGroup": "företag, en koncern",
     "description": "Åtta företag. Ett team. Bygg din karriär inom finans, export, jordbruk, säkerhet, reklam och atletutveckling.",
     "sectors": {
-      "finance": "Finance",
+      "finance": "Finans",
       "export": "Export",
       "agriculture": "Jordbruk",
-      "security": "Security",
-      "leasing": "Leasing",
+      "security": "Säkerhet",
+      "leasing": "Uthyrning",
       "advertising": "Reklam",
       "athleteDevelopment": "Idrottsutveckling"
     }
@@ -342,7 +338,7 @@
     "phoneNumbers": "Telefonnummer",
     "workingHours": "Arbetstider",
     "emailGeneralEnquiries": "Allmänna Frågor",
-    "emailQueries": "Queries",
+    "emailQueries": "Frågor",
     "emailViniMalik": "Vini Malik"
   },
   "footer": {
@@ -776,7 +772,7 @@
       "sport": "Sport",
       "tradeExport": "Handel & Export",
       "warehouse": "Lagring",
-      "athlete": "Sports"
+      "athlete": "Sport"
     }
   },
   "newsPage": {
@@ -795,7 +791,7 @@
     "title": "Nyhets- och Kunskapscentrum",
     "titleAccent": "hela koncernen.",
     "titleStart": "Berättelser & insikter från ",
-    "tvCaption": "Loan Chahiye Matlab… Indexia Finance",
+    "tvCaption": "Behöver ett lån… Indexia Finance",
     "tvEyebrow": "Se oss på TV",
     "tvHeadingAccent": "Indexia Finans",
     "tvHeadingStart": "För alla dina lånebehov",
@@ -803,13 +799,13 @@
     "latestNews": "Senaste Nytt",
     "noArticlesYet": "Inga artiklar tillgängliga för denna kategori ännu.",
     "articleCount": "{{count}} artikel från live-nyhetsflödet",
-    "articleCount_plural": "{{count}} articles from live news feed"
+    "articleCount_plural": "{{count}} artiklar från live nyhetsflöde"
   },
   "newsVideo": {
     "onAir": "I Sändning",
     "tvCommercial": "TV-reklam",
-    "videoTitle": "Indexia Finance TV Ad - News18",
-    "playAriaLabel": "Play Indexia Finance TV ad"
+    "videoTitle": "Indexia Finance TV-reklam - News18",
+    "playAriaLabel": "Spela Indexia Finance TV-reklam"
   },
   "notFoundPage": {
     "backHome": "Tillbaka till Hem",
@@ -1064,8 +1060,7 @@
         },
         "sebi-hdfc-information-leak": {
           "category": "Reglering",
-          "excerpt": "Indiens värdepapperskommission har inlet en utredning om den påstädda läckan av icke-offentlig information relaterad till HDFC.",
-          "title": "SEBI Befall Utredning om HDFC Informationsläckage"
+          "excerpt": "Indiens värdepapperskommission har inlet en utredning om den påstädda läckan av icke-offentlig information relaterad till HDFC."
         },
         "uidai-aadhaar-banks": {
           "category": "Digital Bank",
@@ -1303,18 +1298,18 @@
     }
   },
   "newsCategories": {
-    "finance": "Finance",
+    "finance": "Finans",
     "warehouse": "Lagring",
     "export": "Handel & Export",
-    "athlete": "Sports"
+    "athlete": "Sport"
   },
   "passbook": {
     "branchOffices": "Filialkontor",
     "directLines": "Direktlinjer",
     "avgReplyTime": "Genomsnittlig svarstid",
     "enquiryStatus": "Förfrågningsstatus",
-    "lessThan24hrs": "< 24 hrs",
-    "inReview": "In review"
+    "lessThan24hrs": "under 24 tim",
+    "inReview": "Under granskning"
   },
   "spotlight": {
     "finance": {
@@ -1324,15 +1319,15 @@
       "stats": [
         {
           "value": "43+",
-          "label": "Bank Partners"
+          "label": "Banker"
         },
         {
           "value": "4",
-          "label": "Core Verticals"
+          "label": "Länder"
         },
         {
           "value": "∞",
-          "label": "Global Reach"
+          "label": "År"
         }
       ],
       "bullets": [
@@ -1349,15 +1344,15 @@
       "stats": [
         {
           "value": "12",
-          "label": "Loan Products"
+          "label": "Låneformer"
         },
         {
           "value": "24h",
-          "label": "Response Time"
+          "label": "Tjänster"
         },
         {
           "value": "100%",
-          "label": "Digital Process"
+          "label": "Timmar"
         }
       ],
       "bullets": [
@@ -1374,15 +1369,15 @@
       "stats": [
         {
           "value": "14",
-          "label": "Countries"
+          "label": "Länder"
         },
         {
           "value": "100%",
-          "label": "Food-Grade"
+          "label": "Livsmedel"
         },
         {
           "value": "24/7",
-          "label": "Logistics"
+          "label": "Logistik"
         }
       ],
       "bullets": [
@@ -1399,15 +1394,15 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Organic"
+          "label": "Gödsel"
         },
         {
           "value": "6",
-          "label": "Product Lines"
+          "label": "År"
         },
         {
           "value": "NCR",
-          "label": "Location"
+          "label": "Sektorer"
         }
       ],
       "bullets": [
@@ -1424,15 +1419,15 @@
       "stats": [
         {
           "value": "24/7",
-          "label": "Operations"
+          "label": "Officerare"
         },
         {
           "value": "VIP",
-          "label": "Client Focus"
+          "label": "Timmar"
         },
         {
           "value": "Rapid",
-          "label": "Response"
+          "label": "År"
         }
       ],
       "bullets": [
@@ -1449,15 +1444,15 @@
       "stats": [
         {
           "value": "21",
-          "label": "Acres Total"
+          "label": "Hektar"
         },
         {
           "value": "8",
-          "label": "Expressways"
+          "label": "Motorvägar"
         },
         {
           "value": "₹30",
-          "label": "Per Sq Ft"
+          "label": "km"
         }
       ],
       "bullets": [
@@ -1474,15 +1469,15 @@
       "stats": [
         {
           "value": "1Cr+",
-          "label": "Daily Exposure"
+          "label": "Platser"
         },
         {
           "value": "10",
-          "label": "States Connected"
+          "label": "Stater"
         },
         {
           "value": "360°",
-          "label": "Visibility"
+          "label": "Exponering"
         }
       ],
       "bullets": [
@@ -1499,15 +1494,15 @@
       "stats": [
         {
           "value": "5",
-          "label": "Support Pillars"
+          "label": "Idrottare"
         },
         {
           "value": "100%",
-          "label": "Funded"
+          "label": "Discipliner"
         },
         {
           "value": "∞",
-          "label": "Potential"
+          "label": "År"
         }
       ],
       "bullets": [
