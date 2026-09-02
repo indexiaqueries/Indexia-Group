@@ -68,7 +68,7 @@ const ContactHero = () => {
         </div>
       </div>
 
-      <div className="scale-in" style={{ animationDelay: "0.1s" }}>
+      <div>
         <PassbookCard />
       </div>
     </HeroBackdrop>

@@ -131,8 +131,6 @@ const Banner = () => {
           <HeroBackground
             bgImage={bgPanel.image}
             bgMobileImage={bgPanel.mobileImage}
-            bgPlaceholderImage={bgPanel.placeholderImage}
-            bgPlaceholderMobileImage={bgPanel.placeholderMobileImage}
             morph={morph}
             panels={panels}
             prefersReducedMotion={prefersReducedMotion}

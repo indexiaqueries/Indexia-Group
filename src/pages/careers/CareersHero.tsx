@@ -22,6 +22,7 @@ const CareerHeroBg = () => {
         alt=""
         width={1920}
         height={900}
+        loading="eager"
         decoding="async"
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover object-center"
@@ -39,6 +40,7 @@ const CareerHeroBg = () => {
         alt=""
         width={1920}
         height={900}
+        loading="eager"
         decoding="async"
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover object-center"

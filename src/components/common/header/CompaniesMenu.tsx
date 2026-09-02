@@ -21,11 +21,7 @@ const CompaniesMenu = ({ open, reducedMotion, onToggle, onClose }: CompaniesMenu
   const onBusinesses = isCompanyPage;
 
   return (
-    <div
-      className="relative"
-      onMouseEnter={() => onToggle(true)}
-      onMouseLeave={() => onToggle(false)}
-    >
+    <div className="relative">
       <button
         type="button"
         onClick={() => onToggle(!open)}

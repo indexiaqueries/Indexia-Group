@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { EllipsisVertical, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
@@ -8,35 +8,35 @@ import logo from "../../assets/logo/IndexiaGroup_Logo.gif";
 import { navPillClass } from "./header/navPill";
 import { useHeaderScroll } from "./header/useHeaderScroll";
 
-// Lazy-load sub-menus, they pull in companies data and extra components,
-// but are only needed when the user actually opens the menu.
-const CompaniesMenu = lazy(() => import("./header/CompaniesMenu"));
 const LanguageMenu = lazy(() => import("./header/LanguageMenu"));
 const MobileMenu = lazy(() => import("./header/MobileMenu"));
+const CompaniesMenu = lazy(() => import("./header/CompaniesMenu"));
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [companiesOpen, setCompaniesOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [companiesOpen, setCompaniesOpen] = useState(false);
   const { t } = useTranslation();
   const prefersReducedMotion = useReducedMotion();
   const barRef = useRef<HTMLElement>(null);
   const scrolled = useHeaderScroll();
+  const { pathname } = useLocation();
+  const showScrim = scrolled || pathname === "/";
 
   useEffect(() => {
-    if (!menuOpen && !companiesOpen && !langOpen) return;
+    if (!menuOpen && !langOpen && !companiesOpen) return;
     const onPointerDown = (e: MouseEvent | TouchEvent) => {
       if (barRef.current && !barRef.current.contains(e.target as Node)) {
         setMenuOpen(false);
-        setCompaniesOpen(false);
         setLangOpen(false);
+        setCompaniesOpen(false);
       }
     };
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setMenuOpen(false);
-        setCompaniesOpen(false);
         setLangOpen(false);
+        setCompaniesOpen(false);
       }
     };
     document.addEventListener("mousedown", onPointerDown);
@@ -47,12 +47,12 @@ const Header = () => {
       document.removeEventListener("touchstart", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [menuOpen, companiesOpen, langOpen]);
+  }, [menuOpen, langOpen, companiesOpen]);
 
   const closeAll = () => {
     setMenuOpen(false);
-    setCompaniesOpen(false);
     setLangOpen(false);
+    setCompaniesOpen(false);
   };
 
   return (
@@ -60,7 +60,7 @@ const Header = () => {
       <div
         aria-hidden="true"
         className={`header-scrim pointer-events-none absolute inset-0 transition-opacity duration-300 ${
-          scrolled ? "opacity-100" : "opacity-0"
+          showScrim ? "opacity-100" : "opacity-0"
         }`}
       />
 
