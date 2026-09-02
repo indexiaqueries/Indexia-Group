@@ -427,8 +427,8 @@
     "eyebrow": "News & Knowledge Centre",
     "title": "News & Knowledge Centre",
     "titleStart": "Stories & Insights from ",
-    "titleAccent": "Across the Group.",
-    "subtitle": "Latest banking news, funding updates, digital payments, policy shifts, and market developments, alongside practical guides from our businesses.",
+    "titleAccent": "Across the World.",
+    "subtitle": "Latest Banking News, Funding Updates, Digital Payments, Policy Shifts, and Market Developments, alongside practical guides from our businesses.",
     "tvEyebrow": "Watch Us on TV",
     "tvHeadingStart": "For All Your Loan Requirements",
     "tvHeadingAccent": "Indexia Finance",
@@ -442,8 +442,8 @@
     "articleCount": "{{count}} article from live news feed",
     "articleCount_plural": "{{count}} articles from live news feed",
     "knowledgeEyebrow": "Knowledge Centre",
-    "knowledgeHeading": "Practical Guides from Our Businesses",
-    "knowledgeSubtitle": "Straightforward explainers written by the teams who live this work every day.",
+    "knowledgeHeading": "Industry Insights & Practical Tips",
+    "knowledgeSubtitle": "Sector-specific knowledge from each Indexia Group company, covering Finance, Agriculture, Security, Exports, and more.",
     "ctaTitle": "Have a question about our businesses?",
     "ctaBody": "From FDI facilitation to organic farming to armed security, the right Indexia company is ready to help. Send us an enquiry and we will connect you.",
     "ctaButton": "Send an Enquiry",
@@ -1440,7 +1440,7 @@
     "errorSubmit": "Could not submit your application. Please try again later."
   },
   "newsHero": {
-    "latestLabel": "Latest across the group",
+    "latestLabel": "Latest across the World",
     "sectors": {
       "finance": "Finance",
       "warehouse": "Warehousing",

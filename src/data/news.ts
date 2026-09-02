@@ -70,23 +70,43 @@ type KnowledgeInsight = {
 
 export const knowledgeInsights: KnowledgeInsight[] = [
   {
-    key: "understanding-fdi",
-    title: "Understanding FDI in India",
-    body: "A practical primer on entry routes, sectoral caps, and the filings involved in bringing foreign capital into an Indian business, and where expert guidance matters most.",
+    key: "finance-fdi",
+    title: "Finance: Navigating FDI and cross-border funding",
+    body: "Foreign direct investment in India follows specific entry routes, sectoral caps, and filing requirements. Indexia Finance walks through the main structures, automatic vs. government routes, and the documentation lenders actually review before approving cross-border capital.",
   },
   {
-    key: "choosing-loan",
-    title: "Choosing the right loan",
-    body: "Personal, home, business, or project finance: how to match your need to the right product, and what a lender actually evaluates before approval.",
+    key: "finserve-loans",
+    title: "Finserve: Choosing the right business loan",
+    body: "Term loans, working-capital lines, and project finance each serve different stages of growth. Indexia Finserve explains what lenders evaluate, from cash-flow projections to collateral, and how to structure an application that matches your real funding need.",
   },
   {
-    key: "organic-farming",
-    title: "Organic farming, explained",
-    body: "What bio-fertilizers do to soil health and yield, why chemical-free production matters, and how growers make the switch in practice.",
+    key: "overseas-export",
+    title: "Overseas: Export compliance and logistics basics",
+    body: "Exporting from India involves IEC registration, customs documentation, quality certifications, and freight coordination. Indexia Overseas shares the practical checklist every first-time exporter needs, from product classification to shipment tracking.",
   },
   {
-    key: "securing-operations",
-    title: "Securing high-value operations",
-    body: "From armed guards to commando units: how professional security assessment turns risk into a managed, measurable programme.",
+    key: "agro-bio-farming",
+    title: "Agro Bio: Transitioning to organic fertilizers",
+    body: "Bio-fertilizers restore soil microbial activity and long-term fertility that chemical inputs deplete. Indexia Agro Bio explains how to assess soil health, select the right microbial blends, and manage the switchover without sacrificing yields.",
+  },
+  {
+    key: "securities-risk",
+    title: "Securities: Building a security risk programme",
+    body: "Professional security starts with a structured risk assessment, not just manpower. Indexia Securities covers threat profiling, access-control design, armed-response protocols, and how to measure programme effectiveness with clear KPIs.",
+  },
+  {
+    key: "warehouse-ops",
+    title: "Warehouse: Strategic storage and inventory flow",
+    body: "Warehouse location, racking layout, and inventory turnover directly affect working-capital cycles. Indexia Warehouse shares practical guidance on facility planning, safety compliance, and systems that keep stock accurate and moving.",
+  },
+  {
+    key: "advertising-regulations",
+    title: "Advertising: Highway billboard regulations and ROI",
+    body: "Highway advertising in India is governed by NHAI and state-level licensing rules. Indexia Advertising breaks down permit requirements, structural standards, and how to measure reach and cost-per-impression across different corridor types.",
+  },
+  {
+    key: "foundation-athlete",
+    title: "Foundation: Designing athlete development programmes",
+    body: "Effective athlete support combines training infrastructure, nutrition science, and financial sponsorship. Indexia Foundation outlines how to structure a programme that identifies talent early, provides structured coaching, and sustains athletes through competitive careers.",
   },
 ];
