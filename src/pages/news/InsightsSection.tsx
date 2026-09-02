@@ -1,5 +1,6 @@
-import { useCallback } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ChevronDown } from "lucide-react";
 import Eyebrow from "../../components/common/Eyebrow";
 import Reveal from "../../components/common/Reveal";
 import { colors } from "../../lib/theme";
@@ -20,17 +21,13 @@ function splitInsight(raw: string) {
 
 const InsightsSection = ({ insights }: InsightsSectionProps) => {
   const { t } = useTranslation();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  /* Spotlight cursor-tracking */
-  const handleMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    e.currentTarget.style.setProperty("--spot-x", `${e.clientX - rect.left}px`);
-    e.currentTarget.style.setProperty("--spot-y", `${e.clientY - rect.top}px`);
-  }, []);
+  const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
     <section className="section-ruled relative bg-(--color-mist) px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-3xl">
         {/* Header */}
         <Reveal className="mx-auto mb-5 sm:mb-6 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("newsPage.knowledgeEyebrow")}</Eyebrow>
@@ -42,43 +39,49 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
           </p>
         </Reveal>
 
-        {/* Card grid */}
-        <div className="grid gap-3 sm:grid-cols-2 lg:gap-4">
+        {/* FAQ accordion */}
+        <div className="space-y-2">
           {insights.map((insight, i) => {
             const { tag, heading } = splitInsight(insight.title);
+            const isOpen = openIndex === i;
             return (
-              <Reveal key={insight.key} delay={(i % 4) * 0.06} amount={0.12}>
-                <div
-                  className="spotlight-tile card-premium card-premium-hover group relative flex flex-col rounded-2xl p-4 sm:p-5"
-                  onMouseMove={handleMove}
-                >
-                  {/* Top row: badge + tag */}
-                  <div className="mb-2 flex items-center gap-3">
+              <Reveal key={insight.key} delay={(i % 4) * 0.04} amount={0.08}>
+                <div className="card-premium overflow-hidden rounded-xl border border-slate-200/60">
+                  <button
+                    type="button"
+                    onClick={() => toggle(i)}
+                    aria-expanded={isOpen}
+                    className="flex w-full items-center gap-3 px-4 py-3.5 text-left sm:px-5 sm:py-4"
+                  >
                     <span
-                      className="font-ledger flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-[12px] font-bold"
+                      className="font-ledger flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-[11px] font-bold"
                       style={{ backgroundColor: `${colors.teal}14`, color: colors.teal }}
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    {tag && (
-                      <span className="rounded-full bg-(--color-mist) px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-(--color-muted)">
-                        {tag}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="font-display mb-1.5 text-[16px] font-bold leading-snug text-slate-900 sm:text-[17px]">
-                    {heading}
-                  </h3>
-
-                  {/* Body */}
-                  <p className="flex-1 text-[13px] leading-6 text-slate-500">
-                    {insight.body}
-                  </p>
-
-                  {/* Bottom accent line on hover */}
-                  <div className="mt-3 h-px w-full bg-gradient-to-r from-transparent via-(--color-teal) to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-40" />
+                    <div className="min-w-0 flex-1">
+                      {tag && (
+                        <span className="mb-0.5 block rounded-full bg-(--color-mist) px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-(--color-muted) w-fit">
+                          {tag}
+                        </span>
+                      )}
+                      <h3 className="font-display text-[14px] font-bold leading-snug text-slate-900 sm:text-[15px]">
+                        {heading}
+                      </h3>
+                    </div>
+                    <ChevronDown
+                      size={16}
+                      strokeWidth={2.5}
+                      className={`shrink-0 text-slate-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="border-t border-slate-100 px-4 pb-4 pt-3 sm:px-5 sm:pb-5">
+                      <p className="text-[13px] leading-6 text-slate-500">
+                        {insight.body}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </Reveal>
             );
