@@ -77,7 +77,7 @@ const FaqCard = ({ insight, index, isOpen, onToggle, contentHeight, measureRef }
     <div
       ref={measureRef}
       aria-hidden="true"
-      className="pointer-events-none absolute -left-[9999px] opacity-0"
+      className="pointer-events-none absolute left-[-9999px] opacity-0"
       style={{ width: "100%" }}
     >
       <div className="border-t border-white/40 px-4 pb-4 pt-3 sm:px-5 sm:pb-5">
@@ -163,7 +163,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
 
   return (
     <section className="section-ruled relative px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
+      <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-slate-100" />
 
       <div className="relative mx-auto max-w-6xl">
         <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
