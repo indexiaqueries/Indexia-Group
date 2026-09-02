@@ -26,39 +26,48 @@ React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business
 - Brotli + gzip compression
 - Speculation Rules API for instant navigation prerendering
 - Responsive images with srcset and quality variants
+- FAQPage JSON-LD structured data for rich search snippets
+- Scroll-triggered reveal animations (fade-up, scale, fade variants)
+- Glassmorphism FAQ cards with smooth expand/collapse transitions
+- Click-triggered Group Companies dropdown (no hover)
+- Dynamic foundation gallery (auto-imports media from folder)
+- Globe zoom-out animation on homepage
+- Kenburns background animation on hero (with instant image load)
 
 ## Project Structure
 
 ```
 src/
-├── assets/          # Bundled images (company, contact, careers, heroes, logos)
-├── components/      # Reusable UI components
-├── data/            # Static data, image registries, i18n config
-├── hooks/           # Custom React hooks
-├── i18n/            # i18next setup and 22 locale JSON files
-├── layout/          # Main layout, header, footer
-├── pages/           # Page components (lazy-loaded)
-├── routes/          # React Router configuration
-├── utils/           # Helper functions
-├── App.tsx          # Root component
-└── main.tsx         # Entry point
+├── assets/             # Bundled images (company, contact, careers, heroes, logos)
+├── assets-responsive/  # Responsive image variants
+├── components/         # Reusable UI components
+├── data/               # Static data, image registries, company info
+├── hooks/              # Custom React hooks (useInView, useCountUp, etc.)
+├── i18n/               # i18next setup and 22 locale JSON files
+├── layout/             # Main layout wrapper
+├── lib/                # Utility functions (color, theme, responsiveVariants)
+├── pages/              # Page components (lazy-loaded)
+├── routes/             # React Router configuration
+├── styles/             # CSS modules (animations, cards, scroll, accessibility)
+├── App.tsx             # Root component
+└── main.tsx            # Entry point
 server/
-├── index.js         # Express server (API routes, email, file uploads)
-├── db.js            # MongoDB connection
-├── models/          # Mongoose models (Application, JobOpening, NewsArticle)
-├── routes/          # Admin and news API routes
-└── services/        # News fetcher and scheduler
+├── index.js            # Express server (API routes, email, file uploads)
+├── db.js               # MongoDB connection
+├── models/             # Mongoose models (Application, JobOpening, NewsArticle)
+├── routes/             # Admin and news API routes
+└── services/           # News fetcher and scheduler
 api/
-└── index.js         # Vercel serverless entry point
+└── index.js            # Vercel serverless entry point
 public/
-├── brochures/       # Generated PDF brochures
-├── fonts/           # Self-hosted Fraunces font files
-├── images/          # Static images (heroes, security, research, news)
-├── favicon.svg      # Browser tab icon
-├── llms.txt         # AI-agent readable site summary
-├── robots.txt       # Crawler rules
-├── sitemap.xml      # 18 public routes
-└── og-image.png     # Social share image
+├── brochures/          # Generated PDF brochures
+├── fonts/              # Self-hosted Fraunces font files
+├── images/             # Static images (heroes, security, research, news)
+├── favicon.svg         # Browser tab icon
+├── llms.txt            # AI-agent readable site summary
+├── robots.txt          # Crawler rules
+├── sitemap.xml         # 18 public routes
+└── og-image.png        # Social share image
 ```
 
 ## Commands
@@ -97,12 +106,14 @@ Copy `.env.example` to `.env.local` and configure:
 - `content-visibility: auto` on below-fold sections
 - Brotli + gzip dual compression
 - Speculation Rules for prerendering likely-next pages
+- IntersectionObserver-based scroll reveal animations
 
 ## SEO
 
-- Unique title, description, and canonical URL per page
+- Unique title, description, keywords, and canonical URL per page
 - Open Graph and Twitter Card metadata
-- JSON-LD structured data (Organization, WebSite, Company pages)
+- JSON-LD structured data (Organization, WebSite, WebPage, BreadcrumbList, FAQPage, Company pages)
 - `robots.txt` blocks admin, apply, and brochure pages
 - `sitemap.xml` with 18 public routes
 - `llms.txt` for AI-agent readability
+- Hreflang alternates for 22 locales in `index.html`
