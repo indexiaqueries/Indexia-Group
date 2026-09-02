@@ -9,7 +9,6 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node --env-file-if-exists=server/.env server/index.js",
     "dev": "concurrently -n \"VITE,SERVER\" -c \"yellow,red\" \"npm run dev:frontend\" \"npm run dev:server\""
   },
   "dependencies": {
