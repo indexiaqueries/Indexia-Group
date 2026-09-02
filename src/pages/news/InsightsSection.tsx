@@ -29,10 +29,10 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
   }, []);
 
   return (
-    <section className="section-ruled relative bg-(--color-mist) px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+    <section className="section-ruled relative bg-(--color-mist) px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <Reveal className="mx-auto mb-8 sm:mb-10 max-w-2xl text-center">
+        <Reveal className="mx-auto mb-5 sm:mb-6 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("newsPage.knowledgeEyebrow")}</Eyebrow>
           <h2 className="font-display whitespace-nowrap text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("newsPage.knowledgeHeading")}
@@ -43,17 +43,17 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
         </Reveal>
 
         {/* Card grid */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:gap-5">
+        <div className="grid gap-3 sm:grid-cols-2 lg:gap-4">
           {insights.map((insight, i) => {
             const { tag, heading } = splitInsight(insight.title);
             return (
               <Reveal key={insight.key} delay={(i % 4) * 0.06} amount={0.12}>
                 <div
-                  className="spotlight-tile card-premium card-premium-hover group relative flex flex-col rounded-2xl p-5 sm:p-6"
+                  className="spotlight-tile card-premium card-premium-hover group relative flex flex-col rounded-2xl p-4 sm:p-5"
                   onMouseMove={handleMove}
                 >
                   {/* Top row: badge + tag */}
-                  <div className="mb-3 flex items-center gap-3">
+                  <div className="mb-2 flex items-center gap-3">
                     <span
                       className="font-ledger flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-[12px] font-bold"
                       style={{ backgroundColor: `${colors.teal}14`, color: colors.teal }}
@@ -68,7 +68,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-display mb-2 text-[16px] font-bold leading-snug text-slate-900 sm:text-[17px]">
+                  <h3 className="font-display mb-1.5 text-[16px] font-bold leading-snug text-slate-900 sm:text-[17px]">
                     {heading}
                   </h3>
 
@@ -78,7 +78,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
                   </p>
 
                   {/* Bottom accent line on hover */}
-                  <div className="mt-4 h-px w-full bg-gradient-to-r from-transparent via-(--color-teal) to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-40" />
+                  <div className="mt-3 h-px w-full bg-gradient-to-r from-transparent via-(--color-teal) to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-40" />
                 </div>
               </Reveal>
             );

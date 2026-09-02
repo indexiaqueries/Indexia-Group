@@ -143,10 +143,10 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
   const Icon = activeCategory.icon;
 
   return (
-    <section className="section-ruled section-paper px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+    <section className="section-ruled section-paper px-4 py-6 sm:py-6">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
-        <Reveal className="mb-8">
+        <Reveal className="mb-5">
           <div className="flex items-center gap-4">
             <span
               className="font-ledger text-sm font-bold"
@@ -160,7 +160,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
 
         {/* Category tabs */}
         <Reveal delay={0.05}>
-          <div className="mb-8 flex flex-wrap gap-2 rounded-2xl border border-slate-200/80 bg-white/80 p-2 shadow-sm backdrop-blur-sm">
+          <div className="mb-5 flex flex-wrap gap-2 rounded-2xl border border-slate-200/80 bg-white/80 p-2 shadow-sm backdrop-blur-sm">
             {CATEGORIES.map((cat) => {
               const CatIcon = cat.icon;
               const isActive = activeTab === cat.key;
@@ -206,7 +206,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
         {/* Category header bar */}
         <Reveal delay={0.1}>
           <div
-            className={`mb-6 flex items-center gap-3 rounded-xl border border-white/70 bg-linear-to-r px-5 py-3.5 shadow-sm ${activeCategory.gradient}`}
+            className={`mb-4 flex items-center gap-3 rounded-xl border border-white/70 bg-linear-to-r px-5 py-3 shadow-sm ${activeCategory.gradient}`}
           >
             <div
               className="flex h-9 w-9 items-center justify-center rounded-lg"
@@ -230,7 +230,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
 
         {/* Article grid */}
         {activeArticles.length > 0 ? (
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {activeArticles.slice(0, 9).map((article, i) => (
               <Reveal key={`${activeTab}-${i}`} delay={i * 0.04}>
                 <ArticleCard
