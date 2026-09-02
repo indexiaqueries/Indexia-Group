@@ -250,7 +250,7 @@ const HomeHeroGallery = ({
       >
         <div
           ref={trackRef}
-          className="infinite-marquee-track hero-marquee-track gap-4 py-1 select-none"
+          className="infinite-marquee-track hero-marquee-track gap-4 py-1 select-none pt-4"
           style={{ "--marquee-animation": "none" } as CSSProperties}
         >
           {marqueeList.map((p, i) => (
