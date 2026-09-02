@@ -71,42 +71,42 @@ type KnowledgeInsight = {
 export const knowledgeInsights: KnowledgeInsight[] = [
   {
     key: "finance-fdi",
-    title: "Finance: Navigating FDI and cross-border funding",
-    body: "Foreign direct investment in India follows specific entry routes, sectoral caps, and filing requirements. Indexia Finance walks through the main structures, automatic vs. government routes, and the documentation lenders actually review before approving cross-border capital.",
+    title: "How does Indexia Finance help with foreign direct investment (FDI)?",
+    body: "Foreign direct investment in India follows specific entry routes, sectoral caps, and filing requirements. Indexia Finance walks clients through the main structures — automatic vs. government routes — and handles the documentation lenders actually review before approving cross-border capital.",
   },
   {
     key: "finserve-loans",
-    title: "Finserve: Choosing the right business loan",
-    body: "Term loans, working-capital lines, and project finance each serve different stages of growth. Indexia Finserve explains what lenders evaluate, from cash-flow projections to collateral, and how to structure an application that matches your real funding need.",
+    title: "What types of business loans does Indexia Finserve offer?",
+    body: "Term loans, working-capital lines, and project finance each serve different stages of growth. Indexia Finserve evaluates cash-flow projections, collateral, and business needs to structure an application that matches your real funding requirement.",
   },
   {
     key: "overseas-export",
-    title: "Overseas: Export compliance and logistics basics",
-    body: "Exporting from India involves IEC registration, customs documentation, quality certifications, and freight coordination. Indexia Overseas shares the practical checklist every first-time exporter needs, from product classification to shipment tracking.",
+    title: "What should I know before exporting from India?",
+    body: "Exporting from India involves IEC registration, customs documentation, quality certifications, and freight coordination. Indexia Overseas shares the practical checklist every first-time exporter needs — from product classification to shipment tracking across 14 countries.",
   },
   {
     key: "agro-bio-farming",
-    title: "Agro Bio: Transitioning to organic fertilizers",
-    body: "Bio-fertilizers restore soil microbial activity and long-term fertility that chemical inputs deplete. Indexia Agro Bio explains how to assess soil health, select the right microbial blends, and manage the switchover without sacrificing yields.",
+    title: "How can I transition my farm to organic fertilizers?",
+    body: "Bio-fertilizers restore soil microbial activity and long-term fertility that chemical inputs deplete. Indexia Agro Bio helps assess soil health, select the right microbial blends, and manage the switchover without sacrificing yields.",
   },
   {
     key: "securities-risk",
-    title: "Securities: Building a security risk programme",
-    body: "Professional security starts with a structured risk assessment, not just manpower. Indexia Securities covers threat profiling, access-control design, armed-response protocols, and how to measure programme effectiveness with clear KPIs.",
+    title: "How does Indexia Securities build a security risk programme?",
+    body: "Professional security starts with a structured risk assessment, not just manpower. Indexia Securities covers threat profiling, access-control design, armed-response protocols, and programme effectiveness measured with clear KPIs.",
   },
   {
     key: "warehouse-ops",
-    title: "Warehouse: Strategic storage and inventory flow",
-    body: "Warehouse location, racking layout, and inventory turnover directly affect working-capital cycles. Indexia Warehouse shares practical guidance on facility planning, safety compliance, and systems that keep stock accurate and moving.",
+    title: "What warehouse solutions does Indexia Group provide?",
+    body: "Warehouse location, racking layout, and inventory turnover directly affect working-capital cycles. Indexia Warehouse offers 21 acres across 5 locations in Shamli, with flexible plots and modern infrastructure connected to 8 national expressways.",
   },
   {
     key: "advertising-regulations",
-    title: "Advertising: Highway billboard regulations and ROI",
-    body: "Highway advertising in India is governed by NHAI and state-level licensing rules. Indexia Advertising breaks down permit requirements, structural standards, and how to measure reach and cost-per-impression across different corridor types.",
+    title: "What are the rules for highway billboard advertising in India?",
+    body: "Highway advertising in India is governed by NHAI and state-level licensing rules. Indexia Advertising handles permit requirements, structural standards, and provides measurable reach and cost-per-impression across the Delhi–Dehradun corridor.",
   },
   {
     key: "foundation-athlete",
-    title: "Foundation: Designing athlete development programmes",
-    body: "Effective athlete support combines training infrastructure, nutrition science, and financial sponsorship. Indexia Foundation outlines how to structure a programme that identifies talent early, provides structured coaching, and sustains athletes through competitive careers.",
+    title: "How does Indexia Foundation support Indian athletes?",
+    body: "Effective athlete support combines training infrastructure, nutrition science, and financial sponsorship. Indexia Foundation identifies talent early, provides structured coaching, and sustains athletes through competitive careers to the Olympic Games.",
   },
 ];
