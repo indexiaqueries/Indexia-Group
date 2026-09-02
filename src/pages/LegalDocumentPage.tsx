@@ -5,6 +5,8 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
 import { colors } from "../lib/theme";
+import privacyHero from "../assets/legal-img/PrivacyPolicy.png";
+import termsOfUseHero from "../assets/legal-img/TermsofUse.png";
 const legalBg = "/images/heroes/legal-hero.webp";
 import { legalDocuments, type LegalDocumentId, type LegalSection } from "../data/legal";
 
@@ -35,6 +37,13 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
       : null;
   const content = translated ?? { intro: doc.intro, sections: doc.sections };
 
+  const LEGAL_HERO_IMAGES: Record<LegalDocumentId, string> = {
+    privacy: privacyHero,
+    terms: legalBg,
+    termsOfUse: termsOfUseHero,
+  };
+  const heroImage = LEGAL_HERO_IMAGES[docId] ?? legalBg;
+
   const path = ROUTES[docId];
   const title = t(`legal.${docId}Title`);
   const descriptionKey = META_DESCRIPTION[docId];
@@ -63,7 +72,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
       <SEO title={title} description={t(descriptionKey)} canonicalPath={path} jsonLd={jsonLd} />
 
       <HeroBackdrop
-        image={legalBg}
+        image={heroImage}
         radial="radial-gradient(circle at 82% 18%, rgba(38,174,144,0.14), transparent 50%)"
       >
         <div className="mb-4 flex items-center justify-center gap-3">
