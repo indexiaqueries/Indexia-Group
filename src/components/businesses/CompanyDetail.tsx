@@ -22,10 +22,10 @@ import CompanySpotlight from "./CompanySpotlight";
 import FoundationGallery from "./FoundationGallery";
 
 // Auto-import all media from foundation-gallery/ folder
-const foundationMedia = import.meta.glob<false, string, { default: string }>(
+const foundationMedia = import.meta.glob(
   "../../assets/company-pages-img/foundation-gallery/*",
   { eager: true },
-);
+) as Record<string, { default: string }>;
 const foundationVideos = Object.values(foundationMedia)
   .map((mod) => mod.default)
   .sort();

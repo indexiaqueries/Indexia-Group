@@ -15,7 +15,6 @@
 /* ── Transitions ── */
 @import "./styles/transitions/image-zoom.css";
 @import "./styles/transitions/thumb-tilt.css";
-@import "./styles/transitions/morph.css";
 
 /* ── Cards ── */
 @import "./styles/cards/business-card.css";

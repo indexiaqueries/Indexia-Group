@@ -66,10 +66,6 @@ const Banner = () => {
           <HeroBackground
             bgImage={current.image}
             bgMobileImage={current.mobileImage}
-            morph={null}
-            panels={panels}
-            prefersReducedMotion={prefersReducedMotion}
-            onMorphComplete={() => {}}
           />
 
           <div className="container relative z-3 flex-1 flex flex-col items-center justify-center px-5 pt-28 pb-20 sm:pt-32 sm:pb-28 overflow-hidden">

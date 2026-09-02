@@ -1,21 +1,6 @@
-import type { HeroPanel } from "../../cards/HeroGalleryThumb";
-
-export type MorphRect = {
-  id: number;
-  top: number;
-  left: number;
-  width: number;
-  height: number;
-  calm?: boolean;
-};
-
 type HeroBackgroundProps = {
   bgImage: string;
   bgMobileImage: string;
-  morph: MorphRect | null;
-  panels: HeroPanel[];
-  prefersReducedMotion: boolean | null;
-  onMorphComplete: (id: number) => void;
 };
 
 const HeroBackground = ({ bgImage, bgMobileImage }: HeroBackgroundProps) => {

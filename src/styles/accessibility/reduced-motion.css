@@ -13,8 +13,7 @@
 
   /* Entry animations */
   .fade-up, .fade-in, .slide-in-left, .scale-in, .dropdown-in, .icon-in,
-  .hero-slide-child, .kenburns, .morph-zoom, .passbook-in,
-  .page-enter {
+  .hero-slide-child, .kenburns, .passbook-in {
     animation: none;
   }
 
@@ -31,11 +30,6 @@
   .reveal {
     opacity: 1;
     transform: none;
-    transition: none;
-  }
-
-  /* Morph layer */
-  .morph-layer {
     transition: none;
   }
 
