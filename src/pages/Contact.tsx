@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
+import Reveal from "../components/common/Reveal";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
@@ -96,12 +97,12 @@ const Contact = () => {
 
       <section id="branches" className="section-ruled pt-10 sm:pt-8 lg:pt-12" style={{ background: 'rgba(2,16,26,0.08)' }}>
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
             <h2 className="text-2xl font-extrabold text-slate-900 sm:text-4xl">
               {t("contact.locationsTitleStart")}
               <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
             </h2>
-          </div>
+          </Reveal>
 
           <div className="relative">
             {/* Scroll arrows, outside overflow so they're never clipped */}

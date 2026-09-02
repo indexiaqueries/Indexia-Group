@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Reveal from "./Reveal";
 import {
   Landmark,
   Coins,
@@ -120,7 +121,9 @@ export default function RadialCompanies() {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
           {COMPANIES.map((c, index) => (
-            <MobileCard key={c.slug} company={c} index={index} tr={tr} />
+            <Reveal key={c.slug} delay={index * 0.06} amount={0.12}>
+              <MobileCard company={c} index={index} tr={tr} />
+            </Reveal>
           ))}
         </div>
       </div>

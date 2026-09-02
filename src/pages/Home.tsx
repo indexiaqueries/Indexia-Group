@@ -95,7 +95,7 @@ const Home = () => {
           </Reveal>
 
           {/* Globe + I overlay */}
-          <div className="relative mx-auto -my-1 h-36 sm:h-44 w-full max-w-sm lg:h-56">
+          <div className="relative mx-auto -my-1 h-36 sm:h-44 w-full max-w-sm lg:h-56 globe-zoom-out">
             <Suspense fallback={<div className="h-full w-full" />}>
               <Globe
                 theta={0.3}
@@ -126,6 +126,15 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-(--color-teal)/60 to-transparent" />
       </section>
 
+      <style>{`
+        @keyframes globe-zoom-out {
+          from { transform: scale(1.4); opacity: 0; }
+          to   { transform: scale(1);   opacity: 1; }
+        }
+        .globe-zoom-out {
+          animation: globe-zoom-out 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+      `}</style>
     </main>
   );
 };
