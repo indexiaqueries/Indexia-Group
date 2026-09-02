@@ -147,6 +147,20 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
   const leftItems = insights.slice(0, mid).map((insight, i) => ({ insight, globalIndex: i }));
   const rightItems = insights.slice(mid).map((insight, i) => ({ insight, globalIndex: mid + i }));
 
+  // Build FAQPage JSON-LD from insights
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: insights.map((insight) => ({
+      "@type": "Question",
+      name: insight.title,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: insight.body,
+      },
+    })),
+  };
+
   return (
     <section className="section-ruled relative px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
@@ -180,6 +194,8 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
           />
         </div>
       </div>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </section>
   );
 };

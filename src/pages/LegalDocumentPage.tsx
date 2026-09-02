@@ -22,6 +22,12 @@ const META_DESCRIPTION: Record<LegalDocumentId, string> = {
   termsOfUse: "legal.metaTermsOfUseDescription",
 };
 
+const KEYWORDS: Record<LegalDocumentId, string> = {
+  privacy: "privacy policy, data protection, personal information, cookies, Indexia Group privacy",
+  terms: "terms and conditions, website terms, legal terms, Indexia Group terms",
+  termsOfUse: "terms of use, cancellation policy, refund policy, disclaimer, Indexia Group terms of use",
+};
+
 type LegalDocumentPageProps = {
   docId: LegalDocumentId;
 };
@@ -69,7 +75,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
 
   return (
     <main className="site-shell">
-      <SEO title={title} description={t(descriptionKey)} canonicalPath={path} jsonLd={jsonLd} />
+      <SEO title={title} description={t(descriptionKey)} keywords={KEYWORDS[docId]} canonicalPath={path} jsonLd={jsonLd} />
 
       <HeroBackdrop
         image={heroImage}
