@@ -89,28 +89,21 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         </p>
       </HeroBackdrop>
 
-      <section className="section-ruled section-paper relative px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
-        <div className="card-premium mx-auto max-w-4xl rounded-2xl p-5 sm:p-8 lg:p-10">
+      <section className="section-ruled section-paper relative px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+        <div className="card-premium mx-auto max-w-5xl rounded-2xl p-4 sm:p-6 lg:p-8">
           <Reveal>
-            <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-slate-200 pb-6">
+            <div className="mb-3 border-b border-slate-200 pb-3">
               <Link
                 to="/"
                 className="text-sm font-semibold text-(--color-blue) transition-colors hover:text-(--color-teal)"
               >
                 ← {t("legal.backHome")}
               </Link>
-              <span className="hidden h-1 w-1 rounded-full bg-slate-300 sm:block" />
-              <Link
-                to="/contact"
-                className="text-sm font-semibold text-(--color-blue) transition-colors hover:text-(--color-teal)"
-              >
-                {t("legal.contactUs")} →
-              </Link>
             </div>
           </Reveal>
 
           <Reveal>
-            <div className="mb-5 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-5 py-3 shadow-sm">
+            <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-4 py-2 shadow-sm">
               <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
                 {t("legal.lastUpdated")}
               </span>
@@ -123,23 +116,23 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
 
           {content.intro.map((paragraph, index) => (
             <Reveal key={`intro-${index}`} delay={0.05 * index}>
-              <p className="text-[15px] leading-8 text-slate-700">{paragraph}</p>
+              <p className="text-[14px] leading-6.5 text-slate-700">{paragraph}</p>
             </Reveal>
           ))}
 
           {content.sections.map((section, index) => (
             <Reveal key={section.title} delay={0.05 * (index % 3)}>
-              <section className="mt-12 rounded-xl border border-slate-100 bg-white/70 p-4 sm:p-6">
+              <section className="mt-5 rounded-xl border border-slate-100 bg-white/70 p-3 sm:p-4">
                 <div className="flex items-center gap-4">
                   <span className="font-ledger text-sm font-bold" style={{ color: colors.teal }}>
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span className="h-px flex-1 bg-slate-200" />
                 </div>
-                <h2 className="font-display mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">{section.title}</h2>
-                <div className="mt-4 space-y-4">
+                <h2 className="font-display mt-2 text-lg font-bold text-slate-900 sm:text-xl">{section.title}</h2>
+                <div className="mt-2 space-y-2.5">
                   {section.paragraphs.map((paragraph) => (
-                    <p key={paragraph} className="text-[15px] leading-8 text-slate-600">
+                    <p key={paragraph} className="text-[14px] leading-6.5 text-slate-600">
                       {paragraph}
                     </p>
                   ))}
@@ -148,18 +141,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
             </Reveal>
           ))}
 
-          <Reveal>
-            <div className="mt-10 rounded-2xl border border-slate-200 bg-(--color-soft) p-7 shadow-sm sm:p-8">
-              <h3 className="font-display text-xl font-bold text-slate-900">{t("legal.contactHeading")}</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">{t("legal.contactBody")}</p>
-              <Link
-                to="/contact"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-2.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
-              >
-                {t("legal.sendEnquiry")}
-              </Link>
-            </div>
-          </Reveal>
+
         </div>
       </section>
     </main>
