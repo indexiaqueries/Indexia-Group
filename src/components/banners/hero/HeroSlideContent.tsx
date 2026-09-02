@@ -26,6 +26,8 @@ const renderSub = (text: string) => {
   );
 };
 
+const CHILD_DELAYS = ["0.05s", "0.14s", "0.23s", "0.32s"];
+
 type HeroSlideContentProps = {
   panel: HeroPanel;
   isHome: boolean;
@@ -55,11 +57,12 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
 
     <div
       key={current.id}
-      className="relative w-full"
+      className="fade-up relative w-full"
+      style={{ "--fade-up-y": "22px" } as CSSProperties}
     >
       <div className={`mx-auto max-w-xl sm:max-w-2xl lg:max-w-3xl ${isHome ? "bnr-text-zoom" : ""}`}>
         {/* Unified frosted glass card */}
-        <div className="relative rounded-3xl border border-white/15 bg-linear-to-br from-black/70 via-[#0a1520]/65 to-black/60 backdrop-blur-xl px-6 py-6 sm:px-10 sm:py-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+        <div className="relative rounded-3xl border border-white/15 bg-black/65 backdrop-blur-xl px-6 py-6 sm:px-10 sm:py-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
           {/* Accent line */}
           <div className="absolute top-0 left-6 sm:left-10 h-full w-px bg-linear-to-b from-transparent via-(--color-yellow)/40 to-transparent" />
 
@@ -67,7 +70,8 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
             {/* Tag pill */}
             {isHome ? (
               <div
-                className="mb-4 sm:mb-5 inline-flex items-center gap-2 sm:gap-2.5 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-3.5 py-1.5 sm:px-5 sm:py-2"
+                className="hero-slide-child mb-4 sm:mb-5 inline-flex items-center gap-2 sm:gap-2.5 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-3.5 py-1.5 sm:px-5 sm:py-2"
+                style={{ animationDelay: CHILD_DELAYS[0] }}
               >
                 <span className="w-2 h-2 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
                 <span className="font-ledger text-[10px] font-bold tracking-[0.24em] uppercase text-(--color-yellow)">
@@ -76,7 +80,8 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
               </div>
             ) : (
               <div
-                className="mb-4 sm:mb-5 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-3 py-1 sm:px-3.5 sm:py-1.5"
+                className="hero-slide-child mb-4 sm:mb-5 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-3 py-1 sm:px-3.5 sm:py-1.5"
+                style={{ animationDelay: CHILD_DELAYS[0] }}
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-(--color-yellow) animate-[bnr-pulse_1.6s_ease-in-out_infinite]" />
                 <span className="font-ledger text-[10px] font-bold tracking-[0.18em] uppercase text-(--color-yellow) whitespace-nowrap">
@@ -87,13 +92,14 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
 
             {/* Heading */}
             <h1
-              className={`font-display font-bold text-white ${
+              className={`hero-slide-child font-display font-bold text-white ${
                 isHome
                   ? "text-[clamp(24px,4vw,44px)] leading-[1.08] mb-3"
                   : "text-[clamp(22px,3.8vw,42px)] leading-[1.1] mb-3"
               }`}
               style={{
                 textShadow: textShadow(shadowLevel, 36, 0.95),
+                animationDelay: CHILD_DELAYS[1],
               }}
             >
               {current.heading}
@@ -102,8 +108,8 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
             {/* Motto */}
             {current.motto && (
               <p
-                className="mb-3 italic text-[14px] sm:text-[16px] font-medium text-(--color-yellow)/90"
-                style={{ textShadow: textShadow(shadowLevel, 14, 0.8) }}
+                className="hero-slide-child mb-3 italic text-[14px] sm:text-[16px] font-medium text-(--color-yellow)/90"
+                style={{ textShadow: textShadow(shadowLevel, 14, 0.8), animationDelay: CHILD_DELAYS[1] }}
               >
                 {current.motto}
               </p>
@@ -111,18 +117,18 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
 
             {/* Sub text */}
             <p
-              className={`text-white/80 ${
+              className={`hero-slide-child text-white/80 ${
                 isHome
                   ? "text-[13px] sm:text-[14px] leading-[1.7] max-w-full sm:max-w-150"
                   : "text-[12px] sm:text-[13px] leading-[1.7] max-w-full sm:max-w-130"
               }`}
-              style={{ textShadow: textShadow(shadowLevel, 24, 0.9) }}
+              style={{ textShadow: textShadow(shadowLevel, 24, 0.9), animationDelay: CHILD_DELAYS[2] }}
             >
               {renderSub(current.sub)}
             </p>
 
             {/* CTA */}
-            <div className="flex flex-wrap gap-3 justify-center sm:justify-start mt-5 sm:mt-6">
+            <div className="hero-slide-child flex flex-wrap gap-3 justify-center sm:justify-start mt-5 sm:mt-6" style={{ animationDelay: CHILD_DELAYS[3] }}>
               <Link
                 to={isHome || !current.slug ? "/about" : `/${current.slug}`}
                 className="group inline-flex items-center gap-2 rounded-full bg-(--color-teal) text-white font-bold text-[13px] tracking-wide px-6 py-2.5 sm:px-8 sm:py-3 shadow-[0_4px_20px_rgba(38,174,144,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(38,174,144,0.5)]"

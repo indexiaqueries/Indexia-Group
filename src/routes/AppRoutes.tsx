@@ -23,17 +23,44 @@ import logo from "../assets/logo/IndexiaGroup_Logo.webp";
 
 const PageFallback = () => (
   <div className="flex min-h-screen items-center justify-center" style={{ background: "var(--color-ink-deep)" }}>
-    <div className="flex flex-col items-center gap-5">
-      <img
-        src={logo}
-        alt="Indexia Group"
-        width={80}
-        height={80}
-        className="h-20 w-20 animate-pulse rounded-full object-contain shadow-[0_0_30px_rgba(38,174,144,0.25)]"
-      />
-      <div className="h-1 w-24 overflow-hidden rounded-full bg-white/10">
-        <div className="h-full w-1/3 animate-[loading-bar_1.2s_ease-in-out_infinite] rounded-full bg-(--color-teal)" />
+    <style>{`
+      @keyframes loader-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes loader-pulse { 0%, 100% { opacity: 0.3; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1); } }
+      @keyframes loader-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(200%); } }
+      @keyframes loader-fade { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+    `}</style>
+    <div className="flex flex-col items-center gap-6">
+      {/* Spinning ring around logo */}
+      <div className="relative">
+        <div
+          className="absolute inset-0 rounded-full border-2 border-transparent"
+          style={{ borderTopColor: "var(--color-teal)", borderRightColor: "var(--color-teal)", animation: "loader-spin 1.2s linear infinite" }}
+        />
+        <img
+          src={logo}
+          alt="Indexia Group"
+          width={80}
+          height={80}
+          className="h-16 w-16 rounded-full object-contain p-2"
+          style={{ animation: "loader-fade 2s ease-in-out infinite" }}
+        />
       </div>
+
+      {/* Pulse dots */}
+      <div className="flex gap-2">
+        {[0, 1, 2].map((i) => (
+          <div
+            key={i}
+            className="h-2 w-2 rounded-full bg-(--color-teal)"
+            style={{ animation: `loader-pulse 1.4s ease-in-out ${i * 0.2}s infinite` }}
+          />
+        ))}
+      </div>
+
+      {/* Minimal text */}
+      <p className="font-ledger text-[10px] uppercase tracking-[0.3em] text-white/40" style={{ animation: "loader-fade 2s ease-in-out infinite" }}>
+        Loading
+      </p>
     </div>
   </div>
 );

@@ -20,12 +20,15 @@ import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
 import FoundationGallery from "./FoundationGallery";
-import foundationVid2 from "../../assets/company-pages-img/foundation-gallery/vertical1.mp4";
-import foundationVid3 from "../../assets/company-pages-img/foundation-gallery/vertical2.mp4";
-import foundationVid4 from "../../assets/company-pages-img/foundation-gallery/vertical3.mp4";
-import foundationVid5 from "../../assets/company-pages-img/foundation-gallery/vertical4.mp4";
-import foundationVid6 from "../../assets/company-pages-img/foundation-gallery/horizontal1.mp4";
-import foundationVid7 from "../../assets/company-pages-img/foundation-gallery/horizontal2.mp4";
+
+// Auto-import all media from foundation-gallery/ folder
+const foundationMedia = import.meta.glob<false, string, { default: string }>(
+  "../../assets/company-pages-img/foundation-gallery/*",
+  { eager: true },
+);
+const foundationVideos = Object.values(foundationMedia)
+  .map((mod) => mod.default)
+  .sort();
 import type { PricingRow } from "./PricingTable";
 
 type CompanyDetailProps = {
@@ -425,14 +428,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               </h2>
             </Reveal>
             <FoundationGallery
-              videos={[
-                { src: foundationVid2, label: t("foundationGallery.videos.trackTraining.label"), sublabel: t("foundationGallery.videos.trackTraining.sublabel") },
-                { src: foundationVid3, label: t("foundationGallery.videos.fieldPractice.label"), sublabel: t("foundationGallery.videos.fieldPractice.sublabel") },
-                { src: foundationVid6, label: t("foundationGallery.videos.horizontalTraining1.label"), sublabel: t("foundationGallery.videos.horizontalTraining1.sublabel") },
-                { src: foundationVid7, label: t("foundationGallery.videos.horizontalTraining2.label"), sublabel: t("foundationGallery.videos.horizontalTraining2.sublabel") },
-                { src: foundationVid4, label: t("foundationGallery.videos.sprintDrills.label"), sublabel: t("foundationGallery.videos.sprintDrills.sublabel") },
-                { src: foundationVid5, label: t("foundationGallery.videos.teamSession.label"), sublabel: t("foundationGallery.videos.teamSession.sublabel") },
-              ]}
+              videos={foundationVideos.map((src, i) => ({
+                src,
+                label: t(`foundationGallery.videos.video${i + 1}.label`, `Video ${i + 1}`),
+                sublabel: t(`foundationGallery.videos.video${i + 1}.sublabel`, `Training session ${i + 1}`),
+              }))}
             />
           </div>
         </section>

@@ -38,9 +38,10 @@ const Header = () => {
         setLangOpen(false);
         setCompaniesOpen(false);
       } else if (companiesOpen && target instanceof HTMLElement) {
-        // Click inside header — close dropdown unless it's the toggle button
+        // Click inside header — close dropdown unless it's the toggle button or a link inside the dropdown
         const isToggle = target.closest("button[aria-haspopup]");
-        if (!isToggle) {
+        const isDropdownLink = target.closest(".dropdown-in a, .dropdown-in button") || target.closest("[role=menu] a, [role=menu] button");
+        if (!isToggle && !isDropdownLink) {
           setCompaniesOpen(false);
         }
       }

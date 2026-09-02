@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
@@ -68,19 +69,19 @@ const AboutPage = () => {
         image={aboutBg}
         radial="radial-gradient(circle at 82% 18%, rgba(242,242,49,0.12), transparent 50%)"
       >
-        <div className="mb-4 flex items-center justify-center gap-3">
+        <div className="fade-up mb-4 flex items-center justify-center gap-3" style={{ animationDelay: "0.05s" } as CSSProperties}>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
         </div>
-        <h1 className="font-display mx-auto mb-3 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
+        <h1 className="fade-up font-display mx-auto mb-3 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
           {tr("titleStart", "Some steps to ")}<br />
           <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
         </h1>
-        <p className="mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm uppercase tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80">
+        <p className="fade-up mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm uppercase tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80" style={{ animationDelay: "0.23s" } as CSSProperties}>
           {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
         </p>
-        <p className="mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80">
+        <p className="fade-up mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80" style={{ animationDelay: "0.32s" } as CSSProperties}>
           {tr("subtitle", "Diverse Ventures. Unified Vision.")}
         </p>
       </HeroBackdrop>

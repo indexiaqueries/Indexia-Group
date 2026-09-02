@@ -15,11 +15,9 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const thumbStripRef = useRef<HTMLDivElement>(null);
 
   const openModal = useCallback((idx: number) => {
     setActiveIdx(idx);
-    document.body.style.overflow = "hidden";
   }, []);
 
   const closeModal = useCallback(() => {
@@ -28,7 +26,6 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
       videoRef.current.currentTime = 0;
     }
     setActiveIdx(null);
-    document.body.style.overflow = "";
   }, []);
 
   const goTo = useCallback(
@@ -59,13 +56,6 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
     if (activeIdx === null || !videoRef.current) return;
     videoRef.current.currentTime = 0;
     videoRef.current.play().catch(() => {});
-  }, [activeIdx]);
-
-  // Scroll active thumbnail into view
-  useEffect(() => {
-    if (activeIdx === null || !thumbStripRef.current) return;
-    const btn = thumbStripRef.current.children[activeIdx] as HTMLElement | undefined;
-    btn?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeIdx]);
 
   const scrollGallery = (dir: -1 | 1) => {
@@ -203,47 +193,7 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
             <ChevronRight size={22} />
           </button>
 
-          {/* ── Thumbnail strip (bottom) ── */}
-          <div className="absolute inset-x-0 bottom-0 z-20 bg-linear-to-t from-black/80 via-black/50 to-transparent pt-10 pb-4">
-            <div
-              ref={thumbStripRef}
-              className="mx-auto flex max-w-3xl gap-2 overflow-x-auto px-4 sm:px-6 py-2"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              {videos.map((v, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  className={`group relative shrink-0 overflow-hidden rounded-lg transition-all duration-300 ${
-                    i === activeIdx
-                      ? "ring-2 ring-(--color-yellow) scale-105 opacity-100"
-                      : "ring-1 ring-white/10 opacity-50 hover:opacity-80"
-                  }`}
-                  style={{ width: "clamp(80px, 12vw, 120px)" }}
-                >
-                  <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-black/40">
-                    <video
-                      src={v.src}
-                      muted
-                      preload="metadata"
-                      playsInline
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    {i !== activeIdx && (
-                      <div className="absolute inset-0 bg-black/40" />
-                    )}
-                  </div>
-                  {i === activeIdx && (
-                    <span className="absolute -bottom-1 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-(--color-yellow)" />
-                  )}
-                </button>
-              ))}
-            </div>
 
-            <p className="mt-3 text-center text-[10px] text-white/25 font-ledger tracking-wider">
-              ← → NAVIGATE &nbsp;·&nbsp; ESC TO CLOSE
-            </p>
-          </div>
         </div>
       )}
 
