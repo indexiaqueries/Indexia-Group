@@ -23,13 +23,26 @@ const Header = () => {
   const { pathname } = useLocation();
   const showScrim = scrolled || pathname === "/";
 
+  // Close dropdown on route change
+  useEffect(() => {
+    setCompaniesOpen(false);
+  }, [pathname]);
+
   useEffect(() => {
     if (!menuOpen && !langOpen && !companiesOpen) return;
     const onPointerDown = (e: MouseEvent | TouchEvent) => {
-      if (barRef.current && !barRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      if (barRef.current && !barRef.current.contains(target)) {
+        // Click outside header — close everything
         setMenuOpen(false);
         setLangOpen(false);
         setCompaniesOpen(false);
+      } else if (companiesOpen && target instanceof HTMLElement) {
+        // Click inside header — close dropdown unless it's the toggle button
+        const isToggle = target.closest("button[aria-haspopup]");
+        if (!isToggle) {
+          setCompaniesOpen(false);
+        }
       }
     };
     const onKeyDown = (e: KeyboardEvent) => {
