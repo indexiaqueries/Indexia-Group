@@ -35,6 +35,9 @@ if (smtpConfigured) {
     secure: process.env.SMTP_SECURE === "true",
     auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
     tls: { rejectUnauthorized },
+    connectionTimeout: 10_000,
+    socketTimeout: 10_000,
+    greetingTimeout: 10_000,
   });
 }
 
@@ -43,7 +46,10 @@ async function sendMail({ to = mailTo, subject, text, html }) {
     console.log(`\n[mail:dev] SMTP not configured, email NOT sent.\nTo: ${to}\nSubject: ${subject}\n${text}\n`);
     return { delivered: false, dev: true };
   }
-  await transporter.sendMail({ from: mailFrom, to, subject, text, html });
+  const info = await Promise.race([
+    transporter.sendMail({ from: mailFrom, to, subject, text, html }),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("SMTP send timed out")), 15_000)),
+  ]);
   console.log(`[mail:sent] "${subject}" -> ${to}`);
   return { delivered: true };
 }
