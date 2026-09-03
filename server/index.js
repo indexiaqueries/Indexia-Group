@@ -177,8 +177,18 @@ connectDB().then(() => {
   if (!IS_VERCEL) startNewsScheduler();
 });
 
-app.get("/api/health", (_req, res) => {
-  res.json({ ok: true, smtpConfigured, mailTo });
+app.get("/api/health", async (_req, res) => {
+  let smtpOk = false;
+  let smtpError = null;
+  if (transporter) {
+    try {
+      await transporter.verify();
+      smtpOk = true;
+    } catch (err) {
+      smtpError = err.message;
+    }
+  }
+  res.json({ ok: true, smtpConfigured, smtpOk, smtpError, mailTo });
 });
 
 // Make sendMail available to admin routes
