@@ -77,10 +77,9 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
     <>
       <HeroBackdrop
         image={getCompanyImage(b.slug)}
-        radial={`radial-gradient(circle at 84% 16%, ${b.color}59, transparent 42%), radial-gradient(circle at 10% 90%, ${b.color}33, transparent 40%)`}
         containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
       >
-        <div className="fade-up relative">
+        <div className="fade-up relative max-w-5xl rounded-[28px] bg-(--color-ink-deep)/75 p-5 shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:p-8 lg:p-10">
           <span
             aria-hidden="true"
             className="pointer-events-none absolute -top-12 -inset-e-2 select-none font-display text-[clamp(110px,20vw,220px)] font-bold leading-none text-white/5 sm:-inset-e-8"
@@ -103,6 +102,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               style={{ background: b.color, color: contrastText(b.color) }}
             >
               {tag}
+            </span>
+            <span
+              className="rounded-full border border-white/30 bg-black/30 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-md backdrop-blur-sm"
+            >
+              Est. {b.founded}
             </span>
           </div>
 

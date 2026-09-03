@@ -62,7 +62,7 @@ router.patch("/applications/:id", requireAuth, async (req, res) => {
     const app = await Application.findByIdAndUpdate(
       req.params.id,
       { status },
-      { new: true }
+      { returnDocument: "after" }
     ).select("-__v");
     if (!app) return res.status(404).json({ ok: false, error: "Application not found." });
     res.json({ ok: true, application: app });
@@ -132,15 +132,15 @@ router.get("/enquiries", requireAuth, async (_req, res) => {
   }
 });
 
-// Update enquiry status ("new" | "handled")
+// Update enquiry status ("new" | "read" | "handled")
 router.patch("/enquiries/:id", requireAuth, async (req, res) => {
   const { status } = req.body;
-  const allowed = ["new", "handled"];
+  const allowed = ["new", "read", "handled"];
   if (!allowed.includes(status)) {
     return res.status(400).json({ ok: false, error: `Status must be one of: ${allowed.join(", ")}` });
   }
   try {
-    const enquiry = await Enquiry.findByIdAndUpdate(req.params.id, { status }, { new: true }).select("-__v");
+    const enquiry = await Enquiry.findByIdAndUpdate(req.params.id, { status }, { returnDocument: "after" }).select("-__v");
     if (!enquiry) return res.status(404).json({ ok: false, error: "Enquiry not found." });
     res.json({ ok: true, enquiry });
   } catch (err) {

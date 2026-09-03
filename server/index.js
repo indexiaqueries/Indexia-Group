@@ -126,7 +126,7 @@ app.patch("/api/admin/openings/:id", async (req, res) => {
     return res.status(401).json({ ok: false, error: "Unauthorized." });
   }
   try {
-    const opening = await JobOpening.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const opening = await JobOpening.findByIdAndUpdate(req.params.id, req.body, { returnDocument: "after" });
     if (!opening) return res.status(404).json({ ok: false, error: "Opening not found." });
     res.json({ ok: true, opening });
   } catch (err) {

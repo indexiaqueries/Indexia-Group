@@ -3,6 +3,7 @@ import { colors } from "../lib/theme";
 export type Company = {
   name: string;
   slug: string;
+  founded: number;
   tag: string;
   desc: string;
   overview: string;
@@ -19,6 +20,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Finance",
     slug: "finance",
+    founded: 2012,
     tag: "Multinational Fintech",
     cin: "U65990MH2012PTC234567",
     cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
@@ -45,6 +47,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Finserve Pvt. Ltd.",
     slug: "finserve",
+    founded: 2015,
     tag: "Investment & Finance",
     cin: "U65990MH2012PTC234568",
     cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
@@ -77,6 +80,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Overseas Pvt. Ltd.",
     slug: "overseas",
+    founded: 2015,
     tag: "Global Edible Export",
     cin: "U51909MH2015PTC367890",
     cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
@@ -102,6 +106,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Agro Bio Fertilizers Pvt. Ltd.",
     slug: "agro-bio",
+    founded: 2015,
     tag: "Organic Agriculture Solutions",
     cin: "U01100MH2018PTC390123",
     cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",
@@ -127,6 +132,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Securities",
     slug: "securities",
+    founded: 2013,
     tag: "Armed Protection & Security",
     desc: "Military-grade armed security for high-profile individuals, corporations, and critical infrastructure.",
     overview:
@@ -150,6 +156,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Warehouse",
     slug: "warehouse",
+    founded: 2022,
     tag: "Strategic Land Leasing",
     desc: "21 acres of strategic land on lease to companies in Shamli, linked to 8 national expressways.",
     overview:
@@ -172,6 +179,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Advertising",
     slug: "advertising",
+    founded: 2022,
     tag: "Premium Unipole Hoardings",
     desc: "Premium hoardings on Indian highways, majorly the Delhi–Dehradun highway.",
     overview:
@@ -195,6 +203,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Foundation",
     slug: "foundation",
+    founded: 2026,
       tag: "Athlete Development & Support",
     desc: "Comprehensive support for Indian athletes, from grassroots talent to the Olympic Games.",
     overview:

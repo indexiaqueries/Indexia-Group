@@ -77,7 +77,7 @@ export const knowledgeInsights: KnowledgeInsight[] = [
   {
     key: "finserve-loans",
     title: "What types of business loans does Indexia Finserve offer?",
-    body: "Term loans, working-capital lines, and project finance each serve different stages of growth. Indexia Finserve evaluates cash-flow projections, collateral, and business needs to structure an application that matches your real funding requirement.",
+    body: "Term loans, working-capital loans, and project finance each serve different stages of growth. Indexia Finserve evaluates cash-flow projections, collateral, and business needs to structure an application that matches your real funding requirement.",
   },
   {
     key: "overseas-export",

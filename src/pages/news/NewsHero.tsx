@@ -12,12 +12,6 @@ const NewsHero = () => {
   return (
     <HeroBackdrop
       image={newsBg}
-      radial="radial-gradient(circle at 82% 18%, rgba(38,174,144,0.14), transparent 50%)"
-      ruledClassName="pointer-events-none absolute inset-0 opacity-60"
-      ruledStyle={{
-        backgroundImage:
-          "repeating-linear-gradient(to bottom, transparent 0px, transparent 35px, rgba(255,255,255,0.035) 35px, rgba(255,255,255,0.035) 36px)",
-      }}
       extra={
         <div className="absolute inset-x-0 bottom-0 border-t border-white/15 bg-black/10 backdrop-blur-sm">
           <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-2 py-3 sm:justify-between sm:px-3 lg:px-5">
@@ -49,16 +43,18 @@ const NewsHero = () => {
         </div>
       }
     >
-      <div className="mb-4 flex items-center justify-center gap-3">
-        <span className="h-px w-8 bg-(--color-yellow)/70" />
-        <Eyebrow color="var(--color-yellow)">{t("newsPage.eyebrow")}</Eyebrow>
-        <span className="h-px w-8 bg-(--color-yellow)/70" />
+      <div className="relative mx-auto max-w-4xl rounded-[28px] bg-(--color-ink-deep)/75 px-5 py-9 text-center shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:px-10 sm:py-11">
+        <div className="mb-4 flex items-center justify-center gap-3">
+          <span className="h-px w-8 bg-(--color-yellow)/70" />
+          <Eyebrow color="var(--color-yellow)">{t("newsPage.eyebrow")}</Eyebrow>
+          <span className="h-px w-8 bg-(--color-yellow)/70" />
+        </div>
+        <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
+          {t("newsPage.titleStart")}
+          <div className="text-(--color-yellow)">{t("newsPage.titleAccent")}</div>
+        </h1>
+        <p className="mx-auto max-w-2xl text-sm leading-7 text-white/80">{t("newsPage.subtitle")}</p>
       </div>
-      <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
-        {t("newsPage.titleStart")}
-        <div className="text-(--color-yellow)">{t("newsPage.titleAccent")}</div>
-      </h1>
-      <p className="mx-auto max-w-2xl text-sm leading-7 text-white/80">{t("newsPage.subtitle")}</p>
     </HeroBackdrop>
   );
 };

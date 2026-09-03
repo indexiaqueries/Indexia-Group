@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
 import logo from "../../assets/logo/IndexiaGroup_Logo.gif";
 import { navPillClass } from "./header/navPill";
-import { useHeaderScroll } from "./header/useHeaderScroll";
 
 const LanguageMenu = lazy(() => import("./header/LanguageMenu"));
 const MobileMenu = lazy(() => import("./header/MobileMenu"));
@@ -19,9 +18,7 @@ const Header = () => {
   const { t } = useTranslation();
   const prefersReducedMotion = useReducedMotion();
   const barRef = useRef<HTMLElement>(null);
-  const scrolled = useHeaderScroll();
   const { pathname } = useLocation();
-  const showScrim = scrolled || pathname === "/";
 
   // Close dropdown on route change
   useEffect(() => {
@@ -73,9 +70,7 @@ const Header = () => {
     <header ref={barRef} className="fixed inset-x-0 top-0 z-999 h-18 pointer-events-none sm:h-23">
       <div
         aria-hidden="true"
-        className={`header-scrim pointer-events-none absolute inset-0 transition-opacity duration-300 ${
-          showScrim ? "opacity-100" : "opacity-0"
-        }`}
+        className="header-scrim pointer-events-none absolute inset-0"
       />
 
       <NavLink

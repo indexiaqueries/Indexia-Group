@@ -125,10 +125,8 @@ const SecurityTipsPage = () => {
         jsonLd={securityJsonLd}
       />
 
-      <HeroBackdrop
-        image={securityBg}
-        radial="radial-gradient(circle at 82% 18%, rgba(242,242,49,0.12), transparent 50%)"
-      >
+      <HeroBackdrop image={securityBg}>
+        <div className="relative mx-auto max-w-4xl rounded-[28px] bg-(--color-ink-deep)/75 px-5 py-9 text-center shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:px-10 sm:py-11">
         <div className="mb-4 flex items-center justify-center gap-3">
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{t("securityTipsPage.eyebrow")}</Eyebrow>
@@ -146,6 +144,7 @@ const SecurityTipsPage = () => {
         >
           {t("securityTipsPage.ctaButton")} ↓
         </button>
+        </div>
       </HeroBackdrop>
 
       <section className="section-ruled section-paper relative px-4 py-10 sm:px-6 sm:py-14 lg:px-8">

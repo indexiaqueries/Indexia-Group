@@ -14,16 +14,9 @@ const ContactHero = () => {
   return (
     <HeroBackdrop
       image={contactHeroBg}
-      overlay={`linear-gradient(115deg, ${colors.navyDeep}d9 0%, ${colors.navy}b3 55%, ${colors.navyMid}8c 100%)`}
-      radial={`radial-gradient(circle at 85% 15%, ${colors.teal}35, transparent 45%)`}
-      ruledClassName="pointer-events-none absolute inset-0 opacity-70"
-      ruledStyle={{
-        backgroundImage:
-          "repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 36px)",
-      }}
       containerClassName="relative mx-auto grid max-w-7xl items-center gap-6 px-2 py-10 pt-20 sm:px-3 lg:grid-cols-2 lg:px-5 lg:py-14 lg:gap-10"
     >
-      <div className="slide-in-left">
+      <div className="slide-in-left rounded-[28px] bg-(--color-ink-deep)/65 p-6 shadow-2xl ring-1 ring-white/15 backdrop-blur-xs sm:p-9">
         <Eyebrow size="md" color={colors.yellow} className="mb-4">
           {t("contactHero.eyebrow")}
         </Eyebrow>

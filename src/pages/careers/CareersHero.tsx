@@ -114,19 +114,9 @@ const CareersHero = () => {
     <section className="relative overflow-hidden bg-(--color-ink-deep) min-h-[92svh] sm:min-h-screen flex flex-col">
       <div className="relative flex flex-1 items-center">
         <CareerHeroBg />
-        <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-(--color-ink-deep)/75 via-(--color-ink-deep)/45 to-(--color-ink-deep)/90" />
-
-        {/* Ledger rule lines, the one texture device, standing in for the paper trail of a finance & export group */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-60"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(to bottom, transparent 0px, transparent 35px, rgba(255,255,255,0.035) 35px, rgba(255,255,255,0.035) 36px)",
-          }}
-        />
 
         <div className="relative mx-auto w-full max-w-7xl px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14">
+          <div className="relative max-w-4xl rounded-[28px] bg-(--color-ink-deep)/75 p-5 shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:p-8 lg:p-10">
           <div className="mb-5 flex items-center gap-3">
             <span className="h-px w-10 bg-(--color-yellow)/60" />
             <Eyebrow color="var(--color-yellow)" size="md">
@@ -187,6 +177,7 @@ const CareersHero = () => {
                 {t("careersHero.companiesOneGroup")}
               </span>
             </div>
+          </div>
           </div>
         </div>
       </div>

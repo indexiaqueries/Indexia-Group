@@ -29,9 +29,9 @@ export const initialContactForm: ContactFormData = {
 };
 
 export const phoneNumbers: PhoneLink[] = [
-  { label: "Landline", labelKey: "landline", number: "011 4629 1155", href: "tel:+911146291155" },
-  { label: "Mobile", labelKey: "mobile", number: "8928 786 594", href: "tel:+918928786594" },
-  { label: "Mobile", labelKey: "mobile", number: "86551 68551", href: "tel:+918655168551" },
+  { label: "Landline", labelKey: "landline", number: "+91 11 4629 1155", href: "tel:+911146291155" },
+  { label: "Mobile", labelKey: "mobile", number: "+91 8928 786 594", href: "tel:+918928786594" },
+  { label: "Mobile", labelKey: "mobile", number: "+91 86551 68551", href: "tel:+918655168551" },
 ];
 
 export const branches: Branch[] = [

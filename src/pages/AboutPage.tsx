@@ -11,6 +11,7 @@ import ourStoryImg from "../assets/about-img/OurStory.png";
 import valuesImg from "../assets/about-img/OurValues.png";
 import ScrollTimeline from "../components/common/ScrollTimeline";
 import RadialCompanies from "../components/common/RadialCompanies";
+import { companies } from "../data/companies";
 
 const VALUES = [1, 2, 3, 4] as const;
 
@@ -65,10 +66,8 @@ const AboutPage = () => {
       />
 
       {/* Hero */}
-      <HeroBackdrop
-        image={aboutBg}
-        radial="radial-gradient(circle at 82% 18%, rgba(242,242,49,0.12), transparent 50%)"
-      >
+      <HeroBackdrop image={aboutBg}>
+        <div className="relative mx-auto max-w-4xl rounded-[28px] bg-(--color-ink-deep)/70 px-5 py-9 text-center shadow-2xl ring-1 ring-white/15 backdrop-blur-xs sm:px-10 sm:py-11">
         <div className="fade-up mb-4 flex items-center justify-center gap-3" style={{ animationDelay: "0.05s" } as CSSProperties}>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
@@ -84,6 +83,7 @@ const AboutPage = () => {
         <p className="fade-up mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80" style={{ animationDelay: "0.32s" } as CSSProperties}>
           {tr("subtitle", "Diverse Ventures. Unified Vision.")}
         </p>
+        </div>
       </HeroBackdrop>
 
       {/* Leadership */}
@@ -256,31 +256,34 @@ const AboutPage = () => {
           </Reveal>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { name: tr("aboutPage.entityFinserveName", "Indexia Finserve Pvt. Ltd."), cin: "U65990MH2012PTC234568", est: "2012" },
-              { name: tr("aboutPage.entityOverseasName", "Indexia Overseas Pvt. Ltd."), cin: "U51909MH2015PTC367890", est: "2015" },
-              { name: tr("aboutPage.entityAgroName", "Indexia Agro Bio Fertilizers Pvt. Ltd."), cin: "U01100MH2018PTC390123", est: "2018" },
-            ].map((entity) => (
-              <Reveal key={entity.cin} delay={0.05} amount={0.15}>
-                <div className="rounded-xl border border-white/15 bg-white/10 p-4 shadow-[0_18px_44px_rgba(0,0,0,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/15">
-                  <h3 className="font-display text-[13px] sm:text-sm font-bold text-white">{entity.name}</h3>
-                  <div className="mt-2.5 flex items-center gap-3 text-[11px] text-white/50">
-                    <span><span className="font-semibold text-white/70">CIN:</span> {entity.cin}</span>
+            {companies.map((company, i) => {
+              const entityName = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
+              return (
+                <Reveal key={company.slug} delay={(i % 3) * 0.05} amount={0.15}>
+                  <div className="rounded-xl border border-white/15 bg-white/10 p-4 shadow-[0_18px_44px_rgba(0,0,0,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/15">
+                    <h3 className="font-display text-[13px] sm:text-sm font-bold text-white">{entityName}</h3>
+                    {company.cin && (
+                      <div className="mt-2.5 flex items-center gap-3 text-[11px] text-white/50">
+                        <span><span className="font-semibold text-white/70">CIN:</span> {company.cin}</span>
+                      </div>
+                    )}
+                    <div className="mt-1 text-[11px] text-white/50">
+                      <span className="font-semibold text-white/70">Est.:</span> {company.founded}
+                    </div>
+                    {company.cinUrl && (
+                      <a
+                        href={company.cinUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2.5 inline-flex items-center gap-1 text-[11px] font-bold text-(--color-teal) transition-colors hover:text-(--color-yellow)"
+                      >
+                        {tr("viewOnMCA", "View on MCA")} →
+                      </a>
+                    )}
                   </div>
-                  <div className="mt-1 text-[11px] text-white/50">
-                    <span className="font-semibold text-white/70">Est.:</span> {entity.est}
-                  </div>
-                  <a
-                    href="https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2.5 inline-flex items-center gap-1 text-[11px] font-bold text-(--color-teal) transition-colors hover:text-(--color-yellow)"
-                  >
-                    {tr("viewOnMCA", "View on MCA")} →
-                  </a>
-                </div>
-              </Reveal>
-            ))}
+                </Reveal>
+              );
+            })}
           </div>
 
           <Reveal delay={0.2} amount={0.15} className="mt-5 sm:mt-6 text-center">

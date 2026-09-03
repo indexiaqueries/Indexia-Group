@@ -9,7 +9,7 @@ const enquirySchema = new mongoose.Schema(
     message: { type: String, required: true, trim: true },
     status: {
       type: String,
-      enum: ["new", "handled"],
+      enum: ["new", "read", "handled"],
       default: "new",
     },
   },

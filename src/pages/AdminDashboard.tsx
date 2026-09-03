@@ -60,7 +60,7 @@ type Enquiry = {
   email: string;
   subject: string;
   message: string;
-  status: "new" | "handled";
+  status: "new" | "read" | "handled";
   createdAt: string;
 };
 
@@ -79,6 +79,7 @@ const DEPARTMENTS = ["Finance", "Human Resources", "Digital Marketing", "Informa
 
 const ENQUIRY_STATUS: Record<Enquiry["status"], { bg: string; text: string; icon: React.ReactNode }> = {
   new: { bg: "bg-blue-50", text: "text-blue-700", icon: <Clock size={14} /> },
+  read: { bg: "bg-amber-50", text: "text-amber-700", icon: <Eye size={14} /> },
   handled: { bg: "bg-green-50", text: "text-green-700", icon: <CheckCircle2 size={14} /> },
 };
 
@@ -105,7 +106,7 @@ const AdminDashboard = () => {
   const [enquiries, setEnquiries] = useState<Enquiry[]>([]);
   const [selectedEnquiry, setSelectedEnquiry] = useState<Enquiry | null>(null);
   const [enquiryQuery, setEnquiryQuery] = useState("");
-  const [enquiryFilter, setEnquiryFilter] = useState<"all" | "new" | "handled">("all");
+  const [enquiryFilter, setEnquiryFilter] = useState<"all" | "new" | "read" | "handled">("new");
 
   // Shared state
   const [loading, setLoading] = useState(false);
@@ -208,6 +209,15 @@ const AdminDashboard = () => {
       replaceEnquiry(id, data.enquiry);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to update enquiry.");
+    }
+  };
+
+  // Opening an enquiry in the detail panel marks it as read (auto-mark seen)
+  // so the unread badge and the "new" filter drain as the team works through.
+  const openEnquiry = (enq: Enquiry) => {
+    setSelectedEnquiry(enq);
+    if (enq.status === "new") {
+      updateEnquiryStatus(enq._id, "read");
     }
   };
 
@@ -398,6 +408,7 @@ const AdminDashboard = () => {
   const enqCounts = {
     all: enquiries.length,
     new: enquiries.filter((e) => e.status === "new").length,
+    read: enquiries.filter((e) => e.status === "read").length,
     handled: enquiries.filter((e) => e.status === "handled").length,
   };
 
@@ -448,7 +459,7 @@ const AdminDashboard = () => {
               >
                 <Mail size={12} />
                 Enquiries
-                <span className="ml-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[10px]">{enquiries.length}</span>
+                <span className="ml-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[10px]">{enqCounts.new}</span>
               </button>
               <button
                 onClick={() => setActiveTab("openings")}
@@ -643,7 +654,7 @@ const AdminDashboard = () => {
               </div>
               <div className="flex items-center gap-2" role="group" aria-label="Filter enquiries by status">
                 <Filter size={14} className="text-slate-400" aria-hidden="true" />
-                {(["all", "new", "handled"] as const).map((s) => (
+                {(["all", "new", "read", "handled"] as const).map((s) => (
                   <button
                     key={s}
                     onClick={() => setEnquiryFilter(s)}
@@ -664,7 +675,9 @@ const AdminDashboard = () => {
               <div className="flex-1 space-y-3" role="list" aria-label="Contact enquiries">
                 {filteredEnquiries.length === 0 ? (
                   <div className="rounded-2xl border border-slate-200 bg-white p-12 text-center text-sm text-(--color-muted)">
-                    No enquiries found.
+                    {enquiryFilter === "new" && enquiries.length > 0
+                      ? "All caught up — no new enquiries."
+                      : "No enquiries found."}
                   </div>
                 ) : (
                   filteredEnquiries.map((enq) => {
@@ -674,8 +687,8 @@ const AdminDashboard = () => {
                         key={enq._id}
                         role="listitem"
                         tabIndex={0}
-                        onClick={() => setSelectedEnquiry(enq)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSelectedEnquiry(enq); } }}
+                        onClick={() => openEnquiry(enq)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openEnquiry(enq); } }}
                         className={`cursor-pointer rounded-2xl border bg-white p-5 transition-all hover:shadow-md focus:border-(--color-teal) focus:ring-2 focus:ring-(--color-teal)/20 focus:outline-none ${
                           selectedEnquiry?._id === enq._id ? "border-(--color-teal) shadow-md" : "border-slate-100"
                         }`}
@@ -724,7 +737,7 @@ const AdminDashboard = () => {
                     <p className="mt-1 whitespace-pre-line text-sm leading-6 text-slate-600">{selectedEnquiry.message}</p>
                   </div>
                   <div className="mt-5 flex flex-wrap gap-2" role="group" aria-label="Update enquiry status">
-                    {(["new", "handled"] as const).map((s) => (
+                    {(["new", "read", "handled"] as const).map((s) => (
                       <button
                         key={s}
                         onClick={() => updateEnquiryStatus(selectedEnquiry._id, s)}
@@ -735,6 +748,8 @@ const AdminDashboard = () => {
                             : "border border-slate-200 text-slate-500 hover:border-(--color-teal) hover:text-(--color-teal)"
                         }`}
                       >
+                        {s === "new" && <Clock size={12} className="mr-1 inline" />}
+                        {s === "read" && <Eye size={12} className="mr-1 inline" />}
                         {s === "handled" && <CheckCircle2 size={12} className="mr-1 inline" />}
                         {s}
                       </button>

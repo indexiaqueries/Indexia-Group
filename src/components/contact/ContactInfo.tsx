@@ -7,9 +7,9 @@ import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 
 const emailAddresses = [
-  { labelKey: "contactInfo.emailGeneralEnquiries", email: "contactus@indexiagroup.com", color: accent.green },
-  { labelKey: "contactInfo.emailQueries", email: "indexia.queries@gmail.com", color: accent.green },
-  { labelKey: "contactInfo.emailViniMalik", email: "Vini.Malik5@gmail.com", color: accent.blue },
+  { email: "contactus@indexiagroup.com", color: accent.green },
+  { email: "indexia.queries@gmail.com", color: accent.green },
+  { email: "Vini.Malik5@gmail.com", color: accent.blue },
 ];
 
 const EmailsSection = () => {
@@ -25,7 +25,7 @@ const EmailsSection = () => {
         {t("contactInfo.enquiries")}
       </Eyebrow>
       <div className="mt-4 space-y-3">
-        {emailAddresses.map(({ labelKey, email, color }) => (
+        {emailAddresses.map(({ email, color }) => (
           <a key={email} href={`mailto:${email}`} className="group flex items-center gap-4">
             <span
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white shadow-md"
@@ -33,13 +33,8 @@ const EmailsSection = () => {
             >
               <Mail size={18} />
             </span>
-            <span className="min-w-0">
-              <span className="block text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400">
-                {t(labelKey)}
-              </span>
-              <span className="mt-0.5 block text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)">
-                {email}
-              </span>
+            <span className="min-w-0 break-all text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)">
+              {email}
             </span>
           </a>
         ))}

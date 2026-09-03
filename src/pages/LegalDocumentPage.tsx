@@ -77,10 +77,8 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
     <main className="site-shell">
       <SEO title={title} description={t(descriptionKey)} keywords={KEYWORDS[docId]} canonicalPath={path} jsonLd={jsonLd} />
 
-      <HeroBackdrop
-        image={heroImage}
-        radial="radial-gradient(circle at 82% 18%, rgba(38,174,144,0.14), transparent 50%)"
-      >
+      <HeroBackdrop image={heroImage}>
+        <div className="relative mx-auto max-w-4xl rounded-[28px] bg-(--color-ink-deep)/75 px-5 py-9 text-center shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:px-10 sm:py-11">
         <div className="mb-4 flex items-center justify-center gap-3">
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{t("legal.eyebrow")}</Eyebrow>
@@ -93,6 +91,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         <p className="font-ledger text-[11px] font-bold uppercase tracking-[0.22em] text-white/55">
           {t("legal.lastUpdated")}: {doc.lastUpdated}
         </p>
+        </div>
       </HeroBackdrop>
 
       <section className="section-ruled section-paper relative px-4 py-4 sm:px-6 sm:py-6 lg:px-8">

@@ -48,3 +48,5 @@ Thumbs.db
 
 # Responsive images (generated)
 src/assets/public-images/
+
+.agents/
