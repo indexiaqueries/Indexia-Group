@@ -318,7 +318,7 @@
     "locationsTitleStart": "Unsere "
   },
   "contactHero": {
-    "callNow": "Rufen Sie uns an · 86551 68551",
+    "callNow": "Rufen Sie uns an · +91 86551 68551",
     "directLines": "{{count}} direkte Leitungen",
     "eyebrow": "Sprechen Sie mit Indexia",
     "offices": "{{count}} Standorte",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "Indien",
-    "enquiries": "Anfragen",
-    "eyebrow": "Anfrage senden",
-    "headlineAccent": "Indexia-Unternehmen",
-    "headlineStart": "Anfrage zu ",
+    "enquiries": "Schreiben Sie uns",
+    "eyebrow": "Kontakt",
+    "headlineAccent": "Indexia",
+    "headlineStart": "Kontaktieren Sie ",
     "location": "Standort",
     "paragraph": "Ob Sie eine Frage zu unseren Dienstleistungen haben, Geschäftsunterstützung benötigen oder eine Partnerschaft erkunden möchten, unser Team ist bereit, Ihnen zu helfen: Wir antworten innerhalb von 24 Stunden.",
-    "phoneNumbers": "Telefonnummern",
+    "phoneNumbers": "Rufen Sie uns an",
     "workingHours": "Öffnungszeiten",
     "emailGeneralEnquiries": "Allgemeine Anfragen",
     "emailQueries": "Anfragen",

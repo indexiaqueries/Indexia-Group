@@ -318,7 +318,7 @@
     "locationsTitleStart": "Ofislerimiz"
   },
   "contactHero": {
-    "callNow": "Bizi Arayın · 86551 68551",
+    "callNow": "Bizi Arayın · +91 86551 68551",
     "directLines": "{{count}} doğrudan hat",
     "eyebrow": "Indexia ile Konuşun",
     "offices": "{{count}} ofis",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "Hindistan",
-    "enquiries": "Sorgular",
-    "eyebrow": "Sorgu Gönder",
-    "headlineAccent": "Indexia Şirketi Hakkında Sorun",
-    "headlineStart": "Bilgi Alın ",
+    "enquiries": "Bize E-posta Gönderin",
+    "eyebrow": "Bize Ulaşın",
+    "headlineAccent": "Indexia ile",
+    "headlineStart": "İletişime geçin ",
     "location": "Konum",
     "paragraph": "Hizmetlerimizle ilgili bir sorunuz, iş danışmanlığı ihtiyacınız veya ortaklık keşfetme isteğiniz olsun, ekibimiz size yardımcı olmaya hazırdır, 24 saat içinde yanıt veriyoruz.",
-    "phoneNumbers": "Telefon Numaraları",
+    "phoneNumbers": "Bizi Arayın",
     "workingHours": "Çalışma Saatleri",
     "emailGeneralEnquiries": "Genel Sorular",
     "emailQueries": "Sorular",

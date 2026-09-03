@@ -318,7 +318,7 @@
     "locationsTitleStart": "مواقع"
   },
   "contactHero": {
-    "callNow": "اتصل بنا الآن · 86551 68551",
+    "callNow": "اتصل بنا الآن · +91 86551 68551",
     "directLines": "{{count}} خطوط مباشرة",
     "eyebrow": "تحدث مع إنديكسيا",
     "offices": "{{count}} مكاتب",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "الهند",
-    "enquiries": "الاستفسارات",
-    "eyebrow": "أرسل استفسارك",
-    "headlineAccent": "شركة إنديكسيا",
-    "headlineStart": "استفسار عن ",
+    "enquiries": "راسلنا",
+    "eyebrow": "تواصل معنا",
+    "headlineAccent": "Indexia",
+    "headlineStart": "تواصل مع ",
     "location": "الموقع",
     "paragraph": "إذا كان لديك سؤال حول خدماتنا.",
-    "phoneNumbers": "أرقام الهاتف",
+    "phoneNumbers": "اتصل بنا",
     "workingHours": "ساعات العمل",
     "emailGeneralEnquiries": "استفسارات عامة",
     "emailQueries": "استفسارات",

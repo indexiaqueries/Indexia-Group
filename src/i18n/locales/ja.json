@@ -318,7 +318,7 @@
     "locationsTitleStart": "当社の"
   },
   "contactHero": {
-    "callNow": "今すぐお電話 · 86551 68551",
+    "callNow": "今すぐお電話 · +91 86551 68551",
     "directLines": "{{count}}直通回線",
     "eyebrow": "インデキシアに相談",
     "offices": "{{count}}拠点",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "インド",
-    "enquiries": "お問い合わせ",
-    "eyebrow": "お問い合わせを送信",
-    "headlineAccent": "インデキシア企業",
-    "headlineStart": "お問い合わせ, ",
+    "enquiries": "メールでのお問い合わせ",
+    "eyebrow": "お問い合わせ",
+    "headlineAccent": "お問い合わせ",
+    "headlineStart": "インデキシアへの",
     "location": "所在地",
     "paragraph": "当社のサービスについてのご質問、ビジネス相談、パートナーシップのご検討など、当チームがいつでもサポートいたします, 24時間以内に返信いたします。",
-    "phoneNumbers": "電話番号",
+    "phoneNumbers": "お電話でのお問い合わせ",
     "workingHours": "営業時間",
     "emailGeneralEnquiries": "一般お問い合わせ",
     "emailQueries": "お問い合わせ",

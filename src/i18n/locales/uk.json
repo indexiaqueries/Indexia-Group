@@ -318,7 +318,7 @@
     "locationsTitleStart": "Наші "
   },
   "contactHero": {
-    "callNow": "Зателефонуйте нам · 86551 68551",
+    "callNow": "Зателефонуйте нам · +91 86551 68551",
     "directLines": "{{count}} прямих ліній",
     "eyebrow": "Поговоріть з Indexia",
     "offices": "{{count}} офіси",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "Індія",
-    "enquiries": "Запити",
-    "eyebrow": "Надіслати запит",
-    "headlineAccent": "компанію Indexia",
-    "headlineStart": "Запит про ",
+    "enquiries": "Напишіть нам",
+    "eyebrow": "Зв'яжіться з нами",
+    "headlineAccent": "з Indexia",
+    "headlineStart": "Зв'яжіться ",
     "location": "Місцезнаходження",
     "paragraph": "Чи маєте ви питання про наші послуги, потребуєте бізнес-консультації чи хочете дослідити партнерство, наша команда готова допомогти: ми відповідаємо протягом 24 годин.",
-    "phoneNumbers": "Телефони",
+    "phoneNumbers": "Зателефонуйте нам",
     "workingHours": "Робочі години",
     "emailGeneralEnquiries": "Загальні Запити",
     "emailQueries": "Запити",

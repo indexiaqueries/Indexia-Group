@@ -318,7 +318,7 @@
     "locationsTitleStart": "हमारे "
   },
   "contactHero": {
-    "callNow": "अभी कॉल करें · 86551 68551",
+    "callNow": "अभी कॉल करें · +91 86551 68551",
     "directLines": "{{count}} सीधी लाइनें",
     "eyebrow": "इंडेक्सिया से बात करें",
     "offices": "{{count}} कार्यालय",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "भारत",
-    "enquiries": "पूछताछ",
-    "eyebrow": "अपनी पूछताछ भेजें",
-    "headlineAccent": "इंडेक्सिया कंपनी",
-    "headlineStart": "पूछताछ करें, ",
+    "enquiries": "हमें मेल करें",
+    "eyebrow": "संपर्क करें",
+    "headlineAccent": "संपर्क करें",
+    "headlineStart": "इंडेक्सिया से ",
     "location": "स्थान",
     "paragraph": "चाहे आपको हमारी सेवाओं के बारे में प्रश्न हो, व्यावसायिक परामर्श चाहिए, या साझेदारी तलाशनी हो, हमारी टीम आपकी सहायता के लिए तैयार है, हम 24 घंटे के भीतर उत्तर देते हैं।",
-    "phoneNumbers": "फ़ोन नंबर",
+    "phoneNumbers": "हमें कॉल करें",
     "workingHours": "कार्य घंटे",
     "emailGeneralEnquiries": "सामान्य पूछताछ",
     "emailQueries": "पूछताछ",

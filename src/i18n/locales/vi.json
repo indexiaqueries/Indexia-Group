@@ -318,7 +318,7 @@
     "locationsTitleStart": "Văn Phòng "
   },
   "contactHero": {
-    "callNow": "Gọi Cho Chúng Tôi · 86551 68551",
+    "callNow": "Gọi Cho Chúng Tôi · +91 86551 68551",
     "directLines": "{{count}} đường dây trực tiếp",
     "eyebrow": "Nói Chuyện Với Indexia",
     "offices": "{{count}} văn phòng",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "Ấn Độ",
-    "enquiries": "Yêu Cầu",
-    "eyebrow": "Gửi Yêu Cầu",
-    "headlineAccent": "Công ty Indexia",
-    "headlineStart": "Hỏi Về ",
+    "enquiries": "Gửi Email Cho Chúng Tôi",
+    "eyebrow": "Liên Hệ Chúng Tôi",
+    "headlineAccent": "với Indexia",
+    "headlineStart": "Liên Hệ ",
     "location": "Địa Điểm",
     "paragraph": "Dù bạn có câu hỏi về dịch vụ của chúng tôi, cần tư vấn kinh doanh hay muốn khám phá hợp tác, đội ngũ của chúng tôi sẵn sàng hỗ trợ, chúng tôi trả lời trong vòng 24 giờ.",
-    "phoneNumbers": "Số Điện Thoại",
+    "phoneNumbers": "Gọi Cho Chúng Tôi",
     "workingHours": "Giờ Làm Việc",
     "emailGeneralEnquiries": "Câu Hỏi Chung",
     "emailQueries": "Câu hỏi",

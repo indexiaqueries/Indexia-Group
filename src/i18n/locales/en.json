@@ -129,20 +129,20 @@
     "title": "A Direct Line to Our Team",
     "paragraph": "From documentation questions to new loan enquiries, every message is reviewed and answered by a member of our team - not a queue.",
     "sendEnquiry": "Send Your Enquiry",
-    "callNow": "Call Us Now · 86551 68551",
+    "callNow": "Call Us Now · +91 86551 68551",
     "offices": "{{count}} offices",
     "directLines": "{{count}} direct lines",
     "reply": "< 24 hr avg. reply"
   },
   "contactInfo": {
-    "eyebrow": "Send Your Enquiry",
-    "headlineStart": "Enquire About ",
-    "headlineAccent": "Indexia Company",
+    "eyebrow": "Contact Us",
+    "headlineStart": "Get in Touch ",
+    "headlineAccent": "with Indexia",
     "paragraph": "Whether you have a question about our services, need business support, or want to explore a partnership, our team is ready to assist you, we reply within 24 hours.",
-    "enquiries": "Enquiries",
+    "enquiries": "Mail Us At",
     "location": "Location",
     "workingHours": "Working Hours",
-    "phoneNumbers": "Phone Numbers",
+    "phoneNumbers": "Call Us At",
     "country": "India",
     "emailGeneralEnquiries": "General Enquiries",
     "emailQueries": "Queries",
@@ -682,7 +682,7 @@
   },
   "seo": {
     "homeTitle": "Financial Services, Loans, Export & Warehousing",
-    "homeDescription": "Indexia Group brings financial services, loans, export, warehousing, agro, security, advertising, and Athlete Support together under one diversified Indian business group.",
+    "homeDescription": "Indexia Group brings Financial Services, Loans, Export, Warehousing, Agro, Security, Advertising, and Athlete Support together under one diversified Indian business group.",
     "businessesTitle": "Group Companies, Finance, Agro, Export & Warehousing",
     "businessesDescription": "Explore the Indexia Group companies across Finance, Agro, Export, Warehousing, Securities, Advertising, and Social Impact.",
     "contactTitle": "Contact Us, Mumbai & Delhi Offices",
@@ -951,7 +951,7 @@
     "careers": {
       "culture": [
         "Work Across Eight Diverse Businesses",
-        "From fintech and global export to organic agriculture, armed security, highway advertising, and athlete development, you are not locked into one vertical. Move between companies, pick up cross-industry skills, and build a career that grows with the group.",
+        "From Fintech and global Export to organic Agriculture, armed Security, highway Advertising, and Athlete Development, you are not locked into one vertical. Move between companies, pick up cross-industry skills, and build a career that grows with the group.",
         "Learn, Train, Advance",
         "Every role comes with structured on-the-job training, access to internal workshops, and mentorship from senior leaders across the group. We invest in people who want to grow, and we back that investment with real opportunities to lead, specialize, or switch tracks.",
         "Global Exposure, Local Roots",
@@ -1156,7 +1156,7 @@
     "corporateOffice": "Corporate Office",
     "delhiOffice": "Delhi Office",
     "businessesName": "Indexia Group Businesses",
-    "businessesDescription": "Eight businesses under the Indexia Group across finance, loans, security, export, agriculture, warehousing, advertising and Athlete Support.",
+    "businessesDescription": "Eight businesses under the Indexia Group across Finance, Loans, Security, Export, Agriculture, Warehousing, Advertising, and Athlete Support.",
     "newsName": "Indexia Group, News & Knowledge Centre",
     "careersName": "Open roles at Indexia Group",
     "companyPageName": "{{name}}, {{tag}}",
@@ -1465,7 +1465,7 @@
     "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "careersHero": {
-    "description": "Eight companies. One team. Build your career across finance, export, agriculture, security, advertising, and athlete development.",
+    "description": "Eight companies. One team. Build your career across Finance, Export, Agriculture, Security, Advertising, and Athlete Development.",
     "companiesOneGroup": "companies, one group",
     "sectors": {
       "finance": "Finance",

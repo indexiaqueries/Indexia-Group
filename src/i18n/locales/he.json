@@ -318,7 +318,7 @@
     "locationsTitleStart": "המיקומים "
   },
   "contactHero": {
-    "callNow": "התקשר עכשיו · 86551 68551",
+    "callNow": "התקשר עכשיו · +91 86551 68551",
     "directLines": "{{count}} קווים ישירים",
     "eyebrow": "דבר עם אינדקסיה",
     "offices": "{{count}} משרדים",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "הודו",
-    "enquiries": "פניות",
-    "eyebrow": "שלח פניה",
-    "headlineAccent": "חברת Indexia",
-    "headlineStart": "פנייה לגבי ",
+    "enquiries": "כתבו לנו",
+    "eyebrow": "צור קשר",
+    "headlineAccent": "Indexia",
+    "headlineStart": "צרו קשר עם ",
     "location": "מיקום",
     "paragraph": "בין אם יש לכם שאלה על השירותים שלנו, אתם צריכים ייעוץ עסקי או רוצים לחקור שותפות, הצוות שלנו מוכן לעזור לכם, אנו עונים תוך 24 שעות.",
-    "phoneNumbers": "טלפונים",
+    "phoneNumbers": "התקשרו אלינו",
     "workingHours": "שעות עבודה",
     "emailGeneralEnquiries": "פניות_כלליות",
     "emailQueries": "פניות",

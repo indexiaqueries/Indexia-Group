@@ -318,7 +318,7 @@
     "locationsTitleStart": "Våra "
   },
   "contactHero": {
-    "callNow": "Ring Oss · 86551 68551",
+    "callNow": "Ring Oss · +91 86551 68551",
     "directLines": "{{count}} direktlinjer",
     "eyebrow": "Prata med Indexia",
     "offices": "{{count}} kontor",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "Indien",
-    "enquiries": "Förfrågningar",
-    "eyebrow": "Skicka Förfrågan",
-    "headlineAccent": "ett Indexia-bolag",
-    "headlineStart": "Fråga om ",
+    "enquiries": "Maila oss",
+    "eyebrow": "Kontakta oss",
+    "headlineAccent": "Indexia",
+    "headlineStart": "Kontakta ",
     "location": "Plats",
     "paragraph": "Oavsett om du har en fråga om våra tjänster, behöver en företagskonsultation eller vill utforska ett partnerskap, är vårt team redo att hjälpa dig, vi svarar inom 24 timmar.",
-    "phoneNumbers": "Telefonnummer",
+    "phoneNumbers": "Ring oss",
     "workingHours": "Arbetstider",
     "emailGeneralEnquiries": "Allmänna Frågor",
     "emailQueries": "Frågor",

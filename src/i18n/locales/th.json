@@ -318,7 +318,7 @@
     "locationsTitleStart": "สาขา"
   },
   "contactHero": {
-    "callNow": "โทรหาเรา · 86551 68551",
+    "callNow": "โทรหาเรา · +91 86551 68551",
     "directLines": "{{count}} สายตรง",
     "eyebrow": "พูดคุยกับ Indexia",
     "offices": "{{count}} สาขา",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "อินเดีย",
-    "enquiries": "คำถาม",
-    "eyebrow": "ส่งคำถาม",
-    "headlineAccent": "บริษัท Indexia",
-    "headlineStart": "สอบถามเกี่ยวกับ ",
+    "enquiries": "ส่งอีเมลหาเรา",
+    "eyebrow": "ติดต่อเรา",
+    "headlineAccent": "Indexia",
+    "headlineStart": "ติดต่อ ",
     "location": "สถานที่",
     "paragraph": "ไม่ว่าคุณจะมีคำถามเกี่ยวกับบริการของเรา ต้องการคำปรึกษาทางธุรกิจ หรือต้องการสำรวจความร่วมมือ ทีมของเราพร้อมช่วยเหลือคุณ, เราตอบกลับภายใน 24 ชั่วโมง",
-    "phoneNumbers": "หมายเลขโทรศัพท์",
+    "phoneNumbers": "โทรหาเรา",
     "workingHours": "เวลาทำการ",
     "emailGeneralEnquiries": "สอบถามทั่วไป",
     "emailQueries": "คำถาม",

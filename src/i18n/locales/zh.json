@@ -318,7 +318,7 @@
     "locationsTitleStart": "我们的"
   },
   "contactHero": {
-    "callNow": "立即致电 · 86551 68551",
+    "callNow": "立即致电 · +91 86551 68551",
     "directLines": "{{count}} 条直线",
     "eyebrow": "与英德西亚联系",
     "offices": "{{count}} 个办公室",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "印度",
-    "enquiries": "咨询",
-    "eyebrow": "发送您的咨询",
-    "headlineAccent": "英德西亚企业",
-    "headlineStart": "咨询",
+    "enquiries": "给我们发邮件",
+    "eyebrow": "联系我们",
+    "headlineAccent": "英德西亚",
+    "headlineStart": "联系 ",
     "location": "地点",
     "paragraph": "无论您对我们的服务有疑问、需要商业咨询，还是想探索合作机会，我们的团队都随时准备为您提供帮助, 我们会在24小时内回复。",
-    "phoneNumbers": "电话号码",
+    "phoneNumbers": "给我们打电话",
     "workingHours": "工作时间",
     "emailGeneralEnquiries": "一般咨询",
     "emailQueries": "查询",

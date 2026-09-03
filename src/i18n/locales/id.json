@@ -318,7 +318,7 @@
     "locationsTitleStart": "Kantor "
   },
   "contactHero": {
-    "callNow": "Hubungi Kami · 86551 68551",
+    "callNow": "Hubungi Kami · +91 86551 68551",
     "directLines": "{{count}} jalur langsung",
     "eyebrow": "Bicara dengan Indexia",
     "offices": "{{count}} kantor",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "India",
-    "enquiries": "Pertanyaan",
-    "eyebrow": "Kirim Pertanyaan",
-    "headlineAccent": "Perusahaan Indexia",
-    "headlineStart": "Tanya Tentang ",
+    "enquiries": "Email Kami",
+    "eyebrow": "Hubungi Kami",
+    "headlineAccent": "Indexia",
+    "headlineStart": "Hubungi ",
     "location": "Lokasi",
     "paragraph": "Baik Anda memiliki pertanyaan tentang layanan kami, membutuhkan konsultasi bisnis, atau ingin menjajaki kemitraan, tim kami siap membantu, kami membalas dalam 24 jam.",
-    "phoneNumbers": "Nomor Telepon",
+    "phoneNumbers": "Telepon Kami",
     "workingHours": "Jam Kerja",
     "emailGeneralEnquiries": "Umum",
     "emailQueries": "Pertanyaan",

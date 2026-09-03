@@ -318,7 +318,7 @@
     "locationsTitleStart": "Le nostre "
   },
   "contactHero": {
-    "callNow": "Chiamaci · 86551 68551",
+    "callNow": "Chiamaci · +91 86551 68551",
     "directLines": "{{count}} linee dirette",
     "eyebrow": "Parla con Indexia",
     "offices": "{{count}} sedi",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "India",
-    "enquiries": "Richieste",
-    "eyebrow": "Invia Richiesta",
-    "headlineAccent": "Azienda Indexia",
-    "headlineStart": "Richiedi informazioni su ",
+    "enquiries": "Scrivici",
+    "eyebrow": "Contattaci",
+    "headlineAccent": "con Indexia",
+    "headlineStart": "Mettiti in contatto ",
     "location": "Località",
     "paragraph": "Che tu abbia una domanda sui nostri servizi, abbia bisogno di una consulenza aziendale o voglia esplorare una partnership, il nostro team è pronto ad aiutarti: rispondiamo entro 24 ore.",
-    "phoneNumbers": "Numeri di Telefono",
+    "phoneNumbers": "Chiamaci",
     "workingHours": "Orari di Lavoro",
     "emailGeneralEnquiries": "Richieste Generali",
     "emailQueries": "Richieste",

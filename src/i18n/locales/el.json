@@ -318,7 +318,7 @@
     "locationsTitleStart": "Οι "
   },
   "contactHero": {
-    "callNow": "Καλέστε μας · 86551 68551",
+    "callNow": "Καλέστε μας · +91 86551 68551",
     "directLines": "{{count}} άμεσες γραμμές",
     "eyebrow": "Μιλήστε στο Indexia",
     "offices": "{{count}} γραφεία",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "Ινδία",
-    "enquiries": "Αιτήματα",
-    "eyebrow": "Στείλτε το Αίτημά σας",
-    "headlineAccent": "Εταιρεία Indexia",
-    "headlineStart": "Ερώτημα για ",
+    "enquiries": "Γράψτε μας",
+    "eyebrow": "Επικοινωνία",
+    "headlineAccent": "Indexia",
+    "headlineStart": "Επικοινωνήστε με την ",
     "location": "Τοποθεσία",
     "paragraph": "Είτε έχετε μια ερώτηση για τις υπηρεσίες μας, χρειάζεστε επιχειρηματική συμβουλευτική ή θέλετε να εξερευνήσετε μια συνεργασία, η ομάδα μας είναι έτοιμη να σας βοηθήσει, απαντάμε εντός 24 ωρών.",
-    "phoneNumbers": "Τηλέφωνα",
+    "phoneNumbers": "Καλέστε μας",
     "workingHours": "Ώρες Εργασίας",
     "emailGeneralEnquiries": "Γενικά Ερωτήματα",
     "emailQueries": "Ερωτήματα",

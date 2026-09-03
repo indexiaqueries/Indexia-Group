@@ -318,7 +318,7 @@
     "locationsTitleStart": "Onze "
   },
   "contactHero": {
-    "callNow": "Bel Ons · 86551 68551",
+    "callNow": "Bel Ons · +91 86551 68551",
     "directLines": "{{count}} directe lijnen",
     "eyebrow": "Praat met Indexia",
     "offices": "{{count}} kantoren",
@@ -329,13 +329,13 @@
   },
   "contactInfo": {
     "country": "India",
-    "enquiries": "Vragen",
-    "eyebrow": "Verstuur Vraag",
-    "headlineAccent": "Indexia Bedrijf",
-    "headlineStart": "Vraag Naar ",
+    "enquiries": "Mail ons",
+    "eyebrow": "Contact",
+    "headlineAccent": "met Indexia",
+    "headlineStart": "Neem contact op ",
     "location": "Locatie",
     "paragraph": "Of u nu een vraag heeft over onze diensten, een zakelijk advies nodig heeft of een samenwerking wilt verkennen, ons team staat klaar om u te helpen, we reageren binnen 24 uur.",
-    "phoneNumbers": "Telefoonnummers",
+    "phoneNumbers": "Bel ons",
     "workingHours": "Openingstijden",
     "emailGeneralEnquiries": "Algemene Vragen",
     "emailQueries": "Vragen",
