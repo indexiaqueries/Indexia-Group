@@ -4,8 +4,7 @@ import { companies } from "../../../data/companies";
 import { colors } from "../../../lib/theme";
 import groupImg from "../../../assets/company-img/IndexiaGroup.webp";
 import groupMobile from "../../../assets/company-img/mobile/IndexiaGroup-mobile.webp";
-import groupPlaceholder from "../../../../public/IndexiaGroup-q80.webp";
-import groupPlaceholderMobile from "../../../../public/IndexiaGroup-mobile-q80.webp";
+
 
 // Group slide is a special entry not in the companies array
 const GROUP_PANEL_ID = 0;
@@ -31,8 +30,7 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     motto: t("hero.p0.motto"),
     image: groupImg,
     mobileImage: groupMobile,
-    placeholderImage: groupPlaceholder,
-    placeholderMobileImage: groupPlaceholderMobile,
+
     thumbImage: getCompanyThumbImage("group"),
     color: colors.teal,
     slug: "",

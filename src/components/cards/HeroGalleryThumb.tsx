@@ -10,8 +10,6 @@ export type HeroPanel = {
   image: string;
   mobileImage: string;
   thumbImage: string;
-  placeholderImage?: string;
-  placeholderMobileImage?: string;
   color: string;
   slug?: string;
 };

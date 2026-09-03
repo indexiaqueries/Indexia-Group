@@ -17,7 +17,7 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Link", "value": "</IndexiaGroup-mobile-q80.webp>; rel=preload; as=image; fetchpriority=high; imagesrcset=\"/IndexiaGroup-mobile-q80.webp 900w, /IndexiaGroup-q80.webp 1900w\"; imagesizes=\"100vw\", </fonts/fraunces-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-600.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin" }
+        { "key": "Link", "value": "</fonts/fraunces-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-600.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin" }
       ]
     }
   ],

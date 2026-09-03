@@ -313,11 +313,10 @@ app.post("/api/contact", async (req, res) => {
   try {
     const result = await sendMail(buildContactEmail({ name, phone, email, subject, message: messageText }));
 
-    try {
-      await sendMail({ ...buildAutoReplyEmail({ name, email, subject }), to: email });
-    } catch (replyErr) {
+    // Fire auto-reply in background — don't block the response
+    sendMail({ ...buildAutoReplyEmail({ name, email, subject }), to: email }).catch((replyErr) => {
       console.error("Failed to send auto-reply:", replyErr);
-    }
+    });
 
     res.json({ ok: true, dev: result.dev });
   } catch (err) {
@@ -450,25 +449,22 @@ app.post("/api/apply", upload.single("resume"), async (req, res) => {
     }
     const application = await Application.create(appData);
 
+    // Respond immediately — fire emails in background
+    res.json({ ok: true, applicationId: application._id });
+
     // Send email notification to HR (with resume URL)
     const resumeUrl = `${req.protocol}://${req.get("host")}/api/admin/applications/${application._id}/resume?token=${process.env.ADMIN_TOKEN || ""}`;
-    try {
-      await sendMail({
-        to: HR_EMAILS,
-        ...buildApplyEmail({ name, email, phone, experience, intro: introText, roleTitle, department, resumeUrl }),
-      });
-    } catch (mailErr) {
+    sendMail({
+      to: HR_EMAILS,
+      ...buildApplyEmail({ name, email, phone, experience, intro: introText, roleTitle, department, resumeUrl }),
+    }).catch((mailErr) => {
       console.error("Failed to send application email:", mailErr);
-    }
+    });
 
     // Send auto-reply
-    try {
-      await sendMail({ ...buildApplyAutoReply({ name, roleTitle }), to: email });
-    } catch (replyErr) {
+    sendMail({ ...buildApplyAutoReply({ name, roleTitle }), to: email }).catch((replyErr) => {
       console.error("Failed to send application auto-reply:", replyErr);
-    }
-
-    res.json({ ok: true, applicationId: application._id });
+    });
   } catch (err) {
     console.error("Failed to submit application:", err);
     res.status(500).json({ ok: false, error: "Could not submit your application. Please try again later." });
