@@ -17,11 +17,11 @@ React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business
 - 18 public routes with full SEO metadata (title, description, OG, Twitter, JSON-LD)
 - 22 locales with complete translations (en, ar, de, el, es, fr, he, hi, id, it, ja, ko, nl, pl, pt, ru, sv, th, tr, uk, vi, zh)
 - Company spotlight pages for 8 businesses with hero images, stats, and bullet points
-- Contact page with 5 office locations and enquiry form (sends email via SMTP)
+- Contact page with 5 office locations and enquiry form; submissions are stored in MongoDB and managed from the admin dashboard
 - News, global research, and security tips pages
 - Careers page with job listings and resume upload
 - Foundation gallery with athlete training videos
-- Admin dashboard (behind auth)
+- Admin dashboard (behind auth) for job applications, enquiries, and openings
 - Brochure PDF generation for warehouse and advertising
 - Brotli + gzip compression
 - Speculation Rules API for instant navigation prerendering
@@ -52,9 +52,9 @@ src/
 ├── App.tsx             # Root component
 └── main.tsx            # Entry point
 server/
-├── index.js            # Express server (API routes, email, file uploads)
+├── index.js            # Express server (API routes, file uploads, static serving)
 ├── db.js               # MongoDB connection
-├── models/             # Mongoose models (Application, JobOpening, NewsArticle)
+├── models/             # Mongoose models (Application, Enquiry, JobOpening, NewsArticle)
 ├── routes/             # Admin and news API routes
 └── services/           # News fetcher and scheduler
 api/
@@ -87,14 +87,11 @@ Copy `.env.example` to `.env.local` and configure:
 
 | Variable | Purpose |
 |---|---|
-| `MONGODB_URI` | MongoDB connection string |
+| `MONGODB_URI` | MongoDB connection string (required for contact form and job applications) |
 | `ADMIN_TOKEN` | Admin dashboard auth token |
-| `SMTP_HOST` | SMTP server host |
-| `SMTP_PORT` | SMTP server port |
-| `SMTP_USER` | SMTP username |
-| `SMTP_PASS` | SMTP password |
-| `MAIL_TO` | Contact form recipient |
-| `MAIL_FROM` | Sender email address |
+
+Contact enquiries and job applications are stored in MongoDB only — the team
+reviews them in the admin dashboard (`/admin`).
 
 ## Performance
 

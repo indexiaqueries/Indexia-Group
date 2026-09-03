@@ -101,7 +101,7 @@ export default defineConfig({
             if (id.includes('react') || id.includes('scheduler')) return 'react-vendor'
             if (id.includes('cobe')) return 'cobe'
             if (id.includes('i18next') || id.includes('react-i18next')) return 'i18n'
-            if (id.includes('express') || id.includes('mongoose') || id.includes('cors') || id.includes('multer') || id.includes('nodemailer')) return 'server-deps'
+            if (id.includes('express') || id.includes('mongoose') || id.includes('cors') || id.includes('multer')) return 'server-deps'
             return 'vendor'
           }
         },
