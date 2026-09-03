@@ -44,8 +44,8 @@
   # Referrer policy
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 
-  # Early hints — preload LCP image + fonts (matches vercel.json Link header)
-  Header set Link "</IndexiaGroup-mobile-q80.webp>; rel=preload; as=image; fetchpriority=high, </fonts/fraunces-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-600.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+  # Early hints — preload fonts
+  Header set Link "</fonts/fraunces-700.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-600.woff2>; rel=preload; as=font; type=font/woff2; crossorigin, </fonts/fraunces-400.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
 </IfModule>
 
 # ─── Compression ─────────────────────────────────────────────────────────
