@@ -20,6 +20,7 @@ import {
   ToggleRight,
 } from "lucide-react";
 import SEO from "../components/common/SEO";
+import { API_BASE } from "../lib/api";
 
 /* ── Types ────────────────────────────────────────────────────── */
 
@@ -104,8 +105,8 @@ const AdminDashboard = () => {
       setError("");
       try {
         const [appRes, openRes] = await Promise.all([
-          fetch("/api/admin/applications", { headers: { "x-admin-token": token } }),
-          fetch("/api/admin/openings", { headers: { "x-admin-token": token } }),
+          fetch(`${API_BASE}/api/admin/applications`, { headers: { "x-admin-token": token } }),
+          fetch(`${API_BASE}/api/admin/openings`, { headers: { "x-admin-token": token } }),
         ]);
         const appData = await appRes.json();
         const openData = await openRes.json();
@@ -127,7 +128,7 @@ const AdminDashboard = () => {
 
   const updateStatus = async (id: string, status: string) => {
     try {
-      const res = await fetch(`/api/admin/applications/${id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/applications/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json", "x-admin-token": token },
         body: JSON.stringify({ status }),
@@ -144,7 +145,7 @@ const AdminDashboard = () => {
   const deleteApp = async (id: string) => {
     if (!confirm("Are you sure you want to delete this application?")) return;
     try {
-      const res = await fetch(`/api/admin/applications/${id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/applications/${id}`, {
         method: "DELETE",
         headers: { "x-admin-token": token },
       });
@@ -158,7 +159,7 @@ const AdminDashboard = () => {
   };
 
   const openResume = (id: string) => {
-    window.open(`/api/admin/applications/${id}/resume?token=${encodeURIComponent(token)}`, "_blank");
+    window.open(`${API_BASE}/api/admin/applications/${id}/resume?token=${encodeURIComponent(token)}`, "_blank");
   };
 
   /* ── Opening actions ────────────────────────────────────────── */
@@ -181,7 +182,7 @@ const AdminDashboard = () => {
 
     try {
       const isEdit = !!editingOpening;
-      const url = isEdit ? `/api/admin/openings/${editingOpening._id}` : "/api/admin/openings";
+      const url = isEdit ? `${API_BASE}/api/admin/openings/${editingOpening._id}` : `${API_BASE}/api/admin/openings`;
       const method = isEdit ? "PATCH" : "POST";
       const res = await fetch(url, {
         method,
@@ -206,7 +207,7 @@ const AdminDashboard = () => {
 
   const toggleActive = async (opening: Opening) => {
     try {
-      const res = await fetch(`/api/admin/openings/${opening._id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/openings/${opening._id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json", "x-admin-token": token },
         body: JSON.stringify({ isActive: !opening.isActive }),
@@ -222,7 +223,7 @@ const AdminDashboard = () => {
   const deleteOpening = async (id: string) => {
     if (!confirm("Are you sure you want to delete this opening?")) return;
     try {
-      const res = await fetch(`/api/admin/openings/${id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/openings/${id}`, {
         method: "DELETE",
         headers: { "x-admin-token": token },
       });
@@ -263,8 +264,7 @@ const AdminDashboard = () => {
                 if (!token) return;
                 setLoginLoading(true);
                 setLoginError("");
-                try {
-                  const res = await fetch("/api/admin/applications", {
+                try {                    const res = await fetch(`${API_BASE}/api/admin/applications`, {
                     headers: { "x-admin-token": token },
                   });
                   if (res.ok) {

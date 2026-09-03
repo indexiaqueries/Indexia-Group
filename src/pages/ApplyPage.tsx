@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useSearchParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Upload, Send, CheckCircle, User, Mail, Phone, Briefcase, FileText } from "lucide-react";
 import SEO from "../components/common/SEO";
+import { API_BASE } from "../lib/api";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 
@@ -27,7 +28,7 @@ const ApplyPage = () => {
 
   useEffect(() => {
     if (!roleTitle) return;
-    fetch("/api/openings")
+    fetch(`${API_BASE}/api/openings`)
       .then((r) => r.json())
       .then((data) => {
         if (data.ok && data.openings) {
@@ -144,7 +145,7 @@ const ApplyPage = () => {
       const file = fileInputRef.current?.files?.[0];
       if (file) body.append("resume", file);
 
-      const response = await fetch("/api/apply", {
+      const response = await fetch(`${API_BASE}/api/apply`, {
         method: "POST",
         body,
       });

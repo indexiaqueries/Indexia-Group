@@ -29,7 +29,7 @@ type NewsResponse = {
   error?: string;
 };
 
-const API_BASE = import.meta.env.VITE_API_URL || "";
+import { API_BASE } from "../lib/api";
 
 /**
  * Fetch live news articles from the backend API.

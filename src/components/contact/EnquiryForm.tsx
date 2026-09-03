@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { initialContactForm } from "../../data/contact";
 import type { ContactFormData } from "../../data/contact";
 import { accent } from "../../lib/theme";
+import { API_BASE } from "../../lib/api";
 import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 import Field from "./enquiry/Field";
@@ -104,7 +105,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
 
     setSending(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch(`${API_BASE}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

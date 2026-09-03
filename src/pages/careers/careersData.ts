@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { careerCulture } from "../../data/careers";
+import { API_BASE } from "../../lib/api";
 
 export type RoleItem = {
   _id?: string;
@@ -41,7 +42,7 @@ export const useCareersContent = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/openings")
+    fetch(`${API_BASE}/api/openings`)
       .then((r) => r.json())
       .then((data) => {
         if (data.ok && data.openings) {
