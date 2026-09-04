@@ -1,4 +1,6 @@
 import type { CSSProperties } from "react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
@@ -259,14 +261,47 @@ const AboutPage = () => {
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {companies.map((company, i) => {
               const entityName = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
+              // Companies with their own portal open externally, the rest link to their page on this site.
+              const isExternal = Boolean(company.link);
+              const cardBody = (
+                <>
+                  <h3 className="font-display text-[13px] sm:text-sm font-bold leading-snug text-white">{entityName}</h3>
+                  <div className="mt-2.5 flex items-center justify-between gap-2 text-[11px] text-white/50">
+                    <span>
+                      <span className="font-semibold text-white/70">Est.:</span> {company.founded}
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="inline-flex items-center text-(--color-yellow) transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    >
+                      {isExternal ? <ExternalLink size={13} strokeWidth={2.5} /> : <ArrowUpRight size={13} strokeWidth={2.5} />}
+                    </span>
+                  </div>
+                </>
+              );
+              const cardClasses =
+                "group block h-full rounded-xl border border-white/15 bg-white/10 p-4 shadow-[0_18px_44px_rgba(0,0,0,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/15";
               return (
                 <Reveal key={company.slug} delay={(i % 4) * 0.05} amount={0.15}>
-                  <div className="rounded-xl border border-white/15 bg-white/10 p-4 shadow-[0_18px_44px_rgba(0,0,0,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/15">
-                    <h3 className="font-display text-[13px] sm:text-sm font-bold leading-snug text-white">{entityName}</h3>
-                    <div className="mt-2.5 text-[11px] text-white/50">
-                      <span className="font-semibold text-white/70">Est.:</span> {company.founded}
-                    </div>
-                  </div>
+                  {isExternal ? (
+                    <a
+                      href={company.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={t("companyLinkCard.visitWebsiteAria", { name: entityName })}
+                      className={cardClasses}
+                    >
+                      {cardBody}
+                    </a>
+                  ) : (
+                    <Link
+                      to={`/${company.slug}`}
+                      aria-label={t("companyLinkCard.visitPageAria", { name: entityName })}
+                      className={cardClasses}
+                    >
+                      {cardBody}
+                    </Link>
+                  )}
                 </Reveal>
               );
             })}
