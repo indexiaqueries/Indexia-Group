@@ -16,7 +16,7 @@ const GlobalResearchPage = lazy(() => import("../pages/GlobalResearchPage"));
 const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
 const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
 const AdvertisingBrochure = lazy(() => import("../pages/AdvertisingBrochure"));
-const AdminDashboard = lazy(() => import("../pages/AdminDashboard"));
+const AdminDashboard = lazy(() => import("../pages/admin/AdminDashboard"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 
 import logo from "../assets/logo/IndexiaGroup_Logo.webp";
