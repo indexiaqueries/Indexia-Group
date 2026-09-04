@@ -44,7 +44,7 @@ const Home = () => {
 
       <Banner />
 
-      <section className="section-ruled section-paper relative mx-3 mt-4 mb-2 rounded-[var(--radius-panel)] py-2 sm:mx-5 sm:mt-5 sm:mb-3">
+      <section className="section-ruled section-paper relative mx-3 mt-4 mb-2 rounded-(--radius-panel) py-2 sm:mx-5 sm:mt-5 sm:mb-3">
         <div className="container">
           {/* Catalogue edge — the register of eight companies */}
           <RegisterTabs className="mb-4" />
@@ -73,7 +73,7 @@ const Home = () => {
 
       {/* Our Reach */}
       <div className="atlas-divider" />
-      <section className="section-ruled relative overflow-hidden px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="section-ruled relative overflow-hidden px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
         <img
           src={HomeWorld}
           alt=""

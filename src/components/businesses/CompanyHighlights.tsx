@@ -17,7 +17,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
 
 
   return (
-    <section className="relative overflow-hidden bg-(--color-soft) py-6 sm:py-8 lg:py-12">
+    <section className="relative overflow-hidden bg-(--color-soft) py-4 sm:py-5 lg:py-6">
       {/* Ambient glow */}
       <div
         aria-hidden="true"
@@ -109,11 +109,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                       {tr(`highlights.${idx}`, highlight)}
                     </p>
 
-                    {isFeatured && (
-                      <p className="font-ledger mt-auto pt-3 text-[10px] font-bold uppercase tracking-[0.18em] opacity-60">
-                        ★ {t("companyDetail.mainPoint")}
-                      </p>
-                    )}
+                    {isFeatured && <div className="mt-auto" aria-hidden="true" />}
                   </div>
 
                   {/* Bottom accent bar (light cards only) */}

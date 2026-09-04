@@ -193,7 +193,7 @@ const PricingTable = ({
     );
 
   return (
-    <section className={darkBoard ? "section-ink relative overflow-hidden py-10 sm:py-12 lg:py-16" : "bg-(--color-soft) py-6 sm:py-8 lg:py-12"}>
+    <section className={darkBoard ? "section-ink relative overflow-hidden py-5 sm:py-6 lg:py-8" : "bg-(--color-soft) py-4 sm:py-5 lg:py-6"}>
       <div className="container">
         {darkBoard ? (
           <>

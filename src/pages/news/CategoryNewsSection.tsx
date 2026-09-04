@@ -143,7 +143,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
   const Icon = activeCategory.icon;
 
   return (
-    <section className="section-ruled section-paper px-4 py-6 sm:py-6">
+    <section className="section-ruled section-paper px-4 py-3 sm:py-4">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <Reveal className="mb-5">

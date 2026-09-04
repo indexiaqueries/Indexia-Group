@@ -90,8 +90,8 @@ const AboutPage = () => {
       </HeroBackdrop>
 
       {/* Leadership */}
-      <section className="section-ruled section-ink relative px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2 lg:gap-10">
+      <section className="section-ruled section-ink relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-5 lg:grid-cols-2 lg:gap-8">
           <Reveal delay={0.1} amount={0.15} className="relative">
             <div className="flex flex-col items-center">
               <div className="relative flex items-end justify-center overflow-hidden z-10">
@@ -127,7 +127,7 @@ const AboutPage = () => {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <div className="mt-4 space-y-3">
+              <div className="mt-3 space-y-2">
                 <p className="text-[13px] sm:text-[14px] leading-6 text-white/70">
                   {tr("founderBio1", "Visionary leader with decades of experience in building diversified businesses across India.")}
                 </p>
@@ -144,8 +144,8 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story */}
-      <section className="section-ruled section-paper relative px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto grid max-w-6xl items-center gap-6 lg:grid-cols-2 lg:gap-10">
+      <section className="section-ruled section-paper relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-5 lg:grid-cols-2 lg:gap-8">
           <div>
             <Reveal>
               <Eyebrow className="mb-2">{tr("storyEyebrow", "Our Story")}</Eyebrow>
@@ -155,7 +155,7 @@ const AboutPage = () => {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <div className="mt-4 space-y-3 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-slate-600">
+              <div className="mt-3 space-y-2 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-slate-600">
                 <p>{tr("storyBody1", "From a small office in Mumbai, Indexia Group has grown into a diversified business conglomerate spanning multiple industries across India and beyond.")}</p>
                 <p>{tr("storyBody2", "Today, we operate eight distinct companies, each contributing to the nation's economic growth while maintaining our core values of integrity, innovation, and excellence.")}</p>
               </div>
@@ -188,11 +188,11 @@ const AboutPage = () => {
         </div>
 
         {/* Cards, half on image, half below */}
-        <div className="relative z-20 -mt-12 sm:-mt-16 mx-auto w-full max-w-6xl px-2 sm:px-3 lg:px-5">
+        <div className="relative z-20 -mt-8 sm:-mt-10 mx-auto w-full max-w-6xl px-2 sm:px-3 lg:px-5">
           <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
             {VALUES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.15}>
-              <div className="card-premium card-premium-hover group rounded-2xl p-4 backdrop-blur-xl sm:p-5">
+              <div className="card-premium card-premium-hover group rounded-2xl p-3 backdrop-blur-xl sm:p-4">
                   <span className="font-ledger text-lg font-bold text-(--color-teal)">
                     {String(i).padStart(2, "0")}
                   </span>
@@ -209,15 +209,15 @@ const AboutPage = () => {
         </div>
 
         {/* Solid background for the lower half of cards */}
-        <div className="bg-white h-16 sm:h-20" />
+        <div className="bg-white h-12 sm:h-14" />
       </section>
 
       {/* Our Companies */}
       <div className="atlas-divider" />
 
-      <section className="section-ruled section-paper relative overflow-hidden px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="section-ruled section-paper relative overflow-hidden px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         <div className="mx-auto max-w-5xl">
-          <Reveal className="mx-auto mb-2 sm:mb-4 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-2 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("companiesTitle", "Eight Businesses, One Vision")}
@@ -234,9 +234,9 @@ const AboutPage = () => {
 
 
       {/* Timeline */}
-      <section className="section-ruled relative bg-white px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="section-ruled relative bg-white px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <Reveal className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
               {tr("timelineTitle", "Key Milestones")}
@@ -246,19 +246,19 @@ const AboutPage = () => {
           <ScrollTimeline milestones={translatedMilestones} />
         </div>
       </section>      {/* Registration & Compliance */}
-      <section className="section-ruled section-ink relative overflow-hidden px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="section-ruled section-ink relative overflow-hidden px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         {/* Decorative glow */}
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 w-48 rounded-full bg-(--color-teal)/15 blur-[80px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 w-40 rounded-full bg-(--color-yellow)/10 blur-[60px]" />
 
         <div className="relative mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-5 sm:mb-7 max-w-4xl text-center">
+          <Reveal className="mx-auto mb-4 sm:mb-5 max-w-4xl text-center">
             <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
               {tr("registrationTitle", "Registered Entities")}</h2>
           </Reveal>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
             {companies.map((company, i) => {
               const entityName = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
               // Companies with their own portal open externally, the rest link to their page on this site.
@@ -307,7 +307,7 @@ const AboutPage = () => {
             })}
           </div>
 
-          <Reveal delay={0.2} amount={0.15} className="mt-5 sm:mt-6 text-center">
+          <Reveal delay={0.2} amount={0.15} className="mt-4 sm:mt-5 text-center">
             <a
               href="https://www.mca.gov.in"
               target="_blank"

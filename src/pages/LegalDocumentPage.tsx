@@ -94,7 +94,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         </div>
       </HeroBackdrop>
 
-      <section className="section-ruled section-paper relative px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+      <section className="section-ruled section-paper relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         <div className="card-premium mx-auto max-w-5xl rounded-2xl p-4 sm:p-6 lg:p-8">
           <Reveal>
             <div className="mb-3 border-b border-slate-200 pb-3">

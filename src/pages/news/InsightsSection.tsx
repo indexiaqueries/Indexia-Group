@@ -162,7 +162,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
   };
 
   return (
-    <section className="section-ruled relative px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+    <section className="section-ruled relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
       <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-slate-100" />
 
       <div className="relative mx-auto max-w-6xl">

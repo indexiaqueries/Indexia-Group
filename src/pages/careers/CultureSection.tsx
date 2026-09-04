@@ -15,7 +15,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
   }
 
   return (
-    <section className="section-ruled section-paper relative px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <section className="section-ruled section-paper relative px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"

@@ -9,7 +9,7 @@ const NewsVideo = () => {
   const [playVideo, setPlayVideo] = useState(false);
 
   return (
-    <section className="relative overflow-hidden bg-(--color-navy) px-2 py-5 sm:py-5">
+    <section className="relative overflow-hidden bg-(--color-navy) px-2 py-3 sm:py-3">
       {/* Subtle radial glow behind text */}
       <div
         aria-hidden="true"

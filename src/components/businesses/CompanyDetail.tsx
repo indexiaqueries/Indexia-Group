@@ -195,7 +195,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </div>
 
       {/* Overview + image split */}
-      <section className="section-ruled section-paper relative overflow-hidden py-10 sm:py-14 lg:py-16">
+      <section className="section-ruled section-paper relative overflow-hidden py-5 sm:py-7 lg:py-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-e-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
@@ -304,7 +304,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           className="pointer-events-none absolute -inset-s-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
           style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
         />
-        <div className="container grid items-center gap-6 sm:gap-8 py-6 sm:py-8 lg:grid-cols-2 lg:gap-12">
+        <div className="container grid items-center gap-6 sm:gap-8 py-4 sm:py-5 lg:grid-cols-2 lg:gap-12">
           <Reveal amount={0.2} className="relative">
             <div
               aria-hidden="true"
@@ -343,12 +343,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
-      {b.slug === "advertising" && (
-        <UnipolePricing color={b.color} onBook={handleBook} />
-      )}
-
       {/* Services */}
-      <section id="company-services" className="section-ruled section-paper scroll-mt-24 py-10 sm:py-14 lg:py-16">
+      <section id="company-services" className="section-ruled section-paper scroll-mt-24 py-5 sm:py-7 lg:py-8">
         <div className="container">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
@@ -431,6 +427,10 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
+      {b.slug === "advertising" && (
+        <UnipolePricing color={b.color} onBook={handleBook} />
+      )}
+
       {b.slug === "warehouse" && (
         <WarehousePricing color={b.color} onBook={handleBook} />
       )}
@@ -438,7 +438,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (
         <section className="section-ruled section-ink relative">
-          <div className="container relative py-10 lg:py-14">
+          <div className="container relative py-5 lg:py-7">
             <Reveal className="mx-auto mb-6 max-w-3xl text-center">
               <Eyebrow color="var(--color-yellow)">{t("foundationGallery.eyebrow")}</Eyebrow>
               <h2 className="font-display mt-3 text-[clamp(24px,3.2vw,38px)] font-bold leading-[1.1] text-white">
@@ -458,8 +458,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       <section
         id="enquiry"
-        className="section-ruled section-paper relative flex min-h-svh scroll-mt-24 items-center overflow-hidden"
-        style={{ padding: "clamp(40px, 5vw, 64px) 0" }}
+        className="section-ruled section-paper relative scroll-mt-24 overflow-hidden"
+        style={{ padding: "clamp(12px, 2vw, 24px) 0" }}
       >
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
 

@@ -116,7 +116,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           </header>
 
           {/* Headline + desc below the band, matching the PDF */}
-          <section className="px-5 pt-6 sm:px-8 sm:pt-8">
+          <section className="px-5 pt-4 sm:px-8 sm:pt-5">
             <h2 className="font-display max-w-xl text-[clamp(22px,3.2vw,30px)] font-bold leading-[1.15] text-(--color-ink)">
               {slug === "advertising" ? t("brochure.advertisingHeadline") : t("brochure.headline")}
             </h2>
@@ -124,14 +124,14 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           </section>
 
           {/* Overview */}
-          <section className="px-5 py-6 sm:px-8 sm:py-8">
+          <section className="px-5 py-4 sm:px-8 sm:py-5">
             <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("brochure.about")}</h2>
             <p className="mt-3 text-[14px] leading-7 text-(--color-muted)">{overview}</p>
           </section>
 
           {/* Pricing section, company-specific */}
           {slug === "warehouse" ? (
-            <section className="px-5 pb-6 sm:px-8 sm:pb-8">
+            <section className="px-5 pb-4 sm:px-8 sm:pb-5">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("warehousePricing.title")}</h2>
               <p className="mt-1 text-[11px] text-(--color-muted)">{t("warehousePricing.subtitle")}</p>
 
@@ -180,7 +180,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
               </div>
             </section>
           ) : (
-            <section className="px-5 pb-6 sm:px-8 sm:pb-8">
+            <section className="px-5 pb-4 sm:px-8 sm:pb-5">
               <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("unipolePricing.title")}</h2>
               <p className="mt-1 text-[11px] text-(--color-muted)">{t("unipolePricing.subtitle")}</p>
 
@@ -218,7 +218,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           )}
 
           {/* Highlights */}
-          <section className="px-5 pb-6 sm:px-8 sm:pb-8">
+          <section className="px-5 pb-4 sm:px-8 sm:pb-5">
             <h2 className="font-display text-[22px] font-bold text-(--color-ink)">{t("companyDetail.keyEntries")}</h2>
             <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
               {b.highlights.map((h, i) => (
@@ -236,7 +236,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
           </section>
 
           {/* Footer note */}
-          <section className="border-t border-slate-100 px-5 py-5 sm:px-8 sm:py-6">
+          <section className="border-t border-slate-100 px-5 py-3 sm:px-8 sm:py-4">
             <p className="text-[11px] text-slate-400">
               {slug === "advertising" ? t("brochure.advertisingFooter") : t("brochure.footer")}
             </p>

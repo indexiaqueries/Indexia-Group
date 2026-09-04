@@ -175,7 +175,7 @@ const ApplyPage = () => {
           canonicalPath="/careers/apply"
           noindex
         />
-        <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14 lg:pt-24">
+        <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-6 pt-10 sm:px-3 sm:py-7 sm:pt-12 lg:px-5 lg:py-10 lg:pt-16">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(circle at 50% 50%, rgba(38,174,144,0.15), transparent 60%)" }} />
           <div className="relative mx-auto max-w-2xl text-center">
             <Reveal>
@@ -221,7 +221,7 @@ const ApplyPage = () => {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14 lg:pt-24">
+      <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-6 pt-10 sm:px-3 sm:py-7 sm:pt-12 lg:px-5 lg:py-10 lg:pt-16">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(circle at 20% 80%, rgba(38,174,144,0.2), transparent 50%), radial-gradient(circle at 80% 20%, rgba(242,242,49,0.12), transparent 45%)" }} />
         <div className="relative mx-auto max-w-4xl">
           <Link
@@ -252,7 +252,7 @@ const ApplyPage = () => {
 
       {/* Role Details */}
       {roleData && (roleData.description || (roleData.requirements && roleData.requirements.length > 0)) && (
-        <section className="bg-white px-2 py-5 sm:px-3 sm:py-6 lg:px-5">
+        <section className="bg-white px-2 py-3 sm:px-3 sm:py-4 lg:px-5">
           <div className="mx-auto max-w-2xl">
             <Reveal>
               <div className="rounded-2xl border border-slate-100 bg-(--color-soft) p-5 sm:p-6">
@@ -284,7 +284,7 @@ const ApplyPage = () => {
       )}
 
       {/* Form */}
-      <section className="px-2 py-8 sm:px-3 sm:py-10 lg:px-5">
+      <section className="px-2 py-4 sm:px-3 sm:py-5 lg:px-5">
         <div className="mx-auto max-w-2xl">
           <Reveal>
             {/* Info banner */}

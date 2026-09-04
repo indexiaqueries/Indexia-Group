@@ -147,7 +147,7 @@ const SecurityTipsPage = () => {
         </div>
       </HeroBackdrop>
 
-      <section className="section-ruled section-paper relative px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="section-ruled section-paper relative px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
         <SecuritySection
           eyebrow={t("securityTipsPage.featuresEyebrow")}
           heading={t("securityTipsPage.featuresHeading")}
@@ -157,7 +157,7 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section id="practices" className="section-ruled scroll-mt-24 bg-(--color-mist) px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section id="practices" className="section-ruled scroll-mt-24 bg-(--color-mist) px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
         <SecuritySection
           eyebrow={t("securityTipsPage.practicesEyebrow")}
           heading={t("securityTipsPage.practicesHeading")}
@@ -167,7 +167,7 @@ const SecurityTipsPage = () => {
         />
       </section>
 
-      <section className="section-ruled section-paper px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="section-ruled section-paper px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
         <SecuritySection
           eyebrow={t("securityTipsPage.contactsEyebrow")}
           heading={t("securityTipsPage.contactsHeading")}

@@ -22,7 +22,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
   const headingLines = heading.split("\n");
 
   return (
-    <section className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-12">
+    <section className="relative overflow-hidden bg-white py-4 sm:py-5 lg:py-6">
       {/* Ambient glows */}
       <div
         aria-hidden="true"
