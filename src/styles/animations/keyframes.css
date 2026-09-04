@@ -36,11 +36,6 @@
   to   { opacity: 1; transform: translateX(0); }
 }
 
-@keyframes scale-in {
-  from { opacity: 0; transform: scale(var(--scale-from, 0.92)); }
-  to   { opacity: 1; transform: scale(1); }
-}
-
 @keyframes dropdown-in {
   from { opacity: 0; transform: translateY(-6px) scale(var(--dropdown-scale, 0.94)); }
   to   { opacity: 1; transform: translateY(0) scale(1); }

@@ -7,7 +7,7 @@ type RevealProps = {
   y?: number;
   className?: string;
   amount?: number;
-  variant?: "up" | "scale" | "fade";
+  variant?: "up" | "scale";
 };
 
 const Reveal = ({

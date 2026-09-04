@@ -12,7 +12,7 @@
   }
 
   /* Entry animations */
-  .fade-up, .fade-in, .slide-in-left, .scale-in, .dropdown-in, .icon-in,
+  .fade-up, .fade-in, .slide-in-left, .dropdown-in, .icon-in,
   .hero-slide-child, .kenburns, .passbook-in {
     animation: none;
   }

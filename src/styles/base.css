@@ -158,18 +158,3 @@ ul {
   width: 100%;
   background: linear-gradient(90deg, transparent, rgba(38, 174, 144, 0.42), rgba(242, 242, 49, 0.42), transparent);
 }
-
-.section-kicker-line {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.section-kicker-line::before,
-.section-kicker-line::after {
-  content: "";
-  height: 1px;
-  width: 2rem;
-  background: currentColor;
-  opacity: 0.45;
-}
