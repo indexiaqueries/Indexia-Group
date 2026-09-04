@@ -78,10 +78,13 @@ const MilestoneItem = ({
         <div
           className={`rounded-xl border p-4 transition-all duration-500 ${
             isCurrent
-              ? "border-(--color-teal)/30 bg-(--color-teal)/5 shadow-lg -translate-y-0.5"
+              ? "-translate-y-0.5 border-(--color-navy-deep) bg-(--color-navy-deep) shadow-[0_20px_46px_rgba(10,34,51,0.35)] ring-1 ring-white/10"
               : isPast
-                ? "border-slate-200 bg-white shadow-sm"
-                : "border-slate-100 bg-slate-50/50"
+                ? // Ex-active cards keep the previous active tint, so the colour
+                  // visibly drains upward as the reading point passes.
+                  "border-(--color-teal)/30 bg-(--color-teal)/5 shadow-md"
+                : // Upcoming cards take over the plain look of the ones passed.
+                  "border-slate-200 bg-white shadow-sm"
           }`}
         >
           <span
@@ -89,22 +92,22 @@ const MilestoneItem = ({
               isCurrent
                 ? "bg-(--color-yellow) text-black"
                 : isPast
-                  ? "bg-(--color-teal)/10 text-(--color-teal)"
-                  : "bg-slate-100 text-slate-400"
+                  ? "bg-(--color-teal)/15 text-(--color-teal-deep)"
+                  : "bg-slate-100 text-slate-500"
             }`}
           >
             {m.year}
           </span>
           <h3
             className={`mt-2 font-display text-[14px] sm:text-[15px] font-bold transition-colors duration-500 ${
-              isCurrent ? "text-slate-900" : isPast ? "text-slate-700" : "text-slate-400"
+              isCurrent ? "text-white" : isPast ? "text-slate-800" : "text-slate-500"
             }`}
           >
             {m.title}
           </h3>
           <p
             className={`mt-1 text-[12px] sm:text-[13px] leading-5 sm:leading-6 transition-colors duration-500 ${
-              isCurrent ? "text-slate-600" : isPast ? "text-slate-500" : "text-slate-400"
+              isCurrent ? "text-white/75" : isPast ? "text-slate-600" : "text-slate-500"
             }`}
           >
             {m.body}
