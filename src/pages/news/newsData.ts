@@ -87,7 +87,7 @@ function mergeArticles(
   const liveItems: ArticleItem[] = [];
 
   // Convert all live articles
-  for (const [_cat, articles] of Object.entries(liveNews)) {
+  for (const articles of Object.values(liveNews)) {
     articles.forEach((article, i) => {
       liveItems.push(liveToArticleItem(article, i, t));
     });

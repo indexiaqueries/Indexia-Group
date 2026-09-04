@@ -4,6 +4,7 @@ import {
   getAllNews,
   fetchAndStoreNews,
 } from "../services/newsFetcher.js";
+import { requireAdmin } from "../middleware/requireAdmin.js";
 
 const router = Router();
 
@@ -42,12 +43,7 @@ router.get("/", async (req, res) => {
  * Triggers a manual refresh of all news categories.
  * Protected by admin token.
  */
-router.post("/refresh", async (req, res) => {
-  const token = req.headers["x-admin-token"];
-  if (token !== process.env.ADMIN_TOKEN) {
-    return res.status(401).json({ ok: false, error: "Unauthorized." });
-  }
-
+router.post("/refresh", requireAdmin, async (_req, res) => {
   try {
     const result = await fetchAndStoreNews();
     res.json({ ok: true, ...result });

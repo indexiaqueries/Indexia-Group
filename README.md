@@ -5,7 +5,7 @@ React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business
 ## Tech Stack
 
 - **Framework**: React 19 + TypeScript
-- **Build**: Vite 6 with code splitting and lazy-loaded routes
+- **Build**: Vite 8 with code splitting and lazy-loaded routes
 - **Styling**: Tailwind CSS 4
 - **i18n**: i18next with 22 language variants
 - **Routing**: React Router v7
@@ -17,6 +17,8 @@ React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business
 - 18 public routes with full SEO metadata (title, description, OG, Twitter, JSON-LD)
 - 22 locales with complete translations (en, ar, de, el, es, fr, he, hi, id, it, ja, ko, nl, pl, pt, ru, sv, th, tr, uk, vi, zh)
 - Company spotlight pages for 8 businesses with hero images, stats, and bullet points
+- Register-of-companies index strip (catalogue edge) across the home and company pages
+- Disciplined design tokens: teal for actions, yellow for the Indexia mark, navy glass surfaces
 - Contact page with 5 office locations and enquiry form; submissions are stored in MongoDB and managed from the admin dashboard
 - News, global research, and security tips pages
 - Careers page with job listings and resume upload
@@ -46,16 +48,16 @@ src/
 ├── i18n/               # i18next setup and 22 locale JSON files
 ├── layout/             # Main layout wrapper
 ├── lib/                # Utility functions (color, theme, responsiveVariants)
-├── pages/              # Page components (lazy-loaded)
-├── routes/             # React Router configuration
+├── pages/              # Page components (lazy-loaded; admin dashboard in pages/admin/)
+├── routes/             # React Router configuration (lazy-loaded pages)
 ├── styles/             # CSS modules (animations, cards, scroll, accessibility)
-├── App.tsx             # Root component
 └── main.tsx            # Entry point
 server/
 ├── index.js            # Express server (API routes, file uploads, static serving)
 ├── db.js               # MongoDB connection
+├── middleware/         # Shared auth guard (requireAdmin)
 ├── models/             # Mongoose models (Application, Enquiry, JobOpening, NewsArticle)
-├── routes/             # Admin and news API routes
+├── routes/             # Admin, openings, and news API routes
 └── services/           # News fetcher and scheduler
 api/
 └── index.js            # Vercel serverless entry point
@@ -74,11 +76,11 @@ public/
 
 ```bash
 npm install
-npm run dev          # Start dev server (Vite)
+npm run dev          # Start Vite + Express in parallel (hot reload)
+npm run dev:server   # Start the Express backend only
 npm run build        # Production build + compression
 npm run lint         # ESLint check
 npm run preview      # Preview production build
-npm run server       # Start Express backend
 ```
 
 ## Environment Variables
@@ -87,8 +89,11 @@ Copy `.env.example` to `.env.local` and configure:
 
 | Variable | Purpose |
 |---|---|
-| `MONGODB_URI` | MongoDB connection string (required for contact form and job applications) |
+| `MONGODB_URI` | MongoDB connection string (required for contact form, job applications, openings, news) |
 | `ADMIN_TOKEN` | Admin dashboard auth token |
+| `NEWSDATA_API_KEY` | NewsData.io key for the scheduled news fetcher |
+| `PORT` | Express backend port (default 3001) |
+| `VITE_API_URL` | Optional API base URL when frontend and backend are on different origins |
 
 Contact enquiries and job applications are stored in MongoDB only — the team
 reviews them in the admin dashboard (`/admin`).

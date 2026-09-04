@@ -20,10 +20,14 @@ const Header = () => {
   const barRef = useRef<HTMLElement>(null);
   const { pathname } = useLocation();
 
-  // Close dropdown on route change
-  useEffect(() => {
+  // Close the Companies dropdown when the route changes. State is adjusted
+  // during render (React's recommended pattern) instead of in an effect, so
+  // navigation doesn't trigger an extra re-render.
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setCompaniesOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     if (!menuOpen && !langOpen && !companiesOpen) return;

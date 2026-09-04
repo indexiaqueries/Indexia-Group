@@ -10,12 +10,15 @@ import Enquiry from "./models/Enquiry.js";
 import JobOpening from "./models/JobOpening.js";
 import adminRoutes from "./routes/admin.js";
 import newsRoutes from "./routes/news.js";
+import openingsRouter, { adminOpeningsRouter } from "./routes/openings.js";
 import { startNewsScheduler } from "./services/newsScheduler.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const IS_VERCEL = Boolean(process.env.VERCEL);
 
-const PORT = Number(process.env.PORT);
+// Treat an unset or falsy PORT (e.g. an exported PORT=0) as "use 3001".
+// Keeps parity with the fallback in vite.config.ts readServerPort().
+const PORT = Number(process.env.PORT) || 3001;
 const DIST_DIR = path.resolve(__dirname, "../dist");
 const RESUME_DIR = path.resolve(__dirname, "uploads/resumes");
 if (!IS_VERCEL) mkdirSync(RESUME_DIR, { recursive: true });
@@ -60,96 +63,11 @@ app.get("/api/health", (_req, res) => {
   });
 });
 
-// Mount admin routes
+// Mount route modules
 app.use("/api/admin", adminRoutes);
 app.use("/api/news", newsRoutes);
-
-// ── Job Openings CRUD ─────────────────────────────────────────────
-
-// Public: list active openings
-app.get("/api/openings", async (_req, res) => {
-  try {
-    const openings = await JobOpening.find({ isActive: true }).sort({ createdAt: -1 });
-    res.json({ ok: true, openings });
-  } catch (err) {
-    console.error("Failed to fetch openings:", err);
-    res.status(500).json({ ok: false, error: "Could not fetch openings." });
-  }
-});
-
-// Admin: list all openings (including inactive)
-app.get("/api/admin/openings", async (req, res) => {
-  const token = req.headers["x-admin-token"];
-  if (token !== process.env.ADMIN_TOKEN) {
-    return res.status(401).json({ ok: false, error: "Unauthorized." });
-  }
-  try {
-    const openings = await JobOpening.find().sort({ createdAt: -1 });
-    res.json({ ok: true, openings });
-  } catch (err) {
-    console.error("Failed to fetch openings:", err);
-    res.status(500).json({ ok: false, error: "Could not fetch openings." });
-  }
-});
-
-// Admin: create opening
-app.post("/api/admin/openings", async (req, res) => {
-  const token = req.headers["x-admin-token"];
-  if (token !== process.env.ADMIN_TOKEN) {
-    return res.status(401).json({ ok: false, error: "Unauthorized." });
-  }
-  const { title, department, company, location, type, description, requirements } = req.body ?? {};
-  if (!title || !department || !type) {
-    return res.status(400).json({ ok: false, error: "Title, department, and type are required." });
-  }
-  try {
-    const opening = await JobOpening.create({
-      title,
-      department,
-      company: company || "Indexia Group",
-      location: location || "Mumbai",
-      type,
-      description: description || "",
-      requirements: requirements || [],
-    });
-    res.json({ ok: true, opening });
-  } catch (err) {
-    console.error("Failed to create opening:", err);
-    res.status(500).json({ ok: false, error: "Could not create opening." });
-  }
-});
-
-// Admin: update opening
-app.patch("/api/admin/openings/:id", async (req, res) => {
-  const token = req.headers["x-admin-token"];
-  if (token !== process.env.ADMIN_TOKEN) {
-    return res.status(401).json({ ok: false, error: "Unauthorized." });
-  }
-  try {
-    const opening = await JobOpening.findByIdAndUpdate(req.params.id, req.body, { returnDocument: "after" });
-    if (!opening) return res.status(404).json({ ok: false, error: "Opening not found." });
-    res.json({ ok: true, opening });
-  } catch (err) {
-    console.error("Failed to update opening:", err);
-    res.status(500).json({ ok: false, error: "Could not update opening." });
-  }
-});
-
-// Admin: delete opening
-app.delete("/api/admin/openings/:id", async (req, res) => {
-  const token = req.headers["x-admin-token"];
-  if (token !== process.env.ADMIN_TOKEN) {
-    return res.status(401).json({ ok: false, error: "Unauthorized." });
-  }
-  try {
-    const opening = await JobOpening.findByIdAndDelete(req.params.id);
-    if (!opening) return res.status(404).json({ ok: false, error: "Opening not found." });
-    res.json({ ok: true });
-  } catch (err) {
-    console.error("Failed to delete opening:", err);
-    res.status(500).json({ ok: false, error: "Could not delete opening." });
-  }
-});
+app.use("/api/openings", openingsRouter);
+app.use("/api/admin/openings", adminOpeningsRouter);
 
 // Seed openings from hardcoded data if DB is empty
 async function seedOpenings() {
@@ -301,21 +219,13 @@ app.use(
   })
 );
 
-if (existsSync(path.join(DIST_DIR, "index.html"))) {
-  app.use((req, res, next) => {
-    if (req.method === "GET" && !req.path.startsWith("/api")) {
-      return res.sendFile(path.join(DIST_DIR, "index.html"));
-    }
-    next();
-  });
-}
 } // end if (!IS_VERCEL)
 
-// SPA fallback, serve index.html for all non-API GET requests.
-// On Vercel the Express app is invoked as a serverless function and the
-// rewrites in vercel.json may not reach the static file, so we handle it
-// here as well.  On the standalone server the express.static middleware
-// above already serves the file, but this catch-all is a safety net.
+// SPA fallback: serve index.html for all non-API GET requests.
+// On the standalone server, express.static above already serves real files
+// and this catch-all handles client-side routes. On Vercel the Express app
+// is invoked as a serverless function and the rewrites in vercel.json may
+// not reach the static file, so the same fallback covers that case too.
 if (existsSync(path.join(DIST_DIR, "index.html"))) {
   app.use((req, res, next) => {
     if (req.method === "GET" && !req.path.startsWith("/api")) {

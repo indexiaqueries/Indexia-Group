@@ -3,30 +3,17 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import Application from "../models/Application.js";
 import Enquiry from "../models/Enquiry.js";
+import { requireAdmin } from "../middleware/requireAdmin.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RESUME_DIR = path.resolve(__dirname, "../uploads/resumes");
 
 const router = Router();
 
-// Simple admin token auth, set ADMIN_TOKEN in .env
-const ADMIN_TOKEN = process.env.ADMIN_TOKEN;
-
-function requireAuth(req, res, next) {
-  if (!ADMIN_TOKEN) {
-    return res.status(503).json({ ok: false, error: "Admin auth not configured. Set ADMIN_TOKEN in .env." });
-  }
-  const token = req.headers["x-admin-token"] || req.query.token;
-  if (token !== ADMIN_TOKEN) {
-    return res.status(401).json({ ok: false, error: "Unauthorized." });
-  }
-  next();
-}
-
 // ── Job applications ─────────────────────────────────────────────
 
 // List all applications (newest first)
-router.get("/applications", requireAuth, async (_req, res) => {
+router.get("/applications", requireAdmin, async (_req, res) => {
   try {
     const apps = await Application.find()
       .sort({ createdAt: -1 })
@@ -40,7 +27,7 @@ router.get("/applications", requireAuth, async (_req, res) => {
 });
 
 // Get single application
-router.get("/applications/:id", requireAuth, async (req, res) => {
+router.get("/applications/:id", requireAdmin, async (req, res) => {
   try {
     const app = await Application.findById(req.params.id).select("-__v").lean();
     if (!app) return res.status(404).json({ ok: false, error: "Application not found." });
@@ -52,7 +39,7 @@ router.get("/applications/:id", requireAuth, async (req, res) => {
 });
 
 // Update application status
-router.patch("/applications/:id", requireAuth, async (req, res) => {
+router.patch("/applications/:id", requireAdmin, async (req, res) => {
   const { status } = req.body;
   const allowed = ["pending", "reviewed", "shortlisted", "rejected"];
   if (!allowed.includes(status)) {
@@ -73,7 +60,7 @@ router.patch("/applications/:id", requireAuth, async (req, res) => {
 });
 
 // Serve resume file (supports both disk and base64 storage)
-router.get("/applications/:id/resume", requireAuth, async (req, res) => {
+router.get("/applications/:id/resume", requireAdmin, async (req, res) => {
   try {
     const app = await Application.findById(req.params.id).select("resumePath resumeFileName resumeData resumeMime").lean();
     if (!app) return res.status(404).json({ ok: false, error: "Application not found." });
@@ -105,7 +92,7 @@ router.get("/applications/:id/resume", requireAuth, async (req, res) => {
 });
 
 // Delete application
-router.delete("/applications/:id", requireAuth, async (req, res) => {
+router.delete("/applications/:id", requireAdmin, async (req, res) => {
   try {
     const app = await Application.findByIdAndDelete(req.params.id);
     if (!app) return res.status(404).json({ ok: false, error: "Application not found." });
@@ -119,7 +106,7 @@ router.delete("/applications/:id", requireAuth, async (req, res) => {
 // ── Contact-form enquiries ──────────────────────────────────────
 
 // List all enquiries (newest first)
-router.get("/enquiries", requireAuth, async (_req, res) => {
+router.get("/enquiries", requireAdmin, async (_req, res) => {
   try {
     const enquiries = await Enquiry.find()
       .sort({ createdAt: -1 })
@@ -133,7 +120,7 @@ router.get("/enquiries", requireAuth, async (_req, res) => {
 });
 
 // Update enquiry status ("new" | "read" | "handled")
-router.patch("/enquiries/:id", requireAuth, async (req, res) => {
+router.patch("/enquiries/:id", requireAdmin, async (req, res) => {
   const { status } = req.body;
   const allowed = ["new", "read", "handled"];
   if (!allowed.includes(status)) {
@@ -150,7 +137,7 @@ router.patch("/enquiries/:id", requireAuth, async (req, res) => {
 });
 
 // Delete enquiry
-router.delete("/enquiries/:id", requireAuth, async (req, res) => {
+router.delete("/enquiries/:id", requireAdmin, async (req, res) => {
   try {
     const enquiry = await Enquiry.findByIdAndDelete(req.params.id);
     if (!enquiry) return res.status(404).json({ ok: false, error: "Enquiry not found." });
