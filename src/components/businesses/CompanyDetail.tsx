@@ -347,10 +347,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         <UnipolePricing color={b.color} onBook={handleBook} />
       )}
 
-      {b.slug === "warehouse" && (
-        <WarehousePricing color={b.color} onBook={handleBook} />
-      )}
-
       {/* Services */}
       <section id="company-services" className="section-ruled section-paper scroll-mt-24 py-10 sm:py-14 lg:py-16">
         <div className="container">
@@ -368,13 +364,17 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            className={`grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 ${
+              b.services.length === 5 ? "lg:grid-cols-5" : "lg:grid-cols-6"
+            }`}
+          >
             {b.services.map((service, i) => {
               const ServiceIcon = serviceIcons[service] ?? Sparkles;
               return (
-                <Reveal key={service} delay={(i % 3) * 0.06} amount={0.1}>
+                <Reveal key={service} delay={(i % 6) * 0.06} amount={0.1} className="h-full">
                   <div
-                    className="spotlight-tile card-premium card-premium-hover group relative flex items-center gap-4 overflow-hidden rounded-2xl p-5"
+                    className="spotlight-tile card-premium card-premium-hover group relative flex h-full flex-col items-center overflow-hidden rounded-2xl p-4 text-center transition-all duration-300 hover:-translate-y-1"
                     style={{ "--spot-color": `${b.color}24` } as React.CSSProperties}
                   >
                     <span
@@ -384,24 +384,24 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                     />
 
                     <span
-                      className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105"
+                      className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105"
                       style={{
                         background: `linear-gradient(135deg, ${b.color}2e, ${b.color}0f)`,
                         color: accentInk(b.color),
                         boxShadow: `inset 0 0 0 1px ${b.color}38, 0 8px 18px ${b.color}1f`,
                       }}
                     >
-                      <ServiceIcon size={24} strokeWidth={1.9} />
+                      <ServiceIcon size={22} strokeWidth={1.9} />
                     </span>
 
                     <span
                       aria-hidden="true"
-                      className="font-ledger pointer-events-none absolute inset-e-4 top-3 text-[10px] font-bold tracking-[0.14em] text-slate-300 transition-colors duration-300 group-hover:text-slate-400"
+                      className="font-ledger pointer-events-none absolute inset-e-3 top-2.5 text-[10px] font-bold tracking-[0.14em] text-slate-300 transition-colors duration-300 group-hover:text-slate-400"
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
 
-                    <p className="relative text-[14.5px] font-bold leading-snug text-(--color-ink-deep)">
+                    <p className="relative mt-3 flex-1 text-[13px] font-bold leading-snug text-(--color-ink-deep)">
                       {tr(`services.${i}`, service)}
                     </p>
 
@@ -430,6 +430,10 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </div>
         </div>
       </section>
+
+      {b.slug === "warehouse" && (
+        <WarehousePricing color={b.color} onBook={handleBook} />
+      )}
 
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (

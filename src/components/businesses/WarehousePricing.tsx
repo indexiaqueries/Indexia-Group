@@ -42,6 +42,7 @@ const WarehousePricing = ({ color, onBook }: WarehousePricingProps) => {
         body: t("warehousePricing.note"),
       }}
       cta={{ label: t("warehousePricing.bookNow"), scrollToGrid: true }}
+      twoColumn
     />
   );
 };
