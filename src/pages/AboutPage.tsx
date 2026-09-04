@@ -256,19 +256,14 @@ const AboutPage = () => {
               {tr("registrationTitle", "Registered Entities")}</h2>
           </Reveal>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {companies.map((company, i) => {
               const entityName = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
               return (
-                <Reveal key={company.slug} delay={(i % 3) * 0.05} amount={0.15}>
+                <Reveal key={company.slug} delay={(i % 4) * 0.05} amount={0.15}>
                   <div className="rounded-xl border border-white/15 bg-white/10 p-4 shadow-[0_18px_44px_rgba(0,0,0,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/15">
-                    <h3 className="font-display text-[13px] sm:text-sm font-bold text-white">{entityName}</h3>
-                    {company.cin && (
-                      <div className="mt-2.5 flex items-center gap-3 text-[11px] text-white/50">
-                        <span><span className="font-semibold text-white/70">CIN:</span> {company.cin}</span>
-                      </div>
-                    )}
-                    <div className="mt-1 text-[11px] text-white/50">
+                    <h3 className="font-display text-[13px] sm:text-sm font-bold leading-snug text-white">{entityName}</h3>
+                    <div className="mt-2.5 text-[11px] text-white/50">
                       <span className="font-semibold text-white/70">Est.:</span> {company.founded}
                     </div>
                   </div>
