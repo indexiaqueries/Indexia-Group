@@ -62,7 +62,7 @@ const HeroSlideContent = ({ panel: current, isHome, shadowLevel }: HeroSlideCont
     >
       <div className={`mx-auto max-w-xl sm:max-w-2xl lg:max-w-3xl ${isHome ? "bnr-text-zoom" : ""}`}>
         {/* Unified frosted glass card */}
-        <div className="relative rounded-3xl border border-white/15 bg-black/65 backdrop-blur-xl px-6 py-6 sm:px-10 sm:py-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+        <div className="relative rounded-3xl border border-white/15 bg-black/65 px-6 py-6 sm:px-10 sm:py-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
           {/* Accent line */}
           <div className="absolute top-0 left-6 sm:left-10 h-full w-px bg-linear-to-b from-transparent via-(--color-yellow)/40 to-transparent" />
 

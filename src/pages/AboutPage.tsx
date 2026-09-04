@@ -19,8 +19,9 @@ const MILESTONES_DATA = [
   { yearKey: "aboutPage.milestone1Year", titleKey: "aboutPage.milestone1Title", bodyKey: "aboutPage.milestone1Body" },
   { yearKey: "aboutPage.milestone2Year", titleKey: "aboutPage.milestone2Title", bodyKey: "aboutPage.milestone2Body" },
   { yearKey: "aboutPage.milestone3Year", titleKey: "aboutPage.milestone3Title", bodyKey: "aboutPage.milestone3Body" },
+  { yearKey: "aboutPage.milestone4Year", titleKey: "aboutPage.milestone4Title", bodyKey: "aboutPage.milestone4Body" },
+  { yearKey: "aboutPage.milestone5Year", titleKey: "aboutPage.milestone5Title", bodyKey: "aboutPage.milestone5Body" },
   { yearKey: "aboutPage.milestone6Year", titleKey: "aboutPage.milestone6Title", bodyKey: "aboutPage.milestone6Body" },
-  { yearKey: "aboutPage.milestone7Year", titleKey: "aboutPage.milestone7Title", bodyKey: "aboutPage.milestone7Body" },
 ];
 
 const AboutPage = () => {
@@ -67,7 +68,7 @@ const AboutPage = () => {
 
       {/* Hero */}
       <HeroBackdrop image={aboutBg}>
-        <div className="relative mx-auto max-w-4xl rounded-[28px] bg-(--color-ink-deep)/70 px-5 py-9 text-center shadow-2xl ring-1 ring-white/15 backdrop-blur-xs sm:px-10 sm:py-11">
+        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-9 text-center sm:px-10 sm:py-11">
         <div className="fade-up mb-4 flex items-center justify-center gap-3" style={{ animationDelay: "0.05s" } as CSSProperties}>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
@@ -270,16 +271,6 @@ const AboutPage = () => {
                     <div className="mt-1 text-[11px] text-white/50">
                       <span className="font-semibold text-white/70">Est.:</span> {company.founded}
                     </div>
-                    {company.cinUrl && (
-                      <a
-                        href={company.cinUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-2.5 inline-flex items-center gap-1 text-[11px] font-bold text-(--color-teal) transition-colors hover:text-(--color-yellow)"
-                      >
-                        {tr("viewOnMCA", "View on MCA")} →
-                      </a>
-                    )}
                   </div>
                 </Reveal>
               );

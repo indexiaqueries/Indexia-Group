@@ -1,0 +1,19 @@
+/* Frosted-glass hero text panels.
+   Mirrors the home hero slide card (bg-black/65, blur-xl, border-white/15,
+   rounded-3xl, soft drop shadow) so every non-home hero reads the same. */
+.hero-panel-glass {
+  border-radius: 1.5rem; /* rounded-3xl */
+  border: 1px solid rgb(255 255 255 / 0.15);
+  background-color: rgb(0 0 0 / 0.65);
+  /* Subtle frosted top-edge highlight so the glass reads on dark backdrops.
+     Painted as a background layer, i.e. behind the panel content. */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 0.11),
+    rgb(255 255 255 / 0.04) 28%,
+    rgb(255 255 255 / 0) 55%
+  );
+  -webkit-backdrop-filter: blur(12px); /* blur-md */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.4);
+}

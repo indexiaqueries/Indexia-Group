@@ -68,7 +68,7 @@ const GlobalResearchPage = () => {
       />
 
       <HeroBackdrop image={researchBg}>
-        <div className="relative mx-auto max-w-4xl rounded-[28px] bg-(--color-ink-deep)/75 px-5 py-9 text-center shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:px-10 sm:py-11">
+        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-9 text-center sm:px-10 sm:py-11">
         <div className="mb-4 flex items-center justify-center gap-3">
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{t("globalResearchPage.eyebrow")}</Eyebrow>

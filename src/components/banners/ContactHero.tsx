@@ -16,7 +16,7 @@ const ContactHero = () => {
       image={contactHeroBg}
       containerClassName="relative mx-auto grid max-w-7xl items-center gap-6 px-2 py-10 pt-20 sm:px-3 lg:grid-cols-2 lg:px-5 lg:py-14 lg:gap-10"
     >
-      <div className="slide-in-left rounded-[28px] bg-(--color-ink-deep)/65 p-6 shadow-2xl ring-1 ring-white/15 backdrop-blur-xs sm:p-9">
+      <div className="hero-panel-glass slide-in-left p-6 sm:p-9">
         <Eyebrow size="md" color={colors.yellow} className="mb-4">
           {t("contactHero.eyebrow")}
         </Eyebrow>

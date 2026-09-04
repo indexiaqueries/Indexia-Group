@@ -80,7 +80,7 @@ export const companies: Company[] = [
   {
     name: "Indexia Overseas Pvt. Ltd.",
     slug: "overseas",
-    founded: 2015,
+    founded: 2014,
     tag: "Global Edible Export",
     cin: "U51909MH2015PTC367890",
     cinUrl: "https://www.mca.gov.in/content/mca/global/en/always-on-mca/ministry-affairs.html",

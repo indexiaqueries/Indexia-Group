@@ -14,7 +14,7 @@ import { getCompanyImage } from "../../data/companyImages";
 import { companyIcons } from "../../data/companyIcons";
 import { companies, type Company } from "../../data/companies";
 import { accentInk, contrastText } from "../../lib/color";
-import { colors } from "../../lib/theme";
+import { accent, colors } from "../../lib/theme";
 import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
@@ -45,6 +45,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
   const name = tr("name", b.name);
+  // Enquiry heading "Get in Touch with {{name}}" with the company name
+  // highlighted in the blue accent, mirroring the Contact page heading.
+  const enquiryHeading = t("companyDetail.enquireTitle", { name });
+  const enquiryNameIndex = enquiryHeading.indexOf(name);
+  const enquiryBefore = enquiryNameIndex >= 0 ? enquiryHeading.slice(0, enquiryNameIndex) : "";
+  const enquiryAfter = enquiryNameIndex >= 0 ? enquiryHeading.slice(enquiryNameIndex + name.length) : "";
   const tagline = b.tagline ? tr("tagline", b.tagline) : undefined;
   const desc = tr("desc", b.desc);
   const overview = tr("overview", b.overview);
@@ -79,7 +85,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         image={getCompanyImage(b.slug)}
         containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
       >
-        <div className="fade-up relative max-w-5xl rounded-[28px] bg-(--color-ink-deep)/75 p-5 shadow-2xl ring-1 ring-white/15 backdrop-blur-md sm:p-8 lg:p-10">
+        <div className="hero-panel-glass fade-up relative max-w-5xl p-5 sm:p-8 lg:p-10">
           <span
             aria-hidden="true"
             className="pointer-events-none absolute -top-12 -inset-e-2 select-none font-display text-[clamp(110px,20vw,220px)] font-bold leading-none text-white/5 sm:-inset-e-8"
@@ -453,7 +459,13 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <Eyebrow className="mb-3">{t("companyDetail.eyebrow")}</Eyebrow>
             <h2 className="font-display text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
-              {t("companyDetail.enquireTitle", { name })}
+              {enquiryBefore}
+              {enquiryNameIndex >= 0 ? (
+                <span style={{ color: accent.blue }}>{name}</span>
+              ) : (
+                enquiryHeading
+              )}
+              {enquiryAfter}
             </h2>
             <p className="mt-4 sm:mt-5 max-w-md text-[12px] sm:text-[13px] leading-6 text-(--color-muted)">
               {t("companyDetail.enquireSub", { name })}
