@@ -168,7 +168,8 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
       <div className="relative mx-auto max-w-6xl">
         <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow className="mb-3">{t("newsPage.knowledgeEyebrow")}</Eyebrow>
-          <h2 className="font-display whitespace-nowrap text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+          {/* No nowrap: this heading must wrap gracefully on small screens and in longer translations. */}
+          <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("newsPage.knowledgeHeading")}
           </h2>
           <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">
