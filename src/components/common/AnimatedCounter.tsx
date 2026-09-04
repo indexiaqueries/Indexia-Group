@@ -32,7 +32,8 @@ const AnimatedCounter = ({
   value,
   label,
   color,
-  numberClassName = "font-display text-2xl font-bold tabular-nums sm:text-3xl",
+  // Register figures are set in the ledger face — the group counts in mono.
+  numberClassName = "font-ledger text-xl font-bold tabular-nums sm:text-2xl",
   labelClassName = "mt-1 text-xs text-(--color-muted)",
   className,
 }: AnimatedCounterProps) => {

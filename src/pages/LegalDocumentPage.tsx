@@ -100,7 +100,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
             <div className="mb-3 border-b border-slate-200 pb-3">
               <Link
                 to="/"
-                className="text-sm font-semibold text-(--color-blue) transition-colors hover:text-(--color-teal)"
+                className="text-sm font-semibold text-(--color-navy) transition-colors hover:text-(--color-teal-deep)"
               >
                 ← {t("legal.backHome")}
               </Link>

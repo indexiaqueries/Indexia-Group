@@ -44,7 +44,7 @@ const ContactHero = () => {
 
           <a
             href="tel:+918655168551"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-blue)"
+            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-navy)"
           >
             <Phone size={17} />
             {t("contactHero.callNow")}

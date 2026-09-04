@@ -97,7 +97,7 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
               className="group relative shrink-0 overflow-hidden rounded-xl transition-transform duration-300 hover:scale-[1.03]"
               style={{ width: "clamp(240px, 30vw, 340px)" }}
             >
-              <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-black/30">
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-(--color-navy-deep)/40">
                 <video
                   src={v.src}
                   muted

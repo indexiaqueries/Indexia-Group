@@ -33,7 +33,7 @@ const EmailsSection = () => {
             >
               <Mail size={18} />
             </span>
-            <span className="min-w-0 break-all text-sm font-semibold text-slate-800 group-hover:text-(--color-blue)">
+            <span className="min-w-0 break-all text-sm font-semibold text-slate-800 group-hover:text-(--color-teal-deep)">
               {email}
             </span>
           </a>
@@ -46,14 +46,14 @@ const EmailsSection = () => {
 const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[number]) => {
   const { t } = useTranslation();
   return (
-    <a href={href} className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm transition-all duration-200 hover:border-(--color-blue)/40 hover:shadow-md">
+    <a href={href} className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm transition-all duration-200 hover:border-(--color-teal)/40 hover:shadow-md">
       <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent.blue }}>
         <Phone size={12} />
       </span>
       <span className="text-[10px] font-bold uppercase tracking-wide" style={{ color: accent.gray }}>
         {labelKey ? t(`phoneLabel.${labelKey}`, { defaultValue: label }) : label}
       </span>
-      <span className="text-[13px] font-bold text-slate-800 group-hover:text-(--color-blue)" style={monoFont}>
+      <span className="text-[13px] font-bold text-slate-800 group-hover:text-(--color-teal-deep)" style={monoFont}>
         {number}
       </span>
     </a>

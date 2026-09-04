@@ -5,6 +5,7 @@ import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
+import RegisterTabs from "../components/businesses/RegisterTabs";
 import { companies } from "../data/companies";
 import HomeWorld from "../assets/footer-img/HomeWorld.png";
 const Globe = lazy(() => import("../components/lightswind/globe"));
@@ -45,12 +46,14 @@ const Home = () => {
 
       <section className="section-ruled section-paper relative mx-3 mt-4 mb-2 rounded-[var(--radius-panel)] py-2 sm:mx-5 sm:mt-5 sm:mb-3">
         <div className="container">
+          {/* Catalogue edge — the register of eight companies */}
+          <RegisterTabs className="mb-4" />
           <Reveal>
             <div className="mx-auto max-w-180 text-center">
               <Eyebrow>{t("businesses.eyebrow")}</Eyebrow>
               <h2 className="font-display text-[clamp(22px,4vw,38px)] font-bold text-(--color-ink)">
                 {t("businesses.titleStart")}
-                <span className="text-(--color-blue)">{t("businesses.titleAccent")}</span>
+                {t("businesses.titleAccent")}
               </h2>
               <p className="mt-1 text-[9px] sm:text-[10px] leading-4 sm:leading-5 text-(--color-muted)">
                 {t("businesses.subtitle")}
@@ -79,7 +82,7 @@ const Home = () => {
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
-        <div aria-hidden="true" className="absolute inset-0 bg-(--color-ink)/60" />
+        <div aria-hidden="true" className="absolute inset-0 bg-(--color-navy-deep)/70" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 sm:h-64 w-48 sm:w-64 rounded-full bg-(--color-teal)/15 blur-[80px] sm:blur-[100px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 sm:h-52 w-40 sm:w-52 rounded-full bg-(--color-yellow)/10 blur-[60px] sm:blur-[80px]" />
         <div className="container relative">

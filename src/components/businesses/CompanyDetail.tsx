@@ -20,6 +20,7 @@ import WarehousePricing from "./WarehousePricing";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
 import FoundationGallery from "./FoundationGallery";
+import RegisterTabs from "./RegisterTabs";
 
 // Auto-import all media from foundation-gallery/ folder
 const foundationMedia = import.meta.glob(
@@ -110,7 +111,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               {tag}
             </span>
             <span
-              className="rounded-full border border-white/30 bg-black/30 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-md backdrop-blur-sm"
+              className="rounded-full border border-white/30 bg-(--color-navy-deep)/45 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-md backdrop-blur-sm"
             >
               Est. {b.founded}
             </span>
@@ -157,6 +158,9 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </div>
         </div>
       </HeroBackdrop>
+
+      {/* Register of companies — the catalogue edge */}
+      <RegisterTabs activeSlug={b.slug} />
 
       {/* Services marquee ribbon */}
       <div
@@ -223,7 +227,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   decoding="async"
                   className="aspect-4/3 w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-110 img-reveal"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[rgba(10,34,51,0.6)] via-transparent to-transparent" />
                 <span aria-hidden="true" className="card-shine-lines" />
               </div>
 
@@ -481,7 +485,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             </div>
 
             <div className="mt-8 flex items-center gap-6">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-(--color-blue) shadow-[0_4px_14px_rgba(6,106,156,0.18)]">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-(--color-navy) shadow-[0_4px_14px_rgba(12,54,82,0.16)]">
                 <Clock className="h-5 w-5" strokeWidth={2} />
               </div>
               <div>

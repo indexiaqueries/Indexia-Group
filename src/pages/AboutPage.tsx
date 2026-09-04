@@ -104,7 +104,7 @@ const AboutPage = () => {
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-(--color-ink-deep)/40 via-transparent to-transparent" />
               </div>
-              <div className="w-full bg-black/50 px-5 py-1 text-center backdrop-blur-md border border-t-0 border-white/10 rounded-b-2xl">
+              <div className="w-full bg-(--color-navy-deep)/60 px-5 py-1 text-center backdrop-blur-md border border-t-0 border-white/10 rounded-b-2xl">
                 <span className="font-display text-[13px] sm:text-sm font-bold text-white">
                   {tr("founderPersonName", "Bijendra Malik")}
                 </span>

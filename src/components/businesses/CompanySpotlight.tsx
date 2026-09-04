@@ -62,7 +62,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                   value={t(stat.valueKey)}
                   label={t(stat.labelKey)}
                   color={accentInk(company.color)}
-                  numberClassName="font-display text-2xl font-bold"
+                  numberClassName="font-ledger text-xl font-bold tabular-nums sm:text-2xl"
                   labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
                 />
               </div>

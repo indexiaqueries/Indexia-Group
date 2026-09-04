@@ -13,7 +13,7 @@ const NewsHero = () => {
     <HeroBackdrop
       image={newsBg}
       extra={
-        <div className="absolute inset-x-0 bottom-0 border-t border-white/15 bg-black/10 backdrop-blur-sm">
+        <div className="absolute inset-x-0 bottom-0 border-t border-white/15 bg-(--color-navy-deep)/25 backdrop-blur-sm">
           <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-2 py-3 sm:justify-between sm:px-3 lg:px-5">
             <span className="flex items-center gap-2">
               <span className="relative flex h-1.5 w-1.5 motion-reduce:hidden">

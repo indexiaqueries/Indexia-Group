@@ -152,7 +152,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="relative z-10 mt-8 border-t border-white/8 bg-black/30">
+      <div className="relative z-10 mt-8 border-t border-white/8 bg-(--color-navy-black)/45">
         <div className="mx-auto max-w-7xl px-3 py-4 text-center text-[13px] text-white/50 sm:px-4 lg:px-6">
           <p>{t("footer.rights")}</p>
         </div>
