@@ -196,6 +196,13 @@
     "locationWarehouse": "北方邦沙姆利",
     "print": "打印"
   },
+  "socialLinks": {
+    "follow": "关注",
+    "description": "通过我们的社交渠道了解 Indexia Finance 的最新动态、见解和故事。",
+    "stayConnected": "保持联系",
+    "channels": "社交渠道",
+    "visitAria": "在{{name}}上访问 Indexia Finance"
+  },
   "businessCard": {
     "readMore": "了解更多",
     "tapToView": "点击查看"

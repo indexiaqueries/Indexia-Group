@@ -196,6 +196,13 @@
     "locationWarehouse": "शामली, उत्तर प्रदेश",
     "print": "प्रिंट करें"
   },
+  "socialLinks": {
+    "follow": "फॉलो करें",
+    "description": "Indexia Finance के नवीनतम अपडेट, अंतर्दृष्टि और कहानियों से हमारे सोशल चैनलों पर जुड़े रहें।",
+    "stayConnected": "जुड़े रहें",
+    "channels": "सोशल चैनल",
+    "visitAria": "{{name}} पर Indexia Finance पर जाएँ"
+  },
   "businessCard": {
     "readMore": "और पढ़ें",
     "tapToView": "देखने के लिए टैप करें"

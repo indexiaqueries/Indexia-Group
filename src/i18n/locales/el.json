@@ -196,6 +196,13 @@
     "locationWarehouse": "Σάμλι, Ούταρ Πραντές",
     "print": "Εκτύπωση"
   },
+  "socialLinks": {
+    "follow": "Ακολουθήστε",
+    "description": "Μείνετε ενημερωμένοι με τις τελευταίες ενημερώσεις, ιδέες και ιστορίες από την Indexia Finance στα κοινωνικά μας κανάλια.",
+    "stayConnected": "Μείνετε συνδεδεμένοι",
+    "channels": "Κοινωνικά κανάλια",
+    "visitAria": "Επισκεφθείτε την Indexia Finance στο {{name}}"
+  },
   "businessCard": {
     "readMore": "Διαβάστε περισσότερα",
     "tapToView": "Πατήστε για προβολή"

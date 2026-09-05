@@ -196,6 +196,13 @@
     "locationWarehouse": "שמלי, אוטר פרדש",
     "print": "הדפסה"
   },
+  "socialLinks": {
+    "follow": "עקבו",
+    "description": "הישארו מעודכנים עם העדכונים, התובנות והסיפורים האחרונים של Indexia Finance בערוצים החברתיים שלנו.",
+    "stayConnected": "הישארו מחוברים",
+    "channels": "ערוצים חברתיים",
+    "visitAria": "בקרו ב-Indexia Finance ב{{name}}"
+  },
   "businessCard": {
     "readMore": "קראו עוד",
     "tapToView": "הקישו לצפייה"

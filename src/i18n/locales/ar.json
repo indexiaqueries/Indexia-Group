@@ -196,6 +196,13 @@
     "locationWarehouse": "شملي، أتر برديش، جزء من دلهي NCR",
     "print": "طباعة"
   },
+  "socialLinks": {
+    "follow": "تابع",
+    "description": "ابقَ على اطلاع بأحدث التحديثات والرؤى والقصص من Indexia Finance عبر قنواتنا الاجتماعية.",
+    "stayConnected": "ابق على اتصال",
+    "channels": "قنوات التواصل الاجتماعي",
+    "visitAria": "قم بزيارة Indexia Finance على {{name}}"
+  },
   "businessCard": {
     "readMore": "اقرأ المزيد",
     "tapToView": "اضغط للعرض"

@@ -196,6 +196,13 @@
     "locationWarehouse": "シャムリ、ウッタル・プラデーシュ州",
     "print": "印刷"
   },
+  "socialLinks": {
+    "follow": "フォロー",
+    "description": "Indexia Financeの最新情報、洞察、ストーリーをソーシャルチャンネルでチェックしてください。",
+    "stayConnected": "つながろう",
+    "channels": "ソーシャルチャンネル",
+    "visitAria": "{{name}}でIndexia Financeを訪問"
+  },
   "businessCard": {
     "readMore": "続きを読む",
     "tapToView": "タップして表示"

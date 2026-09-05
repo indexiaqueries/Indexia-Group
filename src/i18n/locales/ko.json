@@ -196,6 +196,13 @@
     "locationWarehouse": "샴리, 우타르프라데시",
     "print": "인쇄"
   },
+  "socialLinks": {
+    "follow": "팔로우",
+    "description": "Indexia Finance의 최신 업데이트, 인사이트 및 스토리를 소셜 채널에서 확인하세요.",
+    "stayConnected": "연결 유지",
+    "channels": "소셜 채널",
+    "visitAria": "{{name}}에서 Indexia Finance 방문"
+  },
   "businessCard": {
     "readMore": "더 보기",
     "tapToView": "탭하여 보기"

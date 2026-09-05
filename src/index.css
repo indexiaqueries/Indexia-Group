@@ -28,8 +28,6 @@
 @import "./styles/scroll/reveal.css";
 @import "./styles/scroll/float.css";
 
-/* ── Social Links ── */
-@import "./styles/SocialLinks.css";
 
 /* ── Accessibility ── */
 @import "./styles/accessibility/reduced-motion.css";

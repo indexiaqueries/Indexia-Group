@@ -196,6 +196,13 @@
     "locationWarehouse": "Shamli, Uttar Pradesh",
     "print": "Imprimir"
   },
+  "socialLinks": {
+    "follow": "Seguir",
+    "description": "Mantente informado con las últimas actualizaciones, ideas e historias de Indexia Finance en nuestros canales sociales.",
+    "stayConnected": "Mantente conectado",
+    "channels": "Canales Sociales",
+    "visitAria": "Visita Indexia Finance en {{name}}"
+  },
   "businessCard": {
     "readMore": "Leer más",
     "tapToView": "Toca para ver"

@@ -414,6 +414,13 @@
     "locationsTitleStart": "Our ",
     "locationsTitleAccent": "Locations"
   },
+  "socialLinks": {
+    "follow": "Follow",
+    "description": "Stay informed with the latest updates, insights and stories from Indexia Finance across our social channels.",
+    "stayConnected": "Stay Connected",
+    "channels": "Social Channels",
+    "visitAria": "Visit Indexia Finance on {{name}}"
+  },
   "businessCard": {
     "tapToView": "Tap to view",
     "readMore": "Read more"

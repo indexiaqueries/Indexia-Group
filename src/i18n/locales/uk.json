@@ -196,6 +196,13 @@
     "locationWarehouse": "Шамлі, Уттар-Прадеш",
     "print": "Друк"
   },
+  "socialLinks": {
+    "follow": "Слідкуйте",
+    "description": "Будьте в курсі останніх оновлень, ідей та історій Indexia Finance у наших соціальних каналах.",
+    "stayConnected": "Залишайтеся на зв'язку",
+    "channels": "Соціальні канали",
+    "visitAria": "Відвідайте Indexia Finance у {{name}}"
+  },
   "businessCard": {
     "readMore": "Детальніше",
     "tapToView": "Торкніться, щоб переглянути"

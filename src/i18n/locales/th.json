@@ -196,6 +196,13 @@
     "locationWarehouse": "ชัมลี, อุตตรประเทศ",
     "print": "พิมพ์"
   },
+  "socialLinks": {
+    "follow": "ติดตาม",
+    "description": "รับข้อมูลอัปเดตล่าสุด ข้อมูลเชิงลึก และเรื่องราวจาก Indexia Finance ผ่านช่องทางโซเชียลของเรา",
+    "stayConnected": "ติดต่อเรา",
+    "channels": "ช่องทางโซเชียล",
+    "visitAria": "เยี่ยมชม Indexia Finance บน {{name}}"
+  },
   "businessCard": {
     "readMore": "อ่านเพิ่มเติม",
     "tapToView": "แตะเพื่อดู"
