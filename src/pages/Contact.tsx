@@ -142,7 +142,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="section-ruled section-paper px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
+      <section className="section-ruled section-paper px-4 py-5">
             <SocialLinks />
       </section>
     </main>

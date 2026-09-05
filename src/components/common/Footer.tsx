@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer-img/footer-img.webp";
 import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
 import { Mail, Phone, Clock } from "lucide-react";
+import { FaInstagram, FaLinkedinIn, FaXTwitter, FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { phoneNumbers } from "../../data/contact";
 import BackToTop from "./BackToTop";
 
@@ -107,7 +108,7 @@ const Footer = () => {
 
         {/* Nav columns */}
         <h2 className="sr-only">{t("footer.siteFooter") || "Site footer navigation"}</h2>
-        <nav aria-label={t("footer.footerNav")} className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-3 lg:divide-x lg:divide-white/10">
+        <nav aria-label={t("footer.footerNav")} className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-3 lg:grid-cols-3 lg:divide-x lg:divide-white/10">
           {/* Contact */}
           <div className="text-start">
             <ColumnHeader title={t("footer.contactUs")} />
@@ -148,6 +149,60 @@ const Footer = () => {
             </div>
           ))}
         </nav>
+
+        {/* Social Media - Circular Icons Section */}
+        <div className="mt-8 flex flex-wrap items-center justify-end gap-4 sm:gap-5 lg:gap-6">
+          <span className="mr-1 hidden sm:inline text-[11px] font-ledger font-bold uppercase tracking-[0.18em] text-white/50">
+            {t("footer.followUs")}
+          </span>
+          <div className="flex flex-wrap items-center gap-4 sm:gap-5">
+            <a
+              href="https://www.instagram.com/indexiafinance"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Indexia Finance on Instagram"
+              className="indexia-footer-social"
+            >
+              <FaInstagram className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/indexia-finance"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Indexia Finance on LinkedIn"
+              className="indexia-footer-social"
+            >
+              <FaLinkedinIn className="h-5 w-5" />
+            </a>
+            <a
+              href="https://x.com/indexiafinance"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Indexia Finance on X (Twitter)"
+              className="indexia-footer-social"
+            >
+              <FaXTwitter className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/indexiafinance"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Indexia Finance on Facebook"
+              className="indexia-footer-social"
+            >
+              <FaFacebookF className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.youtube.com/@indexiafinance"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Indexia Finance on YouTube"
+              className="indexia-footer-social"
+            >
+              <FaYoutube className="h-5 w-5" />
+            </a>
+          </div>
+        </div>
 
 
       </div>
