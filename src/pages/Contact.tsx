@@ -80,7 +80,7 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="section-ruled section-paper relative overflow-hidden px-4 py-3 sm:px-6 sm:py-5 lg:px-8">
+      <section className="section-ruled section-paper relative overflow-hidden px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"
@@ -97,7 +97,7 @@ const Contact = () => {
 
       <section id="branches" className="section-ruled pt-5 sm:pt-4 lg:pt-6" style={{ background: 'rgba(2,16,26,0.08)' }}>
         <div className="mx-auto max-w-7xl">
-          <Reveal className="mx-auto mb-5 sm:mb-8 max-w-2xl text-center">
+          <Reveal className="mx-auto max-w-2xl text-center">
             <h2 className="text-2xl font-extrabold text-slate-900 sm:text-4xl">
               {t("contact.locationsTitleStart")}
               <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
@@ -124,7 +124,7 @@ const Contact = () => {
             {/* Scrollable area, clips only on x, not y */}
             <div
               ref={scrollRef}
-              className="flex gap-5 overflow-x-auto scroll-smooth pt-6 pb-20"
+              className="flex gap-5 overflow-x-auto scroll-smooth pt-6 pb-10"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {branches.map((branch, index) => (
