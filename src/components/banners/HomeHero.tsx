@@ -75,14 +75,14 @@ const Banner = () => {
           <button
             onClick={prevPanel}
             aria-label={t("hero.prevPanel")}
-            className="absolute top-1/2 -translate-y-1/2 inset-s-5 md:inset-s-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+            className="absolute top-1/2 -translate-y-1/2 inset-s-5 md:inset-s-8 z-10 w-11 h-11 rounded-full border border-white/40 bg-(--color-night)/45 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-(--color-night)/70 transition-colors duration-200 hidden sm:flex"
           >
             ‹
           </button>
           <button
             onClick={nextPanel}
             aria-label={t("hero.nextPanel")}
-            className="absolute top-1/2 -translate-y-1/2 inset-e-5 md:inset-e-8 z-10 w-11 h-11 rounded-full border border-white/35 bg-white/10 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-white/25 transition-colors duration-200 hidden sm:flex"
+            className="absolute top-1/2 -translate-y-1/2 inset-e-5 md:inset-e-8 z-10 w-11 h-11 rounded-full border border-white/40 bg-(--color-night)/45 backdrop-blur-md text-white text-xl items-center justify-center hover:bg-(--color-night)/70 transition-colors duration-200 hidden sm:flex"
           >
             ›
           </button>

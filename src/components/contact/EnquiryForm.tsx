@@ -128,7 +128,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     <div
       ref={ref}
       id="enquiry-form"
-      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-slate-200 bg-white px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
+      className={`reveal relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-(--color-line) bg-white px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
       style={{ "--reveal-delay": "0.1s" } as CSSProperties}
     >
       <div
@@ -144,7 +144,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
         <Eyebrow size="md" color={accent.green}>
           {t("form.eyebrow")}
         </Eyebrow>
-        <p className="mt-3 text-sm leading-6 text-slate-500">{t("form.intro")}</p>
+        <p className="mt-3 text-sm leading-6 text-(--color-muted)">{t("form.intro")}</p>
 
         <form onSubmit={handleSubmit} noValidate className="mt-6 sm:mt-8 flex flex-1 flex-col gap-4 sm:gap-5">
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
@@ -180,7 +180,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
                 required
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? "phone-error" : undefined}
-                className="h-11 rounded-xl px-4 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400"
+                className="h-11 rounded-xl px-4 text-sm text-(--color-ink) bg-white border-(--color-line) placeholder:text-(--color-muted)"
               />
               {errors.phone && (
                 <p id="phone-error" role="alert" className={errorText}>
@@ -218,7 +218,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
               required
               aria-invalid={!!errors.subject}
               aria-describedby={errors.subject ? "subject-error" : undefined}
-              className={`${selectClass} w-full disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-600`}
+              className={`${selectClass} w-full disabled:cursor-not-allowed disabled:bg-(--color-mist) disabled:text-(--color-muted)`}
             >
               {companyLocked ? (
                 <option value={initialCompany}>{initialCompanyLabel ?? initialCompany}</option>
@@ -257,7 +257,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
               placeholder={t("form.messagePlaceholder")}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? "message-error" : undefined}
-              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400"
+              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm text-(--color-ink) bg-white border-(--color-line) placeholder:text-(--color-muted)"
             />
             {errors.message && (
               <p id="message-error" role="alert" className={errorText}>
@@ -268,8 +268,9 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
 
           <Button
             type="submit"
+            variant="yellow"
             disabled={sending}
-            className="mt-auto h-12 w-full rounded-xl px-6 text-sm font-bold shadow-[0_8px_22px_rgba(38,174,144,0.25)] hover:-translate-y-0.5 disabled:hover:translate-y-0"
+            className="mt-auto h-12 w-full rounded-xl px-6 text-sm font-bold shadow-[0_8px_22px_rgba(242,242,49,0.35)] hover:-translate-y-0.5 disabled:hover:translate-y-0"
           >
             <Send size={17} />
             {sending ? t("form.sending") : t("form.submit")}

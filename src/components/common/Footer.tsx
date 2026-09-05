@@ -85,25 +85,19 @@ const Footer = () => {
 
       <div className="relative z-10 mx-auto max-w-7xl px-3 pt-12 pb-6 sm:px-4 sm:pt-16 sm:pb-8 lg:px-6">
 
-        {/* Brand + CTA row, compact, horizontal on desktop */}
-        <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:justify-between">
+        {/* Brand row */}
+        <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start">
           <div className="flex items-center gap-3">
             <img src={logo} alt={t("common.logoAlt")} width={48} height={48} className="h-12 w-12 object-contain" />
             <div>
               <div className="flex items-center gap-1 text-lg font-extrabold">
                 <span className="text-(--color-yellow)">{t("footer.brand")}</span>
               </div>
-              <p className="font-ledger text-[9px] font-bold uppercase tracking-[0.22em] text-white/60">
+              <p className="font-ledger text-xs font-bold uppercase tracking-[0.22em] text-white/60">
                 {t("footer.tagline")}
               </p>
             </div>
           </div>
-          <Link
-            to="/contact"
-            className="shrink-0 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-5 py-2 text-[13px] font-bold text-(--color-yellow) transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow)/20"
-          >
-            {t("footer.enquiry")} →
-          </Link>
         </div>
 
         {/* Nav columns */}
@@ -135,6 +129,12 @@ const Footer = () => {
                 );
               })}
             </div>
+            <Link
+              to="/contact"
+              className="mt-4 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-5 py-2 text-[13px] font-bold text-(--color-yellow) transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow)/20"
+            >
+              {t("footer.enquiry")} →
+            </Link>
           </div>
 
           {linkGroups.map((group) => (
@@ -150,9 +150,9 @@ const Footer = () => {
           ))}
         </nav>
 
-        {/* Social Media - Circular Icons Section */}
-        <div className="mt-8 flex flex-wrap items-center justify-end gap-4 sm:gap-5 lg:gap-6">
-          <span className="mr-1 hidden sm:inline text-[11px] font-ledger font-bold uppercase tracking-[0.18em] text-white/50">
+        {/* Social Media - Circular Icons Section, right-aligned below the nav grid */}
+        <div className="mt-8 flex flex-wrap items-center justify-end gap-3 border-t border-white/10 pt-6 sm:gap-4">
+          <span className="hidden sm:inline text-[11px] font-ledger font-bold uppercase tracking-[0.18em] text-white/50">
             {t("footer.followUs")}
           </span>
           <div className="flex flex-wrap items-center gap-4 sm:gap-5">
@@ -161,7 +161,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Indexia Finance on Instagram"
-              className="indexia-footer-social"
+              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
             >
               <FaInstagram className="h-5 w-5" />
             </a>
@@ -170,7 +170,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Indexia Finance on LinkedIn"
-              className="indexia-footer-social"
+              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
             >
               <FaLinkedinIn className="h-5 w-5" />
             </a>
@@ -179,7 +179,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Indexia Finance on X (Twitter)"
-              className="indexia-footer-social"
+              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
             >
               <FaXTwitter className="h-5 w-5" />
             </a>
@@ -188,7 +188,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Indexia Finance on Facebook"
-              className="indexia-footer-social"
+              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
             >
               <FaFacebookF className="h-5 w-5" />
             </a>
@@ -197,7 +197,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Indexia Finance on YouTube"
-              className="indexia-footer-social"
+              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
             >
               <FaYoutube className="h-5 w-5" />
             </a>

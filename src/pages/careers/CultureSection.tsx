@@ -22,7 +22,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
       />
 
       <div className="mx-auto max-w-5xl">
-        <Reveal className="mb-10 sm:mb-14 max-w-2xl">
+        <Reveal className="mb-2 max-w-2xl">
           <Eyebrow className="mb-1.5">{t("careersPage.cultureEyebrow")}</Eyebrow>
           <h2 className="font-display text-[clamp(20px,3.5vw,32px)] font-bold text-(--color-ink)">
             {t("careersPage.cultureHeading")}
@@ -38,17 +38,17 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
                     aria-hidden="true"
                     className="mb-3 block h-1.5 w-6 rounded-full bg-(--color-teal)"
                   />
-                  <p className="font-display text-[17px] sm:text-[20px] leading-7 sm:leading-8 text-slate-900">
+                  <p className="font-display text-lg leading-7 sm:leading-8 text-(--color-ink)">
                     {item.title}
                   </p>
                 </div>
 
                 <span
                   aria-hidden="true"
-                  className="hidden sm:block sm:w-px sm:bg-slate-200"
+                  className="hidden sm:block sm:w-px sm:bg-(--color-line)"
                 />
 
-                <p className="text-[13px] sm:text-[14.5px] leading-6 sm:leading-7.5 text-slate-500 sm:pt-1">
+                <p className="text-sm sm:text-[15px] leading-6 sm:leading-7.5 text-(--color-muted) sm:pt-1">
                   {item.desc}
                 </p>
               </div>

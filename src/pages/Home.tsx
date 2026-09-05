@@ -5,7 +5,6 @@ import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
-import RegisterTabs from "../components/businesses/RegisterTabs";
 import { companies } from "../data/companies";
 import HomeWorld from "../assets/footer-img/HomeWorld.png";
 const Globe = lazy(() => import("../components/lightswind/globe"));
@@ -46,8 +45,6 @@ const Home = () => {
 
       <section className="section-ruled section-paper relative mx-3 mt-4 mb-2 rounded-(--radius-panel) py-2 sm:mx-5 sm:mt-5 sm:mb-3">
         <div className="container">
-          {/* Catalogue edge — the register of eight companies */}
-          <RegisterTabs className="mb-4" />
           <Reveal>
             <div className="mx-auto max-w-180 text-center">
               <Eyebrow>{t("businesses.eyebrow")}</Eyebrow>
@@ -55,7 +52,7 @@ const Home = () => {
                 {t("businesses.titleStart")}
                 {t("businesses.titleAccent")}
               </h2>
-              <p className="mt-1 text-[9px] sm:text-[10px] leading-4 sm:leading-5 text-(--color-muted)">
+              <p className="mt-2 text-xs sm:text-sm leading-5 sm:leading-6 text-(--color-muted)">
                 {t("businesses.subtitle")}
               </p>
             </div>

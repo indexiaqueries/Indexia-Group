@@ -44,20 +44,20 @@ const COMPANIES = [
   { slug: "foundation", tagDefault: "Social Impact", nameDefault: "Indexia Foundation", descKey: "aboutPage.radialFoundationDesc", Icon: Heart },
 ] as const;
 
-// Shared constants for desktop layout
+// Shared constants for desktop layout. The SVG uses the SAME coordinate space
+// as the CSS percentage positioning below (container is 1000 × 750, 4:3), so
+// connector lines reach the card centers exactly instead of stopping short.
 const CARD_W = 190;
 const CARD_H = 160;
 const HUB_SIZE = 200;
-const SVG_SIZE = 1400;
-const CX = SVG_SIZE / 2;
-const CY = SVG_SIZE / 2;
-const HUB_R = 60;
-// Line lengths: top/bottom shorter, sides/diagonals longer
-const CARD_R: Record<number, number> = { 0: 400, 1: 480, 2: 560, 3: 480, 4: 400, 5: 480, 6: 560, 7: 480 };
-const CARD_R_DEFAULT = 380;
-// Percentage radius for CSS positioning
-const RADIUS_PCT: Record<number, number> = { 0: 40, 1: 40, 2: 40, 3: 40, 4: 40, 5: 40, 6: 40, 7: 40 };
-const RADIUS_PCT_DEFAULT = 40;
+const SVG_W = 1000;
+const SVG_H = 750;
+const CX = SVG_W / 2;
+const CY = SVG_H / 2;
+const HUB_R = HUB_SIZE / 2; // hub edge, 100px from center
+const CARD_RX = 400; // 40% of container width  — card center x
+const CARD_RY = 300; // 40% of container height — card center y
+const RADIUS_PCT = 40;
 
 export default function RadialCompanies() {
   const { t } = useTranslation();
@@ -68,25 +68,23 @@ export default function RadialCompanies() {
     <>
       {/* Desktop: radial layout */}
       <div className="relative mx-auto hidden lg:block radial-hovers" style={{ width: "100%", maxWidth: 1000, aspectRatio: "4 / 3" }}>
-        <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true" viewBox={`0 0 ${SVG_SIZE} ${SVG_SIZE}`} preserveAspectRatio="xMidYMid meet">
+        <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true" viewBox={`0 0 ${SVG_W} ${SVG_H}`} preserveAspectRatio="xMidYMid meet">
           <defs>
             <marker id="radial-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="rgb(1,1,1)" />
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(38,174,144,0.45)" />
             </marker>
           </defs>
           {COMPANIES.map((c, i) => {
             const angle = (i * 45 - 90) * (Math.PI / 180);
-            const cardR = CARD_R[i] ?? CARD_R_DEFAULT;
             return (
               <line
                 key={c.slug}
                 x1={CX + Math.cos(angle) * HUB_R}
                 y1={CY + Math.sin(angle) * HUB_R}
-                x2={CX + Math.cos(angle) * cardR}
-                y2={CY + Math.sin(angle) * cardR}
-                stroke="rgb(1,1,1)"
-                strokeWidth="2"
-                strokeDasharray="2 2"
+                x2={CX + Math.cos(angle) * CARD_RX}
+                y2={CY + Math.sin(angle) * CARD_RY}
+                stroke="rgba(38,174,144,0.45)"
+                strokeWidth="3"
                 markerEnd="url(#radial-arrow)"
               />
             );
@@ -112,9 +110,9 @@ export default function RadialCompanies() {
             <img src={aboutCompanyImages.group} alt="Indexia Group" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
           <div className="min-w-0">
-            <span className="font-ledger text-[9px] font-bold uppercase tracking-[0.18em] text-(--color-teal)">{t("aboutPage.hubGroupLabel")}</span>
+            <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-teal)">{t("aboutPage.hubGroupLabel")}</span>
             <h3 className="font-display text-base font-bold leading-tight text-(--color-ink)">Indexia Group</h3>
-            <p className="mt-1 text-[12px] leading-5 text-slate-600 sm:text-[13px]">
+            <p className="mt-1 text-xs leading-5 text-(--color-muted) sm:text-[13px]">
               {t("aboutPage.hubDescription")}
             </p>
           </div>
@@ -146,9 +144,8 @@ function RadialCard({
   const desc = t(company.descKey);
 
   const angle = (index * 45 - 90) * (Math.PI / 180);
-  const radiusPct = RADIUS_PCT[index] ?? RADIUS_PCT_DEFAULT;
-  const leftPct = 50 + Math.cos(angle) * radiusPct;
-  const topPct = 50 + Math.sin(angle) * radiusPct;
+  const leftPct = 50 + Math.cos(angle) * RADIUS_PCT;
+  const topPct = 50 + Math.sin(angle) * RADIUS_PCT;
 
   return (
     <div
@@ -208,10 +205,10 @@ function MobileCard({
 
   return (
     <article
-      className="group overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-[0_14px_34px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-0.5 hover:border-(--color-teal)/35 hover:shadow-[0_18px_44px_rgba(15,23,42,0.12)]"
+      className="group overflow-hidden rounded-xl border border-(--color-line)/80 bg-white shadow-[0_14px_34px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-0.5 hover:border-(--color-teal)/35 hover:shadow-[0_18px_44px_rgba(15,23,42,0.12)]"
       aria-label={name}
     >
-      <div className="relative h-32 shrink-0 overflow-hidden bg-slate-100 sm:h-28">
+      <div className="relative h-32 shrink-0 overflow-hidden bg-(--color-mist) sm:h-28">
         <img
           src={aboutCompanyImages[company.slug]}
           alt={name}
@@ -227,18 +224,18 @@ function MobileCard({
             <Icon size={16} strokeWidth={2.25} aria-hidden="true" />
           </span>
           <div className="min-w-0">
-            <p className="font-ledger text-[9px] font-bold uppercase tracking-[0.14em] text-(--color-teal) sm:text-[10px]">
+            <p className="font-ledger text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-teal) sm:text-[11px]">
               {tag}
             </p>
             <h3 className="font-display text-[15px] font-bold leading-snug text-(--color-ink) sm:text-base">
               {name}
             </h3>
           </div>
-          <span className="rounded-full bg-slate-100 px-2 py-1 font-ledger text-[10px] font-bold leading-none text-slate-500">
+          <span className="rounded-full bg-(--color-mist) px-2 py-1 font-ledger text-[10px] font-bold leading-none text-(--color-muted)">
             {String(index + 1).padStart(2, "0")}
           </span>
         </div>
-        <p className="mt-auto text-[12px] leading-5 text-slate-600 sm:text-[13px] sm:leading-6">
+        <p className="mt-auto text-xs leading-5 text-(--color-muted) sm:text-[13px] sm:leading-6">
           {desc}
         </p>
       </div>

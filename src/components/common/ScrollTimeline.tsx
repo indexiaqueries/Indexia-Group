@@ -51,12 +51,12 @@ const MilestoneItem = ({
             ? "border-(--color-yellow) bg-(--color-yellow) scale-125 shadow-[0_0_20px_rgba(219,183,63,0.5)]"
             : isPast
               ? "border-(--color-teal) bg-(--color-teal) scale-110"
-              : "border-slate-300 bg-white"
+              : "border-(--color-line) bg-white"
         }`}
       >
         <span
-          className={`font-ledger text-[8px] sm:text-[9px] font-bold transition-colors duration-500 ${
-            isCurrent ? "text-black" : isPast ? "text-white" : "text-slate-400"
+          className={`font-ledger text-[9px] sm:text-[10px] font-bold transition-colors duration-500 ${
+            isCurrent ? "text-black" : isPast ? "text-white" : "text-(--color-muted)"
           }`}
         >
           {m.year.slice(-2)}
@@ -65,10 +65,10 @@ const MilestoneItem = ({
 
       {/* Content card */}
       <div
-        className={`ml-10 sm:ml-0 sm:w-[calc(50%-2.5rem)] transition-all duration-500 ${
+        className={`ml-10 sm:ml-0 sm:w-[calc(50%-2rem)] transition-all duration-500 ${
           index % 2 === 0
-            ? "sm:mr-auto sm:pr-6 sm:text-right"
-            : "sm:ml-auto sm:pl-6"
+            ? "sm:mr-auto sm:pr-4 sm:text-right"
+            : "sm:ml-auto sm:pl-4"
         } ${
           appeared
             ? "opacity-100 translate-y-0"
@@ -84,7 +84,7 @@ const MilestoneItem = ({
                   // visibly drains upward as the reading point passes.
                   "border-(--color-teal)/30 bg-(--color-teal)/5 shadow-md"
                 : // Upcoming cards take over the plain look of the ones passed.
-                  "border-slate-200 bg-white shadow-sm"
+                  "border-(--color-line) bg-white shadow-sm"
           }`}
         >
           <span
@@ -93,21 +93,21 @@ const MilestoneItem = ({
                 ? "bg-(--color-yellow) text-black"
                 : isPast
                   ? "bg-(--color-teal)/15 text-(--color-teal-deep)"
-                  : "bg-slate-100 text-slate-500"
+                  : "bg-(--color-mist) text-(--color-muted)"
             }`}
           >
             {m.year}
           </span>
           <h3
             className={`mt-2 font-display text-[14px] sm:text-[15px] font-bold transition-colors duration-500 ${
-              isCurrent ? "text-white" : isPast ? "text-slate-800" : "text-slate-500"
+              isCurrent ? "text-white" : isPast ? "text-(--color-ink)" : "text-(--color-muted)"
             }`}
           >
             {m.title}
           </h3>
           <p
-            className={`mt-1 text-[12px] sm:text-[13px] leading-5 sm:leading-6 transition-colors duration-500 ${
-              isCurrent ? "text-white/75" : isPast ? "text-slate-600" : "text-slate-500"
+            className={`mt-1 text-xs sm:text-[13px] leading-5 sm:leading-6 transition-colors duration-500 ${
+              isCurrent ? "text-white/75" : isPast ? "text-(--color-muted)" : "text-(--color-muted)"
             }`}
           >
             {m.body}
@@ -158,9 +158,9 @@ export default function ScrollTimeline({ milestones }: ScrollTimelineProps) {
   return (
     <div ref={containerRef} className="relative">
       {/* Animated progress line */}
-      <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-slate-200 sm:-translate-x-1/2">
+      <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-(--color-line) sm:-translate-x-1/2">
         <div
-          className="absolute top-0 left-0 w-full bg-gradient-to-b from-(--color-teal) to-(--color-yellow) transition-[height] duration-300"
+          className="absolute top-0 left-0 w-full bg-linear-to-b from-(--color-teal) to-(--color-yellow) transition-[height] duration-300"
           style={{ height: `${lineProgress * 100}%` }}
         />
         {/* Glowing pointer */}

@@ -16,10 +16,10 @@ type OpenRolesProps = {
 
 const departmentColors: Record<string, string> = {
   Finance: colors.teal,
-  "Human Resources": "#8b5cf6",
-  "Digital Marketing": "#f59e0b",
+  "Human Resources": "#10b981",
+  "Digital Marketing": "#f50e0b",
   "Information Technology": "#066a9c",
-  "Customer Support": "#10b981",
+  "Customer Support": "#8b5cf6",
   Administration: "#6366f1",
 };
 
@@ -64,7 +64,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
                   <button
                     key={type}
                     onClick={() => setActiveType(type)}
-                    className={`relative flex items-center gap-1.5 pb-2.5 text-[13px] font-bold transition-colors ${
+                    className={`relative flex items-center gap-1.5 pb-2.5 text-sm font-bold transition-colors ${
                       active ? "text-white" : "text-white/50 hover:text-white/80"
                     }`}
                   >
@@ -87,9 +87,9 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
       <div className="section-ruled section-paper px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-5xl">
           {loading && (
-            <div className="border border-slate-200 bg-white py-10 text-center">
+            <div className="border border-(--color-line) bg-white py-10 text-center">
               <div className="mx-auto mb-2 h-5 w-5 animate-spin rounded-full border-2 border-(--color-teal) border-t-transparent" />
-              <p className="text-sm text-slate-500">{t("openRoles.loading")}</p>
+              <p className="text-sm text-(--color-muted)">{t("openRoles.loading")}</p>
             </div>
           )}
 
@@ -99,52 +99,49 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
                 const dc = departmentColors[role.department] || colors.teal;
                 return (
                   <Reveal key={role._id || role.title} delay={(i % 8) * 0.03} amount={0.1}>
-                    <div className="group relative flex flex-col gap-2 border-b border-slate-100 px-4 py-5 transition-colors last:border-none hover:bg-(--color-soft)/70 sm:flex-row sm:items-center sm:gap-6 sm:px-6">
+                    <div className="group relative flex flex-col gap-2 border-b border-(--color-line)/70 px-4 py-5 transition-colors last:border-none hover:bg-(--color-soft)/70 sm:flex-row sm:items-center sm:gap-6 sm:px-6">
                       <span
                         aria-hidden="true"
                         className="absolute inset-y-0 left-0 w-0.75"
                         style={{ backgroundColor: dc }}
                       />
 
-                      <div className="pl-2 sm:w-36 sm:shrink-0 sm:pl-2">
-                        <span
-                          className="text-[9px] font-bold uppercase tracking-wider"
-                          style={{ color: dc }}
-                        >
-                          {role.department}
-                        </span>
-                      </div>
-
                       <div className="min-w-0 flex-1 pl-2 sm:pl-0">
-                        <div className="flex flex-wrap items-baseline gap-x-2">
-                          <h3 className="font-display text-[14px] sm:text-[15px] font-bold text-slate-900 leading-snug transition-colors group-hover:text-(--color-teal)">
-                            {role.title}
-                          </h3>
-                          <span className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">
+                        <div className="flex flex-wrap items-center gap-x-2">
+                          <span
+                            className="text-[10px] font-bold uppercase tracking-wider"
+                            style={{ color: dc }}
+                          >
+                            {role.department}
+                          </span>
+                          <span className="text-[11px] font-semibold uppercase tracking-wide text-(--color-muted)">
                             {role.type}
                           </span>
                         </div>
+                        <h3 className="font-display mt-0.5 text-sm sm:text-[15px] font-bold text-(--color-ink) leading-snug transition-colors group-hover:text-(--color-teal)">
+                          {role.title}
+                        </h3>
 
                         {/* Company + location as capsules; requirements stay as plain text so the row doesn't turn into a wall of pills */}
                         <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
                           {role.company && (
-                            <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-(--color-mist) px-2 py-0.5 text-[11px] font-medium text-(--color-muted)">
                               <Building2 size={10} />
                               {role.company}
                             </span>
                           )}
                           {role.location && (
-                            <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-(--color-mist) px-2 py-0.5 text-[11px] font-medium text-(--color-muted)">
                               <MapPin size={10} />
                               {role.location}
                             </span>
                           )}
                           {role.requirements && role.requirements.length > 0 && (
-                            <span className="flex flex-wrap items-center gap-x-1.5 text-[11px] text-slate-400">
-                              <span className="text-slate-300">·</span>
+                            <span className="flex flex-wrap items-center gap-x-1.5 text-xs text-(--color-muted)">
+                              <span className="text-(--color-muted)/50">·</span>
                               {role.requirements.slice(0, 3).join(" · ")}
                               {role.requirements.length > 3 && (
-                                <span className="text-slate-300">
+                                <span className="text-(--color-muted)/70">
                                   +{role.requirements.length - 3}
                                 </span>
                               )}
@@ -155,10 +152,10 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
 
                       <Link
                         to={`/careers/apply?role=${encodeURIComponent(role.title)}&dept=${encodeURIComponent(role.department)}`}
-                        className="inline-flex shrink-0 items-center gap-1 pl-2 text-[12px] font-bold text-(--color-teal) transition-transform sm:ml-auto sm:pl-0 sm:group-hover:translate-x-0.5"
+                        className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-full bg-(--color-yellow) px-4 py-2 text-[13px] font-bold text-(--color-yellow-ink) shadow-[0_4px_14px_rgba(242,242,49,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright) sm:ml-auto"
                       >
                         {t("careersPage.apply")}
-                        <ArrowRight size={13} strokeWidth={2.5} />
+                        <ArrowRight size={14} strokeWidth={2.5} />
                       </Link>
                     </div>
                   </Reveal>
@@ -167,7 +164,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
 
               {filteredRoles.length === 0 && (
                 <div className="px-5 py-10 text-center">
-                  <p className="text-sm text-slate-500">
+                  <p className="text-sm text-(--color-muted)">
                     {t("openRoles.noPositions", { type: activeType.toLowerCase() })}
                   </p>
                 </div>

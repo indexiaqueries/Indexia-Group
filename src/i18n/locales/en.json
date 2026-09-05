@@ -23,18 +23,18 @@
       "tag": "Indexia Group",
       "heading": "One Group. Multiple Solutions.",
       "tagline": "",
-      "sub": "From Finance and Warehousing to Agro and Advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
-      "motto": "Some steps to serve the nation"
+      "sub": "From Finance and Warehousing to Agro Bio and Advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
+      "motto": "Some Steps to Serve The Nation"
     },
     "p1": {
       "tag": "Indexia Finance",
       "heading": "An Entire Loan Destination.",
-      "sub": "You may apply to our portal for any kind loan at www.indexiafinance.com. We provide our services globally, in India, we are business partners with 43 banks and NBFCs."
+      "sub": "You may apply to our portal for any kind loan at -> www.indexiafinance.com. We provide our services globally, in India, we are business partners with 43 banks and NBFCs."
     },
     "p2": {
       "tag": "Indexia Finserve Pvt. Ltd.",
       "heading": "The Next Gen Finance Method.",
-      "sub": "Now the right bank will come at your doorstep."
+      "sub": "Now the right Bank will come at your doorstep."
     },
     "p3": {
       "tag": "Indexia Overseas Pvt. Ltd.",
@@ -72,7 +72,7 @@
     "nextPanel": "Next panel"
   },
   "footer": {
-    "tagline": "Some steps to serve the nation",
+    "tagline": "Some Steps to Serve The Nation",
     "taglineSecondary": "Diverse Ventures. Unified Vision.",
     "blurb": "Eight trusted businesses under one diversified Indian group, Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support, built on integrity and results.",
     "followUs": "Follow Us",
@@ -360,7 +360,7 @@
     }
   },
   "form": {
-    "eyebrow": "Send Your Enquiry",
+    "eyebrow": "Enquiry Form",
     "intro": "Complete the form below and your enquiry will be addressed by our team.",
     "name": "Name",
     "namePlaceholder": "Your full name",
@@ -1471,7 +1471,7 @@
   },
   "careersHero": {
     "description": "Eight companies. One team. Build your career across Finance, Export, Agriculture, Security, Advertising, and Athlete Development.",
-    "companiesOneGroup": "companies, one group",
+    "companiesOneGroup": "Companies, One Group",
     "sectors": {
       "finance": "Finance",
       "export": "Export",

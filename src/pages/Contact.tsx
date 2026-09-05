@@ -99,7 +99,7 @@ const Contact = () => {
       <section id="branches" className="section-ruled pt-5 sm:pt-4 lg:pt-6" style={{ background: 'rgba(2,16,26,0.08)' }}>
         <div className="mx-auto max-w-7xl">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <h2 className="text-2xl font-extrabold text-slate-900 sm:text-4xl">
+            <h2 className="text-2xl font-extrabold text-(--color-ink) sm:text-4xl">
               {t("contact.locationsTitleStart")}
               <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
             </h2>
@@ -109,14 +109,14 @@ const Contact = () => {
             {/* Scroll arrows, outside overflow so they're never clipped */}
             <button
               onClick={() => scrollLocations(-1)}
-              className="absolute -inset-s-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-700 shadow-lg ring-1 ring-slate-200 transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
+              className="absolute left-1 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-(--color-ink-soft) shadow-lg ring-1 ring-(--color-line) transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
               aria-label="Scroll left"
             >
               <ChevronLeft size={18} />
             </button>
             <button
               onClick={() => scrollLocations(1)}
-              className="absolute -inset-e-4 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-700 shadow-lg ring-1 ring-slate-200 transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
+              className="absolute right-1 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-(--color-ink-soft) shadow-lg ring-1 ring-(--color-line) transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
               aria-label="Scroll right"
             >
               <ChevronRight size={18} />
@@ -125,14 +125,14 @@ const Contact = () => {
             {/* Scrollable area, clips only on x, not y */}
             <div
               ref={scrollRef}
-              className="flex gap-5 overflow-x-auto scroll-smooth pt-6 pb-10"
+              className="flex gap-5 overflow-x-auto scroll-smooth px-12 pt-6 pb-10"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
               {branches.map((branch, index) => (
                 <GlowingCard
                   key={branch.name}
                   glowColor={['#26ae90', '#f2f231', '#066a9c', '#94a3b8'][index % 4]}
-                  className="shrink-0 w-[calc((100%-2.5rem)/3)] min-w-55 border-slate-200/80 bg-white p-0 hover:shadow-[0_24px_64px_rgba(2,16,26,0.14)]"
+                  className="shrink-0 w-[calc((100%-2.5rem)/3)] min-w-55 border-(--color-line)/80 bg-white p-0 hover:shadow-[0_24px_64px_rgba(2,16,26,0.14)]"
                 >
                   <LocationCard location={branch} delay={index * 0.08} tone="light" />
                 </GlowingCard>
@@ -142,7 +142,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="section-ruled section-paper px-4 py-5">
+      <section className="section-ruled">
             <SocialLinks />
       </section>
     </main>

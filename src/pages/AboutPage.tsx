@@ -80,7 +80,7 @@ const AboutPage = () => {
           {tr("titleStart", "Some steps to ")}<br />
           <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
         </h1>
-        <p className="fade-up mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm uppercase tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80" style={{ animationDelay: "0.23s" } as CSSProperties}>
+        <p className="fade-up mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80" style={{ animationDelay: "0.23s" } as CSSProperties}>
           {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
         </p>
         <p className="fade-up mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80" style={{ animationDelay: "0.32s" } as CSSProperties}>
@@ -110,7 +110,7 @@ const AboutPage = () => {
                 <span className="font-display text-[13px] sm:text-sm font-bold text-white">
                   {tr("founderPersonName", "Bijendra Malik")}
                 </span>
-                <span className="block font-ledger text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-yellow)">
+                <span className="block font-ledger text-xs font-bold uppercase tracking-[0.2em] text-(--color-yellow)">
                   {tr("founderRole", "Founder & Managing Director")}
                 </span>
               </div>
@@ -155,7 +155,7 @@ const AboutPage = () => {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <div className="mt-3 space-y-2 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-slate-600">
+              <div className="mt-3 space-y-2 text-[14px] sm:text-[15px] leading-6 sm:leading-7 text-(--color-muted)">
                 <p>{tr("storyBody1", "From a small office in Mumbai, Indexia Group has grown into a diversified business conglomerate spanning multiple industries across India and beyond.")}</p>
                 <p>{tr("storyBody2", "Today, we operate eight distinct companies, each contributing to the nation's economic growth while maintaining our core values of integrity, innovation, and excellence.")}</p>
               </div>
@@ -196,10 +196,10 @@ const AboutPage = () => {
                   <span className="font-ledger text-lg font-bold text-(--color-teal)">
                     {String(i).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-1.5 text-[13px] sm:text-sm font-bold text-slate-800 leading-tight">
+                  <h3 className="mt-1.5 text-[13px] sm:text-sm font-bold text-(--color-ink) leading-tight">
                     {tr(`value${i}Title`, "Integrity")}
                   </h3>
-                  <p className="mt-1.5 text-[12px] sm:text-[13px] leading-5 text-slate-600 group-hover:text-slate-800">
+                  <p className="mt-1.5 text-[12px] sm:text-[13px] leading-5 text-(--color-muted) group-hover:text-(--color-ink)">
                     {tr(`value${i}Body`, "Building trust through transparent business practices.")}
                   </p>
                 </div>
@@ -270,11 +270,9 @@ const AboutPage = () => {
                     <span>
                       <span className="font-semibold text-white/70">Est.:</span> {company.founded}
                     </span>
-                    <span
-                      aria-hidden="true"
-                      className="inline-flex items-center text-(--color-yellow) transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                    >
+                    <span className="inline-flex items-center gap-1.5 font-ledger text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-yellow) transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
                       {isExternal ? <ExternalLink size={13} strokeWidth={2.5} /> : <ArrowUpRight size={13} strokeWidth={2.5} />}
+                      {t("companyLinkCard.visitPage")}
                     </span>
                   </div>
                 </>

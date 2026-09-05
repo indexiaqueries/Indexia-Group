@@ -7,9 +7,9 @@ import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 
 const emailAddresses = [
-  { email: "contactus@indexiagroup.com", color: accent.blue },
-  { email: "indexia.queries@gmail.com", color: accent.blue },
-  { email: "Vini.Malik5@gmail.com", color: accent.blue },
+  { email: "contactus@indexiagroup.com", labelKey: "contactInfo.emailGeneralEnquiries", color: accent.blue },
+  { email: "indexia.queries@gmail.com", labelKey: "contactInfo.emailQueries", color: accent.blue },
+  { email: "Vini.Malik5@gmail.com", labelKey: "contactInfo.emailViniMalik", color: accent.blue },
 ];
 
 const EmailsSection = () => {
@@ -25,16 +25,21 @@ const EmailsSection = () => {
         {t("contactInfo.enquiries")}
       </Eyebrow>
       <div className="mt-4 space-y-3">
-        {emailAddresses.map(({ email, color }) => (
-          <a key={email} href={`mailto:${email}`} className="group flex items-center gap-4">
+        {emailAddresses.map(({ email, labelKey, color }) => (
+          <a key={email} href={`mailto:${email}`} className="group flex items-start gap-4">
             <span
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white shadow-md"
+              className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white shadow-md"
               style={{ backgroundColor: color, boxShadow: `0 4px 14px ${color}33` }}
             >
               <Mail size={18} />
             </span>
-            <span className="min-w-0 break-all text-sm font-semibold text-slate-800 group-hover:text-(--color-teal-deep)">
-              {email}
+            <span className="min-w-0">
+              <span className="block font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-muted)">
+                {t(labelKey)}
+              </span>
+              <span className="block break-all text-sm font-semibold text-(--color-ink) group-hover:text-(--color-teal-deep)">
+                {email}
+              </span>
             </span>
           </a>
         ))}
@@ -46,14 +51,14 @@ const EmailsSection = () => {
 const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[number]) => {
   const { t } = useTranslation();
   return (
-    <a href={href} className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm transition-all duration-200 hover:border-(--color-teal)/40 hover:shadow-md">
+    <a href={href} className="group inline-flex items-center gap-2 rounded-full border border-(--color-line) bg-white px-3 py-1.5 shadow-sm transition-all duration-200 hover:border-(--color-teal)/40 hover:shadow-md">
       <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent.blue }}>
         <Phone size={12} />
       </span>
-      <span className="text-[10px] font-bold uppercase tracking-wide" style={{ color: accent.gray }}>
+      <span className="text-[10px] font-bold uppercase tracking-wide text-(--color-muted)">
         {labelKey ? t(`phoneLabel.${labelKey}`, { defaultValue: label }) : label}
       </span>
-      <span className="text-[13px] font-bold text-slate-800 group-hover:text-(--color-teal-deep)" style={monoFont}>
+      <span className="text-sm font-bold text-(--color-ink) group-hover:text-(--color-teal-deep)" style={monoFont}>
         {number}
       </span>
     </a>
@@ -69,11 +74,11 @@ const ContactInfo = () => {
       <Eyebrow size="md" color={accent.green}>
         {t("contactInfo.eyebrow")}
       </Eyebrow>
-      <h2 className="font-display mt-3 text-[clamp(24px,3.4vw,40px)] font-bold leading-[1.08] text-slate-900">
+      <h2 className="font-display mt-3 text-[clamp(24px,3.4vw,40px)] font-bold leading-[1.08] text-(--color-ink)">
         {t("contactInfo.headlineStart")}
         <span style={{ color: accent.blue }}>{t("contactInfo.headlineAccent")}</span>
       </h2>
-      <p className="mt-4 sm:mt-5 max-w-lg text-[13px] sm:text-sm leading-6 sm:leading-7 text-slate-500">
+      <p className="mt-4 sm:mt-5 max-w-lg text-sm leading-6 sm:leading-7 text-(--color-muted)">
         {t("contactInfo.paragraph")}
       </p>
 
@@ -82,7 +87,7 @@ const ContactInfo = () => {
       </div>
 
       <div className="mt-6 sm:mt-8">
-        <span className="mb-3 block font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+        <span className="mb-3 block font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-muted)">
           {t("contactInfo.phoneNumbers")}
         </span>
         <div className="flex flex-wrap gap-2">

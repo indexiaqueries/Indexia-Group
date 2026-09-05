@@ -44,7 +44,7 @@ const HeroGalleryThumb = ({
       aria-label={`Show ${panel.tag}`}
       aria-current={isActive}
       tabIndex={isOriginal ? 0 : -1}
-      className={`thumb-tilt group relative shrink-0 w-28 h-18 sm:w-36 sm:h-22 rounded-xl overflow-hidden border-2 shadow-[0_6px_24px_rgba(0,0,0,0.4)] ${
+      className={`thumb-tilt group relative shrink-0 w-32 h-20 sm:w-44 sm:h-26 rounded-xl overflow-hidden border-2 shadow-[0_6px_24px_rgba(0,0,0,0.4)] ${
         isActive ? "border-(--color-yellow)" : "border-white/25 hover:border-white/60"
       } ${pulse ? "thumb-snap-active" : ""}`}
     >
@@ -69,7 +69,7 @@ const HeroGalleryThumb = ({
         </svg>
       </span>
 
-      <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-[rgba(10,34,51,0.92)] to-transparent font-ledger text-[9px] font-semibold text-white px-2 py-1.5 text-start truncate">
+      <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-[rgba(10,34,51,0.92)] to-transparent font-ledger text-[10px] sm:text-[11px] font-semibold leading-tight text-white px-2 py-2 text-start line-clamp-2">
         {panel.tag}
       </span>
     </button>

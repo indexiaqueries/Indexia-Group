@@ -61,7 +61,7 @@ const SectorTicker = () => {
           {loop.map((sector, i) => (
             <li
               key={`${sector}-${i}`}
-              className="flex shrink-0 items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50 sm:text-xs"
+              className="flex shrink-0 items-center gap-8 text-[11px] font-semibold tracking-[0.18em] text-white/50 sm:text-xs"
             >
               {sector}
               <span className="text-(--color-yellow)/60" aria-hidden="true">
@@ -77,7 +77,7 @@ const SectorTicker = () => {
           {loop.map((sector, i) => (
             <li
               key={`dup-${sector}-${i}`}
-              className="flex shrink-0 items-center gap-8 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50 sm:text-xs"
+              className="flex shrink-0 items-center gap-8 text-[11px] font-semibold tracking-[0.18em] text-white/50 sm:text-xs"
             >
               {sector}
               <span className="text-(--color-yellow)/60" aria-hidden="true">
@@ -137,7 +137,7 @@ const CareersHero = () => {
             </h1>
           </div>
 
-          <p className="mt-4 max-w-xl text-[13px] sm:text-[15px] leading-6 sm:leading-7 text-white/70">
+          <p className="mt-4 max-w-xl text-sm sm:text-[15px] leading-6 sm:leading-7 text-white/70">
             {t("careersHero.description")}
           </p>
 
@@ -173,7 +173,7 @@ const CareersHero = () => {
               <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-xs font-bold text-(--color-yellow)">
                 8
               </span>
-              <span className="text-[11px] uppercase tracking-[0.14em] sm:text-xs">
+              <span className="text-[11px] tracking-[0.14em] sm:text-xs">
                 {t("careersHero.companiesOneGroup")}
               </span>
             </div>

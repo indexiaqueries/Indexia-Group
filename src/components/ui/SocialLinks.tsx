@@ -44,7 +44,7 @@ const SocialLinks: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative overflow-hidden px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="relative overflow-hidden px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
       {/* Decorative background glows (theme vars) */}
       <div
         aria-hidden="true"
@@ -56,7 +56,7 @@ const SocialLinks: React.FC = () => {
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-(--color-yellow)/5 blur-[120px]"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-105 w-105 -translate-x-1/2 -translate-y-1/2 rounded-full bg-(--color-yellow)/5 blur-[120px]"
       />
 
       <div className="relative mx-auto max-w-6xl">
@@ -67,7 +67,7 @@ const SocialLinks: React.FC = () => {
               <span className="inline-block h-0.5 w-8 bg-(--color-teal)" />
               <span>{t("socialLinks.stayConnected")}</span>
             </div>
-            <h2 className="text-[28px] font-bold leading-tight tracking-tight text-(--color-ink) sm:text-[34px] lg:text-[40px]">
+            <h2 className="text-[clamp(28px,3.4vw,40px)] font-bold leading-tight tracking-tight text-(--color-ink)">
               {t("socialLinks.follow")} <span className="text-(--color-teal)">Indexia Finance</span>
             </h2>
             <p className="mt-2 max-w-lg text-sm leading-relaxed text-(--color-muted)">
@@ -85,8 +85,8 @@ const SocialLinks: React.FC = () => {
           </div>
         </div>
 
-        {/* Cards — fanned deck */}
-        <div className="grid grid-cols-1 gap-4 min-[400px]:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-5 lg:gap-6">
+        {/* Cards — fanned deck, constrained so cards stay compact instead of stretching full width */}
+        <div className="mx-auto grid w-full max-w-4xl grid-cols-1 gap-4 min-[400px]:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-5 lg:gap-6">
           {socialLinks.map((social, index) => {
             const Icon = social.icon;
             const fan = index % 2 === 1 ? "lg:rotate-1" : "lg:-rotate-1";
@@ -106,7 +106,7 @@ const SocialLinks: React.FC = () => {
                     <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
 
-                  <span className="text-[13px] font-medium tracking-tight text-(--color-ink) transition-colors duration-300 group-hover:text-(--brand) sm:text-sm">
+                  <span className="text-sm font-medium tracking-tight text-(--color-ink) transition-colors duration-300 group-hover:text-(--brand)">
                     {social.name}
                   </span>
 

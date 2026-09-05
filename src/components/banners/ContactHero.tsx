@@ -28,14 +28,14 @@ const ContactHero = () => {
           {t("contactHero.title")}
         </h1>
 
-        <p className="mt-4 sm:mt-5 max-w-xl text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-white/75">
+        <p className="mt-4 sm:mt-5 max-w-xl text-sm leading-6 sm:leading-7 text-white/75">
           {t("contactHero.paragraph")}
         </p>
 
         <div className="mt-5 sm:mt-6 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#enquiry-form"
-            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
             style={{ backgroundColor: colors.yellow }}
           >
             {t("contactHero.sendEnquiry")}
@@ -44,7 +44,7 @@ const ContactHero = () => {
 
           <a
             href="tel:+918655168551"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 sm:px-6 sm:py-3 text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-navy)"
+            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-navy)"
           >
             <Phone size={17} />
             {t("contactHero.callNow")}
@@ -52,7 +52,7 @@ const ContactHero = () => {
         </div>
 
         <div
-          className="mt-6 sm:mt-8 flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2 sm:gap-y-3 border-t border-white/10 pt-4 sm:pt-5 text-[12px] sm:text-[13px] text-white/70"
+          className="mt-6 sm:mt-8 flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2 sm:gap-y-3 border-t border-white/10 pt-4 sm:pt-5 text-xs sm:text-sm text-white/70"
           style={monoFont}
         >
           <span>{t("contactHero.offices", { count: String(branches.length).padStart(2, "0") })}</span>
