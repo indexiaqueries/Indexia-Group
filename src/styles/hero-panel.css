@@ -13,7 +13,6 @@
     rgb(255 255 255 / 0.04) 28%,
     rgb(255 255 255 / 0) 55%
   );
-  -webkit-backdrop-filter: blur(12px); /* blur-md */
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(2px);
   box-shadow: 0 8px 32px rgb(2 16 26 / 0.45);
 }
