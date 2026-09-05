@@ -10,6 +10,7 @@ import EnquiryForm from "../components/contact/EnquiryForm";
 import { branches } from "../data/contact";
 import { GlowingCard } from "../components/lightswind/glowing-cards";
 import { accent } from "../lib/theme"
+import SocialLinks from "../components/ui/SocialLinks";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -139,6 +140,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section-ruled section-paper px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
+            <SocialLinks />
       </section>
     </main>
   );

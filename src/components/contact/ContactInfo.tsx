@@ -7,8 +7,8 @@ import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 
 const emailAddresses = [
-  { email: "contactus@indexiagroup.com", color: accent.green },
-  { email: "indexia.queries@gmail.com", color: accent.green },
+  { email: "contactus@indexiagroup.com", color: accent.blue },
+  { email: "indexia.queries@gmail.com", color: accent.blue },
   { email: "Vini.Malik5@gmail.com", color: accent.blue },
 ];
 

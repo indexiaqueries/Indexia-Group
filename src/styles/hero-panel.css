@@ -1,12 +1,7 @@
-/* Frosted-glass hero text panels.
-   Mirrors the home hero slide card so every non-home hero reads the same.
-   Glass is deep NAVY (not black) — the brand's register plates are navy. */
 .hero-panel-glass {
-  border-radius: 1.5rem; /* rounded-3xl */
+  border-radius: 1.5rem;
   border: 1px solid rgb(255 255 255 / 0.16);
-  background-color: rgb(10 34 51 / 0.74); /* navy-deep */
-  /* Subtle frosted top-edge highlight so the glass reads on dark backdrops.
-     Painted as a background layer, i.e. behind the panel content. */
+  background-color: rgb(10 34 51 / 0.74);
   background-image: linear-gradient(
     to bottom,
     rgb(255 255 255 / 0.1),

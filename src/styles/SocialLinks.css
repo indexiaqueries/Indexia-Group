@@ -1,0 +1,396 @@
+.indexia-socials::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  right: -180px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(25, 75, 135, 0.09) 0%,
+    rgba(25, 75, 135, 0) 70%
+  );
+  pointer-events: none;
+}
+
+.indexia-socials::after {
+  content: "";
+  position: absolute;
+  bottom: -280px;
+  left: -180px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(25, 75, 135, 0.06) 0%,
+    rgba(25, 75, 135, 0) 70%
+  );
+  pointer-events: none;
+}
+
+.indexia-socials__container {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+.indexia-socials__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+
+.indexia-socials__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.indexia-socials__line {
+  display: block;
+  width: 34px;
+  height: 1px;
+  background: #174b82;
+}
+
+.indexia-socials__heading-wrap {
+  max-width: 690px;
+}
+
+.indexia-socials__heading {
+  margin: 0 0 14px;
+
+  color: #10243e;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.indexia-socials__heading span {
+  color: #174b82;
+}
+
+.indexia-socials__description {
+  max-width: 590px;
+  margin: 0;
+
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+/* ------------------------------
+   Social Grid
+------------------------------ */
+
+.indexia-socials__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+/* ------------------------------
+   Social Card
+------------------------------ */
+
+.indexia-social-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 205px;
+  padding: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(15, 35, 58, 0.08);
+  border-radius: 3px;
+
+  background: rgba(255, 255, 255, 0.78);
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.indexia-social-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(23, 75, 130, 0.22);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px rgba(15, 35, 58, 0.08),
+    0 3px 10px rgba(15, 35, 58, 0.03);
+}
+
+/* ------------------------------
+   Icon
+------------------------------ */
+
+.indexia-social-card__icon {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: auto;
+
+  border: 1px solid rgba(23, 75, 130, 0.12);
+  border-radius: 50%;
+
+  background: #f3f6f9;
+  color: #174b82;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.indexia-social-card:hover .indexia-social-card__icon {
+  transform: scale(1.06);
+  background: #174b82;
+  color: #ffffff;
+}
+
+/* ------------------------------
+   Content
+------------------------------ */
+
+.indexia-social-card__content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.indexia-social-card__name {
+  color: #10243e;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.indexia-social-card__handle {
+  color: #8a97a8;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ------------------------------
+   Arrow
+------------------------------ */
+
+.indexia-social-card__arrow {
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  color: #94a0ae;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.indexia-social-card:hover .indexia-social-card__arrow {
+  color: #174b82;
+  transform: translate(3px, -3px);
+}
+
+/* ------------------------------
+   Hover Glow
+------------------------------ */
+
+.indexia-social-card__glow {
+  position: absolute;
+  right: -55px;
+  bottom: -70px;
+
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(23, 75, 130, 0.08) 0%,
+    rgba(23, 75, 130, 0) 70%
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+.indexia-social-card:hover .indexia-social-card__glow {
+  opacity: 1;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+.indexia-socials__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 22px;
+
+  color: #8a97a8;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.indexia-socials__footer-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #174b82;
+}
+
+/* ------------------------------
+   Tablet
+------------------------------ */
+
+@media (max-width: 1000px) {
+  .indexia-socials {
+    padding: 80px 0;
+  }
+
+  .indexia-socials__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .indexia-socials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ------------------------------
+   Mobile
+------------------------------ */
+
+@media (max-width: 650px) {
+  .indexia-socials {
+    padding: 65px 0;
+  }
+
+  .indexia-socials__container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .indexia-socials__header {
+    margin-bottom: 32px;
+  }
+
+  .indexia-socials__heading {
+    font-size: 34px;
+  }
+
+  .indexia-socials__description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .indexia-socials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .indexia-social-card {
+    min-height: 175px;
+    padding: 20px;
+  }
+
+  .indexia-social-card__icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .indexia-social-card__arrow {
+    top: 20px;
+    right: 18px;
+  }
+
+  .indexia-socials__footer {
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .indexia-socials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .indexia-social-card {
+    min-height: 145px;
+  }
+}
+
+/* ------------------------------
+   Accessibility
+------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  .indexia-social-card,
+  .indexia-social-card__icon,
+  .indexia-social-card__arrow,
+  .indexia-social-card__glow {
+    transition: none;
+  }
+
+  .indexia-social-card:hover {
+    transform: none;
+  }
+}
+
+.indexia-social-card:focus-visible {
+  outline: 2px solid #174b82;
+  outline-offset: 3px;
+}

@@ -4,22 +4,11 @@ import { useTranslation } from "react-i18next";
 import { companies } from "../../data/companies";
 
 type RegisterTabsProps = {
-  /** Slug of the company currently open (no active tab on group pages). */
   activeSlug?: string;
   className?: string;
 };
 
-/**
- * The catalogue edge — the group's eight entries as an index spine.
- *
- * A continuous navy rule (the register spine) runs beneath the entries.
- * Each entry is a quiet numbered line standing on the spine; the open entry
- * is a yellow folder tab resting on it, so a visitor always knows where they
- * stand in the register (entry 4 of 8). Companies with their own external
- * portal open in a new tab.
- */
 const stripBrand = (name: string) => {
-  // "Indexia Finserve Pvt. Ltd." → "Finserve"; "إندكسيا فاينانس" → "فاينانس"
   const rest = name.trim().split(/\s+/).slice(1);
   const cleaned = rest
     .filter((w) => !/^(pvt|private|limited|ltd|inc|corp|group)\.?$/i.test(w))
@@ -34,11 +23,8 @@ const RegisterTabs = ({ activeSlug, className = "" }: RegisterTabsProps) => {
   return (
     <nav
       aria-label={registerLabel}
-      className={`overflow-x-auto border-t border-(--color-line) bg-white [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${className}`}
+      className={`overflow-x-auto border-t border-(--color-line) bg-white scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${className}`}
     >
-      {/* The register spine — entries stand on this rule; the folder tab rests on it.
-          The entries center on the spine when they fit and scroll from the start
-          (RTL-aware) when the viewport is too narrow. */}
       <div className="flex w-max min-w-full items-end justify-center gap-1 border-b-2 border-(--color-navy) px-2 pt-2 sm:gap-2 sm:px-4">
         {companies.map((company, i) => {
           const no = String(i + 1).padStart(2, "0");
