@@ -6,4 +6,6 @@ Disallow: /careers/apply
 Disallow: /warehouse-brochure
 Disallow: /advertising-brochure
 
+Disallow: /*?lang=
+
 Sitemap: https://www.indexiagroup.com/sitemap.xml

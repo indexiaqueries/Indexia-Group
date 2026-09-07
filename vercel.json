@@ -3,6 +3,17 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": null,
+  "redirects": [
+    { "source": "/finance", "destination": "https://indexiafinance.com/", "permanent": true },
+    { "source": "/finserve", "destination": "https://indexiafinance.com/", "permanent": true },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "indexiagroup.com" }],
+      "destination": "https://www.indexiagroup.com/:path*",
+      "permanent": true
+    }
+  ],
+
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
