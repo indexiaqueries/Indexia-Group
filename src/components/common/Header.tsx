@@ -74,7 +74,7 @@ const Header = () => {
     <header ref={barRef} className="fixed inset-x-0 top-0 z-999 h-18 pointer-events-none sm:h-23">
       <div
         aria-hidden="true"
-        className="header-scrim pointer-events-none absolute inset-0"
+        className="header-scrim pointer-events-none absolute inset-0 bg-blur/[0.1] backdrop-blur-[5px] backdrop-saturate-100"
       />
 
       <NavLink
