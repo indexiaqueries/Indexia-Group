@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "21 Acres strategisches Landpacht-Hub mit Zugang zu 8 Autobahnen und 8 Bundesstaaten",
     "radialAdvertisingDesc": "Autobahn-Werbeplakate, die täglich Millionen von Pendlern erreichen",
     "radialFoundationDesc": "Förderung indischer Athleten von der Basis bis zu den Olympischen Spielen",
-    "hubLabel": "Hub",
+    "hubLabel": "Zentrum",
     "hubGroupLabel": "Gruppe",
     "hubDescription": "Acht spezialisierte Unternehmen mit einer gemeinsamen Vision.",
     "visionaryTitle": "Der Visionär hinter",
@@ -1188,7 +1188,7 @@
     "landline": "Festnetz",
     "mob": "Mobil",
     "mobile": "Mobil",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Brauchen Sie Hilfe?",

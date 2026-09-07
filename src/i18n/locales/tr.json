@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "8 otoyola ve 8 eyalete erişimli 21 dönümlük stratejik arazi kiralama merkezi",
     "radialAdvertisingDesc": "Otoyol reklam panoları",
     "radialFoundationDesc": "Temelden Olimpiyatlara kadar Hintli sporculara destek",
-    "hubLabel": "Hub",
+    "hubLabel": "Merkez",
     "hubGroupLabel": "Grup",
     "hubDescription": "Ortak bir vizyondan çalışan sekiz uzman işletme.",
     "visionaryTitle": "Indexia Grubunun",
@@ -1188,7 +1188,7 @@
     "landline": "Sabit hat",
     "mob": "Mobil",
     "mobile": "Cep",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Yardıma mı İhtiyacınız Var?",

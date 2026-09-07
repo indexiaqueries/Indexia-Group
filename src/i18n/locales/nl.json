@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "Strategisch landverhuurcentrum van 21 acre met toegang tot 8 autosnelwegen",
     "radialAdvertisingDesc": "Snelwegreclame billboards",
     "radialFoundationDesc": "Ondersteuning van Indiase atleten van basis tot Olympische Spelen",
-    "hubLabel": "Hub",
+    "hubLabel": "Centrum",
     "hubGroupLabel": "Groep",
     "hubDescription": "Acht gespecialiseerde bedrijven werkend vanuit één gedeelde visie.",
     "visionaryTitle": "De Visionair achter",
@@ -1188,7 +1188,7 @@
     "landline": "Vast",
     "mob": "Mobiel",
     "mobile": "Mobiel",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Hulp Nodig?",
@@ -1273,7 +1273,7 @@
     "valueCol": "Waarde"
   },
   "foundationGallery": {
-    "eyebrow": "Training & Media",
+    "eyebrow": "Training en Media",
     "title": "Onze Atleten in Actie",
     "videos": {
       "trackTraining": {

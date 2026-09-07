@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "Strategiczny hub wynajmu gruntów o powierzchni 21 akrów z dostępem do 8 autostrad",
     "radialAdvertisingDesc": "Reklama na billboardach autostradowych",
     "radialFoundationDesc": "Wsparcie dla sportowców indyjskich od podstaw do Igrzysk Olimpijskich",
-    "hubLabel": "Hub",
+    "hubLabel": "Centrum",
     "hubGroupLabel": "Grupa",
     "hubDescription": "Osiem wyspecjalizowanych firm działających z jednej wspólnej wizji.",
     "visionaryTitle": "Wizjoner stojący za",
@@ -1189,7 +1189,7 @@
     "landline": "Stacjonarny",
     "mob": "Komórka",
     "mobile": "Komórkowy",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Potrzebujesz Pomocy?",

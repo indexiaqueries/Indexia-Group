@@ -91,7 +91,7 @@
     "value1Body": "Fazemos o que dizemos. Cada relacionamento é construído sobre honestidade, transparência e respeito mútuo.",
     "value1Title": "Integridade",
     "value2Body": "Investimos em conhecimento profundo do domínio em cada vertical. Nossas equipes trazem habilidades especializadas e experiência do setor para cada engajamento.",
-    "value2Title": "Expertise",
+    "value2Title": "Experiência",
     "value3Body": "Negócios são, em última análise, sobre pessoas. Projetamos soluções que capacitam nossos clientes, apoiam nossas comunidades e criam oportunidades significativas para nossa equipe.",
     "value3Title": "Pessoas em Primeiro",
     "value4Body": "Abraçamos a mudança e melhoramos continuamente. De plataformas fintech à agricultura orgânica, investimos em ideias que impulsionam as indústrias para frente.",
@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "Centro de locação estratégico de 21 acres com acesso a 8 rodovias",
     "radialAdvertisingDesc": "Publicidade em painéis de rodovias",
     "radialFoundationDesc": "Apoio a atletas indianos da base até as Olimpíadas",
-    "hubLabel": "Hub",
+    "hubLabel": "Centro",
     "hubGroupLabel": "Grupo",
     "hubDescription": "Oito empresas especializadas trabalhando a partir de uma visão compartilhada.",
     "visionaryTitle": "O Visionário por trás do",
@@ -537,7 +537,7 @@
     "contactHeading": "Perguntas sobre esta política?",
     "followUs": "Follow Us",
     "contactUs": "Fale conosco",
-    "eyebrow": "Legal",
+    "eyebrow": "Jurídico",
     "lastUpdated": "Última atualização",
     "metaPrivacyDescription": "Leia a Política de Privacidade do Indexia Group, como coletamos, usamos, armazenamos e protegemos suas informações pessoais.",
     "metaTermsDescription": "Leia os Termos e Condições que regem o uso do site do Indexia Group e dos serviços de suas empresas.",
@@ -1188,7 +1188,7 @@
     "landline": "Fixo",
     "mob": "Celular",
     "mobile": "Telemóvel",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Precisa de Ajuda?",

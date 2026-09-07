@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "Strategiskt markuthyrningscenter på 21 acre med tillgång till 8 motorvägar",
     "radialAdvertisingDesc": "Motorvägsreklam på plakat",
     "radialFoundationDesc": "Stöd till indiska idrottare från basen till OS",
-    "hubLabel": "Hub",
+    "hubLabel": "Centrum",
     "hubGroupLabel": "Grupp",
     "hubDescription": "Åtta specialiserade företag som arbetar från en gemensam vision.",
     "visionaryTitle": "Visionären bakom",
@@ -1188,7 +1188,7 @@
     "landline": "Fast telefon",
     "mob": "Mobil",
     "mobile": "Mobil",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Behöver du hjälp?",

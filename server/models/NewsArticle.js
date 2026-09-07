@@ -3,10 +3,10 @@ import mongoose from "mongoose";
 const newsArticleSchema = new mongoose.Schema(
   {
     // NewsData.io fields
-    articleId: { type: String, index: true },          // article_id
+    articleId: { type: String, index: true },            // article_id
     title: { type: String, required: true },
     description: { type: String, default: "" },
-    link: { type: String, required: true }, // article URL from API
+    link: { type: String, required: true },              // article URL from API
     keywords: [{ type: String }],                        // keywords array
     creator: [{ type: String }],                         // creator / author names
     language: { type: String, default: "en" },

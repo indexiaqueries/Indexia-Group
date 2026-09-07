@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "Centro di locazione strategico di 21 acri con accesso a 8 autostrade",
     "radialAdvertisingDesc": "Pubblicità su cartelloni stradali",
     "radialFoundationDesc": "Supporto agli atleti indiani dalla base alle Olimpiadi",
-    "hubLabel": "Hub",
+    "hubLabel": "Centro",
     "hubGroupLabel": "Gruppo",
     "hubDescription": "Otto imprese specializzate che operano da una visione condivisa.",
     "visionaryTitle": "Il Visionario dietro",
@@ -1188,7 +1188,7 @@
     "landline": "Fisso",
     "mob": "Mobile",
     "mobile": "Cellulare",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "Serve Aiuto?",

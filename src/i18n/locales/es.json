@@ -110,7 +110,7 @@
     "radialWarehouseDesc": "Centro de arrendamiento de tierras estratégicas de 21 acres con acceso a 8 autopistas y 8 estados",
     "radialAdvertisingDesc": "Publicidad en vallas de carretera que alcanza a millones de viajeros diariamente",
     "radialFoundationDesc": "Apoyar a los atletas indios desde la base hasta los Juegos Olímpicos",
-    "hubLabel": "Hub",
+    "hubLabel": "Centro",
     "hubGroupLabel": "Grupo",
     "hubDescription": "Ocho empresas especializadas trabajando desde una visión compartida.",
     "visionaryTitle": "El Visionario detrás de",
@@ -1188,7 +1188,7 @@
     "landline": "Fijo",
     "mob": "Móvil",
     "mobile": "Móvil",
-    "tel": "Tel"
+    "tel": "Tel."
   },
   "securityTipsPage": {
     "contactsEyebrow": "¿Necesitas Ayuda?",
