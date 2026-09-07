@@ -16,6 +16,7 @@ export const accent = {
   green: "var(--color-teal)",
   blue: "var(--color-blue)",
   gray: "var(--color-gray)",
+  yellow: "var(--color-yellow)",
 } as const;
 
 export const displayFont = { fontFamily: "'Fraunces', Georgia, serif", fontOpticalSizing: "auto" } as const;

@@ -105,7 +105,7 @@ const PricingTable = ({
                 e.preventDefault();
                 onBook?.(item);
               }}
-              className="mt-auto inline-flex items-center justify-center rounded-full bg-(--color-teal) px-4 py-1.5 pt-1.5 text-[11.5px] font-bold text-white shadow-[0_4px_14px_rgba(38,174,144,0.25)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-teal-deep)"
+              className="mt-auto inline-flex items-center justify-center rounded-full bg-(--color-teal) px-4 py-1.5 pt-1.5 text-[11.5px] font-bold text-white shadow-[0_4px_14px_rgba(38,174,144,0.25)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
             >
               {item.ctaLabel}
             </button>

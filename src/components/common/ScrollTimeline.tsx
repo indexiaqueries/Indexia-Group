@@ -100,7 +100,7 @@ const MilestoneItem = ({
           </span>
           <h3
             className={`mt-2 font-display text-[14px] sm:text-[15px] font-bold transition-colors duration-500 ${
-              isCurrent ? "text-white" : isPast ? "text-(--color-ink)" : "text-(--color-muted)"
+              isCurrent ? "text-(--color-yellow)" : isPast ? "text-(--color-blue)" : "text-(--color-muted)"
             }`}
           >
             {m.title}

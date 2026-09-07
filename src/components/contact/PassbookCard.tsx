@@ -62,7 +62,7 @@ const PassbookCard = () => {
           {rows.map((row) => (
             <div key={row.label} className="flex items-baseline justify-between text-sm">
               <dt className="text-slate-500">{row.label}</dt>
-              <dd className="whitespace-nowrap font-semibold" style={{ ...monoFont, color: colors.inkDeep }}>
+              <dd className="whitespace-nowrap font-semibold" style={{ ...monoFont, color: colors.tealDeep }}>
                 {row.value}
               </dd>
             </div>

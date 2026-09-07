@@ -74,9 +74,9 @@ const ContactInfo = () => {
       <Eyebrow size="md" color={accent.green}>
         {t("contactInfo.eyebrow")}
       </Eyebrow>
-      <h2 className="font-display mt-3 text-[clamp(24px,3.4vw,40px)] font-bold leading-[1.08] text-(--color-ink)">
+      <h2 className="font-display mt-3 text-[clamp(24px,3.4vw,40px)] font-bold leading-[1.08] text-(--color-blue)">
         {t("contactInfo.headlineStart")}
-        <span style={{ color: accent.blue }}>{t("contactInfo.headlineAccent")}</span>
+        <span style={{ color: accent.green }}>{t("contactInfo.headlineAccent")}</span>
       </h2>
       <p className="mt-4 sm:mt-5 max-w-lg text-sm leading-6 sm:leading-7 text-(--color-muted)">
         {t("contactInfo.paragraph")}
@@ -87,7 +87,7 @@ const ContactInfo = () => {
       </div>
 
       <div className="mt-6 sm:mt-8">
-        <span className="mb-3 block font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-muted)">
+        <span className="mb-3 block font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-(--color-teal)">
           {t("contactInfo.phoneNumbers")}
         </span>
         <div className="flex flex-wrap gap-2">

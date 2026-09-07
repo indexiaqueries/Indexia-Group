@@ -56,7 +56,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const desc = tr("desc", b.desc);
   const overview = tr("overview", b.overview);
   const index = companies.findIndex((c) => c.name === b.name);
-  const entryNo = String(index + 1).padStart(2, "0");
   const Icon = companyIcons[b.name] ?? Sparkles;
   const marqueeItems = [tr("tag", b.tag), ...b.services.map((s, i) => tr(`services.${i}`, s))];
   // Home-hero slide copy for this company, already translated in every locale,
@@ -87,12 +86,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
       >
         <div className="hero-panel-glass fade-up relative max-w-5xl p-5 sm:p-8 lg:p-10">
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute -top-12 -inset-e-2 select-none font-display text-[clamp(110px,20vw,220px)] font-bold leading-none text-white/5 sm:-inset-e-8"
-          >
-            {entryNo}
-          </span>
           {showBackLink && (
             <Link
               to="/about"
@@ -103,10 +96,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           )}
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
-            {/* Sentence case: "Register Nº 03 / 08" is too long for all-caps */}
-            <p className="font-ledger font-bold text-xs tracking-[0.2em] text-(--color-yellow)">
-              {t("companyDetail.register", { no: entryNo })}
-            </p>
             <span
               className="rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] shadow-md"
               style={{ background: b.color, color: contrastText(b.color) }}
@@ -235,28 +224,24 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               </div>
 
               <div
-                className="absolute -bottom-5 inset-s-6 flex items-center gap-2.5 rounded-2xl px-4 py-2.5 shadow-xl ring-1 ring-black/10"
+                className="absolute -bottom-5 inset-s-6 flex items-center gap-2.5 rounded-2xl px-4 py-2.5 shadow-xl ring-1 ring-black/10 z-99"
                 style={{ background: b.color, color: contrastText(b.color) }}
               >
                 <Layers size={16} strokeWidth={2.5} aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-[0.16em]">
-                  {t("companyDetail.entryOf", { no: entryNo })}
-                </span>
               </div>
             </div>
           </Reveal>
 
           <div>
             <Eyebrow className="mb-3">{t("companyDetail.overviewEyebrow")}</Eyebrow>
-            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
+            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
               {t("companyDetail.overviewTitle", { name })}
             </h2>
             <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">{overview}</p>
 
-            <div className="mt-7 sm:mt-9 grid max-w-md grid-cols-3 gap-3 sm:gap-4">
+            <div className="mt-7 sm:mt-9 flex justify-evenly max-w-md gap-3 sm:gap-4">
               <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
               <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
-              <AnimatedCounter value={`${String(index + 1).padStart(2, "0")}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
             </div>
           </div>
         </div>
@@ -281,7 +266,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         />
         <div className="container relative py-14 lg:py-20">
           <Reveal className="max-w-2xl">
-            <Eyebrow color="var(--color-yellow)">{t("companyDetail.entryOf", { no: entryNo })}</Eyebrow>
             <h2 className="font-display mt-4 whitespace-pre-line text-[clamp(30px,4.5vw,54px)] font-bold leading-[1.05] text-white">
               {slideHeading}
             </h2>
@@ -298,7 +282,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         slug={b.slug}
         highlights={b.highlights}
         services={b.services}
-        entryNo={entryNo}
       />
 
       {/* Story split, second image + pull-quote */}
@@ -333,9 +316,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display mt-4 sm:mt-5 text-[clamp(22px,3.2vw,38px)] font-bold leading-[1.15] text-white">
               “{slideSub}”
             </h2>
-            <p className="font-ledger mt-4 sm:mt-6 text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-white/50">
-              {t("companyDetail.registerOf")} · {t("companyDetail.entryOf", { no: entryNo })}
-            </p>
             <a
               href="#company-services"
               className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
@@ -352,16 +332,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         <div className="container">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
-            <div className="mt-4 flex items-center justify-center gap-3">
-              <span className="h-px w-8" style={{ background: b.color }} aria-hidden="true" />
-              <span
-                className="font-ledger text-[11px] font-bold tracking-[0.22em]"
-                style={{ color: accentInk(b.color) }}
-              >
-                {String(b.services.length).padStart(2, "0")}
-              </span>
-              <span className="h-px w-8" style={{ background: b.color }} aria-hidden="true" />
-            </div>
           </Reveal>
 
           <div
@@ -424,10 +394,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             })}
           </div>
 
-          <div className="font-ledger mt-6 sm:mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-(--color-line) pt-4 text-[11px] font-bold uppercase tracking-[0.22em] text-(--color-muted)">
-            <span>{t("companyDetail.registerOf")}</span>
-            <span>{t("companyDetail.entryOf", { no: entryNo })}</span>
-          </div>
         </div>
       </section>
 
@@ -470,10 +436,10 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         <div className="container grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <Eyebrow className="mb-3">{t("companyDetail.eyebrow")}</Eyebrow>
-            <h2 className="font-display text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
+            <h2 className="font-display text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
               {enquiryBefore}
               {enquiryNameIndex >= 0 ? (
-                <span style={{ color: accent.blue }}>{name}</span>
+                <span style={{ color: accent.green }}>{name}</span>
               ) : (
                 enquiryHeading
               )}

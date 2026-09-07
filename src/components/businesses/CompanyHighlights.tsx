@@ -1,18 +1,16 @@
 import { useTranslation } from "react-i18next";
-import { Check } from "lucide-react";
 import Eyebrow from "../common/Eyebrow";
 import Reveal from "../common/Reveal";
-import { accentInk, contrastText } from "../../lib/color";
+import { contrastText } from "../../lib/color";
 
 type CompanyHighlightsProps = {
   color: string;
   slug: string;
   highlights: string[];
   services: string[];
-  entryNo?: string;
 };
 
-const CompanyHighlights = ({ color, slug, highlights, entryNo }: CompanyHighlightsProps) => {
+const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) => {
   const { t } = useTranslation();
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${slug}.${path}`, { defaultValue: fallback });
 
@@ -32,26 +30,9 @@ const CompanyHighlights = ({ color, slug, highlights, entryNo }: CompanyHighligh
       />
 
       <div className="container">
-        {/* Header */}          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
+        {/* Header */}
+        <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
           <Eyebrow>{t("companyDetail.keyEntries")}</Eyebrow>
-          <div className="mt-4 flex items-center justify-center gap-3">
-            <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
-            <span
-              className="font-ledger text-[11px] font-bold tracking-[0.22em]"
-              style={{ color: accentInk(color) }}
-            >
-              {String(highlights.length).padStart(2, "0")}
-            </span>
-            {entryNo && (
-              <>
-                <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
-                <span className="font-ledger text-[11px] font-bold tracking-[0.22em] text-(--color-muted)">
-                  {t("companyDetail.entryOf", { no: entryNo })}
-                </span>
-              </>
-            )}
-            <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
-          </div>
         </Reveal>
 
         {/* All key entries in a single row on desktop; the first keeps its coloured finish */}
@@ -94,25 +75,6 @@ const CompanyHighlights = ({ color, slug, highlights, entryNo }: CompanyHighligh
                   </span>
 
                   <div className="relative flex flex-1 flex-col">
-                    {/* Number + check row */}
-                    <div className="flex items-center gap-3">
-                      <span
-                        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110"
-                        style={
-                          isFeatured
-                            ? { background: `${contrastText(color)}33`, color: contrastText(color) }
-                            : { background: `linear-gradient(135deg, ${color}18, ${color}08)`, color: accentInk(color) }
-                        }
-                      >
-                        <Check size={16} strokeWidth={2.8} />
-                      </span>
-                      <span
-                        className="font-ledger text-xs font-bold tracking-[0.16em]"
-                        style={{ color: isFeatured ? contrastText(color) : accentInk(color) }}
-                      >
-                        {String(i).padStart(2, "0")}
-                      </span>
-                    </div>
 
                     <p className={`mt-3 text-sm font-semibold leading-6 sm:mt-4 sm:leading-7 ${isFeatured ? "text-white" : "text-(--color-ink-soft)"}`}>
                       {tr(`highlights.${idx}`, highlight)}

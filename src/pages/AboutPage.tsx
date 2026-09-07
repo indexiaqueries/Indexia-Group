@@ -71,21 +71,21 @@ const AboutPage = () => {
       {/* Hero */}
       <HeroBackdrop image={aboutBg}>
         <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-9 text-center sm:px-10 sm:py-11">
-        <div className="fade-up mb-4 flex items-center justify-center gap-3" style={{ animationDelay: "0.05s" } as CSSProperties}>
-          <span className="h-px w-8 bg-(--color-yellow)/70" />
-          <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
-          <span className="h-px w-8 bg-(--color-yellow)/70" />
-        </div>
-        <h1 className="fade-up font-display mx-auto mb-3 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
-          {tr("titleStart", "Some steps to ")}<br />
-          <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
-        </h1>
-        <p className="fade-up mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80" style={{ animationDelay: "0.23s" } as CSSProperties}>
-          {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
-        </p>
-        <p className="fade-up mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80" style={{ animationDelay: "0.32s" } as CSSProperties}>
-          {tr("subtitle", "Diverse Ventures. Unified Vision.")}
-        </p>
+          <div className="fade-up mb-4 flex items-center justify-center gap-3" style={{ animationDelay: "0.05s" } as CSSProperties}>
+            <span className="h-px w-8 bg-(--color-yellow)/70" />
+            <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
+            <span className="h-px w-8 bg-(--color-yellow)/70" />
+          </div>
+          <h1 className="fade-up font-display mx-auto mb-3 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
+            {tr("titleStart", "Some steps to ")}<br />
+            <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
+          </h1>
+          <p className="fade-up mx-auto mb-2 max-w-2xl font-ledger text-[11px] sm:text-sm tracking-[0.18em] sm:tracking-[0.2em] text-(--color-yellow)/80" style={{ animationDelay: "0.23s" } as CSSProperties}>
+            {tr("taglineSecondary", "Diverse Ventures. Unified Vision.")}
+          </p>
+          <p className="fade-up mx-auto max-w-2xl text-[12px] sm:text-sm leading-6 sm:leading-7 text-white/80" style={{ animationDelay: "0.32s" } as CSSProperties}>
+            {tr("subtitle", "Diverse Ventures. Unified Vision.")}
+          </p>
         </div>
       </HeroBackdrop>
 
@@ -149,7 +149,7 @@ const AboutPage = () => {
           <div>
             <Reveal>
               <Eyebrow className="mb-2">{tr("storyEyebrow", "Our Story")}</Eyebrow>
-              <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
+              <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-blue)">
                 {tr("storyTitle", "From a Shared Vision to a National Group")}
               </h2>
             </Reveal>
@@ -192,11 +192,11 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-4">
             {VALUES.map((i) => (
               <Reveal key={i} delay={(i - 1) * 0.06} amount={0.15}>
-              <div className="card-premium card-premium-hover group rounded-2xl p-3 backdrop-blur-xl sm:p-4">
+                <div className="card-premium card-premium-hover group rounded-2xl p-3 backdrop-blur-xl sm:p-4">
                   <span className="font-ledger text-lg font-bold text-(--color-teal)">
                     {String(i).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-1.5 text-[13px] sm:text-sm font-bold text-(--color-ink) leading-tight">
+                  <h3 className="mt-1.5 text-[13px] sm:text-sm font-bold text-(--color-blue) leading-tight">
                     {tr(`value${i}Title`, "Integrity")}
                   </h3>
                   <p className="mt-1.5 text-[12px] sm:text-[13px] leading-5 text-(--color-muted) group-hover:text-(--color-ink)">
@@ -219,7 +219,7 @@ const AboutPage = () => {
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-2 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
-            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-blue)">
               {tr("companiesTitle", "Eight Businesses, One Vision")}
             </h2>
             <p className="mt-1 text-[13px] leading-5 sm:text-[14px] sm:leading-6 text-(--color-muted)">
@@ -238,14 +238,15 @@ const AboutPage = () => {
         <div className="mx-auto max-w-4xl">
           <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
-            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-ink)">
+            <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-blue)">
               {tr("timelineTitle", "Key Milestones")}
             </h2>
           </Reveal>
 
           <ScrollTimeline milestones={translatedMilestones} />
         </div>
-      </section>      {/* Registration & Compliance */}
+      </section>
+      {/* Registration & Compliance */}
       <section className="section-ruled section-ink relative overflow-hidden px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         {/* Decorative glow */}
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 w-48 rounded-full bg-(--color-teal)/15 blur-[80px]" />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { FormEvent } from "react";
+import type { SyntheticEvent } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
@@ -14,7 +14,7 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
     if (!token) return;
     setLoading(true);

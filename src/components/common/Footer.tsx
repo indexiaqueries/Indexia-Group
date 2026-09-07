@@ -1,11 +1,11 @@
-import { memo } from "react";
+import { memo, type CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer-img/footer-img.webp";
 import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
 import { Mail, Phone, Clock } from "lucide-react";
-import { FaInstagram, FaLinkedinIn, FaXTwitter, FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { phoneNumbers } from "../../data/contact";
+import { socialLinks } from "../../data/socialLinks";
 import BackToTop from "./BackToTop";
 
 const linkGroups: {
@@ -39,6 +39,13 @@ const contactInfo: {
   { icon: Phone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
   { icon: Clock, textKey: "footer.hours" },
 ];
+
+// X's brand colour is near-black — on the dark footer it needs a light badge to stay visible.
+// Threshold set so only genuinely near-black brands (< 50 luminance) get the white badge;
+const isDarkBrand = (brand: string) => {
+  const num = parseInt(brand.slice(1), 16);
+  return (0.299 * ((num >> 16) & 255) + 0.587 * ((num >> 8) & 255) + 0.114 * (num & 255)) < 50;
+};
 
 const ColumnHeader = memo(({ title }: { title: string }) => (
   <h3 className="font-ledger text-xs font-bold uppercase tracking-[0.22em] text-white">{title}</h3>
@@ -153,62 +160,38 @@ const Footer = () => {
         </nav>
 
         {/* Social Media - Circular Icons Section: full-width band below the nav grid, label left / icons right */}
-        <div className="mt-8 flex flex-wrap items-center justify-end gap-4 border-t border-white/10 pt-6 sm:justify-between sm:gap-5 lg:gap-6">
-          <span className="hidden sm:inline mr-1 text-xs font-ledger font-bold uppercase tracking-[0.18em] text-white/50">
+        <div className="mt-8 flex flex-wrap items-center justify-end gap-4 border-t border-white/10 pt-6 sm:gap-5 lg:gap-6">
+          <span className="hidden sm:inline mr-1 text-xs font-ledger font-bold uppercase tracking-[0.18em] text-white">
             {t("footer.followUs")}
           </span>
           <div className="flex flex-wrap items-center gap-4 sm:gap-5">
-            <a
-              href="https://www.instagram.com/indexiafinance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Indexia Finance on Instagram"
-              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
-            >
-              <FaInstagram className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/indexia-finance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Indexia Finance on LinkedIn"
-              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
-            >
-              <FaLinkedinIn className="h-5 w-5" />
-            </a>
-            <a
-              href="https://x.com/indexiafinance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Indexia Finance on X (Twitter)"
-              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
-            >
-              <FaXTwitter className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.facebook.com/indexiafinance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Indexia Finance on Facebook"
-              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
-            >
-              <FaFacebookF className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.youtube.com/@indexiafinance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Indexia Finance on YouTube"
-              className="indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/80 backdrop-blur-sm transition-all duration-200 hover:border-(--color-yellow)/60 hover:bg-white/15 hover:text-(--color-yellow)"
-            >
-              <FaYoutube className="h-5 w-5" />
-            </a>
+            {socialLinks.map((social) => {
+              const Icon = social.icon;
+              const dark = isDarkBrand(social.brand);
+              return (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Indexia Finance on ${social.name}`}
+                  style={{ "--brand": social.brand } as CSSProperties}
+                  className={`indexia-footer-social flex h-10 w-10 items-center justify-center rounded-full border shadow-[0_4px_14px_rgba(2,16,26,0.35)] transition-all duration-200 hover:-translate-y-0.5 ${
+                    dark
+                      ? "border-white/25 bg-white text-(--color-ink) hover:bg-(--color-night) hover:text-(--color-paper)"
+                      : "border-(--brand)/50 bg-(--brand) text-(--color-paper) hover:bg-white hover:text-(--brand)"
+                  }`}
+                >
+                  <Icon className="h-5 w-5" />
+                </a>
+              );
+            })}
           </div>
         </div>
 
       </div>
 
-      <div className="relative z-10 mt-8 border-t border-white/8 bg-(--color-navy-black)/45">
+      <div className="relative z-10 mt-3 border-t border-white/8 bg-(--color-navy-black)/45">
         <div className="mx-auto max-w-7xl px-3 py-4 text-center text-[13px] text-white/50 sm:px-4 lg:px-6">
           <p>{t("footer.rights")}</p>
         </div>

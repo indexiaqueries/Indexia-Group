@@ -99,7 +99,7 @@ const Contact = () => {
       <section id="branches" className="section-ruled pt-5 sm:pt-4 lg:pt-6" style={{ background: 'rgba(2,16,26,0.08)' }}>
         <div className="mx-auto max-w-7xl">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <h2 className="text-2xl font-extrabold text-(--color-ink) sm:text-4xl">
+            <h2 className="text-2xl font-extrabold text-(--color-teal) sm:text-4xl">
               {t("contact.locationsTitleStart")}
               <span style={{ color: accent.blue }}>{t("contact.locationsTitleAccent")}</span>
             </h2>

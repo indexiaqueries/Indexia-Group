@@ -48,7 +48,7 @@ const Home = () => {
           <Reveal>
             <div className="mx-auto max-w-180 text-center">
               <Eyebrow>{t("businesses.eyebrow")}</Eyebrow>
-              <h2 className="font-display text-[clamp(22px,4vw,38px)] font-bold text-(--color-ink)">
+              <h2 className="font-display text-[clamp(22px,4vw,38px)] font-bold text-(--color-blue)">
                 {t("businesses.titleStart")}
                 {t("businesses.titleAccent")}
               </h2>
@@ -88,8 +88,8 @@ const Home = () => {
             <h2 className="font-display text-[clamp(22px,4vw,40px)] font-bold leading-[1.15] text-white">
               {t("homeReach.taglineStart", "From local expertise to")} <br/><span className="text-(--color-yellow)">{t("homeReach.taglineAccent", "Global Opportunities")}</span>
             </h2>
-            <div className="mx-auto mt-4 h-px w-16 bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
-            <p className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 sm:leading-7 text-white/70">
+            <div className="mx-auto mt-4 h-px w-20 bg-linear-to-r from-transparent via-(--color-teal) to-transparent" />
+            <p className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 sm:leading-7 text-white/80">
               {t("homeReach.description", "Indexia Group operates across diverse markets, bringing together businesses and services that create value beyond borders.")}
             </p>
           </Reveal>

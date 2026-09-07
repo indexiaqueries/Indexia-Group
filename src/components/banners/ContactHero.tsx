@@ -35,7 +35,7 @@ const ContactHero = () => {
         <div className="mt-5 sm:mt-6 flex flex-wrap gap-3 sm:gap-4">
           <a
             href="#enquiry-form"
-            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1"
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-bold text-(--color-yellow-ink) transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(2,16,26,0.1)]"
             style={{ backgroundColor: colors.yellow }}
           >
             {t("contactHero.sendEnquiry")}
@@ -44,7 +44,7 @@ const ContactHero = () => {
 
           <a
             href="tel:+918655168551"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-navy)"
+            className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-(--color-navy)/70 px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-white hover:text-(--color-navy)"
           >
             <Phone size={17} />
             {t("contactHero.callNow")}

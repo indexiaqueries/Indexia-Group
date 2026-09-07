@@ -54,7 +54,6 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     setForm((previous) => ({ ...previous, message: initialMessage ?? "" }));
   }
 
-
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
@@ -91,7 +90,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
     return next;
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitError("");
 

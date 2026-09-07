@@ -1,44 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { FaInstagram, FaLinkedinIn, FaFacebookF, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import Reveal from "../common/Reveal";
-
-const socialLinks = [
-  {
-    name: "Instagram",
-    handle: "@indexiafinance",
-    url: "https://www.instagram.com/finance.indexia/",
-    icon: FaInstagram,
-    brand: "#E4405F",
-  },
-  {
-    name: "LinkedIn",
-    handle: "Indexia Finance",
-    url: "https://www.linkedin.com/in/indexia-finance",
-    icon: FaLinkedinIn,
-    brand: "#0A66C2",
-  },
-  {
-    name: "X",
-    handle: "@indexiafinance",
-    url: "https://x.com/FinanceIndexia?s=20",
-    icon: FaXTwitter,
-    brand: "#111827",
-  },
-  {
-    name: "Facebook",
-    handle: "Indexia Finance",
-    url: "https://www.facebook.com/share/1BKkPf5m9k",
-    icon: FaFacebookF,
-    brand: "#1877F2",
-  },
-  {
-    name: "YouTube",
-    handle: "Indexia Finance",
-    url: "https://youtube.com/@financeindexia?si=jUrZw2npNHxrmKCL",
-    icon: FaYoutube,
-    brand: "#FF0000",
-  },
-];
+import { socialLinks } from "../../data/socialLinks";
 
 const SocialLinks: React.FC = () => {
   const { t } = useTranslation();
@@ -67,7 +29,7 @@ const SocialLinks: React.FC = () => {
               <span className="inline-block h-0.5 w-8 bg-(--color-teal)" />
               <span>{t("socialLinks.stayConnected")}</span>
             </div>
-            <h2 className="text-[clamp(28px,3.4vw,40px)] font-bold leading-tight tracking-tight text-(--color-ink)">
+            <h2 className="text-[clamp(28px,3.4vw,40px)] font-bold leading-tight tracking-tight text-(--color-blue)">
               {t("socialLinks.follow")} <span className="text-(--color-teal)">Indexia Finance</span>
             </h2>
             <p className="mt-2 max-w-lg text-sm leading-relaxed text-(--color-muted)">
@@ -101,8 +63,8 @@ const SocialLinks: React.FC = () => {
                   className={`group relative flex min-h-21 flex-col items-center justify-end rounded-xl border border-(--color-teal)/18 bg-(--color-paper) px-4 pb-3.5 pt-12 text-center transition-all duration-300 ease-out hover:-translate-y-1 hover:rotate-0 hover:border-(--color-teal)/40 hover:bg-(--color-mist) hover:shadow-[0_12px_32px_rgba(2,16,26,0.08)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 motion-reduce:hover:rotate-0 ${fan}`}
                   style={{ "--brand": social.brand } as React.CSSProperties}
                 >
-                  {/* Half-out / half-in icon circle — fills with brand color on hover */}
-                  <span className="absolute left-1/2 top-0 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-(--color-night) text-(--color-teal) shadow-[0_6px_16px_rgba(2,16,26,0.25)] transition-all duration-300 group-hover:bg-(--brand) group-hover:text-(--color-paper) motion-reduce:transition-none sm:h-13 sm:w-13 lg:h-14 lg:w-14">
+                  {/* Half-out / half-in icon circle — brand colour at rest, inverts to white fill + brand glyph on hover (same as footer) */}
+                  <span className="absolute left-1/2 top-0 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-(--brand) text-(--color-paper) shadow-[0_6px_16px_rgba(2,16,26,0.25)] transition-all duration-300 group-hover:bg-white group-hover:text-(--brand) motion-reduce:transition-none sm:h-13 sm:w-13 lg:h-14 lg:w-14">
                     <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
 
