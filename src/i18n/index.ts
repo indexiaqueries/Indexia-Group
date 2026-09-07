@@ -2,12 +2,11 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
-import { SUPPORTED_LANGS } from "./languages";
+import { SUPPORTED_LANGS, type SupportedLang } from "./languages";
 
 export { SUPPORTED_LANGS } from "./languages";
 
 const STORAGE_KEY = "indexia-lang";
-type SupportedLang = (typeof SUPPORTED_LANGS)[number];
 type LocaleModule = { default: Record<string, unknown> };
 
 const localeLoaders: Record<Exclude<SupportedLang, "en">, () => Promise<LocaleModule>> = {

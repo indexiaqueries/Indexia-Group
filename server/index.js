@@ -7,10 +7,10 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { connectDB, isDBConnected } from "./db.js";
 import Application from "./models/Application.js";
 import Enquiry from "./models/Enquiry.js";
-import JobOpening from "./models/JobOpening.js";
 import adminRoutes from "./routes/admin.js";
 import newsRoutes from "./routes/news.js";
 import openingsRouter, { adminOpeningsRouter } from "./routes/openings.js";
+import { seedOpenings } from "./services/seedOpenings.js";
 import { startNewsScheduler } from "./services/newsScheduler.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -25,8 +25,42 @@ if (!IS_VERCEL) mkdirSync(RESUME_DIR, { recursive: true });
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Browsers only enforce CORS when the frontend and API live on different
+// origins — same-origin requests are always allowed. Default allowlist covers
+// the production site and local Vite dev server; extend with the CORS_ORIGINS
+// env var (comma-separated) for split frontend/backend deployments.
+const DEFAULT_CORS_ORIGINS = [
+  "https://www.indexiagroup.com",
+  "https://indexiagroup.com",
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+];
+const allowedOrigins = new Set(
+  process.env.CORS_ORIGINS
+    ? process.env.CORS_ORIGINS.split(",").map((origin) => origin.trim()).filter(Boolean)
+    : DEFAULT_CORS_ORIGINS
+);
+
 const app = express();
-app.use(cors());
+
+// Baseline security headers. Mirrors the headers in public/.htaccess so the
+// standalone Express server and Apache builds share the same posture.
+app.use((_req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  next();
+});
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      // Non-browser requests (no Origin header) are never blocked.
+      if (!origin || allowedOrigins.has(origin)) return callback(null, true);
+      return callback(null, false);
+    },
+  })
+);
 app.use(express.json({ limit: "100kb" }));
 
 // File upload config
@@ -68,30 +102,6 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/news", newsRoutes);
 app.use("/api/openings", openingsRouter);
 app.use("/api/admin/openings", adminOpeningsRouter);
-
-// Seed openings from hardcoded data if DB is empty
-async function seedOpenings() {
-  try {
-    const count = await JobOpening.countDocuments();
-    if (count > 0) return;
-    console.log("[seed] No openings found, seeding from defaults...");
-    const defaults = [
-      { title: "Finance Intern", department: "Finance", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Gain hands-on experience in financial operations, loan processing, and banking procedures.", requirements: ["Currently pursuing or recently completed degree in Finance/Commerce", "Interest in financial services and banking", "Proficiency in MS Excel and basic financial tools"] },
-      { title: "HR Intern", department: "Human Resources", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Learn end-to-end HR processes including recruitment, onboarding, and employee management.", requirements: ["Currently pursuing or recently completed degree in HR/Management", "Strong communication and interpersonal skills", "Basic knowledge of HR practices"] },
-      { title: "Digital Marketing Intern", department: "Digital Marketing", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Assist in digital marketing campaigns, SEO optimization, and social media management.", requirements: ["Currently pursuing or recently completed degree in Marketing/Communications", "Knowledge of SEO, SEM, and social media platforms", "Creative thinking and analytical skills"] },
-      { title: "IT Intern", department: "Information Technology", company: "Indexia Group", location: "Mumbai", type: "Intern", description: "Support IT infrastructure, software development, and technical operations.", requirements: ["Currently pursuing or recently completed degree in Computer Science/IT", "Basic programming knowledge", "Interest in software development and IT systems"] },
-      { title: "Digital Marketing Executive", department: "Digital Marketing", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Lead digital marketing strategies including SEO, SEM, social media marketing, and content creation to drive online presence and lead generation.", requirements: ["Minimum 1 year experience in digital marketing", "Strong knowledge of SEO, SEM, and SMO", "Experience with Google Analytics, Ads, and social media tools", "Excellent communication and analytical skills"] },
-      { title: "IT Developer", department: "Information Technology", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Develop and maintain software applications, manage databases, and support IT infrastructure across the organization.", requirements: ["Minimum 1 year experience as a full-stack developer", "Proficiency in frontend and backend technologies", "Experience with databases and API development", "Strong problem-solving and debugging skills"] },
-      { title: "HR Executive", department: "Human Resources", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Manage end-to-end HR processes including profile hiring, shortlisting candidates, conducting interviews, managing joining formalities, induction, training, salary management, and exit formalities.", requirements: ["Minimum 1 year experience in HR", "End-to-end recruitment experience from hiring to exit", "Knowledge of HR policies, salary management, and employee relations", "Strong interpersonal and organizational skills"] },
-      { title: "Customer Support Associate (CSA)", department: "Customer Support", company: "Indexia Finserve Pvt. Ltd.", location: "Delhi", type: "Full-time", description: "Handle customer inquiries across all loan products, provide end-to-end support from application to disbursal, and ensure a seamless customer experience at Indexia Finserve.", requirements: ["Handle inbound/outbound calls for loan enquiries (Personal, Business, Home, LAP, etc.)", "Guide customers through eligibility, documentation, and application process", "Maintain customer records and follow up on pending applications", "Coordinate with banks and NBFCs for loan processing updates", "Resolve customer complaints and escalate issues when necessary", "Achieve monthly targets for customer engagement and satisfaction", "Strong communication skills in English and Hindi", "Basic knowledge of financial products and banking processes"] },
-      { title: "Executive Assistant to Director", department: "Administration", company: "Indexia Group", location: "Mumbai", type: "Full-time", description: "Support the Director in managing multiple profiles, coordinating schedules, handling correspondence, and acting as a supporting hand for day-to-day operations.", requirements: ["Minimum 1 year experience as EA or similar administrative role", "Ability to handle multiple profiles and priorities", "Excellent organizational and time management skills", "Proficiency in MS Office and communication tools", "Discretion and professionalism in handling confidential matters"] },
-    ];
-    await JobOpening.insertMany(defaults);
-    console.log("[seed] Seeded " + defaults.length + " openings.");
-  } catch (err) {
-    console.error("[seed] Failed:", err.message);
-  }
-}
 
 // Contact enquiries are stored in MongoDB only. The admin dashboard
 // (/admin → Enquiries) is where the team reviews them.

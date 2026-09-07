@@ -1,28 +1,4 @@
-export const LANGUAGES: { code: string; key: string }[] = [
-  { code: "en", key: "common.languages.en" },
-  { code: "es", key: "common.languages.es" },
-  { code: "fr", key: "common.languages.fr" },
-  { code: "de", key: "common.languages.de" },
-  { code: "it", key: "common.languages.it" },
-  { code: "pt", key: "common.languages.pt" },
-  { code: "hi", key: "common.languages.hi" },
-  { code: "ar", key: "common.languages.ar" },
-  { code: "zh", key: "common.languages.zh" },
-  { code: "ja", key: "common.languages.ja" },
-  { code: "ru", key: "common.languages.ru" },
-  { code: "ko", key: "common.languages.ko" },
-  { code: "id", key: "common.languages.id" },
-  { code: "tr", key: "common.languages.tr" },
-  { code: "vi", key: "common.languages.vi" },
-  { code: "nl", key: "common.languages.nl" },
-  { code: "pl", key: "common.languages.pl" },
-  { code: "th", key: "common.languages.th" },
-  { code: "sv", key: "common.languages.sv" },
-  { code: "uk", key: "common.languages.uk" },
-  { code: "el", key: "common.languages.el" },
-  { code: "he", key: "common.languages.he" },
-];
-
+// Supported UI languages in display order (as shown in the language menu).
 export const SUPPORTED_LANGS = [
   "en",
   "es",
@@ -47,3 +23,15 @@ export const SUPPORTED_LANGS = [
   "el",
   "he",
 ] as const;
+
+export type SupportedLang = (typeof SUPPORTED_LANGS)[number];
+
+/**
+ * Language menu entries with the i18n key for each native language name.
+ * Derived from SUPPORTED_LANGS so the two lists can never drift apart.
+ */
+export const LANGUAGES: { code: SupportedLang; key: string }[] =
+  SUPPORTED_LANGS.map((code) => ({
+    code,
+    key: `common.languages.${code}`,
+  }));

@@ -14,8 +14,8 @@ React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business
 
 ## Features
 
-- 18 public routes with full SEO metadata (title, description, OG, Twitter, JSON-LD)
-- 22 locales with complete translations (en, ar, de, el, es, fr, he, hi, id, it, ja, ko, nl, pl, pt, ru, sv, th, tr, uk, vi, zh)
+- All public routes carry SEO metadata (title, description, OG, Twitter, JSON-LD)
+- 22 locales with complete translations (en, ar, de, el, es, fr, he, hi, id, it, ja, ko, nl, pl, pt, ru, sv, th, tr, uk, vi, zh); language switches client-side via localStorage — the same URL serves all locales, so there are no separate localized URLs to index
 - Company spotlight pages for 8 businesses with hero images, stats, and bullet points
 - Register-of-companies index strip (catalogue edge) across the home and company pages
 - Disciplined design tokens: teal for actions, yellow for the Indexia mark, navy glass surfaces
@@ -55,10 +55,11 @@ src/
 server/
 ├── index.js            # Express server (API routes, file uploads, static serving)
 ├── db.js               # MongoDB connection
+├── data/               # Static seed data (default job openings)
 ├── middleware/         # Shared auth guard (requireAdmin)
 ├── models/             # Mongoose models (Application, Enquiry, JobOpening, NewsArticle)
 ├── routes/             # Admin, openings, and news API routes
-└── services/           # News fetcher and scheduler
+└── services/           # News fetcher & scheduler, opening seeding
 api/
 └── index.js            # Vercel serverless entry point
 public/
@@ -93,6 +94,7 @@ Copy `.env.example` to `.env.local` and configure:
 | `ADMIN_TOKEN` | Admin dashboard auth token |
 | `NEWSDATA_API_KEY` | NewsData.io key for the scheduled news fetcher |
 | `PORT` | Express backend port (default 3001) |
+| `CORS_ORIGINS` | Comma-separated origins allowed to call the API cross-origin (defaults to the production site + local dev) |
 | `VITE_API_URL` | Optional API base URL when frontend and backend are on different origins |
 
 Contact enquiries and job applications are stored in MongoDB only — the team
@@ -116,6 +118,5 @@ reviews them in the admin dashboard (`/admin`).
 - Open Graph and Twitter Card metadata
 - JSON-LD structured data (Organization, WebSite, WebPage, BreadcrumbList, FAQPage, Company pages)
 - `robots.txt` blocks admin, apply, and brochure pages
-- `sitemap.xml` with 18 public routes
+- `sitemap.xml` with the 16 indexable public routes
 - `llms.txt` for AI-agent readability
-- Hreflang alternates for 22 locales in `index.html`

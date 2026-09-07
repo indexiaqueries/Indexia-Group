@@ -7,6 +7,15 @@ import { API_BASE } from "../lib/api";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 
+// The success body (applyPage.successBody) wraps {{role}} in <strong> and is
+// rendered as HTML, but i18next interpolation escaping is disabled globally.
+// roleTitle comes from the URL (?role=…), so escape it before interpolation to
+// prevent reflected XSS via a crafted query string.
+const escapeHtml = (value: string) =>
+  value.replace(/[&<>"']/g, (ch) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]!
+  );
+
 const ApplyPage = () => {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
@@ -187,7 +196,7 @@ const ApplyPage = () => {
               </h1>
               <p
                 className="mx-auto mt-4 max-w-lg text-[13px] sm:text-sm leading-6 text-white/70"
-                dangerouslySetInnerHTML={{ __html: t("applyPage.successBody", { role: roleTitle }) }}
+                dangerouslySetInnerHTML={{ __html: t("applyPage.successBody", { role: escapeHtml(roleTitle) }) }}
               />
 
               <div className="mx-auto mt-6 max-w-sm rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur-sm">

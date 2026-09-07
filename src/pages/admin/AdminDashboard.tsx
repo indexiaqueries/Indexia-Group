@@ -81,19 +81,30 @@ const AdminDashboard = () => {
     }
   };
 
+  /* ── API helper ────────────────────────────────────────────── */
+
+  // Shared fetch wrapper: sends the admin token, JSON-encodes request bodies,
+  // and normalises the API's { ok, error } envelope — throws on failure so
+  // callers only handle the happy path inside their try/catch.
+  const adminRequest = async <T,>(path: string, options: RequestInit = {}): Promise<T> => {
+    const headers: Record<string, string> = { "x-admin-token": token };
+    if (options.body) headers["Content-Type"] = "application/json";
+    const res = await fetch(`${API_BASE}${path}`, { ...options, headers });
+    const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+    if (!res.ok || !data.ok) throw new Error(data.error || "Request failed.");
+    return data as T;
+  };
+
   /* ── Application actions ───────────────────────────────────── */
 
   const updateStatus = async (id: string, status: string) => {
     try {
-      const res = await fetch(`${API_BASE}/api/admin/applications/${id}`, {
+      const data = await adminRequest<{ application: Application }>(`/api/admin/applications/${id}`, {
         method: "PATCH",
-        headers: { "Content-Type": "application/json", "x-admin-token": token },
         body: JSON.stringify({ status }),
       });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
       setApplications((prev) => prev.map((a) => (a._id === id ? { ...a, status: data.application.status } : a)));
-      if (selectedApp?._id === id) setSelectedApp({ ...selectedApp, status: data.application.status });
+      setSelectedApp((prev) => (prev && prev._id === id ? { ...prev, status: data.application.status } : prev));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to update status.");
     }
@@ -102,20 +113,16 @@ const AdminDashboard = () => {
   const deleteApp = async (id: string) => {
     if (!confirm("Are you sure you want to delete this application?")) return;
     try {
-      const res = await fetch(`${API_BASE}/api/admin/applications/${id}`, {
-        method: "DELETE",
-        headers: { "x-admin-token": token },
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
+      await adminRequest(`/api/admin/applications/${id}`, { method: "DELETE" });
       setApplications((prev) => prev.filter((a) => a._id !== id));
-      if (selectedApp?._id === id) setSelectedApp(null);
+      setSelectedApp((prev) => (prev && prev._id === id ? null : prev));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to delete application.");
     }
   };
 
   const openResume = (id: string) => {
+    // Uses ?token= because window.open can't send a custom header.
     window.open(`${API_BASE}/api/admin/applications/${id}/resume?token=${encodeURIComponent(token)}`, "_blank");
   };
 
@@ -128,13 +135,10 @@ const AdminDashboard = () => {
 
   const updateEnquiryStatus = async (id: string, status: Enquiry["status"]) => {
     try {
-      const res = await fetch(`${API_BASE}/api/admin/enquiries/${id}`, {
+      const data = await adminRequest<{ enquiry: Enquiry }>(`/api/admin/enquiries/${id}`, {
         method: "PATCH",
-        headers: { "Content-Type": "application/json", "x-admin-token": token },
         body: JSON.stringify({ status }),
       });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
       replaceEnquiry(id, data.enquiry);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to update enquiry.");
@@ -153,12 +157,7 @@ const AdminDashboard = () => {
   const deleteEnquiry = async (id: string) => {
     if (!confirm("Are you sure you want to delete this enquiry?")) return;
     try {
-      const res = await fetch(`${API_BASE}/api/admin/enquiries/${id}`, {
-        method: "DELETE",
-        headers: { "x-admin-token": token },
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
+      await adminRequest(`/api/admin/enquiries/${id}`, { method: "DELETE" });
       setEnquiries((prev) => prev.filter((e) => e._id !== id));
       setSelectedEnquiry((prev) => (prev && prev._id === id ? null : prev));
     } catch (err) {
@@ -186,15 +185,13 @@ const AdminDashboard = () => {
 
     try {
       const isEdit = !!editingId;
-      const url = isEdit ? `${API_BASE}/api/admin/openings/${editingId}` : `${API_BASE}/api/admin/openings`;
-      const method = isEdit ? "PATCH" : "POST";
-      const res = await fetch(url, {
-        method,
-        headers: { "Content-Type": "application/json", "x-admin-token": token },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
+      const data = await adminRequest<{ opening: Opening }>(
+        isEdit ? `/api/admin/openings/${editingId}` : "/api/admin/openings",
+        {
+          method: isEdit ? "PATCH" : "POST",
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (isEdit) {
         setOpenings((prev) => prev.map((o) => (o._id === editingId ? data.opening : o)));
@@ -210,13 +207,10 @@ const AdminDashboard = () => {
 
   const toggleActive = async (opening: Opening) => {
     try {
-      const res = await fetch(`${API_BASE}/api/admin/openings/${opening._id}`, {
+      const data = await adminRequest<{ opening: Opening }>(`/api/admin/openings/${opening._id}`, {
         method: "PATCH",
-        headers: { "Content-Type": "application/json", "x-admin-token": token },
         body: JSON.stringify({ isActive: !opening.isActive }),
       });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
       setOpenings((prev) => prev.map((o) => (o._id === opening._id ? data.opening : o)));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to toggle opening.");
@@ -226,12 +220,7 @@ const AdminDashboard = () => {
   const deleteOpening = async (id: string) => {
     if (!confirm("Are you sure you want to delete this opening?")) return;
     try {
-      const res = await fetch(`${API_BASE}/api/admin/openings/${id}`, {
-        method: "DELETE",
-        headers: { "x-admin-token": token },
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error);
+      await adminRequest(`/api/admin/openings/${id}`, { method: "DELETE" });
       setOpenings((prev) => prev.filter((o) => o._id !== id));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to delete opening.");
