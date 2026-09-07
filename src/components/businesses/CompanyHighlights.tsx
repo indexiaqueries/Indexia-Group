@@ -9,9 +9,10 @@ type CompanyHighlightsProps = {
   slug: string;
   highlights: string[];
   services: string[];
+  entryNo?: string;
 };
 
-const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) => {
+const CompanyHighlights = ({ color, slug, highlights, entryNo }: CompanyHighlightsProps) => {
   const { t } = useTranslation();
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${slug}.${path}`, { defaultValue: fallback });
 
@@ -36,11 +37,19 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
           <div className="mt-4 flex items-center justify-center gap-3">
             <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
             <span
-              className="font-ledger text-[10px] font-bold tracking-[0.22em]"
+              className="font-ledger text-[11px] font-bold tracking-[0.22em]"
               style={{ color: accentInk(color) }}
             >
               {String(highlights.length).padStart(2, "0")}
             </span>
+            {entryNo && (
+              <>
+                <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
+                <span className="font-ledger text-[11px] font-bold tracking-[0.22em] text-(--color-muted)">
+                  {t("companyDetail.entryOf", { no: entryNo })}
+                </span>
+              </>
+            )}
             <span className="h-px w-8" style={{ background: color }} aria-hidden="true" />
           </div>
         </Reveal>
@@ -56,7 +65,7 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                   className={`group relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:-translate-y-1 sm:p-6 ${
                     isFeatured
                       ? "shadow-[0_14px_40px_rgba(2,16,26,0.16)]"
-                      : "border border-slate-200/60 bg-white shadow-sm hover:shadow-[0_20px_50px_rgba(2,16,26,0.08)]"
+                      : "border border-(--color-line)/60 bg-white shadow-sm hover:shadow-[0_20px_50px_rgba(2,16,26,0.08)]"
                   }`}
                   style={
                     isFeatured
@@ -98,14 +107,14 @@ const CompanyHighlights = ({ color, slug, highlights }: CompanyHighlightsProps) 
                         <Check size={16} strokeWidth={2.8} />
                       </span>
                       <span
-                        className="font-ledger text-[11px] font-bold tracking-[0.16em]"
+                        className="font-ledger text-xs font-bold tracking-[0.16em]"
                         style={{ color: isFeatured ? contrastText(color) : accentInk(color) }}
                       >
                         {String(i).padStart(2, "0")}
                       </span>
                     </div>
 
-                    <p className={`mt-3 text-[13.5px] font-semibold leading-6 sm:mt-4 sm:text-[14.5px] sm:leading-7 ${isFeatured ? "text-white" : "text-(--color-ink-soft)"}`}>
+                    <p className={`mt-3 text-sm font-semibold leading-6 sm:mt-4 sm:leading-7 ${isFeatured ? "text-white" : "text-(--color-ink-soft)"}`}>
                       {tr(`highlights.${idx}`, highlight)}
                     </p>
 

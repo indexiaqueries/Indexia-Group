@@ -15,7 +15,7 @@ const FeaturedArticle = ({ featured }: FeaturedArticleProps) => {
 
   return (
     <Reveal>
-      <article className="group relative grid overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg lg:grid-cols-[42%_1fr]">
+      <article className="group relative grid overflow-hidden rounded-3xl border border-(--color-line) bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg lg:grid-cols-[42%_1fr]">
         {/* Image, left side */}
         <div className="relative overflow-hidden">
           {hasImage ? (

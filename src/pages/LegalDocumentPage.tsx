@@ -78,7 +78,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
       <SEO title={title} description={t(descriptionKey)} keywords={KEYWORDS[docId]} canonicalPath={path} jsonLd={jsonLd} />
 
       <HeroBackdrop image={heroImage}>
-        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-9 text-center sm:px-10 sm:py-11">
+        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-6 text-center sm:px-10 sm:py-7">
         <div className="mb-4 flex items-center justify-center gap-3">
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{t("legal.eyebrow")}</Eyebrow>
@@ -88,56 +88,44 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
           {title}
         </h1>
         <p className="mx-auto mb-7 max-w-2xl text-sm leading-7 text-white/80">{t(`legal.${docId}Subtitle`)}</p>
-        <p className="font-ledger text-[11px] font-bold uppercase tracking-[0.22em] text-white/55">
+        <p className="font-ledger text-xs font-bold uppercase tracking-[0.22em] text-white/55">
           {t("legal.lastUpdated")}: {doc.lastUpdated}
         </p>
         </div>
       </HeroBackdrop>
 
       <section className="section-ruled section-paper relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
-        <div className="card-premium mx-auto max-w-5xl rounded-2xl p-4 sm:p-6 lg:p-8">
+        <div className="card-premium mx-auto max-w-3xl rounded-2xl p-4 sm:p-6 lg:p-8">
           <Reveal>
-            <div className="mb-3 border-b border-slate-200 pb-3">
+            <div className="mb-3 border-b border-(--color-line) pb-3 pl-6">
               <Link
                 to="/"
-                className="text-sm font-semibold text-(--color-navy) transition-colors hover:text-(--color-teal-deep)"
+                className="inline-flex items-center gap-2 rounded-full border border-(--color-line) bg-(--color-paper) px-4 py-2 text-sm font-semibold text-(--color-navy) transition-colors hover:border-(--color-teal)/60 hover:text-(--color-teal-deep) focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-teal)"
               >
                 ← {t("legal.backHome")}
               </Link>
             </div>
           </Reveal>
 
-          <Reveal>
-            <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-(--color-soft) px-4 py-2 shadow-sm">
-              <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-(--color-teal)">
-                {t("legal.lastUpdated")}
-              </span>
-              <span aria-hidden="true" className="h-3.5 w-px bg-slate-300" />
-              <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600">
-                {doc.lastUpdated}
-              </span>
-            </div>
-          </Reveal>
-
           {content.intro.map((paragraph, index) => (
             <Reveal key={`intro-${index}`} delay={0.05 * index}>
-              <p className="text-[14px] leading-6.5 text-slate-700">{paragraph}</p>
+              <p className="text-[14px] leading-6.5 text-(--color-muted)">{paragraph}</p>
             </Reveal>
           ))}
 
           {content.sections.map((section, index) => (
             <Reveal key={section.title} delay={0.05 * (index % 3)}>
-              <section className="mt-5 rounded-xl border border-slate-100 bg-white/70 p-3 sm:p-4">
-                <div className="flex items-center gap-4">
-                  <span className="font-ledger text-sm font-bold" style={{ color: colors.teal }}>
+              <section className="mt-5 rounded-xl border border-(--color-line) bg-white/70 p-3 sm:p-4 pl-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="font-ledger text-xs font-medium text-(--color-muted)" style={{ color: colors.teal }}>
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <span className="h-px flex-1 bg-slate-200" />
+                  <span className="h-px flex-1 bg-(--color-line)" />
                 </div>
-                <h2 className="font-display mt-2 text-lg font-bold text-slate-900 sm:text-xl">{section.title}</h2>
+                <h2 className="font-display mt-0 text-lg font-bold text-(--color-ink) sm:text-xl">{section.title}</h2>
                 <div className="mt-2 space-y-2.5">
                   {section.paragraphs.map((paragraph) => (
-                    <p key={paragraph} className="text-[14px] leading-6.5 text-slate-600">
+                    <p key={paragraph} className="text-[14px] leading-6.5 text-(--color-muted)">
                       {paragraph}
                     </p>
                   ))}

@@ -96,22 +96,25 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           {showBackLink && (
             <Link
               to="/about"
-              className="mb-8 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.18em] text-white/70 transition-colors hover:text-(--color-yellow)"
+              className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/25 bg-(--color-navy-deep)/45 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-white backdrop-blur-sm transition-colors hover:bg-(--color-navy-deep)/70 hover:text-(--color-yellow)"
             >
               <span aria-hidden="true">←</span> {t("companyDetail.backAll")}
             </Link>
           )}
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
-            <Eyebrow color="var(--color-yellow)">{t("companyDetail.register", { no: entryNo })}</Eyebrow>
+            {/* Sentence case: "Register Nº 03 / 08" is too long for all-caps */}
+            <p className="font-ledger font-bold text-xs tracking-[0.2em] text-(--color-yellow)">
+              {t("companyDetail.register", { no: entryNo })}
+            </p>
             <span
-              className="rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] shadow-md"
+              className="rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] shadow-md"
               style={{ background: b.color, color: contrastText(b.color) }}
             >
               {tag}
             </span>
             <span
-              className="rounded-full border border-white/30 bg-(--color-navy-deep)/45 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-md backdrop-blur-sm"
+              className="rounded-full border border-white/30 bg-(--color-navy-deep)/45 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white shadow-md backdrop-blur-sm"
             >
               Est. {b.founded}
             </span>
@@ -130,27 +133,27 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           </div>
 
           {(b.slug === "warehouse" || b.slug === "advertising") && (
-            <p className="mt-3 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.16em] text-white/75">
+            <p className="mt-3 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-white/75">
               <MapPin size={15} strokeWidth={2.2} aria-hidden="true" />
               {tr("location", b.slug === "warehouse" ? "Shamli, Uttar Pradesh, Part of Delhi NCR" : "Delhi–Dehradun Highway, Shamli")}
             </p>
           )}
 
           {tagline && (
-            <p className="mt-3 sm:mt-4 text-[14px] sm:text-[17px] font-semibold italic text-(--color-yellow)">“{tagline}”</p>
+            <p className="mt-3 sm:mt-4 text-sm sm:text-lg font-semibold italic text-(--color-yellow)">“{tagline}”</p>
           )}
 
           <p className="mt-4 sm:mt-5 max-w-2xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/80">{desc}</p>              <div className="mt-7 sm:mt-9 flex flex-wrap gap-3 sm:gap-4">
             <a
               href="#enquiry"
-              className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
+              className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-5 py-2.5 sm:px-7 sm:py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
             >
               {t("companyDetail.eyebrow")}
               <ArrowRight size={16} strokeWidth={2.5} />
             </a>
             <a
               href="#company-services"
-              className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
+              className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 sm:px-7 sm:py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
             >
               {t("companyDetail.exploreServices")}
               <ArrowDown size={16} strokeWidth={2.5} />
@@ -183,7 +186,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <div key={copy} className="flex shrink-0 items-center" aria-hidden={copy === 1}>
               {marqueeItems.map((item, i) => (
                 <span key={i} className="flex items-center whitespace-nowrap">
-                  <span className="mx-5 text-[12px] font-bold uppercase tracking-[0.22em] text-white/75">
+                  <span className="mx-5 text-xs font-bold tracking-[0.22em] text-white/75">
                     {item}
                   </span>
                   <Sparkles size={12} strokeWidth={2.4} className="text-(--color-yellow)" aria-hidden="true" />
@@ -212,7 +215,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <div className="relative">
               <div
                 aria-hidden="true"
-                className="absolute -inset-3 rounded-[30px]"
+                className="absolute -inset-3 rounded-3xl"
                 style={{ background: `linear-gradient(135deg, ${b.color}66, transparent 55%, ${b.color}33)` }}
               />
               <div
@@ -236,7 +239,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                 style={{ background: b.color, color: contrastText(b.color) }}
               >
                 <Layers size={16} strokeWidth={2.5} aria-hidden="true" />
-                <span className="text-[11px] font-bold uppercase tracking-[0.16em]">
+                <span className="text-xs font-bold uppercase tracking-[0.16em]">
                   {t("companyDetail.entryOf", { no: entryNo })}
                 </span>
               </div>
@@ -245,15 +248,15 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
           <div>
             <Eyebrow className="mb-3">{t("companyDetail.overviewEyebrow")}</Eyebrow>
-            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink) text-shimmer">
+            <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
               {t("companyDetail.overviewTitle", { name })}
             </h2>
             <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">{overview}</p>
 
             <div className="mt-7 sm:mt-9 grid max-w-md grid-cols-3 gap-3 sm:gap-4">
-              <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
-              <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
-              <AnimatedCounter value={`${String(index + 1).padStart(2, "0")}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
+              <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
+              <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
+              <AnimatedCounter value={`${String(index + 1).padStart(2, "0")}/08`} label={t("companyDetail.statRegister")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
             </div>
           </div>
         </div>
@@ -295,6 +298,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         slug={b.slug}
         highlights={b.highlights}
         services={b.services}
+        entryNo={entryNo}
       />
 
       {/* Story split, second image + pull-quote */}
@@ -308,7 +312,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           <Reveal amount={0.2} className="relative">
             <div
               aria-hidden="true"
-              className="absolute -inset-3 rounded-[30px]"
+              className="absolute -inset-3 rounded-3xl"
               style={{ background: `linear-gradient(135deg, ${b.color}59, transparent 55%, ${b.color}33)` }}
             />
             <ImageSlot
@@ -321,7 +325,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
           <div>
             <span
-              className="inline-flex rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] shadow-md"
+              className="inline-flex rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] shadow-md"
               style={{ background: b.color, color: contrastText(b.color) }}
             >
               {tag}
@@ -329,7 +333,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display mt-4 sm:mt-5 text-[clamp(22px,3.2vw,38px)] font-bold leading-[1.15] text-white">
               “{slideSub}”
             </h2>
-            <p className="font-ledger mt-4 sm:mt-6 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-white/50">
+            <p className="font-ledger mt-4 sm:mt-6 text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-white/50">
               {t("companyDetail.registerOf")} · {t("companyDetail.entryOf", { no: entryNo })}
             </p>
             <a
@@ -351,7 +355,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <div className="mt-4 flex items-center justify-center gap-3">
               <span className="h-px w-8" style={{ background: b.color }} aria-hidden="true" />
               <span
-                className="font-ledger text-[10px] font-bold tracking-[0.22em]"
+                className="font-ledger text-[11px] font-bold tracking-[0.22em]"
                 style={{ color: accentInk(b.color) }}
               >
                 {String(b.services.length).padStart(2, "0")}
@@ -392,12 +396,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
                     <span
                       aria-hidden="true"
-                      className="font-ledger pointer-events-none absolute inset-e-3 top-2.5 text-[10px] font-bold tracking-[0.14em] text-slate-300 transition-colors duration-300 group-hover:text-slate-400"
+                      className="font-ledger pointer-events-none absolute inset-e-3 top-2.5 text-[11px] font-bold tracking-[0.14em] text-(--color-muted)"
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
 
-                    <p className="relative mt-3 flex-1 text-[13px] font-bold leading-snug text-(--color-ink-deep)">
+                    <p className="relative mt-3 flex-1 text-sm font-bold leading-snug text-(--color-ink-deep)">
                       {tr(`services.${i}`, service)}
                     </p>
 
@@ -420,7 +424,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             })}
           </div>
 
-          <div className="font-ledger mt-6 sm:mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4 text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
+          <div className="font-ledger mt-6 sm:mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-(--color-line) pt-4 text-[11px] font-bold uppercase tracking-[0.22em] text-(--color-muted)">
             <span>{t("companyDetail.registerOf")}</span>
             <span>{t("companyDetail.entryOf", { no: entryNo })}</span>
           </div>
@@ -479,7 +483,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               {t("companyDetail.enquireSub", { name })}
             </p>
 
-            <div className="group relative mt-8 overflow-hidden rounded-2xl shadow-sm ring-1 ring-slate-200">
+            <div className="group relative mt-8 overflow-hidden rounded-2xl shadow-sm ring-1 ring-(--color-line)">
               <ImageSlot
                 {...siteImages.companyEnquiry}
                 alt={`${name} enquiry support`}

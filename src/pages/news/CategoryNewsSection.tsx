@@ -88,7 +88,7 @@ const ArticleCard = ({
 
     <div className="flex flex-1 flex-col p-5">
       {/* Date + Source */}
-      <div className="flex items-center gap-2 text-[10px] text-slate-400">
+      <div className="flex items-center gap-2 text-[11px] text-(--color-muted)">
         {article.sourceIcon && (
           <img
             src={article.sourceIcon}
@@ -104,7 +104,7 @@ const ArticleCard = ({
         {article.source && <span className="font-semibold">{article.source}</span>}
         {article.date && (
           <>
-            <span className="text-slate-300">·</span>
+            <span className="text-(--color-line)">·</span>
             <span className="font-ledger uppercase tracking-wider">
               {article.date}
             </span>
@@ -113,12 +113,12 @@ const ArticleCard = ({
       </div>
 
       {/* Title */}
-      <h3 className="font-display mt-2.5 text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover/card:text-slate-700 line-clamp-3">
+      <h3 className="font-display mt-2.5 text-sm font-bold leading-snug text-(--color-ink) transition-colors group-hover/card:text-(--color-ink-soft) line-clamp-3">
         {article.title}
       </h3>
 
       {/* Excerpt */}
-      <p className="mt-2 flex-1 text-[13px] leading-6 text-slate-500 line-clamp-3">
+      <p className="mt-2 flex-1 text-[13px] leading-6 text-(--color-muted) line-clamp-3">
         {article.excerpt}
       </p>
 
@@ -149,18 +149,18 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
         <Reveal className="mb-5">
           <div className="flex items-center gap-4">
             <span
-              className="font-ledger text-sm font-bold"
+              className="font-ledger text-base font-bold"
               style={{ color: colors.teal }}
             >
               {t("newsPage.latestNews", "Latest News")}
             </span>
-            <span className="h-px flex-1 bg-slate-200" />
+            <span className="h-px flex-1 bg-(--color-line)" />
           </div>
         </Reveal>
 
         {/* Category tabs */}
         <Reveal delay={0.05}>
-          <div className="mb-5 flex flex-wrap gap-2 rounded-2xl border border-slate-200/80 bg-white/80 p-2 shadow-sm backdrop-blur-sm">
+          <div className="mb-6 flex flex-wrap gap-2 rounded-2xl border border-(--color-line)/80 bg-white/80 p-2 shadow-sm backdrop-blur-sm">
             {CATEGORIES.map((cat) => {
               const CatIcon = cat.icon;
               const isActive = activeTab === cat.key;
@@ -173,7 +173,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
                   className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-bold transition-all duration-200 ${
                     isActive
                       ? "text-white shadow-lg"
-                      : "border border-slate-200 bg-white text-slate-500 hover:border-slate-300 hover:text-slate-700"
+                      : "border border-(--color-line) bg-white text-(--color-muted) hover:border-(--color-ink-soft)/40 hover:text-(--color-ink-soft)"
                   }`}
                   style={
                     isActive
@@ -191,7 +191,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
                       className={`ml-0.5 rounded-full px-1.5 py-0.5 text-[10px] font-bold ${
                         isActive
                           ? "bg-white/25 text-white"
-                          : "bg-slate-100 text-slate-400"
+                          : "bg-(--color-mist) text-(--color-muted)"
                       }`}
                     >
                       {count}
@@ -206,7 +206,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
         {/* Category header bar */}
         <Reveal delay={0.1}>
           <div
-            className={`mb-4 flex items-center gap-3 rounded-xl border border-white/70 bg-linear-to-r px-5 py-3 shadow-sm ${activeCategory.gradient}`}
+            className={`mb-6 flex items-center gap-3 rounded-xl border border-white/70 bg-linear-to-r py-3 pl-0 pr-5 shadow-sm ${activeCategory.gradient}`}
           >
             <div
               className="flex h-9 w-9 items-center justify-center rounded-lg"
@@ -221,7 +221,7 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
               >
                 {t(activeCategory.labelKey)}
               </h2>
-              <p className="text-[11px] text-slate-400">
+              <p className="text-xs text-(--color-muted)">
                 {t("newsPage.articleCount", { count: activeArticles.length })}
               </p>
             </div>
@@ -241,9 +241,9 @@ const CategoryNewsSection = ({ articlesByCategory }: CategoryNewsSectionProps) =
             ))}
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-white/70 py-16 shadow-sm">
-            <Icon size={32} className="text-slate-300" />
-            <p className="mt-3 text-sm text-slate-400">
+          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-(--color-line) bg-white/70 py-16 shadow-sm">
+            <Icon size={32} className="text-(--color-line)" />
+            <p className="mt-3 text-sm text-(--color-muted)">
               {t("newsPage.noArticlesYet")}
             </p>
           </div>

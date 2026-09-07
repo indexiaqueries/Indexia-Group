@@ -20,7 +20,7 @@ const NewsHero = () => {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-(--color-teal) opacity-75" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-(--color-teal)" />
               </span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-white/50">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-white/55">
                 {t("newsHero.latestLabel")}
               </span>
             </span>
@@ -28,7 +28,7 @@ const NewsHero = () => {
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
               {SECTIONS_KEYS.map((s, i) => (
                 <span key={s} className="flex items-center gap-3">
-                  <span className="text-[10px] font-semibold uppercase tracking-wider text-white/40">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-white/45">
                     {t(`newsHero.sectors.${s}`)}
                   </span>
                   {i !== SECTIONS_KEYS.length - 1 && (

@@ -25,7 +25,7 @@ const RegisterTabs = ({ activeSlug, className = "" }: RegisterTabsProps) => {
       aria-label={registerLabel}
       className={`overflow-x-auto border-t border-(--color-line) bg-white scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${className}`}
     >
-      <div className="flex w-max min-w-full items-end justify-center gap-1 border-b-2 border-(--color-navy) px-2 pt-2 sm:gap-2 sm:px-4">
+      <div className="flex w-max min-w-full items-end justify-center gap-1.5 border-b-2 border-(--color-navy) px-3 pt-2.5 sm:gap-3 sm:px-5">
         {companies.map((company, i) => {
           const no = String(i + 1).padStart(2, "0");
           const isActive = company.slug === activeSlug;
@@ -33,7 +33,7 @@ const RegisterTabs = ({ activeSlug, className = "" }: RegisterTabsProps) => {
           const fullName = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
           const label = stripBrand(fullName);
 
-          const linkClass = `group inline-flex items-baseline gap-2 whitespace-nowrap rounded-t-md px-3 py-2.5 transition-colors duration-200 sm:px-4 ${
+          const linkClass = `group inline-flex items-baseline gap-2 whitespace-nowrap rounded-t-xl px-3.5 py-3 transition-colors duration-200 sm:px-5 ${
             isActive
               ? "bg-(--color-yellow) text-(--color-navy-deep)"
               : "text-(--color-navy) hover:bg-(--color-soft) hover:text-(--color-teal-deep)"
@@ -43,13 +43,13 @@ const RegisterTabs = ({ activeSlug, className = "" }: RegisterTabsProps) => {
             <>
               <span
                 aria-hidden="true"
-                className={`font-ledger text-[10px] font-bold ${
+                className={`font-ledger text-[11px] font-bold ${
                   isActive ? "text-(--color-navy-deep)/60" : "text-(--color-navy)/45"
                 }`}
               >
                 {no}
               </span>
-              <span className="text-[11px] font-bold sm:text-xs">{label}</span>
+              <span className="text-xs font-bold sm:text-sm">{label}</span>
               {isExternal && (
                 <ExternalLink
                   size={11}

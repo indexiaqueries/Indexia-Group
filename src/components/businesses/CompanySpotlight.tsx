@@ -52,18 +52,18 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
               </span>
             ))}
           </h2>
-          <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
+          <p className="mt-4 sm:mt-5 max-w-xl text-sm sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
             {description}
           </p>          {/* Stats grid */}
           <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-3">
             {data.stats.map((stat, i) => (
-              <div key={i} className="rounded-2xl border border-slate-100 bg-white p-3 sm:p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+              <div key={i} className="rounded-2xl border border-(--color-line) bg-white p-3 sm:p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                 <AnimatedCounter
                   value={t(stat.valueKey)}
                   label={t(stat.labelKey)}
                   color={accentInk(company.color)}
                   numberClassName="font-ledger text-xl font-bold tabular-nums sm:text-2xl"
-                  labelClassName="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
+                  labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
                 />
               </div>
             ))}
@@ -72,7 +72,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
           {/* Bullet points */}
           <ul className="mt-6 sm:mt-8 space-y-2 sm:space-y-3">
             {data.bulletsKeys.map((bulletKey) => (
-              <li key={bulletKey} className="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px] leading-6 sm:leading-7 text-(--color-ink-soft)">
+              <li key={bulletKey} className="flex items-start gap-2.5 sm:gap-3 text-sm leading-6 sm:leading-7 text-(--color-ink-soft)">
                 <span
                   className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
                   style={{ background: company.color }}
@@ -88,7 +88,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
           <div className="relative">
             <div
               aria-hidden="true"
-              className="absolute -inset-3 rounded-[30px]"
+              className="absolute -inset-3 rounded-3xl"
               style={{ background: `linear-gradient(135deg, ${company.color}44, transparent 55%, ${company.color}22)` }}
             />
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">

@@ -1,7 +1,6 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
-import Eyebrow from "../../components/common/Eyebrow";
 import Reveal from "../../components/common/Reveal";
 import { colors } from "../../lib/theme";
 import type { InsightItem } from "./newsData";
@@ -53,13 +52,13 @@ const FaqCard = ({ insight, index, isOpen, onToggle, contentHeight, measureRef }
       >
         {String(index + 1).padStart(2, "0")}
       </span>
-      <h3 className="min-w-0 flex-1 font-display text-[14px] font-bold leading-snug text-slate-800 sm:text-[15px]">
+      <h3 className="min-w-0 flex-1 font-display text-[14px] font-bold leading-snug text-(--color-ink) sm:text-[15px]">
         {insight.title}
       </h3>
       <ChevronDown
         size={16}
         strokeWidth={2.5}
-        className={`shrink-0 text-slate-400 transition-transform duration-300 ease-out ${isOpen ? "rotate-180 text-(--color-teal)" : ""}`}
+        className={`shrink-0 text-(--color-muted) transition-transform duration-300 ease-out ${isOpen ? "rotate-180 text-(--color-teal)" : ""}`}
       />
     </button>
 
@@ -69,7 +68,7 @@ const FaqCard = ({ insight, index, isOpen, onToggle, contentHeight, measureRef }
       style={{ maxHeight: isOpen ? `${contentHeight}px` : "0px", opacity: isOpen ? 1 : 0 }}
     >
       <div className="border-t border-white/40 px-4 pb-4 pt-3 sm:px-5 sm:pb-5">
-        <p className="text-[13px] leading-6 text-slate-500">{insight.body}</p>
+        <p className="text-[13px] leading-6 text-(--color-muted)">{insight.body}</p>
       </div>
     </div>
 
@@ -81,7 +80,7 @@ const FaqCard = ({ insight, index, isOpen, onToggle, contentHeight, measureRef }
       style={{ width: "100%" }}
     >
       <div className="border-t border-white/40 px-4 pb-4 pt-3 sm:px-5 sm:pb-5">
-        <p className="text-[13px] leading-6 text-slate-500">{insight.body}</p>
+        <p className="text-[13px] leading-6 text-(--color-muted)">{insight.body}</p>
       </div>
     </div>
   </div>
@@ -163,11 +162,14 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
 
   return (
     <section className="section-ruled relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
-      <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-slate-100" />
+      <div className="absolute inset-0 bg-linear-to-br from-(--color-soft) via-white to-(--color-mist)" />
 
       <div className="relative mx-auto max-w-6xl">
         <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
-          <Eyebrow className="mb-3">{t("newsPage.knowledgeEyebrow")}</Eyebrow>
+          {/* Sentence case: this eyebrow is a 26-char phrase, too long for all-caps */}
+          <p className="font-ledger mb-3 text-xs font-bold tracking-[0.2em] text-(--color-teal)">
+            {t("newsPage.knowledgeEyebrow")}
+          </p>
           {/* No nowrap: this heading must wrap gracefully on small screens and in longer translations. */}
           <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
             {t("newsPage.knowledgeHeading")}

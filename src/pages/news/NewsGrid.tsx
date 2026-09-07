@@ -69,7 +69,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
         onClick={() => goTo(-1)}
         disabled={!canLoop}
         aria-label={t("header.aria.previousArticles")}
-        className="absolute -left-3 top-1/2 z-20 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-600 shadow-md backdrop-blur-sm transition-all hover:border-slate-300 hover:text-slate-900 hover:shadow-lg disabled:opacity-0 lg:flex"
+        className="absolute -left-3 top-1/2 z-20 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-(--color-line) bg-white text-(--color-ink-soft) shadow-md transition-colors hover:border-(--color-teal)/60 hover:text-(--color-teal-deep) disabled:opacity-0 lg:flex"
       >
         <ChevronLeft size={18} />
       </button>
@@ -78,7 +78,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
         onClick={() => goTo(1)}
         disabled={!canLoop}
         aria-label={t("header.aria.nextArticles")}
-        className="absolute -right-3 top-1/2 z-20 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-600 shadow-md backdrop-blur-sm transition-all hover:border-slate-300 hover:text-slate-900 hover:shadow-lg disabled:opacity-0 lg:flex"
+        className="absolute -right-3 top-1/2 z-20 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-(--color-line) bg-white text-(--color-ink-soft) shadow-md transition-colors hover:border-(--color-teal)/60 hover:text-(--color-teal-deep) disabled:opacity-0 lg:flex"
       >
         <ChevronRight size={18} />
       </button>
@@ -108,7 +108,7 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                 />
 
                 {/* Image */}
-                {article.image && (
+                {article.image ? (
                   <div className="relative h-36 overflow-hidden">
                     <img
                       src={article.image}
@@ -119,32 +119,46 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
                   </div>
+                ) : (
+                  <div
+                    className="flex h-36 items-center justify-center"
+                    style={{
+                      background: `linear-gradient(135deg, ${color}12, ${color}06)`,
+                    }}
+                  >
+                    <span
+                      className="font-display text-4xl font-bold opacity-15"
+                      style={{ color }}
+                    >
+                      {article.title.charAt(0)}
+                    </span>
+                  </div>
                 )}
 
                 <div className="flex flex-1 flex-col p-6 pl-7">
                   <div className="flex items-center justify-between gap-3">
                     <span
-                      className="text-[10px] font-bold uppercase tracking-[0.16em]"
+                      className="text-[11px] font-bold uppercase tracking-[0.16em]"
                       style={{ color }}
                     >
                       {article.category}
                     </span>
                     {article.date && (
-                      <span className="font-ledger text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+                      <span className="font-ledger text-[11px] font-bold uppercase tracking-[0.18em] text-(--color-muted)">
                         {article.date}
                       </span>
                     )}
                   </div>
 
-                  <h3 className="font-display mt-3 text-lg font-bold leading-snug text-slate-900">
+                  <h3 className="font-display mt-3 text-lg font-bold leading-snug text-(--color-ink)">
                     {article.title}
                   </h3>
-                  <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                  <p className="mt-3 flex-1 text-sm leading-7 text-(--color-muted)">
                     {article.excerpt}
                   </p>
 
                   {/* Source + Read Full Story */}
-                  <div className="mt-auto flex items-center justify-between border-t border-black/10 pt-4">
+                  <div className="mt-auto flex items-center justify-between border-t border-(--color-line)/60 pt-4">
                     <div className="flex items-center gap-2">
                       {article.sourceIcon ? (
                         <img
@@ -158,12 +172,12 @@ const NewsGrid = ({ latest }: NewsGridProps) => {
                       ) : null}
                       <div className="flex flex-col">
                         {article.source && (
-                          <span className="text-[10px] font-semibold text-slate-400">
+                          <span className="text-[11px] font-semibold text-(--color-muted)">
                             {article.source}
                           </span>
                         )}
                         {article.creator && article.creator.length > 0 && (
-                          <span className="text-[10px] text-slate-300">
+                          <span className="text-[11px] text-(--color-muted)">
                             {article.creator.join(', ')}
                           </span>
                         )}
