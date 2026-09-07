@@ -20,7 +20,7 @@ const socialLinks = [
   {
     name: "X",
     handle: "@indexiafinance",
-    url: "https://x.com/Financelndexia",
+    url: "https://x.com/FinanceIndexia?s=20",
     icon: FaXTwitter,
     brand: "#111827",
   },
@@ -34,7 +34,7 @@ const socialLinks = [
   {
     name: "YouTube",
     handle: "Indexia Finance",
-    url: "https://www.youtube.com/@Financelndexia",
+    url: "https://youtube.com/@financeindexia?si=jUrZw2npNHxrmKCL",
     icon: FaYoutube,
     brand: "#FF0000",
   },
