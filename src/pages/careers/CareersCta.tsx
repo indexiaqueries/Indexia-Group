@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ImpactBand from "../../components/common/ImpactBand";
+import { contactEmails } from "../../data/contact";
 import mailUsImg from "../../assets/careers-img/MailUs.png";
 
 const CareersCta = () => {
@@ -11,8 +12,10 @@ const CareersCta = () => {
       eyebrow={t("careersPage.eyebrow")}
       title={t("careersPage.ctaTitle")}
       body={t("careersPage.ctaBody")}
-      actionLabel="hr.indexia@gmail.com"
-      href="mailto:hr.indexia@gmail.com"
+      actionLabel={contactEmails.hrAlternate}
+      href={`mailto:${contactEmails.hrAlternate}`}
+      secondaryActionLabel={contactEmails.hr}
+      secondaryActionHref={`mailto:${contactEmails.hr}`}
     />
   );
 };

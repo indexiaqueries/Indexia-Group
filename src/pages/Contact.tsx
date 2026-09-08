@@ -1,20 +1,40 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useReducedMotion } from "../hooks/useReducedMotion";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import Reveal from "../components/common/Reveal";
 import ContactHero from "../components/banners/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
-import { branches } from "../data/contact";
+import { branches, contactEmails } from "../data/contact";
 import { GlowingCard } from "../components/lightswind/glowing-cards";
 import { accent } from "../lib/theme"
 import SocialLinks from "../components/ui/SocialLinks";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const { hash } = useLocation();
+  const prefersReducedMotion = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Land deep-linked enquiry buttons (/contact#enquiry-form) on the form
+  // itself. The form carries a scroll-margin-top (scroll-mt-28) sized for the
+  // fixed header, and we wait two frames for hero images and reveal animations
+  // to settle before scrolling, so the form lands fully below the navbar.
+  useEffect(() => {
+    if (hash !== "#enquiry-form") return;
+    const el = document.getElementById("enquiry-form");
+    if (!el) return;
+    const raf1 = requestAnimationFrame(() =>
+      requestAnimationFrame(() =>
+        el.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" })
+      )
+    );
+    return () => cancelAnimationFrame(raf1);
+  }, [hash, prefersReducedMotion]);
 
   const scrollLocations = (dir: -1 | 1) => {
     if (!scrollRef.current) return;
@@ -45,7 +65,7 @@ const Contact = () => {
         name: t("jsonLd.orgName", "Indexia Group"),
         url: "https://www.indexiagroup.com/",
         telephone: "+91-11-4629-1155",
-        email: "contactus@indexiagroup.com",
+        email: contactEmails.generalEnquiries,
         address: [
           {
             "@type": "PostalAddress",

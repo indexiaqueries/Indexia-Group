@@ -1,4 +1,5 @@
 import { colors } from "../lib/theme";
+import { contactEmails } from "./contact";
 
 export type Company = {
   name: string;
@@ -173,7 +174,7 @@ export const companies: Company[] = [
     tag: "Premium Unipole Hoardings",
     desc: "Premium hoardings on Indian highways, majorly the Delhi–Dehradun highway.",
     overview:
-      "Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli, the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily exposure. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end. For bookings call 86918 86919 or 011 4629 1155, or email indexia.queries@gmail.com.",
+      `Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli, the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily exposure. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end. For bookings call 86918 86919 or 011 4629 1155, or email ${contactEmails.queries}.`,
     highlights: [
       "Strategic placements on NH-709B, the Delhi–Dehradun highway",
       "10 connected states, 50 crore population reach, 1+ crore daily exposure",

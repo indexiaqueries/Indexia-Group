@@ -4,6 +4,7 @@ import { useSearchParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, Upload, Send, CheckCircle, User, Mail, Phone, Briefcase, FileText } from "lucide-react";
 import SEO from "../components/common/SEO";
 import { API_BASE } from "../lib/api";
+import { contactEmails } from "../data/contact";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 
@@ -201,8 +202,8 @@ const ApplyPage = () => {
 
               <div className="mx-auto mt-6 max-w-sm rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur-sm">
                 <p className="text-xs font-bold uppercase tracking-wider text-white/50">{t("applyPage.successSentTo")}</p>
-                <p className="mt-2 text-sm font-semibold text-(--color-teal)">hr@indexiafinance.com</p>
-                <p className="text-sm font-semibold text-(--color-teal)">hr.indexia@gmail.com</p>
+                <p className="mt-2 text-sm font-semibold text-(--color-teal)">{contactEmails.hr}</p>
+                <p className="text-sm font-semibold text-(--color-teal)">{contactEmails.hrAlternate}</p>
               </div>
 
               <Link

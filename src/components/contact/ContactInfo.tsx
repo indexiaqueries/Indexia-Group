@@ -1,15 +1,15 @@
 import { Mail, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-import { phoneNumbers } from "../../data/contact";
+import { contactEmails, phoneNumbers } from "../../data/contact";
 import { accent, monoFont } from "../../lib/theme";
 import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 
 const emailAddresses = [
-  { email: "contactus@indexiagroup.com", labelKey: "contactInfo.emailGeneralEnquiries", color: accent.blue },
-  { email: "indexia.queries@gmail.com", labelKey: "contactInfo.emailQueries", color: accent.blue },
-  { email: "Vini.Malik5@gmail.com", labelKey: "contactInfo.emailViniMalik", color: accent.blue },
+  { email: contactEmails.generalEnquiries, labelKey: "contactInfo.emailGeneralEnquiries", color: accent.blue },
+  { email: contactEmails.queries, labelKey: "contactInfo.emailQueries", color: accent.blue },
+  { email: contactEmails.viniMalik, labelKey: "contactInfo.emailViniMalik", color: accent.blue },
 ];
 
 const EmailsSection = () => {

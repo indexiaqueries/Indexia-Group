@@ -28,6 +28,23 @@ export const initialContactForm: ContactFormData = {
   message: "",
 };
 
+/**
+ * Every public contact email used across the site, in one place.
+ * Reference these instead of hardcoding addresses in components.
+ */
+export const contactEmails = {
+  /** General enquiries — footer, contact page and legal documents. */
+  generalEnquiries: "contactus@indexiagroup.com",
+  /** Business queries shown on company pages and the contact page. */
+  queries: "indexia.queries@gmail.com",
+  /** Direct line to Vini Malik (contact page). */
+  viniMalik: "Vini.Malik5@gmail.com",
+  /** Recruitment — primary address (careers page and apply success screen). */
+  hr: "hr@indexiafinance.com",
+  /** Recruitment — alternate address (careers page and apply success screen). */
+  hrAlternate: "hr.indexia@gmail.com",
+} as const;
+
 export const phoneNumbers: PhoneLink[] = [
   { label: "Landline", labelKey: "landline", number: "+91 11 4629 1155", href: "tel:+911146291155" },
   { label: "Mobile", labelKey: "mobile", number: "+91 8928 786 594", href: "tel:+918928786594" },
