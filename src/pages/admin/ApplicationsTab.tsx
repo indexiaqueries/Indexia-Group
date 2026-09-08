@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Clock, Download, Eye, Filter, Search, Star, Trash2, XCircle } from "lucide-react";
 import type { Application } from "./types";
@@ -31,6 +31,18 @@ const ApplicationsTab = ({
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
 
+  // Scroll the detail panel into view the moment it opens from a list click —
+  // on narrow screens it stacks below the list and would otherwise open unseen.
+  const prevSelected = useRef<Application | null>(null);
+  useEffect(() => {
+    if (selectedApp && !prevSelected.current) {
+      document
+        .getElementById("app-detail-panel")
+        ?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+    prevSelected.current = selectedApp;
+  }, [selectedApp]);
+
   const filtered = applications.filter((a) => {
     const matchesSearch =
       !searchQuery ||
@@ -47,6 +59,14 @@ const ApplicationsTab = ({
     reviewed: applications.filter((a) => a.status === "reviewed").length,
     shortlisted: applications.filter((a) => a.status === "shortlisted").length,
     rejected: applications.filter((a) => a.status === "rejected").length,
+  };
+
+  // Keep the open detail panel in view after an update action — on narrow
+  // screens the panel stacks below the list and can be out of the viewport.
+  const keepPanelInView = () => {
+    document
+      .getElementById("app-detail-panel")
+      ?.scrollIntoView({ block: "nearest", behavior: "smooth" });
   };
 
   return (
@@ -130,7 +150,7 @@ const ApplicationsTab = ({
 
         {/* Detail panel */}
         {selectedApp && (
-          <div className="w-full shrink-0 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm lg:w-96" role="complementary" aria-label="Application details">
+          <div id="app-detail-panel" className="w-full shrink-0 scroll-mt-16 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm lg:w-96" role="complementary" aria-label="Application details">
             <div className="mb-4 flex items-center justify-between">
               <h2 className="font-display text-lg font-bold text-(--color-ink)">{selectedApp.name}</h2>
               <button onClick={() => onSelectApp(null)} className="text-slate-400 hover:text-slate-600">
@@ -167,7 +187,7 @@ const ApplicationsTab = ({
               {(["pending", "reviewed", "shortlisted", "rejected"] as const).map((s) => (
                 <button
                   key={s}
-                  onClick={() => onUpdateStatus(selectedApp._id, s)}
+                  onClick={() => { onUpdateStatus(selectedApp._id, s); keepPanelInView(); }}
                   disabled={selectedApp.status === s}
                   className={`rounded-full px-3 py-1.5 text-xs font-bold capitalize transition-all ${
                     selectedApp.status === s

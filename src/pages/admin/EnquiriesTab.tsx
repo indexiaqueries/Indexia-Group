@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { CheckCircle2, Clock, Eye, Filter, Search, Trash2, XCircle } from "lucide-react";
 import type { Enquiry } from "./types";
@@ -30,6 +30,18 @@ const EnquiriesTab = ({
   const [enquiryQuery, setEnquiryQuery] = useState("");
   const [enquiryFilter, setEnquiryFilter] = useState<"all" | "new" | "read" | "handled">("new");
 
+  // Scroll the detail panel into view the moment it opens from a list click —
+  // on narrow screens it stacks below the list and would otherwise open unseen.
+  const prevSelected = useRef<Enquiry | null>(null);
+  useEffect(() => {
+    if (selectedEnquiry && !prevSelected.current) {
+      document
+        .getElementById("enquiry-detail-panel")
+        ?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+    prevSelected.current = selectedEnquiry;
+  }, [selectedEnquiry]);
+
   const filteredEnquiries = enquiries.filter((e) => {
     const matchesSearch =
       !enquiryQuery ||
@@ -46,6 +58,14 @@ const EnquiriesTab = ({
     new: enquiries.filter((e) => e.status === "new").length,
     read: enquiries.filter((e) => e.status === "read").length,
     handled: enquiries.filter((e) => e.status === "handled").length,
+  };
+
+  // Keep the open detail panel in view after an update action — on narrow
+  // screens the panel stacks below the list and can be out of the viewport.
+  const keepPanelInView = () => {
+    document
+      .getElementById("enquiry-detail-panel")
+      ?.scrollIntoView({ block: "nearest", behavior: "smooth" });
   };
 
   return (
@@ -131,7 +151,7 @@ const EnquiriesTab = ({
 
         {/* Detail panel */}
         {selectedEnquiry && (
-          <div className="w-full shrink-0 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm lg:w-96" role="complementary" aria-label="Enquiry details">
+          <div id="enquiry-detail-panel" className="w-full shrink-0 scroll-mt-16 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm lg:w-96" role="complementary" aria-label="Enquiry details">
             <div className="mb-4 flex items-center justify-between">
               <h2 className="font-display text-lg font-bold text-(--color-ink)">{selectedEnquiry.name}</h2>
               <button onClick={() => onSelectEnquiry(null)} className="text-slate-400 hover:text-slate-600" aria-label="Close enquiry details">
@@ -152,7 +172,7 @@ const EnquiriesTab = ({
               {(["new", "read", "handled"] as const).map((s) => (
                 <button
                   key={s}
-                  onClick={() => onUpdateEnquiryStatus(selectedEnquiry._id, s)}
+                  onClick={() => { onUpdateEnquiryStatus(selectedEnquiry._id, s); keepPanelInView(); }}
                   disabled={selectedEnquiry.status === s}
                   className={`rounded-full px-3 py-1.5 text-xs font-bold capitalize transition-all ${
                     selectedEnquiry.status === s
