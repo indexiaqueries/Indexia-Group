@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import footerBg from "../../assets/footer-img/footer-img.webp";
 import logo from "../../assets/logo/IndexiaGroup_Logo.webp";
 import { Mail, Phone, Clock } from "lucide-react";
-import { phoneNumbers } from "../../data/contact";
+import { contactEmails, phoneNumbers } from "../../data/contact";
 import { socialLinks } from "../../data/socialLinks";
 import BackToTop from "./BackToTop";
 
@@ -29,14 +29,30 @@ const linkGroups: {
   },
 ];
 
+const landline = phoneNumbers[0];
+// Mobile number shown in the footer alongside the landline.
+const mobile = phoneNumbers.find((p) => p.number === "+91 86551 68551");
+
 const contactInfo: {
   icon: typeof Mail;
   text?: string;
   textKey?: string;
   href?: string;
+  /** Multiple values (phone numbers or emails) sharing one icon on a row. */
+  links?: { text: string; href: string }[];
 }[] = [
-  { icon: Mail, text: "contactus@indexiagroup.com", href: "mailto:contactus@indexiagroup.com" },
-  { icon: Phone, text: phoneNumbers[0]?.number ?? "+91 011 4629 1155", href: phoneNumbers[0]?.href ?? "tel:+911146291155" },
+  { icon: Mail, text: contactEmails.generalEnquiries, href: `mailto:${contactEmails.generalEnquiries}` },
+  {
+    icon: Phone,
+    links: [landline, mobile]
+      .filter((p): p is NonNullable<typeof landline> => Boolean(p))
+      .map((p) => ({ text: p.number, href: p.href })),
+  },
+  {
+    icon: Mail,
+    // HR reachable from every page, not just the careers section
+    links: [contactEmails.hr, contactEmails.hrAlternate].map((email) => ({ text: email, href: `mailto:${email}` })),
+  },
   { icon: Clock, textKey: "footer.hours" },
 ];
 
@@ -117,6 +133,27 @@ const Footer = () => {
             <div className="mt-3 space-y-2">
               {contactInfo.map((item) => {
                 const Icon = item.icon;
+                // Row with several values (phone numbers or emails) sharing one icon
+                if (item.links && item.links.length) {
+                  const links = item.links;
+                  return (
+                    <div key={links.map((l) => l.href).join("|")} className="flex items-start gap-2 text-[13px] text-white/80">
+                      <span className="mt-0.5 shrink-0 text-(--color-teal)">
+                        <Icon className="h-3.5 w-3.5" />
+                      </span>
+                      <span className="flex min-w-0 flex-wrap items-center gap-x-2">
+                        {links.map((n, i) => (
+                          <span key={n.href} className="flex items-center gap-2">
+                            <a href={n.href} className="transition-colors duration-200 hover:text-(--color-yellow)">
+                              {n.text}
+                            </a>
+                            {i < links.length - 1 && <span className="text-white/40">·</span>}
+                          </span>
+                        ))}
+                      </span>
+                    </div>
+                  );
+                }
                 const content = (
                   <span className="flex items-start gap-2 text-[13px] text-white/80">
                     <span className="mt-0.5 shrink-0 text-(--color-teal)">
@@ -139,7 +176,7 @@ const Footer = () => {
 
             {/* Enquiry CTA relocated inside the Connect With Us column */}
             <Link
-              to="/contact"
+              to="/contact#enquiry-form"
               className="mt-4 inline-flex items-center gap-2 rounded-full border border-(--color-yellow)/30 bg-(--color-yellow)/10 px-5 py-2 text-[13px] font-bold text-(--color-yellow) transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow)/20"
             >
               {t("footer.enquiry")} →
