@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type MilestoneData = {
   year: string;
@@ -15,13 +15,11 @@ const MilestoneItem = ({
   index,
   isCurrent,
   isPast,
-  onVisible,
 }: {
   m: MilestoneData;
   index: number;
   isCurrent: boolean;
   isPast: boolean;
-  onVisible: (index: number) => void;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [appeared, setAppeared] = useState(false);
@@ -31,16 +29,13 @@ const MilestoneItem = ({
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setAppeared(true);
-          onVisible(index);
-        }
+        if (entry.isIntersecting) setAppeared(true);
       },
       { threshold: 0.4, rootMargin: "0px 0px -5% 0px" }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [index, onVisible]);
+  }, []);
 
   return (
     <div ref={ref} className="relative flex items-center sm:justify-center">
@@ -121,52 +116,94 @@ const MilestoneItem = ({
 export default function ScrollTimeline({ milestones }: ScrollTimelineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const dotRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const lineFillRef = useRef<HTMLDivElement>(null);
+  const pointerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
 
-  // Track which milestones have been scrolled past
-  const handleMilestoneVisible = useCallback((index: number) => {
-    setActiveIndex((prev) => Math.max(prev, index));
-  }, []);
-
-  // Update active index as user scrolls, track the highest dot past the viewport center
+  // Drive the line fill + glowing pointer with the scroll position.
+  //
+  // The pointer position is written synchronously on every scroll event, so it
+  // tracks the scroll exactly — it cannot lag behind or pause between frames
+  // even when the main thread is busy and requestAnimationFrame is throttled.
+  // The rAF pass is kept as a fallback coalescer for the highlight index, and
+  // both `window` and `document` (capture) are listened to so any scroll
+  // container triggers an update.
   useEffect(() => {
-    const handleScroll = () => {
-      const viewportCenter = window.innerHeight * 0.55;
-      let current = -1;
+    let rafId = 0;
 
+    // Returns continuous progress 0..1: 0 while the timeline's top is still
+    // below the reading line, 1 once its bottom passes it.
+    const updateProgress = () => {
+      const container = containerRef.current;
+      if (!container) return 0;
+      const readingLine = window.innerHeight * 0.55;
+      const rect = container.getBoundingClientRect();
+      const traveled = readingLine - rect.top;
+      const progress = rect.height > 0 ? Math.min(1, Math.max(0, traveled / rect.height)) : 0;
+      const pct = `${progress * 100}%`;
+      if (lineFillRef.current) lineFillRef.current.style.height = pct;
+      if (pointerRef.current) pointerRef.current.style.top = pct;
+      return progress;
+    };
+
+    // A milestone becomes active only once the gliding pointer has travelled
+    // past the milestone's number on the line: compare the pointer's progress
+    // against each number dot's own position within the timeline. The dot sits
+    // at the vertical centre of its milestone row, so the row centre is used.
+    const updateIndex = (progress: number) => {
+      const container = containerRef.current;
+      if (!container) return;
+      const rect = container.getBoundingClientRect();
+      let current = -1;
       dotRefs.current.forEach((el, i) => {
         if (!el) return;
-        const rect = el.getBoundingClientRect();
-        if (rect.top < viewportCenter) {
-          current = i;
-        }
+        const dotCenter = el.getBoundingClientRect().top - rect.top + el.getBoundingClientRect().height / 2;
+        const fraction = rect.height > 0 ? dotCenter / rect.height : 0;
+        if (progress >= fraction) current = i;
       });
+      setActiveIndex(current);
+    };
 
-      if (current >= 0) {
-        setActiveIndex(current);
+    const onScroll = () => {
+      updateProgress();
+      if (!rafId) {
+        rafId = requestAnimationFrame(() => {
+          rafId = 0;
+          // Re-read the latest scroll position inside the frame, then activate
+          // whichever milestone the pointer has passed.
+          updateIndex(updateProgress());
+        });
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    const onResize = () => {
+      updateIndex(updateProgress());
+    };
 
-  // Progress for the line fill (0 to 1 based on active index)
-  const lineProgress = activeIndex < 0 ? 0 : (activeIndex + 1) / milestones.length;
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("scroll", onScroll, { passive: true, capture: true });
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("scroll", onScroll, true);
+      window.removeEventListener("resize", onResize);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
+  }, []);
 
   return (
     <div ref={containerRef} className="relative">
       {/* Animated progress line */}
       <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-(--color-line) sm:-translate-x-1/2">
         <div
-          className="absolute top-0 left-0 w-full bg-linear-to-b from-(--color-teal) to-(--color-yellow) transition-[height] duration-300"
-          style={{ height: `${lineProgress * 100}%` }}
+          ref={lineFillRef}
+          className="absolute top-0 left-0 w-full bg-linear-to-b from-(--color-teal) to-(--color-yellow) transition-none"
         />
         {/* Glowing pointer */}
         <div
-          className="absolute left-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-(--color-teal) shadow-[0_0_12px_rgba(0,128,128,0.6)] transition-[top] duration-300"
-          style={{ top: `${lineProgress * 100}%` }}
+          ref={pointerRef}
+          className="absolute left-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-(--color-teal) shadow-[0_0_12px_rgba(0,128,128,0.6)] transition-none"
         />
       </div>
 
@@ -178,7 +215,6 @@ export default function ScrollTimeline({ milestones }: ScrollTimelineProps) {
               index={i}
               isCurrent={i === activeIndex}
               isPast={i < activeIndex}
-              onVisible={handleMilestoneVisible}
             />
           </div>
         ))}
