@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useReducedMotion } from "../../hooks/useReducedMotion";
 import { ArrowDown, ArrowRight, Clock, Layers, MapPin, Sparkles } from "lucide-react";
 import AnimatedCounter from "../common/AnimatedCounter";
 import { serviceIcons } from "./serviceIcons";
@@ -41,6 +42,7 @@ type CompanyDetailProps = {
 
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
+  const prefersReducedMotion = useReducedMotion();
   const [bookingMessage, setBookingMessage] = useState<string | undefined>(undefined);
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
@@ -63,13 +65,18 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const slideHeading = t(`hero.p${index + 1}.heading`, b.tagline ?? b.name);
   const slideSub = t(`hero.p${index + 1}.sub`, b.desc);
 
+  // Land the enquiry section top exactly below the fixed navbar. The section
+  // carries its own scroll-margin-top (scroll-mt-28), so scrollIntoView is the
+  // single source of truth for the offset — no hardcoded pixel math here.
+  const scrollToEnquiry = () => {
+    document
+      .getElementById("enquiry")
+      ?.scrollIntoView({ block: "start", behavior: prefersReducedMotion ? "auto" : "smooth" });
+  };
+
   const handleBook = (row: PricingRow) => {
-    // Scroll the enquiry form into view first, a remount in the same tick cancels it.
-    const target = document.getElementById("enquiry");
-    if (target) {
-      const y = target.getBoundingClientRect().top + window.scrollY - 96;
-      window.scrollTo({ top: y, behavior: "auto" });
-    }
+    // Scroll the enquiry form into view first; a remount in the same tick cancels it.
+    scrollToEnquiry();
     // Then update the booking message (remounts the form with the pre-filled text).
     const message =
       row.message ??
@@ -135,6 +142,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
           <p className="mt-4 sm:mt-5 max-w-2xl text-[14px] sm:text-base leading-7 sm:leading-8 text-white/80">{desc}</p>              <div className="mt-7 sm:mt-9 flex flex-wrap gap-3 sm:gap-4">
             <a
               href="#enquiry"
+              onClick={(e) => {
+                // Prevent the native same-hash jump (which browsers ignore on
+                // repeat clicks) and always scroll via scrollIntoView instead.
+                e.preventDefault();
+                scrollToEnquiry();
+              }}
               className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-5 py-2.5 sm:px-7 sm:py-3 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright)"
             >
               {t("companyDetail.eyebrow")}
@@ -428,7 +441,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       <section
         id="enquiry"
-        className="section-ruled section-paper relative scroll-mt-24 overflow-hidden"
+        className="section-ruled section-paper relative scroll-mt-28 overflow-hidden"
         style={{ padding: "clamp(12px, 2vw, 24px) 0" }}
       >
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
