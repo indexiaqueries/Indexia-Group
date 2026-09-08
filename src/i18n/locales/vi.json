@@ -553,80 +553,149 @@
   "legalContent": {
     "privacy": {
       "intro": [
-        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
-        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+        "Chính sách Bảo mật này giải thích cách Indexia Group và các công ty thành viên (gọi chung là \"Indexia Group\", \"chúng tôi\" hoặc \"của chúng tôi\") thu thập, sử dụng, tiết lộ và bảo vệ thông tin cá nhân của bạn khi bạn truy cập trang web của chúng tôi, gửi yêu cầu hoặc đơn xin việc, hoặc tương tác với chúng tôi theo bất kỳ cách nào khác.",
+        "Bằng cách sử dụng trang web của chúng tôi hoặc cung cấp thông tin của bạn cho chúng tôi, bạn đồng ý với các biện pháp được mô tả trong chính sách này. Nếu bạn không đồng ý, vui lòng không gửi thông tin cá nhân của mình hoặc sử dụng dịch vụ của chúng tôi."
       ],
       "sections": [
         {
+          "title": "Informations que nous collectons",
           "paragraphs": [
-            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
-            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
-          ],
-          "title": "Informations que nous collectons"
+            "Thông tin bạn cung cấp: khi bạn sử dụng biểu mẫu yêu cầu trên trang Liên hệ của chúng tôi, chúng tôi thu thập các chi tiết bạn nhập, thường là tên, số điện thoại, địa chỉ email, chủ đề và tin nhắn của bạn. Khi bạn ứng tuyển qua trang Ứng tuyển, chúng tôi thu thập tên, địa chỉ email, số điện thoại, số năm kinh nghiệm, sơ yếu lý lịch hoặc tệp CV và phần giới thiệu bạn cung cấp. Chúng tôi cũng thu thập mọi thông tin khác mà bạn chọn gửi cho chúng tôi qua email, điện thoại hoặc thư.",
+            "Thông tin được thu thập tự động: chúng tôi không sử dụng cookie theo dõi, công cụ phân tích hoặc pixel quảng cáo trên trang web này. Nhà cung cấp dịch vụ lưu trữ của chúng tôi có thể ghi lại nhật ký máy chủ tiêu chuẩn (như địa chỉ IP và loại trình duyệt của bạn) để vận hành, bảo mật và khắc phục sự cố trang web. Trình duyệt của bạn lưu trữ ngôn ngữ bạn chọn trên thiết bị này (bộ nhớ cục bộ) để trang web có thể ghi nhớ vào lần truy cập tiếp theo của bạn."
+          ]
         },
         {
+          "title": "Comment nous utilisons vos informations",
           "paragraphs": [
-            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
-            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
-          ],
-          "title": "Comment nous utilisons vos informations"
+            "Chúng tôi sử dụng thông tin bạn cung cấp để trả lời yêu cầu của bạn và chuyển đến công ty Indexia Group có liên quan, để đánh giá đơn xin việc, để cải thiện trang web và dịch vụ của chúng tôi, để tuân thủ các nghĩa vụ pháp lý và — chỉ khi bạn đã đồng ý — để gửi cho bạn thông tin cập nhật về các công ty thành viên của chúng tôi.",
+            "Các yêu cầu và đơn xin việc gửi qua biểu mẫu của chúng tôi được lưu trữ trong cơ sở dữ liệu của chúng tôi và được nhóm của chúng tôi xem xét thông qua khu vực quản trị được bảo vệ bằng mật khẩu."
+          ]
         },
         {
+          "title": "Partage et divulgation",
           "paragraphs": [
-            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Chúng tôi có thể chia sẻ thông tin của bạn trong Indexia Group để công ty phù hợp có thể trả lời yêu cầu hoặc đơn của bạn. Chúng tôi cũng có thể chia sẻ thông tin với các nhà cung cấp dịch vụ hỗ trợ hoạt động của chúng tôi, chẳng hạn như nhà cung cấp dịch vụ lưu trữ và truyền thông. Chúng tôi có thể tiết lộ thông tin cho cơ quan quản lý, tòa án hoặc cơ quan chức năng khi pháp luật yêu cầu, cũng như liên quan đến việc sáp nhập, mua lại hoặc bán tài sản.",
             "Nous ne vendons pas vos informations personnelles à des tiers."
-          ],
-          "title": "Partage et divulgation"
+          ]
         },
         {
+          "title": "Sécurité des données",
           "paragraphs": [
-            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức hợp lý, bao gồm mã hóa HTTPS trong quá trình truyền tải, kiểm soát truy cập vào hệ thống quản trị của chúng tôi và giám sát, để bảo vệ thông tin cá nhân của bạn khỏi truy cập trái phép, mất mát hoặc lạm dụng.",
             "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
-          ],
-          "title": "Sécurité des données"
+          ]
         },
         {
+          "title": "Cookie và bộ nhớ cục bộ",
           "paragraphs": [
-            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
-          ],
-          "title": "Cookies et technologies similaires"
+            "Trang web này không sử dụng cookie theo dõi, công cụ phân tích hoặc công nghệ quảng cáo. Chúng tôi chỉ sử dụng bộ nhớ cục bộ của trình duyệt để ghi nhớ tùy chọn ngôn ngữ của bạn; bạn có thể xóa nó bất cứ lúc nào thông qua cài đặt trình duyệt.",
+            "Trang web tải phông chữ từ Google Fonts. Khi phông chữ được tải, trình duyệt của bạn kết nối với máy chủ của Google và Google có thể xử lý địa chỉ IP của bạn theo chính sách bảo mật của Google."
+          ]
         },
         {
+          "title": "Conservation des données",
           "paragraphs": [
-            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
-          ],
-          "title": "Conservation des données"
+            "Chúng tôi lưu giữ hồ sơ yêu cầu trong thời gian cần thiết để trả lời bạn và trong một khoảng thời gian hợp lý sau đó cho mục đích lưu trữ. Đơn xin việc được lưu giữ trong suốt quá trình tuyển dụng và một khoảng thời gian hợp lý sau đó, trừ khi pháp luật yêu cầu lưu giữ lâu hơn."
+          ]
         },
         {
+          "title": "Vos droits et choix",
           "paragraphs": [
-            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Tùy thuộc vào luật hiện hành, bạn có thể có quyền truy cập, chỉnh sửa, cập nhật hoặc yêu cầu xóa thông tin cá nhân của mình, và rút lại sự đồng ý khi việc xử lý dựa trên sự đồng ý.",
             "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
-          ],
-          "title": "Vos droits et choix"
+          ]
         },
         {
+          "title": "Liens vers des tiers",
           "paragraphs": [
-            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
-          ],
-          "title": "Liens vers des tiers"
+            "Trang web và thông tin liên lạc của chúng tôi có thể chứa liên kết đến các trang web bên ngoài, bao gồm trang web của các công ty thành viên (như cổng thông tin doanh nghiệp) và trang mạng xã hội. Chính sách này không áp dụng cho các trang web đó và chúng tôi khuyến khích bạn xem xét chính sách bảo mật của riêng họ."
+          ]
         },
         {
+          "title": "Confidentialité des enfants",
           "paragraphs": [
             "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
-          ],
-          "title": "Confidentialité des enfants"
+          ]
         },
         {
+          "title": "Modifications de la présente politique",
           "paragraphs": [
             "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
-          ],
-          "title": "Modifications de la présente politique"
+          ]
         },
         {
+          "title": "Contact",
           "paragraphs": [
-            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
-          ],
-          "title": "Contact"
+            "Nếu bạn có câu hỏi hoặc thắc mắc về Chính sách Bảo mật này hoặc cách chúng tôi xử lý thông tin cá nhân của bạn, vui lòng liên hệ với chúng tôi qua contactus@indexiagroup.com hoặc qua điện thoại +91 11 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "Các Điều khoản Sử dụng này (\"Điều khoản\") điều chỉnh việc bạn sử dụng trang web của Indexia Group và các trang của các công ty thành viên. Bằng cách truy cập hoặc sử dụng trang web này, bạn đồng ý bị ràng buộc bởi các Điều khoản này và Chính sách Bảo mật của chúng tôi. Nếu bạn không đồng ý, vui lòng không sử dụng trang web.",
+        "Indexia Group là tập đoàn kinh doanh đa ngành của Ấn Độ với các công ty cung cấp dịch vụ tài chính, chứng khoán, xuất khẩu toàn cầu, phân bón sinh học nông nghiệp, kho bãi, quảng cáo và các dịch vụ liên quan. Trang web này là nền tảng thông tin cho tập đoàn và các công ty thành viên."
+      ],
+      "sections": [
+        {
+          "title": "Sử dụng trang web này",
+          "paragraphs": [
+            "Trang web này được cung cấp để cung cấp thông tin chung về Indexia Group và các công ty thành viên, dịch vụ, tin tức, nghiên cứu và cơ hội nghề nghiệp của họ. Bạn đồng ý chỉ sử dụng trang web cho các mục đích hợp pháp và theo cách không gây ảnh hưởng đến hoạt động bình thường của trang web hoặc quyền của người dùng khác."
+          ]
+        },
+        {
+          "title": "Không phải là tư vấn tài chính, đầu tư hoặc pháp lý",
+          "paragraphs": [
+            "Nội dung trên trang web này, bao gồm mô tả về dịch vụ tài chính, khoản vay, chứng khoán, xuất khẩu và các dịch vụ khác, chỉ được cung cấp cho mục đích thông tin chung. Nội dung này không cấu thành tư vấn tài chính, đầu tư, thuế hoặc pháp lý, và không phải là lời đề nghị hoặc mời chào mua hoặc bán bất kỳ sản phẩm hoặc dịch vụ nào. Bạn nên liên hệ trực tiếp với công ty Indexia Group có liên quan và nhận tư vấn chuyên môn trước khi hành động dựa trên bất cứ điều gì bạn đọc ở đây."
+          ]
+        },
+        {
+          "title": "Yêu cầu và đơn xin việc",
+          "paragraphs": [
+            "Khi bạn gửi yêu cầu hoặc đơn xin việc qua trang web này, chúng tôi có thể chuyển thông tin của bạn đến công ty Indexia Group phù hợp nhất để trả lời. Việc gửi yêu cầu không tạo ra bất kỳ nghĩa vụ nào từ phía chúng tôi. Bạn chịu trách nhiệm về tính chính xác của thông tin bạn cung cấp và xác nhận rằng bạn được phép gửi thông tin đó. Đơn xin việc được đánh giá theo quyết định của chúng tôi."
+          ]
+        },
+        {
+          "title": "Không có giao dịch trực tuyến",
+          "paragraphs": [
+            "Trang web này không xử lý thanh toán hoặc ký kết hợp đồng trực tuyến. Mọi sản phẩm hoặc dịch vụ do công ty Indexia Group cung cấp đều tuân theo thỏa thuận, điều khoản và điều kiện riêng của công ty đó, mà bạn nên đọc kỹ trước khi tham gia. Không có gì trên trang web này cấu thành hợp đồng giữa bạn và Indexia Group."
+          ]
+        },
+        {
+          "title": "Propriété Intellectuelle",
+          "paragraphs": [
+            "Nội dung của trang web này, bao gồm văn bản, thiết kế, bố cục, đồ họa, logo và hình ảnh, thuộc sở hữu của hoặc được cấp phép cho Indexia Group và được bảo vệ bởi luật sở hữu trí tuệ hiện hành. Bạn có thể xem và in nội dung cho mục đích cá nhân, phi thương mại. Việc sao chép, phân phối hoặc sử dụng thương mại mà không có sự đồng ý trước bằng văn bản của chúng tôi là bị cấm."
+          ]
+        },
+        {
+          "title": "Liens vers des tiers",
+          "paragraphs": [
+            "Trang web này có thể chứa liên kết đến các trang web bên ngoài, bao gồm trang web của các công ty thành viên, trang mạng xã hội và các tài nguyên khác. Chúng tôi không kiểm soát các trang web đó và không chịu trách nhiệm về nội dung hoặc tính khả dụng của chúng. Một liên kết không có nghĩa là xác nhận."
+          ]
+        },
+        {
+          "title": "Từ chối bảo hành",
+          "paragraphs": [
+            "Trang web này và nội dung của nó được cung cấp \"nguyên trạng\" và \"theo tình trạng sẵn có\". Mặc dù chúng tôi cố gắng giữ cho thông tin chính xác và cập nhật, chúng tôi không đưa ra bất kỳ tuyên bố hoặc bảo đảm nào dưới bất kỳ hình thức nào, rõ ràng hay ngụ ý, về tính đầy đủ, chính xác, độ tin cậy hoặc sự phù hợp cho bất kỳ mục đích nào."
+          ]
+        },
+        {
+          "title": "Giới hạn trách nhiệm",
+          "paragraphs": [
+            "Trong phạm vi tối đa pháp luật cho phép, Indexia Group và các công ty thành viên sẽ không chịu trách nhiệm về bất kỳ tổn thất hoặc thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, hệ quả hoặc đặc biệt nào phát sinh từ hoặc liên quan đến việc bạn sử dụng trang web này hoặc không thể sử dụng nó, bao gồm mất dữ liệu hoặc lợi nhuận, ngay cả khi chúng tôi đã được thông báo về khả năng xảy ra những thiệt hại đó."
+          ]
+        },
+        {
+          "title": "Droit Applicable",
+          "paragraphs": [
+            "Các Điều khoản này được điều chỉnh bởi luật pháp Ấn Độ. Mọi tranh chấp phát sinh từ hoặc liên quan đến việc sử dụng trang web này thuộc thẩm quyền độc quyền của tòa án Mumbai."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "Nếu bạn có câu hỏi về các Điều khoản Sử dụng này, vui lòng liên hệ với chúng tôi qua contactus@indexiagroup.com hoặc qua điện thoại +91 11 4629 1155."
+          ]
         }
       ]
     },
@@ -634,136 +703,68 @@
       "intro": [
         "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
         "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
-        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+        "Thuật ngữ \"Indexia Group\" hoặc \"chúng tôi\" dùng để chỉ chủ sở hữu trang web, có văn phòng đăng ký tại 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai – 400053. Thuật ngữ \"bạn\" dùng để chỉ người dùng hoặc người truy cập trang web của chúng tôi."
       ],
       "sections": [
         {
+          "title": "Contenu et Modifications",
           "paragraphs": [
             "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
-          ],
-          "title": "Contenu et Modifications"
+          ]
         },
         {
+          "title": "Aucune Garantie",
           "paragraphs": [
             "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
-          ],
-          "title": "Aucune Garantie"
+          ]
         },
         {
+          "title": "Utilisation à Vos Risques",
           "paragraphs": [
             "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
-          ],
-          "title": "Utilisation à Vos Risques"
+          ]
         },
         {
+          "title": "Propriété Intellectuelle",
           "paragraphs": [
             "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
-          ],
-          "title": "Propriété Intellectuelle"
+          ]
         },
         {
+          "title": "Marques Commerciales",
           "paragraphs": [
             "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
-          ],
-          "title": "Marques Commerciales"
+          ]
         },
         {
+          "title": "Utilisation Non Autorisée",
           "paragraphs": [
             "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
-          ],
-          "title": "Utilisation Non Autorisée"
+          ]
         },
         {
+          "title": "Liens vers des tiers",
           "paragraphs": [
             "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
-          ],
-          "title": "Liens Vers des Sites Tiers"
+          ]
         },
         {
+          "title": "Liens Vers ce Site Web",
           "paragraphs": [
             "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
-          ],
-          "title": "Liens Vers ce Site Web"
+          ]
         },
         {
+          "title": "Droit Applicable",
           "paragraphs": [
             "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
-          ],
-          "title": "Droit Applicable"
+          ]
         },
         {
+          "title": "Tuyên bố miễn trừ dịch vụ tài chính",
           "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ],
-          "title": "Responsabilité des Transactions par Carte"
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [
-        null,
-        "Nếu bạn không đồng ý với các điều khoản này, vui lòng không truy cập hoặc sử dụng trang web của chúng tôi."
-      ],
-      "sections": [
-        {
-          "paragraphs": [
-            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
-          ],
-          "title": "Politique d'Annulation et de Remboursement"
-        },
-        {
-          "paragraphs": [
-            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
-            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
-            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
-            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
-            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
-            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
-            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
-            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
-          ],
-          "title": "Politique d'Annulation"
-        },
-        {
-          "paragraphs": [
-            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
-          ],
-          "title": "Politique de Remboursement"
-        },
-        {
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ],
-          "title": "Clause BO"
-        },
-        {
-          "paragraphs": [
-            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
-            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
-            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
-          ],
-          "title": "Politique de Clause de Non-Responsabilité"
-        },
-        {
-          "paragraphs": [
-            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
-            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
-            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
-            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
-          ],
-          "title": "Clause de Non-Responsabilité de ce Site Web"
-        },
-        {
-          "paragraphs": {
-            "0": "Chúng tôi giữ quỳn sửa đổi Điều khoản Sử dụng này bất kỳ lúc nào."
-          },
-          "title": "Thay đổi Điều khoản"
-        },
-        {
-          "paragraphs": {
-            "0": "Nếu có thắc mắc, vui lòng liên hệ contactus@indexiagroup.com."
-          },
-          "title": "Liên hệ"
+            "Các công ty của Indexia Group cung cấp dịch vụ tài chính, khoản vay, chứng khoán, xuất khẩu, kho bãi, dịch vụ nông nghiệp và dịch vụ liên quan. Thông tin về các dịch vụ này trên trang web được cung cấp chỉ cho mục đích thông tin chung. Thông tin này không cấu thành lời đề nghị, lời mời chào hoặc tư vấn tài chính, đầu tư hoặc pháp lý, và chúng tôi không chấp nhận bất kỳ trách nhiệm nào đối với các quyết định dựa trên nội dung này. Mọi sản phẩm hoặc dịch vụ bạn nhận được từ một công ty thành viên đều tuân theo các điều khoản và điều kiện riêng của công ty đó."
+          ]
         }
       ]
     }

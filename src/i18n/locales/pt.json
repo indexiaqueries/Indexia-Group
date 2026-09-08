@@ -553,80 +553,149 @@
   "legalContent": {
     "privacy": {
       "intro": [
-        "A presente Política de Privacidade explica como o Indexia Group e as suas empresas do grupo (em conjunto, «Indexia Group», «nós», «nos» ou «nosso») recolhemos, utilizamos, divulgamos e protegemos as suas informações pessoais quando visita os nossos sites, envia um pedido de informação ou utiliza os nossos serviços.",
-        "Ao utilizar os nossos sites ou ao fornecer-nos as suas informações, aceita as práticas descritas na presente política. Se não concordar, não forneça as suas informações pessoais nem utilize os nossos serviços."
+        "Esta Política de Privacidade explica como a Indexia Group e as suas empresas do grupo (em conjunto, \"Indexia Group\", \"nós\" ou \"nosso\") recolhem, utilizam, divulgam e protegem as suas informações pessoais quando visita os nossos sites, submete um pedido de informação ou candidatura de emprego, ou interage connosco de qualquer outra forma.",
+        "Ao utilizar os nossos sites ou ao fornecer-nos as suas informações, concorda com as práticas descritas nesta política. Se não concordar, não submeta as suas informações pessoais nem utilize os nossos serviços."
       ],
       "sections": [
         {
+          "title": "Informações que recolhemos",
           "paragraphs": [
-            "Informações que fornece: recolhemos os dados que nos fornece diretamente, como o seu nome, endereço de email, número de telefone, nome da empresa e o conteúdo do seu pedido ou candidatura.",
-            "Informações recolhidas automaticamente: quando visita os nossos sites, podemos recolher informações sobre o dispositivo e a utilização, como o seu endereço IP, o tipo de navegador, as páginas visitadas e os URLs de referência, através de cookies e tecnologias semelhantes."
-          ],
-          "title": "Informações que recolhemos"
+            "Informações que fornece: quando utiliza o formulário de pedido de informação na nossa página de Contacto, recolhemos os dados que introduz, normalmente o seu nome, número de telefone, endereço de e-mail, assunto e mensagem. Quando se candidata a um emprego através da página de Candidatura, recolhemos o seu nome, endereço de e-mail, número de telefone, anos de experiência, o seu currículo ou ficheiro de CV e a apresentação que fornece. Também recolhemos qualquer outra informação que escolha enviar-nos por e-mail, telefone ou correio.",
+            "Informações recolhidas automaticamente: não utilizamos cookies de rastreamento, ferramentas de análise nem pixels publicitários neste site. O nosso fornecedor de alojamento pode registar registos de servidor padrão (como o seu endereço IP e tipo de browser) para operar, proteger e resolver problemas do site. O seu browser armazena o idioma que seleciona neste dispositivo (armazenamento local) para que o site possa recordá-lo na sua próxima visita."
+          ]
         },
         {
+          "title": "Como utilizamos as suas informações",
           "paragraphs": [
-            "Utilizamos as suas informações para responder a pedidos, avaliar e prestar os nossos serviços, verificar a identidade quando necessário, melhorar os nossos sites e serviços, cumprir obrigações legais e, quando tenha dado o seu consentimento, enviar-lhe novidades sobre as nossas empresas do grupo.",
-            "Baseamos o tratamento nas seguintes bases legais: o seu consentimento, a execução de um contrato, o cumprimento de uma obrigação legal e o nosso interesse legítimo em operar e melhorar o nosso negócio."
-          ],
-          "title": "Como utilizamos as suas informações"
+            "Utilizamos as informações que fornece para responder ao seu pedido e encaminhá-lo para a empresa relevante da Indexia Group, avaliar candidaturas de emprego, melhorar os nossos sites e serviços, cumprir obrigações legais e — apenas quando deu o seu consentimento — enviar-lhe atualizações sobre as nossas empresas do grupo.",
+            "Os pedidos de informação e as candidaturas submetidos através dos nossos formulários são armazenados na nossa base de dados e revistos pela nossa equipa através de uma área administrativa protegida por palavra-passe."
+          ]
         },
         {
+          "title": "Partilha e divulgação",
           "paragraphs": [
-            "Podemos partilhar as suas informações dentro do Indexia Group para que a empresa certa possa responder ao seu pedido. Podemos também partilhar informações com prestadores de serviços que nos ajudam a operar (como fornecedores de alojamento e comunicação), com entidades reguladoras ou autoridades quando exigido por lei, e no âmbito de uma fusão, aquisição ou venda de ativos.",
+            "Podemos partilhar as suas informações dentro da Indexia Group para que a empresa adequada possa responder ao seu pedido ou candidatura. Podemos também partilhar informações com prestadores de serviços que nos ajudam a operar, como fornecedores de alojamento e comunicação. Podemos divulgar informações a entidades reguladoras, tribunais ou autoridades quando exigido por lei, e no âmbito de uma fusão, aquisição ou venda de ativos.",
             "Não vendemos as suas informações pessoais a terceiros."
-          ],
-          "title": "Partilha e divulgação"
+          ]
         },
         {
+          "title": "Segurança dos dados",
           "paragraphs": [
-            "Aplicamos medidas técnicas e organizacionais razoáveis, incluindo controlos de acesso, encriptação em trânsito e monitorização, para proteger as suas informações pessoais contra acessos não autorizados, perdas ou utilizações indevidas.",
+            "Aplicamos medidas técnicas e organizacionais razoáveis, incluindo encriptação HTTPS em trânsito, controlos de acesso aos nossos sistemas administrativos e monitorização, para proteger as suas informações pessoais contra acesso não autorizado, perda ou uso indevido.",
             "Nenhum método de transmissão ou armazenamento é totalmente seguro. Embora trabalhemos para proteger os seus dados, não podemos garantir a sua segurança absoluta."
-          ],
-          "title": "Segurança dos dados"
+          ]
         },
         {
+          "title": "Cookies e armazenamento local",
           "paragraphs": [
-            "Os nossos sites utilizam cookies essenciais para funcionar corretamente e podem utilizar cookies analíticos para compreender como os visitantes usam os nossos sites. Pode controlar ou desativar os cookies através das definições do navegador; no entanto, algumas partes dos nossos sites podem não funcionar como previsto sem eles."
-          ],
-          "title": "Cookies e tecnologias semelhantes"
+            "Este site não utiliza cookies de rastreamento, ferramentas de análise nem tecnologias publicitárias. Utilizamos o armazenamento local do seu browser apenas para recordar a sua preferência de idioma; pode limpá-lo a qualquer momento através das definições do browser.",
+            "O site carrega tipos de letra do Google Fonts. Quando um tipo de letra é obtido, o seu browser liga-se aos servidores da Google e a Google pode processar o seu endereço IP de acordo com a sua própria política de privacidade."
+          ]
         },
         {
+          "title": "Conservação dos dados",
           "paragraphs": [
-            "Conservamos as suas informações pessoais apenas pelo tempo necessário para cumprir as finalidades descritas na presente política, cumprir requisitos legais e regulamentares e resolver disputas."
-          ],
-          "title": "Conservação dos dados"
+            "Guardamos os registos de pedidos de informação pelo tempo necessário para lhe responder e por um período razoável posterior para fins de manutenção de registos. As candidaturas de emprego são retidas durante o processo de recrutamento e por um período razoável depois, salvo se a lei exigir uma retenção mais longa."
+          ]
         },
         {
+          "title": "Os seus direitos e escolhas",
           "paragraphs": [
-            "Dependendo da lei aplicável, pode ter o direito de aceder, corrigir, atualizar ou solicitar a eliminação das suas informações pessoais, bem como retirar o consentimento quando o tratamento se baseia nele.",
+            "Dependendo da legislação aplicável, pode ter o direito de aceder, corrigir, atualizar ou solicitar a eliminação das suas informações pessoais, e de retirar o consentimento quando o tratamento se baseia em consentimento.",
             "Para exercer estes direitos, contacte-nos através dos dados indicados no final da presente política. Responderemos dentro dos prazos exigidos pela lei aplicável."
-          ],
-          "title": "Os seus direitos e escolhas"
+          ]
         },
         {
+          "title": "Ligações de terceiros",
           "paragraphs": [
-            "Os nossos sites e comunicações podem conter ligações para sites externos operados pelas nossas empresas do grupo ou por outros terceiros. A presente política não se aplica a esses sites, e recomendamos que consulte as respetivas políticas de privacidade."
-          ],
-          "title": "Ligações de terceiros"
+            "Os nossos sites e comunicações podem conter ligações para sites externos, incluindo sites das nossas empresas do grupo (como portais empresariais) e páginas de redes sociais. Esta política não se aplica a esses sites e incentivamo-lo a consultar as suas próprias políticas de privacidade."
+          ]
         },
         {
+          "title": "Privacidade de menores",
           "paragraphs": [
             "Os nossos serviços não se destinam a menores de 18 anos e não recolhemos conscientemente informações pessoais de menores. Se acredita que um menor nos forneceu informações pessoais, contacte-nos para que possamos removê-las."
-          ],
-          "title": "Privacidade de menores"
+          ]
         },
         {
+          "title": "Alterações à presente política",
           "paragraphs": [
             "Podemos atualizar a presente Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com uma data de revisão atualizada. As alterações materiais serão destacadas sempre que possível."
-          ],
-          "title": "Alterações à presente política"
+          ]
         },
         {
+          "title": "Contacte-nos",
           "paragraphs": [
-            "Se tiver perguntas ou preocupações sobre a presente Política de Privacidade ou sobre a forma como tratamos as suas informações pessoais, contacte-nos em contactus@indexiagroup.com ou por telefone no +91 011 4629 1155."
-          ],
-          "title": "Contacte-nos"
+            "Se tiver perguntas ou preocupações sobre esta Política de Privacidade ou sobre a forma como tratamos as suas informações pessoais, contacte-nos em contactus@indexiagroup.com ou por telefone em +91 11 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "Estes Termos de Utilização (\"Termos\") regem a sua utilização do site da Indexia Group e das páginas das suas empresas do grupo. Ao aceder ou utilizar este site, concorda em ficar vinculado a estes Termos e à nossa Política de Privacidade. Se não concordar, não utilize o site.",
+        "A Indexia Group é um grupo empresarial indiano diversificado cujas empresas fornecem serviços financeiros, valores mobiliários, exportação global, biofertilizantes agrícolas, armazenagem, publicidade e serviços relacionados. Este site é uma plataforma informativa para o grupo e as suas empresas."
+      ],
+      "sections": [
+        {
+          "title": "Utilização deste site",
+          "paragraphs": [
+            "Este site é fornecido para informação geral sobre a Indexia Group e as suas empresas do grupo, os seus serviços, notícias, investigação e oportunidades de carreira. Concorda em utilizar o site apenas para fins lícitos e de forma a não interferir com o seu funcionamento normal nem com os direitos de outros utilizadores."
+          ]
+        },
+        {
+          "title": "Sem aconselhamento financeiro, de investimento ou jurídico",
+          "paragraphs": [
+            "O conteúdo deste site, incluindo descrições de serviços financeiros, empréstimos, valores mobiliários, exportação e outras ofertas, é fornecido apenas para informação geral. Não constitui aconselhamento financeiro, de investimento, fiscal ou jurídico, nem é uma oferta ou solicitação para comprar ou vender qualquer produto ou serviço. Deve contactar diretamente a empresa relevante da Indexia Group e obter aconselhamento profissional antes de agir com base no que lê aqui."
+          ]
+        },
+        {
+          "title": "Pedidos de informação e candidaturas de emprego",
+          "paragraphs": [
+            "Quando submete um pedido de informação ou uma candidatura de emprego através deste site, podemos encaminhar as suas informações para a empresa da Indexia Group mais bem posicionada para responder. Submeter um pedido não cria qualquer obrigação da nossa parte. É responsável pela exatidão das informações que fornece e confirma que está autorizado a submetê-las. As candidaturas de emprego são avaliadas ao nosso critério."
+          ]
+        },
+        {
+          "title": "Sem transações online",
+          "paragraphs": [
+            "Este site não processa pagamentos nem celebra contratos online. Quaisquer produtos ou serviços fornecidos por uma empresa da Indexia Group regem-se pelos acordos, termos e condições próprios dessa empresa, que deve ler atentamente antes de se envolver. Nada neste site constitui um contrato entre si e a Indexia Group."
+          ]
+        },
+        {
+          "title": "Propriedade Intelectual",
+          "paragraphs": [
+            "O conteúdo deste site, incluindo texto, design, layout, gráficos, logótipos e imagens, é propriedade da Indexia Group ou é-lhe licenciado e está protegido pelas leis de propriedade intelectual aplicáveis. Pode visualizar e imprimir conteúdo para utilização pessoal e não comercial. São proibidas a reprodução, distribuição ou utilização comercial sem o nosso consentimento prévio por escrito."
+          ]
+        },
+        {
+          "title": "Ligações de terceiros",
+          "paragraphs": [
+            "Este site pode conter ligações para sites externos, incluindo sites das nossas empresas do grupo, páginas de redes sociais e outros recursos. Não controlamos esses sites e não somos responsáveis pelo seu conteúdo ou disponibilidade. Uma ligação não implica endosso."
+          ]
+        },
+        {
+          "title": "Exclusão de garantias",
+          "paragraphs": [
+            "Este site e o seu conteúdo são fornecidos \"tal como estão\" e \"conforme disponíveis\". Embora nos esforcemos por manter as informações precisas e atualizadas, não fazemos quaisquer declarações ou garantias de qualquer tipo, expressas ou implícitas, sobre a sua integralidade, exatidão, fiabilidade ou adequação a qualquer fim."
+          ]
+        },
+        {
+          "title": "Limitação de responsabilidade",
+          "paragraphs": [
+            "Na máxima extensão permitida por lei, a Indexia Group e as suas empresas do grupo não serão responsáveis por qualquer perda ou dano direto, indireto, incidental, consequente ou especial decorrente de ou relacionado com a sua utilização deste site ou com a sua incapacidade de o utilizar, incluindo perda de dados ou lucros, mesmo que tenham sido avisados da possibilidade de tais danos."
+          ]
+        },
+        {
+          "title": "Lei Aplicável",
+          "paragraphs": [
+            "Estes Termos regem-se pelas leis da Índia. Qualquer litígio decorrente de ou relacionado com a sua utilização deste site fica sujeito à jurisdição exclusiva dos tribunais de Mumbai."
+          ]
+        },
+        {
+          "title": "Contacte-nos",
+          "paragraphs": [
+            "Se tiver perguntas sobre estes Termos de Utilização, contacte-nos em contactus@indexiagroup.com ou por telefone em +91 11 4629 1155."
+          ]
         }
       ]
     },
@@ -634,136 +703,68 @@
       "intro": [
         "O proprietário do site, incluindo subsidiárias e afiliadas, Indexia Group (ou «nós», «nos» ou «nosso»), fornece as informações contidas neste site, ou em qualquer uma das páginas que o compõem, a visitantes e candidatos (coletivamente referidos como «você» ou «seu»), sujeito aos termos e condições estabelecidos nestes termos e condições do site, na política de privacidade e em quaisquer outros termos, condições, políticas e avisos relevantes que possam ser aplicáveis a uma seção ou módulo específico do site.",
         "Bem-vindo ao nosso site. Se continuar a navegar e a utilizar este site, estará a concordar em cumprir e ficar vinculado aos seguintes termos e condições de utilização, que, juntamente com a nossa política de privacidade, regem a relação da Indexia Group consigo relativamente a este site.",
-        "O termo «Indexia Group» ou «nós» refere-se ao proprietário do site, cuja sede registada se situa em 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. O termo «você» refere-se ao utilizador ou visitante do nosso site."
+        "O termo \"Indexia Group\" ou \"nós\" refere-se ao proprietário do site, cujo escritório registado se situa em 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai – 400053. O termo \"você\" refere-se ao utilizador ou visitante do nosso site."
       ],
       "sections": [
         {
+          "title": "Conteúdo e Alterações",
           "paragraphs": [
             "O conteúdo das páginas deste site destina-se apenas à sua informação geral e utilização. Está sujeito a alterações sem aviso prévio."
-          ],
-          "title": "Conteúdo e Alterações"
+          ]
         },
         {
+          "title": "Sem Garantia",
           "paragraphs": [
             "Nem nós nem terceiros fornecemos qualquer garantia quanto à exatidão, atualidade, desempenho, integridade ou adequação das informações e materiais encontrados ou oferecidos neste site para qualquer finalidade específica. Você reconhece que essas informações e materiais podem conter imprecisões ou erros, e excluímos expressamente toda a responsabilidade por tais imprecisões ou erros na máxima medida permitida por lei."
-          ],
-          "title": "Sem Garantia"
+          ]
         },
         {
+          "title": "Utilização por Sua Conta e Risco",
           "paragraphs": [
             "A utilização de qualquer informação ou material neste site é inteiramente por sua conta e risco, pelo que não seremos responsáveis. Será da sua responsabilidade garantir que quaisquer produtos, serviços ou informações disponíveis através deste site satisfazem os seus requisitos específicos."
-          ],
-          "title": "Utilização por Sua Conta e Risco"
+          ]
         },
         {
+          "title": "Propriedade Intelectual",
           "paragraphs": [
             "Este site contém material que é da nossa propriedade ou licenciado a nós. Este material inclui, entre outros, o design, o layout, o aspeto e os gráficos. A reprodução é proibida, exceto de acordo com o aviso de direitos de autor, que faz parte destes termos e condições."
-          ],
-          "title": "Propriedade Intelectual"
+          ]
         },
         {
+          "title": "Marcas Comerciais",
           "paragraphs": [
             "Todas as marcas comerciais reproduzidas neste site que não sejam propriedade do operador ou licenciadas a ele são reconhecidas no site."
-          ],
-          "title": "Marcas Comerciais"
+          ]
         },
         {
+          "title": "Utilização Não Autorizada",
           "paragraphs": [
             "A utilização não autorizada deste site pode dar origem a uma reclamação por danos e/ou constituir uma infração penal."
-          ],
-          "title": "Utilização Não Autorizada"
+          ]
         },
         {
+          "title": "Ligações de terceiros",
           "paragraphs": [
             "De vez em quando, este site também pode incluir links para outros sites. Estes links são fornecidos para sua conveniência, para fornecer mais informações. Não significam que endossamos os sites vinculados. Não temos qualquer responsabilidade pelo conteúdo dos sites vinculados."
-          ],
-          "title": "Links para Sites de Terceiros"
+          ]
         },
         {
+          "title": "Links para Este Site",
           "paragraphs": [
             "Não pode criar um link para este site a partir de outro site ou documento sem o consentimento prévio por escrito da Indexia Group."
-          ],
-          "title": "Links para Este Site"
+          ]
         },
         {
+          "title": "Lei Aplicável",
           "paragraphs": [
             "A sua utilização deste site e qualquer disputa decorrente dessa utilização estão sujeitas às leis da Índia ou a outra autoridade reguladora."
-          ],
-          "title": "Lei Aplicável"
+          ]
         },
         {
+          "title": "Exclusão de responsabilidade por serviços financeiros",
           "paragraphs": [
-            "«Como prestador de serviços, não teremos qualquer responsabilidade por qualquer perda ou dano que surja direta ou indiretamente da recusa de autorização de qualquer transação, por o titular do cartão ter excedido o limite predefinido mutuamente acordado por nós com o nosso banco adquirente de tempos a tempos»."
-          ],
-          "title": "Responsabilidade por Transações com Cartão"
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [
-        null,
-        "Se você não concordar com estes termos, por favor não acesse ou use nossos sites."
-      ],
-      "sections": [
-        {
-          "paragraphs": [
-            "A política de devolução e cancelamento dos comerciantes deve ser disponibilizada aos clientes no site, e estes devem concordar com os seus termos durante o processo de pagamento. Os clientes devem clicar num botão «Aceitar» ou «Concordo» para devolução e cancelamento antes de enviarem as suas informações de pagamento. Uma vez efetuado o pagamento, a política pode ser enviada aos clientes com o e-mail de confirmação do pagamento."
-          ],
-          "title": "Política de Cancelamento e Reembolso"
-        },
-        {
-          "paragraphs": [
-            "A Indexia Group acredita em ajudar os seus clientes tanto quanto possível e, por isso, tem uma política de cancelamento flexível. Segundo esta política:",
-            "Os cancelamentos só serão considerados se o pedido for feito no prazo de 72 horas após o pagamento. No entanto, o pedido de cancelamento não será aceite se os dados do pagamento tiverem sido comunicados aos fornecedores/comerciantes e estes tiverem iniciado o processo de pagamento.",
-            "Não há cancelamento de pagamentos efetuados na categoria de serviço Same Day.",
-            "Não são aceites cancelamentos para pagamentos que a Indexia Group tenha recebido em ocasiões especiais como Pongal, Diwali e Dia dos Namorados, etc. Estas são ofertas de ocasião limitada e, por isso, os cancelamentos não são possíveis.",
-            "A Indexia Group não aceita pedidos de cancelamento para serviços perecíveis. Também não pode ser feito um reembolso se o cliente estabelecer que a qualidade do serviço não é boa.",
-            "Caso os serviços e as informações relacionadas não lhe digam respeito, comunique-o à nossa equipa de apoio. O pedido será, no entanto, aceite depois de o comerciante o ter verificado e determinado por sua conta. Isto deve ser comunicado no prazo de 21 dias após a receção dos serviços.",
-            "Se considerar que o serviço oferecido não é o que está apresentado no site ou não corresponde às suas expetativas, deve comunicá-lo ao nosso serviço de apoio no prazo de 24 horas após a receção do serviço. A equipa do serviço de apoio, após analisar a sua reclamação, tomará uma decisão adequada.",
-            "Em caso de reclamações sobre serviços com um prazo específico, contacte-nos em contactus@indexiagroup.com."
-          ],
-          "title": "Política de Cancelamento"
-        },
-        {
-          "paragraphs": [
-            "Quando usufrui dos nossos serviços, o seu pagamento não está coberto por uma garantia de devolução do dinheiro. Se, por qualquer motivo, não estiver totalmente satisfeito com o nosso serviço, levaremos esta questão muito a sério e tentaremos resolvê-la o mais rapidamente possível. Para solicitar um reembolso, basta contactar-nos com os seus dados de pagamento no prazo de noventa (90) dias após o pagamento. Inclua os seus dados de pagamento e o número da encomenda (enviado por e-mail após o pagamento) e, opcionalmente, indique-nos por que motivo solicita o reembolso, levamos o feedback dos clientes muito a sério e utilizamo-lo para melhorar constantemente os nossos produtos e a qualidade do serviço. Não são concedidos reembolsos para serviços prestados na íntegra, como serviços de instalação e serviços de alojamento de base de conhecimento. Os reembolsos são processados num prazo de 21 dias."
-          ],
-          "title": "Política de Reembolso"
-        },
-        {
-          "paragraphs": [
-            "«Como prestador de serviços, não teremos qualquer responsabilidade por qualquer perda ou dano que surja direta ou indiretamente da recusa de autorização de qualquer transação, por o titular do cartão ter excedido o limite predefinido mutuamente acordado por nós com o nosso banco adquirente de tempos a tempos»."
-          ],
-          "title": "Cláusula BO"
-        },
-        {
-          "paragraphs": [
-            "Uma isenção de responsabilidade pode especificar termos e condições mutuamente acordados e combinados em privado como parte de um contrato; ou pode especificar avisos ou expectativas para o público em geral (ou outra classe de pessoas) a fim de cumprir um dever de cuidado destinado a prevenir um risco irrazoável de dano ou lesão. Algumas isenções destinam-se a limitar a exposição a danos depois de já ter sido sofrido um dano ou lesão. Além disso, alguns tipos de isenções podem representar uma renúncia voluntária a um direito ou obrigação que possa ser devida à parte que renuncia.",
-            "As isenções variam em termos de uniformidade. Algumas podem variar dependendo do contexto específico e das partes envolvidas, enquanto outros tipos podem aderir estritamente a um conjunto uniforme e estabelecido de formalidades que raramente ou nunca são modificadas, exceto sob autoridade oficial.",
-            "A isenção do site cobre o seguinte: ausência de garantias, limitações de responsabilidade, exceções, razoabilidade, outras partes e disposições inexequíveis."
-          ],
-          "title": "Política de Isenção de Responsabilidade"
-        },
-        {
-          "paragraphs": [
-            "As informações contidas neste site destinam-se apenas a fins de informação geral. As informações são fornecidas pela Indexia Group e, embora nos esforcemos por manter as informações atualizadas e corretas, não fazemos quaisquer declarações ou garantias de qualquer tipo, expressas ou implícitas, sobre a integridade, exatidão, fiabilidade, adequação ou disponibilidade do site ou das informações, produtos, serviços ou gráficos relacionados contidos no site para qualquer finalidade. Qualquer confiança que deposite nessas informações é, portanto, estritamente por sua conta e risco.",
-            "Em nenhum caso seremos responsáveis por qualquer perda ou dano, incluindo, sem limitação, perdas ou danos indiretos ou consequentes, ou qualquer perda ou dano decorrente da perda de dados ou lucros decorrentes do uso deste site ou em conexão com ele.",
-            "Através deste site, pode ligar-se a outros sites que não estão sob o controlo da Indexia Group. Não temos qualquer controlo sobre a natureza, o conteúdo e a disponibilidade desses sites. A inclusão de links não implica necessariamente uma recomendação nem o endosso das opiniões neles expressas.",
-            "É feito todo o esforço para manter o site a funcionar sem problemas. No entanto, a Indexia Group não assume qualquer responsabilidade pela indisponibilidade temporária do site devido a problemas técnicos fora do nosso controlo."
-          ],
-          "title": "Isenção de Responsabilidade Deste Site"
-        },
-        {
-          "paragraphs": {
-            "0": "Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento."
-          },
-          "title": "Alterações nestes Termos"
-        },
-        {
-          "paragraphs": {
-            "0": "Se tiver dúvidas, entre em contato contactus@indexiagroup.com."
-          },
-          "title": "Contato"
+            "As empresas da Indexia Group fornecem serviços financeiros, empréstimos, valores mobiliários, exportação, armazenagem, serviços agrícolas e relacionados. As informações sobre estes serviços neste site são fornecidas apenas para fins informativos gerais. Não constituem uma oferta, solicitação ou aconselhamento financeiro, de investimento ou jurídico, e não é aceite qualquer responsabilidade por decisões tomadas com base neste conteúdo. Quaisquer produtos ou serviços obtidos de uma empresa do grupo ficam sujeitos aos termos e condições próprios dessa empresa."
+          ]
         }
       ]
     }

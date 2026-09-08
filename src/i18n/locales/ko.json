@@ -553,80 +553,149 @@
   "legalContent": {
     "privacy": {
       "intro": [
-        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
-        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+        "본 개인정보 처리방침은 Indexia Group 및 그 계열사(통칭 \"Indexia Group\", \"당사\" 또는 \"우리\")가 당사 웹사이트를 방문하거나, 문의 또는 입사 지원을 제출하거나, 기타 방식으로 당사와 상호작용할 때 귀하의 개인정보를 수집, 사용, 공개 및 보호하는 방법을 설명합니다.",
+        "당사 웹사이트를 이용하거나 당사에 정보를 제공함으로써 귀하는 본 방침에 설명된 관행에 동의하는 것입니다. 동의하지 않는 경우 개인정보를 제출하거나 당사 서비스를 이용하지 마시기 바랍니다."
       ],
       "sections": [
         {
+          "title": "Informations que nous collectons",
           "paragraphs": [
-            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
-            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
-          ],
-          "title": "Informations que nous collectons"
+            "귀하가 제공하는 정보: 당사 문의 페이지의 문의 양식을 사용할 때 당사는 귀하가 입력한 세부 정보(일반적으로 이름, 전화번호, 이메일 주소, 제목 및 메시지)를 수집합니다. 지원 페이지를 통해 입사 지원 시 당사는 귀하의 이름, 이메일 주소, 전화번호, 경력 연수, 이력서 또는 CV 파일, 그리고 귀하가 작성한 자기소개를 수집합니다. 또한 이메일, 전화 또는 우편으로 당사에 보내기로 선택한 기타 정보를 수집합니다.",
+            "자동으로 수집되는 정보: 당사는 이 웹사이트에서 추적 쿠키, 분석 또는 광고 픽셀을 사용하지 않습니다. 당사 호스팅 제공업체는 사이트를 운영, 보호 및 문제 해결하기 위해 표준 서버 로그(IP 주소 및 브라우저 유형 등)를 기록할 수 있습니다. 귀하의 브라우저는 이 기기에 선택한 언어를 저장(로컬 저장소)하여 사이트가 다음 방문 시 이를 기억할 수 있도록 합니다."
+          ]
         },
         {
+          "title": "Comment nous utilisons vos informations",
           "paragraphs": [
-            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
-            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
-          ],
-          "title": "Comment nous utilisons vos informations"
+            "당사는 귀하가 제공한 정보를 사용하여 문의에 응답하고 관련 Indexia Group 회사로 전달하며, 입사 지원을 평가하고, 웹사이트와 서비스를 개선하며, 법적 의무를 준수하고, 귀하가 동의한 경우에만 그룹 계열사에 대한 업데이트를 보냅니다.",
+            "당사 양식을 통해 제출된 문의 및 입사 지원은 당사 데이터베이스에 저장되며 비밀번호로 보호된 관리 영역을 통해 당사 팀이 검토합니다."
+          ]
         },
         {
+          "title": "Partage et divulgation",
           "paragraphs": [
-            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "당사는 적절한 회사가 귀하의 문의나 지원에 응답할 수 있도록 Indexia Group 내에서 귀하의 정보를 공유할 수 있습니다. 또한 호스팅 및 통신 제공업체와 같은 당사 운영을 돕는 서비스 제공업체와 정보를 공유할 수 있습니다. 법률이 요구하는 경우 규제 기관, 법원 또는 당국에 정보를 공개할 수 있으며, 합병, 인수 또는 자산 매각과 관련하여서도 공개할 수 있습니다.",
             "Nous ne vendons pas vos informations personnelles à des tiers."
-          ],
-          "title": "Partage et divulgation"
+          ]
         },
         {
+          "title": "Sécurité des données",
           "paragraphs": [
-            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "당사는 전송 중 HTTPS 암호화, 관리 시스템에 대한 접근 통제, 모니터링을 포함한 합리적인 기술적·조직적 조치를 적용하여 귀하의 개인정보를 무단 접근, 손실 또는 오용으로부터 보호합니다.",
             "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
-          ],
-          "title": "Sécurité des données"
+          ]
         },
         {
+          "title": "쿠키 및 로컬 저장소",
           "paragraphs": [
-            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
-          ],
-          "title": "Cookies et technologies similaires"
+            "이 웹사이트는 추적 쿠키, 분석 또는 광고 기술을 사용하지 않습니다. 당사는 언어 선호도를 기억하기 위해서만 귀하의 브라우저 로컬 저장소를 사용하며, 브라우저 설정을 통해 언제든지 삭제할 수 있습니다.",
+            "사이트는 Google Fonts에서 글꼴을 로드합니다. 글꼴을 가져올 때 귀하의 브라우저는 Google 서버에 연결되며 Google은 자체 개인정보 처리방침에 따라 귀하의 IP 주소를 처리할 수 있습니다."
+          ]
         },
         {
+          "title": "Conservation des données",
           "paragraphs": [
-            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
-          ],
-          "title": "Conservation des données"
+            "당사는 귀하에게 응답하는 데 필요한 기간과 이후 기록 보관 목적으로 합리적인 기간 동안 문의 기록을 보관합니다. 입사 지원은 채용 과정 기간과 이후 합리적인 기간 동안 보관되며, 법률이 더 긴 보관을 요구하는 경우는 예외입니다."
+          ]
         },
         {
+          "title": "Vos droits et choix",
           "paragraphs": [
-            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "적용 가능한 법률에 따라 귀하는 개인정보에 접근, 정정, 업데이트하거나 삭제를 요청할 권리와, 처리가 동의에 기반하는 경우 동의를 철회할 권리가 있을 수 있습니다.",
             "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
-          ],
-          "title": "Vos droits et choix"
+          ]
         },
         {
+          "title": "Liens vers des tiers",
           "paragraphs": [
-            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
-          ],
-          "title": "Liens vers des tiers"
+            "당사 웹사이트 및 커뮤니케이션에는 그룹 계열사 웹사이트(예: 기업 포털) 및 소셜 미디어 페이지를 포함한 외부 웹사이트에 대한 링크가 포함될 수 있습니다. 본 방침은 해당 웹사이트에 적용되지 않으며, 각 웹사이트의 개인정보 처리방침을 검토하시기 바랍니다."
+          ]
         },
         {
+          "title": "Confidentialité des enfants",
           "paragraphs": [
             "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
-          ],
-          "title": "Confidentialité des enfants"
+          ]
         },
         {
+          "title": "Modifications de la présente politique",
           "paragraphs": [
             "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
-          ],
-          "title": "Modifications de la présente politique"
+          ]
         },
         {
+          "title": "Contact",
           "paragraphs": [
-            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
-          ],
-          "title": "Contact"
+            "본 개인정보 처리방침 또는 귀하의 개인정보 처리 방식에 대해 질문이나 우려 사항이 있으면 contactus@indexiagroup.com 또는 전화 +91 11 4629 1155로 문의하시기 바랍니다."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "본 이용약관(\"약관\")은 Indexia Group 웹사이트 및 그 계열사 페이지의 이용에 적용됩니다. 본 웹사이트에 접속하거나 이용함으로써 귀하는 본 약관 및 당사 개인정보 처리방침에 구속되는 데 동의합니다. 동의하지 않는 경우 웹사이트를 이용하지 마시기 바랍니다.",
+        "Indexia Group은 금융 서비스, 증권, 글로벌 수출, 농업 바이오 비료, 창고, 광고 및 관련 서비스를 제공하는 회사들로 구성된 다각화된 인도 기업 그룹입니다. 본 웹사이트는 그룹과 그 회사들을 위한 정보 플랫폼입니다."
+      ],
+      "sections": [
+        {
+          "title": "본 웹사이트의 이용",
+          "paragraphs": [
+            "본 웹사이트는 Indexia Group 및 그 계열사, 서비스, 뉴스, 연구 및 취업 기회에 대한 일반 정보를 제공하기 위한 것입니다. 귀하는 본 웹사이트를 합법적인 목적으로만, 그리고 웹사이트의 정상적인 운영이나 다른 사용자의 권리를 방해하지 않는 방식으로 이용하는 데 동의합니다."
+          ]
+        },
+        {
+          "title": "금융, 투자 또는 법률 자문이 아님",
+          "paragraphs": [
+            "본 웹사이트의 콘텐츠(금융 서비스, 대출, 증권, 수출 및 기타 제안에 대한 설명 포함)는 일반 정보 제공 목적으로만 제공됩니다. 이는 금융, 투자, 세무 또는 법률 자문을 구성하지 않으며, 상품이나 서비스를 구매하거나 판매하라는 제안이나 권유도 아닙니다. 여기에서 읽은 내용에 따라 행동하기 전에 관련 Indexia Group 회사에 직접 연락하여 전문가의 조언을 받아야 합니다."
+          ]
+        },
+        {
+          "title": "문의 및 입사 지원",
+          "paragraphs": [
+            "귀하가 본 웹사이트를 통해 문의나 입사 지원을 제출하면 당사는 응답에 가장 적합한 Indexia Group 회사로 귀하의 정보를 전달할 수 있습니다. 문의를 제출한다고 해서 당사에 어떤 의무가 생기는 것은 아닙니다. 귀하는 제공하는 정보의 정확성에 책임이 있으며 이를 제출할 권한이 있음을 확인합니다. 입사 지원은 당사 재량에 따라 평가됩니다."
+          ]
+        },
+        {
+          "title": "온라인 거래 없음",
+          "paragraphs": [
+            "본 웹사이트는 온라인으로 결제를 처리하거나 계약을 체결하지 않습니다. Indexia Group 회사가 제공하는 모든 제품 또는 서비스에는 해당 회사 자체의 계약, 약관 및 조건이 적용되므로, 이용하기 전에 주의 깊게 읽어야 합니다. 본 웹사이트의 어떤 내용도 귀하와 Indexia Group 간의 계약을 구성하지 않습니다."
+          ]
+        },
+        {
+          "title": "Propriété Intellectuelle",
+          "paragraphs": [
+            "본 웹사이트의 콘텐츠(텍스트, 디자인, 레이아웃, 그래픽, 로고 및 이미지 포함)는 Indexia Group이 소유하거나 라이선스를 받은 것이며 적용 가능한 지식재산권법에 의해 보호됩니다. 개인적이고 비상업적인 용도로 콘텐츠를 열람하고 인쇄할 수 있습니다. 당사의 사전 서면 동의 없이 복제, 배포 또는 상업적 사용은 금지됩니다."
+          ]
+        },
+        {
+          "title": "Liens vers des tiers",
+          "paragraphs": [
+            "본 웹사이트에는 그룹 계열사 웹사이트, 소셜 미디어 페이지 및 기타 리소스를 포함한 외부 웹사이트에 대한 링크가 포함될 수 있습니다. 당사는 해당 웹사이트를 통제하지 않으며 그 콘텐츠나 가용성에 대해 책임을 지지 않습니다. 링크는 보증을 의미하지 않습니다."
+          ]
+        },
+        {
+          "title": "보증의 부인",
+          "paragraphs": [
+            "본 웹사이트와 그 콘텐츠는 \"있는 그대로\" 및 \"이용 가능한 대로\" 제공됩니다. 당사는 정보를 정확하고 최신으로 유지하기 위해 노력하지만, 완전성, 정확성, 신뢰성 또는 어떤 목적에의 적합성에 대해 명시적이거나 묵시적인 어떠한 종류의 진술이나 보증도 하지 않습니다."
+          ]
+        },
+        {
+          "title": "책임의 제한",
+          "paragraphs": [
+            "법이 허용하는 최대 범위 내에서 Indexia Group 및 그 계열사는 본 웹사이트의 이용 또는 이용 불능으로 인해 발생하거나 이와 관련된 직접적, 간접적, 우연적, 결과적 또는 특별한 손실이나 손해(데이터 또는 이익의 손실 포함)에 대해 책임을 지지 않습니다. 그러한 손해의 가능성을 통보받은 경우에도 마찬가지입니다."
+          ]
+        },
+        {
+          "title": "Droit Applicable",
+          "paragraphs": [
+            "본 약관은 인도 법률의 적용을 받습니다. 본 웹사이트 이용으로 인해 발생하거나 이와 관련된 모든 분쟁은 뭄바이 법원의 전속 관할에 따릅니다."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "본 이용약관에 대해 질문이 있으면 contactus@indexiagroup.com 또는 전화 +91 11 4629 1155로 문의하시기 바랍니다."
+          ]
         }
       ]
     },
@@ -634,136 +703,68 @@
       "intro": [
         "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
         "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
-        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+        "\"Indexia Group\" 또는 \"당사\"라는 용어는 등록 사무소가 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai – 400053에 있는 웹사이트 소유자를 의미합니다. \"귀하\"라는 용어는 당사 웹사이트의 사용자 또는 방문자를 의미합니다."
       ],
       "sections": [
         {
+          "title": "Contenu et Modifications",
           "paragraphs": [
             "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
-          ],
-          "title": "Contenu et Modifications"
+          ]
         },
         {
+          "title": "Aucune Garantie",
           "paragraphs": [
             "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
-          ],
-          "title": "Aucune Garantie"
+          ]
         },
         {
+          "title": "Utilisation à Vos Risques",
           "paragraphs": [
             "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
-          ],
-          "title": "Utilisation à Vos Risques"
+          ]
         },
         {
+          "title": "Propriété Intellectuelle",
           "paragraphs": [
             "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
-          ],
-          "title": "Propriété Intellectuelle"
+          ]
         },
         {
+          "title": "Marques Commerciales",
           "paragraphs": [
             "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
-          ],
-          "title": "Marques Commerciales"
+          ]
         },
         {
+          "title": "Utilisation Non Autorisée",
           "paragraphs": [
             "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
-          ],
-          "title": "Utilisation Non Autorisée"
+          ]
         },
         {
+          "title": "Liens vers des tiers",
           "paragraphs": [
             "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
-          ],
-          "title": "Liens Vers des Sites Tiers"
+          ]
         },
         {
+          "title": "Liens Vers ce Site Web",
           "paragraphs": [
             "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
-          ],
-          "title": "Liens Vers ce Site Web"
+          ]
         },
         {
+          "title": "Droit Applicable",
           "paragraphs": [
             "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
-          ],
-          "title": "Droit Applicable"
+          ]
         },
         {
+          "title": "금융 서비스 부인",
           "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ],
-          "title": "Responsabilité des Transactions par Carte"
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [
-        null,
-        "이 약관에 동의하지 않는 경우 웹사이트에 접근하거나 사용하지 마세요."
-      ],
-      "sections": [
-        {
-          "paragraphs": [
-            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
-          ],
-          "title": "Politique d'Annulation et de Remboursement"
-        },
-        {
-          "paragraphs": [
-            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
-            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
-            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
-            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
-            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
-            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
-            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
-            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
-          ],
-          "title": "Politique d'Annulation"
-        },
-        {
-          "paragraphs": [
-            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
-          ],
-          "title": "Politique de Remboursement"
-        },
-        {
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ],
-          "title": "Clause BO"
-        },
-        {
-          "paragraphs": [
-            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
-            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
-            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
-          ],
-          "title": "Politique de Clause de Non-Responsabilité"
-        },
-        {
-          "paragraphs": [
-            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
-            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
-            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
-            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
-          ],
-          "title": "Clause de Non-Responsabilité de ce Site Web"
-        },
-        {
-          "paragraphs": {
-            "0": "당사는 언제든지 본 이용약관을 수정할 권리를 보유합니다."
-          },
-          "title": "약관 변경"
-        },
-        {
-          "paragraphs": {
-            "0": "문의 사항이 있으시면 contactus@indexiagroup.com으로 연락해주세요."
-          },
-          "title": "문의"
+            "Indexia Group 회사는 금융 서비스, 대출, 증권, 수출, 창고, 농업 및 관련 서비스를 제공합니다. 본 웹사이트의 이러한 서비스에 대한 정보는 일반 정보 제공 목적으로만 제공됩니다. 이는 제안, 권유 또는 금융, 투자 또는 법률 자문을 구성하지 않으며, 본 콘텐츠에 기반한 결정에 대해 어떠한 책임도 지지 않습니다. 그룹 회사로부터 얻는 모든 제품 또는 서비스는 해당 회사 자체의 약관 및 조건이 적용됩니다."
+          ]
         }
       ]
     }

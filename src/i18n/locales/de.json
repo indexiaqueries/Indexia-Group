@@ -553,80 +553,149 @@
   "legalContent": {
     "privacy": {
       "intro": [
-        "Diese Datenschutzerklärung erläutert, wie Indexia Group und seine Konzernunternehmen (zusammen „Indexia Group“, „wir“, „uns“ oder „unser“) Ihre personenbezogenen Daten erheben, verwenden, offenlegen und schützen, wenn Sie unsere Websites besuchen, eine Anfrage übermitteln oder unsere Dienste nutzen.",
-        "Durch die Nutzung unserer Websites oder die Übermittlung Ihrer Daten an uns stimmen Sie den in dieser Erklärung beschriebenen Praktiken zu. Wenn Sie nicht einverstanden sind, übermitteln Sie uns bitte keine personenbezogenen Daten und nutzen Sie unsere Dienste nicht."
+        "Diese Datenschutzrichtlinie erläutert, wie die Indexia Group und ihre Gruppenunternehmen (gemeinsam \"Indexia Group\", \"wir\" oder \"uns\") personenbezogene Daten erheben, verwenden, offenlegen und schützen, wenn Sie unsere Websites besuchen, eine Anfrage oder Bewerbung einreichen oder auf andere Weise mit uns interagieren.",
+        "Durch die Nutzung unserer Websites oder die Übermittlung Ihrer Daten stimmen Sie den in dieser Richtlinie beschriebenen Vorgehensweisen zu. Wenn Sie nicht einverstanden sind, übermitteln Sie bitte keine personenbezogenen Daten und nutzen Sie unsere Dienste nicht."
       ],
       "sections": [
         {
+          "title": "Welche Daten wir erheben",
           "paragraphs": [
-            "Von Ihnen bereitgestellte Daten: Wir erheben die Daten, die Sie uns direkt mitteilen, wie Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, den Namen Ihres Unternehmens sowie den Inhalt Ihrer Anfrage oder Bewerbung.",
-            "Automatisch erhobene Daten: Wenn Sie unsere Websites besuchen, können wir Geräte- und Nutzungsinformationen erheben, wie Ihre IP-Adresse, den Browsertyp, besuchte Seiten und Referrer-URLs, über Cookies und ähnliche Technologien."
-          ],
-          "title": "Welche Daten wir erheben"
+            "Von Ihnen bereitgestellte Informationen: Wenn Sie das Anfrageformular auf unserer Kontaktseite verwenden, erheben wir die von Ihnen eingegebenen Angaben, in der Regel Ihren Namen, Ihre Telefonnummer, Ihre E-Mail-Adresse, den Betreff und Ihre Nachricht. Wenn Sie sich über die Bewerbungsseite um eine Stelle bewerben, erheben wir Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, Ihre Berufserfahrung in Jahren, Ihren Lebenslauf oder CV sowie die von Ihnen verfasste Einführung. Wir erheben außerdem alle weiteren Informationen, die Sie uns per E-Mail, Telefon oder Post zusenden.",
+            "Automatisch erhobene Informationen: Wir verwenden auf dieser Website keine Tracking-Cookies, keine Analyse- und keine Werbe-Pixel. Unser Hosting-Anbieter kann standardmäßige Serverprotokolle (z. B. Ihre IP-Adresse und Ihren Browsertyp) aufzeichnen, um die Website zu betreiben, abzusichern und Fehler zu beheben. Ihr Browser speichert die von Ihnen gewählte Sprache auf diesem Gerät (lokaler Speicher), damit die Website sie bei Ihrem nächsten Besuch abrufen kann."
+          ]
         },
         {
+          "title": "Wie wir Ihre Daten verwenden",
           "paragraphs": [
-            "Wir verwenden Ihre Daten, um Anfragen zu beantworten, unsere Dienste zu bewerten und zu erbringen, Ihre Identität zu verifizieren, wo dies erforderlich ist, unsere Websites und Dienste zu verbessern, rechtlichen Verpflichtungen nachzukommen und, mit Ihrer Einwilligung, Ihnen Informationen über unsere Konzernunternehmen zu senden.",
-            "Wir stützen die Verarbeitung auf folgende Rechtsgrundlagen: Ihre Einwilligung, die Erfüllung eines Vertrags, die Erfüllung einer rechtlichen Verpflichtung und unser berechtigtes Interesse am Betrieb und an der Verbesserung unseres Unternehmens."
-          ],
-          "title": "Wie wir Ihre Daten verwenden"
+            "Wir verwenden die von Ihnen bereitgestellten Informationen, um Ihre Anfrage zu beantworten und an das zuständige Unternehmen der Indexia Group weiterzuleiten, um Bewerbungen zu bewerten, um unsere Websites und Dienste zu verbessern, um gesetzliche Verpflichtungen zu erfüllen und – nur mit Ihrer Einwilligung – um Ihnen Neuigkeiten über unsere Gruppenunternehmen zuzusenden.",
+            "Über unsere Formulare eingereichte Anfragen und Bewerbungen werden in unserer Datenbank gespeichert und von unserem Team über einen passwortgeschützten Verwaltungsbereich geprüft."
+          ]
         },
         {
+          "title": "Weitergabe und Offenlegung",
           "paragraphs": [
-            "Wir können Ihre Daten innerhalb der Indexia Group weitergeben, damit das richtige Unternehmen auf Ihre Anfrage antworten kann. Wir können Daten außerdem an Dienstleister weitergeben, die uns beim Betrieb unterstützen (z. B. Hosting- und Kommunikationsanbieter), an Aufsichtsbehörden oder Behörden, soweit gesetzlich vorgeschrieben, sowie im Zusammenhang mit einer Fusion, Übernahme oder einem Verkauf von Vermögenswerten.",
+            "Wir können Ihre Informationen innerhalb der Indexia Group weitergeben, damit das richtige Unternehmen auf Ihre Anfrage oder Bewerbung antworten kann. Wir können Informationen auch mit Dienstleistern teilen, die uns beim Betrieb unterstützen, z. B. Hosting- und Kommunikationsanbietern. Wir können Informationen an Aufsichtsbehörden, Gerichte oder Behörden weitergeben, wenn dies gesetzlich vorgeschrieben ist, sowie im Zusammenhang mit einer Fusion, Übernahme oder dem Verkauf von Vermögenswerten.",
             "Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte."
-          ],
-          "title": "Weitergabe und Offenlegung"
+          ]
         },
         {
+          "title": "Datensicherheit",
           "paragraphs": [
-            "Wir wenden angemessene technische und organisatorische Maßnahmen an, einschließlich Zugriffskontrollen, Verschlüsselung während der Übertragung und Überwachung , um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.",
+            "Wir ergreifen angemessene technische und organisatorische Maßnahmen, einschließlich HTTPS-Verschlüsselung während der Übertragung, Zugriffskontrollen für unsere Verwaltungssysteme und Überwachung, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.",
             "Keine Übertragungs- oder Speichermethode ist vollständig sicher. Obwohl wir uns bemühen, Ihre Daten zu schützen, können wir deren absolute Sicherheit nicht garantieren."
-          ],
-          "title": "Datensicherheit"
+          ]
         },
         {
+          "title": "Cookies und lokaler Speicher",
           "paragraphs": [
-            "Unsere Websites verwenden notwendige Cookies, um ordnungsgemäß zu funktionieren, und können Analyse-Cookies verwenden, um zu verstehen, wie Besucher unsere Websites nutzen. Sie können Cookies über die Einstellungen Ihres Browsers steuern oder deaktivieren; einige Teile unserer Websites funktionieren jedoch ohne sie möglicherweise nicht wie vorgesehen."
-          ],
-          "title": "Cookies und ähnliche Technologien"
+            "Diese Website verwendet keine Tracking-Cookies, Analyse- oder Werbetechnologien. Wir nutzen den lokalen Speicher Ihres Browsers nur, um Ihre Sprachpräferenz zu speichern; Sie können diesen jederzeit über Ihre Browsereinstellungen leeren.",
+            "Die Website lädt Schriftarten von Google Fonts. Beim Abrufen einer Schriftart verbindet sich Ihr Browser mit den Servern von Google, und Google kann Ihre IP-Adresse gemäß seiner eigenen Datenschutzrichtlinie verarbeiten."
+          ]
         },
         {
+          "title": "Speicherung von Daten",
           "paragraphs": [
-            "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es zur Erfüllung der in dieser Erklärung beschriebenen Zwecke, zur Einhaltung gesetzlicher und regulatorischer Anforderungen und zur Beilegung von Streitigkeiten erforderlich ist."
-          ],
-          "title": "Speicherung von Daten"
+            "Wir bewahren Anfragedatensätze so lange auf, wie es zur Beantwortung Ihrer Anfrage erforderlich ist, und anschließend für einen angemessenen Zeitraum zu Aufbewahrungszwecken. Bewerbungen werden für die Dauer des Einstellungsverfahrens und danach für einen angemessenen Zeitraum aufbewahrt, sofern das Gesetz keine längere Aufbewahrung vorschreibt."
+          ]
         },
         {
+          "title": "Ihre Rechte und Wahlmöglichkeiten",
           "paragraphs": [
-            "Je nach anwendbarem Recht haben Sie möglicherweise das Recht, auf Ihre personenbezogenen Daten zuzugreifen, sie zu berichtigen, zu aktualisieren oder deren Löschung zu verlangen sowie Ihre Einwilligung zu widerrufen, wenn die Verarbeitung auf einer Einwilligung beruht.",
+            "Je nach geltendem Recht haben Sie möglicherweise das Recht, auf Ihre personenbezogenen Daten zuzugreifen, sie zu berichtigen, zu aktualisieren oder ihre Löschung zu verlangen sowie die Einwilligung zu widerrufen, wenn die Verarbeitung auf Einwilligung beruht.",
             "Um diese Rechte auszuüben, kontaktieren Sie uns über die am Ende dieser Erklärung angegebenen Kontaktdaten. Wir werden innerhalb der nach anwendbarem Recht erforderlichen Fristen antworten."
-          ],
-          "title": "Ihre Rechte und Wahlmöglichkeiten"
+          ]
         },
         {
+          "title": "Links zu Dritten",
           "paragraphs": [
-            "Unsere Websites und Kommunikationen können Links zu externen Websites enthalten, die von unseren Konzernunternehmen oder anderen Dritten betrieben werden. Diese Erklärung gilt nicht für diese Websites; wir empfehlen Ihnen, deren eigene Datenschutzerklärungen zu prüfen."
-          ],
-          "title": "Links zu Dritten"
+            "Unsere Websites und Mitteilungen können Links zu externen Websites enthalten, einschließlich Websites unserer Gruppenunternehmen (z. B. Unternehmensportale) und Social-Media-Seiten. Diese Richtlinie gilt nicht für diese Websites; wir empfehlen Ihnen, deren Datenschutzrichtlinien zu prüfen."
+          ]
         },
         {
+          "title": "Datenschutz von Kindern",
           "paragraphs": [
             "Unsere Dienste richten sich nicht an Kinder unter 18 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von Kindern. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktieren Sie uns bitte, damit wir diese löschen können."
-          ],
-          "title": "Datenschutz von Kindern"
+          ]
         },
         {
+          "title": "Änderungen dieser Erklärung",
           "paragraphs": [
             "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Überarbeitungsdatum veröffentlicht. Wesentliche Änderungen werden, soweit praktikabel, hervorgehoben."
-          ],
-          "title": "Änderungen dieser Erklärung"
+          ]
         },
         {
+          "title": "Kontakt",
           "paragraphs": [
-            "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder zum Umgang mit Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte unter contactus@indexiagroup.com oder telefonisch unter +91 011 4629 1155."
-          ],
-          "title": "Kontakt"
+            "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie oder zu unserem Umgang mit Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte unter contactus@indexiagroup.com oder telefonisch unter +91 11 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihre Nutzung der Website der Indexia Group und der Seiten ihrer Gruppenunternehmen. Durch den Zugriff auf oder die Nutzung dieser Website erklären Sie sich damit einverstanden, an diese Bedingungen und unsere Datenschutzrichtlinie gebunden zu sein. Wenn Sie nicht einverstanden sind, nutzen Sie die Website bitte nicht.",
+        "Die Indexia Group ist ein diversifizierter indischer Unternehmensverbund, dessen Unternehmen Finanzdienstleistungen, Wertpapiere, globalen Export, landwirtschaftliche Biodünger, Lagerhaltung, Werbung und verwandte Dienstleistungen anbieten. Diese Website ist eine Informationsplattform für die Gruppe und ihre Unternehmen."
+      ],
+      "sections": [
+        {
+          "title": "Nutzung dieser Website",
+          "paragraphs": [
+            "Diese Website dient der allgemeinen Information über die Indexia Group und ihre Gruppenunternehmen, deren Dienstleistungen, Nachrichten, Forschung und Karrieremöglichkeiten. Sie erklären sich damit einverstanden, die Website nur für rechtmäßige Zwecke und in einer Weise zu nutzen, die den normalen Betrieb oder die Rechte anderer Nutzer nicht beeinträchtigt."
+          ]
+        },
+        {
+          "title": "Keine Finanz-, Investitions- oder Rechtsberatung",
+          "paragraphs": [
+            "Die Inhalte dieser Website, einschließlich Beschreibungen von Finanzdienstleistungen, Krediten, Wertpapieren, Export und anderen Angeboten, dienen ausschließlich der allgemeinen Information. Sie stellen keine Finanz-, Investitions-, Steuer- oder Rechtsberatung dar und sind kein Angebot und keine Aufforderung zum Kauf oder Verkauf von Produkten oder Dienstleistungen. Sie sollten das zuständige Unternehmen der Indexia Group direkt kontaktieren und professionellen Rat einholen, bevor Sie auf der Grundlage der hierin enthaltenen Informationen handeln."
+          ]
+        },
+        {
+          "title": "Anfragen und Bewerbungen",
+          "paragraphs": [
+            "Wenn Sie über diese Website eine Anfrage oder eine Bewerbung einreichen, können wir Ihre Informationen an das Unternehmen der Indexia Group weiterleiten, das am besten für die Beantwortung geeignet ist. Eine eingereichte Anfrage begründet keine Verpflichtung unsererseits. Sie sind für die Richtigkeit der von Ihnen bereitgestellten Informationen verantwortlich und bestätigen, dass Sie zu deren Übermittlung berechtigt sind. Bewerbungen werden nach unserem Ermessen bewertet."
+          ]
+        },
+        {
+          "title": "Keine Online-Transaktionen",
+          "paragraphs": [
+            "Diese Website verarbeitet keine Zahlungen und schließt keine Verträge online ab. Alle Produkte oder Dienstleistungen, die von einem Unternehmen der Indexia Group erbracht werden, unterliegen den eigenen Vereinbarungen, Bedingungen und Konditionen dieses Unternehmens, die Sie vor einer Beauftragung sorgfältig lesen sollten. Nichts auf dieser Website stellt einen Vertrag zwischen Ihnen und der Indexia Group dar."
+          ]
+        },
+        {
+          "title": "Geistiges Eigentum",
+          "paragraphs": [
+            "Die Inhalte dieser Website, einschließlich Text, Design, Layout, Grafiken, Logos und Bildern, sind Eigentum der Indexia Group oder an sie lizenziert und durch die geltenden Gesetze zum Schutz geistigen Eigentums geschützt. Sie dürfen Inhalte für persönliche, nicht kommerzielle Zwecke ansehen und ausdrucken. Vervielfältigung, Verbreitung oder kommerzielle Nutzung ohne unsere vorherige schriftliche Zustimmung ist untersagt."
+          ]
+        },
+        {
+          "title": "Links zu Dritten",
+          "paragraphs": [
+            "Diese Website kann Links zu externen Websites enthalten, einschließlich Websites unserer Gruppenunternehmen, Social-Media-Seiten und anderer Ressourcen. Wir kontrollieren diese Websites nicht und sind nicht für deren Inhalte oder Verfügbarkeit verantwortlich. Ein Link stellt keine Empfehlung dar."
+          ]
+        },
+        {
+          "title": "Gewährleistungsausschluss",
+          "paragraphs": [
+            "Diese Website und ihre Inhalte werden \"wie besehen\" und \"wie verfügbar\" bereitgestellt. Wir bemühen uns zwar, die Informationen aktuell und korrekt zu halten, übernehmen jedoch keinerlei ausdrückliche oder stillschweigende Zusicherungen oder Gewährleistungen hinsichtlich Vollständigkeit, Richtigkeit, Zuverlässigkeit oder Eignung für einen bestimmten Zweck."
+          ]
+        },
+        {
+          "title": "Haftungsbeschränkung",
+          "paragraphs": [
+            "Soweit gesetzlich zulässig, haften die Indexia Group und ihre Gruppenunternehmen nicht für direkte, indirekte, zufällige, Folge- oder besondere Schäden oder Verluste, die aus oder im Zusammenhang mit Ihrer Nutzung dieser Website oder Ihrer Unfähigkeit, sie zu nutzen, entstehen, einschließlich Daten- oder Gewinnverlusten, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde."
+          ]
+        },
+        {
+          "title": "Anwendbares Recht",
+          "paragraphs": [
+            "Diese Bedingungen unterliegen dem Recht Indiens. Streitigkeiten, die aus oder im Zusammenhang mit Ihrer Nutzung dieser Website entstehen, unterliegen der ausschließlichen Zuständigkeit der Gerichte von Mumbai."
+          ]
+        },
+        {
+          "title": "Kontakt",
+          "paragraphs": [
+            "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte unter contactus@indexiagroup.com oder telefonisch unter +91 11 4629 1155."
+          ]
         }
       ]
     },
@@ -634,136 +703,68 @@
       "intro": [
         "Der Website-Eigentümer, einschließlich Tochtergesellschaften und verbundener Unternehmen, Indexia Group (oder „wir“, „uns“ oder „unser“), stellt den Besuchern und Antragstellern (gemeinsam als „Sie“ oder „Ihr“ bezeichnet) die auf dieser Website oder auf einer der sie umfassenden Seiten enthaltenen Informationen zur Verfügung, vorbehaltlich der in diesen Website-Bedingungen festgelegten Bedingungen, der Datenschutzrichtlinie und aller anderen relevanten Bedingungen, Richtlinien und Hinweise, die für einen bestimmten Abschnitt oder ein bestimmtes Modul der Website gelten können.",
         "Willkommen auf unserer Website. Wenn Sie weiter auf dieser Website surfen und sie nutzen, erklären Sie sich damit einverstanden, die folgenden Nutzungsbedingungen einzuhalten und an sie gebunden zu sein, die zusammen mit unserer Datenschutzrichtlinie die Beziehung zwischen Indexia Group und Ihnen in Bezug auf diese Website regeln.",
-        "Der Begriff „Indexia Group“ oder „wir“ oder „uns“ bezeichnet den Eigentümer der Website, dessen eingetragener Sitz sich in 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053 befindet. Der Begriff „Sie“ bezeichnet den Nutzer oder Besucher unserer Website."
+        "Der Begriff \"Indexia Group\" oder \"wir\" oder \"uns\" bezeichnet den Eigentümer der Website, dessen eingetragener Sitz sich in 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai – 400053 befindet. Der Begriff \"Sie\" bezeichnet den Nutzer oder Besucher unserer Website."
       ],
       "sections": [
         {
+          "title": "Inhalt und Änderungen",
           "paragraphs": [
             "Der Inhalt der Seiten dieser Website dient nur Ihrer allgemeinen Information und Nutzung. Er kann ohne Vorankündigung geändert werden."
-          ],
-          "title": "Inhalt und Änderungen"
+          ]
         },
         {
+          "title": "Keine Gewährleistung",
           "paragraphs": [
             "Weder wir noch Dritte geben eine Gewährleistung oder Garantie für die Richtigkeit, Aktualität, Leistung, Vollständigkeit oder Eignung der auf dieser Website gefundenen oder angebotenen Informationen und Materialien für einen bestimmten Zweck. Sie erkennen an, dass solche Informationen und Materialien Ungenauigkeiten oder Fehler enthalten können, und wir schließen die Haftung für solche Ungenauigkeiten oder Fehler im gesetzlich zulässigen Umfang ausdrücklich aus."
-          ],
-          "title": "Keine Gewährleistung"
+          ]
         },
         {
+          "title": "Nutzung Auf Eigenes Risiko",
           "paragraphs": [
             "Die Nutzung von Informationen oder Materialien auf dieser Website erfolgt vollständig auf eigenes Risiko, für das wir nicht haften. Es liegt in Ihrer eigenen Verantwortung, sicherzustellen, dass alle über diese Website verfügbaren Produkte, Dienstleistungen oder Informationen Ihren spezifischen Anforderungen entsprechen."
-          ],
-          "title": "Nutzung Auf Eigenes Risiko"
+          ]
         },
         {
+          "title": "Geistiges Eigentum",
           "paragraphs": [
             "Diese Website enthält Material, das uns gehört oder von uns lizenziert wurde. Dieses Material umfasst unter anderem Design, Layout, Erscheinungsbild und Grafiken. Die Vervielfältigung ist nur gemäß dem Urheberrechtshinweis gestattet, der Teil dieser Bedingungen ist."
-          ],
-          "title": "Geistiges Eigentum"
+          ]
         },
         {
+          "title": "Marken",
           "paragraphs": [
             "Alle auf dieser Website wiedergegebenen Marken, die nicht Eigentum des Betreibers sind oder von ihm lizenziert wurden, werden auf der Website anerkannt."
-          ],
-          "title": "Marken"
+          ]
         },
         {
+          "title": "Unbefugte Nutzung",
           "paragraphs": [
             "Die unbefugte Nutzung dieser Website kann zu Schadensersatzansprüchen führen und/oder eine Straftat darstellen."
-          ],
-          "title": "Unbefugte Nutzung"
+          ]
         },
         {
+          "title": "Links zu Dritten",
           "paragraphs": [
             "Von Zeit zu Zeit kann diese Website auch Links zu anderen Websites enthalten. Diese Links werden zu Ihrer Bequemlichkeit bereitgestellt, um weitere Informationen zu bieten. Sie bedeuten nicht, dass wir die verlinkten Websites befürworten. Wir übernehmen keine Verantwortung für den Inhalt der verlinkten Websites."
-          ],
-          "title": "Links Zu Dritten"
+          ]
         },
         {
+          "title": "Verlinkung Auf Diese Website",
           "paragraphs": [
             "Sie dürfen ohne vorherige schriftliche Zustimmung von Indexia Group keinen Link zu dieser Website von einer anderen Website oder einem Dokument aus erstellen."
-          ],
-          "title": "Verlinkung Auf Diese Website"
+          ]
         },
         {
+          "title": "Anwendbares Recht",
           "paragraphs": [
             "Ihre Nutzung dieser Website und alle sich daraus ergebenden Streitigkeiten unterliegen den Gesetzen Indiens oder einer anderen Aufsichtsbehörde."
-          ],
-          "title": "Anwendbares Recht"
+          ]
         },
         {
+          "title": "Haftungsausschluss für Finanzdienstleistungen",
           "paragraphs": [
-            "„Als Dienstleister haften wir in keiner Weise für Verluste oder Schäden, die direkt oder indirekt aus der Ablehnung der Autorisierung einer Transaktion entstehen, weil der Karteninhaber das von uns mit unserer akquirierenden Bank von Zeit zu Zeit vereinbarte voreingestellte Limit überschritten hat“."
-          ],
-          "title": "Haftung Bei Kartentransaktionen"
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [
-        null,
-        "Wenn Sie diese Bedingungen nicht akzeptieren, greifen Sie bitte nicht auf unsere Websites zu und nutzen Sie diese nicht."
-      ],
-      "sections": [
-        {
-          "paragraphs": [
-            "Die Rückgabe- und Stornierungsrichtlinie der Händler muss den Kunden auf der Website zugänglich gemacht werden, und sie müssen ihren Bedingungen während des Zahlungsvorgangs zustimmen. Die Kunden müssen vor dem Absenden ihrer Zahlungsinformationen auf eine Schaltfläche „Akzeptieren“ oder „Einverstanden“ für Rückgabe und Stornierung klicken. Sobald die Zahlung erfolgt ist, kann die Richtlinie zusammen mit der Zahlungsbestätigungs-E-Mail an die Kunden gesendet werden."
-          ],
-          "title": "Stornierungs- und Rückerstattungsrichtlinie"
-        },
-        {
-          "paragraphs": [
-            "Indexia Group möchte seinen Kunden so weit wie möglich helfen und hat daher eine großzügige Stornierungsrichtlinie. Gemäß dieser Richtlinie:",
-            "Stornierungen werden nur berücksichtigt, wenn der Antrag innerhalb von 72 Stunden nach der Zahlung gestellt wird. Der Stornierungsantrag wird jedoch nicht bearbeitet, wenn die Zahlungsdetails den Verkäufern/Händlern mitgeteilt wurden und diese den Zahlungsvorgang eingeleitet haben.",
-            "Für Zahlungen in der Kategorie Same-Day-Service besteht keine Stornierungsmöglichkeit.",
-            "Für Zahlungen, die Indexia Group an besonderen Anlässen wie Pongal, Diwali und Valentinstag erhalten hat, werden keine Stornierungen akzeptiert. Dies sind Angebote mit begrenzter Gelegenheit, daher sind Stornierungen nicht möglich.",
-            "Indexia Group akzeptiert keine Stornierungsanträge für verderbliche Dienstleistungen. Auch eine Rückerstattung kann nicht erfolgen, wenn der Kunde nachweist, dass die Qualität der Dienstleistung nicht gut ist.",
-            "Falls die Dienstleistungen und die dazugehörigen Informationen Sie nicht betreffen, melden Sie dies bitte unserem Support-Team. Der Antrag wird jedoch erst bearbeitet, nachdem der Händler dies geprüft und auf seiner Seite festgestellt hat. Dies sollte innerhalb von 21 Tagen nach Erhalt der Dienstleistungen gemeldet werden.",
-            "Wenn Sie der Meinung sind, dass die angebotene Dienstleistung nicht so ist, wie auf der Website gezeigt, oder nicht Ihren Erwartungen entspricht, müssen Sie dies unserem Support-Service innerhalb von 24 Stunden nach Erhalt der Dienstleistung mitteilen. Das Support-Service-Team wird nach Prüfung Ihrer Beschwerde eine angemessene Entscheidung treffen.",
-            "Bei Beschwerden über Dienstleistungen mit einem bestimmten Zeitrahmen wenden Sie sich bitte an uns unter contactus@indexiagroup.com."
-          ],
-          "title": "Stornierungsrichtlinie"
-        },
-        {
-          "paragraphs": [
-            "Wenn Sie unsere Dienstleistungen in Anspruch nehmen, ist Ihre Zahlung nicht durch eine Geld-zurück-Garantie abgedeckt. Wenn Sie aus irgendeinem Grund mit unserer Dienstleistung nicht vollständig zufrieden sind, nehmen wir dieses Anliegen sehr ernst und werden versuchen, es so schnell wie möglich zu lösen. Um eine Rückerstattung zu beantragen, kontaktieren Sie uns einfach innerhalb von neunzig (90) Tagen nach Ihrer Zahlung mit Ihren Zahlungsdaten. Bitte geben Sie Ihre Zahlungsdaten und Ihre Bestellnummer (nach der Zahlung per E-Mail an Sie gesendet) an und teilen Sie uns optional mit, warum Sie eine Rückerstattung beantragen, wir nehmen Kundenfeedback sehr ernst und nutzen es, um unsere Produkte und die Qualität unseres Service kontinuierlich zu verbessern. Für vollständig erbrachte Dienstleistungen wie Installationsdienste und Hosting-Dienste für Wissensdatenbanken werden keine Rückerstattungen gewährt. Rückerstattungen werden innerhalb von 21 Tagen bearbeitet."
-          ],
-          "title": "Rückerstattungsrichtlinie"
-        },
-        {
-          "paragraphs": [
-            "„Als Dienstleister haften wir in keiner Weise für Verluste oder Schäden, die direkt oder indirekt aus der Ablehnung der Autorisierung einer Transaktion entstehen, weil der Karteninhaber das von uns mit unserer akquirierenden Bank von Zeit zu Zeit vereinbarte voreingestellte Limit überschritten hat“."
-          ],
-          "title": "BO-Klausel"
-        },
-        {
-          "paragraphs": [
-            "Ein Haftungsausschluss kann gegenseitig vereinbarte und privat ausgehandelte Bedingungen als Teil eines Vertrags festlegen; oder er kann Warnungen oder Erwartungen an die allgemeine Öffentlichkeit (oder eine andere Personengruppe) festlegen, um einer Sorgfaltspflicht nachzukommen, die ein unzumutbares Risiko von Schaden oder Verletzung verhindern soll. Einige Haftungsausschlüsse sollen die Haftung für Schäden begrenzen, nachdem bereits ein Schaden oder eine Verletzung eingetreten ist. Darüber hinaus können einige Arten von Haftungsausschlüssen einen freiwilligen Verzicht auf ein Recht oder eine Verpflichtung darstellen, das/die der ausschließenden Partei zustehen könnte.",
-            "Haftungsausschlüsse unterscheiden sich in ihrer Einheitlichkeit. Einige können je nach spezifischem Kontext und beteiligten Parteien variieren, während andere Arten streng einem einheitlichen und etablierten Satz von Formalitäten folgen, die selten oder nie geändert werden, außer unter offizieller Autorität.",
-            "Der Website-Haftungsausschluss deckt Folgendes ab: keine Gewährleistungen, Haftungsbeschränkungen, Ausnahmen, Zumutbarkeit, andere Parteien und nicht durchsetzbare Bestimmungen."
-          ],
-          "title": "Haftungsausschlussrichtlinie"
-        },
-        {
-          "paragraphs": [
-            "Die auf dieser Website enthaltenen Informationen dienen nur allgemeinen Informationszwecken. Die Informationen werden von Indexia Group bereitgestellt, und obwohl wir uns bemühen, die Informationen aktuell und korrekt zu halten, geben wir keinerlei Zusicherungen oder Garantien, weder ausdrücklich noch stillschweigend, hinsichtlich der Vollständigkeit, Richtigkeit, Zuverlässigkeit, Eignung oder Verfügbarkeit der Website oder der darin enthaltenen Informationen, Produkte, Dienstleistungen oder zugehörigen Grafiken für irgendeinen Zweck. Jegliches Vertrauen, das Sie in solche Informationen setzen, erfolgt daher streng auf eigenes Risiko.",
-            "In keinem Fall haften wir für Verluste oder Schäden, einschließlich, ohne Einschränkung, indirekter oder Folgeschäden oder Verluste oder Schäden, die aus Daten- oder Gewinnverlusten im Zusammenhang mit der Nutzung dieser Website entstehen.",
-            "Über diese Website können Sie Links zu anderen Websites aufrufen, die nicht unter der Kontrolle von Indexia Group stehen. Wir haben keine Kontrolle über die Art, den Inhalt und die Verfügbarkeit dieser Websites. Die Aufnahme von Links bedeutet nicht unbedingt eine Empfehlung oder Billigung der dort geäußerten Ansichten.",
-            "Es wird alles unternommen, um die Website reibungslos in Betrieb zu halten. Indexia Group übernimmt jedoch keine Verantwortung für und haftet nicht für die vorübergehende Nichtverfügbarkeit der Website aufgrund technischer Probleme, die außerhalb unserer Kontrolle liegen."
-          ],
-          "title": "Haftungsausschluss Dieser Website"
-        },
-        {
-          "paragraphs": {
-            "0": "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern."
-          },
-          "title": "Änderungen dieser Bedingungen"
-        },
-        {
-          "paragraphs": {
-            "0": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte unter contactus@indexiagroup.com."
-          },
-          "title": "Kontakt"
+            "Die Unternehmen der Indexia Group bieten Finanzdienstleistungen, Kredite, Wertpapiere, Export, Lagerhaltung, Agrar- und verwandte Dienstleistungen an. Informationen über diese Dienstleistungen auf dieser Website dienen ausschließlich allgemeinen Informationszwecken. Sie stellen kein Angebot, keine Aufforderung und keine Finanz-, Investitions- oder Rechtsberatung dar, und für Entscheidungen, die auf der Grundlage dieser Inhalte getroffen werden, wird keine Haftung übernommen. Alle Produkte oder Dienstleistungen, die Sie von einem Gruppenunternehmen beziehen, unterliegen den eigenen Bedingungen und Konditionen dieses Unternehmens."
+          ]
         }
       ]
     }

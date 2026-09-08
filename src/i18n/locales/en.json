@@ -22,7 +22,7 @@
     "p0": {
       "tag": "Indexia Group",
       "heading": "One Group. Multiple Solutions.",
-      "tagline": "",
+      "tagline": "\"Some Steps to Serve The Nation\"",
       "sub": "From Finance and Warehousing to Agro Bio and Advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
       "motto": "Some Steps to Serve The Nation"
     },
@@ -72,7 +72,7 @@
     "nextPanel": "Next panel"
   },
   "footer": {
-    "tagline": "Some Steps to Serve The Nation",
+    "tagline": "\"Some Steps to Serve The Nation\"",
     "taglineSecondary": "Diverse Ventures. Unified Vision.",
     "blurb": "Eight trusted businesses under one diversified Indian group, Finance, Export, Agriculture, Warehousing, Security, Advertising, and Athlete Support, built on integrity and results.",
     "followUs": "Follow Us",
@@ -471,7 +471,7 @@
     "rolesSubtitle": "Our current job openings are:",
     "apply": "Apply",
     "ctaTitle": "Mail Us Your Resume",
-    "ctaBody": "We are always looking for great people. Send your CV to hr.indexia@gmail.com and we will be in touch.",
+    "ctaBody": "We are always looking for great people. Send your CV to hr@indexiafinance.com and we will be in touch.",
     "metaDescription": "Careers at Indexia Group, a learning organization with opportunities across our diverse businesses. Mail your resume to start your career with us.",
     "mailResume": "Mail us your Resume –",
     "cultureBody1": "Indexia Group is a learning organization, and our culture starts with our team. We invest in our people, the latest tools, real training, flexible hours, and a workplace that's collaborative and genuinely fun. Communication runs both ways here, from the newest hire straight through to management.",
@@ -663,7 +663,7 @@
     "taglineSecondary": "Diverse Ventures. Unified Vision.",
     "aboutUs": "About Us",
     "storyImageAlt": "Indexia Group founding story",
-    "verifyOnMCA": "Verify on MCA Portal",
+    "verifyOnMCA": "View more on MCA portal",
     "radialFinanceDesc": "Multinational fintech platform delivering financial services globally with 43+ bank partnerships",
     "radialFinserveDesc": "Investment and finance arm specializing in lending and wealth management",
     "radialOverseasDesc": "Connecting Indian agriculture with global edible export markets across continents",

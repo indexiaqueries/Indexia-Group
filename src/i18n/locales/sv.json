@@ -553,80 +553,149 @@
   "legalContent": {
     "privacy": {
       "intro": [
-        "La présente Politique de Confidentialité explique comment Indexia Group et ses sociétés du groupe (ensemble, « Indexia Group », « nous » ou « notre ») collectons, utilisons, divulguons et protégeons vos informations personnelles lorsque vous visitez nos sites web, soumettez une demande ou utilisez nos services.",
-        "En utilisant nos sites web ou en nous fournissant vos informations, vous acceptez les pratiques décrites dans la présente politique. Si vous n'êtes pas d'accord, veuillez ne pas fournir vos informations personnelles ni utiliser nos services."
+        "Denna integritetspolicy förklarar hur Indexia Group och dess gruppföretag (tillsammans \"Indexia Group\", \"vi\" eller \"vår\") samlar in, använder, lämnar ut och skyddar dina personuppgifter när du besöker våra webbplatser, skickar en förfrågan eller jobbansökan eller på annat sätt interagerar med oss.",
+        "Genom att använda våra webbplatser eller lämna dina uppgifter till oss samtycker du till de metoder som beskrivs i denna policy. Om du inte samtycker, vänligen lämna inte in dina personuppgifter eller använd våra tjänster."
       ],
       "sections": [
         {
+          "title": "Informations que nous collectons",
           "paragraphs": [
-            "Informations que vous nous fournissez : nous collectons les données que vous nous donnez directement, telles que votre nom, votre adresse e-mail, votre numéro de téléphone, le nom de votre entreprise et le contenu de votre demande ou candidature.",
-            "Informations collectées automatiquement : lorsque vous visitez nos sites web, nous pouvons collecter des informations sur l'appareil et l'utilisation, telles que votre adresse IP, le type de navigateur, les pages visitées et les URL de provenance, au moyen de cookies et de technologies similaires."
-          ],
-          "title": "Informations que nous collectons"
+            "Uppgifter som du lämnar: när du använder förfrågningsformuläret på vår kontaktsida samlar vi in de uppgifter du anger, vanligtvis ditt namn, telefonnummer, e-postadress, ämne och meddelande. När du söker ett jobb via ansökningssidan samlar vi in ditt namn, din e-postadress, ditt telefonnummer, antal års erfarenhet, ditt CV eller meritförteckning och den introduktion du lämnar. Vi samlar också in all annan information du väljer att skicka till oss via e-post, telefon eller post.",
+            "Uppgifter som samlas in automatiskt: vi använder inga spårningscookies, analysverktyg eller reklampixlar på denna webbplats. Vår webbhotellleverantör kan registrera standardiserade serverloggar (såsom din IP-adress och webbläsartyp) för att driva, säkra och felsöka webbplatsen. Din webbläsare lagrar det språk du väljer på den här enheten (lokal lagring) så att webbplatsen kan komma ihåg det vid ditt nästa besök."
+          ]
         },
         {
+          "title": "Comment nous utilisons vos informations",
           "paragraphs": [
-            "Nous utilisons vos informations pour répondre aux demandes, évaluer et fournir nos services, vérifier votre identité lorsque cela est nécessaire, améliorer nos sites web et services, respecter nos obligations légales et, lorsque vous y avez consenti, vous envoyer des informations sur nos sociétés du groupe.",
-            "Nous nous appuyons sur les bases légales suivantes pour le traitement : votre consentement, l'exécution d'un contrat, le respect d'une obligation légale et notre intérêt légitime à exploiter et améliorer notre activité."
-          ],
-          "title": "Comment nous utilisons vos informations"
+            "Vi använder de uppgifter du lämnar för att besvara din förfrågan och vidarebefordra den till rätt företag inom Indexia Group, för att utvärdera jobbansökningar, för att förbättra våra webbplatser och tjänster, för att följa lagkrav och — endast om du har samtyckt — för att skicka dig uppdateringar om våra gruppföretag.",
+            "Förfrågningar och jobbansökningar som skickas via våra formulär lagras i vår databas och granskas av vårt team via ett lösenordsskyddat administratörsområde."
+          ]
         },
         {
+          "title": "Partage et divulgation",
           "paragraphs": [
-            "Nous pouvons partager vos informations au sein d'Indexia Group afin que la société appropriée puisse répondre à votre demande. Nous pouvons également partager des informations avec des prestataires de services qui nous aident à fonctionner (tels que des fournisseurs d'hébergement et de communication), avec des organismes de réglementation ou des autorités lorsque la loi l'exige, et dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs.",
+            "Vi kan dela dina uppgifter inom Indexia Group så att rätt företag kan svara på din förfrågan eller ansökan. Vi kan också dela uppgifter med tjänsteleverantörer som hjälper oss att driva verksamheten, såsom webbhotell- och kommunikationsleverantörer. Vi kan lämna ut uppgifter till tillsynsmyndigheter, domstolar eller myndigheter när lagen kräver det, samt i samband med en fusion, ett förvärv eller en försäljning av tillgångar.",
             "Nous ne vendons pas vos informations personnelles à des tiers."
-          ],
-          "title": "Partage et divulgation"
+          ]
         },
         {
+          "title": "Sécurité des données",
           "paragraphs": [
-            "Nous appliquons des mesures techniques et organisationnelles raisonnables, notamment des contrôles d'accès, le chiffrement en transit et la surveillance, pour protéger vos informations personnelles contre tout accès non autorisé, toute perte ou tout usage abusif.",
+            "Vi tillämpar rimliga tekniska och organisatoriska åtgärder, inklusive HTTPS-kryptering under överföring, åtkomstkontroller till våra administratörssystem och övervakning, för att skydda dina personuppgifter mot obehörig åtkomst, förlust eller missbruk.",
             "Aucune méthode de transmission ou de stockage n'est totalement sécurisée. Bien que nous nous efforcions de protéger vos données, nous ne pouvons pas garantir leur sécurité absolue."
-          ],
-          "title": "Sécurité des données"
+          ]
         },
         {
+          "title": "Cookies och lokal lagring",
           "paragraphs": [
-            "Nos sites web utilisent des cookies essentiels pour fonctionner correctement et peuvent utiliser des cookies d'analyse pour comprendre comment les visiteurs utilisent nos sites. Vous pouvez contrôler ou désactiver les cookies via les paramètres de votre navigateur ; toutefois, certaines parties de nos sites web peuvent ne pas fonctionner correctement sans eux."
-          ],
-          "title": "Cookies et technologies similaires"
+            "Denna webbplats använder inga spårningscookies, analysverktyg eller reklamteknik. Vi använder din webbläsares lokala lagring endast för att komma ihåg dina språkpreferenser; du kan rensa den när som helst via webbläsarinställningarna.",
+            "Webbplatsen laddar typsnitt från Google Fonts. När ett typsnitt hämtas ansluter din webbläsare till Googles servrar och Google kan behandla din IP-adress i enlighet med sin egen integritetspolicy."
+          ]
         },
         {
+          "title": "Conservation des données",
           "paragraphs": [
-            "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les finalités décrites dans la présente politique, respecter les exigences légales et réglementaires et résoudre les litiges."
-          ],
-          "title": "Conservation des données"
+            "Vi behåller förfrågningsregister så länge som behövs för att svara dig och under en rimlig period därefter för arkivering. Jobbansökningar behålls under rekryteringsprocessen och en rimlig period därefter, om inte lagen kräver längre bevarande."
+          ]
         },
         {
+          "title": "Vos droits et choix",
           "paragraphs": [
-            "Selon la législation applicable, vous pouvez avoir le droit d'accéder à vos informations personnelles, de les corriger, de les mettre à jour ou d'en demander la suppression, et de retirer votre consentement lorsque le traitement repose sur celui-ci.",
+            "Beroende på tillämplig lag kan du ha rätt att få åtkomst till, korrigera, uppdatera eller begära radering av dina personuppgifter, samt att återkalla samtycke när behandlingen grundar sig på samtycke.",
             "Pour exercer ces droits, contactez-nous en utilisant les coordonnées figurant à la fin de la présente politique. Nous répondrons dans les délais prévus par la législation applicable."
-          ],
-          "title": "Vos droits et choix"
+          ]
         },
         {
+          "title": "Liens vers des tiers",
           "paragraphs": [
-            "Nos sites web et nos communications peuvent contenir des liens vers des sites web externes exploités par nos sociétés du groupe ou d'autres tiers. La présente politique ne s'applique pas à ces sites web, et nous vous invitons à consulter leurs propres politiques de confidentialité."
-          ],
-          "title": "Liens vers des tiers"
+            "Våra webbplatser och meddelanden kan innehålla länkar till externa webbplatser, inklusive webbplatser för våra gruppföretag (såsom företagsportaler) och sociala medier-sidor. Denna policy gäller inte för dessa webbplatser, och vi uppmuntrar dig att granska deras egna integritetspolicyer."
+          ]
         },
         {
+          "title": "Confidentialité des enfants",
           "paragraphs": [
             "Nos services ne sont pas destinés aux enfants de moins de 18 ans et nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si vous pensez qu'un enfant nous a fourni des informations personnelles, veuillez nous contacter afin que nous puissions les supprimer."
-          ],
-          "title": "Confidentialité des enfants"
+          ]
         },
         {
+          "title": "Modifications de la présente politique",
           "paragraphs": [
             "Nous pouvons mettre à jour la présente Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Les modifications importantes seront mises en évidence lorsque cela est possible."
-          ],
-          "title": "Modifications de la présente politique"
+          ]
         },
         {
+          "title": "Contact",
           "paragraphs": [
-            "Si vous avez des questions ou des préoccupations concernant la présente Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, veuillez nous contacter à contactus@indexiagroup.com ou par téléphone au +91 011 4629 1155."
-          ],
-          "title": "Contact"
+            "Om du har frågor eller funderingar om denna integritetspolicy eller hur vi hanterar dina personuppgifter, kontakta oss på contactus@indexiagroup.com eller per telefon på +91 11 4629 1155."
+          ]
+        }
+      ]
+    },
+    "termsOfUse": {
+      "intro": [
+        "Dessa användarvillkor (\"Villkoren\") styr din användning av Indexia Groups webbplats och sidorna för dess gruppföretag. Genom att komma åt eller använda denna webbplats samtycker du till att vara bunden av dessa Villkor och vår integritetspolicy. Om du inte samtycker, vänligen använd inte webbplatsen.",
+        "Indexia Group är en diversifierad indisk företagsgrupp vars företag tillhandahåller finansiella tjänster, värdepapper, global export, jordbruksbaserade biogödselmedel, lagerhållning, reklam och relaterade tjänster. Denna webbplats är en informationsplattform för gruppen och dess företag."
+      ],
+      "sections": [
+        {
+          "title": "Användning av denna webbplats",
+          "paragraphs": [
+            "Denna webbplats tillhandahålls för allmän information om Indexia Group och dess gruppföretag, deras tjänster, nyheter, forskning och karriärmöjligheter. Du samtycker till att använda webbplatsen endast för lagliga ändamål och på ett sätt som inte stör dess normala funktion eller andra användares rättigheter."
+          ]
+        },
+        {
+          "title": "Ingen finansiell, investerings- eller juridisk rådgivning",
+          "paragraphs": [
+            "Innehållet på denna webbplats, inklusive beskrivningar av finansiella tjänster, lån, värdepapper, export och andra erbjudanden, tillhandahålls endast som allmän information. Det utgör inte finansiell, investerings-, skatte- eller juridisk rådgivning och är inte ett erbjudande eller en uppmaning att köpa eller sälja några produkter eller tjänster. Du bör kontakta rätt företag inom Indexia Group direkt och inhämta professionell rådgivning innan du agerar på något du läser här."
+          ]
+        },
+        {
+          "title": "Förfrågningar och jobbansökningar",
+          "paragraphs": [
+            "När du skickar en förfrågan eller jobbansökan via denna webbplats kan vi vidarebefordra dina uppgifter till det företag inom Indexia Group som är bäst lämpat att svara. Att skicka en förfrågan skapar inga skyldigheter för oss. Du ansvarar för att de uppgifter du lämnar är korrekta och bekräftar att du är behörig att skicka dem. Jobbansökningar utvärderas efter vår bedömning."
+          ]
+        },
+        {
+          "title": "Inga onlinetransaktioner",
+          "paragraphs": [
+            "Denna webbplats behandlar inte betalningar och ingår inga avtal online. Alla produkter eller tjänster som tillhandahålls av ett företag inom Indexia Group regleras av det företagets egna avtal, villkor och bestämmelser, som du bör läsa noggrant innan du engagerar dig. Ingenting på denna webbplats utgör ett avtal mellan dig och Indexia Group."
+          ]
+        },
+        {
+          "title": "Propriété Intellectuelle",
+          "paragraphs": [
+            "Innehållet på denna webbplats, inklusive text, design, layout, grafik, logotyper och bilder, ägs av eller är licensierat till Indexia Group och skyddas av tillämpliga immaterialrättsliga lagar. Du får visa och skriva ut innehåll för personligt, icke-kommersiellt bruk. Reproduktion, spridning eller kommersiell användning utan vårt förhandsgodkännande i skrift är förbjuden."
+          ]
+        },
+        {
+          "title": "Liens vers des tiers",
+          "paragraphs": [
+            "Denna webbplats kan innehålla länkar till externa webbplatser, inklusive webbplatser för våra gruppföretag, sociala medier-sidor och andra resurser. Vi kontrollerar inte dessa webbplatser och ansvarar inte för deras innehåll eller tillgänglighet. En länk innebär inte rekommendation."
+          ]
+        },
+        {
+          "title": "Friskrivning från garantier",
+          "paragraphs": [
+            "Denna webbplats och dess innehåll tillhandahålls \"i befintligt skick\" och \"i tillgängligt skick\". Även om vi strävar efter att hålla informationen korrekt och aktuell, lämnar vi inga utfästelser eller garantier av något slag, uttryckliga eller underförstådda, om dess fullständighet, korrekthet, tillförlitlighet eller lämplighet för något ändamål."
+          ]
+        },
+        {
+          "title": "Begränsning av ansvar",
+          "paragraphs": [
+            "I den utsträckning lagen tillåter är Indexia Group och dess gruppföretag inte ansvariga för någon direkt, indirekt, tillfällig, följd- eller särskild förlust eller skada som uppstår från eller i samband med din användning av denna webbplats eller din oförmåga att använda den, inklusive förlust av data eller vinster, även om vi informerats om möjligheten av sådana skador."
+          ]
+        },
+        {
+          "title": "Droit Applicable",
+          "paragraphs": [
+            "Dessa Villkor regleras av indisk lag. Tvister som uppstår från eller i samband med din användning av denna webbplats omfattas av exklusiv jurisdiktion hos domstolarna i Mumbai."
+          ]
+        },
+        {
+          "title": "Contact",
+          "paragraphs": [
+            "Om du har frågor om dessa användarvillkor, kontakta oss på contactus@indexiagroup.com eller per telefon på +91 11 4629 1155."
+          ]
         }
       ]
     },
@@ -634,136 +703,68 @@
       "intro": [
         "Le propriétaire du site Web, y compris ses filiales et sociétés affiliées, Indexia Group (ou « nous », « notre »), fournit les informations contenues sur ce site Web, ou sur toute page le composant, aux visiteurs et aux candidats (collectivement désignés par « vous » ou « votre ») sous réserve des termes et conditions énoncés dans les présentes conditions du site Web, de la politique de confidentialité et de tout autre terme, condition, politique ou avis pertinent pouvant s'appliquer à une section ou un module spécifique du site Web.",
         "Bienvenue sur notre site Web. Si vous continuez à naviguer et à utiliser ce site Web, vous acceptez de vous conformer aux conditions d'utilisation suivantes et d'y être lié, qui, avec notre politique de confidentialité, régissent la relation d'Indexia Group avec vous concernant ce site Web.",
-        "Le terme « Indexia Group » ou « nous » désigne le propriétaire du site Web, dont le siège social enregistré est situé au 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai-400053. Le terme « vous » désigne l'utilisateur ou le visiteur de notre site Web."
+        "Begreppet \"Indexia Group\" eller \"vi\" avser ägaren av webbplatsen, vars registrerade kontor ligger på 2A, 1402, New Mhada Complex, Near Lokhandwala Circle, Andheri West, Mumbai – 400053. Begreppet \"du\" avser användaren eller besökaren av vår webbplats."
       ],
       "sections": [
         {
+          "title": "Contenu et Modifications",
           "paragraphs": [
             "Le contenu des pages de ce site Web est fourni à titre d'information générale uniquement. Il est susceptible d'être modifié sans préavis."
-          ],
-          "title": "Contenu et Modifications"
+          ]
         },
         {
+          "title": "Aucune Garantie",
           "paragraphs": [
             "Ni nous ni des tiers ne fournissons de garantie quant à l'exactitude, l'actualité, la performance, l'exhaustivité ou l'adéquation des informations et des documents trouvés ou proposés sur ce site Web pour un usage particulier. Vous reconnaissez que ces informations et documents peuvent contenir des inexactitudes ou des erreurs, et nous excluons expressément toute responsabilité pour ces inexactitudes ou erreurs dans toute la mesure permise par la loi."
-          ],
-          "title": "Aucune Garantie"
+          ]
         },
         {
+          "title": "Utilisation à Vos Risques",
           "paragraphs": [
             "L'utilisation de toute information ou de tout document sur ce site Web se fait entièrement à vos risques et périls, et nous n'en serons pas responsables. Il vous incombe de vous assurer que tout produit, service ou information disponible via ce site Web répond à vos besoins spécifiques."
-          ],
-          "title": "Utilisation à Vos Risques"
+          ]
         },
         {
+          "title": "Propriété Intellectuelle",
           "paragraphs": [
             "Ce site Web contient des éléments qui nous appartiennent ou qui nous sont concédés sous licence. Ces éléments comprennent, sans s'y limiter, la conception, la mise en page, l'apparence et les graphiques. Toute reproduction est interdite, sauf conformément à l'avis de droit d'auteur, qui fait partie des présentes conditions."
-          ],
-          "title": "Propriété Intellectuelle"
+          ]
         },
         {
+          "title": "Marques Commerciales",
           "paragraphs": [
             "Toutes les marques commerciales reproduites sur ce site Web qui ne sont pas la propriété de l'exploitant ou ne lui sont pas concédées sous licence sont reconnues sur le site Web."
-          ],
-          "title": "Marques Commerciales"
+          ]
         },
         {
+          "title": "Utilisation Non Autorisée",
           "paragraphs": [
             "Toute utilisation non autorisée de ce site Web peut donner lieu à une demande de dommages-intérêts et/ou constituer une infraction pénale."
-          ],
-          "title": "Utilisation Non Autorisée"
+          ]
         },
         {
+          "title": "Liens vers des tiers",
           "paragraphs": [
             "De temps à autre, ce site Web peut également inclure des liens vers d'autres sites Web. Ces liens sont fournis pour votre commodité afin de vous offrir des informations supplémentaires. Ils ne signifient pas que nous approuvons les sites Web liés. Nous ne sommes pas responsables du contenu des sites Web liés."
-          ],
-          "title": "Liens Vers des Sites Tiers"
+          ]
         },
         {
+          "title": "Liens Vers ce Site Web",
           "paragraphs": [
             "Vous ne pouvez pas créer de lien vers ce site Web depuis un autre site Web ou document sans le consentement écrit préalable d'Indexia Group."
-          ],
-          "title": "Liens Vers ce Site Web"
+          ]
         },
         {
+          "title": "Droit Applicable",
           "paragraphs": [
             "Votre utilisation de ce site Web et tout litige découlant de cette utilisation sont soumis aux lois de l'Inde ou à une autre autorité de régulation."
-          ],
-          "title": "Droit Applicable"
+          ]
         },
         {
+          "title": "Friskrivning för finansiella tjänster",
           "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ],
-          "title": "Responsabilité des Transactions par Carte"
-        }
-      ]
-    },
-    "termsOfUse": {
-      "intro": [
-        null,
-        "Om du inte godkänner dessa villkor, vänligen besök eller använd inte våra webbplatser."
-      ],
-      "sections": [
-        {
-          "paragraphs": [
-            "La politique de retour et d'annulation des commerçants doit être mise à disposition des clients sur le site Web, et ils doivent accepter ses conditions pendant le processus de paiement. Les clients doivent cliquer sur un bouton « Accepter » ou « D'accord » pour le retour et l'annulation avant de soumettre leurs informations de paiement. Une fois le paiement effectué, la politique peut être envoyée aux clients avec l'e-mail de confirmation du paiement."
-          ],
-          "title": "Politique d'Annulation et de Remboursement"
-        },
-        {
-          "paragraphs": [
-            "Indexia Group croit en la nécessité d'aider ses clients autant que possible et applique donc une politique d'annulation libérale. Selon cette politique :",
-            "Les annulations ne seront envisagées que si la demande est faite dans les 72 heures suivant le paiement. Toutefois, la demande d'annulation ne sera pas acceptée si les détails du paiement ont été communiqués aux fournisseurs/commerçants et s'ils ont initié le processus de paiement.",
-            "Aucune annulation de paiement n'est possible pour la catégorie de service Same Day.",
-            "Aucune annulation n'est acceptée pour les paiements qu'Indexia Group a obtenus lors d'occasions spéciales comme Pongal, Diwali et la Saint-Valentin, etc. Ce sont des offres à durée limitée et les annulations ne sont donc pas possibles.",
-            "Indexia Group n'accepte pas les demandes d'annulation pour les services périssables. Un remboursement ne peut pas non plus être effectué si le client établit que la qualité du service n'est pas bonne.",
-            "Si les services et les informations associées ne vous concernent pas, veuillez le signaler à notre équipe d'assistance. La demande sera toutefois traitée une fois que le commerçant aura vérifié et déterminé cela de son côté. Cela doit être signalé dans les 21 jours suivant la réception des services.",
-            "Si vous estimez que le service offert n'est pas tel qu'il est présenté sur le site ou ne correspond pas à vos attentes, vous devez le signaler à notre service d'assistance dans les 24 heures suivant la réception du service. L'équipe du service d'assistance, après examen de votre réclamation, prendra une décision appropriée.",
-            "En cas de réclamations concernant des services assortis d'un délai spécifique, veuillez nous contacter à contactus@indexiagroup.com."
-          ],
-          "title": "Politique d'Annulation"
-        },
-        {
-          "paragraphs": [
-            "Lorsque vous utilisez nos services, votre paiement n'est pas couvert par une garantie de remboursement. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de notre service, nous prendrons ce problème très au sérieux et essaierons de le résoudre dès que possible. Pour demander un remboursement, il suffit de nous contacter avec vos coordonnées de paiement dans les quatre-vingt-dix (90) jours suivant votre paiement. Veuillez inclure vos coordonnées de paiement et votre numéro de commande (envoyé par e-mail après le paiement) et indiquer éventuellement pourquoi vous demandez un remboursement, nous prenons les commentaires des clients très au sérieux et les utilisons pour améliorer constamment nos produits et la qualité de notre service. Les remboursements ne sont pas accordés pour les services entièrement fournis, tels que les services d'installation et les services d'hébergement de base de connaissances. Les remboursements sont traités dans un délai de 21 jours."
-          ],
-          "title": "Politique de Remboursement"
-        },
-        {
-          "paragraphs": [
-            "« En tant que fournisseur de services, nous ne serons en aucun cas responsables de toute perte ou de tout dommage découlant directement ou indirectement du refus d'autorisation d'une transaction, lorsque le titulaire de la carte a dépassé la limite prédéfinie convenue mutuellement par nous avec notre banque acquéreuse de temps à autre »."
-          ],
-          "title": "Clause BO"
-        },
-        {
-          "paragraphs": [
-            "Une clause de non-responsabilité peut préciser des termes et conditions mutuellement convenus et arrangés en privé dans le cadre d'un contrat ; ou peut préciser des avertissements ou des attentes destinés au grand public (ou à une autre catégorie de personnes) afin de remplir un devoir de diligence visant à prévenir un risque déraisonnable de préjudice ou de blessure. Certaines clauses de non-responsabilité visent à limiter l'exposition aux dommages après qu'un préjudice ou une blessure a déjà été subi. En outre, certains types de clauses de non-responsabilité peuvent représenter une renonciation volontaire à un droit ou à une obligation pouvant être due à la partie qui renonce.",
-            "Les clauses de non-responsabilité varient en termes d'uniformité. Certaines peuvent varier selon le contexte spécifique et les parties concernées, tandis que d'autres types peuvent adhérer strictement à un ensemble uniforme et établi de formalités rarement ou jamais modifiées, sauf sous autorité officielle.",
-            "La clause de non-responsabilité du site Web couvre ce qui suit : absence de garanties, limitations de responsabilité, exceptions, caractère raisonnable, autres parties et dispositions inapplicables."
-          ],
-          "title": "Politique de Clause de Non-Responsabilité"
-        },
-        {
-          "paragraphs": [
-            "Les informations contenues sur ce site Web sont fournies à titre d'information générale uniquement. Les informations sont fournies par Indexia Group et, bien que nous nous efforcions de les maintenir à jour et exactes, nous ne faisons aucune déclaration ni ne donnons aucune garantie, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité, la pertinence ou la disponibilité du site Web ou des informations, produits, services ou graphiques associés qu'il contient, à quelque fin que ce soit. Toute confiance que vous accordez à ces informations est donc strictement à vos risques et périls.",
-            "En aucun cas nous ne serons responsables de toute perte ou de tout dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou tout dommage découlant de la perte de données ou de bénéfices résultant de l'utilisation de ce site Web ou liés à celle-ci.",
-            "Via ce site Web, vous pouvez accéder à d'autres sites Web qui ne sont pas sous le contrôle d'Indexia Group. Nous n'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L'inclusion de liens n'implique pas nécessairement une recommandation ni une approbation des opinions qui y sont exprimées.",
-            "Tous les efforts sont faits pour maintenir le site Web opérationnel. Cependant, Indexia Group n'assume aucune responsabilité concernant l'indisponibilité temporaire du site Web due à des problèmes techniques hors de notre contrôle."
-          ],
-          "title": "Clause de Non-Responsabilité de ce Site Web"
-        },
-        {
-          "paragraphs": {
-            "0": "Vi förbehåller oss rätten att ändra dessa Användarvillkor när som helst."
-          },
-          "title": "Ändringar av Dessa Villkor"
-        },
-        {
-          "paragraphs": {
-            "0": "Vid frågor, kontakta oss på contactus@indexiagroup.com."
-          },
-          "title": "Kontakt"
+            "Företagen inom Indexia Group tillhandahåller finansiella tjänster, lån, värdepapper, export, lagerhållning, jordbrukstjänster och relaterade tjänster. Information om dessa tjänster på denna webbplats tillhandahålls endast i allmänt informationssyfte. Den utgör inte ett erbjudande, en uppmaning eller finansiell, investerings- eller juridisk rådgivning, och inget ansvar accepteras för beslut som fattas på grundval av detta innehåll. Alla produkter eller tjänster du erhåller från ett gruppföretag omfattas av det företagets egna villkor och bestämmelser."
+          ]
         }
       ]
     }
