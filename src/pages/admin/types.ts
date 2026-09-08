@@ -39,6 +39,7 @@ export type Enquiry = {
 };
 
 export type Tab = "applications" | "enquiries" | "openings";
+export type View = "overview" | "applications" | "enquiries" | "openings";
 
 // Values collected by the "New/Edit Opening" form. `requirements` is the raw
 // textarea value (one requirement per line) and is split into an array on save.
