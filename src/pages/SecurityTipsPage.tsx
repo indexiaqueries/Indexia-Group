@@ -184,7 +184,7 @@ const SecurityTipsPage = () => {
         title={t("securityTipsPage.ctaTitle")}
         body={t("securityTipsPage.ctaBody")}
         actionLabel={`${t("securityTipsPage.ctaButton")} ->`}
-        to="/contact"
+        to="/contact#enquiry-form"
       />
     </main>
   );

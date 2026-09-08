@@ -153,7 +153,7 @@ const GlobalResearchPage = () => {
         title={t("globalResearchPage.ctaTitle")}
         body={t("globalResearchPage.ctaBody")}
         actionLabel={`${t("globalResearchPage.ctaButton")} ->`}
-        to="/contact"
+        to="/contact#enquiry-form"
       />
     </main>
   );

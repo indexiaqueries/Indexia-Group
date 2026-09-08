@@ -4,12 +4,14 @@ import Header from "../components/common/Header";
 import DeferredFooter from "../components/common/DeferredFooter";
 
 const MainLayout = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure" || pathname === "/careers/apply";
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    // With a hash (e.g. /contact#enquiry-form) the destination page scrolls to
+    // its own anchor; only reset to the top for plain route changes.
+    if (!hash) window.scrollTo(0, 0);
+  }, [pathname, hash]);
 
   return (
     <div className="flex min-h-screen flex-col">
