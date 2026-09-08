@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< ours
 import { ArrowLeft, Briefcase, Edit3, Mail, RefreshCw } from "lucide-react";
-=======
-import { ArrowLeft, Briefcase, Edit3, Mail, RefreshCw, Trash2 } from "lucide-react";
->>>>>>> theirs
 import SEO from "../../components/common/SEO";
 import { API_BASE } from "../../lib/api";
 import AdminLogin from "./AdminLogin";
@@ -31,17 +27,6 @@ const AdminDashboard = () => {
   const [enquiries, setEnquiries] = useState<Enquiry[]>([]);
   const [selectedEnquiry, setSelectedEnquiry] = useState<Enquiry | null>(null);
 
-<<<<<<< ours
-=======
-  // Item awaiting delete confirmation (styled inline dialog)
-  const [deleteTarget, setDeleteTarget] = useState<
-    | { kind: "application"; id: string; name: string }
-    | { kind: "enquiry"; id: string; name: string }
-    | { kind: "opening"; id: string; name: string }
-    | null
-  >(null);
-
->>>>>>> theirs
   // Shared state
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -110,19 +95,6 @@ const AdminDashboard = () => {
     return data as T;
   };
 
-<<<<<<< ours
-=======
-  // Close the delete dialog on Escape.
-  useEffect(() => {
-    if (!deleteTarget) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setDeleteTarget(null);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [deleteTarget]);
-
->>>>>>> theirs
   /* ── Application actions ───────────────────────────────────── */
 
   const updateStatus = async (id: string, status: string) => {
@@ -139,10 +111,7 @@ const AdminDashboard = () => {
   };
 
   const deleteApp = async (id: string) => {
-<<<<<<< ours
     if (!confirm("Are you sure you want to delete this application?")) return;
-=======
->>>>>>> theirs
     try {
       await adminRequest(`/api/admin/applications/${id}`, { method: "DELETE" });
       setApplications((prev) => prev.filter((a) => a._id !== id));
@@ -152,35 +121,6 @@ const AdminDashboard = () => {
     }
   };
 
-<<<<<<< ours
-=======
-  // Deletion is guarded by a styled inline dialog instead of the native
-  // confirm(); these handlers open the dialog, confirmDelete runs the action.
-  const requestDeleteApp = (id: string) => {
-    const app = applications.find((a) => a._id === id);
-    if (app) setDeleteTarget({ kind: "application", id: app._id, name: app.name });
-  };
-
-  const requestDeleteEnquiry = (id: string) => {
-    const enq = enquiries.find((e) => e._id === id);
-    if (enq) setDeleteTarget({ kind: "enquiry", id: enq._id, name: enq.name });
-  };
-
-  const requestDeleteOpening = (id: string) => {
-    const opening = openings.find((o) => o._id === id);
-    if (opening) setDeleteTarget({ kind: "opening", id: opening._id, name: opening.title });
-  };
-
-  const confirmDelete = () => {
-    if (!deleteTarget) return;
-    const target = deleteTarget;
-    setDeleteTarget(null);
-    if (target.kind === "application") void deleteApp(target.id);
-    else if (target.kind === "enquiry") void deleteEnquiry(target.id);
-    else void deleteOpening(target.id);
-  };
-
->>>>>>> theirs
   const openResume = (id: string) => {
     // Uses ?token= because window.open can't send a custom header.
     window.open(`${API_BASE}/api/admin/applications/${id}/resume?token=${encodeURIComponent(token)}`, "_blank");
@@ -215,10 +155,7 @@ const AdminDashboard = () => {
   };
 
   const deleteEnquiry = async (id: string) => {
-<<<<<<< ours
     if (!confirm("Are you sure you want to delete this enquiry?")) return;
-=======
->>>>>>> theirs
     try {
       await adminRequest(`/api/admin/enquiries/${id}`, { method: "DELETE" });
       setEnquiries((prev) => prev.filter((e) => e._id !== id));
@@ -281,10 +218,7 @@ const AdminDashboard = () => {
   };
 
   const deleteOpening = async (id: string) => {
-<<<<<<< ours
     if (!confirm("Are you sure you want to delete this opening?")) return;
-=======
->>>>>>> theirs
     try {
       await adminRequest(`/api/admin/openings/${id}`, { method: "DELETE" });
       setOpenings((prev) => prev.filter((o) => o._id !== id));
@@ -365,11 +299,7 @@ const AdminDashboard = () => {
             selectedApp={selectedApp}
             onSelectApp={setSelectedApp}
             onUpdateStatus={updateStatus}
-<<<<<<< ours
             onDeleteApp={deleteApp}
-=======
-            onDeleteApp={requestDeleteApp}
->>>>>>> theirs
             onOpenResume={openResume}
           />
         </div>
@@ -380,11 +310,7 @@ const AdminDashboard = () => {
             selectedEnquiry={selectedEnquiry}
             onSelectEnquiry={selectEnquiry}
             onUpdateEnquiryStatus={updateEnquiryStatus}
-<<<<<<< ours
             onDeleteEnquiry={deleteEnquiry}
-=======
-            onDeleteEnquiry={requestDeleteEnquiry}
->>>>>>> theirs
           />
         </div>
 
@@ -393,66 +319,12 @@ const AdminDashboard = () => {
             openings={openings}
             onSaveOpening={saveOpening}
             onToggleActive={toggleActive}
-<<<<<<< ours
             onDeleteOpening={deleteOpening}
           />
         </div>
       </div>
-=======
-            onDeleteOpening={requestDeleteOpening}
-          />
-        </div>
-      </div>
-
-      {/* Delete confirmation dialog (replaces the native confirm()) */}
-      {deleteTarget && (
-        <div
-          className="fixed inset-0 z-100 flex items-center justify-center p-4"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="confirm-delete-title"
-        >
-          <div
-            className="absolute inset-0 bg-(--color-ink-deep)/60 backdrop-blur-sm"
-            onClick={() => setDeleteTarget(null)}
-            aria-hidden="true"
-          />
-          <div className="relative w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl">
-            <div className="flex items-center gap-2">
-              <Trash2 size={16} className="text-red-500" />
-              <h2 id="confirm-delete-title" className="font-display text-base font-bold text-(--color-ink)">
-                Delete {deleteTarget.kind === "application" ? "Application" : deleteTarget.kind === "enquiry" ? "Enquiry" : "Opening"}?
-              </h2>
-            </div>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Are you sure you want to delete{" "}
-              <span className="font-bold text-(--color-ink)">{deleteTarget.name}</span>? This action cannot be undone.
-            </p>
-            <div className="mt-5 flex justify-end gap-2">
-              <button
-                autoFocus
-                onClick={() => setDeleteTarget(null)}
-                className="rounded-full border border-slate-200 px-4 py-2 text-xs font-bold text-slate-500 transition-colors hover:border-slate-300"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={confirmDelete}
-                className="flex items-center gap-1.5 rounded-full bg-red-500 px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-red-600"
-              >
-                <Trash2 size={12} /> Delete
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
->>>>>>> theirs
     </main>
   );
 };
 
-<<<<<<< ours
 export default AdminDashboard;
-=======
-export default AdminDashboard;
->>>>>>> theirs
