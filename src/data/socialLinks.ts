@@ -8,6 +8,20 @@ import {
 
 export const socialLinks = [
 	{
+		name: "Facebook",
+		handle: "Indexia Finance",
+		url: "https://www.facebook.com/IndexiaFin",
+		icon: FaFacebookF,
+		brand: "#1877F2",
+	},
+		{
+		name: "X",
+		handle: "@indexiafinance",
+		url: "https://x.com/FinanceIndexia?s=20",
+		icon: FaXTwitter,
+		brand: "#111827",
+	},
+	{
 		name: "Instagram",
 		handle: "@indexiafinance",
 		url: "https://www.instagram.com/finance.indexia/",
@@ -20,20 +34,6 @@ export const socialLinks = [
 		url: "https://www.linkedin.com/in/indexia-finance",
 		icon: FaLinkedinIn,
 		brand: "#0A66C2",
-	},
-	{
-		name: "X",
-		handle: "@indexiafinance",
-		url: "https://x.com/FinanceIndexia?s=20",
-		icon: FaXTwitter,
-		brand: "#111827",
-	},
-	{
-		name: "Facebook",
-		handle: "Indexia Finance",
-		url: "https://www.facebook.com/share/1BKkPf5m9k",
-		icon: FaFacebookF,
-		brand: "#1877F2",
 	},
 	{
 		name: "YouTube",
