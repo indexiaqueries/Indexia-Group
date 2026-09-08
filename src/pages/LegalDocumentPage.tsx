@@ -100,7 +100,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
             <div className="mb-3 border-b border-(--color-line) pb-3 pl-6">
               <Link
                 to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-(--color-line) bg-(--color-paper) px-4 py-2 text-sm font-semibold text-(--color-navy) transition-colors hover:border-(--color-teal)/60 hover:text-(--color-teal-deep) focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-teal)"
+                className="inline-flex items-center gap-2 rounded-full border border-(--color-line) bg-(--color-paper) px-4 py-2 text-sm font-semibold text-(--color-navy) transition-colors hover:border-(--color-teal)/60 hover:text-(--color-teal-deep) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-teal)"
               >
                 ← {t("legal.backHome")}
               </Link>
@@ -122,7 +122,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
                   </span>
                   <span className="h-px flex-1 bg-(--color-line)" />
                 </div>
-                <h2 className="font-display mt-0 text-lg font-bold text-(--color-ink) sm:text-xl">{section.title}</h2>
+                <h2 className="font-display mt-0 text-lg font-bold text-(--color-blue) sm:text-xl">{section.title}</h2>
                 <div className="mt-2 space-y-2.5">
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph} className="text-[14px] leading-6.5 text-(--color-muted)">
