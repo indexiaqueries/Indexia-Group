@@ -110,8 +110,8 @@ const AdminDashboard = () => {
     }
   };
 
-  const deleteApp = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this application?")) return;
+  const deleteApp = async (id: string) => {    if (!confirm("Are you sure you want to delete this application?")) return;
+
     try {
       await adminRequest(`/api/admin/applications/${id}`, { method: "DELETE" });
       setApplications((prev) => prev.filter((a) => a._id !== id));
@@ -154,8 +154,8 @@ const AdminDashboard = () => {
     }
   };
 
-  const deleteEnquiry = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this enquiry?")) return;
+  const deleteEnquiry = async (id: string) => {    if (!confirm("Are you sure you want to delete this enquiry?")) return;
+
     try {
       await adminRequest(`/api/admin/enquiries/${id}`, { method: "DELETE" });
       setEnquiries((prev) => prev.filter((e) => e._id !== id));
@@ -217,8 +217,8 @@ const AdminDashboard = () => {
     }
   };
 
-  const deleteOpening = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this opening?")) return;
+  const deleteOpening = async (id: string) => {    if (!confirm("Are you sure you want to delete this opening?")) return;
+
     try {
       await adminRequest(`/api/admin/openings/${id}`, { method: "DELETE" });
       setOpenings((prev) => prev.filter((o) => o._id !== id));
@@ -300,6 +300,7 @@ const AdminDashboard = () => {
             onSelectApp={setSelectedApp}
             onUpdateStatus={updateStatus}
             onDeleteApp={deleteApp}
+
             onOpenResume={openResume}
           />
         </div>
@@ -311,6 +312,7 @@ const AdminDashboard = () => {
             onSelectEnquiry={selectEnquiry}
             onUpdateEnquiryStatus={updateEnquiryStatus}
             onDeleteEnquiry={deleteEnquiry}
+
           />
         </div>
 
@@ -323,8 +325,9 @@ const AdminDashboard = () => {
           />
         </div>
       </div>
+
     </main>
   );
 };
-
 export default AdminDashboard;
+
