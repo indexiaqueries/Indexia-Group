@@ -21,8 +21,8 @@ const AdminSidebar = ({ activeView, onNavigate, onLogout }: AdminSidebarProps) =
     <aside className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 bg-[--color-night] text-black z-50">
       <div className="flex flex-1 flex-col">
         <div className="flex items-center gap-3 px-6 py-6 border-b border-white/10">
-          <div className="h-8 w-8 rounded-lg bg-(--color-teal) flex items-center justify-center">
-            <span className="text-sm font-bold text-black">IG</span>
+          <div className="h-15 w-15 rounded-4xl bg-(--color-teal-deep) flex items-center justify-center">
+            <img src="src\assets\logo\IndexiaGroup_Logo.webp" alt="Indexia Group Logo" />
           </div>
           <div>
             <h2 className="font-display text-sm font-bold tracking-tight">Indexia Group</h2>
