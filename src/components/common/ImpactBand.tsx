@@ -10,6 +10,9 @@ type ImpactBandProps = {
   actionLabel: string;
   to?: string;
   href?: string;
+  /** Optional second action rendered next to the primary one (e.g. an extra contact email). */
+  secondaryActionLabel?: string;
+  secondaryActionHref?: string;
   accent?: "teal" | "yellow";
   className?: string;
 };
@@ -22,6 +25,8 @@ const ImpactBand = ({
   actionLabel,
   to,
   href,
+  secondaryActionLabel,
+  secondaryActionHref,
   accent = "yellow",
   className = "",
 }: ImpactBandProps) => {
@@ -31,6 +36,8 @@ const ImpactBand = ({
     ? "bg-(--color-teal) text-white shadow-[0_4px_16px_rgba(38,174,144,0.35)] hover:bg-(--color-teal-deep)"
     : "bg-(--color-yellow) text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] hover:bg-(--color-yellow-bright)";
   const action = `mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 ${actionClass}`;
+  const secondaryAction =
+    "mt-8 inline-flex items-center gap-2 rounded-full border border-white/45 bg-white/10 px-5 py-2.5 sm:px-7 sm:py-3 text-[13px] sm:text-sm font-bold text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-(--color-ink-deep)";
 
   const accentBar = isTeal ? "bg-(--color-teal)" : "bg-(--color-yellow)";
   const accentLine = isTeal ? "bg-(--color-teal)/35" : "bg-(--color-yellow)/35";
@@ -76,15 +83,22 @@ const ImpactBand = ({
           <p className="mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-white/78">
             {body}
           </p>
-          {to ? (
-            <Link to={to} className={action}>
-              {actionLabel}
-            </Link>
-          ) : (
-            <a href={href} className={action}>
-              {actionLabel}
-            </a>
-          )}
+          <div className="flex flex-wrap items-center gap-4">
+            {to ? (
+              <Link to={to} className={action}>
+                {actionLabel}
+              </Link>
+            ) : (
+              <a href={href} className={action}>
+                {actionLabel}
+              </a>
+            )}
+            {secondaryActionLabel && secondaryActionHref && (
+              <a href={secondaryActionHref} className={secondaryAction}>
+                {secondaryActionLabel}
+              </a>
+            )}
+          </div>
         </Reveal>
       </div>
     </section>
