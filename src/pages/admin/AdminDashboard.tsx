@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Briefcase, Edit3, LayoutDashboard, Mail, RefreshCw } from "lucide-react";
+import { Briefcase, Edit3, LayoutDashboard, Mail, Calendar, RefreshCw } from "lucide-react";
 import SEO from "../../components/common/SEO";
 import { API_BASE } from "../../lib/api";
 import AdminLogin from "./AdminLogin";
@@ -10,7 +10,9 @@ import ApplicationsTab from "./ApplicationsTab";
 import EnquiriesTab from "./EnquiriesTab";
 import OpeningsTab from "./OpeningsTab";
 import OverviewTab from "./OverviewTab";
-import type { Application, Enquiry, Opening, View } from "./types";
+import CalendarTab from "./CalendarTab";
+import ConfirmDialog from "./ConfirmDialog";
+import type { Application, Enquiry, Opening, Holiday, View } from "./types";
 
 const AdminDashboard = () => {
   const [token, setToken] = useState(() => localStorage.getItem("admin_token") || "");
@@ -21,12 +23,39 @@ const AdminDashboard = () => {
   const [applications, setApplications] = useState<Application[]>([]);
   const [openings, setOpenings] = useState<Opening[]>([]);
   const [enquiries, setEnquiries] = useState<Enquiry[]>([]);
+  const [holidays, setHolidays] = useState<Holiday[]>([]);
 
   const [selectedApp, setSelectedApp] = useState<Application | null>(null);
   const [selectedEnquiry, setSelectedEnquiry] = useState<Enquiry | null>(null);
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  // Confirm dialog state
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [confirmTitle, setConfirmTitle] = useState("");
+  const [confirmMessage, setConfirmMessage] = useState("");
+  const [confirmLabel, setConfirmLabel] = useState("Delete");
+  const [confirmAction, setConfirmAction] = useState<(() => void) | null>(null);
+
+  const showConfirm = (title: string, message: string, label: string, action: () => void) => {
+    setConfirmTitle(title);
+    setConfirmMessage(message);
+    setConfirmLabel(label);
+    setConfirmAction(() => action);
+    setConfirmOpen(true);
+  };
+
+  const handleConfirm = () => {
+    confirmAction?.();
+    setConfirmOpen(false);
+    setConfirmAction(null);
+  };
+
+  const handleConfirmCancel = () => {
+    setConfirmOpen(false);
+    setConfirmAction(null);
+  };
 
   useEffect(() => {
     if (!isAuthed || !token) return;
@@ -35,18 +64,21 @@ const AdminDashboard = () => {
       setLoading(true);
       setError("");
       try {
-        const [appRes, openRes, enqRes] = await Promise.all([
+        const [appRes, openRes, enqRes, holRes] = await Promise.all([
           fetch(`${API_BASE}/api/admin/applications`, { headers: { "x-admin-token": token } }),
           fetch(`${API_BASE}/api/admin/openings`, { headers: { "x-admin-token": token } }),
           fetch(`${API_BASE}/api/admin/enquiries`, { headers: { "x-admin-token": token } }),
+          fetch(`${API_BASE}/api/admin/holidays`, { headers: { "x-admin-token": token } }),
         ]);
         const appData = await appRes.json();
         const openData = await openRes.json();
         const enqData = await enqRes.json();
+        const holData = await holRes.json();
         if (!cancelled) {
           if (appRes.ok && appData.ok) setApplications(appData.applications);
           if (openRes.ok && openData.ok) setOpenings(openData.openings);
           if (enqRes.ok && enqData.ok) setEnquiries(enqData.enquiries);
+          if (holRes.ok && holData.ok) setHolidays(holData.holidays);
           localStorage.setItem("admin_token", token);
         }
       } catch (err) {
@@ -120,14 +152,20 @@ const AdminDashboard = () => {
   };
 
   const deleteApp = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this application?")) return;
-    try {
-      await adminRequest(`/api/admin/applications/${id}`, { method: "DELETE" });
-      setApplications((prev) => prev.filter((a) => a._id !== id));
-      setSelectedApp((prev) => (prev && prev._id === id ? null : prev));
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to delete application.");
-    }
+    showConfirm(
+      "Delete Application",
+      "This action cannot be undone. The application and all its data will be permanently removed.",
+      "Delete",
+      async () => {
+        try {
+          await adminRequest(`/api/admin/applications/${id}`, { method: "DELETE" });
+          setApplications((prev) => prev.filter((a) => a._id !== id));
+          setSelectedApp((prev) => (prev && prev._id === id ? null : prev));
+        } catch (err) {
+          setError(err instanceof Error ? err.message : "Failed to delete application.");
+        }
+      }
+    );
   };
 
   const openResume = (id: string) => {
@@ -155,14 +193,20 @@ const AdminDashboard = () => {
   };
 
   const deleteEnquiry = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this enquiry?")) return;
-    try {
-      await adminRequest(`/api/admin/enquiries/${id}`, { method: "DELETE" });
-      setEnquiries((prev) => prev.filter((e) => e._id !== id));
-      setSelectedEnquiry((prev) => (prev && prev._id === id ? null : prev));
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to delete enquiry.");
-    }
+    showConfirm(
+      "Delete Enquiry",
+      "This action cannot be undone. The enquiry and all its data will be permanently removed.",
+      "Delete",
+      async () => {
+        try {
+          await adminRequest(`/api/admin/enquiries/${id}`, { method: "DELETE" });
+          setEnquiries((prev) => prev.filter((e) => e._id !== id));
+          setSelectedEnquiry((prev) => (prev && prev._id === id ? null : prev));
+        } catch (err) {
+          setError(err instanceof Error ? err.message : "Failed to delete enquiry.");
+        }
+      }
+    );
   };
 
   const saveOpening = async (values: import("./types").OpeningFormValues, editingId?: string): Promise<boolean> => {
@@ -216,19 +260,61 @@ const AdminDashboard = () => {
   };
 
   const deleteOpening = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this opening?")) return;
+    showConfirm(
+      "Delete Opening",
+      "This action cannot be undone. The job opening will be permanently removed.",
+      "Delete",
+      async () => {
+        try {
+          await adminRequest(`/api/admin/openings/${id}`, { method: "DELETE" });
+          setOpenings((prev) => prev.filter((o) => o._id !== id));
+        } catch (err) {
+          setError(err instanceof Error ? err.message : "Failed to delete opening.");
+        }
+      }
+    );
+  };
+
+  const saveHoliday = async (values: { name: string; date: string; description: string }, editingId?: string): Promise<boolean> => {
     try {
-      await adminRequest(`/api/admin/openings/${id}`, { method: "DELETE" });
-      setOpenings((prev) => prev.filter((o) => o._id !== id));
+      const isEdit = !!editingId;
+      const data = await adminRequest<{ holiday: Holiday }>(
+        isEdit ? `/api/admin/holidays/${editingId}` : "/api/admin/holidays",
+        { method: isEdit ? "PATCH" : "POST", body: JSON.stringify(values) }
+      );
+      if (isEdit) {
+        setHolidays((prev) => prev.map((h) => (h._id === editingId ? data.holiday : h)));
+      } else {
+        setHolidays((prev) => [...prev, data.holiday].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()));
+      }
+      return true;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to delete opening.");
+      setError(err instanceof Error ? err.message : "Failed to save holiday.");
+      return false;
     }
+  };
+
+  const deleteHoliday = async (id: string) => {
+    showConfirm(
+      "Delete Holiday",
+      "This action cannot be undone. The holiday will be permanently removed from the calendar.",
+      "Delete",
+      async () => {
+        try {
+          await adminRequest(`/api/admin/holidays/${id}`, { method: "DELETE" });
+          setHolidays((prev) => prev.filter((h) => h._id !== id));
+        } catch (err) {
+          setError(err instanceof Error ? err.message : "Failed to delete holiday.");
+        }
+      }
+    );
   };
 
   const getTitle = () => {
     if (activeView === "overview") return "Overview";
     if (activeView === "applications") return "Applications";
     if (activeView === "enquiries") return "Enquiries";
+    if (activeView === "calendar") return "Calendar";
     return "Openings";
   };
 
@@ -260,6 +346,7 @@ const AdminDashboard = () => {
                 {activeView === "applications" && "Manage candidate applications"}
                 {activeView === "enquiries" && "Handle contact enquiries"}
                 {activeView === "openings" && "Create and manage job openings"}
+                {activeView === "calendar" && "View and manage company holidays"}
               </p>
             </div>
             <button
@@ -311,6 +398,14 @@ const AdminDashboard = () => {
               onDeleteOpening={deleteOpening}
             />
           )}
+
+          {activeView === "calendar" && (
+            <CalendarTab
+              holidays={holidays}
+              onSaveHoliday={saveHoliday}
+              onDeleteHoliday={deleteHoliday}
+            />
+          )}
         </div>
       </div>
 
@@ -328,12 +423,22 @@ const AdminDashboard = () => {
         onDeleteEnquiry={deleteEnquiry}
       />
 
+      <ConfirmDialog
+        open={confirmOpen}
+        title={confirmTitle}
+        message={confirmMessage}
+        confirmLabel={confirmLabel}
+        onConfirm={handleConfirm}
+        onCancel={handleConfirmCancel}
+      />
+
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/90 backdrop-blur-md border-t border-slate-200 flex justify-around py-2 pb-[env(safe-area-inset-bottom)]">
         {[
           { view: "overview" as View, label: "Overview", icon: <LayoutDashboard size={20} /> },
           { view: "applications" as View, label: "Apps", icon: <Briefcase size={20} /> },
           { view: "enquiries" as View, label: "Msgs", icon: <Mail size={20} /> },
           { view: "openings" as View, label: "Jobs", icon: <Edit3 size={20} /> },
+          { view: "calendar" as View, label: "Cal", icon: <Calendar size={20} /> },
         ].map((item) => (
           <button
             key={item.view}
