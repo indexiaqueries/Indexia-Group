@@ -22,7 +22,7 @@ const viteCompression = require('vite-plugin-compression') as (
 ) => Plugin
 
 function readServerPort(): number {
-  if (process.env.PORT) return Number(process.env.PORT)
+  if (process.env.PORT && process.env.PORT !== '0') return Number(process.env.PORT)
   const envPath = fileURLToPath(new URL('./server/.env', import.meta.url))
   try {
     const env = readFileSync(envPath, 'utf8')
@@ -84,7 +84,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: `http://localhost:${SERVER_PORT}`,
+        target: `http://127.0.0.1:${SERVER_PORT}`,
         changeOrigin: true,
       },
     },
