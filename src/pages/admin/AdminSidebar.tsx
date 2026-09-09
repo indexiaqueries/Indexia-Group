@@ -1,7 +1,7 @@
-import { LayoutDashboard, Briefcase, Mail, Edit3, LogOut, ChevronLeft } from "lucide-react";
+import { LayoutDashboard, Briefcase, Mail, Edit3, Calendar, LogOut, ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
-type View = "overview" | "applications" | "enquiries" | "openings";
+type View = "overview" | "applications" | "enquiries" | "openings" | "calendar";
 
 type AdminSidebarProps = {
   activeView: View;
@@ -14,6 +14,7 @@ const NAV_ITEMS: { view: View; label: string; icon: React.ReactNode }[] = [
   { view: "applications", label: "Applications", icon: <Briefcase size={18} /> },
   { view: "enquiries", label: "Enquiries", icon: <Mail size={18} /> },
   { view: "openings", label: "Openings", icon: <Edit3 size={18} /> },
+  { view: "calendar", label: "Calendar", icon: <Calendar size={18} /> },
 ];
 
 const AdminSidebar = ({ activeView, onNavigate, onLogout }: AdminSidebarProps) => {
