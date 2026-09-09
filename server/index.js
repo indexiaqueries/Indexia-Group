@@ -10,7 +10,7 @@ import Enquiry from "./models/Enquiry.js";
 import adminRoutes from "./routes/admin.js";
 import newsRoutes from "./routes/news.js";
 import openingsRouter, { adminOpeningsRouter } from "./routes/openings.js";
-import { seedOpenings } from "./services/seedOpenings.js";
+import holidaysRouter, { adminHolidaysRouter } from "./routes/holidays.js";
 import { startNewsScheduler } from "./services/newsScheduler.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -85,7 +85,6 @@ const upload = multer({
 // a cold start never races the initial connection attempt.
 const dbReady = connectDB();
 dbReady.then(() => {
-  seedOpenings();
   if (!IS_VERCEL) startNewsScheduler();
 });
 
@@ -102,6 +101,8 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/news", newsRoutes);
 app.use("/api/openings", openingsRouter);
 app.use("/api/admin/openings", adminOpeningsRouter);
+app.use("/api/holidays", holidaysRouter);
+app.use("/api/admin/holidays", adminHolidaysRouter);
 
 // Contact enquiries are stored in MongoDB only. The admin dashboard
 // (/admin → Enquiries) is where the team reviews them.
