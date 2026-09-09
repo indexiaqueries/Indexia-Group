@@ -38,8 +38,16 @@ export type Enquiry = {
   createdAt: string;
 };
 
+export type Holiday = {
+  _id: string;
+  name: string;
+  date: string;
+  description?: string;
+  createdAt: string;
+};
+
 export type Tab = "applications" | "enquiries" | "openings";
-export type View = "overview" | "applications" | "enquiries" | "openings";
+export type View = "overview" | "applications" | "enquiries" | "openings" | "calendar";
 
 // Values collected by the "New/Edit Opening" form. `requirements` is the raw
 // textarea value (one requirement per line) and is split into an array on save.
