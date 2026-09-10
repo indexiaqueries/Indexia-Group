@@ -51,6 +51,12 @@ a, button {
   transition: all 0.2s ease;
 }
 
+/* Keep pointer feedback consistent for every usable button, including buttons
+   rendered by future components that do not explicitly carry a utility class. */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
 img {
   display: block;
   max-width: 100%;
