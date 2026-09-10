@@ -3,11 +3,30 @@ import type { ReactNode } from "react";
 import { Clock, Eye, Filter, Search, Star, XCircle } from "lucide-react";
 import type { Application } from "./types";
 
-const STATUS_COLORS: Record<string, { bg: string; text: string; icon: ReactNode }> = {
-  pending: { bg: "bg-yellow-50", text: "text-yellow-700", icon: <Clock size={14} /> },
-  reviewed: { bg: "bg-blue-50", text: "text-blue-700", icon: <Eye size={14} /> },
-  shortlisted: { bg: "bg-green-50", text: "text-green-700", icon: <Star size={14} /> },
-  rejected: { bg: "bg-red-50", text: "text-red-700", icon: <XCircle size={14} /> },
+const STATUS_COLORS: Record<
+  string,
+  { bg: string; text: string; icon: ReactNode }
+> = {
+  pending: {
+    bg: "bg-[#f7f75c]/30",
+    text: "text-[#241a03]",
+    icon: <Clock size={14} />,
+  },
+  reviewed: {
+    bg: "bg-[#066a9c]/10",
+    text: "text-[#044e74]",
+    icon: <Eye size={14} />,
+  },
+  shortlisted: {
+    bg: "bg-[#26ae90]/10",
+    text: "text-[#14765f]",
+    icon: <Star size={14} />,
+  },
+  rejected: {
+    bg: "bg-[#b91c1c]/10",
+    text: "text-[#b91c1c]",
+    icon: <XCircle size={14} />,
+  },
 };
 
 type ApplicationsTabProps = {
