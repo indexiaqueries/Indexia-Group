@@ -1,0 +1,14 @@
+/* Shared admin-only utilities. Most admin styling remains Tailwind utilities. */
+.admin-scrollbar {
+  scrollbar-color: rgb(6 106 156 / 0.3) transparent;
+  scrollbar-width: thin;
+}
+
+.admin-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.admin-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgb(6 106 156 / 0.3);
+}
