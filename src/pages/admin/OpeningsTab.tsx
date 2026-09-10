@@ -220,7 +220,11 @@ const OpeningsTab = ({ openings, onSaveOpening, onToggleActive, onDeleteOpening 
                   onChange={(e) => setForm({ ...form, department: e.target.value })}
                   className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-(--color-teal)"
                 >
-                  {DEPARTMENTS.map((d) => <option key={d} value={d}>{d}</option>)}
+                  {DEPARTMENTS.map((department) => (
+                    <option key={department} value={department}>
+                      {department}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div>
