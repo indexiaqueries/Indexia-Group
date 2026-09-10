@@ -45,8 +45,7 @@ Thumbs.db
 
 # Freebuff workspace
 .freebuff/
+.agents/
 
 # Responsive images (generated)
 src/assets/public-images/
-
-.agents/
