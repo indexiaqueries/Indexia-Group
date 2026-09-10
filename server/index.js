@@ -32,13 +32,18 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const DEFAULT_CORS_ORIGINS = [
   "https://www.indexiagroup.com",
   "https://indexiagroup.com",
+  "https://indexia-group-website.onrender.com",
   "http://localhost:5173",
   "http://127.0.0.1:5173",
 ];
+
+const configuredOrigins = (process.env.CORS_ORIGINS || "")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
 const allowedOrigins = new Set(
-  process.env.CORS_ORIGINS
-    ? process.env.CORS_ORIGINS.split(",").map((origin) => origin.trim()).filter(Boolean)
-    : DEFAULT_CORS_ORIGINS
+  [...DEFAULT_CORS_ORIGINS, ...configuredOrigins]
 );
 
 const app = express();
