@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Area, AreaChart, CartesianGrid, Pie, PieChart, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { Briefcase, Mail, TrendingUp, UserCheck } from "lucide-react";
 import type { Application, Enquiry, Opening } from "./types";
@@ -10,8 +10,25 @@ type OverviewTabProps = {
 };
 
 const COLORS = ["#26ae90", "#066a9c", "#f2f231", "#b91c1c", "#f59e0b"];
+const PERIOD_OPTIONS = [7, 30, 90] as const;
+
+const createTrend = <T extends { createdAt: string }>(items: T[], days: number) =>
+  Array.from({ length: days }, (_, index) => {
+    const date = new Date();
+    date.setDate(date.getDate() - (days - index - 1));
+
+    return {
+      label: date.toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: days > 30 ? "short" : undefined,
+        weekday: days <= 30 ? "short" : undefined,
+      }),
+      count: items.filter((item) => new Date(item.createdAt).toDateString() === date.toDateString()).length,
+    };
+  });
 
 const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) => {
+  const [period, setPeriod] = useState<(typeof PERIOD_OPTIONS)[number]>(7);
   const stats = useMemo(() => {
     const newEnquiries = enquiries.filter((e) => e.status === "new").length;
     const shortlisted = applications.filter((a) => a.status === "shortlisted").length;
@@ -20,19 +37,7 @@ const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) =>
     return { total, newEnquiries, shortlisted, activeOpenings };
   }, [applications, enquiries, openings]);
 
-  const applicationTrend = useMemo(() => {
-    const last7 = Array.from({ length: 7 }, (_, i) => {
-      const d = new Date();
-      d.setDate(d.getDate() - (6 - i));
-      const label = d.toLocaleDateString("en-IN", { weekday: "short", day: "numeric" });
-      const count = applications.filter((a) => {
-        const ad = new Date(a.createdAt);
-        return ad.toDateString() === d.toDateString();
-      }).length;
-      return { label, count };
-    });
-    return last7;
-  }, [applications]);
+  const applicationTrend = useMemo(() => createTrend(applications, period), [applications, period]);
 
   const statusDistribution = useMemo(() => {
     const counts = applications.reduce<Record<string, number>>((acc, a) => {
@@ -42,19 +47,7 @@ const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) =>
     return Object.entries(counts).map(([name, value]) => ({ name, value }));
   }, [applications]);
 
-  const enquiryTrend = useMemo(() => {
-    const last7 = Array.from({ length: 7 }, (_, i) => {
-      const d = new Date();
-      d.setDate(d.getDate() - (6 - i));
-      const label = d.toLocaleDateString("en-IN", { weekday: "short", day: "numeric" });
-      const count = enquiries.filter((e) => {
-        const ed = new Date(e.createdAt);
-        return ed.toDateString() === d.toDateString();
-      }).length;
-      return { label, count };
-    });
-    return last7;
-  }, [enquiries]);
+  const enquiryTrend = useMemo(() => createTrend(enquiries, period), [enquiries, period]);
 
   const kpiCards = [
     { label: "Total Applications", value: applications.length, icon: <Briefcase size={20} />, color: "text-(--color-teal)", bg: "bg-teal-50" },
@@ -64,7 +57,7 @@ const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) =>
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div>
         <h2 className="font-display text-2xl font-bold text-[--color-ink]">Dashboard Overview</h2>
         <p className="text-sm text-slate-500 mt-1">Welcome back. Here is what is happening across your admin console.</p>
@@ -83,8 +76,18 @@ const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) =>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
-          <h3 className="font-display text-base font-bold text-[--color-ink] mb-4">Applications (Last 7 Days)</h3>
+        <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h3 className="font-display text-base font-bold text-[--color-ink]">Applications</h3>
+            <label className="sr-only" htmlFor="overview-period">Chart date range</label>
+            <select id="overview-period" value={period} onChange={(event) => setPeriod(Number(event.target.value) as (typeof PERIOD_OPTIONS)[number])} className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-[10px] font-bold text-slate-600 outline-none focus:border-(--color-teal)">
+              {PERIOD_OPTIONS.map((days) => (
+                <option key={days} value={days}>
+                  Last {days} days
+                </option>
+              ))}
+            </select>
+          </div>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={applicationTrend}>
@@ -142,10 +145,19 @@ const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) =>
             ))}
           </div>
         </div>
-      </div>
 
       <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
-        <h3 className="font-display text-base font-bold text-[--color-ink] mb-4">Enquiries (Last 7 Days)</h3>
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <h3 className="font-display text-base font-bold text-[--color-ink]">Enquiries</h3>
+          <label className="sr-only" htmlFor="overview-period-enquiries">Chart date range</label>
+          <select id="overview-period-enquiries" value={period} onChange={(event) => setPeriod(Number(event.target.value) as (typeof PERIOD_OPTIONS)[number])} className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-[10px] font-bold text-slate-600 outline-none focus:border-(--color-teal)">
+            {PERIOD_OPTIONS.map((days) => (
+              <option key={days} value={days}>
+                Last {days} days
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={enquiryTrend}>
@@ -167,6 +179,7 @@ const OverviewTab = ({ applications, enquiries, openings }: OverviewTabProps) =>
           </ResponsiveContainer>
         </div>
       </div>
+    </div>
     </div>
   );
 };
