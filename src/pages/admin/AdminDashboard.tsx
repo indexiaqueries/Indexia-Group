@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Briefcase, Edit3, LayoutDashboard, Mail, Calendar, RefreshCw } from "lucide-react";
+import { RefreshCw } from "lucide-react";
 import SEO from "../../components/common/SEO";
 import { API_BASE } from "../../lib/api";
 import AdminLogin from "./AdminLogin";
@@ -10,8 +10,9 @@ import ApplicationsTab from "./ApplicationsTab";
 import EnquiriesTab from "./EnquiriesTab";
 import OpeningsTab from "./OpeningsTab";
 import OverviewTab from "./OverviewTab";
-import CalendarTab from "./CalendarTab";
+import CalendarTab from "./components/calendar/CalendarTab";
 import ConfirmDialog from "./ConfirmDialog";
+import { ADMIN_NAVIGATION, getAdminNavigation } from "./navigation";
 import type { Application, Enquiry, Opening, Holiday, View } from "./types";
 
 const AdminDashboard = () => {
@@ -310,13 +311,7 @@ const AdminDashboard = () => {
     );
   };
 
-  const getTitle = () => {
-    if (activeView === "overview") return "Overview";
-    if (activeView === "applications") return "Applications";
-    if (activeView === "enquiries") return "Enquiries";
-    if (activeView === "calendar") return "Calendar";
-    return "Openings";
-  };
+  const activeNavigation = getAdminNavigation(activeView);
 
   if (!isAuthed) {
     return (
@@ -340,13 +335,9 @@ const AdminDashboard = () => {
         <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur-md">
           <div className="flex items-center justify-between px-6 py-4">
             <div>
-              <h1 className="font-display text-xl font-bold text-[--color-ink]">{getTitle()}</h1>
+              <h1 className="font-display text-xl font-bold text-[--color-ink]">{activeNavigation.label}</h1>
               <p className="text-xs text-slate-500 mt-0.5">
-                {activeView === "overview" && "Summary of your admin console activity"}
-                {activeView === "applications" && "Manage candidate applications"}
-                {activeView === "enquiries" && "Handle contact enquiries"}
-                {activeView === "openings" && "Create and manage job openings"}
-                {activeView === "calendar" && "View and manage company holidays"}
+                {activeNavigation.description}
               </p>
             </div>
             <button
@@ -433,13 +424,9 @@ const AdminDashboard = () => {
       />
 
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/90 backdrop-blur-md border-t border-slate-200 flex justify-around py-2 pb-[env(safe-area-inset-bottom)]">
-        {[
-          { view: "overview" as View, label: "Overview", icon: <LayoutDashboard size={20} /> },
-          { view: "applications" as View, label: "Apps", icon: <Briefcase size={20} /> },
-          { view: "enquiries" as View, label: "Msgs", icon: <Mail size={20} /> },
-          { view: "openings" as View, label: "Jobs", icon: <Edit3 size={20} /> },
-          { view: "calendar" as View, label: "Cal", icon: <Calendar size={20} /> },
-        ].map((item) => (
+        {ADMIN_NAVIGATION.map((item) => {
+          const Icon = item.icon;
+          return (
           <button
             key={item.view}
             onClick={() => { setActiveView(item.view); setSelectedApp(null); setSelectedEnquiry(null); }}
@@ -447,10 +434,11 @@ const AdminDashboard = () => {
               activeView === item.view ? "text-(--color-teal)" : "text-slate-400"
             }`}
           >
-            {item.icon}
-            {item.label}
+            <Icon size={20} />
+            {item.shortLabel}
           </button>
-        ))}
+          );
+        })}
       </nav>
     </main>
   );
