@@ -1,5 +1,6 @@
 import { Router } from "express";
 import path from "node:path";
+import { existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import Application from "../models/Application.js";
 import Enquiry from "../models/Enquiry.js";
@@ -62,32 +63,77 @@ router.patch("/applications/:id", requireAdmin, async (req, res) => {
 // Serve resume file (supports both disk and base64 storage)
 router.get("/applications/:id/resume", requireAdmin, async (req, res) => {
   try {
-    const app = await Application.findById(req.params.id).select("resumePath resumeFileName resumeData resumeMime").lean();
-    if (!app) return res.status(404).json({ ok: false, error: "Application not found." });
+    const application = await Application.findById(req.params.id)
+      .select("resumePath resumeFileName resumeData resumeMime")
+      .lean();
 
-    // Base64 storage (Vercel serverless)
-    if (app.resumeData) {
-      const buffer = Buffer.from(app.resumeData, "base64");
-      const mime = app.resumeMime || "application/pdf";
-      const ext = app.resumeFileName?.split(".").pop() || "pdf";
-      res.setHeader("Content-Type", mime);
-      res.setHeader("Content-Disposition", `inline; filename="${app.resumeFileName || `resume.${ext}`}"`);
+    if (!application) {
+      return res.status(404).json({
+        ok: false,
+        error: "Application not found.",
+      });
+    }
+
+    // Vercel / base64 storage
+    if (application.resumeData) {
+      const buffer = Buffer.from(application.resumeData, "base64");
+
+      res.setHeader(
+        "Content-Type",
+        application.resumeMime || "application/pdf"
+      );
+
+      res.setHeader(
+        "Content-Disposition",
+        `inline; filename="${application.resumeFileName || "resume.pdf"}"`
+      );
+
       return res.send(buffer);
     }
 
-    // Disk storage (local development)
-    if (!app.resumePath) {
-      return res.status(404).json({ ok: false, error: "Resume not found. This application was submitted without a stored resume file." });
+    if (!application.resumePath) {
+      return res.status(404).json({
+        ok: false,
+        error: "Resume not found.",
+      });
     }
-    const { existsSync } = await import("node:fs");
-    const filePath = path.resolve(RESUME_DIR, app.resumePath);
-    if (!filePath.startsWith(RESUME_DIR) || !existsSync(filePath)) {
-      return res.status(404).json({ ok: false, error: "Resume file not found on this server. It was stored locally and is not available in the deployed environment." });
+
+    // Always extract ONLY the filename from the stored path.
+    const fileName = application.resumePath
+      .replace(/\\/g, "/")
+      .split("/")
+      .pop();
+
+    if (!fileName) {
+      return res.status(404).json({
+        ok: false,
+        error: "Invalid resume path.",
+      });
     }
-    res.sendFile(filePath, { root: "/" });
+
+    const filePath = path.join(RESUME_DIR, fileName);
+
+    console.log("[admin] RESUME DEBUG");
+    console.log("Stored path:", application.resumePath);
+    console.log("Filename:", fileName);
+    console.log("Resume directory:", RESUME_DIR);
+    console.log("Final file path:", filePath);
+
+    if (!existsSync(filePath)) {
+      return res.status(404).json({
+        ok: false,
+        error: "Resume file not found on this server.",
+      });
+    }
+
+    return res.sendFile(filePath);
   } catch (err) {
     console.error("[admin] Resume error:", err);
-    res.status(500).json({ ok: false, error: "Failed to serve resume." });
+
+    return res.status(500).json({
+      ok: false,
+      error: "Failed to serve resume.",
+    });
   }
 });
 
