@@ -64,37 +64,13 @@ router.patch("/applications/:id", requireAdmin, async (req, res) => {
 router.get("/applications/:id/resume", requireAdmin, async (req, res) => {
   try {
     const application = await Application.findById(req.params.id)
-      .select("resumePath resumeFileName resumeData resumeMime")
+      .select("resumePath resumeFileName")
       .lean();
 
     if (!application) {
       return res.status(404).json({
         ok: false,
         error: "Application not found.",
-      });
-    }
-
-    // Vercel / base64 storage
-    if (application.resumeData) {
-      const buffer = Buffer.from(application.resumeData, "base64");
-
-      res.setHeader(
-        "Content-Type",
-        application.resumeMime || "application/pdf"
-      );
-
-      res.setHeader(
-        "Content-Disposition",
-        `inline; filename="${application.resumeFileName || "resume.pdf"}"`
-      );
-
-      return res.send(buffer);
-    }
-
-    if (!application.resumePath) {
-      return res.status(404).json({
-        ok: false,
-        error: "Resume not found.",
       });
     }
 
