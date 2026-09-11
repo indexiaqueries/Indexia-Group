@@ -29,7 +29,6 @@ server/uploads/resumes/
 # Tooling caches
 .eslintcache
 *.tsbuildinfo
-.vercel/
 
 # Temp / scratch
 *.tmp
