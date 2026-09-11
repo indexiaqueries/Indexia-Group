@@ -10,7 +10,6 @@ React, TypeScript, Vite, and Tailwind CSS site for a diversified Indian business
 - **i18n**: i18next with 22 language variants
 - **Routing**: React Router v7
 - **Backend**: Express.js with MongoDB (contact form, job applications, admin)
-- **Deployment**: Vercel (frontend + serverless API)
 
 ## Features
 
@@ -60,8 +59,6 @@ server/
 ├── models/             # Mongoose models (Application, Enquiry, JobOpening, NewsArticle)
 ├── routes/             # Admin, openings, and news API routes
 └── services/           # News fetcher & scheduler, opening seeding
-api/
-└── index.js            # Vercel serverless entry point
 public/
 ├── brochures/          # Generated PDF brochures
 ├── fonts/              # Self-hosted Fraunces font files
@@ -91,11 +88,43 @@ Copy `.env.example` to `.env.local` and configure:
 | Variable | Purpose |
 |---|---|
 | `MONGODB_URI` | MongoDB connection string (required for contact form, job applications, openings, news) |
-| `ADMIN_TOKEN` | Admin dashboard auth token |
+| `SESSION_SECRET` | Secret signing the admin session cookie (required for `/admin`). Generate with `node -e "console.log(require('crypto').randomBytes(48).toString('base64url'))"` |
+| `ADMIN_SETUP_TOKEN` | Optional extra protection for the one-time admin setup endpoint; sent as the `x-admin-setup-token` header |
 | `NEWSDATA_API_KEY` | NewsData.io key for the scheduled news fetcher |
 | `PORT` | Express backend port (default 3001) |
 | `CORS_ORIGINS` | Comma-separated origins allowed to call the API cross-origin (defaults to the production site + local dev) |
 | `VITE_API_URL` | Optional API base URL when frontend and backend are on different origins |
+
+## Admin Authentication
+
+The admin dashboard (`/admin`) uses server-side sessions with an HTTP-only
+cookie (`admin.sid`), backed by MongoDB — never a token in localStorage.
+
+**One-time setup (create the admin account):** with the backend running,
+send the initial password from an API client such as Postman — there is no
+registration page in the app:
+
+```http
+POST http://localhost:3001/api/admin/register
+Content-Type: application/json
+x-admin-setup-token: <value of ADMIN_SETUP_TOKEN, if configured>
+
+{ "password": "YourInitialAdminPassword" }
+```
+
+- Password rules: at least 10 characters, at least one letter and one number.
+- Responds `201 {"ok":true,...}` on success; `409 {"ok":false,"error":"Admin already configured."}` once an admin exists. The endpoint can never overwrite or add accounts.
+- Only a bcrypt hash (cost 12) is stored — never the plaintext password.
+
+**Logging in:** visit `/admin/login` and enter the password. The backend
+creates a session and sets the HTTP-only cookie; the password is never stored
+in the browser. Protected admin APIs (applications, openings, enquiries,
+holidays, resume downloads) all require a valid session via the
+`requireAdmin` middleware and return `401` otherwise.
+
+**Other auth endpoints:** `POST /api/admin/logout` destroys the session,
+and `GET /api/admin/me` reports whether the current browser is authenticated.
+Login and registration are rate-limited (10 attempts / 10 minutes).
 
 Contact enquiries and job applications are stored in MongoDB only — the team
 reviews them in the admin dashboard (`/admin`).
