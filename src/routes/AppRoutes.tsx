@@ -16,7 +16,9 @@ const GlobalResearchPage = lazy(() => import("../pages/GlobalResearchPage"));
 const SecurityTipsPage = lazy(() => import("../pages/SecurityTipsPage"));
 const WarehouseBrochure = lazy(() => import("../pages/WarehouseBrochure"));
 const AdvertisingBrochure = lazy(() => import("../pages/AdvertisingBrochure"));
+const AdminLogin = lazy(() => import("../pages/admin/AdminLogin"));
 const AdminDashboard = lazy(() => import("../pages/admin/AdminDashboard"));
+const ProtectedAdminRoute = lazy(() => import("../pages/admin/ProtectedAdminRoute"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 
 import logo from "../assets/logo/IndexiaGroup_Logo.webp";
@@ -86,7 +88,16 @@ const AppRoutes = () => (
         <Route path="/terms-of-use" element={<LegalDocumentPage docId="termsOfUse" />} />
         <Route path="/terms" element={<LegalDocumentPage docId="terms" />} />
       </Route>
-      <Route path="/admin" element={<AdminDashboard />} />
+      {/* Admin: standalone login page + session-guarded dashboard. */}
+      <Route
+        path="/admin"
+        element={
+          <ProtectedAdminRoute>
+            <AdminDashboard />
+          </ProtectedAdminRoute>
+        }
+      />
+      <Route path="/admin/login" element={<AdminLogin />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </Suspense>

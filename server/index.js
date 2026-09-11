@@ -5,23 +5,25 @@ import { existsSync, mkdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { connectDB, isDBConnected } from "./db.js";
+import createSessionMiddleware from "./session.js";
 import Application from "./models/Application.js";
 import Enquiry from "./models/Enquiry.js";
+import Admin from "./models/Admin.js";
 import adminRoutes from "./routes/admin.js";
+import adminAuthRoutes from "./routes/adminAuth.js";
 import newsRoutes from "./routes/news.js";
 import openingsRouter, { adminOpeningsRouter } from "./routes/openings.js";
 import holidaysRouter, { adminHolidaysRouter } from "./routes/holidays.js";
 import { startNewsScheduler } from "./services/newsScheduler.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const IS_VERCEL = Boolean(process.env.VERCEL);
 
 // Treat an unset or falsy PORT (e.g. an exported PORT=0) as "use 3001".
 // Keeps parity with the fallback in vite.config.ts readServerPort().
 const PORT = Number(process.env.PORT) || 3001;
 const DIST_DIR = path.resolve(__dirname, "../dist");
 const RESUME_DIR = path.resolve(__dirname, "uploads/resumes");
-if (!IS_VERCEL) mkdirSync(RESUME_DIR, { recursive: true });
+mkdirSync(RESUME_DIR, { recursive: true });
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -48,6 +50,11 @@ const allowedOrigins = new Set(
 
 const app = express();
 
+// The server runs behind proxies (Vite dev proxy, Render). Trusting
+// X-Forwarded-* keeps req.ip accurate for rate limiting and secure-cookie
+// decisions.
+app.set("trust proxy", 1);
+
 // Baseline security headers. Mirrors the headers in public/.htaccess so the
 // standalone Express server and Apache builds share the same posture.
 app.use((_req, res, next) => {
@@ -64,15 +71,18 @@ app.use(
       if (!origin || allowedOrigins.has(origin)) return callback(null, true);
       return callback(null, false);
     },
-    // Explicitly allow the custom admin header so preflights succeed
-    // across origins (e.g. indexia-group-website → indexia-group).
-    allowedHeaders: ["content-type", "x-admin-token"],
+    // The admin session is an HTTP-only cookie: cross-origin calls from the
+    // Vite dev server need credentialed CORS. Never use "*" with cookies.
+    credentials: true,
   })
 );
+
+// Server-side admin sessions (HTTP-only cookie, MongoDB-backed store).
+app.use(createSessionMiddleware());
 app.use(express.json({ limit: "100kb" }));
 
 // File upload config
-const storage = IS_VERCEL ? multer.memoryStorage() : multer.diskStorage({
+const storage = multer.diskStorage({
   destination: (_req, _file, cb) => cb(null, RESUME_DIR),
   filename: (_req, file, cb) => {
     const unique = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
@@ -92,8 +102,20 @@ const upload = multer({
 // Connect to MongoDB (non-blocking). Handlers await dbReady before writing so
 // a cold start never races the initial connection attempt.
 const dbReady = connectDB();
+
+// Ensure the admins collection enforces the single-admin rule at the
+// database level (unique index across the whole collection).
+let adminIndexReady = null;
+function ensureAdminIndex() {
+  if (!adminIndexReady) {
+    adminIndexReady = Admin.init().then(() => Admin.createCollection());
+  }
+  return adminIndexReady;
+}
+
 dbReady.then(() => {
-  if (!IS_VERCEL) startNewsScheduler();
+  if (isDBConnected()) ensureAdminIndex();
+  startNewsScheduler();
 });
 
 app.get("/api/health", (_req, res) => {
@@ -104,7 +126,9 @@ app.get("/api/health", (_req, res) => {
   });
 });
 
-// Mount route modules
+// Mount route modules. adminAuth (register/login/logout/me) is mounted
+// first; the data router below it owns /applications & /enquiries.
+app.use("/api/admin", adminAuthRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/news", newsRoutes);
 app.use("/api/openings", openingsRouter);
@@ -174,12 +198,7 @@ app.post("/api/apply", upload.single("resume"), async (req, res) => {
       department: department || "",
       resumeFileName: resumeFile.originalname,
     };
-    if (IS_VERCEL && resumeFile.buffer) {
-      appData.resumeData = resumeFile.buffer.toString("base64");
-      appData.resumeMime = resumeFile.mimetype;
-    } else {
-      appData.resumePath = resumeFile.filename;
-    }
+    appData.resumePath = resumeFile.filename;
     const application = await Application.create(appData);
     console.log(`[apply] Application stored (${application._id}) from ${name} <${email}>`);
     res.json({ ok: true, applicationId: application._id });
@@ -189,7 +208,6 @@ app.post("/api/apply", upload.single("resume"), async (req, res) => {
   }
 });
 
-if (!IS_VERCEL) {
 const BROTLI_RE = /\bbr\b/;
 const GZIP_RE = /\bgzip\b/;
 
@@ -238,13 +256,9 @@ app.use(
   })
 );
 
-} // end if (!IS_VERCEL)
-
 // SPA fallback: serve index.html for all non-API GET requests.
-// On the standalone server, express.static above already serves real files
-// and this catch-all handles client-side routes. On Vercel the Express app
-// is invoked as a serverless function and the rewrites in vercel.json may
-// not reach the static file, so the same fallback covers that case too.
+// express.static above serves real files; this catch-all handles
+// client-side routes.
 if (existsSync(path.join(DIST_DIR, "index.html"))) {
   app.use((req, res, next) => {
     if (req.method === "GET" && !req.path.startsWith("/api")) {
@@ -258,8 +272,8 @@ app.use("/api", (_req, res) => {
   res.status(404).json({ ok: false, error: "Not found." });
 });
 
-// When imported by Vercel (api/index.js), only the app is exported and the
-// platform handles listening. When run directly (npm run server), listen here.
+// Listen only when run directly (npm run dev:server). Importing the app
+// (e.g. for tests) does not bind a port.
 const isDirectRun =
   Boolean(process.argv[1]) && import.meta.url === pathToFileURL(process.argv[1]).href;
 

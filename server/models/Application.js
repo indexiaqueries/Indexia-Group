@@ -11,8 +11,6 @@ const applicationSchema = new mongoose.Schema(
     department: { type: String, default: "" },
     resumeFileName: { type: String, default: "" },
     resumePath: { type: String, default: "" },
-    resumeData: { type: String, default: "" },
-    resumeMime: { type: String, default: "" },
     status: {
       type: String,
       enum: ["pending", "reviewed", "shortlisted", "rejected"],

@@ -1,14 +1,18 @@
 import { useState } from "react";
 import type { SyntheticEvent } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, LockKeyhole, ShieldCheck } from "lucide-react";
+import { API_BASE } from "../../lib/api";
 
-type AdminLoginProps = {
-  onLogin: (token: string) => Promise<string | null>;
-};
-
-const AdminLogin = ({ onLogin }: AdminLoginProps) => {
-  const [token, setToken] = useState("");
+// Standalone login page at /admin/login.
+//
+// The password is POSTed once to the backend; the server decides whether it
+// is correct and, on success, sets an HTTP-only session cookie. The password
+// is never stored anywhere and the frontend never makes authentication
+// decisions of its own.
+const AdminLogin = () => {
+  const navigate = useNavigate();
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [touched, setTouched] = useState(false);
@@ -16,22 +20,49 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
   const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
 
-    if (!token.trim()) {
+    if (!password.trim()) {
       setTouched(true);
-      setError("Please enter your admin token.");
+      setError("Please enter your password.");
       return;
     }
 
     setLoading(true);
     setError("");
 
-    const result = await onLogin(token.trim());
-    if (result) setError(result);
+    try {
+      const res = await fetch(`${API_BASE}/api/admin/login`, {
+        method: "POST",
+        credentials: "include", // send/receive the session cookie
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: password.trim() }),
+      });
+      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
 
-    setLoading(false);
+      if (res.ok && data.ok) {
+        // Clear the password from state immediately, then enter the dashboard.
+        setPassword("");
+        navigate("/admin", { replace: true });
+        return;
+      }
+
+      // Backend errors are already generic; fall back to an equally generic
+      // message for anything unexpected. Never surface raw errors.
+      setError(
+        data.error ||
+          (res.status >= 500
+            ? "Server error. Please try again later."
+            : "Invalid credentials.")
+      );
+      setPassword(""); // clear the input after a failed attempt
+    } catch {
+      setError("Cannot reach the server. Please try again.");
+      setPassword("");
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const invalid = touched && !token.trim();
+  const invalid = touched && !password.trim();
 
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#07141D] px-5">
@@ -50,20 +81,20 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
               <ShieldCheck size={20} />
             </div>
             <h1 className="font-display text-[22px] font-semibold text-[--color-ink]">
-              Admin Sign In
+              Admin Login
             </h1>
             <p className="mt-1.5 text-sm text-slate-500">
-              Enter your administrator credentials to access the dashboard.
+              Enter your administrator password to access the dashboard.
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label
-                htmlFor="admin-token"
+                htmlFor="admin-password"
                 className="mb-2 block text-[11px] font-semibold uppercase tracking-wider text-slate-500"
               >
-                Admin Token
+                Password
               </label>
 
               <div className="relative">
@@ -74,15 +105,15 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
                   }`}
                 />
                 <input
-                  id="admin-token"
+                  id="admin-password"
                   type="password"
-                  value={token}
+                  value={password}
                   onChange={(e) => {
-                    setToken(e.target.value);
+                    setPassword(e.target.value);
                     setError("");
                   }}
                   onBlur={() => setTouched(true)}
-                  placeholder="Enter your admin token"
+                  placeholder="Enter your admin password"
                   autoFocus
                   autoComplete="current-password"
                   className={`h-12 w-full rounded-xl border bg-slate-50 pl-11 pr-4 text-sm outline-none transition ${
@@ -94,7 +125,7 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
               </div>
 
               {invalid && (
-                <p className="mt-2 text-xs text-red-500">Token is required.</p>
+                <p className="mt-2 text-xs text-red-500">Password is required.</p>
               )}
             </div>
 
@@ -106,10 +137,10 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
 
             <button
               type="submit"
-              disabled={loading || !token.trim()}
+              disabled={loading || !password.trim()}
               className="h-12 w-full rounded-xl bg-[--color-teal] text-sm font-semibold text-white transition hover:bg-[--color-teal-deep] disabled:cursor-not-allowed disabled:opacity-50"
             >
-              {loading ? "Signing in..." : "Sign In"}
+              {loading ? "Signing in..." : "Login"}
             </button>
           </form>
 

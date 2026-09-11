@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { RefreshCw } from "lucide-react";
 import SEO from "../../components/common/SEO";
 import { API_BASE } from "../../lib/api";
-import AdminLogin from "./AdminLogin";
 import AdminSidebar from "./AdminSidebar";
 import AppDrawer from "./AppDrawer";
 import EnquiryDrawer from "./EnquiryDrawer";
@@ -15,9 +15,13 @@ import ConfirmDialog from "./ConfirmDialog";
 import { ADMIN_NAVIGATION, getAdminNavigation } from "./navigation";
 import type { Application, Enquiry, Opening, Holiday, View } from "./types";
 
+// Admin dashboard — rendered only inside ProtectedAdminRoute, which has
+// already verified the server-side session. Authentication lives in the
+// HTTP-only session cookie: every request below is sent with
+// `credentials: "include"` and the backend's requireAdmin middleware decides
+// access. The dashboard never stores or sends a credential itself.
 const AdminDashboard = () => {
-  const [token, setToken] = useState(() => localStorage.getItem("admin_token") || "");
-  const [isAuthed, setIsAuthed] = useState(false);
+  const navigate = useNavigate();
   const [activeView, setActiveView] = useState<View>("overview");
   const [refreshKey, setRefreshKey] = useState(0);
 
@@ -59,17 +63,18 @@ const AdminDashboard = () => {
   };
 
   useEffect(() => {
-    if (!isAuthed || !token) return;
     let cancelled = false;
     (async () => {
       setLoading(true);
       setError("");
       try {
+        // Same-origin requests always send cookies; `credentials: "include"`
+        // also covers split-origin deployments (frontend on another host).
         const [appRes, openRes, enqRes, holRes] = await Promise.all([
-          fetch(`${API_BASE}/api/admin/applications`, { headers: { "x-admin-token": token } }),
-          fetch(`${API_BASE}/api/admin/openings`, { headers: { "x-admin-token": token } }),
-          fetch(`${API_BASE}/api/admin/enquiries`, { headers: { "x-admin-token": token } }),
-          fetch(`${API_BASE}/api/admin/holidays`, { headers: { "x-admin-token": token } }),
+          fetch(`${API_BASE}/api/admin/applications`, { credentials: "include" }),
+          fetch(`${API_BASE}/api/admin/openings`, { credentials: "include" }),
+          fetch(`${API_BASE}/api/admin/enquiries`, { credentials: "include" }),
+          fetch(`${API_BASE}/api/admin/holidays`, { credentials: "include" }),
         ]);
         const appData = await appRes.json();
         const openData = await openRes.json();
@@ -81,15 +86,13 @@ const AdminDashboard = () => {
           if (first401) {
             const body = await first401.json().catch(() => ({})) as { error?: string };
             setError(body.error || "Session expired. Please log in again.");
-            setIsAuthed(false);
-            localStorage.removeItem("admin_token");
+            navigate("/admin/login", { replace: true }); // session is gone
             return;
           }
           if (appRes.ok && appData.ok) setApplications(appData.applications);
           if (openRes.ok && openData.ok) setOpenings(openData.openings);
           if (enqRes.ok && enqData.ok) setEnquiries(enqData.enquiries);
           if (holRes.ok && holData.ok) setHolidays(holData.holidays);
-          localStorage.setItem("admin_token", token);
         }
       } catch (err) {
         if (!cancelled) {
@@ -103,47 +106,30 @@ const AdminDashboard = () => {
       }
     })();
     return () => { cancelled = true; };
-  }, [isAuthed, token, refreshKey]);
+  }, [refreshKey, navigate]);
 
-  const handleLogin = async (attemptedToken: string): Promise<string | null> => {
+  const handleLogout = async () => {
     try {
-      const res = await fetch(`${API_BASE}/api/admin/applications`, {
-        headers: { "x-admin-token": attemptedToken },
+      // Destroy the server-side session; the cookie is cleared by the backend.
+      await fetch(`${API_BASE}/api/admin/logout`, {
+        method: "POST",
+        credentials: "include",
       });
-      if (res.ok) {
-        setToken(attemptedToken);
-        setIsAuthed(true);
-        return null;
-      }
-      const contentType = res.headers.get("content-type") || "";
-      const data = contentType.includes("application/json")
-        ? (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string }
-        : {};
-      const serverError = data.error;
-      const fallback = res.status === 503
-        ? "Admin auth is not configured on the server."
-        : res.status >= 500
-        ? "Server error. Please try again later."
-        : "Invalid admin token. Please try again.";
-      return serverError || fallback;
     } catch {
-      return "Cannot reach server. Please try again.";
+      // Even if the request fails, continue with the local sign-out.
     }
-  };
-
-  const handleLogout = () => {
-    localStorage.removeItem("admin_token");
-    setToken("");
-    setIsAuthed(false);
-    setSelectedApp(null);
-    setSelectedEnquiry(null);
+    navigate("/admin/login", { replace: true });
   };
 
   const adminRequest = async <T,>(path: string, options: RequestInit = {}): Promise<T> => {
-    const headers: Record<string, string> = { "x-admin-token": token };
+    const headers: Record<string, string> = {};
     if (options.body) headers["Content-Type"] = "application/json";
-    const res = await fetch(`${API_BASE}${path}`, { ...options, headers });
+    const res = await fetch(`${API_BASE}${path}`, { ...options, credentials: "include", headers });
     const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+    if (res.status === 401) {
+      navigate("/admin/login", { replace: true }); // session expired mid-use
+      throw new Error("Session expired. Please log in again.");
+    }
     if (!res.ok || !data.ok) throw new Error(data.error || "Request failed.");
     return data as T;
   };
@@ -179,7 +165,9 @@ const AdminDashboard = () => {
   };
 
   const openResume = (id: string) => {
-    window.open(`${API_BASE}/api/admin/applications/${id}/resume?token=${encodeURIComponent(token)}`, "_blank");
+    // Same-origin navigation: the browser attaches the session cookie
+    // automatically, so the backend can authorize the download.
+    window.open(`${API_BASE}/api/admin/applications/${id}/resume`, "_blank");
   };
 
   const updateEnquiryStatus = async (id: string, status: Enquiry["status"]) => {
@@ -321,15 +309,6 @@ const AdminDashboard = () => {
   };
 
   const activeNavigation = getAdminNavigation(activeView);
-
-  if (!isAuthed) {
-    return (
-      <main className="bg-white">
-        <SEO title="Admin Dashboard - Indexia Group" canonicalPath="/admin" noindex />
-        <AdminLogin onLogin={handleLogin} />
-      </main>
-    );
-  }
 
   return (
     <main className="min-h-screen bg-[--color-soft] flex">
