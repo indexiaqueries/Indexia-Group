@@ -15,6 +15,7 @@ import newsRoutes from "./routes/news.js";
 import openingsRouter, { adminOpeningsRouter } from "./routes/openings.js";
 import holidaysRouter, { adminHolidaysRouter } from "./routes/holidays.js";
 import { startNewsScheduler } from "./services/newsScheduler.js";
+import urlPreviews from "./middleware/urlPreviews.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -135,6 +136,12 @@ app.use("/api/openings", openingsRouter);
 app.use("/api/admin/openings", adminOpeningsRouter);
 app.use("/api/holidays", holidaysRouter);
 app.use("/api/admin/holidays", adminHolidaysRouter);
+
+// Custom URL previews: rewrite the <head> for social crawler user
+// agents (WhatsApp, X, LinkedIn…) so each shared route unfurls with
+// its own title/description/image instead of the homepage defaults.
+// Mounted before static serving so it wins when a dist build exists.
+app.use(urlPreviews({ distDir: DIST_DIR }));
 
 // Contact enquiries are stored in MongoDB only. The admin dashboard
 // (/admin → Enquiries) is where the team reviews them.

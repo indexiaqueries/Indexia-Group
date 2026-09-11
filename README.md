@@ -147,5 +147,6 @@ reviews them in the admin dashboard (`/admin`).
 - Open Graph and Twitter Card metadata
 - JSON-LD structured data (Organization, WebSite, WebPage, BreadcrumbList, FAQPage, Company pages)
 - `robots.txt` blocks admin, apply, and brochure pages
+- Custom URL previews: social unfurlers (WhatsApp, X, LinkedIn, Facebook…) are served per-route Open Graph/Twitter tags via `server/middleware/urlPreviews.js`, so every shared link shows its own title, description, and image
 - `sitemap.xml` with the 16 indexable public routes
 - `llms.txt` for AI-agent readability
