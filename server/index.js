@@ -64,6 +64,9 @@ app.use(
       if (!origin || allowedOrigins.has(origin)) return callback(null, true);
       return callback(null, false);
     },
+    // Explicitly allow the custom admin header so preflights succeed
+    // across origins (e.g. indexia-group-website → indexia-group).
+    allowedHeaders: ["content-type", "x-admin-token"],
   })
 );
 app.use(express.json({ limit: "100kb" }));

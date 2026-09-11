@@ -76,6 +76,15 @@ const AdminDashboard = () => {
         const enqData = await enqRes.json();
         const holData = await holRes.json();
         if (!cancelled) {
+          // Check for auth failure on any endpoint and surface it clearly.
+          const first401 = [appRes, openRes, enqRes, holRes].find((r) => r.status === 401);
+          if (first401) {
+            const body = await first401.json().catch(() => ({})) as { error?: string };
+            setError(body.error || "Session expired. Please log in again.");
+            setIsAuthed(false);
+            localStorage.removeItem("admin_token");
+            return;
+          }
           if (appRes.ok && appData.ok) setApplications(appData.applications);
           if (openRes.ok && openData.ok) setOpenings(openData.openings);
           if (enqRes.ok && enqData.ok) setEnquiries(enqData.enquiries);
