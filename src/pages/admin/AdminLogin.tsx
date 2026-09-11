@@ -140,7 +140,7 @@ const AdminLogin = () => {
               disabled={loading || !password.trim()}
               className="h-12 w-full rounded-xl bg-[--color-teal] text-sm font-semibold text-white transition hover:bg-[--color-teal-deep] disabled:cursor-not-allowed disabled:opacity-50"
             >
-              {loading ? "Signing in..." : "Login"}
+              {loading ? "Signing in..." : "Sign in"}
             </button>
           </form>
 
