@@ -2,14 +2,16 @@ import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import Eyebrow from "../common/Eyebrow";
 import Reveal from "../common/Reveal";
+import unipoleStructure from "../../assets/company-pages-img/page-specific/UnipoleStructure.png";
 import type { PricingRow } from "./PricingTable";
 
 type UnipolePricingProps = {
-  color: string;
   onBook: (row: PricingRow) => void;
+  /** Opens the booking popup for the generic bottom "Book Now" CTA. */
+  onBookGeneral?: () => void;
 };
 
-const UnipolePricing = ({ color, onBook }: UnipolePricingProps) => {
+const UnipolePricing = ({ onBook, onBookGeneral }: UnipolePricingProps) => {
   const { t } = useTranslation();
   const bookLabel = t("unipolePricing.bookSize");
   const note = t("unipolePricing.note");
@@ -44,6 +46,8 @@ const UnipolePricing = ({ color, onBook }: UnipolePricingProps) => {
       />
 
       <div className="container relative">
+        <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-8 xl:grid-cols-[minmax(0,1fr)_360px]">
+          <div className="min-w-0">
         <Reveal className="mx-auto mb-5 max-w-2xl text-center sm:mb-7">
           <Eyebrow color="var(--color-yellow)">{t("unipolePricing.eyebrow")}</Eyebrow>
           <h2 className="font-display mt-2.5 text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-white">
@@ -65,8 +69,7 @@ const UnipolePricing = ({ color, onBook }: UnipolePricingProps) => {
                   className="flex flex-col items-center gap-2 rounded-2xl border border-white/10 px-4 py-5 text-center transition-all duration-300 hover:-translate-y-0.5 hover:border-(--color-yellow)/45"
                 >
                   <span
-                    className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white shadow-sm"
-                    style={{ background: color }}
+                    className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-(--color-yellow) text-(--color-ink-deep) shadow-sm"
                   >
                     <Check size={12} strokeWidth={3.4} />
                   </span>
@@ -107,12 +110,33 @@ const UnipolePricing = ({ color, onBook }: UnipolePricingProps) => {
             type="button"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById("enquiry")?.scrollIntoView({ behavior: "smooth" });
+              if (onBookGeneral) {
+                onBookGeneral();
+              } else {
+                document.getElementById("enquiry")?.scrollIntoView({ behavior: "smooth" });
+              }
             }}
             className="inline-flex items-center gap-2 rounded-full bg-(--color-yellow) px-6 py-3 text-[13px] font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright) sm:px-8 sm:py-3.5 sm:text-sm"
           >
             {t("unipolePricing.bookNow")}
           </button>
+        </div>
+          </div>
+
+          {/* Right: unipole structure illustration */}
+          <Reveal className="relative mx-auto w-full max-w-[280px] lg:max-w-none">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-8 rounded-full opacity-30 blur-3xl"
+              style={{ background: "radial-gradient(circle, rgba(38,174,144,0.55) 0%, transparent 70%)" }}
+            />
+            <img
+              src={unipoleStructure}
+              alt={t("unipolePricing.structureAlt")}
+              loading="lazy"
+              className="relative mx-auto max-h-[420px] w-auto object-contain drop-shadow-[0_18px_36px_rgba(0,0,0,0.45)] lg:max-h-[520px]"
+            />
+          </Reveal>
         </div>
       </div>
     </section>

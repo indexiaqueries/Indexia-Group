@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import Eyebrow from "../common/Eyebrow";
 import Reveal from "../common/Reveal";
-import { accentInk } from "../../lib/color";
 
 export type PricingRow = {
   label: string;
@@ -24,8 +23,6 @@ export type PricingGridItem = {
 };
 
 type PricingTableProps = {
-  /** Company hex color used for accents and chips. */
-  color: string;
   eyebrow: string;
   title: string;
   subtitle: string;
@@ -42,13 +39,14 @@ type PricingTableProps = {
   cta?: { label: string; message?: string; scrollToGrid?: boolean };
   /** Invoked when a row's or grid card's per-item CTA is clicked. */
   onBook?: (row: PricingRow | PricingGridItem) => void;
+  /** Opens the booking popup for the generic bottom "Book Now" CTA. */
+  onBookGeneral?: () => void;
   /** Render the section as a dark, single-column "land register board". Only
    *  valid for simple label/value rows; falls back to the stacked layout otherwise. */
   twoColumn?: boolean;
 };
 
 const PricingTable = ({
-  color,
   eyebrow,
   title,
   subtitle,
@@ -59,6 +57,7 @@ const PricingTable = ({
   callout,
   cta,
   onBook,
+  onBookGeneral,
   twoColumn = false,
 }: PricingTableProps) => {
   const hasRowCta = rows.some((r) => r.ctaLabel);
@@ -80,14 +79,14 @@ const PricingTable = ({
         >
           <span
             className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white shadow-sm"
-            style={{ background: color }}
+            style={{ background: "var(--color-yellow)" }}
           >
             <svg
               width="12"
               height="12"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#122029"
               strokeWidth="3.4"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -105,7 +104,7 @@ const PricingTable = ({
                 e.preventDefault();
                 onBook?.(item);
               }}
-              className="mt-auto inline-flex items-center justify-center rounded-full bg-(--color-teal) px-4 py-1.5 pt-1.5 text-[11.5px] font-bold text-white shadow-[0_4px_14px_rgba(38,174,144,0.25)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
+              className="mt-auto inline-flex items-center justify-center rounded-full bg-(--color-gray) px-4 py-1.5 pt-1.5 text-[11.5px] font-bold text-white shadow-[0_4px_14px_rgba(123,123,123,0.25)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
             >
               {item.ctaLabel}
             </button>
@@ -126,14 +125,14 @@ const PricingTable = ({
       >
         <span
           className="flex h-6 w-6 items-center justify-center rounded-full text-white shadow-sm"
-          style={{ background: color }}
+          style={{ background: "var(--color-yellow)" }}
         >
           <svg
             width="12"
             height="12"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="#122029"
             strokeWidth="3.4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -144,7 +143,7 @@ const PricingTable = ({
         </span>
         <span
           className="mt-2.5 rounded-full px-3.5 py-1 text-[12.5px] font-bold"
-          style={{ background: `${color}1a`, color: accentInk(color) }}
+          style={{ background: "rgba(123,123,123,0.1)", color: "var(--color-ink-deep)" }}
         >
           {item.label}
         </span>
@@ -158,9 +157,9 @@ const PricingTable = ({
             }}
             className="mt-3 inline-flex items-center justify-center rounded-full border px-4 py-1.5 text-[11.5px] font-bold transition-all duration-200 hover:-translate-y-0.5"
             style={{
-              borderColor: `${color}4d`,
-              color: accentInk(color),
-              background: `${color}14`,
+              borderColor: "rgba(123,123,123,0.3)",
+              color: "var(--color-ink-deep)",
+              background: "rgba(123,123,123,0.08)",
             }}
           >
             {item.ctaLabel}
@@ -177,7 +176,9 @@ const PricingTable = ({
           type="button"
           onClick={(e) => {
             e.preventDefault();
-            if (cta.scrollToGrid) {
+            if (onBookGeneral) {
+              onBookGeneral();
+            } else if (cta.scrollToGrid) {
               document.getElementById("pricing-plots-grid")?.scrollIntoView({ behavior: "smooth", block: "start" });
             } else if (onBook && cta.message) {
               onBook({ label: "", value: "", message: cta.message });
@@ -301,12 +302,12 @@ const PricingTable = ({
                     {row.rate ? (
                       <span className="text-sm font-medium text-(--color-muted)">{row.value}</span>
                     ) : (
-                      <span className="text-[17px] font-bold" style={{ color: accentInk(color) }}>
+                      <span className="text-[17px] font-bold text-(--color-blue)">
                         {row.value}
                       </span>
                     )}
                     {row.rate && (
-                      <span className="text-end text-[17px] font-bold" style={{ color: accentInk(color) }}>
+                      <span className="text-end text-[17px] font-bold text-(--color-blue)">
                         {row.rate}
                       </span>
                     )}
@@ -319,9 +320,9 @@ const PricingTable = ({
                         }}
                         className="inline-flex items-center justify-center rounded-full border px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
                         style={{
-                          borderColor: `${color}4d`,
-                          color: accentInk(color),
-                          background: `${color}14`,
+                          borderColor: "rgba(123,123,123,0.3)",
+                          color: "var(--color-ink-deep)",
+                          background: "rgba(123,123,123,0.08)",
                         }}
                       >
                         {row.ctaLabel}
@@ -338,7 +339,7 @@ const PricingTable = ({
                       <li
                         key={chip}
                         className="rounded-full px-4 py-2 text-[13px] font-bold"
-                        style={{ background: `${color}1a`, color: accentInk(color) }}
+                        style={{ background: "rgba(123,123,123,0.1)", color: "var(--color-ink-deep)" }}
                       >
                         {chip}
                       </li>

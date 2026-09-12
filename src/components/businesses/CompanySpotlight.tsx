@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import Eyebrow from "../common/Eyebrow";
 import AnimatedCounter from "../common/AnimatedCounter";
 import Reveal from "../common/Reveal";
-import { accentInk } from "../../lib/color";
 import { getCompanyPageImage } from "../../data/companyPageImages";
 import { SPOTLIGHT_DATA } from "../../data/spotlight";
 import type { Company } from "../../data/companies";
@@ -27,28 +26,24 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -inset-s-32 top-10 h-96 w-96 rounded-full opacity-15 blur-[100px] float-subtle"
-        style={{ background: company.color }}
+        style={{ background: "var(--color-gray)" }}
       />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -inset-e-24 bottom-10 h-72 w-72 rounded-full opacity-10 blur-[80px]"
-        style={{ background: company.color }}
+        style={{ background: "var(--color-gray)" }}
       />
 
       <div className="container grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         {/* Content side */}
         <Reveal amount={0.2}>
-          <Eyebrow color={accentInk(company.color)} className="mb-3">
+          <Eyebrow className="mb-3">
             {eyebrow}
           </Eyebrow>
-          <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-ink)">
+          <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
             {headingLines.map((line, i) => (
               <span key={i} className="block">
-                {i === headingLines.length - 1 ? (
-                  <span style={{ color: company.color }}>{line}</span>
-                ) : (
-                  line
-                )}
+                {line}
               </span>
             ))}
           </h2>
@@ -61,7 +56,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                 <AnimatedCounter
                   value={t(stat.valueKey)}
                   label={t(stat.labelKey)}
-                  color={accentInk(company.color)}
+                  color="var(--color-blue)"
                   numberClassName="font-ledger text-xl font-bold tabular-nums sm:text-2xl"
                   labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
                 />
@@ -75,7 +70,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
               <li key={bulletKey} className="flex items-start gap-2.5 sm:gap-3 text-sm leading-6 sm:leading-7 text-(--color-ink-soft)">
                 <span
                   className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
-                  style={{ background: company.color }}
+                  style={{ background: "var(--color-yellow)" }}
                 />
                 {t(bulletKey)}
               </li>
@@ -89,7 +84,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
             <div
               aria-hidden="true"
               className="absolute -inset-3 rounded-3xl"
-              style={{ background: `linear-gradient(135deg, ${company.color}44, transparent 55%, ${company.color}22)` }}
+              style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.27), transparent 55%, rgba(123,123,123,0.13))" }}
             />
             <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">
               <img

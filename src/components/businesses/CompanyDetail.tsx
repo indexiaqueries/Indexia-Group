@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
-import { ArrowDown, ArrowRight, Clock, Layers, MapPin, Sparkles } from "lucide-react";
-import AnimatedCounter from "../common/AnimatedCounter";
+import { ArrowDown, ArrowRight, Clock, FileText, Mail, MapPin, Phone, Sparkles } from "lucide-react";
 import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
 import ImageSlot from "../common/ImageSlot";
@@ -12,12 +11,13 @@ import { siteImages } from "../../data/siteImages";
 import EnquiryForm from "../contact/EnquiryForm";
 import HeroBackdrop from "../banners/HeroBackdrop";
 import { getCompanyImage } from "../../data/companyImages";
-import { companyIcons } from "../../data/companyIcons";
 import { companies, type Company } from "../../data/companies";
-import { accentInk, contrastText } from "../../lib/color";
-import { accent, colors } from "../../lib/theme";
+import { accent, monoFont } from "../../lib/theme";
+
+import { bookingPhone, branches, contactEmails, phoneNumbers } from "../../data/contact";
 import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
+import BookingModal, { type BookingContext } from "./BookingModal";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
 import FoundationGallery from "./FoundationGallery";
@@ -43,7 +43,7 @@ type CompanyDetailProps = {
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
   const prefersReducedMotion = useReducedMotion();
-  const [bookingMessage, setBookingMessage] = useState<string | undefined>(undefined);
+  const [booking, setBooking] = useState<{ context: BookingContext; variant: "warehouse" | "advertising" } | null>(null);
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
@@ -58,8 +58,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const desc = tr("desc", b.desc);
   const overview = tr("overview", b.overview);
   const index = companies.findIndex((c) => c.name === b.name);
-  const Icon = companyIcons[b.name] ?? Sparkles;
   const marqueeItems = [tr("tag", b.tag), ...b.services.map((s, i) => tr(`services.${i}`, s))];
+  // Warehouse & Advertising show their own office (Delhi — Imperial Tower) and
+  // the full contact set from the project brochures; other pages keep the mix.
+  const showFullContacts = b.slug === "warehouse" || b.slug === "advertising";
+  const enquiryBranch = branches.find((branch) => branch.key === (showFullContacts ? "delhiOffice" : "corporateOffice"));
+  const landline = phoneNumbers.find((p) => p.labelKey === "landline");
   // Home-hero slide copy for this company, already translated in every locale,
   // unused on this page, and reused for the new impact band + story split.
   const slideHeading = t(`hero.p${index + 1}.heading`, b.tagline ?? b.name);
@@ -74,25 +78,55 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       ?.scrollIntoView({ block: "start", behavior: prefersReducedMotion ? "auto" : "smooth" });
   };
 
-  const handleBook = (row: PricingRow) => {
-    // Scroll the enquiry form into view first; a remount in the same tick cancels it.
-    scrollToEnquiry();
-    // Then update the booking message (remounts the form with the pre-filled text).
-    const message =
-      row.message ??
-      (row.rate
-        ? t("unipolePricing.bookMessage", { size: row.label, area: row.value, rate: row.rate })
-        : t("warehousePricing.bookMessage", { size: row.label, area: row.value }));
-    window.setTimeout(() => setBookingMessage(message), 50);
+  // Book buttons open the booking popup with the selected offering preloaded;
+  // rows without a label are the generic bottom CTA ("Book Now").
+  const openBooking = (row: PricingRow & { size?: number }) => {
+    const variant = b.slug === "advertising" ? "advertising" : "warehouse";
+    setBooking({
+      context: {
+        companyName: name,
+        itemLabel: row.label || t("bookingModal.generalItem"),
+        itemDetail: [row.value, row.rate].filter(Boolean).join(" · ") || undefined,
+      },
+      variant,
+    });
   };
+
+  const handleBook = (row: PricingRow & { size?: number }) => openBooking(row);
+
+  const handleBookGeneral = () => openBooking({ label: "", value: "" });
 
   return (
     <>
       <HeroBackdrop
         image={getCompanyImage(b.slug)}
         containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
+        extra={
+          <div
+            aria-hidden="true"
+            className="marquee-band absolute inset-x-0 bottom-0 border-t border-white/10 bg-(--color-ink-deep)/85 backdrop-blur-sm"
+          >
+            <div
+              className="infinite-marquee-track py-3.5"
+              style={{ "--marquee-duration": `${Math.max(20, marqueeItems.length * 2.6)}s` } as React.CSSProperties}
+            >
+              {[0, 1].map((copy) => (
+                <div key={copy} className="flex shrink-0 items-center" aria-hidden={copy === 1}>
+                  {marqueeItems.map((item, i) => (
+                    <span key={i} className="flex items-center whitespace-nowrap">
+                      <span className="mx-5 text-xs font-bold tracking-[0.22em] text-white/75">
+                        {item}
+                      </span>
+                      <Sparkles size={12} strokeWidth={2.4} className="text-(--color-yellow)" aria-hidden="true" />
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        }
       >
-        <div className="hero-panel-glass fade-up relative max-w-5xl p-5 sm:p-8 lg:p-10">
+        <div className="hero-panel-glass fade-up relative max-w-5xl p-5 sm:p-8 lg:max-w-[calc(100%-34rem)] lg:p-10 lg:ml-0 lg:mr-auto">
           {showBackLink && (
             <Link
               to="/about"
@@ -104,8 +138,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
             <span
-              className="rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] shadow-md"
-              style={{ background: b.color, color: contrastText(b.color) }}
+              className="rounded-full bg-(--color-gray) px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white shadow-md"
             >
               {tag}
             </span>
@@ -116,21 +149,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             </span>
           </div>
 
-          <div className="mt-6 flex items-center gap-4">
-            <span
-              className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/25 bg-white/10 shadow-lg backdrop-blur-sm sm:h-14 sm:w-14"
-              style={{ color: b.color === colors.gray ? "#ffffff" : b.color }}
-            >
-              <Icon size={24} strokeWidth={2.2} aria-hidden="true" />
-            </span>
-            <h1 className="font-display text-[clamp(30px,5vw,52px)] font-bold leading-[1.06] text-white">
-              {name}
-            </h1>
-          </div>
+          <h1 className="font-display text-[clamp(30px,5vw,52px)] font-bold leading-[1.06] text-white">
+            {name}
+          </h1>
 
           {(b.slug === "warehouse" || b.slug === "advertising") && (
             <p className="mt-3 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-white/75">
-              <MapPin size={15} strokeWidth={2.2} aria-hidden="true" />
               {tr("location", b.slug === "warehouse" ? "Shamli, Uttar Pradesh, Part of Delhi NCR" : "Delhi–Dehradun Highway, Shamli")}
             </p>
           )}
@@ -160,6 +184,15 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               {t("companyDetail.exploreServices")}
               <ArrowDown size={16} strokeWidth={2.5} />
             </a>
+            {(b.slug === "warehouse" || b.slug === "advertising") && (
+              <Link
+                to={`/${b.slug}-brochure`}
+                className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 sm:px-7 sm:py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
+              >
+                <FileText size={16} strokeWidth={2.2} />
+                {t("companyDetail.brochure", "View Brochure")}
+              </Link>
+            )}
           </div>
         </div>
       </HeroBackdrop>
@@ -167,49 +200,17 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       {/* Register of companies — the catalogue edge */}
       <RegisterTabs activeSlug={b.slug} />
 
-      {/* Services marquee ribbon */}
-      <div
-        className="relative overflow-hidden border-y border-white/10"
-        style={{ background: "var(--color-ink-deep)" }}
-      >
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 inset-s-0 w-24 bg-linear-to-r from-(--color-ink-deep) to-transparent sm:w-40"
-        />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 inset-e-0 w-24 bg-linear-to-l from-(--color-ink-deep) to-transparent sm:w-40"
-        />
-        <div
-          className="infinite-marquee-track py-4"
-          style={{ "--marquee-duration": `${Math.max(20, marqueeItems.length * 2.6)}s` } as React.CSSProperties}
-        >
-          {[0, 1].map((copy) => (
-            <div key={copy} className="flex shrink-0 items-center" aria-hidden={copy === 1}>
-              {marqueeItems.map((item, i) => (
-                <span key={i} className="flex items-center whitespace-nowrap">
-                  <span className="mx-5 text-xs font-bold tracking-[0.22em] text-white/75">
-                    {item}
-                  </span>
-                  <Sparkles size={12} strokeWidth={2.4} className="text-(--color-yellow)" aria-hidden="true" />
-                </span>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Overview + image split */}
       <section className="section-ruled section-paper relative overflow-hidden py-5 sm:py-7 lg:py-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-e-32 top-8 h-96 w-96 rounded-full opacity-20 blur-3xl"
-          style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
+          style={{ background: "radial-gradient(circle, rgba(123,123,123,0.9) 0%, transparent 65%)" }}
         />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-s-24 bottom-0 h-72 w-72 rounded-full opacity-10 blur-3xl"
-          style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
+          style={{ background: "radial-gradient(circle, rgba(123,123,123,0.9) 0%, transparent 65%)" }}
         />
 
         <div className="container grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
@@ -218,7 +219,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               <div
                 aria-hidden="true"
                 className="absolute -inset-3 rounded-3xl"
-                style={{ background: `linear-gradient(135deg, ${b.color}66, transparent 55%, ${b.color}33)` }}
+                style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.4), transparent 55%, rgba(123,123,123,0.2))" }}
               />
               <div
                 className="group thumb-tilt media-polished relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10"
@@ -230,17 +231,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   height={1024}
                   loading="lazy"
                   decoding="async"
-                  className="aspect-4/3 w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-110 img-reveal"
+                  className="aspect-4/3 w-full object-cover object-right transition-transform duration-700 ease-out group-hover:scale-110 img-reveal"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-[rgba(10,34,51,0.6)] via-transparent to-transparent" />
-                <span aria-hidden="true" className="card-shine-lines" />
-              </div>
-
-              <div
-                className="absolute -bottom-5 inset-s-6 flex items-center gap-2.5 rounded-2xl px-4 py-2.5 shadow-xl ring-1 ring-black/10 z-99"
-                style={{ background: b.color, color: contrastText(b.color) }}
-              >
-                <Layers size={16} strokeWidth={2.5} aria-hidden="true" />
               </div>
             </div>
           </Reveal>
@@ -251,11 +243,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               {t("companyDetail.overviewTitle", { name })}
             </h2>
             <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">{overview}</p>
-
-            <div className="mt-7 sm:mt-9 flex justify-evenly max-w-md gap-3 sm:gap-4">
-              <AnimatedCounter value={String(b.services.length)} label={t("companyDetail.statServices")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
-              <AnimatedCounter value={String(b.highlights.length)} label={t("companyDetail.statHighlights")} color={accentInk(b.color)} labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)" />
-            </div>
           </div>
         </div>
       </section>
@@ -275,7 +262,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-e-20 top-0 h-80 w-80 rounded-full opacity-25 blur-3xl"
-          style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
+          style={{ background: "radial-gradient(circle, rgba(123,123,123,0.9) 0%, transparent 65%)" }}
         />
         <div className="container relative py-14 lg:py-20">
           <Reveal className="max-w-2xl">
@@ -290,26 +277,21 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       <CompanySpotlight company={b} />
 
       {/* Key entries */}
-      <CompanyHighlights
-        color={b.color}
-        slug={b.slug}
-        highlights={b.highlights}
-        services={b.services}
-      />
+      <CompanyHighlights slug={b.slug} highlights={b.highlights} />
 
       {/* Story split, second image + pull-quote */}
       <section className="section-ruled section-ink relative overflow-hidden">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -inset-s-24 bottom-0 h-80 w-80 rounded-full opacity-20 blur-3xl"
-          style={{ background: `radial-gradient(circle, ${b.color} 0%, transparent 65%)` }}
+          style={{ background: "radial-gradient(circle, rgba(123,123,123,0.9) 0%, transparent 65%)" }}
         />
         <div className="container grid items-center gap-6 sm:gap-8 py-4 sm:py-5 lg:grid-cols-2 lg:gap-12">
           <Reveal amount={0.2} className="relative">
             <div
               aria-hidden="true"
               className="absolute -inset-3 rounded-3xl"
-              style={{ background: `linear-gradient(135deg, ${b.color}59, transparent 55%, ${b.color}33)` }}
+              style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.35), transparent 55%, rgba(123,123,123,0.2))" }}
             />
             <ImageSlot
               {...siteImages.companyStory}
@@ -321,8 +303,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
           <div>
             <span
-              className="inline-flex rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] shadow-md"
-              style={{ background: b.color, color: contrastText(b.color) }}
+              className="inline-flex rounded-full bg-(--color-gray) px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white shadow-md"
             >
               {tag}
             </span>
@@ -334,73 +315,77 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
             >
               {t("companyDetail.exploreServices")}
-              <ArrowDown size={16} strokeWidth={2.5} />
             </a>
           </div>
         </div>
       </section>
 
       {/* Services */}
-      <section id="company-services" className="section-ruled section-paper scroll-mt-24 py-5 sm:py-7 lg:py-8">
-        <div className="container">
-          <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
+      <section id="company-services" className="section-ruled section-paper relative scroll-mt-24 overflow-hidden py-5 sm:py-7 lg:py-8">
+        {/* Corner glows */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-16 inset-e-0 h-64 w-64 rounded-full opacity-15 blur-[90px]"
+          style={{ background: "var(--color-blue)" }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-20 inset-s-0 h-72 w-72 rounded-full opacity-10 blur-[90px]"
+          style={{ background: "var(--color-gray)" }}
+        />
+
+        <div className="container relative">
+          <Reveal className="mx-auto mb-7 sm:mb-9 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
+            <span
+              aria-hidden="true"
+              className="mx-auto mt-4 block h-px w-24"
+              style={{ background: "linear-gradient(90deg, transparent, var(--color-yellow), transparent)" }}
+            />
           </Reveal>
 
           <div
-            className={`grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 ${
-              b.services.length === 5 ? "lg:grid-cols-5" : "lg:grid-cols-6"
-            }`}
+            className={`grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 ${b.services.length > 9 ? "xl:grid-cols-4" : ""}`}
           >
             {b.services.map((service, i) => {
               const ServiceIcon = serviceIcons[service] ?? Sparkles;
               return (
                 <Reveal key={service} delay={(i % 6) * 0.06} amount={0.1} className="h-full">
                   <div
-                    className="spotlight-tile card-premium card-premium-hover group relative flex h-full flex-col items-center overflow-hidden rounded-2xl p-4 text-center transition-all duration-300 hover:-translate-y-1"
-                    style={{ "--spot-color": `${b.color}24` } as React.CSSProperties}
+                    className="group relative flex h-full items-start gap-3 overflow-hidden rounded-2xl border border-(--color-line)/60 bg-white p-4 transition-all duration-400 hover:-translate-y-1.5 hover:border-transparent hover:shadow-[0_18px_44px_rgba(2,16,26,0.16)] sm:gap-3.5 sm:p-4"
                   >
+                    {/* Left rail accent */}
                     <span
                       aria-hidden="true"
-                      className="pointer-events-none absolute -inset-e-8 -top-8 h-20 w-20 rounded-full opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-70"
-                      style={{ background: b.color }}
+                      className="absolute inset-y-0 inset-s-0 w-1 origin-top scale-y-0 transition-transform duration-400 group-hover:scale-y-100"
+                      style={{ background: "linear-gradient(180deg, var(--color-yellow), var(--color-blue))" }}
                     />
 
-                    <span
-                      className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105"
-                      style={{
-                        background: `linear-gradient(135deg, ${b.color}2e, ${b.color}0f)`,
-                        color: accentInk(b.color),
-                        boxShadow: `inset 0 0 0 1px ${b.color}38, 0 8px 18px ${b.color}1f`,
-                      }}
-                    >
-                      <ServiceIcon size={22} strokeWidth={1.9} />
-                    </span>
-
+                    {/* Number watermark */}
                     <span
                       aria-hidden="true"
-                      className="font-ledger pointer-events-none absolute inset-e-3 top-2.5 text-[11px] font-bold tracking-[0.14em] text-(--color-muted)"
+                      className="font-ledger pointer-events-none absolute -top-1 inset-e-3 text-[44px] font-bold leading-none text-(--color-navy)/8 transition-colors duration-400 group-hover:text-(--color-yellow)/25"
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
 
-                    <p className="relative mt-3 flex-1 text-sm font-bold leading-snug text-(--color-ink-deep)">
-                      {tr(`services.${i}`, service)}
-                    </p>
-
-                    <ArrowRight
-                      size={15}
-                      strokeWidth={2.6}
-                      aria-hidden="true"
-                      className="pointer-events-none absolute bottom-3 inset-e-4 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                      style={{ color: accentInk(b.color) }}
-                    />
-
+                    {/* Icon chip */}
                     <span
-                      aria-hidden="true"
-                      className="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
-                      style={{ background: b.color }}
-                    />
+                      className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl transition-all duration-400 group-hover:-rotate-6 group-hover:scale-105"
+                      style={{
+                        background: "linear-gradient(135deg, rgba(6,106,156,0.18), rgba(6,106,156,0.06))",
+                        color: "var(--color-blue)",
+                        boxShadow: "inset 0 0 0 1px rgba(6,106,156,0.22), 0 8px 18px rgba(6,106,156,0.12)",
+                      }}
+                    >
+                      <ServiceIcon size={19} strokeWidth={1.9} />
+                    </span>
+
+                    <span className="relative min-w-0 flex-1 pt-0.5">
+                      <span className="block wrap-break-word text-[13px] sm:text-[14px] font-bold leading-snug text-(--color-ink-deep)">
+                        {tr(`services.${i}`, service)}
+                      </span>
+                    </span>
                   </div>
                 </Reveal>
               );
@@ -411,11 +396,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       </section>
 
       {b.slug === "advertising" && (
-        <UnipolePricing color={b.color} onBook={handleBook} />
+        <UnipolePricing onBook={handleBook} onBookGeneral={handleBookGeneral} />
       )}
 
       {b.slug === "warehouse" && (
-        <WarehousePricing color={b.color} onBook={handleBook} />
+        <WarehousePricing onBook={handleBook} onBookGeneral={handleBookGeneral} />
       )}
 
       {/* Foundation Training Gallery */}
@@ -441,12 +426,16 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
 
       <section
         id="enquiry"
-        className="section-ruled section-paper relative scroll-mt-28 overflow-hidden"
-        style={{ padding: "clamp(12px, 2vw, 24px) 0" }}
+        className="section-ruled section-paper relative flex scroll-mt-18 items-center overflow-hidden py-3 sm:py-4 sm:scroll-mt-23"
       >
         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-blue)/40 to-transparent" aria-hidden="true" />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -inset-s-24 top-10 h-80 w-80 rounded-full opacity-10 blur-3xl"
+          style={{ background: "var(--color-gray)" }}
+        />
 
-        <div className="container grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="container grid w-full items-center gap-4 sm:gap-6 lg:grid-cols-[1fr_minmax(0,34rem)] lg:gap-14">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <Eyebrow className="mb-3">{t("companyDetail.eyebrow")}</Eyebrow>
             <h2 className="font-display text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
@@ -458,27 +447,93 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               )}
               {enquiryAfter}
             </h2>
-            <p className="mt-4 sm:mt-5 max-w-md text-[12px] sm:text-[13px] leading-6 text-(--color-muted)">
+            <p className="mt-3 max-w-md text-[12px] sm:text-[13px] leading-6 text-(--color-muted)">
               {t("companyDetail.enquireSub", { name })}
             </p>
 
-            <div className="group relative mt-8 overflow-hidden rounded-2xl shadow-sm ring-1 ring-(--color-line)">
-              <ImageSlot
-                {...siteImages.companyEnquiry}
-                alt={`${name} enquiry support`}
-                className="relative z-1 transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-              <span aria-hidden="true" className="card-shine-lines" />
-            </div>
-
-            <div className="mt-8 flex items-center gap-6">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-(--color-navy) shadow-[0_4px_14px_rgba(12,54,82,0.16)]">
-                <Clock className="h-5 w-5" strokeWidth={2} />
+            <div className="mt-6 grid gap-2.5 sm:grid-cols-2">
+              <div className="flex items-center gap-3 rounded-2xl border border-(--color-line)/70 bg-white p-3 shadow-sm transition-shadow hover:shadow-md">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-white shadow-md" style={{ backgroundColor: accent.blue }}>
+                  <Clock size={16} />
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-[9px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">
+                    {t("companyDetail.responseTime")}
+                  </span>
+                  <span className="block text-[13px] font-semibold text-(--color-ink)">
+                    {t("companyDetail.responseValue")}
+                  </span>
+                </span>
               </div>
-              <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">{t("companyDetail.responseTime")}</p>
-                <p className="mt-0.5 text-sm font-semibold text-(--color-ink)">{t("companyDetail.responseValue")}</p>
+              <div className="group flex items-center gap-3 rounded-2xl border border-(--color-line)/70 bg-white p-3 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-white shadow-md" style={{ backgroundColor: accent.blue }}>
+                  <Phone size={16} />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[9px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">
+                    {t("companyDetail.bookingsPhone")}
+                  </span>
+                  <a
+                    href={`tel:${bookingPhone.href}`}
+                    className="block text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
+                    style={monoFont}
+                  >
+                    {bookingPhone.display}
+                  </a>
+                  {showFullContacts && landline && (
+                    <a
+                      href={landline.href}
+                      className="mt-0.5 block text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
+                    >
+                      {landline.number}
+                    </a>
+                  )}
+                </span>
               </div>
+              <div
+                className="group flex items-center gap-3 rounded-2xl border border-(--color-line)/70 bg-white p-3 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md sm:col-span-2"
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-white shadow-md" style={{ backgroundColor: accent.blue }}>
+                  <Mail size={16} />
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-[9px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">
+                    {t("companyDetail.bookingsEmail")}
+                  </span>
+                  <a
+                    href={`mailto:${contactEmails.queries}`}
+                    className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
+                  >
+                    {contactEmails.queries}
+                  </a>
+                  {showFullContacts && (
+                    <span className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                      <a href={`mailto:${contactEmails.bijendraMalik}`} className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)">
+                        {contactEmails.bijendraMalik}
+                      </a>
+                      <span aria-hidden="true" className="text-(--color-muted)">|</span>
+                      <a href={`mailto:${contactEmails.viniMalik}`} className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)">
+                        {contactEmails.viniMalik}
+                      </a>
+                    </span>
+                  )}
+                </span>
+              </div>
+              {enquiryBranch && (
+                <div className="flex items-center gap-3 rounded-2xl border border-(--color-line)/70 bg-white p-3 shadow-sm transition-shadow hover:shadow-md sm:col-span-2">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-white shadow-md" style={{ backgroundColor: accent.blue }}>
+                    <MapPin size={16} />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-[9px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">
+                      {t("companyDetail.bookingsOffice")}
+                    </span>
+                    <span className="block text-[13px] font-semibold leading-5 text-(--color-ink)">
+                      {t(enquiryBranch.addressKey)}
+                    </span>
+                  </span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -487,11 +542,15 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               initialCompany={b.name}
               initialCompanyLabel={name}
               companyLocked
-              initialMessage={bookingMessage}
+              compact
             />
           </div>
         </div>
       </section>
+
+      {booking && (
+        <BookingModal context={booking.context} variant={booking.variant} onClose={() => setBooking(null)} />
+      )}
     </>
   );
 };

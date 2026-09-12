@@ -2,11 +2,12 @@ import { useTranslation } from "react-i18next";
 import PricingTable, { type PricingGridItem, type PricingRow } from "./PricingTable";
 
 type WarehousePricingProps = {
-  color: string;
   onBook: (row: PricingRow | PricingGridItem) => void;
+  /** Opens the booking popup for the generic bottom "Book Now" CTA. */
+  onBookGeneral?: () => void;
 };
 
-const WarehousePricing = ({ color, onBook }: WarehousePricingProps) => {
+const WarehousePricing = ({ onBook, onBookGeneral }: WarehousePricingProps) => {
   const { t } = useTranslation();
   const enquireLabel = t("warehousePricing.enquire");
 
@@ -20,8 +21,8 @@ const WarehousePricing = ({ color, onBook }: WarehousePricingProps) => {
 
   return (
     <PricingTable
-      color={color}
       onBook={onBook}
+      onBookGeneral={onBookGeneral}
       eyebrow={t("warehousePricing.eyebrow")}
       title={t("warehousePricing.title")}
       subtitle={t("warehousePricing.subtitle")}
