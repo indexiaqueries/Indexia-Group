@@ -30,7 +30,7 @@ const CalendarTab = ({ holidays, onSaveHoliday, onDeleteHoliday }: Props) => {
   const [month, setMonth] = useState(today.getMonth());
   const [year, setYear] = useState(today.getFullYear());
   const [selected, setSelected] = useState(todayKey);
-  const [filter, setFilter] = useState<"all" | "upcoming" | "completed">("all");
+  const [filter, setFilter] = useState<"all" | "upcoming" | "completed">("upcoming");
   const [modal, setModal] = useState<{ holiday?: Holiday; date?: string } | null>(null);
 
   const changeMonth = (step: number) => {
