@@ -48,11 +48,6 @@ const contactInfo: {
       .filter((p): p is NonNullable<typeof landline> => Boolean(p))
       .map((p) => ({ text: p.number, href: p.href })),
   },
-  {
-    icon: Mail,
-    // HR reachable from every page, not just the careers section
-    links: [contactEmails.hr, contactEmails.hrAlternate].map((email) => ({ text: email, href: `mailto:${email}` })),
-  },
   { icon: Clock, textKey: "footer.hours" },
 ];
 
@@ -244,8 +239,7 @@ const Footer = () => {
           <p>{t("footer.rights")}</p>
         </div>
       </div>
-
-      <BackToTop />
+    <BackToTop />
     </footer>
   );
 };
