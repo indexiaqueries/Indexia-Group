@@ -12,6 +12,7 @@ import { initialContactForm } from "../../data/contact";
 import type { ContactFormData } from "../../data/contact";
 import { accent } from "../../lib/theme";
 import { API_BASE } from "../../lib/api";
+import { sendWeb3Forms } from "../../lib/web3forms";
 import { useInView } from "../../hooks/useInView";
 import Eyebrow from "../common/Eyebrow";
 import Field from "./enquiry/Field";
@@ -32,11 +33,13 @@ type EnquiryFormProps = {
   initialCompany?: string;
   initialCompanyLabel?: string;
   companyLocked?: boolean;
+  /** Hide the intro copy for tight single-viewport layouts. */
+  compact?: boolean;
   /** Pre-filled message (e.g. selected pricing package), updates overwrite the message field. */
   initialMessage?: string;
 };
 
-const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = false, initialMessage }: EnquiryFormProps) => {
+const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = false, initialMessage, compact = false }: EnquiryFormProps) => {
   const { t } = useTranslation();
 
   const [form, setForm] = useState<ContactFormData>(() => ({
@@ -113,6 +116,16 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
       if (!response.ok || !data.ok) {
         throw new Error(data.error || t("form.errorGeneric"));
       }
+      // DB write succeeded — fire the Web3Forms email copy in the
+      // background; a failure here must not fail the form.
+      void sendWeb3Forms({
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        subject: form.subject,
+        message: form.message,
+        from_name: "Indexia Group Website",
+      });
       setSubmitted(true);
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : t("form.errorGeneric"));
@@ -123,11 +136,53 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
 
   const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
 
+  // Subject lives inside the 2-column grid in compact mode (fills the grid's
+  // empty slot) and as its own full-width row otherwise.
+  const subjectField = (
+    <div className={compact ? "space-y-1.5" : "space-y-2"}>
+      <label htmlFor="subject" className={ledgerLabel}>
+        {t("form.subject")}
+      </label>
+      <Select
+        id="subject"
+        name="subject"
+        value={form.subject}
+        onChange={handleChange}
+        onBlur={handleBlur}
+        disabled={companyLocked}
+        required
+        aria-invalid={!!errors.subject}
+        aria-describedby={errors.subject ? "subject-error" : undefined}
+        className={`${selectClass} ${compact ? "h-10" : ""} w-full disabled:cursor-not-allowed disabled:bg-(--color-mist) disabled:text-(--color-muted)`}
+      >
+        {companyLocked ? (
+          <option value={initialCompany}>{initialCompanyLabel ?? initialCompany}</option>
+        ) : (
+          <>
+            <option value="" disabled>
+              {t("form.subjectPlaceholder")}
+            </option>
+            {subjectOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.labelKey ? t(option.labelKey, { defaultValue: option.value }) : option.value}
+              </option>
+            ))}
+          </>
+        )}
+      </Select>
+      {errors.subject && (
+        <p id="subject-error" role="alert" className={errorText}>
+          {errors.subject}
+        </p>
+      )}
+    </div>
+  );
+
   return (
     <div
       ref={ref}
       id="enquiry-form"
-      className={`reveal scroll-mt-30 relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-(--color-line) bg-white px-4 pt-5 pb-2 shadow-xl sm:px-8 sm:pt-8 sm:pb-4${inView ? " is-in-view" : ""}`}
+      className={`reveal scroll-mt-30 relative flex flex-1 flex-col overflow-hidden rounded-3xl sm:rounded-4xl border border-(--color-line) bg-white ${compact ? "px-4 pt-4 pb-2 sm:px-6 sm:pt-5 sm:pb-3" : "px-4 pt-5 pb-2 sm:px-8 sm:pt-8 sm:pb-4"} shadow-xl${inView ? " is-in-view" : ""}`}
       style={{ "--reveal-delay": "0.1s" } as CSSProperties}
     >
       <div
@@ -140,13 +195,11 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
       />
 
       <div className="relative flex flex-1 flex-col">
-        <Eyebrow size="md" color={accent.green}>
-          {t("form.eyebrow")}
-        </Eyebrow>
-        <p className="mt-3 text-sm leading-6 text-(--color-muted)">{t("form.intro")}</p>
+        {!compact && <Eyebrow size="md" color={accent.green}>{t("form.eyebrow")}</Eyebrow>}
+        {!compact && <p className="mt-3 text-sm leading-6 text-(--color-muted)">{t("form.intro")}</p>}
 
-        <form onSubmit={handleSubmit} noValidate className="mt-6 sm:mt-8 flex flex-1 flex-col gap-4 sm:gap-5">
-          <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
+        <form onSubmit={handleSubmit} noValidate className={`${compact ? "mt-4 gap-3.5 sm:gap-4" : "mt-6 sm:mt-8 gap-4 sm:gap-5"} flex flex-1 flex-col`}>
+          <div className={`grid ${compact ? "gap-3.5 sm:gap-4" : "gap-4 sm:gap-5"} sm:grid-cols-2`}>
             {halfFields.map((field) => (
               <Field
                 key={field.id}
@@ -158,10 +211,11 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
                 error={errors[field.id]}
                 onChange={handleChange}
                 onBlur={handleBlur}
+                compact={compact}
               />
             ))}
 
-            <div className="space-y-2">
+            <div className={compact ? "space-y-1.5" : "space-y-2"}>
               <label htmlFor="phone" className={ledgerLabel}>
                 {t("form.phone")}
               </label>
@@ -179,7 +233,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
                 required
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? "phone-error" : undefined}
-                className="h-11 rounded-xl px-4 text-sm text-(--color-ink) bg-white border-(--color-line) placeholder:text-(--color-muted)"
+                className={`${compact ? "h-10" : "h-11"} rounded-xl px-4 text-sm text-(--color-ink) bg-white border-(--color-line) placeholder:text-(--color-muted)`}
               />
               {errors.phone && (
                 <p id="phone-error" role="alert" className={errorText}>
@@ -187,6 +241,8 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
                 </p>
               )}
             </div>
+
+            {compact && subjectField}
           </div>
 
           {fullFields.map((field) => (
@@ -200,46 +256,11 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
               error={errors[field.id]}
               onChange={handleChange}
               onBlur={handleBlur}
+              compact={compact}
             />
           ))}
 
-          <div className="space-y-2">
-            <label htmlFor="subject" className={ledgerLabel}>
-              {t("form.subject")}
-            </label>
-            <Select
-              id="subject"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              disabled={companyLocked}
-              required
-              aria-invalid={!!errors.subject}
-              aria-describedby={errors.subject ? "subject-error" : undefined}
-              className={`${selectClass} w-full disabled:cursor-not-allowed disabled:bg-(--color-mist) disabled:text-(--color-muted)`}
-            >
-              {companyLocked ? (
-                <option value={initialCompany}>{initialCompanyLabel ?? initialCompany}</option>
-              ) : (
-                <>
-                  <option value="" disabled>
-                    {t("form.subjectPlaceholder")}
-                  </option>
-                  {subjectOptions.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.labelKey ? t(option.labelKey, { defaultValue: option.value }) : option.value}
-                    </option>
-                  ))}
-                </>
-              )}
-            </Select>
-            {errors.subject && (
-              <p id="subject-error" role="alert" className={errorText}>
-                {errors.subject}
-              </p>
-            )}
-          </div>
+          {!compact && subjectField}
 
           <div className="space-y-2">
             <label htmlFor="message" className={ledgerLabel}>
@@ -249,14 +270,14 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
               id="message"
               name="message"
               autoComplete="off"
-              rows={4}
+              rows={compact ? 3 : 4}
               value={form.message}
               onChange={handleChange}
               onBlur={handleBlur}
               placeholder={t("form.messagePlaceholder")}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? "message-error" : undefined}
-              className="min-h-28 resize-none rounded-xl px-4 py-3 text-sm text-(--color-ink) bg-white border-(--color-line) placeholder:text-(--color-muted)"
+              className={`${compact ? "min-h-20" : "min-h-28"} resize-none rounded-xl px-4 py-3 text-sm text-(--color-ink) bg-white border-(--color-line) placeholder:text-(--color-muted)`}
             />
             {errors.message && (
               <p id="message-error" role="alert" className={errorText}>
@@ -269,7 +290,7 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
             type="submit"
             variant="yellow"
             disabled={sending}
-            className="mt-auto h-12 w-full rounded-xl px-6 text-sm font-bold shadow-[0_8px_22px_rgba(242,242,49,0.35)] hover:-translate-y-0.5 disabled:hover:translate-y-0"
+            className={`mt-auto ${compact ? "h-11" : "h-12"} w-full rounded-xl px-6 text-sm font-bold shadow-[0_8px_22px_rgba(242,242,49,0.35)] hover:-translate-y-0.5 disabled:hover:translate-y-0`}
           >
             <Send size={17} />
             {sending ? t("form.sending") : t("form.submit")}
