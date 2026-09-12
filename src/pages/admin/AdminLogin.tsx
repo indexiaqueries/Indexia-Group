@@ -137,8 +137,8 @@ const AdminLogin = () => {
 
             <button
               type="submit"
-              disabled={loading || !password.trim()}
-              className="h-12 w-full rounded-xl bg-[--color-teal] text-sm font-semibold text-white transition hover:bg-[--color-teal-deep] disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={loading}
+              className="h-12 w-full rounded-xl bg-[--color-teal] text-sm font-semibold text-white transition hover:bg-[--color-teal-deep] active:scale-[.99] disabled:cursor-not-allowed disabled:opacity-50"
             >
               {loading ? "Signing in..." : "Sign in"}
             </button>
