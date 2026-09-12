@@ -5,7 +5,7 @@ import contactCorporate from "../assets/contact-img/corporateoffice.webp";
 import contactDelhi from "../assets/contact-img/delhioffice.webp";
 import contactInternational from "../assets/contact-img/internationaloffice.webp";
 import contactMumbai from "../assets/contact-img/mumbaioffice.webp";
-import contactShamli from "../assets/company-pages-img/page-specific/unipole-hoarding.png";
+import contactShamli from "../assets/company-pages-img/page-specific/unipole-hoarding.webp";
 const securityFeatures = "/images/security/online-security.webp";
 // Images moved to public/images/, referenced as absolute URL paths
 const researchOTGImg = "/images/research/otg-report.webp";

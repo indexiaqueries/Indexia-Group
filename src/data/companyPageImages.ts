@@ -1,10 +1,10 @@
 // Page-specific images for company spotlight sections
-import athleticsTraining from "../assets/company-pages-img/page-specific/athletics-training.png";
-import organicFertilizer from "../assets/company-pages-img/page-specific/organic-fertilizer.png";
-import securityTeam from "../assets/company-pages-img/page-specific/security-team.png";
-import shamliLand from "../assets/company-pages-img/page-specific/shamli-land.png";
-import shippingPort from "../assets/company-pages-img/page-specific/shipping-port.png";
-import unipoleHoarding from "../assets/company-pages-img/page-specific/unipole-hoarding.png";
+import athleticsTraining from "../assets/company-pages-img/page-specific/athletics-training.webp";
+import organicFertilizer from "../assets/company-pages-img/page-specific/organic-fertilizer.webp";
+import securityTeam from "../assets/company-pages-img/page-specific/security-team.webp";
+import shamliLand from "../assets/company-pages-img/page-specific/shamli-land.webp";
+import shippingPort from "../assets/company-pages-img/page-specific/shipping-port.webp";
+import unipoleHoarding from "../assets/company-pages-img/page-specific/unipole-hoarding.webp";
 const financeSpotlight = "/images/companies/finance-spotlight.webp";
 const finserveSpotlight = "/images/companies/finserve-spotlight.webp";
 import overviewBanner from "../assets/company-pages-img/common/overview-banner.webp";

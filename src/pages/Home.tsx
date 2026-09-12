@@ -6,7 +6,7 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import CompanyLinkCard from "../components/cards/CompanyLinkCard";
 import { companies } from "../data/companies";
-import HomeWorld from "../assets/footer-img/HomeWorld.png";
+import HomeWorld from "../assets/footer-img/HomeWorld.webp";
 const Globe = lazy(() => import("../components/lightswind/globe"));
 
 const Home = () => {

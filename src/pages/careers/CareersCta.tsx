@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import ImpactBand from "../../components/common/ImpactBand";
 import { contactEmails } from "../../data/contact";
-import mailUsImg from "../../assets/careers-img/MailUs.png";
+import mailUsImg from "../../assets/careers-img/MailUs.webp";
 
 const CareersCta = () => {
   const { t } = useTranslation();

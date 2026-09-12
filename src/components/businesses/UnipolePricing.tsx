@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import Eyebrow from "../common/Eyebrow";
 import Reveal from "../common/Reveal";
-import unipoleStructure from "../../assets/company-pages-img/page-specific/UnipoleStructure.png";
+import unipoleStructure from "../../assets/company-pages-img/page-specific/UnipoleStructure.webp";
 import type { PricingRow } from "./PricingTable";
 
 type UnipolePricingProps = {

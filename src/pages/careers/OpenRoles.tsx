@@ -5,7 +5,7 @@ import { MapPin, Building2, ArrowRight } from "lucide-react";
 import Eyebrow from "../../components/common/Eyebrow";
 import Reveal from "../../components/common/Reveal";
 import ResponsiveImage from "../../components/common/ResponsiveImage";
-import openPositionsImg from "../../assets/careers-img/OpenPositions.png";
+import openPositionsImg from "../../assets/careers-img/OpenPositions.webp";
 import { colors } from "../../lib/theme";
 import type { RoleItem } from "./careersData";
 

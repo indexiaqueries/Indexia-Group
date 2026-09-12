@@ -5,8 +5,8 @@ import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
 import HeroBackdrop from "../components/banners/HeroBackdrop";
 import { colors } from "../lib/theme";
-import privacyHero from "../assets/legal-img/PrivacyPolicy.png";
-import termsOfUseHero from "../assets/legal-img/TermsofUse.png";
+import privacyHero from "../assets/legal-img/PrivacyPolicy.webp";
+import termsOfUseHero from "../assets/legal-img/TermsofUse.webp";
 const legalBg = "/images/heroes/legal-hero.webp";
 import { legalDocuments, type LegalDocumentId, type LegalSection } from "../data/legal";
 

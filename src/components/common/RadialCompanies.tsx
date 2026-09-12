@@ -11,15 +11,15 @@ import {
   Megaphone,
   Heart,
 } from "lucide-react";
-import aboutFinance from "../../assets/about-img/Our-Companies/finance.png";
-import aboutFinserve from "../../assets/about-img/Our-Companies/finserve.png";
-import aboutOverseas from "../../assets/about-img/Our-Companies/overseas.png";
-import aboutAgro from "../../assets/about-img/Our-Companies/agro.png";
-import aboutSecurities from "../../assets/about-img/Our-Companies/securities.png";
-import aboutWarehouse from "../../assets/about-img/Our-Companies/warehouse.png";
-import aboutAdvertising from "../../assets/about-img/Our-Companies/advertising.png";
-import aboutFoundation from "../../assets/about-img/Our-Companies/foundation.png";
-import aboutGroup from "../../assets/about-img/Our-Companies/group.png";
+import aboutFinance from "../../assets/about-img/Our-Companies/finance.webp";
+import aboutFinserve from "../../assets/about-img/Our-Companies/finserve.webp";
+import aboutOverseas from "../../assets/about-img/Our-Companies/overseas.webp";
+import aboutAgro from "../../assets/about-img/Our-Companies/agro.webp";
+import aboutSecurities from "../../assets/about-img/Our-Companies/securities.webp";
+import aboutWarehouse from "../../assets/about-img/Our-Companies/warehouse.webp";
+import aboutAdvertising from "../../assets/about-img/Our-Companies/advertising.webp";
+import aboutFoundation from "../../assets/about-img/Our-Companies/foundation.webp";
+import aboutGroup from "../../assets/about-img/Our-Companies/group.webp";
 
 const aboutCompanyImages: Record<string, string> = {
   finance: aboutFinance,
