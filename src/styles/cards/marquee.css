@@ -5,8 +5,13 @@
 .infinite-marquee-track {
   display: flex;
   width: max-content;
-  animation: var(--marquee-animation, marquee-scroll var(--marquee-duration, 28s) linear infinite);
+  animation: var(--marquee-animation, marquee-scroll var(--marquee-duration, 30s) linear infinite);
 }
+/* Pause while the cursor is anywhere over the marquee band — targeting the
+   parent container rather than the moving track, which slides out from
+   under the pointer and makes track-level hover unreliable. */
+.marquee-band:hover .infinite-marquee-track,
+.infinite-marquee-band:hover .infinite-marquee-track,
 .infinite-marquee-track:hover {
   animation-play-state: paused;
 }
