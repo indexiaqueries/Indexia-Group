@@ -4,7 +4,6 @@ import { ArrowLeft, Download, Printer } from "lucide-react";
 import SEO from "../components/common/SEO";
 import logo from "../assets/logo/IndexiaGroup_Logo.webp";
 import { companies } from "../data/companies";
-import { accentInk } from "../lib/color";
 
 type BrochurePageProps = {
   slug: "warehouse" | "advertising";
@@ -144,13 +143,13 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
                   <span className="text-[13px] sm:text-[14px] font-semibold text-(--color-ink-deep)">
                     {t("warehousePricing.locations")}
                   </span>
-                  <span className="text-end text-[14px] sm:text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
+                  <span className="text-end text-[14px] sm:text-[16px] font-bold text-(--color-blue)">
                     {t("warehousePricing.locationsValue")}
                   </span>
                 </div>
                 <div className="grid grid-cols-2 items-center gap-2 sm:gap-4 px-4 py-3 sm:px-6 sm:py-4">
                   <span className="text-[13px] sm:text-[14px] font-semibold text-(--color-ink-deep)">{t("warehousePricing.total")}</span>
-                  <span className="text-end text-[14px] sm:text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
+                  <span className="text-end text-[14px] sm:text-[16px] font-bold text-(--color-blue)">
                     {t("warehousePricing.totalValue")}
                   </span>
                 </div>
@@ -164,7 +163,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
                   <li
                     key={key}
                     className="rounded-full px-4 py-1.5 text-[13px] font-bold"
-                    style={{ background: `${b.color}1a`, color: accentInk(b.color) }}
+                    style={{ background: "rgba(123,123,123,0.1)", color: "var(--color-ink-deep)" }}
                   >
                     {t(`warehousePricing.${key}`)}
                   </li>
@@ -200,7 +199,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
                   >
                     <span className="text-[14px] font-semibold text-(--color-ink-deep)">{t(`unipolePricing.${sizeKey}`)}</span>
                     <span className="text-[13px] font-medium text-(--color-muted)">{t(`unipolePricing.${areaKey}`)}</span>
-                    <span className="text-end text-[16px] font-bold" style={{ color: accentInk(b.color) }}>
+                    <span className="text-end text-[16px] font-bold text-(--color-blue)">
                       {t(`unipolePricing.${rateKey}`)}
                     </span>
                   </div>
@@ -225,7 +224,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
                 <li key={h} className="flex items-start gap-2.5 text-[13.5px] font-medium leading-6 text-(--color-ink-soft)">
                   <span
                     className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-white"
-                    style={{ background: b.color }}
+                    style={{ background: "var(--color-blue)" }}
                   >
                     ✓
                   </span>
