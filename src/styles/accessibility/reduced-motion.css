@@ -54,11 +54,6 @@
     transition: none;
   }
 
-  /* Spotlight tile */
-  .spotlight-tile::before {
-    opacity: 0 !important;
-  }
-
   /* Visual effects */
   .text-shimmer {
     background: none;
