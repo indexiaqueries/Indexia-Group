@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Tất Cả Công Ty",
-    "enquireSub": "Yêu cầu của bạn được ghi tên {{name}} ở đầu, để đúng đội ngũ tiếp nhận trước.",
+    "enquireSub": "Yêu cầu của bạn được chuyển trực tiếp đến {{name}}, để đúng đội ngũ tiếp nhận trước.",
     "enquireTitle": "Liên hệ với {{name}}",
     "entryOf": "Mục {{no}} / 08",
     "exploreServices": "Khám Phá Dịch Vụ",
@@ -309,7 +309,12 @@
     "statRegister": "Mục Đăng Ký",
     "statServices": "Dịch vụ",
     "whyChoose": "Tại sao chọn chúng tôi",
-    "whyChooseDesc": "Điều khiến công ty này khác biệt."
+    "whyChooseDesc": "Điều khiến công ty này khác biệt.",
+    "bookingsPhone": "Gọi cho chúng tôi",
+    "bookingsEmail": "Gửi email",
+    "bookingsOffice": "Văn phòng chính",
+    "brochure": "Xem tài liệu",
+    "serviceLabel": "Dịch vụ"
   },
   "companyLinkCard": {
     "visitPage": "Truy cập trang",
@@ -535,7 +540,6 @@
     "backHome": "Về Trang Chủ",
     "contactBody": "Viết thư cho chúng tôi tại contactus@indexiagroup.com hoặc gửi yêu cầu và đội ngũ của chúng tôi sẽ liên hệ lại.",
     "contactHeading": "Có câu hỏi về chính sách này?",
-    "followUs": "Follow Us",
     "contactUs": "Liên Hệ",
     "eyebrow": "Pháp lý",
     "lastUpdated": "Cập nhật lần cuối",
@@ -891,7 +895,7 @@
         ],
         "location": "Đường cao tốc Delhi-Dehradun, Shamli",
         "name": "Indexia Quảng cáo",
-        "overview": "Indexia Advertising vận hành các bảng quảng cáo unipole một trụ cao cấp trên Xa lộ Delhi–Dehradun (NH-709B) tại Shamli, trung tâm của Bắc Ấn Độ. Nằm tại ngã tư của 8 xa lộ quốc gia và 2 đường cao tốc chính, các trụ unipole của chúng tôi kết nối 10 bang với phạm vi tiếp cận 50 crore dân số và thu hút hơn 1 crore lượt tiếp xúc mỗi ngày. Unipole một trụ với độ cao cao cấp và góc nhìn 360° không bị che chắn mang đến cho thương hiệu của bạn độ phủ tối đa mà không có sự rối mắt, được hỗ trợ bởi thương hiệu đặc trưng Bisleri Green. Từ in ấn và lắp đặt đến bảo trì, chúng tôi xử lý mọi thứ trọn gói. Đặt unipole 10×20 ft với giá ₹25.000/tháng hoặc unipole 12×24 ft với giá ₹36.000/tháng, giá tiêu chuẩn ₹125/ft vuông mỗi mặt mỗi tháng, có thể thương lượng cho các gói dài hạn. Để đặt chỗ, gọi 86918 86919 hoặc 011 4629 1155, hoặc email indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising vận hành các bảng quảng cáo unipole một trụ cao cấp trên Xa lộ Delhi–Dehradun (NH-709B) tại Shamli, trung tâm của Bắc Ấn Độ. Nằm tại ngã tư của 8 xa lộ quốc gia và 2 đường cao tốc chính, các trụ unipole của chúng tôi kết nối 10 bang với phạm vi tiếp cận 50 crore dân số và thu hút hơn 1 crore lượt hiển thị mỗi ngày. Unipole một trụ với độ cao cao cấp và góc nhìn 360° không bị che chắn mang đến cho thương hiệu của bạn độ phủ tối đa mà không có sự rối mắt, được hỗ trợ bởi thương hiệu đặc trưng Bisleri Green. Từ in ấn và lắp đặt đến bảo trì, chúng tôi xử lý mọi thứ trọn gói. Đặt unipole 10×20 ft với giá ₹25.000/tháng hoặc unipole 12×24 ft với giá ₹36.000/tháng, giá tiêu chuẩn ₹125/ft vuông mỗi mặt mỗi tháng, có thể thương lượng cho các gói dài hạn.",
         "services": [
           "Unipole 10×20 ft, ₹25.000/tháng",
           "Unipole 12×24 ft, ₹36.000/tháng",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20 ft",
     "standardRate": "Giá Tiêu chuẩn: ₹125/ft vuông mỗi mặt mỗi tháng",
     "subtitle": "Gói unipole cao cấp trên Xa lộ Delhi–Dehradun, Shamli",
-    "title": "Kích Thước & Giá Có Sẵn"
+    "title": "Kích Thước & Giá Có Sẵn",
+    "structureAlt": "Sơ đồ cấu trúc unipole tại Shamli trên đường Delhi–Dehradun"
   },
   "warehouseContact": {
     "address": "Địa Chỉ Văn Phòng",
@@ -1529,5 +1534,48 @@
     "delhiOffice": "Văn Phòng Delhi",
     "shamliOffice": "Văn Phòng Shamli",
     "internationalOffice": "Văn Phòng Quốc Tế"
+  },
+  "bookingModal": {
+    "eyebrow": "Yêu cầu đặt chỗ",
+    "title": "Đặt {{item}}",
+    "subtitle": "Chia sẻ một vài thông tin và đội ngũ của chúng tôi sẽ xác nhận tình trạng chỗ, giá và các bước tiếp theo — không cần gọi điện.",
+    "yourSelection": "Lựa chọn của bạn",
+    "generalItem": "Đặt chỗ chung",
+    "name": "Họ tên",
+    "phone": "Điện thoại",
+    "email": "Email",
+    "companyBrand": "Công ty / Thương hiệu",
+    "companyPlaceholder": "Tên công ty hoặc thương hiệu của bạn",
+    "website": "Trang web (không bắt buộc)",
+    "websitePlaceholder": "https://…",
+    "startDate": "Ngày bắt đầu mong muốn",
+    "duration": "Thời hạn đặt chỗ",
+    "duration_1_month": "1 tháng",
+    "duration_3_months": "3 tháng",
+    "duration_6_months": "6 tháng",
+    "duration_12_months": "12 tháng",
+    "duration_Long_term": "Dài hạn",
+    "artworkStatus": "Tình trạng thiết kế",
+    "artworkPlaceholder": "Chọn tình trạng thiết kế",
+    "artwork_ready": "Thiết kế đã sẵn sàng",
+    "artwork_design_needed": "Cần hỗ trợ thiết kế",
+    "artwork_later": "Sẽ gửi sau",
+    "notes": "Điều gì khác chúng tôi cần biết?",
+    "notesPlaceholderAd": "Ngày chiến dịch, tài liệu tham khảo, yêu cầu đặc biệt…",
+    "notesPlaceholderWh": "Loại lưu trữ, nhu cầu ra vào, tuyến xe tải…",
+    "submit": "Gửi yêu cầu đặt chỗ",
+    "submitting": "Đang gửi…",
+    "responseNote": "Đội ngũ phản hồi trong 24 giờ, T2 – T7.",
+    "successTitle": "Đã nhận yêu cầu đặt chỗ!",
+    "successBody": "Cảm ơn bạn — yêu cầu đã tới đội ngũ của chúng tôi. Chúng tôi sẽ xác nhận tình trạng chỗ và giá trong 24 giờ, T2 – T7.",
+    "close": "Đóng",
+    "done": "Xong",
+    "subjectPrefix": "Yêu cầu đặt chỗ",
+    "messageInterested": "Tôi muốn đặt: {{item}} ({{company}}).",
+    "messageDetail": "Chi tiết lựa chọn",
+    "errorCompany": "Vui lòng nhập tên công ty hoặc thương hiệu.",
+    "errorStartDate": "Vui lòng chọn ngày bắt đầu.",
+    "errorDuration": "Vui lòng chọn thời hạn.",
+    "errorArtwork": "Vui lòng chọn tình trạng thiết kế."
   }
 }

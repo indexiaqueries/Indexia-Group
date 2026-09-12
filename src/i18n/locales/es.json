@@ -25,8 +25,8 @@
     "c6Highlights": "21 Acres en Shamli UP,8 Autopistas Nacionales,5 Ubicaciones,65 km de Delhi",
     "c6Name": "Indexia Almacenes",
     "c6Tag": "Terreno Estratégico",
-    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily exposure.",
-    "c7Highlights": "Autopista Delhi-Dehradun NH-709B,10 Estados Conectados,Visibilidad 360°,1+ Crore Exposición Diaria",
+    "c7Body": "Premium unipole hoardings on the Delhi–Dehradun Highway connecting 10 states with 50 crore population reach and 1+ crore daily visibility.",
+    "c7Highlights": "Autopista Delhi-Dehradun NH-709B,10 Estados Conectados,Visibilidad 360°,1+ Crore Visibilidad Diaria",
     "c7Name": "Indexia Publicidad",
     "c7Tag": "Publicidad en Autopistas",
     "c8Body": "Supporting Indian athletes from grassroots to the Olympics with training, nutrition, coaching, medical support, and competition funding.",
@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Todas las Empresas",
-    "enquireSub": "Su consulta se envía con {{name}} como destinatario principal, para que el equipo adecuado la atienda primero.",
+    "enquireSub": "Su consulta se envía directamente a {{name}}, para que el equipo adecuado la atienda primero.",
     "enquireTitle": "Ponte en contacto con {{name}}",
     "entryOf": "Entrada {{no}} de 08",
     "exploreServices": "Explorar servicios",
@@ -309,7 +309,12 @@
     "statRegister": "Entrada de registro",
     "statServices": "Servicios",
     "whyChoose": "Por qué elegirnos",
-    "whyChooseDesc": "Lo que hace única a esta empresa."
+    "whyChooseDesc": "Lo que hace única a esta empresa.",
+    "bookingsPhone": "Llámanos",
+    "bookingsEmail": "Escríbenos",
+    "bookingsOffice": "Oficina central",
+    "brochure": "Ver folleto",
+    "serviceLabel": "Servicio"
   },
   "companyLinkCard": {
     "visitPage": "Visitar página",
@@ -535,7 +540,6 @@
     "backHome": "Volver al inicio",
     "contactBody": "Escríbanos a contactus@indexiagroup.com o envíe una consulta y nuestro equipo le responderá.",
     "contactHeading": "¿Preguntas sobre esta política?",
-    "followUs": "Follow Us",
     "contactUs": "Contáctenos",
     "eyebrow": "Legal",
     "lastUpdated": "Última actualización",
@@ -885,13 +889,13 @@
         "desc": "Unipolos publicitarios en el cruce más transitado del norte de India.",
         "highlights": [
           "Ubicaciones estratégicas en la NH-709B, la carretera Delhi–Dehradun",
-          "10 estados conectados, alcance de 50 crore, más de 1 crore de exposiciones diarias",
+          "10 estados conectados, alcance de 50 crore, más de 1 crore de visibilidad diaria",
           "Unipolos de poste único con visibilidad de 360° y altura premium",
           "Servicio integral, impresión, instalación y mantenimiento"
         ],
         "location": "Carretera Delhi-Dehradun, Shamli",
         "name": "Indexia Publicidad",
-        "overview": "Indexia Advertising opera unipolos publicitarios premium de poste único en la carretera Delhi–Dehradun (NH-709B) en Shamli, el centro del norte de la India. Ubicados en la confluencia de 8 autopistas nacionales y 2 carreteras principales, nuestros unipolos conectan 10 estados con un alcance de 50 crore de personas y atraen más de 1 crore de exposiciones diarias. Los unipolos de poste único, con altura premium y ángulo de visión de 360° sin obstrucciones, dan a su marca máxima visibilidad sin desorden visual, respaldados por la firma de branding verde Bisleri. Desde la impresión y la instalación hasta el mantenimiento, lo gestionamos todo de principio a fin. Reserve un unipolo de 10×20 ft por ₹25.000/mes o uno de 12×24 ft por ₹36.000/mes, tarifa estándar de ₹125/pie² por lado al mes, negociable en paquetes a largo plazo. Para reservas llame al 86918 86919 o 011 4629 1155, o escriba a indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising opera unipolos publicitarios premium de poste único en la carretera Delhi–Dehradun (NH-709B) en Shamli, el centro del norte de la India. Ubicados en la confluencia de 8 autopistas nacionales y 2 carreteras principales, nuestros unipolos conectan 10 estados con un alcance de 50 crore de personas y atraen más de 1 crore de visibilidad diaria. Los unipolos de poste único, con altura premium y ángulo de visión de 360° sin obstrucciones, dan a su marca máxima visibilidad sin desorden visual, respaldados por la firma de branding verde Bisleri. Desde la impresión y la instalación hasta el mantenimiento, lo gestionamos todo de principio a fin. Reserve un unipolo de 10×20 ft por ₹25.000/mes o uno de 12×24 ft por ₹36.000/mes, tarifa estándar de ₹125/pie² por lado al mes, negociable en paquetes a largo plazo.",
         "services": [
           "Unipolo 10×20 ft, ₹25.000/mes",
           "Unipolo 12×24 ft, ₹36.000/mes",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20 pies",
     "standardRate": "Tarifa estándar: ₹125/pie² por un lado durante 1 mes",
     "subtitle": "Paquetes premium de unipolos en la carretera Delhi–Dehradun, Shamli",
-    "title": "Tamaños y precios disponibles"
+    "title": "Tamaños y precios disponibles",
+    "structureAlt": "Diagrama de estructura del unipol de Shamli en la carretera Delhi–Dehradun"
   },
   "warehouseContact": {
     "address": "Dirección de la oficina",
@@ -1487,7 +1492,7 @@
         },
         {
           "value": "360°",
-          "label": "Exposición"
+          "label": "Visibilidad"
         }
       ],
       "bullets": [
@@ -1529,5 +1534,48 @@
     "delhiOffice": "Oficina Delhi",
     "shamliOffice": "Oficina Shamli",
     "internationalOffice": "Oficina Internacional"
+  },
+  "bookingModal": {
+    "eyebrow": "Solicitud de reserva",
+    "title": "Reservar {{item}}",
+    "subtitle": "Comparta algunos datos y nuestro equipo confirmará disponibilidad, precios y próximos pasos — sin llamadas.",
+    "yourSelection": "Su selección",
+    "generalItem": "Reserva general",
+    "companyBrand": "Empresa / Marca",
+    "companyPlaceholder": "Nombre de su empresa o marca",
+    "website": "Sitio web (opcional)",
+    "startDate": "Fecha de inicio preferida",
+    "duration": "Duración de la reserva",
+    "duration_1_month": "1 mes",
+    "duration_3_months": "3 meses",
+    "duration_6_months": "6 meses",
+    "duration_12_months": "12 meses",
+    "duration_Long_term": "Largo plazo",
+    "artworkStatus": "Estado del arte",
+    "artworkPlaceholder": "Seleccione el estado del arte",
+    "artwork_ready": "El arte está listo",
+    "artwork_design_needed": "Necesito apoyo de diseño",
+    "artwork_later": "Lo enviaré más tarde",
+    "notes": "¿Algo más que debamos saber?",
+    "notesPlaceholderAd": "Fechas de campaña, referencias, peticiones especiales…",
+    "notesPlaceholderWh": "Tipo de almacenaje, accesos, movimiento de camiones…",
+    "submit": "Solicitar reserva",
+    "submitting": "Enviando…",
+    "responseNote": "Nuestro equipo responde en 24 horas, lun – sáb.",
+    "successTitle": "¡Solicitud recibida!",
+    "successBody": "Gracias — su solicitud está con nuestro equipo. Confirmaremos disponibilidad y precios en 24 horas, lun – sáb.",
+    "close": "Cerrar",
+    "done": "Listo",
+    "subjectPrefix": "Solicitud de reserva",
+    "messageInterested": "Me interesa reservar: {{item}} ({{company}}).",
+    "messageDetail": "Detalles de la selección",
+    "errorCompany": "Introduzca el nombre de su empresa o marca.",
+    "errorStartDate": "Elija una fecha de inicio.",
+    "errorDuration": "Seleccione una duración.",
+    "errorArtwork": "Seleccione el estado del arte.",
+    "websitePlaceholder": "https://…",
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "email": "Correo electrónico"
   }
 }

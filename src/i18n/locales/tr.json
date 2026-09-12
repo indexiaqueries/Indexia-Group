@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Tüm Şirketler",
-    "enquireSub": "Sorunuzun başında {{name}} adı yer alır; böylece doğru ekip önce onu ele alır.",
+    "enquireSub": "Sorunuz doğrudan {{name}} ekibine iletilir; böylece doğru ekip önce onu ele alır.",
     "enquireTitle": "{{name}} ile iletişime geçin",
     "entryOf": "Kayıt {{no}} / 08",
     "exploreServices": "Hizmetleri Keşfedin",
@@ -309,7 +309,12 @@
     "statRegister": "Sicil Kaydı",
     "statServices": "Hizmetler",
     "whyChoose": "Neden bizi seçin",
-    "whyChooseDesc": "Bu şirketi diğerlerinden ayıran özellik."
+    "whyChooseDesc": "Bu şirketi diğerlerinden ayıran özellik.",
+    "bookingsPhone": "Bizi arayın",
+    "bookingsEmail": "Bize yazın",
+    "bookingsOffice": "Merkez ofis",
+    "brochure": "Broşürü görüntüle",
+    "serviceLabel": "Hizmet"
   },
   "companyLinkCard": {
     "visitPage": "Sayfayı ziyaret et",
@@ -535,7 +540,6 @@
     "backHome": "Ana Sayfaya Dön",
     "contactBody": "contactus@indexiagroup.com adresine yazın veya bir soru gönderin; ekibimiz size dönecektir.",
     "contactHeading": "Bu politika hakkında sorularınız mı var?",
-    "followUs": "Follow Us",
     "contactUs": "İletişim",
     "eyebrow": "Yasal",
     "lastUpdated": "Son güncelleme",
@@ -885,13 +889,13 @@
         "desc": "Kuzey Hindistan'ın en yoğun kavşağında premium otoyol reklam panoları.",
         "highlights": [
           "NH-709B, Delhi–Dehradun otoyolunda stratejik yerleşimler",
-          "10 bağlı eyalet, 50 crore nüfus erişimi, günlük 1+ crore maruz kalma",
+          "10 bağlı eyalet, 50 crore nüfus erişimi, günlük 1+ crore görünürlük",
           "360° görünürlük ve premium yüksekliğe sahip tek direkli unipole'lar",
           "Uçtan uca hizmet, baskı, kurulum ve bakım"
         ],
         "location": "Delhi-Dehradun Otoyolu, Shamli",
         "name": "Indexia Reklam",
-        "overview": "Indexia Advertising, Kuzey Hindistan'ın merkezi olan Shamli'deki Delhi–Dehradun Otoyolu'nda (NH-709B) premium tek direkli unipole reklam panoları işletir. 8 ulusal otoyol ve 2 ana karayolunun kavşağında konumlanan unipole'larımız, 50 crore nüfusa ulaşan 10 eyaleti birbirine bağlar ve günlük 1+ crore maruz kalma sağlar. Premium yükseklik ve engelsiz 360° görüş açısına sahip tek direkli unipole'lar, görsel karmaşa olmadan markanıza maksimum görünürlük kazandırır ve imza Bisleri Green markalamasıyla desteklenir. Baskı ve kurulumdan bakıma kadar her şeyi uçtan uca biz yönetiyoruz. 10×20 fit unipole'u ayda ₹25.000 veya 12×24 fit unipole'u ayda ₹36.000'a rezerve edin, standart ücret ayda yüz başına ₹125/metrekare, uzun vadeli paketlerde pazarlık payı vardır. Rezervasyon için 86918 86919 veya 011 4629 1155 numaralarını arayın ya da indexia.queries@gmail.com adresine e-posta gönderin.",
+        "overview": "Indexia Advertising, Kuzey Hindistan'ın merkezi olan Shamli'deki Delhi–Dehradun Otoyolu'nda (NH-709B) premium tek direkli unipole reklam panoları işletir. 8 ulusal otoyol ve 2 ana karayolunun kavşağında konumlanan unipole'larımız, 50 crore nüfusa ulaşan 10 eyaleti birbirine bağlar ve günlük 1+ crore maruz kalma sağlar. Premium yükseklik ve engelsiz 360° görüş açısına sahip tek direkli unipole'lar, görsel karmaşa olmadan markanıza maksimum görünürlük kazandırır ve imza Bisleri Green markalamasıyla desteklenir. Baskı ve kurulumdan bakıma kadar her şeyi uçtan uca biz yönetiyoruz. 10×20 fit unipole'u ayda ₹25.000 veya 12×24 fit unipole'u ayda ₹36.000'a rezerve edin, standart ücret ayda yüz başına ₹125/metrekare, uzun vadeli paketlerde pazarlık payı vardır.",
         "services": [
           "Unipole 10×20 fit, ayda ₹25.000",
           "Unipole 12×24 fit, ayda ₹36.000",
@@ -962,7 +966,7 @@
           "Eğitim Kredisi",
           "Proje Kredisi",
           "Ticari Satın Alma",
-          "Lease R İskontosu",
+          "Lease Rental İskontosu",
           "İşletme Sermayesi"
         ],
         "tag": "Krediler & Finans",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20 fit",
     "standardRate": "Standart Ücret: 1 ay tek yüz için ₹125/metrekare",
     "subtitle": "Shamli, Delhi–Dehradun Otoyolu'nda premium unipole paketleri",
-    "title": "Mevcut Boyutlar ve Fiyatlar"
+    "title": "Mevcut Boyutlar ve Fiyatlar",
+    "structureAlt": "Delhi–Dehradun Karayolu üzerindeki Şamli unipol yapı şeması"
   },
   "warehouseContact": {
     "address": "Ofis Adresi",
@@ -1529,5 +1534,48 @@
     "delhiOffice": "Delhi Ofisi",
     "shamliOffice": "Shamli Ofisi",
     "internationalOffice": "Uluslararası Ofis"
+  },
+  "bookingModal": {
+    "eyebrow": "Rezervasyon Talebi",
+    "title": "{{item}} Rezervasyonu",
+    "subtitle": "Birkaç detay paylaşın; ekibimiz müsaitlik, fiyatlandırma ve sonraki adımları onaylasın — telefon görüşmesi gerekmez.",
+    "yourSelection": "Seçiminiz",
+    "generalItem": "Genel Rezervasyon",
+    "name": "Ad Soyad",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "companyBrand": "Şirket / Marka",
+    "companyPlaceholder": "Şirket veya marka adınız",
+    "website": "Web sitesi (opsiyonel)",
+    "websitePlaceholder": "https://…",
+    "startDate": "Tercih edilen başlangıç tarihi",
+    "duration": "Rezervasyon süresi",
+    "duration_1_month": "1 ay",
+    "duration_3_months": "3 ay",
+    "duration_6_months": "6 ay",
+    "duration_12_months": "12 ay",
+    "duration_Long_term": "Uzun vadeli",
+    "artworkStatus": "Tasarım durumu",
+    "artworkPlaceholder": "Tasarım durumunu seçin",
+    "artwork_ready": "Tasarım hazır",
+    "artwork_design_needed": "Tasarım desteği gerekiyor",
+    "artwork_later": "Daha sonra paylaşılacak",
+    "notes": "Bilmemiz gereken başka bir şey var mı?",
+    "notesPlaceholderAd": "Kampanya tarihleri, referanslar, özel talepler…",
+    "notesPlaceholderWh": "Depolama türü, erişim ihtiyaçları, kamyon hareketi…",
+    "submit": "Rezervasyon Talep Et",
+    "submitting": "Gönderiliyor…",
+    "responseNote": "Ekibimiz 24 saat içinde yanıt verir, Pzt – Cmt.",
+    "successTitle": "Rezervasyon talebi alındı!",
+    "successBody": "Teşekkürler — talebiniz ekibimizde. 24 saat içinde müsaitlik ve fiyatlandırmayı onaylayacağız, Pzt – Cmt.",
+    "close": "Kapat",
+    "done": "Tamam",
+    "subjectPrefix": "Rezervasyon Talebi",
+    "messageInterested": "Şunu rezerve etmek istiyorum: {{item}} ({{company}}).",
+    "messageDetail": "Seçim detayları",
+    "errorCompany": "Şirket veya marka adınızı girin.",
+    "errorStartDate": "Bir başlangıç tarihi seçin.",
+    "errorDuration": "Bir süre seçin.",
+    "errorArtwork": "Tasarım durumunuzu seçin."
   }
 }

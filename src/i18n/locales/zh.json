@@ -26,7 +26,7 @@
     "c6Name": "英德西亚仓储",
     "c6Tag": "战略土地",
     "c7Body": "Indexia Advertising运营高端广告牌。",
-    "c7Highlights": "NH-709B德里-德拉敦高速公路,10个连接邦,360°可视性,1+亿日曝光",
+    "c7Highlights": "NH-709B德里-德拉敦高速公路,10个连接邦,360°可视性,1+亿日可见度",
     "c7Name": "英德西亚广告",
     "c7Tag": "高速公路广告",
     "c8Body": "Indexia Foundation是Indexia Group的社会影响部门。",
@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "所有企业",
-    "enquireSub": "您的咨询将把 {{name}} 置于最前面，以便合适的团队第一时间处理。",
+    "enquireSub": "您的咨询将直接发送给 {{name}}，以便合适的团队第一时间处理。",
     "enquireTitle": "联系{{name}}",
     "entryOf": "第 {{no}} 条，共08条",
     "exploreServices": "探索服务",
@@ -309,7 +309,12 @@
     "statRegister": "登记条目",
     "statServices": "服务",
     "whyChoose": "为什么选择我们",
-    "whyChooseDesc": "是什么让这家公司与众不同。"
+    "whyChooseDesc": "是什么让这家公司与众不同。",
+    "bookingsPhone": "致电我们",
+    "bookingsEmail": "邮件联系",
+    "bookingsOffice": "总部办公室",
+    "brochure": "查看手册",
+    "serviceLabel": "服务"
   },
   "companyLinkCard": {
     "visitPage": "访问页面",
@@ -481,7 +486,7 @@
     },
     "p7": {
       "heading": "您的品牌\n遍布每条高速公路。",
-      "sub": "在高速公路上拥有多处广告位，为品牌带来高曝光度广告活动。",
+      "sub": "在高速公路上拥有多处广告位，为品牌带来高可见度广告活动。",
       "tag": "英德西亚广告"
     },
     "p8": {
@@ -535,7 +540,6 @@
     "backHome": "返回首页",
     "contactBody": "请发送邮件至 contactus@indexiagroup.com 或发送咨询，我们的团队将与您联系。",
     "contactHeading": "对此政策有疑问？",
-    "followUs": "Follow Us",
     "contactUs": "联系我们",
     "eyebrow": "法律",
     "lastUpdated": "最后更新",
@@ -885,13 +889,13 @@
         "desc": "印度北部最繁忙路口的公路单柱广告牌。",
         "highlights": [
           "位于NH-709B德里-德拉敦高速公路的战略位置",
-          "连接10个邦, 5亿人口覆盖，每天1000万+曝光",
+          "连接10个邦, 5亿人口覆盖，每天1000万+可见度",
           "360°可见度、高端高度的单柱广告牌",
           "端到端服务, 印刷、安装和维护"
         ],
         "location": "德里-德拉敦高速公路，沙姆利",
         "name": "英德西亚广告",
-        "overview": "英德西亚广告在沙姆利（印度北部枢纽）的德里-德拉敦高速公路（NH-709B）上运营高端单柱广告牌。我们的广告牌位于8条国家高速公路和2条主要公路的交汇处，连接10个邦，覆盖5亿人口，每天吸引超过1000万次曝光。单柱广告牌拥有高端高度和无遮挡的360°视角，为您的品牌带来最大可见度且零视觉干扰，并配以标志性的Bisleri绿品牌形象。从印刷、安装到维护，我们提供端到端服务。预订10×20英尺广告牌每月₹25,000，或12×24英尺广告牌每月₹36,000 ,  标准费率为每平方英尺每侧每月₹125，长期套餐可议。预订请致电86918 86919或011 4629 1155，或发送邮件至indexia.queries@gmail.com。",
+        "overview": "英德西亚广告在沙姆利（印度北部枢纽）的德里-德拉敦高速公路（NH-709B）上运营高端单柱广告牌。我们的广告牌位于8条国家高速公路和2条主要公路的交汇处，连接10个邦，覆盖5亿人口，每天吸引超过1000万次可见度。单柱广告牌拥有高端高度和无遮挡的360°视角，为您的品牌带来最大可见度且零视觉干扰，并配以标志性的Bisleri绿品牌形象。从印刷、安装到维护，我们提供端到端服务。预订10×20英尺广告牌每月₹25,000，或12×24英尺广告牌每月₹36,000 ,  标准费率为每平方英尺每侧每月₹125，长期套餐可议。",
         "services": [
           "广告牌10×20英尺, ₹25,000/月",
           "广告牌12×24英尺, ₹36,000/月",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20英尺",
     "standardRate": "标准费率：单侧每月每平方英尺₹125",
     "subtitle": "沙姆利德里-德拉敦高速公路上的高端单柱广告牌套餐",
-    "title": "可用尺寸与价格"
+    "title": "可用尺寸与价格",
+    "structureAlt": "德里–德拉敦公路上沙姆利单立柱广告牌结构图"
   },
   "warehouseContact": {
     "address": "办公地址",
@@ -1475,11 +1480,11 @@
     "advertising": {
       "eyebrow": "高速公路可见性",
       "heading": "50亿触达\n360°可见性",
-      "description": "德里-德拉敦高速公路上的优质单杆广告牌，连接10个邦，触达5000万人口，每日曝光超过1000万。",
+      "description": "德里-德拉敦高速公路上的优质单杆广告牌，连接10个邦，触达5000万人口，每日可见度超过1000万。",
       "stats": [
         {
           "value": "1Cr+",
-          "label": "每日曝光"
+          "label": "每日可见度"
         },
         {
           "value": "10",
@@ -1529,5 +1534,48 @@
     "delhiOffice": "213，二楼，Imperial Tower，\nGurudwara附近，\nC Block Commercial Complex，\nNaraina Vihar，New Delhi - 110028",
     "shamliOffice": "Meerut Karnal Road，\nShamli，Uttar Pradesh - 247776",
     "internationalOffice": "Avenida Perez Guerrero OE-375，\ny Avenida Quito，\nEcuador，South America"
+  },
+  "bookingModal": {
+    "eyebrow": "预订请求",
+    "title": "预订 {{item}}",
+    "subtitle": "填写一些详细信息，我们的团队将确认可用性、价格和后续步骤 — 无需拨打电话。",
+    "yourSelection": "您的选择",
+    "generalItem": "常规预订",
+    "name": "姓名",
+    "phone": "电话",
+    "email": "电子邮箱",
+    "companyBrand": "公司 / 品牌",
+    "companyPlaceholder": "您的公司或品牌名称",
+    "website": "网站（可选）",
+    "websitePlaceholder": "https://…",
+    "startDate": "首选开始日期",
+    "duration": "预订时长",
+    "duration_1_month": "1 个月",
+    "duration_3_months": "3 个月",
+    "duration_6_months": "6 个月",
+    "duration_12_months": "12 个月",
+    "duration_Long_term": "长期",
+    "artworkStatus": "设计稿状态",
+    "artworkPlaceholder": "请选择设计稿状态",
+    "artwork_ready": "设计稿已备好",
+    "artwork_design_needed": "需要设计支持",
+    "artwork_later": "稍后提供",
+    "notes": "还有什么我们需要了解的吗？",
+    "notesPlaceholderAd": "投放日期、参考素材、特殊要求…",
+    "notesPlaceholderWh": "仓储类型、出入库需求、货车动线…",
+    "submit": "提交预订请求",
+    "submitting": "发送中…",
+    "responseNote": "我们的团队在 24 小时内（周一至周六）回复。",
+    "successTitle": "已收到您的预订请求！",
+    "successBody": "感谢您 — 您的请求已提交给我们的团队。我们将在 24 小时内（周一至周六）确认可用性和价格。",
+    "close": "关闭",
+    "done": "完成",
+    "subjectPrefix": "预订请求",
+    "messageInterested": "我有意预订：{{item}}（{{company}}）。",
+    "messageDetail": "选择详情",
+    "errorCompany": "请输入您的公司或品牌名称。",
+    "errorStartDate": "请选择开始日期。",
+    "errorDuration": "请选择预订时长。",
+    "errorArtwork": "请选择设计稿状态。"
   }
 }

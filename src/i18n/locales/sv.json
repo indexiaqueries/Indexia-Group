@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Alla bolag",
-    "enquireSub": "Din förfrågan skickas med {{name}} överst, så att rätt team tar emot den först.",
+    "enquireSub": "Din förfrågan skickas direkt till {{name}}, så att rätt team tar emot den först.",
     "enquireTitle": "Kontakta {{name}}",
     "entryOf": "Post {{no}} av 08",
     "exploreServices": "Utforska tjänster",
@@ -309,7 +309,12 @@
     "statRegister": "Registreringspost",
     "statServices": "Tjänster",
     "whyChoose": "Varför välja oss",
-    "whyChooseDesc": "Vad som gör detta företag unikt."
+    "whyChooseDesc": "Vad som gör detta företag unikt.",
+    "bookingsPhone": "Ring oss",
+    "bookingsEmail": "Mejla oss",
+    "bookingsOffice": "Huvudkontor",
+    "brochure": "Se broschyren",
+    "serviceLabel": "Tjänst"
   },
   "companyLinkCard": {
     "visitPage": "Besök sidan",
@@ -535,7 +540,6 @@
     "backHome": "Tillbaka till start",
     "contactBody": "Skriv till oss på contactus@indexiagroup.com eller skicka en förfrågan så återkommer vårt team.",
     "contactHeading": "Frågor om denna policy?",
-    "followUs": "Follow Us",
     "contactUs": "Kontakta oss",
     "eyebrow": "Juridiskt",
     "lastUpdated": "Senast uppdaterad",
@@ -885,13 +889,13 @@
         "desc": "Premium motorvägstavlor vid norra Indiens mest trafikerade knutpunkt.",
         "highlights": [
           "Strategiska placeringar på NH-709B, Delhi–Dehradun-motorvägen",
-          "10 anslutna delstater, 50 crore räckvidd, över 1 crore daglig exponering",
+          "10 anslutna delstater, 50 crore räckvidd, över 1 crore daglig synlighet",
           "Enkelstolpiga unipoles med 360°-sikt och premiumhöjd",
           "End-to-end-tjänst, tryck, installation och underhåll"
         ],
         "location": "Delhi-Dehradun Motorväg, Shamli",
         "name": "Indexia Reklam",
-        "overview": "Indexia Advertising driver premium unipole-tavlor med enkel stolpe på Delhi–Dehradun-motorvägen (NH-709B) i Shamli, norra Indiens nav. Våra unipoles ligger vid korsningen av 8 nationella motorvägar och 2 större vägar, förbinder 10 delstater med en räckvidd på 50 crore människor och lockar över 1 crore daglig exponering. Enkelstolpiga unipoles med premiumhöjd och obehindrad 360°-sikt ger ditt varumärke maximal synlighet utan visuellt brus, med signaturfärgen Bisleri Green. Från tryck och installation till underhåll hanterar vi allt end-to-end. Boka en 10×20 fot unipole för ₹25 000/månad eller en 12×24 fot unipole för ₹36 000/månad, standardpris ₹125/kvm per sida per månad, förhandlingsbart för långtidspaket. För bokning, ring 86918 86919 eller 011 4629 1155, eller maila indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising driver premium unipole-tavlor med enkel stolpe på Delhi–Dehradun-motorvägen (NH-709B) i Shamli, norra Indiens nav. Våra unipoles ligger vid korsningen av 8 nationella motorvägar och 2 större vägar, förbinder 10 delstater med en räckvidd på 50 crore människor och lockar över 1 crore daglig synlighet. Enkelstolpiga unipoles med premiumhöjd och obehindrad 360°-sikt ger ditt varumärke maximal synlighet utan visuellt brus, med signaturfärgen Bisleri Green. Från tryck och installation till underhåll hanterar vi allt end-to-end. Boka en 10×20 fot unipole för ₹25 000/månad eller en 12×24 fot unipole för ₹36 000/månad, standardpris ₹125/kvm per sida per månad, förhandlingsbart för långtidspaket.",
         "services": [
           "Unipole 10×20 fot, ₹25 000/månad",
           "Unipole 12×24 fot, ₹36 000/månad",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20 fot",
     "standardRate": "Standardpris: ₹125/kvm per sida för 1 månad",
     "subtitle": "Premium unipole-paket på Delhi–Dehradun-motorvägen, Shamli",
-    "title": "Tillgängliga storlekar & priser"
+    "title": "Tillgängliga storlekar & priser",
+    "structureAlt": "Strukturdiagram över unipolen i Shamli längs Delhi–Dehradun Highway"
   },
   "warehouseContact": {
     "address": "Kontorsadress",
@@ -1529,5 +1534,48 @@
     "delhiOffice": "Delhi-kontor",
     "shamliOffice": "Shamli-kontor",
     "internationalOffice": "Internationellt Kontor"
+  },
+  "bookingModal": {
+    "eyebrow": "Bokningsförfrågan",
+    "title": "Boka {{item}}",
+    "subtitle": "Dela några uppgifter så bekräftar vårt team tillgänglighet, priser och nästa steg — inget telefonsamtal behövs.",
+    "yourSelection": "Ditt val",
+    "generalItem": "Allmän bokning",
+    "name": "Namn",
+    "phone": "Telefon",
+    "email": "E-post",
+    "companyBrand": "Företag / Varumärke",
+    "companyPlaceholder": "Ditt företags- eller varumärkesnamn",
+    "website": "Webbplats (valfritt)",
+    "websitePlaceholder": "https://…",
+    "startDate": "Önskat startdatum",
+    "duration": "Bokningsperiod",
+    "duration_1_month": "1 månad",
+    "duration_3_months": "3 månader",
+    "duration_6_months": "6 månader",
+    "duration_12_months": "12 månader",
+    "duration_Long_term": "Långsiktigt",
+    "artworkStatus": "Status för grafik",
+    "artworkPlaceholder": "Välj status för grafiken",
+    "artwork_ready": "Grafiken är klar",
+    "artwork_design_needed": "Behöver designstöd",
+    "artwork_later": "Delas senare",
+    "notes": "Något annat vi bör veta?",
+    "notesPlaceholderAd": "Kampanjdatum, referenser, särskilda önskemål…",
+    "notesPlaceholderWh": "Lagringstyp, åtkomstbehov, lastbilstrafik…",
+    "submit": "Skicka bokningsförfrågan",
+    "submitting": "Skickar…",
+    "responseNote": "Vårt team svarar inom 24 timmar, mån – lör.",
+    "successTitle": "Bokningsförfrågan mottagen!",
+    "successBody": "Tack — din förfrågan är hos vårt team. Vi bekräftar tillgänglighet och priser inom 24 timmar, mån – lör.",
+    "close": "Stäng",
+    "done": "Klar",
+    "subjectPrefix": "Bokningsförfrågan",
+    "messageInterested": "Jag är intresserad av att boka: {{item}} ({{company}}).",
+    "messageDetail": "Valda detaljer",
+    "errorCompany": "Ange ditt företags- eller varumärkesnamn.",
+    "errorStartDate": "Välj ett startdatum.",
+    "errorDuration": "Välj en period.",
+    "errorArtwork": "Välj status för grafiken."
   }
 }

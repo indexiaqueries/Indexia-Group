@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Alle Bedrijven",
-    "enquireSub": "Uw vraag heeft {{name}} bovenaan vermeld, zodat het juiste team deze als eerste oppakt.",
+    "enquireSub": "Uw vraag wordt rechtstreeks doorgestuurd naar {{name}}, zodat het juiste team deze als eerste oppakt.",
     "enquireTitle": "Neem contact op met {{name}}",
     "entryOf": "Vermelding {{no}} van 08",
     "exploreServices": "Ontdek Diensten",
@@ -309,7 +309,12 @@
     "statRegister": "Registervermelding",
     "statServices": "Diensten",
     "whyChoose": "Waarom voor ons kiezen",
-    "whyChooseDesc": "Wat dit bedrijf onderscheidt van de rest."
+    "whyChooseDesc": "Wat dit bedrijf onderscheidt van de rest.",
+    "bookingsPhone": "Bel ons",
+    "bookingsEmail": "Mail ons",
+    "bookingsOffice": "Hoofdkantoor",
+    "brochure": "Brochure bekijken",
+    "serviceLabel": "Dienst"
   },
   "companyLinkCard": {
     "visitPage": "Pagina bezoeken",
@@ -535,7 +540,6 @@
     "backHome": "Terug Naar Home",
     "contactBody": "Schrijf ons op contactus@indexiagroup.com of stuur een vraag en ons team neemt contact met u op.",
     "contactHeading": "Vragen over dit beleid?",
-    "followUs": "Follow Us",
     "contactUs": "Contact",
     "eyebrow": "Juridisch",
     "lastUpdated": "Laatst bijgewerkt",
@@ -885,13 +889,13 @@
         "desc": "Premium snelwegreclameborden op het drukste knooppunt van Noord-India.",
         "highlights": [
           "Strategische plaatsingen op NH-709B, de Delhi–Dehradun-snelweg",
-          "10 verbonden staten, 50 crore mensen bereikt, 1+ crore dagelijkse exposure",
+          "10 verbonden staten, 50 crore mensen bereikt, 1+ crore dagelijkse zichtbaarheid",
           "Single-pole unipoles met 360°-zichtbaarheid en premium hoogte",
           "End-to-end service, drukwerk, installatie en onderhoud"
         ],
         "location": "Delhi-Dehradun Snelweg, Shamli",
         "name": "Indexia Reclame",
-        "overview": "Indexia Advertising exploiteert premium single-pole unipole-reclameborden op de Delhi–Dehradun-snelweg (NH-709B) in Shamli, het centrum van Noord-India. Onze unipoles liggen op het knooppunt van 8 nationale snelwegen en 2 grote hoofdwegen, verbinden 10 staten met een bereik van 50 crore mensen en genereren dagelijks 1+ crore exposure. Single-pole unipoles met premium hoogte en onbelemmerde 360°-zichthoeken geven uw merk maximale zichtbaarheid zonder visuele rommel, ondersteund door de kenmerkende Bisleri Green-branding. Van drukwerk en installatie tot onderhoud: wij regelen alles end-to-end. Boek een 10×20 ft unipole voor ₹25.000/maand of een 12×24 ft unipole voor ₹36.000/maand, standaardtarief ₹125/ft² per zijde per maand, onderhandelbaar voor langetermijnpakketten. Voor boekingen belt u 86918 86919 of 011 4629 1155, of mailt u indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising exploiteert premium single-pole unipole-reclameborden op de Delhi–Dehradun-snelweg (NH-709B) in Shamli, het centrum van Noord-India. Onze unipoles liggen op het knooppunt van 8 nationale snelwegen en 2 grote hoofdwegen, verbinden 10 staten met een bereik van 50 crore mensen en genereren dagelijks 1+ crore zichtbaarheid. Single-pole unipoles met premium hoogte en onbelemmerde 360°-zichthoeken geven uw merk maximale zichtbaarheid zonder visuele rommel, ondersteund door de kenmerkende Bisleri Green-branding. Van drukwerk en installatie tot onderhoud: wij regelen alles end-to-end. Boek een 10×20 ft unipole voor ₹25.000/maand of een 12×24 ft unipole voor ₹36.000/maand, standaardtarief ₹125/ft² per zijde per maand, onderhandelbaar voor langetermijnpakketten.",
         "services": [
           "Unipole 10×20 ft, ₹25.000/maand",
           "Unipole 12×24 ft, ₹36.000/maand",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20 ft",
     "standardRate": "Standaardtarief: ₹125/ft² per zijde per maand",
     "subtitle": "Premium unipole-pakketten op de Delhi–Dehradun-snelweg, Shamli",
-    "title": "Beschikbare Afmetingen & Prijzen"
+    "title": "Beschikbare Afmetingen & Prijzen",
+    "structureAlt": "Structuurdiagram van de unipole in Shamli aan de Delhi–Dehradun Highway"
   },
   "warehouseContact": {
     "address": "Kantooradres",
@@ -1529,5 +1534,48 @@
     "delhiOffice": "Delhi Kantoor",
     "shamliOffice": "Shamli Kantoor",
     "internationalOffice": "Internationaal Kantoor"
+  },
+  "bookingModal": {
+    "eyebrow": "Boekingsverzoek",
+    "title": "Boek {{item}}",
+    "subtitle": "Deel enkele gegevens en ons team bevestigt beschikbaarheid, prijzen en vervolgstappen — geen telefoongesprek nodig.",
+    "yourSelection": "Uw selectie",
+    "generalItem": "Algemene boeking",
+    "name": "Naam",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "companyBrand": "Bedrijf / Merk",
+    "companyPlaceholder": "Uw bedrijfs- of merknaam",
+    "website": "Website (optioneel)",
+    "websitePlaceholder": "https://…",
+    "startDate": "Gewenste startdatum",
+    "duration": "Boekingsduur",
+    "duration_1_month": "1 maand",
+    "duration_3_months": "3 maanden",
+    "duration_6_months": "6 maanden",
+    "duration_12_months": "12 maanden",
+    "duration_Long_term": "Lange termijn",
+    "artworkStatus": "Status artwork",
+    "artworkPlaceholder": "Selecteer artworkstatus",
+    "artwork_ready": "Artwork is klaar",
+    "artwork_design_needed": "Ontwerpondersteuning nodig",
+    "artwork_later": "Wordt later gedeeld",
+    "notes": "Iets anders dat we moeten weten?",
+    "notesPlaceholderAd": "Campagnedatum, referenties, speciale verzoeken…",
+    "notesPlaceholderWh": "Opslagtype, toegangsbehoeften, vrachtbewegingen…",
+    "submit": "Boeking aanvragen",
+    "submitting": "Verzenden…",
+    "responseNote": "Ons team reageert binnen 24 uur, ma – za.",
+    "successTitle": "Boekingsverzoek ontvangen!",
+    "successBody": "Bedankt — uw verzoek is bij ons team. We bevestigen beschikbaarheid en prijzen binnen 24 uur, ma – za.",
+    "close": "Sluiten",
+    "done": "Klaar",
+    "subjectPrefix": "Boekingsverzoek",
+    "messageInterested": "Ik ben geïnteresseerd in het boeken van: {{item}} ({{company}}).",
+    "messageDetail": "Selectiedetails",
+    "errorCompany": "Vul uw bedrijfs- of merknaam in.",
+    "errorStartDate": "Kies een startdatum.",
+    "errorDuration": "Selecteer een duur.",
+    "errorArtwork": "Selecteer de status van uw artwork."
   }
 }

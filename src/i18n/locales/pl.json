@@ -26,7 +26,7 @@
     "c6Name": "Indexia Magazyny",
     "c6Tag": "Grunt Strategiczny",
     "c7Body": "Indexia Advertising prowadzi premium reklamy.",
-    "c7Highlights": "NH-709B Autostrada Delhi-Dehradun,10 Połączonych Stanów,Widoczność 360°,1+ Crore Dzienna Ekspozycja",
+    "c7Highlights": "NH-709B Autostrada Delhi-Dehradun,10 Połączonych Stanów,Widoczność 360°,1+ Crore Dzienna Widoczność",
     "c7Name": "Indexia Reklama",
     "c7Tag": "Reklama na Autostradach",
     "c8Body": "Indexia Foundation to ramię wpływu społecznego Indexia Group.",
@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Wszystkie Firmy",
-    "enquireSub": "Twoje zapytanie ma {{name}} na początku, więc właściwy zespół podejmie je jako pierwszy.",
+    "enquireSub": "Twoje zapytanie trafia bezpośrednio do {{name}}, więc właściwy zespół zajmie się nim jako pierwszy.",
     "enquireTitle": "Skontaktuj się z {{name}}",
     "entryOf": "Wpis {{no}} z 08",
     "exploreServices": "Poznaj Usługi",
@@ -309,7 +309,12 @@
     "statRegister": "Wpis Rejestrowy",
     "statServices": "Usługi",
     "whyChoose": "Dlaczego wybrać nas",
-    "whyChooseDesc": "Co wyróżnia tę firmę na tle innych."
+    "whyChooseDesc": "Co wyróżnia tę firmę na tle innych.",
+    "bookingsPhone": "Zadzwoń do nas",
+    "bookingsEmail": "Napisz do nas",
+    "bookingsOffice": "Biuro główne",
+    "brochure": "Zobacz broszurę",
+    "serviceLabel": "Usługa"
   },
   "companyLinkCard": {
     "visitPage": "Odwiedź stronę",
@@ -536,7 +541,6 @@
     "backHome": "Wróć Na Stronę Główną",
     "contactBody": "Napisz do nas na contactus@indexiagroup.com lub wyślij zapytanie, a nasz zespół się z Tobą skontaktuje.",
     "contactHeading": "Masz pytania dotyczące tej polityki?",
-    "followUs": "Follow Us",
     "contactUs": "Kontakt",
     "eyebrow": "Prawne",
     "lastUpdated": "Ostatnia aktualizacja",
@@ -892,7 +896,7 @@
         ],
         "location": "Autostrada Delhi-Dehradun, Shamli",
         "name": "Indexia Reklama",
-        "overview": "Indexia Advertising obsługuje reklamy unipole premium na pojedynczych słupach na autostradzie Delhi–Dehradun (NH-709B) w Shamli, centrum północnych Indii. Położone na skrzyżowaniu 8 krajowych autostrad i 2 głównych dróg nasze unipole łączą 10 stanów z zasięgiem 50 crore osób i generują codzienny zasięg ponad 1 crore. Unipole na pojedynczych słupach z premium wysokością i niezakłóconym kątem widzenia 360° dają Twojej marce maksymalną widoczność bez wizualnego bałaganu, z charakterystycznym brandingiem Bisleri Green. Od druku i instalacji po konserwację, zajmujemy się wszystkim kompleksowo. Zarezerwuj unipole 10×20 stóp za ₹25 000/mies. lub unipole 12×24 stóp za ₹36 000/mies., stawka standardowa ₹125/stopa kw. za stronę miesięcznie, negocjowalna przy pakietach długoterminowych. W sprawie rezerwacji zadzwoń pod 86918 86919 lub 011 4629 1155 albo napisz na indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising obsługuje reklamy unipole premium na pojedynczych słupach na autostradzie Delhi–Dehradun (NH-709B) w Shamli, centrum północnych Indii. Położone na skrzyżowaniu 8 krajowych autostrad i 2 głównych dróg nasze unipole łączą 10 stanów z zasięgiem 50 crore osób i generują codzienny zasięg ponad 1 crore. Unipole na pojedynczych słupach z premium wysokością i niezakłóconym kątem widzenia 360° dają Twojej marce maksymalną widoczność bez wizualnego bałaganu, z charakterystycznym brandingiem Bisleri Green. Od druku i instalacji po konserwację, zajmujemy się wszystkim kompleksowo. Zarezerwuj unipole 10×20 stóp za ₹25 000/mies. lub unipole 12×24 stóp za ₹36 000/mies., stawka standardowa ₹125/stopa kw. za stronę miesięcznie, negocjowalna przy pakietach długoterminowych.",
         "services": [
           "Unipole 10×20 stóp, ₹25 000/mies.",
           "Unipole 12×24 stóp, ₹36 000/mies.",
@@ -1237,7 +1241,8 @@
     "sizeSmall": "10 × 20 stóp",
     "standardRate": "Stawka Standardowa: ₹125/stopa kw. za jedną stronę za miesiąc",
     "subtitle": "Premium pakiety unipole na autostradzie Delhi–Dehradun, Shamli",
-    "title": "Dostępne Rozmiary i Ceny"
+    "title": "Dostępne Rozmiary i Ceny",
+    "structureAlt": "Diagram konstrukcji unipol w Shamli przy drodze Delhi–Dehradun"
   },
   "warehouseContact": {
     "address": "Adres Biura",
@@ -1488,7 +1493,7 @@
         },
         {
           "value": "360°",
-          "label": "Ekspozycja"
+          "label": "Widoczność"
         }
       ],
       "bullets": [
@@ -1530,5 +1535,48 @@
     "delhiOffice": "Biuro Delhi",
     "shamliOffice": "Biuro Shamli",
     "internationalOffice": "Biuro Międzynarodowe"
+  },
+  "bookingModal": {
+    "eyebrow": "Zapytanie o rezerwację",
+    "title": "Zarezerwuj {{item}}",
+    "subtitle": "Prześlij kilka szczegółów, a nasz zespół potwierdzi dostępność, ceny i kolejne kroki — bez rozmowy telefonicznej.",
+    "yourSelection": "Twój wybór",
+    "generalItem": "Rezerwacja ogólna",
+    "name": "Imię i nazwisko",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "companyBrand": "Firma / Marka",
+    "companyPlaceholder": "Nazwa Twojej firmy lub marki",
+    "website": "Strona www (opcjonalnie)",
+    "websitePlaceholder": "https://…",
+    "startDate": "Preferowana data rozpoczęcia",
+    "duration": "Okres rezerwacji",
+    "duration_1_month": "1 miesiąc",
+    "duration_3_months": "3 miesiące",
+    "duration_6_months": "6 miesięcy",
+    "duration_12_months": "12 miesięcy",
+    "duration_Long_term": "Długoterminowo",
+    "artworkStatus": "Status grafiki",
+    "artworkPlaceholder": "Wybierz status grafiki",
+    "artwork_ready": "Grafika jest gotowa",
+    "artwork_design_needed": "Potrzebne wsparcie projektowe",
+    "artwork_later": "Prześlemy później",
+    "notes": "Coś jeszcze powinniśmy wiedzieć?",
+    "notesPlaceholderAd": "Daty kampanii, materiały, specjalne życzenia…",
+    "notesPlaceholderWh": "Rodzaj składowania, wymagania dot. dostępu, ruch ciężarówek…",
+    "submit": "Zapytaj o rezerwację",
+    "submitting": "Wysyłanie…",
+    "responseNote": "Nasz zespół odpowiada w ciągu 24 godzin, pon – sob.",
+    "successTitle": "Otrzymano zapytanie o rezerwację!",
+    "successBody": "Dziękujemy — Twoje zapytanie trafiło do naszego zespołu. Potwierdzimy dostępność i ceny w ciągu 24 godzin, pon – sob.",
+    "close": "Zamknij",
+    "done": "Gotowe",
+    "subjectPrefix": "Zapytanie o rezerwację",
+    "messageInterested": "Chcę zarezerwować: {{item}} ({{company}}).",
+    "messageDetail": "Szczegóły wyboru",
+    "errorCompany": "Podaj nazwę firmy lub marki.",
+    "errorStartDate": "Wybierz datę rozpoczęcia.",
+    "errorDuration": "Wybierz okres.",
+    "errorArtwork": "Wybierz status grafiki."
   }
 }

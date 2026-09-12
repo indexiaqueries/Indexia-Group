@@ -26,7 +26,7 @@
     "c6Name": "인덱시아 창고",
     "c6Tag": "전략적 토지",
     "c7Body": "Indexia Advertising는 프리미엄 광고를 운영합니다.",
-    "c7Highlights": "NH-709B 델리-데흐라둔 고속도로,10개 주 연결,360° 가시성,1+ 크로어 일일 노출",
+    "c7Highlights": "NH-709B 델리-데흐라둔 고속도로,10개 주 연결,360° 가시성,1+ 크로어 일일 가시성",
     "c7Name": "인덱시아 광고",
     "c7Tag": "고속도로 광고",
     "c8Body": "Indexia Foundation은 Indexia Group의 사회적 영향 부문입니다.",
@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "전체 회사",
-    "enquireSub": "문의 상단에 {{name}} 이름이 명시되어 올바른 팀이 먼저 확인합니다.",
+    "enquireSub": "문의는 {{name}} 팀에 직접 전달되어 올바른 팀이 먼저 확인합니다.",
     "enquireTitle": "{{name}}에 문의하세요",
     "entryOf": "항목 {{no}} / 08",
     "exploreServices": "서비스 살펴보기",
@@ -309,7 +309,12 @@
     "statRegister": "등록 항목",
     "statServices": "서비스",
     "whyChoose": "선택하는 이유",
-    "whyChooseDesc": "이 회사를 다른 회사와 구별하는 점."
+    "whyChooseDesc": "이 회사를 다른 회사와 구별하는 점.",
+    "bookingsPhone": "전화 문의",
+    "bookingsEmail": "이메일 문의",
+    "bookingsOffice": "본사 사무실",
+    "brochure": "브로슈어 보기",
+    "serviceLabel": "서비스"
   },
   "companyLinkCard": {
     "visitPage": "페이지 방문",
@@ -535,7 +540,6 @@
     "backHome": "홈으로 돌아가기",
     "contactBody": "contactus@indexiagroup.com으로 연락하거나 문의를 보내주시면 팀이 답변드리겠습니다.",
     "contactHeading": "이 정책에 대해 궁금한 점이 있으신가요?",
-    "followUs": "Follow Us",
     "contactUs": "문의하기",
     "eyebrow": "법적 정보",
     "lastUpdated": "최종 업데이트",
@@ -885,13 +889,13 @@
         "desc": "북인도에서 가장 분주한 교차로의 프리미엄 고속도로 옥외광고.",
         "highlights": [
           "NH-709B 델리–데라둔 고속도로 전략적 위치",
-          "10개 연결 주, 5억 명 도달, 일일 1천만 이상 노출",
+          "10개 연결 주, 5억 명 도달, 일일 1천만 이상 가시성",
           "360° 가시성과 프리미엄 높이의 단일 기둥 유니폴",
           "종합 서비스, 인쇄, 설치, 유지보수"
         ],
         "location": "델리-데라둔 고속도로, 샴리",
         "name": "인덱시아 광고",
-        "overview": "Indexia Advertising은 북인도의 중심인 샴리 델리–데라둔 고속도로(NH-709B)에서 프리미엄 단일 기둥 유니폴 옥외광고를 운영합니다. 8개 국도와 2개 주요 고속도로가 만나는 지점에 위치한 유니폴은 10개 주, 5억 명 인구에 도달하며 일일 1천만 이상의 노출을 창출합니다. 프리미엄 높이와 방해받지 않는 360° 시야를 갖춘 단일 기둥 유니폴은 시각적 혼잡 없이 브랜드에 최대 가시성을 제공하며, 시그니처 Bisleri Green 브랜딩이 적용됩니다. 인쇄와 설치에서 유지보수까지 모든 것을 원스톱으로 처리합니다. 10×20피트 유니폴 월 ₹25,000 또는 12×24피트 유니폴 월 ₹36,000에 예약하세요, 기준 요금은 면당 월 ₹125/제곱피트이며 장기 패키지는 협상 가능합니다. 예약 문의: 86918 86919 또는 011 4629 1155, 이메일 indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising은 북인도의 중심인 샴리 델리–데라둔 고속도로(NH-709B)에서 프리미엄 단일 기둥 유니폴 옥외광고를 운영합니다. 8개 국도와 2개 주요 고속도로가 만나는 지점에 위치한 유니폴은 10개 주, 5억 명 인구에 도달하며 일일 1천만 이상의 가시성을 창출합니다. 프리미엄 높이와 방해받지 않는 360° 시야를 갖춘 단일 기둥 유니폴은 시각적 혼잡 없이 브랜드에 최대 가시성을 제공하며, 시그니처 Bisleri Green 브랜딩이 적용됩니다. 인쇄와 설치에서 유지보수까지 모든 것을 원스톱으로 처리합니다. 10×20피트 유니폴 월 ₹25,000 또는 12×24피트 유니폴 월 ₹36,000에 예약하세요, 기준 요금은 면당 월 ₹125/제곱피트이며 장기 패키지는 협상 가능합니다.",
         "services": [
           "유니폴 10×20피트, 월 ₹25,000",
           "유니폴 12×24피트, 월 ₹36,000",
@@ -1236,7 +1240,8 @@
     "sizeSmall": "10 × 20피트",
     "standardRate": "기준 요금: 1개월 1면 ₹125/제곱피트",
     "subtitle": "샴리, 델리–데라둔 고속도로의 프리미엄 유니폴 패키지",
-    "title": "이용 가능한 크기 및 요금"
+    "title": "이용 가능한 크기 및 요금",
+    "structureAlt": "델리–데라둔 고속도로 샴리 유니폴 구조 다이어그램"
   },
   "warehouseContact": {
     "address": "사무실 주소",
@@ -1475,11 +1480,11 @@
     "advertising": {
       "eyebrow": "고속도로 가시성",
       "heading": "50크로어 리치\n360° 가시성",
-      "description": "델리-데라둔 고속도로의 프리미엄 단일 기둥 광고판. 10개 주를 연결하고 5천만 인구에 도달하며, 매일 100만 이상의 노출.",
+      "description": "델리-데라둔 고속도로의 프리미엄 단일 기둥 광고판. 10개 주를 연결하고 5천만 인구에 도달하며, 매일 100만 이상의 가시성.",
       "stats": [
         {
           "value": "1Cr+",
-          "label": "일일 노출"
+          "label": "일일 가시성"
         },
         {
           "value": "10",
@@ -1529,5 +1534,48 @@
     "delhiOffice": "213, 2층, Imperial Tower,\nGurudwara 근처,\nC Block Commercial Complex,\nNaraina Vihar, New Delhi - 110028",
     "shamliOffice": "샴리 사무소",
     "internationalOffice": "해외 사무소"
+  },
+  "bookingModal": {
+    "eyebrow": "예약 요청",
+    "title": "{{item}} 예약",
+    "subtitle": "간단한 정보를 보내주시면 팀에서 이용 가능 여부, 가격, 다음 단계를 안내해 드립니다 — 전화가 필요 없습니다.",
+    "yourSelection": "선택 항목",
+    "generalItem": "일반 예약",
+    "name": "이름",
+    "phone": "전화번호",
+    "email": "이메일",
+    "companyBrand": "회사 / 브랜드",
+    "companyPlaceholder": "회사 또는 브랜드 이름",
+    "website": "웹사이트(선택)",
+    "websitePlaceholder": "https://…",
+    "startDate": "희망 시작일",
+    "duration": "예약 기간",
+    "duration_1_month": "1개월",
+    "duration_3_months": "3개월",
+    "duration_6_months": "6개월",
+    "duration_12_months": "12개월",
+    "duration_Long_term": "장기",
+    "artworkStatus": "디자인 상태",
+    "artworkPlaceholder": "디자인 상태 선택",
+    "artwork_ready": "디자인 준비 완료",
+    "artwork_design_needed": "디자인 지원 필요",
+    "artwork_later": "추후 공유 예정",
+    "notes": "기타 알려주실 내용이 있나요?",
+    "notesPlaceholderAd": "캠페인 일정, 레퍼런스, 특별 요청 사항…",
+    "notesPlaceholderWh": "보관 유형, 출입 요건, 트럭 동선…",
+    "submit": "예약 요청",
+    "submitting": "전송 중…",
+    "responseNote": "팀이 24시간 이내(월~토)에 응답합니다.",
+    "successTitle": "예약 요청이 접수되었습니다!",
+    "successBody": "감사합니다 — 요청이 팀에 전달되었습니다. 24시간 이내(월~토)에 이용 가능 여부와 가격을 안내해 드립니다.",
+    "close": "닫기",
+    "done": "완료",
+    "subjectPrefix": "예약 요청",
+    "messageInterested": "다음 예약에 관심이 있습니다: {{item}} ({{company}}).",
+    "messageDetail": "선택 세부정보",
+    "errorCompany": "회사 또는 브랜드 이름을 입력해 주세요.",
+    "errorStartDate": "시작일을 선택해 주세요.",
+    "errorDuration": "기간을 선택해 주세요.",
+    "errorArtwork": "디자인 상태를 선택해 주세요."
   }
 }

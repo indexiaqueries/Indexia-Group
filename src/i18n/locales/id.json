@@ -287,7 +287,7 @@
   },
   "companyDetail": {
     "backAll": "Semua Perusahaan",
-    "enquireSub": "Pertanyaan Anda diberi nama {{name}} di bagian atas, sehingga tim yang tepat menanganinya lebih dulu.",
+    "enquireSub": "Pertanyaan Anda diteruskan langsung ke {{name}}, sehingga tim yang tepat menanganinya lebih dulu.",
     "enquireTitle": "Hubungi {{name}}",
     "entryOf": "Entri {{no}} dari 08",
     "exploreServices": "Jelajahi Layanan",
@@ -309,7 +309,12 @@
     "statRegister": "Entri Registrasi",
     "statServices": "Layanan",
     "whyChoose": "Mengapa memilih kami",
-    "whyChooseDesc": "Apa yang membedakan perusahaan ini dari yang lain."
+    "whyChooseDesc": "Apa yang membedakan perusahaan ini dari yang lain.",
+    "bookingsPhone": "Hubungi kami",
+    "bookingsEmail": "Kirim email",
+    "bookingsOffice": "Kantor pusat",
+    "brochure": "Lihat brosur",
+    "serviceLabel": "Layanan"
   },
   "companyLinkCard": {
     "visitPage": "Kunjungi halaman",
@@ -535,7 +540,6 @@
     "backHome": "Kembali ke Beranda",
     "contactBody": "Tulis ke kami di contactus@indexiagroup.com atau kirim pertanyaan dan tim kami akan menghubungi Anda.",
     "contactHeading": "Punya pertanyaan tentang kebijakan ini?",
-    "followUs": "Follow Us",
     "contactUs": "Hubungi Kami",
     "eyebrow": "Hukum",
     "lastUpdated": "Terakhir diperbarui",
@@ -885,13 +889,13 @@
         "desc": "Papan iklan jalan tol premium di persimpangan tersibuk India Utara.",
         "highlights": [
           "Penempatan strategis di NH-709B, jalan tol Delhi–Dehradun",
-          "10 negara bagian terhubung, jangkauan 50 crore penduduk, paparan harian 1+ crore",
+          "10 negara bagian terhubung, jangkauan 50 crore penduduk, visibilitas harian 1+ crore",
           "Unipole tiang tunggal dengan visibilitas 360° dan tinggi premium",
           "Layanan menyeluruh, pencetakan, pemasangan, dan perawatan"
         ],
         "location": "Jalan Tol Delhi-Dehradun, Shamli",
         "name": "Indexia Periklanan",
-        "overview": "Indexia Advertising mengoperasikan papan iklan unipole tiang tunggal premium di Jalan Tol Delhi–Dehradun (NH-709B) di Shamli, pusat India Utara. Berada di persimpangan 8 jalan tol nasional dan 2 jalan raya utama, unipole kami menghubungkan 10 negara bagian dengan jangkauan 50 crore penduduk dan menarik paparan harian 1+ crore. Unipole tiang tunggal dengan tinggi premium dan sudut pandang 360° tanpa hambatan memberi brand Anda visibilitas maksimal tanpa kekacauan visual, didukung branding khas Bisleri Green. Dari pencetakan dan pemasangan hingga perawatan, kami menangani semuanya secara menyeluruh. Pesan unipole 10×20 kaki seharga ₹25.000/bulan atau unipole 12×24 kaki seharga ₹36.000/bulan, tarif standar ₹125/kaki persegi per sisi per bulan, dapat dinegosiasikan untuk paket jangka panjang. Untuk pemesanan hubungi 86918 86919 atau 011 4629 1155, atau email indexia.queries@gmail.com.",
+        "overview": "Indexia Advertising mengoperasikan papan iklan unipole tiang tunggal premium di Jalan Tol Delhi–Dehradun (NH-709B) di Shamli, pusat India Utara. Berada di persimpangan 8 jalan tol nasional dan 2 jalan raya utama, unipole kami menghubungkan 10 negara bagian dengan jangkauan 50 crore penduduk dan menarik visibilitas harian 1+ crore. Unipole tiang tunggal dengan tinggi premium dan sudut pandang 360° tanpa hambatan memberi brand Anda visibilitas maksimal tanpa kekacauan visual, didukung branding khas Bisleri Green. Dari pencetakan dan pemasangan hingga perawatan, kami menangani semuanya secara menyeluruh. Pesan unipole 10×20 kaki seharga ₹25.000/bulan atau unipole 12×24 kaki seharga ₹36.000/bulan, tarif standar ₹125/kaki persegi per sisi per bulan, dapat dinegosiasikan untuk paket jangka panjang.",
         "services": [
           "Unipole 10×20 kaki, ₹25.000/bulan",
           "Unipole 12×24 kaki, ₹36.000/bulan",
@@ -1237,7 +1241,8 @@
     "sizeSmall": "10 × 20 kaki",
     "standardRate": "Tarif Standar: ₹125/kaki persegi per sisi per bulan",
     "subtitle": "Paket unipole premium di Jalan Tol Delhi–Dehradun, Shamli",
-    "title": "Ukuran & Harga Tersedia"
+    "title": "Ukuran & Harga Tersedia",
+    "structureAlt": "Diagram struktur unipole Shamli di Jalan Delhi–Dehradun"
   },
   "warehouseContact": {
     "address": "Alamat Kantor",
@@ -1530,5 +1535,48 @@
     "delhiOffice": "Kantor Delhi",
     "shamliOffice": "Kantor Shamli",
     "internationalOffice": "Kantor Internasional"
+  },
+  "bookingModal": {
+    "eyebrow": "Permintaan Pemesanan",
+    "title": "Pesan {{item}}",
+    "subtitle": "Bagikan beberapa detail dan tim kami akan mengonfirmasi ketersediaan, harga, dan langkah berikutnya — tanpa perlu telepon.",
+    "yourSelection": "Pilihan Anda",
+    "generalItem": "Pemesanan Umum",
+    "name": "Nama",
+    "phone": "Telepon",
+    "email": "Email",
+    "companyBrand": "Perusahaan / Merek",
+    "companyPlaceholder": "Nama perusahaan atau merek Anda",
+    "website": "Situs web (opsional)",
+    "websitePlaceholder": "https://…",
+    "startDate": "Tanggal mulai yang diinginkan",
+    "duration": "Durasi pemesanan",
+    "duration_1_month": "1 bulan",
+    "duration_3_months": "3 bulan",
+    "duration_6_months": "6 bulan",
+    "duration_12_months": "12 bulan",
+    "duration_Long_term": "Jangka panjang",
+    "artworkStatus": "Status desain",
+    "artworkPlaceholder": "Pilih status desain",
+    "artwork_ready": "Desain sudah siap",
+    "artwork_design_needed": "Perlu dukungan desain",
+    "artwork_later": "Akan dikirim nanti",
+    "notes": "Ada lagi yang perlu kami ketahui?",
+    "notesPlaceholderAd": "Tanggal kampanye, referensi, permintaan khusus…",
+    "notesPlaceholderWh": "Jenis penyimpanan, kebutuhan akses, pergerakan truk…",
+    "submit": "Kirim Permintaan",
+    "submitting": "Mengirim…",
+    "responseNote": "Tim kami merespons dalam 24 jam, Sen – Sab.",
+    "successTitle": "Permintaan pemesanan diterima!",
+    "successBody": "Terima kasih — permintaan Anda sudah kami terima. Kami akan mengonfirmasi ketersediaan dan harga dalam 24 jam, Sen – Sab.",
+    "close": "Tutup",
+    "done": "Selesai",
+    "subjectPrefix": "Permintaan Pemesanan",
+    "messageInterested": "Saya tertarik memesan: {{item}} ({{company}}).",
+    "messageDetail": "Detail pilihan",
+    "errorCompany": "Masukkan nama perusahaan atau merek Anda.",
+    "errorStartDate": "Pilih tanggal mulai.",
+    "errorDuration": "Pilih durasi.",
+    "errorArtwork": "Pilih status desain Anda."
   }
 }
