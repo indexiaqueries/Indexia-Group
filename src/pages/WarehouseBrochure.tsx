@@ -6,7 +6,7 @@ const WarehouseBrochure = () => (
     backTo="/warehouse"
     pdfPath="/brochures/indexia-warehouse.pdf"
     pdfName="Indexia-Warehouse-Brochure.pdf"
-    band="#26ae90"
+    band="var(--color-navy)"
   />
 );
 
