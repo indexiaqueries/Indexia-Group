@@ -13,6 +13,8 @@ type FieldProps = {
   error?: string;
   onChange: (event: FormFieldEvent) => void;
   onBlur: (event: FormBlurEvent) => void;
+  /** Tighter paddings for single-viewport layouts. */
+  compact?: boolean;
 };
 
 const Field = ({
@@ -26,8 +28,9 @@ const Field = ({
   error,
   onChange,
   onBlur,
+  compact = false,
 }: FieldProps) => (
-  <div className="space-y-2">
+  <div className={compact ? "space-y-1.5" : "space-y-2"}>
     <label htmlFor={id} className={ledgerLabel}>
       {label}
     </label>
@@ -43,7 +46,7 @@ const Field = ({
       required={required}
       aria-invalid={!!error}
       aria-describedby={error ? `${id}-error` : undefined}
-      className="h-11 rounded-xl px-4 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400"
+      className={`${compact ? "h-10" : "h-11"} rounded-xl px-4 text-sm text-slate-900 bg-white border-slate-300 placeholder:text-slate-400`}
     />
     {error && (
       <p id={`${id}-error`} role="alert" className={errorText}>
