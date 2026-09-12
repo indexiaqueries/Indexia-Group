@@ -93,7 +93,8 @@ Copy `.env.example` to `.env.local` and configure:
 | `NEWSDATA_API_KEY` | NewsData.io key for the scheduled news fetcher |
 | `PORT` | Express backend port (default 3001) |
 | `CORS_ORIGINS` | Comma-separated origins allowed to call the API cross-origin (defaults to the production site + local dev) |
-| `VITE_API_URL` | Optional API base URL when frontend and backend are on different origins |
+| `COOKIE_SAMESITE` | Session cookie SameSite policy; production defaults to `none` for the split deployment, override with `lax` for same-origin hosting |
+| `VITE_API_URL` | Optional API base URL when frontend and backend are on different origins. Production builds fall back to the Render API URL, so only set it to override |
 
 ## Admin Authentication
 
@@ -118,7 +119,14 @@ x-admin-setup-token: <value of ADMIN_SETUP_TOKEN, if configured>
 
 **Logging in:** visit `/admin/login` and enter the password. The backend
 creates a session and sets the HTTP-only cookie; the password is never stored
-in the browser. Protected admin APIs (applications, openings, enquiries,
+in the browser. With the frontend on indexiagroup.com and the API on Render,
+the session cookie is issued `SameSite=None; Secure` automatically.
+
+**Deployment note:** the static frontend (Hostinger) and the API (Render) are
+different origins, so the frontend must be built with the API URL baked in —
+`src/lib/api.ts` falls back to `https://indexia-group-website.onrender.com`
+in production. The backend's `SESSION_SECRET`, `MONGODB_URI`, and
+`COOKIE_SAMESITE` settings live on the Render service. Protected admin APIs (applications, openings, enquiries,
 holidays, resume downloads) all require a valid session via the
 `requireAdmin` middleware and return `401` otherwise.
 
