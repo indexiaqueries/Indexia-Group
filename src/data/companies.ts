@@ -1,5 +1,4 @@
 import { colors } from "../lib/theme";
-import { contactEmails } from "./contact";
 
 export type Company = {
   name: string;
@@ -148,22 +147,22 @@ export const companies: Company[] = [
     name: "Indexia Warehouse",
     slug: "warehouse",
     founded: 2022,
-    tag: "Strategic Land Leasing",
-    desc: "21 acres of strategic land on lease to companies in Shamli, linked to 8 national expressways.",
+    tag: "Strategic Land Investment",
+    desc: "21 acres of strategic land investment in Shamli, linked to 8 national expressways and 4 major ports.",
     overview:
-      "Indexia Warehouse offers a strategic land leasing opportunity built on 21 acres in Shamli, Uttar Pradesh, just ~65 km from Delhi. The location is a connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market reach of 50 crore people. The land portfolio spans 5 locations with flexible plots of 1, 2, 2.5, 5 and 8 acres available for lease. A modern warehouse is being developed. Lease terms are negotiable.",
+      "Indexia Warehouse offers a strategic land investment opportunity built on 21 acres in Shamli, Uttar Pradesh, just ~65 km from Tronica City, Loni, Delhi. The location is a prime connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market coverage of 50 crore people. Direct expressway connectivity reaches 4 major ports — Gujarat, Maharashtra, Chennai and Kolkata — while IGI Airport Delhi and Noida International Airport Jewar are both within 1 hour. The land portfolio spans 5 locations with plots of 1, 2, 2.5, 5 and 8 acres, and a modern warehouse with loading docks is being built on a 2-acre plot. Expected price is ₹30 per sq ft, negotiable.",
     highlights: [
-      "Prime location, Shamli, UP, ~65 km from Delhi",
+      "Prime location, Shamli, UP, ~65 km from Tronica City, Loni, Delhi",
       "8 national expressways + 2 major highways connecting 8 states",
-      "21 acres across 5 locations, plots of 1, 2, 2.5, 5 & 8 acres on lease",
-      "Flexible lease terms, negotiable rates",
+      "Expressway connectivity to Gujarat, Maharashtra, Chennai & Kolkata ports",
+      "IGI Airport Delhi & Noida Int'l Airport Jewar within 1 hour",
     ],
     services: [
-      "Land Leasing, 1, 2, 2.5, 5 & 8 Acres",
-      "21 Acres Across 5 Locations on Lease",
-      "Warehouse Facility on 2-Acre Plot",
-      "Expressway & Highway Connectivity",
-      "Airport Access, Delhi & Jewar Within 1 Hour",
+      "Strategic Land Investment, 1 to 8 Acre Plots",
+      "Port Connectivity, Gujarat to Kolkata",
+      "Modern Warehouse on 2-Acre Plot with Loading Docks",
+      "Expressway & Highway Connectivity, 8 States",
+      "Airport Access, IGI Delhi & Jewar Within 1 Hour",
     ],
     color: colors.teal,
   },
@@ -172,14 +171,14 @@ export const companies: Company[] = [
     slug: "advertising",
     founded: 2022,
     tag: "Premium Unipole Hoardings",
-    desc: "Premium hoardings on Indian highways, majorly the Delhi–Dehradun highway.",
+    desc: "Dominate the most strategic highway junction in North India with high-impact outdoor advertising.",
     overview:
-      `Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli, the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily exposure. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end. For bookings call 86918 86919 or 011 4629 1155, or email ${contactEmails.queries}.`,
+      "Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli, the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily visibility. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end.",
     highlights: [
-      "Strategic placements on NH-709B, the Delhi–Dehradun highway",
-      "10 connected states, 50 crore population reach, 1+ crore daily exposure",
-      "Single-pole unipoles with 360° visibility and premium height",
-      "End-to-end service, printing, installation and maintenance",
+      "Strategic Highway Placement, prime locations on Delhi–Dehradun Highway with maximum vehicular traffic coverage",
+      "High daily footfall, access to 10 connected states covering 50 crore population via the Shamli junction",
+      "Single-pole unipole for maximum visibility, unobstructed 360° viewing angle with premium height advantage",
+      "End-to-end service, printing, installation and maintenance for hassle-free campaigns",
     ],
     services: [
       "Unipole 10×20 ft, ₹25,000/month",
