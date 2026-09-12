@@ -21,10 +21,6 @@ const Contact = () => {
   const prefersReducedMotion = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Land deep-linked enquiry buttons (/contact#enquiry-form) on the form
-  // itself. The form carries a scroll-margin-top (scroll-mt-28) sized for the
-  // fixed header, and we wait two frames for hero images and reveal animations
-  // to settle before scrolling, so the form lands fully below the navbar.
   useEffect(() => {
     if (hash !== "#enquiry-form") return;
     const el = document.getElementById("enquiry-form");
@@ -118,7 +114,6 @@ const Contact = () => {
       </section>
 
       <section id="branches" className="section-ruled relative overflow-hidden pt-5 sm:pt-4 lg:pt-6" style={{ background: 'rgba(2,16,26,0.08)' }}>
-        {/* Soft enquiry-support photo behind the cards */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <img
             src={enquirySupportBg}
@@ -129,8 +124,6 @@ const Contact = () => {
             decoding="async"
             className="h-full w-full object-cover object-center opacity-[0.10] select-none"
           />
-          {/* Paper-tinted veil keeps card text readable on top of the photo */}
-          <div className="absolute inset-0 bg-linear-to-b from-[rgba(246,242,233,0.55)] via-[rgba(246,242,233,0.35)] to-[rgba(246,242,233,0.6)]" />
         </div>
         <div className="relative mx-auto max-w-7xl">
           <Reveal className="mx-auto max-w-2xl text-center">
@@ -141,7 +134,6 @@ const Contact = () => {
           </Reveal>
 
           <div className="relative">
-            {/* Scroll arrows, outside overflow so they're never clipped */}
             <button
               onClick={() => scrollLocations(-1)}
               className="absolute left-1 top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-(--color-ink-soft) shadow-lg ring-1 ring-(--color-line) transition-colors hover:bg-(--color-yellow) hover:text-(--color-yellow-ink)"
@@ -157,7 +149,6 @@ const Contact = () => {
               <ChevronRight size={18} />
             </button>
 
-            {/* Scrollable area, clips only on x, not y */}
             <div
               ref={scrollRef}
               className="flex gap-5 overflow-x-auto scroll-smooth px-12 pt-6 pb-10"
