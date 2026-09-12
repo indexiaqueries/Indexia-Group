@@ -18,7 +18,7 @@ export const makePanels = (t: (key: string) => string): HeroPanel[] => {
     image: getCompanyImage(company.slug),
     mobileImage: getCompanyMobileImage(company.slug),
     thumbImage: getCompanyThumbImage(company.slug),
-    color: company.color,
+    color: colors.gray,
     slug: company.slug,
   }));
 
