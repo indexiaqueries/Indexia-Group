@@ -89,12 +89,6 @@ router.get("/applications/:id/resume", requireAdmin, async (req, res) => {
 
     const filePath = path.join(RESUME_DIR, fileName);
 
-    console.log("[admin] RESUME DEBUG");
-    console.log("Stored path:", application.resumePath);
-    console.log("Filename:", fileName);
-    console.log("Resume directory:", RESUME_DIR);
-    console.log("Final file path:", filePath);
-
     if (!existsSync(filePath)) {
       return res.status(404).json({
         ok: false,
