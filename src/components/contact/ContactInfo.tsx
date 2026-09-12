@@ -48,7 +48,7 @@ const EmailsSection = () => {
   );
 };
 
-const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[number]) => {
+const PhoneTile = ({ label, labelKey, number, href, mono }: (typeof phoneNumbers)[number]) => {
   const { t } = useTranslation();
   return (
     <a href={href} className="group inline-flex items-center gap-2 rounded-full border border-(--color-line) bg-white px-3 py-1.5 shadow-sm transition-all duration-200 hover:border-(--color-teal)/40 hover:shadow-md">
@@ -58,7 +58,10 @@ const PhoneTile = ({ label, labelKey, number, href }: (typeof phoneNumbers)[numb
       <span className="text-[10px] font-bold uppercase tracking-wide text-(--color-muted)">
         {labelKey ? t(`phoneLabel.${labelKey}`, { defaultValue: label }) : label}
       </span>
-      <span className="text-sm font-bold text-(--color-ink) group-hover:text-(--color-teal-deep)" style={monoFont}>
+      <span
+        className="text-sm font-bold text-(--color-ink) group-hover:text-(--color-teal-deep)"
+        style={mono ? monoFont : undefined}
+      >
         {number}
       </span>
     </a>
