@@ -19,15 +19,16 @@ if (!process.env.SESSION_SECRET) {
 
 // Cookie policy:
 // - httpOnly: client-side JavaScript can never read the session cookie.
-// - sameSite "lax" fits this project's deployments: the Vite dev server
-//   proxies /api to the backend (same-origin from the browser's view) and
-//   production serves /api from the site's own origin. Split-origin HTTPS
-//   deployments (frontend on another domain) can set COOKIE_SAMESITE=none —
-//   browsers only accept None over HTTPS, where `secure: "auto"` also marks
-//   the cookie Secure automatically.
+// - sameSite: production defaults to "none" because the frontend
+//   (indexiagroup.com) and the API (onrender.com) are different sites — lax
+//   cookies are dropped on the cross-site login POST, so the session would
+//   silently vanish right after a successful login. Browsers only accept
+//   None over HTTPS, where `secure: "auto"` also marks the cookie Secure.
+//   Same-origin deployments or testing can override with COOKIE_SAMESITE=lax.
 // - secure "auto": the Secure attribute is present on HTTPS deployments and
 //   absent on plain HTTP, so local testing with Postman/curl still works.
-const SAME_SITE = (process.env.COOKIE_SAMESITE || "lax").toLowerCase();
+const SAME_SITE =
+  (process.env.COOKIE_SAMESITE || (IS_PROD ? "none" : "lax")).toLowerCase();
 
 function sessionCookieOptions() {
   return {
