@@ -95,6 +95,7 @@ Copy `.env.example` to `.env.local` and configure:
 | `CORS_ORIGINS` | Comma-separated origins allowed to call the API cross-origin (defaults to the production site + local dev) |
 | `COOKIE_SAMESITE` | Session cookie SameSite policy; production defaults to `none` for the split deployment, override with `lax` for same-origin hosting |
 | `VITE_API_URL` | Optional API base URL when frontend and backend are on different origins. Production builds fall back to the Render API URL, so only set it to override |
+| `VITE_WEB3FORMS_ACCESS_KEY` | Web3Forms key (root `.env.local`) so enquiries/booking requests also arrive by email. Optional — without it forms store to MongoDB only. Note: Web3Forms' free plan only accepts **browser-side** submissions, so the key must be available to the frontend bundle |
 
 ## Admin Authentication
 
