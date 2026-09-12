@@ -70,7 +70,7 @@ const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
         canonicalPath={canonicalPath}
         jsonLd={companyJsonLd}
       />
-      <CompanyDetail company={company} showBackLink />
+      <CompanyDetail company={company} />
     </main>
   );
 };
