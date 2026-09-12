@@ -124,7 +124,7 @@ const UnipolePricing = ({ onBook, onBookGeneral }: UnipolePricingProps) => {
           </div>
 
           {/* Right: unipole structure illustration */}
-          <Reveal className="relative mx-auto w-full max-w-[280px] lg:max-w-none">
+          <Reveal className="relative mx-auto w-full max-w-70 lg:max-w-none">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-8 rounded-full opacity-30 blur-3xl"
@@ -134,7 +134,7 @@ const UnipolePricing = ({ onBook, onBookGeneral }: UnipolePricingProps) => {
               src={unipoleStructure}
               alt={t("unipolePricing.structureAlt")}
               loading="lazy"
-              className="relative mx-auto max-h-[420px] w-auto object-contain drop-shadow-[0_18px_36px_rgba(0,0,0,0.45)] lg:max-h-[520px]"
+              className="relative mx-auto max-h-105 w-auto object-contain drop-shadow-[0_18px_36px_rgba(0,0,0,0.45)] lg:max-h-130"
             />
           </Reveal>
         </div>
