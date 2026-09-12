@@ -13,6 +13,7 @@ import { branches, contactEmails } from "../data/contact";
 import { GlowingCard } from "../components/lightswind/glowing-cards";
 import { accent } from "../lib/theme"
 import SocialLinks from "../components/ui/SocialLinks";
+import enquirySupportBg from "../assets/company-pages-img/common/enquiry-support.webp";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -116,8 +117,22 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="branches" className="section-ruled pt-5 sm:pt-4 lg:pt-6" style={{ background: 'rgba(2,16,26,0.08)' }}>
-        <div className="mx-auto max-w-7xl">
+      <section id="branches" className="section-ruled relative overflow-hidden pt-5 sm:pt-4 lg:pt-6" style={{ background: 'rgba(2,16,26,0.08)' }}>
+        {/* Soft enquiry-support photo behind the cards */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <img
+            src={enquirySupportBg}
+            alt=""
+            width={1280}
+            height={640}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover object-center opacity-[0.10] select-none"
+          />
+          {/* Paper-tinted veil keeps card text readable on top of the photo */}
+          <div className="absolute inset-0 bg-linear-to-b from-[rgba(246,242,233,0.55)] via-[rgba(246,242,233,0.35)] to-[rgba(246,242,233,0.6)]" />
+        </div>
+        <div className="relative mx-auto max-w-7xl">
           <Reveal className="mx-auto max-w-2xl text-center">
             <h2 className="text-2xl font-extrabold text-(--color-teal) sm:text-4xl">
               {t("contact.locationsTitleStart")}
