@@ -192,7 +192,7 @@ const ApplyPage = () => {
               <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-(--color-teal)/15 ring-1 ring-(--color-teal)/30">
                 <CheckCircle size={40} className="text-(--color-teal)" />
               </div>
-              <h1 className="font-display text-[clamp(28px,5vw,40px)] font-bold text-white">
+              <h1 className="font-display text-[clamp(24px,4vw,44px)] font-bold text-white">
                 {t("applyPage.successTitle")}
               </h1>
               <p
@@ -248,7 +248,7 @@ const ApplyPage = () => {
             </Eyebrow>
             <span className="h-px w-10 bg-(--color-yellow)/60" />
           </div>
-          <h1 className="font-display text-[clamp(28px,5vw,44px)] font-bold leading-[1.1] text-white">
+          <h1 className="font-display text-[clamp(24px,4vw,44px)] font-bold leading-[1.1] text-white">
             {t("applyPage.heroTitle")} <span className="text-(--color-yellow)">{roleTitle}</span>
           </h1>
           {department && (

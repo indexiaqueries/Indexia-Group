@@ -22,7 +22,7 @@ const ContactHero = () => {
         </Eyebrow>
 
         <h1
-          className="max-w-2xl text-4xl leading-tight text-white sm:text-5xl lg:text-6xl"
+          className="max-w-2xl text-[clamp(24px,4vw,44px)] leading-tight text-white"
           style={{ ...displayFont, fontWeight: 600 }}
         >
           {t("contactHero.title")}

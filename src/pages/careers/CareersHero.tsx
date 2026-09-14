@@ -129,7 +129,7 @@ const CareersHero = () => {
               aria-hidden="true"
               className="mt-3 hidden h-16 w-0.75 shrink-0 bg-(--color-yellow) sm:block sm:h-20 lg:h-24"
             />
-            <h1 className="font-display max-w-4xl text-[clamp(34px,6vw,64px)] font-bold leading-[1.08] text-white">
+            <h1 className="font-display max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-[1.08] text-white">
               {t("careersPage.titleStart")}
               <span className="text-shimmer text-(--color-yellow)">
                 {t("careersPage.titleAccent")}

@@ -49,9 +49,12 @@ const CompanyHighlights = ({ slug, highlights }: CompanyHighlightsProps) => {
       />
 
       <div className="container">
-        {/* Header */}
+        {/* Header — eyebrow in teal, heading in the blue accent */}
         <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
-          <Eyebrow>{t("companyDetail.keyEntries")}</Eyebrow>
+          <Eyebrow>{t("companyDetail.keyEntriesEyebrow", "Register")}</Eyebrow>
+          <h2 className="font-display mt-3 text-[clamp(24px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
+            {t("companyDetail.keyEntries")}
+          </h2>
         </Reveal>
 
         {/* Numbered ledger cards: yellow index tab, icon chip, heading + support text */}

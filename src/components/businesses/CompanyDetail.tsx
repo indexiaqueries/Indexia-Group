@@ -14,7 +14,7 @@ import { getCompanyImage } from "../../data/companyImages";
 import { companies, type Company } from "../../data/companies";
 import { accent, monoFont } from "../../lib/theme";
 
-import { bookingPhone, branches, contactEmails, phoneNumbers } from "../../data/contact";
+import { branches, contactEmails, getDedicatedPhone, phoneNumbers } from "../../data/contact";
 import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
 import BookingModal, { type BookingContext } from "./BookingModal";
@@ -64,6 +64,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const showFullContacts = b.slug === "warehouse" || b.slug === "advertising";
   const enquiryBranch = branches.find((branch) => branch.key === (showFullContacts ? "delhiOffice" : "corporateOffice"));
   const landline = phoneNumbers.find((p) => p.labelKey === "landline");
+  // Dedicated enquiry line for this company, falls back to the group line.
+  const dedicated = getDedicatedPhone(b.slug);
   // Home-hero slide copy for this company, already translated in every locale,
   // unused on this page, and reused for the new impact band + story split.
   const slideHeading = t(`hero.p${index + 1}.heading`, b.tagline ?? b.name);
@@ -100,6 +102,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
     <>
       <HeroBackdrop
         image={getCompanyImage(b.slug)}
+        imagePosition="top"
         containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
         extra={
           <div
@@ -149,7 +152,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             </span>
           </div>
 
-          <h1 className="font-display text-[clamp(30px,5vw,52px)] font-bold leading-[1.06] text-white">
+          <h1 className="font-display text-[clamp(24px,4vw,44px)] font-bold leading-[1.06] text-white">
             {name}
           </h1>
 
@@ -474,11 +477,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                     {t("companyDetail.bookingsPhone")}
                   </span>
                   <a
-                    href={`tel:${bookingPhone.href}`}
+                    href={`tel:${dedicated.href}`}
                     className="block text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
                     style={monoFont}
                   >
-                    {bookingPhone.display}
+                    {dedicated.display}
                   </a>
                   {showFullContacts && landline && (
                     <a

@@ -74,7 +74,7 @@ const GlobalResearchPage = () => {
           <Eyebrow color="var(--color-yellow)">{t("globalResearchPage.eyebrow")}</Eyebrow>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
         </div>
-        <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white">
+        <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white">
           {t("globalResearchPage.titleStart")}
           <span className="text-(--color-yellow)">{t("globalResearchPage.titleAccent")}</span>
         </h1>

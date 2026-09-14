@@ -76,7 +76,7 @@ const AboutPage = () => {
             <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
             <span className="h-px w-8 bg-(--color-yellow)/70" />
           </div>
-          <h1 className="fade-up font-display mx-auto mb-3 max-w-4xl text-[clamp(32px,6vw,60px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
+          <h1 className="fade-up font-display mx-auto mb-3 max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
             {tr("titleStart", "Some steps to ")}<br />
             <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
           </h1>
