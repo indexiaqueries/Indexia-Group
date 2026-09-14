@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "công ty, một tập đoàn",
-    "description": "Tám công ty. Một đội ngũ. Xây dựng sự nghiệp trong tài chính, xuất khẩu, nông nghiệp, an ninh, quảng cáo và phát triển vận động viên.",
+    "description": "Xây dựng sự nghiệp trong tài chính, xuất khẩu, nông nghiệp, an ninh, quảng cáo và phát triển vận động viên.",
     "sectors": {
       "finance": "Tài chính",
       "export": "Xuất khẩu",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Gửi email",
     "bookingsOffice": "Văn phòng chính",
     "brochure": "Xem tài liệu",
-    "serviceLabel": "Dịch vụ"
+    "serviceLabel": "Dịch vụ",
+    "keyEntriesEyebrow": "Sổ đăng ký"
   },
   "companyLinkCard": {
     "visitPage": "Truy cập trang",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Một Tập Đoàn. Nhiều Giải Pháp.",
       "motto": "Một số bước để phục vụ đất nước",
-      "sub": "Từ tài chính và warehousing đến nông nghiệp và quảng cáo, Indexia Group thúc đẩy tăng trưởng trên nhiều ngành với các doanh nghiệp đáng tin cậy, sẵn sàng cho tương lai.",
+      "sub": "Từ tài chính đến kho bãi, Agro Bio, xuất khẩu, quảng cáo và quỹ thiện nguyện.",
       "tag": "Tập đoàn Indexia",
       "tagline": "Doanh Nghiệp Đa Dạng. Tầm Nhìn Thống Nhất."
     },
     "p1": {
       "heading": "Điểm Đến\nCho Mọi Khoản Vay.",
-      "sub": "Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin của chúng tôi tại www.indexiafinance.com. Chúng tôi cung cấp dịch vụ toàn cầu, tại Ấn Độ, chúng tôi là đối tác kinh doanh của 43 ngân hàng và NBFC.",
+      "sub": "Bạn có thể đăng ký nhiều loại khoản vay qua cổng thông tin của chúng tôi tại www.indexiafinance.com. Chúng tôi cung cấp dịch vụ toàn cầu.",
       "tag": "Indexia Tài chính"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Thương Hiệu Của Bạn\nTrên Mọi Xa Lộ.",
-      "sub": "Nhiều vị trí quảng cáo dọc các xa lộ, mang đến các chiến dịch có độ phủ cao cho thương hiệu.",
+      "sub": "Nút giao của Bắc India gồm 8 đường cao tốc và 2 quốc lộ bang, với hơn 1 crore lượt nhìn thấy mỗi ngày.",
       "tag": "Indexia Quảng cáo"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Điện thoại cố định",
     "mob": "Di động",
     "mobile": "Di động",
-    "tel": "Điện thoại"
+    "tel": "Điện thoại",
+    "individualFoundation": "Cá nhân / Quỹ"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Cần Trợ Giúp?",
@@ -1563,7 +1565,7 @@
     "notes": "Điều gì khác chúng tôi cần biết?",
     "notesPlaceholderAd": "Ngày chiến dịch, tài liệu tham khảo, yêu cầu đặc biệt…",
     "notesPlaceholderWh": "Loại lưu trữ, nhu cầu ra vào, tuyến xe tải…",
-    "submit": "Gửi yêu cầu đặt chỗ",
+    "submit": "Gửi Yêu cầu Đặt chỗ",
     "submitting": "Đang gửi…",
     "responseNote": "Đội ngũ phản hồi trong 24 giờ, T2 – T7.",
     "successTitle": "Đã nhận yêu cầu đặt chỗ!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "Vui lòng nhập tên công ty hoặc thương hiệu.",
     "errorStartDate": "Vui lòng chọn ngày bắt đầu.",
     "errorDuration": "Vui lòng chọn thời hạn.",
-    "errorArtwork": "Vui lòng chọn tình trạng thiết kế."
+    "errorArtwork": "Vui lòng chọn tình trạng thiết kế.",
+    "size": "Kích thước",
+    "sizePlaceholder": "Chọn kích thước",
+    "adSide": "Mặt quảng cáo",
+    "adSidePlaceholder": "Chọn mặt quảng cáo",
+    "adSide_single": "Một mặt",
+    "adSide_both": "Cả hai mặt",
+    "citySide": "Phía thành phố",
+    "citySidePlaceholder": "Chọn phía thành phố",
+    "citySide_in": "Trong thành phố",
+    "citySide_out": "Ngoài thành phố",
+    "errorAdSide": "Vui lòng chọn mặt quảng cáo.",
+    "errorCitySide": "Vui lòng chọn phía thành phố.",
+    "errorSize": "Vui lòng chọn kích thước."
   }
 }

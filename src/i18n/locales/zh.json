@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "家公司，一个集团",
-    "description": "八家公司，一个团队。在金融、出口、农业、安保、广告和运动员发展领域建立您的职业生涯。",
+    "description": "在金融、出口、农业、安保、广告和运动员发展领域建立您的职业生涯。",
     "sectors": {
       "finance": "金融",
       "export": "出口",
@@ -314,7 +314,8 @@
     "bookingsEmail": "邮件联系",
     "bookingsOffice": "总部办公室",
     "brochure": "查看手册",
-    "serviceLabel": "服务"
+    "serviceLabel": "服务",
+    "keyEntriesEyebrow": "名册"
   },
   "companyLinkCard": {
     "visitPage": "访问页面",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "一个集团。\n多元解决方案。",
       "motto": "服务国家的几步之路",
-      "sub": "从金融和物流到农业和广告，英德西亚集团凭借可信赖、面向未来的企业推动各行业增长。",
+      "sub": "从金融到仓储、农业生物、出口、广告和基金会。",
       "tag": "英德西亚集团",
       "tagline": "多元企业。统一愿景。"
     },
     "p1": {
       "heading": "一站式\n贷款目的地。",
-      "sub": "您可以在 www.indexiafinance.com 通过我们的门户申请任何类型的贷款。我们在全球提供服务, 在印度，我们与43家银行和非银行金融公司建立了业务合作关系。",
+      "sub": "您可以在 www.indexiafinance.com 通过我们的门户申请多种类型的贷款。我们在全球提供服务。",
       "tag": "英德西亚金融"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "您的品牌\n遍布每条高速公路。",
-      "sub": "在高速公路上拥有多处广告位，为品牌带来高可见度广告活动。",
+      "sub": "北印度8条高速公路与2条州级公路的交汇处，日均曝光超1千万人次。",
       "tag": "英德西亚广告"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "固定电话",
     "mob": "手机",
     "mobile": "手机",
-    "tel": "电话"
+    "tel": "电话",
+    "individualFoundation": "个人 / 基金会"
   },
   "securityTipsPage": {
     "contactsEyebrow": "需要帮助？",
@@ -1563,7 +1565,7 @@
     "notes": "还有什么我们需要了解的吗？",
     "notesPlaceholderAd": "投放日期、参考素材、特殊要求…",
     "notesPlaceholderWh": "仓储类型、出入库需求、货车动线…",
-    "submit": "提交预订请求",
+    "submit": "提交预订",
     "submitting": "发送中…",
     "responseNote": "我们的团队在 24 小时内（周一至周六）回复。",
     "successTitle": "已收到您的预订请求！",
@@ -1576,6 +1578,19 @@
     "errorCompany": "请输入您的公司或品牌名称。",
     "errorStartDate": "请选择开始日期。",
     "errorDuration": "请选择预订时长。",
-    "errorArtwork": "请选择设计稿状态。"
+    "errorArtwork": "请选择设计稿状态。",
+    "size": "尺寸",
+    "sizePlaceholder": "选择尺寸",
+    "adSide": "广告面",
+    "adSidePlaceholder": "选择广告面",
+    "adSide_single": "单面",
+    "adSide_both": "双面",
+    "citySide": "城市方向",
+    "citySidePlaceholder": "选择城市方向",
+    "citySide_in": "市内",
+    "citySide_out": "市外",
+    "errorAdSide": "请选择广告面。",
+    "errorCitySide": "请选择城市方向。",
+    "errorSize": "请选择尺寸。"
   }
 }

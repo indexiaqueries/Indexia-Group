@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "firm, jedna grupa",
-    "description": "Osiem firm. Jeden zespół. Rozwiń karierę w finansach, eksporcie, rolnictwie, bezpieczeństwie, reklamie i rozwoju sportowców.",
+    "description": "Rozwiń karierę w finansach, eksporcie, rolnictwie, bezpieczeństwie, reklamie i rozwoju sportowców.",
     "sectors": {
       "finance": "Finanse",
       "export": "Eksport",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Napisz do nas",
     "bookingsOffice": "Biuro główne",
     "brochure": "Zobacz broszurę",
-    "serviceLabel": "Usługa"
+    "serviceLabel": "Usługa",
+    "keyEntriesEyebrow": "Rejestr"
   },
   "companyLinkCard": {
     "visitPage": "Odwiedź stronę",
@@ -451,13 +452,13 @@
     "p0": {
       "heading": "Jedna Grupa. Wiele Rozwiązań.",
       "motto": "Kilka kroków aby służyć narodowi",
-      "sub": "Od finansów i logistyki po agro i reklamę, Indexia Group napędza wzrost w różnych branżach dzięki zaufanym, gotowym na przyszłość firmom.",
+      "sub": "Od finansów, przez magazyny i Agro Bio, po eksport, reklamę i fundację.",
       "tag": "Grupa Indexia",
       "tagline": "Różnorodne Przedsięwzięcia. Zjednoczona Wizja."
     },
     "p1": {
       "heading": "Kompletne\nMiejsce Pożyczek.",
-      "sub": "O każdy rodzaj pożyczki możesz wnioskować przez nasz portal www.indexiafinance.com. Świadczymy usługi globalnie, w Indiach jesteśmy partnerem biznesowym 43 banków i NBFC.",
+      "sub": "Szeroki wachlarz pożyczek możesz zawnioskować przez nasz portal www.indexiafinance.com. Świadczymy usługi globalnie.",
       "tag": "Indexia Finanse"
     },
     "p2": {
@@ -487,7 +488,7 @@
     },
     "p7": {
       "heading": "Twoja Marka\nNa Każdej Autostradzie.",
-      "sub": "Wiele nośników reklamowych wzdłuż autostrad, zapewniających markom kampanie o wysokiej widoczności.",
+      "sub": "Skrzyżowanie północnych Indii: 8 ekspresówek i 2 drogi stanowe, z ponad 1 crore codziennej widoczności.",
       "tag": "Indexia Reklama"
     },
     "p8": {
@@ -1194,7 +1195,8 @@
     "landline": "Stacjonarny",
     "mob": "Komórka",
     "mobile": "Komórkowy",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Osoba prywatna / Fundacja"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Potrzebujesz Pomocy?",
@@ -1564,7 +1566,7 @@
     "notes": "Coś jeszcze powinniśmy wiedzieć?",
     "notesPlaceholderAd": "Daty kampanii, materiały, specjalne życzenia…",
     "notesPlaceholderWh": "Rodzaj składowania, wymagania dot. dostępu, ruch ciężarówek…",
-    "submit": "Zapytaj o rezerwację",
+    "submit": "Wyślij Rezerwację",
     "submitting": "Wysyłanie…",
     "responseNote": "Nasz zespół odpowiada w ciągu 24 godzin, pon – sob.",
     "successTitle": "Otrzymano zapytanie o rezerwację!",
@@ -1577,6 +1579,19 @@
     "errorCompany": "Podaj nazwę firmy lub marki.",
     "errorStartDate": "Wybierz datę rozpoczęcia.",
     "errorDuration": "Wybierz okres.",
-    "errorArtwork": "Wybierz status grafiki."
+    "errorArtwork": "Wybierz status grafiki.",
+    "size": "Rozmiar",
+    "sizePlaceholder": "Wybierz rozmiar",
+    "adSide": "Strona reklamy",
+    "adSidePlaceholder": "Wybierz stronę",
+    "adSide_single": "Jedna strona",
+    "adSide_both": "Obie strony",
+    "citySide": "Strona miasta",
+    "citySidePlaceholder": "Wybierz stronę miasta",
+    "citySide_in": "W mieście",
+    "citySide_out": "Poza miastem",
+    "errorAdSide": "Wybierz stronę reklamy.",
+    "errorCitySide": "Wybierz stronę miasta.",
+    "errorSize": "Wybierz rozmiar."
   }
 }

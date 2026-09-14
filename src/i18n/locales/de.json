@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "Unternehmen, eine Gruppe",
-    "description": "Acht Unternehmen. Ein Team. Entwickeln Sie Ihre Karriere in Finanzen, Export, Landwirtschaft, Sicherheit, Werbung und Athletenförderung.",
+    "description": "Entwickeln Sie Ihre Karriere in Finanzen, Export, Landwirtschaft, Sicherheit, Werbung und Athletenförderung.",
     "sectors": {
       "finance": "Finanzen",
       "export": "Export",
@@ -314,7 +314,8 @@
     "bookingsEmail": "E-Mail schreiben",
     "bookingsOffice": "Zentrale",
     "brochure": "Broschüre ansehen",
-    "serviceLabel": "Leistung"
+    "serviceLabel": "Leistung",
+    "keyEntriesEyebrow": "Register"
   },
   "companyLinkCard": {
     "visitPage": "Seite besuchen",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Eine Gruppe.\nVielfältige Lösungen.",
       "motto": "Einige Schritte, um der Nation zu dienen",
-      "sub": "Von Finanzen und Logistik bis hin zu Agrar und Werbung treibt die Indexia Group das Wachstum branchenübergreifend mit vertrauenswürdigen, zukunftsfähigen Unternehmen voran.",
+      "sub": "Von Finance über Warehouse und Agro Bio bis hin zu Export, Advertising und Foundation.",
       "tag": "Indexia Gruppe",
       "tagline": "Vielfältige Ventures. Einheitliche Vision."
     },
     "p1": {
       "heading": "Ein komplettes\nKredit-Portal.",
-      "sub": "Sie können über unser Portal www.indexiafinance.com jede Art von Kredit beantragen. Wir bieten unsere Dienste weltweit an, in Indien sind wir Geschäftspartner von 43 Banken und NBFCs.",
+      "sub": "Sie können auf unserem Portal www.indexiafinance.com eine breite Palette von Krediten beantragen. Wir bieten unsere Dienste weltweit an.",
       "tag": "Indexia Finanz"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Ihre Marke auf\njeder Autobahn.",
-      "sub": "Zahlreiche Werbeflächen entlang der Autobahnen, die Marken Kampagnen mit hoher Sichtbarkeit bieten.",
+      "sub": "Nordindiens Knotenpunkt von 8 Expressways und 2 State Highways, mit über 1 Cr täglicher Sichtbarkeit.",
       "tag": "Indexia Werbung"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Festnetz",
     "mob": "Mobil",
     "mobile": "Mobil",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Einzelperson / Stiftung"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Brauchen Sie Hilfe?",
@@ -1559,7 +1561,7 @@
     "notes": "Gibt es sonst etwas, das wir wissen sollten?",
     "notesPlaceholderAd": "Kampagnenzeitraum, Referenzen, besondere Wünsche…",
     "notesPlaceholderWh": "Lagertyp, Zufahrt, Lkw-Verkehr…",
-    "submit": "Buchung anfragen",
+    "submit": "Buchung absenden",
     "submitting": "Wird gesendet…",
     "responseNote": "Unser Team antwortet innerhalb von 24 Stunden, Mo – Sa.",
     "successTitle": "Buchungsanfrage erhalten!",
@@ -1576,6 +1578,19 @@
     "websitePlaceholder": "https://…",
     "name": "Name",
     "phone": "Telefon",
-    "email": "E-Mail"
+    "email": "E-Mail",
+    "size": "Größe",
+    "sizePlaceholder": "Größe wählen",
+    "adSide": "Werbefläche",
+    "adSidePlaceholder": "Werbefläche wählen",
+    "adSide_single": "Einseitig",
+    "adSide_both": "Beidseitig",
+    "citySide": "Stadtseite",
+    "citySidePlaceholder": "Stadtseite wählen",
+    "citySide_in": "Innerorts",
+    "citySide_out": "Außerorts",
+    "errorAdSide": "Bitte wählen Sie die Werbefläche.",
+    "errorCitySide": "Bitte wählen Sie die Stadtseite.",
+    "errorSize": "Bitte wählen Sie eine Größe."
   }
 }

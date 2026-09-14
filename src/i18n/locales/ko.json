@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "개 회사, 하나의 그룹",
-    "description": "여덟 개의 회사. 하나의 팀. 금융, 수출, 농업, 보안, 광고, 선수 육성 분야에서 커리어를 쌓으세요.",
+    "description": "금융, 수출, 농업, 보안, 광고, 선수 육성 분야에서 커리어를 쌓으세요.",
     "sectors": {
       "finance": "금융",
       "export": "수출",
@@ -314,7 +314,8 @@
     "bookingsEmail": "이메일 문의",
     "bookingsOffice": "본사 사무실",
     "brochure": "브로슈어 보기",
-    "serviceLabel": "서비스"
+    "serviceLabel": "서비스",
+    "keyEntriesEyebrow": "등록부"
   },
   "companyLinkCard": {
     "visitPage": "페이지 방문",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "하나의 그룹.\n다양한 솔루션.",
       "motto": "국가를 위한 몇 가지 발걸음",
-      "sub": "금융과 물류에서 농업과 광고까지, Indexia Group은 신뢰받는 미래 지향적 비즈니스로 다양한 산업의 성장을 이끕니다.",
+      "sub": "금융에서 창고, 애그로 바이오, 수출, 광고, 재단에 이르기까지.",
       "tag": "인덱시아 그룹",
       "tagline": "다양한 사업. 통합된 비전."
     },
     "p1": {
       "heading": "모든 대출의\n완전한 목적지.",
-      "sub": "모든 종류의 대출은 www.indexiafinance.com 포털에서 신청하실 수 있습니다. 우리는 전 세계에서 서비스를 제공하며, 인도에서는 43개 은행 및 NBFC와 비즈니스 파트너 관계를 맺고 있습니다.",
+      "sub": "www.indexiafinance.com 포털에서 다양한 종류의 대출을 신청하실 수 있습니다. 우리는 전 세계에서 서비스를 제공합니다.",
       "tag": "인덱시아 파이낸스"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "모든 고속도로에\n당신의 브랜드를.",
-      "sub": "고속도로 주변의 다양한 광고 매체로 브랜드에 높은 가시성 캠페인을 제공합니다.",
+      "sub": "북인도의 8개 고속도로와 2개 주도의 교차로, 하루 1크로르+ 노출량.",
       "tag": "인덱시아 광고"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "유선",
     "mob": "휴대폰",
     "mobile": "휴대폰",
-    "tel": "전화"
+    "tel": "전화",
+    "individualFoundation": "개인 / 재단"
   },
   "securityTipsPage": {
     "contactsEyebrow": "도움이 필요하신가요?",
@@ -1563,7 +1565,7 @@
     "notes": "기타 알려주실 내용이 있나요?",
     "notesPlaceholderAd": "캠페인 일정, 레퍼런스, 특별 요청 사항…",
     "notesPlaceholderWh": "보관 유형, 출입 요건, 트럭 동선…",
-    "submit": "예약 요청",
+    "submit": "예약 제출",
     "submitting": "전송 중…",
     "responseNote": "팀이 24시간 이내(월~토)에 응답합니다.",
     "successTitle": "예약 요청이 접수되었습니다!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "회사 또는 브랜드 이름을 입력해 주세요.",
     "errorStartDate": "시작일을 선택해 주세요.",
     "errorDuration": "기간을 선택해 주세요.",
-    "errorArtwork": "디자인 상태를 선택해 주세요."
+    "errorArtwork": "디자인 상태를 선택해 주세요.",
+    "size": "크기",
+    "sizePlaceholder": "크기 선택",
+    "adSide": "광고 면",
+    "adSidePlaceholder": "광고 면 선택",
+    "adSide_single": "단면",
+    "adSide_both": "양면",
+    "citySide": "도시 방향",
+    "citySidePlaceholder": "도시 방향 선택",
+    "citySide_in": "도심 방향",
+    "citySide_out": "도심 외부",
+    "errorAdSide": "광고 면을 선택해 주세요.",
+    "errorCitySide": "도시 방향을 선택해 주세요.",
+    "errorSize": "크기를 선택해 주세요."
   }
 }

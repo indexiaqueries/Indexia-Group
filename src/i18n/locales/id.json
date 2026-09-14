@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "perusahaan, satu grup",
-    "description": "Delapan perusahaan. Satu tim. Bangun karir Anda di keuangan, ekspor, pertanian, keamanan, periklanan, dan pengembangan atlet.",
+    "description": "Bangun karir Anda di keuangan, ekspor, pertanian, keamanan, periklanan, dan pengembangan atlet.",
     "sectors": {
       "finance": "Keuangan",
       "export": "Ekspor",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Kirim email",
     "bookingsOffice": "Kantor pusat",
     "brochure": "Lihat brosur",
-    "serviceLabel": "Layanan"
+    "serviceLabel": "Layanan",
+    "keyEntriesEyebrow": "Register"
   },
   "companyLinkCard": {
     "visitPage": "Kunjungi halaman",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Satu Grup. Berbagai Solusi.",
       "motto": "Beberapa langkah untuk melayani negara",
-      "sub": "Dari keuangan dan logistik hingga agro dan periklanan, Indexia Group mendorong pertumbuhan lintas industri dengan bisnis yang tepercaya dan siap masa depan.",
+      "sub": "Dari Keuangan ke pergudangan, Agro Bio, Ekspor, Periklanan, dan Yayasan.",
       "tag": "Grup Indexia",
       "tagline": "Usaha Beragam. Visi Terpadu."
     },
     "p1": {
       "heading": "Satu Tempat\nuntuk Semua Pinjaman.",
-      "sub": "Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com. Kami melayani secara global, di India, kami bermitra dengan 43 bank dan NBFC.",
+      "sub": "Anda dapat mengajukan berbagai jenis pinjaman di portal kami www.indexiafinance.com. Kami melayani secara global.",
       "tag": "Indexia Keuangan"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Brand Anda di\nSetiap Jalan Tol.",
-      "sub": "Banyak aset periklanan di sepanjang jalan tol, memberikan kampanye ber-visibilitas tinggi bagi brand.",
+      "sub": "Persimpangan India Utara dari 8 jalan tol dan 2 jalan negara bagian, dengan paparan harian 1 Cr+.",
       "tag": "Indexia Periklanan"
     },
     "p8": {
@@ -1194,7 +1195,8 @@
     "landline": "Telepon rumah",
     "mob": "Ponsel",
     "mobile": "Ponsel",
-    "tel": "Telp"
+    "tel": "Telp",
+    "individualFoundation": "Perorangan / Yayasan"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Butuh Bantuan?",
@@ -1564,7 +1566,7 @@
     "notes": "Ada lagi yang perlu kami ketahui?",
     "notesPlaceholderAd": "Tanggal kampanye, referensi, permintaan khusus…",
     "notesPlaceholderWh": "Jenis penyimpanan, kebutuhan akses, pergerakan truk…",
-    "submit": "Kirim Permintaan",
+    "submit": "Kirim Pemesanan",
     "submitting": "Mengirim…",
     "responseNote": "Tim kami merespons dalam 24 jam, Sen – Sab.",
     "successTitle": "Permintaan pemesanan diterima!",
@@ -1577,6 +1579,19 @@
     "errorCompany": "Masukkan nama perusahaan atau merek Anda.",
     "errorStartDate": "Pilih tanggal mulai.",
     "errorDuration": "Pilih durasi.",
-    "errorArtwork": "Pilih status desain Anda."
+    "errorArtwork": "Pilih status desain Anda.",
+    "size": "Ukuran",
+    "sizePlaceholder": "Pilih ukuran",
+    "adSide": "Sisi iklan",
+    "adSidePlaceholder": "Pilih sisi iklan",
+    "adSide_single": "Satu sisi",
+    "adSide_both": "Kedua sisi",
+    "citySide": "Sisi kota",
+    "citySidePlaceholder": "Pilih sisi kota",
+    "citySide_in": "Dalam kota",
+    "citySide_out": "Luar kota",
+    "errorAdSide": "Silakan pilih sisi iklan.",
+    "errorCitySide": "Silakan pilih sisi kota.",
+    "errorSize": "Silakan pilih ukuran."
   }
 }

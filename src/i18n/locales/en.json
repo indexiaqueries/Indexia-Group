@@ -23,13 +23,13 @@
       "tag": "Indexia Group",
       "heading": "One Group. Multiple Solutions.",
       "tagline": "\"Some Steps to Serve The Nation\"",
-      "sub": "From Finance and Warehousing to Agro Bio and Advertising, Indexia Group powers growth across industries with trusted, future-ready businesses.",
+      "sub": "From Finance to Warehouse, Agro Bio, Export, Advertising and Foundation.",
       "motto": "Some Steps to Serve The Nation"
     },
     "p1": {
       "tag": "Indexia Finance",
       "heading": "An Entire Loan Destination.",
-      "sub": "You may apply for any kind of loan on our portal at www.indexiafinance.com. We provide our services globally, and in India we are business partners with 43 banks and NBFCs."
+      "sub": "You may apply for a wide range of loans on our portal at www.indexiafinance.com. We provide our services globally."
     },
     "p2": {
       "tag": "Indexia Finserve Pvt. Ltd.",
@@ -59,7 +59,7 @@
     "p7": {
       "tag": "Indexia Advertising",
       "heading": "Your Brand on Every Highway.",
-      "sub": "Multiple Advertising holdings across highways, giving brands high-visibility campaigns."
+      "sub": "North India’s junction of 8 expressways & 2 state highways, with 1Cr+ daily visibility."
     },
     "p8": {
       "tag": "Indexia Foundation",
@@ -387,6 +387,7 @@
     "backAll": "All Companies",
     "register": "Register Nº {{no}} / 08",
     "keyEntries": "Key entries",
+    "keyEntriesEyebrow": "Register",
     "servicesTitle": "Services under this entry",
     "registerOf": "Indexia Group · Register of Companies",
     "entryOf": "Entry {{no}} of 08",
@@ -712,6 +713,7 @@
   },
   "phoneLabel": {
     "landline": "Landline",
+    "individualFoundation": "Individual / Foundation",
     "mobile": "Mobile",
     "mob": "Mob",
     "tel": "Tel"
@@ -1472,7 +1474,7 @@
     "playAriaLabel": "Play Indexia Finance TV ad"
   },
   "careersHero": {
-    "description": "Eight companies. One team. Build your career across Finance, Export, Agriculture, Security, Advertising, and Athlete Development.",
+    "description": "Build your career across Finance, Export, Agriculture, Security, Advertising, and Athlete Development.",
     "companiesOneGroup": "Companies, One Group",
     "sectors": {
       "finance": "Finance",
@@ -1515,10 +1517,17 @@
     "artwork_ready": "Artwork is ready",
     "artwork_design_needed": "Need design support",
     "artwork_later": "Will share later",
-    "notes": "Anything else we should know?",
-    "notesPlaceholderAd": "Campaign dates, references, special requests…",
+    "adSide": "Ad side",
+    "adSidePlaceholder": "Select ad side",
+    "adSide_single": "Single side",
+    "adSide_both": "Both sides",
+    "citySide": "City side",
+    "citySidePlaceholder": "Select city side",
+    "citySide_in": "City inside",
+    "citySide_out": "City outside",
+    "notes": "Anything else we should know?",    "notesPlaceholderAd": "Campaign dates, references, special requests…",
     "notesPlaceholderWh": "Storage type, access needs, truck movement…",
-    "submit": "Request Booking",
+    "submit": "Submit Booking",
     "submitting": "Sending…",
     "responseNote": "Our team responds within 24 hours, Mon – Sat.",
     "successTitle": "Booking request received!",
@@ -1528,6 +1537,11 @@
     "subjectPrefix": "Booking Request",
     "messageInterested": "I am interested in booking: {{item}} ({{company}}).",
     "messageDetail": "Selection details",
+    "size": "Size",
+    "sizePlaceholder": "Select size",
+    "errorAdSide": "Please select the ad side.",
+    "errorCitySide": "Please select the city side.",
+    "errorSize": "Please select a size.",
     "errorCompany": "Please enter your company or brand name.",
     "errorStartDate": "Please choose a start date.",
     "errorDuration": "Please select a duration.",

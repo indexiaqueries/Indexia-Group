@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "şirket, bir grup",
-    "description": "Sekiz şirket. Bir ekip. Finans, ihracat, tarım, güvenlik, reklam ve sporcu gelişiminde kariyerinizi inşa edin.",
+    "description": "Finans, ihracat, tarım, güvenlik, reklam ve sporcu gelişiminde kariyerinizi inşa edin.",
     "sectors": {
       "finance": "Finans",
       "export": "İhracat",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Bize yazın",
     "bookingsOffice": "Merkez ofis",
     "brochure": "Broşürü görüntüle",
-    "serviceLabel": "Hizmet"
+    "serviceLabel": "Hizmet",
+    "keyEntriesEyebrow": "Sicil"
   },
   "companyLinkCard": {
     "visitPage": "Sayfayı ziyaret et",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Bir Grup. Çoklu Çözümler.",
       "motto": "Ülkeye hizmet etmek için bazı adımlar",
-      "sub": "Finanstan lojistiğe, tarımdan reklamcılığa kadar Indexia Group, güvenilir ve geleceğe hazır işletmeleriyle sektörler arası büyümeyi güçlendirir.",
+      "sub": "Finanstan depoya, agro bio, ihracat, reklam ve vakıfa kadar.",
       "tag": "Indexia Grubu",
       "tagline": "Çeşitli Girişimler. Birliği Vizyon."
     },
     "p1": {
       "heading": "Eksiksiz Bir\nKredi Merkezi.",
-      "sub": "Her türlü kredi için portalımıza www.indexiafinance.com adresinden başvurabilirsiniz. Hizmetlerimizi küresel olarak sunuyoruz, Hindistan'da 43 banka ve NBFC ile iş ortağıyız.",
+      "sub": "Portalımız www.indexiafinance.com üzerinden geniş bir kredi yelpazesi için başvurabilirsiniz. Hizmetlerimizi küresel olarak sunuyoruz.",
       "tag": "Indexia Finans"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Markanız\nHer Otoyolda.",
-      "sub": "Otoyollar boyunca uzanan çok sayıda reklam alanıyla markalara yüksek görünürlüklü kampanyalar sunuyoruz.",
+      "sub": "Kuzey Hindistan'ın 8 ekspres yolu ve 2 eyalet karayolu kesişimi, günde 1 krodan fazla görünürlük.",
       "tag": "Indexia Reklam"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Sabit hat",
     "mob": "Mobil",
     "mobile": "Cep",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Bireysel / Vakıf"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Yardıma mı İhtiyacınız Var?",
@@ -1563,7 +1565,7 @@
     "notes": "Bilmemiz gereken başka bir şey var mı?",
     "notesPlaceholderAd": "Kampanya tarihleri, referanslar, özel talepler…",
     "notesPlaceholderWh": "Depolama türü, erişim ihtiyaçları, kamyon hareketi…",
-    "submit": "Rezervasyon Talep Et",
+    "submit": "Rezervasyonu Gönder",
     "submitting": "Gönderiliyor…",
     "responseNote": "Ekibimiz 24 saat içinde yanıt verir, Pzt – Cmt.",
     "successTitle": "Rezervasyon talebi alındı!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "Şirket veya marka adınızı girin.",
     "errorStartDate": "Bir başlangıç tarihi seçin.",
     "errorDuration": "Bir süre seçin.",
-    "errorArtwork": "Tasarım durumunuzu seçin."
+    "errorArtwork": "Tasarım durumunuzu seçin.",
+    "size": "Boyut",
+    "sizePlaceholder": "Boyut seçin",
+    "adSide": "Reklam yüzü",
+    "adSidePlaceholder": "Reklam yüzü seçin",
+    "adSide_single": "Tek yüz",
+    "adSide_both": "Çift yüz",
+    "citySide": "Şehir yönü",
+    "citySidePlaceholder": "Şehir yönü seçin",
+    "citySide_in": "Şehir içi",
+    "citySide_out": "Şehir dışı",
+    "errorAdSide": "Lütfen reklam yüzünü seçin.",
+    "errorCitySide": "Lütfen şehir yönünü seçin.",
+    "errorSize": "Lütfen bir boyut seçin."
   }
 }

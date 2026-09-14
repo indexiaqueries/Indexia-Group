@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "empresas, un grupo",
-    "description": "Ocho empresas. Un equipo. Desarrolla tu carrera en finanzas, exportación, agricultura, seguridad, publicidad y desarrollo deportivo.",
+    "description": "Desarrolla tu carrera en finanzas, exportación, agricultura, seguridad, publicidad y desarrollo deportivo.",
     "sectors": {
       "finance": "Finanzas",
       "export": "Exportación",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Escríbenos",
     "bookingsOffice": "Oficina central",
     "brochure": "Ver folleto",
-    "serviceLabel": "Servicio"
+    "serviceLabel": "Servicio",
+    "keyEntriesEyebrow": "Registro"
   },
   "companyLinkCard": {
     "visitPage": "Visitar página",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Un Grupo.\nMúltiples Soluciones.",
       "motto": "Algunos pasos para servir a la nación",
-      "sub": "Desde finanzas y logística hasta agro y publicidad, Indexia Group impulsa el crecimiento en todos los sectores con negocios fiables y preparados para el futuro.",
+      "sub": "De Finanzas a Almacén, Agro Bio, Exportación, Publicidad y Fundación.",
       "tag": "Grupo Indexia",
       "tagline": "Ventajas Diversas. Visión Unificada."
     },
     "p1": {
       "heading": "Un destino completo\npara sus préstamos.",
-      "sub": "Puede solicitar cualquier tipo de préstamo a través de nuestro portal en www.indexiafinance.com. Ofrecemos nuestros servicios a nivel mundial: en India somos socios comerciales de 43 bancos y NBFC.",
+      "sub": "Puede solicitar una amplia gama de préstamos en nuestro portal www.indexiafinance.com. Ofrecemos nuestros servicios a nivel mundial.",
       "tag": "Indexia Finanzas"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Su marca en\ncada carretera.",
-      "sub": "Múltiples vallas publicitarias a lo largo de las carreteras, ofreciendo a las marcas campañas de alta visibilidad.",
+      "sub": "El cruce del norte de la India de 8 autopistas y 2 carreteras estatales, con más de 1 crore de visibilidad diaria.",
       "tag": "Indexia Publicidad"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Fijo",
     "mob": "Móvil",
     "mobile": "Móvil",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Particular / Fundación"
   },
   "securityTipsPage": {
     "contactsEyebrow": "¿Necesitas Ayuda?",
@@ -1559,7 +1561,7 @@
     "notes": "¿Algo más que debamos saber?",
     "notesPlaceholderAd": "Fechas de campaña, referencias, peticiones especiales…",
     "notesPlaceholderWh": "Tipo de almacenaje, accesos, movimiento de camiones…",
-    "submit": "Solicitar reserva",
+    "submit": "Enviar Reserva",
     "submitting": "Enviando…",
     "responseNote": "Nuestro equipo responde en 24 horas, lun – sáb.",
     "successTitle": "¡Solicitud recibida!",
@@ -1576,6 +1578,19 @@
     "websitePlaceholder": "https://…",
     "name": "Nombre",
     "phone": "Teléfono",
-    "email": "Correo electrónico"
+    "email": "Correo electrónico",
+    "size": "Tamaño",
+    "sizePlaceholder": "Selecciona un tamaño",
+    "adSide": "Lado del anuncio",
+    "adSidePlaceholder": "Selecciona el lado",
+    "adSide_single": "Un lado",
+    "adSide_both": "Ambos lados",
+    "citySide": "Lado de la ciudad",
+    "citySidePlaceholder": "Selecciona el lado de la ciudad",
+    "citySide_in": "Dentro de la ciudad",
+    "citySide_out": "Fuera de la ciudad",
+    "errorAdSide": "Selecciona el lado del anuncio.",
+    "errorCitySide": "Selecciona el lado de la ciudad.",
+    "errorSize": "Selecciona un tamaño."
   }
 }

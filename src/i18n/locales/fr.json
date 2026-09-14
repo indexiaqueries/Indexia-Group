@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "entreprises, un groupe",
-    "description": "Huit entreprises. Une équipe. Construisez votre carrière dans la finance, l'exportation, l'agriculture, la sécurité, la publicité et le développement sportif.",
+    "description": "Construisez votre carrière dans la finance, l'exportation, l'agriculture, la sécurité, la publicité et le développement sportif.",
     "sectors": {
       "finance": "Finances",
       "export": "Exportation",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Écrivez-nous",
     "bookingsOffice": "Siège social",
     "brochure": "Voir la brochure",
-    "serviceLabel": "Service"
+    "serviceLabel": "Service",
+    "keyEntriesEyebrow": "Registre"
   },
   "companyLinkCard": {
     "visitPage": "Visiter la page",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Un Groupe.\nDe Multiples Solutions.",
       "motto": "Quelques étapes pour servir la nation",
-      "sub": "De la finance et la logistique à l'agro et la publicité, Indexia Group accélère la croissance de tous les secteurs avec des entreprises fiables et tournées vers l'avenir.",
+      "sub": "De la Finance à l'Entreposage, l'Agro Bio, l'Export, la Publicité et la Fondation.",
       "tag": "Groupe Indexia",
       "tagline": "Aventures Diversifiées. Vision Unifiée."
     },
     "p1": {
       "heading": "Une destination\ncomplète de prêt.",
-      "sub": "Vous pouvez demander tout type de prêt via notre portail www.indexiafinance.com. Nous proposons nos services dans le monde entier, en Inde, nous sommes partenaires commerciaux de 43 banques et NBFC.",
+      "sub": "Vous pouvez demander une large gamme de prêts sur notre portail www.indexiafinance.com. Nous proposons nos services dans le monde entier.",
       "tag": "Indexia Finance"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Votre marque sur\nchaque autoroute.",
-      "sub": "De nombreux emplacements publicitaires le long des autoroutes, offrant aux marques des campagnes à forte visibilité.",
+      "sub": "Le carrefour du nord de l'Inde : 8 autoroutes et 2 routes nationales, avec plus d'1 crore de visibilité quotidienne.",
       "tag": "Indexia Publicité"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Ligne fixe",
     "mob": "Mobile",
     "mobile": "Portable",
-    "tel": "Tél"
+    "tel": "Tél",
+    "individualFoundation": "Particulier / Fondation"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Besoin d'Aide ?",
@@ -1559,7 +1561,7 @@
     "notes": "Autre chose à nous signaler ?",
     "notesPlaceholderAd": "Dates de campagne, références, demandes spéciales…",
     "notesPlaceholderWh": "Type de stockage, accès, circulation des camions…",
-    "submit": "Demander une réservation",
+    "submit": "Envoyer la Réservation",
     "submitting": "Envoi…",
     "responseNote": "Notre équipe répond sous 24 heures, lun – sam.",
     "successTitle": "Demande bien reçue !",
@@ -1576,6 +1578,19 @@
     "websitePlaceholder": "https://…",
     "name": "Nom",
     "phone": "Téléphone",
-    "email": "E-mail"
+    "email": "E-mail",
+    "size": "Taille",
+    "sizePlaceholder": "Choisir une taille",
+    "adSide": "Côté de l'affichage",
+    "adSidePlaceholder": "Choisir le côté",
+    "adSide_single": "Un seul côté",
+    "adSide_both": "Les deux côtés",
+    "citySide": "Côté de la ville",
+    "citySidePlaceholder": "Choisir le côté de la ville",
+    "citySide_in": "En ville",
+    "citySide_out": "Hors ville",
+    "errorAdSide": "Veuillez choisir le côté de l'affichage.",
+    "errorCitySide": "Veuillez choisir le côté de la ville.",
+    "errorSize": "Veuillez choisir une taille."
   }
 }

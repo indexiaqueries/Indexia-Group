@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "empresas, um grupo",
-    "description": "Oito empresas. Uma equipe. Construa sua carreira em finanças, exportação, agricultura, segurança, publicidade e desenvolvimento de atletas.",
+    "description": "Construa sua carreira em finanças, exportação, agricultura, segurança, publicidade e desenvolvimento de atletas.",
     "sectors": {
       "finance": "Finanças",
       "export": "Exportação",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Escreva-nos",
     "bookingsOffice": "Escritório central",
     "brochure": "Ver folheto",
-    "serviceLabel": "Serviço"
+    "serviceLabel": "Serviço",
+    "keyEntriesEyebrow": "Registro"
   },
   "companyLinkCard": {
     "visitPage": "Visitar página",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Um Grupo. Múltiplas Soluções.",
       "motto": "Alguns passos para servir a nação",
-      "sub": "Das finanças e logística ao agro e publicidade, a Indexia Group impulsiona o crescimento em todos os setores com negócios confiáveis e preparados para o futuro.",
+      "sub": "De Finanças a Armazém, Agro Bio, Exportação, Publicidade e Fundação.",
       "tag": "Grupo Indexia",
       "tagline": "Diverse Ventures. Unified Vision."
     },
     "p1": {
       "heading": "Um destino completo\npara os seus empréstimos.",
-      "sub": "Pode solicitar qualquer tipo de empréstimo através do nosso portal www.indexiafinance.com. Oferecemos os nossos serviços a nível global, na Índia, somos parceiros comerciais de 43 bancos e NBFC.",
+      "sub": "Pode solicitar uma ampla gama de empréstimos através do nosso portal www.indexiafinance.com. Oferecemos os nossos serviços a nível global.",
       "tag": "Indexia Finanças"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "A sua marca em\ncada autoestrada.",
-      "sub": "Múltiplos painéis publicitários ao longo das autoestradas, oferecendo às marcas campanhas de alta visibilidade.",
+      "sub": "O cruzamento do norte da Índia de 8 expressways e 2 rodovias estaduais, com mais de 1 crore de visibilidade diária.",
       "tag": "Indexia Publicidade"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Fixo",
     "mob": "Celular",
     "mobile": "Telemóvel",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Individual / Fundação"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Precisa de Ajuda?",
@@ -1563,7 +1565,7 @@
     "notes": "Algo mais que devamos saber?",
     "notesPlaceholderAd": "Datas da campanha, referências, pedidos especiais…",
     "notesPlaceholderWh": "Tipo de armazenagem, necessidades de acesso, circulação de camiões…",
-    "submit": "Pedir Reserva",
+    "submit": "Enviar Reserva",
     "submitting": "A enviar…",
     "responseNote": "A nossa equipa responde em 24 horas, seg – sáb.",
     "successTitle": "Pedido de reserva recebido!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "Introduza o nome da sua empresa ou marca.",
     "errorStartDate": "Escolha uma data de início.",
     "errorDuration": "Selecione uma duração.",
-    "errorArtwork": "Selecione o estado da arte."
+    "errorArtwork": "Selecione o estado da arte.",
+    "size": "Tamanho",
+    "sizePlaceholder": "Selecione um tamanho",
+    "adSide": "Lado do anúncio",
+    "adSidePlaceholder": "Selecione o lado",
+    "adSide_single": "Um lado",
+    "adSide_both": "Ambos os lados",
+    "citySide": "Lado da cidade",
+    "citySidePlaceholder": "Selecione o lado da cidade",
+    "citySide_in": "Dentro da cidade",
+    "citySide_out": "Fora da cidade",
+    "errorAdSide": "Selecione o lado do anúncio.",
+    "errorCitySide": "Selecione o lado da cidade.",
+    "errorSize": "Selecione um tamanho."
   }
 }

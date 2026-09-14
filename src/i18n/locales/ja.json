@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "社、1つのグループ",
-    "description": "8つの会社。1つのチーム。金融、輸出、農業、セキュリティ、広告、アスリート支援でキャリアを築きましょう。",
+    "description": "金融、輸出、農業、セキュリティ、広告、アスリート支援でキャリアを築きましょう。",
     "sectors": {
       "finance": "金融",
       "export": "輸出",
@@ -314,7 +314,8 @@
     "bookingsEmail": "メールで相談",
     "bookingsOffice": "本社オフィス",
     "brochure": "パンフレットを見る",
-    "serviceLabel": "サービス"
+    "serviceLabel": "サービス",
+    "keyEntriesEyebrow": "登記"
   },
   "companyLinkCard": {
     "visitPage": "ページを見る",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "一つのグループ。\n多様なソリューション。",
       "motto": "国に仕えるためのいくつかのステップ",
-      "sub": "金融やロジスティクスから農業や広告まで、インデキシアグループは信頼され、未来を見据えた企業を通じて、あらゆる業界の成長を促進します。",
+      "sub": "ファイナンスからウェアハウス、アグロバイオ、エクスポート、広告、ファウンデーションまで。",
       "tag": "インデキシアグループ",
       "tagline": "Diverse Ventures. Unified Vision."
     },
     "p1": {
       "heading": "あらゆる\nローン先。",
-      "sub": "www.indexiafinance.com のポータルで、あらゆる種類のローンを申請できます。私たちはグローバルにサービスを提供しています, インドでは43の銀行およびNBFCとビジネスパートナー関係を結んでいます。",
+      "sub": "www.indexiafinance.com のポータルで、幅広い種類のローンを申請できます。私たちはグローバルにサービスを提供しています。",
       "tag": "インデキシアファイナンス"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "あなたのブランドを\nすべての高速道路に。",
-      "sub": "高速道路沿いの複数の広告媒体を所有し、ブランドに高い視認性のキャンペーンを提供します。",
+      "sub": "北インドの8つの高速道路と2つの州道が交差するジャンクション。1クロール超の毎日の視認性。",
       "tag": "インデキシアアドバタイジング"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "固定電話",
     "mob": "携帯",
     "mobile": "携帯電話",
-    "tel": "電話"
+    "tel": "電話",
+    "individualFoundation": "個人 / ファウンデーション"
   },
   "securityTipsPage": {
     "contactsEyebrow": "サポートが必要ですか？",
@@ -1563,7 +1565,7 @@
     "notes": "その他ご要望があればお知らせください",
     "notesPlaceholderAd": "キャンペーン日程、参考資料、特別なご要望など…",
     "notesPlaceholderWh": "保管タイプ、アクセス要件、トラックの動線など…",
-    "submit": "予約をリクエスト",
+    "submit": "予約を送信",
     "submitting": "送信中…",
     "responseNote": "チームは24時間以内（月～土）に対応します。",
     "successTitle": "予約リクエストを受け付けました！",
@@ -1576,6 +1578,19 @@
     "errorCompany": "会社名またはブランド名を入力してください。",
     "errorStartDate": "開始日を選択してください。",
     "errorDuration": "期間を選択してください。",
-    "errorArtwork": "デザインの状況を選択してください。"
+    "errorArtwork": "デザインの状況を選択してください。",
+    "size": "サイズ",
+    "sizePlaceholder": "サイズを選択",
+    "adSide": "広告面",
+    "adSidePlaceholder": "広告面を選択",
+    "adSide_single": "片面",
+    "adSide_both": "両面",
+    "citySide": "都市側",
+    "citySidePlaceholder": "都市側を選択",
+    "citySide_in": "市内",
+    "citySide_out": "市外",
+    "errorAdSide": "広告面を選択してください。",
+    "errorCitySide": "都市側を選択してください。",
+    "errorSize": "サイズを選択してください。"
   }
 }

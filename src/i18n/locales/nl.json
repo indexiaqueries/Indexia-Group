@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "bedrijven, één groep",
-    "description": "Acht bedrijven. Eén team. Bouw uw carrière in financiën, export, landbouw, beveiliging, reclame en atletenontwikkeling.",
+    "description": "Bouw uw carrière in financiën, export, landbouw, beveiliging, reclame en atletenontwikkeling.",
     "sectors": {
       "finance": "Financiën",
       "export": "Export",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Mail ons",
     "bookingsOffice": "Hoofdkantoor",
     "brochure": "Brochure bekijken",
-    "serviceLabel": "Dienst"
+    "serviceLabel": "Dienst",
+    "keyEntriesEyebrow": "Register"
   },
   "companyLinkCard": {
     "visitPage": "Pagina bezoeken",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Een Groep. Meerdere Oplossingen.",
       "motto": "Enkele stappen om de natie te dienen",
-      "sub": "Van financiën en logistiek tot agro en reclame: Indexia Group stimuleert groei in diverse sectoren met betrouwbare, toekomstbestendige bedrijven.",
+      "sub": "Van Finance naar Warehouse, Agro Bio, Export, Advertising en Foundation.",
       "tag": "Indexia Groep",
       "tagline": "Diversifieerde Ventures. Verenigde Visie."
     },
     "p1": {
       "heading": "Eén Bestemming\nVoor Alle Leningen.",
-      "sub": "U kunt via ons portaal www.indexiafinance.com voor elke vorm van lening aanvragen. We werken wereldwijd, in India zijn we zakenpartner van 43 banken en NBFC's.",
+      "sub": "U kunt via ons portaal www.indexiafinance.com een breed scala aan leningen aanvragen. We werken wereldwijd.",
       "tag": "Indexia Financiën"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Uw Merk op\nElke Snelweg.",
-      "sub": "Meerdere reclameposities langs snelwegen voor campagnes met hoge zichtbaarheid.",
+      "sub": "Noord-India's knooppunt van 8 expressways en 2 state highways, met dagelijks meer dan 1 crore zichtbaarheid.",
       "tag": "Indexia Reclame"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Vast",
     "mob": "Mobiel",
     "mobile": "Mobiel",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Particulier / Stichting"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Hulp Nodig?",
@@ -1563,7 +1565,7 @@
     "notes": "Iets anders dat we moeten weten?",
     "notesPlaceholderAd": "Campagnedatum, referenties, speciale verzoeken…",
     "notesPlaceholderWh": "Opslagtype, toegangsbehoeften, vrachtbewegingen…",
-    "submit": "Boeking aanvragen",
+    "submit": "Boeking Versturen",
     "submitting": "Verzenden…",
     "responseNote": "Ons team reageert binnen 24 uur, ma – za.",
     "successTitle": "Boekingsverzoek ontvangen!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "Vul uw bedrijfs- of merknaam in.",
     "errorStartDate": "Kies een startdatum.",
     "errorDuration": "Selecteer een duur.",
-    "errorArtwork": "Selecteer de status van uw artwork."
+    "errorArtwork": "Selecteer de status van uw artwork.",
+    "size": "Formaat",
+    "sizePlaceholder": "Formaat kiezen",
+    "adSide": "Advertentiezijde",
+    "adSidePlaceholder": "Zijde kiezen",
+    "adSide_single": "Eén zijde",
+    "adSide_both": "Beide zijden",
+    "citySide": "Stadzijde",
+    "citySidePlaceholder": "Stadzijde kiezen",
+    "citySide_in": "Binnen de stad",
+    "citySide_out": "Buiten de stad",
+    "errorAdSide": "Kies de advertentiezijde.",
+    "errorCitySide": "Kies de stadzijde.",
+    "errorSize": "Kies een formaat."
   }
 }

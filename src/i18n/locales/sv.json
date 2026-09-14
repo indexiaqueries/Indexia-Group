@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "företag, en koncern",
-    "description": "Åtta företag. Ett team. Bygg din karriär inom finans, export, jordbruk, säkerhet, reklam och atletutveckling.",
+    "description": "Bygg din karriär inom finans, export, jordbruk, säkerhet, reklam och atletutveckling.",
     "sectors": {
       "finance": "Finans",
       "export": "Export",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Mejla oss",
     "bookingsOffice": "Huvudkontor",
     "brochure": "Se broschyren",
-    "serviceLabel": "Tjänst"
+    "serviceLabel": "Tjänst",
+    "keyEntriesEyebrow": "Register"
   },
   "companyLinkCard": {
     "visitPage": "Besök sidan",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "En Grupp. Flera Lösningar.",
       "motto": "Några steg för att tjäna nationen",
-      "sub": "Från finans och logistik till agro och reklam driver Indexia Group tillväxt över branscher med pålitliga, framtidsredo företag.",
+      "sub": "Från finans till lager, agro bio, export, reklam och stiftelse.",
       "tag": "Indexia Grupp",
       "tagline": "Diversifierade Företag. Förenad Vision."
     },
     "p1": {
       "heading": "En komplett\nlåneplattform.",
-      "sub": "Du kan ansöka om alla typer av lån via vår portal på www.indexiafinance.com. Vi erbjuder våra tjänster globalt, i Indien är vi affärspartners med 43 banker och NBFC:er.",
+      "sub": "Du kan ansöka om ett brett utbud av lån via vår portal på www.indexiafinance.com. Vi erbjuder våra tjänster globalt.",
       "tag": "Indexia Finans"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Ditt varumärke på\nvarje motorväg.",
-      "sub": "Flera reklamanläggningar längs motorvägar som ger varumärken kampanjer med hög synlighet.",
+      "sub": "Norra Indiens knutpunkt för 8 expressways och 2 state highways, med över 1 crore daglig synlighet.",
       "tag": "Indexia Reklam"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Fast telefon",
     "mob": "Mobil",
     "mobile": "Mobil",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Privatperson / Stiftelse"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Behöver du hjälp?",
@@ -1563,7 +1565,7 @@
     "notes": "Något annat vi bör veta?",
     "notesPlaceholderAd": "Kampanjdatum, referenser, särskilda önskemål…",
     "notesPlaceholderWh": "Lagringstyp, åtkomstbehov, lastbilstrafik…",
-    "submit": "Skicka bokningsförfrågan",
+    "submit": "Skicka Bokning",
     "submitting": "Skickar…",
     "responseNote": "Vårt team svarar inom 24 timmar, mån – lör.",
     "successTitle": "Bokningsförfrågan mottagen!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "Ange ditt företags- eller varumärkesnamn.",
     "errorStartDate": "Välj ett startdatum.",
     "errorDuration": "Välj en period.",
-    "errorArtwork": "Välj status för grafiken."
+    "errorArtwork": "Välj status för grafiken.",
+    "size": "Storlek",
+    "sizePlaceholder": "Välj storlek",
+    "adSide": "Annonssida",
+    "adSidePlaceholder": "Välj annons sida",
+    "adSide_single": "Ena sidan",
+    "adSide_both": "Båda sidor",
+    "citySide": "Stadssida",
+    "citySidePlaceholder": "Välj stadssida",
+    "citySide_in": "Inom stan",
+    "citySide_out": "Utanför stan",
+    "errorAdSide": "Välj annonssida.",
+    "errorCitySide": "Välj stadssida.",
+    "errorSize": "Välj en storlek."
   }
 }

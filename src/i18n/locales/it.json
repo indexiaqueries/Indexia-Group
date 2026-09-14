@@ -226,7 +226,7 @@
   },
   "careersHero": {
     "companiesOneGroup": "aziende, un gruppo",
-    "description": "Otto aziende. Un team. Costruisci la tua carriera in finanza, esportazione, agricoltura, sicurezza, pubblicità e sviluppo atleti.",
+    "description": "Costruisci la tua carriera in finanza, esportazione, agricoltura, sicurezza, pubblicità e sviluppo atleti.",
     "sectors": {
       "finance": "Finanza",
       "export": "Esportazione",
@@ -314,7 +314,8 @@
     "bookingsEmail": "Scrivici",
     "bookingsOffice": "Sede centrale",
     "brochure": "Vedi brochure",
-    "serviceLabel": "Servizio"
+    "serviceLabel": "Servizio",
+    "keyEntriesEyebrow": "Registro"
   },
   "companyLinkCard": {
     "visitPage": "Visita la pagina",
@@ -450,13 +451,13 @@
     "p0": {
       "heading": "Un Gruppo. Soluzioni Multiple.",
       "motto": "Alcuni passi per servire la nazione",
-      "sub": "Dalla finanza e logistica all'agro e alla pubblicità, Indexia Group alimenta la crescita di ogni settore con aziende affidabili e pronte per il futuro.",
+      "sub": "Da Finance a Warehouse, Agro Bio, Export, Advertising e Foundation.",
       "tag": "Gruppo Indexia",
       "tagline": "Diverse Ventures. Unified Vision."
     },
     "p1": {
       "heading": "Una destinazione\ncompleta per i prestiti.",
-      "sub": "Puoi richiedere qualsiasi tipo di prestito tramite il nostro portale www.indexiafinance.com. Offriamo i nostri servizi a livello globale, in India siamo partner commerciali di 43 banche e NBFC.",
+      "sub": "Puoi richiedere un'ampia gamma di prestiti sul nostro portale www.indexiafinance.com. Offriamo i nostri servizi a livello globale.",
       "tag": "Indexia Finanza"
     },
     "p2": {
@@ -486,7 +487,7 @@
     },
     "p7": {
       "heading": "Il tuo marchio su\nogni autostrada.",
-      "sub": "Numerosi spazi pubblicitari lungo le autostrade, per campagne ad alta visibilità.",
+      "sub": "L'incrocio del Nord India di 8 autostrade e 2 strade statali, con oltre 1 crore di visibilità giornaliera.",
       "tag": "Indexia Pubblicità"
     },
     "p8": {
@@ -1193,7 +1194,8 @@
     "landline": "Fisso",
     "mob": "Mobile",
     "mobile": "Cellulare",
-    "tel": "Tel."
+    "tel": "Tel.",
+    "individualFoundation": "Privato / Fondazione"
   },
   "securityTipsPage": {
     "contactsEyebrow": "Serve Aiuto?",
@@ -1563,7 +1565,7 @@
     "notes": "Altro che dovremmo sapere?",
     "notesPlaceholderAd": "Date della campagna, riferimenti, richieste speciali…",
     "notesPlaceholderWh": "Tipo di stoccaggio, esigenze di accesso, movimento dei camion…",
-    "submit": "Richiedi Prenotazione",
+    "submit": "Invia Prenotazione",
     "submitting": "Invio…",
     "responseNote": "Il nostro team risponde entro 24 ore, lun – sab.",
     "successTitle": "Richiesta di prenotazione ricevuta!",
@@ -1576,6 +1578,19 @@
     "errorCompany": "Inserisci il nome della tua azienda o brand.",
     "errorStartDate": "Scegli una data di inizio.",
     "errorDuration": "Seleziona una durata.",
-    "errorArtwork": "Seleziona lo stato della grafica."
+    "errorArtwork": "Seleziona lo stato della grafica.",
+    "size": "Dimensione",
+    "sizePlaceholder": "Seleziona dimensione",
+    "adSide": "Lato annuncio",
+    "adSidePlaceholder": "Seleziona lato",
+    "adSide_single": "Lato singolo",
+    "adSide_both": "Entrambi i lati",
+    "citySide": "Lato città",
+    "citySidePlaceholder": "Seleziona lato città",
+    "citySide_in": "In città",
+    "citySide_out": "Fuori città",
+    "errorAdSide": "Seleziona il lato dell'annuncio.",
+    "errorCitySide": "Seleziona il lato città.",
+    "errorSize": "Seleziona una dimensione."
   }
 }
