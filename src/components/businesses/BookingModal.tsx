@@ -89,6 +89,10 @@ const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
   const [sending, setSending] = useState(false);
   const [serverError, setServerError] = useState("");
   const [done, setDone] = useState(false);
+  // When the booking came from a specific size row ("Book this size"), the
+  // selection is fixed — the size field is shown but disabled. Only the
+  // generic "Book now" CTA lets the user pick a size themselves.
+  const sizeLocked = SIZE_OPTIONS[variant].some((s) => s.value === context.itemLabel);
   const dialogRef = useRef<HTMLDivElement>(null);
 
   // Escape to close, focus trap start, scroll lock.
@@ -224,7 +228,7 @@ const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
           type="button"
           onClick={onClose}
           aria-label={t("bookingModal.close")}
-          className="absolute end-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition hover:bg-slate-200 hover:text-slate-700"
+          className="absolute inset-e-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition hover:bg-slate-200 hover:text-slate-700"
         >
           <X size={16} />
         </button>
@@ -341,13 +345,15 @@ const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
 
                 <div className="space-y-1.5">
                   <label htmlFor="bm-size" className={labelClass}>
-                    <Ruler size={11} className="me-1 inline" /> {t("bookingModal.size")} *
+                    <Ruler size={11} className="me-1 inline" /> {t("bookingModal.size")} {sizeLocked ? "" : "*"}
                   </label>
                   <select
                     id="bm-size"
                     value={form.size}
                     onChange={(e) => set("size", e.target.value)}
-                    className={inputClass}
+                    disabled={sizeLocked}
+                    aria-readonly={sizeLocked}
+                    className={`${inputClass} ${sizeLocked ? "cursor-not-allowed bg-(--color-mist) text-(--color-muted)" : ""}`}
                   >
                     <option value="">{t("bookingModal.sizePlaceholder")}</option>
                     {SIZE_OPTIONS[variant].map((option) => (
