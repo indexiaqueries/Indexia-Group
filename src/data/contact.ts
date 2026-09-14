@@ -1,3 +1,32 @@
+/**
+ * Dedicated enquiry line per group company, as printed on the company pages.
+ * Display form keeps digit groups readable; `href` is the callable form.
+ */
+export type DedicatedPhone = {
+  display: string;
+  href: string;
+};
+
+export const dedicatedPhones: Record<string, DedicatedPhone> = {
+  finance: { display: "+91 86551 68551", href: "+918655168551" },
+  finserve: { display: "+91 86551 68551", href: "+918655168551" },
+  advertising: { display: "+91 8928 786 594", href: "+918928786594" },
+  "agro-bio": { display: "+91 8928 786 594", href: "+918928786594" },
+  securities: { display: "+91 8928 786 594", href: "+918928786594" },
+  warehouse: { display: "+91 73026 47817", href: "+917302647817" },
+  overseas: { display: "+91 73026 47817", href: "+917302647817" },
+  foundation: { display: "+91 86918 86919", href: "+918691886919" },
+};
+
+/** Fallback for any company without its own dedicated line. */
+export const defaultDedicatedPhone: DedicatedPhone = {
+  display: "+91 8928 786 594",
+  href: "+918928786594",
+};
+
+export const getDedicatedPhone = (slug: string): DedicatedPhone =>
+  dedicatedPhones[slug] ?? defaultDedicatedPhone;
+
 type PhoneLink = {
   label: string;
   labelKey?: string;
@@ -51,6 +80,7 @@ export const contactEmails = {
 
 export const phoneNumbers: PhoneLink[] = [
   { label: "Landline", labelKey: "landline", number: "+91 11 4629 1155", href: "tel:+911146291155", mono: true },
+  { label: "Individual / Foundation", labelKey: "individualFoundation", number: "+91 86918 86919", href: "tel:+918691886919" },
   { label: "Mobile", labelKey: "mobile", number: "+91 8928 786 594", href: "tel:+918928786594" },
   { label: "Mobile", labelKey: "mobile", number: "+91 86551 68551", href: "tel:+918655168551", mono: true },
 ];
