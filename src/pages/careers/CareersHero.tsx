@@ -116,7 +116,7 @@ const CareersHero = () => {
         <CareerHeroBg />
 
         <div className="relative mx-auto w-full max-w-7xl px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14">
-          <div className="hero-panel-glass relative max-w-4xl p-5 sm:p-8 lg:p-10">
+          <div className="hero-panel-glass relative max-w-3xl p-5 sm:p-8 lg:p-10">
           <div className="mb-5 flex items-center gap-3">
             <span className="h-px w-10 bg-(--color-yellow)/60" />
             <Eyebrow color="var(--color-yellow)" size="md">
@@ -124,11 +124,7 @@ const CareersHero = () => {
             </Eyebrow>
           </div>
 
-          <div className="flex items-start gap-4 sm:gap-5">
-            <span
-              aria-hidden="true"
-              className="mt-3 hidden h-16 w-0.75 shrink-0 bg-(--color-yellow) sm:block sm:h-20 lg:h-24"
-            />
+          <div className="flex items-start">
             <h1 className="font-display max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-[1.08] text-white">
               {t("careersPage.titleStart")}
               <span className="text-shimmer text-(--color-yellow)">
