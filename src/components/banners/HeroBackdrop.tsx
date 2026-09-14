@@ -9,9 +9,11 @@ type HeroBackdropProps = {
   background?: string;
   containerClassName?: string;
   extra?: ReactNode;
+  /** Object-position for the backdrop image (default: center). */
+  imagePosition?: string;
 };
 
-const HeroBgImage = ({ src }: { src: string }) => {
+const HeroBgImage = ({ src, position }: { src: string; position: string }) => {
   const variants = getResponsiveVariants(src);
   if (!variants) {
     return (
@@ -24,7 +26,8 @@ const HeroBgImage = ({ src }: { src: string }) => {
         loading="eager"
         decoding="async"
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-cover"
+        style={{ objectPosition: position }}
       />
     );
   }
@@ -43,7 +46,8 @@ const HeroBgImage = ({ src }: { src: string }) => {
         loading="eager"
         decoding="async"
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-cover"
+        style={{ objectPosition: position }}
       />
     </picture>
   );
@@ -56,12 +60,13 @@ const HeroBackdrop = ({
   containerClassName =
     "relative mx-auto w-full max-w-7xl px-4 py-16 pt-24 text-center sm:px-6 lg:px-8 lg:py-22",
   extra,
+  imagePosition = "center",
 }: HeroBackdropProps) => (
   <section
     className="relative flex min-h-[92svh] items-center overflow-hidden sm:min-h-screen"
     style={{ background }}
   >
-    <HeroBgImage src={image} />
+    <HeroBgImage src={image} position={imagePosition} />
     <div className={containerClassName}>{children}</div>
 
     {extra}
