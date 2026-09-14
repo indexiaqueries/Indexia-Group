@@ -56,7 +56,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                 <AnimatedCounter
                   value={t(stat.valueKey)}
                   label={t(stat.labelKey)}
-                  color="var(--color-blue)"
+                  color="var(--color-teal)"
                   numberClassName="font-ledger text-xl font-bold tabular-nums sm:text-2xl"
                   labelClassName="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-(--color-muted)"
                 />
