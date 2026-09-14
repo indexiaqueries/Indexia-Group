@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import { Building2, CalendarDays, CheckCircle2, Clock3, FileImage, Globe, Loader2, Mail, MessageSquare, Phone, User, X } from "lucide-react";
+import { Building2, CalendarDays, CheckCircle2, Clock3, FileImage, Globe, Loader2, Mail, MapPin, MessageSquare, Phone, Ruler, User, X } from "lucide-react";
 import { API_BASE } from "../../lib/api";
 import { sendWeb3Forms } from "../../lib/web3forms";
 
@@ -21,6 +21,9 @@ type FormState = {
   email: string;
   company: string;
   website: string;
+  size: string;
+  adSide: string;
+  citySide: string;
   startDate: string;
   duration: string;
   artwork: string;
@@ -43,19 +46,45 @@ const errorClass = "text-xs font-medium text-(--color-danger)";
 
 const DURATIONS = ["1 month", "3 months", "6 months", "12 months", "Long term"];
 
+/**
+ * Size options per variant. Labels reuse the existing pricing-table keys so
+ * every locale already has them translated; the empty value is the placeholder.
+ */
+const SIZE_OPTIONS: Record<BookingModalProps["variant"], { value: string; labelKey: string }[]> = {
+  advertising: [
+    { value: "10 × 20 feet", labelKey: "unipolePricing.sizeSmall" },
+    { value: "12 × 24 feet", labelKey: "unipolePricing.sizeLarge" },
+  ],
+  warehouse: [
+    { value: "1 Acre", labelKey: "warehousePricing.plot1" },
+    { value: "2 Acres", labelKey: "warehousePricing.plot2" },
+    { value: "2.5 Acres", labelKey: "warehousePricing.plot2_5" },
+    { value: "5 Acres", labelKey: "warehousePricing.plot5" },
+    { value: "8 Acres", labelKey: "warehousePricing.plot8" },
+  ],
+};
+
+/** Translation key for a size value, for the submitted message lines. */
+const sizeLabelKey = (size: string) =>
+  SIZE_OPTIONS.advertising.concat(SIZE_OPTIONS.warehouse).find((s) => s.value === size)?.labelKey ?? "bookingModal.size";
+
 const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
   const { t } = useTranslation();
-  const [form, setForm] = useState<FormState>({
+  const [form, setForm] = useState<FormState>(() => ({
     name: "",
     phone: "",
     email: "",
     company: "",
     website: "",
+    // Pre-select the size when the booking came from a specific size row.
+    size: SIZE_OPTIONS[variant].some((s) => s.value === context.itemLabel) ? context.itemLabel : "",
+    adSide: "",
+    citySide: "",
     startDate: "",
     duration: "3 months",
     artwork: "",
     notes: "",
-  });
+  }));
   const [errors, setErrors] = useState<Errors>({});
   const [sending, setSending] = useState(false);
   const [serverError, setServerError] = useState("");
@@ -88,6 +117,11 @@ const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
     if (!/^\d{10}$/.test(form.phone.replace(/\D/g, ""))) next.phone = t("form.errorPhone");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) next.email = t("form.errorEmail");
     if (!form.company.trim()) next.company = t("bookingModal.errorCompany");
+    if (!form.size) next.size = t("bookingModal.errorSize");
+    if (variant === "advertising") {
+      if (!form.adSide) next.adSide = t("bookingModal.errorAdSide");
+      else if (form.adSide === "single" && !form.citySide) next.citySide = t("bookingModal.errorCitySide");
+    }
     if (!form.startDate) next.startDate = t("bookingModal.errorStartDate");
     if (!form.duration) next.duration = t("bookingModal.errorDuration");
     if (variant === "advertising" && !form.artwork) next.artwork = t("bookingModal.errorArtwork");
@@ -108,6 +142,13 @@ const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
         context.itemDetail ? `${t("bookingModal.messageDetail")}: ${context.itemDetail}` : "",
         form.company ? `${t("bookingModal.companyBrand")}: ${form.company}` : "",
         form.website ? `${t("bookingModal.website")}: ${form.website}` : "",
+        form.size ? `${t("bookingModal.size")}: ${t(sizeLabelKey(form.size))}` : "",
+        variant === "advertising" && form.adSide
+          ? `${t("bookingModal.adSide")}: ${t(`bookingModal.adSide_${form.adSide}`)}`
+          : "",
+        variant === "advertising" && form.adSide === "single" && form.citySide
+          ? `${t("bookingModal.citySide")}: ${t(`bookingModal.citySide_${form.citySide}`)}`
+          : "",
         `${t("bookingModal.startDate")}: ${form.startDate}`,
         `${t("bookingModal.duration")}: ${t(`bookingModal.duration_${form.duration.replace(" ", "_")}`, { defaultValue: form.duration })}`,
         variant === "advertising" && form.artwork
@@ -297,6 +338,67 @@ const BookingModal = ({ context, variant, onClose }: BookingModalProps) => {
                     className={inputClass}
                   />
                 </div>
+
+                <div className="space-y-1.5">
+                  <label htmlFor="bm-size" className={labelClass}>
+                    <Ruler size={11} className="me-1 inline" /> {t("bookingModal.size")} *
+                  </label>
+                  <select
+                    id="bm-size"
+                    value={form.size}
+                    onChange={(e) => set("size", e.target.value)}
+                    className={inputClass}
+                  >
+                    <option value="">{t("bookingModal.sizePlaceholder")}</option>
+                    {SIZE_OPTIONS[variant].map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {t(option.labelKey)}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.size && <p className={errorClass}>{errors.size}</p>}
+                </div>
+
+                {variant === "advertising" && (
+                  <div className="space-y-1.5">
+                    <label htmlFor="bm-ad-side" className={labelClass}>
+                      <FileImage size={11} className="me-1 inline" /> {t("bookingModal.adSide")} *
+                    </label>
+                    <select
+                      id="bm-ad-side"
+                      value={form.adSide}
+                      onChange={(e) => {
+                        set("adSide", e.target.value);
+                        if (e.target.value !== "single") set("citySide", "");
+                      }}
+                      className={inputClass}
+                    >
+                      <option value="">{t("bookingModal.adSidePlaceholder")}</option>
+                      <option value="single">{t("bookingModal.adSide_single")}</option>
+                      <option value="both">{t("bookingModal.adSide_both")}</option>
+                    </select>
+                    {errors.adSide && <p className={errorClass}>{errors.adSide}</p>}
+                  </div>
+                )}
+
+                {variant === "advertising" && form.adSide === "single" && (
+                  <div className="space-y-1.5">
+                    <label htmlFor="bm-city-side" className={labelClass}>
+                      <MapPin size={11} className="me-1 inline" /> {t("bookingModal.citySide")} *
+                    </label>
+                    <select
+                      id="bm-city-side"
+                      value={form.citySide}
+                      onChange={(e) => set("citySide", e.target.value)}
+                      className={inputClass}
+                    >
+                      <option value="">{t("bookingModal.citySidePlaceholder")}</option>
+                      <option value="in">{t("bookingModal.citySide_in")}</option>
+                      <option value="out">{t("bookingModal.citySide_out")}</option>
+                    </select>
+                    {errors.citySide && <p className={errorClass}>{errors.citySide}</p>}
+                  </div>
+                )}
 
                 <div className="space-y-1.5">
                   <label htmlFor="bm-start" className={labelClass}>
