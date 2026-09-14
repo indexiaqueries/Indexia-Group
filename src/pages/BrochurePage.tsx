@@ -102,7 +102,7 @@ const BrochurePage = ({ slug, backTo, pdfPath, pdfName, band }: BrochurePageProp
               />
               <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/80">Indexia Group</p>
             </div>
-            <h1 className="mt-6 text-[clamp(28px,4vw,40px)] font-extrabold leading-tight">{name}</h1>
+            <h1 className="mt-6 text-[clamp(24px,4vw,44px)] font-extrabold leading-tight">{name}</h1>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <span className="rounded-full border border-white/30 bg-black/20 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
                 Est. {b.founded}
