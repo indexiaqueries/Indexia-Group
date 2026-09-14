@@ -171,7 +171,7 @@ const InsightsSection = ({ insights }: InsightsSectionProps) => {
             {t("newsPage.knowledgeEyebrow")}
           </p>
           {/* No nowrap: this heading must wrap gracefully on small screens and in longer translations. */}
-          <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-ink)">
+          <h2 className="font-display text-[clamp(24px,4vw,38px)] font-bold text-(--color-blue)">
             {t("newsPage.knowledgeHeading")}
           </h2>
           <p className="mt-1 text-[13px] leading-6 text-(--color-muted)">

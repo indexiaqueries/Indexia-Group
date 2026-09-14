@@ -24,7 +24,7 @@ const CultureSection = ({ culture }: CultureSectionProps) => {
       <div className="mx-auto max-w-5xl">
         <Reveal className="mb-2 max-w-2xl">
           <Eyebrow className="mb-1.5">{t("careersPage.cultureEyebrow")}</Eyebrow>
-          <h2 className="font-display text-[clamp(20px,3.5vw,32px)] font-bold text-(--color-ink)">
+          <h2 className="font-display text-[clamp(20px,3.5vw,32px)] font-bold text-(--color-blue)">
             {t("careersPage.cultureHeading")}
           </h2>
         </Reveal>
