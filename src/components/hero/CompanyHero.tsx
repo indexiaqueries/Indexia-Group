@@ -43,7 +43,7 @@ const CompanyHero = ({
     <HeroBackdrop
       image={image}
       imagePosition="top"
-      containerClassName="relative mx-auto w-full max-w-7xl px-2 py-12 pt-20 sm:px-3 lg:px-5 lg:py-18"
+      containerClassName="relative w-full max-w-7xl px-2 py-10 pt-20 sm:px-3 lg:px-10"
       extra={
         <div
           aria-hidden="true"

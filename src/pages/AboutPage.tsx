@@ -70,7 +70,7 @@ const AboutPage = () => {
       <AboutHero />
 
       {/* Leadership */}
-      <section className="section-ruled section-ink relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <section className="section-ruled section-ink relative px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         <div className="mx-auto grid max-w-6xl items-center gap-5 lg:grid-cols-2 lg:gap-8">
           <Reveal delay={0.1} amount={0.15} className="relative">
             <div className="flex flex-col items-center">
@@ -124,7 +124,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story */}
-      <section className="section-ruled section-paper relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <section className="section-ruled section-paper relative px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         <div className="mx-auto grid max-w-6xl items-center gap-5 lg:grid-cols-2 lg:gap-8">
           <div>
             <Reveal>
@@ -195,7 +195,7 @@ const AboutPage = () => {
       {/* Our Companies */}
       <div className="atlas-divider" />
 
-      <section className="section-ruled section-paper relative overflow-hidden px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <section className="section-ruled section-paper relative overflow-hidden px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         <div className="mx-auto max-w-5xl">
           <Reveal className="mx-auto mb-2 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("companiesEyebrow", "Our Companies")}</Eyebrow>
@@ -214,7 +214,7 @@ const AboutPage = () => {
 
 
       {/* Timeline */}
-      <section className="section-ruled relative bg-white px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <section className="section-ruled relative bg-white px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         <div className="mx-auto max-w-7xl">
           <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
@@ -227,7 +227,7 @@ const AboutPage = () => {
         </div>
       </section>
       {/* Registration & Compliance */}
-      <section className="section-ruled section-ink relative overflow-hidden px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <section className="section-ruled section-ink relative overflow-hidden px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         {/* Decorative glow */}
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 w-48 rounded-full bg-(--color-teal)/15 blur-[80px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 w-40 rounded-full bg-(--color-yellow)/10 blur-[60px]" />

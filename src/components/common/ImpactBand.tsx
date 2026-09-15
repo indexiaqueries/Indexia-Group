@@ -44,7 +44,7 @@ const ImpactBand = ({
   const accentTick = isTeal ? "bg-(--color-teal)/60" : "bg-(--color-yellow)/60";
 
   return (
-    <section className={`section-ruled relative overflow-hidden px-4 py-6 sm:px-6 sm:py-8 lg:px-8 ${className}`}>
+    <section className={`section-ruled relative overflow-hidden px-3 py-6 sm:px-4 sm:py-8 lg:px-5 ${className}`}>
       <img
         src={image}
         alt=""

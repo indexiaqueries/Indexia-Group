@@ -83,7 +83,7 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
         lastUpdated={doc.lastUpdated}
       />
 
-      <section className="section-ruled section-paper relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <section className="section-ruled section-paper relative px-3 py-3 sm:px-4 sm:py-4 lg:px-5">
         <div className="card-premium mx-auto max-w-3xl rounded-2xl p-4 sm:p-6 lg:p-8">
           <Reveal>
             <div className="mb-3 border-b border-(--color-line) pb-3 pl-6">

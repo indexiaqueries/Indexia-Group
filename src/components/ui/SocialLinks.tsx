@@ -6,7 +6,7 @@ const SocialLinks: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative overflow-hidden px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+    <section className="relative overflow-hidden px-3 py-6 sm:px-4 sm:py-8 lg:px-5 lg:py-10">
       {/* Decorative background glows (theme vars) */}
       <div
         aria-hidden="true"

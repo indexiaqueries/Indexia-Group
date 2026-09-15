@@ -98,7 +98,7 @@ const Contact = () => {
 
       <ContactHero />
 
-      <section className="section-ruled section-paper relative overflow-hidden px-4 py-5 sm:px-6 sm:py-8 lg:px-8">
+      <section className="section-ruled section-paper relative overflow-hidden px-3 py-5 sm:px-4 sm:py-8 lg:px-5">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent"

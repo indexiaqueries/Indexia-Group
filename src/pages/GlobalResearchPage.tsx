@@ -69,7 +69,7 @@ const GlobalResearchPage = () => {
 
       <ResearchHero />
 
-      <section id="research-areas" className="section-ruled section-paper scroll-mt-24 px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
+      <section id="research-areas" className="section-ruled section-paper scroll-mt-24 px-3 py-5 sm:px-4 sm:py-7 lg:px-5">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-3">{t("globalResearchPage.areasEyebrow")}</Eyebrow>
@@ -95,7 +95,7 @@ const GlobalResearchPage = () => {
         </div>
       </section>
 
-      <section className="section-ruled relative bg-(--color-mist) px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
+      <section className="section-ruled relative bg-(--color-mist) px-3 py-5 sm:px-4 sm:py-7 lg:px-5">
         <div className="mx-auto max-w-6xl">
           <Reveal className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center">
             <Eyebrow className="mb-3">{t("globalResearchPage.reportsEyebrow")}</Eyebrow>

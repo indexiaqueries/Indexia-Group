@@ -58,7 +58,7 @@ const HeroBackdrop = ({
   children,
   background = `linear-gradient(115deg, ${colors.navyDeep} 0%, ${colors.navy} 55%, ${colors.navyMid} 100%)`,
   containerClassName =
-    "relative mx-auto w-full max-w-7xl px-4 py-16 pt-24 text-center sm:px-6 lg:px-8 lg:py-22",
+    "relative mx-auto w-full max-w-7xl px-3 py-16 pt-24 text-center sm:px-4 lg:px-5 lg:py-22",
   extra,
   imagePosition = "center",
 }: HeroBackdropProps) => (

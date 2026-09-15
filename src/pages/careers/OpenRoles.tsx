@@ -84,7 +84,7 @@ const OpenRoles = ({ roles, loading }: OpenRolesProps) => {
       </div>
 
       {/* Roster */}
-      <div className="section-ruled section-paper px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <div className="section-ruled section-paper px-3 py-10 sm:px-4 sm:py-14 lg:px-5">
         <div className="mx-auto max-w-5xl">
           {loading && (
             <div className="border border-(--color-line) bg-white py-10 text-center">

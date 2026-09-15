@@ -70,7 +70,7 @@ const Home = () => {
 
       {/* Our Reach */}
       <div className="atlas-divider" />
-      <section className="section-ruled relative overflow-hidden px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
+      <section className="section-ruled relative overflow-hidden px-3 py-5 sm:px-4 sm:py-7 lg:px-5">
         <img
           src={HomeWorld}
           alt=""
