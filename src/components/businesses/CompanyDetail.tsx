@@ -13,7 +13,7 @@ import { getCompanyImage } from "../../data/companyImages";
 import { companies, type Company } from "../../data/companies";
 import { accent, monoFont } from "../../lib/theme";
 
-import { branches, contactEmails, getDedicatedPhone, phoneNumbers } from "../../data/contact";
+import { branches, contactEmails, getDedicatedPhone } from "../../data/contact";
 import UnipolePricing from "./UnipolePricing";
 import WarehousePricing from "./WarehousePricing";
 import BookingModal, { type BookingContext } from "./BookingModal";
@@ -62,7 +62,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   // the full contact set from the project brochures; other pages keep the mix.
   const showFullContacts = b.slug === "warehouse" || b.slug === "advertising";
   const enquiryBranch = branches.find((branch) => branch.key === (showFullContacts ? "delhiOffice" : "corporateOffice"));
-  const landline = phoneNumbers.find((p) => p.labelKey === "landline");
   // Dedicated enquiry line for this company, falls back to the group line.
   const dedicated = getDedicatedPhone(b.slug);
   // Home-hero slide copy for this company, already translated in every locale,
@@ -398,14 +397,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   >
                     {dedicated.display}
                   </a>
-                  {showFullContacts && landline && (
-                    <a
-                      href={landline.href}
-                      className="mt-0.5 block text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
-                    >
-                      {landline.number}
-                    </a>
-                  )}
                 </span>
               </div>
               <div
@@ -418,23 +409,22 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                   <span className="block text-[9px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">
                     {t("companyDetail.bookingsEmail")}
                   </span>
-                  <a
-                    href={`mailto:${contactEmails.queries}`}
-                    className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
-                  >
-                    {contactEmails.queries}
-                  </a>
-                  {showFullContacts && (
-                    <span className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                      <a href={`mailto:${contactEmails.bijendraMalik}`} className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)">
-                        {contactEmails.bijendraMalik}
-                      </a>
-                      <span aria-hidden="true" className="text-(--color-muted)">|</span>
-                      <a href={`mailto:${contactEmails.viniMalik}`} className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)">
-                        {contactEmails.viniMalik}
-                      </a>
-                    </span>
-                  )}
+                  <span className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                    <a
+                      href={`mailto:${contactEmails.queries}`}
+                      className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
+                    >
+                      {contactEmails.queries}
+                    </a>
+                    {showFullContacts && (
+                      <>
+                        <span aria-hidden="true" className="text-(--color-muted)">|</span>
+                        <a href={`mailto:${contactEmails.viniMalik}`} className="block break-all text-[13px] font-semibold text-(--color-ink) transition-colors hover:text-(--color-teal-deep)">
+                          {contactEmails.viniMalik}
+                        </a>
+                      </>
+                    )}
+                  </span>
                 </span>
               </div>
               {enquiryBranch && (

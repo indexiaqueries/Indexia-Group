@@ -70,8 +70,6 @@ export const contactEmails = {
   queries: "indexia.queries@gmail.com",
   /** Direct line to Vini Malik (contact page, warehouse enquiry block). */
   viniMalik: "Vini.Malik5@gmail.com",
-  /** Warehouse project contact (warehouse page enquiry block). */
-  bijendraMalik: "bijendra.malik@indexiafinance.com",
   /** Recruitment — primary address (careers page and apply success screen). */
   hr: "hr@indexiafinance.com",
   /** Recruitment — alternate address (careers page and apply success screen). */
