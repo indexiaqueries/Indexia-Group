@@ -78,13 +78,13 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
       <SEO title={title} description={t(descriptionKey)} keywords={KEYWORDS[docId]} canonicalPath={path} jsonLd={jsonLd} />
 
       <HeroBackdrop image={heroImage}>
-        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-6 text-center sm:px-10 sm:py-7">
+        <div className="hero-panel-glass relative mx-auto max-w-3xl px-5 py-6 text-center sm:px-10 sm:py-7">
         <div className="mb-4 flex items-center justify-center gap-3">
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{t("legal.eyebrow")}</Eyebrow>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
         </div>
-        <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white">
+        <h1 className="font-display mx-auto mb-5 max-w-3xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white">
           {title}
         </h1>
         <p className="mx-auto mb-7 max-w-2xl text-sm leading-7 text-white/80">{t(`legal.${docId}Subtitle`)}</p>

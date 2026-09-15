@@ -48,7 +48,7 @@ const SocialLinks: React.FC = () => {
         </div>
 
         {/* Cards — fanned deck, constrained so cards stay compact instead of stretching full width */}
-        <div className="mx-auto grid w-full max-w-4xl grid-cols-1 gap-4 min-[400px]:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-5 lg:gap-6">
+        <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-4 min-[400px]:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-5 lg:gap-6">
           {socialLinks.map((social, index) => {
             const Icon = social.icon;
             const fan = index % 2 === 1 ? "lg:rotate-1" : "lg:-rotate-1";

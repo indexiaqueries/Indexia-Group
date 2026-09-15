@@ -70,13 +70,13 @@ const AboutPage = () => {
 
       {/* Hero */}
       <HeroBackdrop image={aboutBg}>
-        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-9 text-center sm:px-10 sm:py-11">
+        <div className="hero-panel-glass relative mx-auto max-w-2xl px-5 py-9 text-center sm:px-10 sm:py-11">
           <div className="fade-up mb-4 flex items-center justify-center gap-3" style={{ animationDelay: "0.05s" } as CSSProperties}>
             <span className="h-px w-8 bg-(--color-yellow)/70" />
             <Eyebrow color="var(--color-yellow)">{tr("eyebrow", "About Us")}</Eyebrow>
             <span className="h-px w-8 bg-(--color-yellow)/70" />
           </div>
-          <h1 className="fade-up font-display mx-auto mb-3 max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
+          <h1 className="fade-up font-display mx-auto mb-3 max-w-2xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white" style={{ animationDelay: "0.14s" } as CSSProperties}>
             {tr("titleStart", "Some steps to ")}<br />
             <span className="text-(--color-yellow)">{tr("titleAccent", "serve the nation")}</span>
           </h1>
@@ -235,7 +235,7 @@ const AboutPage = () => {
 
       {/* Timeline */}
       <section className="section-ruled relative bg-white px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-7xl">
           <Reveal className="mx-auto mb-4 sm:mb-6 max-w-2xl text-center">
             <Eyebrow className="mb-2">{tr("timelineEyebrow", "Our Journey")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-(--color-blue)">
@@ -252,8 +252,8 @@ const AboutPage = () => {
         <div aria-hidden="true" className="pointer-events-none absolute -inset-e-20 top-0 h-48 w-48 rounded-full bg-(--color-teal)/15 blur-[80px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -inset-s-20 bottom-0 h-40 w-40 rounded-full bg-(--color-yellow)/10 blur-[60px]" />
 
-        <div className="relative mx-auto max-w-6xl">
-          <Reveal className="mx-auto mb-4 sm:mb-5 max-w-4xl text-center">
+        <div className="relative mx-auto max-w-7xl">
+          <Reveal className="mx-auto mb-4 sm:mb-5 max-w-6xl text-center">
             <Eyebrow color="var(--color-yellow)" className="mb-2">{tr("registrationEyebrow", "Registration & Compliance")}</Eyebrow>
             <h2 className="font-display text-[clamp(22px,3.5vw,36px)] font-bold text-white">
               {tr("registrationTitle", "Registered Entities")}</h2>

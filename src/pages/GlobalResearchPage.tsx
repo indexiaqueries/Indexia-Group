@@ -68,13 +68,13 @@ const GlobalResearchPage = () => {
       />
 
       <HeroBackdrop image={researchBg}>
-        <div className="hero-panel-glass relative mx-auto max-w-4xl px-5 py-9 text-center sm:px-10 sm:py-11">
+        <div className="hero-panel-glass relative mx-auto max-w-3xl px-5 py-9 text-center sm:px-10 sm:py-11">
         <div className="mb-4 flex items-center justify-center gap-3">
           <span className="h-px w-8 bg-(--color-yellow)/70" />
           <Eyebrow color="var(--color-yellow)">{t("globalResearchPage.eyebrow")}</Eyebrow>
           <span className="h-px w-8 bg-(--color-yellow)/70" />
         </div>
-        <h1 className="font-display mx-auto mb-5 max-w-4xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white">
+        <h1 className="font-display mx-auto mb-5 max-w-3xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white">
           {t("globalResearchPage.titleStart")}
           <span className="text-(--color-yellow)">{t("globalResearchPage.titleAccent")}</span>
         </h1>

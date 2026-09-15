@@ -263,7 +263,7 @@ const ApplyPage = () => {
       {/* Role Details */}
       {roleData && (roleData.description || (roleData.requirements && roleData.requirements.length > 0)) && (
         <section className="bg-white px-2 py-3 sm:px-3 sm:py-4 lg:px-5">
-          <div className="mx-auto max-w-2xl">
+          <div className="mx-auto max-w-5xl">
             <Reveal>
               <div className="rounded-2xl border border-slate-100 bg-(--color-soft) p-5 sm:p-6">
                 <h2 className="font-display text-[15px] sm:text-base font-bold text-slate-900">{t("applyPage.roleDetails")}</h2>

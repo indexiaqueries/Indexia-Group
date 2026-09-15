@@ -116,7 +116,7 @@ const CareersHero = () => {
         <CareerHeroBg />
 
         <div className="relative mx-auto w-full max-w-7xl px-2 py-8 pt-16 sm:px-3 sm:py-10 sm:pt-20 lg:px-5 lg:py-14">
-          <div className="hero-panel-glass relative max-w-3xl p-5 sm:p-8 lg:p-10">
+          <div className="hero-panel-glass relative max-w-2xl p-5 sm:p-8 lg:p-10">
           <div className="mb-5 flex items-center gap-3">
             <span className="h-px w-10 bg-(--color-yellow)/60" />
             <Eyebrow color="var(--color-yellow)" size="md">
