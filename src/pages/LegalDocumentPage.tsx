@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
-import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
-import HeroBackdrop from "../components/banners/HeroBackdrop";
+import LegalHero from "../components/hero/LegalHero";
 import { colors } from "../lib/theme";
 import privacyHero from "../assets/legal-img/PrivacyPolicy.webp";
 import termsOfUseHero from "../assets/legal-img/TermsofUse.webp";
@@ -77,22 +76,12 @@ const LegalDocumentPage = ({ docId }: LegalDocumentPageProps) => {
     <main className="site-shell">
       <SEO title={title} description={t(descriptionKey)} keywords={KEYWORDS[docId]} canonicalPath={path} jsonLd={jsonLd} />
 
-      <HeroBackdrop image={heroImage}>
-        <div className="hero-panel-glass relative mx-auto max-w-3xl px-5 py-6 text-center sm:px-10 sm:py-7">
-        <div className="mb-4 flex items-center justify-center gap-3">
-          <span className="h-px w-8 bg-(--color-yellow)/70" />
-          <Eyebrow color="var(--color-yellow)">{t("legal.eyebrow")}</Eyebrow>
-          <span className="h-px w-8 bg-(--color-yellow)/70" />
-        </div>
-        <h1 className="font-display mx-auto mb-5 max-w-3xl text-[clamp(24px,4vw,44px)] font-bold leading-tight text-white">
-          {title}
-        </h1>
-        <p className="mx-auto mb-7 max-w-2xl text-sm leading-7 text-white/80">{t(`legal.${docId}Subtitle`)}</p>
-        <p className="font-ledger text-xs font-bold uppercase tracking-[0.22em] text-white/55">
-          {t("legal.lastUpdated")}: {doc.lastUpdated}
-        </p>
-        </div>
-      </HeroBackdrop>
+      <LegalHero
+        image={heroImage}
+        title={title}
+        subtitle={t(`legal.${docId}Subtitle`)}
+        lastUpdated={doc.lastUpdated}
+      />
 
       <section className="section-ruled section-paper relative px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         <div className="card-premium mx-auto max-w-3xl rounded-2xl p-4 sm:p-6 lg:p-8">

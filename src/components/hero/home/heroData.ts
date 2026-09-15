@@ -1,4 +1,4 @@
-import type { HeroPanel } from "../../cards/HeroGalleryThumb";
+import type { HeroPanel } from "./HeroGalleryThumb";
 import { getCompanyImage, getCompanyMobileImage, getCompanyThumbImage } from "../../../data/companyImages";
 import { companies } from "../../../data/companies";
 import { colors } from "../../../lib/theme";

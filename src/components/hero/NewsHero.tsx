@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import Eyebrow from "../../components/common/Eyebrow";
-import HeroBackdrop from "../../components/banners/HeroBackdrop";
+import Eyebrow from "../common/Eyebrow";
+import HeroBackdrop from "./shared/HeroBackdrop";
 const newsBg = "/images/heroes/news-hero.webp";
 
 // Sections the group publishes across, same source of truth as the careers page ticker.

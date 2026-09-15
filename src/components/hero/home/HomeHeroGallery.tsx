@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
-import HeroGalleryThumb, { type HeroPanel } from "../cards/HeroGalleryThumb";
+import HeroGalleryThumb, { type HeroPanel } from "./HeroGalleryThumb";
 
 const TRACK_EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 const DRAG_THRESHOLD = 6;

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
-import CareersHero from "./careers/CareersHero";
+import CareersHero from "../components/hero/CareersHero";
 import CultureSection from "./careers/CultureSection";
 import OpenRoles from "./careers/OpenRoles";
 import CareersCta from "./careers/CareersCta";

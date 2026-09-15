@@ -6,7 +6,7 @@ import { useReducedMotion } from "../hooks/useReducedMotion";
 import LocationCard from "../components/cards/LocationCard";
 import SEO from "../components/common/SEO";
 import Reveal from "../components/common/Reveal";
-import ContactHero from "../components/banners/ContactHero";
+import ContactHero from "../components/hero/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import EnquiryForm from "../components/contact/EnquiryForm";
 import { branches, contactEmails } from "../data/contact";

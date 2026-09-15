@@ -5,7 +5,7 @@ import { branches, phoneNumbers } from "../../data/contact";
 import { colors, displayFont, monoFont } from "../../lib/theme";
 import Eyebrow from "../common/Eyebrow";
 import PassbookCard from "../contact/PassbookCard";
-import HeroBackdrop from "./HeroBackdrop";
+import HeroBackdrop from "./shared/HeroBackdrop";
 import contactHeroBg from "../../assets/hero-img/ContactHero.webp";
 
 const ContactHero = () => {

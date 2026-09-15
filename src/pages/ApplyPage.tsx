@@ -5,8 +5,8 @@ import { ArrowLeft, Upload, Send, CheckCircle, User, Mail, Phone, Briefcase, Fil
 import SEO from "../components/common/SEO";
 import { API_BASE } from "../lib/api";
 import { contactEmails } from "../data/contact";
-import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";
+import ApplyHero from "../components/hero/ApplyHero";
 
 // The success body (applyPage.successBody) wraps {{role}} in <strong> and is
 // rendered as HTML, but i18next interpolation escaping is disabled globally.
@@ -231,31 +231,16 @@ const ApplyPage = () => {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-(--color-ink-deep) px-2 py-6 pt-10 sm:px-3 sm:py-7 sm:pt-12 lg:px-5 lg:py-10 lg:pt-16">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(circle at 20% 80%, rgba(38,174,144,0.2), transparent 50%), radial-gradient(circle at 80% 20%, rgba(242,242,49,0.12), transparent 45%)" }} />
-        <div className="relative mx-auto max-w-4xl">
-          <Link
-            to="/careers"
-            className="mb-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/50 transition-colors hover:text-(--color-yellow)"
-          >
-            <ArrowLeft size={14} strokeWidth={2.5} />
-            {t("applyPage.backToCareers")}
-          </Link>
-          <div className="mb-4 flex items-center gap-3">
-            <span className="h-px w-10 bg-(--color-yellow)/60" />
-            <Eyebrow color="var(--color-yellow)" size="md">
-              {t("careersPage.apply")}
-            </Eyebrow>
-            <span className="h-px w-10 bg-(--color-yellow)/60" />
-          </div>
-          <h1 className="font-display text-[clamp(24px,4vw,44px)] font-bold leading-[1.1] text-white">
-            {t("applyPage.heroTitle")} <span className="text-(--color-yellow)">{roleTitle}</span>
-          </h1>
-          {department && (
-            <p className="mt-3 font-ledger text-[11px] sm:text-xs uppercase tracking-[0.18em] text-(--color-teal)/80">{department}</p>
-          )}
-        </div>
-      </section>
+      <div className="relative bg-(--color-ink-deep) px-2 pt-10 sm:px-3 sm:pt-12 lg:px-5 lg:pt-16">
+        <Link
+          to="/careers"
+          className="relative z-10 mb-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/50 transition-colors hover:text-(--color-yellow)"
+        >
+          <ArrowLeft size={14} strokeWidth={2.5} />
+          {t("applyPage.backToCareers")}
+        </Link>
+      </div>
+      <ApplyHero roleTitle={roleTitle} department={department} />
 
       {/* Top divider */}
       <div aria-hidden="true" className="h-px w-full bg-linear-to-r from-transparent via-(--color-teal)/35 to-transparent" />

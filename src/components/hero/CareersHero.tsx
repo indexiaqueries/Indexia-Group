@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Eyebrow from "../../components/common/Eyebrow";
+import Eyebrow from "../common/Eyebrow";
 import { getResponsiveVariants, WIDTHS } from "../../lib/responsiveVariants";
 import careerHeroImg from "../../assets/hero-img/CareerHero.webp";
 

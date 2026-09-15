@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { useReducedMotion } from "../../hooks/useReducedMotion";
+import { useReducedMotion } from "../../../hooks/useReducedMotion";
 import HomeHeroGallery from "./HomeHeroGallery";
-import HeroBackground from "./hero/HeroBackground";
-import HeroSlideContent from "./hero/HeroSlideContent";
-import { makePanels } from "./hero/heroData";
-import { AUTOPLAY_INTERVAL, SHADOW_LEVEL } from "./hero/heroMotion";
+import HeroBackground from "./HeroBackground";
+import HeroSlideContent from "./HeroSlideContent";
+import { makePanels } from "./heroData";
+import { AUTOPLAY_INTERVAL, SHADOW_LEVEL } from "./heroMotion";
 
 const Banner = () => {
   const { t } = useTranslation();

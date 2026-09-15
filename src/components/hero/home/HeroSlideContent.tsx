@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import type { HeroPanel } from "../../cards/HeroGalleryThumb";
+import type { HeroPanel } from "./HeroGalleryThumb";
 import { TEXT_ZOOM_MS, textShadow } from "./heroMotion";
 
 const PORTAL_URL = "https://www.indexiafinance.com/";

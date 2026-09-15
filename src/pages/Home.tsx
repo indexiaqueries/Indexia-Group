@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import Banner from "../components/banners/HomeHero";
+import Banner from "../components/hero/home/HomeHero";
 import SEO from "../components/common/SEO";
 import Eyebrow from "../components/common/Eyebrow";
 import Reveal from "../components/common/Reveal";

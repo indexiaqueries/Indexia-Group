@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { colors } from "../../lib/theme";
-import { getResponsiveVariants, WIDTHS } from "../../lib/responsiveVariants";
+import { colors } from "../../../lib/theme";
+import { getResponsiveVariants, WIDTHS } from "../../../lib/responsiveVariants";
 
 type HeroBackdropProps = {
   image: string;

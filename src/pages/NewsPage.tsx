@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
-import NewsHero from "./news/NewsHero";
+import NewsHero from "../components/hero/NewsHero";
 import NewsVideo from "./news/NewsVideo";
 import CategoryNewsSection from "./news/CategoryNewsSection";
 import InsightsSection from "./news/InsightsSection";
