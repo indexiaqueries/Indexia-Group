@@ -1,21 +1,6 @@
-// Shared per-route preview metadata + HTML surgery.
-//
-// Single source of truth consumed by two surfaces:
-//  1. server/middleware/urlPreviews.js  — rewrites <head> for social crawler
-//     user agents on the Render backend (exact URLs, no trailing slash).
-//  2. scripts/generate-route-html.mjs   — emits dist/<route>/index.html at
-//     build time so the STATIC deployment (Apache) can serve per-route
-//     previews without any server-side rewriting.
-//
-// Titles/descriptions mirror the strings the client sets via <SEO>, so link
-// previews match what users see in the tab. `image` is optional; routes
-// without one keep the default og-image.png.
-
 export const BASE_URL = "https://www.indexiagroup.com";
 export const SITE_NAME = "Indexia Group";
 
-// Company data mirrors src/data/companies.ts (kept in sync manually; the
-// build script cross-checks slugs so drift is caught at build time).
 const COMPANIES = [
   { slug: "finance", name: "Indexia Finance", tag: "Multinational Fintech", desc: "Global fintech across investor services, FDI, NBFC, and banking funding." },
   { slug: "finserve", name: "Indexia Finserve Pvt. Ltd.", tag: "Investment & Finance", desc: "Every type of loan, the right bank at your doorstep." },
@@ -29,9 +14,10 @@ const COMPANIES = [
 
 const ROUTE_META = {
   "/": {
-    title: "Financial Services, Loans, Export & Warehousing",
+    title: SITE_NAME,
     description:
       "Indexia Group brings Financial Services, Loans, Export, Warehousing, Agro, Security, Advertising, and Athlete Support together under one diversified Indian business group.",
+    image: `${BASE_URL}/images/og/group.jpg`
   },
   "/about": {
     title: "About Indexia Group",
@@ -40,9 +26,9 @@ const ROUTE_META = {
     image: `${BASE_URL}/images/og/about.jpg`,
   },
   "/contact": {
-    title: "Contact Us, Mumbai & Delhi Offices",
+    title: "Contact Us, Delhi & Mumbai Offices",
     description:
-      "Contact Indexia Group for Financial Services, Loans, Export, Agro and Warehousing enquiries. Offices in Mumbai, Delhi and Ecuador, replies within 24 hours.",
+      "Contact Indexia Group for Financial Services, Loans, Export, Agro and Warehousing enquiries. Offices in Delhi, Mumbai and Ecuador, replies within 24 hours.",
     image: `${BASE_URL}/images/og/contact.jpg`,
   },
   "/careers": {
@@ -97,8 +83,7 @@ const ROUTE_META = {
   "/admin/login": { title: "Admin Login", description: "", noindex: true },
 };
 
-// Company pages get their own generated OG image (1200×630 JPEG, produced by
-// scripts/generate-og-images.mjs from the company hero art).
+// Company pages get their own generated OG image (1200×630 JPEG, produced by scripts/generate-og-images.mjs from the company hero art).
 for (const c of COMPANIES) {
   ROUTE_META[`/${c.slug}`] = {
     title: `${c.name} - ${c.tag}`,
@@ -111,8 +96,7 @@ export const ROUTES = ROUTE_META;
 export const COMPANY_SLUGS = COMPANIES.map((c) => c.slug);
 
 // ── HTML surgery helpers ──────────────────────────────────────────
-// index.html meta tags span multiple lines, so [^>] (which matches
-// newlines) is used instead of [^\n].
+// index.html meta tags span multiple lines, so [^>] (which matches newlines) is used instead of [^\n].
 
 export const escapeHtml = (value) =>
   value
@@ -155,8 +139,6 @@ export function replaceRobots(html, value) {
   return replaceMeta(html, "name", "googlebot", value);
 }
 
-// Applies one route's preview metadata to the index.html template and
-// returns the rewritten HTML.
 export function buildPreviewHtml(template, preview, canonicalPath) {
   const url = `${BASE_URL}${canonicalPath}`;
   // Same rule as SEO.tsx: append the site name unless the title already is it.
