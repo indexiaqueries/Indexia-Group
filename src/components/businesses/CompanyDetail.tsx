@@ -417,9 +417,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                         title={t("contact.openInMaps", "Open in Google Maps")}
                       >
                         <span className="whitespace-pre-line">{t(enquiryBranch.addressKey)}</span>
-                        <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-blue) transition-colors group-hover/map:text-(--color-teal-deep)">
+                        <span className="mx-1 inline-flex text-(--color-blue) transition-colors group-hover/map:text-(--color-teal-deep)">
                           <Navigation size={11} className="shrink-0" />
-                          {t("contact.openInMaps", "Open in Google Maps")}
                         </span>
                       </a>
                     )}
