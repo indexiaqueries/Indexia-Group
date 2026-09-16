@@ -232,7 +232,7 @@ const Footer = () => {
           className="group absolute left-0 top-1/2 -translate-y-1/2 p-3"
         >
           <span
-            className="footer-blob block h-3 w-3 rounded-full bg-white/10 blur-[1px] transition-all duration-500 group-hover:bg-(--color-yellow)/70 group-hover:blur-none group-hover:shadow-[0_0_12px_rgba(250,204,21,0.6)]"
+            className="footer-blob block h-2 w-2 rounded-full bg-white/10 blur-[1px] transition-all duration-500 group-hover:bg-(--color-yellow)/70 group-hover:blur-none group-hover:shadow-[0_0_12px_rgba(250,204,21,0.6)]"
           />
         </Link>
         <div className="mx-auto max-w-7xl px-2 py-4 text-center text-[13px] text-white/50 sm:px-3 lg:px-4">
