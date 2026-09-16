@@ -927,52 +927,6 @@
         ],
         "tag": "Sản Xuất Phân Bón Hữu Cơ"
       },
-      "finance": {
-        "desc": "Fintech toàn cầu trong dịch vụ nhà đầu tư, FDI, NBFC và tài trợ ngân hàng.",
-        "highlights": [
-          "Tầm với fintech toàn cầu với cách vận hành Ấn Độ ưu tiên",
-          "Bốn mảng tích hợp dưới một mái nhà",
-          "Hỗ trợ tài trợ và tư vấn trọn gói"
-        ],
-        "name": "Indexia Tài chính",
-        "overview": "Indexia Finance là nền tảng fintech đa quốc gia cung cấp dịch vụ tài chính cho khách hàng trên toàn thế giới. Bạn có thể đăng ký mọi loại khoản vay qua cổng thông tin www.indexiafinance.com, chúng tôi cung cấp dịch vụ toàn cầu và tại Ấn Độ là đối tác kinh doanh của 43 ngân hàng và NBFC. Được xây dựng quanh bốn mảng cốt lõi, dịch vụ nhà đầu tư, tư vấn FDI, vận hành NBFC và tài trợ ngân hàng, công ty kết nối vốn với cơ hội, giúp nhà đầu tư, doanh nghiệp và tổ chức đưa ra các quyết định tài chính tự tin xuyên biên giới.",
-        "services": [
-          "Tư Vấn & Hỗ Trợ FDI",
-          "Dịch Vụ Nhà Đầu Tư",
-          "Vận Hành NBFC",
-          "Tài Trợ Ngân Hàng & Tổ Chức",
-          "Giải Pháp Vốn Xuyên Biên Giới",
-          "Tư Vấn Tài Sản & Đầu Tư"
-        ],
-        "tag": "Công nghệ tài chính đa quốc gia",
-        "tagline": "Điểm Đến Cho Mọi Khoản Vay"
-      },
-      "finserve": {
-        "desc": "Mọi loại khoản vay, được thiết kế riêng cho cá nhân và doanh nghiệp.",
-        "highlights": [
-          "Mọi loại khoản vay dưới một mái nhà",
-          "Quy trình đủ điều kiện, hồ sơ và giải ngân gọn gàng",
-          "Tư vấn tận tâm ở mọi bước"
-        ],
-        "name": "Indexia Finserve TNHH",
-        "overview": "Indexia Finserve là bộ phận cho vay của Indexia Group, cung cấp mọi loại khoản vay trong lĩnh vực tài chính. Giờ đây ngân hàng phù hợp sẽ đến tận cửa nhà bạn, công ty hoạt động như một điểm đến vay vốn trọn gói, hướng dẫn khách hàng qua các bước đủ điều kiện, hồ sơ và giải ngân cho vay cá nhân, nhà ở, doanh nghiệp, MSME và tài trợ chuyên biệt với một quy trình gọn gàng duy nhất.",
-        "services": [
-          "Vay Cá Nhân",
-          "Vay Kinh Doanh",
-          "Vay Mua Nhà",
-          "Vay Thế Chấp Bất Động Sản",
-          "Chuyển Số Dư",
-          "Vay Mua Ô Tô",
-          "Thẻ Tín Dụng",
-          "Vay Giáo Dục",
-          "Vay Dự Án",
-          "Mua Thương Mại",
-          "Chiết Khấu Hợp Đồng Thuê",
-          "Vốn Lưu Động"
-        ],
-        "tag": "Khoản Vay & Tài Chính",
-        "tagline": "Phương Thức Tài Chính Thế Hệ Mới"
-      },
       "foundation": {
         "desc": "Đào tạo và hỗ trợ đẳng cấp quốc tế, đến tận Olympic.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "Đang xem xét"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Fintech Toàn Cầu",
-      "heading": "Kết Nối Vốn\nVới Cơ Hội",
-      "description": "Với hoạt động trải dài trên bốn lục địa và quan hệ đối tác với 43 ngân hàng và NBFC chỉ riêng tại Ấn Độ, Indexia Finance kết nối nhà đầu tư với các cơ hội tăng trưởng cao xuyên biên giới.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Ngân hàng"
-        },
-        {
-          "value": "4",
-          "label": "Quốc gia"
-        },
-        {
-          "value": "∞",
-          "label": "Năm"
-        }
-      ],
-      "bullets": [
-        "Tổ chức xúc tiến FDI tại các thị trường đang phát triển và phát triển",
-        "Hoạt động NBFC với khung cho vay được quản lý",
-        "Tài trợ ngân hàng và thể chế cho dự án quy mô lớn",
-        "Giải pháp vốn xuyên biên giới cho khách hàng đa quốc gia"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Cho Vay Đơn Giản",
-      "heading": "Mọi Loại Cho Vay\nDưới Một Mái Nhà",
-      "description": "Từ khoản vay cá nhân đến vốn lưu động, Indexia Finserve mang ngân hàng phù hợp đến tận cửa nhà bạn, đơn giản hóa điều kiện, hồ sơ và giải ngân thành một quy trình hướng dẫn duy nhất.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Loại khoản vay"
-        },
-        {
-          "value": "24h",
-          "label": "Dịch vụ"
-        },
-        {
-          "value": "100%",
-          "label": "Giờ"
-        }
-      ],
-      "bullets": [
-        "Cho vay cá nhân, nhà ở và kinh doanh với lãi suất cạnh tranh",
-        "Tài trợ doanh nghiệp vừa và nhỏ và dự án với điều kiện linh hoạt",
-        "Chuyển số dư và vay thế chấp bất động sản",
-        "Quản lý quan hệ được chỉ định từ yêu cầu đến giải ngân"
-      ]
-    },
     "overseas": {
       "eyebrow": "Thương Mại Toàn Cầu",
       "heading": "Từ Ấn Độ Đến\n14 Quốc Gia",
