@@ -12,38 +12,6 @@ export type SpotlightContent = {
 };
 
 export const SPOTLIGHT_DATA: Record<string, SpotlightContent> = {
-  finance: {
-    eyebrowKey: "spotlight.finance.eyebrow",
-    headingKey: "spotlight.finance.heading",
-    descriptionKey: "spotlight.finance.description",
-    stats: [
-      { valueKey: "spotlight.finance.stats.0.value", labelKey: "spotlight.finance.stats.0.label" },
-      { valueKey: "spotlight.finance.stats.1.value", labelKey: "spotlight.finance.stats.1.label" },
-      { valueKey: "spotlight.finance.stats.2.value", labelKey: "spotlight.finance.stats.2.label" },
-    ],
-    bulletsKeys: [
-      "spotlight.finance.bullets.0",
-      "spotlight.finance.bullets.1",
-      "spotlight.finance.bullets.2",
-      "spotlight.finance.bullets.3",
-    ],
-  },
-  finserve: {
-    eyebrowKey: "spotlight.finserve.eyebrow",
-    headingKey: "spotlight.finserve.heading",
-    descriptionKey: "spotlight.finserve.description",
-    stats: [
-      { valueKey: "spotlight.finserve.stats.0.value", labelKey: "spotlight.finserve.stats.0.label" },
-      { valueKey: "spotlight.finserve.stats.1.value", labelKey: "spotlight.finserve.stats.1.label" },
-      { valueKey: "spotlight.finserve.stats.2.value", labelKey: "spotlight.finserve.stats.2.label" },
-    ],
-    bulletsKeys: [
-      "spotlight.finserve.bullets.0",
-      "spotlight.finserve.bullets.1",
-      "spotlight.finserve.bullets.2",
-      "spotlight.finserve.bullets.3",
-    ],
-  },
   overseas: {
     eyebrowKey: "spotlight.overseas.eyebrow",
     headingKey: "spotlight.overseas.heading",
