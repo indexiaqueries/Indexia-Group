@@ -4,6 +4,17 @@
   RewriteEngine On
   RewriteBase /
 
+  # Canonical host: all canonical tags, the sitemap and OG URLs use
+  # https://www.indexiagroup.com — redirect the apex domain and plain HTTP
+  # there so search engines only ever see one host. The X-Forwarded-Proto
+  # check avoids redirect loops when TLS is terminated by an upstream proxy.
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://www.indexiagroup.com%{REQUEST_URI} [R=301,L]
+
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^ https://www.indexiagroup.com%{REQUEST_URI} [R=301,L]
+
   # SPA fallback: send all non-file/non-directory requests to index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
@@ -40,6 +51,9 @@
 
   # XSS filter
   Header set X-XSS-Protection "1; mode=block"
+
+  # HSTS — browsers ignore this over plain HTTP, and production is HTTPS-only
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
   # Referrer policy
   Header set Referrer-Policy "strict-origin-when-cross-origin"
