@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Check } from "lucide-react";
 import Eyebrow from "../common/Eyebrow";
 import AnimatedCounter from "../common/AnimatedCounter";
 import Reveal from "../common/Reveal";
@@ -21,7 +22,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
   const headingLines = heading.split("\n");
 
   return (
-    <section className="relative overflow-hidden bg-white py-4 sm:py-5 lg:py-6">
+    <section className="relative overflow-hidden bg-white py-2.5 sm:py-3 lg:py-4">
       {/* Ambient glows */}
       <div
         aria-hidden="true"
@@ -34,7 +35,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
         style={{ background: "var(--color-gray)" }}
       />
 
-      <div className="container grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+      <div className="container grid items-center gap-7 sm:gap-10 lg:grid-cols-2 lg:gap-16">
         {/* Content side */}
         <Reveal amount={0.2}>
           <Eyebrow className="mb-3">
@@ -69,9 +70,11 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
             {data.bulletsKeys.map((bulletKey) => (
               <li key={bulletKey} className="flex items-start gap-2.5 sm:gap-3 text-sm leading-6 sm:leading-7 text-(--color-ink-soft)">
                 <span
-                  className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
+                  className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-(--color-ink-deep) shadow-sm"
                   style={{ background: "var(--color-yellow)" }}
-                />
+                >
+                  <Check size={11} strokeWidth={3.4} />
+                </span>
                 {t(bulletKey)}
               </li>
             ))}
