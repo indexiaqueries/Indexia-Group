@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useReducedMotion } from "../../hooks/useReducedMotion";
-import { Clock, Mail, MapPin, Phone, Sparkles } from "lucide-react";
+import { Clock, Mail, MapPin, Navigation, Phone, Sparkles } from "lucide-react";
 import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
 import ImageSlot from "../common/ImageSlot";
@@ -13,8 +12,9 @@ import { getCompanyImage } from "../../data/companyImages";
 import { companies, type Company } from "../../data/companies";
 import { accent, monoFont } from "../../lib/theme";
 
-import { branches, contactEmails, getDedicatedPhone } from "../../data/contact";
+import { branches, branchMapsUrl, contactEmails, getDedicatedPhone } from "../../data/contact";
 import UnipolePricing from "./UnipolePricing";
+import WarehouseMap from "./WarehouseMap";
 import WarehousePricing from "./WarehousePricing";
 import BookingModal, { type BookingContext } from "./BookingModal";
 import CompanyHighlights from "./CompanyHighlights";
@@ -22,7 +22,6 @@ import CompanySpotlight from "./CompanySpotlight";
 import FoundationGallery from "./FoundationGallery";
 import RegisterTabs from "./RegisterTabs";
 
-// Auto-import all media from foundation-gallery/ folder
 const foundationMedia = import.meta.glob(
   "../../assets/company-pages-img/foundation-gallery/*",
   { eager: true },
@@ -37,18 +36,13 @@ type CompanyDetailProps = {
   showBackLink?: boolean;
 };
 
-
-
 const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps) => {
   const { t } = useTranslation();
-  const prefersReducedMotion = useReducedMotion();
   const [booking, setBooking] = useState<{ context: BookingContext; variant: "warehouse" | "advertising" } | null>(null);
 
   const tr = (path: string, fallback: string) => t(`pageContent.companies.${b.slug}.${path}`, { defaultValue: fallback });
   const tag = tr("tag", b.tag);
   const name = tr("name", b.name);
-  // Enquiry heading "Get in Touch with {{name}}" with the company name
-  // highlighted in the blue accent, mirroring the Contact page heading.
   const enquiryHeading = t("companyDetail.enquireTitle", { name });
   const enquiryNameIndex = enquiryHeading.indexOf(name);
   const enquiryBefore = enquiryNameIndex >= 0 ? enquiryHeading.slice(0, enquiryNameIndex) : "";
@@ -58,28 +52,13 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const overview = tr("overview", b.overview);
   const index = companies.findIndex((c) => c.name === b.name);
   const marqueeItems = [tr("tag", b.tag), ...b.services.map((s, i) => tr(`services.${i}`, s))];
-  // Warehouse & Advertising show their own office (Delhi — Imperial Tower) and
-  // the full contact set from the project brochures; other pages keep the mix.
   const showFullContacts = b.slug === "warehouse" || b.slug === "advertising";
-  const enquiryBranch = branches.find((branch) => branch.key === (showFullContacts ? "delhiOffice" : "corporateOffice"));
-  // Dedicated enquiry line for this company, falls back to the group line.
+  // Every company page lists the Naraina (Delhi) office as its bookings office.
+  const enquiryBranch = branches.find((branch) => branch.key === "delhiOffice");
   const dedicated = getDedicatedPhone(b.slug);
-  // Home-hero slide copy for this company, already translated in every locale,
-  // unused on this page, and reused for the new impact band + story split.
   const slideHeading = t(`hero.p${index + 1}.heading`, b.tagline ?? b.name);
   const slideSub = t(`hero.p${index + 1}.sub`, b.desc);
 
-  // Land the enquiry section top exactly below the fixed navbar. The section
-  // carries its own scroll-margin-top (scroll-mt-28), so scrollIntoView is the
-  // single source of truth for the offset — no hardcoded pixel math here.
-  const scrollToEnquiry = () => {
-    document
-      .getElementById("enquiry")
-      ?.scrollIntoView({ block: "start", behavior: prefersReducedMotion ? "auto" : "smooth" });
-  };
-
-  // Book buttons open the booking popup with the selected offering preloaded;
-  // rows without a label are the generic bottom CTA ("Book Now").
   const openBooking = (row: PricingRow & { size?: number }) => {
     const variant = b.slug === "advertising" ? "advertising" : "warehouse";
     setBooking({
@@ -107,8 +86,6 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         marqueeItems={marqueeItems}
         image={getCompanyImage(b.slug)}
         showBackLink={showBackLink}
-        onEnquiryClick={scrollToEnquiry}
-        eyebrowLabel={t("companyDetail.eyebrow")}
         exploreServicesLabel={t("companyDetail.exploreServices")}
         brochureLabel={t("companyDetail.brochure", "View Brochure")}
         brochureTo={`/${b.slug}-brochure`}
@@ -227,18 +204,12 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display mt-4 sm:mt-5 text-[clamp(22px,3.2vw,38px)] font-bold leading-[1.15] text-white">
               “{slideSub}”
             </h2>
-            <a
-              href="#company-services"
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20"
-            >
-              {t("companyDetail.exploreServices")}
-            </a>
           </div>
         </div>
       </section>
 
       {/* Services */}
-      <section id="company-services" className="section-ruled section-paper relative scroll-mt-24 overflow-hidden py-5 sm:py-7 lg:py-8">
+      <section id="company-services" className="section-ruled section-paper relative scroll-mt-24 overflow-hidden py-5">
         {/* Corner glows */}
         <div
           aria-hidden="true"
@@ -252,24 +223,18 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         />
 
         <div className="container relative">
-          <Reveal className="mx-auto mb-7 sm:mb-9 max-w-2xl text-center">
+          <Reveal className="mx-auto mb-3 max-w-2xl text-center">
             <Eyebrow>{t("companyDetail.servicesTitle")}</Eyebrow>
-            <span
-              aria-hidden="true"
-              className="mx-auto mt-4 block h-px w-24"
-              style={{ background: "linear-gradient(90deg, transparent, var(--color-yellow), transparent)" }}
-            />
           </Reveal>
 
-          <div
-            className={`grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 ${b.services.length > 9 ? "xl:grid-cols-4" : ""}`}
-          >
+          <div className="grid grid-cols-1 gap-2.5">
             {b.services.map((service, i) => {
               const ServiceIcon = serviceIcons[service] ?? Sparkles;
+              const serviceDesc = t(`pageContent.companies.${b.slug}.servicesDescs.${i}`, { defaultValue: "" });
               return (
                 <Reveal key={service} delay={(i % 6) * 0.06} amount={0.1} className="h-full">
                   <div
-                    className="group relative flex h-full items-start gap-3 overflow-hidden rounded-2xl border border-(--color-line)/60 bg-white p-4 transition-all duration-400 hover:-translate-y-1.5 hover:border-transparent hover:shadow-[0_18px_44px_rgba(2,16,26,0.16)] sm:gap-3.5 sm:p-4"
+                    className="group relative flex h-full items-center gap-3 overflow-hidden rounded-2xl border border-(--color-line)/60 bg-white p-4 transition-all duration-400 hover:-translate-y-1.5 hover:border-transparent hover:shadow-[0_18px_44px_rgba(2,16,26,0.16)] sm:gap-4 sm:p-5"
                   >
                     {/* Left rail accent */}
                     <span
@@ -302,6 +267,11 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                       <span className="block wrap-break-word text-[13px] sm:text-[14px] font-bold leading-snug text-(--color-ink-deep)">
                         {tr(`services.${i}`, service)}
                       </span>
+                      {serviceDesc && (
+                        <span className="mt-1 block text-[11.5px] sm:text-[12px] leading-5 text-(--color-muted)">
+                          {serviceDesc}
+                        </span>
+                      )}
                     </span>
                   </div>
                 </Reveal>
@@ -319,6 +289,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
       {b.slug === "warehouse" && (
         <WarehousePricing onBook={handleBook} onBookGeneral={handleBookGeneral} />
       )}
+
+      {b.slug === "warehouse" && <WarehouseMap />}
 
       {/* Foundation Training Gallery */}
       {b.slug === "foundation" && (
@@ -436,9 +408,21 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
                     <span className="block text-[9px] font-bold uppercase tracking-[0.16em] text-(--color-muted)">
                       {t("companyDetail.bookingsOffice")}
                     </span>
-                    <span className="block text-[13px] font-semibold leading-5 text-(--color-ink)">
-                      {t(enquiryBranch.addressKey)}
-                    </span>
+                    {enquiryBranch.mapQuery && (
+                      <a
+                        href={branchMapsUrl(enquiryBranch)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/map block text-[13px] font-semibold leading-5 text-(--color-ink) transition-colors hover:text-(--color-teal-deep)"
+                        title={t("contact.openInMaps", "Open in Google Maps")}
+                      >
+                        <span className="whitespace-pre-line">{t(enquiryBranch.addressKey)}</span>
+                        <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-blue) transition-colors group-hover/map:text-(--color-teal-deep)">
+                          <Navigation size={11} className="shrink-0" />
+                          {t("contact.openInMaps", "Open in Google Maps")}
+                        </span>
+                      </a>
+                    )}
                   </span>
                 </div>
               )}
