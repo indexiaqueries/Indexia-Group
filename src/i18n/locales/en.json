@@ -284,9 +284,9 @@
       ]
     },
     "warehouse": {
- "eyebrow": "Strategic Investment",
- "heading": "8 Expressways,\n5 Locations, 21 Acres",
- "description": "Just ~65 km from Tronica City, Loni, Delhi, the Shamli land portfolio sits at the junction of 8 national expressways and 2 major highways, connecting 8 states with a market coverage of 50 crore people.",
+      "eyebrow": "Strategic Investment",
+      "heading": "8 Expressways,\n5 Locations, 21 Acres",
+      "description": "Just ~65 km from Tronica City, Loni, Delhi, the Shamli land portfolio sits at the junction of 8 national expressways and 2 major highways, connecting 8 states with a market coverage of 50 crore people.",
       "stats": [
         {
           "value": "21",
@@ -309,28 +309,29 @@
       ]
     },
     "advertising": {
- "eyebrow": "Location Advantage",
- "heading": "Shamli,\nThe Hub of North India",
- "description": "Premium single-pole unipoles on the Delhi–Dehradun Highway — the highest traffic corridor — give your brand maximum visibility with zero visual clutter, backed by signature Bisleri Green branding.", "stats": [
-  {
-   "value": "8+2",
-   "label": "Expressways + Highways Junction"
-  },
-  {
-   "value": "10",
-   "label": "States · 50 Crore Reach"
-  },
-  {
-   "value": "1Cr+",
-   "label": "Daily Visibility"
-  }
- ],
- "bullets": [
-  "Premium logo visibility around Shamli Ring Road",
-  "Delhi–Dehradun Highway, the highest traffic corridor",
-  "Gateway connecting NCR, Haryana, UP, Punjab & Uttarakhand",
-  "24×7 consumer engagement & brand recall"
- ]
+      "eyebrow": "Location Advantage",
+      "heading": "Shamli,\nThe Hub of North India",
+      "description": "Premium single-pole unipoles on the Delhi–Dehradun Highway — the highest traffic corridor — give your brand maximum visibility with zero visual clutter, backed by signature Bisleri Green branding.",
+      "stats": [
+        {
+          "value": "8+2",
+          "label": "Expressways + Highways Junction"
+        },
+        {
+          "value": "10",
+          "label": "States · 50 Crore Reach"
+        },
+        {
+          "value": "1Cr+",
+          "label": "Daily Visibility"
+        }
+      ],
+      "bullets": [
+        "Premium logo visibility around Shamli Ring Road",
+        "Delhi–Dehradun Highway, the highest traffic corridor",
+        "Gateway connecting NCR, Haryana, UP, Punjab & Uttarakhand",
+        "24×7 consumer engagement & brand recall"
+      ]
     },
     "foundation": {
       "eyebrow": "Athlete Development",
@@ -386,7 +387,7 @@
   "companyDetail": {
     "backAll": "All Companies",
     "register": "Register Nº {{no}} / 08",
-    "keyEntries": "Key entries",
+    "keyEntries": "Key Entries",
     "keyEntriesEyebrow": "Register",
     "servicesTitle": "Services under this entry",
     "registerOf": "Indexia Group · Register of Companies",
@@ -740,52 +741,6 @@
   },
   "pageContent": {
     "companies": {
-      "finance": {
-        "tag": "Multinational Fintech",
-        "desc": "Global fintech across investor services, FDI, NBFC, and banking funding.",
-        "overview": "Indexia Finance is a multinational fintech platform delivering financial services to clients around the world. You may apply for any kind of loan on our portal at www.indexiafinance.com. We provide our services globally, and in India we are business partners with 43 banks and NBFCs. Built around four core verticals — investor services, FDI facilitation, NBFC operations, and banking funding — the company connects capital with opportunity, helping investors, businesses, and institutions make confident financial decisions across borders.",
-        "tagline": "An Entire Loan Destination",
-        "highlights": [
-          "Global fintech reach with India-first execution",
-          "Four integrated verticals under one roof",
-          "End-to-end funding and support"
-        ],
-        "services": [
-          "FDI Facilitation",
-          "Investor Services",
-          "NBFC Operations",
-          "Banking & Institutional Funding",
-          "Cross-Border Capital Solutions",
-          "Wealth & Asset Management"
-        ],
-        "name": "Indexia Finance"
-      },
-      "finserve": {
-        "tag": "Investment & Finance",
-        "desc": "Every type of loan, the right bank at your doorstep.",
-        "overview": "Indexia Finserve is the lending arm of the Indexia Group, offering every kind of loan. The company works as a complete loan destination, the right bank at your doorstep. From eligibility to disbursal, Indexia Finserve handles personal, home, business, MSME, and specialised funding with a single, streamlined process.",
-        "tagline": "The Next Gen Finance Method",
-        "highlights": [
-          "Every loan type under one roof",
-          "Streamlined eligibility, documentation and disbursal",
-          "Dedicated support at every step"
-        ],
-        "services": [
-          "Personal Loan",
-          "Business Loan",
-          "Home Loan",
-          "Loan Against Property",
-          "Balance Transfer",
-          "Car Loan",
-          "Credit Card",
-          "Education Loan",
-          "Project Loan",
-          "Commercial Purchase",
-          "Lease Rental Discounting",
-          "Working Capital"
-        ],
-        "name": "Indexia Finserve Pvt. Ltd."
-      },
       "overseas": {
         "tag": "Global Edible Export",
         "desc": "Premium refined sugar and edible commodities exported to 14 South American countries.",
@@ -804,6 +759,14 @@
           "Regulatory & Compliance Management",
           "South American Market Distribution"
         ],
+        "servicesDescs": {
+          "0": "ICUMSA-grade refined sugar supplied in bulk to buyers across 14 South American countries.",
+          "1": "Reliable procurement of premium edible commodities from India's competitive production bases.",
+          "2": "Food-grade inspection, lab testing and certification at every stage of the supply chain.",
+          "3": "Sea-freight logistics and warehousing that keep shipments on time and at scale.",
+          "4": "Complete handling of export documentation and destination-country regulations.",
+          "5": "Established networks placing products with bulk buyers and institutional consumers."
+        },
         "name": "Indexia Overseas Pvt. Ltd."
       },
       "agro-bio": {
@@ -824,6 +787,14 @@
           "Farmer Training & Field Support",
           "Domestic & Export Distribution"
         ],
+        "servicesDescs": {
+          "0": "Scientifically formulated, eco-friendly fertilizers produced at our Shamli facility.",
+          "1": "Crop- and soil-specific blends tuned to your field's nutrient profile.",
+          "2": "Lab-grade soil testing that pinpoints deficiencies before the season begins.",
+          "3": "Agronomy-led programmes proven to raise yields and lower input costs.",
+          "4": "Hands-on application training and field visits across North India.",
+          "5": "A growing network serving farmers domestically and buyers internationally."
+        },
         "name": "Indexia Agro Bio Fertilizers Pvt. Ltd."
       },
       "securities": {
@@ -844,35 +815,53 @@
           "Event & Venue Security Management",
           "24×7 Surveillance & Threat Monitoring"
         ],
+        "servicesDescs": {
+          "0": "Licensed armed guards for premises that demand the highest level of protection.",
+          "1": "Discreet protection details for politicians, executives and public figures.",
+          "2": "Ex-military commando teams on standby for rapid on-ground deployment.",
+          "3": "Static security for factories, offices, infrastructure and critical facilities.",
+          "4": "Crowd control, access management and VIP movement for large-scale events.",
+          "5": "Round-the-clock monitoring centre with real-time threat assessment."
+        },
         "name": "Indexia Securities"
       },
       "warehouse": {
         "tag": "Strategic Land Investment",
         "desc": "21 acres of strategic land investment in Shamli, linked to 8 national expressways and 4 major ports.",
-        "overview": "Indexia Warehouse offers a strategic land investment opportunity built on 21 acres in Shamli, Uttar Pradesh, just ~65 km from Tronica City, Loni, Delhi. The location is a prime connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market coverage of 50 crore people. Direct expressway connectivity reaches 4 major ports — Gujarat, Maharashtra, Chennai and Kolkata — while IGI Airport Delhi and Noida International Airport Jewar are both within 1 hour. The land portfolio spans 5 locations with plots of 1, 2, 2.5, 5 and 8 acres, and a modern warehouse with loading docks is being built on a 2-acre plot. Expected price is ₹30 per sq ft, negotiable.", "highlights": [
-  "Prime location, Shamli, UP, ~65 km from Tronica City, Loni, Delhi",
-  "8 national expressways + 2 major highways connecting 8 states",
-  "Expressway connectivity to Gujarat, Maharashtra, Chennai & Kolkata ports",
-  "IGI Airport Delhi & Noida Int'l Airport Jewar within 1 hour"
- ], "services": [
-  "Strategic Land Investment, 1 to 8 Acre Plots",
-  "Port Connectivity, Gujarat to Kolkata",
-  "Modern Warehouse on 2-Acre Plot with Loading Docks",
-  "Expressway & Highway Connectivity, 8 States",
-  "Airport Access, IGI Delhi & Jewar Within 1 Hour"
- ],
+        "overview": "Indexia Warehouse offers a strategic land investment opportunity built on 21 acres in Shamli, Uttar Pradesh, just ~65 km from Tronica City, Loni, Delhi. The location is a prime connectivity hub: 8 national expressways and 2 major highways connecting 8 states, with direct access to Bhutan and Nepal and a market coverage of 50 crore people. Direct expressway connectivity reaches 4 major ports — Gujarat, Maharashtra, Chennai and Kolkata — while IGI Airport Delhi and Noida International Airport Jewar are both within 1 hour. The land portfolio spans 5 locations with plots of 1, 2, 2.5, 5 and 8 acres, and a modern warehouse with loading docks is being built on a 2-acre plot. Expected price is ₹30 per sq ft, negotiable.",
+        "highlights": [
+          "Prime location, Shamli, UP, ~65 km from Tronica City, Loni, Delhi",
+          "8 national expressways + 2 major highways connecting 8 states",
+          "Expressway connectivity to Gujarat, Maharashtra, Chennai & Kolkata ports",
+          "IGI Airport Delhi & Noida Int'l Airport Jewar within 1 hour"
+        ],
+        "services": [
+          "Strategic Land Investment, 1 to 8 Acre Plots",
+          "Port Connectivity, Gujarat to Kolkata",
+          "Modern Warehouse on 2-Acre Plot with Loading Docks",
+          "Expressway & Highway Connectivity, 8 States",
+          "Airport Access, IGI Delhi & Jewar Within 1 Hour"
+        ],
+        "servicesDescs": {
+          "0": "Choose from flexible 1, 2, 2.5, 5 and 8 acre parcels across 5 locations — 21 acres in total, at an expected ₹30 per sq ft, negotiable.",
+          "1": "Direct expressway corridors reach the Gujarat, Maharashtra, Chennai and Kolkata ports, opening smooth routes for export-bound cargo.",
+          "2": "A modern warehouse with loading docks is being developed on a 2-acre plot, ready for storage and distribution operations.",
+          "3": "Positioned at the junction of 8 national expressways and 2 major highways, connecting 8 states and a market of 50 crore people.",
+          "4": "Both IGI Airport Delhi and Noida International Airport, Jewar are reachable within an hour, easing client visits and air freight."
+        },
         "name": "Indexia Warehouse",
         "location": "Shamli, Uttar Pradesh, Part of Delhi NCR"
       },
       "advertising": {
         "tag": "Highway Advertising",
         "desc": "Dominate the most strategic highway junction in North India with high-impact outdoor advertising.",
-        "overview": "Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli, the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily visibility. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end.", "highlights": [
-  "Strategic Highway Placement, prime locations on Delhi–Dehradun Highway with maximum vehicular traffic coverage",
-  "High daily footfall, access to 10 connected states covering 50 crore population via the Shamli junction",
-  "Single-pole unipole for maximum visibility, unobstructed 360° viewing angle with premium height advantage",
-  "End-to-end service, printing, installation and maintenance for hassle-free campaigns"
- ],
+        "overview": "Indexia Advertising operates premium hoardings on the Indian highways, majorly the Delhi–Dehradun Highway (NH-709B) in Shamli, the hub of North India. Positioned at the junction of 8 national expressways and 2 major highways, our hoardings connect 10 states with a 50 crore population reach and attract 1+ crore daily visibility. Premium height and unobstructed 360° viewing angles give your brand maximum visibility. From printing and installation to maintenance, we handle everything end-to-end.",
+        "highlights": [
+          "Strategic Highway Placement, prime locations on Delhi–Dehradun Highway with maximum vehicular traffic coverage",
+          "High daily footfall, access to 10 connected states covering 50 crore population via the Shamli junction",
+          "Single-pole unipole for maximum visibility, unobstructed 360° viewing angle with premium height advantage",
+          "End-to-end service, printing, installation and maintenance for hassle-free campaigns"
+        ],
         "services": [
           "Unipole 10×20 ft, ₹25,000/month",
           "Unipole 12×24 ft, ₹36,000/month",
@@ -881,6 +870,14 @@
           "Printing, Installation & Maintenance",
           "Long-Term & Bulk Packages"
         ],
+        "servicesDescs": {
+          "0": "Compact single-pole unipole at ₹25,000/month, ideal for focused campaigns.",
+          "1": "Large-format unipole at ₹36,000/month with maximum visibility on the highway.",
+          "2": "Transparent ₹125 per sq ft per side per month, negotiable on long-term deals.",
+          "3": "Premium spots on the Delhi–Dehradun Highway and Shamli Ring Road.",
+          "4": "End-to-end execution — we print, install and maintain your campaign.",
+          "5": "Discounted multi-site and multi-month packages for sustained brand presence."
+        },
         "name": "Indexia Advertising",
         "location": "Delhi–Dehradun Highway, Shamli"
       },
@@ -902,6 +899,14 @@
           "Competition Funding & Equipment",
           "Psychological Support & Career Guidance"
         ],
+        "servicesDescs": {
+          "0": "World-class training infrastructure to prepare athletes for global competition.",
+          "1": "Sport-specific nutrition plans designed by professional dieticians.",
+          "2": "Elite coaches and mentors guiding every stage of an athlete's journey.",
+          "3": "Medical support and rehabilitation to keep athletes at their peak.",
+          "4": "Financial support for travel, entry fees and professional-grade equipment.",
+          "5": "Mental conditioning and career counselling for life on and off the field."
+        },
         "name": "Indexia Foundation"
       }
     },
@@ -1128,6 +1133,13 @@
     "emails": "Email",
     "address": "Office Address",
     "brochure": "Download brochure"
+  },
+  "warehouseMap": {
+    "eyebrow": "Location",
+    "title": "Site Location on Google Maps",
+    "desc": "The Shamli land portfolio sits on Meerut Karnal Road, at the junction of 8 national expressways. Explore the exact site below or open it in Google Maps for directions.",
+    "mapTitle": "Google Map of the Indexia Warehouse site on Meerut Karnal Road, Shamli, Uttar Pradesh",
+    "directions": "Get Directions"
   },
   "brochure": {
     "download": "Download PDF",
@@ -1525,7 +1537,8 @@
     "citySidePlaceholder": "Select city side",
     "citySide_in": "City inside",
     "citySide_out": "City outside",
-    "notes": "Anything else we should know?",    "notesPlaceholderAd": "Campaign dates, references, special requests…",
+    "notes": "Anything else we should know?",
+    "notesPlaceholderAd": "Campaign dates, references, special requests…",
     "notesPlaceholderWh": "Storage type, access needs, truck movement…",
     "submit": "Submit Booking",
     "submitting": "Sending…",
