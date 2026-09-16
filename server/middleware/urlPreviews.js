@@ -9,7 +9,7 @@
 // Real browsers are untouched and keep receiving index.html verbatim.
 //
 // All route metadata and HTML surgery live in shared/routeMeta.js (also
-// used by scripts/generate-route-html.mjs for the static deployment).
+// applied to the static deployment by the routeHtml() Vite plugin).
 
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";

@@ -83,7 +83,8 @@ const ROUTE_META = {
   "/admin/login": { title: "Admin Login", description: "", noindex: true },
 };
 
-// Company pages get their own generated OG image (1200×630 JPEG, produced by scripts/generate-og-images.mjs from the company hero art).
+// Company pages get their own generated OG image (1200×630 JPEG in
+// public/images/og/, produced from the company hero art with sharp).
 for (const c of COMPANIES) {
   ROUTE_META[`/${c.slug}`] = {
     title: `${c.name} - ${c.tag}`,

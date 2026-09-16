@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 import { createRequire } from 'node:module'
-import { readFileSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
+import path from 'node:path'
 import type { Plugin } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react' 
 import tailwindcss from '@tailwindcss/vite'
+import { ROUTES, COMPANY_SLUGS, buildPreviewHtml } from './shared/routeMeta.js'
 
 const require = createRequire(import.meta.url)
 const viteCompression = require('vite-plugin-compression') as (
@@ -35,6 +37,49 @@ function readServerPort(): number {
 }
 
 const SERVER_PORT = readServerPort()
+
+// Post-build: emit dist/<route>/index.html for every public route so the
+// STATIC deployment (Apache) serves per-page preview tags without any
+// server-side rewriting. Uses the same shared route metadata as the Render
+// crawler middleware (server/middleware/urlPreviews.js), so the two
+// deployments never drift.
+function routeHtml(): Plugin {
+  return {
+    name: 'route-html',
+    apply: 'build',
+    closeBundle() {
+      const distDir = path.resolve('dist')
+      const templatePath = path.join(distDir, 'index.html')
+      if (!existsSync(templatePath)) {
+        this.error('route-html: dist/index.html not found')
+        return
+      }
+      const template = readFileSync(templatePath, 'utf8')
+
+      // Company slugs must match what the app registers; fail loudly on drift.
+      const companiesSrc = readFileSync('src/data/companies.ts', 'utf8')
+      for (const slug of COMPANY_SLUGS) {
+        if (!companiesSrc.includes(`slug: "${slug}"`)) {
+          this.error(`route-html: slug "${slug}" exists in shared/routeMeta.js but not in src/data/companies.ts — out of sync.`)
+          return
+        }
+      }
+
+      let emitted = 0
+      for (const [route, preview] of Object.entries(ROUTES)) {
+        // Admin is served by the Express deployment only; skip static admin HTML.
+        if (route.startsWith('/admin')) continue
+        const html = buildPreviewHtml(template, preview, route)
+        const dir = path.join(distDir, route)
+        mkdirSync(dir, { recursive: true })
+        writeFileSync(path.join(dir, 'index.html'), html)
+        emitted += 1
+        console.log(`route-html: ${route === '/' ? '/' : route + '/'}index.html`)
+      }
+      console.log(`route-html: emitted ${emitted} per-route HTML files.`)
+    },
+  }
+}
 
 // Makes CSS links non-render-blocking so they load in parallel with JS.
 // Adds <noscript> fallback for users without JavaScript.
@@ -73,6 +118,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     nonBlockingCss(),
+    routeHtml(),
     viteCompression({ algorithm: 'brotliCompress', ext: '.br', threshold: 1024 }),
     viteCompression({ algorithm: 'gzip', ext: '.gz', threshold: 1024 }),
   ],
