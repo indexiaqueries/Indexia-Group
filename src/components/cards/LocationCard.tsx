@@ -4,6 +4,7 @@ import ImageSlot from "../common/ImageSlot";
 import MediaFrame from "../common/MediaFrame";
 import Reveal from "../common/Reveal";
 import { siteImages } from "../../data/siteImages";
+import { branchMapsUrl } from "../../data/contact";
 import { getResponsiveVariants } from "../../lib/responsiveVariants";
 
 type LocationCardItem = {
@@ -11,6 +12,8 @@ type LocationCardItem = {
   name: string;
   addressKey: string;
   phones?: { label: string; labelKey?: string; number: string; href: string }[];
+  /** Google Maps query for the address; link only renders when present. */
+  mapQuery?: string;
 };
 
 type LocationCardProps = {
@@ -51,8 +54,17 @@ const LocationCard = ({ location, delay = 0, tone = "dark" }: LocationCardProps)
       </div>
 
       <div className="mt-3 flex-1">
-        <p className={`whitespace-pre-line text-[13px] leading-6 sm:text-sm sm:leading-7 ${isLight ? "text-slate-600" : "text-white/70"}`}>
-          {t(location.addressKey)}
+        <p className={`whitespace-pre-line text-[13px] leading-6 sm:text-sm sm:leading-7}`}>
+          {location.mapQuery && (
+            <a
+              href={branchMapsUrl({ mapQuery: location.mapQuery })}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`transition-colors ${isLight ? "text-(--color-blue) hover:text-(--color-teal-deep)" : "text-(--color-yellow) hover:text-white"}`}
+            >
+              {t(location.addressKey)}
+            </a>
+        )}
         </p>
         {!!location.phones?.length && (<div className="mt-2 space-y-1.5">
           {location.phones.map((phone) => (
