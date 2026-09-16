@@ -136,10 +136,8 @@ const EnquiryForm = ({ initialCompany, initialCompanyLabel, companyLocked = fals
 
   const [ref, inView] = useInView<HTMLDivElement>({ once: true, amount: 0.2 });
 
-  // Subject lives inside the 2-column grid in compact mode (fills the grid's
-  // empty slot) and as its own full-width row otherwise.
   const subjectField = (
-    <div className={compact ? "space-y-1.5" : "space-y-2"}>
+    <div className={`${compact ? "space-y-1.5" : "space-y-2"} sm:col-span-2`}>
       <label htmlFor="subject" className={ledgerLabel}>
         {t("form.subject")}
       </label>
