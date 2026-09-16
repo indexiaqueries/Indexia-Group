@@ -41,7 +41,13 @@ type Branch = {
   name: string;
   addressKey: string;
   phones: PhoneLink[];
+  /** Address pieces used to build a Google Maps search link for this branch. */
+  mapQuery: string;
 };
+
+/** Google Maps search URL for an office, opened in a new tab. */
+export const branchMapsUrl = ({ mapQuery }: { mapQuery: string }): string =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
 
 export type ContactFormData = {
   name: string;
@@ -97,6 +103,7 @@ export const branches: Branch[] = [
     key: "corporateOffice",
     name: "Corporate Office",
     addressKey: "addresses.corporateOffice",
+    mapQuery: "Rahimtoola House, Homji Street, Fort, Mumbai 400001",
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 73026 47817", href: "tel:+917302647817" },
       { label: "Mob", labelKey: "mob", number: bookingPhone.display, href: `tel:${bookingPhone.href}` },
@@ -106,6 +113,7 @@ export const branches: Branch[] = [
     key: "mumbaiOffice",
     name: "Mumbai Office",
     addressKey: "addresses.mumbaiOffice",
+    mapQuery: "New Mhada Complex, Lokhandwala Circle, Andheri West, Mumbai 400053",
     phones: [
       { label: "Mob", labelKey: "mob", number: "+91 73026 47817", href: "tel:+917302647817" },
       { label: "Mob", labelKey: "mob", number: bookingPhone.display, href: `tel:${bookingPhone.href}` },
@@ -115,6 +123,7 @@ export const branches: Branch[] = [
     key: "delhiOffice",
     name: "Delhi Office",
     addressKey: "addresses.delhiOffice",
+    mapQuery: "Imperial Tower, C Block Commercial Complex, Naraina Vihar, New Delhi 110028",
     phones: [
       { label: "Tel", labelKey: "tel", number: "011-46291155", href: "tel:+911146291155" },
       { label: "Mob", labelKey: "mob", number: "+91 8928 786 594", href: "tel:+918928786594" },
@@ -124,6 +133,7 @@ export const branches: Branch[] = [
     key: "shamliOffice",
     name: "Shamli Office",
     addressKey: "addresses.shamliOffice",
+    mapQuery: "Meerut Karnal Road, Shamli, Uttar Pradesh 247776",
     phones: [
       { label: "Mob", labelKey: "mob", number: bookingPhone.display, href: `tel:${bookingPhone.href}` },
     ],
@@ -132,6 +142,7 @@ export const branches: Branch[] = [
     key: "internationalOffice",
     name: "International Office",
     addressKey: "addresses.internationalOffice",
+    mapQuery: "Avenida Perez Guerrero, Quito, Ecuador",
     phones: [],
   },
 ];
