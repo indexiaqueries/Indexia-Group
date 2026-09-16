@@ -70,28 +70,3 @@ export const GlowingCard: React.FC<GlowingCardProps> = ({
     </div>
   );
 };
-
-/* ------------------------------------------------------------------ */
-/*  GlowingCards                                                       */
-/* ------------------------------------------------------------------ */
-
-export type GlowingCardsProps = {
-  children: React.ReactNode;
-  gap?: string;
-  className?: string;
-};
-
-export const GlowingCards: React.FC<GlowingCardsProps> = ({
-  children,
-  gap = "1.5rem",
-  className = "",
-}) => {
-  return (
-    <div
-      className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ${className}`}
-      style={{ gap }}
-    >
-      {children}
-    </div>
-  );
-};

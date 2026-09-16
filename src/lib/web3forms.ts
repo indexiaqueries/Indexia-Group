@@ -1,9 +1,7 @@
-import { API_BASE } from "./api";
-
 /**
  * Web3Forms email delivery.
  *
- * Enquiries are still stored in MongoDB via `${API_BASE}/api/contact` (the
+ * Enquiries are still stored in MongoDB via the `/api/contact` endpoint (the
  * admin dashboard reads them from there). This helper additionally forwards
  * the same payload to Web3Forms so the team gets an instant email copy.
  *
@@ -13,11 +11,11 @@ import { API_BASE } from "./api";
  * database write happens.
  */
 
-export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
-export const web3FormsAccessKey: string = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "";
+const web3FormsAccessKey: string = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "";
 
-export const web3FormsEnabled = Boolean(web3FormsAccessKey);
+const web3FormsEnabled = Boolean(web3FormsAccessKey);
 
 export type Web3FormsPayload = Record<string, string | undefined> & {
   subject?: string;
@@ -45,6 +43,3 @@ export const sendWeb3Forms = async (payload: Web3FormsPayload): Promise<boolean>
     return false;
   }
 };
-
-/** Convenience: is the DB-backed API reachable at all? */
-export const hasApi = Boolean(API_BASE) || import.meta.env.PROD;
