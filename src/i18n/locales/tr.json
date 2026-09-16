@@ -927,52 +927,6 @@
         ],
         "tag": "Organik Gübre Üretimi"
       },
-      "finance": {
-        "desc": "Yatırımcı hizmetleri, FDI, NBFC ve bankacılık finansmanı alanlarında küresel fintech.",
-        "highlights": [
-          "Hindistan öncelikli uygulama ile küresel fintech erişimi",
-          "Tek çatı altında dört entegre alan",
-          "Uçtan uca finansman ve danışmanlık desteği"
-        ],
-        "name": "Indexia Finans",
-        "overview": "Indexia Finance, dünya genelindeki müşterilere finansal hizmetler sunan çok uluslu bir fintech platformudur. Her türlü kredi için www.indexiafinance.com portalımıza başvurabilirsiniz, hizmetlerimizi küresel olarak sunuyoruz ve Hindistan'da 43 banka ve NBFC ile iş ortağıyız. Dört temel alan etrafında inşa edilen, yatırımcı hizmetleri, FDI danışmanlığı, NBFC operasyonları ve bankacılık finansmanı, şirket, sermayeyi fırsatlarla buluşturarak yatırımcıların, işletmelerin ve kurumların sınırlar ötesinde güvenli finansal kararlar almasına yardımcı olur.",
-        "services": [
-          "FDI Danışmanlığı ve Kolaylaştırma",
-          "Yatırımcı Hizmetleri",
-          "NBFC Operasyonları",
-          "Bankacılık ve Kurumsal Finansman",
-          "Sınır Ötesi Sermaye Çözümleri",
-          "Varlık ve Servet Danışmanlığı"
-        ],
-        "tag": "Çok Uluslu Fintech",
-        "tagline": "Eksiksiz Bir Kredi Merkezi"
-      },
-      "finserve": {
-        "desc": "Bireylere ve işletmelere özel her türlü kredi.",
-        "highlights": [
-          "Tek çatı altında her kredi türü",
-          "Kolaylaştırılmış uygunluk, belgelendirme ve ödeme",
-          "Her adımda özel danışmanlık"
-        ],
-        "name": "Indexia Finserve Ltd. Şti.",
-        "overview": "Indexia Finserve, Indexia Group'un kredi koludur ve finans kapsamında her türlü krediyi sunar. Artık doğru banka kapınıza gelecek, şirket, müşterileri kişisel, konut, işletme, KOBİ ve özel finansman için uygunluk, belgelendirme ve ödeme süreçlerinde tek ve kolaylaştırılmış bir süreçle yönlendiren eksiksiz bir kredi merkezi olarak çalışır.",
-        "services": [
-          "Bireysel Kredi",
-          "İşletme Kredisi",
-          "Konut Kredisi",
-          "Mülk Karşılığı Kredi",
-          "Bakiye Transferi",
-          "Araç Kredisi",
-          "Kredi Kartı",
-          "Eğitim Kredisi",
-          "Proje Kredisi",
-          "Ticari Satın Alma",
-          "Lease Rental İskontosu",
-          "İşletme Sermayesi"
-        ],
-        "tag": "Krediler & Finans",
-        "tagline": "Yeni Nesil Finans Yöntemi"
-      },
       "foundation": {
         "desc": "Olimpiyatlara kadar uluslararası düzeyde eğitim ve destek.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "İnceleniyor"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Küresel FinTech",
-      "heading": "Sermayeyi Fırsatlarla\nBirleştirme",
-      "description": "Dört kıtada operasyonlar ve sadece Hindistan'da 43 banka ve NBFC ile ortaklıklarla, Indexia Finance yatırımcıları sınır ötesi yüksek büyüme fırsatlarıyla buluşturuyor.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Bankalar"
-        },
-        {
-          "value": "4",
-          "label": "Ülkeler"
-        },
-        {
-          "value": "∞",
-          "label": "Yıl"
-        }
-      ],
-      "bullets": [
-        "Gelişen ve gelişmiş pazarlarda YBY kolaylaştırma",
-        "Düzenlenmiş kredi çerçeveleriyle NBFC operasyonları",
-        "Büyük ölçekli projeler için bankacılık ve kurumsal finansman",
-        "Çok uluslu müşteriler için sınır ötesi sermaye çözümleri"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Krediler Basitleştirildi",
-      "heading": "Tüm Kredi Türleri\nTek Çatı Altında",
-      "description": "Kişisel kredilerden işletme sermayesine, Indexia Finserve doğru bankayı kapınıza getirerek uygunluk, dokümantasyon ve dağıtımı tek bir yönlendirilmiş süreçte basitleştiriyor.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Kredi Türleri"
-        },
-        {
-          "value": "24h",
-          "label": "Hizmetler"
-        },
-        {
-          "value": "100%",
-          "label": "Saat"
-        }
-      ],
-      "bullets": [
-        "Rekabetçi oranlarla kişisel, konut ve iş kredileri",
-        "Esnek koşullarla KOBİ ve proje finansmanı",
-        "Bakiye transferi ve ipotekli kredi seçenekleri",
-        "Talepten ödeme sürecine kadar atanan özel ilişki yöneticisi"
-      ]
-    },
     "overseas": {
       "eyebrow": "Küresel Ticaret",
       "heading": "Hindistan'dan\n14 Ülkeye",

@@ -927,52 +927,6 @@
         ],
         "tag": "Produktion av ekologiska gödselmedel"
       },
-      "finance": {
-        "desc": "Global fintech inom investerartjänster, FDI, NBFC och bankfinansiering.",
-        "highlights": [
-          "Global fintech-räckvidd med Indien-först-genomförande",
-          "Fyra integrerade kärnområden under ett tak",
-          "End-to-end finansiering och rådgivningsstöd"
-        ],
-        "name": "Indexia Finans",
-        "overview": "Indexia Finance är en multinationell fintechplattform som levererar finansiella tjänster till kunder världen över. Du kan ansöka om alla typer av lån via vår portal på www.indexiafinance.com, vi erbjuder våra tjänster globalt, och i Indien är vi affärspartners med 43 banker och NBFC:er. Uppbyggd kring fyra kärnområden, investerartjänster, FDI-rådgivning, NBFC-verksamhet och bankfinansiering, kopplar företaget samman kapital med möjligheter och hjälper investerare, företag och institutioner att fatta trygga finansiella beslut över gränserna.",
-        "services": [
-          "FDI-rådgivning & facilitering",
-          "Investerartjänster",
-          "NBFC-verksamhet",
-          "Bank- & institutionell finansiering",
-          "Gränsöverskridande kapitalösningar",
-          "Förmögenhets- & tillgångsrådgivning"
-        ],
-        "tag": "Multinational FinTech",
-        "tagline": "En komplett låneplattform"
-      },
-      "finserve": {
-        "desc": "Alla typer av lån, anpassade för privatpersoner och företag.",
-        "highlights": [
-          "Alla låntyper under ett tak",
-          "Strömlinjeformad behörighet, dokumentation och utbetalning",
-          "Dedikerad rådgivning i varje steg"
-        ],
-        "name": "Indexia Finserve AB",
-        "overview": "Indexia Finserve är utlåningsarmen inom Indexia Group och erbjuder alla typer av lån. Nu kommer rätt bank till din dörr, företaget fungerar som en komplett låneplattform och guidar kunder genom behörighet, dokumentation och utbetalning för privatlån, bolån, företagslån, MSME och specialiserad finansiering med en enda strömlinjeformad process.",
-        "services": [
-          "Privatlån",
-          "Företagslån",
-          "Bolån",
-          "Lån mot fastighet",
-          "Saldoöverföring",
-          "Billån",
-          "Kreditkort",
-          "Studielån",
-          "Projektlån",
-          "Kommersiellt köp",
-          "Fakturabelåning",
-          "Rörelsekapital"
-        ],
-        "tag": "Lån & finans",
-        "tagline": "Framtidens finansmetod"
-      },
       "foundation": {
         "desc": "Internationell träning och stöd, ända upp till OS.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "Under granskning"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Global FinTech",
-      "heading": "Ansluta Kapital\nmed Möjligheter",
-      "description": "Med verksamhet på fyra kontinenter och partnerskap med 43 banker och NBFCer enbart i Indien kopplar Indexia Finance investerare med högtillväxtrörelsemöjligheter över gränserna.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Banker"
-        },
-        {
-          "value": "4",
-          "label": "Länder"
-        },
-        {
-          "value": "∞",
-          "label": "År"
-        }
-      ],
-      "bullets": [
-        "UDI-främjande i utvecklade och tillväxtmarknader",
-        "NBFC-verksamhet med reglerade låneramverk",
-        "Bank- och institutionell finansiering för storskaliga projekt",
-        "Gränsöverskridande kapitallösningar för multinationella kunder"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Förenklade Lån",
-      "heading": "Alla Typer av Lån\nUnder Ett Tak",
-      "description": "Från personliga lån till omsättning tillför Indexia Finserve rätt bank till din dörr och förenklar berättigande, dokumentation och utbetalning till en enda vägledd process.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Låneformer"
-        },
-        {
-          "value": "24h",
-          "label": "Tjänster"
-        },
-        {
-          "value": "100%",
-          "label": "Timmar"
-        }
-      ],
-      "bullets": [
-        "Privat-, bostads- och företagslån med konkurrerande räntor",
-        "SME- och projektfinansiering med flexibla villkor",
-        "Saldoöverföring och lån mot fastighet alternativ",
-        "Dedikerad relationshandazed från förfrågan till utbetalning"
-      ]
-    },
     "overseas": {
       "eyebrow": "Global Handel",
       "heading": "Från Indien till\n14 Länder",

@@ -927,52 +927,6 @@
         ],
         "tag": "Production d'Engrais Organiques"
       },
-      "finance": {
-        "desc": "Fintech mondial couvrant services aux investisseurs, IDE, NBFC et financement bancaire.",
-        "highlights": [
-          "Envergure fintech mondiale avec une exécution centrée sur l'Inde",
-          "Quatre pôles intégrés sous un même toit",
-          "Accompagnement complet en financement et conseil"
-        ],
-        "name": "Indexia Finance",
-        "overview": "Indexia Finance est une plateforme fintech multinationale qui fournit des services financiers à des clients du monde entier. Vous pouvez demander tout type de prêt sur notre portail à www.indexiafinance.com, nous offrons nos services à l'échelle mondiale et, en Inde, nous sommes partenaires commerciaux de 43 banques et NBFC. Articulée autour de quatre pôles, services aux investisseurs, conseil en IDE, opérations NBFC et financement bancaire, la société relie le capital à l'opportunité et aide investisseurs, entreprises et institutions à prendre des décisions financières confiantes au-delà des frontières.",
-        "services": [
-          "Conseil et Facilitation IDE",
-          "Services aux Investisseurs",
-          "Opérations NBFC",
-          "Financement Bancaire et Institutionnel",
-          "Solutions de Capital Transfrontalier",
-          "Conseil en Patrimoine et Actifs"
-        ],
-        "tag": "Fintech Multinationale",
-        "tagline": "Une destination complète pour les prêts"
-      },
-      "finserve": {
-        "desc": "Tous types de prêts, adaptés aux particuliers comme aux entreprises.",
-        "highlights": [
-          "Tous les types de prêts sous un même toit",
-          "Éligibilité, documentation et décaissement simplifiés",
-          "Conseil dédié à chaque étape"
-        ],
-        "name": "Indexia Finserve SARL",
-        "overview": "Indexia Finserve est la branche crédit du groupe Indexia, proposant tous les types de prêts du secteur financier. Désormais, la bonne banque vient à votre porte : la société agit comme une destination complète de crédit, guidant les clients sur l'éligibilité, la documentation et le décaissement des prêts personnels, immobiliers, commerciaux, MSME et spécialisés, grâce à un processus unique et fluide.",
-        "services": [
-          "Prêt Personnel",
-          "Prêt Commercial",
-          "Prêt Immobilier",
-          "Prêt sur Gage Immobilier",
-          "Transfert de Solde",
-          "Prêt Automobile",
-          "Carte de Crédit",
-          "Prêt Études",
-          "Prêt de Projet",
-          "Achat Commercial",
-          "Escompte de Leasing",
-          "Fonds de Roulement"
-        ],
-        "tag": "Prêts et Finance",
-        "tagline": "La méthode financière nouvelle génération"
-      },
       "foundation": {
         "desc": "Entraînement et soutien de niveau international, jusqu'aux Jeux Olympiques.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "En cours"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Fintech Mondiale",
-      "heading": "Connecter le Capital\naux Opportunités",
-      "description": "Avec des opérations sur quatre continents et des partenariats avec 43 banques et NBFC en Inde, Indexia Finance fait le lien entre les investisseurs et les opportunités de forte croissance transfrontalières.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Banques"
-        },
-        {
-          "value": "4",
-          "label": "Pays"
-        },
-        {
-          "value": "∞",
-          "label": "Ans"
-        }
-      ],
-      "bullets": [
-        "Facilitation des IDE sur les marchés émergents et développés",
-        "Opérations NBFC avec des cadres de prêt réglementés",
-        "Financement bancaire et institutionnel pour les projets d'envergure",
-        "Solutions de capital transfrontalier pour les clients multinationaux"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Prêts Simplifiés",
-      "heading": "Tous les Types de Prêts\nSous un Même Toit",
-      "description": "Des prêts personnels au fonds de roulement, Indexia Finserve apporte la bonne banque chez vous, en simplifiant l'éligibilité, la documentation et le déblocage en un seul processus guidé.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Types de Prêt"
-        },
-        {
-          "value": "24h",
-          "label": "Services"
-        },
-        {
-          "value": "100%",
-          "label": "Heures"
-        }
-      ],
-      "bullets": [
-        "Prêts personnels, immobiliers et professionnels avec des taux compétitifs",
-        "Financement PME et projets avec des conditions flexibles",
-        "Options de transfert de solde et de prêt sur garantie",
-        "Gestionnaire de relation dédié de la demande au décaissement"
-      ]
-    },
     "overseas": {
       "eyebrow": "Commerce Mondial",
       "heading": "De l'Inde vers\n14 Pays",

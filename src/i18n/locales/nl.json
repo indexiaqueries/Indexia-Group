@@ -927,52 +927,6 @@
         ],
         "tag": "Productie Organische Meststoffen"
       },
-      "finance": {
-        "desc": "Wereldwijde fintech voor investeerdersdiensten, FDI, NBFC en bankfinanciering.",
-        "highlights": [
-          "Wereldwijd fintech-bereik met India-first uitvoering",
-          "Vier geïntegreerde disciplines onder één dak",
-          "End-to-end financiering en adviesondersteuning"
-        ],
-        "name": "Indexia Financiën",
-        "overview": "Indexia Finance is een multinationaal fintech-platform dat financiële diensten levert aan klanten over de hele wereld. U kunt via ons portaal www.indexiafinance.com voor elke vorm van lening aanvragen, we leveren wereldwijd diensten, en in India zijn we zakenpartner van 43 banken en NBFC's. Het bedrijf is gebouwd rond vier kerndisciplines, investeerdersdiensten, FDI-advies, NBFC-activiteiten en bankfinanciering, en verbindt kapitaal met kansen, zodat investeerders, bedrijven en instellingen met vertrouwen grensoverschrijdende financiële beslissingen kunnen nemen.",
-        "services": [
-          "FDI-advies & -facilitering",
-          "Investeerdersdiensten",
-          "NBFC-activiteiten",
-          "Bank- & institutionele financiering",
-          "Grensoverschrijdende kapitaaloplossingen",
-          "Vermogens- & activa-advies"
-        ],
-        "tag": "Multinationaal Fintech",
-        "tagline": "Eén Bestemming Voor Alle Leningen"
-      },
-      "finserve": {
-        "desc": "Elke vorm van lening, afgestemd op particulieren en bedrijven.",
-        "highlights": [
-          "Elke vorm van lening onder één dak",
-          "Gestroomlijnde geschiktheid, documentatie en uitbetaling",
-          "Toegewijd advies bij elke stap"
-        ],
-        "name": "Indexia Finserve B.V.",
-        "overview": "Indexia Finserve is de kredietverstrekkende tak van Indexia Group en biedt elke vorm van lening binnen de financiële sector. Nu komt de juiste bank naar uw voordeur, het bedrijf werkt als een complete leningbestemming en begeleidt klanten door geschiktheid, documentatie en uitbetaling voor persoonlijke, woning-, zakelijke, MKB- en gespecialiseerde financiering via één gestroomlijnd proces.",
-        "services": [
-          "Persoonlijke Lening",
-          "Zakelijke Lening",
-          "Hypotheek",
-          "Lening op Onroerend Goed",
-          "Saldo-overdracht",
-          "Autolening",
-          "Creditcard",
-          "Studielening",
-          "Projectlening",
-          "Commerciële Aankoop",
-          "Lease-R-Discontering",
-          "Werkkapitaal"
-        ],
-        "tag": "Leningen & Financiën",
-        "tagline": "De Next-Gen Financieringsmethode"
-      },
       "foundation": {
         "desc": "Internationale training en ondersteuning, tot aan de Olympische Spelen.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "In behandeling"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Wereldwijd FinTech",
-      "heading": "Kapitaal Verbinden\nmet Kansen",
-      "description": "Met activiteiten op vier continenten en partnerships met 43 banken en NBFCs alleen al in India, verbindt Indexia Finance investeerders met hoog-groeimogelijkheden over de grenzen heen.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Banken"
-        },
-        {
-          "value": "4",
-          "label": "Landen"
-        },
-        {
-          "value": "∞",
-          "label": "Jaren"
-        }
-      ],
-      "bullets": [
-        "FDI-facilitatie in opkomende en ontwikkelde markten",
-        "NBFC-operaties met gereguleerde kredietkaders",
-        "Bank- en institutionele financiering voor grootschalige projecten",
-        "Grensoverschrijdende kapitaaloplossingen voor multinationale klanten"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Leningen Vereenvoudigd",
-      "heading": "Alle Soorten Leningen\nOnder één Dak",
-      "description": "Van persoonlijke leningen tot werkkapitaal, brengt Indexia Finserve de juiste bank naar uw deur, en stroomlijnt eligibleheid, documentatie en uitbetaling tot één begeleid proces.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Leningsoorten"
-        },
-        {
-          "value": "24h",
-          "label": "Diensten"
-        },
-        {
-          "value": "100%",
-          "label": "Uren"
-        }
-      ],
-      "bullets": [
-        "Persoonlijke, hypotheek- en zakelijke leningen met concurrerende tarieven",
-        "MKB- en projectfinanciering met flexibele voorwaarden",
-        "Saldo-overdracht en lening tegen onderpand opties",
-        "Toegewijde relatiemanager van aanvraag tot uitbetaling"
-      ]
-    },
     "overseas": {
       "eyebrow": "Wereldhandel",
       "heading": "Van India naar\n14 Landen",

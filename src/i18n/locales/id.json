@@ -927,52 +927,6 @@
         ],
         "tag": "Produksi Pupuk Organik"
       },
-      "finance": {
-        "desc": "Fintech global di bidang layanan investor, FDI, NBFC, dan pendanaan perbankan.",
-        "highlights": [
-          "Jangkauan fintech global dengan eksekusi India-first",
-          "Empat bidang terintegrasi dalam satu atap",
-          "Dukungan pendanaan dan konsultasi menyeluruh"
-        ],
-        "name": "Indexia Keuangan",
-        "overview": "Indexia Finance adalah platform fintech multinasional yang memberikan layanan keuangan kepada klien di seluruh dunia. Anda dapat mengajukan segala jenis pinjaman melalui portal kami di www.indexiafinance.com, kami melayani secara global, dan di India kami bermitra dengan 43 bank dan NBFC. Dibangun di sekitar empat bidang inti, layanan investor, konsultasi FDI, operasi NBFC, dan pendanaan perbankan, perusahaan menghubungkan modal dengan peluang, membantu investor, bisnis, dan institusi membuat keputusan keuangan yang percaya diri lintas batas.",
-        "services": [
-          "Konsultasi & Fasilitasi FDI",
-          "Layanan Investor",
-          "Operasi NBFC",
-          "Pendanaan Perbankan & Institusional",
-          "Solusi Modal Lintas Batas",
-          "Konsultasi Kekayaan & Aset"
-        ],
-        "tag": "Fintech Multinasional",
-        "tagline": "Satu Tempat untuk Semua Pinjaman"
-      },
-      "finserve": {
-        "desc": "Semua jenis pinjaman, disesuaikan untuk individu dan bisnis.",
-        "highlights": [
-          "Semua jenis pinjaman dalam satu atap",
-          "Kelayakan, dokumentasi, dan pencairan yang sederhana",
-          "Konsultasi khusus di setiap langkah"
-        ],
-        "name": "Indexia Finserve PT",
-        "overview": "Indexia Finserve adalah lengan peminjaman Indexia Group, menawarkan segala jenis pinjaman di bidang keuangan. Kini bank yang tepat akan datang ke depan pintu Anda, perusahaan berfungsi sebagai tempat tujuan pinjaman lengkap, membimbing klien melalui kelayakan, dokumentasi, dan pencairan untuk pinjaman pribadi, rumah, bisnis, MSME, dan pendanaan khusus dengan satu proses yang sederhana.",
-        "services": [
-          "Pinjaman Pribadi",
-          "Pinjaman Bisnis",
-          "Pinjaman Rumah",
-          "Pinjaman dengan Jaminan Properti",
-          "Transfer Saldo",
-          "Pinjaman Mobil",
-          "Kartu Kredit",
-          "Pinjaman Pendidikan",
-          "Pinjaman Proyek",
-          "Pembelian Komersial",
-          "Diskonto Sewa",
-          "Modal Kerja"
-        ],
-        "tag": "Pinjaman & Keuangan",
-        "tagline": "Metode Keuangan Generasi Baru"
-      },
       "foundation": {
         "desc": "Pelatihan dan dukungan tingkat internasional, hingga Olimpiade.",
         "highlights": [
@@ -1330,56 +1284,6 @@
     "inReview": "Sedang ditinjau"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Fintech Global",
-      "heading": "Menghubungkan Modal\ndengan Peluang",
-      "description": "Dengan operasi di empat benua dan kemitraan dengan 43 bank dan NBFC di India saja, Indexia Finance menjembatani investor dengan peluang pertumbuhan tinggi lintas batas.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Bank"
-        },
-        {
-          "value": "4",
-          "label": "Negara"
-        },
-        {
-          "value": "∞",
-          "label": "Tahun"
-        }
-      ],
-      "bullets": [
-        "Fasilitasi PDI di pasar berkembang dan maju",
-        "Operasi NBFC dengan kerangka pinjaman yang diatur",
-        "Pembiayaan perbankan dan institusional untuk proyek berskala besar",
-        "Solusi modal lintas batas untuk klien multinasional"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Pinjaman Dipermudah",
-      "heading": "Semua Jenis Pinjaman\nDi Bawah Atap yang Sama",
-      "description": "Dari pinjaman pribadi hingga modal kerja, Indexia Finserve membawa bank yang tepat ke depan pintu Anda, mempermudah kelayakan, dokumentasi, dan pencairan dalam satu proses terpandu.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Jenis Pinjaman"
-        },
-        {
-          "value": "24h",
-          "label": "Layanan"
-        },
-        {
-          "value": "100%",
-          "label": "Jam"
-        }
-      ],
-      "bullets": [
-        "Pinjaman pribadi, rumah, dan bisnis dengan tarif kompetitif",
-        "Pembiayaan UMKM dan proyek dengan syarat fleksibel",
-        "Opsi transfer saldo dan pinjaman dengan agunan properti",
-        "Manajer hubungan khusus ditugaskan dari pertanyaan hingga pencairan"
-      ]
-    },
     "overseas": {
       "eyebrow": "Perdagangan Global",
       "heading": "Dari India ke\n14 Negara",

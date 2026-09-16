@@ -927,52 +927,6 @@
         ],
         "tag": "Produção de Fertilizantes Orgânicos"
       },
-      "finance": {
-        "desc": "Fintech global em serviços ao investidor, IDE, NBFC e financiamento bancário.",
-        "highlights": [
-          "Alcance fintech global com execução centrada na Índia",
-          "Quatro vertentes integradas sob o mesmo teto",
-          "Apoio integral de financiamento e assessoria"
-        ],
-        "name": "Indexia Finanças",
-        "overview": "A Indexia Finance é uma plataforma fintech multinacional que presta serviços financeiros a clientes em todo o mundo. Pode solicitar qualquer tipo de empréstimo no nosso portal em www.indexiafinance.com, oferecemos os nossos serviços globalmente e, na Índia, somos parceiros comerciais de 43 bancos e NBFC. Estruturada em torno de quatro vertentes principais, serviços ao investidor, assessoria de IDE, operações NBFC e financiamento bancário, a empresa liga o capital à oportunidade, ajudando investidores, empresas e instituições a tomar decisões financeiras seguras além-fronteiras.",
-        "services": [
-          "Assessoria e Facilitação de IDE",
-          "Serviços ao Investidor",
-          "Operações NBFC",
-          "Financiamento Bancário e Institucional",
-          "Soluções de Capital Transfronteiriço",
-          "Assessoria Patrimonial e de Ativos"
-        ],
-        "tag": "Fintech Multinacional",
-        "tagline": "Um destino completo para empréstimos"
-      },
-      "finserve": {
-        "desc": "Todo o tipo de empréstimos, adaptados a particulares e empresas.",
-        "highlights": [
-          "Todo o tipo de empréstimos sob o mesmo teto",
-          "Elegibilidade, documentação e desembolso simplificados",
-          "Assessoria dedicada em cada etapa"
-        ],
-        "name": "Indexia Finserve Ltda.",
-        "overview": "A Indexia Finserve é o braço de crédito do Grupo Indexia e oferece todo o tipo de empréstimos no setor financeiro. Agora o banco certo chega à sua porta: a empresa funciona como um destino completo de crédito, orientando os clientes através de elegibilidade, documentação e desembolso de empréstimos pessoais, casa, negócios, MSME e financiamento especializado, com um único processo simplificado.",
-        "services": [
-          "Empréstimo Pessoal",
-          "Empréstimo Empresarial",
-          "Crédito Habitação",
-          "Empréstimo sobre Imóvel",
-          "Transferência de Saldo",
-          "Crédito Automóvel",
-          "Cartão de Crédito",
-          "Crédito para Estudos",
-          "Empréstimo de Projeto",
-          "Compra Comercial",
-          "Desconto de Leasing",
-          "Capital de Giro"
-        ],
-        "tag": "Empréstimos e Finanças",
-        "tagline": "O método financeiro de nova geração"
-      },
       "foundation": {
         "desc": "Treino e apoio de nível internacional, até aos Jogos Olímpicos.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "Em análise"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Fintech Global",
-      "heading": "Conectar o Capital\ncom Oportunidades",
-      "description": "Com operações em quatro continentes e parcerias com 43 bancos e NBFCs apenas na Índia, a Indexia Finance conecta investidores a oportunidades de alto crescimento transfronteiriças.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Bancos"
-        },
-        {
-          "value": "4",
-          "label": "Países"
-        },
-        {
-          "value": "∞",
-          "label": "Anos"
-        }
-      ],
-      "bullets": [
-        "Facilitação de IDE em mercados emergentes e desenvolvidos",
-        "Operações NBFC com estruturas de empréstimo regulamentadas",
-        "Financiamento bancário e institucional para projetos de grande escala",
-        "Soluções de capital transfronteiriço para clientes multinacionais"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Empréstimos Simplificados",
-      "heading": "Todos os Tipos de Empréstimos\nSob um Mesmo Teto",
-      "description": "De empréstimos pessoais a capital de giro, a Indexia Finserve traz o banco certo até a sua porta, simplificando elegibilidade, documentação e desembolso em um único processo guiado.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Tipos de Empréstimo"
-        },
-        {
-          "value": "24h",
-          "label": "Serviços"
-        },
-        {
-          "value": "100%",
-          "label": "Horas"
-        }
-      ],
-      "bullets": [
-        "Empréstimos pessoais, habitacionais e empresariais com taxas competitivas",
-        "Financiamento para MEI e projetos com termos flexíveis",
-        "Opções de transferência de saldo e empréstimo com garantia hipotecária",
-        "Gerente de relacionamento designado do inquiry ao desembolso"
-      ]
-    },
     "overseas": {
       "eyebrow": "Comércio Global",
       "heading": "Da Índia para\n14 Países",

@@ -927,52 +927,6 @@
         ],
         "tag": "Organische Düngemittelproduktion"
       },
-      "finance": {
-        "desc": "Globales Fintech für Anlegerservices, FDI, NBFC und Bankfinanzierung.",
-        "highlights": [
-          "Globale Fintech-Reichweite mit Indien-zentrierter Umsetzung",
-          "Vier integrierte Bereiche unter einem Dach",
-          "Durchgängige Finanzierungsunterstützung"
-        ],
-        "name": "Indexia Finanz",
-        "overview": "Indexia Finance ist eine multinationale Fintech-Plattform, die Kunden auf der ganzen Welt Finanzdienstleistungen bietet. Sie können über unser Portal unter www.indexiafinance.com jede Art von Kredit beantragen, wir bieten unsere Dienstleistungen weltweit an und sind in Indien Geschäftspartner von 43 Banken und NBFCs. Aufgebaut um vier Kernbereiche, Anlegerservices, FDI-Facilitation, NBFC-Geschäft und Bankfinanzierung, verbindet das Unternehmen Kapital mit Chancen und hilft Anlegern, Unternehmen und Institutionen, über Grenzen hinweg souveräne Finanzentscheidungen zu treffen.",
-        "services": [
-          "FDI-Facilitation",
-          "Anlegerservices",
-          "NBFC-Geschäft",
-          "Bank- und institutionelle Finanzierung",
-          "Grenzüberschreitende Kapitalösungen",
-          "Vermögens- und Anlageverwaltung"
-        ],
-        "tag": "Multinationales Fintech",
-        "tagline": "Ein komplettes Kreditziel"
-      },
-      "finserve": {
-        "desc": "Jede Kreditart, zugeschnitten auf Privatpersonen und Unternehmen.",
-        "highlights": [
-          "Alle Kreditarten unter einem Dach",
-          "Schlanke Eignungsprüfung, Dokumentation und Auszahlung",
-          "Dedizierte Unterstützung bei jedem Schritt"
-        ],
-        "name": "Indexia Finserve GmbH",
-        "overview": "Indexia Finserve ist die Kreditsparte der Indexia Group und bietet jede Art von Kredit im Finanzbereich an. Jetzt kommt die richtige Bank zu Ihnen nach Hause: Das Unternehmen arbeitet als vollständiges Kreditziel und begleitet Kunden durch Eignungsprüfung, Dokumentation und Auszahlung bei Privat-, Haus-, Geschäfts-, MSME- und Spezialfinanzierungen, in einem einzigen, schlanken Prozess.",
-        "services": [
-          "Privatkredit",
-          "Geschäftskredit",
-          "Hauskredit",
-          "Kredit gegen Immobilie",
-          "Saldoübertragung",
-          "Autokredit",
-          "Kreditkarte",
-          "Bildungskredit",
-          "Projektkredit",
-          "Gewerbliche Finanzierung",
-          "Leasing-Diskontierung",
-          "Betriebskapital"
-        ],
-        "tag": "Kredite und Finanzen",
-        "tagline": "Die Finanzmethode der nächsten Generation"
-      },
       "foundation": {
         "desc": "Training und Förderung auf internationalem Niveau, bis zu den Olympischen Spielen.",
         "highlights": [
@@ -1329,56 +1283,6 @@
     "inReview": "In Bearbeitung"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Globales FinTech",
-      "heading": "Kapital mit\nMöglichkeiten verbinden",
-      "description": "Mit Aktivitäten auf vier Kontinenten und Partnerschaften mit 43 Banken und NBFCs allein in Indien verbindet Indexia Finance Investoren mit hochwachstumsstarken grenzüberschreitenden Möglichkeiten.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Banken"
-        },
-        {
-          "value": "4",
-          "label": "Länder"
-        },
-        {
-          "value": "∞",
-          "label": "Jahre"
-        }
-      ],
-      "bullets": [
-        "FDI-Förderung in Schwellen- und Industrieländern",
-        "NBFC-Operationen mit regulierten Kreditrahmen",
-        "Bank- und institutionelle Finanzierung für Großprojekte",
-        "Grenzüberschreitende Kapitallösungen für multinationale Kunden"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Kreditvereinfachung",
-      "heading": "Alle Kreditarten\nunter einem Dach",
-      "description": "Von Privatdarlehen bis hin zu Betriebskapital bringt Indexia Finserve die richtige Bank direkt an Ihre Haustür und vereinfacht Eligibilität, Dokumentation und Auszahlung zu einem einzigen, begleiteten Prozess.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Kreditarten"
-        },
-        {
-          "value": "24h",
-          "label": "Dienstleistungen"
-        },
-        {
-          "value": "100%",
-          "label": "Stunden"
-        }
-      ],
-      "bullets": [
-        "Privat-, Wohn- und Geschäftskredite zu wettbewerbsfähigen Zinsen",
-        "MSME- und Projektfinanzierung mit flexiblen Konditionen",
-        "Kontoübertrag und Kredit gegen Immobilie Optionen",
-        "Zugewiesener Betreuer von der Anfrage bis zur Auszahlung"
-      ]
-    },
     "overseas": {
       "eyebrow": "Globaler Handel",
       "heading": "Von Indien nach\n14 Ländern",

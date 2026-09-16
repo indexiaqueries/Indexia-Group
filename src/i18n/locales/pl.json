@@ -928,52 +928,6 @@
         ],
         "tag": "Produkcja Nawozów Organicznych"
       },
-      "finance": {
-        "desc": "Globalny fintech obejmujący usługi inwestorskie, FDI, NBFC i finansowanie bankowe.",
-        "highlights": [
-          "Globalny zasięg fintech z realizacją z Indii",
-          "Cztery zintegrowane obszary pod jednym dachem",
-          "Kompleksowe wsparcie finansowania i doradztwa"
-        ],
-        "name": "Indexia Finanse",
-        "overview": "Indexia Finance to międzynarodowa platforma fintech świadcząca usługi finansowe klientom na całym świecie. O każdy rodzaj pożyczki możesz wnioskować przez nasz portal www.indexiafinance.com, świadczymy usługi globalnie, a w Indiach jesteśmy partnerem biznesowym 43 banków i NBFC. Zbudowana wokół czterech kluczowych obszarów, usług inwestorskich, doradztwa FDI, operacji NBFC i finansowania bankowego, firma łączy kapitał z możliwościami, pomagając inwestorom, firmom i instytucjom podejmować pewne decyzje finansowe ponad granicami.",
-        "services": [
-          "Doradztwo i Facylitacja FDI",
-          "Usługi Inwestorskie",
-          "Operacje NBFC",
-          "Finansowanie Bankowe i Instytucjonalne",
-          "Rozwiązania Kapitałowe Transgraniczne",
-          "Doradztwo Majątkowe i Inwestycyjne"
-        ],
-        "tag": "Międzynarodowy Fintech",
-        "tagline": "Kompletne Miejsce Pożyczek"
-      },
-      "finserve": {
-        "desc": "Każdy rodzaj pożyczki, dopasowany do osób prywatnych i firm.",
-        "highlights": [
-          "Każdy rodzaj pożyczki pod jednym dachem",
-          "Usprawniona kwalifikowalność, dokumentacja i wypłata",
-          "Oddane doradztwo na każdym etapie"
-        ],
-        "name": "Indexia Finserve Sp. z o.o.",
-        "overview": "Indexia Finserve to ramię pożyczkowe Indexia Group, oferujące każdy rodzaj pożyczki w obszarze finansów. Teraz właściwy bank przyjdzie pod Twoje drzwi, firma działa jako kompletne miejsce pożyczek, prowadząc klientów przez kwalifikowalność, dokumentację i wypłatę dla pożyczek osobistych, mieszkaniowych, biznesowych, MŚP i specjalistycznego finansowania w jednym usprawnionym procesie.",
-        "services": [
-          "Pożyczka Osobista",
-          "Pożyczka Biznesowa",
-          "Pożyczka Hipoteczna",
-          "Pożyczka Pod Zastaw Nieruchomości",
-          "Transfer Salda",
-          "Pożyczka Samochodowa",
-          "Karta Kredytowa",
-          "Pożyczka Edukacyjna",
-          "Pożyczka Projektowa",
-          "Zakup Komercyjny",
-          "Dyskonto Leasingowe",
-          "Kapitał Obrotowy"
-        ],
-        "tag": "Pożyczki i Finanse",
-        "tagline": "Metoda Finansowa Nowej Generacji"
-      },
       "foundation": {
         "desc": "Trening i wsparcie na poziomie międzynarodowym, aż po igrzyska olimpijskie.",
         "highlights": [
@@ -1330,56 +1284,6 @@
     "inReview": "W toku"
   },
   "spotlight": {
-    "finance": {
-      "eyebrow": "Globalny FinTech",
-      "heading": "Łączenie Kapitału\nz Możliwościami",
-      "description": "Z operacjami na czterech kontynentach i partnerstwami z 43 bankami i NBFC tylko w Indiach, Indexia Finance łączy inwestorów z możliwościami wysokiego wzrostu ponad granicami.",
-      "stats": [
-        {
-          "value": "43+",
-          "label": "Banki"
-        },
-        {
-          "value": "4",
-          "label": "Kraje"
-        },
-        {
-          "value": "∞",
-          "label": "Lata"
-        }
-      ],
-      "bullets": [
-        "Ułatwianie BIZ w rynkach wschodzących i rozwiniętych",
-        "Operacje NBFC z regulowanymi ramami kredytowymi",
-        "Finansowanie bankowe i instytucjonalne dla dużych projektów",
-        "Transgraniczne rozwiązania kapitałowe dla klientów międzynarodowych"
-      ]
-    },
-    "finserve": {
-      "eyebrow": "Uproszczone Pożyczki",
-      "heading": "Wszystkie Rodzaje Pożyczek\nPod Jednym Dachem",
-      "description": "Od pożyczek osobistych po kapitał obrotowy, Indexia Finserve przynosi właściwy bank do Twoich drzwi, upraszczając kwalifikowalność, dokumentację i wypłatę w jednym, prowadzonym procesie.",
-      "stats": [
-        {
-          "value": "12",
-          "label": "Rodzaje Kredytów"
-        },
-        {
-          "value": "24h",
-          "label": "Usługi"
-        },
-        {
-          "value": "100%",
-          "label": "Godziny"
-        }
-      ],
-      "bullets": [
-        "Pożyczki osobiste, hipoteczne i firmowe z konkurencyjnymi stopami",
-        "Finansowanie MŚP i projektów z elastycznymi warunkami",
-        "Opcje transferu salda i pożyczki pod zastaw nieruchomości",
-        "Przydzielony opiekun od zapytania do wypłaty"
-      ]
-    },
     "overseas": {
       "eyebrow": "Handel Globalny",
       "heading": "Z Indii do\n14 Krajów",
