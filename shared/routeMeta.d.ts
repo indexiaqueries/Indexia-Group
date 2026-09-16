@@ -4,7 +4,6 @@ export declare const SITE_NAME: string;
 export type RoutePreview = {
   title: string;
   description: string;
-  image?: string;
   noindex?: boolean;
 };
 
@@ -18,7 +17,6 @@ export declare function replaceMeta(
   key: string,
   value: string,
 ): string;
-export declare function removeMeta(html: string, attr: "name" | "property", key: string): string;
 export declare function replaceTitle(html: string, value: string): string;
 export declare function replaceCanonical(html: string, value: string): string;
 export declare function replaceRobots(html: string, value: string): string;
