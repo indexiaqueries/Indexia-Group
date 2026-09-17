@@ -1238,33 +1238,37 @@
     "eyebrow": "Treinamento & Mídia",
     "title": "Nossos Atletas em Ação",
     "videos": {
-      "trackTraining": {
-        "label": "Treinamento de Pista",
+      "video1": {
+        "label": "Délhi, Estádio Thyagaraj, sessão de treino, julho de 2026",
         "sublabel": "Prática de sprint na pista"
       },
-      "fieldPractice": {
-        "label": "Prática de Campo",
-        "sublabel": "Exercícios atléticos"
+      "video2": {
+        "label": "Délhi, Estádio Thyagaraj, sessão de treino, setembro de 2026",
+        "sublabel": "Sessão de treino na pista"
       },
-      "trainingSession": {
-        "label": "Sessão de Treinamento",
-        "sublabel": "Treinamento de campo com treinadores"
+      "video3": {
+        "label": "Campeonato Estadual de Délhi (Shamit Malik - 2º lugar, categoria Sub-10) 2 de setembro de 2026",
+        "sublabel": "Competição em nível estadual"
       },
-      "horizontalTraining1": {
-        "label": "Treinamento Horizontal 1",
-        "sublabel": "Sessão de treinamento atlético"
+      "video4": {
+        "label": "Délhi, Competição Zonal de Karol Bagh - Departamento de Educação da MCD (Shamit Malik - 1º lugar, categoria Sub-10) 17 de setembro de 2026",
+        "sublabel": "Competição zonal, 1º lugar"
       },
-      "horizontalTraining2": {
-        "label": "Treinamento Horizontal 2",
-        "sublabel": "Sessão de prática esportiva"
+      "video5": {
+        "label": "Délhi, Estádio Thyagaraj, sessão de treino, junho de 2026",
+        "sublabel": "Treino na pista"
       },
-      "sprintDrills": {
-        "label": "Exercícios de Sprint",
-        "sublabel": "Treinamento de velocidade"
+      "video6": {
+        "label": "Délhi, Estádio Thyagaraj, sessão de treino, julho de 2026",
+        "sublabel": "Exercícios de velocidade e técnica"
       },
-      "teamSession": {
-        "label": "Sessão de Equipe",
-        "sublabel": "Treinamento em grupo"
+      "video7": {
+        "label": "Délhi, Estádio Nehru (JLN), sessão de treino, agosto de 2026",
+        "sublabel": "Sessão no Estádio Nehru (JLN)"
+      },
+      "video8": {
+        "label": "Délhi, Estádio Thyagaraj, sessão de treino, maio de 2026",
+        "sublabel": "Treino na pista"
       }
     }
   },

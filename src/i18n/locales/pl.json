@@ -1239,33 +1239,37 @@
     "eyebrow": "Trening i Media",
     "title": "Nasi Sportowcy w Akcji",
     "videos": {
-      "trackTraining": {
-        "label": "Trening na Torze",
+      "video1": {
+        "label": "Delhi, stadion Thyagaraj, sesja treningowa, lipiec 2026",
         "sublabel": "Praktyka sprintu na torze"
       },
-      "fieldPractice": {
-        "label": "Praktyka Terenowa",
-        "sublabel": "Ćwiczenia lekkoatletyczne"
+      "video2": {
+        "label": "Delhi, stadion Thyagaraj, sesja treningowa, wrzesień 2026",
+        "sublabel": "Trening na torze"
       },
-      "trainingSession": {
-        "label": "Sesja Treningowa",
-        "sublabel": "Trening terenowy z trenerami"
+      "video3": {
+        "label": "Mistrzostwa stanu Delhi (Shamit Malik - 2. miejsce, kategoria do lat 10) 2 września 2026",
+        "sublabel": "Zawody na poziomie stanu"
       },
-      "horizontalTraining1": {
-        "label": "Trening Poziomy 1",
-        "sublabel": "Sesja treningowa lekkoatletyczna"
+      "video4": {
+        "label": "Delhi, zawody rejonowe Karol Bagh - Wydział Edukacji MCD (Shamit Malik - 1. miejsce, kategoria do lat 10) 17 września 2026",
+        "sublabel": "Zawody rejonowe, 1. miejsce"
       },
-      "horizontalTraining2": {
-        "label": "Trening Poziomy 2",
-        "sublabel": "Sesja praktyki sportowej"
+      "video5": {
+        "label": "Delhi, stadion Thyagaraj, sesja treningowa, czerwiec 2026",
+        "sublabel": "Trening na torze"
       },
-      "sprintDrills": {
-        "label": "Ćwiczenia Sprinterskie",
-        "sublabel": "Trening szybkości"
+      "video6": {
+        "label": "Delhi, stadion Thyagaraj, sesja treningowa, lipiec 2026",
+        "sublabel": "Ćwiczenia szybkościowe i techniczne"
       },
-      "teamSession": {
-        "label": "Sesja Zespołowa",
-        "sublabel": "Trening grupowy"
+      "video7": {
+        "label": "Delhi, stadion im. Nehru (JLN), sesja treningowa, sierpień 2026",
+        "sublabel": "Sesja na stadionie im. Nehru (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, stadion Thyagaraj, sesja treningowa, maj 2026",
+        "sublabel": "Trening na torze"
       }
     }
   },

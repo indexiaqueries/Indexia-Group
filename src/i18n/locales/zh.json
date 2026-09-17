@@ -1238,33 +1238,37 @@
     "eyebrow": "培训与媒体",
     "title": "我们的运动员风采",
     "videos": {
-      "trackTraining": {
-        "label": "跑道训练",
+      "video1": {
+        "label": "德里，蒂亚格拉杰体育场，训练课，2026年7月",
         "sublabel": "跑道冲刺练习"
       },
-      "fieldPractice": {
-        "label": "田径练习",
-        "sublabel": "田径训练"
+      "video2": {
+        "label": "德里，蒂亚格拉杰体育场，训练课，2026年9月",
+        "sublabel": "跑道训练课"
       },
-      "trainingSession": {
-        "label": "训练课程",
-        "sublabel": "教练带领的场地训练"
+      "video3": {
+        "label": "德里邦级比赛（Shamit Malik - 第2名，10岁以下组）2026年9月2日",
+        "sublabel": "邦级比赛"
       },
-      "horizontalTraining1": {
-        "label": "横向训练 1",
-        "sublabel": "田径训练课程"
+      "video4": {
+        "label": "德里，卡罗尔巴格分区赛 - MCD教育部门（Shamit Malik - 第1名，10岁以下组）2026年9月17日",
+        "sublabel": "分区赛，第1名"
       },
-      "horizontalTraining2": {
-        "label": "横向训练 2",
-        "sublabel": "运动训练课程"
+      "video5": {
+        "label": "德里，蒂亚格拉杰体育场，训练课，2026年6月",
+        "sublabel": "跑道练习"
       },
-      "sprintDrills": {
-        "label": "冲刺训练",
-        "sublabel": "速度训练"
+      "video6": {
+        "label": "德里，蒂亚格拉杰体育场，训练课，2026年7月",
+        "sublabel": "速度与技术训练"
       },
-      "teamSession": {
-        "label": "团队课程",
-        "sublabel": "团体训练"
+      "video7": {
+        "label": "德里，尼赫鲁体育场（JLN），训练课，2026年8月",
+        "sublabel": "尼赫鲁体育场（JLN）训练课"
+      },
+      "video8": {
+        "label": "德里，蒂亚格拉杰体育场，训练课，2026年5月",
+        "sublabel": "跑道训练"
       }
     }
   },

@@ -1238,33 +1238,37 @@
     "eyebrow": "Training en Media",
     "title": "Onze Atleten in Actie",
     "videos": {
-      "trackTraining": {
-        "label": "Baan Training",
+      "video1": {
+        "label": "Delhi, Thyagaraj-stadion, trainingssessie, juli 2026",
         "sublabel": "Sprintoefeningen op de baan"
       },
-      "fieldPractice": {
-        "label": "Veldpraktijk",
-        "sublabel": "Atletiekoefeningen"
+      "video2": {
+        "label": "Delhi, Thyagaraj-stadion, trainingssessie, september 2026",
+        "sublabel": "Trainingssessie op de baan"
       },
-      "trainingSession": {
-        "label": "Trainingssessie",
-        "sublabel": "Veldtraining met coaches"
+      "video3": {
+        "label": "Delhi staatskampioenschap (Shamit Malik - 2e plaats, categorie Onder 10) 2 september 2026",
+        "sublabel": "Competitie op staatsniveau"
       },
-      "horizontalTraining1": {
-        "label": "Horizontale Training 1",
-        "sublabel": "Atletiektrainsessie"
+      "video4": {
+        "label": "Delhi, Karol Bagh zonale competitie - MCD Onderwijsafdeling (Shamit Malik - 1e plaats, categorie Onder 10) 17 september 2026",
+        "sublabel": "Zonale competitie, 1e plaats"
       },
-      "horizontalTraining2": {
-        "label": "Horizontale Training 2",
-        "sublabel": "Sportoefensessie"
+      "video5": {
+        "label": "Delhi, Thyagaraj-stadion, trainingssessie, juni 2026",
+        "sublabel": "Training op de baan"
       },
-      "sprintDrills": {
-        "label": "Sprintoefeningen",
-        "sublabel": "Snelheidstraining"
+      "video6": {
+        "label": "Delhi, Thyagaraj-stadion, trainingssessie, juli 2026",
+        "sublabel": "Snelheids- en techniekoefeningen"
       },
-      "teamSession": {
-        "label": "Teamsessie",
-        "sublabel": "Groepstraining"
+      "video7": {
+        "label": "Delhi, Nehru-stadion (JLN), trainingssessie, augustus 2026",
+        "sublabel": "Sessie in het Nehru-stadion (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, Thyagaraj-stadion, trainingssessie, mei 2026",
+        "sublabel": "Training op de baan"
       }
     }
   },

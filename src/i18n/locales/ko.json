@@ -1238,33 +1238,37 @@
     "eyebrow": "훈련 및 미디어",
     "title": "활동하는 우리 선수들",
     "videos": {
-      "trackTraining": {
-        "label": "트랙 훈련",
+      "video1": {
+        "label": "델리, 티야가라지 스타디움, 연습 세션, 2026년 7월",
         "sublabel": "트랙에서의 스프린트 연습"
       },
-      "fieldPractice": {
-        "label": "필드 연습",
-        "sublabel": "육상 훈련"
+      "video2": {
+        "label": "델리, 티야가라지 스타디움, 연습 세션, 2026년 9월",
+        "sublabel": "트랙 훈련 세션"
       },
-      "trainingSession": {
-        "label": "훈련 세션",
-        "sublabel": "코치와 함께하는 필드 훈련"
+      "video3": {
+        "label": "델리 주 대회 (샤밋 말리크 - 2위, 10세 이하 부문) 2026년 9월 2일",
+        "sublabel": "주(州) 레벨 대회"
       },
-      "horizontalTraining1": {
-        "label": "수평 훈련 1",
-        "sublabel": "육상 훈련 세션"
+      "video4": {
+        "label": "델리, 카롤바흐 지역 대회 - MCD 교육부 (샤밋 말리크 - 1위, 10세 이하 부문) 2026년 9월 17일",
+        "sublabel": "지역 대회, 1위"
       },
-      "horizontalTraining2": {
-        "label": "수평 훈련 2",
-        "sublabel": "스포츠 연습 세션"
+      "video5": {
+        "label": "델리, 티야가라지 스타디움, 연습 세션, 2026년 6월",
+        "sublabel": "트랙 연습"
       },
-      "sprintDrills": {
-        "label": "스프린트 드릴",
-        "sublabel": "속도 훈련"
+      "video6": {
+        "label": "델리, 티야가라지 스타디움, 연습 세션, 2026년 7월",
+        "sublabel": "속도 및 기술 드릴"
       },
-      "teamSession": {
-        "label": "팀 세션",
-        "sublabel": "그룹 훈련"
+      "video7": {
+        "label": "델리, 네루 스타디움 (JLN), 연습 세션, 2026년 8월",
+        "sublabel": "네루 스타디움(JLN)에서의 세션"
+      },
+      "video8": {
+        "label": "델리, 티야가라지 스타디움, 연습 세션, 2026년 5월",
+        "sublabel": "트랙 훈련"
       }
     }
   },

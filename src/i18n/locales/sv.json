@@ -1238,33 +1238,37 @@
     "eyebrow": "Träning & Media",
     "title": "Våra Idrottare i Aktion",
     "videos": {
-      "trackTraining": {
-        "label": "Bana Träning",
+      "video1": {
+        "label": "Delhi, Thyagaraj-stadion, träningssession, juli 2026",
         "sublabel": "Sprintövning på bana"
       },
-      "fieldPractice": {
-        "label": "Fältövning",
-        "sublabel": "Idrottsövningar"
+      "video2": {
+        "label": "Delhi, Thyagaraj-stadion, träningssession, september 2026",
+        "sublabel": "Träningspass på banan"
       },
-      "trainingSession": {
-        "label": "Träningsession",
-        "sublabel": "Fältträning med tränare"
+      "video3": {
+        "label": "Delhisiens delstatsmästerskap (Shamit Malik - 2:a plats, klass Under 10) 2 september 2026",
+        "sublabel": "Tävling på delstatsnivå"
       },
-      "horizontalTraining1": {
-        "label": "Horisontell Träning 1",
-        "sublabel": "Idrottsträningsession"
+      "video4": {
+        "label": "Delhi, Karol Bagh zonaltävling - MCD:s utbildningsavdelning (Shamit Malik - 1:a plats, klass Under 10) 17 september 2026",
+        "sublabel": "Zonaltävling, 1:a plats"
       },
-      "horizontalTraining2": {
-        "label": "Horisontell Träning 2",
-        "sublabel": "Sportövningssession"
+      "video5": {
+        "label": "Delhi, Thyagaraj-stadion, träningssession, juni 2026",
+        "sublabel": "Träning på banan"
       },
-      "sprintDrills": {
-        "label": "Sprintövningar",
-        "sublabel": "Hastighetsträning"
+      "video6": {
+        "label": "Delhi, Thyagaraj-stadion, träningssession, juli 2026",
+        "sublabel": "Hastighets- och teknikövningar"
       },
-      "teamSession": {
-        "label": "Lagövning",
-        "sublabel": "Gruppträning"
+      "video7": {
+        "label": "Delhi, Nehru-stadion (JLN), träningssession, augusti 2026",
+        "sublabel": "Session på Nehru-stadion (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, Thyagaraj-stadion, träningssession, maj 2026",
+        "sublabel": "Träning på banan"
       }
     }
   },

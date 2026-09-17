@@ -1238,33 +1238,37 @@
     "eyebrow": "Eğitim & Medya",
     "title": "Sporcularımız Aksiyonda",
     "videos": {
-      "trackTraining": {
-        "label": "Pist Eğitimi",
+      "video1": {
+        "label": "Delhi, Thyagaraj Stadyumu, antrenman seansı, Temmuz 2026",
         "sublabel": "Piste sprint pratiği"
       },
-      "fieldPractice": {
-        "label": "Saha Pratiği",
-        "sublabel": "Atletik egzersizler"
+      "video2": {
+        "label": "Delhi, Thyagaraj Stadyumu, antrenman seansı, Eylül 2026",
+        "sublabel": "Pistte antrenman seansı"
       },
-      "trainingSession": {
-        "label": "Eğitim Seansı",
-        "sublabel": "Antrenörlerle saha eğitimi"
+      "video3": {
+        "label": "Delhi Eyalet Şampiyonası (Shamit Malik - 2. sıra, 10 Yaş Altı kategorisi) 2 Eylül 2026",
+        "sublabel": "Eyalet düzeyinde yarışma"
       },
-      "horizontalTraining1": {
-        "label": "Yatay Eğitim 1",
-        "sublabel": "Atletik eğitim seansı"
+      "video4": {
+        "label": "Delhi, Karol Bagh Bölge Yarışması - MCD Eğitim Dairesi (Shamit Malik - 1. sıra, 10 Yaş Altı kategorisi) 17 Eylül 2026",
+        "sublabel": "Bölge yarışması, 1. sıra"
       },
-      "horizontalTraining2": {
-        "label": "Yatay Eğitim 2",
-        "sublabel": "Spor pratiği seansı"
+      "video5": {
+        "label": "Delhi, Thyagaraj Stadyumu, antrenman seansı, Haziran 2026",
+        "sublabel": "Pistte çalışma"
       },
-      "sprintDrills": {
-        "label": "Sprint Egzersizleri",
-        "sublabel": "Hız eğitimi"
+      "video6": {
+        "label": "Delhi, Thyagaraj Stadyumu, antrenman seansı, Temmuz 2026",
+        "sublabel": "Hız ve teknik egzersizleri"
       },
-      "teamSession": {
-        "label": "Takım Seansı",
-        "sublabel": "Grup eğitimi"
+      "video7": {
+        "label": "Delhi, Nehru Stadyumu (JLN), antrenman seansı, Ağustos 2026",
+        "sublabel": "Nehru Stadyumu'nda (JLN) seans"
+      },
+      "video8": {
+        "label": "Delhi, Thyagaraj Stadyumu, antrenman seansı, Mayıs 2026",
+        "sublabel": "Pistte antrenman"
       }
     }
   },

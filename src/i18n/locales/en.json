@@ -1188,33 +1188,37 @@
     "eyebrow": "Training & Media",
     "title": "Our Athletes in Action",
     "videos": {
-      "trackTraining": {
-        "label": "Track Training",
+      "video1": {
+        "label": "Delhi, Thyagaraj Stadium, Practice Session, Jul 2026",
         "sublabel": "Sprint practice on track"
       },
-      "fieldPractice": {
-        "label": "Field Practice",
-        "sublabel": "Athletic drills"
+      "video2": {
+        "label": "Delhi, Thyagaraj Stadium, Practice Session, Sep 2026",
+        "sublabel": "Track training session"
       },
-      "trainingSession": {
-        "label": "Training Session",
-        "sublabel": "Field training with coaches"
+      "video3": {
+        "label": "Delhi State Competition (Shamit Malik - 2nd Place, Under 10 Category) Sep 02, 2026",
+        "sublabel": "State-level competition"
       },
-      "horizontalTraining1": {
-        "label": "Horizontal Training 1",
-        "sublabel": "Athletic training session"
+      "video4": {
+        "label": "Delhi, Karol Bagh Zonal Competition - MCD Education Department (Shamit Malik - 1st Place, Under 10 Category) Sep 17, 2026",
+        "sublabel": "Zonal competition, 1st place"
       },
-      "horizontalTraining2": {
-        "label": "Horizontal Training 2",
-        "sublabel": "Sports practice session"
+      "video5": {
+        "label": "Delhi, Thyagaraj Stadium, Practice Session, Jun 2026",
+        "sublabel": "Track practice"
       },
-      "sprintDrills": {
-        "label": "Sprint Drills",
-        "sublabel": "Speed training"
+      "video6": {
+        "label": "Delhi, Thyagaraj Stadium, Practice Session, Jul 2026",
+        "sublabel": "Speed and technique drills"
       },
-      "teamSession": {
-        "label": "Team Session",
-        "sublabel": "Group training"
+      "video7": {
+        "label": "Delhi, Nehru Stadium (JLN), Practice Session, Aug 2026",
+        "sublabel": "Session at Nehru Stadium (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, Thyagaraj Stadium, Practice Session, May 2026",
+        "sublabel": "Training on track"
       }
     }
   },

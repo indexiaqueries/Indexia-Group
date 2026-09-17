@@ -1238,33 +1238,37 @@
     "eyebrow": "Entrenamiento y Medios",
     "title": "Nuestros atletas en acción",
     "videos": {
-      "trackTraining": {
-        "label": "Entrenamiento en pista",
+      "video1": {
+        "label": "Delhi, estadio Thyagaraj, sesión de práctica, jul. de 2026",
         "sublabel": "Práctica de sprint en pista"
       },
-      "fieldPractice": {
-        "label": "Práctica de campo",
-        "sublabel": "Ejercicios atléticos"
+      "video2": {
+        "label": "Delhi, estadio Thyagaraj, sesión de práctica, sep. de 2026",
+        "sublabel": "Sesión de entrenamiento en pista"
       },
-      "trainingSession": {
-        "label": "Sesión de entrenamiento",
-        "sublabel": "Entrenamiento de campo con entrenadores"
+      "video3": {
+        "label": "Campeonato estatal de Delhi (Shamit Malik - 2.º puesto, categoría Sub 10), 2 de sep. de 2026",
+        "sublabel": "Competencia a nivel estatal"
       },
-      "horizontalTraining1": {
-        "label": "Entrenamiento horizontal 1",
-        "sublabel": "Sesión de entrenamiento atlético"
+      "video4": {
+        "label": "Delhi, competencia zonal de Karol Bagh - Departamento de Educación de MCD (Shamit Malik - 1.er puesto, categoría Sub 10), 17 de sep. de 2026",
+        "sublabel": "Competencia zonal, 1.er puesto"
       },
-      "horizontalTraining2": {
-        "label": "Entrenamiento horizontal 2",
-        "sublabel": "Sesión de práctica deportiva"
+      "video5": {
+        "label": "Delhi, estadio Thyagaraj, sesión de práctica, jun. de 2026",
+        "sublabel": "Práctica en pista"
       },
-      "sprintDrills": {
-        "label": "Ejercicios de sprint",
-        "sublabel": "Entrenamiento de velocidad"
+      "video6": {
+        "label": "Delhi, estadio Thyagaraj, sesión de práctica, jul. de 2026",
+        "sublabel": "Ejercicios de velocidad y técnica"
       },
-      "teamSession": {
-        "label": "Sesión de equipo",
-        "sublabel": "Entrenamiento grupal"
+      "video7": {
+        "label": "Delhi, estadio Nehru (JLN), sesión de práctica, ago. de 2026",
+        "sublabel": "Sesión en el estadio Nehru (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, estadio Thyagaraj, sesión de práctica, may. de 2026",
+        "sublabel": "Entrenamiento en pista"
       }
     }
   },

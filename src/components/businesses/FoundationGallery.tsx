@@ -121,8 +121,13 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
                     <Play size={18} fill="white" className="ml-0.5 text-white" />
                   </span>
                 </span>
-                <span className="absolute left-2 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/10 font-ledger text-[9px] font-bold text-white backdrop-blur-sm ring-1 ring-white/15">
+                <span className="absolute left-2 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/10 font-ledger text-[9px] font-bold text-white backdrop-blur-sm ring-1 ring-white/25">
                   {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="absolute inset-x-0 bottom-0 p-3 text-start">
+                  <span className="line-clamp-2 block text-xs font-semibold leading-snug text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+                    {v.label}
+                  </span>
                 </span>
               </div>
 
@@ -155,7 +160,7 @@ const FoundationGallery = ({ videos }: FoundationGalleryProps) => {
               <p className="truncate text-sm font-bold text-white sm:text-base">
                 {videos[activeIdx].sublabel}
               </p>
-              <p className="truncate text-[11px] text-white/50 sm:text-xs">
+              <p className="truncate text-[11px] text-white/70 sm:text-xs">
                 {videos[activeIdx].label}
               </p>
             </div>

@@ -1238,33 +1238,37 @@
     "eyebrow": "Training & Medien",
     "title": "Unsere Athleten in Aktion",
     "videos": {
-      "trackTraining": {
-        "label": "Bahntraining",
+      "video1": {
+        "label": "Delhi, Thyagaraj-Stadion, Trainingseinheit, Juli 2026",
         "sublabel": "Sprinttraining auf der Bahn"
       },
-      "fieldPractice": {
-        "label": "Feldpraxis",
-        "sublabel": "Athletikübungen"
+      "video2": {
+        "label": "Delhi, Thyagaraj-Stadion, Trainingseinheit, September 2026",
+        "sublabel": "Training auf der Bahn"
       },
-      "trainingSession": {
-        "label": "Trainingseinheit",
-        "sublabel": "Feldtraining mit Trainern"
+      "video3": {
+        "label": "Delhi-Landeswettbewerb (Shamit Malik - 2. Platz, Kategorie U10), 2. September 2026",
+        "sublabel": "Wettbewerb auf Landesebene"
       },
-      "horizontalTraining1": {
-        "label": "Horizontaltraining 1",
-        "sublabel": "Athletiktraining"
+      "video4": {
+        "label": "Delhi, Karol Bagh-Zonenwettbewerb - MCD-Bildungsabteilung (Shamit Malik - 1. Platz, Kategorie U10), 17. September 2026",
+        "sublabel": "Zonenwettbewerb, 1. Platz"
       },
-      "horizontalTraining2": {
-        "label": "Horizontaltraining 2",
-        "sublabel": "Sporttraining"
+      "video5": {
+        "label": "Delhi, Thyagaraj-Stadion, Trainingseinheit, Juni 2026",
+        "sublabel": "Training auf der Bahn"
       },
-      "sprintDrills": {
-        "label": "Sprintübungen",
-        "sublabel": "Speedtraining"
+      "video6": {
+        "label": "Delhi, Thyagaraj-Stadion, Trainingseinheit, Juli 2026",
+        "sublabel": "Tempo- und Technikübungen"
       },
-      "teamSession": {
-        "label": "Teameinheit",
-        "sublabel": "Gruppentraining"
+      "video7": {
+        "label": "Delhi, Nehru-Stadion (JLN), Trainingseinheit, August 2026",
+        "sublabel": "Einheit im Nehru-Stadion (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, Thyagaraj-Stadion, Trainingseinheit, Mai 2026",
+        "sublabel": "Training auf der Bahn"
       }
     }
   },

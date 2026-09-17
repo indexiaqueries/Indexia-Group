@@ -1239,33 +1239,37 @@
     "eyebrow": "Pelatihan & Media",
     "title": "Atlet Kami Bertanding",
     "videos": {
-      "trackTraining": {
-        "label": "Pelatihan Lintasan",
+      "video1": {
+        "label": "Delhi, Stadion Thyagaraj, sesi latihan, Juli 2026",
         "sublabel": "Latihan sprint di lintasan"
       },
-      "fieldPractice": {
-        "label": "Latihan Lapangan",
-        "sublabel": "Drill atletik"
+      "video2": {
+        "label": "Delhi, Stadion Thyagaraj, sesi latihan, September 2026",
+        "sublabel": "Sesi latihan di lintasan"
       },
-      "trainingSession": {
-        "label": "Sesi Pelatihan",
-        "sublabel": "Pelatihan lapangan dengan pelatih"
+      "video3": {
+        "label": "Kejuaraan Negara Bagian Delhi (Shamit Malik - Juara 2, kategori Di Bawah 10 Tahun) 2 September 2026",
+        "sublabel": "Kompetisi tingkat negara bagian"
       },
-      "horizontalTraining1": {
-        "label": "Pelatihan Horizontal 1",
-        "sublabel": "Sesi pelatihan atletik"
+      "video4": {
+        "label": "Delhi, Kompetisi Zonal Karol Bagh - Departemen Pendidikan MCD (Shamit Malik - Juara 1, kategori Di Bawah 10 Tahun) 17 September 2026",
+        "sublabel": "Kompetisi zonal, Juara 1"
       },
-      "horizontalTraining2": {
-        "label": "Pelatihan Horizontal 2",
-        "sublabel": "Sesi latihan olahraga"
+      "video5": {
+        "label": "Delhi, Stadion Thyagaraj, sesi latihan, Juni 2026",
+        "sublabel": "Latihan di lintasan"
       },
-      "sprintDrills": {
-        "label": "Drill Sprint",
-        "sublabel": "Pelatihan kecepatan"
+      "video6": {
+        "label": "Delhi, Stadion Thyagaraj, sesi latihan, Juli 2026",
+        "sublabel": "Latihan kecepatan dan teknik"
       },
-      "teamSession": {
-        "label": "Sesi Tim",
-        "sublabel": "Pelatihan kelompok"
+      "video7": {
+        "label": "Delhi, Stadion Nehru (JLN), sesi latihan, Agustus 2026",
+        "sublabel": "Sesi di Stadion Nehru (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, Stadion Thyagaraj, sesi latihan, Mei 2026",
+        "sublabel": "Latihan di lintasan"
       }
     }
   },

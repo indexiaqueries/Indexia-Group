@@ -1238,33 +1238,37 @@
     "eyebrow": "Đào tạo & Truyền thông",
     "title": "Các Vận Động Viên Của Chúng Tôi Trong Hành Động",
     "videos": {
-      "trackTraining": {
-        "label": "Huấn Luyện Đường Đua",
+      "video1": {
+        "label": "Delhi, Sân vận động Thyagaraj, buổi tập, tháng 7/2026",
         "sublabel": "Tập chạy nước rút trên đường đua"
       },
-      "fieldPractice": {
-        "label": "Tập Luyện Đồng_decimal",
-        "sublabel": "Bài tập điền kinh"
+      "video2": {
+        "label": "Delhi, Sân vận động Thyagaraj, buổi tập, tháng 9/2026",
+        "sublabel": "Buổi tập trên đường đua"
       },
-      "trainingSession": {
-        "label": "Buổi Huấn Luyện",
-        "sublabel": "Tập luyện đồng_decimal với huấn luyện viên"
+      "video3": {
+        "label": "Giải vô địch bang Delhi (Shamit Malik - Hạng 2, nội dung Dưới 10 tuổi) 02/09/2026",
+        "sublabel": "Giải đấu cấp bang"
       },
-      "horizontalTraining1": {
-        "label": "Huấn Luyện Ngang 1",
-        "sublabel": "Buổi tập điền kinh"
+      "video4": {
+        "label": "Delhi, Giải khu vực Karol Bagh - Sở Giáo dục MCD (Shamit Malik - Hạng 1, nội dung Dưới 10 tuổi) 17/09/2026",
+        "sublabel": "Giải khu vực, Hạng 1"
       },
-      "horizontalTraining2": {
-        "label": "Huấn Luyện Ngang 2",
-        "sublabel": "Buổi tập thể thao"
+      "video5": {
+        "label": "Delhi, Sân vận động Thyagaraj, buổi tập, tháng 6/2026",
+        "sublabel": "Tập trên đường đua"
       },
-      "sprintDrills": {
-        "label": "Bài Tập Nước Rút",
-        "sublabel": "Huấn luyện tốc độ"
+      "video6": {
+        "label": "Delhi, Sân vận động Thyagaraj, buổi tập, tháng 7/2026",
+        "sublabel": "Bài tập tốc độ và kỹ thuật"
       },
-      "teamSession": {
-        "label": "Buổi Tập Nhóm",
-        "sublabel": "Tập luyện nhóm"
+      "video7": {
+        "label": "Delhi, Sân vận động Nehru (JLN), buổi tập, tháng 8/2026",
+        "sublabel": "Buổi tập tại Sân vận động Nehru (JLN)"
+      },
+      "video8": {
+        "label": "Delhi, Sân vận động Thyagaraj, buổi tập, tháng 5/2026",
+        "sublabel": "Tập luyện trên đường đua"
       }
     }
   },
