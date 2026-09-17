@@ -17,6 +17,7 @@ const ROUTE_META = {
     title: "Indexia Group - Finance, Overseas, Agro Bio, Securities, Warehouse, Advertising, Foundation",
     description:
       "Indexia Group brings Financial Services, Loans, Export, Warehousing, Agro, Security, Advertising, and Athlete Support together under one diversified Indian business group.",
+    photo: "/og-group-image.jpg",
   },
   "/about": {
     title: "About Indexia Group",
@@ -140,6 +141,7 @@ export function buildPreviewHtml(template, preview, canonicalPath) {
   html = replaceMeta(html, "property", "og:title", escapeHtml(fullTitle));
   html = replaceMeta(html, "property", "og:description", description);
   html = replaceMeta(html, "property", "og:url", url);
+  html = replaceMeta(html, "property", "og:image", `${BASE_URL}${preview.photo || "/og-group-image.jpg"}`);
   html = replaceMeta(html, "property", "og:image:alt", alt);
   html = replaceMeta(html, "name", "twitter:title", escapeHtml(fullTitle));
   html = replaceMeta(html, "name", "twitter:description", description);
