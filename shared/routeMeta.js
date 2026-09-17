@@ -1,11 +1,6 @@
 export const BASE_URL = "https://www.indexiagroup.com";
 export const SITE_NAME = "Indexia Group";
 
-// ── Preview policy ────────────────────────────────────────────────
-// Each route has its own title and description (the homepage's are the
-// site-wide fixed ones). Images are shared site-wide: the template's
-// default og-image.png stays untouched on every route — no per-page
-// preview images. Only the canonical URL differs per route.
 const COMPANIES = [
   { slug: "finance", name: "Indexia Finance", tag: "Multinational Fintech", desc: "Global fintech across investor services, FDI, NBFC, and banking funding." },
   { slug: "finserve", name: "Indexia Finserve Pvt. Ltd.", tag: "Investment & Finance", desc: "Every type of loan, the right bank at your doorstep." },
@@ -81,7 +76,6 @@ const ROUTE_META = {
   "/admin/login": { title: "Admin Login", description: "", noindex: true },
 };
 
-// Company pages: "<Name> - <Tag>" title with their own description.
 for (const c of COMPANIES) {
   ROUTE_META[`/${c.slug}`] = {
     title: `${c.name} - ${c.tag}`,
@@ -91,9 +85,6 @@ for (const c of COMPANIES) {
 
 export const ROUTES = ROUTE_META;
 export const COMPANY_SLUGS = COMPANIES.map((c) => c.slug);
-
-// ── HTML surgery helpers ──────────────────────────────────────────
-// index.html meta tags span multiple lines, so [^>] (which matches newlines) is used instead of [^\n].
 
 export const escapeHtml = (value) =>
   value
@@ -134,7 +125,6 @@ export function replaceRobots(html, value) {
 
 export function buildPreviewHtml(template, preview, canonicalPath) {
   const url = `${BASE_URL}${canonicalPath}`;
-  // Same rule as SEO.tsx: append the site name unless the title already is it.
   const fullTitle =
     preview.title === SITE_NAME ? preview.title : `${preview.title} | ${SITE_NAME}`;
   const description = escapeHtml(preview.description);
@@ -145,8 +135,6 @@ export function buildPreviewHtml(template, preview, canonicalPath) {
   html = replaceCanonical(html, url);
   html = replaceMeta(html, "name", "description", description);
   if (preview.noindex) {
-    // Keep robots.txt (blocks /admin, /careers/apply, brochures) and the
-    // client-side <SEO noindex> posture consistent for unfurlers too.
     html = replaceRobots(html, "noindex, nofollow, noarchive");
   }
   html = replaceMeta(html, "property", "og:title", escapeHtml(fullTitle));
@@ -156,9 +144,6 @@ export function buildPreviewHtml(template, preview, canonicalPath) {
   html = replaceMeta(html, "name", "twitter:title", escapeHtml(fullTitle));
   html = replaceMeta(html, "name", "twitter:description", description);
   html = replaceMeta(html, "name", "twitter:image:alt", alt);
-
-  // Images are shared site-wide: the template's og-image.png and its
-  // dimension hints stay untouched for every route.
 
   return html;
 }
