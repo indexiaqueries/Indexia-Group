@@ -133,7 +133,7 @@ holidays, resume downloads) all require a valid session via the
 
 **Other auth endpoints:** `POST /api/admin/logout` destroys the session,
 and `GET /api/admin/me` reports whether the current browser is authenticated.
-Login and registration are rate-limited (10 attempts / 10 minutes).
+Login and registration are rate-limited (5 attempts / 10 minutes; successful logins don't count).
 
 Contact enquiries and job applications are stored in MongoDB only — the team
 reviews them in the admin dashboard (`/admin`).
@@ -157,5 +157,5 @@ reviews them in the admin dashboard (`/admin`).
 - JSON-LD structured data (Organization, WebSite, WebPage, BreadcrumbList, FAQPage, Company pages)
 - `robots.txt` blocks admin, apply, and brochure pages
 - Custom URL previews: social unfurlers (WhatsApp, X, LinkedIn, Facebook…) are served per-route Open Graph/Twitter tags via `server/middleware/urlPreviews.js`, so every shared link shows its own title, description, and image
-- `sitemap.xml` with the 16 indexable public routes
+- `sitemap.xml` with the 16 indexable public routes (the two `/finance` and `/finserve` routes are client-side redirects to indexiafinance.com, so they are intentionally excluded)
 - `llms.txt` for AI-agent readability
