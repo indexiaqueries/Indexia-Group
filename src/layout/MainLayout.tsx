@@ -5,11 +5,9 @@ import DeferredFooter from "../components/common/DeferredFooter";
 
 const MainLayout = () => {
   const { pathname, hash } = useLocation();
-  const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure" || pathname === "/careers/apply";
+  const hideHeader = pathname === "/warehouse-brochure" || pathname === "/advertising-brochure" || pathname === "/careers/apply" || pathname === "/admin" || pathname === "/admin/login";
 
   useEffect(() => {
-    // With a hash (e.g. /contact#enquiry-form) the destination page scrolls to
-    // its own anchor; only reset to the top for plain route changes.
     if (!hash) window.scrollTo(0, 0);
   }, [pathname, hash]);
 
