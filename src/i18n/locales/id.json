@@ -1007,6 +1007,13 @@
           "Akses Bandara, Delhi & Jewar dalam 1 Jam"
         ],
         "tag": "Investasi Lahan Strategis"
+      },
+      "finance": {
+        "awardEyebrow": "Penghargaan",
+        "awardTitle": "Dianugerahi untuk keunggulan dalam layanan keuangan",
+        "awardDesc": "Tonggak pencapaian yang mencerminkan kepercayaan klien, mitra, dan institusi kami — serta komitmen kami menjadikan keuangan lebih sederhana dan mudah diakses bagi semua yang kami layani.",
+        "financeCtaTitle": "Untuk informasi lebih lanjut atau mengajukan pinjaman —",
+        "financeCtaButton": "Kunjungi www.indexiafinance.com"
       }
     },
     "news": {
@@ -1501,5 +1508,11 @@
     "errorAdSide": "Silakan pilih sisi iklan.",
     "errorCitySide": "Silakan pilih sisi kota.",
     "errorSize": "Silakan pilih ukuran."
+  },
+  "gallery": {
+    "previousPhoto": "Foto sebelumnya",
+    "nextPhoto": "Foto berikutnya",
+    "locationPhotos": "Foto lokasi",
+    "viewPhoto": "Lihat foto {{n}}"
   }
 }

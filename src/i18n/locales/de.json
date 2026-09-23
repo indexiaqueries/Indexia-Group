@@ -1007,6 +1007,13 @@
           "Flughafenzugang, Delhi und Jewar in weniger als 1 Stunde"
         ],
         "tag": "Strategische Landinvestition"
+      },
+      "finance": {
+        "awardEyebrow": "Auszeichnung",
+        "awardTitle": "Für Exzellenz im Finanzbereich ausgezeichnet",
+        "awardDesc": "Ein Meilenstein, der das Vertrauen unserer Kunden, Partner und Institutionen widerspiegelt — und unser Bemühen, Finanzen für alle einfacher und zugänglicher zu machen.",
+        "financeCtaTitle": "Für weitere Informationen oder um einen Kredit zu beantragen —",
+        "financeCtaButton": "www.indexiafinance.com besuchen"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "Bitte wählen Sie die Werbefläche.",
     "errorCitySide": "Bitte wählen Sie die Stadtseite.",
     "errorSize": "Bitte wählen Sie eine Größe."
+  },
+  "gallery": {
+    "previousPhoto": "Vorheriges Foto",
+    "nextPhoto": "Nächstes Foto",
+    "locationPhotos": "Standortfotos",
+    "viewPhoto": "Foto {{n}} ansehen"
   }
 }

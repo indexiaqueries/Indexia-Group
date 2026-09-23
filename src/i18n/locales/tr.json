@@ -1007,6 +1007,13 @@
           "Havalimanı Erişimi, Delhi ve Jewar 1 Saat İçinde"
         ],
         "tag": "Stratejik Arazi Yatırımı"
+      },
+      "finance": {
+        "awardEyebrow": "Takdir",
+        "awardTitle": "Finansal hizmetlerdeki mükemmelliğimiz ödüllendirildi",
+        "awardDesc": "Müşterilerimizin, iş ortaklarımızın ve kurumların bize duyduğu güveni yansıtan bir dönüm noktası — ve finansı herkes için daha basit ve erişilebilir kılma taahhüdümüz.",
+        "financeCtaTitle": "Daha fazla bilgi veya kredi başvurusu için —",
+        "financeCtaButton": "www.indexiafinance.com ziyaret edin"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "Lütfen reklam yüzünü seçin.",
     "errorCitySide": "Lütfen şehir yönünü seçin.",
     "errorSize": "Lütfen bir boyut seçin."
+  },
+  "gallery": {
+    "previousPhoto": "Önceki fotoğraf",
+    "nextPhoto": "Sonraki fotoğraf",
+    "locationPhotos": "Lokasyon fotoğrafları",
+    "viewPhoto": "{{n}}. fotoğrafı görüntüle"
   }
 }

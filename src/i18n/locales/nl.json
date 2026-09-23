@@ -1007,6 +1007,13 @@
           "Luchthaventoegang, Delhi & Jewar Binnen 1 Uur"
         ],
         "tag": "Strategische Grondinvestering"
+      },
+      "finance": {
+        "awardEyebrow": "Erkenning",
+        "awardTitle": "Bekroond voor uitmuntendheid in financiële dienstverlening",
+        "awardDesc": "Een mijlpaal die het vertrouwen van onze klanten, partners en instellingen weerspiegelt — en onze inzet om financiering eenvoudiger en toegankelijker te maken voor iedereen.",
+        "financeCtaTitle": "Voor meer informatie of om een lening aan te vragen —",
+        "financeCtaButton": "Bezoek www.indexiafinance.com"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "Kies de advertentiezijde.",
     "errorCitySide": "Kies de stadzijde.",
     "errorSize": "Kies een formaat."
+  },
+  "gallery": {
+    "previousPhoto": "Vorige foto",
+    "nextPhoto": "Volgende foto",
+    "locationPhotos": "Locatiefoto's",
+    "viewPhoto": "Foto {{n}} bekijken"
   }
 }

@@ -908,6 +908,13 @@
           "5": "Mental conditioning and career counselling for life on and off the field."
         },
         "name": "Indexia Foundation"
+      },
+      "finance": {
+        "awardEyebrow": "Recognition",
+        "awardTitle": "Honoured for excellence in financial services",
+        "awardDesc": "A milestone that reflects the trust of our clients, partners and institutions — and our commitment to making finance simpler and more accessible for everyone we serve.",
+        "financeCtaTitle": "For more information or to apply for a loan —",
+        "financeCtaButton": "Visit www.indexiafinance.com"
       }
     },
     "news": {
@@ -1563,5 +1570,11 @@
     "errorStartDate": "Please choose a start date.",
     "errorDuration": "Please select a duration.",
     "errorArtwork": "Please select your artwork status."
+  },
+  "gallery": {
+    "previousPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "locationPhotos": "Location photos",
+    "viewPhoto": "View photo {{n}}"
   }
 }

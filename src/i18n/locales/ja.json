@@ -1007,6 +1007,13 @@
           "空港アクセス, デリーとジェワールまで1時間以内"
         ],
         "tag": "戦略的用地投資"
+      },
+      "finance": {
+        "awardEyebrow": "受賞",
+        "awardTitle": "金融サービスにおける卓越性が認められました",
+        "awardDesc": "お客様、パートナー、そして金融機関からの信頼と、すべての方に金融をよりシンプルに、より身近にするという私たちの取り組みを示す節目です。",
+        "financeCtaTitle": "詳細情報やローンのお申し込みは —",
+        "financeCtaButton": "www.indexiafinance.com を見る"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "広告面を選択してください。",
     "errorCitySide": "都市側を選択してください。",
     "errorSize": "サイズを選択してください。"
+  },
+  "gallery": {
+    "previousPhoto": "前の写真",
+    "nextPhoto": "次の写真",
+    "locationPhotos": "設置場所の写真",
+    "viewPhoto": "写真 {{n}} を見る"
   }
 }

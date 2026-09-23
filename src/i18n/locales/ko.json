@@ -1007,6 +1007,13 @@
           "공항 접근, 델리 & 제와르 1시간 이내"
         ],
         "tag": "전략적 토지 투자"
+      },
+      "finance": {
+        "awardEyebrow": "수상",
+        "awardTitle": "금융 서비스 분야의 탁월함으로 명예를 얻었습니다",
+        "awardDesc": "고객, 파트너, 금융기관의 신뢰를 보여주는 이정표이자, 모든 분들께 금융을 더 간편하고 접근하기 쉽게 만들겠다는 우리의 약속입니다.",
+        "financeCtaTitle": "자세한 정보 또는 대출 신청은 —",
+        "financeCtaButton": "www.indexiafinance.com 방문하기"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "광고 면을 선택해 주세요.",
     "errorCitySide": "도시 방향을 선택해 주세요.",
     "errorSize": "크기를 선택해 주세요."
+  },
+  "gallery": {
+    "previousPhoto": "이전 사진",
+    "nextPhoto": "다음 사진",
+    "locationPhotos": "위치 사진",
+    "viewPhoto": "{{n}}번 사진 보기"
   }
 }

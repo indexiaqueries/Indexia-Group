@@ -1007,6 +1007,13 @@
           "机场通道, 德里和杰瓦尔一小时以内"
         ],
         "tag": "战略土地投资"
+      },
+      "finance": {
+        "awardEyebrow": "荣誉",
+        "awardTitle": "因金融服务卓越表现而获殊荣",
+        "awardDesc": "这一里程碑体现了客户、合作伙伴与机构的信任，以及我们让金融服务更简单、更普惠的承诺。",
+        "financeCtaTitle": "了解更多信息或申请贷款 —",
+        "financeCtaButton": "访问 www.indexiafinance.com"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "请选择广告面。",
     "errorCitySide": "请选择城市方向。",
     "errorSize": "请选择尺寸。"
+  },
+  "gallery": {
+    "previousPhoto": "上一张照片",
+    "nextPhoto": "下一张照片",
+    "locationPhotos": "位置照片",
+    "viewPhoto": "查看第 {{n}} 张照片"
   }
 }

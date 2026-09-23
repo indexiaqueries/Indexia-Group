@@ -1007,6 +1007,13 @@
           "Flygplatstillgång, Delhi & Jewar inom 1 timme"
         ],
         "tag": "Strategisk markinvestering"
+      },
+      "finance": {
+        "awardEyebrow": "Utmärkelse",
+        "awardTitle": "Utmärkta för excellens inom finansiella tjänster",
+        "awardDesc": "En milstolpe som speglar förtroendet från våra kunder, partners och institutioner — och vårt engagemang att göra ekonomi enklare och mer tillgängligt för alla.",
+        "financeCtaTitle": "För mer information eller för att ansöka om ett lån —",
+        "financeCtaButton": "Besök www.indexiafinance.com"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "Välj annonssida.",
     "errorCitySide": "Välj stadssida.",
     "errorSize": "Välj en storlek."
+  },
+  "gallery": {
+    "previousPhoto": "Föregående foto",
+    "nextPhoto": "Nästa foto",
+    "locationPhotos": "Platsfoton",
+    "viewPhoto": "Visa foto {{n}}"
   }
 }

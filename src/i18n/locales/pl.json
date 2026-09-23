@@ -1008,6 +1008,13 @@
           "Dostęp Do Lotnisk, Delhi i Jewar W 1 Godzinę"
         ],
         "tag": "Strategiczna Inwestycja Gruntowa"
+      },
+      "finance": {
+        "awardEyebrow": "Wyróżnienie",
+        "awardTitle": "Wyróżnieni za doskonałość w usługach finansowych",
+        "awardDesc": "Kamień milowy odzwierciedlający zaufanie naszych klientów, partnerów i instytucji — oraz nasze zobowiązanie do upraszczania finansów i czynienia ich dostępnymi dla wszystkich.",
+        "financeCtaTitle": "Aby uzyskać więcej informacji lub złożyć wniosek o pożyczkę —",
+        "financeCtaButton": "Odwiedź www.indexiafinance.com"
       }
     },
     "news": {
@@ -1501,5 +1508,11 @@
     "errorAdSide": "Wybierz stronę reklamy.",
     "errorCitySide": "Wybierz stronę miasta.",
     "errorSize": "Wybierz rozmiar."
+  },
+  "gallery": {
+    "previousPhoto": "Poprzednie zdjęcie",
+    "nextPhoto": "Następne zdjęcie",
+    "locationPhotos": "Zdjęcia lokalizacji",
+    "viewPhoto": "Zobacz zdjęcie {{n}}"
   }
 }

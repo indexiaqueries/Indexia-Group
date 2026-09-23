@@ -1007,6 +1007,13 @@
           "Tiếp Cận Sân Bay, Delhi & Jewar Trong 1 Giờ"
         ],
         "tag": "Đầu Tư Đất Chiến Lược"
+      },
+      "finance": {
+        "awardEyebrow": "Vinhdanh",
+        "awardTitle": "Được vinh danh vì sự xuất sắc trong dịch vụ tài chính",
+        "awardDesc": "Cột mốc thể hiện sự tin tưởng của khách hàng, đối tác và các tổ chức — cùng cam kết khiến tài chính đơn giản và dễ tiếp cận hơn cho mọi người.",
+        "financeCtaTitle": "Để biết thêm thông tin hoặc đăng ký vay —",
+        "financeCtaButton": "Truy cập www.indexiafinance.com"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "Vui lòng chọn mặt quảng cáo.",
     "errorCitySide": "Vui lòng chọn phía thành phố.",
     "errorSize": "Vui lòng chọn kích thước."
+  },
+  "gallery": {
+    "previousPhoto": "Ảnh trước",
+    "nextPhoto": "Ảnh tiếp theo",
+    "locationPhotos": "Ảnh vị trí",
+    "viewPhoto": "Xem ảnh {{n}}"
   }
 }

@@ -1007,6 +1007,13 @@
           "Acesso a Aeroportos, Delhi e Jewar em menos de 1 hora"
         ],
         "tag": "Investimento Estratégico em Terrenos"
+      },
+      "finance": {
+        "awardEyebrow": "Reconhecimento",
+        "awardTitle": "Premiados pela excelência em serviços financeiros",
+        "awardDesc": "Um marco que reflete a confiança de nossos clientes, parceiros e instituições — e nosso compromisso de tornar as finanças mais simples e acessíveis para todos.",
+        "financeCtaTitle": "Para mais informações ou para solicitar um empréstimo —",
+        "financeCtaButton": "Visite www.indexiafinance.com"
       }
     },
     "news": {
@@ -1500,5 +1507,11 @@
     "errorAdSide": "Selecione o lado do anúncio.",
     "errorCitySide": "Selecione o lado da cidade.",
     "errorSize": "Selecione um tamanho."
+  },
+  "gallery": {
+    "previousPhoto": "Foto anterior",
+    "nextPhoto": "Próxima foto",
+    "locationPhotos": "Fotos dos locais",
+    "viewPhoto": "Ver foto {{n}}"
   }
 }
