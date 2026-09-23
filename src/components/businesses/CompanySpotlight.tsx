@@ -25,6 +25,8 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
   const { t } = useTranslation();
   // Hook must run before the early return below.
   const [photoIndex, setPhotoIndex] = useState(0);
+  // Direction of the last navigation, used to slide the photo in from the matching side.
+  const [slideDirection, setSlideDirection] = useState<"next" | "prev">("next");
   // Start point of the active touch gesture on the gallery frame.
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const data = SPOTLIGHT_DATA[company.slug];
@@ -32,9 +34,14 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
 
   const useGallery = company.slug === "advertising" && advertisingLocationImages.length > 0;
   const galleryIndex = Math.min(photoIndex, Math.max(advertisingLocationImages.length - 1, 0));
-  const showPreviousPhoto = () =>
+  const showPreviousPhoto = () => {
+    setSlideDirection("prev");
     setPhotoIndex((i) => (i - 1 + advertisingLocationImages.length) % advertisingLocationImages.length);
-  const showNextPhoto = () => setPhotoIndex((i) => (i + 1) % advertisingLocationImages.length);
+  };
+  const showNextPhoto = () => {
+    setSlideDirection("next");
+    setPhotoIndex((i) => (i + 1) % advertisingLocationImages.length);
+  };
 
   const handleGalleryTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     const touch = e.touches[0];
@@ -157,7 +164,8 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                     alt={`${company.name} — hoarding location photo ${galleryIndex + 1}`}
                     loading="lazy"
                     decoding="async"
-                    className="aspect-4/3 w-full object-cover img-reveal"
+                    className="gallery-slide-in aspect-4/3 w-full object-cover"
+                    style={{ "--slide-from": slideDirection === "next" ? "24px" : "-24px" } as React.CSSProperties}
                   />
                   <span aria-hidden="true" className="card-shine-lines" />
 
@@ -192,7 +200,10 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                     <button
                       key={src}
                       type="button"
-                      onClick={() => setPhotoIndex(i)}
+                      onClick={() => {
+                        setSlideDirection(i > galleryIndex ? "next" : "prev");
+                        setPhotoIndex(i);
+                      }}
                       aria-label={t("gallery.viewPhoto", "View photo {{n}}", { n: i + 1 })}
                       aria-current={i === galleryIndex}
                       className={`h-1.5 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none ${

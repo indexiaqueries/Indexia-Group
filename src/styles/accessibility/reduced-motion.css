@@ -64,6 +64,9 @@
     clip-path: none;
     animation: none;
   }
+  .gallery-slide-in {
+    animation: none;
+  }
   .float-subtle {
     animation: none;
   }

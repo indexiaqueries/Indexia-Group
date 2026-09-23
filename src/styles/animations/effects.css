@@ -26,3 +26,8 @@
   clip-path: inset(0 100% 0 0);
   animation: img-reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+
+/* Gallery photo slide-in; set --slide-from to -24px for a right-to-left (next) slide */
+.gallery-slide-in {
+  animation: gallery-slide-in 350ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}

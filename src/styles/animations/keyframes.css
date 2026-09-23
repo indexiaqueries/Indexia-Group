@@ -71,6 +71,12 @@
   to   { transform: translateY(-8px); }
 }
 
+/* Gallery photo slide-in, direction set by a CSS variable (--slide-from: +/-24px) */
+@keyframes gallery-slide-in {
+  from { opacity: 0; transform: translateX(var(--slide-from, 24px)); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
 /* --- Component-specific --- */
 @keyframes passbook-in {
   from { opacity: 0; transform: translateY(30px); }
