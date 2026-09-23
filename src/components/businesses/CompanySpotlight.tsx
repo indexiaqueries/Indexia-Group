@@ -1,5 +1,6 @@
+import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Check } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import Eyebrow from "../common/Eyebrow";
 import AnimatedCounter from "../common/AnimatedCounter";
 import Reveal from "../common/Reveal";
@@ -7,14 +8,63 @@ import { getCompanyPageImage } from "../../data/companyPageImages";
 import { SPOTLIGHT_DATA } from "../../data/spotlight";
 import type { Company } from "../../data/companies";
 
+// Real photos of the unipole hoarding locations (advertising page only).
+const advertisingLocationMedia = import.meta.glob(
+  "../../assets/company-pages-img/advertising-location/*",
+  { eager: true },
+) as Record<string, { default: string }>;
+const advertisingLocationImages = Object.values(advertisingLocationMedia)
+  .map((mod) => mod.default)
+  .sort();
+
 type CompanySpotlightProps = {
   company: Company;
 };
 
 const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
   const { t } = useTranslation();
+  // Hook must run before the early return below.
+  const [photoIndex, setPhotoIndex] = useState(0);
+  // Start point of the active touch gesture on the gallery frame.
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const data = SPOTLIGHT_DATA[company.slug];
   if (!data) return null;
+
+  const useGallery = company.slug === "advertising" && advertisingLocationImages.length > 0;
+  const galleryIndex = Math.min(photoIndex, Math.max(advertisingLocationImages.length - 1, 0));
+  const showPreviousPhoto = () =>
+    setPhotoIndex((i) => (i - 1 + advertisingLocationImages.length) % advertisingLocationImages.length);
+  const showNextPhoto = () => setPhotoIndex((i) => (i + 1) % advertisingLocationImages.length);
+
+  const handleGalleryTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    const touch = e.touches[0];
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  // A deliberate horizontal swipe (>40px, mostly horizontal) changes the photo;
+  // anything more vertical keeps scrolling the page normally.
+  const handleGalleryTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    const start = touchStartRef.current;
+    touchStartRef.current = null;
+    if (!start) return;
+    const dx = e.changedTouches[0].clientX - start.x;
+    const dy = e.changedTouches[0].clientY - start.y;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      if (dx < 0) showNextPhoto();
+      else showPreviousPhoto();
+    }
+  };
+
+  // Arrow keys browse the gallery while the frame (or a control inside it) has focus.
+  const handleGalleryKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      showPreviousPhoto();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      showNextPhoto();
+    }
+  };
 
   const eyebrow = t(data.eyebrowKey);
   const heading = t(data.headingKey);
@@ -81,7 +131,7 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
           </ul>
         </Reveal>
 
-        {/* Image side */}
+        {/* Image side — advertising shows a one-at-a-time location gallery, others a single image */}
         <Reveal amount={0.2} className="relative">
           <div className="relative">
             <div
@@ -89,18 +139,85 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
               className="absolute -inset-3 rounded-3xl"
               style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.27), transparent 55%, rgba(123,123,123,0.13))" }}
             />
-            <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">
-              <img
-                src={getCompanyPageImage(company.slug)}
-                alt={`${company.name}, ${company.tag}`}
-                width={1536}
-                height={1024}
-                loading="lazy"
-                decoding="async"
-                className="aspect-4/3 w-full object-cover transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110 group-hover:-rotate-2 img-reveal"
-              />
-              <span aria-hidden="true" className="card-shine-lines" />
-            </div>
+            {useGallery ? (
+              <>
+                <div
+                  onTouchStart={handleGalleryTouchStart}
+                  onTouchEnd={handleGalleryTouchEnd}
+                  onKeyDown={handleGalleryKeyDown}
+                  tabIndex={0}
+                  role="group"
+                  aria-roledescription="carousel"
+                  aria-label={t("gallery.locationPhotos", "Location photos")}
+                  className="relative touch-pan-y overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10 focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none"
+                >
+                  <img
+                    key={galleryIndex}
+                    src={advertisingLocationImages[galleryIndex]}
+                    alt={`${company.name} — hoarding location photo ${galleryIndex + 1}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-4/3 w-full object-cover img-reveal"
+                  />
+                  <span aria-hidden="true" className="card-shine-lines" />
+
+                  {/* Prev / next controls */}
+                  <button
+                    type="button"
+                    onClick={showPreviousPhoto}
+                    aria-label={t("gallery.previousPhoto", "Previous photo")}
+                    className="absolute top-1/2 inset-s-3 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-(--color-ink) shadow-lg backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none"
+                  >
+                    <ChevronLeft size={18} strokeWidth={2.4} />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={showNextPhoto}
+                    aria-label={t("gallery.nextPhoto", "Next photo")}
+                    className="absolute top-1/2 inset-e-3 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-(--color-ink) shadow-lg backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-white focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none"
+                  >
+                    <ChevronRight size={18} strokeWidth={2.4} />
+                  </button>
+
+                  {/* Counter */}
+                  <span className="absolute bottom-3 inset-e-3 rounded-full bg-black/55 px-3 py-1 text-[11px] font-bold tabular-nums text-white backdrop-blur-sm">
+                    {galleryIndex + 1} / {advertisingLocationImages.length}
+                  </span>
+                </div>
+
+
+                {/* Dot indicators */}
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5" role="tablist" aria-label={t("gallery.locationPhotos", "Location photos")}>
+                  {advertisingLocationImages.map((src, i) => (
+                    <button
+                      key={src}
+                      type="button"
+                      onClick={() => setPhotoIndex(i)}
+                      aria-label={t("gallery.viewPhoto", "View photo {{n}}", { n: i + 1 })}
+                      aria-current={i === galleryIndex}
+                      className={`h-1.5 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none ${
+                        i === galleryIndex
+                          ? "w-6 bg-(--color-blue)"
+                          : "w-1.5 bg-(--color-line) hover:bg-(--color-muted)"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="group relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10">
+                <img
+                  src={getCompanyPageImage(company.slug)}
+                  alt={`${company.name}, ${company.tag}`}
+                  width={1536}
+                  height={1024}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-4/3 w-full object-cover transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110 group-hover:-rotate-2 img-reveal"
+                />
+                <span aria-hidden="true" className="card-shine-lines" />
+              </div>
+            )}
           </div>
         </Reveal>
       </div>
