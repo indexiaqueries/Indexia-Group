@@ -6,7 +6,7 @@ import path from 'node:path'
 import type { Plugin } from 'vite'
 import react from '@vitejs/plugin-react' 
 import tailwindcss from '@tailwindcss/vite'
-import { ROUTES, COMPANY_SLUGS, buildPreviewHtml } from './shared/routeMeta.js'
+import { ROUTES, COMPANY_SLUGS, BASE_URL, buildPreviewHtml } from './shared/routeMeta.js'
 
 const require = createRequire(import.meta.url)
 const viteCompression = require('vite-plugin-compression') as (
@@ -69,9 +69,20 @@ function routeHtml(): Plugin {
       for (const [route, preview] of Object.entries(ROUTES)) {
         // Admin is served by the Express deployment only; skip static admin HTML.
         if (route.startsWith('/admin')) continue
-        const html = buildPreviewHtml(template, preview, route)
+        // Aliased routes (e.g. /finserve -> /finance) emit a tiny redirect shell:
+        // Apache serves dist/<route>/index.html directly, so a full copy would
+        // advertise duplicate content instead of pointing at the canonical URL.
         const dir = path.join(distDir, route)
         mkdirSync(dir, { recursive: true })
+        if (preview.redirect) {
+          const redirectUrl = `${BASE_URL}${preview.redirect}`
+          const shell = `<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>Redirecting…</title>\n<link rel="canonical" href="${redirectUrl}">\n<meta name="robots" content="noindex, follow">\n<meta http-equiv="refresh" content="0; url=${redirectUrl}">\n<script>location.replace(${JSON.stringify(redirectUrl)});</script>\n</head>\n<body></body>\n</html>\n`
+          writeFileSync(path.join(dir, 'index.html'), shell)
+          console.log(`route-html: ${route}/index.html -> redirect ${preview.redirect}`)
+          emitted += 1
+          continue
+        }
+        const html = buildPreviewHtml(template, preview, route)
         writeFileSync(path.join(dir, 'index.html'), html)
         emitted += 1
         console.log(`route-html: ${route === '/' ? '/' : route + '/'}index.html`)

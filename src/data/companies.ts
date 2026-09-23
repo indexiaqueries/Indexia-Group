@@ -1,5 +1,9 @@
 import { colors } from "../lib/theme";
 
+// Shared group financial-services website. Indexia Finance is the brand; Indexia
+// Finserve Pvt. Ltd. is the legal entity behind it, so both point to the same site.
+export const FINANCE_WEBSITE = "https://indexiafinance.com/";
+
 export type Company = {
   name: string;
   slug: string;
@@ -12,6 +16,11 @@ export type Company = {
   services: string[];
   color: string;
   link?: string;
+  /** Has a real in-app page at /<slug>. Home cards link to it instead of `link`. */
+  detailPage?: boolean;
+  /** This company shares another company's in-app page (its brand), e.g. Indexia
+   *  Finance is the brand of Indexia Finserve. */
+  detailPageFor?: string;
 };
 
 export const companies: Company[] = [
@@ -38,7 +47,8 @@ export const companies: Company[] = [
       "Wealth & Asset Management",
     ],
     color: colors.teal,
-    link: "https://indexiafinance.com/",
+    link: FINANCE_WEBSITE,
+    detailPage: true,
   },
   {
     name: "Indexia Finserve Pvt. Ltd.",
@@ -69,7 +79,8 @@ export const companies: Company[] = [
       "Working Capital",
     ],
     color: colors.yellow,
-    link: "https://indexiafinance.com/",
+    link: FINANCE_WEBSITE,
+    detailPageFor: "finance",
   },
   {
     name: "Indexia Overseas Pvt. Ltd.",

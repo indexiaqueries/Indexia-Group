@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Clock, Mail, MapPin, Navigation, Phone, Sparkles } from "lucide-react";
+import { ArrowUpRight, Clock, Mail, MapPin, Navigation, Phone, Sparkles } from "lucide-react";
 import { serviceIcons } from "./serviceIcons";
 import Eyebrow from "../common/Eyebrow";
 import ImageSlot from "../common/ImageSlot";
@@ -9,7 +9,7 @@ import { siteImages } from "../../data/siteImages";
 import EnquiryForm from "../contact/EnquiryForm";
 import CompanyHero from "../hero/CompanyHero";
 import { getCompanyImage } from "../../data/companyImages";
-import { companies, type Company } from "../../data/companies";
+import { companies, FINANCE_WEBSITE, type Company } from "../../data/companies";
 import { accent, monoFont } from "../../lib/theme";
 
 import { branches, branchMapsUrl, contactEmails, getDedicatedPhone } from "../../data/contact";
@@ -19,6 +19,7 @@ import WarehousePricing from "./WarehousePricing";
 import BookingModal, { type BookingContext } from "./BookingModal";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
+import financeAwardImg from "../../assets/company-pages-img/common/Indexia Finance Award.jpg";
 import FoundationGallery from "./FoundationGallery";
 import RegisterTabs from "./RegisterTabs";
 
@@ -53,6 +54,27 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
   const index = companies.findIndex((c) => c.name === b.name);
   const marqueeItems = [tr("tag", b.tag), ...b.services.map((s, i) => tr(`services.${i}`, s))];
   const showFullContacts = b.slug === "warehouse" || b.slug === "advertising";
+  // Finserve resolves to the finance page in CompanyPage, so this is true for
+  // both slugs' URLs.
+  const isFinancePage = b.slug === "finance";
+
+  // Make the finance website clickable wherever it appears in copy.
+  const renderFinanceLink = (text: string) =>
+    text.split(/(www\.indexiafinance\.com)/g).map((part, i) =>
+      part === "www.indexiafinance.com" ? (
+        <a
+          key={i}
+          href={FINANCE_WEBSITE}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-(--color-blue) underline decoration-(--color-blue)/40 underline-offset-4 transition-colors hover:text-(--color-teal-deep)"
+        >
+          {part}
+        </a>
+      ) : (
+        <span key={i}>{part}</span>
+      ),
+    );
   // Every company page lists the Naraina (Delhi) office as its bookings office.
   const enquiryBranch = branches.find((branch) => branch.key === "delhiOffice");
   const dedicated = getDedicatedPhone(b.slug);
@@ -136,7 +158,7 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
             <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
               {t("companyDetail.overviewTitle", { name })}
             </h2>
-            <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">{overview}</p>
+            <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">{renderFinanceLink(overview)}</p>
           </div>
         </div>
       </section>
@@ -202,11 +224,74 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
               {tag}
             </span>
             <h2 className="font-display mt-4 sm:mt-5 text-[clamp(22px,3.2vw,38px)] font-bold leading-[1.15] text-white">
-              “{slideSub}”
+              “{renderFinanceLink(slideSub)}”
             </h2>
           </div>
         </div>
       </section>
+
+      {/* Award recognition — Indexia Finance & Indexia Finserve (finserve renders finance's page). */}
+      {isFinancePage && (
+        <section className="section-ruled section-paper relative overflow-hidden py-5 sm:py-7 lg:py-8">
+          <div className="container grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
+            <Reveal amount={0.2} className="relative">
+              <div
+                aria-hidden="true"
+                className="absolute -inset-3 rounded-3xl"
+                style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.4), transparent 55%, rgba(123,123,123,0.2))" }}
+              />
+              <div className="relative overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-black/10">
+                <img
+                  src={financeAwardImg}
+                  alt={tr("awardImageAlt", `${name} — award for excellence`)}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-auto w-full"
+                />
+              </div>
+            </Reveal>
+            <div>
+              <Eyebrow className="mb-3">{tr("awardEyebrow", "Recognition")}</Eyebrow>
+              <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
+                {tr("awardTitle", "Honoured for excellence in financial services")}
+              </h2>
+              <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
+                {tr(
+                  "awardDesc",
+                  "A milestone that reflects the trust of our clients, partners and institutions — and our commitment to making finance simpler and more accessible for everyone we serve.",
+                )}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Finance website CTA — loans and details live on the brand site */}
+      {isFinancePage && (
+        <section className="section-ruled section-ink relative overflow-hidden">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -inset-e-24 top-0 h-72 w-72 rounded-full opacity-20 blur-3xl"
+            style={{ background: "radial-gradient(circle, rgba(242,242,49,0.9) 0%, transparent 65%)" }}
+          />
+          <div className="container relative flex flex-col items-center gap-6 py-8 text-center sm:py-10 lg:flex-row lg:justify-between lg:gap-10 lg:text-start">
+            <div>
+              <h2 className="font-display text-[clamp(20px,3vw,32px)] font-bold leading-[1.15] text-white">
+                {tr("financeCtaTitle", "For more information or to apply for a loan")}
+              </h2>
+            </div>
+            <a
+              href={FINANCE_WEBSITE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-(--color-yellow) px-5 py-2.5 text-sm font-bold text-(--color-yellow-ink) shadow-[0_4px_16px_rgba(242,242,49,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-(--color-yellow-bright) sm:px-7 sm:py-3"
+            >
+              {tr("financeCtaButton", "Visit www.indexiafinance.com")}
+              <ArrowUpRight size={17} strokeWidth={2.4} />
+            </a>
+          </div>
+        </section>
+      )}
 
       {/* Services */}
       <section id="company-services" className="section-ruled section-paper relative scroll-mt-24 overflow-hidden py-5">

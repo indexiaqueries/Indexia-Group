@@ -15,6 +15,9 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
   const tag = t(`pageContent.companies.${company.slug}.tag`, { defaultValue: company.tag });
   const name = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
   const cardNo = String(index + 1).padStart(2, "0");
+  // Home cards link to the company's in-app page (which may be shared with its
+  // brand company), falling back to the external website when there is none.
+  const internal = Boolean(company.detailPage || company.detailPageFor);
 
   const content = (
     <>
@@ -22,10 +25,10 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
       <span
         aria-hidden="true"
         className={`company-link-chip pointer-events-none absolute inset-e-5 top-5 z-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-all duration-300 group-hover:bg-(--color-yellow) group-hover:text-(--color-ink-deep) ${
-          company.link ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+          internal || company.link ? "opacity-100" : "opacity-0 group-hover:opacity-100"
         }`}
       >
-        {company.link ? (
+        {!internal && company.link ? (
           <ExternalLink size={19} strokeWidth={2.5} />
         ) : (
           <ArrowUpRight size={19} strokeWidth={2.5} />
@@ -57,7 +60,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
     </CompanyCardBase>
   );
 
-  if (company.link) {
+  if (company.link && !internal) {
     return (
       <a
         href={company.link}
@@ -72,7 +75,7 @@ const CompanyLinkCard = ({ company, index = 0 }: CompanyLinkCardProps) => {
 
   return (
     <Link
-      to={`/${company.slug}`}
+      to={`/${company.detailPageFor ?? company.slug}`}
       aria-label={t("companyLinkCard.visitPageAria", { name })}
     >
       {card}

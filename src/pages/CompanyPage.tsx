@@ -3,33 +3,48 @@ import { Navigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/common/SEO";
 import CompanyDetail from "../components/businesses/CompanyDetail";
-import { companies } from "../data/companies";
+import { companies, type Company } from "../data/companies";
+
+// Aliased companies (Indexia Finance is the brand of Indexia Finserve) render
+// their brand's page, so both URLs show one canonical page.
+const resolvePageCompany = (slug?: string): { company?: Company; pageCompany?: Company } => {
+  const company = companies.find((c) => c.slug === slug);
+  if (!company) return {};
+  if (company.detailPageFor) {
+    return { company, pageCompany: companies.find((c) => c.slug === company.detailPageFor) };
+  }
+  return { company, pageCompany: company };
+};
 
 const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
   const { t } = useTranslation();
   const params = useParams();
   const slug = slugProp ?? params.slug;
-  const company = companies.find((c) => c.slug === slug);
+  const { company, pageCompany } = resolvePageCompany(slug);
 
   useEffect(() => {
-    if (company?.link) {
+    if (company?.link && !pageCompany) {
       window.location.replace(company.link);
     }
-  }, [company]);
+  }, [company, pageCompany]);
 
   if (!company) {
     return <Navigate to="/about" replace />;
   }
 
-  if (company.link) {
+  if (company.link && !pageCompany) {
     return null;
   }
 
-  const tr = (path: string, fallback: string) => t(`pageContent.companies.${slug}.${path}`, { defaultValue: fallback });
+  if (!pageCompany) {
+    return null;
+  }
+
+  const tr = (path: string, fallback: string) => t(`pageContent.companies.${pageCompany.slug}.${path}`, { defaultValue: fallback });
   const name = tr("name", company.name);
   const tag = tr("tag", company.tag);
   const desc = tr("desc", company.desc);
-  const canonicalPath = `/${company.slug}`;
+  const canonicalPath = `/${pageCompany.slug}`;
   const companyJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -70,7 +85,7 @@ const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
         canonicalPath={canonicalPath}
         jsonLd={companyJsonLd}
       />
-      <CompanyDetail company={company} />
+      <CompanyDetail company={pageCompany} />
     </main>
   );
 };

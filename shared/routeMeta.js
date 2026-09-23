@@ -3,7 +3,9 @@ export const SITE_NAME = "Indexia Group";
 
 const COMPANIES = [
   { slug: "finance", name: "Indexia Finance", tag: "Multinational Fintech", desc: "Global fintech across investor services, FDI, NBFC, and banking funding." },
-  { slug: "finserve", name: "Indexia Finserve Pvt. Ltd.", tag: "Investment & Finance", desc: "Every type of loan, the right bank at your doorstep." },
+  // Indexia Finance is the brand of Indexia Finserve Pvt. Ltd.: one shared page.
+  // /finserve emits a redirect shell to /finance for non-JS crawlers.
+  { slug: "finserve", name: "Indexia Finserve Pvt. Ltd.", tag: "Investment & Finance", desc: "Every type of loan, the right bank at your doorstep.", detailPageFor: "finance" },
   { slug: "overseas", name: "Indexia Overseas Pvt. Ltd.", tag: "Global Edible Export", desc: "Premium refined sugar and edible commodities exported to 14 South American countries." },
   { slug: "agro-bio", name: "Indexia Agro Bio Fertilizers Pvt. Ltd.", tag: "Organic Agriculture Solutions", desc: "Scientifically formulated organic fertilizers that restore soil health and maximize crop yield." },
   { slug: "securities", name: "Indexia Securities", tag: "Armed Protection & Security", desc: "Military-grade armed security for high-profile individuals, corporations, and critical infrastructure." },
@@ -78,10 +80,17 @@ const ROUTE_META = {
 };
 
 for (const c of COMPANIES) {
-  ROUTE_META[`/${c.slug}`] = {
-    title: `${c.name} - ${c.tag}`,
-    description: c.desc,
-  };
+  // Aliased companies point at their brand's page so previews/canonicals never
+  // advertise two URLs for the same content.
+  const target = c.detailPageFor ? COMPANIES.find((x) => x.slug === c.detailPageFor) : null;
+  ROUTE_META[`/${c.slug}`] = target
+    ? {
+        title: `${target.name} - ${target.tag}`,
+        description: target.desc,
+        canonical: `/${target.slug}`,
+        redirect: `/${target.slug}`,
+      }
+    : { title: `${c.name} - ${c.tag}`, description: c.desc };
 }
 
 export const ROUTES = ROUTE_META;
@@ -125,7 +134,8 @@ export function replaceRobots(html, value) {
 }
 
 export function buildPreviewHtml(template, preview, canonicalPath) {
-  const url = `${BASE_URL}${canonicalPath}`;
+  // Aliased routes (e.g. /finserve) carry the brand page's canonical path.
+  const url = `${BASE_URL}${preview.canonical ?? canonicalPath}`;
   const fullTitle =
     preview.title === SITE_NAME ? preview.title : `${preview.title} | ${SITE_NAME}`;
   const description = escapeHtml(preview.description);

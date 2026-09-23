@@ -29,7 +29,10 @@ const RegisterTabs = ({ activeSlug, className = "" }: RegisterTabsProps) => {
         {companies.map((company, i) => {
           const no = String(i + 1).padStart(2, "0");
           const isActive = company.slug === activeSlug;
-          const isExternal = Boolean(company.link);
+          // Companies with an in-app page (including the finserve→finance alias)
+          // link internally; only pure external websites open off-site.
+          const isExternal =
+            Boolean(company.link) && !company.detailPage && !company.detailPageFor;
           const fullName = t(`pageContent.companies.${company.slug}.name`, { defaultValue: company.name });
           const label = stripBrand(fullName);
 

@@ -157,5 +157,5 @@ reviews them in the admin dashboard (`/admin`).
 - JSON-LD structured data (Organization, WebSite, WebPage, BreadcrumbList, FAQPage, Company pages)
 - `robots.txt` blocks admin, apply, and brochure pages
 - Custom URL previews: social unfurlers (WhatsApp, X, LinkedIn, Facebook…) are served per-route Open Graph/Twitter tags via `server/middleware/urlPreviews.js`, so every shared link shows its own title, description, and image
-- `sitemap.xml` with the 16 indexable public routes (the two `/finance` and `/finserve` routes are client-side redirects to indexiafinance.com, so they are intentionally excluded)
+- `sitemap.xml` with the 17 indexable public routes (`/finserve` excluded — it renders the shared Indexia Finance page and its static build is a redirect to the canonical `/finance`; the two brochure routes are noindexed)
 - `llms.txt` for AI-agent readability
