@@ -189,11 +189,44 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
+      {/* Award recognition — Indexia Finance & Indexia Finserve (finserve renders finance's page). */}
+      {isFinancePage && (
+        <section className="section-ruled section-paper relative overflow-hidden py-5 sm:py-7 lg:py-8">
+          <div className="container grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
+            <Reveal amount={0.2} className="relative">
+              <div
+                aria-hidden="true"
+                className="absolute -inset-3 rounded-3xl"
+                style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.4), transparent 55%, rgba(123,123,123,0.2))" }}
+              />
+              <div className="relative overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-black/10">
+                <img
+                  src={financeAwardImg}
+                  alt={tr("awardImageAlt", `${name} — award for excellence`)}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-auto w-full"
+                />
+              </div>
+            </Reveal>
+            <div>
+              <Eyebrow className="mb-3">{tr("awardEyebrow", "Recognition")}</Eyebrow>
+              <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
+                {tr("awardTitle", "Honoured for excellence in financial services")}
+              </h2>
+              <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
+                {tr(
+                  "awardDesc",
+                  "A milestone that reflects the trust of our clients, partners and institutions — and our commitment to making finance simpler and more accessible for everyone we serve.",
+                )}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Company-specific spotlight section */}
       <CompanySpotlight company={b} />
-
-      {/* Key entries */}
-      <CompanyHighlights slug={b.slug} highlights={b.highlights} />
 
       {/* Story split, second image + pull-quote */}
       <section className="section-ruled section-ink relative overflow-hidden">
@@ -230,41 +263,8 @@ const CompanyDetail = ({ company: b, showBackLink = false }: CompanyDetailProps)
         </div>
       </section>
 
-      {/* Award recognition — Indexia Finance & Indexia Finserve (finserve renders finance's page). */}
-      {isFinancePage && (
-        <section className="section-ruled section-paper relative overflow-hidden py-5 sm:py-7 lg:py-8">
-          <div className="container grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
-            <Reveal amount={0.2} className="relative">
-              <div
-                aria-hidden="true"
-                className="absolute -inset-3 rounded-3xl"
-                style={{ background: "linear-gradient(135deg, rgba(6,106,156,0.4), transparent 55%, rgba(123,123,123,0.2))" }}
-              />
-              <div className="relative overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-black/10">
-                <img
-                  src={financeAwardImg}
-                  alt={tr("awardImageAlt", `${name} — award for excellence`)}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-auto w-full"
-                />
-              </div>
-            </Reveal>
-            <div>
-              <Eyebrow className="mb-3">{tr("awardEyebrow", "Recognition")}</Eyebrow>
-              <h2 className="font-display text-[clamp(26px,3.6vw,42px)] font-bold leading-[1.08] text-(--color-blue)">
-                {tr("awardTitle", "Honoured for excellence in financial services")}
-              </h2>
-              <p className="mt-4 sm:mt-5 max-w-xl text-[14px] sm:text-[15px] leading-7 sm:leading-8 text-(--color-muted)">
-                {tr(
-                  "awardDesc",
-                  "A milestone that reflects the trust of our clients, partners and institutions — and our commitment to making finance simpler and more accessible for everyone we serve.",
-                )}
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Key entries */}
+      <CompanyHighlights slug={b.slug} highlights={b.highlights} />
 
       {/* Finance website CTA — loans and details live on the brand site */}
       {isFinancePage && (
