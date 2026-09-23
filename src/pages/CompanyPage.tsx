@@ -32,10 +32,8 @@ const CompanyPage = ({ slug: slugProp }: { slug?: string } = {}) => {
     return <Navigate to="/about" replace />;
   }
 
-  if (company.link && !pageCompany) {
-    return null;
-  }
-
+  // External-link companies (no in-app page) bail out here; the redirect
+  // effect above has already sent the visitor to the company website.
   if (!pageCompany) {
     return null;
   }
