@@ -19,7 +19,7 @@ import WarehousePricing from "./WarehousePricing";
 import BookingModal, { type BookingContext } from "./BookingModal";
 import CompanyHighlights from "./CompanyHighlights";
 import CompanySpotlight from "./CompanySpotlight";
-import financeAwardImg from "../../assets/company-pages-img/common/Indexia Finance Award.jpg";
+import financeAwardImg from "../../assets/company-pages-img/common/Indexia Finance Award.webp";
 import FoundationGallery from "./FoundationGallery";
 import RegisterTabs from "./RegisterTabs";
 
