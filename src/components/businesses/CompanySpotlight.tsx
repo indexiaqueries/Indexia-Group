@@ -156,15 +156,25 @@ const CompanySpotlight = ({ company }: CompanySpotlightProps) => {
                   role="group"
                   aria-roledescription="carousel"
                   aria-label={t("gallery.locationPhotos", "Location photos")}
-                  className="relative touch-pan-y overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/10 focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none"
+                  className="relative aspect-4/3 touch-pan-y overflow-hidden rounded-3xl bg-(--color-ink-deep) shadow-2xl ring-1 ring-black/10 focus-visible:ring-2 focus-visible:ring-(--color-blue) focus-visible:outline-none"
                 >
+                  {/* Blurred, enlarged copy fills the letterbox area around portrait photos */}
+                  <img
+                    key={`bg-${galleryIndex}`}
+                    src={advertisingLocationImages[galleryIndex]}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 h-full w-full scale-110 object-cover blur-2xl"
+                  />
                   <img
                     key={galleryIndex}
                     src={advertisingLocationImages[galleryIndex]}
                     alt={`${company.name} — hoarding location photo ${galleryIndex + 1}`}
                     loading="lazy"
                     decoding="async"
-                    className="gallery-slide-in aspect-4/3 w-full object-cover"
+                    className="gallery-slide-in relative h-full w-full object-contain"
                     style={{ "--slide-from": slideDirection === "next" ? "24px" : "-24px" } as React.CSSProperties}
                   />
                   <span aria-hidden="true" className="card-shine-lines" />
