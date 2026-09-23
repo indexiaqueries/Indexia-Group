@@ -66,7 +66,7 @@ public/
 ├── favicon.svg         # Browser tab icon
 ├── llms.txt            # AI-agent readable site summary
 ├── robots.txt          # Crawler rules
-├── sitemap.xml         # 18 public routes
+├── sitemap.xml         # 17 public routes
 └── og-image.png        # Social share image
 ```
 
