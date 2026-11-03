@@ -101,13 +101,6 @@ const Header = () => {
           {t("header.menu.home")}
         </NavLink>
 
-        <NavLink
-          to="/about"
-          className={({ isActive }) => navPillClass(isActive)}
-        >
-          {t("header.nav.about")}
-        </NavLink>
-
         <Suspense fallback={null}>
           <CompaniesMenu
             open={companiesOpen}
@@ -116,6 +109,13 @@ const Header = () => {
             onClose={closeAll}
           />
         </Suspense>
+
+        <NavLink
+          to="/about"
+          className={({ isActive }) => navPillClass(isActive)}
+        >
+          {t("header.nav.about")}
+        </NavLink>
 
         <NavLink
           to="/contact"
