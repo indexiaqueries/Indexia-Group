@@ -8,7 +8,6 @@ import { connectDB, isDBConnected } from "./db.js";
 import createSessionMiddleware from "./session.js";
 import Application from "./models/Application.js";
 import Enquiry from "./models/Enquiry.js";
-import Admin from "./models/Admin.js";
 import adminRoutes from "./routes/admin.js";
 import adminAuthRoutes from "./routes/adminAuth.js";
 import newsRoutes from "./routes/news.js";
@@ -104,18 +103,7 @@ const upload = multer({
 // a cold start never races the initial connection attempt.
 const dbReady = connectDB();
 
-// Ensure the admins collection enforces the single-admin rule at the
-// database level (unique index across the whole collection).
-let adminIndexReady = null;
-function ensureAdminIndex() {
-  if (!adminIndexReady) {
-    adminIndexReady = Admin.init().then(() => Admin.createCollection());
-  }
-  return adminIndexReady;
-}
-
 dbReady.then(() => {
-  if (isDBConnected()) ensureAdminIndex();
   startNewsScheduler();
 });
 
@@ -127,8 +115,8 @@ app.get("/api/health", (_req, res) => {
   });
 });
 
-// Mount route modules. adminAuth (register/login/logout/me) is mounted
-// first; the data router below it owns /applications & /enquiries.
+// Mount route modules. Admin authentication is mounted first; the data router
+// below it owns /applications and /enquiries.
 app.use("/api/admin", adminAuthRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/news", newsRoutes);
